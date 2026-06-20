@@ -373,6 +373,172 @@
   .vocab-example ruby rt { font-size: 9px; }
   .vocab-badge-row { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
 
+  /* ===== 單字本頁面 ===== */
+  #page-vocab { overflow-y: hidden; }
+
+  .vocab-filter-bar {
+    display: flex; gap: 6px; padding: 0 16px 10px; flex-shrink: 0;
+  }
+  .vocab-filter-btn {
+    flex: 1; padding: 7px 4px; border-radius: 99px;
+    border: 0.5px solid var(--wa-bg2); background: #FFFFFF;
+    font-size: 12px; font-weight: 500; color: var(--wt3);
+    cursor: pointer; font-family: inherit; text-align: center;
+    transition: all 0.15s;
+  }
+  .vocab-filter-btn.active-all  { background: var(--wa);    color: #FFF;        border-color: var(--wa); }
+  .vocab-filter-btn.active-raw  { background: var(--wr-bg); color: var(--wr);   border-color: #F0C4BB; }
+  .vocab-filter-btn.active-mid  { background: var(--wy-bg); color: var(--wy);   border-color: #E8C870; }
+  .vocab-filter-btn.active-ripe { background: var(--wg-bg); color: var(--wg);   border-color: #A0CCA8; }
+
+  .vocab-display-wrap {
+    position: relative; margin: 0 16px 10px; flex-shrink: 0;
+  }
+  .vocab-display-card {
+    background: #FFFFFF; border: 0.5px solid var(--wa-bg2);
+    border-radius: 18px; padding: 20px 16px 16px; text-align: center;
+    user-select: none; -webkit-user-select: none;
+    min-height: 175px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; position: relative;
+    overflow: hidden;
+  }
+  .vocab-display-empty {
+    color: var(--wt3); font-size: 14px; line-height: 1.8;
+  }
+  .vocab-display-nav-dots {
+    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+    display: flex; flex-direction: column; gap: 5px; pointer-events: none;
+  }
+  .vocab-nav-dot {
+    width: 4px; height: 4px; border-radius: 50%; background: var(--wa-bg2);
+    transition: background 0.2s;
+  }
+  .vocab-nav-dot.active { background: var(--wa); }
+
+  .vocab-list-area {
+    flex: 1; overflow-y: auto; padding: 0 16px;
+    padding-bottom: calc(var(--nav-h) + var(--safe-bottom) + 72px);
+    -webkit-overflow-scrolling: touch;
+  }
+  .vocab-list-row {
+    background: #FFFFFF; border: 0.5px solid var(--wa-bg2);
+    border-radius: 13px; margin-bottom: 8px;
+    display: flex; align-items: stretch; overflow: hidden;
+    position: relative; cursor: pointer;
+  }
+  .vocab-list-row.selected .vocab-row-content { background: var(--wa-ll); }
+  .vocab-row-content {
+    flex: 1; padding: 12px 14px; display: flex; align-items: center; gap: 10px;
+    transition: transform 0.22s ease; min-width: 0;
+  }
+  .vocab-row-content.swiped { transform: translateX(-68px); }
+  .vocab-row-text { flex: 1; min-width: 0; }
+  .vocab-row-jp   { font-size: 16px; font-weight: 500; color: var(--wt); }
+  .vocab-row-cn   { font-size: 12px; color: var(--wt2); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .vocab-row-del  {
+    position: absolute; right: 0; top: 0; bottom: 0; width: 68px;
+    background: var(--wr); display: flex; align-items: center; justify-content: center;
+    border-radius: 0 13px 13px 0; flex-shrink: 0;
+  }
+
+  /* FAB */
+  .vocab-fab {
+    position: fixed; right: 20px;
+    bottom: calc(var(--nav-h) + var(--safe-bottom) + 14px);
+    width: 52px; height: 52px; border-radius: 50%;
+    background: var(--wa); color: #FFF; border: none;
+    cursor: pointer; display: none;
+    align-items: center; justify-content: center;
+    box-shadow: 0 4px 16px rgba(196,120,58,0.4);
+    z-index: 50;
+  }
+  .vocab-fab.show { display: flex; }
+
+  /* Add word modal (bottom sheet) */
+  .vocab-modal-bd {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.35); z-index: 300;
+  }
+  .vocab-modal-bd.show { display: block; }
+  .vocab-modal-sheet {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: var(--wa-ll); border-radius: 22px 22px 0 0;
+    padding-bottom: calc(24px + var(--safe-bottom));
+    z-index: 301; transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    max-height: 82vh; display: flex; flex-direction: column;
+  }
+  .vocab-modal-sheet.open { transform: translateY(0); }
+  .vocab-modal-handle {
+    width: 36px; height: 4px; border-radius: 99px;
+    background: var(--wa-bg2); margin: 12px auto 0; flex-shrink: 0;
+  }
+  .vocab-modal-hdr {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 16px 0; flex-shrink: 0;
+  }
+  .vocab-modal-title { font-size: 16px; font-weight: 500; }
+  .vocab-modal-x {
+    width: 30px; height: 30px; border-radius: 50%;
+    background: var(--wa-bg); border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; color: var(--wt3);
+  }
+  .vocab-modal-tabs {
+    display: flex; background: var(--wa-bg); border-radius: 11px;
+    padding: 3px; margin: 10px 16px; flex-shrink: 0;
+  }
+  .vocab-modal-tab {
+    flex: 1; text-align: center; font-size: 13px; font-weight: 500;
+    padding: 8px 4px; border-radius: 9px; cursor: pointer;
+    color: var(--wt2); border: none; background: transparent; font-family: inherit;
+  }
+  .vocab-modal-tab.active { background: #FFFFFF; color: var(--wa); }
+  .vocab-modal-body { flex: 1; overflow-y: auto; padding: 0 16px; }
+  .vocab-mpane { display: none; }
+  .vocab-mpane.active { display: block; }
+
+  /* Dict results */
+  .dict-result {
+    padding: 12px 14px; border-radius: 13px;
+    background: #FFFFFF; border: 0.5px solid var(--wa-bg2);
+    margin-bottom: 8px; cursor: pointer;
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  }
+  .dict-result:active { background: var(--wa-ll); }
+  .dict-result-left { min-width: 0; }
+  .dict-result-jp { font-size: 17px; font-weight: 500; }
+  .dict-result-cn { font-size: 12px; color: var(--wt2); margin-top: 2px; }
+  .dict-add-icon {
+    width: 30px; height: 30px; border-radius: 50%; border: none; cursor: pointer;
+    background: var(--wa); display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .dict-add-icon.added { background: var(--wg); }
+
+  /* Camera pane */
+  .camera-area {
+    border: 1.5px dashed var(--wa-bg2); border-radius: 16px;
+    min-height: 160px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 10px; margin-bottom: 12px; padding: 20px;
+    background: var(--wa-ll);
+  }
+  #camera-preview { max-width: 100%; border-radius: 12px; display: none; margin-bottom: 4px; }
+
+  /* Swipe hint overlay */
+  .swipe-hint-overlay {
+    position: absolute; inset: 0; border-radius: 18px;
+    background: rgba(42,26,8,0.78); z-index: 10;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 10px;
+    cursor: pointer;
+  }
+  .swipe-hint-icon { font-size: 30px; animation: bounceUD 1.3s ease-in-out infinite; }
+  .swipe-hint-text { color: #FDF8F3; font-size: 13px; text-align: center; line-height: 1.7; }
+  @keyframes bounceUD {
+    0%,100% { transform: translateY(0); }
+    50%      { transform: translateY(-10px); }
+  }
+
   /* Rating buttons */
   .rating-row { display: flex; gap: 8px; margin-top: 16px; }
   .rating-btn {
@@ -734,68 +900,46 @@
       <div class="word-panel-backdrop" id="word-panel-backdrop" onclick="closeWordPanel()"></div>
     </div>
 
-    <!-- 單字卡 -->
+    <!-- 單字本 -->
     <div class="page" id="page-vocab">
-      <div class="top-bar">
-        <h1>單字卡</h1>
-        <p>共 47 張・今日新增 5 張</p>
+      <div class="top-bar" style="flex-shrink:0">
+        <h1>單字本</h1>
+        <p id="vocab-count-text">共 0 張</p>
       </div>
-      <div class="sec">
-        <div class="vocab-badge-row">
-          <span class="badge b-raw">生 18 張</span>
-          <span class="badge b-mid">普 21 張</span>
-          <span class="badge b-ripe">熟 8 張</span>
-        </div>
-        <div class="vocab-card">
-          <div style="display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:8px">
-            <div class="vocab-kanji">綺麗</div>
-            <button class="speak-btn" onclick="speak('きれい')" aria-label="播放發音">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-            </button>
-          </div>
-          <div class="vocab-kana">きれい</div>
-          <div class="vocab-romaji">kirei</div>
-          <div class="vocab-divider"></div>
-          <div class="vocab-meaning">漂亮・乾淨</div>
-          <div class="vocab-example">
-            <ruby>花<rt>はな</rt></ruby>が綺麗でした。<br>
-            <span style="color:var(--wt3)">花很漂亮。</span>
-          </div>
-        </div>
-        <p style="font-size:12px;color:var(--wt3);text-align:center;margin-bottom:16px">單字卡瀏覽模式・複習請前往試題頁</p>
 
-        <p class="section-title">所有單字</p>
-        <div class="card" style="padding:4px 16px">
-          <div class="task-row">
-            <div style="flex:1">
-              <div class="task-title">綺麗 <span style="font-size:12px;color:var(--wt3)">きれい</span></div>
-              <div class="task-sub">漂亮・乾淨</div>
-            </div>
-            <span class="badge b-raw">生</span>
+      <!-- Filter bar -->
+      <div class="vocab-filter-bar">
+        <button class="vocab-filter-btn active-all" id="vf-all"  onclick="setVocabFilter('all')">全部</button>
+        <button class="vocab-filter-btn" id="vf-raw"  onclick="setVocabFilter('raw')">生 <span id="vf-raw-n">0</span></button>
+        <button class="vocab-filter-btn" id="vf-mid"  onclick="setVocabFilter('mid')">普 <span id="vf-mid-n">0</span></button>
+        <button class="vocab-filter-btn" id="vf-ripe" onclick="setVocabFilter('ripe')">熟 <span id="vf-ripe-n">0</span></button>
+      </div>
+
+      <!-- Display card -->
+      <div class="vocab-display-wrap">
+        <div class="vocab-display-card" id="vocab-display-card"
+             ontouchstart="vdcTouchStart(event)" ontouchend="vdcTouchEnd(event)" ontouchmove="vdcTouchMove(event)">
+          <div class="vocab-display-empty" id="vocab-display-empty">
+            尚無單字卡<br>
+            <span style="font-size:12px">從文章長按詞語加入，或點擊 ＋ 新增</span>
           </div>
-          <div class="task-row">
-            <div style="flex:1">
-              <div class="task-title">公園 <span style="font-size:12px;color:var(--wt3)">こうえん</span></div>
-              <div class="task-sub">公園</div>
-            </div>
-            <span class="badge b-mid">普</span>
-          </div>
-          <div class="task-row">
-            <div style="flex:1">
-              <div class="task-title">天気 <span style="font-size:12px;color:var(--wt3)">てんき</span></div>
-              <div class="task-sub">天氣</div>
-            </div>
-            <span class="badge b-ripe">熟</span>
-          </div>
-          <div class="task-row">
-            <div style="flex:1">
-              <div class="task-title">行く <span style="font-size:12px;color:var(--wt3)">いく</span></div>
-              <div class="task-sub">去</div>
-            </div>
-            <span class="badge b-mid">普</span>
+          <div id="vocab-display-content" style="display:none;width:100%;text-align:center"></div>
+          <!-- Swipe hint (first time) -->
+          <div class="swipe-hint-overlay" id="swipe-hint" onclick="dismissSwipeHint()" style="display:none">
+            <div class="swipe-hint-icon">☝️</div>
+            <div class="swipe-hint-text">上下滑動切換單字卡<br><span style="font-size:11px;opacity:0.7">點擊關閉提示</span></div>
           </div>
         </div>
+        <div class="vocab-display-nav-dots" id="vocab-nav-dots"></div>
       </div>
+
+      <!-- Card list -->
+      <div class="vocab-list-area" id="vocab-list-area"></div>
+
+      <!-- FAB -->
+      <button class="vocab-fab show" id="vocab-fab" onclick="openVocabModal()" aria-label="新增單字">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
     </div>
 
     <!-- 試題 -->
@@ -1027,9 +1171,68 @@
             <span class="setting-val">N5</span>
           </div>
         </div>
+
+        <p class="section-title" style="margin-top:16px">進階功能</p>
+        <div class="card" style="padding:4px 16px">
+          <div class="setting-row" style="flex-direction:column;align-items:flex-start;gap:8px;padding:14px 0">
+            <div>
+              <div class="setting-label">Google Vision API Key</div>
+              <div class="setting-sub">拍照辨識日文功能需要 · <a href="https://cloud.google.com/vision" target="_blank" style="color:var(--wa)">如何取得</a></div>
+            </div>
+            <input type="text" id="google-vision-key" placeholder="貼上你的 API Key…"
+                   style="font-size:13px" oninput="saveGoogleVisionKey(this.value)">
+          </div>
+        </div>
       </div>
+
+      <!-- 版本號 -->
+      <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
+        v0.1.0
+      </div>
+
     </div>
 
+  </div>
+
+  <!-- 新增單字 modal -->
+  <div class="vocab-modal-bd" id="vocab-modal-bd" onclick="closeVocabModal()"></div>
+  <div class="vocab-modal-sheet" id="vocab-modal-sheet">
+    <div class="vocab-modal-handle"></div>
+    <div class="vocab-modal-hdr">
+      <span class="vocab-modal-title">新增單字</span>
+      <button class="vocab-modal-x" onclick="closeVocabModal()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="vocab-modal-tabs">
+      <button class="vocab-modal-tab active" id="vmt-text"  onclick="switchVocabModalTab('text')">輸入文字</button>
+      <button class="vocab-modal-tab"         id="vmt-photo" onclick="switchVocabModalTab('photo')">拍照</button>
+    </div>
+    <div class="vocab-modal-body">
+      <!-- 輸入文字 -->
+      <div class="vocab-mpane active" id="vmp-text">
+        <input type="text" id="dict-search-input" placeholder="輸入中文或日文搜尋…"
+               oninput="onDictSearch(this.value)"
+               autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+        <div style="height:10px"></div>
+        <div id="dict-results"></div>
+      </div>
+      <!-- 拍照 -->
+      <div class="vocab-mpane" id="vmp-photo">
+        <div class="camera-area">
+          <img id="camera-preview">
+          <button class="submit-btn" style="width:auto;padding:11px 22px" onclick="document.getElementById('camera-file-input').click()">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            拍照 / 選圖
+          </button>
+          <p style="font-size:11px;color:var(--wt3);text-align:center">使用 Google Vision 辨識圖片中的日文</p>
+        </div>
+        <input type="file" id="camera-file-input" accept="image/*" capture="environment"
+               style="display:none" onchange="handleCameraCapture(this)">
+        <div id="ocr-loading" style="display:none;text-align:center;padding:16px;color:var(--wt3);font-size:13px">辨識中…</div>
+        <div id="ocr-results"></div>
+      </div>
+    </div>
   </div>
 
   <!-- Bottom Nav -->
@@ -1118,6 +1321,9 @@ function switchPage(id) {
     renderArticle(ARTICLE_TOKENS);
     articleRendered = true;
   }
+  if (id === 'vocab') renderVocabPage();
+  // Show/hide FAB
+  document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
 }
 
 // Mode tabs
@@ -1408,8 +1614,34 @@ function isParticle(tok) {
   return tok.pos === '助詞' || tok.pos === '助動詞';
 }
 
-// 已加入單字卡的詞（basic_form 的集合），決定是否上色高亮
-const addedWords = new Set();
+// ===== 單字本資料模型 =====
+// vocabBook: { word: { kana, romaji, meaning, example, familiarity(0-20), source, addedDate } }
+// familiarity 0-6=生, 7-13=普, 14-20=熟
+
+let vocabBook = {};
+const addedWords = new Set(); // 同步自 vocabBook，用於文章高亮
+
+function loadVocabBook() {
+  try {
+    const s = localStorage.getItem('vocabBook_v1');
+    if (s) {
+      vocabBook = JSON.parse(s);
+      Object.keys(vocabBook).forEach(w => addedWords.add(w));
+    }
+  } catch(e) { vocabBook = {}; }
+}
+
+function saveVocabBook() {
+  try { localStorage.setItem('vocabBook_v1', JSON.stringify(vocabBook)); } catch(e) {}
+}
+
+function vocabLevel(fam) {
+  if (fam <= 6)  return 'raw';
+  if (fam <= 13) return 'mid';
+  return 'ripe';
+}
+function levelClass(lv) { return { raw:'b-raw', mid:'b-mid', ripe:'b-ripe' }[lv]; }
+function levelLabel(lv) { return { raw:'生', mid:'普', ripe:'熟' }[lv]; }
 
 function renderArticle(tokens) {
   const container = document.getElementById('article-text');
@@ -1592,29 +1824,43 @@ function closeWordPanel() {
   document.querySelectorAll('.tok-active').forEach(t => t.classList.remove('tok-active'));
 }
 
-function addToVocabCards(basic) {
-  addedWords.add(basic);
-  showToast(basic + ' 已加入單字卡');
+function addToVocabCards(basic, extra) {
+  if (!vocabBook[basic]) {
+    const entry = VOCAB_DICT[basic] || {};
+    vocabBook[basic] = {
+      kana:       extra?.kana    || entry.reading || '',
+      romaji:     extra?.romaji  || entry.romaji  || '',
+      meaning:    extra?.meaning || entry.meaning || '',
+      example:    extra?.example || entry.example || '',
+      familiarity: 0,
+      source:     extra?.source  || 'article',
+      addedDate:  new Date().toISOString().slice(0,10)
+    };
+    addedWords.add(basic);
+    saveVocabBook();
+  }
+  showToast(basic + ' 已加入單字本');
   closeWordPanel();
-
-  // 重新套用高亮：直接更新已存在的 DOM，不重新渲染整篇文章（避免打斷使用者位置）
   const container = document.getElementById('article-text');
-  container.querySelectorAll('.tok-word[data-basic="' + basic + '"]').forEach(el => {
-    el.classList.add('tok-added');
-  });
+  if (container) {
+    container.querySelectorAll('.tok-word[data-basic="' + basic + '"]').forEach(el => el.classList.add('tok-added'));
+  }
   applyAddedWordNoteColors();
+  if (document.getElementById('page-vocab').classList.contains('active')) renderVocabPage();
 }
 
 function removeFromVocabCards(basic) {
+  delete vocabBook[basic];
   addedWords.delete(basic);
-  showToast(basic + ' 已從單字卡移除');
+  saveVocabBook();
+  showToast(basic + ' 已從單字本移除');
   closeWordPanel();
-
   const container = document.getElementById('article-text');
-  container.querySelectorAll('.tok-word[data-basic="' + basic + '"]').forEach(el => {
-    el.classList.remove('tok-added');
-  });
+  if (container) {
+    container.querySelectorAll('.tok-word[data-basic="' + basic + '"]').forEach(el => el.classList.remove('tok-added'));
+  }
   applyAddedWordNoteColors();
+  if (document.getElementById('page-vocab').classList.contains('active')) renderVocabPage();
 }
 
 // ===== 朗讀控制 =====
@@ -2216,10 +2462,492 @@ function closeDay() {
   document.querySelectorAll('.cal-d-wrap').forEach(el => el.classList.remove('selected'));
 }
 
+// =====================================================
+// ===== 單字本頁面 =====
+// =====================================================
+let vocabFilter = 'all';
+let vocabFilteredList = [];
+let vocabDisplayIndex = 0;
+let vdcTouchY0 = 0;
+let swipedRowEl = null;
+
+function renderVocabPage() {
+  const words = Object.keys(vocabBook);
+  const raw   = words.filter(w => vocabLevel(vocabBook[w].familiarity) === 'raw');
+  const mid   = words.filter(w => vocabLevel(vocabBook[w].familiarity) === 'mid');
+  const ripe  = words.filter(w => vocabLevel(vocabBook[w].familiarity) === 'ripe');
+
+  document.getElementById('vocab-count-text').textContent = '共 ' + words.length + ' 張';
+  document.getElementById('vf-raw-n').textContent  = raw.length;
+  document.getElementById('vf-mid-n').textContent  = mid.length;
+  document.getElementById('vf-ripe-n').textContent = ripe.length;
+
+  vocabFilteredList = vocabFilter === 'raw'  ? raw
+                    : vocabFilter === 'mid'  ? mid
+                    : vocabFilter === 'ripe' ? ripe
+                    : words;
+
+  if (vocabDisplayIndex >= vocabFilteredList.length) vocabDisplayIndex = 0;
+
+  renderVocabDisplayCard();
+  renderVocabList();
+}
+
+function renderVocabDisplayCard() {
+  const emptyEl   = document.getElementById('vocab-display-empty');
+  const contentEl = document.getElementById('vocab-display-content');
+  const dotsEl    = document.getElementById('vocab-nav-dots');
+
+  if (vocabFilteredList.length === 0) {
+    emptyEl.style.display   = 'block';
+    contentEl.style.display = 'none';
+    dotsEl.innerHTML = '';
+    document.getElementById('swipe-hint').style.display = 'none';
+    return;
+  }
+
+  emptyEl.style.display   = 'none';
+  contentEl.style.display = 'block';
+
+  const word  = vocabFilteredList[vocabDisplayIndex];
+  const entry = vocabBook[word];
+  const lv    = vocabLevel(entry.familiarity);
+
+  const safeKana = (entry.kana || word).replace(/'/g, "\\'");
+  contentEl.innerHTML =
+    '<div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:6px">' +
+      '<div class="vocab-kanji">' + word + '</div>' +
+      '<button class="speak-btn" onclick="speak(\'' + safeKana + '\')" aria-label="發音">' +
+        '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
+      '</button>' +
+    '</div>' +
+    (entry.kana   ? '<div class="vocab-kana">'   + entry.kana   + '</div>' : '') +
+    (entry.romaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
+    '<div class="vocab-divider"></div>' +
+    '<div class="vocab-meaning">' + (entry.meaning || '—') + '</div>' +
+    (entry.example ? '<div class="vocab-example">' + entry.example + '</div>' : '') +
+    '<div style="margin-top:12px"><span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span></div>';
+
+  // Nav dots
+  const total = vocabFilteredList.length;
+  if (total > 1) {
+    const show = Math.min(total, 5);
+    let dots = '';
+    for (let i = 0; i < show; i++) {
+      const active = total <= 5
+        ? i === vocabDisplayIndex
+        : Math.round(vocabDisplayIndex / (total - 1) * (show - 1)) === i;
+      dots += '<div class="vocab-nav-dot' + (active ? ' active' : '') + '"></div>';
+    }
+    dotsEl.innerHTML = dots;
+  } else {
+    dotsEl.innerHTML = '';
+  }
+
+  // First-time swipe hint
+  if (!localStorage.getItem('swipeHintSeen')) {
+    document.getElementById('swipe-hint').style.display = 'flex';
+  }
+
+  // Highlight selected row
+  document.querySelectorAll('.vocab-list-row').forEach((row, i) => {
+    row.classList.toggle('selected', i === vocabDisplayIndex);
+  });
+}
+
+function dismissSwipeHint() {
+  document.getElementById('swipe-hint').style.display = 'none';
+  localStorage.setItem('swipeHintSeen', '1');
+}
+
+// Touch handlers for display card swipe up/down
+function vdcTouchStart(e) { vdcTouchY0 = e.touches[0].clientY; }
+function vdcTouchMove(e)  { e.preventDefault(); } // block page scroll while on card
+function vdcTouchEnd(e) {
+  const dy = e.changedTouches[0].clientY - vdcTouchY0;
+  if (Math.abs(dy) < 28) return;
+  if (dy < 0 && vocabDisplayIndex < vocabFilteredList.length - 1) {
+    vocabDisplayIndex++;
+    renderVocabDisplayCard();
+    scrollVocabListToIndex(vocabDisplayIndex);
+  } else if (dy > 0 && vocabDisplayIndex > 0) {
+    vocabDisplayIndex--;
+    renderVocabDisplayCard();
+    scrollVocabListToIndex(vocabDisplayIndex);
+  }
+}
+
+function scrollVocabListToIndex(idx) {
+  const rows = document.querySelectorAll('.vocab-list-row');
+  if (rows[idx]) rows[idx].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function renderVocabList() {
+  const listEl = document.getElementById('vocab-list-area');
+  listEl.innerHTML = '';
+  swipedRowEl = null;
+
+  if (vocabFilteredList.length === 0) {
+    listEl.innerHTML = '<p style="text-align:center;color:var(--wt3);font-size:13px;padding:24px 0">此分類尚無單字</p>';
+    return;
+  }
+
+  vocabFilteredList.forEach((word, i) => {
+    const entry = vocabBook[word];
+    const lv    = vocabLevel(entry.familiarity);
+
+    const row = document.createElement('div');
+    row.className = 'vocab-list-row' + (i === vocabDisplayIndex ? ' selected' : '');
+
+    const content = document.createElement('div');
+    content.className = 'vocab-row-content';
+    content.innerHTML =
+      '<div class="vocab-row-text">' +
+        '<div class="vocab-row-jp">' + word +
+          (entry.kana ? ' <span style="font-size:11px;color:var(--wt3);font-weight:400">' + entry.kana + '</span>' : '') +
+        '</div>' +
+        '<div class="vocab-row-cn">' + (entry.meaning || '') + '</div>' +
+      '</div>' +
+      '<span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span>';
+
+    const delBtn = document.createElement('div');
+    delBtn.className = 'vocab-row-del';
+    delBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/></svg>';
+    delBtn.addEventListener('click', (e) => { e.stopPropagation(); deleteVocabWord(word); });
+
+    row.appendChild(content);
+    row.appendChild(delBtn);
+
+    // Tap → select
+    content.addEventListener('click', () => {
+      closeSwipedRow();
+      vocabDisplayIndex = i;
+      renderVocabDisplayCard();
+      document.getElementById('vocab-display-card').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+
+    // Swipe left → reveal delete
+    let sx = 0;
+    content.addEventListener('touchstart', (e) => {
+      sx = e.touches[0].clientX;
+    }, { passive: true });
+    content.addEventListener('touchend', (e) => {
+      const dx = e.changedTouches[0].clientX - sx;
+      if (dx < -40) {
+        closeSwipedRow();
+        content.classList.add('swiped');
+        swipedRowEl = content;
+      } else if (dx > 20 && content.classList.contains('swiped')) {
+        content.classList.remove('swiped');
+        swipedRowEl = null;
+      }
+    }, { passive: true });
+
+    listEl.appendChild(row);
+  });
+}
+
+function closeSwipedRow() {
+  if (swipedRowEl) { swipedRowEl.classList.remove('swiped'); swipedRowEl = null; }
+}
+
+function deleteVocabWord(word) {
+  if (!vocabBook[word]) return;
+  delete vocabBook[word];
+  addedWords.delete(word);
+  saveVocabBook();
+  showToast(word + ' 已刪除');
+  if (vocabDisplayIndex > 0 && vocabDisplayIndex >= vocabFilteredList.length - 1) {
+    vocabDisplayIndex = vocabFilteredList.length - 2;
+  }
+  renderVocabPage();
+  const art = document.getElementById('article-text');
+  if (art) {
+    art.querySelectorAll('.tok-word[data-basic="' + word + '"]').forEach(el => el.classList.remove('tok-added'));
+    applyAddedWordNoteColors();
+  }
+}
+
+function setVocabFilter(f) {
+  vocabFilter = f;
+  vocabDisplayIndex = 0;
+  const map = { all:'active-all', raw:'active-raw', mid:'active-mid', ripe:'active-ripe' };
+  ['all','raw','mid','ripe'].forEach(k => {
+    const btn = document.getElementById('vf-' + k);
+    btn.className = 'vocab-filter-btn' + (k === f ? ' ' + map[k] : '');
+  });
+  renderVocabPage();
+}
+
+// ===== 新增單字 Modal =====
+let jmdict = null;
+
+// Inline fallback dict (N5 common words)
+const INLINE_DICT = [
+  {jp:'行く',kana:'いく',romaji:'iku',cn:'去'},
+  {jp:'来る',kana:'くる',romaji:'kuru',cn:'來'},
+  {jp:'食べる',kana:'たべる',romaji:'taberu',cn:'吃'},
+  {jp:'飲む',kana:'のむ',romaji:'nomu',cn:'喝'},
+  {jp:'見る',kana:'みる',romaji:'miru',cn:'看'},
+  {jp:'聞く',kana:'きく',romaji:'kiku',cn:'聽・問'},
+  {jp:'話す',kana:'はなす',romaji:'hanasu',cn:'說話'},
+  {jp:'書く',kana:'かく',romaji:'kaku',cn:'寫'},
+  {jp:'読む',kana:'よむ',romaji:'yomu',cn:'讀'},
+  {jp:'買う',kana:'かう',romaji:'kau',cn:'買'},
+  {jp:'持つ',kana:'もつ',romaji:'motsu',cn:'拿・持有'},
+  {jp:'待つ',kana:'まつ',romaji:'matsu',cn:'等待'},
+  {jp:'分かる',kana:'わかる',romaji:'wakaru',cn:'明白・懂'},
+  {jp:'知る',kana:'しる',romaji:'shiru',cn:'知道'},
+  {jp:'思う',kana:'おもう',romaji:'omou',cn:'覺得・認為'},
+  {jp:'言う',kana:'いう',romaji:'iu',cn:'說'},
+  {jp:'する',kana:'する',romaji:'suru',cn:'做'},
+  {jp:'ある',kana:'ある',romaji:'aru',cn:'有（物）'},
+  {jp:'いる',kana:'いる',romaji:'iru',cn:'在・有（人）'},
+  {jp:'好き',kana:'すき',romaji:'suki',cn:'喜歡'},
+  {jp:'嫌い',kana:'きらい',romaji:'kirai',cn:'討厭'},
+  {jp:'綺麗',kana:'きれい',romaji:'kirei',cn:'漂亮・乾淨'},
+  {jp:'大きい',kana:'おおきい',romaji:'oukii',cn:'大的'},
+  {jp:'小さい',kana:'ちいさい',romaji:'chiisai',cn:'小的'},
+  {jp:'新しい',kana:'あたらしい',romaji:'atarashii',cn:'新的'},
+  {jp:'古い',kana:'ふるい',romaji:'furui',cn:'舊的'},
+  {jp:'高い',kana:'たかい',romaji:'takai',cn:'高的・貴的'},
+  {jp:'安い',kana:'やすい',romaji:'yasui',cn:'便宜的'},
+  {jp:'早い',kana:'はやい',romaji:'hayai',cn:'快的・早的'},
+  {jp:'遅い',kana:'おそい',romaji:'osoi',cn:'慢的・晚的'},
+  {jp:'楽しい',kana:'たのしい',romaji:'tanoshii',cn:'快樂的'},
+  {jp:'難しい',kana:'むずかしい',romaji:'muzukashii',cn:'困難的'},
+  {jp:'暑い',kana:'あつい',romaji:'atsui',cn:'熱的（天氣）'},
+  {jp:'寒い',kana:'さむい',romaji:'samui',cn:'冷的（天氣）'},
+  {jp:'冷たい',kana:'つめたい',romaji:'tsumetai',cn:'冰涼的'},
+  {jp:'学校',kana:'がっこう',romaji:'gakkou',cn:'學校'},
+  {jp:'病院',kana:'びょういん',romaji:'byouin',cn:'醫院'},
+  {jp:'駅',kana:'えき',romaji:'eki',cn:'車站'},
+  {jp:'公園',kana:'こうえん',romaji:'kouen',cn:'公園'},
+  {jp:'店',kana:'みせ',romaji:'mise',cn:'店・商店'},
+  {jp:'家',kana:'いえ',romaji:'ie',cn:'家'},
+  {jp:'部屋',kana:'へや',romaji:'heya',cn:'房間'},
+  {jp:'会社',kana:'かいしゃ',romaji:'kaisha',cn:'公司'},
+  {jp:'図書館',kana:'としょかん',romaji:'toshokan',cn:'圖書館'},
+  {jp:'電車',kana:'でんしゃ',romaji:'densha',cn:'電車'},
+  {jp:'バス',kana:'バス',romaji:'basu',cn:'公車'},
+  {jp:'車',kana:'くるま',romaji:'kuruma',cn:'車'},
+  {jp:'自転車',kana:'じてんしゃ',romaji:'jitensha',cn:'腳踏車'},
+  {jp:'飛行機',kana:'ひこうき',romaji:'hikouki',cn:'飛機'},
+  {jp:'父',kana:'ちち',romaji:'chichi',cn:'父親'},
+  {jp:'母',kana:'はは',romaji:'haha',cn:'母親'},
+  {jp:'兄',kana:'あに',romaji:'ani',cn:'哥哥'},
+  {jp:'姉',kana:'あね',romaji:'ane',cn:'姐姐'},
+  {jp:'弟',kana:'おとうと',romaji:'otouto',cn:'弟弟'},
+  {jp:'妹',kana:'いもうと',romaji:'imouto',cn:'妹妹'},
+  {jp:'友達',kana:'ともだち',romaji:'tomodachi',cn:'朋友'},
+  {jp:'先生',kana:'せんせい',romaji:'sensei',cn:'老師'},
+  {jp:'学生',kana:'がくせい',romaji:'gakusei',cn:'學生'},
+  {jp:'天気',kana:'てんき',romaji:'tenki',cn:'天氣'},
+  {jp:'雨',kana:'あめ',romaji:'ame',cn:'雨'},
+  {jp:'雪',kana:'ゆき',romaji:'yuki',cn:'雪'},
+  {jp:'風',kana:'かぜ',romaji:'kaze',cn:'風'},
+  {jp:'花',kana:'はな',romaji:'hana',cn:'花'},
+  {jp:'山',kana:'やま',romaji:'yama',cn:'山'},
+  {jp:'川',kana:'かわ',romaji:'kawa',cn:'河川'},
+  {jp:'海',kana:'うみ',romaji:'umi',cn:'海'},
+  {jp:'食べ物',kana:'たべもの',romaji:'tabemono',cn:'食物'},
+  {jp:'飲み物',kana:'のみもの',romaji:'nomimono',cn:'飲料'},
+  {jp:'ご飯',kana:'ごはん',romaji:'gohan',cn:'米飯'},
+  {jp:'水',kana:'みず',romaji:'mizu',cn:'水'},
+  {jp:'お茶',kana:'おちゃ',romaji:'ocha',cn:'茶'},
+  {jp:'コーヒー',kana:'コーヒー',romaji:'kouhii',cn:'咖啡'},
+  {jp:'肉',kana:'にく',romaji:'niku',cn:'肉'},
+  {jp:'魚',kana:'さかな',romaji:'sakana',cn:'魚'},
+  {jp:'野菜',kana:'やさい',romaji:'yasai',cn:'蔬菜'},
+  {jp:'果物',kana:'くだもの',romaji:'kudamono',cn:'水果'},
+  {jp:'時間',kana:'じかん',romaji:'jikan',cn:'時間'},
+  {jp:'今日',kana:'きょう',romaji:'kyou',cn:'今天'},
+  {jp:'明日',kana:'あした',romaji:'ashita',cn:'明天'},
+  {jp:'昨日',kana:'きのう',romaji:'kinou',cn:'昨天'},
+  {jp:'朝',kana:'あさ',romaji:'asa',cn:'早上'},
+  {jp:'昼',kana:'ひる',romaji:'hiru',cn:'中午'},
+  {jp:'夜',kana:'よる',romaji:'yoru',cn:'晚上'},
+  {jp:'名前',kana:'なまえ',romaji:'namae',cn:'名字'},
+  {jp:'言葉',kana:'ことば',romaji:'kotoba',cn:'語言・詞'},
+  {jp:'日本語',kana:'にほんご',romaji:'nihongo',cn:'日語'},
+  {jp:'仕事',kana:'しごと',romaji:'shigoto',cn:'工作'},
+  {jp:'勉強',kana:'べんきょう',romaji:'benkyou',cn:'學習'},
+  {jp:'運動',kana:'うんどう',romaji:'undou',cn:'運動'},
+  {jp:'音楽',kana:'おんがく',romaji:'ongaku',cn:'音樂'},
+  {jp:'映画',kana:'えいが',romaji:'eiga',cn:'電影'},
+  {jp:'旅行',kana:'りょこう',romaji:'ryokou',cn:'旅行'},
+  {jp:'料理',kana:'りょうり',romaji:'ryouri',cn:'料理'},
+  {jp:'写真',kana:'しゃしん',romaji:'shashin',cn:'照片'},
+  {jp:'電話',kana:'でんわ',romaji:'denwa',cn:'電話'},
+  {jp:'お金',kana:'おかね',romaji:'okane',cn:'錢'},
+  {jp:'色',kana:'いろ',romaji:'iro',cn:'顏色'},
+  {jp:'赤',kana:'あか',romaji:'aka',cn:'紅色'},
+  {jp:'青',kana:'あお',romaji:'ao',cn:'藍色'},
+  {jp:'白',kana:'しろ',romaji:'shiro',cn:'白色'},
+  {jp:'黒',kana:'くろ',romaji:'kuro',cn:'黑色'},
+  {jp:'黄色',kana:'きいろ',romaji:'kiiro',cn:'黃色'},
+];
+
+async function loadJMDict() {
+  if (jmdict) return;
+  try {
+    const r = await fetch('./jmdict_n5n4.json');
+    if (r.ok) { jmdict = await r.json(); return; }
+  } catch(e) {}
+  jmdict = INLINE_DICT; // fallback
+}
+
+function openVocabModal() {
+  document.getElementById('vocab-modal-bd').classList.add('show');
+  document.getElementById('vocab-modal-sheet').classList.add('open');
+  loadJMDict();
+  setTimeout(() => document.getElementById('dict-search-input').focus(), 320);
+}
+
+function closeVocabModal() {
+  document.getElementById('vocab-modal-bd').classList.remove('show');
+  document.getElementById('vocab-modal-sheet').classList.remove('open');
+}
+
+function switchVocabModalTab(tab) {
+  ['text','photo'].forEach(t => {
+    document.getElementById('vmt-' + t).classList.toggle('active', t === tab);
+    document.getElementById('vmp-' + t).classList.toggle('active', t === tab);
+  });
+}
+
+function onDictSearch(q) {
+  q = q.trim();
+  const el = document.getElementById('dict-results');
+  if (!q) { el.innerHTML = ''; return; }
+
+  const dict = jmdict || INLINE_DICT;
+  const lq = q.toLowerCase();
+  const results = dict.filter(e =>
+    e.jp.includes(q) || e.kana.includes(q) || e.cn.includes(q) ||
+    (e.romaji && e.romaji.toLowerCase().includes(lq))
+  ).slice(0, 15);
+
+  if (!results.length) {
+    el.innerHTML = '<p style="text-align:center;color:var(--wt3);font-size:13px;padding:20px">找不到結果</p>';
+    return;
+  }
+
+  el.innerHTML = results.map(e => {
+    const added = !!vocabBook[e.jp];
+    return '<div class="dict-result" onclick=\'addDictEntry(' + JSON.stringify(e) + ')\'>' +
+      '<div class="dict-result-left">' +
+        '<div class="dict-result-jp">' + e.jp +
+          ' <span style="font-size:12px;color:var(--wt3);font-weight:400">' + e.kana + '</span>' +
+        '</div>' +
+        '<div class="dict-result-cn">' + e.cn + '</div>' +
+      '</div>' +
+      '<div class="dict-add-icon' + (added ? ' added' : '') + '">' +
+        (added
+          ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>'
+          : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>') +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function addDictEntry(entry) {
+  addToVocabCards(entry.jp, { kana: entry.kana, romaji: entry.romaji, meaning: entry.cn, source: 'manual' });
+  // refresh results list to update checkmark
+  onDictSearch(document.getElementById('dict-search-input').value);
+}
+
+// ===== Camera / OCR =====
+function handleCameraCapture(input) {
+  const file = input.files[0];
+  if (!file) return;
+
+  const preview = document.getElementById('camera-preview');
+  preview.src = URL.createObjectURL(file);
+  preview.style.display = 'block';
+
+  const apiKey = localStorage.getItem('googleVisionKey') || '';
+  if (!apiKey) {
+    document.getElementById('ocr-results').innerHTML =
+      '<div style="padding:13px;background:var(--wr-bg);border-radius:13px;color:var(--wr);font-size:13px;text-align:center">' +
+      '請先在「設定」→「進階功能」填入 Google Vision API Key</div>';
+    return;
+  }
+
+  document.getElementById('ocr-loading').style.display = 'block';
+  document.getElementById('ocr-results').innerHTML = '';
+
+  const reader = new FileReader();
+  reader.onload = async (ev) => {
+    const b64 = ev.target.result.split(',')[1];
+    try {
+      const res = await fetch(
+        'https://vision.googleapis.com/v1/images:annotate?key=' + apiKey,
+        { method: 'POST', headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({ requests: [{ image: { content: b64 }, features: [{ type: 'TEXT_DETECTION' }] }] }) }
+      );
+      const data = await res.json();
+      const text = data.responses?.[0]?.fullTextAnnotation?.text || '';
+      showOcrResults(text);
+    } catch(err) {
+      document.getElementById('ocr-results').innerHTML =
+        '<p style="color:var(--wr);font-size:13px">辨識失敗：' + err.message + '</p>';
+    }
+    document.getElementById('ocr-loading').style.display = 'none';
+  };
+  reader.readAsDataURL(file);
+}
+
+function showOcrResults(text) {
+  if (!text.trim()) {
+    document.getElementById('ocr-results').innerHTML =
+      '<p style="color:var(--wt3);font-size:13px;text-align:center">未偵測到文字</p>';
+    return;
+  }
+  const words = [...new Set((text.match(/[぀-龯゠-ヿ]{2,}/g) || []))];
+  if (!words.length) {
+    document.getElementById('ocr-results').innerHTML =
+      '<p style="color:var(--wt3);font-size:13px;text-align:center">未找到日文詞語</p>';
+    return;
+  }
+  document.getElementById('ocr-results').innerHTML =
+    '<p style="font-size:12px;color:var(--wt3);margin-bottom:10px">識別到的詞語・點擊加入單字本：</p>' +
+    words.map(w =>
+      '<div class="dict-result" onclick="addOcrWord(\'' + w + '\')">' +
+        '<div class="dict-result-left"><div class="dict-result-jp">' + w + '</div></div>' +
+        '<div class="dict-add-icon">' +
+          '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>' +
+        '</div>' +
+      '</div>'
+    ).join('');
+}
+
+function addOcrWord(word) {
+  const dict = jmdict || INLINE_DICT;
+  const found = dict.find(e => e.jp === word || e.kana === word);
+  if (found) {
+    addDictEntry(found);
+  } else {
+    addToVocabCards(word, { source: 'photo', meaning: '' });
+    showToast(word + ' 已加入單字本');
+  }
+}
+
+function saveGoogleVisionKey(val) {
+  localStorage.setItem('googleVisionKey', val.trim());
+}
+
+function initSettings() {
+  const el = document.getElementById('google-vision-key');
+  if (el) el.value = localStorage.getItem('googleVisionKey') || '';
+}
+
 renderHomeRing();
 renderCalendar();
 loadAllSlotsOnStartup();
 
+loadVocabBook();
+initSettings();
 initSort();
 </script>
 </body>
