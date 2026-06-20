@@ -1,0 +1,140 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+  .game{font-family:'Silkscreen',monospace;background:#111114;border:2px solid #2a2a2e;border-radius:8px;padding:10px;max-width:420px;margin:0 auto}
+  .hud{display:grid;grid-template-columns:repeat(3,1fr);gap:3px 6px;background:#1a1a1e;border:1px solid #2a2a2e;border-radius:6px;padding:5px 8px;margin-bottom:8px}
+  .hud-lbl{font-size:9px;color:#555;letter-spacing:1px}
+  .hud-val{font-size:11px;color:#888;letter-spacing:1px}
+  .hud-val.money{color:#6b6b50}
+  .hud-val.danger{color:#7a2a2a}
+  .mc-box{background:#151518;border:1px solid #2a2a2e;border-radius:6px;padding:8px;margin-bottom:8px;display:flex;gap:8px;align-items:flex-start}
+  .mc-avatar{font-size:22px;flex-shrink:0}
+  .mc-name{font-size:9px;color:#444;margin-bottom:3px;letter-spacing:1px}
+  .mc-text{font-size:10px;color:#666;line-height:1.5}
+  .urinals{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;margin-bottom:8px}
+  .us{background:#151518;border:2px solid #2a2a2e;border-radius:6px;padding:5px 3px;display:flex;flex-direction:column;align-items:center;gap:2px}
+  .us-id{font-size:8px;color:#333;letter-spacing:1px}
+  .us-icon{font-size:16px}
+  .us-label{font-size:8px;color:#555}
+  .dirty-row{display:flex;align-items:center;gap:3px;width:100%}
+  .dirty-lbl{font-size:7px;color:#444;white-space:nowrap}
+  .dirty-bar-bg{flex:1;height:3px;background:#222;border-radius:2px}
+  .dirty-bar{height:100%;border-radius:2px;background:#3a3a3a}
+  .queue-area{background:#151518;border:1px solid #2a2a2e;border-radius:6px;padding:8px;margin-bottom:8px}
+  .queue-hdr{font-size:9px;color:#444;margin-bottom:6px;letter-spacing:1px}
+  .queue-list{display:flex;gap:6px}
+  .cc{width:50px;background:#1a1a1e;border:2px solid #2a2a2e;border-radius:6px;padding:4px;display:flex;flex-direction:column;align-items:center;gap:2px}
+  .cc-e{font-size:16px}
+  .cc-tm{font-size:8px;color:#555}
+  .btns{display:flex;gap:6px;margin-bottom:8px}
+  .btn{flex:1;font-family:'Silkscreen',monospace;font-size:10px;background:#151518;border:1px solid #2a2a2e;color:#555;padding:7px;cursor:pointer;border-radius:4px;letter-spacing:1px;text-align:center}
+  .shop-area{background:#151518;border:1px solid #2a2a2e;border-radius:6px;padding:8px;margin-bottom:8px}
+  .shop-hdr{display:flex;justify-content:space-between;margin-bottom:6px}
+  .shop-lbl{font-size:9px;color:#444;letter-spacing:1px}
+  .shop-bal{font-size:11px;color:#6b6b50}
+  .shop-items{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+  .shop-card{background:#1a1a1e;border:1px solid #2a2a2e;border-radius:5px;padding:5px;display:flex;flex-direction:column;align-items:center;gap:2px}
+  .shop-card-ico{font-size:16px}
+  .shop-card-name{font-size:7px;color:#555;letter-spacing:1px}
+  .shop-card-price{font-size:7px;color:#6b6b50}
+  .abyss-badge{display:inline-flex;align-items:center;gap:4px;background:#1a1a1e;border:1px solid #333;border-radius:4px;padding:3px 8px;font-size:9px;color:#444;letter-spacing:2px;margin-bottom:8px}
+</style>
+
+<div class="game">
+  <div style="text-align:center;margin-bottom:8px">
+    <span class="abyss-badge">🌑 深淵模式 — 14000分</span>
+  </div>
+
+  <div class="hud">
+    <div><div class="hud-lbl">分數</div><div class="hud-val">14210</div></div>
+    <div><div class="hud-lbl">收入</div><div class="hud-val money">£3842</div></div>
+    <div><div class="hud-lbl">時間</div><div class="hud-val">72:15</div></div>
+    <div><div class="hud-lbl">氣走</div><div class="hud-val danger">2</div></div>
+    <div><div class="hud-lbl">服務</div><div class="hud-val">1821</div></div>
+    <div><div class="hud-lbl">入廁費</div><div class="hud-val money">£2.60</div></div>
+  </div>
+
+  <div class="mc-box">
+    <div class="mc-avatar">🧙</div>
+    <div>
+      <div class="mc-name">嚼唆馬蓋仙</div>
+      <div class="mc-text">這個地方，已經超出老夫的認知範圍了。</div>
+    </div>
+  </div>
+
+  <div class="urinals">
+    <div class="us">
+      <div class="us-id">#1</div>
+      <div class="us-icon">🧑‍🎤</div>
+      <div class="us-label">中二</div>
+      <div class="dirty-row"><span class="dirty-lbl">髒38%</span></div>
+      <div style="width:100%;height:3px;background:#222;border-radius:2px"><div style="width:38%;height:100%;background:#2a2a2a;border-radius:2px"></div></div>
+    </div>
+    <div class="us" style="border-color:#333">
+      <div class="us-id">#2</div>
+      <div class="us-icon">💂</div>
+      <div class="us-label">阿兵</div>
+      <div class="dirty-row"><span class="dirty-lbl">髒12%</span></div>
+      <div style="width:100%;height:3px;background:#222;border-radius:2px"><div style="width:12%;height:100%;background:#2a2a2a;border-radius:2px"></div></div>
+    </div>
+    <div class="us">
+      <div class="us-id">#3</div>
+      <div class="us-icon" style="opacity:.3">🚽</div>
+      <div class="us-label" style="color:#333">空</div>
+      <div class="dirty-row"><span class="dirty-lbl">髒0%</span></div>
+      <div style="width:100%;height:3px;background:#222;border-radius:2px"></div>
+    </div>
+    <div class="us">
+      <div class="us-id">#4</div>
+      <div class="us-icon">🧔</div>
+      <div class="us-label">爆尿</div>
+      <div class="dirty-row"><span class="dirty-lbl">髒55%</span></div>
+      <div style="width:100%;height:3px;background:#222;border-radius:2px"><div style="width:55%;height:100%;background:#3a2a2a;border-radius:2px"></div></div>
+    </div>
+    <div class="us">
+      <div class="us-id">#5</div>
+      <div class="us-icon" style="opacity:.3">🚽</div>
+      <div class="us-label" style="color:#333">空</div>
+      <div class="dirty-row"><span class="dirty-lbl">髒22%</span></div>
+      <div style="width:100%;height:3px;background:#222;border-radius:2px"><div style="width:22%;height:100%;background:#2a2a2a;border-radius:2px"></div></div>
+    </div>
+    <div class="us">
+      <div class="us-id">#6</div>
+      <div class="us-icon">🧑‍🦱</div>
+      <div class="us-label">頻尿</div>
+      <div class="dirty-row"><span class="dirty-lbl">髒71% ↕</span></div>
+      <div style="width:100%;height:3px;background:#222;border-radius:2px"><div style="width:71%;height:100%;background:#4a2a2a;border-radius:2px"></div></div>
+    </div>
+  </div>
+
+  <div class="queue-area">
+    <div class="queue-hdr">▶ 等待區</div>
+    <div class="queue-list">
+      <div class="cc"><div class="cc-e">🧑‍🎤</div><div class="cc-tm">8s</div></div>
+      <div class="cc"><div class="cc-e">💂</div><div class="cc-tm">9s</div></div>
+      <div class="cc"><div class="cc-e">💂</div><div class="cc-tm">9s</div></div>
+      <div class="cc"><div class="cc-e">🧔</div><div class="cc-tm">12s</div></div>
+      <div class="cc"><div class="cc-e">👴</div><div class="cc-tm">14s</div></div>
+      <div class="cc"><div class="cc-e">💂</div><div class="cc-tm">9s</div></div>
+    </div>
+  </div>
+
+  <div class="btns">
+    <div class="btn">🚨 來人啊！ [£5]</div>
+    <div class="btn">🐌 子彈時間</div>
+  </div>
+
+  <div class="shop-area">
+    <div class="shop-hdr">
+      <span class="shop-lbl">🛒 道具商店</span>
+      <span class="shop-bal">£3842</span>
+    </div>
+    <div class="shop-items">
+      <div class="shop-card"><div class="shop-card-ico">🎯</div><div class="shop-card-name">標靶貼</div><div class="shop-card-price">£5</div></div>
+      <div class="shop-card"><div class="shop-card-ico">🪰</div><div class="shop-card-name">蒼蠅貼</div><div class="shop-card-price">£10</div></div>
+      <div class="shop-card"><div class="shop-card-ico">🌸</div><div class="shop-card-name">芳香劑</div><div class="shop-card-price">£12</div></div>
+      <div class="shop-card"><div class="shop-card-ico">🧹</div><div class="shop-card-name">清掃助理</div><div class="shop-card-price">£100</div></div>
+      <div class="shop-card"><div class="shop-card-ico">🔧</div><div class="shop-card-name">修復工</div><div class="shop-card-price">£35</div></div>
+    </div>
+  </div>
+</div>

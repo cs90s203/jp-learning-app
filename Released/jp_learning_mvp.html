@@ -1,0 +1,2226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>日語學習</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+
+  :root {
+    --wa: #C4783A;
+    --wa-l: #F0D9BE;
+    --wa-ll: #FDF8F3;
+    --wa-bg: #F5EDE0;
+    --wa-bg2: #E8DDD0;
+    --wt: #2A1A08;
+    --wt2: #5A3A1A;
+    --wt3: #9A7A5A;
+    --wg: #3A6B47;
+    --wg-bg: #D4EDDA;
+    --wy: #8B6200;
+    --wy-bg: #FFF0CC;
+    --wr: #9B2617;
+    --wr-bg: #FDDDD9;
+    --nav-h: 68px;
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+  html, body {
+    height: 100%; width: 100%;
+    background: var(--wa-bg);
+    font-family: 'Noto Sans JP', -apple-system, sans-serif;
+    color: var(--wt);
+    overflow: hidden;
+  }
+
+  .app {
+    display: flex; flex-direction: column;
+    height: 100vh; width: 100%;
+    background: var(--wa-ll);
+    position: relative; overflow: hidden;
+  }
+
+  /* Safe area spacer only — no fake status bar */
+  .status-bar {
+    height: env(safe-area-inset-top, 0px);
+    background: var(--wa-ll);
+    flex-shrink: 0;
+  }
+
+  /* Pages */
+  .pages { flex: 1; overflow: hidden; position: relative; }
+  .page {
+    display: none; flex-direction: column;
+    position: absolute; inset: 0;
+    overflow-y: auto; overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: calc(var(--nav-h) + var(--safe-bottom) + 12px);
+  }
+  .page.active { display: flex; }
+
+  .top-bar { padding: 14px 20px 8px; background: var(--wa-ll); flex-shrink: 0; }
+  .top-bar h1 { font-size: 24px; font-weight: 500; color: var(--wt); }
+  .top-bar p { font-size: 13px; color: var(--wt3); margin-top: 3px; }
+
+  .sec { padding: 8px 16px; }
+
+  .card {
+    background: #FFFFFF;
+    border: 0.5px solid var(--wa-bg2);
+    border-radius: 18px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-size: 11px; font-weight: 500; color: var(--wt3);
+    letter-spacing: 0.07em; text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  /* Progress */
+  .prog-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .prog-label { font-size: 13px; color: var(--wt2); }
+  .prog-count { font-size: 13px; font-weight: 500; color: var(--wa); }
+  .prog-bar { height: 6px; background: var(--wa-bg); border-radius: 99px; overflow: hidden; }
+  .prog-fill { height: 100%; background: var(--wa); border-radius: 99px; transition: width 0.3s; }
+
+  /* Calendar */
+  .today-row { display: flex; align-items: center; gap: 18px; }
+  .today-ring-center {
+    display: flex; flex-direction: column; align-items: center;
+    position: relative; flex-shrink: 0; padding: 20px 10px 10px;
+  }
+  .today-ring-count {
+    position: absolute; top: 38%; left: 50%; transform: translate(-50%,-50%);
+    display: flex; flex-direction: column; align-items: center; pointer-events: none;
+  }
+  .count-num { font-size: 26px; font-weight: 500; color: var(--wt); }
+  .count-label { font-size: 12px; color: var(--wt3); text-align: center; margin-top: 12px; }
+  .today-ring-legend {
+    flex: 1; display: flex; flex-direction: column; gap: 9px;
+  }
+  .ring-leg-item {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px;
+  }
+  .ring-leg-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .ring-leg-text { display: flex; align-items: baseline; gap: 6px; flex: 1; }
+  .ring-leg-label { color: var(--wt2); font-weight: 500; }
+  .ring-leg-state { font-size: 11px; color: var(--wt3); margin-left: auto; }
+
+  .cal-grid { display: grid; grid-template-columns: repeat(7,1fr); gap: 6px 2px; margin-top: 6px; }
+  .cal-h { text-align: center; font-size: 10px; font-weight: 500; color: var(--wt3); padding-bottom: 4px; }
+  .cal-d-wrap {
+    aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+    cursor: pointer; position: relative;
+  }
+  .cal-d-wrap:active { opacity: 0.7; }
+  .cal-d-wrap svg { width: 100%; height: 100%; }
+  .cal-d-num {
+    position: absolute; font-size: 10px; font-weight: 500; color: var(--wt2);
+    pointer-events: none;
+  }
+  .cal-d-wrap.today .cal-d-num { color: var(--wa); }
+  .cal-d-wrap.selected { outline: 2px solid var(--wa); outline-offset: 2px; border-radius: 50%; }
+  .cal-d-wrap.empty { cursor: default; }
+  .day-detail { overflow: hidden; max-height: 0; transition: max-height 0.35s ease, opacity 0.25s ease; opacity: 0; }
+  .day-detail.open { max-height: 500px; opacity: 1; }
+  .day-detail-inner { border-top: 0.5px solid var(--wa-bg2); margin-top: 12px; padding-top: 12px; }
+  .detail-date-row { margin-bottom: 10px; }
+  .detail-date { font-size: 13px; font-weight: 500; color: var(--wt); }
+  .detail-article { background: var(--wa-bg); border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+  .detail-article-icon { width: 32px; height: 32px; border-radius: 8px; background: var(--wa-l); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .detail-article-title { font-size: 13px; font-weight: 500; color: var(--wt); }
+  .detail-article-sub { font-size: 11px; color: var(--wt3); margin-top: 2px; }
+  .detail-tasks { display: flex; flex-direction: column; gap: 7px; }
+  .detail-task-row { display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: var(--wt2); }
+  .detail-task-left { display: flex; align-items: center; gap: 7px; }
+  .task-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+  /* Task rows */
+  .task-row {
+    display: flex; align-items: center; gap: 12px;
+    padding: 11px 0; border-bottom: 0.5px solid var(--wa-bg);
+  }
+  .task-row:last-child { border-bottom: none; }
+  .task-icon {
+    width: 38px; height: 38px; border-radius: 11px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 19px; flex-shrink: 0;
+  }
+  .task-info { flex: 1; }
+  .task-title { font-size: 14px; font-weight: 500; color: var(--wt); }
+  .task-sub { font-size: 12px; color: var(--wt3); margin-top: 1px; }
+
+  /* Badges */
+  .badge { font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 99px; white-space: nowrap; }
+  .b-done { background: var(--wg-bg); color: var(--wg); }
+  .b-todo { background: var(--wy-bg); color: var(--wy); }
+  .b-new  { background: var(--wa-l); color: var(--wa); }
+  .b-raw  { background: var(--wr-bg); color: var(--wr); }
+  .b-mid  { background: var(--wy-bg); color: var(--wy); }
+  .b-ripe { background: var(--wg-bg); color: var(--wg); }
+  .b-sent { background: #EEE8FF; color: #4A3A8A; }
+  .b-adv  { background: #E0EEFF; color: #1A4A8A; }
+
+  /* Mode tabs */
+  .mode-tabs {
+    display: flex; background: var(--wa-bg); border-radius: 11px;
+    padding: 3px; margin: 8px 16px 12px;
+  }
+  .mode-tab {
+    flex: 1; text-align: center; font-size: 12px; font-weight: 500;
+    padding: 7px 4px; border-radius: 9px; cursor: pointer;
+    color: var(--wt2); border: none; background: transparent;
+    font-family: inherit;
+  }
+  .mode-tab.active { background: #FFFFFF; color: var(--wa); }
+
+  /* Article */
+  .article-meta { display: flex; gap: 8px; align-items: center; margin: 4px 0 8px; }
+  .level-tag { font-size: 11px; font-weight: 500; padding: 2px 9px; border-radius: 99px; background: var(--wa-l); color: var(--wa); }
+  .article-date { font-size: 11px; color: var(--wt3); }
+  .cn-toggle-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .cn-toggle-label { font-size: 13px; color: var(--wt2); }
+  .toggle {
+    width: 46px; height: 28px; background: var(--wa);
+    border-radius: 99px; position: relative; cursor: pointer; flex-shrink: 0;
+    transition: background 0.2s;
+  }
+  .toggle::after {
+    content: ''; position: absolute; width: 22px; height: 22px;
+    background: #FFF; border-radius: 50%; top: 3px; right: 3px;
+    transition: right 0.2s, left 0.2s;
+  }
+  .toggle.off { background: var(--wa-bg2); }
+  .toggle.off::after { right: auto; left: 3px; }
+
+  /* Audio control bars (read-aloud / follow-read) */
+  .av-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #FFFFFF; border: 0.5px solid var(--wa-bg2);
+    border-radius: 13px; padding: 10px 14px; margin-bottom: 8px;
+  }
+  .av-bar-label {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 13px; font-weight: 500; color: var(--wt2);
+  }
+  .av-bar-controls { display: flex; align-items: center; gap: 8px; }
+  .av-btn {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--wa-l); border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--wa); flex-shrink: 0;
+  }
+  .av-btn:disabled { opacity: 0.4; cursor: default; }
+  .av-btn.playing { background: var(--wa); color: #FFFFFF; }
+  .av-btn.rec-btn { background: #EEE8FF; color: #7F77DD; }
+  .av-btn.rec-btn.recording { background: var(--wr); color: #FFFFFF; }
+  .speed-stepper {
+    display: flex; align-items: center; gap: 4px;
+    background: var(--wa-bg); border-radius: 99px; padding: 3px;
+  }
+  .speed-step-btn {
+    width: 20px; height: 20px; border-radius: 50%;
+    border: none; background: #FFFFFF; color: var(--wt2);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; flex-shrink: 0;
+  }
+  .speed-step-btn:active { background: var(--wa-l); color: var(--wa); }
+  .speed-step-btn:disabled { opacity: 0.35; cursor: default; }
+  .speed-step-btn:disabled:active { background: #FFFFFF; color: var(--wt2); }
+  .av-speed {
+    font-size: 11px; font-weight: 500; color: var(--wt3);
+    padding: 0 4px; min-width: 32px; text-align: center;
+    user-select: none;
+  }
+  .rec-status {
+    font-size: 11px; color: var(--wt3); white-space: nowrap;
+    min-width: 0; margin-right: 6px;
+  }
+  .rec-status.recording-now { color: var(--wr); font-weight: 500; }
+  .rec-status.ready { color: var(--wg); font-weight: 500; }
+
+  /* 跟讀控制條：槽位按鈕（與其他控制鍵同尺寸圓形） */
+  .rec-slots { display: flex; gap: 6px; }
+  .rec-slot {
+    border: 1.5px solid var(--wa-bg2); background: var(--wa-ll);
+    color: var(--wt3); font-size: 13px; font-weight: 500;
+    position: relative;
+  }
+  .rec-slot.active { border-color: var(--wa); color: var(--wa); background: var(--wa-l); }
+  .rec-slot.has-audio:not(.active) { border-color: #7F77DD; color: #7F77DD; }
+  .rec-slot.has-audio::after {
+    content: ''; position: absolute; top: -2px; right: -2px;
+    width: 6px; height: 6px; border-radius: 50%; background: #7F77DD;
+  }
+  .rec-slot.active.has-audio::after { background: var(--wa); }
+  .sentence-toggle-row {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 12px; padding: 0 2px;
+  }
+
+  .article-text { font-size: 16px; color: var(--wt); line-height: 2.6; }
+  .article-text ruby rt { font-size: 10px; color: var(--wt3); }
+  .cn-note { font-size: 12px; color: var(--wt2); display: block; margin: -4px 0 6px 0; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
+  .cn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
+  .loading-text { font-size: 13px; color: var(--wt3); }
+
+  /* Tokenized words */
+  .tok {
+    cursor: pointer; border-radius: 5px; padding: 1px 2px;
+    -webkit-touch-callout: none; -webkit-user-select: none; user-select: none;
+  }
+  .tok.tok-word { color: var(--wt); }
+  .tok.tok-word.tok-added { background: var(--wa-l); color: #8B4A1A; }
+  .tok.tok-word.tok-added ruby rt { color: #A06030; }
+  .tok.tok-particle { color: var(--wt2); }
+  .tok.tok-active { background: var(--wa); color: #FFFFFF; }
+  .tok.tok-active ruby rt { color: #FFE8D0; }
+  .sentence-playing { background: var(--wa-bg); border-radius: 8px; }
+  .cn-seg { transition: color 0.2s; }
+  .cn-note-highlight { color: var(--wa); font-weight: 500; }
+
+  /* Bottom sliding word panel */
+  .word-panel-backdrop {
+    position: fixed; inset: 0; background: rgba(42,26,8,0.25);
+    opacity: 0; pointer-events: none; transition: opacity 0.25s;
+    z-index: 150;
+  }
+  .word-panel-backdrop.show { opacity: 1; pointer-events: auto; }
+  .word-panel {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    background: #FFFFFF; border-radius: 22px 22px 0 0;
+    transform: translateY(100%); transition: transform 0.3s ease;
+    z-index: 160; max-height: 70%; overflow-y: auto;
+    box-shadow: 0 -2px 16px rgba(42,26,8,0.12);
+  }
+  .word-panel.open { transform: translateY(0); }
+  .word-panel-inner { padding: 8px 20px calc(20px + var(--safe-bottom)); }
+  .word-panel-handle {
+    width: 36px; height: 4px; background: var(--wa-bg2);
+    border-radius: 99px; margin: 6px auto 14px;
+  }
+  .wp-word-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 4px; }
+  .wp-kanji { font-size: 30px; font-weight: 500; color: var(--wt); }
+  .wp-kana { font-size: 15px; color: var(--wt2); text-align: center; }
+  .wp-romaji { font-size: 12px; color: var(--wt3); text-align: center; margin-top: 2px; }
+  .wp-divider { height: 0.5px; background: var(--wa-bg); margin: 14px 0; }
+  .wp-meaning { font-size: 18px; color: var(--wt); font-weight: 500; text-align: center; }
+  .wp-example { font-size: 13px; color: var(--wt2); margin-top: 10px; line-height: 1.8; text-align: center; }
+  .wp-pos-tag {
+    display: inline-block; font-size: 11px; font-weight: 500;
+    background: var(--wa-bg); color: var(--wt3); border-radius: 99px;
+    padding: 2px 10px; margin: 0 auto 10px; text-align: center;
+  }
+  .wp-pos-tag-wrap { text-align: center; }
+  .wp-add-btn {
+    width: 100%; background: var(--wa); color: #FFFFFF; border: none;
+    border-radius: 13px; padding: 13px; font-size: 14px; font-weight: 500;
+    cursor: pointer; margin-top: 16px; font-family: inherit;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+  .wp-added-badge {
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    font-size: 12px; color: var(--wg); margin-top: 16px;
+  }
+  .wp-remove-btn {
+    width: 100%; background: var(--wr-bg); color: var(--wr);
+    border: 0.5px solid #F0C4BB;
+    border-radius: 13px; padding: 13px; font-size: 14px; font-weight: 500;
+    cursor: pointer; margin-top: 10px; font-family: inherit;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+  .wp-particle-note {
+    background: #FFF6E0; border: 0.5px solid #E8C870;
+    border-radius: 13px; padding: 13px 15px; margin-top: 14px;
+    font-size: 13px; color: var(--wt2); line-height: 1.7;
+  }
+  .wp-particle-title { font-size: 12px; font-weight: 500; color: var(--wy); margin-bottom: 7px; }
+
+  .word-sel {
+    display: inline-flex; align-items: center; gap: 3px;
+    background: var(--wa-l); border-radius: 6px; padding: 2px 6px;
+    color: var(--wa); cursor: pointer;
+  }
+  .word-sel ruby rt { font-size: 10px; color: #A06030; }
+
+  /* Speak button */
+  .speak-btn {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--wa-l); border: none; cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--wa); font-size: 17px; flex-shrink: 0;
+  }
+
+  /* Vocab card */
+  .vocab-card {
+    background: #FFFFFF; border: 0.5px solid var(--wa-bg2);
+    border-radius: 18px; padding: 22px 16px; text-align: center; margin-bottom: 12px;
+  }
+  .vocab-kanji { font-size: 38px; color: var(--wt); font-weight: 500; }
+  .vocab-kana  { font-size: 16px; color: var(--wt2); margin-top: 4px; }
+  .vocab-romaji { font-size: 12px; color: var(--wt3); margin-top: 2px; }
+  .vocab-divider { height: 0.5px; background: var(--wa-bg); margin: 16px 0; }
+  .vocab-meaning { font-size: 20px; color: var(--wt); font-weight: 500; }
+  .vocab-example { font-size: 13px; color: var(--wt2); margin-top: 10px; line-height: 1.8; }
+  .vocab-example ruby rt { font-size: 9px; }
+  .vocab-badge-row { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+
+  /* Rating buttons */
+  .rating-row { display: flex; gap: 8px; margin-top: 16px; }
+  .rating-btn {
+    flex: 1; border: 0.5px solid var(--wa-bg2); border-radius: 12px;
+    padding: 12px; font-size: 14px; font-weight: 500; cursor: pointer;
+    background: #FFFFFF; font-family: inherit;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+  .r-forget { border-color: #F0C4BB; color: var(--wr); }
+  .r-remember { border-color: #B0D4B8; color: var(--wg); }
+
+  /* Quiz tabs */
+  .quiz-tabs { display: flex; gap: 6px; padding: 0 16px 12px; overflow-x: auto; scrollbar-width: none; }
+  .quiz-tabs::-webkit-scrollbar { display: none; }
+  .qt {
+    font-size: 12px; font-weight: 500; padding: 6px 13px;
+    border-radius: 99px; border: 0.5px solid var(--wa-bg2);
+    color: var(--wt3); background: #FFFFFF; cursor: pointer;
+    white-space: nowrap; flex-shrink: 0; font-family: inherit;
+  }
+  .qt.active { background: var(--wa); color: #FFFFFF; border-color: var(--wa); }
+  .pane { display: none; }
+  .pane.active { display: block; }
+
+  /* Quiz elements */
+  .quiz-q { font-size: 16px; color: var(--wt); line-height: 1.9; margin-bottom: 14px; }
+  .quiz-q ruby rt { font-size: 10px; color: var(--wt3); }
+  .highlight { color: var(--wa); font-weight: 500; }
+  .choice-list { display: flex; flex-direction: column; gap: 8px; }
+  .choice-btn {
+    border: 0.5px solid var(--wa-bg2); border-radius: 13px;
+    padding: 13px 15px; font-size: 14px; color: var(--wt2);
+    cursor: pointer; background: #FFFFFF; text-align: left;
+    font-family: inherit; width: 100%;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .choice-btn.correct { border-color: #A0CCA8; background: var(--wg-bg); color: var(--wg); }
+  .choice-btn.wrong   { border-color: #F0B8B0; background: var(--wr-bg); color: var(--wr); }
+
+  .cant-btn {
+    width: 100%; margin-top: 12px;
+    border: 0.5px solid #F0C4BB; border-radius: 13px;
+    padding: 12px; font-size: 13px; font-weight: 500;
+    color: var(--wr); background: var(--wr-bg); cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    font-family: inherit;
+  }
+  .diff-note { font-size: 11px; color: var(--wt3); text-align: center; margin-top: 6px; }
+
+  /* Explain box */
+  .explain-box {
+    margin-top: 12px; padding: 13px 15px;
+    background: #FFF6E0; border: 0.5px solid #E8C870;
+    border-radius: 13px;
+  }
+  .explain-title { font-size: 12px; font-weight: 500; color: var(--wy); margin-bottom: 7px; }
+  .explain-body { font-size: 13px; color: var(--wt2); line-height: 1.8; }
+  .explain-body .em { color: var(--wa); font-weight: 500; }
+
+  /* Sort */
+  .sort-area {
+    min-height: 54px; border: 1.5px dashed var(--wa-bg2); border-radius: 13px;
+    padding: 8px; display: flex; flex-wrap: wrap; gap: 7px;
+    margin-bottom: 12px; background: var(--wa-ll);
+  }
+  .sort-pool { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .chip {
+    padding: 9px 15px; border-radius: 11px;
+    background: var(--wa-l); color: var(--wa);
+    font-size: 14px; font-weight: 500; cursor: pointer;
+    border: 0.5px solid #D8A870; font-family: inherit;
+    user-select: none; -webkit-user-select: none;
+  }
+  .chip.placed { background: var(--wa); color: #FFFFFF; border-color: var(--wa); }
+  .unlock-note {
+    font-size: 12px; color: #4A3A8A; background: #F0ECFF;
+    border: 0.5px solid #C8C0F0; border-radius: 11px;
+    padding: 9px 13px; text-align: center; margin-bottom: 12px;
+    line-height: 1.6;
+  }
+
+  /* Submit / play buttons */
+  .submit-btn {
+    width: 100%; background: var(--wa); color: #FFFFFF;
+    border: none; border-radius: 13px; padding: 14px;
+    font-size: 15px; font-weight: 500; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 7px;
+    font-family: inherit;
+  }
+  .play-btn {
+    background: var(--wa); color: #FFFFFF; border: none;
+    border-radius: 99px; padding: 11px 26px;
+    font-size: 14px; font-weight: 500; cursor: pointer;
+    display: flex; align-items: center; gap: 6px;
+    font-family: inherit; margin: 0 auto 14px;
+  }
+
+  /* Judge row */
+  .judge-row { display: flex; gap: 8px; margin-top: 14px; }
+  .judge-btn {
+    flex: 1; border: 0.5px solid var(--wa-bg2); border-radius: 12px;
+    padding: 13px; font-size: 14px; font-weight: 500; cursor: pointer;
+    background: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 6px;
+    font-family: inherit;
+  }
+  .j-correct { color: var(--wg); border-color: #A0CCA8; }
+  .j-wrong   { color: var(--wr); border-color: #F0B8B0; }
+
+  /* Settings */
+  .setting-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 0; border-bottom: 0.5px solid var(--wa-bg);
+  }
+  .setting-row:last-child { border-bottom: none; }
+  .setting-label { font-size: 14px; color: var(--wt); }
+  .setting-sub   { font-size: 12px; color: var(--wt3); margin-top: 2px; }
+  .setting-val   { font-size: 13px; color: var(--wa); font-weight: 500; }
+
+  /* Bottom nav */
+  .bottom-nav {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: calc(var(--nav-h) + var(--safe-bottom));
+    background: #FFFFFF;
+    border-top: 0.5px solid var(--wa-bg2);
+    display: flex; align-items: flex-start; padding-top: 4px;
+    z-index: 100;
+  }
+  .nav-btn {
+    flex: 1; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 3px; cursor: pointer; background: none; border: none;
+    padding-top: 4px;
+  }
+  .nav-btn svg { width: 24px; height: 24px; stroke: var(--wt3); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .nav-btn span { font-size: 10px; color: var(--wt3); font-family: inherit; }
+  .nav-btn.active svg { stroke: var(--wa); }
+  .nav-btn.active span { color: var(--wa); }
+
+  /* Toast */
+  .toast {
+    position: fixed; bottom: calc(var(--nav-h) + var(--safe-bottom) + 16px); left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--wt); color: #FDF8F3;
+    padding: 10px 20px; border-radius: 99px; font-size: 13px;
+    opacity: 0; transition: all 0.3s; pointer-events: none; white-space: nowrap; z-index: 200;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  input[type="text"] {
+    width: 100%; border: 0.5px solid var(--wa-bg2); border-radius: 12px;
+    padding: 12px 14px; font-size: 16px; background: var(--wa-ll);
+    color: var(--wt); font-family: inherit; outline: none;
+    -webkit-appearance: none;
+  }
+  input[type="text"]:focus { border-color: var(--wa); }
+
+  /* ===== Dev Dashboard ===== */
+  #dev-dashboard {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6); z-index: 9999; overflow-y: auto;
+    padding: env(safe-area-inset-top, 16px) 16px 32px;
+  }
+  #dev-dashboard.show { display: block; }
+  .dev-panel {
+    background: #1a1a2e; color: #e0e0e0; border-radius: 16px;
+    padding: 20px; margin-top: 8px; font-family: 'Courier New', monospace;
+    font-size: 13px;
+  }
+  .dev-title {
+    font-size: 16px; font-weight: bold; color: #a8d8a8; margin-bottom: 16px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .dev-close {
+    background: none; border: none; color: #888; font-size: 20px; cursor: pointer;
+    padding: 0 4px;
+  }
+  .dev-section { margin-bottom: 16px; }
+  .dev-label { color: #888; font-size: 11px; margin-bottom: 4px; }
+  .dev-status {
+    padding: 8px 12px; background: #0d0d1a; border-radius: 8px;
+    border-left: 3px solid #4a4; margin-bottom: 8px; word-break: break-all;
+  }
+  .dev-status.error { border-left-color: #a44; }
+  .dev-status.warn { border-left-color: #aa4; }
+  .dev-row { display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
+  .dev-btn {
+    background: #2a2a4a; border: 1px solid #4a4a7a; color: #c8c8f8;
+    padding: 8px 14px; border-radius: 8px; font-size: 12px; cursor: pointer;
+    font-family: inherit;
+  }
+  .dev-btn:active { background: #3a3a6a; }
+  .dev-btn.primary { background: #2a5a2a; border-color: #4a8a4a; color: #a8f8a8; }
+  .dev-btn.danger { background: #5a2a2a; border-color: #8a4a4a; color: #f8a8a8; }
+  .dev-input {
+    background: #0d0d1a; border: 1px solid #3a3a6a; color: #e0e0e0;
+    padding: 8px 12px; border-radius: 8px; font-size: 12px; width: 100%;
+    font-family: inherit; margin-bottom: 8px;
+  }
+  .dev-level-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .dev-level-btn {
+    background: #2a2a4a; border: 1px solid #4a4a7a; color: #c8c8f8;
+    padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer;
+  }
+  .dev-level-btn.active { background: #3a6a3a; border-color: #6a9a6a; color: #a8f8a8; }
+  .dev-calendar-row {
+    display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px;
+  }
+  .dev-date-chip {
+    padding: 4px 8px; border-radius: 6px; font-size: 11px;
+    background: #2a5a2a; color: #a8f8a8; border: 1px solid #4a8a4a;
+  }
+  .dev-date-chip.missing { background: #3a1a1a; color: #f8a8a8; border-color: #5a2a2a; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- Safe area spacer -->
+  <div class="status-bar"></div>
+
+  <!-- Pages -->
+  <div class="pages">
+
+    <!-- 今日 -->
+    <div class="page active" id="page-home">
+      <div class="top-bar">
+        <h1>今日學習</h1>
+        <p id="today-date">2026年6月18日・N5</p>
+      </div>
+      <div class="sec">
+
+        <p class="section-title">學習紀錄</p>
+        <div class="card">
+          <div class="cal-grid" id="cal-grid">
+            <div class="cal-h">日</div><div class="cal-h">一</div><div class="cal-h">二</div>
+            <div class="cal-h">三</div><div class="cal-h">四</div><div class="cal-h">五</div><div class="cal-h">六</div>
+          </div>
+          <!-- Day detail panel -->
+          <div class="day-detail" id="day-detail">
+            <div class="day-detail-inner">
+              <div class="detail-date-row">
+                <span class="detail-date" id="detail-date-label">6月5日（三）</span>
+              </div>
+              <div class="detail-article">
+                <div class="detail-article-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--wa)" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </div>
+                <div>
+                  <div class="detail-article-title" id="detail-article-title">公園の午後</div>
+                  <div class="detail-article-sub" id="detail-article-level">N5・約 180 字</div>
+                </div>
+              </div>
+              <div class="detail-tasks" id="detail-tasks"></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="section-title">今日任務</p>
+        <div class="card">
+          <div class="today-row">
+            <div class="today-ring-center">
+              <svg id="home-ring" width="152" height="152" viewBox="0 0 152 152"></svg>
+              <div class="today-ring-count" id="home-ring-count">
+                <span class="count-num">2/5</span>
+              </div>
+              <p class="count-label">今日完成</p>
+            </div>
+            <div class="today-ring-legend" id="home-ring-legend"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 文章 -->
+    <div class="page" id="page-article">
+      <div class="top-bar">
+        <h1 onclick="_devTitleTap()" style="user-select:none">今日文章</h1>
+        <div class="article-meta">
+          <span class="level-tag">N5</span>
+          <span class="article-date">6月18日</span>
+        </div>
+      </div>
+      <div class="sec" style="padding-top:0">
+
+        <div class="cn-toggle-row">
+          <span class="cn-toggle-label">中文備注</span>
+          <div class="toggle" id="cn-toggle" onclick="toggleCN()"></div>
+        </div>
+
+        <!-- 朗讀控制條 -->
+        <div class="av-bar">
+          <div class="av-bar-label">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--wa)" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            朗讀
+          </div>
+          <div class="av-bar-controls">
+            <button class="av-btn" id="play-btn" onclick="toggleReadAloud()" aria-label="播放">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </button>
+            <button class="av-btn" onclick="stopReadAloud()" aria-label="停止">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="5" y="5" width="14" height="14" rx="1"/></svg>
+            </button>
+            <div class="speed-stepper">
+              <button class="speed-step-btn" id="speed-down-btn" onclick="adjustSpeed(-1)" aria-label="減慢">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <span class="av-speed" id="speed-label">1.0x</span>
+              <button class="speed-step-btn" id="speed-up-btn" onclick="adjustSpeed(1)" aria-label="加快">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 跟讀控制條 -->
+        <div class="av-bar">
+          <div class="av-bar-label">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7F77DD" stroke-width="2" stroke-linecap="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+            跟讀
+          </div>
+          <div class="av-bar-controls">
+            <span class="rec-status" id="rec-status">槽位1尚無錄音</span>
+            <div class="rec-slots" id="rec-slots">
+              <button class="av-btn rec-slot active" data-slot="1" onclick="selectSlot(1)">1</button>
+              <button class="av-btn rec-slot" data-slot="2" onclick="selectSlot(2)">2</button>
+              <button class="av-btn rec-slot" data-slot="3" onclick="selectSlot(3)">3</button>
+            </div>
+            <button class="av-btn" id="play-rec-btn" onclick="togglePlayRecording()" aria-label="播放錄音" disabled>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </button>
+            <button class="av-btn" id="stop-rec-btn" onclick="stopPlayRecording()" aria-label="停止" disabled>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="5" y="5" width="14" height="14" rx="1"/></svg>
+            </button>
+            <button class="av-btn rec-btn" id="rec-btn" onclick="toggleRecord()" aria-label="錄音">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><circle cx="12" cy="12" r="8"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="sentence-toggle-row">
+          <span class="cn-toggle-label">逐句跟讀（新手模式）</span>
+          <div class="toggle" id="sentence-toggle" onclick="this.classList.toggle('off')"></div>
+        </div>
+
+        <div class="card">
+          <div class="article-text" id="article-text">
+            <span class="loading-text" id="loading-text">正在分析文章詞彙...</span>
+          </div>
+        </div>
+        <p style="font-size:12px;color:var(--wt3);text-align:center">長按文字可加入單字卡</p>
+      </div>
+
+      <!-- 底部滑出：單字／助詞詳情面板 -->
+      <div class="word-panel" id="word-panel">
+        <div class="word-panel-inner">
+          <div class="word-panel-handle"></div>
+          <div id="word-panel-content"></div>
+        </div>
+      </div>
+      <div class="word-panel-backdrop" id="word-panel-backdrop" onclick="closeWordPanel()"></div>
+    </div>
+
+    <!-- 單字卡 -->
+    <div class="page" id="page-vocab">
+      <div class="top-bar">
+        <h1>單字卡</h1>
+        <p>共 47 張・今日新增 5 張</p>
+      </div>
+      <div class="sec">
+        <div class="vocab-badge-row">
+          <span class="badge b-raw">生 18 張</span>
+          <span class="badge b-mid">普 21 張</span>
+          <span class="badge b-ripe">熟 8 張</span>
+        </div>
+        <div class="vocab-card">
+          <div style="display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:8px">
+            <div class="vocab-kanji">綺麗</div>
+            <button class="speak-btn" onclick="speak('きれい')" aria-label="播放發音">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </button>
+          </div>
+          <div class="vocab-kana">きれい</div>
+          <div class="vocab-romaji">kirei</div>
+          <div class="vocab-divider"></div>
+          <div class="vocab-meaning">漂亮・乾淨</div>
+          <div class="vocab-example">
+            <ruby>花<rt>はな</rt></ruby>が綺麗でした。<br>
+            <span style="color:var(--wt3)">花很漂亮。</span>
+          </div>
+        </div>
+        <p style="font-size:12px;color:var(--wt3);text-align:center;margin-bottom:16px">單字卡瀏覽模式・複習請前往試題頁</p>
+
+        <p class="section-title">所有單字</p>
+        <div class="card" style="padding:4px 16px">
+          <div class="task-row">
+            <div style="flex:1">
+              <div class="task-title">綺麗 <span style="font-size:12px;color:var(--wt3)">きれい</span></div>
+              <div class="task-sub">漂亮・乾淨</div>
+            </div>
+            <span class="badge b-raw">生</span>
+          </div>
+          <div class="task-row">
+            <div style="flex:1">
+              <div class="task-title">公園 <span style="font-size:12px;color:var(--wt3)">こうえん</span></div>
+              <div class="task-sub">公園</div>
+            </div>
+            <span class="badge b-mid">普</span>
+          </div>
+          <div class="task-row">
+            <div style="flex:1">
+              <div class="task-title">天気 <span style="font-size:12px;color:var(--wt3)">てんき</span></div>
+              <div class="task-sub">天氣</div>
+            </div>
+            <span class="badge b-ripe">熟</span>
+          </div>
+          <div class="task-row">
+            <div style="flex:1">
+              <div class="task-title">行く <span style="font-size:12px;color:var(--wt3)">いく</span></div>
+              <div class="task-sub">去</div>
+            </div>
+            <span class="badge b-mid">普</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 試題 -->
+    <div class="page" id="page-quiz">
+      <div class="top-bar">
+        <h1>今日試題</h1>
+        <p>單字 12・聽力 3・填空 3・句子 3</p>
+      </div>
+      <div class="quiz-tabs">
+        <button class="qt active" onclick="switchQt(this,'pv')">單字</button>
+        <button class="qt" onclick="switchQt(this,'pl')">聽力</button>
+        <button class="qt" onclick="switchQt(this,'pf')">填空</button>
+        <button class="qt" onclick="switchQt(this,'ps')">句子判斷</button>
+        <button class="qt" onclick="switchQt(this,'po')">句子排列</button>
+      </div>
+      <div class="sec">
+
+        <!-- 單字 -->
+        <div class="pane active" id="pv">
+          <div class="prog-row"><span class="prog-label">單字複習</span><span class="prog-label" style="color:var(--wt3)">1 / 12</span></div>
+          <div class="prog-bar" style="margin-bottom:14px"><div class="prog-fill" style="width:8%"></div></div>
+          <div class="vocab-card">
+            <div style="display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:8px">
+              <div class="vocab-kanji">公園</div>
+              <button class="speak-btn" onclick="speak('こうえん')" aria-label="發音">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+              </button>
+            </div>
+            <div class="vocab-kana">こうえん</div>
+            <div class="vocab-romaji">kouen</div>
+            <div class="vocab-divider"></div>
+            <div id="meaning-reveal" onclick="revealMeaning()" style="cursor:pointer">
+              <div style="font-size:22px;color:var(--wt3);letter-spacing:5px">● ● ●</div>
+              <div style="font-size:12px;color:var(--wt3);margin-top:4px">點擊查看中文</div>
+            </div>
+            <div class="rating-row">
+              <button class="rating-btn r-forget" onclick="showToast('已記錄・明天再複習')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                不記得
+              </button>
+              <button class="rating-btn r-remember" onclick="showToast('記憶+2・下次複習在 2 天後')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                記得
+              </button>
+            </div>
+          </div>
+          <button class="cant-btn" onclick="showToast('難度已調降・複習頻率增加')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            這題太難，降低難度
+          </button>
+          <p class="diff-note">系統會調整此單字複習頻率</p>
+        </div>
+
+        <!-- 聽力 -->
+        <div class="pane" id="pl">
+          <div class="prog-row"><span class="prog-label">聽力</span><span class="prog-label" style="color:var(--wt3)">1 / 3</span></div>
+          <div class="prog-bar" style="margin-bottom:14px"><div class="prog-fill" style="width:33%"></div></div>
+          <div class="card">
+            <div style="margin-bottom:12px"><span class="badge b-todo">聽力</span></div>
+            <button class="play-btn" onclick="speak('花の様子はどうでしたか')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              播放音檔
+            </button>
+            <p class="quiz-q">花の様子はどうでしたか？</p>
+            <div class="choice-list">
+              <button class="choice-btn" onclick="selectChoice(this,true)">綺麗でした</button>
+              <button class="choice-btn" onclick="selectChoice(this,false)">大きかったです</button>
+              <button class="choice-btn" onclick="selectChoice(this,false)">少なかったです</button>
+            </div>
+          </div>
+          <button class="cant-btn" onclick="showToast('已記錄・系統會安排更多基礎聽力題')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            這題太難，降低難度
+          </button>
+          <p class="diff-note">系統會安排更多基礎聽力題</p>
+        </div>
+
+        <!-- 填空 -->
+        <div class="pane" id="pf">
+          <div class="prog-row"><span class="prog-label">填空</span><span class="prog-label" style="color:var(--wt3)">1 / 3</span></div>
+          <div class="prog-bar" style="margin-bottom:14px"><div class="prog-fill" style="width:33%"></div></div>
+          <div class="card">
+            <div style="margin-bottom:12px"><span class="badge b-ripe">填空</span></div>
+            <p class="quiz-q"><ruby>花<rt>はな</rt></ruby>が＿＿＿でした。</p>
+            <input type="text" placeholder="輸入日文答案" id="fill-input" />
+            <button class="submit-btn" style="margin-top:10px" onclick="checkFill()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+              確認答案
+            </button>
+          </div>
+          <button class="cant-btn" onclick="showToast('已記錄・系統會改以選擇題替代填空')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            這題太難，降低難度
+          </button>
+          <p class="diff-note">系統會改以選擇題替代填空</p>
+        </div>
+
+        <!-- 句子判斷 -->
+        <div class="pane" id="ps">
+          <div class="prog-row"><span class="prog-label">句子判斷</span><span class="prog-label" style="color:var(--wt3)">1 / 3</span></div>
+          <div class="prog-bar" style="margin-bottom:14px"><div class="prog-fill" style="width:33%"></div></div>
+          <div class="card">
+            <div style="margin-bottom:12px"><span class="badge b-sent">句子判斷</span></div>
+            <p class="quiz-q">
+              <ruby>私<rt>わたし</rt></ruby>は<ruby>公園<rt>こうえん</rt></ruby><span class="highlight">で</span><ruby>行<rt>い</rt></ruby>きました。
+            </p>
+            <p style="font-size:12px;color:var(--wt3);margin-bottom:12px">橘色助詞是否正確使用？</p>
+            <div class="judge-row">
+              <button class="judge-btn j-wrong" onclick="judgeAnswer(this,false)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                不正確
+              </button>
+              <button class="judge-btn j-correct" onclick="judgeAnswer(this,true)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                正確
+              </button>
+            </div>
+            <div class="explain-box" id="explain-box" style="display:none">
+              <div class="explain-title">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--wy)" stroke-width="2" stroke-linecap="round" style="vertical-align:-1px;margin-right:4px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                這句子有問題！應該用「に」
+              </div>
+              <div class="explain-body">
+                <span class="em">に</span> → 移動的目的地（去哪裡）<br>
+                <span class="em">で</span> → 動作發生的場所（在哪裡做）<br><br>
+                <ruby>公園<rt style="font-size:9px">こうえん</rt></ruby>に<ruby>行<rt style="font-size:9px">い</rt></ruby>く ✓ &nbsp;&nbsp;
+                <ruby>公園<rt style="font-size:9px">こうえん</rt></ruby>で<ruby>遊<rt style="font-size:9px">あそ</rt></ruby>ぶ ✓
+              </div>
+            </div>
+          </div>
+          <button class="cant-btn" onclick="showToast('已記錄・系統會增加更多相同文法的判斷題')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            這題太難，降低難度
+          </button>
+          <p class="diff-note">系統會增加更多相同文法的判斷題</p>
+        </div>
+
+        <!-- 句子排列 -->
+        <div class="pane" id="po">
+          <div class="prog-row"><span class="prog-label">句子排列</span><span class="prog-label" style="color:var(--wt3)">1 / 3</span></div>
+          <div class="prog-bar" style="margin-bottom:14px"><div class="prog-fill" style="width:33%"></div></div>
+          <div class="unlock-note">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4A3A8A" stroke-width="2" stroke-linecap="round" style="vertical-align:-1px;margin-right:4px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
+            「綺麗・公園・行く」均達到「普」，排列題已解鎖
+          </div>
+          <div class="card">
+            <div style="margin-bottom:12px"><span class="badge b-adv">句子排列</span></div>
+            <p class="quiz-q">重組成正確的句子：</p>
+            <p style="font-size:12px;color:var(--wt3);margin-bottom:10px">點擊詞塊放入答案區</p>
+            <div class="sort-area" id="sort-area"></div>
+            <div class="sort-pool" id="sort-pool"></div>
+            <button class="submit-btn" onclick="checkSort()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+              確認答案
+            </button>
+          </div>
+          <button class="cant-btn" onclick="showToast('已記錄・系統會退回句子判斷題')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            這題太難，降低難度
+          </button>
+          <p class="diff-note">系統會退回句子判斷題，待熟悉後再試</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 設定 -->
+    <div class="page" id="page-settings">
+      <div class="top-bar"><h1>設定</h1></div>
+      <div class="sec">
+        <p class="section-title">學習模式</p>
+        <div class="card" style="padding:4px 16px;margin-bottom:16px">
+          <div class="mode-tabs" style="margin:12px 0 8px">
+            <button class="mode-tab active" onclick="setMode(this)">輕鬆</button>
+            <button class="mode-tab" onclick="setMode(this)">標準</button>
+            <button class="mode-tab" onclick="setMode(this)">專注</button>
+          </div>
+          <p style="font-size:12px;color:var(--wt3);text-align:center;padding-bottom:8px">15 分鐘・20 張卡・中文備注開</p>
+        </div>
+
+        <p class="section-title">學習強度</p>
+        <div class="card" style="padding:4px 16px;margin-bottom:16px">
+          <div class="setting-row">
+            <div><div class="setting-label">每日單字卡上限</div><div class="setting-sub">超過順延明天</div></div>
+            <span class="setting-val">20 張</span>
+          </div>
+          <div class="setting-row">
+            <div><div class="setting-label">每日練習時間</div></div>
+            <span class="setting-val">15 分鐘</span>
+          </div>
+          <div class="setting-row">
+            <div><div class="setting-label">熟記定義</div><div class="setting-sub">累積記得次數</div></div>
+            <span class="setting-val">10 次</span>
+          </div>
+        </div>
+
+        <p class="section-title">顯示</p>
+        <div class="card" style="padding:4px 16px;margin-bottom:16px">
+          <div class="setting-row">
+            <div class="setting-label">羅馬拼音</div>
+            <div class="toggle" onclick="this.classList.toggle('off')"></div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-label">Furigana 顯示</div>
+            <div class="toggle" onclick="this.classList.toggle('off')"></div>
+          </div>
+          <div class="setting-row">
+            <div class="setting-label">中文備注預設</div>
+            <div class="toggle" onclick="this.classList.toggle('off')"></div>
+          </div>
+          <div class="setting-row">
+            <div><div class="setting-label">外觀</div><div class="setting-sub">暖色系</div></div>
+            <span class="setting-val">日間</span>
+          </div>
+        </div>
+
+        <p class="section-title">語言</p>
+        <div class="card" style="padding:4px 16px">
+          <div class="setting-row">
+            <div class="setting-label">學習語言</div>
+            <span class="setting-val">日語</span>
+          </div>
+          <div class="setting-row">
+            <div class="setting-label">母語（備注）</div>
+            <span class="setting-val">繁體中文</span>
+          </div>
+          <div class="setting-row">
+            <div class="setting-label">目前等級</div>
+            <span class="setting-val">N5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Nav -->
+  <div class="bottom-nav">
+    <button class="nav-btn active" id="nb-home" onclick="switchPage('home')" aria-label="今日">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <span>今日</span>
+    </button>
+    <button class="nav-btn" id="nb-article" onclick="switchPage('article')" aria-label="文章">
+      <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span>文章</span>
+    </button>
+    <button class="nav-btn" id="nb-vocab" onclick="switchPage('vocab')" aria-label="單字卡">
+      <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      <span>單字卡</span>
+    </button>
+    <button class="nav-btn" id="nb-quiz" onclick="switchPage('quiz')" aria-label="試題">
+      <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      <span>試題</span>
+    </button>
+    <button class="nav-btn" id="nb-settings" onclick="switchPage('settings')" aria-label="設定">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      <span>設定</span>
+    </button>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <!-- Dev Dashboard -->
+  <div id="dev-dashboard">
+    <div class="dev-panel">
+      <div class="dev-title">
+        🛠 Dev Dashboard
+        <button class="dev-close" onclick="closeDev()">✕</button>
+      </div>
+
+      <div class="dev-section">
+        <div class="dev-label">Content Base URL</div>
+        <input class="dev-input" id="dev-base-url" type="text" value="./content" />
+        <div class="dev-row">
+          <button class="dev-btn" onclick="setDevBaseUrl()">套用 URL</button>
+          <button class="dev-btn" onclick="document.getElementById('dev-base-url').value='./content'">本地</button>
+        </div>
+      </div>
+
+      <div class="dev-section">
+        <div class="dev-label">載入日期</div>
+        <input class="dev-input" id="dev-date-input" type="text" placeholder="YYYY-MM-DD" />
+        <div class="dev-label">等級</div>
+        <div class="dev-level-row" id="dev-level-row">
+          <button class="dev-level-btn" onclick="setDevLevel('n5_below')">N5以下</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n5')">N5</button>
+          <button class="dev-level-btn active" onclick="setDevLevel('n4')">N4</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n3')">N3</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n2n1')">N2/N1</button>
+        </div>
+        <div class="dev-row" style="margin-top:10px">
+          <button class="dev-btn primary" onclick="devLoadContent()">載入文章</button>
+          <button class="dev-btn" onclick="devLoadToday()">載入今日</button>
+          <button class="dev-btn danger" onclick="devLoadDemo()">還原 Demo</button>
+        </div>
+      </div>
+
+      <div class="dev-section">
+        <div class="dev-label">目前狀態</div>
+        <div class="dev-status" id="dev-status-box">尚未載入</div>
+      </div>
+
+      <div class="dev-section">
+        <div class="dev-label">index.json 已有內容的日期</div>
+        <div class="dev-calendar-row" id="dev-calendar-chips">—</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Page switch
+function switchPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  document.getElementById('nb-' + id).classList.add('active');
+
+  if (id === 'article' && !articleRendered) {
+    renderArticle(ARTICLE_TOKENS);
+    articleRendered = true;
+  }
+}
+
+// Mode tabs
+function setMode(btn) {
+  btn.closest('.mode-tabs').querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+// Quiz tab
+function switchQt(btn, paneId) {
+  document.querySelectorAll('.qt').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(paneId).classList.add('active');
+}
+
+// CN toggle
+function toggleCN() {
+  const t = document.getElementById('cn-toggle');
+  t.classList.toggle('off');
+  const hidden = t.classList.contains('off');
+  document.querySelectorAll('.cn-note').forEach(n => {
+    n.classList.toggle('hidden', hidden);
+  });
+}
+
+// ===== 文章斷詞與互動 =====
+
+let ARTICLE_TEXT = '今日は天気が良いです。私は公園に行きました。花が綺麗な花でした。私は木の下で休みました。';
+const DEMO_ARTICLE_TEXT = ARTICLE_TEXT;
+
+// 固定文章的中文字意小字典
+let VOCAB_DICT = {
+  '今日':   { meaning: '今天', romaji: 'kyou' },
+  '天気':   { meaning: '天氣', romaji: 'tenki' },
+  '良い':   { meaning: '好的', romaji: 'yoi' },
+  '私':     { meaning: '我', romaji: 'watashi' },
+  '公園':   { meaning: '公園', romaji: 'kouen' },
+  '行く':   { meaning: '去', romaji: 'iku' },
+  '花':     { meaning: '花', romaji: 'hana' },
+  '綺麗':   { meaning: '漂亮・乾淨', romaji: 'kirei' },
+  '木':     { meaning: '樹', romaji: 'ki' },
+  '下':     { meaning: '下面', romaji: 'shita' },
+  '休む':   { meaning: '休息', romaji: 'yasumu' },
+};
+
+// 助詞簡短說明（長按助詞時顯示）
+let PARTICLE_NOTES = {
+  'は': '提示句子的主題，告訴對方接下來要說的是關於「什麼」。',
+  'が': '標示動作或狀態的主體，常用於描述眼前看到、注意到的事物。',
+  'に': '標示移動的目的地或時間點，回答「去哪裡」「什麼時候」。',
+  'で': '標示動作發生的場所、方式或手段，回答「在哪裡做」「用什麼做」。',
+  'の': '連接兩個名詞，表示所屬或修飾關係，類似中文的「的」。',
+  'を': '標示動作的對象，回答「做了什麼」。',
+  'と': '表示並列「和」，或引述、共同動作的對象。',
+  'も': '表示「也」，強調同類事物的並列。',
+  'から': '表示起點，時間或地點的「從」。',
+  'まで': '表示終點，時間或地點的「到」。',
+};
+
+// 預先準備好的斷詞資料（手動標注，不依賴任何外部函式庫或網路請求）
+// 格式對應 Kuromoji 輸出: surface_form / basic_form / reading（平假名）/ pos
+let ARTICLE_TOKENS = [
+  { surface_form: '今日',     basic_form: '今日',   reading: 'きょう',     pos: '名詞' },
+  { surface_form: 'は',       basic_form: 'は',     reading: '',          pos: '助詞' },
+  { surface_form: '天気',     basic_form: '天気',   reading: 'てんき',     pos: '名詞' },
+  { surface_form: 'が',       basic_form: 'が',     reading: '',          pos: '助詞' },
+  { surface_form: '良い',     basic_form: '良い',   reading: 'よい',       pos: '形容詞' },
+  { surface_form: 'です',     basic_form: 'です',   reading: '',          pos: '助動詞' },
+  { surface_form: '。',       basic_form: '。',     reading: '',          pos: '記号' },
+  { surface_form: '私',       basic_form: '私',     reading: 'わたし',     pos: '名詞' },
+  { surface_form: 'は',       basic_form: 'は',     reading: '',          pos: '助詞' },
+  { surface_form: '公園',     basic_form: '公園',   reading: 'こうえん',   pos: '名詞' },
+  { surface_form: 'に',       basic_form: 'に',     reading: '',          pos: '助詞' },
+  { surface_form: '行きました', basic_form: '行く', reading: 'いきました', pos: '動詞' },
+  { surface_form: '。',       basic_form: '。',     reading: '',          pos: '記号' },
+  { surface_form: '花',       basic_form: '花',     reading: 'はな',       pos: '名詞' },
+  { surface_form: 'が',       basic_form: 'が',     reading: '',          pos: '助詞' },
+  { surface_form: '綺麗',     basic_form: '綺麗',   reading: 'きれい',     pos: '名詞' },
+  { surface_form: 'な',       basic_form: 'だ',     reading: '',          pos: '助動詞' },
+  { surface_form: '花',       basic_form: '花',     reading: 'はな',       pos: '名詞' },
+  { surface_form: 'でした',   basic_form: 'です',   reading: '',          pos: '助動詞' },
+  { surface_form: '。',       basic_form: '。',     reading: '',          pos: '記号' },
+  { surface_form: '私',       basic_form: '私',     reading: 'わたし',     pos: '名詞' },
+  { surface_form: 'は',       basic_form: 'は',     reading: '',          pos: '助詞' },
+  { surface_form: '木',       basic_form: '木',     reading: 'き',         pos: '名詞' },
+  { surface_form: 'の',       basic_form: 'の',     reading: '',          pos: '助詞' },
+  { surface_form: '下',       basic_form: '下',     reading: 'した',       pos: '名詞' },
+  { surface_form: 'で',       basic_form: 'で',     reading: '',          pos: '助詞' },
+  { surface_form: '休みました', basic_form: '休む', reading: 'やすみました', pos: '動詞' },
+  { surface_form: '。',       basic_form: '。',     reading: '',          pos: '記号' },
+];
+
+// Demo 備份（還原用）
+const DEMO_VOCAB_DICT = JSON.parse(JSON.stringify(VOCAB_DICT));
+const DEMO_PARTICLE_NOTES = JSON.parse(JSON.stringify(PARTICLE_NOTES));
+const DEMO_ARTICLE_TOKENS = JSON.parse(JSON.stringify(ARTICLE_TOKENS));
+const DEMO_SENTENCE_TRANSLATIONS = JSON.parse(JSON.stringify(SENTENCE_TRANSLATIONS));
+
+// ===== Content Pack 載入系統 =====
+let CONTENT_BASE_URL = './content';
+let CURRENT_LEVEL = 'n4';
+
+async function loadContentForDate(date, level) {
+  const url = `${CONTENT_BASE_URL}/${date}/${level}.json`;
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('HTTP ' + res.status + ' — ' + url);
+    const pack = await res.json();
+    applyContentPack(pack);
+    return { success: true, pack };
+  } catch (err) {
+    return { success: false, error: err.message };
+  }
+}
+
+function applyContentPack(pack) {
+  ARTICLE_TEXT = pack.text;
+  ARTICLE_TOKENS = pack.tokens;
+  VOCAB_DICT = pack.vocab;
+  PARTICLE_NOTES = pack.particles;
+  SENTENCE_TRANSLATIONS = pack.translations;
+  // 重新渲染文章
+  articleRendered = false;
+  if (document.getElementById('page-article') && document.getElementById('page-article').classList.contains('active')) {
+    renderArticle(ARTICLE_TOKENS);
+    articleRendered = true;
+  }
+}
+
+function restoreDemoContent() {
+  ARTICLE_TEXT = DEMO_ARTICLE_TEXT;
+  ARTICLE_TOKENS = JSON.parse(JSON.stringify(DEMO_ARTICLE_TOKENS));
+  VOCAB_DICT = JSON.parse(JSON.stringify(DEMO_VOCAB_DICT));
+  PARTICLE_NOTES = JSON.parse(JSON.stringify(DEMO_PARTICLE_NOTES));
+  SENTENCE_TRANSLATIONS = JSON.parse(JSON.stringify(DEMO_SENTENCE_TRANSLATIONS));
+  articleRendered = false;
+  if (document.getElementById('page-article') && document.getElementById('page-article').classList.contains('active')) {
+    renderArticle(ARTICLE_TOKENS);
+    articleRendered = true;
+  }
+}
+
+async function loadTodayContent(level) {
+  const today = new Date().toISOString().split('T')[0];
+  return loadContentForDate(today, level || CURRENT_LEVEL);
+}
+
+// ===== Dev Dashboard =====
+function openDev() {
+  document.getElementById('dev-dashboard').classList.add('show');
+  document.getElementById('dev-date-input').value = new Date().toISOString().split('T')[0];
+  document.getElementById('dev-base-url').value = CONTENT_BASE_URL;
+  devRefreshLevelButtons();
+  devLoadIndex();
+}
+
+function closeDev() {
+  document.getElementById('dev-dashboard').classList.remove('show');
+}
+
+function setDevBaseUrl() {
+  CONTENT_BASE_URL = document.getElementById('dev-base-url').value.trim().replace(/\/$/, '');
+  devSetStatus('URL 已更新：' + CONTENT_BASE_URL, false);
+}
+
+function setDevLevel(level) {
+  CURRENT_LEVEL = level;
+  devRefreshLevelButtons();
+}
+
+function devRefreshLevelButtons() {
+  document.querySelectorAll('.dev-level-btn').forEach(btn => {
+    const l = btn.getAttribute('onclick').match(/'([^']+)'/)[1];
+    btn.classList.toggle('active', l === CURRENT_LEVEL);
+  });
+}
+
+function devSetStatus(msg, isError) {
+  const box = document.getElementById('dev-status-box');
+  box.textContent = msg;
+  box.className = 'dev-status' + (isError ? ' error' : '');
+}
+
+async function devLoadContent() {
+  const date = document.getElementById('dev-date-input').value.trim();
+  if (!date) { devSetStatus('請輸入日期', true); return; }
+  devSetStatus('載入中…', false);
+  const result = await loadContentForDate(date, CURRENT_LEVEL);
+  if (result.success) {
+    devSetStatus('✓ 已載入 ' + date + ' / ' + CURRENT_LEVEL + '\n標題：' + result.pack.title, false);
+    showToast('文章已更新：' + result.pack.title);
+  } else {
+    devSetStatus('✗ 載入失敗\n' + result.error, true);
+  }
+}
+
+async function devLoadToday() {
+  devSetStatus('載入今日文章…', false);
+  const result = await loadTodayContent();
+  if (result.success) {
+    devSetStatus('✓ 今日文章已載入\n標題：' + result.pack.title, false);
+    showToast('今日文章已載入：' + result.pack.title);
+  } else {
+    devSetStatus('✗ 今日文章不存在或載入失敗\n' + result.error, true);
+  }
+}
+
+function devLoadDemo() {
+  restoreDemoContent();
+  devSetStatus('✓ 已還原 Demo 文章', false);
+  showToast('已還原 Demo 文章');
+}
+
+async function devLoadIndex() {
+  const chips = document.getElementById('dev-calendar-chips');
+  chips.textContent = '載入中…';
+  try {
+    const res = await fetch(CONTENT_BASE_URL + '/index.json');
+    if (!res.ok) throw new Error('index.json 不存在');
+    const index = await res.json();
+    chips.innerHTML = '';
+    index.dates.forEach(d => {
+      const chip = document.createElement('span');
+      chip.className = 'dev-date-chip';
+      chip.textContent = d.date;
+      chip.onclick = () => {
+        document.getElementById('dev-date-input').value = d.date;
+      };
+      chips.appendChild(chip);
+    });
+  } catch (err) {
+    chips.innerHTML = '<span class="dev-date-chip missing">無法讀取 index.json</span>';
+  }
+}
+
+// 開啟 Dev Dashboard：URL 參數 ?dev=1 或標題點擊 5 次
+(function() {
+  if (window.location.search.includes('dev=1')) {
+    document.addEventListener('DOMContentLoaded', openDev);
+  }
+})();
+
+let _devTapCount = 0;
+let _devTapTimer = null;
+function _devTitleTap() {
+  _devTapCount++;
+  clearTimeout(_devTapTimer);
+  _devTapTimer = setTimeout(() => { _devTapCount = 0; }, 2000);
+  if (_devTapCount >= 5) { _devTapCount = 0; openDev(); }
+}
+
+let articleRendered = false;
+
+// 每句的中文翻譯，拆成片段，每段標記對應的日文詞（basic_form），不對應任何詞則 word 為 null
+let SENTENCE_TRANSLATIONS = [
+  [
+    { text: '今天', word: '今日' },
+    { text: '天氣', word: '天気' },
+    { text: '很', word: null },
+    { text: '好', word: '良い' },
+    { text: '。', word: null },
+  ],
+  [
+    { text: '我', word: '私' },
+    { text: '去了', word: '行く' },
+    { text: '公園', word: '公園' },
+    { text: '。', word: null },
+  ],
+  [
+    { text: '花', word: '花' },
+    { text: '很', word: null },
+    { text: '漂亮', word: '綺麗' },
+    { text: '。', word: null },
+  ],
+  [
+    { text: '我', word: '私' },
+    { text: '在', word: null },
+    { text: '樹', word: '木' },
+    { text: '下', word: '下' },
+    { text: '休息', word: '休む' },
+    { text: '了', word: null },
+    { text: '。', word: null },
+  ],
+];
+
+function isParticle(tok) {
+  return tok.pos === '助詞' || tok.pos === '助動詞';
+}
+
+// 已加入單字卡的詞（basic_form 的集合），決定是否上色高亮
+const addedWords = new Set();
+
+function renderArticle(tokens) {
+  const container = document.getElementById('article-text');
+  container.innerHTML = '';
+
+  // 句子分組（用於跟讀逐句播放，以「。」「！」「？」斷句）
+  let sentenceIndex = 0;
+  let html = '<span class="sentence-group" data-sentence="0">';
+
+  tokens.forEach((tok, i) => {
+    const surface = tok.surface_form;
+    const basic = tok.basic_form === '*' ? surface : tok.basic_form;
+    const reading = tok.reading || '';
+    const showFurigana = reading && reading !== surface && /[\u4E00-\u9FFF]/.test(surface);
+
+    const inner = showFurigana
+      ? '<ruby>' + surface + '<rt>' + reading + '</rt></ruby>'
+      : surface;
+
+    if (isParticle(tok)) {
+      html += '<span class="tok tok-particle" data-idx="' + i + '" data-type="particle" data-surface="' + surface + '">' + inner + '</span>';
+    } else if (VOCAB_DICT[basic] || VOCAB_DICT[surface]) {
+      const wordKey = VOCAB_DICT[basic] ? basic : surface;
+      const isAdded = addedWords.has(wordKey);
+      html += '<span class="tok tok-word' + (isAdded ? ' tok-added' : '') + '" data-idx="' + i + '" data-type="word" data-basic="' + wordKey + '" data-surface="' + surface + '" data-reading="' + reading + '" data-sentence="' + sentenceIndex + '">' + inner + '</span>';
+    } else {
+      // 標點符號或其他未收錄詞，原樣顯示，不可互動
+      html += '<span class="tok-plain">' + surface + '</span>';
+    }
+
+    // 句子結束判斷：關閉句子分組，插入中文備注，開啟下一句分組
+    if (surface === '。' || surface === '！' || surface === '？') {
+      html += '</span>';
+      const segments = SENTENCE_TRANSLATIONS[sentenceIndex] || [];
+      if (segments.length) {
+        html += '<span class="cn-note" id="cn-note-' + sentenceIndex + '">';
+        segments.forEach(seg => {
+          if (seg.word) {
+            html += '<span class="cn-seg" data-word="' + seg.word + '">' + seg.text + '</span>';
+          } else {
+            html += '<span class="cn-seg">' + seg.text + '</span>';
+          }
+        });
+        html += '</span>';
+      }
+      sentenceIndex++;
+      if (i < tokens.length - 1) {
+        html += '<span class="sentence-group" data-sentence="' + sentenceIndex + '">';
+      }
+    }
+  });
+
+  if (sentenceIndex === 0 || tokens[tokens.length - 1].surface_form.match(/[。！？]/) === null) {
+    html += '</span>';
+  }
+  container.innerHTML = html;
+
+  // 綁定長按事件
+  container.querySelectorAll('.tok').forEach(el => {
+    bindLongPress(el);
+  });
+
+  // 套用目前的中文備注顯示狀態
+  const cnHidden = document.getElementById('cn-toggle').classList.contains('off');
+  container.querySelectorAll('.cn-note').forEach(n => n.classList.toggle('hidden', cnHidden));
+
+  // 套用已加入單字卡的詞，對應句子的中文備注也標橘色
+  applyAddedWordNoteColors();
+}
+
+function applyAddedWordNoteColors() {
+  const container = document.getElementById('article-text');
+  container.querySelectorAll('.cn-seg').forEach(seg => {
+    const word = seg.dataset.word;
+    seg.classList.toggle('cn-note-highlight', !!word && addedWords.has(word));
+  });
+}
+
+// 長按偵測（桌面用滑鼠按住，手機用 touch）
+function bindLongPress(el) {
+  let timer = null;
+  let didLongPress = false;
+
+  const start = (e) => {
+    didLongPress = false;
+    timer = setTimeout(() => {
+      didLongPress = true;
+      handleTokenLongPress(el);
+    }, 420);
+  };
+  const cancel = () => {
+    clearTimeout(timer);
+  };
+
+  el.addEventListener('touchstart', start, { passive: true });
+  el.addEventListener('touchend', cancel);
+  el.addEventListener('touchmove', cancel);
+  el.addEventListener('mousedown', start);
+  el.addEventListener('mouseup', cancel);
+  el.addEventListener('mouseleave', cancel);
+  el.addEventListener('click', (e) => {
+    if (didLongPress) { e.preventDefault(); }
+  });
+}
+
+function handleTokenLongPress(el) {
+  document.querySelectorAll('.tok-active').forEach(t => t.classList.remove('tok-active'));
+  el.classList.add('tok-active');
+
+  const type = el.dataset.type;
+  const surface = el.dataset.surface;
+
+  if (type === 'particle') {
+    speak(surface);
+    openParticlePanel(surface);
+  } else {
+    const basic = el.dataset.basic;
+    const reading = el.dataset.reading;
+    speak(reading || surface);
+    openWordPanel(basic, surface, reading);
+  }
+}
+
+function openWordPanel(basic, surface, reading) {
+  const entry = VOCAB_DICT[basic] || { meaning: '（尚無中文翻譯）', romaji: '' };
+  const isAdded = addedWords.has(basic);
+  const content = document.getElementById('word-panel-content');
+  content.innerHTML =
+    '<div class="wp-word-row">' +
+      '<span class="wp-kanji">' + basic + '</span>' +
+      '<button class="speak-btn" onclick="speak(\'' + reading + '\')" aria-label="發音">' +
+        '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
+      '</button>' +
+    '</div>' +
+    '<div class="wp-kana">' + reading + '</div>' +
+    (entry.romaji ? '<div class="wp-romaji">' + entry.romaji + '</div>' : '') +
+    '<div class="wp-divider"></div>' +
+    '<div class="wp-meaning">' + entry.meaning + '</div>' +
+    (isAdded
+      ? '<div class="wp-added-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--wg)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>已在單字卡中</div>' +
+        '<button class="wp-remove-btn" onclick="removeFromVocabCards(\'' + basic + '\')">' +
+          '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6M10 11v6M14 11v6M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>' +
+          '移除單字卡' +
+        '</button>'
+      : '<button class="wp-add-btn" onclick="addToVocabCards(\'' + basic + '\')">' +
+          '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>' +
+          '加入單字卡' +
+        '</button>');
+  showWordPanel();
+}
+
+function openParticlePanel(surface) {
+  const note = PARTICLE_NOTES[surface] || '這是日語句子中的功能詞，用來連接詞語、標示語法關係。';
+  const content = document.getElementById('word-panel-content');
+  content.innerHTML =
+    '<div class="wp-word-row">' +
+      '<span class="wp-kanji">' + surface + '</span>' +
+      '<button class="speak-btn" onclick="speak(\'' + surface + '\')" aria-label="發音">' +
+        '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
+      '</button>' +
+    '</div>' +
+    '<div class="wp-pos-tag-wrap"><span class="wp-pos-tag">助詞</span></div>' +
+    '<div class="wp-particle-note">' +
+      '<div class="wp-particle-title">' +
+        '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--wy)" stroke-width="2" stroke-linecap="round" style="vertical-align:-1px;margin-right:4px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>' +
+        '這個助詞的用法' +
+      '</div>' + note +
+    '</div>';
+  showWordPanel();
+}
+
+function showWordPanel() {
+  document.getElementById('word-panel').classList.add('open');
+  document.getElementById('word-panel-backdrop').classList.add('show');
+}
+
+function closeWordPanel() {
+  document.getElementById('word-panel').classList.remove('open');
+  document.getElementById('word-panel-backdrop').classList.remove('show');
+  document.querySelectorAll('.tok-active').forEach(t => t.classList.remove('tok-active'));
+}
+
+function addToVocabCards(basic) {
+  addedWords.add(basic);
+  showToast(basic + ' 已加入單字卡');
+  closeWordPanel();
+
+  // 重新套用高亮：直接更新已存在的 DOM，不重新渲染整篇文章（避免打斷使用者位置）
+  const container = document.getElementById('article-text');
+  container.querySelectorAll('.tok-word[data-basic="' + basic + '"]').forEach(el => {
+    el.classList.add('tok-added');
+  });
+  applyAddedWordNoteColors();
+}
+
+function removeFromVocabCards(basic) {
+  addedWords.delete(basic);
+  showToast(basic + ' 已從單字卡移除');
+  closeWordPanel();
+
+  const container = document.getElementById('article-text');
+  container.querySelectorAll('.tok-word[data-basic="' + basic + '"]').forEach(el => {
+    el.classList.remove('tok-added');
+  });
+  applyAddedWordNoteColors();
+}
+
+// ===== 朗讀控制 =====
+let readAloudUtterance = null;
+let readAloudPlaying = false;
+let readAloudRate = 1.0;
+
+function toggleReadAloud() {
+  if (readAloudPlaying) {
+    window.speechSynthesis.pause();
+    readAloudPlaying = false;
+    setPlayIcon(false);
+    return;
+  }
+  if (window.speechSynthesis.paused && readAloudUtterance) {
+    window.speechSynthesis.resume();
+    readAloudPlaying = true;
+    setPlayIcon(true);
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(ARTICLE_TEXT);
+  u.lang = 'ja-JP';
+  u.rate = readAloudRate;
+  u.onend = () => { readAloudPlaying = false; setPlayIcon(false); };
+  readAloudUtterance = u;
+  window.speechSynthesis.speak(u);
+  readAloudPlaying = true;
+  setPlayIcon(true);
+}
+
+function stopReadAloud() {
+  window.speechSynthesis.cancel();
+  readAloudPlaying = false;
+  setPlayIcon(false);
+}
+
+function setPlayIcon(playing) {
+  const btn = document.getElementById('play-btn');
+  btn.classList.toggle('playing', playing);
+  btn.innerHTML = playing
+    ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="4" y="3" width="5" height="18" rx="1"/><rect x="15" y="3" width="5" height="18" rx="1"/></svg>'
+    : '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>';
+}
+
+const SPEED_STEPS = [0.5, 0.7, 0.85, 1.0, 1.2, 1.5];
+
+function adjustSpeed(direction) {
+  const idx = SPEED_STEPS.indexOf(readAloudRate);
+  const newIdx = Math.min(SPEED_STEPS.length - 1, Math.max(0, idx + direction));
+  readAloudRate = SPEED_STEPS[newIdx];
+  document.getElementById('speed-label').textContent = readAloudRate.toFixed(2).replace(/0$/, '') + 'x';
+  updateSpeedButtonStates(newIdx);
+
+  // 若朗讀正在進行，套用新速度需要從目前句子重新開始播放
+  if (readAloudPlaying) {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(ARTICLE_TEXT);
+    u.lang = 'ja-JP';
+    u.rate = readAloudRate;
+    u.onend = () => { readAloudPlaying = false; setPlayIcon(false); };
+    readAloudUtterance = u;
+    window.speechSynthesis.speak(u);
+    showToast('已調整為 ' + readAloudRate.toFixed(2).replace(/0$/, '') + 'x，重新播放');
+  }
+}
+
+function updateSpeedButtonStates(idx) {
+  document.getElementById('speed-down-btn').disabled = (idx === 0);
+  document.getElementById('speed-up-btn').disabled = (idx === SPEED_STEPS.length - 1);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  updateSpeedButtonStates(SPEED_STEPS.indexOf(readAloudRate));
+  // 嘗試自動載入今日文章（靜默，失敗則保留 demo）
+  loadTodayContent().then(result => {
+    if (result.success) {
+      showToast('今日文章已載入：' + result.pack.title);
+    }
+    // 失敗時靜默，保留 demo 文章
+  });
+});
+
+// ===== 跟讀錄音（IndexedDB 儲存，三槽位） =====
+let mediaRecorder = null;
+let recordedChunks = [];
+let recordedMimeType = '';
+let isRecording = false;
+let recordTimerInterval = null;
+let recordSeconds = 0;
+
+let currentSlot = 1;
+let slotBlobs = { 1: null, 2: null, 3: null }; // 記憶體快取，避免每次播放都重新讀取 DB
+let slotAudioUrls = { 1: null, 2: null, 3: null };
+
+let playbackAudio = null;
+let isPlayingRecording = false;
+
+const DB_NAME = 'jp_app_recordings';
+const DB_STORE = 'follow_read_slots';
+
+function openRecordingDB() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open(DB_NAME, 1);
+    req.onupgradeneeded = (e) => {
+      const db = e.target.result;
+      if (!db.objectStoreNames.contains(DB_STORE)) {
+        db.createObjectStore(DB_STORE, { keyPath: 'slot' });
+      }
+    };
+    req.onsuccess = (e) => resolve(e.target.result);
+    req.onerror = (e) => reject(e.target.error);
+  });
+}
+
+async function saveRecordingToDB(slot, blob, mimeType, seconds) {
+  const db = await openRecordingDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(DB_STORE, 'readwrite');
+    tx.objectStore(DB_STORE).put({ slot, blob, mimeType, seconds, savedAt: Date.now() });
+    tx.oncomplete = () => resolve();
+    tx.onerror = (e) => reject(e.target.error);
+  });
+}
+
+async function loadRecordingFromDB(slot) {
+  const db = await openRecordingDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(DB_STORE, 'readonly');
+    const req = tx.objectStore(DB_STORE).get(slot);
+    req.onsuccess = () => resolve(req.result || null);
+    req.onerror = (e) => reject(e.target.error);
+  });
+}
+
+async function loadAllSlotsOnStartup() {
+  try {
+    for (let slot = 1; slot <= 3; slot++) {
+      const record = await loadRecordingFromDB(slot);
+      if (record && record.blob) {
+        slotBlobs[slot] = record.blob;
+        slotAudioUrls[slot] = URL.createObjectURL(record.blob);
+        markSlotHasAudio(slot, record.seconds);
+      }
+    }
+    updateRecStatusForCurrentSlot();
+  } catch (err) {
+    // IndexedDB 不可用時靜默失敗，不影響其他功能
+    console.warn('讀取錄音紀錄失敗', err);
+  }
+}
+
+function markSlotHasAudio(slot, seconds) {
+  const btn = document.querySelector('.rec-slot[data-slot="' + slot + '"]');
+  if (btn) {
+    btn.classList.add('has-audio');
+    btn.dataset.seconds = seconds || '';
+  }
+}
+
+function selectSlot(slot) {
+  if (isRecording) {
+    showToast('請先停止錄音');
+    return;
+  }
+  stopPlayRecording();
+  currentSlot = slot;
+  document.querySelectorAll('.rec-slot').forEach(btn => {
+    btn.classList.toggle('active', parseInt(btn.dataset.slot) === slot);
+  });
+  updateRecStatusForCurrentSlot();
+}
+
+function updateRecStatusForCurrentSlot() {
+  const statusEl = document.getElementById('rec-status');
+  const playBtn = document.getElementById('play-rec-btn');
+  const stopBtn = document.getElementById('stop-rec-btn');
+  if (slotBlobs[currentSlot]) {
+    const btn = document.querySelector('.rec-slot[data-slot="' + currentSlot + '"]');
+    const seconds = btn ? btn.dataset.seconds : '';
+    statusEl.textContent = '✓ 槽位 ' + currentSlot + ' 已錄製' + (seconds ? '（' + seconds + ' 秒）' : '');
+    statusEl.className = 'rec-status ready';
+    playBtn.disabled = false;
+  } else {
+    statusEl.textContent = '槽位 ' + currentSlot + ' 尚無錄音';
+    statusEl.className = 'rec-status';
+    playBtn.disabled = true;
+    stopBtn.disabled = true;
+  }
+}
+
+// 依瀏覽器實際支援的格式挑選 MIME type（Safari 只認 mp4，Chrome 用 webm）
+function pickSupportedMimeType() {
+  const candidates = [
+    'audio/webm;codecs=opus',
+    'audio/webm',
+    'audio/mp4',
+    'audio/ogg;codecs=opus',
+  ];
+  for (const type of candidates) {
+    if (window.MediaRecorder && MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported(type)) {
+      return type;
+    }
+  }
+  return ''; // 讓瀏覽器自行決定預設格式
+}
+
+async function toggleRecord() {
+  if (isRecording) {
+    mediaRecorder.stop();
+    return;
+  }
+  if (!window.MediaRecorder) {
+    showToast('此瀏覽器不支援錄音功能');
+    return;
+  }
+  stopPlayRecording();
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    recordedMimeType = pickSupportedMimeType();
+    mediaRecorder = recordedMimeType
+      ? new MediaRecorder(stream, { mimeType: recordedMimeType })
+      : new MediaRecorder(stream);
+    recordedChunks = [];
+
+    mediaRecorder.ondataavailable = (e) => {
+      if (e.data && e.data.size > 0) recordedChunks.push(e.data);
+    };
+
+    mediaRecorder.onstop = async () => {
+      stream.getTracks().forEach(t => t.stop());
+      clearInterval(recordTimerInterval);
+      isRecording = false;
+      document.getElementById('rec-btn').classList.remove('recording');
+
+      if (recordedChunks.length === 0) {
+        document.getElementById('rec-status').textContent = '錄音失敗，請再試一次';
+        document.getElementById('rec-status').className = 'rec-status';
+        showToast('沒有收到錄音資料');
+        return;
+      }
+
+      const blobType = recordedMimeType || mediaRecorder.mimeType || 'audio/webm';
+      const blob = new Blob(recordedChunks, { type: blobType });
+      const slot = currentSlot;
+
+      // 覆蓋該槽位的舊資料（記憶體 + IndexedDB）
+      if (slotAudioUrls[slot]) URL.revokeObjectURL(slotAudioUrls[slot]);
+      slotBlobs[slot] = blob;
+      slotAudioUrls[slot] = URL.createObjectURL(blob);
+      markSlotHasAudio(slot, recordSeconds);
+
+      try {
+        await saveRecordingToDB(slot, blob, blobType, recordSeconds);
+      } catch (err) {
+        showToast('儲存失敗，本次僅暫存於記憶體');
+      }
+
+      document.getElementById('play-rec-btn').disabled = false;
+      updateRecStatusForCurrentSlot();
+      showToast('已存入槽位 ' + slot);
+    };
+
+    mediaRecorder.start();
+    isRecording = true;
+    recordSeconds = 0;
+    document.getElementById('rec-btn').classList.add('recording');
+    const statusEl = document.getElementById('rec-status');
+    statusEl.className = 'rec-status recording-now';
+    statusEl.textContent = '錄音中 0:00';
+    recordTimerInterval = setInterval(() => {
+      recordSeconds++;
+      const m = Math.floor(recordSeconds / 60);
+      const s = String(recordSeconds % 60).padStart(2, '0');
+      statusEl.textContent = '錄音中 ' + m + ':' + s;
+    }, 1000);
+  } catch (err) {
+    showToast('無法取得麥克風權限');
+  }
+}
+
+function togglePlayRecording() {
+  if (isPlayingRecording) {
+    playbackAudio.pause();
+    return;
+  }
+  const url = slotAudioUrls[currentSlot];
+  if (!url) {
+    showToast('槽位 ' + currentSlot + ' 還沒有錄音');
+    return;
+  }
+  playbackAudio = new Audio(url);
+  playbackAudio.onplay = () => setPlayRecIcon(true);
+  playbackAudio.onpause = () => setPlayRecIcon(false);
+  playbackAudio.onended = () => { setPlayRecIcon(false); document.getElementById('stop-rec-btn').disabled = true; };
+  playbackAudio.play().catch((err) => {
+    showToast('播放失敗：' + err.message);
+  });
+  document.getElementById('stop-rec-btn').disabled = false;
+}
+
+function stopPlayRecording() {
+  if (playbackAudio) {
+    playbackAudio.pause();
+    playbackAudio.currentTime = 0;
+  }
+  setPlayRecIcon(false);
+  document.getElementById('stop-rec-btn').disabled = true;
+}
+
+function setPlayRecIcon(playing) {
+  isPlayingRecording = playing;
+  const btn = document.getElementById('play-rec-btn');
+  btn.classList.toggle('playing', playing);
+  btn.innerHTML = playing
+    ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="4" y="3" width="5" height="18" rx="1"/><rect x="15" y="3" width="5" height="18" rx="1"/></svg>'
+    : '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>';
+}
+
+// TTS speak
+function speak(text) {
+  if (!window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'ja-JP'; u.rate = 0.85;
+  window.speechSynthesis.speak(u);
+}
+
+// Toast
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// Reveal vocab meaning
+function revealMeaning() {
+  const el = document.getElementById('meaning-reveal');
+  el.innerHTML = '<div style="font-size:20px;color:var(--wt);font-weight:500">公園</div><div style="font-size:14px;color:var(--wt3);margin-top:4px">こうえん · 公園</div>';
+  el.onclick = null;
+}
+
+// Choice select
+function selectChoice(btn, isCorrect) {
+  const list = btn.closest('.choice-list');
+  list.querySelectorAll('.choice-btn').forEach(b => {
+    b.classList.remove('correct','wrong');
+    b.onclick = null;
+  });
+  btn.classList.add(isCorrect ? 'correct' : 'wrong');
+  showToast(isCorrect ? '答對了！' : '再試一次');
+}
+
+// Judge sentence
+function judgeAnswer(btn, isCorrect) {
+  const box = document.getElementById('explain-box');
+  box.style.display = 'block';
+  if (!isCorrect) {
+    showToast('答對了！這句子確實有問題');
+  } else {
+    showToast('再想想看…');
+  }
+}
+
+// Fill check
+function checkFill() {
+  const val = document.getElementById('fill-input').value.trim();
+  if (val === '綺麗' || val === 'きれい' || val === 'キレイ') {
+    showToast('正確！');
+  } else if (val === '') {
+    showToast('請輸入答案');
+  } else {
+    showToast('再試一次・提示：きれい');
+  }
+}
+
+// Sort chips
+const sortCorrect = ['私は','公園に','行きました'];
+const sortAll = ['私は','公園に','行きました','花が','綺麗でした'];
+
+function initSort() {
+  const pool = document.getElementById('sort-pool');
+  const area = document.getElementById('sort-area');
+  pool.innerHTML = ''; area.innerHTML = '';
+  const shuffled = [...sortAll].sort(() => Math.random() - 0.5);
+  shuffled.forEach(w => {
+    const chip = document.createElement('button');
+    chip.className = 'chip';
+    chip.textContent = w;
+    chip.onclick = () => placeChip(chip);
+    pool.appendChild(chip);
+  });
+}
+
+function placeChip(chip) {
+  const area = document.getElementById('sort-area');
+  chip.classList.add('placed');
+  chip.onclick = () => returnChip(chip);
+  area.appendChild(chip);
+}
+
+function returnChip(chip) {
+  const pool = document.getElementById('sort-pool');
+  chip.classList.remove('placed');
+  chip.onclick = () => placeChip(chip);
+  pool.appendChild(chip);
+}
+
+function checkSort() {
+  const placed = Array.from(document.getElementById('sort-area').children).map(c => c.textContent);
+  const correct = JSON.stringify(placed) === JSON.stringify(sortCorrect);
+  showToast(correct ? '完全正確！' : '順序不對，再試試');
+}
+
+// Add card toast
+function showAddCard() {
+  speak('きれい');
+  showToast('綺麗 已加入單字卡');
+}
+
+// Five task categories, in ring order
+const TASKS = [
+  { key:'article', label:'文章',     color:'#D85A30' },
+  { key:'vocab',   label:'單字卡複習', color:'#1D9E75' },
+  { key:'listen',  label:'聽力',     color:'#378ADD' },
+  { key:'quiz',    label:'填空+句子', color:'#BA7517' },
+  { key:'speak',   label:'跟讀',     color:'#7F77DD' }
+];
+
+// Calendar day data — true/false per task
+const dayData = {
+  3:  { date:'6月3日（日）',  article:'はじめての挨拶',     level:'N5・160字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
+  4:  { date:'6月4日（一）',  article:'家族の紹介',         level:'N5・175字', tasks:{article:true,  vocab:true,  listen:true,  quiz:false, speak:false} },
+  5:  { date:'6月5日（二）',  article:'公園の午後',         level:'N5・180字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
+  6:  { date:'6月6日（三）',  article:'好きな食べ物',       level:'N5・155字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
+  7:  { date:'6月7日（四）',  article:'週末の過ごし方',     level:'N5・190字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
+  8:  { date:'6月8日（五）',  article:'天気の話',           level:'N5・162字', tasks:{article:true,  vocab:true,  listen:true,  quiz:false, speak:false} },
+  9:  { date:'6月9日（六）',  article:'駅への道',           level:'N5・178字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
+  10: { date:'6月10日（日）', article:'学校の生活',         level:'N5・185字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
+  11: { date:'6月11日（一）', article:'お買い物',           level:'N5・168字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
+  12: { date:'6月12日（二）', article:'誕生日パーティー',   level:'N5・195字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
+  13: { date:'6月13日（三）', article:'病院に行く',         level:'N5・172字', tasks:{article:true,  vocab:true,  listen:true,  quiz:false, speak:false} },
+  14: { date:'6月14日（四）', article:'趣味の時間',         level:'N5・188字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
+  15: { date:'6月15日（五）', article:'レストランで',       level:'N5・165字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
+  16: { date:'6月16日（六）', article:'朝のルーティン',     level:'N5・182字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
+  17: { date:'6月17日（日）', article:'友達との会話',       level:'N5・177字', tasks:{article:true,  vocab:true,  listen:true,  quiz:false, speak:false} },
+  18: { date:'6月18日（一）', article:'今日の天気と公園',   level:'N5・183字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
+};
+
+const TODAY = 18;
+
+// Build SVG ring markup. size = px outer diameter. tasksState = {key:bool}.
+// completedOverride: optional count used only to decide empty-state rendering.
+function buildRing(size, strokeRatio, tasksState) {
+  const r = size / 2;
+  const sw = size * strokeRatio;
+  const cr = r - sw / 2;
+  const circumference = 2 * Math.PI * cr;
+  const n = TASKS.length;
+  const gapDeg = 8;
+  const segDeg = 360 / n - gapDeg;
+  const segLen = circumference * (segDeg / 360);
+
+  let svg = '<svg width="' + size + '" height="' + size + '" viewBox="0 0 ' + size + ' ' + size + '" xmlns="http://www.w3.org/2000/svg">';
+  svg += '<circle cx="' + r + '" cy="' + r + '" r="' + cr + '" fill="none" stroke="#EDE0CC" stroke-width="' + sw + '"/>';
+
+  TASKS.forEach((t, i) => {
+    const done = tasksState[t.key];
+    if (!done) return;
+    const offset = -(circumference * (i / n)) + circumference / 4;
+    svg += '<circle cx="' + r + '" cy="' + r + '" r="' + cr + '" fill="none" stroke="' + t.color + '" stroke-width="' + sw +
+      '" stroke-linecap="round" stroke-dasharray="' + segLen + ' ' + (circumference - segLen) + '" stroke-dashoffset="' + offset +
+      '" transform="rotate(-90 ' + r + ' ' + r + ')"/>';
+  });
+
+  svg += '</svg>';
+  return svg;
+}
+
+function countDone(tasks) {
+  return TASKS.reduce((sum, t) => sum + (tasks[t.key] ? 1 : 0), 0);
+}
+
+function renderHomeRing() {
+  const today = dayData[TODAY];
+  const done = countDone(today.tasks);
+
+  document.getElementById('home-ring').outerHTML = buildRing(152, 0.16, today.tasks).replace('<svg ', '<svg id="home-ring" ');
+  document.querySelector('#home-ring-count .count-num').textContent = done + '/5';
+
+  const legend = document.getElementById('home-ring-legend');
+  legend.innerHTML = '';
+  TASKS.forEach(t => {
+    const isDone = today.tasks[t.key];
+    const row = document.createElement('div');
+    row.className = 'ring-leg-item';
+    row.innerHTML = '<div class="ring-leg-dot" style="background:' + t.color + '"></div>' +
+      '<div class="ring-leg-text"><span class="ring-leg-label">' + t.label + '</span>' +
+      '<span class="ring-leg-state" style="color:' + (isDone ? 'var(--wg)' : 'var(--wt3)') + '">' + (isDone ? '完成' : '未完成') + '</span></div>';
+    legend.appendChild(row);
+  });
+}
+
+function renderCalendar() {
+  const grid = document.getElementById('cal-grid');
+  while (grid.children.length > 7) grid.removeChild(grid.lastChild);
+
+  const leadBlanks = 1;
+  for (let i = 0; i < leadBlanks; i++) {
+    const blank = document.createElement('div');
+    blank.className = 'cal-d-wrap empty';
+    grid.appendChild(blank);
+  }
+
+  // Ring size scales with how many of the 5 tasks were completed that day.
+  // 0 done -> no ring, just a faint dot. 1-5 done -> linear size scale.
+  const MIN_RING = 26, MAX_RING = 42;
+
+  for (let day = 1; day <= 21; day++) {
+    const wrap = document.createElement('div');
+    wrap.className = 'cal-d-wrap';
+    wrap.dataset.day = day;
+
+    const data = dayData[day];
+    if (day === TODAY) wrap.classList.add('today');
+
+    if (data) {
+      const done = countDone(data.tasks);
+      if (done === 0) {
+        const dot = document.createElement('div');
+        dot.style.width = '7px'; dot.style.height = '7px'; dot.style.borderRadius = '50%';
+        dot.style.background = 'var(--wa-bg2)';
+        wrap.appendChild(dot);
+      } else {
+        const ringSize = MIN_RING + (MAX_RING - MIN_RING) * ((done - 1) / 4);
+        const ringWrap = document.createElement('div');
+        ringWrap.style.width = ringSize + 'px';
+        ringWrap.style.height = ringSize + 'px';
+        ringWrap.innerHTML = buildRing(ringSize, 0.22, data.tasks);
+        wrap.appendChild(ringWrap);
+      }
+      wrap.onclick = () => openDay(day);
+    } else {
+      const dot = document.createElement('div');
+      dot.style.width = '6px'; dot.style.height = '6px'; dot.style.borderRadius = '50%';
+      dot.style.background = 'var(--wa-bg2)';
+      wrap.appendChild(dot);
+      wrap.classList.add('empty');
+    }
+
+    const num = document.createElement('span');
+    num.className = 'cal-d-num';
+    num.textContent = day;
+    if (!data) num.style.color = 'var(--wa-bg2)';
+    wrap.appendChild(num);
+
+    grid.appendChild(wrap);
+  }
+}
+
+let selectedDay = null;
+
+function openDay(day) {
+  if (selectedDay === day) {
+    closeDay();
+    return;
+  }
+
+  const d = dayData[day];
+  if (!d) return;
+  selectedDay = day;
+
+  document.querySelectorAll('.cal-d-wrap').forEach(el => el.classList.remove('selected'));
+  document.querySelector('.cal-d-wrap[data-day="' + day + '"]').classList.add('selected');
+
+  document.getElementById('detail-date-label').textContent = d.date;
+  document.getElementById('detail-article-title').textContent = d.article;
+  document.getElementById('detail-article-level').textContent = d.level;
+
+  const tasksEl = document.getElementById('detail-tasks');
+  tasksEl.innerHTML = '';
+  TASKS.forEach(t => {
+    const done = d.tasks[t.key];
+    const row = document.createElement('div');
+    row.className = 'detail-task-row';
+    row.innerHTML = '<div class="detail-task-left"><div class="task-dot" style="background:' + t.color + '"></div>' + t.label + '</div>' +
+      '<span class="badge" style="background:' + (done ? 'var(--wg-bg)' : 'var(--wa-bg)') + ';color:' + (done ? 'var(--wg)' : 'var(--wt3)') + '">' + (done ? '完成' : '未完成') + '</span>';
+    tasksEl.appendChild(row);
+  });
+
+  const panel = document.getElementById('day-detail');
+  panel.classList.add('open');
+  setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 60);
+}
+
+function closeDay() {
+  selectedDay = null;
+  document.getElementById('day-detail').classList.remove('open');
+  document.querySelectorAll('.cal-d-wrap').forEach(el => el.classList.remove('selected'));
+}
+
+renderHomeRing();
+renderCalendar();
+loadAllSlotsOnStartup();
+
+initSort();
+</script>
+</body>
+</html>
