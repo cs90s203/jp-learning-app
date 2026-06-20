@@ -766,7 +766,7 @@
     <div class="page active" id="page-home">
       <div class="top-bar">
         <h1>今日學習</h1>
-        <p id="today-date">2026年6月18日・N5</p>
+        <p id="today-date"></p>
       </div>
       <div class="sec">
 
@@ -817,8 +817,8 @@
       <div class="top-bar">
         <h1 onclick="_devTitleTap()" style="user-select:none">今日文章</h1>
         <div class="article-meta">
-          <span class="level-tag">N5</span>
-          <span class="article-date">6月18日</span>
+          <span class="level-tag" id="article-level-tag">N5</span>
+          <span class="article-date" id="article-date-tag"></span>
         </div>
       </div>
       <div class="sec" style="padding-top:0">
@@ -1465,7 +1465,7 @@ function restoreDemoContent() {
 }
 
 async function loadTodayContent(level) {
-  const today = new Date().toISOString().split('T')[0];
+  const today = getLocalDateStr();
   return loadContentForDate(today, level || CURRENT_LEVEL);
 }
 
@@ -1938,10 +1938,24 @@ function updateSpeedButtonStates(idx) {
 
 document.addEventListener('DOMContentLoaded', () => {
   updateSpeedButtonStates(SPEED_STEPS.indexOf(readAloudRate));
+
+  // 動態設定今日日期顯示
+  const weekdays = ['日','一','二','三','四','五','六'];
+  const _d = new Date();
+  const dateLabel = `${_d.getFullYear()}年${_d.getMonth()+1}月${_d.getDate()}日`;
+  const weekLabel = `（${weekdays[_d.getDay()]}）`;
+  const el = document.getElementById('today-date');
+  if (el) el.textContent = `${dateLabel}${weekLabel}・${CURRENT_LEVEL.toUpperCase()}`;
+  const artDate = document.getElementById('article-date-tag');
+  if (artDate) artDate.textContent = `${_d.getMonth()+1}月${_d.getDate()}日`;
+
   // 嘗試自動載入今日文章（靜默，失敗則保留 demo）
   loadTodayContent().then(result => {
     if (result.success) {
       showToast('今日文章已載入：' + result.pack.title);
+      // 更新文章頁 level tag
+      const lt = document.getElementById('article-level-tag');
+      if (lt && result.pack.level) lt.textContent = result.pack.level.toUpperCase();
     }
     // 失敗時靜默，保留 demo 文章
   });
@@ -2313,7 +2327,18 @@ const dayData = {
   18: { date:'6月18日（一）', article:'今日の天気と公園',   level:'N5・183字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
 };
 
-const TODAY = 18;
+// 動態取得本地日期（避免 UTC 時差問題）
+function getLocalDateStr() {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, '0');
+  const d = String(now.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+const _now = new Date();
+const TODAY = _now.getDate();
+const TODAY_MONTH = _now.getMonth() + 1;
+const TODAY_YEAR = _now.getFullYear();
 
 // Build SVG ring markup. size = px outer diameter. tasksState = {key:bool}.
 // completedOverride: optional count used only to decide empty-state rendering.
