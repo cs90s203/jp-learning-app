@@ -1304,6 +1304,13 @@
           </div>
         </div>
 
+        <p class="section-title" style="margin-top:16px">帳號</p>
+        <div class="card" style="padding:4px 16px;margin-bottom:16px">
+          <div id="auth-section">
+            <!-- 由 renderAuthUI() 填入 -->
+          </div>
+        </div>
+
         <p class="section-title" style="margin-top:16px">資料</p>
         <div class="card" style="padding:4px 16px;margin-bottom:16px">
           <div class="setting-row" style="cursor:pointer" onclick="exportVocabCSV()">
@@ -1328,17 +1335,9 @@
         </div>
       </div>
 
-      <!-- 帳號 -->
-      <p class="section-title" style="margin-top:16px">帳號</p>
-      <div class="card" style="padding:4px 16px;margin-bottom:16px">
-        <div id="auth-section">
-          <!-- 由 renderAuthUI() 填入 -->
-        </div>
-      </div>
-
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.7.6
+        v0.7.7
       </div>
 
     </div>
@@ -1617,7 +1616,7 @@ function switchPage(id) {
   if (id === 'home')  renderHomeRing();
   if (id === 'vocab') renderVocabPage();
   if (id === 'quiz')     initQuizPage();
-  if (id === 'settings') initModeUI();
+  if (id === 'settings') { initModeUI(); renderAuthUI(); }
   // Show/hide FAB
   document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
 }
