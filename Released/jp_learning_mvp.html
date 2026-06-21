@@ -427,11 +427,12 @@
     -webkit-overflow-scrolling: touch;
   }
   .vocab-list-row {
-    background: #FFFFFF; border: 0.5px solid var(--wa-bg2);
-    border-radius: 13px; margin-bottom: 8px;
+    background: #FFFFFF;
+    border-bottom: 0.5px solid var(--wa-bg2);
     display: flex; align-items: stretch; overflow: hidden;
     position: relative; cursor: pointer;
   }
+  .vocab-list-area > .vocab-list-row:first-child { border-top: 0.5px solid var(--wa-bg2); }
   .vocab-list-row.selected .vocab-row-content { background: var(--wa-ll); }
   .vocab-row-content {
     flex: 1; padding: 12px 14px; display: flex; align-items: center; gap: 10px;
@@ -444,8 +445,32 @@
   .vocab-row-del  {
     position: absolute; right: 0; top: 0; bottom: 0; width: 68px;
     background: var(--wr); display: flex; align-items: center; justify-content: center;
-    border-radius: 0 13px 13px 0; flex-shrink: 0;
+    flex-shrink: 0;
   }
+
+  /* 中文意思遮擋 */
+  .vocab-meaning-wrap { cursor: pointer; position: relative; min-height: 32px; }
+  .vocab-meaning.meaning-hidden { filter: blur(7px); user-select: none; pointer-events: none; }
+  .meaning-reveal-hint {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    font-size: 12px; color: var(--wt3); letter-spacing: 0.04em;
+  }
+
+  /* 刪除確認 dialog */
+  .confirm-overlay {
+    position: fixed; inset: 0; background: rgba(42,26,8,0.4);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 300;
+  }
+  .confirm-box {
+    background: #FFFFFF; border-radius: 18px; padding: 24px 20px 16px;
+    width: min(80vw, 300px); text-align: center;
+    box-shadow: 0 4px 24px rgba(42,26,8,0.18);
+  }
+  .confirm-msg { font-size: 15px; color: var(--wt); line-height: 1.6; margin-bottom: 20px; }
+  .confirm-btns { display: flex; gap: 10px; }
+  .confirm-cancel { flex: 1; padding: 11px; border: 0.5px solid var(--wa-bg2); border-radius: 12px; background: #FFFFFF; font-size: 14px; color: var(--wt2); cursor: pointer; font-family: inherit; }
+  .confirm-ok     { flex: 1; padding: 11px; border: none; border-radius: 12px; background: var(--wr); font-size: 14px; color: #FFFFFF; font-weight: 500; cursor: pointer; font-family: inherit; }
 
   /* FAB */
   .vocab-fab {
@@ -1172,7 +1197,18 @@
           </div>
         </div>
 
-        <p class="section-title" style="margin-top:16px">進階功能</p>
+        <p class="section-title" style="margin-top:16px">資料</p>
+        <div class="card" style="padding:4px 16px;margin-bottom:16px">
+          <div class="setting-row" style="cursor:pointer" onclick="exportVocabCSV()">
+            <div>
+              <div class="setting-label">匯出單字本</div>
+              <div class="setting-sub">下載 CSV 檔案，可用 Excel 開啟</div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--wt3)" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+        </div>
+
+        <p class="section-title">進階功能</p>
         <div class="card" style="padding:4px 16px">
           <div class="setting-row" style="flex-direction:column;align-items:flex-start;gap:8px;padding:14px 0">
             <div>
@@ -1187,11 +1223,22 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.3.0
+        v0.3.2
       </div>
 
     </div>
 
+  </div>
+
+  <!-- 刪除確認 dialog -->
+  <div class="confirm-overlay" id="confirm-overlay" style="display:none" onclick="cancelConfirm()">
+    <div class="confirm-box" onclick="event.stopPropagation()">
+      <div class="confirm-msg" id="confirm-msg"></div>
+      <div class="confirm-btns">
+        <button class="confirm-cancel" onclick="cancelConfirm()">取消</button>
+        <button class="confirm-ok" id="confirm-ok-btn">確定刪除</button>
+      </div>
+    </div>
   </div>
 
   <!-- 新增單字 modal -->
@@ -1728,21 +1775,21 @@ function renderArticle(tokens) {
   setupArticleScrollObserver();
 }
 
-let _scrollObserver = null;
+let _scrollHandler = null;
 function setupArticleScrollObserver() {
-  if (_scrollObserver) { _scrollObserver.disconnect(); _scrollObserver = null; }
-  const container = document.getElementById('article-text');
-  const groups = container.querySelectorAll('.sentence-group');
-  if (!groups.length) return;
-  const lastGroup = groups[groups.length - 1];
-  _scrollObserver = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting) {
+  const page = document.getElementById('page-article');
+  if (!page) return;
+  // 先移除舊 listener
+  if (_scrollHandler) { page.removeEventListener('scroll', _scrollHandler); _scrollHandler = null; }
+  _scrollHandler = () => {
+    // 捲到距底部 80px 內才算
+    if (page.scrollTop + page.clientHeight >= page.scrollHeight - 80) {
       markArticleCondition('scrolled', true);
-      _scrollObserver.disconnect();
-      _scrollObserver = null;
+      page.removeEventListener('scroll', _scrollHandler);
+      _scrollHandler = null;
     }
-  }, { threshold: 0.3 });
-  _scrollObserver.observe(lastGroup);
+  };
+  page.addEventListener('scroll', _scrollHandler, { passive: true });
 }
 
 function applyAddedWordNoteColors() {
@@ -1815,7 +1862,7 @@ function openWordPanel(basic, surface, reading) {
     '<div class="wp-meaning">' + entry.meaning + '</div>' +
     (isAdded
       ? '<div class="wp-added-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--wg)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>已在單字卡中</div>' +
-        '<button class="wp-remove-btn" onclick="removeFromVocabCards(\'' + basic + '\')">' +
+        '<button class="wp-remove-btn" onclick="showConfirm(\'確定移除「' + basic + '」？\', () => removeFromVocabCards(\'' + basic + '\'))">' +
           '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6M10 11v6M14 11v6M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>' +
           '移除單字卡' +
         '</button>'
@@ -2622,6 +2669,55 @@ let vocabFilteredList = [];
 let vocabDisplayIndex = 0;
 let vdcTouchY0 = 0;
 let swipedRowEl = null;
+let vocabMeaningRevealed = false;
+
+function revealVocabMeaning() {
+  if (vocabMeaningRevealed) return;
+  vocabMeaningRevealed = true;
+  const el = document.getElementById('vocab-meaning-text');
+  const hint = document.getElementById('meaning-reveal-hint');
+  if (el) el.classList.remove('meaning-hidden');
+  if (hint) hint.style.display = 'none';
+}
+
+// ===== 確認 dialog =====
+let _confirmCallback = null;
+function showConfirm(msg, onConfirm) {
+  document.getElementById('confirm-msg').textContent = msg;
+  document.getElementById('confirm-overlay').style.display = 'flex';
+  _confirmCallback = onConfirm;
+  document.getElementById('confirm-ok-btn').onclick = () => {
+    document.getElementById('confirm-overlay').style.display = 'none';
+    if (_confirmCallback) _confirmCallback();
+    _confirmCallback = null;
+  };
+}
+function cancelConfirm() {
+  document.getElementById('confirm-overlay').style.display = 'none';
+  _confirmCallback = null;
+}
+
+// ===== CSV 匯出 =====
+function exportVocabCSV() {
+  const words = Object.keys(vocabBook);
+  if (!words.length) { showToast('單字本為空'); return; }
+  const rows = ['﻿單字,讀音,羅馬拼音,中文,熟悉度,加入日期'];
+  words.forEach(w => {
+    const e = vocabBook[w];
+    const cols = [w, e.kana||'', e.romaji||'', e.meaning||'', e.familiarity||0, e.addedDate||''];
+    rows.push(cols.map(c => '"' + String(c).replace(/"/g, '""') + '"').join(','));
+  });
+  const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = '單字本_' + getLocalDateStr() + '.csv';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('CSV 已匯出');
+}
 
 function renderVocabPage() {
   const words = Object.keys(vocabBook);
@@ -2666,6 +2762,7 @@ function renderVocabDisplayCard() {
   const lv    = vocabLevel(entry.familiarity);
 
   const safeKana = (entry.kana || word).replace(/'/g, "\\'");
+  vocabMeaningRevealed = false;
   contentEl.innerHTML =
     '<div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:6px">' +
       '<div class="vocab-kanji">' + word + '</div>' +
@@ -2676,7 +2773,10 @@ function renderVocabDisplayCard() {
     (entry.kana   ? '<div class="vocab-kana">'   + entry.kana   + '</div>' : '') +
     (entry.romaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
     '<div class="vocab-divider"></div>' +
-    '<div class="vocab-meaning">' + (entry.meaning || '—') + '</div>' +
+    '<div class="vocab-meaning-wrap" onclick="revealVocabMeaning()">' +
+      '<div class="vocab-meaning meaning-hidden" id="vocab-meaning-text">' + (entry.meaning || '—') + '</div>' +
+      '<div class="meaning-reveal-hint" id="meaning-reveal-hint">點擊顯示中文</div>' +
+    '</div>' +
     (entry.example ? '<div class="vocab-example">' + entry.example + '</div>' : '') +
     '<div style="margin-top:12px"><span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span></div>';
 
@@ -2765,7 +2865,7 @@ function renderVocabList() {
     const delBtn = document.createElement('div');
     delBtn.className = 'vocab-row-del';
     delBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/></svg>';
-    delBtn.addEventListener('click', (e) => { e.stopPropagation(); deleteVocabWord(word); });
+    delBtn.addEventListener('click', (e) => { e.stopPropagation(); showConfirm('確定刪除「' + word + '」？', () => deleteVocabWord(word)); });
 
     row.appendChild(content);
     row.appendChild(delBtn);
