@@ -1350,7 +1350,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.7.9
+        v0.8.0
       </div>
 
     </div>
@@ -4536,26 +4536,33 @@ const firebaseConfig = {
   messagingSenderId: "1068503481615",
   appId: "1:1068503481615:web:7e2098a24111139729927a"
 };
-firebase.initializeApp(firebaseConfig);
-const fbAuth = firebase.auth();
-const fbDb   = firebase.firestore();
+var fbAuth = null;
+var fbDb   = null;
+var currentUser = null;
 
-let currentUser = null;
+try {
+  firebase.initializeApp(firebaseConfig);
+  fbAuth = firebase.auth();
+  fbDb   = firebase.firestore();
 
-// 處理 Google redirect 回跳結果
-fbAuth.getRedirectResult().then(result => {
-  if (result && result.user) {
-    console.log('Google 登入成功（redirect）:', result.user.uid);
-  }
-}).catch(err => {
-  if (err.code !== 'auth/no-auth-event') showToast('登入失敗：' + err.message);
-});
+  // 處理 Google redirect 回跳結果
+  fbAuth.getRedirectResult().then(result => {
+    if (result && result.user) {
+      console.log('Google 登入成功（redirect）:', result.user.uid);
+    }
+  }).catch(err => {
+    if (err.code !== 'auth/no-auth-event') showToast('登入失敗：' + err.message);
+  });
 
-// 監聽登入狀態
-fbAuth.onAuthStateChanged(user => {
-  currentUser = user;
-  renderAuthUI();
-});
+  // 監聽登入狀態
+  fbAuth.onAuthStateChanged(user => {
+    currentUser = user;
+    renderAuthUI();
+  });
+
+} catch(e) {
+  console.warn('Firebase 初始化失敗:', e.message);
+}
 
 // 登入按鈕 HTML（供失敗時恢復用）
 function _authLoginBtnHTML() {

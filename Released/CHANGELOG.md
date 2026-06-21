@@ -1,5 +1,19 @@
 # 日語學習 App — 版本記錄
 
+## v0.8.0 — 2026-06-21
+
+**Firebase 初始化修正（TDZ bug）**
+- const fbAuth/fbDb 改為 var，並包進 try-catch
+- 修正 firebase.initializeApp 失敗時 fbAuth 停在 TDZ 導致後續操作全部 crash 的問題
+
+---
+
+## 0.8.0 — 2026-06-21
+
+Firebase 初始化修正
+
+---
+
 ## v0.7.9 — 2026-06-21
 
 **登入錯誤診斷**
