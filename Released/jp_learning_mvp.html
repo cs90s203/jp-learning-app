@@ -898,14 +898,6 @@
         <p style="font-size:12px;color:var(--wt3);text-align:center">長按文字可加入單字卡</p>
       </div>
 
-      <!-- 底部滑出：單字／助詞詳情面板 -->
-      <div class="word-panel" id="word-panel">
-        <div class="word-panel-inner">
-          <div class="word-panel-handle"></div>
-          <div id="word-panel-content"></div>
-        </div>
-      </div>
-      <div class="word-panel-backdrop" id="word-panel-backdrop" onclick="closeWordPanel()"></div>
     </div>
 
     <!-- 單字本 -->
@@ -1315,6 +1307,15 @@
       </div>
     </div>
   </div>
+
+  <!-- 底部滑出：單字／助詞詳情面板（移至 .app 頂層，避免被 .page overflow 裁切） -->
+  <div class="word-panel" id="word-panel">
+    <div class="word-panel-inner">
+      <div class="word-panel-handle"></div>
+      <div id="word-panel-content"></div>
+    </div>
+  </div>
+  <div class="word-panel-backdrop" id="word-panel-backdrop" onclick="closeWordPanel()"></div>
 </div>
 
 <script>
