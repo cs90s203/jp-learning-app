@@ -2373,7 +2373,7 @@ function countDone(tasks) {
 }
 
 function renderHomeRing() {
-  const today = dayData[TODAY];
+  const today = dayData[TODAY] || { tasks: { article:false, vocab:false, listen:false, quiz:false, speak:false } };
   const done = countDone(today.tasks);
 
   document.getElementById('home-ring').outerHTML = buildRing(152, 0.16, today.tasks).replace('<svg ', '<svg id="home-ring" ');
@@ -2396,7 +2396,8 @@ function renderCalendar() {
   const grid = document.getElementById('cal-grid');
   while (grid.children.length > 7) grid.removeChild(grid.lastChild);
 
-  const leadBlanks = 1;
+  // 動態計算當月第一天是星期幾（0=日）
+  const leadBlanks = new Date(TODAY_YEAR, TODAY_MONTH - 1, 1).getDay();
   for (let i = 0; i < leadBlanks; i++) {
     const blank = document.createElement('div');
     blank.className = 'cal-d-wrap empty';
@@ -2407,7 +2408,7 @@ function renderCalendar() {
   // 0 done -> no ring, just a faint dot. 1-5 done -> linear size scale.
   const MIN_RING = 26, MAX_RING = 42;
 
-  for (let day = 1; day <= 21; day++) {
+  for (let day = 1; day <= TODAY; day++) {
     const wrap = document.createElement('div');
     wrap.className = 'cal-d-wrap';
     wrap.dataset.day = day;
