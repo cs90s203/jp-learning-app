@@ -162,6 +162,21 @@
     pointer-events: none;
   }
 
+  /* ── 今日足跡 Dashboard ── */
+  #home-dashboard { display: flex; gap: 10px; }
+  .dash-tile {
+    flex: 1; background: var(--wa-bg); border-radius: 14px;
+    padding: 16px 6px 13px; display: flex; flex-direction: column;
+    align-items: center; gap: 4px;
+  }
+  .dash-tile-num {
+    font-size: 32px; font-weight: 600; line-height: 1;
+    color: var(--wa); transition: color 0.2s;
+  }
+  .dash-tile-num.zero { color: var(--wa-bg2); }
+  .dash-tile-label { font-size: 11px; color: var(--wt3); text-align: center; line-height: 1.4; }
+  .dash-tile-unit { font-size: 12px; font-weight: 400; color: var(--wt3); margin-left: 1px; }
+
   .section-title {
     font-size: 11px; font-weight: 500; color: var(--wt3);
     letter-spacing: 0.07em; text-transform: uppercase;
@@ -1107,7 +1122,10 @@
           </div>
         </div>
 
-        <p class="section-title">今日任務</p>
+        <p class="section-title">今日足跡</p>
+        <div id="home-dashboard"></div>
+
+        <p class="section-title" style="margin-top:20px">今日任務</p>
         <div class="card">
           <div class="today-row">
             <div class="today-ring-center">
@@ -1488,7 +1506,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.5.7
+        v0.6.0
       </div>
 
     </div>
@@ -3030,6 +3048,8 @@ function markArticleCondition(key, value) {
   if (!log[dateStr]) return;
   if (!log[dateStr].articleProgress) log[dateStr].articleProgress = { scrolled:false, playedOnce:false, playCount:0 };
   log[dateStr].articleProgress[key] = value;
+  // 同步儲存文章句子總數（供首頁 dashboard 計算）
+  if (sentenceCount > 0) log[dateStr].sentencesTotal = sentenceCount;
   saveStudyLog(log);
   updateArticleProgress();
 }
@@ -3089,6 +3109,41 @@ function countDone(tasks) {
   }, 0);
 }
 
+function renderDashboard() {
+  const container = document.getElementById('home-dashboard');
+  if (!container) return;
+
+  const today = getLocalDateStr();
+  const log = loadStudyLog();
+  const entry = log[today] || {};
+  const tasks = entry.tasks || {};
+
+  // 1. 今天新學的單字
+  const newWords = Object.values(vocabBook).filter(e => e.addedDate === today).length;
+
+  // 2. 今天複習記得的單字（累加自 quiz session）
+  const reviewed = entry.wordsReviewed || 0;
+
+  // 3. 估算閱讀完成句數
+  const sentencesTotal = entry.sentencesTotal || 0;
+  const artPct = articleFillRatio(tasks.article || 0);
+  const sentencesRead = sentencesTotal > 0 ? Math.round(sentencesTotal * artPct) : 0;
+
+  const tiles = [
+    { num: newWords,      label: '新學單字' },
+    { num: reviewed,      label: '複習單字' },
+    { num: sentencesRead, label: '完成句子' },
+  ];
+
+  container.innerHTML = tiles.map(({ num, label }) => {
+    const isZero = num === 0;
+    return `<div class="dash-tile">
+      <div class="dash-tile-num${isZero ? ' zero' : ''}">${num}</div>
+      <div class="dash-tile-label">${label}</div>
+    </div>`;
+  }).join('');
+}
+
 function renderHomeRing() {
   const log = loadStudyLog();
   const todayEntry = log[getLocalDateStr()];
@@ -3118,6 +3173,8 @@ function renderHomeRing() {
       '<span class="ring-leg-state" style="color:' + stateColor + '">' + stateText + '</span></div>';
     legend.appendChild(row);
   });
+
+  renderDashboard();
 }
 
 function renderCalendar() {
@@ -3939,12 +3996,13 @@ function vqShowResult() {
   document.getElementById('vq-r-ok').textContent   = vqOk;
   document.getElementById('vq-r-fail').textContent  = vqFail;
 
-  // 標記 100%
+  // 標記 100% + 累加複習記得數
   const log = loadStudyLog();
   const dateStr = getLocalDateStr();
   if (!log[dateStr]) log[dateStr] = {};
   if (!log[dateStr].tasks) log[dateStr].tasks = {};
   log[dateStr].tasks.vocab = 100;
+  log[dateStr].wordsReviewed = (log[dateStr].wordsReviewed || 0) + vqOk;
   saveStudyLog(log);
   if (document.getElementById('page-home').classList.contains('active')) renderHomeRing();
 
