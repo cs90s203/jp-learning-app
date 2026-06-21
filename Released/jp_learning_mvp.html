@@ -1953,9 +1953,12 @@ document.addEventListener('DOMContentLoaded', () => {
   loadTodayContent().then(result => {
     if (result.success) {
       showToast('今日文章已載入：' + result.pack.title);
-      // 更新文章頁 level tag
       const lt = document.getElementById('article-level-tag');
       if (lt && result.pack.level) lt.textContent = result.pack.level.toUpperCase();
+      // 自動記錄今日文章已閱讀
+      logTodayArticle(result.pack.title, result.pack.level);
+      renderHomeRing();
+      renderCalendar();
     }
     // 失敗時靜默，保留 demo 文章
   });
@@ -2307,25 +2310,38 @@ const TASKS = [
   { key:'speak',   label:'跟讀',     color:'#7F77DD' }
 ];
 
-// Calendar day data — true/false per task
-const dayData = {
-  3:  { date:'6月3日（日）',  article:'はじめての挨拶',     level:'N5・160字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
-  4:  { date:'6月4日（一）',  article:'家族の紹介',         level:'N5・175字', tasks:{article:true,  vocab:true,  listen:true,  quiz:false, speak:false} },
-  5:  { date:'6月5日（二）',  article:'公園の午後',         level:'N5・180字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
-  6:  { date:'6月6日（三）',  article:'好きな食べ物',       level:'N5・155字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
-  7:  { date:'6月7日（四）',  article:'週末の過ごし方',     level:'N5・190字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
-  8:  { date:'6月8日（五）',  article:'天気の話',           level:'N5・162字', tasks:{article:true,  vocab:true,  listen:true,  quiz:false, speak:false} },
-  9:  { date:'6月9日（六）',  article:'駅への道',           level:'N5・178字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
-  10: { date:'6月10日（日）', article:'学校の生活',         level:'N5・185字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
-  11: { date:'6月11日（一）', article:'お買い物',           level:'N5・168字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
-  12: { date:'6月12日（二）', article:'誕生日パーティー',   level:'N5・195字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
-  13: { date:'6月13日（三）', article:'病院に行く',         level:'N5・172字', tasks:{article:true,  vocab:true,  listen:true,  quiz:false, speak:false} },
-  14: { date:'6月14日（四）', article:'趣味の時間',         level:'N5・188字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
-  15: { date:'6月15日（五）', article:'レストランで',       level:'N5・165字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
-  16: { date:'6月16日（六）', article:'朝のルーティン',     level:'N5・182字', tasks:{article:true,  vocab:true,  listen:true,  quiz:true,  speak:true } },
-  17: { date:'6月17日（日）', article:'友達との会話',       level:'N5・177字', tasks:{article:true,  vocab:true,  listen:true,  quiz:false, speak:false} },
-  18: { date:'6月18日（一）', article:'今日の天気と公園',   level:'N5・183字', tasks:{article:true,  vocab:true,  listen:false, quiz:false, speak:false} },
-};
+// ===== 真實學習紀錄系統（localStorage）=====
+// 格式：{ "2026-06-21": { tasks:{article,vocab,listen,quiz,speak}, articleTitle, level } }
+const STUDY_LOG_KEY = 'studyLog_v1';
+
+function loadStudyLog() {
+  try { return JSON.parse(localStorage.getItem(STUDY_LOG_KEY) || '{}'); } catch(e) { return {}; }
+}
+function saveStudyLog(log) {
+  try { localStorage.setItem(STUDY_LOG_KEY, JSON.stringify(log)); } catch(e) {}
+}
+
+// 標記今天某任務完成，並重新渲染首頁
+function markTaskDone(taskKey) {
+  const log = loadStudyLog();
+  const dateStr = getLocalDateStr();
+  if (!log[dateStr]) log[dateStr] = { tasks:{article:false,vocab:false,listen:false,quiz:false,speak:false}, articleTitle:'', level:'' };
+  log[dateStr].tasks[taskKey] = true;
+  saveStudyLog(log);
+  renderHomeRing();
+  renderCalendar();
+}
+
+// 儲存今日文章資訊（載入文章後呼叫）
+function logTodayArticle(title, level) {
+  const log = loadStudyLog();
+  const dateStr = getLocalDateStr();
+  if (!log[dateStr]) log[dateStr] = { tasks:{article:false,vocab:false,listen:false,quiz:false,speak:false}, articleTitle:'', level:'' };
+  log[dateStr].articleTitle = title || '';
+  log[dateStr].level = level || '';
+  log[dateStr].tasks.article = true;
+  saveStudyLog(log);
+}
 
 // 動態取得本地日期（避免 UTC 時差問題）
 function getLocalDateStr() {
@@ -2373,16 +2389,18 @@ function countDone(tasks) {
 }
 
 function renderHomeRing() {
-  const today = dayData[TODAY] || { tasks: { article:false, vocab:false, listen:false, quiz:false, speak:false } };
-  const done = countDone(today.tasks);
+  const log = loadStudyLog();
+  const todayEntry = log[getLocalDateStr()];
+  const tasks = todayEntry ? todayEntry.tasks : {article:false,vocab:false,listen:false,quiz:false,speak:false};
+  const done = countDone(tasks);
 
-  document.getElementById('home-ring').outerHTML = buildRing(152, 0.16, today.tasks).replace('<svg ', '<svg id="home-ring" ');
+  document.getElementById('home-ring').outerHTML = buildRing(152, 0.16, tasks).replace('<svg ', '<svg id="home-ring" ');
   document.querySelector('#home-ring-count .count-num').textContent = done + '/5';
 
   const legend = document.getElementById('home-ring-legend');
   legend.innerHTML = '';
   TASKS.forEach(t => {
-    const isDone = today.tasks[t.key];
+    const isDone = tasks[t.key];
     const row = document.createElement('div');
     row.className = 'ring-leg-item';
     row.innerHTML = '<div class="ring-leg-dot" style="background:' + t.color + '"></div>' +
@@ -2396,56 +2414,60 @@ function renderCalendar() {
   const grid = document.getElementById('cal-grid');
   while (grid.children.length > 7) grid.removeChild(grid.lastChild);
 
-  // 動態計算當月第一天是星期幾（0=日）
+  const log = loadStudyLog();
+  const daysInMonth = new Date(TODAY_YEAR, TODAY_MONTH, 0).getDate();
   const leadBlanks = new Date(TODAY_YEAR, TODAY_MONTH - 1, 1).getDay();
+  const MIN_RING = 26, MAX_RING = 42;
+
+  // 填入月初空白
   for (let i = 0; i < leadBlanks; i++) {
     const blank = document.createElement('div');
     blank.className = 'cal-d-wrap empty';
     grid.appendChild(blank);
   }
 
-  // Ring size scales with how many of the 5 tasks were completed that day.
-  // 0 done -> no ring, just a faint dot. 1-5 done -> linear size scale.
-  const MIN_RING = 26, MAX_RING = 42;
+  // 顯示當月所有日期
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = `${TODAY_YEAR}-${String(TODAY_MONTH).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const entry = log[dateStr];
+    const isFuture = day > TODAY;
+    const isToday = day === TODAY;
 
-  for (let day = 1; day <= TODAY; day++) {
     const wrap = document.createElement('div');
-    wrap.className = 'cal-d-wrap';
+    wrap.className = 'cal-d-wrap' + (isFuture ? ' empty' : '') + (isToday ? ' today' : '');
     wrap.dataset.day = day;
 
-    const data = dayData[day];
-    if (day === TODAY) wrap.classList.add('today');
-
-    if (data) {
-      const done = countDone(data.tasks);
+    if (!isFuture && entry) {
+      const done = countDone(entry.tasks);
       if (done === 0) {
         const dot = document.createElement('div');
-        dot.style.width = '7px'; dot.style.height = '7px'; dot.style.borderRadius = '50%';
-        dot.style.background = 'var(--wa-bg2)';
+        dot.style.cssText = 'width:7px;height:7px;border-radius:50%;background:var(--wa-bg2)';
         wrap.appendChild(dot);
       } else {
         const ringSize = MIN_RING + (MAX_RING - MIN_RING) * ((done - 1) / 4);
         const ringWrap = document.createElement('div');
-        ringWrap.style.width = ringSize + 'px';
-        ringWrap.style.height = ringSize + 'px';
-        ringWrap.innerHTML = buildRing(ringSize, 0.22, data.tasks);
+        ringWrap.style.cssText = `width:${ringSize}px;height:${ringSize}px`;
+        ringWrap.innerHTML = buildRing(ringSize, 0.22, entry.tasks);
         wrap.appendChild(ringWrap);
       }
       wrap.onclick = () => openDay(day);
-    } else {
+    } else if (!isFuture) {
+      // 過去但沒有紀錄 — 淡點
       const dot = document.createElement('div');
-      dot.style.width = '6px'; dot.style.height = '6px'; dot.style.borderRadius = '50%';
-      dot.style.background = 'var(--wa-bg2)';
+      dot.style.cssText = 'width:6px;height:6px;border-radius:50%;background:var(--wa-bg2)';
       wrap.appendChild(dot);
-      wrap.classList.add('empty');
+    } else {
+      // 未來 — 只顯示數字
+      const dot = document.createElement('div');
+      dot.style.cssText = 'width:4px;height:4px;border-radius:50%;background:transparent';
+      wrap.appendChild(dot);
     }
 
     const num = document.createElement('span');
     num.className = 'cal-d-num';
     num.textContent = day;
-    if (!data) num.style.color = 'var(--wa-bg2)';
+    if (isFuture) num.style.color = 'var(--wa-bg2)';
     wrap.appendChild(num);
-
     grid.appendChild(wrap);
   }
 }
@@ -2453,26 +2475,27 @@ function renderCalendar() {
 let selectedDay = null;
 
 function openDay(day) {
-  if (selectedDay === day) {
-    closeDay();
-    return;
-  }
+  if (selectedDay === day) { closeDay(); return; }
 
-  const d = dayData[day];
-  if (!d) return;
+  const log = loadStudyLog();
+  const dateStr = `${TODAY_YEAR}-${String(TODAY_MONTH).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+  const entry = log[dateStr];
+  if (!entry) return;
   selectedDay = day;
 
   document.querySelectorAll('.cal-d-wrap').forEach(el => el.classList.remove('selected'));
   document.querySelector('.cal-d-wrap[data-day="' + day + '"]').classList.add('selected');
 
-  document.getElementById('detail-date-label').textContent = d.date;
-  document.getElementById('detail-article-title').textContent = d.article;
-  document.getElementById('detail-article-level').textContent = d.level;
+  const weekdays = ['日','一','二','三','四','五','六'];
+  const d = new Date(TODAY_YEAR, TODAY_MONTH - 1, day);
+  document.getElementById('detail-date-label').textContent = `${TODAY_MONTH}月${day}日（${weekdays[d.getDay()]}）`;
+  document.getElementById('detail-article-title').textContent = entry.articleTitle || '（無紀錄）';
+  document.getElementById('detail-article-level').textContent = entry.level ? entry.level.toUpperCase() : '';
 
   const tasksEl = document.getElementById('detail-tasks');
   tasksEl.innerHTML = '';
   TASKS.forEach(t => {
-    const done = d.tasks[t.key];
+    const done = entry.tasks[t.key];
     const row = document.createElement('div');
     row.className = 'detail-task-row';
     row.innerHTML = '<div class="detail-task-left"><div class="task-dot" style="background:' + t.color + '"></div>' + t.label + '</div>' +
