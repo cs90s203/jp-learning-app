@@ -388,6 +388,32 @@
   /* Article page：底部要讓出固定工具列的空間 */
   #page-article { padding-bottom: calc(var(--nav-h) + var(--safe-bottom) + var(--atb-h) + 12px); }
 
+  /* ── 文章週曆列 ── */
+  #article-week-bar {
+    display: flex; align-items: center; gap: 2px;
+    padding: 8px 4px 10px; flex-shrink: 0;
+    background: var(--wa-bg); border-bottom: 0.5px solid var(--wa-bg2);
+  }
+  .awb-nav {
+    width: 28px; height: 44px; border: none; background: none;
+    color: var(--wt3); font-size: 20px; cursor: pointer; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .awb-nav:disabled { opacity: 0.25; cursor: default; }
+  .awb-days { flex: 1; display: flex; justify-content: space-around; align-items: flex-end; }
+  .awb-day { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .awb-dow { font-size: 10px; color: var(--wt3); }
+  .awb-day-num {
+    width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
+    font-size: 13px; color: var(--wt3);
+  }
+  .awb-day.awb-today .awb-dow { color: var(--wa); font-weight: 600; }
+  .awb-day.awb-selected .awb-circle-num { fill: #FFF; }
+  .awb-day.awb-future .awb-dow,
+  .awb-day.awb-future .awb-day-num { opacity: 0.3; }
+  .awb-day[data-has-content="1"] { cursor: pointer; }
+  html[data-theme="dark"] #article-week-bar { background: var(--wa-bg); }
+
   /* 句子選取點 */
   .sentence-sel-row {
     display: flex; align-items: center; gap: 6px; margin-bottom: 2px;
@@ -1076,12 +1102,20 @@
     <!-- 文章 -->
     <div class="page" id="page-article">
       <div class="top-bar">
-        <h1 onclick="_devTitleTap()" style="user-select:none">今日文章</h1>
+        <h1 onclick="_devTitleTap()" style="user-select:none" id="article-page-title">今日文章</h1>
         <div class="article-meta">
           <span class="level-tag" id="article-level-tag">N5</span>
           <span class="article-date" id="article-date-tag"></span>
         </div>
       </div>
+
+      <!-- 週曆列 -->
+      <div id="article-week-bar">
+        <button class="awb-nav" id="awb-prev" onclick="weekBarNav(-1)">‹</button>
+        <div class="awb-days" id="awb-days"></div>
+        <button class="awb-nav" id="awb-next" onclick="weekBarNav(1)">›</button>
+      </div>
+
       <div class="sec" style="padding-top:0">
 
         <div class="sentence-toggle-row">
@@ -1430,7 +1464,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.4.2
+        v0.5.0
       </div>
 
     </div>
@@ -1687,6 +1721,7 @@ function switchPage(id) {
       articleRendered = true;
     }
     initDifficultyBar();
+    renderWeekBar();
   }
   if (id === 'home')  renderHomeRing();
   if (id === 'vocab') renderVocabPage();
@@ -1865,6 +1900,7 @@ async function loadContentForDate(date, level) {
 function applyContentPack(pack) {
   ARTICLE_TEXT = pack.text;
   ARTICLE_TOKENS = pack.tokens;
+  ARTICLE_TOKENS._title = pack.title || '';
   VOCAB_DICT = pack.vocab;
   PARTICLE_NOTES = pack.particles;
   SENTENCE_TRANSLATIONS = pack.translations;
@@ -3848,6 +3884,168 @@ function updateQuizOrderUI(order) {
   const val = document.getElementById('quiz-order-val');
   if (sub) sub.textContent = VQ_ORDER_LABELS[order] || '';
   if (val) val.textContent = VQ_ORDER_SHORT[order] || '';
+}
+
+// ===== 文章週曆列 =====
+// 已知有內容的日期（固定 + 今天動態加入）
+const ARTICLES_WITH_CONTENT = ['2026-06-18', '2026-06-19', '2026-06-20'];
+
+let selectedArticleDate = getLocalDateStr(); // 預設今天
+let weekBarOffset = 0; // 0 = 本週，-1 = 上週 ...
+
+const DOW_LABELS = ['一','二','三','四','五','六','日']; // Mon=0 → 一
+
+function getWeekDates(offset) {
+  const now = new Date();
+  const dow = now.getDay(); // 0=Sun
+  const mondayDiff = (dow + 6) % 7; // days since Monday
+  const monday = new Date(now);
+  monday.setDate(now.getDate() - mondayDiff + offset * 7);
+  monday.setHours(0,0,0,0);
+  return Array.from({length:7}, (_, i) => {
+    const d = new Date(monday);
+    d.setDate(monday.getDate() + i);
+    return d;
+  });
+}
+
+function dateToStr(d) {
+  return d.getFullYear() + '-' +
+    String(d.getMonth()+1).padStart(2,'0') + '-' +
+    String(d.getDate()).padStart(2,'0');
+}
+
+function renderWeekBar() {
+  const container = document.getElementById('awb-days');
+  if (!container) return;
+  const dates = getWeekDates(weekBarOffset);
+  const todayStr = getLocalDateStr();
+  const log = loadStudyLog();
+  const knownDates = [...ARTICLES_WITH_CONTENT, todayStr];
+
+  container.innerHTML = '';
+  dates.forEach((d, i) => {
+    const dateStr = dateToStr(d);
+    const isFuture = dateStr > todayStr;
+    const isToday  = dateStr === todayStr;
+    const isSel    = dateStr === selectedArticleDate;
+    const hasContent = knownDates.includes(dateStr);
+    const dayNum = d.getDate();
+
+    const div = document.createElement('div');
+    div.className = 'awb-day' +
+      (isToday ? ' awb-today' : '') +
+      (isSel   ? ' awb-selected' : '') +
+      (isFuture ? ' awb-future' : '');
+    div.dataset.hasContent = (hasContent && !isFuture) ? '1' : '0';
+
+    if (hasContent && !isFuture) {
+      // 有內容：畫 SVG ring
+      const entry = log[dateStr];
+      const artVal = entry && entry.tasks ? entry.tasks.article : 0;
+      const pct = articleFillRatio(artVal);
+      const R = 15, SW = 3, CX = 19, CY = 19;
+      const circ = 2 * Math.PI * R;
+      const filled = circ * pct;
+      const bgFill  = isSel ? 'var(--wa)' : (isToday ? 'var(--wa-bg)' : 'none');
+      const textFill = isSel ? '#FFF' : 'var(--wt)';
+      const trackStroke = 'var(--wa-bg2)';
+      const fillStroke  = 'var(--wa)';
+
+      div.innerHTML =
+        `<svg viewBox="0 0 38 38" width="38" height="38">
+          <circle cx="${CX}" cy="${CY}" r="${R}" fill="${bgFill}" stroke="${trackStroke}" stroke-width="${SW}"/>
+          ${pct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="${fillStroke}" stroke-width="${SW}"
+            stroke-linecap="round"
+            stroke-dasharray="${filled.toFixed(2)} ${circ.toFixed(2)}"
+            transform="rotate(-90 ${CX} ${CY})"/>` : ''}
+          <text x="${CX}" y="${CY+4}" text-anchor="middle" font-size="12" fill="${textFill}" class="awb-circle-num">${dayNum}</text>
+        </svg>` +
+        `<div class="awb-dow">${DOW_LABELS[i]}</div>`;
+
+      div.onclick = () => selectArticleDate(dateStr);
+    } else {
+      // 無內容或未來：純文字
+      div.innerHTML =
+        `<div class="awb-day-num">${isFuture ? dayNum : ''}</div>` +
+        `<div class="awb-dow">${isFuture ? DOW_LABELS[i] : ''}</div>`;
+      if (!isFuture) {
+        // 過去無內容：只顯示星期
+        div.innerHTML =
+          `<div class="awb-day-num" style="color:var(--wt3);opacity:0.4">${dayNum}</div>` +
+          `<div class="awb-dow">${DOW_LABELS[i]}</div>`;
+      }
+    }
+    container.appendChild(div);
+  });
+
+  // next 按鈕：不能超過本週
+  const nextBtn = document.getElementById('awb-next');
+  if (nextBtn) nextBtn.disabled = weekBarOffset >= 0;
+}
+
+function weekBarNav(dir) {
+  weekBarOffset = Math.min(0, weekBarOffset + dir);
+  renderWeekBar();
+}
+
+async function selectArticleDate(dateStr) {
+  if (dateStr === selectedArticleDate) return;
+
+  const todayStr = getLocalDateStr();
+  if (dateStr === todayStr) {
+    restoreDemoContent();
+  } else {
+    showToast('載入中…');
+    const result = await loadContentForDate(dateStr, 'n5');
+    if (!result.success) {
+      showToast('內容載入失敗 😢');
+      return;
+    }
+    showToast('已載入：' + (result.pack.title || dateStr));
+    // 更新標題
+    const titleEl = document.getElementById('article-page-title');
+    if (titleEl) titleEl.textContent = result.pack.title || dateStr;
+  }
+
+  selectedArticleDate = dateStr;
+
+  // 重新渲染文章
+  articleRendered = false;
+  renderArticle(ARTICLE_TOKENS);
+  articleRendered = true;
+
+  // 重置文章進度追蹤
+  resetArticleProgress();
+
+  // 更新難度列（顯示選取日的難度）
+  initDifficultyBarForDate(dateStr);
+
+  // 回到頂部
+  document.getElementById('page-article').scrollTop = 0;
+
+  // 更新週曆高亮
+  renderWeekBar();
+
+  // 更新頂部標題
+  const titleEl = document.getElementById('article-page-title');
+  if (titleEl) {
+    titleEl.textContent = dateStr === getLocalDateStr() ? '今日文章' : (ARTICLE_TOKENS._title || dateStr);
+  }
+}
+
+function resetArticleProgress() {
+  // 重置 sentenceSelected 和朗讀狀態
+  if (typeof sentenceSelected !== 'undefined') {
+    initSentenceSel();
+  }
+}
+
+function initDifficultyBarForDate(dateStr) {
+  const log = loadStudyLog();
+  const entry = log[dateStr];
+  const val = entry && entry.articleDifficulty ? entry.articleDifficulty : 0;
+  renderDifficultyBar(val);
 }
 
 renderHomeRing();
