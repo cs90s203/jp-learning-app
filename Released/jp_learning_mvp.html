@@ -346,11 +346,9 @@
   .difficulty-done .difficulty-label { color: var(--wg); font-weight: 500; }
   .rec-status.recording-now { color: var(--wr); font-weight: 500; }
   .rec-status.ready { color: var(--wg); font-weight: 500; }
-  .av-bar--follow { flex-direction: column; align-items: stretch; gap: 6px; }
-  .av-bar--follow .av-bar-follow-top {
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  .av-bar--follow .av-bar-controls { justify-content: flex-end; }
+  /* 跟讀欄：單行，和朗讀欄結構一致 */
+  .av-bar--follow .av-bar-follow-top { display: contents; }
+  .av-bar--follow .av-bar-controls { margin-left: auto; }
 
   /* 跟讀控制條：槽位按鈕（與其他控制鍵同尺寸圓形） */
   .rec-slots { display: flex; gap: 6px; }
@@ -1346,7 +1344,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.3.9
+        v0.3.11
       </div>
 
     </div>
@@ -2996,13 +2994,14 @@ let swipedRowEl = null;
 let vocabMeaningRevealed = false;
 
 function revealVocabMeaning() {
-  if (vocabMeaningRevealed) return;
-  vocabMeaningRevealed = true;
   localStorage.setItem('meaningHintSeen', '1');
   const el = document.getElementById('vocab-meaning-text');
   const hint = document.getElementById('meaning-reveal-hint');
-  if (el) el.classList.remove('meaning-hidden');
-  if (hint) hint.style.display = 'none';
+  if (!el) return;
+  // toggle：點一下顯示，再點一下遮回去
+  const hidden = el.classList.toggle('meaning-hidden');
+  vocabMeaningRevealed = !hidden;
+  if (hint) hint.style.display = 'none'; // hint 只顯示一次
 }
 
 // ===== 確認 dialog =====
