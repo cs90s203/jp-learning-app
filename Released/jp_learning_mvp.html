@@ -68,10 +68,7 @@
   html[data-theme="dark"] #article-toolbar,
   html[data-theme="dark"] .mode-tab.active,
   html[data-theme="dark"] .speed-step-btn,
-  html[data-theme="dark"] .choice-btn,
-  html[data-theme="dark"] .rating-btn,
-  html[data-theme="dark"] .judge-btn,
-  html[data-theme="dark"] .qt:not(.active) { background: #1C1208; }
+  html[data-theme="dark"] .rating-btn { background: #1C1208; }
 
   html[data-theme="dark"] .vocab-row-content { background: #1C1208; }
   html[data-theme="dark"] .vocab-list-row.selected .vocab-row-content { background: #2E1E0C; }
@@ -391,7 +388,7 @@
     width: 6px; height: 6px; border-radius: 50%; background: #7F77DD;
   }
   .rec-slot.active.has-audio::after { background: var(--wa); }
-  .article-text { font-size: 16px; color: var(--wt); line-height: 2.6; }
+  .article-text { font-size: 16px; color: var(--wt); line-height: 2.6; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
   .article-text ruby rt { font-size: 10px; color: var(--wt3); }
   .cn-note { font-size: 12px; color: var(--wt2); display: block; margin: -4px 0 6px 20px; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
   .cn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
@@ -870,8 +867,15 @@
   .r-forget { border-color: #F0C4BB; color: var(--wr); }
   .r-remember { border-color: #B0D4B8; color: var(--wg); }
 
+  /* Quiz week bar */
+  #quiz-week-bar {
+    display: flex; align-items: center; gap: 2px;
+    padding: 8px 4px 10px; flex-shrink: 0;
+    background: var(--wa-bg); border-bottom: 0.5px solid var(--wa-bg2);
+  }
+
   /* Quiz tabs */
-  .quiz-tabs { display: flex; gap: 6px; padding: 0 16px 12px; overflow-x: auto; scrollbar-width: none; }
+  .quiz-tabs { display: flex; gap: 6px; padding: 10px 16px 4px; overflow-x: auto; scrollbar-width: none; flex-shrink: 0; }
   .quiz-tabs::-webkit-scrollbar { display: none; }
   .qt {
     font-size: 12px; font-weight: 500; padding: 6px 13px;
@@ -880,35 +884,42 @@
     white-space: nowrap; flex-shrink: 0; font-family: inherit;
   }
   .qt.active { background: var(--wa); color: #FFFFFF; border-color: var(--wa); }
-  .pane { display: none; }
-  .pane.active { display: block; }
+  .qt-locked { opacity: 0.38; cursor: not-allowed; }
+  html[data-theme="dark"] .qt:not(.active) { background: #1C1208; }
 
   /* Quiz elements */
   .quiz-q { font-size: 16px; color: var(--wt); line-height: 1.9; margin-bottom: 14px; }
   .quiz-q ruby rt { font-size: 10px; color: var(--wt3); }
   .highlight { color: var(--wa); font-weight: 500; }
-  .choice-list { display: flex; flex-direction: column; gap: 8px; }
-  .choice-btn {
-    border: 0.5px solid var(--wa-bg2); border-radius: 13px;
-    padding: 13px 15px; font-size: 14px; color: var(--wt2);
-    cursor: pointer; background: #FFFFFF; text-align: left;
-    font-family: inherit; width: 100%;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .choice-btn.correct { border-color: #A0CCA8; background: var(--wg-bg); color: var(--wg); }
-  .choice-btn.wrong   { border-color: #F0B8B0; background: var(--wr-bg); color: var(--wr); }
 
-  .cant-btn {
-    width: 100%; margin-top: 12px;
-    border: 0.5px solid #F0C4BB; border-radius: 13px;
-    padding: 12px; font-size: 13px; font-weight: 500;
-    color: var(--wr); background: var(--wr-bg); cursor: pointer;
-    display: flex; align-items: center; justify-content: center; gap: 6px;
-    font-family: inherit;
+  /* Quiz start / result screens */
+  .qz-start-wrap { padding: 28px 4px; }
+  .qz-start-icon { font-size: 40px; margin-bottom: 12px; text-align: center; }
+  .qz-start-title { font-size: 17px; font-weight: 600; color: var(--wt); margin-bottom: 6px; text-align: center; }
+  .qz-start-sub { font-size: 13px; color: var(--wt3); margin-bottom: 20px; text-align: center; }
+  .qz-prev-result {
+    font-size: 13px; color: var(--wt3); margin-bottom: 16px;
+    padding: 8px 14px; background: var(--wa-bg); border-radius: 10px;
+    display: inline-block;
   }
-  .diff-note { font-size: 11px; color: var(--wt3); text-align: center; margin-top: 6px; }
 
-  /* Explain box */
+  /* Choice buttons */
+  .qz-choice-list { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+  .qz-choice {
+    width: 100%; padding: 13px 15px; text-align: left;
+    background: var(--wb); border: 0.5px solid var(--wa-bg2);
+    border-radius: 12px; font-size: 14px; color: var(--wt);
+    cursor: pointer; font-family: inherit; font-weight: 500;
+  }
+  .qz-choice:active { background: var(--wa-bg); }
+  .qz-choice.qz-correct { background: var(--wg-bg); border-color: #A0CCA8; color: var(--wg); }
+  .qz-choice.qz-wrong   { background: var(--wr-bg); border-color: #F0B8B0; color: var(--wr); }
+
+  /* Fill-in result inline */
+  .qz-ans-ok  { color: var(--wg); }
+  .qz-ans-err { color: var(--wr); }
+
+  /* Explain box (reserved for Phase 2 sentence judgment) */
   .explain-box {
     margin-top: 12px; padding: 13px 15px;
     background: #FFF6E0; border: 0.5px solid #E8C870;
@@ -917,28 +928,6 @@
   .explain-title { font-size: 12px; font-weight: 500; color: var(--wy); margin-bottom: 7px; }
   .explain-body { font-size: 13px; color: var(--wt2); line-height: 1.8; }
   .explain-body .em { color: var(--wa); font-weight: 500; }
-
-  /* Sort */
-  .sort-area {
-    min-height: 54px; border: 1.5px dashed var(--wa-bg2); border-radius: 13px;
-    padding: 8px; display: flex; flex-wrap: wrap; gap: 7px;
-    margin-bottom: 12px; background: var(--wa-ll);
-  }
-  .sort-pool { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-  .chip {
-    padding: 9px 15px; border-radius: 11px;
-    background: var(--wa-l); color: var(--wa);
-    font-size: 14px; font-weight: 500; cursor: pointer;
-    border: 0.5px solid #D8A870; font-family: inherit;
-    user-select: none; -webkit-user-select: none;
-  }
-  .chip.placed { background: var(--wa); color: #FFFFFF; border-color: var(--wa); }
-  .unlock-note {
-    font-size: 12px; color: #4A3A8A; background: #F0ECFF;
-    border: 0.5px solid #C8C0F0; border-radius: 11px;
-    padding: 9px 13px; text-align: center; margin-bottom: 12px;
-    line-height: 1.6;
-  }
 
   /* Submit / play buttons */
   .submit-btn {
@@ -955,17 +944,6 @@
     display: flex; align-items: center; gap: 6px;
     font-family: inherit; margin: 0 auto 14px;
   }
-
-  /* Judge row */
-  .judge-row { display: flex; gap: 8px; margin-top: 14px; }
-  .judge-btn {
-    flex: 1; border: 0.5px solid var(--wa-bg2); border-radius: 12px;
-    padding: 13px; font-size: 14px; font-weight: 500; cursor: pointer;
-    background: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 6px;
-    font-family: inherit;
-  }
-  .j-correct { color: var(--wg); border-color: #A0CCA8; }
-  .j-wrong   { color: var(--wr); border-color: #F0B8B0; }
 
   /* Settings */
   .setting-row {
@@ -1233,164 +1211,23 @@
 
     <!-- 試題 -->
     <div class="page" id="page-quiz">
-      <div class="top-bar">
+      <div class="top-bar" style="flex-shrink:0">
         <h1>今日試題</h1>
-        <p>單字 12・聽力 3・填空 3・句子 3</p>
       </div>
+      <!-- 週曆列 -->
+      <div id="quiz-week-bar">
+        <button class="awb-nav" id="qwb-prev" onclick="quizWeekBarNav(-1)">‹</button>
+        <div class="awb-days" id="qwb-days"></div>
+        <button class="awb-nav" id="qwb-next" onclick="quizWeekBarNav(1)">›</button>
+      </div>
+      <!-- 題型分頁 -->
       <div class="quiz-tabs">
-        <button class="qt active" onclick="switchQt(this,'pv')">單字</button>
-        <button class="qt" onclick="switchQt(this,'pl')">聽力</button>
-        <button class="qt" onclick="switchQt(this,'pf')">填空</button>
-        <button class="qt" onclick="switchQt(this,'ps')">句子判斷</button>
-        <button class="qt" onclick="switchQt(this,'po')">句子排列</button>
+        <button class="qt active" id="qt-listen" onclick="switchQuizSection('listen')">聽力</button>
+        <button class="qt" id="qt-fill" onclick="switchQuizSection('fill')">填空</button>
+        <button class="qt qt-locked" title="即將推出">句子判斷</button>
+        <button class="qt qt-locked" title="即將推出">句子排列</button>
       </div>
-      <div class="sec">
-
-        <!-- 單字 -->
-        <div class="pane active" id="pv">
-          <div class="prog-row"><span class="prog-label">單字複習</span><span class="prog-label" style="color:var(--wt3)">1 / 12</span></div>
-          <div class="prog-bar" style="margin-bottom:14px"><div class="prog-fill" style="width:8%"></div></div>
-          <div class="vocab-card">
-            <div style="display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:8px">
-              <div class="vocab-kanji">公園</div>
-              <button class="speak-btn" onclick="speak('こうえん')" aria-label="發音">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-              </button>
-            </div>
-            <div class="vocab-kana">こうえん</div>
-            <div class="vocab-romaji">kouen</div>
-            <div class="vocab-divider"></div>
-            <div id="meaning-reveal" onclick="revealMeaning()" style="cursor:pointer">
-              <div style="font-size:22px;color:var(--wt3);letter-spacing:5px">● ● ●</div>
-              <div style="font-size:12px;color:var(--wt3);margin-top:4px">點擊查看中文</div>
-            </div>
-            <div class="rating-row">
-              <button class="rating-btn r-forget" onclick="showToast('已記錄・明天再複習')">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                不記得
-              </button>
-              <button class="rating-btn r-remember" onclick="showToast('記憶+2・下次複習在 2 天後')">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                記得
-              </button>
-            </div>
-          </div>
-          <button class="cant-btn" onclick="showToast('難度已調降・複習頻率增加')">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            這題太難，降低難度
-          </button>
-          <p class="diff-note">系統會調整此單字複習頻率</p>
-        </div>
-
-        <!-- 聽力 -->
-        <div class="pane" id="pl">
-          <div class="prog-row"><span class="prog-label">聽力</span><span class="prog-label" style="color:var(--wt3)">1 / 3</span></div>
-          <div class="prog-bar" style="margin-bottom:14px"><div class="prog-fill" style="width:33%"></div></div>
-          <div class="card">
-            <div style="margin-bottom:12px"><span class="badge b-todo">聽力</span></div>
-            <button class="play-btn" onclick="speak('花の様子はどうでしたか')">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              播放音檔
-            </button>
-            <p class="quiz-q">花の様子はどうでしたか？</p>
-            <div class="choice-list">
-              <button class="choice-btn" onclick="selectChoice(this,true)">綺麗でした</button>
-              <button class="choice-btn" onclick="selectChoice(this,false)">大きかったです</button>
-              <button class="choice-btn" onclick="selectChoice(this,false)">少なかったです</button>
-            </div>
-          </div>
-          <button class="cant-btn" onclick="showToast('已記錄・系統會安排更多基礎聽力題')">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            這題太難，降低難度
-          </button>
-          <p class="diff-note">系統會安排更多基礎聽力題</p>
-        </div>
-
-        <!-- 填空 -->
-        <div class="pane" id="pf">
-          <div class="prog-row"><span class="prog-label">填空</span><span class="prog-label" style="color:var(--wt3)">1 / 3</span></div>
-          <div class="prog-bar" style="margin-bottom:14px"><div class="prog-fill" style="width:33%"></div></div>
-          <div class="card">
-            <div style="margin-bottom:12px"><span class="badge b-ripe">填空</span></div>
-            <p class="quiz-q"><ruby>花<rt>はな</rt></ruby>が＿＿＿でした。</p>
-            <input type="text" placeholder="輸入日文答案" id="fill-input" />
-            <button class="submit-btn" style="margin-top:10px" onclick="checkFill()">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-              確認答案
-            </button>
-          </div>
-          <button class="cant-btn" onclick="showToast('已記錄・系統會改以選擇題替代填空')">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            這題太難，降低難度
-          </button>
-          <p class="diff-note">系統會改以選擇題替代填空</p>
-        </div>
-
-        <!-- 句子判斷 -->
-        <div class="pane" id="ps">
-          <div class="prog-row"><span class="prog-label">句子判斷</span><span class="prog-label" style="color:var(--wt3)">1 / 3</span></div>
-          <div class="prog-bar" style="margin-bottom:14px"><div class="prog-fill" style="width:33%"></div></div>
-          <div class="card">
-            <div style="margin-bottom:12px"><span class="badge b-sent">句子判斷</span></div>
-            <p class="quiz-q">
-              <ruby>私<rt>わたし</rt></ruby>は<ruby>公園<rt>こうえん</rt></ruby><span class="highlight">で</span><ruby>行<rt>い</rt></ruby>きました。
-            </p>
-            <p style="font-size:12px;color:var(--wt3);margin-bottom:12px">橘色助詞是否正確使用？</p>
-            <div class="judge-row">
-              <button class="judge-btn j-wrong" onclick="judgeAnswer(this,false)">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                不正確
-              </button>
-              <button class="judge-btn j-correct" onclick="judgeAnswer(this,true)">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                正確
-              </button>
-            </div>
-            <div class="explain-box" id="explain-box" style="display:none">
-              <div class="explain-title">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--wy)" stroke-width="2" stroke-linecap="round" style="vertical-align:-1px;margin-right:4px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                這句子有問題！應該用「に」
-              </div>
-              <div class="explain-body">
-                <span class="em">に</span> → 移動的目的地（去哪裡）<br>
-                <span class="em">で</span> → 動作發生的場所（在哪裡做）<br><br>
-                <ruby>公園<rt style="font-size:9px">こうえん</rt></ruby>に<ruby>行<rt style="font-size:9px">い</rt></ruby>く ✓ &nbsp;&nbsp;
-                <ruby>公園<rt style="font-size:9px">こうえん</rt></ruby>で<ruby>遊<rt style="font-size:9px">あそ</rt></ruby>ぶ ✓
-              </div>
-            </div>
-          </div>
-          <button class="cant-btn" onclick="showToast('已記錄・系統會增加更多相同文法的判斷題')">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            這題太難，降低難度
-          </button>
-          <p class="diff-note">系統會增加更多相同文法的判斷題</p>
-        </div>
-
-        <!-- 句子排列 -->
-        <div class="pane" id="po">
-          <div class="prog-row"><span class="prog-label">句子排列</span><span class="prog-label" style="color:var(--wt3)">1 / 3</span></div>
-          <div class="prog-bar" style="margin-bottom:14px"><div class="prog-fill" style="width:33%"></div></div>
-          <div class="unlock-note">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4A3A8A" stroke-width="2" stroke-linecap="round" style="vertical-align:-1px;margin-right:4px"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
-            「綺麗・公園・行く」均達到「普」，排列題已解鎖
-          </div>
-          <div class="card">
-            <div style="margin-bottom:12px"><span class="badge b-adv">句子排列</span></div>
-            <p class="quiz-q">重組成正確的句子：</p>
-            <p style="font-size:12px;color:var(--wt3);margin-bottom:10px">點擊詞塊放入答案區</p>
-            <div class="sort-area" id="sort-area"></div>
-            <div class="sort-pool" id="sort-pool"></div>
-            <button class="submit-btn" onclick="checkSort()">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-              確認答案
-            </button>
-          </div>
-          <button class="cant-btn" onclick="showToast('已記錄・系統會退回句子判斷題')">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-            這題太難，降低難度
-          </button>
-          <p class="diff-note">系統會退回句子判斷題，待熟悉後再試</p>
-        </div>
+      <div class="sec" id="quiz-main" style="padding-top:8px">
 
       </div>
     </div>
@@ -1497,7 +1334,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.6.2
+        v0.7.1
       </div>
 
     </div>
@@ -1773,6 +1610,7 @@ function switchPage(id) {
   }
   if (id === 'home')  renderHomeRing();
   if (id === 'vocab') renderVocabPage();
+  if (id === 'quiz')  initQuizPage();
   // Show/hide FAB
   document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
 }
@@ -1783,12 +1621,449 @@ function setMode(btn) {
   btn.classList.add('active');
 }
 
-// Quiz tab
-function switchQt(btn, paneId) {
-  document.querySelectorAll('.qt').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById(paneId).classList.add('active');
+// ===== QUIZ ENGINE (Phase 1: 聽力 + 填空) =====
+let QUIZ_PACK   = null;  // 當前試題頁載入的 content pack（獨立於文章頁）
+let selectedQuizDate = getLocalDateStr();
+let quizWeekBarOffset = 0;
+let quizSection = 'listen'; // 'listen' | 'fill'
+let QS = null; // quiz session state
+
+function shuffleArr(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function switchQuizSection(type) {
+  if (['listen','fill'].indexOf(type) < 0) return; // locked sections
+  quizSection = type;
+  document.querySelectorAll('.qt').forEach(b => b.classList.remove('active'));
+  const btn = document.getElementById('qt-' + type);
+  if (btn) btn.classList.add('active');
+  QS = null;
+  renderQuizMain();
+}
+
+// ── Question generators ──────────────────────────────
+
+function generateListeningQuestions(vocabDict) {
+  const words = Object.keys(vocabDict || {});
+  if (!words.length) return [];
+  const selected = shuffleArr(words).slice(0, Math.min(10, words.length));
+  return selected.map(word => {
+    const entry = vocabDict[word];
+    const correct = entry.meaning;
+    const distractors = shuffleArr(
+      words.filter(w => w !== word).map(w => vocabDict[w].meaning).filter(m => m !== correct)
+    ).slice(0, 3);
+    while (distractors.length < 3) distractors.push('—');
+    return {
+      type: 'listen',
+      word,
+      kana: entry.reading || word,
+      correct,
+      choices: shuffleArr([correct, ...distractors])
+    };
+  });
+}
+
+function generateFillInQuestions(tokens, vocabDict) {
+  if (!tokens || !tokens.length) return [];
+  // Split tokens into sentences
+  const sentences = [];
+  let cur = [];
+  for (const tok of tokens) {
+    if (tok.pos === 'reading_order') continue; // skip meta keys
+    cur.push(tok);
+    if (/[。！？]/.test(tok.surface_form || '')) {
+      if (cur.length) sentences.push([...cur]);
+      cur = [];
+    }
+  }
+  if (cur.length) sentences.push(cur);
+
+  const pool = [];
+  for (const sentToks of sentences) {
+    const vocabToks = sentToks.filter(t =>
+      !['助詞','記号','助動詞'].includes(t.pos) &&
+      (vocabDict[t.basic_form] || vocabDict[t.surface_form])
+    );
+    for (const target of vocabToks) {
+      const wordKey = vocabDict[target.basic_form] ? target.basic_form : target.surface_form;
+      const entry = vocabDict[wordKey] || {};
+      const blank = target.surface_form;
+      if (!blank || blank.length === 0) continue;
+      const parts = sentToks.map(t => t === target ? '＿＿＿' : (t.surface_form || ''));
+      pool.push({
+        type: 'fill',
+        sentence: parts.join(''),
+        answer: blank,
+        kana: target.reading || '',
+        meaning: entry.meaning || '',
+        wordKey
+      });
+    }
+  }
+  return shuffleArr(pool).slice(0, 10);
+}
+
+// ── Session management ───────────────────────────────
+
+async function initQuizPage() {
+  // Fetch quiz content separately (don't overwrite article globals)
+  if (!QUIZ_PACK || QUIZ_PACK._date !== selectedQuizDate) {
+    try {
+      const url = `${CONTENT_BASE_URL}/${selectedQuizDate}/${CURRENT_LEVEL}.json`;
+      const res = await fetch(url);
+      if (res.ok) {
+        QUIZ_PACK = await res.json();
+        QUIZ_PACK._date = selectedQuizDate;
+      } else {
+        QUIZ_PACK = null;
+      }
+    } catch { QUIZ_PACK = null; }
+  }
+  renderQuizWeekBar();
+  renderQuizMain();
+}
+
+function startQuizSession(isRetake) {
+  if (!QUIZ_PACK) { renderQuizMain(); return; }
+  const vocabDict = QUIZ_PACK.vocab || {};
+  const tokens    = QUIZ_PACK.tokens || [];
+  const questions = quizSection === 'listen'
+    ? generateListeningQuestions(vocabDict)
+    : generateFillInQuestions(tokens, vocabDict);
+  if (!questions.length) { showToast('沒有足夠題目'); return; }
+  QS = { questions, idx: 0, answers: [], phase: 'exam', isRetake };
+  renderQuizMain();
+}
+
+// ── Rendering ────────────────────────────────────────
+
+function renderQuizMain() {
+  const el = document.getElementById('quiz-main');
+  if (!el) return;
+  if (!QUIZ_PACK) {
+    el.innerHTML = `<div class="qz-start-wrap">
+      <div class="qz-start-icon">📖</div>
+      <div class="qz-start-title">載入中…</div>
+      <div class="qz-start-sub">正在取得今日內容</div>
+    </div>`;
+    return;
+  }
+  if (!QS || QS.phase === 'start') { renderQzStart(); return; }
+  if (QS.phase === 'exam')   { renderQzQuestion(); return; }
+  if (QS.phase === 'result') { renderQzResult(); return; }
+}
+
+function renderQzStart() {
+  const el = document.getElementById('quiz-main');
+  const vocabDict = QUIZ_PACK.vocab || {};
+  const tokens    = QUIZ_PACK.tokens || [];
+  const isListen  = quizSection === 'listen';
+  const color     = isListen ? '#378ADD' : '#BA7517';
+  const label     = isListen ? '聽力' : '填空';
+  const count     = isListen
+    ? Math.min(10, Object.keys(vocabDict).length)
+    : Math.min(10, generateFillInQuestions(tokens, vocabDict).length);
+
+  const log = loadStudyLog();
+  const prev = log[selectedQuizDate] && log[selectedQuizDate].quiz &&
+               log[selectedQuizDate].quiz[quizSection] &&
+               log[selectedQuizDate].quiz[quizSection].first;
+
+  el.innerHTML = `
+    <div class="qz-start-wrap">
+      <div style="text-align:center;margin-bottom:16px">
+        <span class="badge" style="background:${color}20;color:${color};border:0.5px solid ${color}40;font-size:13px;padding:5px 14px">${label}</span>
+        <span style="font-size:13px;color:var(--wt3);margin-left:8px">${count} 題</span>
+      </div>
+      ${prev
+        ? `<div style="text-align:center;margin-bottom:16px">
+            <span class="qz-prev-result">上次首答：${prev.correct}/${prev.total}
+              <span style="color:${prev.pct>=80?'var(--wg)':prev.pct>=50?'var(--wy)':'var(--wr)'};margin-left:4px">${prev.pct}%</span>
+            </span>
+          </div>`
+        : `<div class="qz-start-sub">首次作答・成績將記錄為基準</div>`
+      }
+      <button class="submit-btn" onclick="startQuizSession(${prev ? 'true' : 'false'})" style="padding:14px">
+        ${prev ? '重新作答' : '開始作答'}
+      </button>
+    </div>`;
+}
+
+function renderQzQuestion() {
+  const el = document.getElementById('quiz-main');
+  if (!el || !QS) return;
+  const q     = QS.questions[QS.idx];
+  const total = QS.questions.length;
+  const pct   = Math.round(QS.idx / total * 100);
+  const isListen = q.type === 'listen';
+  const color    = isListen ? '#378ADD' : '#BA7517';
+  const label    = isListen ? '聽力' : '填空';
+
+  let qBody = '';
+  if (isListen) {
+    const choicesHTML = q.choices.map(c =>
+      `<button class="qz-choice" data-val="${c.replace(/"/g,'&quot;')}"
+        onclick="qzSubmitListen(this,'${c.replace(/'/g,"\\'")}')">
+        ${c}
+      </button>`
+    ).join('');
+    qBody = `
+      <div style="text-align:center;margin:4px 0 16px">
+        <button class="play-btn" onclick="speak(${JSON.stringify(q.kana||q.word)})">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          播放
+        </button>
+        <p style="font-size:12px;color:var(--wt3);margin-top:-8px">選出正確中文意思</p>
+      </div>
+      <div class="qz-choice-list">${choicesHTML}</div>`;
+  } else {
+    qBody = `
+      <p class="quiz-q" style="margin-bottom:8px">${q.sentence}</p>
+      <p style="font-size:12px;color:var(--wt3);margin-bottom:12px">中文提示：${q.meaning}</p>
+      <input type="text" id="qz-fill-input"
+        placeholder="輸入日文答案（可用輸入法）"
+        style="width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid var(--wa-bg2);border-radius:12px;font-size:16px;background:var(--wb);color:var(--wt);font-family:inherit;outline:none"
+        onkeydown="if(event.key==='Enter')qzSubmitFill()"/>
+      <div id="qz-fill-result" style="display:none;margin-top:10px;font-size:14px;font-weight:500;text-align:center"></div>
+      <button id="qz-fill-submit" class="submit-btn" onclick="qzSubmitFill()" style="margin-top:10px;padding:12px">確認答案</button>`;
+  }
+
+  el.innerHTML = `
+    <div class="prog-row">
+      <span class="badge" style="background:${color}20;color:${color};border:0.5px solid ${color}40">${label}</span>
+      <span class="prog-label" style="color:var(--wt3)">${QS.idx+1} / ${total}</span>
+    </div>
+    <div class="prog-bar" style="margin-bottom:14px">
+      <div class="prog-fill" style="width:${pct}%;background:${color}"></div>
+    </div>
+    <div class="card">${qBody}</div>
+    <button id="qz-next-btn" class="submit-btn" onclick="qzNext()"
+      style="display:none;margin-top:12px;padding:13px;background:var(--wt);color:var(--wb)">
+      ${QS.idx+1 < total ? '下一題 →' : '查看結果'}
+    </button>`;
+
+  // Auto-focus fill input
+  if (!isListen) {
+    setTimeout(() => {
+      const inp = document.getElementById('qz-fill-input');
+      if (inp) inp.focus();
+    }, 120);
+  }
+}
+
+function qzSubmitListen(btn, choice) {
+  if (!QS || QS.phase !== 'exam') return;
+  const q = QS.questions[QS.idx];
+  const correct = choice === q.correct;
+  const list = btn.closest('.qz-choice-list');
+  list.querySelectorAll('.qz-choice').forEach(b => {
+    b.onclick = null;
+    const val = b.dataset.val;
+    if (val === q.correct)      b.classList.add('qz-correct');
+    else if (b === btn && !correct) b.classList.add('qz-wrong');
+  });
+  QS.answers.push({ correct, q });
+  const nb = document.getElementById('qz-next-btn');
+  if (nb) nb.style.display = 'flex';
+}
+
+function qzSubmitFill() {
+  if (!QS || QS.phase !== 'exam') return;
+  const q   = QS.questions[QS.idx];
+  const inp = document.getElementById('qz-fill-input');
+  const val = (inp ? inp.value : '').trim();
+  if (!val) { showToast('請輸入答案'); return; }
+  const norm = s => s.replace(/\s/g,'').toLowerCase();
+  const correct = norm(val) === norm(q.answer) ||
+    (q.kana && norm(val) === norm(q.kana));
+  QS.answers.push({ correct, userAnswer: val, q });
+  const rd = document.getElementById('qz-fill-result');
+  if (rd) {
+    rd.style.display = 'block';
+    rd.innerHTML = correct
+      ? `<span class="qz-ans-ok">✓ 正確！</span>`
+      : `<span class="qz-ans-err">✗ 正解：${q.answer}${q.kana?' ('+q.kana+')':''}</span>`;
+  }
+  if (inp) inp.disabled = true;
+  const sb = document.getElementById('qz-fill-submit');
+  if (sb) sb.style.display = 'none';
+  const nb = document.getElementById('qz-next-btn');
+  if (nb) nb.style.display = 'flex';
+}
+
+function qzNext() {
+  if (!QS) return;
+  QS.idx++;
+  if (QS.idx >= QS.questions.length) {
+    QS.phase = 'result';
+    saveQuizResults();
+  }
+  renderQuizMain();
+}
+
+function saveQuizResults() {
+  if (!QS) return;
+  const correct = QS.answers.filter(a => a.correct).length;
+  const total   = QS.answers.length;
+  const pct     = Math.round(correct / total * 100);
+  const log     = loadStudyLog();
+  const dateStr = selectedQuizDate;
+  if (!log[dateStr])         log[dateStr]         = {};
+  if (!log[dateStr].tasks)   log[dateStr].tasks   = {};
+  if (!log[dateStr].quiz)    log[dateStr].quiz    = {};
+  if (!log[dateStr].quiz[quizSection]) log[dateStr].quiz[quizSection] = {};
+
+  const sec = log[dateStr].quiz[quizSection];
+  if (!QS.isRetake) {
+    // 首次：永久基準
+    if (!sec.first) {
+      sec.first = { correct, total, pct };
+    }
+  } else {
+    if (!sec.retakes) sec.retakes = [];
+    sec.retakes.push({ correct, total, pct });
+  }
+  // 更新任務環 (取最佳成績)
+  const best = sec.first ? Math.max(pct, sec.first.pct) : pct;
+  if (quizSection === 'listen') log[dateStr].tasks.listen = best;
+  else                          log[dateStr].tasks.quiz   = best;
+
+  saveStudyLog(log);
+  renderQuizWeekBar();
+  if (dateStr === getLocalDateStr()) renderHomeRing();
+}
+
+function renderQzResult() {
+  const el = document.getElementById('quiz-main');
+  if (!el || !QS) return;
+  const correct = QS.answers.filter(a => a.correct).length;
+  const total   = QS.answers.length;
+  const pct     = Math.round(correct / total * 100);
+  const color   = pct >= 80 ? 'var(--wg)' : pct >= 50 ? 'var(--wy)' : 'var(--wr)';
+  const wrongs  = QS.answers.filter(a => !a.correct);
+
+  const wrongsHTML = wrongs.length
+    ? wrongs.map(a => {
+        const word = a.q.type === 'listen'
+          ? `${a.q.word}（${a.q.kana}）→ <b>${a.q.correct}</b>`
+          : `${a.q.sentence.replace('＿＿＿','<b>'+a.q.answer+'</b>')}${a.userAnswer?` <span style="color:var(--wt3)">(你填：${a.userAnswer})</span>`:''}`;
+        return `<div style="padding:8px 0;border-bottom:0.5px solid var(--wa-bg2);font-size:13px;line-height:1.7">
+          <span style="color:var(--wr)">✗</span> <span style="margin-left:6px">${word}</span>
+        </div>`;
+      }).join('')
+    : '';
+
+  el.innerHTML = `
+    <div class="card" style="text-align:center;padding:24px 20px;margin-bottom:12px">
+      <div style="font-size:12px;color:var(--wt3);margin-bottom:8px">${quizSection==='listen'?'聽力':'填空'}結果</div>
+      <div style="font-size:52px;font-weight:700;color:${color};line-height:1">${pct}<span style="font-size:20px">%</span></div>
+      <div style="font-size:14px;color:var(--wt3);margin-top:6px">${correct} / ${total} 答對</div>
+    </div>
+    ${wrongs.length
+      ? `<div class="card" style="margin-bottom:12px">
+          <div style="font-size:12px;font-weight:600;color:var(--wt3);margin-bottom:8px">答錯的題目</div>
+          ${wrongsHTML}
+         </div>`
+      : `<div class="card" style="text-align:center;color:var(--wg);padding:16px;margin-bottom:12px">🎉 全部答對！</div>`
+    }
+    <button class="submit-btn" onclick="startQuizSession(true)" style="margin-bottom:8px;padding:13px">重新作答</button>
+    <button class="submit-btn" onclick="QS=null;renderQzStart()" style="padding:13px;background:var(--wt2)">返回</button>`;
+}
+
+// ── Quiz week bar ────────────────────────────────────
+
+function renderQuizWeekBar() {
+  const container = document.getElementById('qwb-days');
+  if (!container) return;
+  const dates    = getWeekDates(quizWeekBarOffset);
+  const todayStr = getLocalDateStr();
+  const log      = loadStudyLog();
+  const known    = [...ARTICLES_WITH_CONTENT, todayStr];
+
+  container.innerHTML = '';
+  dates.forEach((d, i) => {
+    const dateStr   = dateToStr(d);
+    const isFuture  = dateStr > todayStr;
+    const isToday   = dateStr === todayStr;
+    const isSel     = dateStr === selectedQuizDate;
+    const hasContent = known.includes(dateStr) && !isFuture;
+    const dayNum    = d.getDate();
+
+    const div = document.createElement('div');
+    div.className = 'awb-day' +
+      (isToday ? ' awb-today' : '') +
+      (isSel   ? ' awb-selected' : '') +
+      (isFuture ? ' awb-future' : '');
+
+    if (hasContent) {
+      const entry      = log[dateStr] || {};
+      const tasks      = entry.tasks  || {};
+      const listenPct  = Math.min(1, (tasks.listen || 0) / 100);
+      const fillPct    = Math.min(1, (tasks.quiz   || 0) / 100);
+      const R = 15, SW = 3, CX = 19, CY = 19;
+      const circ = 2 * Math.PI * R;
+      const half = circ / 2;
+      const bgFill   = isSel ? 'var(--wa-l)' : (isToday ? 'var(--wa-bg)' : 'none');
+      const textFill = isSel ? 'var(--wa)' : 'var(--wt)';
+      const filledL  = (half * listenPct).toFixed(2);
+      const filledF  = (half * fillPct).toFixed(2);
+
+      div.innerHTML =
+        `<svg viewBox="0 0 38 38" width="38" height="38">
+          <circle cx="${CX}" cy="${CY}" r="${R}" style="fill:${bgFill};stroke:var(--wa-bg2)" stroke-width="${SW}"/>
+          ${listenPct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" style="stroke:#378ADD"
+            stroke-width="${SW}" stroke-linecap="round"
+            stroke-dasharray="${filledL} ${circ.toFixed(2)}"
+            transform="rotate(-90 ${CX} ${CY})"/>` : ''}
+          ${fillPct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" style="stroke:#BA7517"
+            stroke-width="${SW}" stroke-linecap="round"
+            stroke-dasharray="${filledF} ${circ.toFixed(2)}"
+            transform="rotate(90 ${CX} ${CY})"/>` : ''}
+          <text x="${CX}" y="${CY+4}" text-anchor="middle" font-size="12" fill="${textFill}" class="awb-circle-num">${dayNum}</text>
+        </svg><div class="awb-dow">${DOW_LABELS[i]}</div>`;
+
+      div.onclick = () => selectQuizDate(dateStr);
+    } else {
+      div.innerHTML =
+        `<div class="awb-day-num" style="${!isFuture?'color:var(--wt3);opacity:0.4':''}">${dayNum}</div>` +
+        `<div class="awb-dow">${DOW_LABELS[i]}</div>`;
+    }
+    container.appendChild(div);
+  });
+
+  const nextBtn = document.getElementById('qwb-next');
+  if (nextBtn) nextBtn.disabled = quizWeekBarOffset >= 0;
+}
+
+function quizWeekBarNav(dir) {
+  quizWeekBarOffset = Math.min(0, quizWeekBarOffset + dir);
+  renderQuizWeekBar();
+}
+
+async function selectQuizDate(dateStr) {
+  if (dateStr === selectedQuizDate) return;
+  showToast('載入中…');
+  try {
+    const url = `${CONTENT_BASE_URL}/${dateStr}/${CURRENT_LEVEL}.json`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error();
+    QUIZ_PACK = await res.json();
+    QUIZ_PACK._date = dateStr;
+    selectedQuizDate = dateStr;
+    QS = null;
+    renderQuizWeekBar();
+    renderQuizMain();
+    showToast('已載入：' + (QUIZ_PACK.title || dateStr));
+  } catch {
+    showToast('內容載入失敗');
+  }
 }
 
 // CN toggle
@@ -2233,6 +2508,9 @@ function renderArticle(tokens) {
     bindLongPress(el);
   });
 
+  // 封鎖長按原生選單（Android contextmenu）
+  container.oncontextmenu = (e) => e.preventDefault();
+
   // 套用目前的中文備注顯示狀態
   const cnHidden = document.getElementById('cn-toggle').classList.contains('off');
   container.querySelectorAll('.cn-note').forEach(n => n.classList.toggle('hidden', cnHidden));
@@ -2273,27 +2551,41 @@ function applyAddedWordNoteColors() {
 function bindLongPress(el) {
   let timer = null;
   let didLongPress = false;
+  let startX = 0, startY = 0, hasMoved = false;
 
   const start = (e) => {
     didLongPress = false;
+    hasMoved = false;
+    if (e.touches) {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    }
     timer = setTimeout(() => {
-      didLongPress = true;
-      handleTokenLongPress(el);
-    }, 420);
-  };
-  const cancel = () => {
-    clearTimeout(timer);
+      if (!hasMoved) {
+        didLongPress = true;
+        // 攔截原生文字選取
+        if (e.cancelable) e.preventDefault();
+        handleTokenLongPress(el);
+      }
+    }, 400);
   };
 
-  el.addEventListener('touchstart', start, { passive: true });
-  el.addEventListener('touchend', cancel);
-  el.addEventListener('touchmove', cancel);
-  el.addEventListener('mousedown', start);
-  el.addEventListener('mouseup', cancel);
+  const move = (e) => {
+    if (!e.touches) return;
+    const dx = Math.abs(e.touches[0].clientX - startX);
+    const dy = Math.abs(e.touches[0].clientY - startY);
+    if (dx > 8 || dy > 8) { hasMoved = true; clearTimeout(timer); }
+  };
+
+  const cancel = () => { clearTimeout(timer); };
+
+  el.addEventListener('touchstart', start, { passive: false });
+  el.addEventListener('touchmove',  move,  { passive: true });
+  el.addEventListener('touchend',   cancel);
+  el.addEventListener('mousedown',  start);
+  el.addEventListener('mouseup',    cancel);
   el.addEventListener('mouseleave', cancel);
-  el.addEventListener('click', (e) => {
-    if (didLongPress) { e.preventDefault(); }
-  });
+  el.addEventListener('click', (e) => { if (didLongPress) e.preventDefault(); });
 }
 
 function handleTokenLongPress(el) {
@@ -2433,6 +2725,8 @@ function removeFromVocabCards(basic) {
 let readAloudUtterance = null;
 let readAloudPlaying = false;
 let readAloudRate = 1.0;
+let readAloudQueue  = []; // 待播句子列（每句各自為一個 utterance）
+let readAloudTimer  = null; // 句間暫停 timer
 
 // Token 分句陣列（不依賴 DOM，由 renderArticle 後更新）
 let SENTENCE_TEXTS = [];
@@ -2472,34 +2766,66 @@ function _onReadAloudEnd(isAllSelected) {
   if (!ap.playedOnce) markArticleCondition('playedOnce', true);
 }
 
-function toggleReadAloud() {
-  if (readAloudPlaying) {
-    window.speechSynthesis.pause();
-    readAloudPlaying = false;
-    setPlayIcon(false);
-    return;
-  }
-  if (window.speechSynthesis.paused && readAloudUtterance) {
-    window.speechSynthesis.resume();
-    readAloudPlaying = true;
-    setPlayIcon(true);
-    return;
-  }
-  window.speechSynthesis.cancel();
-  const allSel = sentenceSelected.every(Boolean);
-  const text = buildPlayText();
+// 播放單句
+function _speakOne(text, onend) {
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'ja-JP';
   u.rate = readAloudRate;
-  u.onend = () => _onReadAloudEnd(allSel);
+  u.onend = onend;
   readAloudUtterance = u;
   window.speechSynthesis.speak(u);
+}
+
+// 從 queue 逐句播放，句間暫停 500ms
+function _playNextInQueue(allSel) {
+  if (!readAloudPlaying || !readAloudQueue.length) {
+    if (readAloudPlaying) _onReadAloudEnd(allSel);
+    return;
+  }
+  const text = readAloudQueue.shift();
+  _speakOne(text, () => {
+    if (!readAloudPlaying) return;
+    if (!readAloudQueue.length) { _onReadAloudEnd(allSel); return; }
+    readAloudTimer = setTimeout(() => {
+      readAloudTimer = null;
+      _playNextInQueue(allSel);
+    }, 500);
+  });
+}
+
+function toggleReadAloud() {
+  if (readAloudPlaying) {
+    // 停止（含清除句間計時器）
+    stopReadAloud();
+    return;
+  }
+  window.speechSynthesis.cancel();
+  if (readAloudTimer) { clearTimeout(readAloudTimer); readAloudTimer = null; }
+
+  const allSel = sentenceSelected.every(Boolean);
+
+  // 無選取資料時 fallback 整篇
+  if (!sentenceCount || !SENTENCE_TEXTS.length) {
+    readAloudPlaying = true;
+    setPlayIcon(true);
+    _speakOne(ARTICLE_TEXT, () => _onReadAloudEnd(allSel));
+    return;
+  }
+
+  readAloudQueue = sentenceSelected
+    .map((sel, i) => (sel && SENTENCE_TEXTS[i]) ? SENTENCE_TEXTS[i] : null)
+    .filter(Boolean);
+
+  if (!readAloudQueue.length) return;
   readAloudPlaying = true;
   setPlayIcon(true);
+  _playNextInQueue(allSel);
 }
 
 function stopReadAloud() {
   window.speechSynthesis.cancel();
+  if (readAloudTimer) { clearTimeout(readAloudTimer); readAloudTimer = null; }
+  readAloudQueue = [];
   readAloudPlaying = false;
   setPlayIcon(false);
 }
@@ -2521,16 +2847,16 @@ function adjustSpeed(direction) {
   document.getElementById('speed-label').textContent = readAloudRate.toFixed(2).replace(/0$/, '') + 'x';
   updateSpeedButtonStates(newIdx);
 
-  // 若朗讀正在進行，套用新速度需要從目前句子重新開始播放
+  // 若朗讀正在進行，套用新速度：重新從頭播放
   if (readAloudPlaying) {
     window.speechSynthesis.cancel();
+    if (readAloudTimer) { clearTimeout(readAloudTimer); readAloudTimer = null; }
     const _allSel2 = sentenceSelected.every(Boolean);
-    const u = new SpeechSynthesisUtterance(buildPlayText());
-    u.lang = 'ja-JP';
-    u.rate = readAloudRate;
-    u.onend = () => _onReadAloudEnd(_allSel2);
-    readAloudUtterance = u;
-    window.speechSynthesis.speak(u);
+    readAloudQueue = sentenceSelected
+      .map((sel, i) => (sel && SENTENCE_TEXTS[i]) ? SENTENCE_TEXTS[i] : null)
+      .filter(Boolean);
+    if (!readAloudQueue.length) readAloudQueue = [ARTICLE_TEXT];
+    _playNextInQueue(_allSel2);
     showToast('已調整為 ' + readAloudRate.toFixed(2).replace(/0$/, '') + 'x，重新播放');
   }
 }
@@ -2850,84 +3176,6 @@ function showToast(msg) {
   setTimeout(() => t.classList.remove('show'), 2500);
 }
 
-// Reveal vocab meaning
-function revealMeaning() {
-  const el = document.getElementById('meaning-reveal');
-  el.innerHTML = '<div style="font-size:20px;color:var(--wt);font-weight:500">公園</div><div style="font-size:14px;color:var(--wt3);margin-top:4px">こうえん · 公園</div>';
-  el.onclick = null;
-}
-
-// Choice select
-function selectChoice(btn, isCorrect) {
-  const list = btn.closest('.choice-list');
-  list.querySelectorAll('.choice-btn').forEach(b => {
-    b.classList.remove('correct','wrong');
-    b.onclick = null;
-  });
-  btn.classList.add(isCorrect ? 'correct' : 'wrong');
-  showToast(isCorrect ? '答對了！' : '再試一次');
-}
-
-// Judge sentence
-function judgeAnswer(btn, isCorrect) {
-  const box = document.getElementById('explain-box');
-  box.style.display = 'block';
-  if (!isCorrect) {
-    showToast('答對了！這句子確實有問題');
-  } else {
-    showToast('再想想看…');
-  }
-}
-
-// Fill check
-function checkFill() {
-  const val = document.getElementById('fill-input').value.trim();
-  if (val === '綺麗' || val === 'きれい' || val === 'キレイ') {
-    showToast('正確！');
-  } else if (val === '') {
-    showToast('請輸入答案');
-  } else {
-    showToast('再試一次・提示：きれい');
-  }
-}
-
-// Sort chips
-const sortCorrect = ['私は','公園に','行きました'];
-const sortAll = ['私は','公園に','行きました','花が','綺麗でした'];
-
-function initSort() {
-  const pool = document.getElementById('sort-pool');
-  const area = document.getElementById('sort-area');
-  pool.innerHTML = ''; area.innerHTML = '';
-  const shuffled = [...sortAll].sort(() => Math.random() - 0.5);
-  shuffled.forEach(w => {
-    const chip = document.createElement('button');
-    chip.className = 'chip';
-    chip.textContent = w;
-    chip.onclick = () => placeChip(chip);
-    pool.appendChild(chip);
-  });
-}
-
-function placeChip(chip) {
-  const area = document.getElementById('sort-area');
-  chip.classList.add('placed');
-  chip.onclick = () => returnChip(chip);
-  area.appendChild(chip);
-}
-
-function returnChip(chip) {
-  const pool = document.getElementById('sort-pool');
-  chip.classList.remove('placed');
-  chip.onclick = () => placeChip(chip);
-  pool.appendChild(chip);
-}
-
-function checkSort() {
-  const placed = Array.from(document.getElementById('sort-area').children).map(c => c.textContent);
-  const correct = JSON.stringify(placed) === JSON.stringify(sortCorrect);
-  showToast(correct ? '完全正確！' : '順序不對，再試試');
-}
 
 // Add card toast
 function showAddCard() {
