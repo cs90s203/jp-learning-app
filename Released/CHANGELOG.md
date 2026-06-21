@@ -1,5 +1,14 @@
 # 日語學習 App — 版本記錄
 
+## v0.5.7 — 2026-06-21
+
+**修正：朗讀句子選取完全失效**
+- Bug 根因：`resetArticleProgress()` 呼叫 `initSentenceSel()` 沒帶 count → `sentenceCount = undefined` → `buildPlayText()` 判斷 `!sentenceCount` 永遠 true → 無視選取 fallback 到全文
+- Fix 1：`resetArticleProgress` 改為 `initSentenceSel(sentenceCount)`，保留 count 只重置選取狀態；切換文章同時呼叫 `stopReadAloud()`
+- Fix 2：新增 `SENTENCE_TEXTS[]`（由 `buildSentenceTextsFromTokens(tokens)` 從 token 建立），`buildPlayText` 改用此陣列而非 DOM 查詢，不再有 DOM 為空時意外播全文的問題
+
+---
+
 ## v0.5.6 — 2026-06-21
 
 **修正：週曆進度弧顏色實際未生效**

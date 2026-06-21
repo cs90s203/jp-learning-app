@@ -1488,7 +1488,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.5.6
+        v0.5.7
       </div>
 
     </div>
@@ -2217,6 +2217,7 @@ function renderArticle(tokens) {
     // cn-note 緊接在 sentence-group 後，移到 row 之後（在 DOM 已是如此，不需移動）
   });
   initSentenceSel(groups.length);
+  SENTENCE_TEXTS = buildSentenceTextsFromTokens(tokens);
 
   // 綁定長按事件
   container.querySelectorAll('.tok').forEach(el => {
@@ -2424,10 +2425,28 @@ let readAloudUtterance = null;
 let readAloudPlaying = false;
 let readAloudRate = 1.0;
 
+// Token 分句陣列（不依賴 DOM，由 renderArticle 後更新）
+let SENTENCE_TEXTS = [];
+
+function buildSentenceTextsFromTokens(tokens) {
+  const result = [];
+  let cur = [];
+  for (const tok of (tokens || [])) {
+    cur.push(tok.surface_form);
+    if (/[。！？]/.test(tok.surface_form)) {
+      result.push(cur.join(''));
+      cur = [];
+    }
+  }
+  if (cur.length) result.push(cur.join(''));
+  return result;
+}
+
 function buildPlayText() {
-  // 若沒有 sentenceCount（文章未渲染），退回全文
-  if (!sentenceCount) return ARTICLE_TEXT;
-  const texts = getSelectedSentenceTexts();
+  if (!sentenceCount || !SENTENCE_TEXTS.length) return ARTICLE_TEXT;
+  const texts = sentenceSelected
+    .map((sel, i) => (sel && SENTENCE_TEXTS[i]) ? SENTENCE_TEXTS[i] : null)
+    .filter(Boolean);
   return texts.length ? texts.join('') : ARTICLE_TEXT;
 }
 
@@ -4110,9 +4129,10 @@ async function selectArticleDate(dateStr) {
 }
 
 function resetArticleProgress() {
-  // 重置 sentenceSelected 和朗讀狀態
-  if (typeof sentenceSelected !== 'undefined') {
-    initSentenceSel();
+  stopReadAloud();
+  // 重置句子選取（全選），sentenceCount 由 renderArticle 設定，不可清除
+  if (sentenceCount > 0) {
+    initSentenceSel(sentenceCount);
   }
 }
 
