@@ -1350,7 +1350,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.8.6
+        v0.8.7
       </div>
 
     </div>
@@ -4553,13 +4553,13 @@ try {
   fbAuth = firebase.auth();
   fbDb   = firebase.firestore();
 
-  // 處理 Google redirect 回跳結果
+  // 處理之前未完成的 redirect（舊版遺留，新版改用 popup）
   fbAuth.getRedirectResult().then(result => {
     if (result && result.user) {
-      console.log('Google 登入成功（redirect）:', result.user.uid);
+      console.log('Redirect 登入成功（legacy）:', result.user.uid);
     }
   }).catch(err => {
-    if (err.code !== 'auth/no-auth-event') showToast('登入失敗：' + err.message);
+    if (err.code !== 'auth/no-auth-event') console.warn('getRedirectResult:', err.code);
   });
 
   // 監聽登入狀態
@@ -4587,7 +4587,7 @@ function _authLoginBtnHTML() {
   </div>`;
 }
 
-// Google 登入（redirect 模式，相容 iOS Safari）
+// Google 登入（popup 模式，解決 iOS Safari ITP 限制）
 function signInWithGoogle() {
   const el = document.getElementById('auth-section');
   try {
@@ -4595,11 +4595,22 @@ function signInWithGoogle() {
       showToast('Firebase 尚未載入，請重新整理後再試');
       return;
     }
-    if (el) el.innerHTML = '<div style="padding:16px;text-align:center;color:var(--wt3);font-size:13px">正在跳轉到 Google 登入…</div>';
+    if (el) el.innerHTML = '<div style="padding:16px;text-align:center;color:var(--wt3);font-size:13px">正在開啟 Google 登入…</div>';
     const provider = new firebase.auth.GoogleAuthProvider();
-    fbAuth.signInWithRedirect(provider).catch(err => {
-      showToast('登入失敗：' + (err.code || err.message));
-      if (el) el.innerHTML = _authLoginBtnHTML();
+    fbAuth.signInWithPopup(provider).catch(err => {
+      // popup 被封鎖時退回 redirect
+      if (err.code === 'auth/popup-blocked') {
+        showToast('彈窗被封鎖，改用跳轉模式…');
+        fbAuth.signInWithRedirect(provider).catch(e => {
+          showToast('登入失敗：' + (e.code || e.message));
+          if (el) el.innerHTML = _authLoginBtnHTML();
+        });
+      } else if (err.code === 'auth/popup-closed-by-user') {
+        if (el) el.innerHTML = _authLoginBtnHTML();
+      } else {
+        showToast('登入失敗：' + (err.code || err.message));
+        if (el) el.innerHTML = _authLoginBtnHTML();
+      }
     });
   } catch(e) {
     showToast('登入錯誤：' + e.message);

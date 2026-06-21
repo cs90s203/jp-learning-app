@@ -1,5 +1,21 @@
 # 日語學習 App — 版本記錄
 
+## v0.8.7 — 2026-06-21
+
+**Google 登入改用 popup 模式（修正 iOS Safari ITP 問題）**
+- `signInWithRedirect` 因 iOS Safari ITP 跨域限制，session 無法回傳 → `onAuthStateChanged` 永遠返回 null
+- 改用 `signInWithPopup`，session 直接在同頁面處理，不涉及跨域
+- popup 被封鎖時自動退回 redirect（桌面瀏覽器保險）
+- 使用者關閉 popup 時恢復登入按鈕
+
+---
+
+## 0.8.7 — 2026-06-22
+
+Google 登入改 popup 模式，修正 iOS Safari ITP 問題
+
+---
+
 ## v0.8.6 — 2026-06-21
 
 **帳號 UI 修正：時序競爭 + 已登入介面設計**
