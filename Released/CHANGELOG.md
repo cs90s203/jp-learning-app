@@ -1,5 +1,21 @@
 # 日語學習 App — 版本記錄
 
+## v0.8.6 — 2026-06-21
+
+**帳號 UI 修正：時序競爭 + 已登入介面設計**
+- 修正 `authStateKnown` flag，避免 Firebase auth state 尚未確認前顯示登入按鈕
+- 登入成功後顯示 toast 提示「已登入：xxx」
+- 已登入 UI：頭像 / 姓名 / Email + 登出按鈕（加邊框），下方同步狀態列（暫為 disabled）
+- 移除 `signInWithGoogle` debug toast，改為正常錯誤提示
+
+---
+
+## 0.8.6 — 2026-06-21
+
+帳號 UI 修正：authStateKnown + 已登入介面設計
+
+---
+
 ## v0.8.5 — 2026-06-21
 
 **Firebase 隔離 + quizOrder bug 修正**
