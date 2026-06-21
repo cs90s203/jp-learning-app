@@ -1,5 +1,20 @@
 # 日語學習 App — 版本記錄
 
+## v0.8.5 — 2026-06-21
+
+**Firebase 隔離 + quizOrder bug 修正**
+- Firebase 初始化移至獨立 script 標籤，不受主程式例外影響
+- updateQuizOrderUI fallback 由 'urgent'（已刪除）改為 'due'
+- 這是導致 Firebase 從未初始化（Apps:0）的根本原因
+
+---
+
+## 0.8.5 — 2026-06-21
+
+Firebase 隔離 + quizOrder bug 修正
+
+---
+
 ## v0.8.4 — 2026-06-21
 
 **Firebase 錯誤持久顯示 + storageBucket 格式修正**

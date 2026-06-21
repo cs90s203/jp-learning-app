@@ -1350,7 +1350,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.8.4
+        v0.8.5
       </div>
 
     </div>
@@ -4525,8 +4525,12 @@ loadAllSlotsOnStartup();
 loadVocabBook();
 initSettings();
 initSort();
-updateQuizOrderUI(localStorage.getItem('quizOrder') || 'urgent');
+updateQuizOrderUI(localStorage.getItem('quizOrder') || 'due');
 
+</script>
+
+<!-- ── Firebase Auth（獨立 script，不受主程式例外影響）── -->
+<script>
 // ── Firebase Auth ──────────────────────────────────────
 const firebaseConfig = {
   apiKey: "AIzaSyBF8gq-kRwBQcmewf2-w5oNbtvzoK8wdzQ",
