@@ -407,8 +407,8 @@
     width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
     font-size: 13px; color: var(--wt3);
   }
-  .awb-day.awb-today .awb-dow { color: #D85A30; font-weight: 600; }
-  .awb-day.awb-selected .awb-circle-num { fill: #D85A30; font-weight: 600; }
+  .awb-day.awb-today .awb-dow { color: var(--wa); font-weight: 600; }
+  .awb-day.awb-selected .awb-circle-num { fill: var(--wa); font-weight: 600; }
   .awb-day.awb-future .awb-dow,
   .awb-day.awb-future .awb-day-num { opacity: 0.3; }
   .awb-day[data-has-content="1"] { cursor: pointer; }
@@ -1488,7 +1488,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.5.4
+        v0.5.5
       </div>
 
     </div>
@@ -4022,7 +4022,7 @@ function renderWeekBar() {
       const circ = 2 * Math.PI * R;
       const filled = circ * pct;
       const bgFill  = isSel ? 'var(--wa-l)' : (isToday ? 'var(--wa-bg)' : 'none');
-      const textFill = isSel ? '#D85A30' : 'var(--wt)';
+      const textFill = isSel ? 'var(--wa)' : 'var(--wt)';
       const trackStroke = 'var(--wa-bg2)';
       const fillStroke  = '#D85A30';
 
