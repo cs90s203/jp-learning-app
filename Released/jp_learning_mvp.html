@@ -10,22 +10,68 @@
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
 
   :root {
-    --wa: #C4783A;
-    --wa-l: #F0D9BE;
-    --wa-ll: #FDF8F3;
-    --wa-bg: #F5EDE0;
-    --wa-bg2: #E8DDD0;
-    --wt: #2A1A08;
-    --wt2: #5A3A1A;
-    --wt3: #9A7A5A;
-    --wg: #3A6B47;
+    /* ── Brand colours ── */
+    --wa:    #C4783A;   /* primary amber */
+    --wa-l:  #F0D9BE;   /* amber light */
+    --wa-ll: #FDF8F3;   /* page background */
+    --wa-bg: #F5EDE0;   /* subtle warm fill */
+    --wa-bg2:#E8DDD0;   /* divider / border */
+    --wt:    #2A1A08;   /* text primary */
+    --wt2:   #5A3A1A;   /* text secondary */
+    --wt3:   #9A7A5A;   /* text tertiary */
+    --wg:    #3A6B47;   /* green / success */
     --wg-bg: #D4EDDA;
-    --wy: #8B6200;
+    --wy:    #8B6200;   /* yellow / warn */
     --wy-bg: #FFF0CC;
-    --wr: #9B2617;
+    --wr:    #9B2617;   /* red / danger */
     --wr-bg: #FDDDD9;
+    /* ── Radius design tokens ── */
+    --r-card: 16px;     /* card, sheet, panel */
+    --r-btn:  10px;     /* standard button */
+    --r-pill: 999px;    /* badge, tag, toggle */
+    /* ── Layout ── */
     --nav-h: 68px;
     --safe-bottom: env(safe-area-inset-bottom, 0px);
+    /* ── Article toolbar height (朗讀 + 跟讀 2 bars) ── */
+    --atb-h: 130px;
+  }
+
+  /* ── 夜晚模式：覆寫所有 CSS 變數 ── */
+  html[data-theme="dark"] {
+    --wa:    #D4884A;
+    --wa-l:  #3D2410;
+    --wa-ll: #120C04;
+    --wa-bg: #1C1208;
+    --wa-bg2:#2E1E0C;
+    --wt:    #F0E4D0;
+    --wt2:   #B89070;
+    --wt3:   #7A5A3C;
+    --wg:    #5BAB6A;
+    --wg-bg: #0E2A18;
+    --wy:    #C8A020;
+    --wy-bg: #2A2000;
+    --wr:    #D05050;
+    --wr-bg: #3A1515;
+  }
+  /* 夜晚模式：覆寫 hardcoded #FFFFFF 白色背景 */
+  html[data-theme="dark"] .card,
+  html[data-theme="dark"] .vocab-list-row,
+  html[data-theme="dark"] .word-panel,
+  html[data-theme="dark"] .confirm-box,
+  html[data-theme="dark"] .bottom-nav,
+  html[data-theme="dark"] #article-toolbar,
+  html[data-theme="dark"] .mode-tab.active  { background: #1C1208; }
+
+  html[data-theme="dark"] .vocab-row-content { background: #1C1208; }
+  html[data-theme="dark"] .vocab-list-row.selected .vocab-row-content { background: #2E1E0C; }
+
+  html[data-theme="dark"] .confirm-cancel { background: #2E1E0C; }
+  html[data-theme="dark"] .toggle::after  { background: #F0E4D0; }
+
+  html[data-theme="dark"] input[type="text"],
+  html[data-theme="dark"] textarea {
+    background: #2E1E0C; color: var(--wt);
+    border-color: var(--wa-bg2);
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
@@ -74,10 +120,23 @@
   .card {
     background: #FFFFFF;
     border: 0.5px solid var(--wa-bg2);
-    border-radius: 18px;
+    border-radius: var(--r-card);
     padding: 16px;
     margin-bottom: 12px;
   }
+
+  /* ── 固定在底部的朗讀/跟讀工具列 ── */
+  #article-toolbar {
+    display: none;
+    position: fixed;
+    left: 0; right: 0;
+    bottom: calc(var(--nav-h) + var(--safe-bottom));
+    background: var(--wa-ll);
+    border-top: 0.5px solid var(--wa-bg2);
+    z-index: 50;
+    padding: 0 16px;
+  }
+  #article-toolbar.show { display: block; }
 
   .section-title {
     font-size: 11px; font-weight: 500; color: var(--wt3);
@@ -263,7 +322,6 @@
   .diff-star:active { transform: scale(1.2); }
   .difficulty-hint { font-size: 11px; color: var(--wt3); }
   .difficulty-done .difficulty-label { color: var(--wg); font-weight: 500; }
-  .difficulty-done .diff-star { cursor: default; }
   .rec-status.recording-now { color: var(--wr); font-weight: 500; }
   .rec-status.ready { color: var(--wg); font-weight: 500; }
   .av-bar--follow { flex-direction: column; align-items: stretch; gap: 6px; }
@@ -293,8 +351,10 @@
 
   .article-text { font-size: 16px; color: var(--wt); line-height: 2.6; }
   .article-text ruby rt { font-size: 10px; color: var(--wt3); }
-  .cn-note { font-size: 12px; color: var(--wt2); display: block; margin: -4px 0 6px 0; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
+  .cn-note { font-size: 12px; color: var(--wt2); display: block; margin: -4px 0 6px 16px; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
   .cn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
+  /* Article page：底部要讓出固定工具列的空間 */
+  #page-article { padding-bottom: calc(var(--nav-h) + var(--safe-bottom) + var(--atb-h) + 12px); }
 
   /* 句子選取點 */
   .sentence-sel-row {
@@ -905,57 +965,6 @@
       </div>
       <div class="sec" style="padding-top:0">
 
-        <!-- 朗讀控制條 -->
-        <div class="av-bar">
-          <div class="av-bar-label">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--wa)" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-            朗讀
-          </div>
-          <div class="av-bar-controls">
-            <button class="av-btn" id="play-btn" onclick="toggleReadAloud()" aria-label="播放">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
-            </button>
-            <button class="av-btn" onclick="stopReadAloud()" aria-label="停止">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="5" y="5" width="14" height="14" rx="1"/></svg>
-            </button>
-            <div class="speed-stepper">
-              <button class="speed-step-btn" id="speed-down-btn" onclick="adjustSpeed(-1)" aria-label="減慢">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </button>
-              <span class="av-speed" id="speed-label">1.0x</span>
-              <button class="speed-step-btn" id="speed-up-btn" onclick="adjustSpeed(1)" aria-label="加快">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 跟讀控制條 -->
-        <div class="av-bar av-bar--follow">
-          <div class="av-bar-follow-top">
-            <div class="av-bar-label">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7F77DD" stroke-width="2" stroke-linecap="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
-              跟讀
-            </div>
-            <span class="rec-status" id="rec-status">槽位1尚無錄音</span>
-          </div>
-          <div class="av-bar-controls">
-            <div class="rec-slots" id="rec-slots">
-              <button class="av-btn rec-slot active" data-slot="1" onclick="selectSlot(1)">1</button>
-              <button class="av-btn rec-slot" data-slot="2" onclick="selectSlot(2)">2</button>
-              <button class="av-btn rec-slot" data-slot="3" onclick="selectSlot(3)">3</button>
-            </div>
-            <button class="av-btn" id="play-rec-btn" onclick="togglePlayRecording()" aria-label="播放錄音" disabled>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
-            </button>
-            <button class="av-btn" id="stop-rec-btn" onclick="stopPlayRecording()" aria-label="停止" disabled>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="5" y="5" width="14" height="14" rx="1"/></svg>
-            </button>
-            <button class="av-btn rec-btn" id="rec-btn" onclick="toggleRecord()" aria-label="錄音">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><circle cx="12" cy="12" r="8"/></svg>
-            </button>
-          </div>
-        </div>
         <div class="sentence-toggle-row">
           <span class="cn-toggle-label">逐句跟讀（新手模式）</span>
           <div class="toggle" id="sentence-toggle" onclick="this.classList.toggle('off')"></div>
@@ -1244,8 +1253,11 @@
             <div class="toggle" onclick="this.classList.toggle('off')"></div>
           </div>
           <div class="setting-row">
-            <div><div class="setting-label">外觀</div><div class="setting-sub">暖色系</div></div>
-            <span class="setting-val">日間</span>
+            <div>
+              <div class="setting-label">夜晚模式</div>
+              <div class="setting-sub" id="theme-sub">日間（暖色系）</div>
+            </div>
+            <div class="toggle off" id="theme-toggle" onclick="toggleTheme()"></div>
           </div>
         </div>
 
@@ -1291,7 +1303,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.3.5
+        v0.3.7
       </div>
 
     </div>
@@ -1423,6 +1435,60 @@
     </div>
   </div>
 
+  <!-- 固定文章工具列（朗讀 + 跟讀），直接掛在 .app 避免被 page overflow 裁切 -->
+  <div id="article-toolbar">
+    <!-- 朗讀控制條 -->
+    <div class="av-bar">
+      <div class="av-bar-label">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--wa)" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+        朗讀
+      </div>
+      <div class="av-bar-controls">
+        <button class="av-btn" id="play-btn" onclick="toggleReadAloud()" aria-label="播放">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+        </button>
+        <button class="av-btn" onclick="stopReadAloud()" aria-label="停止">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="5" y="5" width="14" height="14" rx="1"/></svg>
+        </button>
+        <div class="speed-stepper">
+          <button class="speed-step-btn" id="speed-down-btn" onclick="adjustSpeed(-1)" aria-label="減慢">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <span class="av-speed" id="speed-label">1.0x</span>
+          <button class="speed-step-btn" id="speed-up-btn" onclick="adjustSpeed(1)" aria-label="加快">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 跟讀控制條 -->
+    <div class="av-bar av-bar--follow">
+      <div class="av-bar-follow-top">
+        <div class="av-bar-label">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7F77DD" stroke-width="2" stroke-linecap="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+          跟讀
+        </div>
+        <span class="rec-status" id="rec-status">槽位1尚無錄音</span>
+      </div>
+      <div class="av-bar-controls">
+        <div class="rec-slots" id="rec-slots">
+          <button class="av-btn rec-slot active" data-slot="1" onclick="selectSlot(1)">1</button>
+          <button class="av-btn rec-slot" data-slot="2" onclick="selectSlot(2)">2</button>
+          <button class="av-btn rec-slot" data-slot="3" onclick="selectSlot(3)">3</button>
+        </div>
+        <button class="av-btn" id="play-rec-btn" onclick="togglePlayRecording()" aria-label="播放錄音" disabled>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+        </button>
+        <button class="av-btn" id="stop-rec-btn" onclick="stopPlayRecording()" aria-label="停止" disabled>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="5" y="5" width="14" height="14" rx="1"/></svg>
+        </button>
+        <button class="av-btn rec-btn" id="rec-btn" onclick="toggleRecord()" aria-label="錄音">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><circle cx="12" cy="12" r="8"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- 底部滑出：單字／助詞詳情面板（移至 .app 頂層，避免被 .page overflow 裁切） -->
   <div class="word-panel" id="word-panel">
     <div class="word-panel-inner">
@@ -1441,6 +1507,9 @@ function switchPage(id) {
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
   document.getElementById('nb-' + id).classList.add('active');
+
+  // 顯示/隱藏固定工具列
+  document.getElementById('article-toolbar').classList.toggle('show', id === 'article');
 
   if (id === 'article') {
     if (!articleRendered) {
@@ -1519,12 +1588,19 @@ function updateSelAllDot() {
 }
 
 // 取得已選句子的文字陣列
+function getSentenceCleanText(el) {
+  // Strip <rt> (furigana) so TTS only reads kanji, not both kanji + reading
+  const clone = el.cloneNode(true);
+  clone.querySelectorAll('rt').forEach(rt => rt.remove());
+  return clone.textContent.trim();
+}
+
 function getSelectedSentenceTexts() {
   const texts = [];
   for (let i = 0; i < sentenceCount; i++) {
     if (sentenceSelected[i]) {
       const el = document.querySelector('.sentence-group[data-sentence="' + i + '"]');
-      if (el) texts.push(el.textContent.trim());
+      if (el) texts.push(getSentenceCleanText(el));
     }
   }
   return texts;
@@ -2173,7 +2249,37 @@ function updateSpeedButtonStates(idx) {
   document.getElementById('speed-up-btn').disabled = (idx === SPEED_STEPS.length - 1);
 }
 
+// ===== 主題切換 =====
+function applyTheme(isDark) {
+  if (isDark) {
+    document.documentElement.dataset.theme = 'dark';
+  } else {
+    delete document.documentElement.dataset.theme;
+  }
+  const toggle = document.getElementById('theme-toggle');
+  const sub    = document.getElementById('theme-sub');
+  if (toggle) toggle.classList.toggle('off', !isDark);
+  if (sub)    sub.textContent = isDark ? '夜晚（深色系）' : '日間（暖色系）';
+}
+
+function toggleTheme() {
+  const isDark = document.documentElement.dataset.theme === 'dark';
+  const next = !isDark;
+  localStorage.setItem('theme', next ? 'dark' : 'light');
+  applyTheme(next);
+}
+
+function loadTheme() {
+  const saved = localStorage.getItem('theme');
+  // 若無偏好，跟隨系統
+  const prefersDark = saved
+    ? saved === 'dark'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(prefersDark);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  loadTheme();
   updateSpeedButtonStates(SPEED_STEPS.indexOf(readAloudRate));
 
   // 動態設定今日日期顯示
@@ -2605,23 +2711,27 @@ function updateArticleProgress() {
 function rateArticle(val) {
   const log = loadStudyLog();
   const dateStr = getLocalDateStr();
-  if (!log[dateStr]) return;
+  if (!log[dateStr]) log[dateStr] = {};
   log[dateStr].articleDifficulty = val;
   saveStudyLog(log);
   renderDifficultyBar(val);
+  showToast('難度已更新');
 }
 
 function renderDifficultyBar(savedVal) {
   const bar = document.getElementById('difficulty-bar');
   const stars = document.querySelectorAll('.diff-star');
   if (!bar || !stars.length) return;
-  stars.forEach(s => s.classList.toggle('active', Number(s.dataset.val) <= savedVal));
-  if (savedVal) {
-    bar.classList.add('difficulty-done');
-    const labels = ['', '非常輕鬆', '還算輕鬆', '剛剛好', '有點難', '很難'];
-    bar.querySelector('.difficulty-label').textContent = '已評分：' + labels[savedVal];
-    stars.forEach(s => s.onclick = null); // 不允許重複評分
-  }
+  const labels = ['', '非常輕鬆', '還算輕鬆', '剛剛好', '有點難', '很難'];
+  stars.forEach(s => {
+    const v = Number(s.dataset.val);
+    s.classList.toggle('active', v <= savedVal);
+    s.onclick = () => rateArticle(v); // 永遠允許重新點擊
+  });
+  bar.classList.toggle('difficulty-done', !!savedVal);
+  bar.querySelector('.difficulty-label').textContent = savedVal
+    ? '難度：' + labels[savedVal]
+    : '這篇對你的難度？';
 }
 
 function initDifficultyBar() {
