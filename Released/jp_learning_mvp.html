@@ -1326,7 +1326,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.7.3
+        v0.7.4
       </div>
 
     </div>
@@ -1498,6 +1498,8 @@
           <button class="av-btn rec-slot active" data-slot="1" onclick="selectSlot(1)">1</button>
           <button class="av-btn rec-slot" data-slot="2" onclick="selectSlot(2)">2</button>
           <button class="av-btn rec-slot" data-slot="3" onclick="selectSlot(3)">3</button>
+          <button class="av-btn rec-slot" data-slot="4" onclick="selectSlot(4)">4</button>
+          <button class="av-btn rec-slot" data-slot="5" onclick="selectSlot(5)">5</button>
         </div>
         <button class="av-btn" id="play-rec-btn" onclick="togglePlayRecording()" aria-label="播放錄音" disabled>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
@@ -1953,8 +1955,9 @@ function saveQuizResults() {
   }
   // 更新任務環 (取最佳成績)
   const best = sec.first ? Math.max(pct, sec.first.pct) : pct;
-  if (quizSection === 'listen') log[dateStr].tasks.listen = best;
-  else                          log[dateStr].tasks.quiz   = best;
+  // 做完就算完成（Math.max 確保 0 分也標記為已做）
+  if (quizSection === 'listen') log[dateStr].tasks.listen = Math.max(best, 1);
+  else                          log[dateStr].tasks.quiz   = Math.max(best, 1);
 
   saveStudyLog(log);
   renderQuizWeekBar();
@@ -2954,8 +2957,9 @@ let recordTimerInterval = null;
 let recordSeconds = 0;
 
 let currentSlot = 1;
-let slotBlobs = { 1: null, 2: null, 3: null }; // 記憶體快取，避免每次播放都重新讀取 DB
-let slotAudioUrls = { 1: null, 2: null, 3: null };
+let slotBlobs    = { 1: null, 2: null, 3: null, 4: null, 5: null };
+let slotAudioUrls = { 1: null, 2: null, 3: null, 4: null, 5: null };
+let slotSeconds   = { 1: 0,    2: 0,    3: 0,    4: 0,    5: 0    }; // 每槽錄音秒數
 
 let playbackAudio = null;
 let isPlayingRecording = false;
@@ -2999,7 +3003,7 @@ async function loadRecordingFromDB(slot) {
 
 async function loadAllSlotsOnStartup() {
   try {
-    for (let slot = 1; slot <= 3; slot++) {
+    for (let slot = 1; slot <= 5; slot++) {
       const record = await loadRecordingFromDB(slot);
       if (record && record.blob) {
         slotBlobs[slot] = record.blob;
@@ -3020,6 +3024,21 @@ function markSlotHasAudio(slot, seconds) {
     btn.classList.add('has-audio');
     btn.dataset.seconds = seconds || '';
   }
+  slotSeconds[slot] = seconds || 0;
+  updateSpeakProgress();
+}
+
+// 跟讀進度：5 個槽位中錄音 ≥ 5 秒的數量 × 20%
+function updateSpeakProgress() {
+  const validCount = Object.values(slotSeconds).filter(s => s >= 5).length;
+  const pct = Math.round(validCount / 5 * 100);
+  const log = loadStudyLog();
+  const dateStr = getLocalDateStr();
+  if (!log[dateStr]) log[dateStr] = {};
+  if (!log[dateStr].tasks) log[dateStr].tasks = {};
+  log[dateStr].tasks.speak = pct;
+  saveStudyLog(log);
+  renderHomeRing();
 }
 
 function selectSlot(slot) {
@@ -3257,10 +3276,9 @@ function updateArticleProgress() {
   if (!log[dateStr]) return;
   const ap = log[dateStr].articleProgress || {};
   let pct = 0;
-  if (ap.scrolled)                    pct += 20;  // 條件1
-  if (ap.playedOnce)                  pct += 25;  // 條件2
-  if ((ap.playCount || 0) >= 3)       pct += 20;  // 條件3
-  // 條件4（逐句錄音）預留 35%，待後續實作
+  if (ap.scrolled)                    pct += 30;  // 條件1：捲到底部
+  if (ap.playedOnce)                  pct += 30;  // 條件2：朗讀 1 次
+  if ((ap.playCount || 0) >= 3)       pct += 40;  // 條件3：朗讀 ≥ 3 次
   log[dateStr].tasks.article = pct;
   saveStudyLog(log);
   renderHomeRing();
@@ -3349,7 +3367,7 @@ function buildRing(size, strokeRatio, tasksState) {
 
   TASKS.forEach((t, i) => {
     const val = tasksState[t.key];
-    const fillRatio = (t.key === 'article' || t.key === 'vocab') ? articleFillRatio(val) : (val ? 1 : 0);
+    const fillRatio = (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') ? articleFillRatio(val) : (val ? 1 : 0);
     if (fillRatio <= 0) return;
     const thisSegLen = segLen * fillRatio;
     const offset = -(circumference * (i / n)) + circumference / 4;
@@ -3364,7 +3382,7 @@ function buildRing(size, strokeRatio, tasksState) {
 
 function countDone(tasks) {
   return TASKS.reduce((sum, t) => {
-    if (t.key === 'article' || t.key === 'vocab') return sum + (articleFillRatio(tasks[t.key]) >= 1 ? 1 : 0);
+    if (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') return sum + (articleFillRatio(tasks[t.key]) >= 1 ? 1 : 0);
     return sum + (tasks[t.key] ? 1 : 0);
   }, 0);
 }
@@ -3418,7 +3436,7 @@ function renderHomeRing() {
   TASKS.forEach(t => {
     const val = tasks[t.key];
     let stateText, stateColor;
-    if (t.key === 'article' || t.key === 'vocab') {
+    if (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') {
       const pct = Math.round(articleFillRatio(val) * 100);
       stateText = pct >= 100 ? '完成' : (pct > 0 ? pct + '%' : '未開始');
       stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
