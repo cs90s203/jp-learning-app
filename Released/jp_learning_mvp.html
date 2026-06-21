@@ -608,6 +608,81 @@
     font-size: 12px; color: var(--wt3); letter-spacing: 0.04em;
   }
 
+  /* ── 單字複習考 overlay ── */
+  .vocab-quiz-start-btn {
+    background: var(--wa); color: #FFF; border: none;
+    font-size: 13px; font-weight: 500; padding: 6px 14px;
+    border-radius: var(--r-pill); cursor: pointer; white-space: nowrap;
+  }
+  #vocab-quiz {
+    position: fixed; inset: 0; z-index: 400;
+    background: var(--wa-ll); display: none; flex-direction: column;
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .vq-header {
+    display: flex; align-items: center; gap: 12px;
+    padding: 16px 16px 12px; flex-shrink: 0;
+  }
+  .vq-close-btn {
+    width: 36px; height: 36px; border: none; background: var(--wa-bg);
+    border-radius: var(--r-pill); cursor: pointer; color: var(--wt2);
+    font-size: 16px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  }
+  .vq-prog-wrap {
+    flex: 1; height: 4px; background: var(--wa-bg2); border-radius: 2px; overflow: hidden;
+  }
+  .vq-prog-bar {
+    height: 100%; background: var(--wa); border-radius: 2px;
+    transition: width 0.3s ease; width: 0%;
+  }
+  .vq-counter { font-size: 13px; color: var(--wt3); flex-shrink: 0; min-width: 52px; text-align: right; }
+  .vq-card-area {
+    flex: 1; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; padding: 0 32px; text-align: center;
+  }
+  .vq-kana { font-size: 18px; color: var(--wt3); min-height: 26px; letter-spacing: 0.05em; }
+  .vq-word { font-size: 44px; font-weight: 500; color: var(--wt); letter-spacing: 0.02em; }
+  .vq-divider { width: 48px; height: 1px; background: var(--wa-bg2); margin: 20px 0; }
+  .vq-meaning-tap { cursor: pointer; }
+  .vq-meaning {
+    font-size: 20px; color: var(--wt); font-weight: 500;
+    transition: color 0.15s, text-shadow 0.15s;
+  }
+  .vq-meaning.meaning-hidden {
+    color: transparent;
+    text-shadow: 0 0 10px rgba(42,26,8,0.55);
+    user-select: none;
+  }
+  html[data-theme="dark"] .vq-meaning.meaning-hidden {
+    text-shadow: 0 0 10px rgba(240,228,208,0.55);
+  }
+  .vq-peek-hint { font-size: 12px; color: var(--wt3); margin-top: 8px; }
+  .vq-btns {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    padding: 16px 24px calc(16px + env(safe-area-inset-bottom,0px)); flex-shrink: 0;
+  }
+  .vq-btn {
+    height: 52px; border: none; border-radius: var(--r-btn);
+    font-size: 15px; font-weight: 500; cursor: pointer;
+  }
+  .vq-forget   { background: var(--wr-bg); color: var(--wr); }
+  .vq-remember { background: var(--wa);    color: #FFF; }
+  .vq-next-btn { background: var(--wa-bg); color: var(--wt2); }
+  .vq-result-area {
+    flex: 1; display: none; flex-direction: column;
+    align-items: center; justify-content: center; padding: 32px 24px;
+  }
+  .vq-result-card {
+    width: 100%; background: #FFF; border: 0.5px solid var(--wa-bg2);
+    border-radius: var(--r-card); padding: 20px 0; margin-bottom: 32px;
+    display: flex; justify-content: space-around;
+  }
+  html[data-theme="dark"] .vq-result-card { background: #1C1208; }
+  .vq-done-btn {
+    width: 100%; height: 52px; background: var(--wa); color: #FFF; border: none;
+    border-radius: var(--r-btn); font-size: 16px; font-weight: 500; cursor: pointer;
+  }
+
   /* 刪除確認 dialog */
   .confirm-overlay {
     position: fixed; inset: 0; background: rgba(42,26,8,0.4);
@@ -1047,7 +1122,10 @@
     <div class="page" id="page-vocab">
       <div class="top-bar" style="flex-shrink:0">
         <h1>單字本</h1>
-        <p id="vocab-count-text">共 0 張</p>
+        <div style="display:flex;align-items:center;gap:10px">
+          <p id="vocab-count-text" style="margin:0">共 0 張</p>
+          <button class="vocab-quiz-start-btn" id="vocab-quiz-start-btn" onclick="startVocabQuiz()">開始複習</button>
+        </div>
       </div>
 
       <!-- Filter bar -->
@@ -1277,6 +1355,13 @@
             <div><div class="setting-label">熟記定義</div><div class="setting-sub">累積記得次數</div></div>
             <span class="setting-val">10 次</span>
           </div>
+          <div class="setting-row" style="cursor:pointer" onclick="cycleQuizOrder()">
+            <div>
+              <div class="setting-label">單字複習排序</div>
+              <div class="setting-sub" id="quiz-order-sub">急迫優先（生字先）</div>
+            </div>
+            <span class="setting-val" id="quiz-order-val">急迫</span>
+          </div>
         </div>
 
         <p class="section-title">顯示</p>
@@ -1344,7 +1429,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.3.11
+        v0.4.0
       </div>
 
     </div>
@@ -1538,6 +1623,49 @@
     </div>
   </div>
   <div class="word-panel-backdrop" id="word-panel-backdrop" onclick="closeWordPanel()"></div>
+
+  <!-- 單字複習考 overlay -->
+  <div id="vocab-quiz">
+    <!-- header: close / progress / counter -->
+    <div class="vq-header">
+      <button class="vq-close-btn" onclick="exitVocabQuiz()">✕</button>
+      <div class="vq-prog-wrap"><div class="vq-prog-bar" id="vq-bar"></div></div>
+      <span class="vq-counter" id="vq-counter">0 / 0</span>
+    </div>
+    <!-- card area -->
+    <div class="vq-card-area" id="vq-card-area">
+      <div class="vq-kana" id="vq-kana"></div>
+      <div class="vq-word" id="vq-word"></div>
+      <div class="vq-divider"></div>
+      <div class="vq-meaning-tap" id="vq-meaning-tap" onclick="vqPeekMeaning()">
+        <div class="vq-meaning meaning-hidden" id="vq-meaning"></div>
+        <div class="vq-peek-hint" id="vq-peek-hint">點擊顯示中文</div>
+      </div>
+    </div>
+    <!-- action buttons -->
+    <div class="vq-btns" id="vq-btns">
+      <button class="vq-btn vq-forget" id="vq-forget-btn" onclick="vqRate(false)">✕ 不記得</button>
+      <button class="vq-btn vq-remember" id="vq-remember-btn" onclick="vqRate(true)">✓ 記得</button>
+    </div>
+    <!-- result screen -->
+    <div class="vq-result-area" id="vq-result-area">
+      <div style="font-size:56px;margin-bottom:16px">🎉</div>
+      <div style="font-size:22px;font-weight:500;color:var(--wt);margin-bottom:24px">複習完成！</div>
+      <div class="vq-result-card">
+        <div style="text-align:center">
+          <div style="font-size:40px;font-weight:500;color:var(--wg)" id="vq-r-ok">0</div>
+          <div style="font-size:13px;color:var(--wt2);margin-top:4px">記得</div>
+        </div>
+        <div style="width:1px;background:var(--wa-bg2)"></div>
+        <div style="text-align:center">
+          <div style="font-size:40px;font-weight:500;color:var(--wr)" id="vq-r-fail">0</div>
+          <div style="font-size:13px;color:var(--wt2);margin-top:4px">不記得</div>
+        </div>
+      </div>
+      <button class="vq-done-btn" onclick="closeVocabQuizResult()">完成</button>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -2828,7 +2956,7 @@ function buildRing(size, strokeRatio, tasksState) {
 
   TASKS.forEach((t, i) => {
     const val = tasksState[t.key];
-    const fillRatio = (t.key === 'article') ? articleFillRatio(val) : (val ? 1 : 0);
+    const fillRatio = (t.key === 'article' || t.key === 'vocab') ? articleFillRatio(val) : (val ? 1 : 0);
     if (fillRatio <= 0) return;
     const thisSegLen = segLen * fillRatio;
     const offset = -(circumference * (i / n)) + circumference / 4;
@@ -2843,7 +2971,7 @@ function buildRing(size, strokeRatio, tasksState) {
 
 function countDone(tasks) {
   return TASKS.reduce((sum, t) => {
-    if (t.key === 'article') return sum + (articleFillRatio(tasks[t.key]) >= 1 ? 1 : 0);
+    if (t.key === 'article' || t.key === 'vocab') return sum + (articleFillRatio(tasks[t.key]) >= 1 ? 1 : 0);
     return sum + (tasks[t.key] ? 1 : 0);
   }, 0);
 }
@@ -2862,7 +2990,7 @@ function renderHomeRing() {
   TASKS.forEach(t => {
     const val = tasks[t.key];
     let stateText, stateColor;
-    if (t.key === 'article') {
+    if (t.key === 'article' || t.key === 'vocab') {
       const pct = Math.round(articleFillRatio(val) * 100);
       stateText = pct >= 100 ? '完成' : (pct > 0 ? pct + '%' : '未開始');
       stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
@@ -2964,11 +3092,17 @@ function openDay(day) {
   const tasksEl = document.getElementById('detail-tasks');
   tasksEl.innerHTML = '';
   TASKS.forEach(t => {
-    const done = entry.tasks[t.key];
+    const val = entry.tasks[t.key];
+    const isNum = (t.key === 'article' || t.key === 'vocab');
+    const pct = isNum ? Math.round(articleFillRatio(val) * 100) : (val ? 100 : 0);
+    const done = pct >= 100, partial = pct > 0 && !done;
+    const label = done ? '完成' : (partial ? pct + '%' : '未完成');
+    const bg    = done ? 'var(--wg-bg)' : (partial ? 'var(--wy-bg)' : 'var(--wa-bg)');
+    const color = done ? 'var(--wg)'    : (partial ? 'var(--wy)'    : 'var(--wt3)');
     const row = document.createElement('div');
     row.className = 'detail-task-row';
     row.innerHTML = '<div class="detail-task-left"><div class="task-dot" style="background:' + t.color + '"></div>' + t.label + '</div>' +
-      '<span class="badge" style="background:' + (done ? 'var(--wg-bg)' : 'var(--wa-bg)') + ';color:' + (done ? 'var(--wg)' : 'var(--wt3)') + '">' + (done ? '完成' : '未完成') + '</span>';
+      '<span class="badge" style="background:' + bg + ';color:' + color + '">' + label + '</span>';
     tasksEl.appendChild(row);
   });
 
@@ -3523,6 +3657,192 @@ function initSettings() {
   if (el) el.value = localStorage.getItem('googleVisionKey') || '';
 }
 
+// ===== 單字複習考 =====
+const VQ_ORDERS = ['urgent', 'random', 'newest'];
+const VQ_ORDER_LABELS = { urgent: '急迫優先（生字先）', random: '隨機', newest: '最近加入' };
+const VQ_ORDER_SHORT  = { urgent: '急迫', random: '隨機', newest: '最新' };
+
+let vqQueue = [];
+let vqIndex = 0;
+let vqOk = 0;
+let vqFail = 0;
+let vqForgetMode = false; // 不記得狀態：等待「下一張」
+
+function startVocabQuiz() {
+  const words = Object.keys(vocabBook);
+  if (!words.length) { showToast('單字本是空的，先加入單字再複習 😊'); return; }
+
+  const order = localStorage.getItem('quizOrder') || 'urgent';
+  vqQueue = words.slice();
+  if (order === 'urgent') {
+    vqQueue.sort((a, b) => (vocabBook[a].familiarity || 0) - (vocabBook[b].familiarity || 0));
+  } else if (order === 'random') {
+    for (let i = vqQueue.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [vqQueue[i], vqQueue[j]] = [vqQueue[j], vqQueue[i]];
+    }
+  } else { // newest
+    vqQueue.sort((a, b) => {
+      const da = vocabBook[a].addedDate || '';
+      const db = vocabBook[b].addedDate || '';
+      return db > da ? 1 : da > db ? -1 : 0;
+    });
+  }
+
+  vqIndex = 0; vqOk = 0; vqFail = 0;
+  const el = document.getElementById('vocab-quiz');
+  el.style.display = 'flex';
+  // 確保 result area 隱藏，card+btns 顯示
+  document.getElementById('vq-card-area').style.display = 'flex';
+  document.getElementById('vq-btns').style.display = 'grid';
+  document.getElementById('vq-result-area').style.display = 'none';
+  vqShowCard();
+}
+
+function vqShowCard() {
+  vqForgetMode = false;
+
+  const word  = vqQueue[vqIndex];
+  const entry = vocabBook[word] || {};
+
+  document.getElementById('vq-counter').textContent = (vqIndex + 1) + ' / ' + vqQueue.length;
+  document.getElementById('vq-bar').style.width = (vqIndex / vqQueue.length * 100) + '%';
+
+  const hasKanji = /[一-鿿㐀-䶿]/.test(word);
+  document.getElementById('vq-kana').textContent = hasKanji && entry.kana ? entry.kana : '';
+  document.getElementById('vq-word').textContent = word;
+  document.getElementById('vq-meaning').textContent = entry.meaning || '—';
+
+  // 重置遮擋
+  document.getElementById('vq-meaning').classList.add('meaning-hidden');
+  document.getElementById('vq-peek-hint').style.display = '';
+  document.getElementById('vq-meaning-tap').style.pointerEvents = '';
+
+  // 重置按鈕
+  const fBtn = document.getElementById('vq-forget-btn');
+  const rBtn = document.getElementById('vq-remember-btn');
+  fBtn.textContent = '✕ 不記得';
+  fBtn.className = 'vq-btn vq-forget';
+  fBtn.onclick = () => vqRate(false);
+  fBtn.disabled = false;
+  rBtn.textContent = '✓ 記得';
+  rBtn.className = 'vq-btn vq-remember';
+  rBtn.onclick = () => vqRate(true);
+  rBtn.disabled = false;
+}
+
+function vqPeekMeaning() {
+  document.getElementById('vq-meaning').classList.remove('meaning-hidden');
+  document.getElementById('vq-peek-hint').style.display = 'none';
+  document.getElementById('vq-meaning-tap').style.pointerEvents = 'none';
+}
+
+function vqRate(remembered) {
+  if (vqForgetMode) return; // 防止重複觸發
+
+  const word  = vqQueue[vqIndex];
+  const entry = vocabBook[word] || {};
+  const fam   = entry.familiarity || 0;
+
+  if (remembered) {
+    entry.familiarity = Math.min(20, fam + 2);
+    vocabBook[word] = entry;
+    saveVocabBook();
+    vqOk++;
+    vqAdvance();
+  } else {
+    entry.familiarity = Math.max(0, fam - 2);
+    vocabBook[word] = entry;
+    saveVocabBook();
+    vqFail++;
+    vqForgetMode = true;
+
+    // 公布答案
+    vqPeekMeaning();
+
+    // 不記得按鈕禁用
+    const fBtn = document.getElementById('vq-forget-btn');
+    fBtn.disabled = true;
+    fBtn.style.opacity = '0.4';
+
+    // 記得按鈕改成「下一張」
+    const rBtn = document.getElementById('vq-remember-btn');
+    rBtn.textContent = '下一張 →';
+    rBtn.className = 'vq-btn vq-next-btn';
+    rBtn.onclick = () => vqAdvance();
+  }
+  vqSaveProgress();
+}
+
+function vqAdvance() {
+  vqIndex++;
+  if (vqIndex >= vqQueue.length) {
+    vqShowResult();
+  } else {
+    // reset forget-btn opacity
+    const fBtn = document.getElementById('vq-forget-btn');
+    fBtn.style.opacity = '';
+    vqShowCard();
+  }
+  vqSaveProgress();
+}
+
+function vqSaveProgress() {
+  const pct = Math.min(100, Math.round(vqIndex / vqQueue.length * 100));
+  const log = loadStudyLog();
+  const dateStr = getLocalDateStr();
+  if (!log[dateStr]) log[dateStr] = {};
+  if (!log[dateStr].tasks) log[dateStr].tasks = {};
+  log[dateStr].tasks.vocab = pct;
+  saveStudyLog(log);
+  if (document.getElementById('page-home').classList.contains('active')) renderHomeRing();
+}
+
+function vqShowResult() {
+  document.getElementById('vq-bar').style.width = '100%';
+  document.getElementById('vq-counter').textContent = '完成 ✓';
+  document.getElementById('vq-r-ok').textContent   = vqOk;
+  document.getElementById('vq-r-fail').textContent  = vqFail;
+
+  // 標記 100%
+  const log = loadStudyLog();
+  const dateStr = getLocalDateStr();
+  if (!log[dateStr]) log[dateStr] = {};
+  if (!log[dateStr].tasks) log[dateStr].tasks = {};
+  log[dateStr].tasks.vocab = 100;
+  saveStudyLog(log);
+  if (document.getElementById('page-home').classList.contains('active')) renderHomeRing();
+
+  // 切換到結果畫面
+  document.getElementById('vq-card-area').style.display  = 'none';
+  document.getElementById('vq-btns').style.display       = 'none';
+  document.getElementById('vq-result-area').style.display = 'flex';
+}
+
+function exitVocabQuiz() {
+  document.getElementById('vocab-quiz').style.display = 'none';
+}
+
+function closeVocabQuizResult() {
+  exitVocabQuiz();
+  renderVocabPage(); // 重新渲染列表反映熟悉度變化
+}
+
+// 設定頁：循環切換複習排序
+function cycleQuizOrder() {
+  const cur = localStorage.getItem('quizOrder') || 'urgent';
+  const idx  = VQ_ORDERS.indexOf(cur);
+  const next = VQ_ORDERS[(idx + 1) % VQ_ORDERS.length];
+  localStorage.setItem('quizOrder', next);
+  updateQuizOrderUI(next);
+}
+function updateQuizOrderUI(order) {
+  const sub = document.getElementById('quiz-order-sub');
+  const val = document.getElementById('quiz-order-val');
+  if (sub) sub.textContent = VQ_ORDER_LABELS[order] || '';
+  if (val) val.textContent = VQ_ORDER_SHORT[order] || '';
+}
+
 renderHomeRing();
 renderCalendar();
 loadAllSlotsOnStartup();
@@ -3530,6 +3850,7 @@ loadAllSlotsOnStartup();
 loadVocabBook();
 initSettings();
 initSort();
+updateQuizOrderUI(localStorage.getItem('quizOrder') || 'urgent');
 </script>
 </body>
 </html>
