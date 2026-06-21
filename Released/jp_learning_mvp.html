@@ -1350,7 +1350,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.8.0
+        v0.8.1
       </div>
 
     </div>
@@ -4541,7 +4541,9 @@ var fbDb   = null;
 var currentUser = null;
 
 try {
-  firebase.initializeApp(firebaseConfig);
+  if (!firebase.apps || !firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
   fbAuth = firebase.auth();
   fbDb   = firebase.firestore();
 
@@ -4562,6 +4564,7 @@ try {
 
 } catch(e) {
   console.warn('Firebase 初始化失敗:', e.message);
+  showToast('FB初始化錯誤：' + e.message); // 偵錯用，確認後移除
 }
 
 // 登入按鈕 HTML（供失敗時恢復用）
