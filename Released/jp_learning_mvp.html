@@ -1488,7 +1488,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.5.5
+        v0.5.6
       </div>
 
     </div>
@@ -4029,7 +4029,7 @@ function renderWeekBar() {
       div.innerHTML =
         `<svg viewBox="0 0 38 38" width="38" height="38">
           <circle cx="${CX}" cy="${CY}" r="${R}" style="fill:${bgFill};stroke:var(--wa-bg2)" stroke-width="${SW}"/>
-          ${pct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" style="stroke:var(--wa)" stroke-width="${SW}"
+          ${pct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" style="stroke:${fillStroke}" stroke-width="${SW}"
             stroke-linecap="round"
             stroke-dasharray="${filled.toFixed(2)} ${circ.toFixed(2)}"
             transform="rotate(-90 ${CX} ${CY})"/>` : ''}

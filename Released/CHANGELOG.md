@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v0.5.6 — 2026-06-21
+
+**修正：週曆進度弧顏色實際未生效**
+- Bug：`fillStroke = '#D85A30'` 已定義但 template literal 寫死 `stroke:var(--wa)`，變數從未被使用
+- Fix：改為 `style="stroke:${fillStroke}"`，進度弧現在正確顯示 `#D85A30`
+
+---
+
 ## v0.5.5 — 2026-06-21
 
 **修正：週曆顏色邏輯**
