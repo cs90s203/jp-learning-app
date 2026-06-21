@@ -55,18 +55,35 @@
   }
   /* 夜晚模式：覆寫 hardcoded #FFFFFF 白色背景 */
   html[data-theme="dark"] .card,
+  html[data-theme="dark"] .av-bar,
+  html[data-theme="dark"] .difficulty-bar,
+  html[data-theme="dark"] .vocab-card,
   html[data-theme="dark"] .vocab-list-row,
+  html[data-theme="dark"] .vocab-filter-btn,
+  html[data-theme="dark"] .vocab-modal-tab.active,
+  html[data-theme="dark"] .dict-result,
   html[data-theme="dark"] .word-panel,
   html[data-theme="dark"] .confirm-box,
   html[data-theme="dark"] .bottom-nav,
   html[data-theme="dark"] #article-toolbar,
-  html[data-theme="dark"] .mode-tab.active  { background: #1C1208; }
+  html[data-theme="dark"] .mode-tab.active,
+  html[data-theme="dark"] .speed-step-btn,
+  html[data-theme="dark"] .choice-btn,
+  html[data-theme="dark"] .rating-btn,
+  html[data-theme="dark"] .judge-btn,
+  html[data-theme="dark"] .qt:not(.active) { background: #1C1208; }
 
   html[data-theme="dark"] .vocab-row-content { background: #1C1208; }
   html[data-theme="dark"] .vocab-list-row.selected .vocab-row-content { background: #2E1E0C; }
+  html[data-theme="dark"] .dict-result:active { background: #2E1E0C; }
 
   html[data-theme="dark"] .confirm-cancel { background: #2E1E0C; }
   html[data-theme="dark"] .toggle::after  { background: #F0E4D0; }
+
+  /* 工具列漸消也需跟隨深色背景 */
+  html[data-theme="dark"] #article-toolbar::before {
+    background: linear-gradient(to bottom, transparent, #120C04);
+  }
 
   html[data-theme="dark"] input[type="text"],
   html[data-theme="dark"] textarea {
@@ -132,11 +149,18 @@
     left: 0; right: 0;
     bottom: calc(var(--nav-h) + var(--safe-bottom));
     background: var(--wa-ll);
-    border-top: 0.5px solid var(--wa-bg2);
     z-index: 50;
-    padding: 0 16px;
+    padding: 4px 16px 0;
   }
   #article-toolbar.show { display: block; }
+  /* 向上漸消：讓工具列和文章內容自然過渡 */
+  #article-toolbar::before {
+    content: '';
+    position: absolute;
+    top: -24px; left: 0; right: 0; height: 24px;
+    background: linear-gradient(to bottom, transparent, var(--wa-ll));
+    pointer-events: none;
+  }
 
   .section-title {
     font-size: 11px; font-weight: 500; color: var(--wt3);
@@ -301,9 +325,7 @@
     padding: 0 4px; min-width: 32px; text-align: center;
     user-select: none;
   }
-  .rec-status {
-    font-size: 11px; color: var(--wt3); white-space: nowrap;
-  }
+  .rec-status { display: none; } /* 改用槽位刪除線取代文字狀態 */
 
   /* 難度量表 */
   .difficulty-bar {
@@ -337,7 +359,19 @@
     color: var(--wt3); font-size: 13px; font-weight: 500;
     position: relative;
   }
+  /* 無錄音：刪除線 + 降透明度 */
+  .rec-slot:not(.has-audio) {
+    text-decoration: line-through;
+    opacity: 0.45;
+  }
+  /* 選中的空槽位：刪除線保留但恢復亮度 */
+  .rec-slot.active:not(.has-audio) {
+    opacity: 1;
+    border-color: var(--wa); color: var(--wa); background: var(--wa-l);
+  }
+  /* 有錄音的選中槽位 */
   .rec-slot.active { border-color: var(--wa); color: var(--wa); background: var(--wa-l); }
+  /* 有錄音未選中：紫色 */
   .rec-slot.has-audio:not(.active) { border-color: #7F77DD; color: #7F77DD; }
   .rec-slot.has-audio::after {
     content: ''; position: absolute; top: -2px; right: -2px;
@@ -351,7 +385,7 @@
 
   .article-text { font-size: 16px; color: var(--wt); line-height: 2.6; }
   .article-text ruby rt { font-size: 10px; color: var(--wt3); }
-  .cn-note { font-size: 12px; color: var(--wt2); display: block; margin: -4px 0 6px 16px; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
+  .cn-note { font-size: 12px; color: var(--wt2); display: block; margin: -4px 0 6px 20px; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
   .cn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
   /* Article page：底部要讓出固定工具列的空間 */
   #page-article { padding-bottom: calc(var(--nav-h) + var(--safe-bottom) + var(--atb-h) + 12px); }
@@ -561,7 +595,16 @@
 
   /* 中文意思遮擋 */
   .vocab-meaning-wrap { cursor: pointer; position: relative; min-height: 32px; }
-  .vocab-meaning.meaning-hidden { filter: blur(7px); user-select: none; pointer-events: none; }
+  /* 用 text-shadow 取代 filter:blur，避免瀏覽器殘影 artifact */
+  .vocab-meaning.meaning-hidden {
+    color: transparent;
+    text-shadow: 0 0 10px rgba(42,26,8,0.55);
+    user-select: none; pointer-events: none;
+    transition: color 0.15s, text-shadow 0.15s;
+  }
+  html[data-theme="dark"] .vocab-meaning.meaning-hidden {
+    text-shadow: 0 0 10px rgba(240,228,208,0.55);
+  }
   .meaning-reveal-hint {
     position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
     font-size: 12px; color: var(--wt3); letter-spacing: 0.04em;
@@ -1303,7 +1346,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.3.7
+        v0.3.9
       </div>
 
     </div>
