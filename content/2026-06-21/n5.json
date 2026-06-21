@@ -1,73 +1,83 @@
 {
-  "date": "2026-06-20",
-  "level": "n5",
-  "title": "朝のルーティン",
-  "text": "毎朝、私は六時に起きます。顔を洗って、朝ごはんを食べます。それから学校に行きます。",
+  "title": "朝ごはん",
+  "text": "今朝は早く起きました。朝ごはんはトーストと卵です。牛乳も飲みました。朝ごはんを食べてから学校に行きます。",
   "tokens": [
-    { "surface_form": "毎朝",     "basic_form": "毎朝",   "reading": "まいあさ",   "pos": "名詞" },
-    { "surface_form": "、",       "basic_form": "、",     "reading": "",           "pos": "記号" },
-    { "surface_form": "私",       "basic_form": "私",     "reading": "わたし",     "pos": "名詞" },
-    { "surface_form": "は",       "basic_form": "は",     "reading": "",           "pos": "助詞" },
-    { "surface_form": "六時",     "basic_form": "六時",   "reading": "ろくじ",     "pos": "名詞" },
-    { "surface_form": "に",       "basic_form": "に",     "reading": "",           "pos": "助詞" },
-    { "surface_form": "起きます", "basic_form": "起きる", "reading": "おきます",   "pos": "動詞" },
-    { "surface_form": "。",       "basic_form": "。",     "reading": "",           "pos": "記号" },
-    { "surface_form": "顔",       "basic_form": "顔",     "reading": "かお",       "pos": "名詞" },
-    { "surface_form": "を",       "basic_form": "を",     "reading": "",           "pos": "助詞" },
-    { "surface_form": "洗って",   "basic_form": "洗う",   "reading": "あらって",   "pos": "動詞" },
-    { "surface_form": "、",       "basic_form": "、",     "reading": "",           "pos": "記号" },
-    { "surface_form": "朝ごはん", "basic_form": "朝ごはん","reading": "あさごはん", "pos": "名詞" },
-    { "surface_form": "を",       "basic_form": "を",     "reading": "",           "pos": "助詞" },
-    { "surface_form": "食べます", "basic_form": "食べる", "reading": "たべます",   "pos": "動詞" },
-    { "surface_form": "。",       "basic_form": "。",     "reading": "",           "pos": "記号" },
-    { "surface_form": "それから", "basic_form": "それから","reading": "それから",   "pos": "接続詞" },
-    { "surface_form": "学校",     "basic_form": "学校",   "reading": "がっこう",   "pos": "名詞" },
-    { "surface_form": "に",       "basic_form": "に",     "reading": "",           "pos": "助詞" },
-    { "surface_form": "行きます", "basic_form": "行く",   "reading": "いきます",   "pos": "動詞" },
-    { "surface_form": "。",       "basic_form": "。",     "reading": "",           "pos": "記号" }
+    {"surface_form":"今朝",      "basic_form":"今朝",  "reading":"けさ",      "pos":"名詞"},
+    {"surface_form":"は",        "basic_form":"は",    "reading":"",         "pos":"助詞"},
+    {"surface_form":"早く",      "basic_form":"早い",  "reading":"はやく",    "pos":"形容詞"},
+    {"surface_form":"起きました","basic_form":"起きる","reading":"おきました","pos":"動詞"},
+    {"surface_form":"。",        "basic_form":"。",    "reading":"",         "pos":"記号"},
+    {"surface_form":"朝ごはん",  "basic_form":"朝ごはん","reading":"あさごはん","pos":"名詞"},
+    {"surface_form":"は",        "basic_form":"は",    "reading":"",         "pos":"助詞"},
+    {"surface_form":"トースト",  "basic_form":"トースト","reading":"トースト","pos":"名詞"},
+    {"surface_form":"と",        "basic_form":"と",    "reading":"",         "pos":"助詞"},
+    {"surface_form":"卵",        "basic_form":"卵",    "reading":"たまご",    "pos":"名詞"},
+    {"surface_form":"です",      "basic_form":"です",  "reading":"",         "pos":"助動詞"},
+    {"surface_form":"。",        "basic_form":"。",    "reading":"",         "pos":"記号"},
+    {"surface_form":"牛乳",      "basic_form":"牛乳",  "reading":"ぎゅうにゅう","pos":"名詞"},
+    {"surface_form":"も",        "basic_form":"も",    "reading":"",         "pos":"助詞"},
+    {"surface_form":"飲みました","basic_form":"飲む",  "reading":"のみました","pos":"動詞"},
+    {"surface_form":"。",        "basic_form":"。",    "reading":"",         "pos":"記号"},
+    {"surface_form":"朝ごはん",  "basic_form":"朝ごはん","reading":"あさごはん","pos":"名詞"},
+    {"surface_form":"を",        "basic_form":"を",    "reading":"",         "pos":"助詞"},
+    {"surface_form":"食べて",    "basic_form":"食べる","reading":"たべて",    "pos":"動詞"},
+    {"surface_form":"から",      "basic_form":"から",  "reading":"",         "pos":"助詞"},
+    {"surface_form":"学校",      "basic_form":"学校",  "reading":"がっこう",  "pos":"名詞"},
+    {"surface_form":"に",        "basic_form":"に",    "reading":"",         "pos":"助詞"},
+    {"surface_form":"行きます",  "basic_form":"行く",  "reading":"いきます",  "pos":"動詞"},
+    {"surface_form":"。",        "basic_form":"。",    "reading":"",         "pos":"記号"}
   ],
   "vocab": {
-    "毎朝":     { "meaning": "每天早上", "romaji": "maiasa" },
-    "私":       { "meaning": "我",       "romaji": "watashi" },
-    "六時":     { "meaning": "六點",     "romaji": "rokuji" },
-    "起きる":   { "meaning": "起床",     "romaji": "okiru" },
-    "顔":       { "meaning": "臉",       "romaji": "kao" },
-    "洗う":     { "meaning": "洗",       "romaji": "arau" },
-    "朝ごはん": { "meaning": "早餐",     "romaji": "asagohan" },
-    "食べる":   { "meaning": "吃",       "romaji": "taberu" },
-    "それから": { "meaning": "然後",     "romaji": "sorekara" },
-    "学校":     { "meaning": "學校",     "romaji": "gakkou" },
-    "行く":     { "meaning": "去",       "romaji": "iku" }
+    "今朝":    {"meaning":"今天早上",   "romaji":"kesa"},
+    "早い":    {"meaning":"早",         "romaji":"hayai"},
+    "起きる":  {"meaning":"起床",       "romaji":"okiru"},
+    "朝ごはん":{"meaning":"早餐",       "romaji":"asagohan"},
+    "トースト":{"meaning":"吐司",       "romaji":"toosuto"},
+    "卵":      {"meaning":"雞蛋",       "romaji":"tamago"},
+    "牛乳":    {"meaning":"牛奶",       "romaji":"gyuunyuu"},
+    "飲む":    {"meaning":"喝",         "romaji":"nomu"},
+    "食べる":  {"meaning":"吃",         "romaji":"taberu"},
+    "学校":    {"meaning":"學校",       "romaji":"gakkou"},
+    "行く":    {"meaning":"去",         "romaji":"iku"}
   },
   "particles": {
     "は": "提示句子的主題，告訴對方接下來要說的是關於「什麼」。",
+    "が": "標示動作或狀態的主體，常用於描述眼前看到、注意到的事物。",
     "に": "標示移動的目的地或時間點，回答「去哪裡」「什麼時候」。",
-    "を": "標示動作的對象，回答「做了什麼」。"
+    "で": "標示動作發生的場所、方式或手段，回答「在哪裡做」「用什麼做」。",
+    "の": "連接兩個名詞，表示所屬或修飾關係，類似中文的「的」。",
+    "を": "標示動作的對象，回答「做了什麼」。",
+    "と": "表示並列「和」，或引述、共同動作的對象。",
+    "も": "表示「也」，強調同類事物的並列。",
+    "から": "表示起點，時間或地點的「從」；也可接動詞て形，表示「做完…之後」。",
+    "まで": "表示終點，時間或地點的「到」。"
   },
   "translations": [
     [
-      { "text": "每天早上", "word": "毎朝" },
-      { "text": "我", "word": "私" },
-      { "text": "六點", "word": "六時" },
-      { "text": "起床", "word": "起きる" },
-      { "text": "。", "word": null }
+      {"text":"今天早上","word":"今朝"},
+      {"text":"很早","word":"早い"},
+      {"text":"起床了","word":"起きる"},
+      {"text":"。","word":null}
     ],
     [
-      { "text": "洗臉", "word": "洗う" },
-      { "text": "後", "word": null },
-      { "text": "吃", "word": "食べる" },
-      { "text": "早餐", "word": "朝ごはん" },
-      { "text": "。", "word": null }
+      {"text":"早餐","word":"朝ごはん"},
+      {"text":"是","word":null},
+      {"text":"吐司","word":"トースト"},
+      {"text":"和","word":null},
+      {"text":"雞蛋","word":"卵"},
+      {"text":"。","word":null}
     ],
     [
-      { "text": "然後", "word": "それから" },
-      { "text": "去", "word": "行く" },
-      { "text": "學校", "word": "学校" },
-      { "text": "。", "word": null }
+      {"text":"也喝了","word":"飲む"},
+      {"text":"牛奶","word":"牛乳"},
+      {"text":"。","word":null}
+    ],
+    [
+      {"text":"吃完","word":"食べる"},
+      {"text":"早餐","word":"朝ごはん"},
+      {"text":"後，去","word":null},
+      {"text":"學校","word":"学校"},
+      {"text":"。","word":null}
     ]
-  ],
-  "difficulty": {
-    "target_vocab_rate": 0.08,
-    "jlpt_level": "N5"
-  }
+  ]
 }

@@ -400,15 +400,15 @@
     display: flex; align-items: center; justify-content: center;
   }
   .awb-nav:disabled { opacity: 0.25; cursor: default; }
-  .awb-days { flex: 1; display: flex; justify-content: space-around; align-items: flex-end; }
+  .awb-days { flex: 1; display: flex; justify-content: space-around; align-items: center; }
   .awb-day { display: flex; flex-direction: column; align-items: center; gap: 3px; }
   .awb-dow { font-size: 10px; color: var(--wt3); }
   .awb-day-num {
-    width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
+    width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
     font-size: 13px; color: var(--wt3);
   }
-  .awb-day.awb-today .awb-dow { color: var(--wa); font-weight: 600; }
-  .awb-day.awb-selected .awb-circle-num { fill: #FFF; }
+  .awb-day.awb-today .awb-dow { color: #D85A30; font-weight: 600; }
+  .awb-day.awb-selected .awb-circle-num { fill: #D85A30; font-weight: 600; }
   .awb-day.awb-future .awb-dow,
   .awb-day.awb-future .awb-day-num { opacity: 0.3; }
   .awb-day[data-has-content="1"] { cursor: pointer; }
@@ -968,7 +968,8 @@
   .toast {
     position: fixed; bottom: calc(var(--nav-h) + var(--safe-bottom) + 16px); left: 50%;
     transform: translateX(-50%) translateY(20px);
-    background: var(--wt); color: #FDF8F3;
+    background: rgba(28,16,4,0.88); color: #F0E4D0;
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
     padding: 10px 20px; border-radius: 99px; font-size: 13px;
     opacity: 0; transition: all 0.3s; pointer-events: none; white-space: nowrap; z-index: 200;
   }
@@ -1464,7 +1465,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.5.0
+        v0.5.3
       </div>
 
     </div>
@@ -1717,8 +1718,17 @@ function switchPage(id) {
 
   if (id === 'article') {
     if (!articleRendered) {
-      renderArticle(ARTICLE_TOKENS);
-      articleRendered = true;
+      // 首次進入：載入今天的 n5 文章
+      loadContentForDate(getLocalDateStr(), 'n5').then(result => {
+        if (result.success) {
+          renderArticle(ARTICLE_TOKENS);
+          const titleEl = document.getElementById('article-page-title');
+          if (titleEl) titleEl.textContent = result.pack.title || '今日文章';
+        } else {
+          renderArticle(ARTICLE_TOKENS); // fallback demo
+        }
+        articleRendered = true;
+      });
     }
     initDifficultyBar();
     renderWeekBar();
@@ -1882,7 +1892,7 @@ let ARTICLE_TOKENS = [
 
 // ===== Content Pack 載入系統 =====
 let CONTENT_BASE_URL = '../content';
-let CURRENT_LEVEL = 'n4';
+let CURRENT_LEVEL = 'n5';
 
 async function loadContentForDate(date, level) {
   const url = `${CONTENT_BASE_URL}/${date}/${level}.json`;
@@ -2990,7 +3000,7 @@ function buildRing(size, strokeRatio, tasksState) {
   const segLen = circumference * (segDeg / 360);
 
   let svg = '<svg width="' + size + '" height="' + size + '" viewBox="0 0 ' + size + ' ' + size + '" xmlns="http://www.w3.org/2000/svg">';
-  svg += '<circle cx="' + r + '" cy="' + r + '" r="' + cr + '" fill="none" stroke="#EDE0CC" stroke-width="' + sw + '"/>';
+  svg += '<circle cx="' + r + '" cy="' + r + '" r="' + cr + '" fill="none" style="stroke:var(--wa-bg2)" stroke-width="' + sw + '"/>';
 
   TASKS.forEach((t, i) => {
     const val = tasksState[t.key];
@@ -3887,8 +3897,8 @@ function updateQuizOrderUI(order) {
 }
 
 // ===== 文章週曆列 =====
-// 已知有內容的日期（固定 + 今天動態加入）
-const ARTICLES_WITH_CONTENT = ['2026-06-18', '2026-06-19', '2026-06-20'];
+// 已知有內容的日期
+const ARTICLES_WITH_CONTENT = ['2026-06-18', '2026-06-19', '2026-06-20', '2026-06-21'];
 
 let selectedArticleDate = getLocalDateStr(); // 預設今天
 let weekBarOffset = 0; // 0 = 本週，-1 = 上週 ...
@@ -3947,15 +3957,15 @@ function renderWeekBar() {
       const R = 15, SW = 3, CX = 19, CY = 19;
       const circ = 2 * Math.PI * R;
       const filled = circ * pct;
-      const bgFill  = isSel ? 'var(--wa)' : (isToday ? 'var(--wa-bg)' : 'none');
-      const textFill = isSel ? '#FFF' : 'var(--wt)';
+      const bgFill  = isSel ? 'var(--wa-l)' : (isToday ? 'var(--wa-bg)' : 'none');
+      const textFill = isSel ? '#D85A30' : 'var(--wt)';
       const trackStroke = 'var(--wa-bg2)';
-      const fillStroke  = 'var(--wa)';
+      const fillStroke  = '#D85A30';
 
       div.innerHTML =
         `<svg viewBox="0 0 38 38" width="38" height="38">
-          <circle cx="${CX}" cy="${CY}" r="${R}" fill="${bgFill}" stroke="${trackStroke}" stroke-width="${SW}"/>
-          ${pct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="${fillStroke}" stroke-width="${SW}"
+          <circle cx="${CX}" cy="${CY}" r="${R}" style="fill:${bgFill};stroke:var(--wa-bg2)" stroke-width="${SW}"/>
+          ${pct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" style="stroke:var(--wa)" stroke-width="${SW}"
             stroke-linecap="round"
             stroke-dasharray="${filled.toFixed(2)} ${circ.toFixed(2)}"
             transform="rotate(-90 ${CX} ${CY})"/>` : ''}
@@ -3992,18 +4002,19 @@ function weekBarNav(dir) {
 async function selectArticleDate(dateStr) {
   if (dateStr === selectedArticleDate) return;
 
-  const todayStr = getLocalDateStr();
-  if (dateStr === todayStr) {
-    restoreDemoContent();
-  } else {
-    showToast('載入中…');
-    const result = await loadContentForDate(dateStr, 'n5');
-    if (!result.success) {
-      showToast('內容載入失敗 😢');
+  showToast('載入中…');
+  const result = await loadContentForDate(dateStr, 'n5');
+  if (!result.success) {
+    // 今天失敗時 fallback 到 hardcoded demo
+    if (dateStr === getLocalDateStr()) {
+      restoreDemoContent();
+    } else {
+      showToast('內容載入失敗');
       return;
     }
+  } else {
     showToast('已載入：' + (result.pack.title || dateStr));
-    // 更新標題
+    // 更新頂部標題
     const titleEl = document.getElementById('article-page-title');
     if (titleEl) titleEl.textContent = result.pack.title || dateStr;
   }

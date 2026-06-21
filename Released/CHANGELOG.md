@@ -1,5 +1,33 @@
 # 日語學習 App — 版本記錄
 
+## v0.5.3 — 2026-06-21
+
+**修正：週曆UI三項視覺優化**
+- 週曆 ring 進度弧改為 `#D85A30`，與首頁文章環顏色一致
+- 選中日期改為淺琥珀底（`var(--wa-l)`）+ 橘色文字，不再全橘填色（避免與進度弧重疊難辨）
+- `.awb-day-num` 改為 38×38、`.awb-days` 改 `align-items: center`，有圈/無圈日切換不再跳動
+
+---
+
+## v0.5.2 — 2026-06-21
+
+**修正：**
+- 新增 content/2026-06-21/n5.json「朝ごはん」（取代舊 N4 hardcoded 公園文章）
+- CURRENT_LEVEL 改為 n5（dev dashboard 及 loadTodayContent 統一使用 N5）
+- 文章頁初次進入自動載入當日 n5.json；selectArticleDate 今天也走 JSON（fallback demo）
+- ARTICLES_WITH_CONTENT 加入 2026-06-21
+
+---
+
+## v0.5.1 — 2026-06-21
+
+**修正：**
+- Toast 提示框改為深色半透明背景（暗色模式不再呈現刺眼白色）
+- 首頁任務環 track 改用 CSS variable（深色模式下底色自動變暗）
+- 文章週曆 SVG circle 改用 `style=` 套用 CSS variable（Safari 相容）
+
+---
+
 ## v0.5.0 — 2026-06-21
 
 **新功能：文章週曆導航**
