@@ -649,13 +649,15 @@
     font-size: 20px; color: var(--wt); font-weight: 500;
     transition: color 0.15s, text-shadow 0.15s;
   }
-  .vq-meaning.meaning-hidden {
+  .vq-meaning.meaning-hidden,
+  .vq-word.meaning-hidden {
     color: transparent;
-    text-shadow: 0 0 10px rgba(42,26,8,0.55);
+    text-shadow: 0 0 12px rgba(42,26,8,0.6);
     user-select: none;
   }
-  html[data-theme="dark"] .vq-meaning.meaning-hidden {
-    text-shadow: 0 0 10px rgba(240,228,208,0.55);
+  html[data-theme="dark"] .vq-meaning.meaning-hidden,
+  html[data-theme="dark"] .vq-word.meaning-hidden {
+    text-shadow: 0 0 12px rgba(240,228,208,0.6);
   }
   .vq-peek-hint { font-size: 12px; color: var(--wt3); margin-top: 8px; }
   .vq-btns {
@@ -1428,7 +1430,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.4.1
+        v0.4.2
       </div>
 
     </div>
@@ -1686,6 +1688,7 @@ function switchPage(id) {
     }
     initDifficultyBar();
   }
+  if (id === 'home')  renderHomeRing();
   if (id === 'vocab') renderVocabPage();
   // Show/hide FAB
   document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
@@ -3708,12 +3711,15 @@ function vqShowCard() {
   document.getElementById('vq-bar').style.width = (vqIndex / vqQueue.length * 100) + '%';
 
   const hasKanji = /[一-鿿㐀-䶿]/.test(word);
-  document.getElementById('vq-kana').textContent = hasKanji && entry.kana ? entry.kana : '';
+  document.getElementById('vq-kana').textContent = hasKanji && entry.kana ? entry.kana : (entry.kana || '');
   document.getElementById('vq-word').textContent = word;
   document.getElementById('vq-meaning').textContent = entry.meaning || '—';
 
-  // 重置遮擋
+  // 重置遮擋：中文永遠遮，漢字有就遮
   document.getElementById('vq-meaning').classList.add('meaning-hidden');
+  const wordEl = document.getElementById('vq-word');
+  if (hasKanji) { wordEl.classList.add('meaning-hidden'); }
+  else           { wordEl.classList.remove('meaning-hidden'); }
   document.getElementById('vq-peek-hint').style.display = '';
   document.getElementById('vq-meaning-tap').style.pointerEvents = '';
 
@@ -3732,6 +3738,7 @@ function vqShowCard() {
 
 function vqPeekMeaning() {
   document.getElementById('vq-meaning').classList.remove('meaning-hidden');
+  document.getElementById('vq-word').classList.remove('meaning-hidden'); // 解開漢字
   document.getElementById('vq-peek-hint').style.display = 'none';
   document.getElementById('vq-meaning-tap').style.pointerEvents = 'none';
 }
@@ -3820,6 +3827,7 @@ function vqShowResult() {
 
 function exitVocabQuiz() {
   document.getElementById('vocab-quiz').style.display = 'none';
+  renderHomeRing(); // 中途離開也同步今日環
 }
 
 function closeVocabQuizResult() {
