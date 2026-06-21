@@ -1195,7 +1195,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.1.0
+        v0.3.0
       </div>
 
     </div>
@@ -1722,6 +1722,26 @@ function renderArticle(tokens) {
 
   // 套用已加入單字卡的詞，對應句子的中文備注也標橘色
   applyAddedWordNoteColors();
+
+  // 條件1：捲到底偵測（文章渲染完後立即設定）
+  setupArticleScrollObserver();
+}
+
+let _scrollObserver = null;
+function setupArticleScrollObserver() {
+  if (_scrollObserver) { _scrollObserver.disconnect(); _scrollObserver = null; }
+  const container = document.getElementById('article-text');
+  const groups = container.querySelectorAll('.sentence-group');
+  if (!groups.length) return;
+  const lastGroup = groups[groups.length - 1];
+  _scrollObserver = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      markArticleCondition('scrolled', true);
+      _scrollObserver.disconnect();
+      _scrollObserver = null;
+    }
+  }, { threshold: 0.3 });
+  _scrollObserver.observe(lastGroup);
 }
 
 function applyAddedWordNoteColors() {
@@ -1897,7 +1917,17 @@ function toggleReadAloud() {
   const u = new SpeechSynthesisUtterance(ARTICLE_TEXT);
   u.lang = 'ja-JP';
   u.rate = readAloudRate;
-  u.onend = () => { readAloudPlaying = false; setPlayIcon(false); };
+  u.onend = () => {
+    readAloudPlaying = false;
+    setPlayIcon(false);
+    // 條件2：播完一次
+    const log = loadStudyLog();
+    const dateStr = getLocalDateStr();
+    const ap = (log[dateStr] && log[dateStr].articleProgress) || {};
+    const newCount = (ap.playCount || 0) + 1;
+    markArticleCondition('playCount', newCount);
+    if (!ap.playedOnce) markArticleCondition('playedOnce', true);
+  };
   readAloudUtterance = u;
   window.speechSynthesis.speak(u);
   readAloudPlaying = true;
@@ -1933,7 +1963,16 @@ function adjustSpeed(direction) {
     const u = new SpeechSynthesisUtterance(ARTICLE_TEXT);
     u.lang = 'ja-JP';
     u.rate = readAloudRate;
-    u.onend = () => { readAloudPlaying = false; setPlayIcon(false); };
+    u.onend = () => {
+      readAloudPlaying = false;
+      setPlayIcon(false);
+      const log2 = loadStudyLog();
+      const ds2 = getLocalDateStr();
+      const ap2 = (log2[ds2] && log2[ds2].articleProgress) || {};
+      const newCount2 = (ap2.playCount || 0) + 1;
+      markArticleCondition('playCount', newCount2);
+      if (!ap2.playedOnce) markArticleCondition('playedOnce', true);
+    };
     readAloudUtterance = u;
     window.speechSynthesis.speak(u);
     showToast('已調整為 ' + readAloudRate.toFixed(2).replace(/0$/, '') + 'x，重新播放');
@@ -2341,15 +2380,47 @@ function markTaskDone(taskKey) {
   renderCalendar();
 }
 
-// 儲存今日文章資訊（載入文章後呼叫）
+// 儲存今日文章資訊（載入文章後呼叫）——不自動標記完成
 function logTodayArticle(title, level) {
   const log = loadStudyLog();
   const dateStr = getLocalDateStr();
-  if (!log[dateStr]) log[dateStr] = { tasks:{article:false,vocab:false,listen:false,quiz:false,speak:false}, articleTitle:'', level:'' };
+  if (!log[dateStr]) log[dateStr] = { tasks:{article:0,vocab:false,listen:false,quiz:false,speak:false}, articleTitle:'', level:'' };
   log[dateStr].articleTitle = title || '';
   log[dateStr].level = level || '';
-  log[dateStr].tasks.article = true;
+  // 若尚未有 articleProgress，代表是舊資料或首次 → 重置為 0 開始新追蹤
+  if (!log[dateStr].articleProgress) {
+    log[dateStr].articleProgress = { scrolled:false, playedOnce:false, playCount:0 };
+    log[dateStr].tasks.article = 0;
+  }
   saveStudyLog(log);
+}
+
+// 更新 article 進度百分比（依 articleProgress 條件計算）
+function updateArticleProgress() {
+  const log = loadStudyLog();
+  const dateStr = getLocalDateStr();
+  if (!log[dateStr]) return;
+  const ap = log[dateStr].articleProgress || {};
+  let pct = 0;
+  if (ap.scrolled)                    pct += 20;  // 條件1
+  if (ap.playedOnce)                  pct += 25;  // 條件2
+  if ((ap.playCount || 0) >= 3)       pct += 20;  // 條件3
+  // 條件4（逐句錄音）預留 35%，待後續實作
+  log[dateStr].tasks.article = pct;
+  saveStudyLog(log);
+  renderHomeRing();
+  renderCalendar();
+}
+
+// 記錄單一文章進度條件
+function markArticleCondition(key, value) {
+  const log = loadStudyLog();
+  const dateStr = getLocalDateStr();
+  if (!log[dateStr]) return;
+  if (!log[dateStr].articleProgress) log[dateStr].articleProgress = { scrolled:false, playedOnce:false, playCount:0 };
+  log[dateStr].articleProgress[key] = value;
+  saveStudyLog(log);
+  updateArticleProgress();
 }
 
 // 動態取得本地日期（避免 UTC 時差問題）
@@ -2367,6 +2438,11 @@ const TODAY_YEAR = _now.getFullYear();
 
 // Build SVG ring markup. size = px outer diameter. tasksState = {key:bool}.
 // completedOverride: optional count used only to decide empty-state rendering.
+function articleFillRatio(val) {
+  if (typeof val === 'number') return Math.min(val, 100) / 100;
+  return val ? 1 : 0;
+}
+
 function buildRing(size, strokeRatio, tasksState) {
   const r = size / 2;
   const sw = size * strokeRatio;
@@ -2381,11 +2457,13 @@ function buildRing(size, strokeRatio, tasksState) {
   svg += '<circle cx="' + r + '" cy="' + r + '" r="' + cr + '" fill="none" stroke="#EDE0CC" stroke-width="' + sw + '"/>';
 
   TASKS.forEach((t, i) => {
-    const done = tasksState[t.key];
-    if (!done) return;
+    const val = tasksState[t.key];
+    const fillRatio = (t.key === 'article') ? articleFillRatio(val) : (val ? 1 : 0);
+    if (fillRatio <= 0) return;
+    const thisSegLen = segLen * fillRatio;
     const offset = -(circumference * (i / n)) + circumference / 4;
     svg += '<circle cx="' + r + '" cy="' + r + '" r="' + cr + '" fill="none" stroke="' + t.color + '" stroke-width="' + sw +
-      '" stroke-linecap="round" stroke-dasharray="' + segLen + ' ' + (circumference - segLen) + '" stroke-dashoffset="' + offset +
+      '" stroke-linecap="round" stroke-dasharray="' + thisSegLen + ' ' + (circumference - thisSegLen) + '" stroke-dashoffset="' + offset +
       '" transform="rotate(-90 ' + r + ' ' + r + ')"/>';
   });
 
@@ -2394,7 +2472,10 @@ function buildRing(size, strokeRatio, tasksState) {
 }
 
 function countDone(tasks) {
-  return TASKS.reduce((sum, t) => sum + (tasks[t.key] ? 1 : 0), 0);
+  return TASKS.reduce((sum, t) => {
+    if (t.key === 'article') return sum + (articleFillRatio(tasks[t.key]) >= 1 ? 1 : 0);
+    return sum + (tasks[t.key] ? 1 : 0);
+  }, 0);
 }
 
 function renderHomeRing() {
@@ -2409,12 +2490,21 @@ function renderHomeRing() {
   const legend = document.getElementById('home-ring-legend');
   legend.innerHTML = '';
   TASKS.forEach(t => {
-    const isDone = tasks[t.key];
+    const val = tasks[t.key];
+    let stateText, stateColor;
+    if (t.key === 'article') {
+      const pct = Math.round(articleFillRatio(val) * 100);
+      stateText = pct >= 100 ? '完成' : (pct > 0 ? pct + '%' : '未開始');
+      stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
+    } else {
+      stateText = val ? '完成' : '未完成';
+      stateColor = val ? 'var(--wg)' : 'var(--wt3)';
+    }
     const row = document.createElement('div');
     row.className = 'ring-leg-item';
     row.innerHTML = '<div class="ring-leg-dot" style="background:' + t.color + '"></div>' +
       '<div class="ring-leg-text"><span class="ring-leg-label">' + t.label + '</span>' +
-      '<span class="ring-leg-state" style="color:' + (isDone ? 'var(--wg)' : 'var(--wt3)') + '">' + (isDone ? '完成' : '未完成') + '</span></div>';
+      '<span class="ring-leg-state" style="color:' + stateColor + '">' + stateText + '</span></div>';
     legend.appendChild(row);
   });
 }
