@@ -295,6 +295,33 @@
   .article-text ruby rt { font-size: 10px; color: var(--wt3); }
   .cn-note { font-size: 12px; color: var(--wt2); display: block; margin: -4px 0 6px 0; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
   .cn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
+
+  /* 句子選取點 */
+  .sentence-sel-row {
+    display: flex; align-items: center; gap: 6px; margin-bottom: 2px;
+  }
+  .sentence-dot {
+    width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    border: 1.5px solid var(--wa); background: var(--wa);
+    cursor: pointer; transition: background 0.15s, border-color 0.15s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .sentence-dot.unsel { background: transparent; border-color: var(--wa-bg2); }
+  .sentence-sel-row .sentence-group { flex: 1; }
+  /* 全選列 */
+  .article-sel-header {
+    display: flex; align-items: center; gap: 6px;
+    margin-bottom: 6px; padding-bottom: 6px;
+    border-bottom: 0.5px solid var(--wa-bg2);
+  }
+  .sel-all-dot {
+    width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    border: 1.5px solid var(--wt2); background: var(--wt2);
+    cursor: pointer; transition: background 0.15s, border-color 0.15s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .sel-all-dot.unsel { background: transparent; border-color: var(--wa-bg2); }
+  .sel-all-label { font-size: 11px; color: var(--wt3); }
   .loading-text { font-size: 13px; color: var(--wt3); }
 
   /* Tokenized words */
@@ -939,6 +966,11 @@
         </div>
 
         <div class="card">
+          <!-- 全選列 -->
+          <div class="article-sel-header" id="article-sel-header">
+            <div class="sel-all-dot" id="sel-all-dot" onclick="toggleSelectAll()"></div>
+            <span class="sel-all-label" id="sel-all-label">全部</span>
+          </div>
           <div class="article-text" id="article-text">
             <span class="loading-text" id="loading-text">正在分析文章詞彙...</span>
           </div>
@@ -1259,7 +1291,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.3.4
+        v0.3.5
       </div>
 
     </div>
@@ -1447,6 +1479,56 @@ function toggleCN() {
 }
 
 // ===== 文章斷詞與互動 =====
+
+// 句子選取狀態 (index → true/false)，預設全選
+let sentenceSelected = [];
+let sentenceCount = 0;
+
+function initSentenceSel(count) {
+  sentenceCount = count;
+  sentenceSelected = Array(count).fill(true);
+  updateSelAllDot();
+}
+
+function toggleSentenceSel(idx) {
+  sentenceSelected[idx] = !sentenceSelected[idx];
+  const dot = document.querySelector('.sentence-dot[data-si="' + idx + '"]');
+  if (dot) dot.classList.toggle('unsel', !sentenceSelected[idx]);
+  updateSelAllDot();
+}
+
+function toggleSelectAll() {
+  const anyOff = sentenceSelected.some(s => !s);
+  const newVal = anyOff; // 有任何未選 → 全選；全都選了 → 全消
+  sentenceSelected = sentenceSelected.map(() => newVal);
+  document.querySelectorAll('.sentence-dot').forEach((d, i) => {
+    d.classList.toggle('unsel', !newVal);
+  });
+  updateSelAllDot();
+}
+
+function updateSelAllDot() {
+  const dot = document.getElementById('sel-all-dot');
+  const lbl = document.getElementById('sel-all-label');
+  if (!dot) return;
+  const selCount = sentenceSelected.filter(Boolean).length;
+  const allSel = selCount === sentenceCount;
+  const noneSel = selCount === 0;
+  dot.classList.toggle('unsel', noneSel);
+  if (lbl) lbl.textContent = allSel ? '全部' : (noneSel ? '全部' : selCount + ' / ' + sentenceCount);
+}
+
+// 取得已選句子的文字陣列
+function getSelectedSentenceTexts() {
+  const texts = [];
+  for (let i = 0; i < sentenceCount; i++) {
+    if (sentenceSelected[i]) {
+      const el = document.querySelector('.sentence-group[data-sentence="' + i + '"]');
+      if (el) texts.push(el.textContent.trim());
+    }
+  }
+  return texts;
+}
 
 let ARTICLE_TEXT = '今日は天気が良いです。私は公園に行きました。花が綺麗な花でした。私は木の下で休みました。';
 const DEMO_ARTICLE_TEXT = ARTICLE_TEXT;
@@ -1798,6 +1880,22 @@ function renderArticle(tokens) {
   }
   container.innerHTML = html;
 
+  // 在每個 sentence-group 前插入選取點，包成 sentence-sel-row
+  const groups = container.querySelectorAll('.sentence-group');
+  groups.forEach((grp, idx) => {
+    const row = document.createElement('div');
+    row.className = 'sentence-sel-row';
+    const dot = document.createElement('div');
+    dot.className = 'sentence-dot';
+    dot.dataset.si = idx;
+    dot.addEventListener('click', () => toggleSentenceSel(idx));
+    grp.parentNode.insertBefore(row, grp);
+    row.appendChild(dot);
+    row.appendChild(grp);
+    // cn-note 緊接在 sentence-group 後，移到 row 之後（在 DOM 已是如此，不需移動）
+  });
+  initSentenceSel(groups.length);
+
   // 綁定長按事件
   container.querySelectorAll('.tok').forEach(el => {
     bindLongPress(el);
@@ -1987,6 +2085,26 @@ let readAloudUtterance = null;
 let readAloudPlaying = false;
 let readAloudRate = 1.0;
 
+function buildPlayText() {
+  // 若沒有 sentenceCount（文章未渲染），退回全文
+  if (!sentenceCount) return ARTICLE_TEXT;
+  const texts = getSelectedSentenceTexts();
+  return texts.length ? texts.join('') : ARTICLE_TEXT;
+}
+
+function _onReadAloudEnd(isAllSelected) {
+  readAloudPlaying = false;
+  setPlayIcon(false);
+  // 條件2/3 只在全部句子都選取時計入（等同「播完整篇」）
+  if (!isAllSelected) return;
+  const log = loadStudyLog();
+  const dateStr = getLocalDateStr();
+  const ap = (log[dateStr] && log[dateStr].articleProgress) || {};
+  const newCount = (ap.playCount || 0) + 1;
+  markArticleCondition('playCount', newCount);
+  if (!ap.playedOnce) markArticleCondition('playedOnce', true);
+}
+
 function toggleReadAloud() {
   if (readAloudPlaying) {
     window.speechSynthesis.pause();
@@ -2001,20 +2119,12 @@ function toggleReadAloud() {
     return;
   }
   window.speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(ARTICLE_TEXT);
+  const allSel = sentenceSelected.every(Boolean);
+  const text = buildPlayText();
+  const u = new SpeechSynthesisUtterance(text);
   u.lang = 'ja-JP';
   u.rate = readAloudRate;
-  u.onend = () => {
-    readAloudPlaying = false;
-    setPlayIcon(false);
-    // 條件2：播完一次
-    const log = loadStudyLog();
-    const dateStr = getLocalDateStr();
-    const ap = (log[dateStr] && log[dateStr].articleProgress) || {};
-    const newCount = (ap.playCount || 0) + 1;
-    markArticleCondition('playCount', newCount);
-    if (!ap.playedOnce) markArticleCondition('playedOnce', true);
-  };
+  u.onend = () => _onReadAloudEnd(allSel);
   readAloudUtterance = u;
   window.speechSynthesis.speak(u);
   readAloudPlaying = true;
@@ -2047,19 +2157,11 @@ function adjustSpeed(direction) {
   // 若朗讀正在進行，套用新速度需要從目前句子重新開始播放
   if (readAloudPlaying) {
     window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(ARTICLE_TEXT);
+    const _allSel2 = sentenceSelected.every(Boolean);
+    const u = new SpeechSynthesisUtterance(buildPlayText());
     u.lang = 'ja-JP';
     u.rate = readAloudRate;
-    u.onend = () => {
-      readAloudPlaying = false;
-      setPlayIcon(false);
-      const log2 = loadStudyLog();
-      const ds2 = getLocalDateStr();
-      const ap2 = (log2[ds2] && log2[ds2].articleProgress) || {};
-      const newCount2 = (ap2.playCount || 0) + 1;
-      markArticleCondition('playCount', newCount2);
-      if (!ap2.playedOnce) markArticleCondition('playedOnce', true);
-    };
+    u.onend = () => _onReadAloudEnd(_allSel2);
     readAloudUtterance = u;
     window.speechSynthesis.speak(u);
     showToast('已調整為 ' + readAloudRate.toFixed(2).replace(/0$/, '') + 'x，重新播放');
