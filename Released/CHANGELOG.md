@@ -1,5 +1,21 @@
 # 日語學習 App — 版本記錄
 
+## v0.7.6 — 2026-06-21
+
+**Firebase Auth 修正 + Firestore SDK**
+- 登入改用 signInWithRedirect（修正 iOS Safari 無法彈出視窗問題）
+- 加入 getRedirectResult() 處理 Google 回跳
+- 加入 Firestore SDK，fbDb 全域變數備用
+- 設計決策：訪客模式可用、最後存檔優先、錄音只存本機
+
+---
+
+## 0.7.6 — 2026-06-21
+
+Firebase Auth 修正 + Firestore SDK
+
+---
+
 ## v0.7.5 — 2026-06-21
 
 **Firebase Auth：Google 登入**

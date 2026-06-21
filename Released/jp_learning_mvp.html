@@ -1054,6 +1054,7 @@
 <!-- Firebase SDK (compat, no build tool needed) -->
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
 <div class="app">
@@ -1337,7 +1338,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.7.5
+        v0.7.6
       </div>
 
     </div>
@@ -4525,20 +4526,31 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 const fbAuth = firebase.auth();
+const fbDb   = firebase.firestore();
 
 let currentUser = null;
+
+// 處理 Google redirect 回跳結果
+fbAuth.getRedirectResult().then(result => {
+  if (result && result.user) {
+    console.log('Google 登入成功（redirect）:', result.user.uid);
+  }
+}).catch(err => {
+  if (err.code !== 'auth/no-auth-event') showToast('登入失敗：' + err.message);
+});
 
 // 監聽登入狀態
 fbAuth.onAuthStateChanged(user => {
   currentUser = user;
   renderAuthUI();
-  if (user) console.log('已登入 uid:', user.uid);
 });
 
-// Google 登入
+// Google 登入（redirect 模式，相容 iOS Safari）
 function signInWithGoogle() {
+  const el = document.getElementById('auth-section');
+  if (el) el.innerHTML = '<div style="padding:16px;text-align:center;color:var(--wt3);font-size:13px">正在跳轉到 Google 登入…</div>';
   const provider = new firebase.auth.GoogleAuthProvider();
-  fbAuth.signInWithPopup(provider).catch(err => showToast('登入失敗：' + err.message));
+  fbAuth.signInWithRedirect(provider);
 }
 
 // 登出
