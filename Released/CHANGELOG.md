@@ -1,5 +1,19 @@
 # 日語學習 App — 版本記錄
 
+## v0.8.4 — 2026-06-21
+
+**Firebase 錯誤持久顯示 + storageBucket 格式修正**
+- storageBucket 由 .firebasestorage.app 改為 .appspot.com（相容 SDK 9.23.0）
+- firebaseInitError 變數：init 失敗時 renderAuthUI 顯示錯誤而非登入按鈕
+
+---
+
+## 0.8.4 — 2026-06-21
+
+Firebase 錯誤持久顯示 + storageBucket 修正
+
+---
+
 ## v0.8.3 — 2026-06-21
 
 **Firebase 狀態偵錯**

@@ -1350,7 +1350,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.8.3
+        v0.8.4
       </div>
 
     </div>
@@ -4532,13 +4532,14 @@ const firebaseConfig = {
   apiKey: "AIzaSyBF8gq-kRwBQcmewf2-w5oNbtvzoK8wdzQ",
   authDomain: "jp-learning-app-a9f2c.firebaseapp.com",
   projectId: "jp-learning-app-a9f2c",
-  storageBucket: "jp-learning-app-a9f2c.firebasestorage.app",
+  storageBucket: "jp-learning-app-a9f2c.appspot.com",
   messagingSenderId: "1068503481615",
   appId: "1:1068503481615:web:7e2098a24111139729927a"
 };
 var fbAuth = null;
 var fbDb   = null;
 var currentUser = null;
+var firebaseInitError = null;
 
 try {
   if (!firebase.apps || !firebase.apps.length) {
@@ -4564,9 +4565,7 @@ try {
 
 } catch(e) {
   console.warn('Firebase 初始化失敗:', e.message);
-  // 偵錯：直接顯示在帳號區塊（確認後移除）
-  const dbgEl = document.getElementById('auth-section');
-  if (dbgEl) dbgEl.innerHTML = '<div style="padding:12px;font-size:12px;color:var(--wr);word-break:break-all">Firebase 初始化失敗：<br>' + e.message + '</div>';
+  firebaseInitError = e.message;
 }
 
 // 登入按鈕 HTML（供失敗時恢復用）
@@ -4609,6 +4608,10 @@ function fbSignOut() {
 function renderAuthUI() {
   const el = document.getElementById('auth-section');
   if (!el) return;
+  if (firebaseInitError) {
+    el.innerHTML = '<div style="padding:12px;font-size:12px;color:var(--wr);word-break:break-all">⚠️ Firebase 錯誤：<br>' + firebaseInitError + '</div>';
+    return;
+  }
   if (currentUser) {
     const photo = currentUser.photoURL
       ? `<img src="${currentUser.photoURL}" style="width:36px;height:36px;border-radius:50%;flex-shrink:0">`
