@@ -1,5 +1,21 @@
 # 日語學習 App — 版本記錄
 
+## v0.7.5 — 2026-06-21
+
+**Firebase Auth：Google 登入**
+- 加入 Firebase SDK（compat 版，不需 build system）
+- 設定頁新增「帳號」區塊：未登入顯示 Google 登入按鈕，已登入顯示頭像/名稱/登出
+- `currentUser` 全域變數供後續 Firestore sync 使用
+- 授權網域需在 Firebase Console 加入 `cs90s203.github.io`
+
+---
+
+## 0.7.5 — 2026-06-21
+
+Firebase Google 登入
+
+---
+
 ## v0.7.4 — 2026-06-21
 
 **首頁五項指標標的重設**
