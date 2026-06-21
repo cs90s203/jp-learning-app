@@ -522,8 +522,9 @@
   #page-vocab { overflow-y: hidden; }
 
   .vocab-filter-bar {
-    display: flex; gap: 6px; padding: 0 16px 10px; flex-shrink: 0;
+    display: flex; gap: 6px; padding: 0 16px 10px; flex-shrink: 0; align-items: center;
   }
+  .vocab-filter-bar .vocab-quiz-start-btn { flex-shrink: 0; margin-left: auto; }
   .vocab-filter-btn {
     flex: 1; padding: 7px 4px; border-radius: 99px;
     border: 0.5px solid var(--wa-bg2); background: #FFFFFF;
@@ -1122,18 +1123,16 @@
     <div class="page" id="page-vocab">
       <div class="top-bar" style="flex-shrink:0">
         <h1>單字本</h1>
-        <div style="display:flex;align-items:center;gap:10px">
-          <p id="vocab-count-text" style="margin:0">共 0 張</p>
-          <button class="vocab-quiz-start-btn" id="vocab-quiz-start-btn" onclick="startVocabQuiz()">開始複習</button>
-        </div>
+        <p id="vocab-count-text">共 0 張</p>
       </div>
 
-      <!-- Filter bar -->
+      <!-- Filter bar + quiz button -->
       <div class="vocab-filter-bar">
         <button class="vocab-filter-btn active-all" id="vf-all"  onclick="setVocabFilter('all')">全部</button>
         <button class="vocab-filter-btn" id="vf-raw"  onclick="setVocabFilter('raw')">生 <span id="vf-raw-n">0</span></button>
         <button class="vocab-filter-btn" id="vf-mid"  onclick="setVocabFilter('mid')">普 <span id="vf-mid-n">0</span></button>
         <button class="vocab-filter-btn" id="vf-ripe" onclick="setVocabFilter('ripe')">熟 <span id="vf-ripe-n">0</span></button>
+        <button class="vocab-quiz-start-btn" id="vocab-quiz-start-btn" onclick="startVocabQuiz()">開始複習</button>
       </div>
 
       <!-- Display card -->
@@ -1429,7 +1428,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.4.0
+        v0.4.1
       </div>
 
     </div>
