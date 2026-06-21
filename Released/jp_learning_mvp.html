@@ -1239,23 +1239,15 @@
         <p class="section-title">學習模式</p>
         <div class="card" style="padding:4px 16px;margin-bottom:16px">
           <div class="mode-tabs" style="margin:12px 0 8px">
-            <button class="mode-tab active" onclick="setMode(this)">輕鬆</button>
-            <button class="mode-tab" onclick="setMode(this)">標準</button>
-            <button class="mode-tab" onclick="setMode(this)">專注</button>
+            <button class="mode-tab" id="mode-btn-easy"   onclick="setMode('easy')">輕鬆</button>
+            <button class="mode-tab" id="mode-btn-normal" onclick="setMode('normal')">標準</button>
+            <button class="mode-tab" id="mode-btn-focus"  onclick="setMode('focus')">專注</button>
           </div>
-          <p style="font-size:12px;color:var(--wt3);text-align:center;padding-bottom:8px">15 分鐘・20 張卡・中文備注開</p>
+          <p style="font-size:12px;color:var(--wt3);text-align:center;padding-bottom:8px" id="mode-desc">複習75%單字・試題適中</p>
         </div>
 
         <p class="section-title">學習強度</p>
         <div class="card" style="padding:4px 16px;margin-bottom:16px">
-          <div class="setting-row">
-            <div><div class="setting-label">每日單字卡上限</div><div class="setting-sub">超過順延明天</div></div>
-            <span class="setting-val">20 張</span>
-          </div>
-          <div class="setting-row">
-            <div><div class="setting-label">每日練習時間</div></div>
-            <span class="setting-val">15 分鐘</span>
-          </div>
           <div class="setting-row">
             <div><div class="setting-label">熟記定義</div><div class="setting-sub">累積記得次數</div></div>
             <span class="setting-val">10 次</span>
@@ -1263,9 +1255,9 @@
           <div class="setting-row" style="cursor:pointer" onclick="cycleQuizOrder()">
             <div>
               <div class="setting-label">單字複習排序</div>
-              <div class="setting-sub" id="quiz-order-sub">急迫優先（生字先）</div>
+              <div class="setting-sub" id="quiz-order-sub">複習優先（到期先）</div>
             </div>
-            <span class="setting-val" id="quiz-order-val">急迫</span>
+            <span class="setting-val" id="quiz-order-val">複習</span>
           </div>
         </div>
 
@@ -1334,7 +1326,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.7.1
+        v0.7.3
       </div>
 
     </div>
@@ -1610,15 +1602,42 @@ function switchPage(id) {
   }
   if (id === 'home')  renderHomeRing();
   if (id === 'vocab') renderVocabPage();
-  if (id === 'quiz')  initQuizPage();
+  if (id === 'quiz')     initQuizPage();
+  if (id === 'settings') initModeUI();
   // Show/hide FAB
   document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
 }
 
-// Mode tabs
-function setMode(btn) {
-  btn.closest('.mode-tabs').querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
-  btn.classList.add('active');
+// ===== 學習模式 =====
+const LEARN_MODES = {
+  easy:   { pct: 0.4,  desc: '複習40%單字・試題輕量' },
+  normal: { pct: 0.75, desc: '複習75%單字・試題適中' },
+  focus:  { pct: 1.0,  desc: '全部單字・完整試題' }
+};
+
+function setMode(key) {
+  if (!LEARN_MODES[key]) return;
+  localStorage.setItem('learnMode', key);
+  applyModeUI(key);
+}
+
+function applyModeUI(key) {
+  const cfg = LEARN_MODES[key] || LEARN_MODES.normal;
+  ['easy','normal','focus'].forEach(k => {
+    const btn = document.getElementById('mode-btn-' + k);
+    if (btn) btn.classList.toggle('active', k === key);
+  });
+  const desc = document.getElementById('mode-desc');
+  if (desc) desc.textContent = cfg.desc;
+}
+
+function getModeVocabPct() {
+  const key = localStorage.getItem('learnMode') || 'normal';
+  return (LEARN_MODES[key] || LEARN_MODES.normal).pct;
+}
+
+function initModeUI() {
+  applyModeUI(localStorage.getItem('learnMode') || 'normal');
 }
 
 // ===== QUIZ ENGINE (Phase 1: 聽力 + 填空) =====
@@ -1652,7 +1671,8 @@ function switchQuizSection(type) {
 function generateListeningQuestions(vocabDict) {
   const words = Object.keys(vocabDict || {});
   if (!words.length) return [];
-  const selected = shuffleArr(words).slice(0, Math.min(10, words.length));
+  const maxQ = Math.max(1, Math.round(words.length * getModeVocabPct()));
+  const selected = shuffleArr(words).slice(0, Math.min(maxQ, words.length));
   return selected.map(word => {
     const entry = vocabDict[word];
     const correct = entry.meaning;
@@ -1707,7 +1727,8 @@ function generateFillInQuestions(tokens, vocabDict) {
       });
     }
   }
-  return shuffleArr(pool).slice(0, 10);
+  const maxQ = Math.max(1, Math.round(pool.length * getModeVocabPct()));
+  return shuffleArr(pool).slice(0, maxQ);
 }
 
 // ── Session management ───────────────────────────────
@@ -4068,9 +4089,22 @@ function initSettings() {
 }
 
 // ===== 單字複習考 =====
-const VQ_ORDERS = ['urgent', 'random', 'newest'];
-const VQ_ORDER_LABELS = { urgent: '急迫優先（生字先）', random: '隨機', newest: '最近加入' };
-const VQ_ORDER_SHORT  = { urgent: '急迫', random: '隨機', newest: '最新' };
+const VQ_ORDERS = ['due', 'random', 'newest'];
+const VQ_ORDER_LABELS = { due: '複習優先（到期先）', random: '隨機', newest: '最近加入' };
+const VQ_ORDER_SHORT  = { due: '複習', random: '隨機', newest: '最新' };
+
+// SRS 到期計算：回傳「逾期倍率」，越高越優先
+function srsInterval(fam) {
+  if (fam <= 6)  return 1;   // 生：每天
+  if (fam <= 13) return 3;   // 普：每 3 天
+  return 7;                  // 熟：每 7 天
+}
+function dueScore(entry) {
+  const today    = getLocalDateStr();
+  const lastDate = entry.lastReviewed || entry.addedDate || today;
+  const daysSince = Math.max(0, (new Date(today) - new Date(lastDate)) / 86400000);
+  return daysSince / srsInterval(entry.familiarity || 0);
+}
 
 let vqQueue = [];
 let vqIndex = 0;
@@ -4082,10 +4116,10 @@ function startVocabQuiz() {
   const words = Object.keys(vocabBook);
   if (!words.length) { showToast('單字本是空的，先加入單字再複習 😊'); return; }
 
-  const order = localStorage.getItem('quizOrder') || 'urgent';
+  const order = localStorage.getItem('quizOrder') || 'due';
   vqQueue = words.slice();
-  if (order === 'urgent') {
-    vqQueue.sort((a, b) => (vocabBook[a].familiarity || 0) - (vocabBook[b].familiarity || 0));
+  if (order === 'due') {
+    vqQueue.sort((a, b) => dueScore(vocabBook[b] || {}) - dueScore(vocabBook[a] || {}));
   } else if (order === 'random') {
     for (let i = vqQueue.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -4177,12 +4211,14 @@ function vqRate(remembered) {
 
   if (remembered) {
     entry.familiarity = Math.min(20, fam + 2);
+    entry.lastReviewed = getLocalDateStr();
     vocabBook[word] = entry;
     saveVocabBook();
     vqOk++;
     vqAdvance();
   } else {
     entry.familiarity = Math.max(0, fam - 2);
+    entry.lastReviewed = getLocalDateStr();
     vocabBook[word] = entry;
     saveVocabBook();
     vqFail++;
@@ -4263,7 +4299,7 @@ function closeVocabQuizResult() {
 
 // 設定頁：循環切換複習排序
 function cycleQuizOrder() {
-  const cur = localStorage.getItem('quizOrder') || 'urgent';
+  const cur = localStorage.getItem('quizOrder') || 'due';
   const idx  = VQ_ORDERS.indexOf(cur);
   const next = VQ_ORDERS[(idx + 1) % VQ_ORDERS.length];
   localStorage.setItem('quizOrder', next);
