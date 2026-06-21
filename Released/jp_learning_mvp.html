@@ -540,8 +540,14 @@
   .vocab-romaji { font-size: 12px; color: var(--wt3); margin-top: 2px; }
   .vocab-divider { height: 0.5px; background: var(--wa-bg); margin: 16px 0; }
   .vocab-meaning { font-size: 20px; color: var(--wt); font-weight: 500; }
-  .vocab-example { font-size: 13px; color: var(--wt2); margin-top: 10px; line-height: 1.8; }
+  .vocab-example { font-size: 13px; color: var(--wt2); margin-top: 10px; line-height: 1.8; transition: color 0.15s, text-shadow 0.15s; }
   .vocab-example ruby rt { font-size: 9px; }
+  .vocab-example.meaning-hidden {
+    color: transparent; text-shadow: 0 0 8px rgba(42,26,8,0.5); user-select: none; pointer-events: none;
+  }
+  html[data-theme="dark"] .vocab-example.meaning-hidden {
+    text-shadow: 0 0 8px rgba(240,228,208,0.5);
+  }
   .vocab-badge-row { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
 
   /* ===== 單字本頁面 ===== */
@@ -685,7 +691,24 @@
   html[data-theme="dark"] .vq-word.meaning-hidden {
     text-shadow: 0 0 12px rgba(240,228,208,0.6);
   }
-  .vq-peek-hint { font-size: 12px; color: var(--wt3); margin-top: 8px; }
+  .vq-peek-hint { font-size: 12px; color: var(--wt3); margin-top: 10px; }
+  .vq-word-row { display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .vq-tts-btn {
+    width: 32px; height: 32px; border-radius: 50%; border: none;
+    background: var(--wa-bg); color: var(--wt2); cursor: pointer;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .vq-example {
+    font-size: 14px; color: var(--wt2); line-height: 1.8; margin-top: 14px;
+    transition: color 0.15s, text-shadow 0.15s;
+  }
+  .vq-example.meaning-hidden {
+    color: transparent; text-shadow: 0 0 8px rgba(42,26,8,0.5); user-select: none;
+  }
+  html[data-theme="dark"] .vq-example.meaning-hidden {
+    text-shadow: 0 0 8px rgba(240,228,208,0.5);
+  }
   .vq-btns {
     display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
     padding: 16px 24px calc(16px + env(safe-area-inset-bottom,0px)); flex-shrink: 0;
@@ -1465,7 +1488,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.5.3
+        v0.5.4
       </div>
 
     </div>
@@ -1671,11 +1694,17 @@
     <!-- card area -->
     <div class="vq-card-area" id="vq-card-area">
       <div class="vq-kana" id="vq-kana"></div>
-      <div class="vq-word" id="vq-word"></div>
+      <div class="vq-word-row">
+        <div class="vq-word" id="vq-word"></div>
+        <button class="vq-tts-btn" id="vq-tts-btn" onclick="vqSpeak(event)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+        </button>
+      </div>
       <div class="vq-divider"></div>
       <div class="vq-meaning-tap" id="vq-meaning-tap" onclick="vqPeekMeaning()">
         <div class="vq-meaning meaning-hidden" id="vq-meaning"></div>
-        <div class="vq-peek-hint" id="vq-peek-hint">點擊顯示中文</div>
+        <div class="vq-example meaning-hidden" id="vq-example"></div>
+        <div class="vq-peek-hint" id="vq-peek-hint">點擊顯示中文與例句</div>
       </div>
     </div>
     <!-- action buttons -->
@@ -2334,6 +2363,23 @@ function closeWordPanel() {
   document.querySelectorAll('.tok-active').forEach(t => t.classList.remove('tok-active'));
 }
 
+// 從目前文章 tokens 自動抓取含該詞的句子
+function findExampleSentence(word) {
+  const tokens = ARTICLE_TOKENS;
+  if (!tokens || !tokens.length) return '';
+  let sent = [];
+  for (const tok of tokens) {
+    sent.push(tok);
+    if (tok.surface_form === '。') {
+      if (sent.some(t => t.basic_form === word || t.surface_form === word)) {
+        return sent.map(t => t.surface_form).join('');
+      }
+      sent = [];
+    }
+  }
+  return '';
+}
+
 function addToVocabCards(basic, extra) {
   if (!vocabBook[basic]) {
     const entry = VOCAB_DICT[basic] || {};
@@ -2341,7 +2387,7 @@ function addToVocabCards(basic, extra) {
       kana:       extra?.kana    || entry.reading || '',
       romaji:     extra?.romaji  || entry.romaji  || '',
       meaning:    extra?.meaning || entry.meaning || '',
-      example:    extra?.example || entry.example || '',
+      example:    extra?.example || entry.example || findExampleSentence(basic) || '',
       familiarity: 0,
       source:     extra?.source  || 'article',
       addedDate:  new Date().toISOString().slice(0,10)
@@ -3178,12 +3224,13 @@ let vocabMeaningRevealed = false;
 function revealVocabMeaning() {
   localStorage.setItem('meaningHintSeen', '1');
   const el = document.getElementById('vocab-meaning-text');
+  const exEl = document.getElementById('vocab-example-text');
   const hint = document.getElementById('meaning-reveal-hint');
   if (!el) return;
-  // toggle：點一下顯示，再點一下遮回去
   const hidden = el.classList.toggle('meaning-hidden');
   vocabMeaningRevealed = !hidden;
-  if (hint) hint.style.display = 'none'; // hint 只顯示一次
+  if (exEl) exEl.classList.toggle('meaning-hidden', hidden);
+  if (hint) hint.style.display = 'none';
 }
 
 // ===== 確認 dialog =====
@@ -3285,9 +3332,9 @@ function renderVocabDisplayCard() {
     '<div class="vocab-divider"></div>' +
     '<div class="vocab-meaning-wrap" onclick="revealVocabMeaning()">' +
       '<div class="vocab-meaning meaning-hidden" id="vocab-meaning-text">' + (entry.meaning || '—') + '</div>' +
+      (entry.example ? '<div class="vocab-example meaning-hidden" id="vocab-example-text">' + entry.example + '</div>' : '') +
       (!localStorage.getItem('meaningHintSeen') ? '<div class="meaning-reveal-hint" id="meaning-reveal-hint">點擊顯示中文</div>' : '') +
     '</div>' +
-    (entry.example ? '<div class="vocab-example">' + entry.example + '</div>' : '') +
     '<div style="margin-top:12px"><span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span></div>';
 
   // Nav dots
@@ -3761,6 +3808,14 @@ function vqShowCard() {
   document.getElementById('vq-word').textContent = word;
   document.getElementById('vq-meaning').textContent = entry.meaning || '—';
 
+  // 例句
+  const exEl = document.getElementById('vq-example');
+  if (exEl) {
+    exEl.textContent = entry.example || '';
+    exEl.style.display = entry.example ? '' : 'none';
+    exEl.classList.add('meaning-hidden');
+  }
+
   // 重置遮擋：中文永遠遮，漢字有就遮
   document.getElementById('vq-meaning').classList.add('meaning-hidden');
   const wordEl = document.getElementById('vq-word');
@@ -3784,9 +3839,18 @@ function vqShowCard() {
 
 function vqPeekMeaning() {
   document.getElementById('vq-meaning').classList.remove('meaning-hidden');
-  document.getElementById('vq-word').classList.remove('meaning-hidden'); // 解開漢字
+  document.getElementById('vq-word').classList.remove('meaning-hidden');
+  const exEl = document.getElementById('vq-example');
+  if (exEl) exEl.classList.remove('meaning-hidden');
   document.getElementById('vq-peek-hint').style.display = 'none';
   document.getElementById('vq-meaning-tap').style.pointerEvents = 'none';
+}
+
+function vqSpeak(e) {
+  e.stopPropagation();
+  const word = vqQueue[vqIndex];
+  const entry = vocabBook[word] || {};
+  speak(entry.kana || word);
 }
 
 function vqRate(remembered) {

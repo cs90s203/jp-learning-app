@@ -2,53 +2,263 @@
   "title": "家族",
   "text": "私の家族は四人います。父と母と妹と私です。父は毎朝早く起きます。私たちは毎晩一緒にご飯を食べます。",
   "tokens": [
-    {"surface_form":"私",      "basic_form":"私",    "reading":"わたし",    "pos":"名詞"},
-    {"surface_form":"の",      "basic_form":"の",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"家族",    "basic_form":"家族",  "reading":"かぞく",    "pos":"名詞"},
-    {"surface_form":"は",      "basic_form":"は",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"四人",    "basic_form":"四人",  "reading":"よにん",    "pos":"名詞"},
-    {"surface_form":"います",  "basic_form":"いる",  "reading":"います",    "pos":"動詞"},
-    {"surface_form":"。",      "basic_form":"。",    "reading":"",         "pos":"記号"},
-    {"surface_form":"父",      "basic_form":"父",    "reading":"ちち",      "pos":"名詞"},
-    {"surface_form":"と",      "basic_form":"と",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"母",      "basic_form":"母",    "reading":"はは",      "pos":"名詞"},
-    {"surface_form":"と",      "basic_form":"と",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"妹",      "basic_form":"妹",    "reading":"いもうと",  "pos":"名詞"},
-    {"surface_form":"と",      "basic_form":"と",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"私",      "basic_form":"私",    "reading":"わたし",    "pos":"名詞"},
-    {"surface_form":"です",    "basic_form":"です",  "reading":"",         "pos":"助動詞"},
-    {"surface_form":"。",      "basic_form":"。",    "reading":"",         "pos":"記号"},
-    {"surface_form":"父",      "basic_form":"父",    "reading":"ちち",      "pos":"名詞"},
-    {"surface_form":"は",      "basic_form":"は",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"毎朝",    "basic_form":"毎朝",  "reading":"まいあさ",  "pos":"名詞"},
-    {"surface_form":"早く",    "basic_form":"早い",  "reading":"はやく",    "pos":"形容詞"},
-    {"surface_form":"起きます","basic_form":"起きる","reading":"おきます",  "pos":"動詞"},
-    {"surface_form":"。",      "basic_form":"。",    "reading":"",         "pos":"記号"},
-    {"surface_form":"私たち",  "basic_form":"私たち","reading":"わたしたち","pos":"名詞"},
-    {"surface_form":"は",      "basic_form":"は",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"毎晩",    "basic_form":"毎晩",  "reading":"まいばん",  "pos":"名詞"},
-    {"surface_form":"一緒に",  "basic_form":"一緒に","reading":"いっしょに","pos":"副詞"},
-    {"surface_form":"ご飯",    "basic_form":"ご飯",  "reading":"ごはん",    "pos":"名詞"},
-    {"surface_form":"を",      "basic_form":"を",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"食べます","basic_form":"食べる","reading":"たべます",  "pos":"動詞"},
-    {"surface_form":"。",      "basic_form":"。",    "reading":"",         "pos":"記号"}
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "家族",
+      "basic_form": "家族",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "四人",
+      "basic_form": "四人",
+      "reading": "よにん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "います",
+      "basic_form": "いる",
+      "reading": "います",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "父",
+      "basic_form": "父",
+      "reading": "ちち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "母",
+      "basic_form": "母",
+      "reading": "はは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "妹",
+      "basic_form": "妹",
+      "reading": "いもうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "父",
+      "basic_form": "父",
+      "reading": "ちち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "毎朝",
+      "basic_form": "毎朝",
+      "reading": "まいあさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "早く",
+      "basic_form": "早い",
+      "reading": "はやく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "起きます",
+      "basic_form": "起きる",
+      "reading": "おきます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私たち",
+      "basic_form": "私たち",
+      "reading": "わたしたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "毎晩",
+      "basic_form": "毎晩",
+      "reading": "まいばん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "一緒に",
+      "basic_form": "一緒に",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "ご飯",
+      "basic_form": "ご飯",
+      "reading": "ごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べます",
+      "basic_form": "食べる",
+      "reading": "たべます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
   ],
   "vocab": {
-    "私":     {"meaning":"我",           "romaji":"watashi"},
-    "家族":   {"meaning":"家人",         "romaji":"kazoku"},
-    "四人":   {"meaning":"四個人",       "romaji":"yonin"},
-    "いる":   {"meaning":"有・存在（人/動物）","romaji":"iru"},
-    "父":     {"meaning":"父親",         "romaji":"chichi"},
-    "母":     {"meaning":"母親",         "romaji":"haha"},
-    "妹":     {"meaning":"妹妹",         "romaji":"imouto"},
-    "毎朝":   {"meaning":"每天早上",     "romaji":"maiasa"},
-    "早い":   {"meaning":"早",           "romaji":"hayai"},
-    "起きる": {"meaning":"起床",         "romaji":"okiru"},
-    "私たち": {"meaning":"我們",         "romaji":"watashitachi"},
-    "毎晩":   {"meaning":"每天晚上",     "romaji":"maiban"},
-    "一緒に": {"meaning":"一起",         "romaji":"issho ni"},
-    "ご飯":   {"meaning":"飯・餐食",     "romaji":"gohan"},
-    "食べる": {"meaning":"吃",           "romaji":"taberu"}
+    "私": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "example": "私の家族は四人います。"
+    },
+    "家族": {
+      "meaning": "家人",
+      "romaji": "kazoku",
+      "example": "私の家族は四人います。"
+    },
+    "四人": {
+      "meaning": "四個人",
+      "romaji": "yonin",
+      "example": "私の家族は四人います。"
+    },
+    "いる": {
+      "meaning": "有・存在（人/動物）",
+      "romaji": "iru",
+      "example": "私の家族は四人います。"
+    },
+    "父": {
+      "meaning": "父親",
+      "romaji": "chichi",
+      "example": "父は毎朝早く起きます。"
+    },
+    "母": {
+      "meaning": "母親",
+      "romaji": "haha",
+      "example": "父と母と妹と私です。"
+    },
+    "妹": {
+      "meaning": "妹妹",
+      "romaji": "imouto",
+      "example": "父と母と妹と私です。"
+    },
+    "毎朝": {
+      "meaning": "每天早上",
+      "romaji": "maiasa",
+      "example": "父は毎朝早く起きます。"
+    },
+    "早い": {
+      "meaning": "早",
+      "romaji": "hayai",
+      "example": "父は毎朝早く起きます。"
+    },
+    "起きる": {
+      "meaning": "起床",
+      "romaji": "okiru",
+      "example": "父は毎朝早く起きます。"
+    },
+    "私たち": {
+      "meaning": "我們",
+      "romaji": "watashitachi",
+      "example": "私たちは毎晩一緒にご飯を食べます。"
+    },
+    "毎晩": {
+      "meaning": "每天晚上",
+      "romaji": "maiban",
+      "example": "私たちは毎晩一緒にご飯を食べます。"
+    },
+    "一緒に": {
+      "meaning": "一起",
+      "romaji": "issho ni",
+      "example": "私たちは毎晩一緒にご飯を食べます。"
+    },
+    "ご飯": {
+      "meaning": "飯・餐食",
+      "romaji": "gohan",
+      "example": "私たちは毎晩一緒にご飯を食べます。"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "example": "私たちは毎晩一緒にご飯を食べます。"
+    }
   },
   "particles": {
     "は": "提示句子的主題，告訴對方接下來要說的是關於「什麼」。",
@@ -64,31 +274,88 @@
   },
   "translations": [
     [
-      {"text":"我的","word":"私"},
-      {"text":"家人","word":"家族"},
-      {"text":"有四個人","word":"四人"},
-      {"text":"。","word":null}
+      {
+        "text": "我的",
+        "word": "私"
+      },
+      {
+        "text": "家人",
+        "word": "家族"
+      },
+      {
+        "text": "有四個人",
+        "word": "四人"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
     ],
     [
-      {"text":"爸爸","word":"父"},
-      {"text":"、媽媽、","word":null},
-      {"text":"妹妹","word":"妹"},
-      {"text":"和我","word":"私"},
-      {"text":"。","word":null}
+      {
+        "text": "爸爸",
+        "word": "父"
+      },
+      {
+        "text": "、媽媽、",
+        "word": null
+      },
+      {
+        "text": "妹妹",
+        "word": "妹"
+      },
+      {
+        "text": "和我",
+        "word": "私"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
     ],
     [
-      {"text":"爸爸","word":"父"},
-      {"text":"每天早上","word":"毎朝"},
-      {"text":"很早","word":"早い"},
-      {"text":"起床","word":"起きる"},
-      {"text":"。","word":null}
+      {
+        "text": "爸爸",
+        "word": "父"
+      },
+      {
+        "text": "每天早上",
+        "word": "毎朝"
+      },
+      {
+        "text": "很早",
+        "word": "早い"
+      },
+      {
+        "text": "起床",
+        "word": "起きる"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
     ],
     [
-      {"text":"我們","word":"私たち"},
-      {"text":"每天晚上","word":"毎晩"},
-      {"text":"一起","word":"一緒に"},
-      {"text":"吃飯","word":"食べる"},
-      {"text":"。","word":null}
+      {
+        "text": "我們",
+        "word": "私たち"
+      },
+      {
+        "text": "每天晚上",
+        "word": "毎晩"
+      },
+      {
+        "text": "一起",
+        "word": "一緒に"
+      },
+      {
+        "text": "吃飯",
+        "word": "食べる"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
     ]
   ]
 }

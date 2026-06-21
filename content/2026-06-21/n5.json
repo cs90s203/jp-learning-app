@@ -2,43 +2,207 @@
   "title": "朝ごはん",
   "text": "今朝は早く起きました。朝ごはんはトーストと卵です。牛乳も飲みました。朝ごはんを食べてから学校に行きます。",
   "tokens": [
-    {"surface_form":"今朝",      "basic_form":"今朝",  "reading":"けさ",      "pos":"名詞"},
-    {"surface_form":"は",        "basic_form":"は",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"早く",      "basic_form":"早い",  "reading":"はやく",    "pos":"形容詞"},
-    {"surface_form":"起きました","basic_form":"起きる","reading":"おきました","pos":"動詞"},
-    {"surface_form":"。",        "basic_form":"。",    "reading":"",         "pos":"記号"},
-    {"surface_form":"朝ごはん",  "basic_form":"朝ごはん","reading":"あさごはん","pos":"名詞"},
-    {"surface_form":"は",        "basic_form":"は",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"トースト",  "basic_form":"トースト","reading":"トースト","pos":"名詞"},
-    {"surface_form":"と",        "basic_form":"と",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"卵",        "basic_form":"卵",    "reading":"たまご",    "pos":"名詞"},
-    {"surface_form":"です",      "basic_form":"です",  "reading":"",         "pos":"助動詞"},
-    {"surface_form":"。",        "basic_form":"。",    "reading":"",         "pos":"記号"},
-    {"surface_form":"牛乳",      "basic_form":"牛乳",  "reading":"ぎゅうにゅう","pos":"名詞"},
-    {"surface_form":"も",        "basic_form":"も",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"飲みました","basic_form":"飲む",  "reading":"のみました","pos":"動詞"},
-    {"surface_form":"。",        "basic_form":"。",    "reading":"",         "pos":"記号"},
-    {"surface_form":"朝ごはん",  "basic_form":"朝ごはん","reading":"あさごはん","pos":"名詞"},
-    {"surface_form":"を",        "basic_form":"を",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"食べて",    "basic_form":"食べる","reading":"たべて",    "pos":"動詞"},
-    {"surface_form":"から",      "basic_form":"から",  "reading":"",         "pos":"助詞"},
-    {"surface_form":"学校",      "basic_form":"学校",  "reading":"がっこう",  "pos":"名詞"},
-    {"surface_form":"に",        "basic_form":"に",    "reading":"",         "pos":"助詞"},
-    {"surface_form":"行きます",  "basic_form":"行く",  "reading":"いきます",  "pos":"動詞"},
-    {"surface_form":"。",        "basic_form":"。",    "reading":"",         "pos":"記号"}
+    {
+      "surface_form": "今朝",
+      "basic_form": "今朝",
+      "reading": "けさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "早く",
+      "basic_form": "早い",
+      "reading": "はやく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "起きました",
+      "basic_form": "起きる",
+      "reading": "おきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝ごはん",
+      "basic_form": "朝ごはん",
+      "reading": "あさごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "トースト",
+      "basic_form": "トースト",
+      "reading": "トースト",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "卵",
+      "basic_form": "卵",
+      "reading": "たまご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "牛乳",
+      "basic_form": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "飲みました",
+      "basic_form": "飲む",
+      "reading": "のみました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝ごはん",
+      "basic_form": "朝ごはん",
+      "reading": "あさごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べて",
+      "basic_form": "食べる",
+      "reading": "たべて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学校",
+      "basic_form": "学校",
+      "reading": "がっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行きます",
+      "basic_form": "行く",
+      "reading": "いきます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
   ],
   "vocab": {
-    "今朝":    {"meaning":"今天早上",   "romaji":"kesa"},
-    "早い":    {"meaning":"早",         "romaji":"hayai"},
-    "起きる":  {"meaning":"起床",       "romaji":"okiru"},
-    "朝ごはん":{"meaning":"早餐",       "romaji":"asagohan"},
-    "トースト":{"meaning":"吐司",       "romaji":"toosuto"},
-    "卵":      {"meaning":"雞蛋",       "romaji":"tamago"},
-    "牛乳":    {"meaning":"牛奶",       "romaji":"gyuunyuu"},
-    "飲む":    {"meaning":"喝",         "romaji":"nomu"},
-    "食べる":  {"meaning":"吃",         "romaji":"taberu"},
-    "学校":    {"meaning":"學校",       "romaji":"gakkou"},
-    "行く":    {"meaning":"去",         "romaji":"iku"}
+    "今朝": {
+      "meaning": "今天早上",
+      "romaji": "kesa",
+      "example": "今朝は早く起きました。"
+    },
+    "早い": {
+      "meaning": "早",
+      "romaji": "hayai",
+      "example": "今朝は早く起きました。"
+    },
+    "起きる": {
+      "meaning": "起床",
+      "romaji": "okiru",
+      "example": "今朝は早く起きました。"
+    },
+    "朝ごはん": {
+      "meaning": "早餐",
+      "romaji": "asagohan",
+      "example": "朝ごはんはトーストと卵です。"
+    },
+    "トースト": {
+      "meaning": "吐司",
+      "romaji": "toosuto",
+      "example": "朝ごはんはトーストと卵です。"
+    },
+    "卵": {
+      "meaning": "雞蛋",
+      "romaji": "tamago",
+      "example": "朝ごはんはトーストと卵です。"
+    },
+    "牛乳": {
+      "meaning": "牛奶",
+      "romaji": "gyuunyuu",
+      "example": "牛乳も飲みました。"
+    },
+    "飲む": {
+      "meaning": "喝",
+      "romaji": "nomu",
+      "example": "牛乳も飲みました。"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "example": "朝ごはんを食べてから学校に行きます。"
+    },
+    "学校": {
+      "meaning": "學校",
+      "romaji": "gakkou",
+      "example": "朝ごはんを食べてから学校に行きます。"
+    },
+    "行く": {
+      "meaning": "去",
+      "romaji": "iku",
+      "example": "朝ごはんを食べてから学校に行きます。"
+    }
   },
   "particles": {
     "は": "提示句子的主題，告訴對方接下來要說的是關於「什麼」。",
@@ -54,30 +218,84 @@
   },
   "translations": [
     [
-      {"text":"今天早上","word":"今朝"},
-      {"text":"很早","word":"早い"},
-      {"text":"起床了","word":"起きる"},
-      {"text":"。","word":null}
+      {
+        "text": "今天早上",
+        "word": "今朝"
+      },
+      {
+        "text": "很早",
+        "word": "早い"
+      },
+      {
+        "text": "起床了",
+        "word": "起きる"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
     ],
     [
-      {"text":"早餐","word":"朝ごはん"},
-      {"text":"是","word":null},
-      {"text":"吐司","word":"トースト"},
-      {"text":"和","word":null},
-      {"text":"雞蛋","word":"卵"},
-      {"text":"。","word":null}
+      {
+        "text": "早餐",
+        "word": "朝ごはん"
+      },
+      {
+        "text": "是",
+        "word": null
+      },
+      {
+        "text": "吐司",
+        "word": "トースト"
+      },
+      {
+        "text": "和",
+        "word": null
+      },
+      {
+        "text": "雞蛋",
+        "word": "卵"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
     ],
     [
-      {"text":"也喝了","word":"飲む"},
-      {"text":"牛奶","word":"牛乳"},
-      {"text":"。","word":null}
+      {
+        "text": "也喝了",
+        "word": "飲む"
+      },
+      {
+        "text": "牛奶",
+        "word": "牛乳"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
     ],
     [
-      {"text":"吃完","word":"食べる"},
-      {"text":"早餐","word":"朝ごはん"},
-      {"text":"後，去","word":null},
-      {"text":"學校","word":"学校"},
-      {"text":"。","word":null}
+      {
+        "text": "吃完",
+        "word": "食べる"
+      },
+      {
+        "text": "早餐",
+        "word": "朝ごはん"
+      },
+      {
+        "text": "後，去",
+        "word": null
+      },
+      {
+        "text": "學校",
+        "word": "学校"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
     ]
   ]
 }
