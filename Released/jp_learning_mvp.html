@@ -320,6 +320,8 @@
   .av-btn.playing { background: var(--wa); color: #FFFFFF; }
   .av-btn.rec-btn { background: #EEE8FF; color: #7F77DD; }
   .av-btn.rec-btn.recording { background: var(--wr); color: #FFFFFF; }
+  .av-btn.follow-btn { background: #EEE8FF; color: #7F77DD; font-size: 11px; font-weight: 600; min-width: 38px; letter-spacing: 0.5px; }
+  .av-btn.follow-btn.active { background: var(--wr); color: #FFFFFF; }
   .speed-stepper {
     display: flex; align-items: center; gap: 4px;
     background: var(--wa-bg); border-radius: 99px; padding: 3px;
@@ -1685,7 +1687,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.9.18
+          v0.10.0
         </div>
 
       </div>
@@ -1866,6 +1868,7 @@
         <button class="av-btn" id="stop-rec-btn" onclick="stopPlayRecording()" aria-label="停止" disabled>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="5" y="5" width="14" height="14" rx="1"/></svg>
         </button>
+        <button class="av-btn follow-btn" id="follow-btn" onclick="toggleFollowMode()" aria-label="逐句跟讀">逐句</button>
         <button class="av-btn rec-btn" id="rec-btn" onclick="toggleRecord()" aria-label="錄音">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><circle cx="12" cy="12" r="8"/></svg>
         </button>
@@ -3679,6 +3682,170 @@ async function toggleRecord() {
   } catch (err) {
     showToast('無法取得麥克風權限');
   }
+}
+
+// ===== 逐句跟讀模式 =====
+let _followMode    = false;
+let _followStream  = null;
+let _followMR      = null;
+let _followChunks  = [];
+let _followIdx     = 0;
+let _followTimer   = null;
+let _followSentences = [];
+
+function toggleFollowMode() {
+  if (_followMode) { _stopFollowMode(); } else { _startFollowMode(); }
+}
+
+async function _startFollowMode() {
+  // 取要播放的句子（依目前 sentenceSelected 過濾）
+  _followSentences = SENTENCE_TEXTS.filter((_, i) => sentenceSelected[i] !== false);
+  if (!_followSentences.length) { showToast('沒有可跟讀的句子'); return; }
+
+  // 停止其他音訊
+  if (isRecording) { mediaRecorder.stop(); }
+  stopPlayRecording();
+  stopReadAloud();
+
+  // 取得麥克風
+  try {
+    _followStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+  } catch (e) {
+    showToast('無法取得麥克風：' + (e.message || ''));
+    return;
+  }
+
+  // 建立一條連續 MediaRecorder（整段逐句錄在同一個 blob）
+  const mimeType = pickSupportedMimeType();
+  try {
+    _followMR = mimeType
+      ? new MediaRecorder(_followStream, { mimeType })
+      : new MediaRecorder(_followStream);
+  } catch (e) {
+    showToast('錄音初始化失敗');
+    _followStream.getTracks().forEach(t => t.stop());
+    _followStream = null;
+    return;
+  }
+
+  _followChunks = [];
+  _followMR.ondataavailable = e => { if (e.data && e.data.size > 0) _followChunks.push(e.data); };
+  _followMR.onstop = async () => {
+    _followStream && _followStream.getTracks().forEach(t => t.stop());
+    _followStream = null;
+    _setFollowUI(false);
+    if (_followChunks.length === 0) { showToast('逐句跟讀無錄音資料'); return; }
+    const type  = mimeType || _followMR.mimeType || 'audio/webm';
+    const blob  = new Blob(_followChunks, { type });
+    const slot  = currentSlot;
+    if (slotAudioUrls[slot]) URL.revokeObjectURL(slotAudioUrls[slot]);
+    slotBlobs[slot]     = blob;
+    slotAudioUrls[slot] = URL.createObjectURL(blob);
+    const totalSec = _followSentences.reduce((s, t) => s + Math.max(2, Math.ceil(t.length / 4)), 0);
+    markSlotHasAudio(slot, totalSec);
+    try { await saveRecordingToDB(currentRecordingDate, slot, blob, type, totalSec); } catch (_) {}
+    document.getElementById('play-rec-btn').disabled = false;
+    updateRecStatusForCurrentSlot();
+    showToast('逐句跟讀完成，已存入槽位 ' + slot);
+  };
+
+  _followMR.start();
+  _followMode = true;
+  _followIdx  = 0;
+  _setFollowUI(true);
+  _followStep();
+}
+
+function _followStep() {
+  if (!_followMode) return;
+  if (_followIdx >= _followSentences.length) {
+    // 全部完成
+    _followMode = false;
+    window.speechSynthesis.cancel();
+    if (_followMR && _followMR.state === 'recording') _followMR.stop();
+    return;
+  }
+
+  const text   = _followSentences[_followIdx];
+  const n      = _followIdx + 1;
+  const total  = _followSentences.length;
+  const statusEl = document.getElementById('rec-status');
+  statusEl.textContent = '播放第 ' + n + '/' + total + ' 句';
+  statusEl.className   = 'rec-status';
+
+  // 估算 TTS 時長作為 fallback（iOS Safari onend 有時不觸發）
+  const charsPerSec = Math.max(3, readAloudRate * 5);
+  const estMs = Math.max(800, Math.ceil((text.length / charsPerSec) * 1000));
+
+  const t0 = Date.now();
+  let fired = false;
+  const afterTts = () => {
+    if (fired || !_followMode) return;
+    fired = true;
+    const measured = Date.now() - t0;
+    const recMs    = Math.max(1500, Math.round(Math.max(measured, estMs) * 1.3));
+    _followRecordWindow(n, total, recMs);
+  };
+
+  window.speechSynthesis.cancel();
+  const u  = new SpeechSynthesisUtterance(text);
+  u.lang   = 'ja-JP';
+  u.rate   = readAloudRate;
+  u.onend  = afterTts;
+  window.speechSynthesis.speak(u);
+  // iOS 備用：估算時間 + 500ms buffer
+  setTimeout(afterTts, estMs + 500);
+}
+
+function _followRecordWindow(n, total, recMs) {
+  if (!_followMode) return;
+  const statusEl = document.getElementById('rec-status');
+  let remaining  = Math.ceil(recMs / 1000);
+  statusEl.textContent = '跟讀第 ' + n + '/' + total + ' 句（' + remaining + 's）';
+  statusEl.className   = 'rec-status recording-now';
+
+  const tick = setInterval(() => {
+    if (!_followMode) { clearInterval(tick); return; }
+    remaining--;
+    if (remaining > 0) {
+      statusEl.textContent = '跟讀第 ' + n + '/' + total + ' 句（' + remaining + 's）';
+    } else {
+      clearInterval(tick);
+    }
+  }, 1000);
+
+  _followTimer = setTimeout(() => {
+    clearInterval(tick);
+    _followIdx++;
+    // 句間短暫停頓再播下一句
+    setTimeout(_followStep, 300);
+  }, recMs);
+}
+
+function _stopFollowMode() {
+  _followMode = false;
+  if (_followTimer) { clearTimeout(_followTimer); _followTimer = null; }
+  window.speechSynthesis.cancel();
+  if (_followMR && _followMR.state === 'recording') {
+    // 覆蓋 onstop 只做清理，不存檔
+    _followMR.onstop = () => {
+      if (_followStream) { _followStream.getTracks().forEach(t => t.stop()); _followStream = null; }
+    };
+    _followMR.stop();
+  } else {
+    if (_followStream) { _followStream.getTracks().forEach(t => t.stop()); _followStream = null; }
+  }
+  _setFollowUI(false);
+  const statusEl = document.getElementById('rec-status');
+  statusEl.textContent = '已取消逐句跟讀';
+  statusEl.className   = 'rec-status';
+}
+
+function _setFollowUI(active) {
+  const btn = document.getElementById('follow-btn');
+  if (btn) { btn.textContent = active ? '停止' : '逐句'; btn.classList.toggle('active', active); }
+  const recBtn = document.getElementById('rec-btn');
+  if (recBtn) recBtn.disabled = active;
 }
 
 function togglePlayRecording() {
