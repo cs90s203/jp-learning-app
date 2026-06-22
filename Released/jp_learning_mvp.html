@@ -194,7 +194,7 @@
     position: relative; flex-shrink: 0; padding: 20px 10px 10px;
   }
   .today-ring-count {
-    position: absolute; top: 38%; left: 50%; transform: translate(-50%,-50%);
+    position: absolute; top: 96px; left: 50%; transform: translate(-50%,-50%);
     display: flex; flex-direction: column; align-items: center; pointer-events: none;
   }
   .count-num { font-size: 26px; font-weight: 500; color: var(--wt); }
@@ -231,7 +231,8 @@
   .day-detail-inner { border-top: 0.5px solid var(--wa-bg2); margin-top: 12px; padding-top: 12px; }
   .detail-date-row { margin-bottom: 10px; }
   .detail-date { font-size: 13px; font-weight: 500; color: var(--wt); }
-  .detail-article { background: var(--wa-bg); border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+  .detail-article { background: var(--wa-bg); border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; cursor: pointer; }
+  .detail-article:active { opacity: 0.75; }
   .detail-article-icon { width: 32px; height: 32px; border-radius: 8px; background: var(--wa-l); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .detail-article-title { font-size: 13px; font-weight: 500; color: var(--wt); }
   .detail-article-sub { font-size: 11px; color: var(--wt3); margin-top: 2px; }
@@ -1360,7 +1361,7 @@
               <div class="detail-date-row">
                 <span class="detail-date" id="detail-date-label">6月5日（三）</span>
               </div>
-              <div class="detail-article">
+              <div class="detail-article" onclick="openArticleFromCalendar()">
                 <div class="detail-article-icon">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--wa)" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
                 </div>
@@ -1684,7 +1685,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.9.17
+          v0.9.18
         </div>
 
       </div>
@@ -3799,6 +3800,11 @@ function logTodayArticle(title, level) {
     log[dateStr].tasks.article = 0;
   }
   saveStudyLog(log);
+  // 若 detail panel 正在顯示今天，即時更新（修正 async fetch 完成前已打開面板的問題）
+  if (selectedDay === TODAY && document.getElementById('day-detail').classList.contains('open')) {
+    document.getElementById('detail-article-title').textContent = title || '（無紀錄）';
+    document.getElementById('detail-article-level').textContent = level ? level.toUpperCase() : '';
+  }
 }
 
 // 更新 article 進度百分比（依 articleProgress 條件計算）
@@ -4095,6 +4101,17 @@ function closeDay() {
   selectedDay = null;
   document.getElementById('day-detail').classList.remove('open');
   document.querySelectorAll('.cal-d-wrap').forEach(el => el.classList.remove('selected'));
+}
+
+function openArticleFromCalendar() {
+  if (!selectedDay) return;
+  const dateStr = `${TODAY_YEAR}-${String(TODAY_MONTH).padStart(2,'0')}-${String(selectedDay).padStart(2,'0')}`;
+  closeDay();
+  switchPage('article');
+  // 若選取的不是今天，切換到那天的文章
+  if (dateStr !== getLocalDateStr()) {
+    switchArticleDate(dateStr);
+  }
 }
 
 // =====================================================
@@ -5034,6 +5051,10 @@ async function selectArticleDate(dateStr) {
     // 更新頂部標題
     const titleEl = document.getElementById('article-page-title');
     if (titleEl) titleEl.textContent = result.pack.title || dateStr;
+    // 若切換到今日，同步更新學習紀錄的文章標題
+    if (dateStr === getLocalDateStr()) {
+      logTodayArticle(result.pack.title, result.pack.level);
+    }
   }
 
   selectedArticleDate = dateStr;
