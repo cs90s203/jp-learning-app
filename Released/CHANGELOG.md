@@ -1,5 +1,19 @@
 # 日語學習 App — 版本記錄
 
+## v0.9.16 — 2026-06-22
+
+**週曆錄音 badge 修正**
+- 錄音小點移入 SVG 右上角（badge 形式），不再佔 layout 空間 → 高度跳動問題消失
+- 移除 `e.preventDefault()` + 改 `passive:true` → 短按可正常觸發 `selectArticleDate`（之前 preventDefault 壓制了 click 事件導致有錄音的日期無法選取）
+
+---
+
+## 0.9.16 — 2026-06-22
+
+週曆錄音badge修正：小點移右上角SVG、修短按無法選日期bug
+
+---
+
 ## v0.9.15 — 2026-06-22
 
 **文章週曆圓圈 3 項更新**

@@ -1684,7 +1684,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.9.15
+          v0.9.16
         </div>
 
       </div>
@@ -4975,34 +4975,33 @@ function renderWeekBar() {
             stroke-dasharray="${speakFilled} ${circ.toFixed(2)}"/>` : ''}
           <!-- 日期數字 -->
           <text x="${CX}" y="${CY+4}" text-anchor="middle" font-size="12" fill="${textFill}" class="awb-circle-num">${dayNum}</text>
+          <!-- 跟讀錄音 badge（右上角小點） -->
+          ${hasRec ? `<circle cx="30" cy="8" r="3.5" fill="#D85A30"/>` : ''}
         </svg>` +
-        `<div class="awb-dow">${DOW_LABELS[i]}</div>` +
-        `<div class="awb-rec-dot" style="visibility:${hasRec ? 'visible' : 'hidden'}" title="有跟讀錄音"></div>`;
+        `<div class="awb-dow">${DOW_LABELS[i]}</div>`;
 
       div.onclick = () => selectArticleDate(dateStr);
 
-      // 長按（CSS 已設 user-select:none 防止系統選字）
+      // 長按：不呼叫 preventDefault（避免壓制 click），CSS user-select:none 已防系統選字
       if (hasRec) {
         let _lpTimer = null;
-        div.addEventListener('touchstart', (e) => {
-          if (e.cancelable) e.preventDefault();
+        div.addEventListener('touchstart', () => {
           _lpTimer = setTimeout(() => {
             _lpTimer = null;
             deleteRecordingDateUI(dateStr);
           }, 600);
-        }, { passive: false });
+        }, { passive: true });
         div.addEventListener('touchend',  () => { clearTimeout(_lpTimer); });
         div.addEventListener('touchmove', () => { clearTimeout(_lpTimer); });
       }
     } else {
-      // 無內容或未來：純文字，保留小點佔位確保高度一致
+      // 無內容或未來：純文字
       const dayNumStr = (!isFuture && !hasContent)
         ? `<div class="awb-day-num" style="color:var(--wt3);opacity:0.4">${dayNum}</div>`
         : `<div class="awb-day-num">${isFuture ? dayNum : ''}</div>`;
       div.innerHTML =
         dayNumStr +
-        `<div class="awb-dow">${(isFuture || !hasContent) ? DOW_LABELS[i] : ''}</div>` +
-        `<div class="awb-rec-dot" style="visibility:hidden"></div>`;
+        `<div class="awb-dow">${(isFuture || !hasContent) ? DOW_LABELS[i] : ''}</div>`;
     }
     container.appendChild(div);
   });
