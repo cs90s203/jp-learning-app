@@ -1687,7 +1687,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.10.2
+          v0.10.3
         </div>
 
       </div>
@@ -3749,12 +3749,15 @@ async function _startFollowMode() {
     if (slotAudioUrls[slot]) URL.revokeObjectURL(slotAudioUrls[slot]);
     slotBlobs[slot]     = blob;
     slotAudioUrls[slot] = URL.createObjectURL(blob);
-    const totalSec = _followSentences.reduce((s, t) => s + Math.max(2, Math.ceil(t.length / 4)), 0);
+    // 以實際完成的句子數估算時長（中途停止時 _followIdx < 總數）
+    const doneSentences = _followSentences.slice(0, _followIdx);
+    const totalSec = (doneSentences.length ? doneSentences : _followSentences)
+      .reduce((s, t) => s + Math.max(2, Math.ceil(t.length / 4)), 0);
     markSlotHasAudio(slot, totalSec);
     try { await saveRecordingToDB(currentRecordingDate, slot, blob, type, totalSec); } catch (_) {}
     document.getElementById('play-rec-btn').disabled = false;
     updateRecStatusForCurrentSlot();
-    showToast('逐句跟讀完成，已存入槽位 ' + slot);
+    showToast('已存入槽位 ' + slot);
   };
 
   _followMR.start(1000); // timeslice=1s，確保 iOS Safari 定期觸發 ondataavailable
@@ -3791,7 +3794,7 @@ function _followStep() {
     if (fired || !_followMode) return;
     fired = true;
     const measured = Date.now() - t0;
-    const recMs    = Math.max(1500, Math.round(Math.max(measured, estMs) * 1.3));
+    const recMs    = Math.max(1500, Math.round(Math.max(measured, estMs) * 1.6));
     _followRecordWindow(n, total, recMs);
   };
 
@@ -3835,18 +3838,15 @@ function _stopFollowMode() {
   if (_followTimer) { clearTimeout(_followTimer); _followTimer = null; }
   window.speechSynthesis.cancel();
   if (_followMR && _followMR.state === 'recording') {
-    // 覆蓋 onstop 只做清理，不存檔
-    _followMR.onstop = () => {
-      if (_followStream) { _followStream.getTracks().forEach(t => t.stop()); _followStream = null; }
-    };
+    // 不覆蓋 onstop：讓原本的 save handler 執行，中途已錄的音也存檔
     _followMR.stop();
   } else {
     if (_followStream) { _followStream.getTracks().forEach(t => t.stop()); _followStream = null; }
+    _setFollowUI(false);
+    const statusEl = document.getElementById('rec-status');
+    statusEl.textContent = '已停止逐句跟讀';
+    statusEl.className   = 'rec-status';
   }
-  _setFollowUI(false);
-  const statusEl = document.getElementById('rec-status');
-  statusEl.textContent = '已取消逐句跟讀';
-  statusEl.className   = 'rec-status';
 }
 
 function _setFollowUI(active) {
