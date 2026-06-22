@@ -1,5 +1,22 @@
 # 日語學習 App — 版本記錄
 
+## v0.8.8 — 2026-06-22
+
+**Firestore 雲端同步實作**
+- `syncToCloud()`：上傳 vocabBook、studyLog、settings 到 Firestore（batch write）
+- `syncFromCloud()`：從 Firestore 拉取資料覆蓋本機
+- 登入後自動比較時間戳，雲端較新時提示是否覆蓋本機
+- 同步按鈕啟用，顯示上次同步時間
+- `_setSyncStatus()` 控制同步列狀態（syncing / done / error）
+
+---
+
+## 0.8.8 — 2026-06-22
+
+Firestore 雲端同步實作
+
+---
+
 ## v0.8.7 — 2026-06-21
 
 **Google 登入改用 popup 模式（修正 iOS Safari ITP 問題）**
