@@ -1567,44 +1567,45 @@
                    style="font-size:13px" oninput="saveGoogleVisionKey(this.value)">
           </div>
         </div>
-      </div>
 
-      <!-- 開發工具（可收合）-->
-      <p class="section-title" style="margin-top:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="devToggle()">
-        開發工具
-        <span id="dev-chevron" style="font-size:10px;letter-spacing:0;transition:transform .25s">▼</span>
-      </p>
-      <div id="dev-panel" style="display:none">
-        <div class="card" style="padding:4px 16px;margin-bottom:16px">
-          <div class="setting-row" style="padding:12px 0">
-            <div>
-              <div class="setting-label" style="color:var(--wr)">重新啟動教學</div>
-              <div class="setting-sub">立即顯示三頁引導畫面</div>
+        <!-- 開發工具（可收合）-->
+        <p class="section-title" style="margin-top:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="devToggle()">
+          開發工具
+          <span id="dev-chevron" style="font-size:10px;letter-spacing:0;transition:transform .25s">▼</span>
+        </p>
+        <div id="dev-panel" style="display:none">
+          <div class="card" style="padding:4px 16px;margin-bottom:16px">
+            <div class="setting-row" style="padding:12px 0">
+              <div>
+                <div class="setting-label" style="color:var(--wr)">重新啟動教學</div>
+                <div class="setting-sub">立即顯示三頁引導畫面</div>
+              </div>
+              <button onclick="devRestartOnboarding()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">重啟</button>
             </div>
-            <button onclick="devRestartOnboarding()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">重啟</button>
-          </div>
-          <div style="border-top:1px solid var(--wa-bg2)"></div>
-          <div class="setting-row" style="padding:12px 0">
-            <div>
-              <div class="setting-label" style="color:var(--wr)">清除今日進度</div>
-              <div class="setting-sub">僅歸零今日任務環，單字本和歷史保留</div>
+            <div style="border-top:1px solid var(--wa-bg2)"></div>
+            <div class="setting-row" style="padding:12px 0">
+              <div>
+                <div class="setting-label" style="color:var(--wr)">清除今日進度</div>
+                <div class="setting-sub">僅歸零今日任務環，單字本和歷史保留</div>
+              </div>
+              <button onclick="devResetToday()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">歸零</button>
             </div>
-            <button onclick="devResetToday()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">歸零</button>
-          </div>
-          <div style="border-top:1px solid var(--wa-bg2)"></div>
-          <div class="setting-row" style="padding:12px 0">
-            <div>
-              <div class="setting-label" style="color:var(--wr)">完整清空所有資料</div>
-              <div class="setting-sub">清除單字本、全部學習紀錄、文章進度</div>
+            <div style="border-top:1px solid var(--wa-bg2)"></div>
+            <div class="setting-row" style="padding:12px 0">
+              <div>
+                <div class="setting-label" style="color:var(--wr)">完整清空所有資料</div>
+                <div class="setting-sub">清除單字本、全部學習紀錄、文章進度</div>
+              </div>
+              <button onclick="devResetAll()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">清空</button>
             </div>
-            <button onclick="devResetAll()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">清空</button>
           </div>
         </div>
-      </div>
 
-      <!-- 版本號 -->
-      <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.9.4
+        <!-- 版本號 -->
+        <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
+          v0.9.5
+        </div>
+
       </div>
 
     </div>
