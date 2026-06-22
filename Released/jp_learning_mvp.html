@@ -1687,7 +1687,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.10.3
+          v0.11.0
         </div>
 
       </div>
@@ -3761,6 +3761,7 @@ async function _startFollowMode() {
   };
 
   _followMR.start(1000); // timeslice=1s，確保 iOS Safari 定期觸發 ondataavailable
+  _followMR.pause();     // TTS 播放期間不錄音，只在跟讀窗口 resume
   _followMode = true;
   _followIdx  = 0;
   _setFollowUI(true);
@@ -3773,7 +3774,7 @@ function _followStep() {
     // 全部完成
     _followMode = false;
     window.speechSynthesis.cancel();
-    if (_followMR && _followMR.state === 'recording') _followMR.stop();
+    if (_followMR && (_followMR.state === 'recording' || _followMR.state === 'paused')) _followMR.stop();
     return;
   }
 
@@ -3810,6 +3811,9 @@ function _followStep() {
 
 function _followRecordWindow(n, total, recMs) {
   if (!_followMode) return;
+  // TTS 已結束，開始錄音
+  if (_followMR && _followMR.state === 'paused') _followMR.resume();
+
   const statusEl = document.getElementById('rec-status');
   let remaining  = Math.ceil(recMs / 1000);
   statusEl.textContent = '跟讀第 ' + n + '/' + total + ' 句（' + remaining + 's）';
@@ -3827,6 +3831,8 @@ function _followRecordWindow(n, total, recMs) {
 
   _followTimer = setTimeout(() => {
     clearInterval(tick);
+    // 跟讀窗口結束，暫停錄音等下一句 TTS
+    if (_followMR && _followMR.state === 'recording') _followMR.pause();
     _followIdx++;
     // 句間短暫停頓再播下一句
     setTimeout(_followStep, 300);
@@ -3837,7 +3843,7 @@ function _stopFollowMode() {
   _followMode = false;
   if (_followTimer) { clearTimeout(_followTimer); _followTimer = null; }
   window.speechSynthesis.cancel();
-  if (_followMR && _followMR.state === 'recording') {
+  if (_followMR && (_followMR.state === 'recording' || _followMR.state === 'paused')) {
     // 不覆蓋 onstop：讓原本的 save handler 執行，中途已錄的音也存檔
     _followMR.stop();
   } else {

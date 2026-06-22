@@ -1,5 +1,21 @@
 # 日語學習 App — 版本記錄
 
+## v0.11.0 — 2026-06-22
+
+**逐句跟讀：TTS 播放期間不錄音（新功能）**
+- 改用 `MediaRecorder.pause()` / `.resume()` 控制錄音窗口：start 後立即 pause，僅在跟讀窗口 resume，TTS 播放聲音不再混入音檔
+- 流程：start（pause）→ TTS → resume（跟讀計時）→ pause → TTS → … → stop
+- 仍維持單一連續 blob，無需合併
+- 完成/中途停止的判斷同步更新為 `state === 'recording' || state === 'paused'`
+
+---
+
+## 0.11.0 — 2026-06-22
+
+逐句跟讀：TTS 期間 pause 錄音，跟讀窗口才 resume
+
+---
+
 ## v0.10.3 — 2026-06-22
 
 **逐句跟讀：中途停止保留錄音 + 跟讀窗口加長（bug fix）**
