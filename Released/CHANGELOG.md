@@ -1,5 +1,19 @@
 # 日語學習 App — 版本記錄
 
+## v0.10.1 — 2026-06-22
+
+**逐句跟讀 iOS Safari 相容修正（bug fix）**
+- 修正 TTS 靜音：`async _startFollowMode` 在 `await getUserMedia` 前先以 volume=0 的 warm-up utterance 觸發 iOS 語音權限，避免手勢上下文丟失後 TTS 被靜默阻擋
+- 修正錄音不存：`_followMR.start(1000)` 加入 timeslice，每秒定期觸發 `ondataavailable`，確保 iOS Safari 收得到 chunks
+
+---
+
+## 0.10.1 — 2026-06-22
+
+逐句跟讀 iOS fix：TTS warm-up + MediaRecorder timeslice
+
+---
+
 ## v0.10.0 — 2026-06-22
 
 **逐句跟讀模式（新功能）**
