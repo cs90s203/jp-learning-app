@@ -408,7 +408,7 @@
   }
   .awb-nav:disabled { opacity: 0.25; cursor: default; }
   .awb-days { flex: 1; display: flex; justify-content: space-around; align-items: center; }
-  .awb-day { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+  .awb-day { display: flex; flex-direction: column; align-items: center; gap: 3px; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
   .awb-dow { font-size: 10px; color: var(--wt3); }
   .awb-day-num {
     width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
@@ -1684,7 +1684,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.9.14
+          v0.9.15
         </div>
 
       </div>
@@ -4933,34 +4933,55 @@ function renderWeekBar() {
     div.dataset.hasContent = (hasContent && !isFuture) ? '1' : '0';
 
     if (hasContent && !isFuture) {
-      // 有內容：畫 SVG ring
-      const entry = log[dateStr];
-      const artVal = entry && entry.tasks ? entry.tasks.article : 0;
-      const pct = articleFillRatio(artVal);
+      // 有內容：上半弧（文章）+ 下半弧（跟讀）
+      const entry    = log[dateStr];
+      const artPct   = articleFillRatio(entry && entry.tasks ? entry.tasks.article : 0);
+      const speakRaw = entry && entry.tasks && entry.tasks.speak != null ? entry.tasks.speak : 0;
+      const speakPct = Math.min(1, speakRaw / 100);
+
       const R = 15, SW = 3, CX = 19, CY = 19;
-      const circ = 2 * Math.PI * R;
-      const filled = circ * pct;
-      const bgFill  = isSel ? 'var(--wa-l)' : (isToday ? 'var(--wa-bg)' : 'none');
+      const circ    = 2 * Math.PI * R;   // ~94.25
+      const half    = circ / 2;           // ~47.12
+
+      const bgFill   = isSel ? 'var(--wa-l)' : (isToday ? 'var(--wa-bg)' : 'none');
       const textFill = isSel ? 'var(--wa)' : 'var(--wt)';
-      const trackStroke = 'var(--wa-bg2)';
-      const fillStroke  = '#D85A30';
+
+      // 上半弧：rotate(-180) → 從 9 點順時針過 12 點到 3 點（文章橘）
+      const artFilled   = (half * artPct).toFixed(2);
+      // 下半弧：無旋轉（預設從 3 點順時針過 6 點到 9 點）（跟讀紫）
+      const speakFilled = (half * speakPct).toFixed(2);
 
       const hasRec = recordingDates.has(dateStr);
+
       div.innerHTML =
         `<svg viewBox="0 0 38 38" width="38" height="38">
-          <circle cx="${CX}" cy="${CY}" r="${R}" style="fill:${bgFill};stroke:var(--wa-bg2)" stroke-width="${SW}"/>
-          ${pct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" style="stroke:${fillStroke}" stroke-width="${SW}"
-            stroke-linecap="round"
-            stroke-dasharray="${filled.toFixed(2)} ${circ.toFixed(2)}"
-            transform="rotate(-90 ${CX} ${CY})"/>` : ''}
+          <!-- 背景填色 -->
+          <circle cx="${CX}" cy="${CY}" r="${R}" fill="${bgFill}" stroke="none"/>
+          <!-- 上半弧軌道（淡橘） -->
+          <circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="#D85A3022" stroke-width="${SW}"
+            stroke-dasharray="${half.toFixed(2)} ${circ.toFixed(2)}"
+            transform="rotate(-180 ${CX} ${CY})"/>
+          <!-- 上半弧進度（橘） -->
+          ${artPct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="#D85A30" stroke-width="${SW}"
+            stroke-linecap="butt"
+            stroke-dasharray="${artFilled} ${circ.toFixed(2)}"
+            transform="rotate(-180 ${CX} ${CY})"/>` : ''}
+          <!-- 下半弧軌道（淡紫） -->
+          <circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="#7F77DD22" stroke-width="${SW}"
+            stroke-dasharray="${half.toFixed(2)} ${circ.toFixed(2)}"/>
+          <!-- 下半弧進度（紫） -->
+          ${speakPct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="#7F77DD" stroke-width="${SW}"
+            stroke-linecap="butt"
+            stroke-dasharray="${speakFilled} ${circ.toFixed(2)}"/>` : ''}
+          <!-- 日期數字 -->
           <text x="${CX}" y="${CY+4}" text-anchor="middle" font-size="12" fill="${textFill}" class="awb-circle-num">${dayNum}</text>
         </svg>` +
         `<div class="awb-dow">${DOW_LABELS[i]}</div>` +
-        `${hasRec ? '<div class="awb-rec-dot" title="有跟讀錄音"></div>' : ''}`;
+        `<div class="awb-rec-dot" style="visibility:${hasRec ? 'visible' : 'hidden'}" title="有跟讀錄音"></div>`;
 
       div.onclick = () => selectArticleDate(dateStr);
 
-      // 長按有錄音日期 → 清除此日錄音
+      // 長按（CSS 已設 user-select:none 防止系統選字）
       if (hasRec) {
         let _lpTimer = null;
         div.addEventListener('touchstart', (e) => {
@@ -4970,20 +4991,18 @@ function renderWeekBar() {
             deleteRecordingDateUI(dateStr);
           }, 600);
         }, { passive: false });
-        div.addEventListener('touchend',   () => { clearTimeout(_lpTimer); });
-        div.addEventListener('touchmove',  () => { clearTimeout(_lpTimer); });
+        div.addEventListener('touchend',  () => { clearTimeout(_lpTimer); });
+        div.addEventListener('touchmove', () => { clearTimeout(_lpTimer); });
       }
     } else {
-      // 無內容或未來：純文字
+      // 無內容或未來：純文字，保留小點佔位確保高度一致
+      const dayNumStr = (!isFuture && !hasContent)
+        ? `<div class="awb-day-num" style="color:var(--wt3);opacity:0.4">${dayNum}</div>`
+        : `<div class="awb-day-num">${isFuture ? dayNum : ''}</div>`;
       div.innerHTML =
-        `<div class="awb-day-num">${isFuture ? dayNum : ''}</div>` +
-        `<div class="awb-dow">${isFuture ? DOW_LABELS[i] : ''}</div>`;
-      if (!isFuture) {
-        // 過去無內容：只顯示星期
-        div.innerHTML =
-          `<div class="awb-day-num" style="color:var(--wt3);opacity:0.4">${dayNum}</div>` +
-          `<div class="awb-dow">${DOW_LABELS[i]}</div>`;
-      }
+        dayNumStr +
+        `<div class="awb-dow">${(isFuture || !hasContent) ? DOW_LABELS[i] : ''}</div>` +
+        `<div class="awb-rec-dot" style="visibility:hidden"></div>`;
     }
     container.appendChild(div);
   });
