@@ -1051,27 +1051,24 @@
   }
   .dev-date-chip.missing { background: #3a1a1a; color: #f8a8a8; border-color: #5a2a2a; }
 
-  /* ===== Splash Screen ===== */
+  /* ===== Splash Screen（純 CSS animation，不依賴 JS）===== */
+  @keyframes splashAnim {
+    0%   { opacity: 0; }
+    15%  { opacity: 1; }
+    75%  { opacity: 1; }
+    100% { opacity: 0; }
+  }
   #splash-screen {
     position: fixed; inset: 0; z-index: 9999;
     background: #F5EDE3;
     display: flex; flex-direction: column;
     align-items: center; justify-content: center; gap: 16px;
-    opacity: 1; transition: opacity 0.5s ease;
+    pointer-events: none; /* 永遠不阻擋點擊 */
+    animation: splashAnim 2.4s ease forwards;
   }
-  #splash-screen.fade-out { opacity: 0; pointer-events: none; }
-  #splash-logo { opacity: 0; transform: scale(0.9); transition: opacity 0.7s ease, transform 0.7s ease; }
-  #splash-logo.visible { opacity: 1; transform: scale(1); }
-  #splash-name {
-    opacity: 0; transition: opacity 0.5s ease 0.3s;
-    font-size: 22px; font-weight: 700; color: #C8784A; letter-spacing: 0.04em;
-  }
-  #splash-name.visible { opacity: 1; }
-  #splash-sub {
-    opacity: 0; transition: opacity 0.5s ease 0.5s;
-    font-size: 13px; color: #A08070; letter-spacing: 0.06em;
-  }
-  #splash-sub.visible { opacity: 1; }
+  #splash-logo { opacity: 1; }
+  #splash-name { font-size: 22px; font-weight: 700; color: #C8784A; letter-spacing: 0.04em; }
+  #splash-sub  { font-size: 13px; color: #A08070; letter-spacing: 0.06em; }
 
   /* ===== Onboarding ===== */
   #onboarding-screen {
@@ -1602,7 +1599,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.9.0
+        v0.9.1
       </div>
 
     </div>
@@ -4820,28 +4817,13 @@ initSort();
 updateQuizOrderUI(localStorage.getItem('quizOrder') || 'due');
 
 // ===== Splash + Onboarding =====
+// Splash 視覺由純 CSS animation 控制，JS 只負責在動畫後觸發 onboarding
 var _obCurrentSlide = 1;
 var _obTotal = 3;
 
 function showSplash() {
-  const splash = document.getElementById('splash-screen');
-  if (!splash) return;
-
-  // 0.1s 後 logo 出現
-  setTimeout(() => {
-    document.getElementById('splash-logo').classList.add('visible');
-    document.getElementById('splash-name').classList.add('visible');
-    document.getElementById('splash-sub').classList.add('visible');
-  }, 100);
-
-  // 2s 後開始 fade-out
-  setTimeout(() => {
-    splash.classList.add('fade-out');
-  }, 2000);
-
-  // 2.5s 後移除，決定是否顯示 onboarding
-  setTimeout(() => {
-    splash.style.display = 'none';
+  // 2.5s 後（splash 消失）決定是否顯示 onboarding
+  setTimeout(function() {
     if (!localStorage.getItem('onboardingDone')) {
       showOnboarding();
     }

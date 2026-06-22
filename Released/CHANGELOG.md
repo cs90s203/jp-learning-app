@@ -1,5 +1,21 @@
 # 日語學習 App — 版本記錄
 
+## v0.9.1 — 2026-06-22
+
+**Splash screen 修正：改為純 CSS animation**
+- 原本靠 JS setTimeout 控制 fade-out，JS 出錯時 splash 永遠卡住
+- 改用 CSS `@keyframes splashAnim`，不依賴 JS 即可自動消失
+- `pointer-events: none` 確保即使 CSS 卡住也不會阻擋點擊
+- JS 只負責 splash 動畫結束後觸發 onboarding
+
+---
+
+## 0.9.1 — 2026-06-22
+
+Splash 改純 CSS animation，不再依賴 JS
+
+---
+
 ## v0.9.0 — 2026-06-22
 
 **起始畫面 + Onboarding + 開發工具**
