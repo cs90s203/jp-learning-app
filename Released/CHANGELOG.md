@@ -1,5 +1,19 @@
 # 日語學習 App — 版本記錄
 
+## v0.11.1 — 2026-06-22
+
+**月曆點擊文章跳轉錯誤修正（bug fix）**
+- 修正呼叫不存在的 `switchArticleDate`（改為正確的 `selectArticleDate`）
+- 修正 race condition：非今天日期時先設 `articleRendered = true`，阻止 `switchPage` 非同步載入今日文章，再由 `selectArticleDate` 獨立載入指定日期內容
+
+---
+
+## 0.11.1 — 2026-06-22
+
+fix：月曆點文章跳轉錯誤（selectArticleDate + race condition）
+
+---
+
 ## v0.11.0 — 2026-06-22
 
 **逐句跟讀：TTS 播放期間不錄音（新功能）**

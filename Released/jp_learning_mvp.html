@@ -1687,7 +1687,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.11.0
+          v0.11.1
         </div>
 
       </div>
@@ -4288,10 +4288,13 @@ function openArticleFromCalendar() {
   if (!selectedDay) return;
   const dateStr = `${TODAY_YEAR}-${String(TODAY_MONTH).padStart(2,'0')}-${String(selectedDay).padStart(2,'0')}`;
   closeDay();
-  switchPage('article');
-  // 若選取的不是今天，切換到那天的文章
   if (dateStr !== getLocalDateStr()) {
-    switchArticleDate(dateStr);
+    // 非今天：先標記 rendered，避免 switchPage 搶先非同步載入今日文章
+    articleRendered = true;
+  }
+  switchPage('article');
+  if (dateStr !== getLocalDateStr()) {
+    selectArticleDate(dateStr);
   }
 }
 
