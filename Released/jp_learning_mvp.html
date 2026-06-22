@@ -1610,17 +1610,22 @@
           </div>
         </div>
 
-        <p class="section-title">跟讀錄音管理</p>
-        <div class="card" style="padding:4px 16px">
-          <div id="rec-mgmt-list">
-            <!-- 由 renderRecordingManagement() 填入 -->
-          </div>
-          <div class="setting-row" style="padding:12px 0">
-            <div>
-              <div class="setting-label" style="color:var(--wr)">清除全部錄音</div>
-              <div class="setting-sub">刪除所有日期的跟讀錄音，無法復原</div>
+        <p class="section-title" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="recMgmtToggle()">
+          跟讀錄音管理
+          <span id="rec-mgmt-chevron" style="font-size:10px;letter-spacing:0;transition:transform .25s">▼</span>
+        </p>
+        <div id="rec-mgmt-panel" style="display:none">
+          <div class="card" style="padding:4px 16px">
+            <div id="rec-mgmt-list">
+              <!-- 由 renderRecordingManagement() 填入 -->
             </div>
-            <button onclick="clearAllRecordingsUI()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">全清</button>
+            <div class="setting-row" style="padding:12px 0">
+              <div>
+                <div class="setting-label" style="color:var(--wr)">清除全部錄音</div>
+                <div class="setting-sub">刪除所有日期的跟讀錄音，無法復原</div>
+              </div>
+              <button onclick="clearAllRecordingsUI()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">全清</button>
+            </div>
           </div>
         </div>
 
@@ -1679,7 +1684,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.9.13
+          v0.9.14
         </div>
 
       </div>
@@ -4954,6 +4959,20 @@ function renderWeekBar() {
         `${hasRec ? '<div class="awb-rec-dot" title="有跟讀錄音"></div>' : ''}`;
 
       div.onclick = () => selectArticleDate(dateStr);
+
+      // 長按有錄音日期 → 清除此日錄音
+      if (hasRec) {
+        let _lpTimer = null;
+        div.addEventListener('touchstart', (e) => {
+          if (e.cancelable) e.preventDefault();
+          _lpTimer = setTimeout(() => {
+            _lpTimer = null;
+            deleteRecordingDateUI(dateStr);
+          }, 600);
+        }, { passive: false });
+        div.addEventListener('touchend',   () => { clearTimeout(_lpTimer); });
+        div.addEventListener('touchmove',  () => { clearTimeout(_lpTimer); });
+      }
     } else {
       // 無內容或未來：純文字
       div.innerHTML =
@@ -5113,6 +5132,14 @@ function finishOnboarding() {
 function devToggle() {
   var panel = document.getElementById('dev-panel');
   var chev  = document.getElementById('dev-chevron');
+  var open  = panel.style.display === 'none';
+  panel.style.display = open ? 'block' : 'none';
+  chev.style.transform = open ? 'rotate(180deg)' : '';
+}
+
+function recMgmtToggle() {
+  var panel = document.getElementById('rec-mgmt-panel');
+  var chev  = document.getElementById('rec-mgmt-chevron');
   var open  = panel.style.display === 'none';
   panel.style.display = open ? 'block' : 'none';
   chev.style.transform = open ? 'rotate(180deg)' : '';
