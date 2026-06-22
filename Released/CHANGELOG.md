@@ -1,5 +1,21 @@
 # 日語學習 App — 版本記錄
 
+## v0.9.6 — 2026-06-22
+
+**Onboarding SVG 修正（頁2、頁3無法顯示的根本原因）**
+- 頁2、頁3 SVG 內含 `<text>emoji</text>` 元素（📖🃏🎧🎤☀️✏️🎯）
+- iOS Safari 渲染 SVG `<text>` 內的 emoji 會失敗，導致整個 SVG 損壞、slide 無法顯示
+- 全數換成純幾何形狀：book（rect+spine）、flashcard（rect+rotate）、headphones（arc path+rect）、microphone（rect+path）、sun（circle+line rays）、pencil（rect+polygon）、star（polygon path）
+- `<text>` 保留只用於中文標籤（「文章閱讀」「今日完成！」等，無 emoji）
+
+---
+
+## 0.9.6 — 2026-06-22
+
+修正 onboarding 頁2頁3 SVG emoji 導致無法顯示
+
+---
+
 ## v0.9.5 — 2026-06-22
 
 **開發工具對齊修正（根本原因）**
