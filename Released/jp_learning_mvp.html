@@ -1050,6 +1050,67 @@
     background: #2a5a2a; color: #a8f8a8; border: 1px solid #4a8a4a;
   }
   .dev-date-chip.missing { background: #3a1a1a; color: #f8a8a8; border-color: #5a2a2a; }
+
+  /* ===== Splash Screen ===== */
+  #splash-screen {
+    position: fixed; inset: 0; z-index: 9999;
+    background: #F5EDE3;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 16px;
+    opacity: 1; transition: opacity 0.5s ease;
+  }
+  #splash-screen.fade-out { opacity: 0; pointer-events: none; }
+  #splash-logo { opacity: 0; transform: scale(0.9); transition: opacity 0.7s ease, transform 0.7s ease; }
+  #splash-logo.visible { opacity: 1; transform: scale(1); }
+  #splash-name {
+    opacity: 0; transition: opacity 0.5s ease 0.3s;
+    font-size: 22px; font-weight: 700; color: #C8784A; letter-spacing: 0.04em;
+  }
+  #splash-name.visible { opacity: 1; }
+  #splash-sub {
+    opacity: 0; transition: opacity 0.5s ease 0.5s;
+    font-size: 13px; color: #A08070; letter-spacing: 0.06em;
+  }
+  #splash-sub.visible { opacity: 1; }
+
+  /* ===== Onboarding ===== */
+  #onboarding-screen {
+    position: fixed; inset: 0; z-index: 9998;
+    background: #F5EDE3;
+    display: flex; flex-direction: column;
+    opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
+  }
+  #onboarding-screen.visible { opacity: 1; pointer-events: all; }
+  .ob-slide {
+    flex: 1; display: none; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 40px 32px 24px; text-align: center;
+  }
+  .ob-slide.active { display: flex; }
+  .ob-illus { width: 220px; height: 180px; margin-bottom: 28px; }
+  .ob-title { font-size: 22px; font-weight: 700; color: #C8784A; margin-bottom: 12px; line-height: 1.3; }
+  .ob-body { font-size: 15px; color: #6B5040; line-height: 1.7; }
+  .ob-footer {
+    padding: 20px 32px 40px;
+    display: flex; flex-direction: column; align-items: center; gap: 16px;
+  }
+  .ob-dots { display: flex; gap: 8px; }
+  .ob-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #D9C4B0; transition: background 0.3s;
+  }
+  .ob-dot.active { background: #C8784A; width: 24px; border-radius: 4px; }
+  .ob-btn-row { display: flex; gap: 12px; width: 100%; }
+  .ob-btn-next {
+    flex: 1; padding: 14px; border-radius: 12px;
+    background: #C8784A; color: #fff; border: none;
+    font-size: 16px; font-weight: 600; cursor: pointer;
+  }
+  .ob-btn-skip {
+    padding: 14px 20px; border-radius: 12px;
+    background: none; color: #A08070; border: 1px solid #D9C4B0;
+    font-size: 14px; cursor: pointer;
+  }
 </style>
 <!-- Firebase SDK (compat, no build tool needed) -->
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
@@ -1057,6 +1118,169 @@
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
+
+<!-- ===== Splash Screen ===== -->
+<div id="splash-screen">
+  <div id="splash-logo">
+    <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="48" cy="48" r="48" fill="#C8784A"/>
+      <!-- Bird body -->
+      <ellipse cx="50" cy="50" rx="16" ry="9" fill="white"/>
+      <!-- Left wing up -->
+      <path d="M34,50 Q24,36 18,42 Q26,44 34,48Z" fill="white"/>
+      <!-- Right wing up -->
+      <path d="M66,50 Q76,36 82,42 Q74,44 66,48Z" fill="white"/>
+      <!-- Head -->
+      <circle cx="64" cy="42" r="8" fill="white"/>
+      <!-- Eye -->
+      <circle cx="66" cy="41" r="2" fill="#C8784A"/>
+      <circle cx="66.6" cy="40.4" r="0.7" fill="white"/>
+      <!-- Beak -->
+      <path d="M71,43 L77,41.5 L71,46Z" fill="#E8A070"/>
+      <!-- Tail feathers -->
+      <path d="M34,52 Q24,58 20,66 Q28,56 36,58Z" fill="#E8956A"/>
+      <!-- Branch -->
+      <path d="M10,72 Q30,65 50,68 Q70,71 86,64" stroke="white" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5"/>
+      <!-- Leaves -->
+      <ellipse cx="30" cy="64" rx="6" ry="3" fill="white" opacity="0.4" transform="rotate(-20,30,64)"/>
+      <ellipse cx="60" cy="66" rx="5" ry="2.5" fill="white" opacity="0.4" transform="rotate(15,60,66)"/>
+    </svg>
+  </div>
+  <div id="splash-name">Bird Hide Learning</div>
+  <div id="splash-sub">靜靜地，學會日語</div>
+</div>
+
+<!-- ===== Onboarding ===== -->
+<div id="onboarding-screen">
+
+  <!-- Page 1：這是什麼 App -->
+  <div class="ob-slide active" id="ob-slide-1">
+    <svg class="ob-illus" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Sky background -->
+      <rect width="220" height="180" rx="16" fill="#FDF6EE"/>
+      <!-- Sun -->
+      <circle cx="180" cy="35" r="22" fill="#F5C87A" opacity="0.5"/>
+      <!-- Book open -->
+      <rect x="38" y="70" width="64" height="80" rx="6" fill="#C8784A"/>
+      <rect x="42" y="74" width="56" height="72" rx="4" fill="#E8956A"/>
+      <rect x="118" y="70" width="64" height="80" rx="6" fill="#C8784A"/>
+      <rect x="122" y="74" width="56" height="72" rx="4" fill="#FFF8F2"/>
+      <!-- Japanese text lines -->
+      <rect x="48" y="84" width="42" height="4" rx="2" fill="white" opacity="0.7"/>
+      <rect x="48" y="94" width="34" height="4" rx="2" fill="white" opacity="0.5"/>
+      <rect x="48" y="104" width="38" height="4" rx="2" fill="white" opacity="0.7"/>
+      <rect x="48" y="114" width="28" height="4" rx="2" fill="white" opacity="0.5"/>
+      <!-- Furigana dots -->
+      <rect x="128" y="84" width="8" height="3" rx="1.5" fill="#C8784A"/>
+      <rect x="140" y="84" width="6" height="3" rx="1.5" fill="#C8784A"/>
+      <rect x="154" y="84" width="10" height="3" rx="1.5" fill="#C8784A"/>
+      <rect x="128" y="92" width="40" height="5" rx="2" fill="#4A3020" opacity="0.7"/>
+      <rect x="128" y="103" width="34" height="5" rx="2" fill="#4A3020" opacity="0.5"/>
+      <rect x="128" y="114" width="38" height="5" rx="2" fill="#4A3020" opacity="0.7"/>
+      <!-- Chinese gloss highlight -->
+      <rect x="128" y="125" width="44" height="12" rx="4" fill="#F5C87A" opacity="0.6"/>
+      <rect x="132" y="128" width="36" height="4" rx="2" fill="#A07030" opacity="0.8"/>
+      <!-- Bird small -->
+      <path d="M165,32 Q170,26 175,32 Q170,30 165,32Z" fill="#C8784A"/>
+      <path d="M175,32 Q180,26 185,32 Q180,30 175,32Z" fill="#C8784A"/>
+      <circle cx="178" cy="30" r="4" fill="#C8784A"/>
+      <!-- Spine -->
+      <rect x="108" y="68" width="4" height="84" rx="2" fill="#A05830"/>
+    </svg>
+    <div class="ob-title">用真實文章學日語</div>
+    <div class="ob-body">Bird Hide Learning 讓你靜靜沉浸在日語世界裡，透過真實文章建立閱讀能力，附帶假名標注和中文解釋。</div>
+  </div>
+
+  <!-- Page 2：學習特點 -->
+  <div class="ob-slide" id="ob-slide-2">
+    <svg class="ob-illus" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="220" height="180" rx="16" fill="#FDF6EE"/>
+      <!-- 四個功能卡片 -->
+      <!-- 文章 -->
+      <rect x="16" y="20" width="86" height="66" rx="10" fill="#C8784A" opacity="0.15"/>
+      <text x="59" y="52" font-size="28" text-anchor="middle" fill="#C8784A">📖</text>
+      <rect x="28" y="62" width="62" height="5" rx="2.5" fill="#C8784A" opacity="0.4"/>
+      <rect x="36" y="71" width="46" height="4" rx="2" fill="#C8784A" opacity="0.25"/>
+      <text x="59" y="90" font-size="10" text-anchor="middle" fill="#C8784A" font-weight="600">文章閱讀</text>
+      <!-- 單字 -->
+      <rect x="118" y="20" width="86" height="66" rx="10" fill="#6A9E7A" opacity="0.15"/>
+      <text x="161" y="52" font-size="28" text-anchor="middle" fill="#6A9E7A">🃏</text>
+      <rect x="130" y="62" width="62" height="5" rx="2.5" fill="#6A9E7A" opacity="0.4"/>
+      <rect x="138" y="71" width="46" height="4" rx="2" fill="#6A9E7A" opacity="0.25"/>
+      <text x="161" y="90" font-size="10" text-anchor="middle" fill="#6A9E7A" font-weight="600">單字複習</text>
+      <!-- 聽力 -->
+      <rect x="16" y="100" width="86" height="66" rx="10" fill="#5A7EBE" opacity="0.15"/>
+      <text x="59" y="132" font-size="28" text-anchor="middle" fill="#5A7EBE">🎧</text>
+      <rect x="28" y="142" width="62" height="5" rx="2.5" fill="#5A7EBE" opacity="0.4"/>
+      <rect x="36" y="151" width="46" height="4" rx="2" fill="#5A7EBE" opacity="0.25"/>
+      <text x="59" y="170" font-size="10" text-anchor="middle" fill="#5A7EBE" font-weight="600">聽力測驗</text>
+      <!-- 跟讀 -->
+      <rect x="118" y="100" width="86" height="66" rx="10" fill="#BE7A5A" opacity="0.15"/>
+      <text x="161" y="132" font-size="28" text-anchor="middle" fill="#BE7A5A">🎤</text>
+      <rect x="130" y="142" width="62" height="5" rx="2.5" fill="#BE7A5A" opacity="0.4"/>
+      <rect x="138" y="151" width="46" height="4" rx="2" fill="#BE7A5A" opacity="0.25"/>
+      <text x="161" y="170" font-size="10" text-anchor="middle" fill="#BE7A5A" font-weight="600">跟讀練習</text>
+    </svg>
+    <div class="ob-title">四種模式，全面學習</div>
+    <div class="ob-body">閱讀文章、複習單字、聽力測驗、跟讀錄音——每天完成任務，循序漸進提升日語能力。</div>
+  </div>
+
+  <!-- Page 3：使用流程 -->
+  <div class="ob-slide" id="ob-slide-3">
+    <svg class="ob-illus" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="220" height="180" rx="16" fill="#FDF6EE"/>
+      <!-- Flow: 4 steps connected by arrows -->
+      <!-- Step 1: 今日任務 -->
+      <circle cx="30" cy="68" r="22" fill="#C8784A" opacity="0.15"/>
+      <text x="30" y="62" font-size="20" text-anchor="middle">☀️</text>
+      <text x="30" y="78" font-size="8.5" text-anchor="middle" fill="#C8784A" font-weight="700">今日</text>
+      <text x="30" y="89" font-size="8.5" text-anchor="middle" fill="#C8784A" font-weight="700">任務</text>
+      <!-- Arrow 1 -->
+      <path d="M54,68 L72,68" stroke="#C8784A" stroke-width="2" stroke-linecap="round"/>
+      <path d="M68,64 L74,68 L68,72" stroke="#C8784A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Step 2: 讀文章 -->
+      <circle cx="96" cy="68" r="22" fill="#C8784A" opacity="0.15"/>
+      <text x="96" y="62" font-size="20" text-anchor="middle">📖</text>
+      <text x="96" y="78" font-size="8.5" text-anchor="middle" fill="#C8784A" font-weight="700">讀</text>
+      <text x="96" y="89" font-size="8.5" text-anchor="middle" fill="#C8784A" font-weight="700">文章</text>
+      <!-- Arrow 2 -->
+      <path d="M120,68 L138,68" stroke="#C8784A" stroke-width="2" stroke-linecap="round"/>
+      <path d="M134,64 L140,68 L134,72" stroke="#C8784A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Step 3: 練習 -->
+      <circle cx="162" cy="68" r="22" fill="#C8784A" opacity="0.15"/>
+      <text x="162" y="62" font-size="20" text-anchor="middle">✏️</text>
+      <text x="162" y="78" font-size="8.5" text-anchor="middle" fill="#C8784A" font-weight="700">聽力</text>
+      <text x="162" y="89" font-size="8.5" text-anchor="middle" fill="#C8784A" font-weight="700">填空</text>
+      <!-- Curve arrow down -->
+      <path d="M184,68 Q210,68 210,120 Q210,140 190,140" stroke="#C8784A" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M194,136 L188,142 L194,148" stroke="#C8784A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Step 4: 完成 -->
+      <circle cx="110" cy="140" r="28" fill="#C8784A" opacity="0.2"/>
+      <circle cx="110" cy="140" r="28" stroke="#C8784A" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
+      <text x="110" y="134" font-size="22" text-anchor="middle">🎯</text>
+      <text x="110" y="152" font-size="9" text-anchor="middle" fill="#C8784A" font-weight="700">今日完成！</text>
+      <!-- Left arrow to step 4 -->
+      <path d="M30,92 Q30,140 78,140" stroke="#C8784A" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M74,136 L80,140 L74,144" stroke="#C8784A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+    <div class="ob-title">每天 15 分鐘</div>
+    <div class="ob-body">從今日任務開始，讀文章、學單字、完成測驗——五個任務全達成，今天就算完成！</div>
+  </div>
+
+  <!-- Footer -->
+  <div class="ob-footer">
+    <div class="ob-dots">
+      <div class="ob-dot active" id="ob-dot-1"></div>
+      <div class="ob-dot" id="ob-dot-2"></div>
+      <div class="ob-dot" id="ob-dot-3"></div>
+    </div>
+    <div class="ob-btn-row">
+      <button class="ob-btn-skip" onclick="skipOnboarding()">跳過</button>
+      <button class="ob-btn-next" id="ob-btn-next" onclick="obNext()">下一步 →</button>
+    </div>
+  </div>
+</div>
+
 <div class="app">
 
   <!-- Safe area spacer -->
@@ -1348,9 +1572,37 @@
         </div>
       </div>
 
+      <!-- 開發工具 -->
+      <p class="section-title" style="margin-top:16px">開發工具</p>
+      <div class="card" style="padding:4px 16px;margin-bottom:16px;border:1px dashed var(--wr);opacity:0.85">
+        <div class="setting-row" style="padding:12px 0">
+          <div>
+            <div class="setting-label" style="color:var(--wr)">重新啟動教學</div>
+            <div class="setting-sub">清除 onboarding 紀錄，重新整理後出現起始畫面</div>
+          </div>
+          <button onclick="devRestartOnboarding()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">重啟</button>
+        </div>
+        <div style="border-top:1px solid var(--wa-bg2)"></div>
+        <div class="setting-row" style="padding:12px 0">
+          <div>
+            <div class="setting-label" style="color:var(--wr)">清除今日進度</div>
+            <div class="setting-sub">僅歸零今日任務環，單字本和歷史保留</div>
+          </div>
+          <button onclick="devResetToday()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">歸零</button>
+        </div>
+        <div style="border-top:1px solid var(--wa-bg2)"></div>
+        <div class="setting-row" style="padding:12px 0">
+          <div>
+            <div class="setting-label" style="color:var(--wr)">完整清空所有資料</div>
+            <div class="setting-sub">清除單字本、全部學習紀錄、文章進度</div>
+          </div>
+          <button onclick="devResetAll()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">清空</button>
+        </div>
+      </div>
+
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.8.10
+        v0.9.0
       </div>
 
     </div>
@@ -4566,6 +4818,101 @@ loadVocabBook();
 initSettings();
 initSort();
 updateQuizOrderUI(localStorage.getItem('quizOrder') || 'due');
+
+// ===== Splash + Onboarding =====
+var _obCurrentSlide = 1;
+var _obTotal = 3;
+
+function showSplash() {
+  const splash = document.getElementById('splash-screen');
+  if (!splash) return;
+
+  // 0.1s 後 logo 出現
+  setTimeout(() => {
+    document.getElementById('splash-logo').classList.add('visible');
+    document.getElementById('splash-name').classList.add('visible');
+    document.getElementById('splash-sub').classList.add('visible');
+  }, 100);
+
+  // 2s 後開始 fade-out
+  setTimeout(() => {
+    splash.classList.add('fade-out');
+  }, 2000);
+
+  // 2.5s 後移除，決定是否顯示 onboarding
+  setTimeout(() => {
+    splash.style.display = 'none';
+    if (!localStorage.getItem('onboardingDone')) {
+      showOnboarding();
+    }
+  }, 2500);
+}
+
+function showOnboarding() {
+  document.getElementById('onboarding-screen').classList.add('visible');
+}
+
+function obNext() {
+  if (_obCurrentSlide < _obTotal) {
+    document.getElementById('ob-slide-' + _obCurrentSlide).classList.remove('active');
+    _obCurrentSlide++;
+    document.getElementById('ob-slide-' + _obCurrentSlide).classList.add('active');
+    // 更新 dots
+    for (let i = 1; i <= _obTotal; i++) {
+      document.getElementById('ob-dot-' + i).classList.toggle('active', i === _obCurrentSlide);
+    }
+    // 最後一頁換按鈕文字
+    const btn = document.getElementById('ob-btn-next');
+    if (_obCurrentSlide === _obTotal) btn.textContent = '進入學習 →';
+  } else {
+    finishOnboarding();
+  }
+}
+
+function skipOnboarding() { finishOnboarding(); }
+
+function finishOnboarding() {
+  localStorage.setItem('onboardingDone', '1');
+  const el = document.getElementById('onboarding-screen');
+  el.style.opacity = '0';
+  setTimeout(() => { el.style.display = 'none'; }, 400);
+}
+
+// ===== 開發工具 =====
+function devRestartOnboarding() {
+  localStorage.removeItem('onboardingDone');
+  showToast('已清除 onboarding 紀錄，重新整理後出現起始畫面');
+}
+
+function devResetToday() {
+  const log = loadStudyLog();
+  const today = getLocalDateStr();
+  if (log[today]) {
+    delete log[today];
+    try { localStorage.setItem(STUDY_LOG_KEY, JSON.stringify(log)); } catch(e) {}
+    renderHomeRing();
+    showToast('今日進度已歸零');
+  } else {
+    showToast('今日本來就沒有紀錄');
+  }
+}
+
+function devResetAll() {
+  if (!confirm('確定要清空所有資料？\n單字本、學習紀錄、文章進度將全部清除。')) return;
+  localStorage.removeItem('vocabBook_v1');
+  localStorage.removeItem(STUDY_LOG_KEY);
+  // 清除文章進度
+  Object.keys(localStorage).forEach(k => {
+    if (k.startsWith('ap_') || k.startsWith('articleProgress')) localStorage.removeItem(k);
+  });
+  vocabBook = { addedWords: {} };
+  renderHomeRing();
+  renderVocabList && renderVocabList();
+  showToast('所有資料已清空');
+}
+
+// 啟動 splash
+showSplash();
 
 </script>
 

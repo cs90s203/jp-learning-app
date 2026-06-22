@@ -1,5 +1,24 @@
 # 日語學習 App — 版本記錄
 
+## v0.9.0 — 2026-06-22
+
+**起始畫面 + Onboarding + 開發工具**
+- Splash screen：Bird Hide Learning logo fade-in/fade-out（2.5 秒）
+- Onboarding 三頁（僅新使用者首次顯示）：SVG 插圖 + 說明文字 + 點點導航
+  - 頁1：用真實文章學日語（書本閱讀插圖）
+  - 頁2：四種學習模式（2×2 功能圖示）
+  - 頁3：每日學習流程圖（步驟箭頭圖）
+- `onboardingDone` localStorage flag，看完或跳過後不再顯示
+- 設定頁新增「開發工具」section：重啟教學 / 清除今日 / 完整清空
+
+---
+
+## 0.9.0 — 2026-06-22
+
+Splash + Onboarding + 開發工具
+
+---
+
 ## v0.8.10 — 2026-06-22
 
 **7項 Bug 修正**
