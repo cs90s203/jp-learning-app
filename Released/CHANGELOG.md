@@ -1,5 +1,22 @@
 # 日語學習 App — 版本記錄
 
+## v0.9.8 — 2026-06-22
+
+**修正 obNext() 永遠跑 finishOnboarding 的根本原因**
+- 診斷確認：`_obTotal` 在 iOS Safari 執行時為 `undefined`（原因不明，可能是 iOS Safari var hoisting 邊界情況）
+- 結果：`1 < undefined` → `false` → 每次按下一步直接呼叫 `finishOnboarding()`，onboarding 消失
+- 修法：`obNext()` 內部改用 `var OB_TOTAL = 3`（local const），完全不依賴外部 `_obTotal` var
+- `devRestartOnboarding()` 迴圈也改為直接用 `3`
+- slides 2、3 DOM 已確認存在（v0.9.6 SVG 修正有效），此版修完後三頁應可正常切換
+
+---
+
+## 0.9.8 — 2026-06-22
+
+修正 obNext 永遠跑 finishOnboarding，OB_TOTAL 改 local var
+
+---
+
 ## v0.9.7 — 2026-06-22
 
 **Onboarding 診斷工具 + 防呆**

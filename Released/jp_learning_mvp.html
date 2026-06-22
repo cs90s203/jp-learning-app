@@ -1661,7 +1661,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.9.7
+          v0.9.8
         </div>
 
       </div>
@@ -4905,20 +4905,21 @@ function showOnboarding() {
 
 function obNext() {
   try {
-    if (_obCurrentSlide < _obTotal) {
+    var OB_TOTAL = 3; // 直接 hardcode，不依賴 _obTotal var
+    if (_obCurrentSlide < OB_TOTAL) {
       var fromEl = document.getElementById('ob-slide-' + _obCurrentSlide);
-      if (!fromEl) { alert('[OB] ob-slide-' + _obCurrentSlide + ' 找不到（DOM 缺失）'); return; }
+      if (!fromEl) { alert('[OB] ob-slide-' + _obCurrentSlide + ' 找不到'); return; }
       fromEl.classList.remove('active');
       _obCurrentSlide++;
       var toEl = document.getElementById('ob-slide-' + _obCurrentSlide);
-      if (!toEl) { alert('[OB] ob-slide-' + _obCurrentSlide + ' 找不到（DOM 缺失）'); return; }
+      if (!toEl) { alert('[OB] ob-slide-' + _obCurrentSlide + ' 找不到'); return; }
       toEl.classList.add('active');
-      for (var i = 1; i <= _obTotal; i++) {
+      for (var i = 1; i <= OB_TOTAL; i++) {
         var dot = document.getElementById('ob-dot-' + i);
         if (dot) dot.classList.toggle('active', i === _obCurrentSlide);
       }
       var btn = document.getElementById('ob-btn-next');
-      if (btn && _obCurrentSlide === _obTotal) btn.textContent = '進入學習 →';
+      if (btn && _obCurrentSlide === OB_TOTAL) btn.textContent = '進入學習 →';
     } else {
       finishOnboarding();
     }
@@ -4949,7 +4950,7 @@ function devRestartOnboarding() {
   localStorage.removeItem('onboardingDone');
   // 重置 slide 狀態
   _obCurrentSlide = 1;
-  for (var i = 1; i <= _obTotal; i++) {
+  for (var i = 1; i <= 3; i++) {
     var sl = document.getElementById('ob-slide-' + i);
     if (sl) sl.classList.toggle('active', i === 1);
     var dt = document.getElementById('ob-dot-' + i);
