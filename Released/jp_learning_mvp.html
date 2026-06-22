@@ -1687,7 +1687,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.11.1
+          v0.11.2
         </div>
 
       </div>
@@ -2847,12 +2847,13 @@ function renderArticle(tokens) {
 
     if (isParticle(tok)) {
       html += '<span class="tok tok-particle" data-idx="' + i + '" data-type="particle" data-surface="' + surface + '">' + inner + '</span>';
-    } else if (VOCAB_DICT[basic] || VOCAB_DICT[surface]) {
-      const wordKey = VOCAB_DICT[basic] ? basic : surface;
+    } else if (/[a-zA-Z぀-ヿ一-鿿]/.test(surface)) {
+      // Any token containing Japanese/Latin characters is interactive (even if not in vocab dict)
+      const wordKey = VOCAB_DICT[basic] ? basic : (VOCAB_DICT[surface] ? surface : basic);
       const isAdded = addedWords.has(wordKey);
       html += '<span class="tok tok-word' + (isAdded ? ' tok-added' : '') + '" data-idx="' + i + '" data-type="word" data-basic="' + wordKey + '" data-surface="' + surface + '" data-reading="' + reading + '" data-sentence="' + sentenceIndex + '">' + inner + '</span>';
     } else {
-      // 標點符號或其他未收錄詞，原樣顯示，不可互動
+      // Pure punctuation/symbols only — non-interactive
       html += '<span class="tok-plain">' + surface + '</span>';
     }
 
