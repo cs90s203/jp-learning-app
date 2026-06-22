@@ -1256,73 +1256,65 @@
     <svg class="ob-illus" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="220" height="180" rx="16" fill="#FDF6EE"/>
 
-      <!-- Connector track behind all circles -->
-      <rect x="43" y="63" width="128" height="3" rx="1.5" fill="#C8784A" opacity="0.18"/>
+      <!--
+        Home ring: size=100, sw=14, cr=43, circumference=270.18
+        segDeg=64, segLen=48.03, gap per seg=6.00
+        offsets: i=0→67.54  i=1→13.51  i=2→-40.53  i=3→-94.57  i=4→-148.60
+        All segments shown at 100% (today complete state)
+      -->
+      <g transform="translate(60,18)">
+        <!-- Background track -->
+        <circle cx="50" cy="50" r="43" fill="none" stroke="#E4D8CC" stroke-width="14"/>
+        <!-- 文章 #D85A30 -->
+        <circle cx="50" cy="50" r="43" fill="none" stroke="#D85A30" stroke-width="14"
+          stroke-linecap="round"
+          stroke-dasharray="48.03 222.15"
+          stroke-dashoffset="67.54"
+          transform="rotate(-90 50 50)"/>
+        <!-- 單字卡 #1D9E75 -->
+        <circle cx="50" cy="50" r="43" fill="none" stroke="#1D9E75" stroke-width="14"
+          stroke-linecap="round"
+          stroke-dasharray="48.03 222.15"
+          stroke-dashoffset="13.51"
+          transform="rotate(-90 50 50)"/>
+        <!-- 聽力 #378ADD -->
+        <circle cx="50" cy="50" r="43" fill="none" stroke="#378ADD" stroke-width="14"
+          stroke-linecap="round"
+          stroke-dasharray="48.03 222.15"
+          stroke-dashoffset="-40.53"
+          transform="rotate(-90 50 50)"/>
+        <!-- 填空 #BA7517 -->
+        <circle cx="50" cy="50" r="43" fill="none" stroke="#BA7517" stroke-width="14"
+          stroke-linecap="round"
+          stroke-dasharray="48.03 222.15"
+          stroke-dashoffset="-94.57"
+          transform="rotate(-90 50 50)"/>
+        <!-- 跟讀 #7F77DD -->
+        <circle cx="50" cy="50" r="43" fill="none" stroke="#7F77DD" stroke-width="14"
+          stroke-linecap="round"
+          stroke-dasharray="48.03 222.15"
+          stroke-dashoffset="-148.60"
+          transform="rotate(-90 50 50)"/>
+      </g>
 
-      <!-- ① 今日任務 -->
-      <circle cx="26" cy="65" r="17" fill="#C8784A" opacity="0.12"/>
-      <circle cx="26" cy="65" r="17" stroke="#C8784A" stroke-width="1.5" fill="none"/>
-      <!-- Sun: 8 rays + filled center -->
-      <circle cx="26" cy="65" r="5.5" fill="#C8784A"/>
-      <line x1="26" y1="53" x2="26" y2="56" stroke="#C8784A" stroke-width="1.8" stroke-linecap="round"/>
-      <line x1="26" y1="74" x2="26" y2="77" stroke="#C8784A" stroke-width="1.8" stroke-linecap="round"/>
-      <line x1="37" y1="65" x2="40" y2="65" stroke="#C8784A" stroke-width="1.8" stroke-linecap="round"/>
-      <line x1="15" y1="65" x2="12" y2="65" stroke="#C8784A" stroke-width="1.8" stroke-linecap="round"/>
-      <line x1="33.8" y1="57.2" x2="36" y2="55" stroke="#C8784A" stroke-width="1.8" stroke-linecap="round"/>
-      <line x1="18.2" y1="72.8" x2="16" y2="75" stroke="#C8784A" stroke-width="1.8" stroke-linecap="round"/>
-      <line x1="33.8" y1="72.8" x2="36" y2="75" stroke="#C8784A" stroke-width="1.8" stroke-linecap="round"/>
-      <line x1="18.2" y1="57.2" x2="16" y2="55" stroke="#C8784A" stroke-width="1.8" stroke-linecap="round"/>
-      <text x="26" y="96" font-size="9" text-anchor="middle" fill="#C8784A" font-weight="600">今日</text>
-      <text x="26" y="107" font-size="9" text-anchor="middle" fill="#C8784A" font-weight="600">任務</text>
+      <!-- Ring center: 5/5 -->
+      <text x="110" y="64" font-size="22" text-anchor="middle" fill="#C8784A" font-weight="700">5</text>
+      <text x="110" y="80" font-size="12" text-anchor="middle" fill="#C8784A" opacity="0.65">/ 5</text>
 
-      <!-- Arrow → -->
-      <line x1="45" y1="65" x2="59" y2="65" stroke="#C8784A" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M56,61.5 L60.5,65 L56,68.5" stroke="#C8784A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-
-      <!-- ② 文章閱讀 -->
-      <circle cx="80" cy="65" r="17" fill="#C8784A" opacity="0.12"/>
-      <circle cx="80" cy="65" r="17" stroke="#C8784A" stroke-width="1.5" fill="none"/>
-      <!-- Book: two pages + spine + lines -->
-      <rect x="69" y="56" width="9" height="14" rx="1.5" fill="#C8784A" opacity="0.5"/>
-      <rect x="80" y="56" width="9" height="14" rx="1.5" fill="#C8784A"/>
-      <rect x="76" y="55" width="5" height="16" rx="1.5" fill="#7A4820"/>
-      <rect x="82" y="60" width="5" height="2" rx="1" fill="white" opacity="0.7"/>
-      <rect x="82" y="64" width="4" height="2" rx="1" fill="white" opacity="0.5"/>
-      <rect x="82" y="68" width="5" height="2" rx="1" fill="white" opacity="0.6"/>
-      <text x="80" y="96" font-size="9" text-anchor="middle" fill="#C8784A" font-weight="600">文章</text>
-      <text x="80" y="107" font-size="9" text-anchor="middle" fill="#C8784A" font-weight="600">閱讀</text>
-
-      <!-- Arrow → -->
-      <line x1="99" y1="65" x2="113" y2="65" stroke="#C8784A" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M110,61.5 L114.5,65 L110,68.5" stroke="#C8784A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-
-      <!-- ③ 練習答題 -->
-      <circle cx="134" cy="65" r="17" fill="#C8784A" opacity="0.12"/>
-      <circle cx="134" cy="65" r="17" stroke="#C8784A" stroke-width="1.5" fill="none"/>
-      <!-- Pencil: body + tip + eraser + lines -->
-      <rect x="130" y="53" width="8" height="16" rx="2" fill="#C8784A"/>
-      <polygon points="130,69 138,69 134,77" fill="#C8784A"/>
-      <rect x="130" y="51" width="8" height="5" rx="2" fill="#7A4020"/>
-      <rect x="132" y="57" width="4" height="1.5" rx="0.75" fill="white" opacity="0.5"/>
-      <rect x="132" y="61" width="4" height="1.5" rx="0.75" fill="white" opacity="0.5"/>
-      <rect x="132" y="65" width="4" height="1.5" rx="0.75" fill="white" opacity="0.5"/>
-      <text x="134" y="96" font-size="9" text-anchor="middle" fill="#C8784A" font-weight="600">練習</text>
-      <text x="134" y="107" font-size="9" text-anchor="middle" fill="#C8784A" font-weight="600">答題</text>
-
-      <!-- Arrow → -->
-      <line x1="153" y1="65" x2="167" y2="65" stroke="#C8784A" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M164,61.5 L168.5,65 L164,68.5" stroke="#C8784A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-
-      <!-- ④ 今日完成 (goal — larger, filled background) -->
-      <circle cx="190" cy="65" r="19" fill="#C8784A" opacity="0.22"/>
-      <circle cx="190" cy="65" r="19" stroke="#C8784A" stroke-width="2" fill="none"/>
-      <!-- 5-point star centered at (190,65) -->
-      <path d="M190,54 L192.9,62 L202,62.5 L195.6,68 L198,77 L190,72 L182,77 L184.4,68 L178,62.5 L187.1,62 Z" fill="#C8784A"/>
-      <text x="190" y="97" font-size="9" text-anchor="middle" fill="#C8784A" font-weight="700">今日</text>
-      <text x="190" y="108" font-size="9" text-anchor="middle" fill="#C8784A" font-weight="700">完成！</text>
+      <!-- 5 task indicators -->
+      <circle cx="22"  cy="138" r="6" fill="#D85A30"/>
+      <text x="22"  y="153" font-size="9" text-anchor="middle" fill="#D85A30" font-weight="600">文章</text>
+      <circle cx="66"  cy="138" r="6" fill="#1D9E75"/>
+      <text x="66"  y="153" font-size="9" text-anchor="middle" fill="#1D9E75" font-weight="600">單字</text>
+      <circle cx="110" cy="138" r="6" fill="#378ADD"/>
+      <text x="110" y="153" font-size="9" text-anchor="middle" fill="#378ADD" font-weight="600">聽力</text>
+      <circle cx="154" cy="138" r="6" fill="#BA7517"/>
+      <text x="154" y="153" font-size="9" text-anchor="middle" fill="#BA7517" font-weight="600">填空</text>
+      <circle cx="198" cy="138" r="6" fill="#7F77DD"/>
+      <text x="198" y="153" font-size="9" text-anchor="middle" fill="#7F77DD" font-weight="600">跟讀</text>
     </svg>
-    <div class="ob-title">每天 15 分鐘</div>
-    <div class="ob-body">從今日任務開始，讀文章、學單字、完成測驗——五個任務全達成，今天就算完成！</div>
+    <div class="ob-title">每天五個任務</div>
+    <div class="ob-body">大環代表今天的進度。五個練習都完成，今天就圓滿了！</div>
   </div>
 
   <!-- Footer -->
@@ -1672,7 +1664,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.9.10
+          v0.9.11
         </div>
 
       </div>
