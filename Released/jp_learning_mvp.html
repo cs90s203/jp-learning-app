@@ -1672,7 +1672,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.9.9
+          v0.9.10
         </div>
 
       </div>
@@ -2089,7 +2089,10 @@ async function initQuizPage() {
     renderQuizMain(); // 先顯示「載入中…」
     try {
       const url = `${CONTENT_BASE_URL}/${selectedQuizDate}/${CURRENT_LEVEL}.json`;
-      const res = await fetch(url);
+      const ctrl = new AbortController();
+      const fetchTimeout = setTimeout(() => ctrl.abort(), 8000);
+      const res = await fetch(url, { signal: ctrl.signal });
+      clearTimeout(fetchTimeout);
       if (res.ok) {
         QUIZ_PACK = await res.json();
         QUIZ_PACK._date = selectedQuizDate;
@@ -2192,7 +2195,7 @@ function renderQzQuestion() {
     ).join('');
     qBody = `
       <div style="text-align:center;margin:4px 0 16px">
-        <button class="play-btn" id="qz-play-btn" onclick="qzPlayWord(${JSON.stringify(q.kana||q.word)})">
+        <button class="play-btn" id="qz-play-btn" data-word="${(q.kana||q.word).replace(/"/g,'&quot;')}" onclick="qzPlayWord(this.dataset.word)">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
           播放
         </button>
@@ -2264,8 +2267,8 @@ function qzSubmitFill() {
   if (rd) {
     rd.style.display = 'block';
     rd.innerHTML = correct
-      ? `<span class="qz-ans-ok">✓ 正確！</span>`
-      : `<span class="qz-ans-err">✗ 正解：${q.answer}${q.kana?' ('+q.kana+')':''}</span>`;
+      ? `<div style="padding:10px 14px;background:#e6f9f0;border:1px solid #34a369;border-radius:10px;color:#1d7a4a;font-weight:600;text-align:center">✓ 正確！</div>`
+      : `<div style="padding:10px 14px;background:#fdecea;border:1px solid #e05c4a;border-radius:10px;color:#c0392b;font-size:13px">✗ 正解：${q.answer}${q.kana?' ('+q.kana+')':''}</div>`;
   }
   if (inp) inp.disabled = true;
   const sb = document.getElementById('qz-fill-submit');
@@ -2937,12 +2940,12 @@ function bindLongPress(el) {
     if (e.touches) {
       startX = e.touches[0].clientX;
       startY = e.touches[0].clientY;
+      // 立即阻止 iOS Safari 的文字選取/callout（setTimeout 裡才 preventDefault 已太晚）
+      if (e.cancelable) e.preventDefault();
     }
     timer = setTimeout(() => {
       if (!hasMoved) {
         didLongPress = true;
-        // 攔截原生文字選取
-        if (e.cancelable) e.preventDefault();
         handleTokenLongPress(el);
       }
     }, 400);

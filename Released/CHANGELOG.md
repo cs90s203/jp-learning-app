@@ -1,5 +1,21 @@
 # 日語學習 App — 版本記錄
 
+## v0.9.10 — 2026-06-22
+
+**4 項 Bug 根本原因修正**
+- 聽力播放無聲：`JSON.stringify` 產生雙引號破壞 onclick 屬性解析，改用 `data-word` attribute + `this.dataset.word`
+- 填空結果框：改為有色底框（綠/紅背景 + 深色文字），確保亮暗模式下均清晰可見
+- 試題載入中：加 `AbortController` 8 秒 timeout，防止 fetch 在 iOS 上永久 hang
+- 長按觸發系統選取：`e.preventDefault()` 移至 touchstart 立即執行（原在 setTimeout 回呼已來不及攔截）
+
+---
+
+## 0.9.10 — 2026-06-22
+
+4項bug根本原因修正：播放無聲/填空結果框/試題timeout/長按選字
+
+---
+
 ## v0.9.9 — 2026-06-22
 
 **Page 3 SVG 視覺重設計**
