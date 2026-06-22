@@ -1,5 +1,21 @@
 # 日語學習 App — 版本記錄
 
+## v0.9.4 — 2026-06-22
+
+**Onboarding 4 項修正**
+- `finishOnboarding()` 改為移除 `.visible` class，不再設 `display:none`，解決第二次 `showOnboarding()` 失效的問題
+- Dev「重新啟動教學」：先重播 splash animation（2.4s），再顯示 onboarding，可無限重複使用
+- Splash JS timer 從 2500ms 調整為 2600ms，與 CSS 2.4s animation 保持 200ms buffer
+- 幻燈片換頁邏輯維持正確（修根本 display 問題後三頁自然可切換）
+
+---
+
+## 0.9.4 — 2026-06-22
+
+Onboarding 4項修正：display:none → removeClass + 重播 splash
+
+---
+
 ## v0.9.3 — 2026-06-22
 
 **開發工具 section-title 對齊修正**

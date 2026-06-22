@@ -1604,7 +1604,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.9.3
+        v0.9.4
       </div>
 
     </div>
@@ -4828,13 +4828,12 @@ var _obTotal = 3;
 
 function showSplash() {
   setTimeout(function() {
-    // 確保 splash 從 DOM 移除，不干擾後續畫面
     var sp = document.getElementById('splash-screen');
     if (sp) sp.style.display = 'none';
     if (!localStorage.getItem('onboardingDone')) {
       showOnboarding();
     }
-  }, 2500);
+  }, 2600); // CSS animation 2.4s + 200ms buffer
 }
 
 function showOnboarding() {
@@ -4862,9 +4861,9 @@ function skipOnboarding() { finishOnboarding(); }
 
 function finishOnboarding() {
   localStorage.setItem('onboardingDone', '1');
-  const el = document.getElementById('onboarding-screen');
-  el.style.opacity = '0';
-  setTimeout(() => { el.style.display = 'none'; }, 400);
+  // 只移除 .visible class（靠 CSS transition fade out），不設 display:none
+  // 避免 display:none inline style 讓第二次 showOnboarding() 失效
+  document.getElementById('onboarding-screen').classList.remove('visible');
 }
 
 // ===== 開發工具 =====
@@ -4888,10 +4887,18 @@ function devRestartOnboarding() {
   }
   var btn = document.getElementById('ob-btn-next');
   if (btn) btn.textContent = '下一步 →';
-  // 直接顯示，不需重載
+  // 先播 splash animation，再顯示 onboarding
   var sp = document.getElementById('splash-screen');
-  if (sp) sp.style.display = 'none';
-  showOnboarding();
+  if (sp) {
+    sp.style.display = 'flex';
+    sp.style.animation = 'none';       // 先清掉舊動畫
+    sp.offsetHeight;                   // force reflow
+    sp.style.animation = 'splashAnim 2.4s ease forwards';
+  }
+  setTimeout(function() {
+    if (sp) sp.style.display = 'none';
+    showOnboarding();
+  }, 2600);
 }
 
 function devResetToday() {
