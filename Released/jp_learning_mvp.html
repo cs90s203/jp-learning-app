@@ -919,6 +919,23 @@
   .qz-choice.qz-correct { background: var(--wg-bg); border-color: #A0CCA8; color: var(--wg); }
   .qz-choice.qz-wrong   { background: var(--wr-bg); border-color: #F0B8B0; color: var(--wr); }
 
+  /* Sentence order token chips */
+  .qz-order-tok {
+    padding: 8px 13px; border-radius: 8px;
+    border: 1.5px solid var(--wa-bg2); background: var(--wb);
+    color: var(--wt); font-size: 15px; cursor: pointer;
+    font-family: inherit; transition: background 0.15s, border-color 0.15s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .qz-order-tok:active { background: var(--wa-bg); }
+  .qz-order-tok.qz-order-placed { background: var(--wa-l); border-color: var(--wa); color: var(--wa); font-weight: 600; }
+  .qz-order-area {
+    min-height: 50px; border: 1.5px dashed var(--wa-bg2); border-radius: 10px;
+    padding: 8px 10px; display: flex; flex-wrap: wrap; gap: 6px;
+    background: var(--wb); margin-bottom: 12px;
+  }
+  .qz-order-bench { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+
   /* Fill-in result inline */
   .qz-ans-ok  { color: var(--wg); }
   .qz-ans-err { color: var(--wr); }
@@ -1506,8 +1523,8 @@
       <div class="quiz-tabs">
         <button class="qt active" id="qt-listen" onclick="switchQuizSection('listen')">聽力</button>
         <button class="qt" id="qt-fill" onclick="switchQuizSection('fill')">填空</button>
-        <button class="qt qt-locked" title="即將推出">句子判斷</button>
-        <button class="qt qt-locked" title="即將推出">句子排列</button>
+        <button class="qt" id="qt-judge" onclick="switchQuizSection('judge')">句子判斷</button>
+        <button class="qt" id="qt-order" onclick="switchQuizSection('order')">句子排列</button>
       </div>
       <div class="sec" id="quiz-main" style="padding-top:8px">
 
@@ -1687,7 +1704,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.12.0
+          v0.13.0
         </div>
 
       </div>
@@ -2022,7 +2039,7 @@ function shuffleArr(arr) {
 }
 
 function switchQuizSection(type) {
-  if (['listen','fill'].indexOf(type) < 0) return; // locked sections
+  if (['listen','fill','judge','order'].indexOf(type) < 0) return;
   quizSection = type;
   document.querySelectorAll('.qt').forEach(b => b.classList.remove('active'));
   const btn = document.getElementById('qt-' + type);
@@ -2032,6 +2049,20 @@ function switchQuizSection(type) {
 }
 
 // ── Question generators ──────────────────────────────
+
+function splitTokensIntoSentences(tokens) {
+  const sentences = [];
+  let cur = [];
+  for (const tok of (tokens || [])) {
+    cur.push(tok);
+    if (/[。！？]/.test(tok.surface_form || '')) {
+      if (cur.length) sentences.push([...cur]);
+      cur = [];
+    }
+  }
+  if (cur.length) sentences.push(cur);
+  return sentences;
+}
 
 function generateListeningQuestions(vocabDict) {
   const words = Object.keys(vocabDict || {});
@@ -2096,6 +2127,59 @@ function generateFillInQuestions(tokens, vocabDict) {
   return shuffleArr(pool).slice(0, maxQ);
 }
 
+function generateSentenceJudgeQuestions(tokens, translations) {
+  const sentences = splitTokensIntoSentences(tokens);
+  if (sentences.length < 2 || !translations || !translations.length) return [];
+
+  const pool = [];
+  sentences.forEach((sentToks, i) => {
+    if (!translations[i] || !translations[i].length) return;
+    const japanese = sentToks.map(t => t.surface_form).join('');
+    const correctTrans = translations[i].map(s => s.text).join('');
+
+    // Correct question
+    pool.push({ type: 'judge', japanese, translation: correctTrans, isCorrect: true, correctTranslation: correctTrans });
+
+    // Wrong question: use a different sentence's translation
+    const otherIdxes = sentences.map((_, j) => j).filter(j => j !== i && translations[j] && translations[j].length);
+    if (otherIdxes.length) {
+      const wrongIdx = otherIdxes[Math.floor(Math.random() * otherIdxes.length)];
+      const wrongTrans = translations[wrongIdx].map(s => s.text).join('');
+      if (wrongTrans !== correctTrans) {
+        pool.push({ type: 'judge', japanese, translation: wrongTrans, isCorrect: false, correctTranslation: correctTrans });
+      }
+    }
+  });
+
+  const maxQ = Math.min(10, Math.max(2, Math.round(pool.length * getModeVocabPct())));
+  return shuffleArr(pool).slice(0, maxQ);
+}
+
+function generateSentenceOrderQuestions(tokens) {
+  const sentences = splitTokensIntoSentences(tokens);
+  const pool = [];
+
+  sentences.forEach(sentToks => {
+    // Content tokens only (exclude pure punctuation)
+    const contentToks = sentToks.filter(t => /[a-zA-Z぀-ヿ一-鿿]/.test(t.surface_form || ''));
+    if (contentToks.length < 3 || contentToks.length > 9) return;
+
+    const correct = contentToks.map(t => t.surface_form);
+    // Shuffle until different order
+    let shuffled;
+    let tries = 0;
+    do { shuffled = shuffleArr([...correct]); tries++; } while (shuffled.join('') === correct.join('') && tries < 10);
+
+    const punctuation = sentToks[sentToks.length - 1].surface_form.match(/[。！？]/)
+      ? sentToks[sentToks.length - 1].surface_form : '';
+
+    pool.push({ type: 'order', correct, shuffled, punctuation });
+  });
+
+  const maxQ = Math.min(8, Math.max(1, Math.round(pool.length * getModeVocabPct())));
+  return shuffleArr(pool).slice(0, maxQ);
+}
+
 // ── Session management ───────────────────────────────
 
 async function initQuizPage() {
@@ -2124,13 +2208,17 @@ async function initQuizPage() {
 
 function startQuizSession(isRetake) {
   if (!QUIZ_PACK) { renderQuizMain(); return; }
-  const vocabDict = QUIZ_PACK.vocab || {};
-  const tokens    = QUIZ_PACK.tokens || [];
-  const questions = quizSection === 'listen'
-    ? generateListeningQuestions(vocabDict)
-    : generateFillInQuestions(tokens, vocabDict);
+  const vocabDict    = QUIZ_PACK.vocab || {};
+  const tokens       = QUIZ_PACK.tokens || [];
+  const translations = QUIZ_PACK.translations || [];
+  let questions;
+  if      (quizSection === 'listen') questions = generateListeningQuestions(vocabDict);
+  else if (quizSection === 'fill')   questions = generateFillInQuestions(tokens, vocabDict);
+  else if (quizSection === 'judge')  questions = generateSentenceJudgeQuestions(tokens, translations);
+  else if (quizSection === 'order')  questions = generateSentenceOrderQuestions(tokens);
+  else questions = [];
   if (!questions.length) { showToast('沒有足夠題目'); return; }
-  QS = { questions, idx: 0, answers: [], phase: 'exam', isRetake };
+  QS = { questions, idx: 0, answers: [], phase: 'exam', isRetake, orderState: null };
   renderQuizMain();
 }
 
@@ -2155,16 +2243,25 @@ function renderQuizMain() {
   if (QS.phase === 'result') { renderQzResult(); return; }
 }
 
+const QZ_TYPE_CFG = {
+  listen: { color: '#378ADD', label: '聽力' },
+  fill:   { color: '#BA7517', label: '填空' },
+  judge:  { color: '#9B59B6', label: '句子判斷' },
+  order:  { color: '#27AE60', label: '句子排列' }
+};
+
 function renderQzStart() {
   const el = document.getElementById('quiz-main');
-  const vocabDict = QUIZ_PACK.vocab || {};
-  const tokens    = QUIZ_PACK.tokens || [];
-  const isListen  = quizSection === 'listen';
-  const color     = isListen ? '#378ADD' : '#BA7517';
-  const label     = isListen ? '聽力' : '填空';
-  const count     = isListen
-    ? Math.min(10, Object.keys(vocabDict).length)
-    : Math.min(10, generateFillInQuestions(tokens, vocabDict).length);
+  const vocabDict    = QUIZ_PACK.vocab || {};
+  const tokens       = QUIZ_PACK.tokens || [];
+  const translations = QUIZ_PACK.translations || [];
+  const { color, label } = QZ_TYPE_CFG[quizSection] || QZ_TYPE_CFG.listen;
+  let count;
+  if      (quizSection === 'listen') count = Math.min(10, Object.keys(vocabDict).length);
+  else if (quizSection === 'fill')   count = Math.min(10, generateFillInQuestions(tokens, vocabDict).length);
+  else if (quizSection === 'judge')  count = generateSentenceJudgeQuestions(tokens, translations).length;
+  else if (quizSection === 'order')  count = generateSentenceOrderQuestions(tokens).length;
+  else count = 0;
 
   const log = loadStudyLog();
   const prev = log[selectedQuizDate] && log[selectedQuizDate].quiz &&
@@ -2197,12 +2294,10 @@ function renderQzQuestion() {
   const q     = QS.questions[QS.idx];
   const total = QS.questions.length;
   const pct   = Math.round(QS.idx / total * 100);
-  const isListen = q.type === 'listen';
-  const color    = isListen ? '#378ADD' : '#BA7517';
-  const label    = isListen ? '聽力' : '填空';
+  const { color, label } = QZ_TYPE_CFG[q.type] || QZ_TYPE_CFG.listen;
 
   let qBody = '';
-  if (isListen) {
+  if (q.type === 'listen') {
     const choicesHTML = q.choices.map(c =>
       `<button class="qz-choice" data-val="${c.replace(/"/g,'&quot;')}"
         onclick="qzSubmitListen(this,'${c.replace(/'/g,"\\'")}')">
@@ -2218,7 +2313,7 @@ function renderQzQuestion() {
         <p style="font-size:12px;color:var(--wt3);margin-top:-8px">選出正確中文意思</p>
       </div>
       <div class="qz-choice-list">${choicesHTML}</div>`;
-  } else {
+  } else if (q.type === 'fill') {
     qBody = `
       <p class="quiz-q" style="margin-bottom:8px">${q.sentence}</p>
       <p style="font-size:12px;color:var(--wt3);margin-bottom:12px">中文提示：${q.meaning}</p>
@@ -2228,6 +2323,38 @@ function renderQzQuestion() {
         onkeydown="if(event.key==='Enter')qzSubmitFill()"/>
       <div id="qz-fill-result" style="display:none;margin-top:10px;font-size:14px;font-weight:500;text-align:center"></div>
       <button id="qz-fill-submit" class="submit-btn" onclick="qzSubmitFill()" style="margin-top:10px;padding:12px">確認答案</button>`;
+  } else if (q.type === 'judge') {
+    qBody = `
+      <p style="font-size:16px;line-height:1.8;margin-bottom:12px;font-weight:500;letter-spacing:0.03em">${q.japanese}</p>
+      <div style="background:var(--wa-bg);border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:14px;color:var(--wt2)">
+        💬 ${q.translation}
+      </div>
+      <p style="font-size:12px;color:var(--wt3);margin-bottom:12px;text-align:center">上方翻譯正確嗎？</p>
+      <div class="qz-choice-list" id="qz-judge-choices">
+        <button class="qz-choice" onclick="qzSubmitJudge(this,true)">✓ 正確</button>
+        <button class="qz-choice" onclick="qzSubmitJudge(this,false)">✗ 錯誤</button>
+      </div>
+      <div id="qz-judge-result" style="display:none;margin-top:10px"></div>`;
+  } else if (q.type === 'order') {
+    // Init or restore per-question orderState
+    if (!QS.orderState || QS.orderState.qIdx !== QS.idx) {
+      QS.orderState = { qIdx: QS.idx, arranged: [], remaining: [...q.shuffled] };
+    }
+    const { arranged, remaining } = QS.orderState;
+    const arrangedHTML = arranged.length
+      ? arranged.map((tok, i) => `<button class="qz-order-tok qz-order-placed" onclick="qzOrderRemove(${i})">${tok}</button>`).join('')
+      : `<span style="color:var(--wt3);font-size:12px;align-self:center">（點下方詞語依序加入）</span>`;
+    const remainHTML = remaining.map((tok, i) =>
+      `<button class="qz-order-tok" onclick="qzOrderAdd(${i})">${tok}</button>`
+    ).join('');
+    const allPlaced = remaining.length === 0;
+    qBody = `
+      <p style="font-size:12px;color:var(--wt3);margin-bottom:8px;text-align:center">點詞語依序排成正確句子</p>
+      <div class="qz-order-area" id="qz-order-arranged">${arrangedHTML}</div>
+      <div class="qz-order-bench" id="qz-order-bench">${remainHTML}</div>
+      <div id="qz-order-result" style="display:none;margin-top:4px;margin-bottom:10px"></div>
+      <button id="qz-order-submit" class="submit-btn" onclick="qzSubmitOrder()"
+        style="padding:12px${allPlaced?'':';opacity:0.45;pointer-events:none'}">確認順序</button>`;
   }
 
   el.innerHTML = `
@@ -2293,6 +2420,72 @@ function qzSubmitFill() {
   if (nb) nb.style.display = 'flex';
 }
 
+function qzSubmitJudge(btn, userAnswer) {
+  if (!QS || QS.phase !== 'exam') return;
+  const q = QS.questions[QS.idx];
+  const correct = userAnswer === q.isCorrect;
+  const list = document.getElementById('qz-judge-choices');
+  if (list) {
+    list.querySelectorAll('.qz-choice').forEach(b => {
+      b.onclick = null;
+      const isCorrectBtn = b.textContent.includes('正確');
+      if (isCorrectBtn === q.isCorrect) b.classList.add('qz-correct');
+      else if (b === btn && !correct)   b.classList.add('qz-wrong');
+    });
+  }
+  // If wrong answer: reveal the correct translation
+  if (!correct) {
+    const rd = document.getElementById('qz-judge-result');
+    if (rd) {
+      rd.style.display = 'block';
+      rd.innerHTML = `<div style="padding:10px 14px;background:#e6f9f0;border:1px solid #34a369;border-radius:10px;font-size:13px;color:#1d7a4a">
+        正確翻譯：${q.correctTranslation}
+      </div>`;
+    }
+  }
+  QS.answers.push({ correct, userAnswer, q });
+  const nb = document.getElementById('qz-next-btn');
+  if (nb) nb.style.display = 'flex';
+}
+
+function qzOrderAdd(benchIdx) {
+  if (!QS || !QS.orderState) return;
+  const tok = QS.orderState.remaining.splice(benchIdx, 1)[0];
+  QS.orderState.arranged.push(tok);
+  renderQzQuestion();
+}
+
+function qzOrderRemove(arrangedIdx) {
+  if (!QS || !QS.orderState) return;
+  const tok = QS.orderState.arranged.splice(arrangedIdx, 1)[0];
+  QS.orderState.remaining.push(tok);
+  renderQzQuestion();
+}
+
+function qzSubmitOrder() {
+  if (!QS || !QS.orderState || QS.phase !== 'exam') return;
+  const q = QS.questions[QS.idx];
+  const { arranged } = QS.orderState;
+  if (arranged.length < q.correct.length) { showToast('還有詞語未排入'); return; }
+  const correct = arranged.join('') === q.correct.join('');
+  QS.answers.push({ correct, userArranged: [...arranged], q });
+
+  // Disable all order buttons
+  document.querySelectorAll('.qz-order-tok').forEach(b => b.onclick = null);
+  const sb = document.getElementById('qz-order-submit');
+  if (sb) { sb.onclick = null; sb.style.opacity = '0.4'; }
+
+  const rd = document.getElementById('qz-order-result');
+  if (rd) {
+    rd.style.display = 'block';
+    rd.innerHTML = correct
+      ? `<div style="padding:10px 14px;background:#e6f9f0;border:1px solid #34a369;border-radius:10px;color:#1d7a4a;font-weight:600;text-align:center">✓ 正確！</div>`
+      : `<div style="padding:10px 14px;background:#fdecea;border:1px solid #e05c4a;border-radius:10px;color:#c0392b;font-size:13px">✗ 正解：${q.correct.join('')}${q.punctuation}</div>`;
+  }
+  const nb = document.getElementById('qz-next-btn');
+  if (nb) nb.style.display = 'flex';
+}
+
 function qzNext() {
   if (!QS) return;
   QS.idx++;
@@ -2328,8 +2521,9 @@ function saveQuizResults() {
   // 更新任務環 (取最佳成績)
   const best = sec.first ? Math.max(pct, sec.first.pct) : pct;
   // 做完就算完成（Math.max 確保 0 分也標記為已做）
-  if (quizSection === 'listen') log[dateStr].tasks.listen = Math.max(best, 1);
-  else                          log[dateStr].tasks.quiz   = Math.max(best, 1);
+  if      (quizSection === 'listen') log[dateStr].tasks.listen = Math.max(best, 1);
+  else if (quizSection === 'fill')   log[dateStr].tasks.quiz   = Math.max(best, 1);
+  // judge / order 不更新首頁任務環（尚未在 ring 設計中），僅存 quiz log
 
   saveStudyLog(log);
   renderQuizWeekBar();
@@ -2347,18 +2541,26 @@ function renderQzResult() {
 
   const wrongsHTML = wrongs.length
     ? wrongs.map(a => {
-        const word = a.q.type === 'listen'
-          ? `${a.q.word}（${a.q.kana}）→ <b>${a.q.correct}</b>`
-          : `${a.q.sentence.replace('＿＿＿','<b>'+a.q.answer+'</b>')}${a.userAnswer?` <span style="color:var(--wt3)">(你填：${a.userAnswer})</span>`:''}`;
+        let word = '';
+        if (a.q.type === 'listen') {
+          word = `${a.q.word}（${a.q.kana}）→ <b>${a.q.correct}</b>`;
+        } else if (a.q.type === 'fill') {
+          word = `${a.q.sentence.replace('＿＿＿','<b>'+a.q.answer+'</b>')}${a.userAnswer?` <span style="color:var(--wt3)">(你填：${a.userAnswer})</span>`:''}`;
+        } else if (a.q.type === 'judge') {
+          word = `${a.q.japanese}<br><span style="color:var(--wt3)">正確翻譯：</span>${a.q.correctTranslation}`;
+        } else if (a.q.type === 'order') {
+          word = `正解：<b>${a.q.correct.join('')}${a.q.punctuation}</b>`;
+        }
         return `<div style="padding:8px 0;border-bottom:0.5px solid var(--wa-bg2);font-size:13px;line-height:1.7">
           <span style="color:var(--wr)">✗</span> <span style="margin-left:6px">${word}</span>
         </div>`;
       }).join('')
     : '';
 
+  const { label: sectionLabel } = QZ_TYPE_CFG[quizSection] || QZ_TYPE_CFG.listen;
   el.innerHTML = `
     <div class="card" style="text-align:center;padding:24px 20px;margin-bottom:12px">
-      <div style="font-size:12px;color:var(--wt3);margin-bottom:8px">${quizSection==='listen'?'聽力':'填空'}結果</div>
+      <div style="font-size:12px;color:var(--wt3);margin-bottom:8px">${sectionLabel}結果</div>
       <div style="font-size:52px;font-weight:700;color:${color};line-height:1">${pct}<span style="font-size:20px">%</span></div>
       <div style="font-size:14px;color:var(--wt3);margin-top:6px">${correct} / ${total} 答對</div>
     </div>
