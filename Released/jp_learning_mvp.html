@@ -419,6 +419,7 @@
   .awb-day.awb-future .awb-dow,
   .awb-day.awb-future .awb-day-num { opacity: 0.3; }
   .awb-day[data-has-content="1"] { cursor: pointer; }
+  .awb-rec-dot { width:5px;height:5px;border-radius:50%;background:var(--wa);margin:1px auto 0; }
   html[data-theme="dark"] #article-week-bar { background: var(--wa-bg); }
 
   /* 句子選取點 */
@@ -1609,6 +1610,20 @@
           </div>
         </div>
 
+        <p class="section-title">跟讀錄音管理</p>
+        <div class="card" style="padding:4px 16px">
+          <div id="rec-mgmt-list">
+            <!-- 由 renderRecordingManagement() 填入 -->
+          </div>
+          <div class="setting-row" style="padding:12px 0">
+            <div>
+              <div class="setting-label" style="color:var(--wr)">清除全部錄音</div>
+              <div class="setting-sub">刪除所有日期的跟讀錄音，無法復原</div>
+            </div>
+            <button onclick="clearAllRecordingsUI()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">全清</button>
+          </div>
+        </div>
+
         <p class="section-title">進階功能</p>
         <div class="card" style="padding:4px 16px">
           <div class="setting-row" style="flex-direction:column;align-items:flex-start;gap:8px;padding:14px 0">
@@ -1664,7 +1679,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.9.11
+          v0.9.12
         </div>
 
       </div>
@@ -1943,7 +1958,7 @@ function switchPage(id) {
   if (id === 'home')  { renderHomeRing(); renderCalendar(); }
   if (id === 'vocab') renderVocabPage();
   if (id === 'quiz')     initQuizPage();
-  if (id === 'settings') { initModeUI(); renderAuthUI(); }
+  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); }
   // Show/hide FAB
   document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
 }
@@ -3317,55 +3332,201 @@ let isPlayingRecording = false;
 
 const DB_NAME = 'jp_app_recordings';
 const DB_STORE = 'follow_read_slots';
+// v2：key 改為 "{date}-{slot}"，以日期區分各天錄音
+
+// 目前跟讀的日期（與 selectedArticleDate 同步）
+let currentRecordingDate = getLocalDateStr();
+// 有錄音的日期集合（啟動時從 DB 建立，用於週曆顯示小點）
+let recordingDates = new Set();
 
 function openRecordingDB() {
   return new Promise((resolve, reject) => {
-    const req = indexedDB.open(DB_NAME, 1);
+    const req = indexedDB.open(DB_NAME, 2);
     req.onupgradeneeded = (e) => {
       const db = e.target.result;
-      if (!db.objectStoreNames.contains(DB_STORE)) {
-        db.createObjectStore(DB_STORE, { keyPath: 'slot' });
+      // v1→v2：舊 store 用純數字 key，直接刪除重建
+      if (db.objectStoreNames.contains(DB_STORE)) {
+        db.deleteObjectStore(DB_STORE);
       }
+      db.createObjectStore(DB_STORE, { keyPath: 'slot' });
     };
     req.onsuccess = (e) => resolve(e.target.result);
     req.onerror = (e) => reject(e.target.error);
   });
 }
 
-async function saveRecordingToDB(slot, blob, mimeType, seconds) {
+// key: "{date}-{slotNum}"
+async function saveRecordingToDB(date, slot, blob, mimeType, seconds) {
   const db = await openRecordingDB();
+  const key = `${date}-${slot}`;
   return new Promise((resolve, reject) => {
     const tx = db.transaction(DB_STORE, 'readwrite');
-    tx.objectStore(DB_STORE).put({ slot, blob, mimeType, seconds, savedAt: Date.now() });
-    tx.oncomplete = () => resolve();
+    tx.objectStore(DB_STORE).put({ slot: key, date, slotNum: slot, blob, mimeType, seconds, savedAt: Date.now() });
+    tx.oncomplete = () => { recordingDates.add(date); resolve(); };
     tx.onerror = (e) => reject(e.target.error);
   });
 }
 
-async function loadRecordingFromDB(slot) {
+async function loadRecordingFromDB(date, slot) {
   const db = await openRecordingDB();
+  const key = `${date}-${slot}`;
   return new Promise((resolve, reject) => {
     const tx = db.transaction(DB_STORE, 'readonly');
-    const req = tx.objectStore(DB_STORE).get(slot);
+    const req = tx.objectStore(DB_STORE).get(key);
     req.onsuccess = () => resolve(req.result || null);
     req.onerror = (e) => reject(e.target.error);
   });
 }
 
+// 取得所有已存有錄音的日期（建立 recordingDates）
+async function loadAllRecordingKeys() {
+  const db = await openRecordingDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(DB_STORE, 'readonly');
+    const req = tx.objectStore(DB_STORE).getAllKeys();
+    req.onsuccess = () => resolve(req.result || []);
+    req.onerror = (e) => reject(e.target.error);
+  });
+}
+
+async function deleteRecordingsForDate(date) {
+  const db = await openRecordingDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(DB_STORE, 'readwrite');
+    const store = tx.objectStore(DB_STORE);
+    for (let s = 1; s <= 3; s++) store.delete(`${date}-${s}`);
+    tx.oncomplete = () => { recordingDates.delete(date); resolve(); };
+    tx.onerror = (e) => reject(e.target.error);
+  });
+}
+
+async function deleteAllRecordings() {
+  const db = await openRecordingDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(DB_STORE, 'readwrite');
+    tx.objectStore(DB_STORE).clear();
+    tx.oncomplete = () => { recordingDates.clear(); resolve(); };
+    tx.onerror = (e) => reject(e.target.error);
+  });
+}
+
+// 載入特定日期的三個槽位錄音
+async function loadAllSlotsForDate(date) {
+  for (let slot = 1; slot <= 3; slot++) {
+    const record = await loadRecordingFromDB(date, slot);
+    if (record && record.blob) {
+      slotBlobs[slot] = record.blob;
+      slotAudioUrls[slot] = URL.createObjectURL(record.blob);
+      markSlotHasAudio(slot, record.seconds);
+    }
+  }
+  updateRecStatusForCurrentSlot();
+}
+
+// 切換跟讀日期：釋放舊 blob、重設 UI、載入新日期錄音
+async function switchRecordingDate(newDate) {
+  if (isRecording) stopRecording();
+  stopPlayRecording();
+
+  // 釋放舊 blob URL
+  for (let s = 1; s <= 3; s++) {
+    if (slotAudioUrls[s]) { URL.revokeObjectURL(slotAudioUrls[s]); slotAudioUrls[s] = null; }
+    slotBlobs[s] = null;
+    slotSeconds[s] = 0;
+  }
+
+  // 重設 slot UI
+  document.querySelectorAll('.rec-slot').forEach(btn => {
+    btn.classList.remove('has-audio', 'active');
+    delete btn.dataset.seconds;
+  });
+  // 預設選槽位 1
+  currentSlot = 1;
+  const firstBtn = document.querySelector('.rec-slot[data-slot="1"]');
+  if (firstBtn) firstBtn.classList.add('active');
+
+  currentRecordingDate = newDate;
+
+  try {
+    await loadAllSlotsForDate(newDate);
+  } catch (err) {
+    console.warn('切換錄音日期失敗', err);
+  }
+  updateRecStatusForCurrentSlot();
+}
+
 async function loadAllSlotsOnStartup() {
   try {
-    for (let slot = 1; slot <= 3; slot++) {
-      const record = await loadRecordingFromDB(slot);
-      if (record && record.blob) {
-        slotBlobs[slot] = record.blob;
-        slotAudioUrls[slot] = URL.createObjectURL(record.blob);
-        markSlotHasAudio(slot, record.seconds);
-      }
-    }
-    updateRecStatusForCurrentSlot();
+    // 建立 recordingDates set
+    const allKeys = await loadAllRecordingKeys();
+    allKeys.forEach(key => {
+      const parts = key.split('-'); // "2026-06-21-1" → ["2026","06","21","1"]
+      if (parts.length === 4) recordingDates.add(parts.slice(0,3).join('-'));
+    });
+
+    // 載入今日錄音
+    await loadAllSlotsForDate(currentRecordingDate);
   } catch (err) {
-    // IndexedDB 不可用時靜默失敗，不影響其他功能
     console.warn('讀取錄音紀錄失敗', err);
+  }
+}
+
+// ── 設定頁錄音管理 ─────────────────────────────────────
+function renderRecordingManagement() {
+  const el = document.getElementById('rec-mgmt-list');
+  if (!el) return;
+
+  const sorted = [...recordingDates].sort().reverse(); // 最新在上
+  if (sorted.length === 0) {
+    el.innerHTML = `<div style="padding:14px 0;color:var(--wt3);font-size:13px;text-align:center">目前沒有跟讀錄音</div>`;
+    return;
+  }
+
+  el.innerHTML = sorted.map((date, i) => `
+    <div ${i > 0 ? 'style="border-top:1px solid var(--wa-bg2)"' : ''}>
+      <div class="setting-row" style="padding:11px 0">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:16px">🎙</span>
+          <div>
+            <div class="setting-label">${date}</div>
+            <div class="setting-sub">${date === getLocalDateStr() ? '今天' : ''}</div>
+          </div>
+        </div>
+        <button onclick="deleteRecordingDateUI('${date}')"
+          style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">
+          刪除
+        </button>
+      </div>
+    </div>
+  `).join('');
+}
+
+async function deleteRecordingDateUI(date) {
+  if (!confirm(`確定刪除 ${date} 的跟讀錄音？`)) return;
+  try {
+    await deleteRecordingsForDate(date);
+    // 若刪除的是目前日期，重設 slot UI
+    if (date === currentRecordingDate) {
+      await switchRecordingDate(currentRecordingDate);
+    }
+    renderRecordingManagement();
+    renderWeekBar();
+    showToast('已刪除 ' + date + ' 的錄音');
+  } catch (err) {
+    showToast('刪除失敗');
+  }
+}
+
+async function clearAllRecordingsUI() {
+  if (!confirm('確定清除所有日期的跟讀錄音？此操作無法復原。')) return;
+  try {
+    await deleteAllRecordings();
+    await switchRecordingDate(currentRecordingDate);
+    renderRecordingManagement();
+    renderWeekBar();
+    showToast('已清除全部錄音');
+  } catch (err) {
+    showToast('清除失敗');
   }
 }
 
@@ -3379,12 +3540,12 @@ function markSlotHasAudio(slot, seconds) {
   updateSpeakProgress();
 }
 
-// 跟讀進度：5 個槽位中錄音 ≥ 5 秒的數量 × 20%
+// 跟讀進度：3 個槽位中錄音 ≥ 5 秒的數量，寫入當前跟讀日期的 studyLog
 function updateSpeakProgress() {
   const validCount = Object.values(slotSeconds).filter(s => s >= 5).length;
   const pct = Math.round(validCount / 3 * 100);
   const log = loadStudyLog();
-  const dateStr = getLocalDateStr();
+  const dateStr = currentRecordingDate;
   if (!log[dateStr]) log[dateStr] = {};
   if (!log[dateStr].tasks) log[dateStr].tasks = {};
   log[dateStr].tasks.speak = pct;
@@ -3486,7 +3647,7 @@ async function toggleRecord() {
       markSlotHasAudio(slot, recordSeconds);
 
       try {
-        await saveRecordingToDB(slot, blob, blobType, recordSeconds);
+        await saveRecordingToDB(currentRecordingDate, slot, blob, blobType, recordSeconds);
       } catch (err) {
         showToast('儲存失敗，本次僅暫存於記憶體');
       }
@@ -4779,6 +4940,7 @@ function renderWeekBar() {
       const trackStroke = 'var(--wa-bg2)';
       const fillStroke  = '#D85A30';
 
+      const hasRec = recordingDates.has(dateStr);
       div.innerHTML =
         `<svg viewBox="0 0 38 38" width="38" height="38">
           <circle cx="${CX}" cy="${CY}" r="${R}" style="fill:${bgFill};stroke:var(--wa-bg2)" stroke-width="${SW}"/>
@@ -4788,7 +4950,8 @@ function renderWeekBar() {
             transform="rotate(-90 ${CX} ${CY})"/>` : ''}
           <text x="${CX}" y="${CY+4}" text-anchor="middle" font-size="12" fill="${textFill}" class="awb-circle-num">${dayNum}</text>
         </svg>` +
-        `<div class="awb-dow">${DOW_LABELS[i]}</div>`;
+        `<div class="awb-dow">${DOW_LABELS[i]}</div>` +
+        `${hasRec ? '<div class="awb-rec-dot" title="有跟讀錄音"></div>' : ''}`;
 
       div.onclick = () => selectArticleDate(dateStr);
     } else {
@@ -4860,6 +5023,9 @@ async function selectArticleDate(dateStr) {
   if (titleEl) {
     titleEl.textContent = dateStr === getLocalDateStr() ? '今日文章' : (ARTICLE_TOKENS._title || dateStr);
   }
+
+  // 切換跟讀槽位到新日期
+  switchRecordingDate(dateStr);
 }
 
 function resetArticleProgress() {
