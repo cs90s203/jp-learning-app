@@ -1,5 +1,34 @@
 # 日語學習 App — 版本記錄
 
+## v0.8.10 — 2026-06-22
+
+**7項 Bug 修正**
+- 月曆不更新：`switchPage/saveQuizResults/updateSpeakProgress` 補上 `renderCalendar()`
+- 跟讀槽位：5個改回3個，進度計算改為 `/3`
+- 新用戶文章：加 `getFirstUseDate()`，新用戶只看當天，老用戶從 studyLog 推算
+- 試題載入中：區分「fetch 中」與「無內容」，失敗後顯示「今日試題尚未準備好」
+- 試題黑框：`qz-next-btn` 改為橘色背景白字
+- 聽力播放：改用 `qzPlayWord()` 加視覺回饋（播放中 → 再播放）
+- 長按選字：`handleTokenLongPress` 前清除 `window.getSelection()`
+
+---
+
+## 0.8.10 — 2026-06-22
+
+7項 bug 修正
+
+---
+
+## v0.8.9 — 2026-06-22
+
+**自動同步（事件驅動 + visibilitychange）**
+- `saveVocabBook()` / `saveStudyLog()` 末尾加 `autoSyncToCloud()`，覆蓋所有資料寫入出口
+- `autoSyncToCloud()` debounce 3 秒，避免連續操作重複寫 Firestore
+- `visibilitychange → hidden` 時立即同步（關閉 app 或切換分頁前保存）
+- 未登入時自動跳過，不影響訪客使用
+
+---
+
 ## v0.8.8 — 2026-06-22
 
 **Firestore 雲端同步實作**

@@ -1350,7 +1350,7 @@
 
       <!-- 版本號 -->
       <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-        v0.8.8
+        v0.8.10
       </div>
 
     </div>
@@ -1522,8 +1522,6 @@
           <button class="av-btn rec-slot active" data-slot="1" onclick="selectSlot(1)">1</button>
           <button class="av-btn rec-slot" data-slot="2" onclick="selectSlot(2)">2</button>
           <button class="av-btn rec-slot" data-slot="3" onclick="selectSlot(3)">3</button>
-          <button class="av-btn rec-slot" data-slot="4" onclick="selectSlot(4)">4</button>
-          <button class="av-btn rec-slot" data-slot="5" onclick="selectSlot(5)">5</button>
         </div>
         <button class="av-btn" id="play-rec-btn" onclick="togglePlayRecording()" aria-label="播放錄音" disabled>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
@@ -1626,7 +1624,7 @@ function switchPage(id) {
     initDifficultyBar();
     renderWeekBar();
   }
-  if (id === 'home')  renderHomeRing();
+  if (id === 'home')  { renderHomeRing(); renderCalendar(); }
   if (id === 'vocab') renderVocabPage();
   if (id === 'quiz')     initQuizPage();
   if (id === 'settings') { initModeUI(); renderAuthUI(); }
@@ -1668,6 +1666,7 @@ function initModeUI() {
 
 // ===== QUIZ ENGINE (Phase 1: 聽力 + 填空) =====
 let QUIZ_PACK   = null;  // 當前試題頁載入的 content pack（獨立於文章頁）
+let quizLoadDone = false; // fetch 已完成（成功或失敗），用於區分「載入中」與「無內容」
 let selectedQuizDate = getLocalDateStr();
 let quizWeekBarOffset = 0;
 let quizSection = 'listen'; // 'listen' | 'fill'
@@ -1762,6 +1761,8 @@ function generateFillInQuestions(tokens, vocabDict) {
 async function initQuizPage() {
   // Fetch quiz content separately (don't overwrite article globals)
   if (!QUIZ_PACK || QUIZ_PACK._date !== selectedQuizDate) {
+    quizLoadDone = false;
+    renderQuizMain(); // 先顯示「載入中…」
     try {
       const url = `${CONTENT_BASE_URL}/${selectedQuizDate}/${CURRENT_LEVEL}.json`;
       const res = await fetch(url);
@@ -1772,6 +1773,7 @@ async function initQuizPage() {
         QUIZ_PACK = null;
       }
     } catch { QUIZ_PACK = null; }
+    quizLoadDone = true;
   }
   renderQuizWeekBar();
   renderQuizMain();
@@ -1795,10 +1797,13 @@ function renderQuizMain() {
   const el = document.getElementById('quiz-main');
   if (!el) return;
   if (!QUIZ_PACK) {
+    const msg = quizLoadDone
+      ? { icon: '📭', title: '今日試題尚未準備好', sub: '內容通常在當天上午更新，請稍後再試' }
+      : { icon: '⏳', title: '載入中…', sub: '正在取得今日內容' };
     el.innerHTML = `<div class="qz-start-wrap">
-      <div class="qz-start-icon">📖</div>
-      <div class="qz-start-title">載入中…</div>
-      <div class="qz-start-sub">正在取得今日內容</div>
+      <div class="qz-start-icon">${msg.icon}</div>
+      <div class="qz-start-title">${msg.title}</div>
+      <div class="qz-start-sub">${msg.sub}</div>
     </div>`;
     return;
   }
@@ -1863,7 +1868,7 @@ function renderQzQuestion() {
     ).join('');
     qBody = `
       <div style="text-align:center;margin:4px 0 16px">
-        <button class="play-btn" onclick="speak(${JSON.stringify(q.kana||q.word)})">
+        <button class="play-btn" id="qz-play-btn" onclick="qzPlayWord(${JSON.stringify(q.kana||q.word)})">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
           播放
         </button>
@@ -1892,7 +1897,7 @@ function renderQzQuestion() {
     </div>
     <div class="card">${qBody}</div>
     <button id="qz-next-btn" class="submit-btn" onclick="qzNext()"
-      style="display:none;margin-top:12px;padding:13px;background:var(--wt);color:var(--wb)">
+      style="display:none;margin-top:12px;padding:13px;background:var(--wa);color:#fff;border-radius:12px;font-weight:600">
       ${QS.idx+1 < total ? '下一題 →' : '查看結果'}
     </button>`;
 
@@ -1985,7 +1990,7 @@ function saveQuizResults() {
 
   saveStudyLog(log);
   renderQuizWeekBar();
-  if (dateStr === getLocalDateStr()) renderHomeRing();
+  if (dateStr === getLocalDateStr()) { renderHomeRing(); renderCalendar(); }
 }
 
 function renderQzResult() {
@@ -2033,7 +2038,7 @@ function renderQuizWeekBar() {
   const dates    = getWeekDates(quizWeekBarOffset);
   const todayStr = getLocalDateStr();
   const log      = loadStudyLog();
-  const known    = [...ARTICLES_WITH_CONTENT, todayStr];
+  const known    = [...getAvailableArticleDates(), todayStr];
 
   container.innerHTML = '';
   dates.forEach((d, i) => {
@@ -2468,6 +2473,7 @@ function loadVocabBook() {
 
 function saveVocabBook() {
   try { localStorage.setItem('vocabBook_v1', JSON.stringify(vocabBook)); } catch(e) {}
+  autoSyncToCloud();
 }
 
 function vocabLevel(fam) {
@@ -2637,6 +2643,8 @@ function bindLongPress(el) {
 }
 
 function handleTokenLongPress(el) {
+  // 清除系統文字選取（防止 iOS Safari 跳出選取 UI）
+  if (window.getSelection) window.getSelection().removeAllRanges();
   document.querySelectorAll('.tok-active').forEach(t => t.classList.remove('tok-active'));
   el.classList.add('tok-active');
 
@@ -2981,9 +2989,9 @@ let recordTimerInterval = null;
 let recordSeconds = 0;
 
 let currentSlot = 1;
-let slotBlobs    = { 1: null, 2: null, 3: null, 4: null, 5: null };
-let slotAudioUrls = { 1: null, 2: null, 3: null, 4: null, 5: null };
-let slotSeconds   = { 1: 0,    2: 0,    3: 0,    4: 0,    5: 0    }; // 每槽錄音秒數
+let slotBlobs    = { 1: null, 2: null, 3: null };
+let slotAudioUrls = { 1: null, 2: null, 3: null };
+let slotSeconds   = { 1: 0,    2: 0,    3: 0    }; // 每槽錄音秒數
 
 let playbackAudio = null;
 let isPlayingRecording = false;
@@ -3027,7 +3035,7 @@ async function loadRecordingFromDB(slot) {
 
 async function loadAllSlotsOnStartup() {
   try {
-    for (let slot = 1; slot <= 5; slot++) {
+    for (let slot = 1; slot <= 3; slot++) {
       const record = await loadRecordingFromDB(slot);
       if (record && record.blob) {
         slotBlobs[slot] = record.blob;
@@ -3055,7 +3063,7 @@ function markSlotHasAudio(slot, seconds) {
 // 跟讀進度：5 個槽位中錄音 ≥ 5 秒的數量 × 20%
 function updateSpeakProgress() {
   const validCount = Object.values(slotSeconds).filter(s => s >= 5).length;
-  const pct = Math.round(validCount / 5 * 100);
+  const pct = Math.round(validCount / 3 * 100);
   const log = loadStudyLog();
   const dateStr = getLocalDateStr();
   if (!log[dateStr]) log[dateStr] = {};
@@ -3063,6 +3071,7 @@ function updateSpeakProgress() {
   log[dateStr].tasks.speak = pct;
   saveStudyLog(log);
   renderHomeRing();
+  renderCalendar();
 }
 
 function selectSlot(slot) {
@@ -3233,6 +3242,19 @@ function speak(text) {
   window.speechSynthesis.speak(u);
 }
 
+// 試題聽力播放（帶視覺回饋）
+function qzPlayWord(text) {
+  speak(text);
+  const btn = document.getElementById('qz-play-btn');
+  if (!btn) return;
+  btn.style.opacity = '0.6';
+  btn.textContent = '播放中…';
+  setTimeout(() => {
+    btn.style.opacity = '1';
+    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg> 再播放';
+  }, 1500);
+}
+
 // Toast
 function showToast(msg) {
   const t = document.getElementById('toast');
@@ -3265,6 +3287,7 @@ function loadStudyLog() {
 }
 function saveStudyLog(log) {
   try { localStorage.setItem(STUDY_LOG_KEY, JSON.stringify(log)); } catch(e) {}
+  autoSyncToCloud();
 }
 
 // 標記今天某任務完成，並重新渲染首頁
@@ -4358,6 +4381,23 @@ function updateQuizOrderUI(order) {
 // 已知有內容的日期
 const ARTICLES_WITH_CONTENT = ['2026-06-18', '2026-06-19', '2026-06-20', '2026-06-21'];
 
+// 取得首次使用日期（新用戶 = 今天，老用戶從 studyLog 推算）
+function getFirstUseDate() {
+  const saved = localStorage.getItem('firstUseDate');
+  if (saved) return saved;
+  const log = loadStudyLog();
+  const dates = Object.keys(log).sort();
+  const first = dates.length > 0 ? dates[0] : getLocalDateStr();
+  localStorage.setItem('firstUseDate', first);
+  return first;
+}
+
+// 過濾後的可用歷史文章（只含 >= 首次使用日的日期）
+function getAvailableArticleDates() {
+  const firstUse = getFirstUseDate();
+  return ARTICLES_WITH_CONTENT.filter(d => d >= firstUse);
+}
+
 let selectedArticleDate = getLocalDateStr(); // 預設今天
 let weekBarOffset = 0; // 0 = 本週，-1 = 上週 ...
 
@@ -4389,7 +4429,7 @@ function renderWeekBar() {
   const dates = getWeekDates(weekBarOffset);
   const todayStr = getLocalDateStr();
   const log = loadStudyLog();
-  const knownDates = [...ARTICLES_WITH_CONTENT, todayStr];
+  const knownDates = [...getAvailableArticleDates(), todayStr];
 
   container.innerHTML = '';
   dates.forEach((d, i) => {
@@ -4718,6 +4758,22 @@ function checkCloudOnLogin() {
       }
     }).catch(() => {}); // 靜默失敗
 }
+
+// 自動同步（debounce 3 秒，未登入時靜默跳過）
+var _autoSyncTimer = null;
+function autoSyncToCloud() {
+  if (!currentUser || !fbDb) return;
+  clearTimeout(_autoSyncTimer);
+  _autoSyncTimer = setTimeout(syncToCloud, 3000);
+}
+
+// 頁面切到背景時立即同步（關閉 app 前）
+document.addEventListener('visibilitychange', function() {
+  if (document.visibilityState === 'hidden' && currentUser && fbDb) {
+    clearTimeout(_autoSyncTimer);
+    syncToCloud();
+  }
+});
 
 // 更新同步狀態列文字
 function _setSyncStatus(state, timeStr) {
