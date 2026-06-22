@@ -1687,7 +1687,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.11.2
+          v0.12.0
         </div>
 
       </div>
@@ -3691,8 +3691,12 @@ let _followStream  = null;
 let _followMR      = null;
 let _followChunks  = [];
 let _followIdx     = 0;
-let _followTimer   = null;
-let _followSentences = [];
+let _followTimer      = null;
+let _followSentences  = [];
+let _followAudioCtx   = null;   // Web Audio（靜音偵測）
+let _followAnalyser   = null;
+let _followSilencePoll= null;   // setInterval handle
+let _followSilenceCnt = 0;      // 連續靜音次數（每 100ms 一次）
 
 function toggleFollowMode() {
   if (_followMode) { _stopFollowMode(); } else { _startFollowMode(); }
@@ -3761,6 +3765,19 @@ async function _startFollowMode() {
     showToast('已存入槽位 ' + slot);
   };
 
+  // 建立 Web Audio 靜音偵測（在 getUserMedia 之後，stream 已存在）
+  try {
+    _followAudioCtx  = new (window.AudioContext || window.webkitAudioContext)();
+    await _followAudioCtx.resume(); // iOS Safari 可能預設 suspended
+    const src = _followAudioCtx.createMediaStreamSource(_followStream);
+    _followAnalyser  = _followAudioCtx.createAnalyser();
+    _followAnalyser.fftSize = 256;
+    src.connect(_followAnalyser);
+  } catch (e) {
+    // 靜音偵測不可用時降級：允許繼續，最長 30s 硬上限兜底
+    _followAudioCtx = null; _followAnalyser = null;
+  }
+
   _followMR.start(1000); // timeslice=1s，確保 iOS Safari 定期觸發 ondataavailable
   _followMR.pause();     // TTS 播放期間不錄音，只在跟讀窗口 resume
   _followMode = true;
@@ -3772,9 +3789,10 @@ async function _startFollowMode() {
 function _followStep() {
   if (!_followMode) return;
   if (_followIdx >= _followSentences.length) {
-    // 全部完成
+    // 全部完成：清理後停止錄音
     _followMode = false;
     window.speechSynthesis.cancel();
+    _cleanFollowDetection();
     if (_followMR && (_followMR.state === 'recording' || _followMR.state === 'paused')) _followMR.stop();
     return;
   }
@@ -3790,14 +3808,11 @@ function _followStep() {
   const charsPerSec = Math.max(3, readAloudRate * 5);
   const estMs = Math.max(800, Math.ceil((text.length / charsPerSec) * 1000));
 
-  const t0 = Date.now();
   let fired = false;
   const afterTts = () => {
     if (fired || !_followMode) return;
     fired = true;
-    const measured = Date.now() - t0;
-    const recMs    = Math.max(1500, Math.round(Math.max(measured, estMs) * 1.6));
-    _followRecordWindow(n, total, recMs);
+    _followRecordWindow(n, total);
   };
 
   window.speechSynthesis.cancel();
@@ -3810,39 +3825,66 @@ function _followStep() {
   setTimeout(afterTts, estMs + 500);
 }
 
-function _followRecordWindow(n, total, recMs) {
+function _followRecordWindow(n, total) {
   if (!_followMode) return;
   // TTS 已結束，開始錄音
   if (_followMR && _followMR.state === 'paused') _followMR.resume();
 
   const statusEl = document.getElementById('rec-status');
-  let remaining  = Math.ceil(recMs / 1000);
-  statusEl.textContent = '跟讀第 ' + n + '/' + total + ' 句（' + remaining + 's）';
+  let elapsed = 0;
+  statusEl.textContent = '跟讀第 ' + n + '/' + total + ' 句（0s）';
   statusEl.className   = 'rec-status recording-now';
 
+  // 秒數上數顯示
   const tick = setInterval(() => {
     if (!_followMode) { clearInterval(tick); return; }
-    remaining--;
-    if (remaining > 0) {
-      statusEl.textContent = '跟讀第 ' + n + '/' + total + ' 句（' + remaining + 's）';
-    } else {
-      clearInterval(tick);
-    }
+    elapsed++;
+    statusEl.textContent = '跟讀第 ' + n + '/' + total + ' 句（' + elapsed + 's）';
   }, 1000);
 
-  _followTimer = setTimeout(() => {
+  // 共用結束邏輯
+  const endWindow = () => {
     clearInterval(tick);
-    // 跟讀窗口結束，暫停錄音等下一句 TTS
+    if (_followSilencePoll) { clearInterval(_followSilencePoll); _followSilencePoll = null; }
+    if (_followTimer)       { clearTimeout(_followTimer);        _followTimer = null; }
     if (_followMR && _followMR.state === 'recording') _followMR.pause();
     _followIdx++;
-    // 句間短暫停頓再播下一句
     setTimeout(_followStep, 300);
-  }, recMs);
+  };
+
+  // 靜音偵測：音量 < -50dB 持續 2s（20 × 100ms）→ 自動結束
+  _followSilenceCnt = 0;
+  if (_followAnalyser) {
+    const buf = new Float32Array(_followAnalyser.fftSize);
+    _followSilencePoll = setInterval(() => {
+      if (!_followMode) { clearInterval(_followSilencePoll); _followSilencePoll = null; return; }
+      _followAnalyser.getFloatTimeDomainData(buf);
+      let sum = 0;
+      for (let i = 0; i < buf.length; i++) sum += buf[i] * buf[i];
+      const rms = Math.sqrt(sum / buf.length);
+      const db  = rms > 0 ? 20 * Math.log10(rms) : -Infinity;
+      if (db < -50) {
+        _followSilenceCnt++;
+        if (_followSilenceCnt >= 20) endWindow(); // 2s 靜音
+      } else {
+        _followSilenceCnt = 0;
+      }
+    }, 100);
+  }
+
+  // 最長上限 30s（靜音偵測不可用時也能兜底）
+  _followTimer = setTimeout(endWindow, 30000);
+}
+
+function _cleanFollowDetection() {
+  if (_followSilencePoll) { clearInterval(_followSilencePoll); _followSilencePoll = null; }
+  if (_followAudioCtx)   { _followAudioCtx.close().catch(() => {}); _followAudioCtx = null; _followAnalyser = null; }
 }
 
 function _stopFollowMode() {
   _followMode = false;
   if (_followTimer) { clearTimeout(_followTimer); _followTimer = null; }
+  _cleanFollowDetection();
   window.speechSynthesis.cancel();
   if (_followMR && (_followMR.state === 'recording' || _followMR.state === 'paused')) {
     // 不覆蓋 onstop：讓原本的 save handler 執行，中途已錄的音也存檔
