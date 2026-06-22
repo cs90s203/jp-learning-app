@@ -1648,12 +1648,20 @@
               </div>
               <button onclick="devResetAll()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">清空</button>
             </div>
+            <div style="border-top:1px solid var(--wa-bg2)"></div>
+            <div class="setting-row" style="padding:12px 0">
+              <div>
+                <div class="setting-label" style="color:var(--wr)">Onboarding 診斷</div>
+                <div class="setting-sub">顯示 DOM 狀態與 localStorage，用於回報 bug</div>
+              </div>
+              <button onclick="devDiagOnboarding()" style="font-size:12px;color:var(--wr);border:1px solid var(--wr);background:none;border-radius:6px;padding:5px 10px;cursor:pointer">診斷</button>
+            </div>
           </div>
         </div>
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.9.6
+          v0.9.7
         </div>
 
       </div>
@@ -4881,8 +4889,12 @@ function showSplash() {
   setTimeout(function() {
     var sp = document.getElementById('splash-screen');
     if (sp) sp.style.display = 'none';
-    if (!localStorage.getItem('onboardingDone')) {
+    var done = localStorage.getItem('onboardingDone');
+    if (!done) {
+      sessionStorage.setItem('_obSplashResult', 'shown');
       showOnboarding();
+    } else {
+      sessionStorage.setItem('_obSplashResult', 'skipped:onboardingDone=' + done);
     }
   }, 2600); // CSS animation 2.4s + 200ms buffer
 }
@@ -4892,19 +4904,26 @@ function showOnboarding() {
 }
 
 function obNext() {
-  if (_obCurrentSlide < _obTotal) {
-    document.getElementById('ob-slide-' + _obCurrentSlide).classList.remove('active');
-    _obCurrentSlide++;
-    document.getElementById('ob-slide-' + _obCurrentSlide).classList.add('active');
-    // 更新 dots
-    for (let i = 1; i <= _obTotal; i++) {
-      document.getElementById('ob-dot-' + i).classList.toggle('active', i === _obCurrentSlide);
+  try {
+    if (_obCurrentSlide < _obTotal) {
+      var fromEl = document.getElementById('ob-slide-' + _obCurrentSlide);
+      if (!fromEl) { alert('[OB] ob-slide-' + _obCurrentSlide + ' 找不到（DOM 缺失）'); return; }
+      fromEl.classList.remove('active');
+      _obCurrentSlide++;
+      var toEl = document.getElementById('ob-slide-' + _obCurrentSlide);
+      if (!toEl) { alert('[OB] ob-slide-' + _obCurrentSlide + ' 找不到（DOM 缺失）'); return; }
+      toEl.classList.add('active');
+      for (var i = 1; i <= _obTotal; i++) {
+        var dot = document.getElementById('ob-dot-' + i);
+        if (dot) dot.classList.toggle('active', i === _obCurrentSlide);
+      }
+      var btn = document.getElementById('ob-btn-next');
+      if (btn && _obCurrentSlide === _obTotal) btn.textContent = '進入學習 →';
+    } else {
+      finishOnboarding();
     }
-    // 最後一頁換按鈕文字
-    const btn = document.getElementById('ob-btn-next');
-    if (_obCurrentSlide === _obTotal) btn.textContent = '進入學習 →';
-  } else {
-    finishOnboarding();
+  } catch(e) {
+    alert('[OB ERR] ' + e.message + '\nslide=' + _obCurrentSlide);
   }
 }
 
@@ -4963,6 +4982,24 @@ function devResetToday() {
   } else {
     showToast('今日本來就沒有紀錄');
   }
+}
+
+function devDiagOnboarding() {
+  var lines = [];
+  lines.push('=== Onboarding 診斷 ===');
+  lines.push('onboardingDone: ' + (localStorage.getItem('onboardingDone') || 'null'));
+  lines.push('splashResult: ' + (sessionStorage.getItem('_obSplashResult') || '尚未跑過（可能頁面剛載入）'));
+  lines.push('_obCurrentSlide: ' + _obCurrentSlide + ' / ' + _obTotal);
+  var screen = document.getElementById('onboarding-screen');
+  lines.push('ob-screen: ' + (screen ? (screen.classList.contains('visible') ? 'visible' : 'hidden') : 'NOT FOUND'));
+  for (var i = 1; i <= 3; i++) {
+    var sl = document.getElementById('ob-slide-' + i);
+    if (!sl) { lines.push('ob-slide-' + i + ': NOT FOUND'); }
+    else { lines.push('ob-slide-' + i + ': ' + (sl.classList.contains('active') ? 'ACTIVE' : 'hidden') + ' | children=' + sl.children.length); }
+  }
+  var btn = document.getElementById('ob-btn-next');
+  lines.push('ob-btn-next: ' + (btn ? '"' + btn.textContent + '"' : 'NOT FOUND'));
+  alert(lines.join('\n'));
 }
 
 function devResetAll() {

@@ -1,5 +1,20 @@
 # 日語學習 App — 版本記錄
 
+## v0.9.7 — 2026-06-22
+
+**Onboarding 診斷工具 + 防呆**
+- `obNext()` 加 try/catch，元素 null 時顯示 `alert('[OB] ob-slide-N 找不到')` 而非靜默失敗
+- `showSplash()` 將結果寫入 `sessionStorage._obSplashResult`（shown / skipped:reason）
+- 開發工具新增「診斷」按鈕，呼叫 `devDiagOnboarding()`，alert 出完整 DOM 狀態、localStorage 值、slide active 狀態、children 數量
+
+---
+
+## 0.9.7 — 2026-06-22
+
+Onboarding 診斷工具，obNext 防呆 alert
+
+---
+
 ## v0.9.6 — 2026-06-22
 
 **Onboarding SVG 修正（頁2、頁3無法顯示的根本原因）**
