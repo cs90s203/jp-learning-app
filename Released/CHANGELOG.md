@@ -1,5 +1,18 @@
 # 日語學習 App — 版本記錄
 
+## v0.10.2 — 2026-06-22
+
+**一般錄音 iOS Safari 存檔修正（bug fix）**
+- 修正跟讀錄音按鍵停止後音檔未存入槽位：`mediaRecorder.start(1000)` 加入 timeslice，確保 iOS Safari `ondataavailable` 穩定觸發，避免 `recordedChunks` 為空導致不存檔
+
+---
+
+## 0.10.2 — 2026-06-22
+
+fix：一般錄音 iOS Safari timeslice，修正槽位未存檔
+
+---
+
 ## v0.10.1 — 2026-06-22
 
 **逐句跟讀 iOS Safari 相容修正（bug fix）**
