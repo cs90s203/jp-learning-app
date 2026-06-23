@@ -661,6 +661,7 @@
   .vocab-row-text { flex: 1; min-width: 0; }
   .vocab-row-jp      { font-size: 16px; font-weight: 500; color: var(--wt); }
   .vocab-row-reading { font-size: 11px; color: var(--wt3); font-weight: 400; }
+  .vocab-row-romaji  { font-size: 10px; color: var(--wt3); margin-top: 1px; letter-spacing: .02em; }
   .vocab-row-cn      { font-size: 12px; color: var(--wt2); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .vocab-row-del  {
     position: absolute; right: 0; top: 0; bottom: 0; width: 68px;
@@ -828,7 +829,7 @@
     cursor: pointer; display: none;
     align-items: center; justify-content: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    font-size: 10px; font-weight: 700;
+    font-size: 20px; font-weight: 500;
     z-index: 50; flex-direction: column; line-height: 1.2;
   }
   .vocab-gojuuon-btn.show { display: flex; }
@@ -1611,10 +1612,10 @@
 
       <!-- FAB -->
       <button class="vocab-gojuuon-btn show" id="vocab-gojuuon-btn" onclick="openGojuuon()" aria-label="五十音表">
-        あ<br>ア
-      </button>
-      <button class="vocab-kana-toggle show" id="vocab-kana-toggle" onclick="toggleKanaDisplay()" aria-label="顯示拼音">
         あ
+      </button>
+      <button class="vocab-kana-toggle show" id="vocab-kana-toggle" onclick="toggleKanaDisplay()" aria-label="顯示羅馬拼音">
+        Aa
       </button>
       <button class="vocab-fab show" id="vocab-fab" onclick="openVocabModal()" aria-label="新增單字">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -1873,7 +1874,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.23
+          v0.14.24
         </div>
 
       </div>
@@ -3020,7 +3021,7 @@ const LEVEL_OPTIONS = [
   { key: 'n1',      label: 'N1'  },
 ];
 const BAKED_VISION_KEY = '';
-let _showKana = localStorage.getItem('showKana') !== 'false';
+let _showRomaji = localStorage.getItem('showRomaji') !== 'false';
 let CURRENT_LEVEL = localStorage.getItem('userLevel') || 'n5';
 let MASTERY_THRESHOLD = parseInt(localStorage.getItem('masteryThreshold') || '10');
 let _levelPickerOpen = false;
@@ -5278,12 +5279,12 @@ function gojuuonSpeak(romaji, hira) {
 function updateKanaToggleUI() {
   const btn = document.getElementById('vocab-kana-toggle');
   if (!btn) return;
-  btn.classList.toggle('active', _showKana);
+  btn.classList.toggle('active', _showRomaji);
 }
 
 function toggleKanaDisplay() {
-  _showKana = !_showKana;
-  localStorage.setItem('showKana', _showKana);
+  _showRomaji = !_showRomaji;
+  localStorage.setItem('showRomaji', _showRomaji);
   updateKanaToggleUI();
   renderVocabList();
 }
@@ -5308,13 +5309,14 @@ function renderVocabList() {
     const content = document.createElement('div');
     content.className = 'vocab-row-content';
     const hasKanji = /[一-龯㐀-䶿]/.test(word);
-    const rowReading = (entry.kana || entry.romaji || '');
-    const showReading = _showKana && hasKanji && rowReading;
+    const kanaReading = hasKanji ? (entry.kana || '') : '';
+    const romajiReading = _showRomaji ? (entry.romaji || '') : '';
     content.innerHTML =
       '<div class="vocab-row-text">' +
         '<div class="vocab-row-jp">' + word +
-          (showReading ? '<span class="vocab-row-reading"> ' + rowReading + '</span>' : '') +
+          (kanaReading ? '<span class="vocab-row-reading"> ' + kanaReading + '</span>' : '') +
         '</div>' +
+        (romajiReading ? '<div class="vocab-row-romaji">' + romajiReading + '</div>' : '') +
         '<div class="vocab-row-cn">' + (entry.meaning || '') + '</div>' +
       '</div>' +
       '<span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span>';
