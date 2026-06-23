@@ -1761,7 +1761,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.12
+          v0.14.13
         </div>
 
       </div>
@@ -3372,7 +3372,7 @@ function handleTokenLongPress(el) {
 }
 
 function openWordPanel(basic, surface, reading) {
-  const entry = VOCAB_DICT[basic] || { meaning: '（尚無中文翻譯）', romaji: '' };
+  const entry = VOCAB_DICT[basic] || VOCAB_DICT[surface] || { meaning: '（尚無中文翻譯）', romaji: '' };
   const isAdded = addedWords.has(basic);
   const content = document.getElementById('word-panel-content');
   content.innerHTML =
@@ -4569,6 +4569,7 @@ function buildRing(size, strokeRatio, tasksState) {
 }
 
 function countDone(tasks) {
+  if (!tasks) return 0;
   return TASKS.reduce((sum, t) => {
     if (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') return sum + (articleFillRatio(tasks[t.key]) >= 1 ? 1 : 0);
     return sum + (tasks[t.key] ? 1 : 0);
@@ -4720,6 +4721,20 @@ function renderCalendar() {
     if (isFuture) num.style.color = 'var(--wa-bg2)';
     wrap.appendChild(num);
     grid.appendChild(wrap);
+  }
+
+  // 補足最後一週的尾端空格（填下個月日期）
+  const totalCells = leadBlanks + daysInMonth;
+  const trailingCount = (7 - (totalCells % 7)) % 7;
+  for (let i = 1; i <= trailingCount; i++) {
+    const blank = document.createElement('div');
+    blank.className = 'cal-d-wrap empty';
+    const num = document.createElement('span');
+    num.className = 'cal-d-num';
+    num.textContent = i;
+    num.style.color = 'var(--wa-bg2)';
+    blank.appendChild(num);
+    grid.appendChild(blank);
   }
 }
 
@@ -5725,9 +5740,11 @@ async function selectArticleDate(dateStr) {
       return;
     }
   } else {
-    // 記住此日期用的等級
+    // 記住此日期用的等級與標題
     if (!_log[dateStr]) _log[dateStr] = {};
+    if (!_log[dateStr].tasks) _log[dateStr].tasks = {};
     _log[dateStr].level = _levelToUse;
+    _log[dateStr].articleTitle = result.pack.title || '';
     saveStudyLog(_log);
     showToast('已載入：' + (result.pack.title || dateStr));
     const titleEl = document.getElementById('article-page-title');

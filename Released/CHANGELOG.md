@@ -1,5 +1,20 @@
 # 日語學習 App — 版本記錄
 
+## v0.14.13 — 2026-06-23
+
+**月曆三修**
+- **Bug #1**：月曆日期展開面板不顯示文章標題 → `selectArticleDate` 現在一併儲存 `articleTitle` 到 studyLog
+- **Bug #2**：今日（23號）及後續日期不顯示 → 根本原因：`selectArticleDate` 建立了無 `tasks` 欄位的 entry，`countDone(undefined)` 報錯中斷 `renderCalendar` → 補上 `tasks` 初始化與 `countDone` 防護
+- **Bug #3**：月底最後一週尾端空白 → 補上下個月首幾日（灰色），讓每行都滿 7 格
+
+---
+
+## 0.14.14 — 2026-06-23
+
+vocab查詢補surface_form fallback；生成prompt強化key一致性與自我檢查
+
+---
+
 ## v0.14.12 — 2026-06-23
 
 **等級選擇 sheet 按鈕修正**
