@@ -1,0 +1,1037 @@
+{
+  "date": "2026-06-23",
+  "level": "n3_lite",
+  "title": "読書の楽しみ",
+  "text": "わたしは読書が大好きです。本を読んでいると、まるで違う世界に入ったような気分になります。特に小説が好きで、登場人物の気持ちを想像しながら読むのが楽しいです。先週、図書館でおもしろそうな本を見つけました。ミステリー小説で、最初から最後まで目が離せませんでした。読み終わったとき、とても満足した気持ちになりました。本を読むことで、知らなかった言葉も学ぶことができます。これからも、いろいろなジャンルの本を読んでいきたいと思います。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読書",
+      "basic_form": "読書",
+      "reading": "どくしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大好き",
+      "basic_form": "大好き",
+      "reading": "だいすき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読ん",
+      "basic_form": "読む",
+      "reading": "よん",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "て",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まるで",
+      "basic_form": "まるで",
+      "reading": "まるで",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "違う",
+      "basic_form": "違う",
+      "reading": "ちがう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "世界",
+      "basic_form": "世界",
+      "reading": "せかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "入っ",
+      "basic_form": "入る",
+      "reading": "はいっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "気分",
+      "basic_form": "気分",
+      "reading": "きぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なり",
+      "basic_form": "なる",
+      "reading": "なり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特に",
+      "basic_form": "特に",
+      "reading": "とくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "小説",
+      "basic_form": "小説",
+      "reading": "しょうせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "好き",
+      "basic_form": "好き",
+      "reading": "すき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "登場人物",
+      "basic_form": "登場人物",
+      "reading": "とうじょうじんぶつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "気持ち",
+      "basic_form": "気持ち",
+      "reading": "きもち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "想像",
+      "basic_form": "想像",
+      "reading": "そうぞう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ながら",
+      "basic_form": "ながら",
+      "reading": "ながら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読む",
+      "basic_form": "読む",
+      "reading": "よむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しい",
+      "basic_form": "楽しい",
+      "reading": "たのしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "図書館",
+      "basic_form": "図書館",
+      "reading": "としょかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おもしろ",
+      "basic_form": "おもしろい",
+      "reading": "おもしろ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "そう",
+      "basic_form": "そう",
+      "reading": "そう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見つけ",
+      "basic_form": "見つける",
+      "reading": "みつけ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ミステリー",
+      "basic_form": "ミステリー",
+      "reading": "みすてりー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "小説",
+      "basic_form": "小説",
+      "reading": "しょうせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "最後",
+      "basic_form": "最後",
+      "reading": "さいご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "目",
+      "basic_form": "目",
+      "reading": "め",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "離せ",
+      "basic_form": "離す",
+      "reading": "はなせ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ませ",
+      "basic_form": "ます",
+      "reading": "ませ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ん",
+      "basic_form": "ん",
+      "reading": "ん",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "でし",
+      "basic_form": "です",
+      "reading": "でし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "読み終わっ",
+      "basic_form": "読み終わる",
+      "reading": "よみおわっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "とき",
+      "basic_form": "とき",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "満足",
+      "basic_form": "満足",
+      "reading": "まんぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "気持ち",
+      "basic_form": "気持ち",
+      "reading": "きもち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なり",
+      "basic_form": "なる",
+      "reading": "なり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読む",
+      "basic_form": "読む",
+      "reading": "よむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "知ら",
+      "basic_form": "知る",
+      "reading": "しら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "なかっ",
+      "basic_form": "ない",
+      "reading": "なかっ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "言葉",
+      "basic_form": "言葉",
+      "reading": "ことば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学ぶ",
+      "basic_form": "学ぶ",
+      "reading": "まなぶ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "でき",
+      "basic_form": "できる",
+      "reading": "でき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いろいろな",
+      "basic_form": "いろいろ",
+      "reading": "いろいろな",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "ジャンル",
+      "basic_form": "ジャンル",
+      "reading": "じゃんる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読ん",
+      "basic_form": "読む",
+      "reading": "よん",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "て",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いき",
+      "basic_form": "いく",
+      "reading": "いき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たい",
+      "basic_form": "たい",
+      "reading": "たい",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思い",
+      "basic_form": "思う",
+      "reading": "おもい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi"
+    },
+    "読書": {
+      "meaning": "讀書",
+      "romaji": "dokusho"
+    },
+    "大好き": {
+      "meaning": "非常喜歡",
+      "romaji": "daisuki"
+    },
+    "本": {
+      "meaning": "書",
+      "romaji": "hon"
+    },
+    "読む": {
+      "meaning": "閱讀",
+      "romaji": "yomu"
+    },
+    "いる": {
+      "meaning": "（狀態）正在進行",
+      "romaji": "iru"
+    },
+    "まるで": {
+      "meaning": "簡直、宛如",
+      "romaji": "marude"
+    },
+    "違う": {
+      "meaning": "不同、有別",
+      "romaji": "chigau"
+    },
+    "世界": {
+      "meaning": "世界",
+      "romaji": "sekai"
+    },
+    "入る": {
+      "meaning": "進入",
+      "romaji": "hairu"
+    },
+    "よう": {
+      "meaning": "好像、如同（比喻）",
+      "romaji": "you"
+    },
+    "気分": {
+      "meaning": "心情、感覺",
+      "romaji": "kibun"
+    },
+    "なる": {
+      "meaning": "變成",
+      "romaji": "naru"
+    },
+    "特に": {
+      "meaning": "特別是",
+      "romaji": "toku ni"
+    },
+    "小説": {
+      "meaning": "小說",
+      "romaji": "shousetsu"
+    },
+    "好き": {
+      "meaning": "喜歡",
+      "romaji": "suki"
+    },
+    "登場人物": {
+      "meaning": "登場人物、角色",
+      "romaji": "toujou jinbutsu"
+    },
+    "気持ち": {
+      "meaning": "心情、感受",
+      "romaji": "kimochi"
+    },
+    "想像": {
+      "meaning": "想像",
+      "romaji": "souzou"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru"
+    },
+    "ながら": {
+      "meaning": "一邊～一邊（同時進行）",
+      "romaji": "nagara"
+    },
+    "楽しい": {
+      "meaning": "開心的、快樂的",
+      "romaji": "tanoshii"
+    },
+    "先週": {
+      "meaning": "上週",
+      "romaji": "senshuu"
+    },
+    "図書館": {
+      "meaning": "圖書館",
+      "romaji": "toshokan"
+    },
+    "おもしろい": {
+      "meaning": "有趣的",
+      "romaji": "omoshiroi"
+    },
+    "見つける": {
+      "meaning": "找到、發現",
+      "romaji": "mitsukeru"
+    },
+    "ミステリー": {
+      "meaning": "推理（類型）",
+      "romaji": "misuterii"
+    },
+    "最初": {
+      "meaning": "最初、開始",
+      "romaji": "saisho"
+    },
+    "最後": {
+      "meaning": "最後、結尾",
+      "romaji": "saigo"
+    },
+    "目": {
+      "meaning": "眼睛",
+      "romaji": "me"
+    },
+    "離す": {
+      "meaning": "移開、放開",
+      "romaji": "hanasu"
+    },
+    "読み終わる": {
+      "meaning": "讀完",
+      "romaji": "yomi owaru"
+    },
+    "とき": {
+      "meaning": "時候",
+      "romaji": "toki"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo"
+    },
+    "満足": {
+      "meaning": "滿足",
+      "romaji": "manzoku"
+    },
+    "こと": {
+      "meaning": "事情（名詞化）",
+      "romaji": "koto"
+    },
+    "知る": {
+      "meaning": "知道",
+      "romaji": "shiru"
+    },
+    "言葉": {
+      "meaning": "語言、詞彙",
+      "romaji": "kotoba"
+    },
+    "学ぶ": {
+      "meaning": "學習",
+      "romaji": "manabu"
+    },
+    "できる": {
+      "meaning": "能夠",
+      "romaji": "dekiru"
+    },
+    "これから": {
+      "meaning": "從現在起",
+      "romaji": "korekara"
+    },
+    "いろいろ": {
+      "meaning": "各種各樣",
+      "romaji": "iroiro"
+    },
+    "ジャンル": {
+      "meaning": "類型、流派",
+      "romaji": "janru"
+    },
+    "いく": {
+      "meaning": "（表方向）持續下去",
+      "romaji": "iku"
+    },
+    "思う": {
+      "meaning": "認為、覺得",
+      "romaji": "omou"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "が": "主格助詞，標示主語或對象",
+    "を": "受格助詞，標示受詞",
+    "に": "方向/目的助詞",
+    "の": "屬格助詞，表示所屬",
+    "で": "手段/場所助詞，表示場所或方式",
+    "と": "條件/引用助詞，表示「如果～」或引用",
+    "も": "添加助詞，表示「也」",
+    "から": "起點助詞，表示起點",
+    "まで": "到達助詞，表示終點",
+    "ながら": "同時助詞，表示兩個動作同時進行",
+    "て": "て形助詞，連接動作",
+    "です": "禮貌體斷定助動詞",
+    "ます": "禮貌體動詞結尾",
+    "た": "過去式助動詞",
+    "ない": "否定助動詞",
+    "たい": "希望助動詞，表示「想要～」",
+    "よう": "比況助動詞，表示「好像～」",
+    "そう": "樣態助動詞，接形容詞表示「看起來～」"
+  },
+  "translations": [
+    [
+      {
+        "text": "我非常喜歡讀書",
+        "word": "読書"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "讀書的時候，感覺就像進入了另一個世界",
+        "word": "世界"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "尤其喜歡小說，",
+        "word": "小説"
+      },
+      {
+        "text": "一邊想像角色的心情一邊讀很有趣",
+        "word": "想像"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "上週在圖書館發現了一本看起來很有趣的書",
+        "word": "図書館"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "是推理小說，",
+        "word": "ミステリー"
+      },
+      {
+        "text": "從頭到尾都讓人目不轉睛",
+        "word": "離す"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "讀完的時候，心情非常滿足",
+        "word": "満足"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "透過讀書，也能學到不知道的詞彙",
+        "word": "言葉"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "今後也想繼續閱讀各種類型的書",
+        "word": "ジャンル"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.1,
+    "jlpt_level": "N3⁻"
+  }
+}

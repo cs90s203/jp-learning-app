@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.mick.jp-content-push</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/mick/Documents/Language/auto_push_content.sh</string>
+    </array>
+
+    <!-- 每天 00:05 執行（本地時間） -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>0</integer>
+        <key>Minute</key>
+        <integer>5</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/mick/Documents/Language/auto_push.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/mick/Documents/Language/auto_push.log</string>
+</dict>
+</plist>

@@ -1,0 +1,1616 @@
+{
+  "date": "2026-06-23",
+  "level": "n1_lite",
+  "title": "都市化と地方の変容",
+  "text": "日本では、人口の都市集中が進む一方で、地方の過疎化が深刻な問題となっている。特に若年層の都市流出が著しく、地方自治体の財政基盤を揺るがす要因となっている。こうした状況を打開するために、近年では「地方創生」政策が推進されている。具体的には、移住支援制度の充実や地域おこし協力隊の活用、リモートワーク環境の整備などが進められている。しかしながら、これらの施策の効果は地域によって大きく異なり、依然として人口減少に歯止めがかからない地域も少なくない。都市と地方の格差を縮小するためには、単なる人口誘致にとどまらず、産業振興や教育・医療インフラの整備など、多面的なアプローチが必要とされている。デジタル技術を活用したスマートシティの概念を地方に応用する取り組みも注目されている。地方の活性化は、日本社会全体の持続可能な発展に不可欠な課題であると言えるだろう。",
+  "tokens": [
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人口",
+      "basic_form": "人口",
+      "reading": "じんこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "都市集中",
+      "basic_form": "都市集中",
+      "reading": "とししゅうちゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進む",
+      "basic_form": "進む",
+      "reading": "すすむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "過疎化",
+      "basic_form": "過疎化",
+      "reading": "かそか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深刻",
+      "basic_form": "深刻",
+      "reading": "しんこく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっ",
+      "basic_form": "なる",
+      "reading": "なっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特に",
+      "basic_form": "特に",
+      "reading": "とくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "若年層",
+      "basic_form": "若年層",
+      "reading": "じゃくねんそう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "都市流出",
+      "basic_form": "都市流出",
+      "reading": "としりゅうしゅつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "著しく",
+      "basic_form": "著しい",
+      "reading": "いちじるしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方自治体",
+      "basic_form": "地方自治体",
+      "reading": "ちほうじちたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "財政基盤",
+      "basic_form": "財政基盤",
+      "reading": "ざいせいきばん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "揺るがす",
+      "basic_form": "揺るがす",
+      "reading": "ゆるがす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "要因",
+      "basic_form": "要因",
+      "reading": "よういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっ",
+      "basic_form": "なる",
+      "reading": "なっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "打開",
+      "basic_form": "打開",
+      "reading": "だかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方創生",
+      "basic_form": "地方創生",
+      "reading": "ちほうそうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政策",
+      "basic_form": "政策",
+      "reading": "せいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "推進",
+      "basic_form": "推進",
+      "reading": "すいしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "さ",
+      "basic_form": "する",
+      "reading": "さ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "具体的に",
+      "basic_form": "具体的",
+      "reading": "ぐたいてきに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "移住支援制度",
+      "basic_form": "移住支援制度",
+      "reading": "いじゅうしえんせいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "充実",
+      "basic_form": "充実",
+      "reading": "じゅうじつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地域おこし協力隊",
+      "basic_form": "地域おこし協力隊",
+      "reading": "ちいきおこしきょうりょくたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活用",
+      "basic_form": "活用",
+      "reading": "かつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "リモートワーク",
+      "basic_form": "リモートワーク",
+      "reading": "りもーとわーく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整備",
+      "basic_form": "整備",
+      "reading": "せいび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進め",
+      "basic_form": "進める",
+      "reading": "すすめ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "られ",
+      "basic_form": "られる",
+      "reading": "られ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかしながら",
+      "basic_form": "しかしながら",
+      "reading": "しかしながら",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これら",
+      "basic_form": "これら",
+      "reading": "これら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "施策",
+      "basic_form": "施策",
+      "reading": "しさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "効果",
+      "basic_form": "効果",
+      "reading": "こうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きく",
+      "basic_form": "大きい",
+      "reading": "おおきく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "異なり",
+      "basic_form": "異なる",
+      "reading": "ことなり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "依然として",
+      "basic_form": "依然として",
+      "reading": "いぜんとして",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "人口減少",
+      "basic_form": "人口減少",
+      "reading": "じんこうげんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "歯止め",
+      "basic_form": "歯止め",
+      "reading": "はどめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かから",
+      "basic_form": "かかる",
+      "reading": "かから",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なく",
+      "basic_form": "少ない",
+      "reading": "すくなく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市",
+      "basic_form": "都市",
+      "reading": "とし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "格差",
+      "basic_form": "格差",
+      "reading": "かくさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "縮小",
+      "basic_form": "縮小",
+      "reading": "しゅくしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "単なる",
+      "basic_form": "単なる",
+      "reading": "たんなる",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "人口誘致",
+      "basic_form": "人口誘致",
+      "reading": "じんこうゆうち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とどまら",
+      "basic_form": "とどまる",
+      "reading": "とどまら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ず",
+      "basic_form": "ず",
+      "reading": "ず",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "産業振興",
+      "basic_form": "産業振興",
+      "reading": "さんぎょうしんこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "教育",
+      "basic_form": "教育",
+      "reading": "きょういく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "・",
+      "basic_form": "・",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "医療",
+      "basic_form": "医療",
+      "reading": "いりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "インフラ",
+      "basic_form": "インフラ",
+      "reading": "いんふら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整備",
+      "basic_form": "整備",
+      "reading": "せいび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "多面的",
+      "basic_form": "多面的",
+      "reading": "ためんてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "アプローチ",
+      "basic_form": "アプローチ",
+      "reading": "あぷろーち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さ",
+      "basic_form": "する",
+      "reading": "さ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "デジタル技術",
+      "basic_form": "デジタル技術",
+      "reading": "でじたるぎじゅつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活用",
+      "basic_form": "活用",
+      "reading": "かつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "スマートシティ",
+      "basic_form": "スマートシティ",
+      "reading": "すまーとしてぃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "概念",
+      "basic_form": "概念",
+      "reading": "がいねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "応用",
+      "basic_form": "応用",
+      "reading": "おうよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "取り組み",
+      "basic_form": "取り組み",
+      "reading": "とりくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "注目",
+      "basic_form": "注目",
+      "reading": "ちゅうもく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "さ",
+      "basic_form": "する",
+      "reading": "さ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活性化",
+      "basic_form": "活性化",
+      "reading": "かっせいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日本社会",
+      "basic_form": "日本社会",
+      "reading": "にほんしゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "全体",
+      "basic_form": "全体",
+      "reading": "ぜんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "持続可能",
+      "basic_form": "持続可能",
+      "reading": "じぞくかのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "発展",
+      "basic_form": "発展",
+      "reading": "はってん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不可欠",
+      "basic_form": "不可欠",
+      "reading": "ふかけつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言える",
+      "basic_form": "言える",
+      "reading": "いえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "日本": {
+      "meaning": "日本",
+      "romaji": "nihon"
+    },
+    "人口": {
+      "meaning": "人口",
+      "romaji": "jinkou"
+    },
+    "都市集中": {
+      "meaning": "人口集中都市",
+      "romaji": "toshi shuuchuu"
+    },
+    "進む": {
+      "meaning": "推進、進展",
+      "romaji": "susumu"
+    },
+    "一方で": {
+      "meaning": "另一方面",
+      "romaji": "ippou de"
+    },
+    "地方": {
+      "meaning": "地方、非都市地區",
+      "romaji": "chihou"
+    },
+    "過疎化": {
+      "meaning": "人口疏散化、偏遠化",
+      "romaji": "kasoka"
+    },
+    "深刻": {
+      "meaning": "深刻、嚴重",
+      "romaji": "shinkou"
+    },
+    "問題": {
+      "meaning": "問題",
+      "romaji": "mondai"
+    },
+    "なる": {
+      "meaning": "變成",
+      "romaji": "naru"
+    },
+    "いる": {
+      "meaning": "（狀態）持續",
+      "romaji": "iru"
+    },
+    "特に": {
+      "meaning": "特別是",
+      "romaji": "toku ni"
+    },
+    "若年層": {
+      "meaning": "年輕世代",
+      "romaji": "jakunensou"
+    },
+    "都市流出": {
+      "meaning": "人口流入都市現象",
+      "romaji": "toshi ryuushutsu"
+    },
+    "著しい": {
+      "meaning": "顯著的、明顯的",
+      "romaji": "ichijirushii"
+    },
+    "地方自治体": {
+      "meaning": "地方政府",
+      "romaji": "chihou jichitai"
+    },
+    "財政基盤": {
+      "meaning": "財政基礎",
+      "romaji": "zaisei kiban"
+    },
+    "揺るがす": {
+      "meaning": "動搖、撼動",
+      "romaji": "yurugasu"
+    },
+    "要因": {
+      "meaning": "要因、原因",
+      "romaji": "youin"
+    },
+    "状況": {
+      "meaning": "狀況、情況",
+      "romaji": "joukyou"
+    },
+    "打開": {
+      "meaning": "打開局面、突破",
+      "romaji": "dakai"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru"
+    },
+    "ため": {
+      "meaning": "為了（目的）",
+      "romaji": "tame"
+    },
+    "近年": {
+      "meaning": "近年",
+      "romaji": "kinnen"
+    },
+    "地方創生": {
+      "meaning": "地方創生（政策名）",
+      "romaji": "chihou sousei"
+    },
+    "政策": {
+      "meaning": "政策",
+      "romaji": "seisaku"
+    },
+    "推進": {
+      "meaning": "推進",
+      "romaji": "suishin"
+    },
+    "れる": {
+      "meaning": "被動助動詞",
+      "romaji": "reru"
+    },
+    "具体的": {
+      "meaning": "具體的",
+      "romaji": "gutaiteki"
+    },
+    "移住支援制度": {
+      "meaning": "移居支援制度",
+      "romaji": "ijuu shien seido"
+    },
+    "充実": {
+      "meaning": "充實、完善",
+      "romaji": "juujitsu"
+    },
+    "地域おこし協力隊": {
+      "meaning": "地方振興協力隊（制度名）",
+      "romaji": "chiiki okoshi kyouryoku tai"
+    },
+    "活用": {
+      "meaning": "活用、善用",
+      "romaji": "katsuyou"
+    },
+    "リモートワーク": {
+      "meaning": "遠端工作",
+      "romaji": "rimoto waaku"
+    },
+    "環境": {
+      "meaning": "環境",
+      "romaji": "kankyou"
+    },
+    "整備": {
+      "meaning": "整備、完善",
+      "romaji": "seibi"
+    },
+    "進める": {
+      "meaning": "推進",
+      "romaji": "susumeru"
+    },
+    "られる": {
+      "meaning": "被動/可能助動詞",
+      "romaji": "rareru"
+    },
+    "しかしながら": {
+      "meaning": "然而、但是（書面語強調）",
+      "romaji": "shikashi nagara"
+    },
+    "これら": {
+      "meaning": "這些",
+      "romaji": "korera"
+    },
+    "施策": {
+      "meaning": "施政措施",
+      "romaji": "shisaku"
+    },
+    "効果": {
+      "meaning": "效果",
+      "romaji": "kouka"
+    },
+    "地域": {
+      "meaning": "地區",
+      "romaji": "chiiki"
+    },
+    "によって": {
+      "meaning": "依照、因為（書面語）",
+      "romaji": "ni yotte"
+    },
+    "大きい": {
+      "meaning": "大的",
+      "romaji": "ookii"
+    },
+    "異なる": {
+      "meaning": "不同、有所差異",
+      "romaji": "kotonaru"
+    },
+    "依然として": {
+      "meaning": "依然、仍然",
+      "romaji": "izen to shite"
+    },
+    "人口減少": {
+      "meaning": "人口減少",
+      "romaji": "jinkou genshou"
+    },
+    "歯止め": {
+      "meaning": "煞車、抑制",
+      "romaji": "hadome"
+    },
+    "かかる": {
+      "meaning": "（此用法）施加、有效",
+      "romaji": "kakaru"
+    },
+    "少ない": {
+      "meaning": "少的",
+      "romaji": "sukunai"
+    },
+    "都市": {
+      "meaning": "都市、城市",
+      "romaji": "toshi"
+    },
+    "格差": {
+      "meaning": "差距、落差",
+      "romaji": "kakusa"
+    },
+    "縮小": {
+      "meaning": "縮小",
+      "romaji": "shukushou"
+    },
+    "単なる": {
+      "meaning": "僅僅是、不過是",
+      "romaji": "tan naru"
+    },
+    "人口誘致": {
+      "meaning": "吸引人口（移入）",
+      "romaji": "jinkou yuuchi"
+    },
+    "とどまる": {
+      "meaning": "止於、僅限於",
+      "romaji": "todomaru"
+    },
+    "ず": {
+      "meaning": "否定助動詞（書面語）",
+      "romaji": "zu"
+    },
+    "産業振興": {
+      "meaning": "產業振興",
+      "romaji": "sangyou shinkou"
+    },
+    "教育": {
+      "meaning": "教育",
+      "romaji": "kyouiku"
+    },
+    "医療": {
+      "meaning": "醫療",
+      "romaji": "iryou"
+    },
+    "インフラ": {
+      "meaning": "基礎建設",
+      "romaji": "infura"
+    },
+    "多面的": {
+      "meaning": "多方面的",
+      "romaji": "tamenteki"
+    },
+    "アプローチ": {
+      "meaning": "方法、途徑",
+      "romaji": "apuroochi"
+    },
+    "必要": {
+      "meaning": "必要的",
+      "romaji": "hitsuyou"
+    },
+    "デジタル技術": {
+      "meaning": "數位技術",
+      "romaji": "dejitaru gijutsu"
+    },
+    "スマートシティ": {
+      "meaning": "智慧城市",
+      "romaji": "sumaato shiti"
+    },
+    "概念": {
+      "meaning": "概念",
+      "romaji": "gainen"
+    },
+    "応用": {
+      "meaning": "應用",
+      "romaji": "ouyou"
+    },
+    "取り組み": {
+      "meaning": "努力、舉措",
+      "romaji": "torikumi"
+    },
+    "注目": {
+      "meaning": "注目、關注",
+      "romaji": "chuumoku"
+    },
+    "活性化": {
+      "meaning": "活化、活性化",
+      "romaji": "kasseika"
+    },
+    "日本社会": {
+      "meaning": "日本社會",
+      "romaji": "nihon shakai"
+    },
+    "全体": {
+      "meaning": "整體",
+      "romaji": "zentai"
+    },
+    "持続可能": {
+      "meaning": "永續、可持續",
+      "romaji": "jizoku kanou"
+    },
+    "発展": {
+      "meaning": "發展",
+      "romaji": "hatten"
+    },
+    "不可欠": {
+      "meaning": "不可或缺",
+      "romaji": "fukaketsu"
+    },
+    "課題": {
+      "meaning": "課題",
+      "romaji": "kadai"
+    },
+    "ある": {
+      "meaning": "是（書面語斷定）",
+      "romaji": "aru"
+    },
+    "言える": {
+      "meaning": "可以說",
+      "romaji": "ieru"
+    },
+    "だろう": {
+      "meaning": "推量助動詞，表示「大概、應該」",
+      "romaji": "darou"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "が": "主格助詞，標示主語",
+    "を": "受格助詞，標示受詞",
+    "に": "方向/目的助詞",
+    "の": "屬格助詞，表示所屬",
+    "で": "場所/手段助詞",
+    "も": "添加助詞，表示「也」",
+    "や": "並列助詞，列舉部分例子",
+    "と": "引用/並列助詞",
+    "て": "て形助詞，連接動詞",
+    "など": "列舉助詞，表示「等等」",
+    "によって": "原因/手段助詞，書面語，表示「透過～、由於～」",
+    "ず": "否定助動詞（書面語），表示「不～」",
+    "れる": "被動助動詞",
+    "られる": "被動/可能助動詞",
+    "だろう": "推量助動詞，表示「大概、應該」"
+  },
+  "translations": [
+    [
+      {
+        "text": "在日本，人口集中都市的趨勢不斷推進，",
+        "word": "都市集中"
+      },
+      {
+        "text": "另一方面地方過疎化成為嚴重問題",
+        "word": "過疎化"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "特別是年輕世代流入都市的現象顯著，",
+        "word": "若年層"
+      },
+      {
+        "text": "成為動搖地方政府財政基礎的要因",
+        "word": "財政基盤"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "為了打破這種狀況，近年推行了「地方創生」政策",
+        "word": "地方創生"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "具體而言，",
+        "word": "具体的"
+      },
+      {
+        "text": "正在推進完善移居支援制度、活用地方振興協力隊、",
+        "word": "活用"
+      },
+      {
+        "text": "以及整備遠端工作環境等措施",
+        "word": "整備"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "然而，",
+        "word": "しかしながら"
+      },
+      {
+        "text": "這些施策的效果因地區而大相徑庭，",
+        "word": "施策"
+      },
+      {
+        "text": "仍有許多地區無法抑制人口減少",
+        "word": "人口減少"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "為了縮小都市與地方的差距，",
+        "word": "格差"
+      },
+      {
+        "text": "不能只是吸引人口，",
+        "word": "人口誘致"
+      },
+      {
+        "text": "還需要產業振興、教育醫療基礎建設整備等多方面的方法",
+        "word": "アプローチ"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "將數位技術應用於智慧城市概念推廣至地方的努力也備受關注",
+        "word": "スマートシティ"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "地方活化是日本社會整體永續發展不可或缺的課題",
+        "word": "活性化"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.14,
+    "jlpt_level": "N1⁻"
+  }
+}

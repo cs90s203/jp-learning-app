@@ -1,0 +1,62 @@
+{
+  "date": "2026-06-20",
+  "level": "n5_below",
+  "title": "犬と猫",
+  "text": "犬がいます。猫もいます。犬は大きいです。猫は小さいです。",
+  "tokens": [
+    { "surface_form": "犬",     "basic_form": "犬",   "reading": "いぬ",     "pos": "名詞" },
+    { "surface_form": "が",     "basic_form": "が",   "reading": "",         "pos": "助詞" },
+    { "surface_form": "います", "basic_form": "いる", "reading": "います",   "pos": "動詞" },
+    { "surface_form": "。",     "basic_form": "。",   "reading": "",         "pos": "記号" },
+    { "surface_form": "猫",     "basic_form": "猫",   "reading": "ねこ",     "pos": "名詞" },
+    { "surface_form": "も",     "basic_form": "も",   "reading": "",         "pos": "助詞" },
+    { "surface_form": "います", "basic_form": "いる", "reading": "います",   "pos": "動詞" },
+    { "surface_form": "。",     "basic_form": "。",   "reading": "",         "pos": "記号" },
+    { "surface_form": "犬",     "basic_form": "犬",   "reading": "いぬ",     "pos": "名詞" },
+    { "surface_form": "は",     "basic_form": "は",   "reading": "",         "pos": "助詞" },
+    { "surface_form": "大きい", "basic_form": "大きい","reading": "おおきい", "pos": "形容詞" },
+    { "surface_form": "です",   "basic_form": "です", "reading": "",         "pos": "助動詞" },
+    { "surface_form": "。",     "basic_form": "。",   "reading": "",         "pos": "記号" },
+    { "surface_form": "猫",     "basic_form": "猫",   "reading": "ねこ",     "pos": "名詞" },
+    { "surface_form": "は",     "basic_form": "は",   "reading": "",         "pos": "助詞" },
+    { "surface_form": "小さい", "basic_form": "小さい","reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "です",   "basic_form": "です", "reading": "",         "pos": "助動詞" },
+    { "surface_form": "。",     "basic_form": "。",   "reading": "",         "pos": "記号" }
+  ],
+  "vocab": {
+    "犬":     { "meaning": "狗",  "romaji": "inu" },
+    "猫":     { "meaning": "貓",  "romaji": "neko" },
+    "いる":   { "meaning": "在・有（生物）", "romaji": "iru" },
+    "大きい": { "meaning": "大的", "romaji": "ookii" },
+    "小さい": { "meaning": "小的", "romaji": "chiisai" }
+  },
+  "particles": {
+    "が": "標示動作或狀態的主體，常用於描述眼前看到、注意到的事物。",
+    "も": "表示「也」，強調同類事物的並列。",
+    "は": "提示句子的主題，告訴對方接下來要說的是關於「什麼」。"
+  },
+  "translations": [
+    [
+      { "text": "有一隻狗", "word": "犬" },
+      { "text": "。", "word": null }
+    ],
+    [
+      { "text": "也有一隻貓", "word": "猫" },
+      { "text": "。", "word": null }
+    ],
+    [
+      { "text": "狗", "word": "犬" },
+      { "text": "很大", "word": "大きい" },
+      { "text": "。", "word": null }
+    ],
+    [
+      { "text": "貓", "word": "猫" },
+      { "text": "很小", "word": "小さい" },
+      { "text": "。", "word": null }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.05,
+    "jlpt_level": "N5以下"
+  }
+}

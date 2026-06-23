@@ -1,0 +1,104 @@
+# 每日文章生成排程 Prompt
+
+## 排程設定
+- 執行時間：每天 00:30（台灣時間）
+- 執行方式：Cowork Scheduled Task
+
+---
+
+## Prompt 內容
+
+今天的日期是 {{TODAY}}（格式：YYYY-MM-DD）。
+
+請幫我生成今日的日語學習文章，共 10 個等級，每篇都要符合以下 JSON 格式，並存到：
+`/Users/mick/Documents/Language/content/{{TODAY}}/` 資料夾，檔名分別為：
+- `n5_lite.json`
+- `n5.json`
+- `n4_lite.json`
+- `n4.json`
+- `n3_lite.json`
+- `n3.json`
+- `n2_lite.json`
+- `n2.json`
+- `n1_lite.json`
+- `n1.json`
+
+---
+
+## 各等級規格
+
+| 檔名 | 顯示名稱 | 文章長度 | 生字率 | 文法特徵 |
+|------|---------|---------|--------|---------|
+| n5_lite | N5⁻ | 40–60字 | ~5% | 高頻名詞＋です/います，無動詞變化，全平假名可讀 |
+| n5 | N5 | 80–120字 | ~8% | 基本動詞て形/た形、簡單時態、常見助詞 |
+| n4_lite | N4⁻ | 100–140字 | ~8% | N5 文法為骨幹，導入 N4 詞彙（移動・感情・日常動作） |
+| n4 | N4 | 140–180字 | ~10% | ～たり～たり、～ので/のに、～ことができる、～てもらう |
+| n3_lite | N3⁻ | 160–200字 | ~10% | N4 文法為骨幹，導入 N3 詞彙（抽象名詞・複合動詞初步） |
+| n3 | N3 | 200–250字 | ~12% | 逆接（しかし/ところが）、引用（～と思う）、複合表現 |
+| n2_lite | N2⁻ | 220–270字 | ~12% | N3 文法為骨幹，導入 N2 詞彙（書面語入門・四字熟語少量） |
+| n2 | N2 | 270–330字 | ~14% | 書面語、複雜接續詞（したがって/一方）、社會話題 |
+| n1_lite | N1⁻ | 300–360字 | ~14% | N2 文法為骨幹，導入 N1 詞彙（漢語系名詞・硬式表現） |
+| n1 | N1 | 360字以上 | ~16% | 書面語、複雜接續詞、抽象論述、時事/文化議題 |
+
+**_lite 版原則：**
+- 文法難度比同 JLPT 等級低一階（用已知文法帶入新詞）
+- 句子平均長度比 standard 版短 20–30%
+- 生字率比 standard 版低約 2%
+- 主題可與 standard 版相同或不同
+
+---
+
+## JSON 格式（每個檔案都要符合）
+
+```json
+{
+  "date": "{{TODAY}}",
+  "level": "n4_lite",
+  "title": "文章標題",
+  "text": "完整日文文章文字",
+
+  "tokens": [
+    { "surface_form": "表層形", "basic_form": "基本形", "reading": "平假名讀音", "pos": "詞性" }
+  ],
+
+  "vocab": {
+    "基本形": { "meaning": "繁體中文意思", "romaji": "羅馬拼音" }
+  },
+
+  "particles": {
+    "助詞": "繁體中文文法說明（一句話）"
+  },
+
+  "translations": [
+    [
+      { "text": "中文翻譯片段", "word": "對應日文basic_form或null" }
+    ]
+  ],
+
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N4-"
+  }
+}
+```
+
+---
+
+## 注意事項
+
+1. **tokens** 必須完整覆蓋全文，標點符號也要包含（pos 為「記号」）
+2. **vocab** 必須收錄所有 tokens 中 pos 為名詞・動詞・形容詞・副詞的詞（含常見詞，不可遺漏）。助詞和助動詞不收。**vocab 的 key 必須與 token 的 basic_form 完全一致**（例如 token basic_form 為「いい」則 vocab key 也必須是「いい」，不可改為「良い」）。生成完成後請自我檢查：逐一掃描所有 tokens，確認每個 pos 為名詞・動詞・形容詞・副詞的 basic_form 都有對應的 vocab key，補上任何遺漏。**若某個 token 不在 vocab 中，App 會顯示「尚無中文翻譯」，這是錯誤。**
+3. **particles** 收錄文章中出現的所有助詞及助動詞，用繁體中文簡短說明
+4. **translations** 按句子分組，每個句子一個陣列，逐詞片段對應（`word` 填 basic_form，無對應填 null）
+5. 文章主題每天不同，盡量貼近日常生活、文化或時事；10 篇不必同一主題
+6. 所有中文說明使用**繁體中文**
+7. `level` 欄位填檔名（如 `n4_lite`）；`difficulty.jlpt_level` 填顯示名稱（如 `N4⁻`）
+
+生成完 10 個 JSON 檔後，請更新 `/Users/mick/Documents/Language/content/index.json`，在 `dates` 陣列中新增今日記錄：
+```json
+{
+  "date": "{{TODAY}}",
+  "levels": ["n5_lite", "n5", "n4_lite", "n4", "n3_lite", "n3", "n2_lite", "n2", "n1_lite", "n1"],
+  "generated_at": "{{TODAY}}T00:30:00Z"
+}
+```

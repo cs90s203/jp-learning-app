@@ -1,0 +1,314 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --wa: #C4783A; --wa-l: #F0D9BE; --wa-ll: #FDF8F3; --wa-bg: #F5EDE0; --wa-bg2: #EDE0CC;
+  --wt: #2A1A08; --wt2: #5A3A1A; --wt3: #9A7A5A;
+  --wg: #3A6B47; --wg-bg: #D4EDDA;
+  --wy: #8B6200; --wy-bg: #FFF0CC;
+  --wr: #9B2617; --wr-bg: #FDDDD9;
+  --nav-h: 64px;
+}
+.phone {
+  width: 375px; min-height: 720px; background: var(--wa-ll);
+  border-radius: 40px; border: 8px solid #2C2C2A;
+  overflow: hidden; font-family: var(--font-sans, -apple-system, sans-serif);
+  position: relative; display: flex; flex-direction: column; margin: 1rem auto;
+}
+.status-bar {
+  height: 44px; background: var(--wa-ll);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 24px; flex-shrink: 0;
+}
+.time { font-size: 15px; font-weight: 500; color: var(--wt); }
+.status-icons { display: flex; gap: 6px; align-items: center; color: var(--wt); font-size: 14px; }
+.screen { flex: 1; overflow-y: auto; padding: 0 0 calc(var(--nav-h) + 8px); }
+.top-bar { padding: 12px 20px 8px; }
+.top-bar h1 { font-size: 22px; font-weight: 500; color: var(--wt); }
+.top-bar p { font-size: 13px; color: var(--wt3); margin-top: 2px; }
+.sec { padding: 0 16px; }
+.badge { font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 99px; }
+.b-vocab { background: var(--wa-l); color: var(--wa); }
+.b-listen { background: var(--wy-bg); color: var(--wy); }
+.b-fill { background: var(--wg-bg); color: var(--wg); }
+.b-sentence { background: #E8E0F5; color: #4A3A8A; }
+.b-sentence-adv { background: #D8E8FF; color: #1A4A8A; }
+.card {
+  background: #FFF8F2; border: 0.5px solid var(--wa-bg2);
+  border-radius: 16px; padding: 16px; margin-bottom: 12px;
+}
+.quiz-tabs { display: flex; gap: 6px; padding: 0 16px 12px; overflow-x: auto; }
+.qt {
+  font-size: 12px; font-weight: 500; padding: 5px 12px;
+  border-radius: 99px; border: 0.5px solid var(--wa-bg2);
+  color: var(--wt3); background: #FFF8F2; cursor: pointer; white-space: nowrap; flex-shrink: 0;
+}
+.qt.active { background: var(--wa); color: #FFF8F2; border-color: var(--wa); }
+.pane { display: none; }
+.pane.active { display: block; }
+.quiz-q { font-size: 15px; color: var(--wt); line-height: 1.8; margin-bottom: 14px; }
+.choice-list { display: flex; flex-direction: column; gap: 8px; }
+.choice-item {
+  border: 0.5px solid var(--wa-bg2); border-radius: 12px;
+  padding: 12px 14px; font-size: 14px; color: var(--wt2);
+  cursor: pointer; background: #FFF8F2; text-align: left; width: 100%;
+}
+.choice-item.correct { border-color: #A8D0B0; background: var(--wg-bg); color: var(--wg); }
+.choice-item.wrong { border-color: #F0B8B0; background: var(--wr-bg); color: var(--wr); }
+.cant-do-btn {
+  width: 100%; margin-top: 12px;
+  border: 0.5px solid #F0C4BB; border-radius: 12px;
+  padding: 11px; font-size: 13px; font-weight: 500;
+  color: var(--wr); background: var(--wr-bg); cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+.diff-note { font-size: 11px; color: var(--wt3); text-align: center; margin-top: 6px; }
+.judge-row { display: flex; gap: 8px; margin-top: 14px; }
+.judge-btn {
+  flex: 1; border: 0.5px solid var(--wa-bg2); border-radius: 12px;
+  padding: 12px; font-size: 14px; font-weight: 500; cursor: pointer;
+  background: #FFF8F2; display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+.judge-btn.correct-btn { color: var(--wg); border-color: #A8D0B0; }
+.judge-btn.wrong-btn { color: var(--wr); border-color: #F0B8B0; }
+.explain-box {
+  margin-top: 12px; padding: 12px 14px;
+  background: #FFF0CC; border: 0.5px solid #E8C870;
+  border-radius: 12px; display: none;
+}
+.explain-box.show { display: block; }
+.explain-title { font-size: 12px; font-weight: 500; color: var(--wy); margin-bottom: 6px; }
+.explain-row { font-size: 13px; color: var(--wt2); line-height: 1.7; }
+.explain-row span { color: var(--wa); font-weight: 500; }
+.sort-label { font-size: 12px; color: var(--wt3); margin-bottom: 10px; }
+.sort-answer-area {
+  min-height: 52px; border: 1px dashed var(--wa-bg2); border-radius: 12px;
+  padding: 8px; display: flex; flex-wrap: wrap; gap: 6px;
+  margin-bottom: 12px; background: var(--wa-ll);
+}
+.sort-pool { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.sort-chip {
+  padding: 8px 14px; border-radius: 10px;
+  background: var(--wa-l); color: var(--wa);
+  font-size: 14px; font-weight: 500; cursor: pointer;
+  border: 0.5px solid #D8A870; user-select: none;
+}
+.sort-chip.placed { background: var(--wa); color: #FFF8F2; border-color: var(--wa); }
+.sort-chip.answer-chip {
+  background: var(--wa); color: #FFF8F2; border-color: var(--wa);
+}
+.submit-btn {
+  width: 100%; background: var(--wa); color: #FFF8F2;
+  border: none; border-radius: 12px; padding: 12px;
+  font-size: 15px; font-weight: 500; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+}
+.prog-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.prog-label { font-size: 12px; color: var(--wt3); }
+.prog-bar { height: 4px; background: var(--wa-bg); border-radius: 99px; overflow: hidden; margin-bottom: 14px; }
+.prog-fill { height: 100%; background: var(--wa); border-radius: 99px; }
+.unlock-note {
+  font-size: 12px; color: #4A3A8A; background: #F0ECFF;
+  border: 0.5px solid #C8C0F0; border-radius: 10px;
+  padding: 8px 12px; text-align: center; margin-bottom: 12px;
+}
+.bottom-nav {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: var(--nav-h); background: #FFF8F2;
+  border-top: 0.5px solid var(--wa-bg2); display: flex; padding-bottom: 8px;
+}
+.nav-item {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 3px; cursor: pointer; background: none; border: none;
+}
+.nav-item i { font-size: 22px; color: var(--wt3); }
+.nav-item span { font-size: 10px; color: var(--wt3); }
+.nav-item.active i, .nav-item.active span { color: var(--wa); }
+</style>
+
+<h2 class="sr-only">試題頁介面，包含單字、聽力、填空、句子判斷、句子排列五種題型</h2>
+
+<div class="phone">
+  <div class="status-bar">
+    <span class="time">9:41</span>
+    <div class="status-icons">
+      <i class="ti ti-wifi" aria-hidden="true"></i>
+      <i class="ti ti-battery" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <div class="screen">
+    <div class="top-bar">
+      <h1>今日試題</h1>
+      <p>單字 12・聽力 3・填空 3・句子 3</p>
+    </div>
+
+    <div class="quiz-tabs">
+      <button class="qt active" onclick="switchQt(this,'pane-vocab')">單字</button>
+      <button class="qt" onclick="switchQt(this,'pane-listen')">聽力</button>
+      <button class="qt" onclick="switchQt(this,'pane-fill')">填空</button>
+      <button class="qt" onclick="switchQt(this,'pane-sentence')">句子判斷</button>
+      <button class="qt" onclick="switchQt(this,'pane-sort')">句子排列</button>
+    </div>
+
+    <div class="sec">
+
+      <!-- 單字 -->
+      <div class="pane active" id="pane-vocab">
+        <div class="prog-row"><span class="prog-label">單字複習</span><span class="prog-label">1 / 12</span></div>
+        <div class="prog-bar"><div class="prog-fill" style="width:8%"></div></div>
+        <div class="card" style="text-align:center">
+          <div style="display:flex;justify-content:center;align-items:center;gap:8px;margin-bottom:8px">
+            <div style="font-size:34px;color:var(--wt);font-weight:500">公園</div>
+            <button style="width:32px;height:32px;border-radius:50%;background:var(--wa-l);border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:var(--wa);font-size:16px" aria-label="發音"><i class="ti ti-volume" aria-hidden="true"></i></button>
+          </div>
+          <div style="font-size:15px;color:var(--wt2)">こうえん</div>
+          <div style="height:0.5px;background:var(--wa-bg);margin:14px 0"></div>
+          <div style="font-size:16px;color:var(--wt3);letter-spacing:4px">● ● ●</div>
+          <div style="font-size:12px;color:var(--wt3);margin-top:4px">點擊查看中文</div>
+          <div class="judge-row">
+            <button class="judge-btn wrong-btn"><i class="ti ti-x" aria-hidden="true"></i> 不記得</button>
+            <button class="judge-btn correct-btn"><i class="ti ti-check" aria-hidden="true"></i> 記得</button>
+          </div>
+        </div>
+        <button class="cant-do-btn"><i class="ti ti-arrow-down" aria-hidden="true"></i> 這題太難，降低難度</button>
+        <p class="diff-note">系統會調整此單字複習頻率</p>
+      </div>
+
+      <!-- 聽力 -->
+      <div class="pane" id="pane-listen">
+        <div class="prog-row"><span class="prog-label">聽力</span><span class="prog-label">1 / 3</span></div>
+        <div class="prog-bar"><div class="prog-fill" style="width:33%"></div></div>
+        <div class="card">
+          <div style="display:flex;gap:8px;margin-bottom:12px">
+            <span class="badge b-listen">聽力</span>
+          </div>
+          <div style="display:flex;justify-content:center;margin-bottom:14px">
+            <button style="background:var(--wa);color:#FFF8F2;border:none;border-radius:99px;padding:10px 24px;font-size:14px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:6px">
+              <i class="ti ti-player-play" aria-hidden="true"></i> 播放音檔
+            </button>
+          </div>
+          <p class="quiz-q">花の様子はどうでしたか？</p>
+          <div class="choice-list">
+            <button class="choice-item correct"><i class="ti ti-check" aria-hidden="true"></i> 綺麗でした</button>
+            <button class="choice-item">大きかったです</button>
+            <button class="choice-item">少なかったです</button>
+          </div>
+        </div>
+        <button class="cant-do-btn"><i class="ti ti-arrow-down" aria-hidden="true"></i> 這題太難，降低難度</button>
+        <p class="diff-note">系統會安排更多基礎聽力題</p>
+      </div>
+
+      <!-- 填空 -->
+      <div class="pane" id="pane-fill">
+        <div class="prog-row"><span class="prog-label">填空</span><span class="prog-label">1 / 3</span></div>
+        <div class="prog-bar"><div class="prog-fill" style="width:33%"></div></div>
+        <div class="card">
+          <div style="display:flex;gap:8px;margin-bottom:12px">
+            <span class="badge b-fill">填空</span>
+          </div>
+          <p class="quiz-q"><ruby>花<rt style="font-size:9px">はな</rt></ruby>が＿＿＿でした。</p>
+          <input type="text" placeholder="輸入日文答案" style="width:100%;border:0.5px solid var(--wa-bg2);border-radius:10px;padding:10px 12px;font-size:15px;background:var(--wa-ll);color:var(--wt)" />
+        </div>
+        <button class="cant-do-btn"><i class="ti ti-arrow-down" aria-hidden="true"></i> 這題太難，降低難度</button>
+        <p class="diff-note">系統會改以選擇題替代填空</p>
+      </div>
+
+      <!-- 句子判斷 -->
+      <div class="pane" id="pane-sentence">
+        <div class="prog-row"><span class="prog-label">句子判斷</span><span class="prog-label">1 / 3</span></div>
+        <div class="prog-bar"><div class="prog-fill" style="width:33%"></div></div>
+        <div class="card">
+          <div style="display:flex;gap:8px;margin-bottom:12px">
+            <span class="badge b-sentence">句子判斷</span>
+          </div>
+          <p class="quiz-q">
+            <ruby>私<rt style="font-size:9px">わたし</rt></ruby>は
+            <ruby>公園<rt style="font-size:9px">こうえん</rt></ruby>
+            <span style="color:var(--wa);font-weight:500">で</span>
+            <ruby>行<rt style="font-size:9px">い</rt></ruby>きました。
+          </p>
+          <p style="font-size:12px;color:var(--wt3);margin-bottom:12px">橘色助詞是否正確使用？</p>
+          <div class="judge-row">
+            <button class="judge-btn wrong-btn" onclick="showExplain()"><i class="ti ti-x" aria-hidden="true"></i> 不正確</button>
+            <button class="judge-btn correct-btn"><i class="ti ti-check" aria-hidden="true"></i> 正確</button>
+          </div>
+          <div class="explain-box show" id="explain-box">
+            <div class="explain-title"><i class="ti ti-bulb" style="font-size:13px;vertical-align:-1px" aria-hidden="true"></i> 答對了！這裡應該用「に」</div>
+            <div class="explain-row">
+              <span>に</span> → 移動的目的地（去哪裡）<br>
+              <span>で</span> → 動作發生的場所（在哪裡做）<br><br>
+              <ruby>公園<rt style="font-size:9px">こうえん</rt></ruby>に<ruby>行<rt style="font-size:9px">い</rt></ruby>く ✓<br>
+              <ruby>公園<rt style="font-size:9px">こうえん</rt></ruby>で<ruby>遊<rt style="font-size:9px">あそ</rt></ruby>ぶ ✓
+            </div>
+          </div>
+        </div>
+        <button class="cant-do-btn"><i class="ti ti-arrow-down" aria-hidden="true"></i> 這題太難，降低難度</button>
+        <p class="diff-note">系統會增加更多相同文法的判斷題</p>
+      </div>
+
+      <!-- 句子排列 -->
+      <div class="pane" id="pane-sort">
+        <div class="prog-row"><span class="prog-label">句子排列</span><span class="prog-label">1 / 3</span></div>
+        <div class="prog-bar"><div class="prog-fill" style="width:33%"></div></div>
+        <div class="unlock-note">
+          <i class="ti ti-lock-open" style="font-size:13px;vertical-align:-1px" aria-hidden="true"></i>
+          關鍵字「綺麗・公園・行く」均達到「普」，排列題已解鎖
+        </div>
+        <div class="card">
+          <div style="display:flex;gap:8px;margin-bottom:12px">
+            <span class="badge b-sentence-adv">句子排列</span>
+          </div>
+          <p class="quiz-q">重組成正確的句子：</p>
+          <p class="sort-label">點擊詞塊放入答案區</p>
+          <div class="sort-answer-area" id="answer-area">
+            <div class="sort-chip answer-chip" onclick="returnChip(this,'私は')">私は</div>
+            <div class="sort-chip answer-chip" onclick="returnChip(this,'公園に')">公園に</div>
+          </div>
+          <div class="sort-pool" id="sort-pool">
+            <div class="sort-chip" onclick="placeChip(this)">行きました</div>
+            <div class="sort-chip" onclick="placeChip(this)">花が</div>
+            <div class="sort-chip" onclick="placeChip(this)">綺麗でした</div>
+          </div>
+          <button class="submit-btn"><i class="ti ti-check" aria-hidden="true"></i> 確認答案</button>
+        </div>
+        <button class="cant-do-btn"><i class="ti ti-arrow-down" aria-hidden="true"></i> 這題太難，降低難度</button>
+        <p class="diff-note">系統會退回句子判斷題，待熟悉後再試</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <button class="nav-item" aria-label="今日"><i class="ti ti-sun" aria-hidden="true"></i><span>今日</span></button>
+    <button class="nav-item" aria-label="文章"><i class="ti ti-book" aria-hidden="true"></i><span>文章</span></button>
+    <button class="nav-item" aria-label="單字卡"><i class="ti ti-cards" aria-hidden="true"></i><span>單字卡</span></button>
+    <button class="nav-item active" aria-label="試題"><i class="ti ti-pencil" aria-hidden="true"></i><span>試題</span></button>
+    <button class="nav-item" aria-label="設定"><i class="ti ti-settings" aria-hidden="true"></i><span>設定</span></button>
+  </div>
+</div>
+
+<script>
+function switchQt(btn, paneId) {
+  document.querySelectorAll('.qt').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(paneId).classList.add('active');
+}
+function showExplain() {
+  document.getElementById('explain-box').classList.add('show');
+}
+function placeChip(chip) {
+  const area = document.getElementById('answer-area');
+  chip.classList.add('answer-chip');
+  chip.onclick = function(){ returnChip(this, chip.textContent); };
+  area.appendChild(chip);
+}
+function returnChip(chip, text) {
+  const pool = document.getElementById('sort-pool');
+  chip.classList.remove('answer-chip');
+  chip.onclick = function(){ placeChip(this); };
+  pool.appendChild(chip);
+}
+</script>

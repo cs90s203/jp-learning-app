@@ -1,0 +1,347 @@
+{
+  "title": "食堂",
+  "text": "学校の食堂でお昼ごはんを食べました。今日のランチはカレーでした。友達と一緒に食べたのでとても楽しかったです。また来たいです。",
+  "tokens": [
+    {
+      "surface_form": "学校",
+      "basic_form": "学校",
+      "reading": "がっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食堂",
+      "basic_form": "食堂",
+      "reading": "しょくどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "お昼",
+      "basic_form": "お昼",
+      "reading": "おひる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ごはん",
+      "basic_form": "ご飯",
+      "reading": "ごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べました",
+      "basic_form": "食べる",
+      "reading": "たべました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今日",
+      "basic_form": "今日",
+      "reading": "きょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ランチ",
+      "basic_form": "ランチ",
+      "reading": "ランチ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "カレー",
+      "basic_form": "カレー",
+      "reading": "カレー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でした",
+      "basic_form": "です",
+      "reading": "",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一緒に",
+      "basic_form": "一緒に",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "食べた",
+      "basic_form": "食べる",
+      "reading": "たべた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しかった",
+      "basic_form": "楽しい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "来たい",
+      "basic_form": "来る",
+      "reading": "きたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "学校": {
+      "meaning": "學校",
+      "romaji": "gakkou",
+      "example": "学校の食堂でお昼ごはんを食べました。"
+    },
+    "食堂": {
+      "meaning": "食堂・餐廳",
+      "romaji": "shokudou",
+      "example": "学校の食堂でお昼ごはんを食べました。"
+    },
+    "お昼": {
+      "meaning": "中午",
+      "romaji": "ohiru",
+      "example": "学校の食堂でお昼ごはんを食べました。"
+    },
+    "ご飯": {
+      "meaning": "飯・餐食",
+      "romaji": "gohan",
+      "example": "学校の食堂でお昼ごはんを食べました。"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "example": "学校の食堂でお昼ごはんを食べました。"
+    },
+    "今日": {
+      "meaning": "今天",
+      "romaji": "kyou",
+      "example": "今日のランチはカレーでした。"
+    },
+    "ランチ": {
+      "meaning": "午餐",
+      "romaji": "ranchi",
+      "example": "今日のランチはカレーでした。"
+    },
+    "カレー": {
+      "meaning": "咖哩",
+      "romaji": "karee",
+      "example": "今日のランチはカレーでした。"
+    },
+    "友達": {
+      "meaning": "朋友",
+      "romaji": "tomodachi",
+      "example": "友達と一緒に食べたのでとても楽しかったです。"
+    },
+    "一緒に": {
+      "meaning": "一起",
+      "romaji": "issho ni",
+      "example": "友達と一緒に食べたのでとても楽しかったです。"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "example": "友達と一緒に食べたのでとても楽しかったです。"
+    },
+    "楽しい": {
+      "meaning": "快樂・開心",
+      "romaji": "tanoshii",
+      "example": "友達と一緒に食べたのでとても楽しかったです。"
+    },
+    "また": {
+      "meaning": "再次",
+      "romaji": "mata",
+      "example": "また来たいです。"
+    },
+    "来る": {
+      "meaning": "來",
+      "romaji": "kuru",
+      "example": "また来たいです。"
+    }
+  },
+  "particles": {
+    "は": "提示句子的主題，告訴對方接下來要說的是關於「什麼」。",
+    "が": "標示動作或狀態的主體，常用於描述眼前看到、注意到的事物。",
+    "に": "標示移動的目的地或時間點，回答「去哪裡」「什麼時候」。",
+    "で": "標示動作發生的場所、方式或手段，回答「在哪裡做」「用什麼做」。",
+    "の": "連接兩個名詞，表示所屬或修飾關係，類似中文的「的」。",
+    "を": "標示動作的對象，回答「做了什麼」。",
+    "と": "表示並列「和」，或引述、共同動作的對象。",
+    "も": "表示「也」，強調同類事物的並列。",
+    "から": "表示起點，時間或地點的「從」。",
+    "まで": "表示終點，時間或地點的「到」。",
+    "ので": "表示原因・理由，語氣比「から」更自然、客觀。"
+  },
+  "translations": [
+    [
+      {
+        "text": "在學校",
+        "word": "学校"
+      },
+      {
+        "text": "食堂",
+        "word": "食堂"
+      },
+      {
+        "text": "吃了午餐",
+        "word": "食べる"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "今天的",
+        "word": "今日"
+      },
+      {
+        "text": "午餐",
+        "word": "ランチ"
+      },
+      {
+        "text": "是咖哩",
+        "word": "カレー"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "因為和",
+        "word": null
+      },
+      {
+        "text": "朋友",
+        "word": "友達"
+      },
+      {
+        "text": "一起吃",
+        "word": "一緒に"
+      },
+      {
+        "text": "，非常",
+        "word": "とても"
+      },
+      {
+        "text": "開心",
+        "word": "楽しい"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "好想",
+        "word": null
+      },
+      {
+        "text": "再來",
+        "word": "また"
+      },
+      {
+        "text": "一次",
+        "word": null
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ]
+  ]
+}

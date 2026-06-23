@@ -1,0 +1,362 @@
+{
+  "title": "雨の日",
+  "text": "昨日は雨でした。私は傘を持って学校に行きました。放課後に図書館で本を読みました。雨の日は読書が好きです。",
+  "tokens": [
+    {
+      "surface_form": "昨日",
+      "basic_form": "昨日",
+      "reading": "きのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "雨",
+      "basic_form": "雨",
+      "reading": "あめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でした",
+      "basic_form": "です",
+      "reading": "",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "傘",
+      "basic_form": "傘",
+      "reading": "かさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "持って",
+      "basic_form": "持つ",
+      "reading": "もって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "学校",
+      "basic_form": "学校",
+      "reading": "がっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行きました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "放課後",
+      "basic_form": "放課後",
+      "reading": "ほうかご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "図書館",
+      "basic_form": "図書館",
+      "reading": "としょかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読みました",
+      "basic_form": "読む",
+      "reading": "よみました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "雨",
+      "basic_form": "雨",
+      "reading": "あめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日",
+      "basic_form": "日",
+      "reading": "ひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読書",
+      "basic_form": "読書",
+      "reading": "どくしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "好き",
+      "basic_form": "好き",
+      "reading": "すき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "昨日": {
+      "meaning": "昨天",
+      "romaji": "kinou",
+      "example": "昨日は雨でした。"
+    },
+    "雨": {
+      "meaning": "雨",
+      "romaji": "ame",
+      "example": "昨日は雨でした。"
+    },
+    "私": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "example": "私は傘を持って学校に行きました。"
+    },
+    "傘": {
+      "meaning": "雨傘",
+      "romaji": "kasa",
+      "example": "私は傘を持って学校に行きました。"
+    },
+    "持つ": {
+      "meaning": "拿・帶",
+      "romaji": "motsu",
+      "example": "私は傘を持って学校に行きました。"
+    },
+    "学校": {
+      "meaning": "學校",
+      "romaji": "gakkou",
+      "example": "私は傘を持って学校に行きました。"
+    },
+    "行く": {
+      "meaning": "去",
+      "romaji": "iku",
+      "example": "私は傘を持って学校に行きました。"
+    },
+    "放課後": {
+      "meaning": "放學後",
+      "romaji": "houkago",
+      "example": "放課後に図書館で本を読みました。"
+    },
+    "図書館": {
+      "meaning": "圖書館",
+      "romaji": "toshokan",
+      "example": "放課後に図書館で本を読みました。"
+    },
+    "本": {
+      "meaning": "書",
+      "romaji": "hon",
+      "example": "放課後に図書館で本を読みました。"
+    },
+    "読む": {
+      "meaning": "讀",
+      "romaji": "yomu",
+      "example": "放課後に図書館で本を読みました。"
+    },
+    "日": {
+      "meaning": "日子・天",
+      "romaji": "hi",
+      "example": "雨の日は読書が好きです。"
+    },
+    "読書": {
+      "meaning": "閱讀",
+      "romaji": "dokusho",
+      "example": "雨の日は読書が好きです。"
+    },
+    "好き": {
+      "meaning": "喜歡",
+      "romaji": "suki",
+      "example": "雨の日は読書が好きです。"
+    }
+  },
+  "particles": {
+    "は": "提示句子的主題，告訴對方接下來要說的是關於「什麼」。",
+    "が": "標示動作或狀態的主體，常用於描述眼前看到、注意到的事物。",
+    "に": "標示移動的目的地或時間點，回答「去哪裡」「什麼時候」。",
+    "で": "標示動作發生的場所、方式或手段，回答「在哪裡做」「用什麼做」。",
+    "の": "連接兩個名詞，表示所屬或修飾關係，類似中文的「的」。",
+    "を": "標示動作的對象，回答「做了什麼」。",
+    "と": "表示並列「和」，或引述、共同動作的對象。",
+    "も": "表示「也」，強調同類事物的並列。",
+    "から": "表示起點，時間或地點的「從」。",
+    "まで": "表示終點，時間或地點的「到」。"
+  },
+  "translations": [
+    [
+      {
+        "text": "昨天",
+        "word": "昨日"
+      },
+      {
+        "text": "下雨了",
+        "word": "雨"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "我",
+        "word": "私"
+      },
+      {
+        "text": "帶著",
+        "word": "持つ"
+      },
+      {
+        "text": "雨傘",
+        "word": "傘"
+      },
+      {
+        "text": "去了",
+        "word": "行く"
+      },
+      {
+        "text": "學校",
+        "word": "学校"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "放學後",
+        "word": "放課後"
+      },
+      {
+        "text": "在",
+        "word": null
+      },
+      {
+        "text": "圖書館",
+        "word": "図書館"
+      },
+      {
+        "text": "讀了",
+        "word": "読む"
+      },
+      {
+        "text": "書",
+        "word": "本"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "雨天",
+        "word": "雨"
+      },
+      {
+        "text": "喜歡",
+        "word": "好き"
+      },
+      {
+        "text": "閱讀",
+        "word": "読書"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ]
+  ]
+}
