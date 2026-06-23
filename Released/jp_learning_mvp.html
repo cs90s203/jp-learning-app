@@ -1761,7 +1761,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.13
+          v0.14.14
         </div>
 
       </div>
@@ -2717,11 +2717,19 @@ function quizWeekBarNav(dir) {
 async function selectQuizDate(dateStr) {
   if (dateStr === selectedQuizDate) return;
   showToast('載入中…');
-  try {
-    const url = `${CONTENT_BASE_URL}/${dateStr}/${CURRENT_LEVEL}.json`;
-    const res = await fetch(url);
+  // 優先用此日期存的等級（與文章頁一致），fallback 到 CURRENT_LEVEL，再 fallback 到 n5
+  const _qLog = loadStudyLog();
+  const _qLevel = (_qLog[dateStr] && _qLog[dateStr].level) || CURRENT_LEVEL;
+  const tryFetch = async (level) => {
+    const res = await fetch(`${CONTENT_BASE_URL}/${dateStr}/${level}.json`);
     if (!res.ok) throw new Error();
-    QUIZ_PACK = await res.json();
+    return res.json();
+  };
+  try {
+    let pack;
+    try { pack = await tryFetch(_qLevel); }
+    catch { if (_qLevel !== 'n5') pack = await tryFetch('n5'); else throw new Error(); }
+    QUIZ_PACK = pack;
     QUIZ_PACK._date = dateStr;
     selectedQuizDate = dateStr;
     QS = null;
