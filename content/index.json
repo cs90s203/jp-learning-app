@@ -2,17 +2,36 @@
   "dates": [
     {
       "date": "2026-06-23",
-      "levels": ["n5"],
-      "generated_at": "2026-06-23T00:00:00Z"
+      "levels": [
+        "n5_lite",
+        "n5",
+        "n4_lite",
+        "n4",
+        "n3_lite",
+        "n3",
+        "n2_lite",
+        "n2",
+        "n1_lite",
+        "n1"
+      ],
+      "generated_at": "2026-06-23T00:30:00Z"
     },
     {
       "date": "2026-06-22",
-      "levels": ["n5"],
+      "levels": [
+        "n5"
+      ],
       "generated_at": "2026-06-22T00:00:00Z"
     },
     {
       "date": "2026-06-20",
-      "levels": ["n5_below", "n5", "n4", "n3", "n2n1"],
+      "levels": [
+        "n5_below",
+        "n5",
+        "n4",
+        "n3",
+        "n2n1"
+      ],
       "generated_at": "2026-06-20T00:00:00Z"
     }
   ]

@@ -1759,7 +1759,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.2
+          v0.14.3
         </div>
 
       </div>
@@ -2049,7 +2049,7 @@ function switchPage(id) {
     initArticleLevelTag();
     renderWeekBar();
   }
-  if (id === 'home')  { renderHomeRing(); renderCalendar(); }
+  if (id === 'home')  { calViewYear = TODAY_YEAR; calViewMonth = TODAY_MONTH; renderHomeRing(); renderCalendar(); }
   if (id === 'vocab') renderVocabPage();
   if (id === 'quiz')     initQuizPage();
   if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); renderLevelPicker(); }
@@ -2651,15 +2651,14 @@ function renderQuizWeekBar() {
   const dates    = getWeekDates(quizWeekBarOffset);
   const todayStr = getLocalDateStr();
   const log      = loadStudyLog();
-  const known    = [...getAvailableArticleDates(), todayStr];
-
+  // Fix #5: use log entries (same logic as article weekbar) for consistency
   container.innerHTML = '';
   dates.forEach((d, i) => {
     const dateStr   = dateToStr(d);
     const isFuture  = dateStr > todayStr;
     const isToday   = dateStr === todayStr;
     const isSel     = dateStr === selectedQuizDate;
-    const hasContent = known.includes(dateStr) && !isFuture;
+    const hasContent = !isFuture && (log[dateStr] != null || isToday);
     const dayNum    = d.getDate();
 
     const div = document.createElement('div');
@@ -2890,6 +2889,9 @@ function setUserLevel(key) {
   CURRENT_LEVEL = key;
   localStorage.setItem('userLevel', key);
   renderLevelPicker();
+  // Fix #6: notify user if they change level while article page is open
+  const articleActive = document.getElementById('page-article')?.classList.contains('active');
+  if (articleActive) showToast('等級已更新，長按等級標籤可切換目前文章');
 }
 
 function renderLevelPicker() {
@@ -2938,9 +2940,7 @@ function closeLevelSheet() {
 
 async function reloadArticleWithLevel(key) {
   closeLevelSheet();
-  CURRENT_LEVEL = key;
-  localStorage.setItem('userLevel', key);
-  renderLevelPicker();
+  setUserLevel(key); // Fix #7: reuse setUserLevel instead of duplicating
   showToast('載入中…');
   const result = await loadContentForDate(selectedArticleDate, key);
   if (!result.success) { showToast('此等級尚無內容'); return; }
@@ -2950,9 +2950,8 @@ async function reloadArticleWithLevel(key) {
   if (titleEl) titleEl.textContent = result.pack.title || selectedArticleDate;
   const lt = document.getElementById('article-level-tag');
   if (lt) lt.textContent = label;
-  articleRendered = false;
-  renderArticle(ARTICLE_TOKENS);
-  articleRendered = true;
+  // Fix #2: applyContentPack (inside loadContentForDate) already calls renderArticle
+  // when the article page is active — no need to call it again here.
   resetArticleProgress();
   showToast('已切換至 ' + label);
 }
@@ -4064,8 +4063,10 @@ const _SILENCE_DB_OPTIONS  = [-30, -40, -50, -60];
 const _SILENCE_SEC_OPTIONS = [0.5, 1.0, 1.5, 2.0];
 
 function cycleFollowDb() {
+  // Fix #4: guard against stored value not in options (e.g. from older version)
   const idx = _SILENCE_DB_OPTIONS.indexOf(_silenceDbThreshold);
-  _silenceDbThreshold = _SILENCE_DB_OPTIONS[(idx + 1) % _SILENCE_DB_OPTIONS.length];
+  const nextIdx = idx === -1 ? _SILENCE_DB_OPTIONS.indexOf(-40) : (idx + 1) % _SILENCE_DB_OPTIONS.length;
+  _silenceDbThreshold = _SILENCE_DB_OPTIONS[nextIdx];
   localStorage.setItem('followSilenceDb', _silenceDbThreshold);
   const el = document.getElementById('follow-db-val');
   if (el) el.textContent = _silenceDbThreshold + ' dB';
@@ -4716,7 +4717,9 @@ function openDay(day) {
   const d = new Date(calViewYear, calViewMonth - 1, day);
   document.getElementById('detail-date-label').textContent = `${calViewMonth}月${day}日（${weekdays[d.getDay()]}）`;
   document.getElementById('detail-article-title').textContent = entry ? (entry.articleTitle || '（無紀錄）') : '今日文章';
-  document.getElementById('detail-article-level').textContent = entry ? (entry.level ? entry.level.toUpperCase() : '') : 'N5';
+  // Fix #3: show user's actual current level, not hardcoded N5
+  const _todayLevelOpt = LEVEL_OPTIONS.find(o => o.key === CURRENT_LEVEL);
+  document.getElementById('detail-article-level').textContent = entry ? (entry.level ? entry.level.toUpperCase() : '') : (_todayLevelOpt ? _todayLevelOpt.label : CURRENT_LEVEL.toUpperCase());
 
   const tasksEl = document.getElementById('detail-tasks');
   tasksEl.innerHTML = '';
@@ -4752,13 +4755,15 @@ function openArticleFromCalendar() {
   if (!selectedDay) return;
   const dateStr = `${calViewYear}-${String(calViewMonth).padStart(2,'0')}-${String(selectedDay).padStart(2,'0')}`;
   closeDay();
-  // 先標記 rendered，避免 switchPage 搶先非同步載入今日文章
-  articleRendered = true;
+  // Fix #1: only block switchPage's auto-load when content is already rendered.
+  // If articleRendered is false (fresh session), let selectArticleDate do the load.
+  // If dateStr === selectedArticleDate but not yet rendered, clear the guard so
+  // selectArticleDate doesn't early-exit.
+  const alreadyLoaded = articleRendered && dateStr === selectedArticleDate;
+  if (alreadyLoaded) articleRendered = true; // already good, block double-load
+  if (!alreadyLoaded && dateStr === selectedArticleDate) selectedArticleDate = ''; // force reload
   switchPage('article');
-  // 無論今天或過去，都呼叫 selectArticleDate 確保載入正確文章
-  if (dateStr !== selectedArticleDate) {
-    selectArticleDate(dateStr);
-  }
+  if (!alreadyLoaded) selectArticleDate(dateStr);
 }
 
 // =====================================================

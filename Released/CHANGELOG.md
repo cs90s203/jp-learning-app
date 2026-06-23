@@ -1,5 +1,25 @@
 # 日語學習 App — 版本記錄
 
+## v0.14.3 — 2026-06-23
+
+**Code review 後 8 個 bug 全修**
+- **Bug #1**：`openArticleFromCalendar` 全新安裝時，從月曆點今日開啟文章，兩條載入路徑同時被封鎖（`articleRendered=true` + `selectArticleDate` 同日 early-exit），導致顯示 demo 假資料 → 現在判斷是否已載入，未載入時強制觸發 `selectArticleDate`
+- **Bug #2**：`reloadArticleWithLevel` 切換等級後 `renderArticle` 被呼叫兩次（`applyContentPack` 內一次 + 外面一次），導致閃爍 → 移除外層多餘的 render
+- **Bug #3**：`openDay` 今日無學習紀錄時，等級欄位永遠顯示硬寫的「N5」，無視 `CURRENT_LEVEL` → 改從 `LEVEL_OPTIONS` 查詢正確 label
+- **Bug #4**：`cycleFollowDb` 若 localStorage 存有非 options 陣列內的值（如舊版 -45），`indexOf` 回 -1 導致靜默跳至 -30 → 改為 -1 時 fallback 到預設值 -40
+- **Bug #5**：測驗週欄仍使用 `getAvailableArticleDates()` 判斷有無內容，與文章週欄（改用 log entry）邏輯不同，同日顯示不一致 → 統一改用 log entry 邏輯
+- **Bug #6**：設定頁變更等級後，文章頁顯示的內容不會重載，無任何提示 → 若目前在文章頁則顯示 toast 提示
+- **Bug #7**：`reloadArticleWithLevel` 重複 `setUserLevel` 的三行邏輯 → 改直接呼叫 `setUserLevel(key)`
+- **Bug #8**：月曆切換到歷史月份後，離開再回首頁，月曆仍停在上次切的月份 → 切回首頁時自動 reset 到今月
+
+---
+
+## 0.14.3 — 2026-06-23
+
+code review 全修：月曆開文章空白、等級切換雙重render、N5硬寫、dB循環、週欄不一致等8個bug
+
+---
+
 ## v0.14.2 — 2026-06-23
 
 **文章頁等級標籤：長按切換難度（新功能）**
