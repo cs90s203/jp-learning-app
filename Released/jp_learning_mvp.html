@@ -2934,6 +2934,7 @@ const LEVEL_OPTIONS = [
 const BAKED_VISION_KEY = '__VISION_KEY__';
 let CURRENT_LEVEL = localStorage.getItem('userLevel') || 'n5';
 let MASTERY_THRESHOLD = parseInt(localStorage.getItem('masteryThreshold') || '10');
+let _levelPickerOpen = false;
 
 function setUserLevel(key) {
   CURRENT_LEVEL = key;
@@ -6138,7 +6139,6 @@ function renderMasteryThreshold() {
 }
 
 // ===== 目前等級折疊 =====
-let _levelPickerOpen = false;
 function toggleLevelPicker() {
   _levelPickerOpen = !_levelPickerOpen;
   const wrap = document.getElementById('level-picker-wrap');
