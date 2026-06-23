@@ -820,6 +820,62 @@
   }
   .vocab-kana-toggle.show { display: flex; }
   .vocab-kana-toggle.active { background: var(--wa); color: #FFF; }
+  .vocab-gojuuon-btn {
+    position: fixed; right: 20px;
+    bottom: calc(var(--nav-h) + var(--safe-bottom) + 146px);
+    width: 52px; height: 52px; border-radius: 50%;
+    background: var(--wa-bg2); color: var(--wt2); border: none;
+    cursor: pointer; display: none;
+    align-items: center; justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    font-size: 10px; font-weight: 700;
+    z-index: 50; flex-direction: column; line-height: 1.2;
+  }
+  .vocab-gojuuon-btn.show { display: flex; }
+
+  /* 五十音表 overlay */
+  #gojuuon-overlay {
+    display: none; position: fixed; inset: 0; z-index: 999;
+    background: var(--wa-ll, #FFF7F0); flex-direction: column;
+  }
+  html[data-theme="dark"] #gojuuon-overlay { background: #1A1008; }
+  #gojuuon-overlay.open { display: flex; }
+  .gojuuon-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 16px 10px; flex-shrink: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .gojuuon-header h2 { font-size: 17px; font-weight: 700; color: var(--wt); margin: 0; }
+  .gojuuon-close {
+    width: 34px; height: 34px; border-radius: 50%; border: none;
+    background: var(--wa-bg2); color: var(--wt2); font-size: 18px;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+  }
+  .gojuuon-scroll {
+    flex: 1; overflow-y: auto; padding: 12px 12px calc(var(--safe-bottom) + 16px);
+  }
+  .gojuuon-section-title {
+    font-size: 11px; font-weight: 700; color: var(--wt3);
+    letter-spacing: .08em; margin: 16px 2px 8px; text-transform: uppercase;
+  }
+  .gojuuon-section-title:first-child { margin-top: 4px; }
+  .gojuuon-cells {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px;
+  }
+  .gojuuon-cell {
+    background: var(--card-bg); border-radius: 10px;
+    padding: 8px 4px 7px; display: flex; flex-direction: column;
+    align-items: center; cursor: pointer; user-select: none;
+    border: 1px solid var(--border); min-height: 78px; justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .gojuuon-cell:active { background: var(--wa-ll); }
+  .gojuuon-cell.empty { background: transparent; border-color: transparent; cursor: default; pointer-events: none; }
+  .gojuuon-pair { display: flex; align-items: baseline; gap: 4px; }
+  .gojuuon-h { font-size: 26px; line-height: 1; color: var(--wt); }
+  .gojuuon-k { font-size: 16px; color: var(--wa); line-height: 1; }
+  .gojuuon-r { font-size: 10px; color: var(--wt3); margin-top: 4px; letter-spacing: .04em; }
+  .gojuuon-src { font-size: 9px; color: var(--wt3); opacity: .5; margin-top: 2px; }
 
   /* Add word modal (bottom sheet) */
   .vocab-modal-bd {
@@ -1554,12 +1610,24 @@
       <div class="vocab-list-area" id="vocab-list-area"></div>
 
       <!-- FAB -->
+      <button class="vocab-gojuuon-btn show" id="vocab-gojuuon-btn" onclick="openGojuuon()" aria-label="五十音表">
+        あ<br>ア
+      </button>
       <button class="vocab-kana-toggle show" id="vocab-kana-toggle" onclick="toggleKanaDisplay()" aria-label="顯示拼音">
         あ
       </button>
       <button class="vocab-fab show" id="vocab-fab" onclick="openVocabModal()" aria-label="新增單字">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
       </button>
+    </div>
+
+    <!-- 五十音表 overlay -->
+    <div id="gojuuon-overlay">
+      <div class="gojuuon-header">
+        <h2>五十音表</h2>
+        <button class="gojuuon-close" onclick="closeGojuuon()">✕</button>
+      </div>
+      <div class="gojuuon-scroll" id="gojuuon-scroll"></div>
     </div>
 
     <!-- 試題 -->
@@ -1805,7 +1873,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.22
+          v0.14.23
         </div>
 
       </div>
@@ -2112,7 +2180,9 @@ function switchPage(id) {
   // Show/hide FAB
   document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
   document.getElementById('vocab-kana-toggle').classList.toggle('show', id === 'vocab');
+  document.getElementById('vocab-gojuuon-btn').classList.toggle('show', id === 'vocab');
   if (id === 'vocab') updateKanaToggleUI();
+  if (id !== 'vocab') closeGojuuon();
 }
 
 // ===== 學習模式 =====
@@ -3735,6 +3805,10 @@ function loadTheme() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  // move overlay to body so it's above all stacking contexts
+  const _go = document.getElementById('gojuuon-overlay');
+  if (_go) document.body.appendChild(_go);
+
   loadTheme();
   updateSpeedButtonStates(SPEED_STEPS.indexOf(readAloudRate));
 
@@ -5101,6 +5175,105 @@ function scrollVocabListToIndex(idx) {
   const rows = document.querySelectorAll('.vocab-list-row');
   if (rows[idx]) rows[idx].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
+
+// ── 五十音表 ──────────────────────────────────────────────
+const GOJUUON_DATA = [
+  { label: '清音 あ行', cells: [
+    {h:'あ',k:'ア',r:'a',  src:'安/阿'}, {h:'い',k:'イ',r:'i',  src:'以/伊'},
+    {h:'う',k:'ウ',r:'u',  src:'宇/宇'}, {h:'え',k:'エ',r:'e',  src:'衣/江'},
+    {h:'お',k:'オ',r:'o',  src:'於/於'} ]},
+  { label: 'か行', cells: [
+    {h:'か',k:'カ',r:'ka', src:'加/加'}, {h:'き',k:'キ',r:'ki', src:'幾/機'},
+    {h:'く',k:'ク',r:'ku', src:'久/久'}, {h:'け',k:'ケ',r:'ke', src:'計/介'},
+    {h:'こ',k:'コ',r:'ko', src:'己/己'} ]},
+  { label: 'さ行', cells: [
+    {h:'さ',k:'サ',r:'sa', src:'在/散'}, {h:'し',k:'シ',r:'shi',src:'之/之'},
+    {h:'す',k:'ス',r:'su', src:'寸/須'}, {h:'せ',k:'セ',r:'se', src:'世/世'},
+    {h:'そ',k:'ソ',r:'so', src:'曾/曽'} ]},
+  { label: 'た行', cells: [
+    {h:'た',k:'タ',r:'ta', src:'太/多'}, {h:'ち',k:'チ',r:'chi',src:'知/千'},
+    {h:'つ',k:'ツ',r:'tsu',src:'川/川'}, {h:'て',k:'テ',r:'te', src:'天/天'},
+    {h:'と',k:'ト',r:'to', src:'止/止'} ]},
+  { label: 'な行', cells: [
+    {h:'な',k:'ナ',r:'na', src:'奈/奈'}, {h:'に',k:'ニ',r:'ni', src:'仁/仁'},
+    {h:'ぬ',k:'ヌ',r:'nu', src:'奴/奴'}, {h:'ね',k:'ネ',r:'ne', src:'祢/祢'},
+    {h:'の',k:'ノ',r:'no', src:'乃/乃'} ]},
+  { label: 'は行', cells: [
+    {h:'は',k:'ハ',r:'ha', src:'波/八'}, {h:'ひ',k:'ヒ',r:'hi', src:'比/比'},
+    {h:'ふ',k:'フ',r:'fu', src:'不/不'}, {h:'へ',k:'ヘ',r:'he', src:'部/部'},
+    {h:'ほ',k:'ホ',r:'ho', src:'保/保'} ]},
+  { label: 'ま行', cells: [
+    {h:'ま',k:'マ',r:'ma', src:'末/末'}, {h:'み',k:'ミ',r:'mi', src:'美/三'},
+    {h:'む',k:'ム',r:'mu', src:'武/牟'}, {h:'め',k:'メ',r:'me', src:'女/女'},
+    {h:'も',k:'モ',r:'mo', src:'毛/毛'} ]},
+  { label: 'や行', cells: [
+    {h:'や',k:'ヤ',r:'ya', src:'也/也'}, null,
+    {h:'ゆ',k:'ユ',r:'yu', src:'由/由'}, null,
+    {h:'よ',k:'ヨ',r:'yo', src:'与/与'} ]},
+  { label: 'ら行', cells: [
+    {h:'ら',k:'ラ',r:'ra', src:'良/良'}, {h:'り',k:'リ',r:'ri', src:'利/利'},
+    {h:'る',k:'ル',r:'ru', src:'留/流'}, {h:'れ',k:'レ',r:'re', src:'礼/礼'},
+    {h:'ろ',k:'ロ',r:'ro', src:'呂/呂'} ]},
+  { label: 'わ行', cells: [
+    {h:'わ',k:'ワ',r:'wa', src:'和/和'}, null, null, null,
+    {h:'を',k:'ヲ',r:'wo', src:'遠/乎'} ]},
+  { label: 'ん', cells: [
+    {h:'ん',k:'ン',r:'n',  src:'無/爾'}, null, null, null, null ]},
+  { label: '濁音 が行', cells: [
+    {h:'が',k:'ガ',r:'ga'}, {h:'ぎ',k:'ギ',r:'gi'},
+    {h:'ぐ',k:'グ',r:'gu'}, {h:'げ',k:'ゲ',r:'ge'}, {h:'ご',k:'ゴ',r:'go'} ]},
+  { label: 'ざ行', cells: [
+    {h:'ざ',k:'ザ',r:'za'}, {h:'じ',k:'ジ',r:'ji'},
+    {h:'ず',k:'ズ',r:'zu'}, {h:'ぜ',k:'ゼ',r:'ze'}, {h:'ぞ',k:'ゾ',r:'zo'} ]},
+  { label: 'だ行', cells: [
+    {h:'だ',k:'ダ',r:'da'}, {h:'ぢ',k:'ヂ',r:'ji'},
+    {h:'づ',k:'ヅ',r:'zu'}, {h:'で',k:'デ',r:'de'}, {h:'ど',k:'ド',r:'do'} ]},
+  { label: 'ば行', cells: [
+    {h:'ば',k:'バ',r:'ba'}, {h:'び',k:'ビ',r:'bi'},
+    {h:'ぶ',k:'ブ',r:'bu'}, {h:'べ',k:'ベ',r:'be'}, {h:'ぼ',k:'ボ',r:'bo'} ]},
+  { label: '半濁音 ぱ行', cells: [
+    {h:'ぱ',k:'パ',r:'pa'}, {h:'ぴ',k:'ピ',r:'pi'},
+    {h:'ぷ',k:'プ',r:'pu'}, {h:'ぺ',k:'ペ',r:'pe'}, {h:'ぽ',k:'ポ',r:'po'} ]},
+];
+
+function buildGojuuonHTML() {
+  return GOJUUON_DATA.map(section => {
+    const cells = section.cells.map(c => {
+      if (!c) return '<div class="gojuuon-cell empty"></div>';
+      return `<div class="gojuuon-cell" onclick="gojuuonSpeak('${c.r}','${c.h}')">
+        <div class="gojuuon-pair">
+          <span class="gojuuon-h">${c.h}</span>
+          <span class="gojuuon-k">${c.k}</span>
+        </div>
+        <div class="gojuuon-r">${c.r}</div>
+        ${c.src ? `<div class="gojuuon-src">${c.src}</div>` : ''}
+      </div>`;
+    }).join('');
+    return `<div class="gojuuon-section-title">${section.label}</div>
+      <div class="gojuuon-cells">${cells}</div>`;
+  }).join('');
+}
+
+function openGojuuon() {
+  const overlay = document.getElementById('gojuuon-overlay');
+  const scroll  = document.getElementById('gojuuon-scroll');
+  if (!scroll.innerHTML) scroll.innerHTML = buildGojuuonHTML();
+  overlay.classList.add('open');
+}
+
+function closeGojuuon() {
+  document.getElementById('gojuuon-overlay').classList.remove('open');
+}
+
+function gojuuonSpeak(romaji, hira) {
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(hira);
+    u.lang = 'ja-JP'; u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+// ─────────────────────────────────────────────────────────
 
 function updateKanaToggleUI() {
   const btn = document.getElementById('vocab-kana-toggle');
