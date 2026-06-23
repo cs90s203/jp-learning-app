@@ -290,7 +290,7 @@
   .level-tag:active { opacity: 0.65; }
 
   /* 等級切換 sheet */
-  .level-sheet-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.35); z-index: 300; }
+  .level-sheet-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); z-index: 300; }
   .level-sheet-backdrop.open { display: block; }
   .level-sheet {
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 301;
@@ -300,10 +300,12 @@
   }
   .level-sheet.open { transform: translateY(0); }
   .level-sheet-title { font-size: 13px; font-weight: 600; color: var(--wt2); margin-bottom: 14px; }
-  .level-sheet-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .level-sheet-chips { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+  .level-sheet-row { display: flex; gap: 8px; justify-content: center; }
   .level-sheet-chip {
-    padding: 7px 14px; border-radius: 20px; border: 1.5px solid var(--wa-bg2);
-    background: none; font-size: 13px; font-weight: 600; color: var(--wt2); cursor: pointer;
+    width: 56px; height: 36px; border-radius: 20px; border: 1.5px solid var(--wa-bg2);
+    background: none; font-size: 14px; font-weight: 600; color: var(--wt2); cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
   }
   .level-sheet-chip.active { background: var(--wa); color: #fff; border-color: var(--wa); }
   .article-date { font-size: 11px; color: var(--wt3); }
@@ -1759,7 +1761,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.8
+          v0.14.12
         </div>
 
       </div>
@@ -2872,15 +2874,15 @@ let ARTICLE_TOKENS = [
 let CONTENT_BASE_URL = '../content';
 
 const LEVEL_OPTIONS = [
-  { key: 'n5_lite', label: 'N5⁻' },
+  { key: 'n5_lite', label: 'N5-' },
   { key: 'n5',      label: 'N5'  },
-  { key: 'n4_lite', label: 'N4⁻' },
+  { key: 'n4_lite', label: 'N4-' },
   { key: 'n4',      label: 'N4'  },
-  { key: 'n3_lite', label: 'N3⁻' },
+  { key: 'n3_lite', label: 'N3-' },
   { key: 'n3',      label: 'N3'  },
-  { key: 'n2_lite', label: 'N2⁻' },
+  { key: 'n2_lite', label: 'N2-' },
   { key: 'n2',      label: 'N2'  },
-  { key: 'n1_lite', label: 'N1⁻' },
+  { key: 'n1_lite', label: 'N1-' },
   { key: 'n1',      label: 'N1'  },
 ];
 let CURRENT_LEVEL = localStorage.getItem('userLevel') || 'n5';
@@ -2912,22 +2914,27 @@ function initArticleLevelTag() {
   const tag = document.getElementById('article-level-tag');
   if (!tag || tag._levelInited) return;
   tag._levelInited = true;
-  tag.addEventListener('touchstart', () => {
-    _levelLpTimer = setTimeout(openLevelSheet, 600);
-  }, { passive: true });
-  tag.addEventListener('touchend',  () => clearTimeout(_levelLpTimer));
-  tag.addEventListener('touchmove', () => clearTimeout(_levelLpTimer));
-  // 桌面：右鍵或直接 click 也可開啟（方便 dev）
+  const _lpStart = () => { _levelLpTimer = setTimeout(openLevelSheet, 600); };
+  const _lpCancel = () => clearTimeout(_levelLpTimer);
+  tag.addEventListener('touchstart', _lpStart, { passive: true });
+  tag.addEventListener('touchend',   _lpCancel);
+  tag.addEventListener('touchmove',  _lpCancel);
+  tag.addEventListener('pointerdown', e => { if (e.pointerType !== 'touch') _lpStart(); });
+  tag.addEventListener('pointerup',   e => { if (e.pointerType !== 'touch') _lpCancel(); });
+  tag.addEventListener('pointerleave',e => { if (e.pointerType !== 'touch') _lpCancel(); });
   tag.addEventListener('contextmenu', e => { e.preventDefault(); openLevelSheet(); });
 }
 
 function openLevelSheet() {
   const chips = document.getElementById('level-sheet-chips');
   if (chips) {
-    chips.innerHTML = LEVEL_OPTIONS.map(o =>
-      `<button class="level-sheet-chip${o.key === CURRENT_LEVEL ? ' active' : ''}"
-         onclick="reloadArticleWithLevel('${o.key}')">${o.label}</button>`
-    ).join('');
+    const _activeKey = (loadStudyLog()[selectedArticleDate] || {}).level || CURRENT_LEVEL;
+    const chip = o => `<button class="level-sheet-chip${o.key === _activeKey ? ' active' : ''}" onclick="reloadArticleWithLevel('${o.key}')">${o.label}</button>`;
+    const main = LEVEL_OPTIONS.filter(o => !o.key.includes('_lite'));
+    const lite = LEVEL_OPTIONS.filter(o => o.key.includes('_lite'));
+    chips.innerHTML =
+      `<div class="level-sheet-row">${main.map(chip).join('')}</div>` +
+      `<div class="level-sheet-row">${lite.map(chip).join('')}</div>`;
   }
   document.getElementById('level-sheet-backdrop').classList.add('open');
   document.getElementById('level-sheet').classList.add('open');
@@ -2940,18 +2947,21 @@ function closeLevelSheet() {
 
 async function reloadArticleWithLevel(key) {
   closeLevelSheet();
-  setUserLevel(key); // Fix #7: reuse setUserLevel instead of duplicating
   showToast('載入中…');
   const result = await loadContentForDate(selectedArticleDate, key);
   if (!result.success) { showToast('此等級尚無內容'); return; }
+  // 儲存此日期的選用等級（不影響全局 CURRENT_LEVEL）
+  const log = loadStudyLog();
+  const dateStr = selectedArticleDate || getLocalDateStr();
+  if (!log[dateStr]) log[dateStr] = {};
+  log[dateStr].level = key;
+  saveStudyLog(log);
   const opt = LEVEL_OPTIONS.find(o => o.key === key);
   const label = opt ? opt.label : key.toUpperCase();
   const titleEl = document.getElementById('article-page-title');
   if (titleEl) titleEl.textContent = result.pack.title || selectedArticleDate;
   const lt = document.getElementById('article-level-tag');
   if (lt) lt.textContent = label;
-  // Fix #2: applyContentPack (inside loadContentForDate) already calls renderArticle
-  // when the article page is active — no need to call it again here.
   resetArticleProgress();
   showToast('已切換至 ' + label);
 }
@@ -4450,7 +4460,7 @@ function updateArticleProgress() {
 // 難度量表
 function rateArticle(val) {
   const log = loadStudyLog();
-  const dateStr = getLocalDateStr();
+  const dateStr = selectedArticleDate || getLocalDateStr();
   if (!log[dateStr]) log[dateStr] = {};
   log[dateStr].articleDifficulty = val;
   saveStudyLog(log);
@@ -5698,9 +5708,16 @@ async function selectArticleDate(dateStr) {
   if (dateStr === selectedArticleDate) return;
 
   showToast('載入中…');
-  const result = await loadContentForDate(dateStr, CURRENT_LEVEL);
+  // 優先用此日期上次記錄的等級，否則用全局設定，最後 fallback n5
+  const _log = loadStudyLog();
+  const _storedLevel = _log[dateStr] && _log[dateStr].level;
+  let _levelToUse = _storedLevel || CURRENT_LEVEL;
+  let result = await loadContentForDate(dateStr, _levelToUse);
+  if (!result.success && _levelToUse !== 'n5') {
+    result = await loadContentForDate(dateStr, 'n5');
+    if (result.success) _levelToUse = 'n5';
+  }
   if (!result.success) {
-    // 今天失敗時 fallback 到 hardcoded demo
     if (dateStr === getLocalDateStr()) {
       restoreDemoContent();
     } else {
@@ -5708,11 +5725,15 @@ async function selectArticleDate(dateStr) {
       return;
     }
   } else {
+    // 記住此日期用的等級
+    if (!_log[dateStr]) _log[dateStr] = {};
+    _log[dateStr].level = _levelToUse;
+    saveStudyLog(_log);
     showToast('已載入：' + (result.pack.title || dateStr));
-    // 更新頂部標題
     const titleEl = document.getElementById('article-page-title');
     if (titleEl) titleEl.textContent = result.pack.title || dateStr;
-    // 若切換到今日，同步更新學習紀錄的文章標題
+    const lt = document.getElementById('article-level-tag');
+    if (lt) { const opt = LEVEL_OPTIONS.find(o => o.key === _levelToUse); lt.textContent = opt ? opt.label : _levelToUse.toUpperCase(); }
     if (dateStr === getLocalDateStr()) {
       logTodayArticle(result.pack.title, result.pack.level);
     }
