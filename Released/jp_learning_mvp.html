@@ -1789,7 +1789,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.20
+          v0.14.21
         </div>
 
       </div>
@@ -3568,17 +3568,23 @@ function buildPlayText() {
   return texts.length ? texts.join('') : ARTICLE_TEXT;
 }
 
-function _onReadAloudEnd(isAllSelected) {
+function _onReadAloudEnd() {
   readAloudPlaying = false;
   setPlayIcon(false);
-  // 條件2/3 只在全部句子都選取時計入（等同「播完整篇」）
-  if (!isAllSelected) return;
+}
+
+function _markSentencePlay(idx) {
   const log = loadStudyLog();
   const dateStr = getLocalDateStr();
-  const ap = (log[dateStr] && log[dateStr].articleProgress) || {};
-  const newCount = (ap.playCount || 0) + 1;
-  markArticleCondition('playCount', newCount);
-  if (!ap.playedOnce) markArticleCondition('playedOnce', true);
+  if (!log[dateStr]) return;
+  if (!log[dateStr].articleProgress) log[dateStr].articleProgress = { scrolled:false, sentencePlays:{}, totalSentences:0 };
+  const sp = log[dateStr].articleProgress.sentencePlays || {};
+  sp[idx] = (sp[idx] || 0) + 1;
+  log[dateStr].articleProgress.sentencePlays = sp;
+  // 同步更新 totalSentences（確保有最新句數）
+  if (sentenceCount > 0) log[dateStr].articleProgress.totalSentences = sentenceCount;
+  saveStudyLog(log);
+  updateArticleProgress();
 }
 
 // 播放單句
@@ -3592,18 +3598,19 @@ function _speakOne(text, onend) {
 }
 
 // 從 queue 逐句播放，句間暫停 500ms
-function _playNextInQueue(allSel) {
+function _playNextInQueue() {
   if (!readAloudPlaying || !readAloudQueue.length) {
-    if (readAloudPlaying) _onReadAloudEnd(allSel);
+    if (readAloudPlaying) _onReadAloudEnd();
     return;
   }
-  const text = readAloudQueue.shift();
+  const {text, idx} = readAloudQueue.shift();
   _speakOne(text, () => {
+    _markSentencePlay(idx);
     if (!readAloudPlaying) return;
-    if (!readAloudQueue.length) { _onReadAloudEnd(allSel); return; }
+    if (!readAloudQueue.length) { _onReadAloudEnd(); return; }
     readAloudTimer = setTimeout(() => {
       readAloudTimer = null;
-      _playNextInQueue(allSel);
+      _playNextInQueue();
     }, 500);
   });
 }
@@ -3617,24 +3624,22 @@ function toggleReadAloud() {
   window.speechSynthesis.cancel();
   if (readAloudTimer) { clearTimeout(readAloudTimer); readAloudTimer = null; }
 
-  const allSel = sentenceSelected.every(Boolean);
-
-  // 無選取資料時 fallback 整篇
+  // 無選取資料時 fallback 整篇（無法追蹤逐句，略過進度計算）
   if (!sentenceCount || !SENTENCE_TEXTS.length) {
     readAloudPlaying = true;
     setPlayIcon(true);
-    _speakOne(ARTICLE_TEXT, () => _onReadAloudEnd(allSel));
+    _speakOne(ARTICLE_TEXT, () => _onReadAloudEnd());
     return;
   }
 
   readAloudQueue = sentenceSelected
-    .map((sel, i) => (sel && SENTENCE_TEXTS[i]) ? SENTENCE_TEXTS[i] : null)
+    .map((sel, i) => (sel && SENTENCE_TEXTS[i]) ? {text: SENTENCE_TEXTS[i], idx: i} : null)
     .filter(Boolean);
 
   if (!readAloudQueue.length) return;
   readAloudPlaying = true;
   setPlayIcon(true);
-  _playNextInQueue(allSel);
+  _playNextInQueue();
 }
 
 function stopReadAloud() {
@@ -4481,7 +4486,7 @@ function logTodayArticle(title, level) {
   log[dateStr].level = level || '';
   // 若尚未有 articleProgress，代表是舊資料或首次 → 重置為 0 開始新追蹤
   if (!log[dateStr].articleProgress) {
-    log[dateStr].articleProgress = { scrolled:false, playedOnce:false, playCount:0 };
+    log[dateStr].articleProgress = { scrolled:false, sentencePlays:{}, totalSentences:0 };
     log[dateStr].tasks.article = 0;
   }
   saveStudyLog(log);
@@ -4498,10 +4503,17 @@ function updateArticleProgress() {
   const dateStr = getLocalDateStr();
   if (!log[dateStr]) return;
   const ap = log[dateStr].articleProgress || {};
+  const sp = ap.sentencePlays || {};
+  const total = ap.totalSentences || 0;
+  // 有效朗讀次數 = 所有句子播放次數的最小值（需全部句子都播過）
+  const keys = Object.keys(sp);
+  const effectiveCount = (total > 0 && keys.length >= total)
+    ? Math.min(...keys.map(k => sp[k]))
+    : 0;
   let pct = 0;
-  if (ap.scrolled)                    pct += 30;  // 條件1：捲到底部
-  if (ap.playedOnce)                  pct += 30;  // 條件2：朗讀 1 次
-  if ((ap.playCount || 0) >= 3)       pct += 40;  // 條件3：朗讀 ≥ 3 次
+  if (ap.scrolled)         pct += 30;  // 條件1：捲到底部
+  if (effectiveCount >= 1) pct += 30;  // 條件2：每句至少播 1 次
+  if (effectiveCount >= 5) pct += 40;  // 條件3：每句至少播 5 次
   log[dateStr].tasks.article = pct;
   saveStudyLog(log);
   refreshProgressUI();
@@ -4546,7 +4558,7 @@ function markArticleCondition(key, value) {
   const log = loadStudyLog();
   const dateStr = getLocalDateStr();
   if (!log[dateStr]) return;
-  if (!log[dateStr].articleProgress) log[dateStr].articleProgress = { scrolled:false, playedOnce:false, playCount:0 };
+  if (!log[dateStr].articleProgress) log[dateStr].articleProgress = { scrolled:false, sentencePlays:{}, totalSentences:0 };
   log[dateStr].articleProgress[key] = value;
   // 同步儲存文章句子總數（供首頁 dashboard 計算）
   if (sentenceCount > 0) log[dateStr].sentencesTotal = sentenceCount;
