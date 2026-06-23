@@ -1709,12 +1709,24 @@
         <p class="section-title">進階功能</p>
         <div class="card" style="padding:4px 16px">
           <div class="setting-row" style="flex-direction:column;align-items:flex-start;gap:8px;padding:14px 0">
-            <div>
-              <div class="setting-label">Google Vision API Key</div>
-              <div class="setting-sub">拍照辨識日文功能需要 · <a href="https://cloud.google.com/vision" target="_blank" style="color:var(--wa)">如何取得</a></div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;width:100%">
+              <div>
+                <div class="setting-label">Google Vision API Key</div>
+                <div class="setting-sub">拍照辨識日文功能需要 · <a href="https://cloud.google.com/vision" target="_blank" style="color:var(--wa)">如何取得</a></div>
+              </div>
+              <span id="vision-key-status" style="font-size:11px;color:var(--wt3);margin-top:2px"></span>
             </div>
             <input type="text" id="google-vision-key" placeholder="貼上你的 API Key…"
-                   style="font-size:13px" oninput="saveGoogleVisionKey(this.value)">
+                   style="font-size:13px"
+                   oninput="saveGoogleVisionKey(this.value)"
+                   onblur="updateVisionKeyStatus()">
+            <div style="display:flex;gap:8px;align-items:center;width:100%">
+              <button onclick="testVisionApiKey()" id="vision-test-btn"
+                style="font-size:12px;color:var(--wa);border:1px solid var(--wa);background:none;border-radius:6px;padding:5px 12px;cursor:pointer">
+                測試連線
+              </button>
+              <span id="vision-test-result" style="font-size:12px;color:var(--wt3)"></span>
+            </div>
           </div>
         </div>
 
@@ -1777,7 +1789,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.17
+          v0.14.18
         </div>
 
       </div>
@@ -2080,7 +2092,7 @@ function switchPage(id) {
   if (id === 'home')  { calViewYear = TODAY_YEAR; calViewMonth = TODAY_MONTH; renderHomeRing(); renderCalendar(); }
   if (id === 'vocab') renderVocabPage();
   if (id === 'quiz')     initQuizPage();
-  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); renderLevelPicker(); renderMasteryThreshold(); _levelPickerOpen = false; const _lpw = document.getElementById('level-picker-wrap'); if (_lpw) _lpw.style.display = 'none'; const _lpc = document.getElementById('level-picker-chevron'); if (_lpc) _lpc.style.transform = ''; }
+  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); renderLevelPicker(); renderMasteryThreshold(); initSettings(); _levelPickerOpen = false; const _lpw = document.getElementById('level-picker-wrap'); if (_lpw) _lpw.style.display = 'none'; const _lpc = document.getElementById('level-picker-chevron'); if (_lpc) _lpc.style.transform = ''; }
   // Show/hide FAB
   document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
 }
@@ -5430,11 +5442,62 @@ function addOcrWord(word) {
 
 function saveGoogleVisionKey(val) {
   localStorage.setItem('googleVisionKey', val.trim());
+  const status = document.getElementById('vision-key-status');
+  if (status) status.textContent = '';
+}
+
+function updateVisionKeyStatus() {
+  const key = localStorage.getItem('googleVisionKey') || '';
+  const status = document.getElementById('vision-key-status');
+  if (!status) return;
+  if (key) {
+    status.textContent = '已儲存 ✓';
+    status.style.color = 'var(--wg)';
+  } else {
+    status.textContent = '未設定';
+    status.style.color = 'var(--wt3)';
+  }
+}
+
+async function testVisionApiKey() {
+  const key = localStorage.getItem('googleVisionKey') || '';
+  const result = document.getElementById('vision-test-result');
+  const btn = document.getElementById('vision-test-btn');
+  if (!key) {
+    result.textContent = '請先填入 API Key';
+    result.style.color = 'var(--wr)';
+    return;
+  }
+  btn.disabled = true;
+  result.textContent = '測試中…';
+  result.style.color = 'var(--wt3)';
+  try {
+    // Send a 1x1 white pixel to test the key
+    const pixel = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwADhQGAWjR9awAAAABJRU5ErkJggg==';
+    const res = await fetch(
+      'https://vision.googleapis.com/v1/images:annotate?key=' + key,
+      { method: 'POST', headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ requests: [{ image: { content: pixel }, features: [{ type: 'TEXT_DETECTION' }] }] }) }
+    );
+    const data = await res.json();
+    if (data.error) {
+      result.textContent = '❌ ' + (data.error.message || '金鑰無效');
+      result.style.color = 'var(--wr)';
+    } else {
+      result.textContent = '✓ 連線成功';
+      result.style.color = 'var(--wg)';
+    }
+  } catch(e) {
+    result.textContent = '❌ 網路錯誤';
+    result.style.color = 'var(--wr)';
+  }
+  btn.disabled = false;
 }
 
 function initSettings() {
   const el = document.getElementById('google-vision-key');
   if (el) el.value = localStorage.getItem('googleVisionKey') || '';
+  updateVisionKeyStatus();
 }
 
 // ===== 單字複習考 =====
