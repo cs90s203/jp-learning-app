@@ -1777,7 +1777,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.16
+          v0.14.17
         </div>
 
       </div>
@@ -1823,15 +1823,25 @@
       <!-- 拍照 -->
       <div class="vocab-mpane" id="vmp-photo">
         <div class="camera-area">
-          <img id="camera-preview">
-          <button class="submit-btn" style="width:auto;padding:11px 22px" onclick="document.getElementById('camera-file-input').click()">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-            拍照 / 選圖
-          </button>
-          <p style="font-size:11px;color:var(--wt3);text-align:center">使用 Google Vision 辨識圖片中的日文</p>
+          <img id="camera-preview" style="display:none;max-width:100%;border-radius:12px;margin-bottom:12px">
+          <div id="ocr-select-area">
+            <button class="submit-btn" style="width:auto;padding:11px 22px" onclick="document.getElementById('camera-file-input').click()">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              拍照 / 選圖
+            </button>
+            <p style="font-size:11px;color:var(--wt3);text-align:center;margin-top:6px">使用 Google Vision 辨識圖片中的日文</p>
+          </div>
+          <div id="ocr-confirm-area" style="display:none;width:100%;display:none;flex-direction:column;gap:8px">
+            <button class="submit-btn" style="width:100%;padding:11px" onclick="triggerOcr()">
+              開始辨識
+            </button>
+            <button onclick="resetCameraUI()" style="font-size:13px;color:var(--wt3);background:none;border:none;cursor:pointer;padding:6px">
+              重新選圖
+            </button>
+          </div>
         </div>
-        <input type="file" id="camera-file-input" accept="image/*" capture="environment"
-               style="display:none" onchange="handleCameraCapture(this)">
+        <input type="file" id="camera-file-input" accept="image/*"
+               style="display:none" onchange="previewCameraFile(this)">
         <div id="ocr-loading" style="display:none;text-align:center;padding:16px;color:var(--wt3);font-size:13px">辨識中…</div>
         <div id="ocr-results"></div>
       </div>
@@ -5323,14 +5333,33 @@ function addDictEntry(entry) {
 }
 
 // ===== Camera / OCR =====
-function handleCameraCapture(input) {
+let _ocrFile = null;
+
+function previewCameraFile(input) {
   const file = input.files[0];
   if (!file) return;
-
+  _ocrFile = file;
   const preview = document.getElementById('camera-preview');
   preview.src = URL.createObjectURL(file);
   preview.style.display = 'block';
+  document.getElementById('ocr-select-area').style.display = 'none';
+  document.getElementById('ocr-confirm-area').style.display = 'flex';
+  document.getElementById('ocr-results').innerHTML = '';
+}
 
+function resetCameraUI() {
+  _ocrFile = null;
+  const preview = document.getElementById('camera-preview');
+  preview.src = '';
+  preview.style.display = 'none';
+  document.getElementById('ocr-select-area').style.display = 'block';
+  document.getElementById('ocr-confirm-area').style.display = 'none';
+  document.getElementById('ocr-results').innerHTML = '';
+  document.getElementById('camera-file-input').value = '';
+}
+
+async function triggerOcr() {
+  if (!_ocrFile) return;
   const apiKey = localStorage.getItem('googleVisionKey') || '';
   if (!apiKey) {
     document.getElementById('ocr-results').innerHTML =
@@ -5338,10 +5367,9 @@ function handleCameraCapture(input) {
       '請先在「設定」→「進階功能」填入 Google Vision API Key</div>';
     return;
   }
-
   document.getElementById('ocr-loading').style.display = 'block';
   document.getElementById('ocr-results').innerHTML = '';
-
+  document.getElementById('ocr-confirm-area').style.display = 'none';
   const reader = new FileReader();
   reader.onload = async (ev) => {
     const b64 = ev.target.result.split(',')[1];
@@ -5359,8 +5387,10 @@ function handleCameraCapture(input) {
         '<p style="color:var(--wr);font-size:13px">辨識失敗：' + err.message + '</p>';
     }
     document.getElementById('ocr-loading').style.display = 'none';
+    // show retry option
+    document.getElementById('ocr-confirm-area').style.display = 'flex';
   };
-  reader.readAsDataURL(file);
+  reader.readAsDataURL(_ocrFile);
 }
 
 function showOcrResults(text) {
