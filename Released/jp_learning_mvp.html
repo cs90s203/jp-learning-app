@@ -211,7 +211,11 @@
   .ring-leg-label { color: var(--wt2); font-weight: 500; }
   .ring-leg-state { font-size: 11px; color: var(--wt3); margin-left: auto; }
 
-  .cal-grid { display: grid; grid-template-columns: repeat(7,1fr); gap: 6px 2px; margin-top: 6px; }
+  .cal-month-nav { display:flex; align-items:center; justify-content:space-between; padding: 4px 0 8px; }
+  .cal-month-nav span { font-size:13px; font-weight:600; color:var(--wt); }
+  .cal-nav-btn { background:none; border:none; font-size:18px; color:var(--wt2); padding:0 8px; cursor:pointer; line-height:1; }
+  .cal-nav-btn:disabled { opacity:0.25; cursor:default; }
+  .cal-grid { display: grid; grid-template-columns: repeat(7,1fr); gap: 6px 2px; margin-top: 0; }
   .cal-h { text-align: center; font-size: 10px; font-weight: 500; color: var(--wt3); padding-bottom: 4px; }
   .cal-d-wrap {
     aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
@@ -282,7 +286,26 @@
 
   /* Article */
   .article-meta { display: flex; gap: 8px; align-items: center; margin: 4px 0 8px; }
-  .level-tag { font-size: 11px; font-weight: 500; padding: 2px 9px; border-radius: 99px; background: var(--wa-l); color: var(--wa); }
+  .level-tag { font-size: 11px; font-weight: 500; padding: 2px 9px; border-radius: 99px; background: var(--wa-l); color: var(--wa); cursor: pointer; -webkit-user-select: none; user-select: none; }
+  .level-tag:active { opacity: 0.65; }
+
+  /* 等級切換 sheet */
+  .level-sheet-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.35); z-index: 300; }
+  .level-sheet-backdrop.open { display: block; }
+  .level-sheet {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 301;
+    background: var(--wb); border-radius: 20px 20px 0 0;
+    padding: 20px 20px 36px; transform: translateY(100%);
+    transition: transform 0.25s ease; box-shadow: 0 -4px 24px rgba(0,0,0,0.12);
+  }
+  .level-sheet.open { transform: translateY(0); }
+  .level-sheet-title { font-size: 13px; font-weight: 600; color: var(--wt2); margin-bottom: 14px; }
+  .level-sheet-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .level-sheet-chip {
+    padding: 7px 14px; border-radius: 20px; border: 1.5px solid var(--wa-bg2);
+    background: none; font-size: 13px; font-weight: 600; color: var(--wt2); cursor: pointer;
+  }
+  .level-sheet-chip.active { background: var(--wa); color: #fff; border-color: var(--wa); }
   .article-date { font-size: 11px; color: var(--wt3); }
   .cn-toggle-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
   .cn-toggle-label { font-size: 13px; color: var(--wt2); }
@@ -341,6 +364,14 @@
     user-select: none;
   }
   .rec-status { display: none; } /* 改用槽位刪除線取代文字狀態 */
+
+  /* 等級選擇器 */
+  #level-picker-wrap { display: flex; flex-wrap: wrap; gap: 6px; padding: 6px 0 12px; }
+  .level-chip {
+    padding: 5px 11px; border-radius: 20px; border: 1.5px solid var(--wa-bg2);
+    background: none; font-size: 12px; font-weight: 600; color: var(--wt2); cursor: pointer;
+  }
+  .level-chip.active { background: var(--wa); color: #fff; border-color: var(--wa); }
 
   /* 難度量表 */
   .difficulty-bar {
@@ -1370,6 +1401,11 @@
 
         <p class="section-title">學習紀錄</p>
         <div class="card">
+          <div class="cal-month-nav">
+            <button class="cal-nav-btn" onclick="calNavMonth(-1)">‹</button>
+            <span id="cal-month-label"></span>
+            <button class="cal-nav-btn" id="cal-nav-next" onclick="calNavMonth(1)">›</button>
+          </div>
           <div class="cal-grid" id="cal-grid">
             <div class="cal-h">日</div><div class="cal-h">一</div><div class="cal-h">二</div>
             <div class="cal-h">三</div><div class="cal-h">四</div><div class="cal-h">五</div><div class="cal-h">六</div>
@@ -1595,8 +1631,9 @@
           </div>
           <div class="setting-row">
             <div class="setting-label">目前等級</div>
-            <span class="setting-val">N5</span>
+            <span class="setting-val" id="settings-level-val">N5</span>
           </div>
+          <div id="level-picker-wrap"></div>
         </div>
 
         <p class="section-title" style="margin-top:16px">跟讀設定</p>
@@ -1722,7 +1759,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.13.1
+          v0.14.2
         </div>
 
       </div>
@@ -1831,11 +1868,16 @@
         <input class="dev-input" id="dev-date-input" type="text" placeholder="YYYY-MM-DD" />
         <div class="dev-label">等級</div>
         <div class="dev-level-row" id="dev-level-row">
-          <button class="dev-level-btn" onclick="setDevLevel('n5_below')">N5以下</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n5_lite')">N5⁻</button>
           <button class="dev-level-btn" onclick="setDevLevel('n5')">N5</button>
-          <button class="dev-level-btn active" onclick="setDevLevel('n4')">N4</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n4_lite')">N4⁻</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n4')">N4</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n3_lite')">N3⁻</button>
           <button class="dev-level-btn" onclick="setDevLevel('n3')">N3</button>
-          <button class="dev-level-btn" onclick="setDevLevel('n2n1')">N2/N1</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n2_lite')">N2⁻</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n2')">N2</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n1_lite')">N1⁻</button>
+          <button class="dev-level-btn" onclick="setDevLevel('n1')">N1</button>
         </div>
         <div class="dev-row" style="margin-top:10px">
           <button class="dev-btn primary" onclick="devLoadContent()">載入文章</button>
@@ -1920,6 +1962,13 @@
   </div>
   <div class="word-panel-backdrop" id="word-panel-backdrop" onclick="closeWordPanel()"></div>
 
+  <!-- 等級切換 Sheet -->
+  <div class="level-sheet-backdrop" id="level-sheet-backdrop" onclick="closeLevelSheet()"></div>
+  <div class="level-sheet" id="level-sheet">
+    <div class="level-sheet-title">切換這篇的難度</div>
+    <div class="level-sheet-chips" id="level-sheet-chips"></div>
+  </div>
+
   <!-- 單字複習考 overlay -->
   <div id="vocab-quiz">
     <!-- header: close / progress / counter -->
@@ -1984,8 +2033,8 @@ function switchPage(id) {
 
   if (id === 'article') {
     if (!articleRendered) {
-      // 首次進入：載入今天的 n5 文章
-      loadContentForDate(getLocalDateStr(), 'n5').then(result => {
+      // 首次進入：載入今天的文章（依使用者等級）
+      loadContentForDate(getLocalDateStr(), CURRENT_LEVEL).then(result => {
         if (result.success) {
           renderArticle(ARTICLE_TOKENS);
           const titleEl = document.getElementById('article-page-title');
@@ -1997,12 +2046,13 @@ function switchPage(id) {
       });
     }
     initDifficultyBar();
+    initArticleLevelTag();
     renderWeekBar();
   }
   if (id === 'home')  { renderHomeRing(); renderCalendar(); }
   if (id === 'vocab') renderVocabPage();
   if (id === 'quiz')     initQuizPage();
-  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); }
+  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); renderLevelPicker(); }
   // Show/hide FAB
   document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
 }
@@ -2821,7 +2871,91 @@ let ARTICLE_TOKENS = [
 
 // ===== Content Pack 載入系統 =====
 let CONTENT_BASE_URL = '../content';
-let CURRENT_LEVEL = 'n5';
+
+const LEVEL_OPTIONS = [
+  { key: 'n5_lite', label: 'N5⁻' },
+  { key: 'n5',      label: 'N5'  },
+  { key: 'n4_lite', label: 'N4⁻' },
+  { key: 'n4',      label: 'N4'  },
+  { key: 'n3_lite', label: 'N3⁻' },
+  { key: 'n3',      label: 'N3'  },
+  { key: 'n2_lite', label: 'N2⁻' },
+  { key: 'n2',      label: 'N2'  },
+  { key: 'n1_lite', label: 'N1⁻' },
+  { key: 'n1',      label: 'N1'  },
+];
+let CURRENT_LEVEL = localStorage.getItem('userLevel') || 'n5';
+
+function setUserLevel(key) {
+  CURRENT_LEVEL = key;
+  localStorage.setItem('userLevel', key);
+  renderLevelPicker();
+}
+
+function renderLevelPicker() {
+  const wrap = document.getElementById('level-picker-wrap');
+  if (!wrap) return;
+  wrap.innerHTML = LEVEL_OPTIONS.map(o =>
+    `<button class="level-chip${o.key === CURRENT_LEVEL ? ' active' : ''}" onclick="setUserLevel('${o.key}')">${o.label}</button>`
+  ).join('');
+  const val = document.getElementById('settings-level-val');
+  const opt = LEVEL_OPTIONS.find(o => o.key === CURRENT_LEVEL);
+  if (val) val.textContent = opt ? opt.label : CURRENT_LEVEL.toUpperCase();
+}
+
+// ===== 文章頁等級 sheet =====
+let _levelLpTimer = null;
+
+function initArticleLevelTag() {
+  const tag = document.getElementById('article-level-tag');
+  if (!tag || tag._levelInited) return;
+  tag._levelInited = true;
+  tag.addEventListener('touchstart', () => {
+    _levelLpTimer = setTimeout(openLevelSheet, 600);
+  }, { passive: true });
+  tag.addEventListener('touchend',  () => clearTimeout(_levelLpTimer));
+  tag.addEventListener('touchmove', () => clearTimeout(_levelLpTimer));
+  // 桌面：右鍵或直接 click 也可開啟（方便 dev）
+  tag.addEventListener('contextmenu', e => { e.preventDefault(); openLevelSheet(); });
+}
+
+function openLevelSheet() {
+  const chips = document.getElementById('level-sheet-chips');
+  if (chips) {
+    chips.innerHTML = LEVEL_OPTIONS.map(o =>
+      `<button class="level-sheet-chip${o.key === CURRENT_LEVEL ? ' active' : ''}"
+         onclick="reloadArticleWithLevel('${o.key}')">${o.label}</button>`
+    ).join('');
+  }
+  document.getElementById('level-sheet-backdrop').classList.add('open');
+  document.getElementById('level-sheet').classList.add('open');
+}
+
+function closeLevelSheet() {
+  document.getElementById('level-sheet-backdrop').classList.remove('open');
+  document.getElementById('level-sheet').classList.remove('open');
+}
+
+async function reloadArticleWithLevel(key) {
+  closeLevelSheet();
+  CURRENT_LEVEL = key;
+  localStorage.setItem('userLevel', key);
+  renderLevelPicker();
+  showToast('載入中…');
+  const result = await loadContentForDate(selectedArticleDate, key);
+  if (!result.success) { showToast('此等級尚無內容'); return; }
+  const opt = LEVEL_OPTIONS.find(o => o.key === key);
+  const label = opt ? opt.label : key.toUpperCase();
+  const titleEl = document.getElementById('article-page-title');
+  if (titleEl) titleEl.textContent = result.pack.title || selectedArticleDate;
+  const lt = document.getElementById('article-level-tag');
+  if (lt) lt.textContent = label;
+  articleRendered = false;
+  renderArticle(ARTICLE_TOKENS);
+  articleRendered = true;
+  resetArticleProgress();
+  showToast('已切換至 ' + label);
+}
 
 async function loadContentForDate(date, level) {
   const url = `${CONTENT_BASE_URL}/${date}/${level}.json`;
@@ -2889,7 +3023,9 @@ function setDevBaseUrl() {
 
 function setDevLevel(level) {
   CURRENT_LEVEL = level;
+  localStorage.setItem('userLevel', level);
   devRefreshLevelButtons();
+  renderLevelPicker();
 }
 
 function devRefreshLevelButtons() {
@@ -3534,7 +3670,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (result.success) {
       showToast('今日文章已載入：' + result.pack.title);
       const lt = document.getElementById('article-level-tag');
-      if (lt && result.pack.level) lt.textContent = result.pack.level.toUpperCase();
+      if (lt && result.pack.level) {
+        const _opt = LEVEL_OPTIONS.find(o => o.key === result.pack.level);
+        lt.textContent = _opt ? _opt.label : result.pack.level.toUpperCase();
+      }
       // 自動記錄今日文章已閱讀
       logTodayArticle(result.pack.title, result.pack.level);
       renderHomeRing();
@@ -4355,6 +4494,22 @@ const TODAY = _now.getDate();
 const TODAY_MONTH = _now.getMonth() + 1;
 const TODAY_YEAR = _now.getFullYear();
 
+// 月曆當前檢視月份（可切換，預設今月）
+let calViewYear  = TODAY_YEAR;
+let calViewMonth = TODAY_MONTH;
+
+function calNavMonth(dir) {
+  calViewMonth += dir;
+  if (calViewMonth > 12) { calViewMonth = 1; calViewYear++; }
+  if (calViewMonth < 1)  { calViewMonth = 12; calViewYear--; }
+  // 不允許切換到未來月份
+  if (calViewYear > TODAY_YEAR || (calViewYear === TODAY_YEAR && calViewMonth > TODAY_MONTH)) {
+    calViewYear = TODAY_YEAR; calViewMonth = TODAY_MONTH;
+  }
+  closeDay();
+  renderCalendar();
+}
+
 // Build SVG ring markup. size = px outer diameter. tasksState = {key:bool}.
 // completedOverride: optional count used only to decide empty-state rendering.
 function articleFillRatio(val) {
@@ -4469,9 +4624,16 @@ function renderCalendar() {
   const grid = document.getElementById('cal-grid');
   while (grid.children.length > 7) grid.removeChild(grid.lastChild);
 
+  // 更新月份標題與切換按鈕
+  const monthLabel = document.getElementById('cal-month-label');
+  if (monthLabel) monthLabel.textContent = `${calViewYear}年${calViewMonth}月`;
+  const nextBtn = document.getElementById('cal-nav-next');
+  if (nextBtn) nextBtn.disabled = (calViewYear === TODAY_YEAR && calViewMonth === TODAY_MONTH);
+
   const log = loadStudyLog();
-  const daysInMonth = new Date(TODAY_YEAR, TODAY_MONTH, 0).getDate();
-  const leadBlanks = new Date(TODAY_YEAR, TODAY_MONTH - 1, 1).getDay();
+  const todayStr = getLocalDateStr();
+  const daysInMonth = new Date(calViewYear, calViewMonth, 0).getDate();
+  const leadBlanks = new Date(calViewYear, calViewMonth - 1, 1).getDay();
   const MIN_RING = 26, MAX_RING = 42;
 
   // 填入月初空白
@@ -4483,10 +4645,10 @@ function renderCalendar() {
 
   // 顯示當月所有日期
   for (let day = 1; day <= daysInMonth; day++) {
-    const dateStr = `${TODAY_YEAR}-${String(TODAY_MONTH).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const dateStr = `${calViewYear}-${String(calViewMonth).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
     const entry = log[dateStr];
-    const isFuture = day > TODAY;
-    const isToday = day === TODAY;
+    const isFuture = dateStr > todayStr;
+    const isToday = dateStr === todayStr;
 
     const wrap = document.createElement('div');
     wrap.className = 'cal-d-wrap' + (isFuture ? ' empty' : '') + (isToday ? ' today' : '');
@@ -4506,8 +4668,14 @@ function renderCalendar() {
         wrap.appendChild(ringWrap);
       }
       wrap.onclick = () => openDay(day);
+    } else if (!isFuture && isToday) {
+      // 今日但尚無學習紀錄 — 仍可點擊
+      const dot = document.createElement('div');
+      dot.style.cssText = 'width:7px;height:7px;border-radius:50%;background:var(--wa-bg2)';
+      wrap.appendChild(dot);
+      wrap.onclick = () => openDay(day);
     } else if (!isFuture) {
-      // 過去但沒有紀錄 — 淡點
+      // 過去但沒有紀錄 — 淡點，無onclick
       const dot = document.createElement('div');
       dot.style.cssText = 'width:6px;height:6px;border-radius:50%;background:var(--wa-bg2)';
       wrap.appendChild(dot);
@@ -4533,36 +4701,41 @@ function openDay(day) {
   if (selectedDay === day) { closeDay(); return; }
 
   const log = loadStudyLog();
-  const dateStr = `${TODAY_YEAR}-${String(TODAY_MONTH).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+  const dateStr = `${calViewYear}-${String(calViewMonth).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
   const entry = log[dateStr];
-  if (!entry) return;
+  const isToday = (dateStr === getLocalDateStr());
+
+  // 過去且無學習紀錄則忽略；今日即使無紀錄也可展開
+  if (!entry && !isToday) return;
   selectedDay = day;
 
   document.querySelectorAll('.cal-d-wrap').forEach(el => el.classList.remove('selected'));
   document.querySelector('.cal-d-wrap[data-day="' + day + '"]').classList.add('selected');
 
   const weekdays = ['日','一','二','三','四','五','六'];
-  const d = new Date(TODAY_YEAR, TODAY_MONTH - 1, day);
-  document.getElementById('detail-date-label').textContent = `${TODAY_MONTH}月${day}日（${weekdays[d.getDay()]}）`;
-  document.getElementById('detail-article-title').textContent = entry.articleTitle || '（無紀錄）';
-  document.getElementById('detail-article-level').textContent = entry.level ? entry.level.toUpperCase() : '';
+  const d = new Date(calViewYear, calViewMonth - 1, day);
+  document.getElementById('detail-date-label').textContent = `${calViewMonth}月${day}日（${weekdays[d.getDay()]}）`;
+  document.getElementById('detail-article-title').textContent = entry ? (entry.articleTitle || '（無紀錄）') : '今日文章';
+  document.getElementById('detail-article-level').textContent = entry ? (entry.level ? entry.level.toUpperCase() : '') : 'N5';
 
   const tasksEl = document.getElementById('detail-tasks');
   tasksEl.innerHTML = '';
-  TASKS.forEach(t => {
-    const val = entry.tasks[t.key];
-    const isNum = (t.key === 'article' || t.key === 'vocab');
-    const pct = isNum ? Math.round(articleFillRatio(val) * 100) : (val ? 100 : 0);
-    const done = pct >= 100, partial = pct > 0 && !done;
-    const label = done ? '完成' : (partial ? pct + '%' : '未完成');
-    const bg    = done ? 'var(--wg-bg)' : (partial ? 'var(--wy-bg)' : 'var(--wa-bg)');
-    const color = done ? 'var(--wg)'    : (partial ? 'var(--wy)'    : 'var(--wt3)');
-    const row = document.createElement('div');
-    row.className = 'detail-task-row';
-    row.innerHTML = '<div class="detail-task-left"><div class="task-dot" style="background:' + t.color + '"></div>' + t.label + '</div>' +
-      '<span class="badge" style="background:' + bg + ';color:' + color + '">' + label + '</span>';
-    tasksEl.appendChild(row);
-  });
+  if (entry && entry.tasks) {
+    TASKS.forEach(t => {
+      const val = entry.tasks[t.key];
+      const isNum = (t.key === 'article' || t.key === 'vocab');
+      const pct = isNum ? Math.round(articleFillRatio(val) * 100) : (val ? 100 : 0);
+      const done = pct >= 100, partial = pct > 0 && !done;
+      const label = done ? '完成' : (partial ? pct + '%' : '未完成');
+      const bg    = done ? 'var(--wg-bg)' : (partial ? 'var(--wy-bg)' : 'var(--wa-bg)');
+      const color = done ? 'var(--wg)'    : (partial ? 'var(--wy)'    : 'var(--wt3)');
+      const row = document.createElement('div');
+      row.className = 'detail-task-row';
+      row.innerHTML = '<div class="detail-task-left"><div class="task-dot" style="background:' + t.color + '"></div>' + t.label + '</div>' +
+        '<span class="badge" style="background:' + bg + ';color:' + color + '">' + label + '</span>';
+      tasksEl.appendChild(row);
+    });
+  }
 
   const panel = document.getElementById('day-detail');
   panel.classList.add('open');
@@ -4577,14 +4750,13 @@ function closeDay() {
 
 function openArticleFromCalendar() {
   if (!selectedDay) return;
-  const dateStr = `${TODAY_YEAR}-${String(TODAY_MONTH).padStart(2,'0')}-${String(selectedDay).padStart(2,'0')}`;
+  const dateStr = `${calViewYear}-${String(calViewMonth).padStart(2,'0')}-${String(selectedDay).padStart(2,'0')}`;
   closeDay();
-  if (dateStr !== getLocalDateStr()) {
-    // 非今天：先標記 rendered，避免 switchPage 搶先非同步載入今日文章
-    articleRendered = true;
-  }
+  // 先標記 rendered，避免 switchPage 搶先非同步載入今日文章
+  articleRendered = true;
   switchPage('article');
-  if (dateStr !== getLocalDateStr()) {
+  // 無論今天或過去，都呼叫 selectArticleDate 確保載入正確文章
+  if (dateStr !== selectedArticleDate) {
     selectArticleDate(dateStr);
   }
 }
@@ -5406,7 +5578,6 @@ function renderWeekBar() {
   const dates = getWeekDates(weekBarOffset);
   const todayStr = getLocalDateStr();
   const log = loadStudyLog();
-  const knownDates = [...getAvailableArticleDates(), todayStr];
 
   container.innerHTML = '';
   dates.forEach((d, i) => {
@@ -5414,7 +5585,9 @@ function renderWeekBar() {
     const isFuture = dateStr > todayStr;
     const isToday  = dateStr === todayStr;
     const isSel    = dateStr === selectedArticleDate;
-    const hasContent = knownDates.includes(dateStr);
+    const entry    = log[dateStr];
+    // 有學習紀錄或是今日 → 顯示進度環；否則顯示淡化數字
+    const hasContent = !isFuture && (entry != null || isToday);
     const dayNum = d.getDate();
 
     const div = document.createElement('div');
@@ -5422,59 +5595,51 @@ function renderWeekBar() {
       (isToday ? ' awb-today' : '') +
       (isSel   ? ' awb-selected' : '') +
       (isFuture ? ' awb-future' : '');
-    div.dataset.hasContent = (hasContent && !isFuture) ? '1' : '0';
+    div.dataset.hasContent = hasContent ? '1' : '0';
 
-    if (hasContent && !isFuture) {
-      // 有內容：上半弧（文章）+ 下半弧（跟讀）
-      const entry    = log[dateStr];
+    if (!isFuture) {
+      // 所有非未來日期都可點擊
+      div.onclick = () => selectArticleDate(dateStr);
+    }
+
+    if (hasContent) {
+      // 有學習紀錄或今日：顯示上半弧（文章）+ 下半弧（跟讀）進度環
       const artPct   = articleFillRatio(entry && entry.tasks ? entry.tasks.article : 0);
       const speakRaw = entry && entry.tasks && entry.tasks.speak != null ? entry.tasks.speak : 0;
       const speakPct = Math.min(1, speakRaw / 100);
 
       const R = 15, SW = 3, CX = 19, CY = 19;
-      const circ    = 2 * Math.PI * R;   // ~94.25
-      const half    = circ / 2;           // ~47.12
+      const circ    = 2 * Math.PI * R;
+      const half    = circ / 2;
 
       const bgFill   = isSel ? 'var(--wa-l)' : (isToday ? 'var(--wa-bg)' : 'none');
       const textFill = isSel ? 'var(--wa)' : 'var(--wt)';
 
-      // 上半弧：rotate(-180) → 從 9 點順時針過 12 點到 3 點（文章橘）
       const artFilled   = (half * artPct).toFixed(2);
-      // 下半弧：無旋轉（預設從 3 點順時針過 6 點到 9 點）（跟讀紫）
       const speakFilled = (half * speakPct).toFixed(2);
-
       const hasRec = recordingDates.has(dateStr);
 
       div.innerHTML =
         `<svg viewBox="0 0 38 38" width="38" height="38">
-          <!-- 背景填色 -->
           <circle cx="${CX}" cy="${CY}" r="${R}" fill="${bgFill}" stroke="none"/>
-          <!-- 上半弧軌道（淡橘） -->
           <circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="#D85A3022" stroke-width="${SW}"
             stroke-dasharray="${half.toFixed(2)} ${circ.toFixed(2)}"
             transform="rotate(-180 ${CX} ${CY})"/>
-          <!-- 上半弧進度（橘） -->
           ${artPct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="#D85A30" stroke-width="${SW}"
             stroke-linecap="butt"
             stroke-dasharray="${artFilled} ${circ.toFixed(2)}"
             transform="rotate(-180 ${CX} ${CY})"/>` : ''}
-          <!-- 下半弧軌道（淡紫） -->
           <circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="#7F77DD22" stroke-width="${SW}"
             stroke-dasharray="${half.toFixed(2)} ${circ.toFixed(2)}"/>
-          <!-- 下半弧進度（紫） -->
           ${speakPct > 0 ? `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="#7F77DD" stroke-width="${SW}"
             stroke-linecap="butt"
             stroke-dasharray="${speakFilled} ${circ.toFixed(2)}"/>` : ''}
-          <!-- 日期數字 -->
           <text x="${CX}" y="${CY+4}" text-anchor="middle" font-size="12" fill="${textFill}" class="awb-circle-num">${dayNum}</text>
-          <!-- 跟讀錄音 badge（右上角小點） -->
           ${hasRec ? `<circle cx="33" cy="5" r="3" fill="#D85A30"/>` : ''}
         </svg>` +
         `<div class="awb-dow">${DOW_LABELS[i]}</div>`;
 
-      div.onclick = () => selectArticleDate(dateStr);
-
-      // 長按：不呼叫 preventDefault（避免壓制 click），CSS user-select:none 已防系統選字
+      // 長按刪除錄音（僅有 badge 時）
       if (hasRec) {
         let _lpTimer = null;
         div.addEventListener('touchstart', () => {
@@ -5487,13 +5652,11 @@ function renderWeekBar() {
         div.addEventListener('touchmove', () => { clearTimeout(_lpTimer); });
       }
     } else {
-      // 無內容或未來：純文字
-      const dayNumStr = (!isFuture && !hasContent)
-        ? `<div class="awb-day-num" style="color:var(--wt3);opacity:0.4">${dayNum}</div>`
-        : `<div class="awb-day-num">${isFuture ? dayNum : ''}</div>`;
+      // 無學習紀錄的過去日期 or 未來：純文字
+      const opacity = isFuture ? '1' : '0.4';
       div.innerHTML =
-        dayNumStr +
-        `<div class="awb-dow">${(isFuture || !hasContent) ? DOW_LABELS[i] : ''}</div>`;
+        `<div class="awb-day-num" style="color:var(--wt3);opacity:${opacity}">${dayNum}</div>` +
+        `<div class="awb-dow" style="opacity:${opacity}">${DOW_LABELS[i]}</div>`;
     }
     container.appendChild(div);
   });
@@ -5512,7 +5675,7 @@ async function selectArticleDate(dateStr) {
   if (dateStr === selectedArticleDate) return;
 
   showToast('載入中…');
-  const result = await loadContentForDate(dateStr, 'n5');
+  const result = await loadContentForDate(dateStr, CURRENT_LEVEL);
   if (!result.success) {
     // 今天失敗時 fallback 到 hardcoded demo
     if (dateStr === getLocalDateStr()) {
@@ -5533,6 +5696,18 @@ async function selectArticleDate(dateStr) {
   }
 
   selectedArticleDate = dateStr;
+
+  // 自動調整 weekBarOffset，讓週曆顯示目標日期所在的那一週
+  (function() {
+    const target = new Date(dateStr + 'T00:00:00');
+    const now = new Date();
+    const mondayDiff = (now.getDay() + 6) % 7;
+    const thisMonday = new Date(now);
+    thisMonday.setDate(now.getDate() - mondayDiff);
+    thisMonday.setHours(0, 0, 0, 0);
+    const diffDays = Math.round((target - thisMonday) / 86400000);
+    weekBarOffset = Math.min(0, Math.floor(diffDays / 7));
+  })();
 
   // 重新渲染文章
   articleRendered = false;

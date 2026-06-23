@@ -1,0 +1,1451 @@
+{
+  "date": "2026-06-23",
+  "level": "n2_lite",
+  "title": "日本の食文化",
+  "text": "日本には、地域ごとに独自の食文化があります。北海道では新鮮な海産物や乳製品が有名で、観光客に大変人気があります。一方、関西地方では出汁を重視した薄味の料理が多く、その文化が深く根付いています。こうした地域差は、気候や歴史的背景に起因していると言われています。近年、日本食はユネスコの無形文化遺産に登録されたことで、世界的な注目を集めるようになりました。和食の特徴は、食材本来の味を大切にし、季節感を重視する点にあります。料理の盛り付けにも美的センスが求められ、見た目の美しさも重要な要素とされています。日本を訪れる外国人の多くが、日本食の多様性と繊細さに驚くと言われています。",
+  "tokens": [
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ごとに",
+      "basic_form": "ごとに",
+      "reading": "ごとに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "独自",
+      "basic_form": "独自",
+      "reading": "どくじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食文化",
+      "basic_form": "食文化",
+      "reading": "しょくぶんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "北海道",
+      "basic_form": "北海道",
+      "reading": "ほっかいどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "新鮮",
+      "basic_form": "新鮮",
+      "reading": "しんせん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "海産物",
+      "basic_form": "海産物",
+      "reading": "かいさんぶつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "乳製品",
+      "basic_form": "乳製品",
+      "reading": "にゅうせいひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "有名",
+      "basic_form": "有名",
+      "reading": "ゆうめい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "観光客",
+      "basic_form": "観光客",
+      "reading": "かんこうきゃく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大変",
+      "basic_form": "大変",
+      "reading": "たいへん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "人気",
+      "basic_form": "人気",
+      "reading": "にんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "関西地方",
+      "basic_form": "関西地方",
+      "reading": "かんさいちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出汁",
+      "basic_form": "出汁",
+      "reading": "だし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重視",
+      "basic_form": "重視",
+      "reading": "じゅうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "薄味",
+      "basic_form": "薄味",
+      "reading": "うすあじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多く",
+      "basic_form": "多い",
+      "reading": "おおく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "文化",
+      "basic_form": "文化",
+      "reading": "ぶんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深く",
+      "basic_form": "深い",
+      "reading": "ふかく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "根付い",
+      "basic_form": "根付く",
+      "reading": "ねづい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "地域差",
+      "basic_form": "地域差",
+      "reading": "ちいきさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "気候",
+      "basic_form": "気候",
+      "reading": "きこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "歴史的",
+      "basic_form": "歴史的",
+      "reading": "れきしてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "背景",
+      "basic_form": "背景",
+      "reading": "はいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "起因",
+      "basic_form": "起因",
+      "reading": "きいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言わ",
+      "basic_form": "言う",
+      "reading": "いわ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日本食",
+      "basic_form": "日本食",
+      "reading": "にほんしょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ユネスコ",
+      "basic_form": "ユネスコ",
+      "reading": "ゆねすこ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "無形文化遺産",
+      "basic_form": "無形文化遺産",
+      "reading": "むけいぶんかいさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "登録",
+      "basic_form": "登録",
+      "reading": "とうろく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "さ",
+      "basic_form": "する",
+      "reading": "さ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "世界的",
+      "basic_form": "世界的",
+      "reading": "せかいてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "注目",
+      "basic_form": "注目",
+      "reading": "ちゅうもく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "集める",
+      "basic_form": "集める",
+      "reading": "あつめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なり",
+      "basic_form": "なる",
+      "reading": "なり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "和食",
+      "basic_form": "和食",
+      "reading": "わしょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "特徴",
+      "basic_form": "特徴",
+      "reading": "とくちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "食材",
+      "basic_form": "食材",
+      "reading": "しょくざい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "本来",
+      "basic_form": "本来",
+      "reading": "ほんらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "味",
+      "basic_form": "味",
+      "reading": "あじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大切",
+      "basic_form": "大切",
+      "reading": "たいせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "季節感",
+      "basic_form": "季節感",
+      "reading": "きせつかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重視",
+      "basic_form": "重視",
+      "reading": "じゅうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "点",
+      "basic_form": "点",
+      "reading": "てん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "盛り付け",
+      "basic_form": "盛り付け",
+      "reading": "もりつけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "美的",
+      "basic_form": "美的",
+      "reading": "びてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "センス",
+      "basic_form": "センス",
+      "reading": "せんす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求め",
+      "basic_form": "求める",
+      "reading": "もとめ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "られ",
+      "basic_form": "られる",
+      "reading": "られ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "見た目",
+      "basic_form": "見た目",
+      "reading": "みため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "美しさ",
+      "basic_form": "美しい",
+      "reading": "うつくしさ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重要",
+      "basic_form": "重要",
+      "reading": "じゅうよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "要素",
+      "basic_form": "要素",
+      "reading": "ようそ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さ",
+      "basic_form": "する",
+      "reading": "さ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "訪れる",
+      "basic_form": "訪れる",
+      "reading": "おとずれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "外国人",
+      "basic_form": "外国人",
+      "reading": "がいこくじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多く",
+      "basic_form": "多い",
+      "reading": "おおく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日本食",
+      "basic_form": "日本食",
+      "reading": "にほんしょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多様性",
+      "basic_form": "多様性",
+      "reading": "たようせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "繊細さ",
+      "basic_form": "繊細",
+      "reading": "せんさいさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "驚く",
+      "basic_form": "驚く",
+      "reading": "おどろく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言わ",
+      "basic_form": "言う",
+      "reading": "いわ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "日本": {
+      "meaning": "日本",
+      "romaji": "nihon"
+    },
+    "地域": {
+      "meaning": "地區、區域",
+      "romaji": "chiiki"
+    },
+    "ごとに": {
+      "meaning": "每～、各～",
+      "romaji": "goto ni"
+    },
+    "独自": {
+      "meaning": "獨特的、固有的",
+      "romaji": "dokuji"
+    },
+    "食文化": {
+      "meaning": "飲食文化",
+      "romaji": "shoku bunka"
+    },
+    "ある": {
+      "meaning": "有（存在）",
+      "romaji": "aru"
+    },
+    "北海道": {
+      "meaning": "北海道",
+      "romaji": "hokkaidou"
+    },
+    "新鮮": {
+      "meaning": "新鮮的",
+      "romaji": "shinsen"
+    },
+    "海産物": {
+      "meaning": "海產",
+      "romaji": "kaisanbutsu"
+    },
+    "乳製品": {
+      "meaning": "乳製品",
+      "romaji": "nyuuseihin"
+    },
+    "有名": {
+      "meaning": "有名的",
+      "romaji": "yuumei"
+    },
+    "観光客": {
+      "meaning": "觀光客",
+      "romaji": "kankokyaku"
+    },
+    "大変": {
+      "meaning": "非常（副詞）",
+      "romaji": "taihen"
+    },
+    "人気": {
+      "meaning": "人氣、受歡迎",
+      "romaji": "ninki"
+    },
+    "一方": {
+      "meaning": "另一方面",
+      "romaji": "ippou"
+    },
+    "関西地方": {
+      "meaning": "關西地區",
+      "romaji": "kansai chihou"
+    },
+    "出汁": {
+      "meaning": "高湯",
+      "romaji": "dashi"
+    },
+    "重視": {
+      "meaning": "重視、注重",
+      "romaji": "juushi"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru"
+    },
+    "薄味": {
+      "meaning": "清淡口味",
+      "romaji": "usu aji"
+    },
+    "料理": {
+      "meaning": "料理、菜餚",
+      "romaji": "ryouri"
+    },
+    "多い": {
+      "meaning": "多的",
+      "romaji": "ooi"
+    },
+    "文化": {
+      "meaning": "文化",
+      "romaji": "bunka"
+    },
+    "深い": {
+      "meaning": "深厚的",
+      "romaji": "fukai"
+    },
+    "根付く": {
+      "meaning": "生根、扎根",
+      "romaji": "nezuku"
+    },
+    "いる": {
+      "meaning": "（狀態）持續",
+      "romaji": "iru"
+    },
+    "地域差": {
+      "meaning": "地區差異",
+      "romaji": "chiiki sa"
+    },
+    "気候": {
+      "meaning": "氣候",
+      "romaji": "kikou"
+    },
+    "歴史的": {
+      "meaning": "歷史性的",
+      "romaji": "rekishiteki"
+    },
+    "背景": {
+      "meaning": "背景",
+      "romaji": "haikei"
+    },
+    "起因": {
+      "meaning": "起因、原因",
+      "romaji": "kiin"
+    },
+    "言う": {
+      "meaning": "說",
+      "romaji": "iu"
+    },
+    "れる": {
+      "meaning": "被動助動詞",
+      "romaji": "reru"
+    },
+    "近年": {
+      "meaning": "近年",
+      "romaji": "kinnen"
+    },
+    "日本食": {
+      "meaning": "日本料理",
+      "romaji": "nihonshoku"
+    },
+    "ユネスコ": {
+      "meaning": "聯合國教科文組織",
+      "romaji": "yunesuko"
+    },
+    "無形文化遺産": {
+      "meaning": "無形文化遺產",
+      "romaji": "mukei bunka isan"
+    },
+    "登録": {
+      "meaning": "登錄、註冊",
+      "romaji": "touroku"
+    },
+    "こと": {
+      "meaning": "事情（名詞化）",
+      "romaji": "koto"
+    },
+    "世界的": {
+      "meaning": "世界性的、全球性的",
+      "romaji": "sekaiteki"
+    },
+    "注目": {
+      "meaning": "注目、關注",
+      "romaji": "chuumoku"
+    },
+    "集める": {
+      "meaning": "吸引、收集",
+      "romaji": "atsumeru"
+    },
+    "よう": {
+      "meaning": "成為～的樣子",
+      "romaji": "you"
+    },
+    "なる": {
+      "meaning": "變成",
+      "romaji": "naru"
+    },
+    "和食": {
+      "meaning": "日式料理",
+      "romaji": "washoku"
+    },
+    "特徴": {
+      "meaning": "特徵、特點",
+      "romaji": "tokucho"
+    },
+    "食材": {
+      "meaning": "食材",
+      "romaji": "shokuzai"
+    },
+    "本来": {
+      "meaning": "原本、本來",
+      "romaji": "honrai"
+    },
+    "味": {
+      "meaning": "味道",
+      "romaji": "aji"
+    },
+    "大切": {
+      "meaning": "重要、珍貴",
+      "romaji": "taisetsu"
+    },
+    "季節感": {
+      "meaning": "季節感",
+      "romaji": "kisetsukan"
+    },
+    "点": {
+      "meaning": "一點、方面",
+      "romaji": "ten"
+    },
+    "盛り付け": {
+      "meaning": "擺盤",
+      "romaji": "moritsuke"
+    },
+    "美的": {
+      "meaning": "美的、美觀的",
+      "romaji": "biteki"
+    },
+    "センス": {
+      "meaning": "品味、感覺",
+      "romaji": "sensu"
+    },
+    "求める": {
+      "meaning": "要求、追求",
+      "romaji": "motomeru"
+    },
+    "られる": {
+      "meaning": "被動/可能助動詞",
+      "romaji": "rareru"
+    },
+    "見た目": {
+      "meaning": "外觀、視覺印象",
+      "romaji": "mitame"
+    },
+    "美しい": {
+      "meaning": "美麗的",
+      "romaji": "utsukushii"
+    },
+    "重要": {
+      "meaning": "重要的",
+      "romaji": "juuyou"
+    },
+    "要素": {
+      "meaning": "要素、元素",
+      "romaji": "youso"
+    },
+    "訪れる": {
+      "meaning": "造訪、到訪",
+      "romaji": "otozureru"
+    },
+    "外国人": {
+      "meaning": "外國人",
+      "romaji": "gaikokujin"
+    },
+    "多様性": {
+      "meaning": "多樣性",
+      "romaji": "tayousei"
+    },
+    "繊細": {
+      "meaning": "纖細、細膩",
+      "romaji": "sensai"
+    },
+    "驚く": {
+      "meaning": "驚訝、吃驚",
+      "romaji": "odoroku"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "が": "主格助詞，標示主語",
+    "を": "受格助詞，標示受詞",
+    "に": "方向/位置助詞",
+    "の": "屬格助詞，表示所屬",
+    "で": "場所/手段助詞",
+    "も": "添加助詞，表示「也」",
+    "や": "並列助詞，列舉部分例子",
+    "と": "引用/並列助詞",
+    "て": "て形助詞，連接動詞",
+    "な": "形容動詞連接詞",
+    "よう": "比況/目的助動詞",
+    "れる": "被動助動詞",
+    "られる": "被動/可能助動詞",
+    "です": "禮貌體斷定助動詞",
+    "ます": "禮貌體動詞結尾",
+    "た": "過去式助動詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "日本各地區都有獨特的飲食文化",
+        "word": "食文化"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "北海道以新鮮海產和乳製品聞名，",
+        "word": "海産物"
+      },
+      {
+        "text": "在觀光客中非常受歡迎",
+        "word": "人気"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "另一方面，",
+        "word": "一方"
+      },
+      {
+        "text": "關西地方多清淡的高湯料理，",
+        "word": "出汁"
+      },
+      {
+        "text": "這種文化已深深扎根",
+        "word": "根付く"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "這種地區差異，",
+        "word": "地域差"
+      },
+      {
+        "text": "據說源於氣候和歷史背景",
+        "word": "背景"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "近年日本料理被列入聯合國教科文組織的無形文化遺產，",
+        "word": "無形文化遺産"
+      },
+      {
+        "text": "因而獲得了全球的關注",
+        "word": "注目"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "和食的特徵在於珍視食材本身的味道，",
+        "word": "食材"
+      },
+      {
+        "text": "並重視季節感",
+        "word": "季節感"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "擺盤也講究美感，",
+        "word": "盛り付け"
+      },
+      {
+        "text": "外觀的美麗也被視為重要要素",
+        "word": "要素"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "據說許多造訪日本的外國人都對日本料理的多樣性和細膩感到驚訝",
+        "word": "多様性"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.12,
+    "jlpt_level": "N2⁻"
+  }
+}

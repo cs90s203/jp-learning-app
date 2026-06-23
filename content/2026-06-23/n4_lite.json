@@ -1,0 +1,677 @@
+{
+  "date": "2026-06-23",
+  "level": "n4_lite",
+  "title": "カレーを作る",
+  "text": "わたしは料理が好きです。今日は夕飯にカレーを作りました。まず、野菜を切って、お肉といっしょに炒めました。それから水を入れて煮ました。カレールーも加えました。できあがったとき、いいにおいがしました。家族みんな喜んでくれました。また来週も作ろうと思います。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "好き",
+      "basic_form": "好き",
+      "reading": "すき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今日",
+      "basic_form": "今日",
+      "reading": "きょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "夕飯",
+      "basic_form": "夕飯",
+      "reading": "ゆうはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "カレー",
+      "basic_form": "カレー",
+      "reading": "かれー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作り",
+      "basic_form": "作る",
+      "reading": "つくり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まず",
+      "basic_form": "まず",
+      "reading": "まず",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "野菜",
+      "basic_form": "野菜",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "切っ",
+      "basic_form": "切る",
+      "reading": "きっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "お肉",
+      "basic_form": "肉",
+      "reading": "おにく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いっしょに",
+      "basic_form": "いっしょに",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "炒め",
+      "basic_form": "炒める",
+      "reading": "いため",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それから",
+      "basic_form": "それから",
+      "reading": "それから",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "水",
+      "basic_form": "水",
+      "reading": "みず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "入れ",
+      "basic_form": "入れる",
+      "reading": "いれ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "煮",
+      "basic_form": "煮る",
+      "reading": "に",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "カレールー",
+      "basic_form": "カレールー",
+      "reading": "かれーるー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "加え",
+      "basic_form": "加える",
+      "reading": "くわえ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "できあがっ",
+      "basic_form": "できあがる",
+      "reading": "できあがっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "とき",
+      "basic_form": "とき",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "におい",
+      "basic_form": "におい",
+      "reading": "におい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家族",
+      "basic_form": "家族",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "喜ん",
+      "basic_form": "喜ぶ",
+      "reading": "よろこん",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "て",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "くれ",
+      "basic_form": "くれる",
+      "reading": "くれ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "来週",
+      "basic_form": "来週",
+      "reading": "らいしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作ろ",
+      "basic_form": "作る",
+      "reading": "つくろ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "う",
+      "basic_form": "う",
+      "reading": "う",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思い",
+      "basic_form": "思う",
+      "reading": "おもい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi"
+    },
+    "料理": {
+      "meaning": "料理、烹飪",
+      "romaji": "ryouri"
+    },
+    "好き": {
+      "meaning": "喜歡的",
+      "romaji": "suki"
+    },
+    "今日": {
+      "meaning": "今天",
+      "romaji": "kyou"
+    },
+    "夕飯": {
+      "meaning": "晚餐",
+      "romaji": "yuuhan"
+    },
+    "カレー": {
+      "meaning": "咖哩",
+      "romaji": "karee"
+    },
+    "作る": {
+      "meaning": "製作、烹煮",
+      "romaji": "tsukuru"
+    },
+    "まず": {
+      "meaning": "首先",
+      "romaji": "mazu"
+    },
+    "野菜": {
+      "meaning": "蔬菜",
+      "romaji": "yasai"
+    },
+    "切る": {
+      "meaning": "切",
+      "romaji": "kiru"
+    },
+    "肉": {
+      "meaning": "肉",
+      "romaji": "niku"
+    },
+    "いっしょに": {
+      "meaning": "一起",
+      "romaji": "issho ni"
+    },
+    "炒める": {
+      "meaning": "炒（料理）",
+      "romaji": "itameru"
+    },
+    "それから": {
+      "meaning": "然後",
+      "romaji": "sorekara"
+    },
+    "水": {
+      "meaning": "水",
+      "romaji": "mizu"
+    },
+    "入れる": {
+      "meaning": "放入",
+      "romaji": "ireru"
+    },
+    "煮る": {
+      "meaning": "煮",
+      "romaji": "niru"
+    },
+    "カレールー": {
+      "meaning": "咖哩塊",
+      "romaji": "karee ruu"
+    },
+    "加える": {
+      "meaning": "加入",
+      "romaji": "kuwaeru"
+    },
+    "できあがる": {
+      "meaning": "完成",
+      "romaji": "dekiagaru"
+    },
+    "とき": {
+      "meaning": "時候",
+      "romaji": "toki"
+    },
+    "いい": {
+      "meaning": "好的",
+      "romaji": "ii"
+    },
+    "におい": {
+      "meaning": "氣味、香味",
+      "romaji": "nioi"
+    },
+    "する": {
+      "meaning": "做（某動作）",
+      "romaji": "suru"
+    },
+    "家族": {
+      "meaning": "家人",
+      "romaji": "kazoku"
+    },
+    "みんな": {
+      "meaning": "大家",
+      "romaji": "minna"
+    },
+    "喜ぶ": {
+      "meaning": "高興、開心",
+      "romaji": "yorokobu"
+    },
+    "くれる": {
+      "meaning": "（對方）給予",
+      "romaji": "kureru"
+    },
+    "また": {
+      "meaning": "再、又",
+      "romaji": "mata"
+    },
+    "来週": {
+      "meaning": "下週",
+      "romaji": "raishuu"
+    },
+    "思う": {
+      "meaning": "認為、覺得",
+      "romaji": "omou"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "が": "主格助詞，標示主語",
+    "を": "受格助詞，標示直接受詞",
+    "に": "方向/目的助詞，表示目的或方向",
+    "と": "並列/引用助詞，表示「和」或引用內容",
+    "も": "添加助詞，表示「也」",
+    "て": "て形助詞，連接動作表示順序",
+    "です": "禮貌體斷定助動詞",
+    "ます": "禮貌體動詞結尾",
+    "た": "過去式助動詞",
+    "う": "意向助動詞，表示「吧、打算」"
+  },
+  "translations": [
+    [
+      {
+        "text": "我喜歡料理",
+        "word": "料理"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "今天晚餐做了咖哩",
+        "word": "カレー"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "先把蔬菜切好，和肉一起炒",
+        "word": "炒める"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "然後加水燉煮",
+        "word": "煮る"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "也加了咖哩塊",
+        "word": "カレールー"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "完成的時候，飄出了香味",
+        "word": "におい"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "家人都很開心",
+        "word": "喜ぶ"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "下週我也想再做",
+        "word": "作る"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N4⁻"
+  }
+}

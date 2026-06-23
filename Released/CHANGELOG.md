@@ -1,5 +1,46 @@
 # 日語學習 App — 版本記錄
 
+## v0.14.2 — 2026-06-23
+
+**文章頁等級標籤：長按切換難度（新功能）**
+- 文章頁頂部等級標籤（如 N5⁻）長按 600ms → 彈出底部 sheet，顯示 10 個等級 chip
+- 選擇後重新以該等級載入同日文章，同步更新 `CURRENT_LEVEL` 及 localStorage
+- 桌面開發：右鍵點擊等級標籤也可觸發 sheet（方便測試）
+- 等級標籤改為從 LEVEL_OPTIONS 對應 label（N5⁻/N5/N4⁻...），不再顯示原始 key
+- Sheet 以 backdrop + slide-up 動畫呈現，點背景或選完關閉
+
+---
+
+## 0.14.2 — 2026-06-23
+
+文章頁等級標籤長按 → 底部 sheet 切換難度
+
+---
+
+## v0.14.1 — 2026-06-23
+
+**今日頁月曆與文章頁週曆多項互動 bug 修正**
+- 月曆新增月份切換按鈕（‹ / ›），可瀏覽歷史月份；不允許切換至未來月份
+- 修正今日無學習紀錄時，月曆 23 號無法點擊展開的問題
+- `openDay` 今日無 entry 時仍展開 panel，顯示「今日文章 / N5」佔位文字
+- `openArticleFromCalendar` 改為永遠呼叫 `selectArticleDate`，修正從月曆跳轉今日文章卻顯示舊文章的問題
+- `selectArticleDate` 新增自動調整 `weekBarOffset`，確保跳轉文章後週曆同步顯示目標日期所在週
+- `renderWeekBar` 移除 `ARTICLES_WITH_CONTENT` hardcode：改為有學習紀錄或今日的日期顯示進度環，所有非未來日期皆可點擊，載入失敗由 `loadContentForDate` toast 處理
+
+---
+
+## v0.14.0 — 2026-06-23
+
+**10 階等級系統上線（新功能）**
+- 等級從 N5/N4/N3/N2/N1（5 級）擴充為 N5⁻/N5/N4⁻/N4/N3⁻/N3/N2⁻/N2/N1⁻/N1（10 級）
+- `CURRENT_LEVEL` 改從 localStorage（`userLevel`）讀取，重啟後保留
+- 設定頁「語言」卡新增 10 個 level chip，點選即切換並即時存入 localStorage
+- 文章頁/週曆點擊/試題頁載入：從 hardcoded `'n5'` 改為依 `CURRENT_LEVEL` 動態取對應 JSON
+- Dev dashboard 等級按鈕更新為 10 個（N5⁻ ～ N1），切換時同步 localStorage 與設定頁 UI
+- 排程任務（daily-jp-content）已更新為每天生成 10 份 JSON（n5_lite ～ n1）
+
+---
+
 ## v0.13.1 — 2026-06-23
 
 **逐句跟讀靜音偵測：預設調整 + 設定頁可調（bug fix + 小功能）**

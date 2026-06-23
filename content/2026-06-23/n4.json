@@ -1,0 +1,890 @@
+{
+  "date": "2026-06-23",
+  "level": "n4",
+  "title": "京都旅行の計画",
+  "text": "来月、友達と京都へ旅行に行く予定です。京都には古いお寺や神社がたくさんあるので、ぜひ見てみたいと思っています。観光したり、おいしいものを食べたりするつもりです。着物を着てみることもできるそうです。友達がホテルを予約してくれたので、わたしは交通のことを調べました。三日間の旅行なので、計画をしっかり立てています。今からとても楽しみにしています。",
+  "tokens": [
+    {
+      "surface_form": "来月",
+      "basic_form": "来月",
+      "reading": "らいげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "京都",
+      "basic_form": "京都",
+      "reading": "きょうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "旅行",
+      "basic_form": "旅行",
+      "reading": "りょこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行く",
+      "basic_form": "行く",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "予定",
+      "basic_form": "予定",
+      "reading": "よてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "京都",
+      "basic_form": "京都",
+      "reading": "きょうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "古い",
+      "basic_form": "古い",
+      "reading": "ふるい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "お寺",
+      "basic_form": "寺",
+      "reading": "おてら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "神社",
+      "basic_form": "神社",
+      "reading": "じんじゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たくさん",
+      "basic_form": "たくさん",
+      "reading": "たくさん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ぜひ",
+      "basic_form": "ぜひ",
+      "reading": "ぜひ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "見て",
+      "basic_form": "見る",
+      "reading": "みて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "み",
+      "basic_form": "みる",
+      "reading": "み",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たい",
+      "basic_form": "たい",
+      "reading": "たい",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思っ",
+      "basic_form": "思う",
+      "reading": "おもっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "観光",
+      "basic_form": "観光",
+      "reading": "かんこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たり",
+      "basic_form": "たり",
+      "reading": "たり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おいしい",
+      "basic_form": "おいしい",
+      "reading": "おいしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "もの",
+      "basic_form": "もの",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べ",
+      "basic_form": "食べる",
+      "reading": "たべ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たり",
+      "basic_form": "たり",
+      "reading": "たり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "つもり",
+      "basic_form": "つもり",
+      "reading": "つもり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "着物",
+      "basic_form": "着物",
+      "reading": "きもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "着て",
+      "basic_form": "着る",
+      "reading": "きて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みる",
+      "basic_form": "みる",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できる",
+      "basic_form": "できる",
+      "reading": "できる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "そう",
+      "basic_form": "そう",
+      "reading": "そう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ホテル",
+      "basic_form": "ホテル",
+      "reading": "ほてる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "予約",
+      "basic_form": "予約",
+      "reading": "よやく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "くれ",
+      "basic_form": "くれる",
+      "reading": "くれ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "交通",
+      "basic_form": "交通",
+      "reading": "こうつう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "調べ",
+      "basic_form": "調べる",
+      "reading": "しらべ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "三日間",
+      "basic_form": "三日間",
+      "reading": "みっかかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "旅行",
+      "basic_form": "旅行",
+      "reading": "りょこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "計画",
+      "basic_form": "計画",
+      "reading": "けいかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しっかり",
+      "basic_form": "しっかり",
+      "reading": "しっかり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "立て",
+      "basic_form": "立てる",
+      "reading": "たて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今",
+      "basic_form": "今",
+      "reading": "いま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しみ",
+      "basic_form": "楽しみ",
+      "reading": "たのしみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "来月": {
+      "meaning": "下個月",
+      "romaji": "raigetsu"
+    },
+    "友達": {
+      "meaning": "朋友",
+      "romaji": "tomodachi"
+    },
+    "京都": {
+      "meaning": "京都（城市名）",
+      "romaji": "kyouto"
+    },
+    "旅行": {
+      "meaning": "旅行",
+      "romaji": "ryokou"
+    },
+    "行く": {
+      "meaning": "去",
+      "romaji": "iku"
+    },
+    "予定": {
+      "meaning": "預定、計畫",
+      "romaji": "yotei"
+    },
+    "古い": {
+      "meaning": "舊的、古老的",
+      "romaji": "furui"
+    },
+    "寺": {
+      "meaning": "寺廟",
+      "romaji": "tera"
+    },
+    "神社": {
+      "meaning": "神社",
+      "romaji": "jinja"
+    },
+    "たくさん": {
+      "meaning": "很多",
+      "romaji": "takusan"
+    },
+    "ある": {
+      "meaning": "有（存在）",
+      "romaji": "aru"
+    },
+    "ぜひ": {
+      "meaning": "務必、一定",
+      "romaji": "zehi"
+    },
+    "見る": {
+      "meaning": "看、參觀",
+      "romaji": "miru"
+    },
+    "みる": {
+      "meaning": "試著～（補助動詞）",
+      "romaji": "miru"
+    },
+    "思う": {
+      "meaning": "認為、覺得",
+      "romaji": "omou"
+    },
+    "いる": {
+      "meaning": "（某狀態）正在進行",
+      "romaji": "iru"
+    },
+    "観光": {
+      "meaning": "觀光",
+      "romaji": "kankou"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru"
+    },
+    "おいしい": {
+      "meaning": "好吃的",
+      "romaji": "oishii"
+    },
+    "もの": {
+      "meaning": "東西、物品",
+      "romaji": "mono"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu"
+    },
+    "つもり": {
+      "meaning": "打算",
+      "romaji": "tsumori"
+    },
+    "着物": {
+      "meaning": "和服",
+      "romaji": "kimono"
+    },
+    "着る": {
+      "meaning": "穿（衣服）",
+      "romaji": "kiru"
+    },
+    "こと": {
+      "meaning": "事情（名詞化）",
+      "romaji": "koto"
+    },
+    "できる": {
+      "meaning": "能夠、可以",
+      "romaji": "dekiru"
+    },
+    "ホテル": {
+      "meaning": "飯店",
+      "romaji": "hoteru"
+    },
+    "予約": {
+      "meaning": "預訂",
+      "romaji": "yoyaku"
+    },
+    "くれる": {
+      "meaning": "（對方）給予",
+      "romaji": "kureru"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi"
+    },
+    "交通": {
+      "meaning": "交通",
+      "romaji": "koutsuu"
+    },
+    "調べる": {
+      "meaning": "調查、查詢",
+      "romaji": "shiraberu"
+    },
+    "三日間": {
+      "meaning": "三天期間",
+      "romaji": "mikkakan"
+    },
+    "計画": {
+      "meaning": "計畫",
+      "romaji": "keikaku"
+    },
+    "しっかり": {
+      "meaning": "紮實地、好好地",
+      "romaji": "shikkari"
+    },
+    "立てる": {
+      "meaning": "制定（計畫）",
+      "romaji": "tateru"
+    },
+    "今": {
+      "meaning": "現在",
+      "romaji": "ima"
+    },
+    "楽しみ": {
+      "meaning": "期待、樂趣",
+      "romaji": "tanoshimi"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "が": "主格助詞，標示主語",
+    "を": "受格助詞，標示受詞",
+    "に": "方向/目的助詞",
+    "へ": "方向助詞，表示前往方向",
+    "と": "並列/共同助詞，表示「和、與」",
+    "や": "並列助詞，列舉部分例子（等等）",
+    "の": "屬格助詞，表示所屬關係",
+    "も": "添加助詞，表示「也」",
+    "から": "起點助詞，表示時間起點",
+    "ので": "原因助詞，表示「因為～所以」",
+    "たり": "並列助詞，與たりする連用，表示舉例動作",
+    "て": "て形助詞，連接動作",
+    "です": "禮貌體斷定助動詞",
+    "ます": "禮貌體動詞結尾",
+    "た": "過去式助動詞",
+    "たい": "希望助動詞，表示「想要～」",
+    "そう": "傳聞助動詞，接在句尾表示「聽說～」"
+  },
+  "translations": [
+    [
+      {
+        "text": "下個月",
+        "word": "来月"
+      },
+      {
+        "text": "和朋友去京都旅行",
+        "word": "旅行"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "京都有很多古老的寺廟和神社，",
+        "word": "寺"
+      },
+      {
+        "text": "所以很想去看看",
+        "word": "見る"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "打算去觀光，也吃點好東西",
+        "word": "観光"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "聽說也可以試穿和服",
+        "word": "着物"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "朋友幫我預訂了飯店，",
+        "word": "予約"
+      },
+      {
+        "text": "所以我查了交通方面的事情",
+        "word": "調べる"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "因為是三天的旅行，",
+        "word": "三日間"
+      },
+      {
+        "text": "正在好好制定計畫",
+        "word": "計画"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "現在就非常期待了",
+        "word": "楽しみ"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.1,
+    "jlpt_level": "N4"
+  }
+}

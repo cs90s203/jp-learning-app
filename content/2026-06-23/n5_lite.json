@@ -1,0 +1,334 @@
+{
+  "date": "2026-06-23",
+  "level": "n5_lite",
+  "title": "果物",
+  "text": "これはりんごです。赤くて、おいしいです。みかんもあります。黄色くて、甘いです。くだものは体にいいです。毎日食べます。",
+  "tokens": [
+    {
+      "surface_form": "これ",
+      "basic_form": "これ",
+      "reading": "これ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "りんご",
+      "basic_form": "りんご",
+      "reading": "りんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "赤く",
+      "basic_form": "赤い",
+      "reading": "あかく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おいしい",
+      "basic_form": "おいしい",
+      "reading": "おいしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みかん",
+      "basic_form": "みかん",
+      "reading": "みかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "黄色く",
+      "basic_form": "黄色い",
+      "reading": "きいろく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "甘い",
+      "basic_form": "甘い",
+      "reading": "あまい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "くだもの",
+      "basic_form": "くだもの",
+      "reading": "くだもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "毎日",
+      "basic_form": "毎日",
+      "reading": "まいにち",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "食べ",
+      "basic_form": "食べる",
+      "reading": "たべ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "これ": {
+      "meaning": "這個",
+      "romaji": "kore"
+    },
+    "りんご": {
+      "meaning": "蘋果",
+      "romaji": "ringo"
+    },
+    "赤い": {
+      "meaning": "紅色的",
+      "romaji": "akai"
+    },
+    "おいしい": {
+      "meaning": "好吃的",
+      "romaji": "oishii"
+    },
+    "みかん": {
+      "meaning": "橘子",
+      "romaji": "mikan"
+    },
+    "ある": {
+      "meaning": "有（存在）",
+      "romaji": "aru"
+    },
+    "黄色い": {
+      "meaning": "黃色的",
+      "romaji": "kiiroi"
+    },
+    "甘い": {
+      "meaning": "甜的",
+      "romaji": "amai"
+    },
+    "くだもの": {
+      "meaning": "水果",
+      "romaji": "kudamono"
+    },
+    "体": {
+      "meaning": "身體",
+      "romaji": "karada"
+    },
+    "いい": {
+      "meaning": "好的",
+      "romaji": "ii"
+    },
+    "毎日": {
+      "meaning": "每天",
+      "romaji": "mainichi"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示句子的主題",
+    "も": "添加助詞，表示「也」",
+    "に": "目的/位置助詞，表示對象",
+    "て": "て形助詞，連接形容詞表示並列",
+    "です": "禮貌體斷定助動詞，表示「是」",
+    "ます": "禮貌體動詞結尾，表示現在或未來動作"
+  },
+  "translations": [
+    [
+      {
+        "text": "這是蘋果",
+        "word": "りんご"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "是紅色的，很好吃",
+        "word": "赤い"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "也有橘子",
+        "word": "みかん"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "是黃色的，很甜",
+        "word": "甘い"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "水果對身體很好",
+        "word": "くだもの"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ],
+    [
+      {
+        "text": "每天都吃",
+        "word": "食べる"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.05,
+    "jlpt_level": "N5⁻"
+  }
+}
