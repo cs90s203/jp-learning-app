@@ -1789,7 +1789,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.19
+          v0.14.20
         </div>
 
       </div>
@@ -2935,6 +2935,7 @@ const BAKED_VISION_KEY = '__VISION_KEY__';
 let CURRENT_LEVEL = localStorage.getItem('userLevel') || 'n5';
 let MASTERY_THRESHOLD = parseInt(localStorage.getItem('masteryThreshold') || '10');
 let _levelPickerOpen = false;
+const _MASTERY_OPTIONS = [8, 10, 15, 20];
 
 function setUserLevel(key) {
   CURRENT_LEVEL = key;
@@ -6124,10 +6125,14 @@ function devResetAll() {
 }
 
 // ===== 熟記門檻 =====
-const _MASTERY_OPTIONS = [10, 12, 14, 16, 18, 20];
 function cycleMasteryThreshold() {
   const idx = _MASTERY_OPTIONS.indexOf(MASTERY_THRESHOLD);
-  MASTERY_THRESHOLD = _MASTERY_OPTIONS[(idx + 1) % _MASTERY_OPTIONS.length];
+  const next = _MASTERY_OPTIONS[(idx < 0 ? 0 : idx + 1) % _MASTERY_OPTIONS.length];
+  if (next > MASTERY_THRESHOLD) {
+    const ripeCount = Object.values(vocabBook).filter(e => (e.familiarity || 0) >= MASTERY_THRESHOLD && (e.familiarity || 0) < next).length;
+    if (ripeCount > 0 && !confirm(`調高門檻後，目前有 ${ripeCount} 個「熟」字會降回「普」，確定嗎？`)) return;
+  }
+  MASTERY_THRESHOLD = next;
   localStorage.setItem('masteryThreshold', MASTERY_THRESHOLD);
   const el = document.getElementById('mastery-threshold-val');
   if (el) el.textContent = MASTERY_THRESHOLD + ' 次';
