@@ -224,11 +224,11 @@
   .cal-d-wrap:active { opacity: 0.7; }
   .cal-d-wrap svg { width: 100%; height: 100%; }
   .cal-d-num {
-    position: absolute; font-size: 10px; font-weight: 500; color: var(--wt2);
-    pointer-events: none;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    font-size: 10px; font-weight: 500; color: var(--wt2); pointer-events: none;
   }
   .cal-d-wrap.today .cal-d-num { color: var(--wa); }
-  .cal-d-wrap.selected { outline: 2px solid var(--wa); outline-offset: 2px; border-radius: 50%; }
+  .cal-d-wrap.selected { outline: 2px solid var(--wa); outline-offset: -8px; border-radius: 50%; }
   .cal-d-wrap.empty { cursor: default; }
   .day-detail { overflow: hidden; max-height: 0; transition: max-height 0.35s ease, opacity 0.25s ease; opacity: 0; }
   .day-detail.open { max-height: 500px; opacity: 1; }
@@ -1759,7 +1759,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.3
+          v0.14.8
         </div>
 
       </div>
@@ -2595,7 +2595,7 @@ function saveQuizResults() {
 
   saveStudyLog(log);
   renderQuizWeekBar();
-  if (dateStr === getLocalDateStr()) { renderHomeRing(); renderCalendar(); }
+  if (dateStr === getLocalDateStr()) refreshProgressUI();
 }
 
 function renderQzResult() {
@@ -3664,6 +3664,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const artDate = document.getElementById('article-date-tag');
   if (artDate) artDate.textContent = `${_d.getMonth()+1}月${_d.getDate()}日`;
 
+  // 從 index.json 動態取得有內容的日期，填入 contentDateSet
+  fetch(CONTENT_BASE_URL + '/index.json')
+    .then(r => r.json())
+    .then(idx => {
+      idx.dates.forEach(d => contentDateSet.add(d.date));
+      renderCalendar();
+    })
+    .catch(() => {}); // 失敗時靜默，用預設值
+
   // 嘗試自動載入今日文章（靜默，失敗則保留 demo）
   loadTodayContent().then(result => {
     if (result.success) {
@@ -3675,8 +3684,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       // 自動記錄今日文章已閱讀
       logTodayArticle(result.pack.title, result.pack.level);
-      renderHomeRing();
-      renderCalendar();
+      refreshProgressUI();
     }
     // 失敗時靜默，保留 demo 文章
   });
@@ -3918,8 +3926,7 @@ function updateSpeakProgress() {
   if (!log[dateStr].tasks) log[dateStr].tasks = {};
   log[dateStr].tasks.speak = pct;
   saveStudyLog(log);
-  renderHomeRing();
-  renderCalendar();
+  refreshProgressUI();
 }
 
 function selectSlot(slot) {
@@ -4388,6 +4395,13 @@ function saveStudyLog(log) {
   autoSyncToCloud();
 }
 
+// 統一重繪所有進度 UI（首頁大環、月曆、週欄）
+function refreshProgressUI() {
+  renderHomeRing();
+  renderCalendar();
+  renderWeekBar();
+}
+
 // 標記今天某任務完成，並重新渲染首頁
 function markTaskDone(taskKey) {
   const log = loadStudyLog();
@@ -4395,8 +4409,7 @@ function markTaskDone(taskKey) {
   if (!log[dateStr]) log[dateStr] = { tasks:{article:false,vocab:false,listen:false,quiz:false,speak:false}, articleTitle:'', level:'' };
   log[dateStr].tasks[taskKey] = true;
   saveStudyLog(log);
-  renderHomeRing();
-  renderCalendar();
+  refreshProgressUI();
 }
 
 // 儲存今日文章資訊（載入文章後呼叫）——不自動標記完成
@@ -4431,8 +4444,7 @@ function updateArticleProgress() {
   if ((ap.playCount || 0) >= 3)       pct += 40;  // 條件3：朗讀 ≥ 3 次
   log[dateStr].tasks.article = pct;
   saveStudyLog(log);
-  renderHomeRing();
-  renderCalendar();
+  refreshProgressUI();
 }
 
 // 難度量表
@@ -4635,7 +4647,7 @@ function renderCalendar() {
   const todayStr = getLocalDateStr();
   const daysInMonth = new Date(calViewYear, calViewMonth, 0).getDate();
   const leadBlanks = new Date(calViewYear, calViewMonth - 1, 1).getDay();
-  const MIN_RING = 26, MAX_RING = 42;
+  const RING_SIZES = [30, 30, 33, 36, 38, 42];
 
   // 填入月初空白
   for (let i = 0; i < leadBlanks; i++) {
@@ -4655,37 +4667,42 @@ function renderCalendar() {
     wrap.className = 'cal-d-wrap' + (isFuture ? ' empty' : '') + (isToday ? ' today' : '');
     wrap.dataset.day = day;
 
-    if (!isFuture && entry) {
-      const done = countDone(entry.tasks);
-      if (done === 0) {
-        const dot = document.createElement('div');
-        dot.style.cssText = 'width:7px;height:7px;border-radius:50%;background:var(--wa-bg2)';
-        wrap.appendChild(dot);
-      } else {
-        const ringSize = MIN_RING + (MAX_RING - MIN_RING) * ((done - 1) / 4);
-        const ringWrap = document.createElement('div');
-        ringWrap.style.cssText = `width:${ringSize}px;height:${ringSize}px`;
-        ringWrap.innerHTML = buildRing(ringSize, 0.22, entry.tasks);
-        wrap.appendChild(ringWrap);
+    // 有文章 = contentDateSet 有此日期，或是今日
+    const hasContent = contentDateSet.has(dateStr) || isToday;
+
+    if (!isFuture) {
+      wrap.onclick = () => openDay(day); // 所有過去日期皆可點擊
+      if (hasContent) {
+        if (entry) {
+          const done = countDone(entry.tasks);
+          // 任何任務有任何進度（包含 article 30%）就顯示進度環
+          const hasProgress = entry.tasks && TASKS.some(t => {
+            const v = entry.tasks[t.key];
+            return (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') ? v > 0 : !!v;
+          });
+          if (hasProgress) {
+            // 有進度（含部分）→ 進度環，大小依完成任務數定
+            const ringSize = RING_SIZES[Math.min(done, RING_SIZES.length - 1)];
+            const ringWrap = document.createElement('div');
+            ringWrap.style.cssText = `width:${ringSize}px;height:${ringSize}px`;
+            ringWrap.innerHTML = buildRing(ringSize, 0.22, entry.tasks);
+            wrap.appendChild(ringWrap);
+          } else {
+            // 有紀錄但完全無進度 → 大點
+            const dot = document.createElement('div');
+            dot.style.cssText = 'width:22px;height:22px;border-radius:50%;background:var(--wa-bg2)';
+            wrap.appendChild(dot);
+          }
+        } else {
+          // 有文章但尚未學習 → 大點
+          const dot = document.createElement('div');
+          dot.style.cssText = 'width:22px;height:22px;border-radius:50%;background:var(--wa-bg2)';
+          wrap.appendChild(dot);
+        }
       }
-      wrap.onclick = () => openDay(day);
-    } else if (!isFuture && isToday) {
-      // 今日但尚無學習紀錄 — 仍可點擊
-      const dot = document.createElement('div');
-      dot.style.cssText = 'width:7px;height:7px;border-radius:50%;background:var(--wa-bg2)';
-      wrap.appendChild(dot);
-      wrap.onclick = () => openDay(day);
-    } else if (!isFuture) {
-      // 過去但沒有紀錄 — 淡點，無onclick
-      const dot = document.createElement('div');
-      dot.style.cssText = 'width:6px;height:6px;border-radius:50%;background:var(--wa-bg2)';
-      wrap.appendChild(dot);
-    } else {
-      // 未來 — 只顯示數字
-      const dot = document.createElement('div');
-      dot.style.cssText = 'width:4px;height:4px;border-radius:50%;background:transparent';
-      wrap.appendChild(dot);
+      // 無內容的過去日期 → 無點，只顯示數字
     }
+    // 未來 → 只顯示數字
 
     const num = document.createElement('span');
     num.className = 'cal-d-num';
@@ -4706,8 +4723,7 @@ function openDay(day) {
   const entry = log[dateStr];
   const isToday = (dateStr === getLocalDateStr());
 
-  // 過去且無學習紀錄則忽略；今日即使無紀錄也可展開
-  if (!entry && !isToday) return;
+  // Bug#1：過去日期無學習紀錄也可展開（顯示日期 + 開啟文章按鈕）
   selectedDay = day;
 
   document.querySelectorAll('.cal-d-wrap').forEach(el => el.classList.remove('selected'));
@@ -5481,7 +5497,7 @@ function vqSaveProgress() {
   if (!log[dateStr].tasks) log[dateStr].tasks = {};
   log[dateStr].tasks.vocab = pct;
   saveStudyLog(log);
-  if (document.getElementById('page-home').classList.contains('active')) renderHomeRing();
+  refreshProgressUI();
 }
 
 function vqShowResult() {
@@ -5498,7 +5514,7 @@ function vqShowResult() {
   log[dateStr].tasks.vocab = 100;
   log[dateStr].wordsReviewed = (log[dateStr].wordsReviewed || 0) + vqOk;
   saveStudyLog(log);
-  if (document.getElementById('page-home').classList.contains('active')) renderHomeRing();
+  refreshProgressUI();
 
   // 切換到結果畫面
   document.getElementById('vq-card-area').style.display  = 'none';
@@ -5532,8 +5548,10 @@ function updateQuizOrderUI(order) {
 }
 
 // ===== 文章週曆列 =====
-// 已知有內容的日期
-const ARTICLES_WITH_CONTENT = ['2026-06-18', '2026-06-19', '2026-06-20', '2026-06-21'];
+// 從 index.json 動態載入的有內容日期（啟動後非同步填入）
+let contentDateSet = new Set(['2026-06-18', '2026-06-19', '2026-06-20', '2026-06-21', '2026-06-22', '2026-06-23']);
+// 保留舊名供 getAvailableArticleDates 使用
+const ARTICLES_WITH_CONTENT = ['2026-06-18', '2026-06-19', '2026-06-20', '2026-06-21', '2026-06-22', '2026-06-23'];
 
 // 取得首次使用日期（新用戶 = 今天，老用戶從 studyLog 推算）
 function getFirstUseDate() {
@@ -5591,8 +5609,8 @@ function renderWeekBar() {
     const isToday  = dateStr === todayStr;
     const isSel    = dateStr === selectedArticleDate;
     const entry    = log[dateStr];
-    // 有學習紀錄或是今日 → 顯示進度環；否則顯示淡化數字
-    const hasContent = !isFuture && (entry != null || isToday);
+    // 有學習紀錄、今日、或 contentDateSet 收錄 → 顯示進度環；否則淡化
+    const hasContent = !isFuture && (entry != null || isToday || contentDateSet.has(dateStr));
     const dayNum = d.getDate();
 
     const div = document.createElement('div');
@@ -5713,6 +5731,7 @@ async function selectArticleDate(dateStr) {
     const diffDays = Math.round((target - thisMonday) / 86400000);
     weekBarOffset = Math.min(0, Math.floor(diffDays / 7));
   })();
+  renderWeekBar(); // Bug#1：更新 offset 後立即重繪週欄
 
   // 重新渲染文章
   articleRendered = false;
@@ -5871,7 +5890,7 @@ function devResetToday() {
   if (log[today]) {
     delete log[today];
     try { localStorage.setItem(STUDY_LOG_KEY, JSON.stringify(log)); } catch(e) {}
-    renderHomeRing();
+    refreshProgressUI();
     showToast('今日進度已歸零');
   } else {
     showToast('今日本來就沒有紀錄');
@@ -5905,7 +5924,7 @@ function devResetAll() {
     if (k.startsWith('ap_') || k.startsWith('articleProgress')) localStorage.removeItem(k);
   });
   vocabBook = { addedWords: {} };
-  renderHomeRing();
+  refreshProgressUI();
   renderVocabList && renderVocabList();
   showToast('所有資料已清空');
 }
