@@ -2931,6 +2931,7 @@ const LEVEL_OPTIONS = [
   { key: 'n1_lite', label: 'N1-' },
   { key: 'n1',      label: 'N1'  },
 ];
+const BAKED_VISION_KEY = '__VISION_KEY__';
 let CURRENT_LEVEL = localStorage.getItem('userLevel') || 'n5';
 let MASTERY_THRESHOLD = parseInt(localStorage.getItem('masteryThreshold') || '10');
 
@@ -5372,7 +5373,8 @@ function resetCameraUI() {
 
 async function triggerOcr() {
   if (!_ocrFile) return;
-  const apiKey = localStorage.getItem('googleVisionKey') || '';
+  const apiKey = (typeof BAKED_VISION_KEY !== 'undefined' && !BAKED_VISION_KEY.startsWith('__'))
+    ? BAKED_VISION_KEY : (localStorage.getItem('googleVisionKey') || '');
   if (!apiKey) {
     document.getElementById('ocr-results').innerHTML =
       '<div style="padding:13px;background:var(--wr-bg);border-radius:13px;color:var(--wr);font-size:13px;text-align:center">' +
@@ -5460,7 +5462,8 @@ function updateVisionKeyStatus() {
 }
 
 async function testVisionApiKey() {
-  const key = localStorage.getItem('googleVisionKey') || '';
+  const key = (typeof BAKED_VISION_KEY !== 'undefined' && !BAKED_VISION_KEY.startsWith('__'))
+    ? BAKED_VISION_KEY : (localStorage.getItem('googleVisionKey') || '');
   const result = document.getElementById('vision-test-result');
   const btn = document.getElementById('vision-test-btn');
   if (!key) {

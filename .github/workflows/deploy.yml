@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Inject Vision API Key
+        env:
+          VISION_KEY: ${{ secrets.GOOGLE_VISION_KEY }}
+        run: |
+          sed -i "s|__VISION_KEY__|${VISION_KEY}|g" Released/jp_learning_mvp.html
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          force_orphan: false
+          keep_files: true
