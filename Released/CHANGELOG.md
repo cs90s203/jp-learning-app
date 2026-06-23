@@ -16,6 +16,12 @@
 
 ---
 
+## 0.14.19 — 2026-06-23
+
+修復設定頁目前等級無法展開：let TDZ 問題，將 _levelPickerOpen 宣告移至頂端
+
+---
+
 ## 0.14.18 — 2026-06-23
 
 Vision API Key 改由 GitHub Actions 注入，其他使用者免填 key
