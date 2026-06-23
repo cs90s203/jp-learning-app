@@ -1599,6 +1599,24 @@
           </div>
         </div>
 
+        <p class="section-title" style="margin-top:16px">跟讀設定</p>
+        <div class="card" style="padding:4px 16px;margin-bottom:16px">
+          <div class="setting-row" style="cursor:pointer" onclick="cycleFollowDb()">
+            <div>
+              <div class="setting-label">靜音門檻</div>
+              <div class="setting-sub">低於此音量視為靜音</div>
+            </div>
+            <span class="setting-val" id="follow-db-val">-40 dB</span>
+          </div>
+          <div class="setting-row" style="cursor:pointer" onclick="cycleFollowSec()">
+            <div>
+              <div class="setting-label">靜音持續時間</div>
+              <div class="setting-sub">靜音超過此時長自動進下一句</div>
+            </div>
+            <span class="setting-val" id="follow-sec-val">1.0 秒</span>
+          </div>
+        </div>
+
         <p class="section-title" style="margin-top:16px">帳號</p>
         <div class="card" style="padding:4px 16px;margin-bottom:16px">
           <div id="auth-section">
@@ -1704,7 +1722,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.13.0
+          v0.13.1
         </div>
 
       </div>
@@ -1984,7 +2002,7 @@ function switchPage(id) {
   if (id === 'home')  { renderHomeRing(); renderCalendar(); }
   if (id === 'vocab') renderVocabPage();
   if (id === 'quiz')     initQuizPage();
-  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); }
+  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); }
   // Show/hide FAB
   document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
 }
@@ -3900,6 +3918,33 @@ let _followAnalyser   = null;
 let _followSilencePoll= null;   // setInterval handle
 let _followSilenceCnt = 0;      // 連續靜音次數（每 100ms 一次）
 
+// 靜音偵測設定（從 localStorage 讀取，可在設定頁調整）
+let _silenceDbThreshold = parseInt(localStorage.getItem('followSilenceDb')   || '-40');
+let _silenceSec         = parseFloat(localStorage.getItem('followSilenceSec') || '1');
+const _SILENCE_DB_OPTIONS  = [-30, -40, -50, -60];
+const _SILENCE_SEC_OPTIONS = [0.5, 1.0, 1.5, 2.0];
+
+function cycleFollowDb() {
+  const idx = _SILENCE_DB_OPTIONS.indexOf(_silenceDbThreshold);
+  _silenceDbThreshold = _SILENCE_DB_OPTIONS[(idx + 1) % _SILENCE_DB_OPTIONS.length];
+  localStorage.setItem('followSilenceDb', _silenceDbThreshold);
+  const el = document.getElementById('follow-db-val');
+  if (el) el.textContent = _silenceDbThreshold + ' dB';
+}
+function cycleFollowSec() {
+  const idx = _SILENCE_SEC_OPTIONS.findIndex(v => Math.abs(v - _silenceSec) < 0.01);
+  _silenceSec = _SILENCE_SEC_OPTIONS[(idx + 1) % _SILENCE_SEC_OPTIONS.length];
+  localStorage.setItem('followSilenceSec', _silenceSec);
+  const el = document.getElementById('follow-sec-val');
+  if (el) el.textContent = _silenceSec.toFixed(1) + ' 秒';
+}
+function renderFollowSettings() {
+  const dbEl  = document.getElementById('follow-db-val');
+  const secEl = document.getElementById('follow-sec-val');
+  if (dbEl)  dbEl.textContent  = _silenceDbThreshold + ' dB';
+  if (secEl) secEl.textContent = _silenceSec.toFixed(1) + ' 秒';
+}
+
 function toggleFollowMode() {
   if (_followMode) { _stopFollowMode(); } else { _startFollowMode(); }
 }
@@ -4065,9 +4110,10 @@ function _followRecordWindow(n, total) {
       for (let i = 0; i < buf.length; i++) sum += buf[i] * buf[i];
       const rms = Math.sqrt(sum / buf.length);
       const db  = rms > 0 ? 20 * Math.log10(rms) : -Infinity;
-      if (db < -50) {
+      const needed = Math.max(1, Math.round(_silenceSec * 10)); // 每 100ms 一次
+      if (db < _silenceDbThreshold) {
         _followSilenceCnt++;
-        if (_followSilenceCnt >= 20) endWindow(); // 2s 靜音
+        if (_followSilenceCnt >= needed) endWindow();
       } else {
         _followSilenceCnt = 0;
       }
