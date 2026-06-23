@@ -797,44 +797,41 @@
   .confirm-ok     { flex: 1; padding: 11px; border: none; border-radius: 12px; background: var(--wr); font-size: 14px; color: #FFFFFF; font-weight: 500; cursor: pointer; font-family: inherit; }
 
   /* FAB */
-  .vocab-fab {
-    position: fixed; right: 20px;
-    bottom: calc(var(--nav-h) + var(--safe-bottom) + 14px);
-    width: 52px; height: 52px; border-radius: 50%;
-    background: var(--wa); color: #FFF; border: none;
-    cursor: pointer; display: none;
-    align-items: center; justify-content: center;
-    box-shadow: 0 4px 16px rgba(196,120,58,0.4);
+  /* 單字頁三按鈕群組：置中靠右 */
+  .vocab-btn-group {
+    position: fixed; right: 12px;
+    top: 50%; transform: translateY(-50%);
+    display: none; flex-direction: column; gap: 8px; align-items: center;
     z-index: 50;
   }
-  .vocab-fab.show { display: flex; }
-  .vocab-kana-toggle {
-    position: fixed; right: 20px;
-    bottom: calc(var(--nav-h) + var(--safe-bottom) + 80px);
-    width: 52px; height: 52px; border-radius: 50%;
-    background: var(--wa-bg2); color: var(--wt2); border: none;
-    cursor: pointer; display: none;
-    align-items: center; justify-content: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    font-size: 15px; font-weight: 600; letter-spacing: 0;
-    z-index: 50; transition: background .2s, color .2s;
-  }
-  .vocab-kana-toggle.show { display: flex; }
-  .vocab-kana-toggle.active { background: var(--wa); color: #FFF; }
-  .vocab-gojuuon-btn {
-    position: fixed; right: 20px;
-    bottom: calc(var(--nav-h) + var(--safe-bottom) + 146px);
-    width: 52px; height: 52px; border-radius: 50%;
+  .vocab-btn-group.show { display: flex; }
+  .vocab-fab {
+    width: 34px; height: 34px; border-radius: 50%;
     background: var(--wa); color: #FFF; border: none;
-    cursor: pointer; display: none;
+    cursor: pointer; display: flex;
     align-items: center; justify-content: center;
-    box-shadow: 0 4px 16px rgba(196,120,58,0.4);
-    font-size: 20px; font-weight: 500;
-    z-index: 50; flex-direction: column; line-height: 1.2;
+    box-shadow: 0 3px 10px rgba(196,120,58,0.4);
+  }
+  .vocab-kana-toggle {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--wa-bg2); color: var(--wt2); border: none;
+    cursor: pointer; display: flex;
+    align-items: center; justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    font-size: 10px; font-weight: 600;
     transition: background .2s, color .2s;
   }
-  .vocab-gojuuon-btn.show { display: flex; }
-  .vocab-gojuuon-btn.open { background: var(--wa-bg2); color: var(--wt2); box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+  .vocab-kana-toggle.active { background: var(--wa); color: #FFF; }
+  .vocab-gojuuon-btn {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--wa); color: #FFF; border: none;
+    cursor: pointer; display: flex;
+    align-items: center; justify-content: center;
+    box-shadow: 0 3px 10px rgba(196,120,58,0.4);
+    font-size: 13px; font-weight: 500;
+    transition: background .2s, color .2s;
+  }
+  .vocab-gojuuon-btn.open { background: var(--wa-bg2); color: var(--wt2); box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
 
   /* 五十音表 overlay */
   #gojuuon-overlay {
@@ -1613,15 +1610,13 @@
       <div class="vocab-list-area" id="vocab-list-area"></div>
 
       <!-- FAB -->
-      <button class="vocab-gojuuon-btn show" id="vocab-gojuuon-btn" onclick="openGojuuon()" aria-label="五十音表">
-        あ
-      </button>
-      <button class="vocab-kana-toggle show" id="vocab-kana-toggle" onclick="toggleKanaDisplay()" aria-label="顯示羅馬拼音">
-        Aa
-      </button>
-      <button class="vocab-fab show" id="vocab-fab" onclick="openVocabModal()" aria-label="新增單字">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-      </button>
+      <div class="vocab-btn-group" id="vocab-btn-group">
+        <button class="vocab-gojuuon-btn" id="vocab-gojuuon-btn" onclick="openGojuuon()" aria-label="五十音表">あ</button>
+        <button class="vocab-kana-toggle" id="vocab-kana-toggle" onclick="toggleKanaDisplay()" aria-label="顯示羅馬拼音">Aa</button>
+        <button class="vocab-fab" id="vocab-fab" onclick="openVocabModal()" aria-label="新增單字">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+      </div>
     </div>
 
     <!-- 五十音表 overlay -->
@@ -1876,7 +1871,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.27
+          v0.14.28
         </div>
 
       </div>
@@ -2181,9 +2176,7 @@ function switchPage(id) {
   if (id === 'quiz')     initQuizPage();
   if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); renderLevelPicker(); renderMasteryThreshold(); initSettings(); _levelPickerOpen = false; const _lpw = document.getElementById('level-picker-wrap'); if (_lpw) _lpw.style.display = 'none'; const _lpc = document.getElementById('level-picker-chevron'); if (_lpc) _lpc.style.transform = ''; }
   // Show/hide FAB
-  document.getElementById('vocab-fab').classList.toggle('show', id === 'vocab');
-  document.getElementById('vocab-kana-toggle').classList.toggle('show', id === 'vocab');
-  document.getElementById('vocab-gojuuon-btn').classList.toggle('show', id === 'vocab');
+  document.getElementById('vocab-btn-group').classList.toggle('show', id === 'vocab');
   if (id === 'vocab') updateKanaToggleUI();
   if (id !== 'vocab') closeGojuuon();
 }
