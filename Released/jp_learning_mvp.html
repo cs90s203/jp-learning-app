@@ -1876,7 +1876,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.26
+          v0.14.27
         </div>
 
       </div>
@@ -5116,7 +5116,7 @@ function renderVocabDisplayCard() {
       '</button>' +
     '</div>' +
     (!hasKanji && entry.kana ? '<div class="vocab-kana">' + entry.kana + '</div>' : '') +
-    (entry.romaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
+    (entry.romaji && _showRomaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
     '<div class="vocab-divider"></div>' +
     '<div class="vocab-meaning-wrap" onclick="revealVocabMeaning()">' +
       '<div class="vocab-meaning meaning-hidden" id="vocab-meaning-text">' + (entry.meaning || '—') + '</div>' +
@@ -5293,6 +5293,7 @@ function toggleKanaDisplay() {
   localStorage.setItem('showRomaji', _showRomaji);
   updateKanaToggleUI();
   renderVocabList();
+  renderVocabDisplayCard();
 }
 
 function renderVocabList() {
