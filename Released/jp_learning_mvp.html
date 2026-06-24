@@ -1548,14 +1548,14 @@
 
   <!-- Pull-to-refresh indicator -->
   <div id="ptr-indicator">
-    <!-- r=20, c=125.66, segLen=23.13, gap=2, step=25.13 -->
+    <!-- r=15, c=94.25, segLen=16.85, gap=2, step=18.85 -->
     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="25" cy="25" r="20" stroke="#E4D8CC" stroke-width="5" fill="none"/>
-      <circle id="ptr-seg-0" cx="25" cy="25" r="20" stroke="#D85A30" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="23.13 102.53" stroke-dashoffset="31.42"  transform="rotate(-90 25 25)" opacity="0.15"/>
-      <circle id="ptr-seg-1" cx="25" cy="25" r="20" stroke="#1D9E75" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="23.13 102.53" stroke-dashoffset="6.29"   transform="rotate(-90 25 25)" opacity="0.15"/>
-      <circle id="ptr-seg-2" cx="25" cy="25" r="20" stroke="#378ADD" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="23.13 102.53" stroke-dashoffset="-18.84" transform="rotate(-90 25 25)" opacity="0.15"/>
-      <circle id="ptr-seg-3" cx="25" cy="25" r="20" stroke="#BA7517" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="23.13 102.53" stroke-dashoffset="-43.97" transform="rotate(-90 25 25)" opacity="0.15"/>
-      <circle id="ptr-seg-4" cx="25" cy="25" r="20" stroke="#7F77DD" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="23.13 102.53" stroke-dashoffset="-69.1"  transform="rotate(-90 25 25)" opacity="0.15"/>
+      <circle cx="25" cy="25" r="15" stroke="#E4D8CC" stroke-width="9" fill="none"/>
+      <circle id="ptr-seg-0" cx="25" cy="25" r="15" stroke="#D85A30" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="16.85 77.4" stroke-dashoffset="23.56"  transform="rotate(-90 25 25)" opacity="0.15"/>
+      <circle id="ptr-seg-1" cx="25" cy="25" r="15" stroke="#1D9E75" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="16.85 77.4" stroke-dashoffset="4.71"   transform="rotate(-90 25 25)" opacity="0.15"/>
+      <circle id="ptr-seg-2" cx="25" cy="25" r="15" stroke="#378ADD" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="16.85 77.4" stroke-dashoffset="-14.14" transform="rotate(-90 25 25)" opacity="0.15"/>
+      <circle id="ptr-seg-3" cx="25" cy="25" r="15" stroke="#BA7517" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="16.85 77.4" stroke-dashoffset="-32.99" transform="rotate(-90 25 25)" opacity="0.15"/>
+      <circle id="ptr-seg-4" cx="25" cy="25" r="15" stroke="#7F77DD" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="16.85 77.4" stroke-dashoffset="-51.84" transform="rotate(-90 25 25)" opacity="0.15"/>
     </svg>
   </div>
 
@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.59
+          v0.14.60
         </div>
 
       </div>
@@ -4021,8 +4021,8 @@ function loadTheme() {
 
 // ===== Pull-to-Refresh =====
 (function() {
-  const ANIM_START = 50;  // 開始顯示動畫的距離
-  const THRESHOLD = 150; // 觸發 reload 的距離
+  const ANIM_START = 100; // 開始顯示動畫的距離
+  const THRESHOLD = 200; // 觸發 reload 的距離
   const SEGS = 5;
   let startY = 0, pulling = false, dist = 0;
 
