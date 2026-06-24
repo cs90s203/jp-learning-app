@@ -1920,7 +1920,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.44
+          v0.14.45
         </div>
 
       </div>
@@ -6735,6 +6735,7 @@ function syncToCloud() {
 
   batch.commit().then(() => {
     localStorage.setItem('lastSyncAt', now);
+    localStorage.setItem('lastSyncedCloudAt', now);
     _setSyncStatus('done', now);
     showToast('同步完成');
   }).catch(err => {
@@ -6773,7 +6774,9 @@ function syncFromCloud(silent) {
     }
     if (changed) {
       const now = new Date().toISOString();
+      const cloudUpdatedAt = vSnap.exists ? (vSnap.data().updatedAt || now) : now;
       localStorage.setItem('lastSyncAt', now);
+      localStorage.setItem('lastSyncedCloudAt', cloudUpdatedAt);
       _setSyncStatus('done', now);
       if (!silent) showToast('已從雲端還原資料，重新整理後生效');
     } else {
@@ -6811,7 +6814,22 @@ function checkCloudOnLogin() {
         syncFromCloud(true); return;
       }
 
-      // 都有資料 → 顯示衝突選擇，不自動覆蓋
+      // 用上次已知的雲端時間戳判斷誰真正變動了
+      const lastSyncedCloudAt = localStorage.getItem('lastSyncedCloudAt') || '';
+      const cloudChanged = cloudTime && cloudTime !== lastSyncedCloudAt;
+      const localChanged = localTime && localTime > (lastSyncedCloudAt || '0');
+
+      if (!cloudChanged) {
+        // 雲端沒有變動 → 本機若有新資料就靜默上傳，否則什麼都不做
+        if (localChanged) { syncToCloud(); }
+        return;
+      }
+      if (!localChanged) {
+        // 只有雲端變動 → 靜默拉取
+        syncFromCloud(true); return;
+      }
+
+      // 兩邊都有變動 → 才顯示衝突對話框
       _pendingCloudVocab = cloudVocab;
       _showSyncConflictModal(localCount, localTime, cloudCount, cloudTime);
     }).catch(() => {});

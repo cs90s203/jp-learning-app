@@ -1632,18 +1632,19 @@
           </div>
           <div id="vocab-display-content" style="display:none;width:100%;text-align:center"></div>
           <!-- Swipe hint (first time) -->
+          <!-- nav dots 在卡片內部，固定相對於卡片定位 -->
+          <div class="vocab-display-nav-dots" id="vocab-nav-dots"></div>
+          <!-- 活用形按鈕在卡片內部，固定相對於卡片定位 -->
+          <div id="vocab-seen-fab" style="display:none;position:absolute;top:50%;right:10px;transform:translateY(-50%);z-index:2">
+            <button class="vocab-seen-toggle" onclick="toggleSeenFormsPanel()">
+              活用形 <span id="vocab-seen-count"></span>
+              <svg class="seen-arrow" id="vocab-seen-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
           <div class="swipe-hint-overlay" id="swipe-hint" onclick="dismissSwipeHint()" style="display:none">
             <div class="swipe-hint-icon">☝️</div>
             <div class="swipe-hint-text">上下滑動切換單字卡<br><span style="font-size:11px;opacity:0.7">點擊關閉提示</span></div>
           </div>
-        </div>
-        <div class="vocab-display-nav-dots" id="vocab-nav-dots"></div>
-        <!-- 活用形按鈕（右下角，卡片外避開 overflow:hidden） -->
-        <div id="vocab-seen-fab" style="display:none;position:absolute;top:50%;right:10px;transform:translateY(-50%);z-index:2">
-          <button class="vocab-seen-toggle" onclick="toggleSeenFormsPanel()">
-            活用形 <span id="vocab-seen-count"></span>
-            <svg class="seen-arrow" id="vocab-seen-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
         </div>
         <!-- 活用形展開內容 -->
         <div id="vocab-seen-panel" style="display:none;padding:10px 4px 0"></div>
@@ -1919,7 +1920,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.43
+          v0.14.44
         </div>
 
       </div>
