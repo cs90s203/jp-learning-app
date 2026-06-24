@@ -641,7 +641,7 @@
     color: var(--wt3); font-size: 14px; line-height: 1.8;
   }
   .vocab-display-nav-dots {
-    position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+    position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
     display: flex; flex-direction: column; gap: 5px; pointer-events: none;
   }
   .vocab-nav-dot {
@@ -1631,6 +1631,13 @@
             <span style="font-size:12px">從文章長按詞語加入，或點擊 ＋ 新增</span>
           </div>
           <div id="vocab-display-content" style="display:none;width:100%;text-align:center"></div>
+          <!-- 活用形按鈕（右上角） -->
+          <div id="vocab-seen-fab" style="display:none;position:absolute;top:10px;right:10px;z-index:2">
+            <button class="vocab-seen-toggle" onclick="toggleSeenFormsPanel()">
+              活用形 <span id="vocab-seen-count"></span>
+              <svg class="seen-arrow" id="vocab-seen-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+          </div>
           <!-- Swipe hint (first time) -->
           <div class="swipe-hint-overlay" id="swipe-hint" onclick="dismissSwipeHint()" style="display:none">
             <div class="swipe-hint-icon">☝️</div>
@@ -1638,6 +1645,8 @@
           </div>
         </div>
         <div class="vocab-display-nav-dots" id="vocab-nav-dots"></div>
+        <!-- 活用形展開內容 -->
+        <div id="vocab-seen-panel" style="display:none;padding:10px 4px 0"></div>
       </div>
 
       <!-- Card list -->
@@ -1910,7 +1919,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.41
+          v0.14.42
         </div>
 
       </div>
@@ -3391,6 +3400,10 @@ function renderArticle(tokens) {
       const wordKey = VOCAB_DICT[basic] ? basic : (VOCAB_DICT[surface] ? surface : basic);
       const isAdded = addedWords.has(wordKey);
       if (isAdded && surface !== wordKey) trackSeenForm(wordKey, surface, reading, tok.pos);
+      // 遇到原形 token 時，若 vocabBook 存的 kana 是活用形讀音，順便修正
+      if (isAdded && surface === wordKey && reading && vocabBook[wordKey] && vocabBook[wordKey].kana !== reading && /[一-鿿]/.test(wordKey)) {
+        vocabBook[wordKey].kana = reading; saveVocabBook();
+      }
       html += '<span class="tok tok-word' + (isAdded ? ' tok-added' : '') + '" data-idx="' + i + '" data-type="word" data-basic="' + wordKey + '" data-surface="' + surface + '" data-reading="' + reading + '" data-sentence="' + sentenceIndex + '">' + inner + '</span>';
     } else {
       // Pure punctuation/symbols only — non-interactive
@@ -3585,6 +3598,12 @@ function openWordPanel(basic, surface, reading) {
   const entry = VOCAB_DICT[basic] || VOCAB_DICT[surface] || { meaning: '（尚無中文翻譯）', romaji: '' };
   const isAdded = addedWords.has(basic);
   const isInflected = surface && surface !== basic;
+  // 活用形時，從文章 tokens 找原形 token 的讀音；純假名直接用 basic；否則 fallback surface reading
+  if (isInflected) {
+    const baseTok = ARTICLE_TOKENS.find(t => t.basic_form === basic && t.surface_form === basic);
+    if (baseTok && baseTok.reading) reading = baseTok.reading;
+    else if (/^[ぁ-ヿ]+$/.test(basic)) reading = basic;
+  }
   // 活用形：大字顯示文中形，下方標「原形」；原形：大字顯示basic，下方顯示讀音
   const displayWord = isInflected ? surface : basic;
   const speakWord = reading || surface;
@@ -5198,32 +5217,38 @@ function renderVocabDisplayCard() {
       (entry.example ? '<div class="vocab-example meaning-hidden" id="vocab-example-text">' + entry.example + '</div>' : '') +
       (!localStorage.getItem('meaningHintSeen') ? '<div class="meaning-reveal-hint" id="meaning-reveal-hint">點擊顯示中文</div>' : '') +
     '</div>' +
-    '<div style="margin-top:12px"><span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span></div>' +
-    (function() {
-      const forms = entry.seen_forms || [];
-      if (!forms.length) return '';
-      return '<div class="vocab-seen-forms">' +
-        '<button class="vocab-seen-toggle" onclick="toggleSeenForms(this)">' +
-          '活用形 <span class="seen-count">(' + forms.length + ')</span>' +
-          '<svg class="seen-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>' +
+    '<div style="margin-top:12px"><span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span></div>';
+
+  // 活用形 fab（右上角）
+  const forms = entry.seen_forms || [];
+  const fab   = document.getElementById('vocab-seen-fab');
+  const panel = document.getElementById('vocab-seen-panel');
+  const arrow = document.getElementById('vocab-seen-arrow');
+  if (fab) {
+    if (forms.length) {
+      document.getElementById('vocab-seen-count').textContent = '(' + forms.length + ')';
+      fab.style.display = 'block';
+    } else {
+      fab.style.display = 'none';
+    }
+  }
+  if (panel) {
+    panel.style.display = 'none';
+    if (arrow) arrow.style.transform = '';
+    panel.innerHTML = forms.map(function(f) {
+      const safeS = f.surface.replace(/'/g, "\\'");
+      return '<div class="seen-form-row">' +
+        '<span class="seen-form-text">' + f.surface + '</span>' +
+        '<button class="speak-btn-sm" onclick="speak(\'' + safeS + '\')" aria-label="發音">' +
+          '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
         '</button>' +
-        '<div class="vocab-seen-list" style="display:none">' +
-          forms.map(function(f) {
-            const safeS = f.surface.replace(/'/g, "\\'");
-            return '<div class="seen-form-row">' +
-              '<span class="seen-form-text">' + f.surface + '</span>' +
-              '<button class="speak-btn-sm" onclick="speak(\'' + safeS + '\')" aria-label="發音">' +
-                '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
-              '</button>' +
-              '<div class="seen-form-meta">' +
-                '<span class="seen-form-name">' + f.name + '</span>' +
-                '<span class="seen-form-desc">' + f.desc + '</span>' +
-              '</div>' +
-            '</div>';
-          }).join('') +
+        '<div class="seen-form-meta">' +
+          '<span class="seen-form-name">' + f.name + '</span>' +
+          '<span class="seen-form-desc">' + f.desc + '</span>' +
         '</div>' +
       '</div>';
-    })();
+    }).join('');
+  }
 
   // Nav dots
   const total = vocabFilteredList.length;
@@ -5250,6 +5275,15 @@ function renderVocabDisplayCard() {
   document.querySelectorAll('.vocab-list-row').forEach((row, i) => {
     row.classList.toggle('selected', i === vocabDisplayIndex);
   });
+}
+
+function toggleSeenFormsPanel() {
+  const panel = document.getElementById('vocab-seen-panel');
+  const arrow = document.getElementById('vocab-seen-arrow');
+  if (!panel) return;
+  const open = panel.style.display !== 'none';
+  panel.style.display = open ? 'none' : 'block';
+  if (arrow) arrow.style.transform = open ? '' : 'rotate(180deg)';
 }
 
 function dismissSwipeHint() {
