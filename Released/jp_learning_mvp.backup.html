@@ -1920,7 +1920,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.46
+          v0.14.47
         </div>
 
       </div>
@@ -3591,6 +3591,17 @@ function toggleSeenForms(btn) {
   arrow.style.transform = open ? '' : 'rotate(180deg)';
 }
 
+function _seenFormExtra(basic, surface) {
+  // Find pos from current article tokens
+  const tok = ARTICLE_TOKENS.find(t => t.basic_form === basic && t.surface_form === surface);
+  if (!tok) return '';
+  const classified = classifyForm(surface, basic, tok.pos);
+  if (!classified) return '';
+  const sf = { surface, reading: tok.reading || surface, ...classified };
+  // Escape for HTML attribute: " → &quot;, ' → \'
+  return ',seenForm:' + JSON.stringify(sf).replace(/"/g, '&quot;').replace(/'/g, "\\'");
+}
+
 function openWordPanel(basic, surface, reading) {
   const entry = VOCAB_DICT[basic] || VOCAB_DICT[surface] || { meaning: '（尚無中文翻譯）', romaji: '' };
   const isAdded = addedWords.has(basic);
@@ -3623,7 +3634,7 @@ function openWordPanel(basic, surface, reading) {
           '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6M10 11v6M14 11v6M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>' +
           '移除單字卡' +
         '</button>'
-      : '<button class="wp-add-btn" onclick="addToVocabCards(\'' + basic + '\',{kana:\'' + (/^[ぁ-ヿ]+$/.test(basic) ? basic : (reading||'')).replace(/'/g,"\\'") + '\'})">' +
+      : '<button class="wp-add-btn" onclick="addToVocabCards(\'' + basic + '\',{kana:\'' + (/^[ぁ-ヿ]+$/.test(basic) ? basic : (reading||'')).replace(/'/g,"\\'") + '\'' + (isInflected ? _seenFormExtra(basic, surface) : '') + '})">' +
           '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>' +
           '加入單字卡' +
         '</button>');
@@ -3689,7 +3700,7 @@ function addToVocabCards(basic, extra) {
       familiarity: 0,
       source:     extra?.source  || 'article',
       addedDate:  new Date().toISOString().slice(0,10),
-      seen_forms: []
+      seen_forms: extra?.seenForm ? [extra.seenForm] : []
     };
     addedWords.add(basic);
     saveVocabBook();

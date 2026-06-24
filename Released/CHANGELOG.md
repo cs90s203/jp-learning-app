@@ -1,5 +1,23 @@
 # 日語學習 App — 版本記錄
 
+## v0.14.48 — 2026-06-24
+
+**iOS 被登出問題緩解 + 設定同步修正**
+- 登出後顯示「登入階段已過期」紅色提示橫幅
+- iOS 非 standalone 模式顯示「加到主畫面」banner
+- syncToCloud 加入 userLevel 同步（修正等級不被記憶的問題）
+- 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
+- syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
+- 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 0.14.48 — 2026-06-24
+
+iOS 登出緩解：session expired banner + A2HS banner；修正 userLevel/learnMode 未同步
+
+---
+
 ## v0.14.47 — 2026-06-24
 
 **從活用形加入單字卡時立即記錄活用形**
