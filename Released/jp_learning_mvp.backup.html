@@ -1658,7 +1658,7 @@
       <div class="gojuuon-header">
         <h2>五十音表</h2>
         <div class="gojuuon-chips">
-          <button class="gojuuon-chip" id="chip-katakana" onclick="toggleKatakanaMode()">カ</button>
+          <button class="gojuuon-chip" id="chip-katakana" onclick="toggleKatakanaMode()">片</button>
           <button class="gojuuon-chip" id="chip-dakuten" onclick="toggleGojuuonGroup('dakuten')">濁音</button>
           <button class="gojuuon-chip" id="chip-handakuten" onclick="toggleGojuuonGroup('handakuten')">半濁音</button>
         </div>
@@ -1910,7 +1910,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.38
+          v0.14.39
         </div>
 
       </div>
@@ -5373,7 +5373,9 @@ function renderGojuuon() {
 
 function toggleKatakanaMode() {
   _katakanaMode = !_katakanaMode;
-  document.getElementById('chip-katakana').classList.toggle('active', _katakanaMode);
+  const btn = document.getElementById('chip-katakana');
+  btn.classList.toggle('active', _katakanaMode);
+  btn.textContent = _katakanaMode ? '平' : '片';
   renderGojuuon();
 }
 
@@ -5392,6 +5394,7 @@ function openGojuuon() {
   ['katakana','dakuten','handakuten'].forEach(g =>
     document.getElementById('chip-' + g).classList.remove('active')
   );
+  document.getElementById('chip-katakana').textContent = '片';
   renderGojuuon();
   document.getElementById('gojuuon-overlay').classList.add('open');
   const btn = document.getElementById('vocab-gojuuon-btn');
