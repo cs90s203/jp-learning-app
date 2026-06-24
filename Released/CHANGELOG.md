@@ -12,6 +12,12 @@
 
 ---
 
+## 0.14.49 — 2026-06-24
+
+同步按鈕改為智慧雙向同步（可主動從雲端拉取）
+
+---
+
 ## 0.14.48 — 2026-06-24
 
 iOS 登出緩解：session expired banner + A2HS banner；修正 userLevel/learnMode 未同步
