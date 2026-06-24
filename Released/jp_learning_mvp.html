@@ -1910,7 +1910,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.39
+          v0.14.40
         </div>
 
       </div>
@@ -6746,20 +6746,93 @@ function syncFromCloud(silent) {
   });
 }
 
-// 登入後自動檢查雲端是否有較新資料
+var _pendingCloudVocab = null;
+
+// 登入後自動檢查雲端資料，有衝突時顯示選擇，不自動覆蓋
 function checkCloudOnLogin() {
   if (!currentUser || !fbDb) return;
   const uid = currentUser.uid;
   fbDb.collection('users').doc(uid).collection('data').doc('vocabBook').get()
     .then(snap => {
-      if (!snap.exists) return;
-      const cloudTime = snap.data().updatedAt || '';
-      const localTime = localStorage.getItem('lastSyncAt') || '';
-      if (cloudTime > localTime) {
-        // 雲端較新，靜默覆蓋（不問使用者）
-        syncFromCloud(true);
+      let localVocab = {};
+      try { localVocab = JSON.parse(localStorage.getItem('vocabBook_v1') || '{}'); } catch(e) {}
+      const localCount = Object.keys(localVocab).length;
+
+      if (!snap.exists || !snap.data().data) {
+        if (localCount > 0) { syncToCloud(); showToast('本機資料已備份到雲端'); }
+        return;
       }
+
+      let cloudVocab = {};
+      try { cloudVocab = JSON.parse(snap.data().data); } catch(e) {}
+      const cloudCount = Object.keys(cloudVocab).length;
+      const cloudTime  = snap.data().updatedAt || '';
+      const localTime  = localStorage.getItem('lastSyncAt') || '';
+
+      if (localCount === 0) {
+        syncFromCloud(true); return;
+      }
+
+      // 都有資料 → 顯示衝突選擇，不自動覆蓋
+      _pendingCloudVocab = cloudVocab;
+      _showSyncConflictModal(localCount, localTime, cloudCount, cloudTime);
     }).catch(() => {});
+}
+
+function _showSyncConflictModal(localCount, localTime, cloudCount, cloudTime) {
+  const fmt = t => t ? new Date(t).toLocaleString('zh-TW', {month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}) : '未同步';
+  const el = document.createElement('div');
+  el.id = 'sync-conflict-modal';
+  el.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;display:flex;align-items:flex-end;padding:16px;box-sizing:border-box';
+  el.innerHTML =
+    '<div style="background:var(--bg);border-radius:16px;padding:24px;width:100%;max-width:480px;margin:0 auto">' +
+      '<div style="font-size:15px;font-weight:600;color:var(--wt);margin-bottom:10px">⚠️ 本機與雲端資料不同</div>' +
+      '<div style="font-size:13px;color:var(--wt2);margin-bottom:20px;line-height:2.2">' +
+        '<div>📱 本機：<b>' + localCount + '</b> 張・' + fmt(localTime) + '</div>' +
+        '<div>☁️ 雲端：<b>' + cloudCount + '</b> 張・' + fmt(cloudTime) + '</div>' +
+      '</div>' +
+      '<div style="display:flex;flex-direction:column;gap:10px">' +
+        '<button onclick="resolveSyncConflict(\'merge\')" style="padding:13px;border-radius:10px;background:var(--wa);color:#fff;border:none;font-size:14px;cursor:pointer;font-weight:500">合併兩邊資料（推薦）</button>' +
+        '<button onclick="resolveSyncConflict(\'local\')" style="padding:13px;border-radius:10px;background:var(--card-bg);color:var(--wt);border:1px solid var(--border);font-size:14px;cursor:pointer">保留本機（' + localCount + ' 張）並上傳</button>' +
+        '<button onclick="resolveSyncConflict(\'cloud\')" style="padding:13px;border-radius:10px;background:var(--card-bg);color:var(--wt3);border:1px solid var(--border);font-size:14px;cursor:pointer">從雲端還原（' + cloudCount + ' 張）</button>' +
+      '</div>' +
+    '</div>';
+  document.body.appendChild(el);
+}
+
+function resolveSyncConflict(choice) {
+  const modal = document.getElementById('sync-conflict-modal');
+  if (modal) modal.remove();
+  if (choice === 'cloud') { syncFromCloud(false); return; }
+  if (choice === 'local') { syncToCloud(); showToast('本機資料已上傳至雲端'); return; }
+  if (choice === 'merge') {
+    let localVocab = {};
+    try { localVocab = JSON.parse(localStorage.getItem('vocabBook_v1') || '{}'); } catch(e) {}
+    const merged = _mergeVocabBooks(localVocab, _pendingCloudVocab || {});
+    vocabBook = merged;
+    addedWords.clear();
+    Object.keys(merged).forEach(w => addedWords.add(w));
+    saveVocabBook();
+    syncToCloud();
+    showToast('合併完成，共 ' + Object.keys(merged).length + ' 張單字');
+    _pendingCloudVocab = null;
+  }
+}
+
+function _mergeVocabBooks(local, cloud) {
+  const merged = Object.assign({}, cloud);
+  Object.keys(local).forEach(word => {
+    if (!merged[word]) {
+      merged[word] = local[word];
+    } else {
+      merged[word] = Object.assign({}, merged[word], local[word]);
+      merged[word].familiarity = Math.max(merged[word].familiarity || 0, local[word].familiarity || 0);
+      const allForms = [].concat(cloud[word].seen_forms || [], local[word].seen_forms || []);
+      const seen = new Set();
+      merged[word].seen_forms = allForms.filter(f => seen.has(f.surface) ? false : !!seen.add(f.surface));
+    }
+  });
+  return merged;
 }
 
 // 自動同步（debounce 3 秒，未登入時靜默跳過）
