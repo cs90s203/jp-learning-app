@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.72
+          v0.14.73
         </div>
 
       </div>
@@ -4039,11 +4039,14 @@ function loadTheme() {
   const segs = [0,1,2,3,4].map(i => document.getElementById('ptr-seg-' + i));
 
   function getActivePage() { return document.querySelector('.page.active'); }
+  function isVocabPage() { return document.getElementById('page-vocab')?.classList.contains('active'); }
 
   function setIndicator(pullDist) {
-    // 頁面從一開始就 1:1 跟著走，不等 ANIM_START
-    const page = getActivePage();
-    if (page) { page.style.transition = 'none'; page.style.transform = `translateY(${pullDist}px)`; }
+    // 只有單字頁做頁面移動
+    if (isVocabPage()) {
+      const page = getActivePage();
+      if (page) { page.style.transition = 'none'; page.style.transform = `translateY(${pullDist}px)`; }
+    }
 
     if (pullDist < ANIM_START) return; // 環還不出現
     const active = pullDist - ANIM_START;           // 有效距離 0~100
@@ -4062,9 +4065,11 @@ function loadTheme() {
     indicator.style.transform = 'translateX(-50%) translateY(-60px)';
     indicator.style.opacity = '0';
     segs.forEach(s => { if (s) s.style.opacity = '0.15'; });
-    // 頁面彈回
-    const page = getActivePage();
-    if (page) { page.style.transition = 'transform .3s ease'; page.style.transform = 'translateY(0)'; }
+    // 只有單字頁需要彈回
+    if (isVocabPage()) {
+      const page = getActivePage();
+      if (page) { page.style.transition = 'transform .3s ease'; page.style.transform = 'translateY(0)'; }
+    }
   }
 
   document.addEventListener('touchstart', e => {
@@ -4088,8 +4093,10 @@ function loadTheme() {
     if (dist >= THRESHOLD) {
       indicator.style.transition = 'opacity .4s ease';
       indicator.style.opacity = '0';
-      const page = getActivePage();
-      if (page) { page.style.transition = 'transform .4s ease'; page.style.transform = 'translateY(0)'; }
+      if (isVocabPage()) {
+        const page = getActivePage();
+        if (page) { page.style.transition = 'transform .4s ease'; page.style.transform = 'translateY(0)'; }
+      }
       setTimeout(() => location.reload(), 450);
     } else {
       resetIndicator();
