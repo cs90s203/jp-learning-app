@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.82
+          v0.14.83
         </div>
 
       </div>
@@ -4126,19 +4126,19 @@ document.addEventListener('DOMContentLoaded', () => {
   _initA2HSBanner();
 
 
-  // 單字頁 PTR：獨立邏輯，page 跟著手指 1:1 移動，五色環固定 viewport 頂端
+  // 單字頁 PTR：整頁監聽，list scrollTop=0 時才接管，page 跟著手指移動
   const _vla = document.getElementById('vocab-list-area');
   const _vocabPage = document.getElementById('page-vocab');
   if (_vla && _vocabPage) {
     let _sy = 0, _vPulling = false, _vDist = 0;
 
-    _vla.addEventListener('touchstart', e => {
+    _vocabPage.addEventListener('touchstart', e => {
       _sy = e.touches[0].clientY;
       _vPulling = false;
       _vDist = 0;
     }, { passive: true });
 
-    _vla.addEventListener('touchmove', e => {
+    _vocabPage.addEventListener('touchmove', e => {
       if (_vla.scrollTop > 0) return;
       const dy = e.touches[0].clientY - _sy;
       if (dy <= 0) {
@@ -4149,11 +4149,8 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       _vPulling = true;
       _vDist = dy;
-      // page 1:1 跟著走，最多拉到 THRESHOLD
-      const clamped = Math.min(dy, THRESHOLD);
       _vocabPage.style.transition = 'none';
-      _vocabPage.style.transform = `translateY(${clamped}px)`;
-      // 環固定在 viewport 頂，顯示進度
+      _vocabPage.style.transform = `translateY(${Math.min(dy * 0.4, THRESHOLD * 0.4)}px)`;
       const range = THRESHOLD - ANIM_START;
       const active = Math.max(0, dy - ANIM_START);
       const capped = Math.min(active, range);
@@ -4164,7 +4161,7 @@ document.addEventListener('DOMContentLoaded', () => {
       segs.forEach((s, i) => { if (s) s.style.opacity = i < lit ? '1' : '0.15'; });
     }, { passive: false });
 
-    _vla.addEventListener('touchend', () => {
+    _vocabPage.addEventListener('touchend', () => {
       if (!_vPulling) return;
       _vPulling = false;
       if (_vDist >= THRESHOLD) {
