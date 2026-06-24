@@ -854,18 +854,21 @@
   html[data-theme="dark"] #gojuuon-overlay { background: #1A1008; }
   #gojuuon-overlay.open { display: flex; }
   .gojuuon-header {
-    display: flex; align-items: center; gap: 8px;
-    padding: 14px 20px 8px; flex-shrink: 0;
+    display: flex; flex-direction: column; gap: 8px;
+    padding: 14px 20px 10px; flex-shrink: 0;
     background: var(--wa-ll);
   }
-  .gojuuon-header h2 { font-size: 24px; font-weight: 500; color: var(--wt); margin: 0; flex-shrink: 0; }
-  .gojuuon-chips { display: flex; gap: 6px; flex: 1; }
+  .gojuuon-header-top { display: flex; align-items: center; justify-content: space-between; }
+  .gojuuon-header h2 { font-size: 24px; font-weight: 500; color: var(--wt); margin: 0; }
+  .gojuuon-chips { display: flex; gap: 6px; }
   .gojuuon-chip {
     padding: 3px 10px; border-radius: 20px; border: 1px solid var(--border);
     background: var(--wa-bg2); color: var(--wt3); font-size: 12px; font-weight: 600;
     cursor: pointer; transition: background .15s, color .15s;
   }
   .gojuuon-chip.active { background: var(--wa); color: #FFF; border-color: var(--wa); }
+  .gojuuon-chip-kata { background: var(--wt2); color: var(--card-bg); border-color: var(--wt2); }
+  .gojuuon-chip-kata.active { background: var(--wa); color: #FFF; border-color: var(--wa); }
   .gojuuon-group-hidden { display: none; }
   .gojuuon-close {
     width: 34px; height: 34px; border-radius: 50%; border: none;
@@ -1713,13 +1716,15 @@
     <!-- 五十音表 overlay -->
     <div id="gojuuon-overlay">
       <div class="gojuuon-header">
-        <h2>五十音表</h2>
+        <div class="gojuuon-header-top">
+          <h2>五十音表</h2>
+          <button class="gojuuon-close" onclick="closeGojuuon()">✕</button>
+        </div>
         <div class="gojuuon-chips">
-          <button class="gojuuon-chip" id="chip-katakana" onclick="toggleKatakanaMode()">片</button>
+          <button class="gojuuon-chip gojuuon-chip-kata" id="chip-katakana" onclick="toggleKatakanaMode()">片</button>
           <button class="gojuuon-chip" id="chip-dakuten" onclick="toggleGojuuonGroup('dakuten')">濁音</button>
           <button class="gojuuon-chip" id="chip-handakuten" onclick="toggleGojuuonGroup('handakuten')">半濁音</button>
         </div>
-        <button class="gojuuon-close" onclick="closeGojuuon()">✕</button>
       </div>
       <div class="gojuuon-scroll" id="gojuuon-scroll"></div>
     </div>
@@ -1967,7 +1972,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.55
+          v0.14.56
         </div>
 
       </div>
