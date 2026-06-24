@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.67
+          v0.14.68
         </div>
 
       </div>
@@ -4038,6 +4038,8 @@ function loadTheme() {
   const indicator = document.getElementById('ptr-indicator');
   const segs = [0,1,2,3,4].map(i => document.getElementById('ptr-seg-' + i));
 
+  function getActivePage() { return document.querySelector('.page.active'); }
+
   function setIndicator(pullDist) {
     if (pullDist < ANIM_START) { resetIndicator(); return; }
     const active = pullDist - ANIM_START;           // 有效距離 0~100
@@ -4049,6 +4051,9 @@ function loadTheme() {
     indicator.style.opacity = Math.min(capped / 20, 1);
     const lit = Math.floor(capped / (range / SEGS));
     segs.forEach((s, i) => { if (s) s.style.opacity = i < lit ? '1' : '0.15'; });
+    // 頁面跟著往下移（阻力感，半速）
+    const page = getActivePage();
+    if (page) { page.style.transition = 'none'; page.style.transform = `translateY(${capped * 0.4}px)`; }
   }
 
   function resetIndicator() {
@@ -4056,6 +4061,9 @@ function loadTheme() {
     indicator.style.transform = 'translateX(-50%) translateY(-60px)';
     indicator.style.opacity = '0';
     segs.forEach(s => { if (s) s.style.opacity = '0.15'; });
+    // 頁面彈回
+    const page = getActivePage();
+    if (page) { page.style.transition = 'transform .3s ease'; page.style.transform = 'translateY(0)'; }
   }
 
   document.addEventListener('touchstart', e => {
@@ -4079,6 +4087,8 @@ function loadTheme() {
     if (dist >= THRESHOLD) {
       indicator.style.transition = 'opacity .4s ease';
       indicator.style.opacity = '0';
+      const page = getActivePage();
+      if (page) { page.style.transition = 'transform .4s ease'; page.style.transform = 'translateY(0)'; }
       setTimeout(() => location.reload(), 450);
     } else {
       resetIndicator();
