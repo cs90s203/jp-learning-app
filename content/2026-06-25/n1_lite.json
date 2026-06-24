@@ -2,7 +2,7 @@
   "date": "2026-06-25",
   "level": "n1_lite",
   "title": "都市に緑を取り戻す",
-  "text": "都市化が進むにつれ、緑の空間がもたらす恩恵が改めて注目されている。高層ビルが立ち並ぶ街の中で、公園や街路樹はわずかな潤いを与えるだけでなく、気温の上昇をやわらげる役割も担っている。近年の研究によれば、緑が豊かな地域に暮らす人々は、精神的なストレスが少なく、健康状態も比較的良好だという。また、緑地は人と人とが自然に交わる場としても機能し、地域の結びつきを深める効果が期待される。一方で、限られた土地の中で緑を確保するのは容易ではない。今後は、屋上や壁面を活用するなど、都市の構造そのものを見直す発想が欠かせないだろう。",
+  "text": "都市化が進むにつれ、緑の空間がもたらす恩恵が改めて注目されている。高層ビルが立ち並ぶ街の中で、公園や街路樹はわずかな潤いを与えるだけでなく、気温の上昇をやわらげる役割も担っている。近年の研究によれば、緑が豊かな地域に暮らす人々は、精神的なストレスが少なく、健康状態も比較的良好だという。また、緑地は人と人とが自然に交わる場としても機能し、地域の結びつきを深める効果が期待される。さらに、街路や公園の緑は景観を美しく整えるだけでなく、そこを訪れる人々の心を和ませる効果も見逃せないだろう。一方で、限られた土地の中で緑を確保するのは容易ではない。今後は、屋上や壁面を活用するなど、都市の構造そのものを見直す発想が欠かせないだろう。",
   "tokens": [
     {
       "surface_form": "都市化",
@@ -635,6 +635,180 @@
       "pos": "記号"
     },
     {
+      "surface_form": "さらに",
+      "basic_form": "さらに",
+      "reading": "さらに",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "街路",
+      "basic_form": "街路",
+      "reading": "がいろ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "公園",
+      "basic_form": "公園",
+      "reading": "こうえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "緑",
+      "basic_form": "緑",
+      "reading": "みどり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "景観",
+      "basic_form": "景観",
+      "reading": "けいかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "美しく",
+      "basic_form": "美しい",
+      "reading": "うつくしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "整える",
+      "basic_form": "整える",
+      "reading": "ととのえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "そこ",
+      "basic_form": "そこ",
+      "reading": "そこ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "訪れる",
+      "basic_form": "訪れる",
+      "reading": "おとずれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人々",
+      "basic_form": "人々",
+      "reading": "ひとびと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "心",
+      "basic_form": "心",
+      "reading": "こころ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "和ませる",
+      "basic_form": "和ませる",
+      "reading": "なごませる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "効果",
+      "basic_form": "効果",
+      "reading": "こうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見逃せない",
+      "basic_form": "見逃す",
+      "reading": "みのがせない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
       "surface_form": "一方",
       "basic_form": "一方",
       "reading": "いっぽう",
@@ -1206,6 +1380,51 @@
       "meaning": "（欠かせない＝）不可或缺",
       "romaji": "kakaseru",
       "reading": "かかせる"
+    },
+    "街路": {
+      "meaning": "街道、馬路",
+      "romaji": "gairo",
+      "reading": "がいろ"
+    },
+    "景観": {
+      "meaning": "景觀",
+      "romaji": "keikan",
+      "reading": "けいかん"
+    },
+    "美しい": {
+      "meaning": "美麗的",
+      "romaji": "utsukushii",
+      "reading": "うつくしい"
+    },
+    "そこ": {
+      "meaning": "那裡",
+      "romaji": "soko",
+      "reading": "そこ"
+    },
+    "訪れる": {
+      "meaning": "造訪、來訪",
+      "romaji": "otozureru",
+      "reading": "おとずれる"
+    },
+    "心": {
+      "meaning": "心、心靈",
+      "romaji": "kokoro",
+      "reading": "こころ"
+    },
+    "和ませる": {
+      "meaning": "撫慰、使放鬆",
+      "romaji": "nagomaseru",
+      "reading": "なごませる"
+    },
+    "見逃す": {
+      "meaning": "忽略、錯過",
+      "romaji": "minogasu",
+      "reading": "みのがす"
+    },
+    "整える": {
+      "meaning": "整理、調整",
+      "romaji": "totonoeru",
+      "reading": "ととのえる"
     }
   },
   "particles": {
@@ -1294,6 +1513,20 @@
       {
         "text": "被期待具有加深地區連結的效果。",
         "word": "結びつき"
+      }
+    ],
+    [
+      {
+        "text": "再者，街道與公園的綠意不僅美化景觀，",
+        "word": "景観"
+      },
+      {
+        "text": "也能撫慰造訪者的心，",
+        "word": "和ませる"
+      },
+      {
+        "text": "這份效果同樣不容忽視。",
+        "word": "見逃す"
       }
     ],
     [

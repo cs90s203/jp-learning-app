@@ -12,6 +12,12 @@
 
 ---
 
+## 0.14.80 — 2026-06-25
+
+PTR：試題頁獨立 translateY，其他頁不受影響
+
+---
+
 ## 0.14.79 — 2026-06-25
 
 PTR：試題頁 quiz-tabs 加 touch-action:pan-x，解除 iOS touch 攔截
