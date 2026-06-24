@@ -1631,13 +1631,6 @@
             <span style="font-size:12px">從文章長按詞語加入，或點擊 ＋ 新增</span>
           </div>
           <div id="vocab-display-content" style="display:none;width:100%;text-align:center"></div>
-          <!-- 活用形按鈕（右上角） -->
-          <div id="vocab-seen-fab" style="display:none;position:absolute;top:10px;right:10px;z-index:2">
-            <button class="vocab-seen-toggle" onclick="toggleSeenFormsPanel()">
-              活用形 <span id="vocab-seen-count"></span>
-              <svg class="seen-arrow" id="vocab-seen-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-          </div>
           <!-- Swipe hint (first time) -->
           <div class="swipe-hint-overlay" id="swipe-hint" onclick="dismissSwipeHint()" style="display:none">
             <div class="swipe-hint-icon">☝️</div>
@@ -1645,6 +1638,13 @@
           </div>
         </div>
         <div class="vocab-display-nav-dots" id="vocab-nav-dots"></div>
+        <!-- 活用形按鈕（右下角，卡片外避開 overflow:hidden） -->
+        <div id="vocab-seen-fab" style="display:none;position:absolute;bottom:10px;right:10px;z-index:2">
+          <button class="vocab-seen-toggle" onclick="toggleSeenFormsPanel()">
+            活用形 <span id="vocab-seen-count"></span>
+            <svg class="seen-arrow" id="vocab-seen-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
         <!-- 活用形展開內容 -->
         <div id="vocab-seen-panel" style="display:none;padding:10px 4px 0"></div>
       </div>
@@ -1919,7 +1919,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.42
+          v0.14.43
         </div>
 
       </div>
