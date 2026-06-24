@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.74
+          v0.14.75
         </div>
 
       </div>
@@ -4108,14 +4108,64 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add to Home Screen banner（iOS 非 standalone）
   _initA2HSBanner();
 
-  // 單字頁 list：捲到頂往下拉時讓 PTR 接管，阻止 list 捲動
+  // 單字頁 PTR：獨立邏輯，page 跟著手指 1:1 移動，五色環固定 viewport 頂端
   const _vla = document.getElementById('vocab-list-area');
-  if (_vla) {
-    let _vlaTouchY = 0;
-    _vla.addEventListener('touchstart', e => { _vlaTouchY = e.touches[0].clientY; }, { passive: true });
+  const _vocabPage = document.getElementById('page-vocab');
+  if (_vla && _vocabPage) {
+    let _sy = 0, _vPulling = false, _vDist = 0;
+
+    _vla.addEventListener('touchstart', e => {
+      _sy = e.touches[0].clientY;
+      _vPulling = false;
+      _vDist = 0;
+    }, { passive: true });
+
     _vla.addEventListener('touchmove', e => {
-      if (_vla.scrollTop === 0 && e.touches[0].clientY > _vlaTouchY) e.preventDefault();
+      if (_vla.scrollTop > 0) return;
+      const dy = e.touches[0].clientY - _sy;
+      if (dy <= 0) {
+        if (_vPulling) _vocabPtrReset();
+        _vPulling = false;
+        return;
+      }
+      e.preventDefault();
+      _vPulling = true;
+      _vDist = dy;
+      // page 1:1 跟著走，最多拉到 THRESHOLD
+      const clamped = Math.min(dy, THRESHOLD);
+      _vocabPage.style.transition = 'none';
+      _vocabPage.style.transform = `translateY(${clamped}px)`;
+      // 環固定在 viewport 頂，顯示進度
+      const range = THRESHOLD - ANIM_START;
+      const active = Math.max(0, dy - ANIM_START);
+      const capped = Math.min(active, range);
+      indicator.style.transition = 'none';
+      indicator.style.transform = 'translateX(-50%) translateY(20px)';
+      indicator.style.opacity = dy >= ANIM_START ? Math.min(capped / 20, 1) : '0';
+      const lit = Math.floor(capped / (range / SEGS));
+      segs.forEach((s, i) => { if (s) s.style.opacity = i < lit ? '1' : '0.15'; });
     }, { passive: false });
+
+    _vla.addEventListener('touchend', () => {
+      if (!_vPulling) return;
+      _vPulling = false;
+      if (_vDist >= THRESHOLD) {
+        indicator.style.transition = 'opacity .4s ease';
+        indicator.style.opacity = '0';
+        _vocabPage.style.transition = 'transform .4s ease';
+        _vocabPage.style.transform = 'translateY(0)';
+        setTimeout(() => location.reload(), 450);
+      } else {
+        _vocabPtrReset();
+      }
+      _vDist = 0;
+    });
+
+    function _vocabPtrReset() {
+      _vocabPage.style.transition = 'transform .3s ease';
+      _vocabPage.style.transform = 'translateY(0)';
+      resetIndicator();
+    }
   }
 
   // 從 index.json 動態取得有內容的日期，填入 contentDateSet
