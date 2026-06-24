@@ -1885,7 +1885,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.33
+          v0.14.34
         </div>
 
       </div>
@@ -5107,9 +5107,7 @@ function renderVocabDisplayCard() {
   const safeKana = (entry.kana || word).replace(/'/g, "\\'");
   vocabMeaningRevealed = false;
   const hasKanji = /[一-鿿㐀-䶿]/.test(word);
-  const displayWord = (hasKanji && entry.kana)
-    ? '<ruby>' + word + '<rt>' + entry.kana + '</rt></ruby>'
-    : word;
+  const displayWord = word;
   contentEl.innerHTML =
     '<div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:6px">' +
       '<div class="vocab-kanji">' + displayWord + '</div>' +

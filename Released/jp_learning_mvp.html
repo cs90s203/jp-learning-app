@@ -882,10 +882,17 @@
   .gojuuon-cell:active { background: var(--wa-ll); }
   .gojuuon-cell.empty { background: transparent; border-color: transparent; cursor: default; pointer-events: none; }
   .gojuuon-pair { display: flex; align-items: baseline; gap: 3px; }
-  .gojuuon-h { font-size: 27px; line-height: 1; color: var(--wt); }
-  .gojuuon-k { font-size: 14px; color: var(--wa); line-height: 1; }
+  .gojuuon-h { font-size: 27px; line-height: 1; color: var(--wt); transition: font-size .15s, color .15s; }
+  .gojuuon-k { font-size: 14px; color: var(--wa); line-height: 1; transition: font-size .15s, color .15s; }
+  #gojuuon-overlay.katakana-mode .gojuuon-h { font-size: 14px; color: var(--wa); }
+  #gojuuon-overlay.katakana-mode .gojuuon-k { font-size: 27px; color: var(--wt); }
   .gojuuon-r { font-size: 10px; color: var(--wt3); margin-top: 2px; letter-spacing: .04em; }
-  .gojuuon-src { font-size: 9px; color: var(--wt3); opacity: .5; margin-top: 1px; }
+  .gojuuon-src { font-size: 10px; color: var(--wt3); margin-top: 1px; }
+  .src-h { opacity: .75; }
+  .src-sep { opacity: .25; }
+  .src-k { opacity: .3; }
+  #gojuuon-overlay.katakana-mode .src-h { opacity: .3; }
+  #gojuuon-overlay.katakana-mode .src-k { opacity: .75; }
 
   /* Add word modal (bottom sheet) */
   .vocab-modal-bd {
@@ -1634,6 +1641,7 @@
       <div class="gojuuon-header">
         <h2>五十音表</h2>
         <div class="gojuuon-chips">
+          <button class="gojuuon-chip" id="chip-katakana" onclick="toggleKatakanaMode()">カ</button>
           <button class="gojuuon-chip" id="chip-dakuten" onclick="toggleGojuuonGroup('dakuten')">濁音</button>
           <button class="gojuuon-chip" id="chip-handakuten" onclick="toggleGojuuonGroup('handakuten')">半濁音</button>
         </div>
@@ -1885,7 +1893,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.34
+          v0.14.35
         </div>
 
       </div>
@@ -5180,31 +5188,42 @@ function scrollVocabListToIndex(idx) {
 }
 
 // ── 五十音表 ──────────────────────────────────────────────
+let _katakanaMode = false;
+let _dakutenMode  = null; // null | 'dakuten' | 'handakuten'
+
 const GOJUUON_DATA = [
   { label: '清音 あ行', cells: [
     {h:'あ',k:'ア',r:'a',  src:'安/阿'}, {h:'い',k:'イ',r:'i',  src:'以/伊'},
     {h:'う',k:'ウ',r:'u',  src:'宇/宇'}, {h:'え',k:'エ',r:'e',  src:'衣/江'},
     {h:'お',k:'オ',r:'o',  src:'於/於'} ]},
-  { label: 'か行', cells: [
-    {h:'か',k:'カ',r:'ka', src:'加/加'}, {h:'き',k:'キ',r:'ki', src:'幾/機'},
-    {h:'く',k:'ク',r:'ku', src:'久/久'}, {h:'け',k:'ケ',r:'ke', src:'計/介'},
-    {h:'こ',k:'コ',r:'ko', src:'己/己'} ]},
-  { label: 'さ行', cells: [
-    {h:'さ',k:'サ',r:'sa', src:'在/散'}, {h:'し',k:'シ',r:'shi',src:'之/之'},
-    {h:'す',k:'ス',r:'su', src:'寸/須'}, {h:'せ',k:'セ',r:'se', src:'世/世'},
-    {h:'そ',k:'ソ',r:'so', src:'曾/曽'} ]},
-  { label: 'た行', cells: [
-    {h:'た',k:'タ',r:'ta', src:'太/多'}, {h:'ち',k:'チ',r:'chi',src:'知/千'},
-    {h:'つ',k:'ツ',r:'tsu',src:'川/川'}, {h:'て',k:'テ',r:'te', src:'天/天'},
-    {h:'と',k:'ト',r:'to', src:'止/止'} ]},
+  { label: 'か行', dakuLabel: 'が行', cells: [
+    {h:'か',k:'カ',r:'ka', src:'加/加', daku:{h:'が',k:'ガ',r:'ga'}},
+    {h:'き',k:'キ',r:'ki', src:'幾/機', daku:{h:'ぎ',k:'ギ',r:'gi'}},
+    {h:'く',k:'ク',r:'ku', src:'久/久', daku:{h:'ぐ',k:'グ',r:'gu'}},
+    {h:'け',k:'ケ',r:'ke', src:'計/介', daku:{h:'げ',k:'ゲ',r:'ge'}},
+    {h:'こ',k:'コ',r:'ko', src:'己/己', daku:{h:'ご',k:'ゴ',r:'go'}} ]},
+  { label: 'さ行', dakuLabel: 'ざ行', cells: [
+    {h:'さ',k:'サ',r:'sa', src:'在/散', daku:{h:'ざ',k:'ザ',r:'za'}},
+    {h:'し',k:'シ',r:'shi',src:'之/之', daku:{h:'じ',k:'ジ',r:'ji'}},
+    {h:'す',k:'ス',r:'su', src:'寸/須', daku:{h:'ず',k:'ズ',r:'zu'}},
+    {h:'せ',k:'セ',r:'se', src:'世/世', daku:{h:'ぜ',k:'ゼ',r:'ze'}},
+    {h:'そ',k:'ソ',r:'so', src:'曾/曽', daku:{h:'ぞ',k:'ゾ',r:'zo'}} ]},
+  { label: 'た行', dakuLabel: 'だ行', cells: [
+    {h:'た',k:'タ',r:'ta', src:'太/多', daku:{h:'だ',k:'ダ',r:'da'}},
+    {h:'ち',k:'チ',r:'chi',src:'知/千', daku:{h:'ぢ',k:'ヂ',r:'ji'}},
+    {h:'つ',k:'ツ',r:'tsu',src:'川/川', daku:{h:'づ',k:'ヅ',r:'zu'}},
+    {h:'て',k:'テ',r:'te', src:'天/天', daku:{h:'で',k:'デ',r:'de'}},
+    {h:'と',k:'ト',r:'to', src:'止/止', daku:{h:'ど',k:'ド',r:'do'}} ]},
   { label: 'な行', cells: [
     {h:'な',k:'ナ',r:'na', src:'奈/奈'}, {h:'に',k:'ニ',r:'ni', src:'仁/仁'},
     {h:'ぬ',k:'ヌ',r:'nu', src:'奴/奴'}, {h:'ね',k:'ネ',r:'ne', src:'祢/祢'},
     {h:'の',k:'ノ',r:'no', src:'乃/乃'} ]},
-  { label: 'は行', cells: [
-    {h:'は',k:'ハ',r:'ha', src:'波/八'}, {h:'ひ',k:'ヒ',r:'hi', src:'比/比'},
-    {h:'ふ',k:'フ',r:'fu', src:'不/不'}, {h:'へ',k:'ヘ',r:'he', src:'部/部'},
-    {h:'ほ',k:'ホ',r:'ho', src:'保/保'} ]},
+  { label: 'は行', dakuLabel: 'ば行', handakuLabel: 'ぱ行', cells: [
+    {h:'は',k:'ハ',r:'ha', src:'波/八', daku:{h:'ば',k:'バ',r:'ba'}, handaku:{h:'ぱ',k:'パ',r:'pa'}},
+    {h:'ひ',k:'ヒ',r:'hi', src:'比/比', daku:{h:'び',k:'ビ',r:'bi'}, handaku:{h:'ぴ',k:'ピ',r:'pi'}},
+    {h:'ふ',k:'フ',r:'fu', src:'不/不', daku:{h:'ぶ',k:'ブ',r:'bu'}, handaku:{h:'ぷ',k:'プ',r:'pu'}},
+    {h:'へ',k:'ヘ',r:'he', src:'部/部', daku:{h:'べ',k:'ベ',r:'be'}, handaku:{h:'ぺ',k:'ペ',r:'pe'}},
+    {h:'ほ',k:'ホ',r:'ho', src:'保/保', daku:{h:'ぼ',k:'ボ',r:'bo'}, handaku:{h:'ぽ',k:'ポ',r:'po'}} ]},
   { label: 'ま行', cells: [
     {h:'ま',k:'マ',r:'ma', src:'末/末'}, {h:'み',k:'ミ',r:'mi', src:'美/三'},
     {h:'む',k:'ム',r:'mu', src:'武/牟'}, {h:'め',k:'メ',r:'me', src:'女/女'},
@@ -5222,63 +5241,66 @@ const GOJUUON_DATA = [
     {h:'を',k:'ヲ',r:'wo', src:'遠/乎'} ]},
   { label: 'ん', cells: [
     {h:'ん',k:'ン',r:'n',  src:'無/爾'}, null, null, null, null ]},
-  { label: '濁音 が行', cells: [
-    {h:'が',k:'ガ',r:'ga'}, {h:'ぎ',k:'ギ',r:'gi'},
-    {h:'ぐ',k:'グ',r:'gu'}, {h:'げ',k:'ゲ',r:'ge'}, {h:'ご',k:'ゴ',r:'go'} ]},
-  { label: 'ざ行', cells: [
-    {h:'ざ',k:'ザ',r:'za'}, {h:'じ',k:'ジ',r:'ji'},
-    {h:'ず',k:'ズ',r:'zu'}, {h:'ぜ',k:'ゼ',r:'ze'}, {h:'ぞ',k:'ゾ',r:'zo'} ]},
-  { label: 'だ行', cells: [
-    {h:'だ',k:'ダ',r:'da'}, {h:'ぢ',k:'ヂ',r:'ji'},
-    {h:'づ',k:'ヅ',r:'zu'}, {h:'で',k:'デ',r:'de'}, {h:'ど',k:'ド',r:'do'} ]},
-  { label: 'ば行', cells: [
-    {h:'ば',k:'バ',r:'ba'}, {h:'び',k:'ビ',r:'bi'},
-    {h:'ぶ',k:'ブ',r:'bu'}, {h:'べ',k:'ベ',r:'be'}, {h:'ぼ',k:'ボ',r:'bo'} ]},
-  { label: '半濁音 ぱ行', cells: [
-    {h:'ぱ',k:'パ',r:'pa'}, {h:'ぴ',k:'ピ',r:'pi'},
-    {h:'ぷ',k:'プ',r:'pu'}, {h:'ぺ',k:'ペ',r:'pe'}, {h:'ぽ',k:'ポ',r:'po'} ]},
 ];
 
 function buildGojuuonHTML() {
   return GOJUUON_DATA.map(section => {
-    const isDakuten    = section.label.includes('濁音') && !section.label.includes('半濁音');
-    const isHandakuten = section.label.includes('半濁音');
-    const group = isDakuten ? 'dakuten' : isHandakuten ? 'handakuten' : '';
-    const groupAttr  = group ? ` data-group="${group}"` : '';
-    const hiddenClass = group ? ' gojuuon-group-hidden' : '';
+    let label = section.label;
+    if (_dakutenMode === 'dakuten'    && section.dakuLabel)    label = section.dakuLabel;
+    if (_dakutenMode === 'handakuten' && section.handakuLabel) label = section.handakuLabel;
     const cells = section.cells.map(c => {
       if (!c) return '<div class="gojuuon-cell empty"></div>';
-      return `<div class="gojuuon-cell" onclick="gojuuonSpeak('${c.r}','${c.h}')">
+      let a = c;
+      if (_dakutenMode === 'dakuten'    && c.daku)    a = {...c, ...c.daku};
+      if (_dakutenMode === 'handakuten' && c.handaku) a = {...c, ...c.handaku};
+      const speakChar = _katakanaMode ? a.k : a.h;
+      let srcHtml = '';
+      if (c.src) {
+        const [sh, sk] = c.src.split('/');
+        srcHtml = `<div class="gojuuon-src"><span class="src-h">${sh}</span><span class="src-sep">/</span><span class="src-k">${sk||''}</span></div>`;
+      }
+      return `<div class="gojuuon-cell" onclick="gojuuonSpeak('${a.r}','${speakChar}')">
         <div class="gojuuon-pair">
-          <span class="gojuuon-h">${c.h}</span>
-          <span class="gojuuon-k">${c.k}</span>
+          <span class="gojuuon-h">${a.h}</span>
+          <span class="gojuuon-k">${a.k}</span>
         </div>
-        <div class="gojuuon-r">${c.r}</div>
-        ${c.src ? `<div class="gojuuon-src">${c.src}</div>` : ''}
+        <div class="gojuuon-r">${a.r}</div>
+        ${srcHtml}
       </div>`;
     }).join('');
-    return `<div class="gojuuon-section-title${hiddenClass}"${groupAttr}>${section.label}</div>
-      <div class="gojuuon-cells${hiddenClass}"${groupAttr}>${cells}</div>`;
+    return `<div class="gojuuon-section-title">${label}</div>
+      <div class="gojuuon-cells">${cells}</div>`;
   }).join('');
 }
 
+function renderGojuuon() {
+  document.getElementById('gojuuon-scroll').innerHTML = buildGojuuonHTML();
+  document.getElementById('gojuuon-overlay').classList.toggle('katakana-mode', _katakanaMode);
+}
+
+function toggleKatakanaMode() {
+  _katakanaMode = !_katakanaMode;
+  document.getElementById('chip-katakana').classList.toggle('active', _katakanaMode);
+  renderGojuuon();
+}
+
 function toggleGojuuonGroup(group) {
-  const chip = document.getElementById('chip-' + group);
-  const isActive = chip.classList.toggle('active');
-  document.querySelectorAll(`[data-group="${group}"]`).forEach(el => {
-    el.classList.toggle('gojuuon-group-hidden', !isActive);
-  });
+  const wasActive = _dakutenMode === group;
+  _dakutenMode = wasActive ? null : group;
+  ['dakuten','handakuten'].forEach(g =>
+    document.getElementById('chip-' + g).classList.toggle('active', _dakutenMode === g)
+  );
+  renderGojuuon();
 }
 
 function openGojuuon() {
-  const overlay = document.getElementById('gojuuon-overlay');
-  const scroll  = document.getElementById('gojuuon-scroll');
-  scroll.innerHTML = buildGojuuonHTML();
-  // reset chips
-  ['dakuten','handakuten'].forEach(g => {
-    document.getElementById('chip-' + g).classList.remove('active');
-  });
-  overlay.classList.add('open');
+  _katakanaMode = false;
+  _dakutenMode  = null;
+  ['katakana','dakuten','handakuten'].forEach(g =>
+    document.getElementById('chip-' + g).classList.remove('active')
+  );
+  renderGojuuon();
+  document.getElementById('gojuuon-overlay').classList.add('open');
   const btn = document.getElementById('vocab-gojuuon-btn');
   if (btn) btn.classList.add('open');
 }
