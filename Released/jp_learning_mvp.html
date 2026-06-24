@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.80
+          v0.14.81
         </div>
 
       </div>
@@ -4041,6 +4041,11 @@ function loadTheme() {
   function getActivePage() { return document.querySelector('.page.active'); }
 
   function setIndicator(pullDist) {
+    const page = getActivePage();
+    if (page && page.id === 'page-quiz') {
+      page.style.transition = 'none';
+      page.style.transform = `translateY(${Math.min(pullDist, THRESHOLD)}px)`;
+    }
     if (pullDist < ANIM_START) return;
     const active = pullDist - ANIM_START;
     const range  = THRESHOLD - ANIM_START;
@@ -4051,11 +4056,6 @@ function loadTheme() {
     indicator.style.opacity = Math.min(capped / 20, 1);
     const lit = Math.floor(capped / (range / SEGS));
     segs.forEach((s, i) => { if (s) s.style.opacity = i < lit ? '1' : '0.15'; });
-    const page = getActivePage();
-    if (page && page.id === 'page-quiz') {
-      page.style.transition = 'none';
-      page.style.transform = `translateY(${Math.min(pullDist, THRESHOLD)}px)`;
-    }
   }
 
   function resetIndicator() {
