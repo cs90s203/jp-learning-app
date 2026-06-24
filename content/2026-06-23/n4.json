@@ -620,159 +620,198 @@
   "vocab": {
     "来月": {
       "meaning": "下個月",
-      "romaji": "raigetsu"
+      "romaji": "raigetsu",
+      "reading": "らいげつ"
     },
     "友達": {
       "meaning": "朋友",
-      "romaji": "tomodachi"
+      "romaji": "tomodachi",
+      "reading": "ともだち"
     },
     "京都": {
       "meaning": "京都（城市名）",
-      "romaji": "kyouto"
+      "romaji": "kyouto",
+      "reading": "きょうと"
     },
     "旅行": {
       "meaning": "旅行",
-      "romaji": "ryokou"
+      "romaji": "ryokou",
+      "reading": "りょこう"
     },
     "行く": {
       "meaning": "去",
-      "romaji": "iku"
+      "romaji": "iku",
+      "reading": "いく"
     },
     "予定": {
       "meaning": "預定、計畫",
-      "romaji": "yotei"
+      "romaji": "yotei",
+      "reading": "よてい"
     },
     "古い": {
       "meaning": "舊的、古老的",
-      "romaji": "furui"
+      "romaji": "furui",
+      "reading": "ふるい"
     },
     "寺": {
       "meaning": "寺廟",
-      "romaji": "tera"
+      "romaji": "tera",
+      "reading": "おてら"
     },
     "神社": {
       "meaning": "神社",
-      "romaji": "jinja"
+      "romaji": "jinja",
+      "reading": "じんじゃ"
     },
     "たくさん": {
       "meaning": "很多",
-      "romaji": "takusan"
+      "romaji": "takusan",
+      "reading": "たくさん"
     },
     "ある": {
       "meaning": "有（存在）",
-      "romaji": "aru"
+      "romaji": "aru",
+      "reading": "ある"
     },
     "ぜひ": {
       "meaning": "務必、一定",
-      "romaji": "zehi"
+      "romaji": "zehi",
+      "reading": "ぜひ"
     },
     "見る": {
       "meaning": "看、參觀",
-      "romaji": "miru"
+      "romaji": "miru",
+      "reading": "る"
     },
     "みる": {
       "meaning": "試著～（補助動詞）",
-      "romaji": "miru"
+      "romaji": "miru",
+      "reading": "みる"
     },
     "思う": {
       "meaning": "認為、覺得",
-      "romaji": "omou"
+      "romaji": "omou",
+      "reading": "おもう"
     },
     "いる": {
       "meaning": "（某狀態）正在進行",
-      "romaji": "iru"
+      "romaji": "iru",
+      "reading": "いる"
     },
     "観光": {
       "meaning": "觀光",
-      "romaji": "kankou"
+      "romaji": "kankou",
+      "reading": "かんこう"
     },
     "する": {
       "meaning": "做",
-      "romaji": "suru"
+      "romaji": "suru",
+      "reading": "する"
     },
     "おいしい": {
       "meaning": "好吃的",
-      "romaji": "oishii"
+      "romaji": "oishii",
+      "reading": "おいしい"
     },
     "もの": {
       "meaning": "東西、物品",
-      "romaji": "mono"
+      "romaji": "mono",
+      "reading": "もの"
     },
     "食べる": {
       "meaning": "吃",
-      "romaji": "taberu"
+      "romaji": "taberu",
+      "reading": "たべる"
     },
     "つもり": {
       "meaning": "打算",
-      "romaji": "tsumori"
+      "romaji": "tsumori",
+      "reading": "つもり"
     },
     "着物": {
       "meaning": "和服",
-      "romaji": "kimono"
+      "romaji": "kimono",
+      "reading": "きもの"
     },
     "着る": {
       "meaning": "穿（衣服）",
-      "romaji": "kiru"
+      "romaji": "kiru",
+      "reading": "る"
     },
     "こと": {
       "meaning": "事情（名詞化）",
-      "romaji": "koto"
+      "romaji": "koto",
+      "reading": "こと"
     },
     "できる": {
       "meaning": "能夠、可以",
-      "romaji": "dekiru"
+      "romaji": "dekiru",
+      "reading": "できる"
     },
     "ホテル": {
       "meaning": "飯店",
-      "romaji": "hoteru"
+      "romaji": "hoteru",
+      "reading": "ホテル"
     },
     "予約": {
       "meaning": "預訂",
-      "romaji": "yoyaku"
+      "romaji": "yoyaku",
+      "reading": "よやく"
     },
     "くれる": {
       "meaning": "（對方）給予",
-      "romaji": "kureru"
+      "romaji": "kureru",
+      "reading": "くれる"
     },
     "わたし": {
       "meaning": "我",
-      "romaji": "watashi"
+      "romaji": "watashi",
+      "reading": "わたし"
     },
     "交通": {
       "meaning": "交通",
-      "romaji": "koutsuu"
+      "romaji": "koutsuu",
+      "reading": "こうつう"
     },
     "調べる": {
       "meaning": "調查、查詢",
-      "romaji": "shiraberu"
+      "romaji": "shiraberu",
+      "reading": "しらべる"
     },
     "三日間": {
       "meaning": "三天期間",
-      "romaji": "mikkakan"
+      "romaji": "mikkakan",
+      "reading": "みっかかん"
     },
     "計画": {
       "meaning": "計畫",
-      "romaji": "keikaku"
+      "romaji": "keikaku",
+      "reading": "けいかく"
     },
     "しっかり": {
       "meaning": "紮實地、好好地",
-      "romaji": "shikkari"
+      "romaji": "shikkari",
+      "reading": "しっかり"
     },
     "立てる": {
       "meaning": "制定（計畫）",
-      "romaji": "tateru"
+      "romaji": "tateru",
+      "reading": "たる"
     },
     "今": {
       "meaning": "現在",
-      "romaji": "ima"
+      "romaji": "ima",
+      "reading": "いま"
     },
     "楽しみ": {
       "meaning": "期待、樂趣",
-      "romaji": "tanoshimi"
+      "romaji": "tanoshimi",
+      "reading": "たのしみ"
     },
     "とても": {
       "meaning": "非常",
-      "romaji": "totemo"
+      "romaji": "totemo",
+      "reading": "とても"
     }
   },
   "particles": {

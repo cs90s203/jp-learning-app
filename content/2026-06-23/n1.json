@@ -1484,443 +1484,553 @@
   "vocab": {
     "日本": {
       "meaning": "日本",
-      "romaji": "nihon"
+      "romaji": "nihon",
+      "reading": "にほん"
     },
     "直面": {
       "meaning": "直面、面對",
-      "romaji": "chokumen"
+      "romaji": "chokumen",
+      "reading": "ちょくめん"
     },
     "する": {
       "meaning": "做",
-      "romaji": "suru"
+      "romaji": "suru",
+      "reading": "する"
     },
     "最大": {
       "meaning": "最大、最重要",
-      "romaji": "saidai"
+      "romaji": "saidai",
+      "reading": "さいだい"
     },
     "社会的課題": {
       "meaning": "社會課題",
-      "romaji": "shakaiteki kadai"
+      "romaji": "shakaiteki kadai",
+      "reading": "しゃかいてきかだい"
     },
     "一つ": {
       "meaning": "一個、其中之一",
-      "romaji": "hitotsu"
+      "romaji": "hitotsu",
+      "reading": "ひとつ"
     },
     "少子高齢化": {
       "meaning": "少子高齡化",
-      "romaji": "shoushi koureika"
+      "romaji": "shoushi koureika",
+      "reading": "しょうしこうれいか"
     },
     "伴う": {
       "meaning": "伴隨",
-      "romaji": "tomonau"
+      "romaji": "tomonau",
+      "reading": "ともなう"
     },
     "人口構造": {
       "meaning": "人口結構",
-      "romaji": "jinkou kouzou"
+      "romaji": "jinkou kouzou",
+      "reading": "じんこうこうぞう"
     },
     "変容": {
       "meaning": "變容、改變面貌",
-      "romaji": "henyou"
+      "romaji": "henyou",
+      "reading": "へんよう"
     },
     "ある": {
       "meaning": "是（書面語斷定）",
-      "romaji": "aru"
+      "romaji": "aru",
+      "reading": "ある"
     },
     "出生率": {
       "meaning": "出生率",
-      "romaji": "shusshou ritsu"
+      "romaji": "shusshou ritsu",
+      "reading": "しゅっしょうりつ"
     },
     "低下": {
       "meaning": "降低、下降",
-      "romaji": "teika"
+      "romaji": "teika",
+      "reading": "ていか"
     },
     "平均寿命": {
       "meaning": "平均壽命",
-      "romaji": "heikin jumyou"
+      "romaji": "heikin jumyou",
+      "reading": "へいきんじゅみょう"
     },
     "延伸": {
       "meaning": "延長",
-      "romaji": "enshin"
+      "romaji": "enshin",
+      "reading": "えんしん"
     },
     "相俟つ": {
       "meaning": "相互疊加、共同作用",
-      "romaji": "ai matsu"
+      "romaji": "ai matsu",
+      "reading": "あいまつ"
     },
     "生産年齢人口": {
       "meaning": "生產年齡人口（15-64歲）",
-      "romaji": "seisan nenrei jinkou"
+      "romaji": "seisan nenrei jinkou",
+      "reading": "せいさんねんれいじんこう"
     },
     "急速": {
       "meaning": "急速",
-      "romaji": "kyuusoku"
+      "romaji": "kyuusoku",
+      "reading": "きゅうそく"
     },
     "縮小": {
       "meaning": "縮小、減少",
-      "romaji": "shukushou"
+      "romaji": "shukushou",
+      "reading": "しゅくしょう"
     },
     "もたらす": {
       "meaning": "帶來、導致",
-      "romaji": "motarasu"
+      "romaji": "motarasu",
+      "reading": "もたらす"
     },
     "おる": {
       "meaning": "（書面語）正在",
-      "romaji": "oru"
+      "romaji": "oru",
+      "reading": "おる"
     },
     "社会保障制度": {
       "meaning": "社會保障制度",
-      "romaji": "shakai hoshou seido"
+      "romaji": "shakai hoshou seido",
+      "reading": "しゃかいほしょうせいど"
     },
     "持続可能性": {
       "meaning": "永續可能性",
-      "romaji": "jizoku kanousei"
+      "romaji": "jizoku kanousei",
+      "reading": "じぞくかのうせい"
     },
     "根本": {
       "meaning": "根本、根源",
-      "romaji": "konpon"
+      "romaji": "konpon",
+      "reading": "こんぽん"
     },
     "問う": {
       "meaning": "質問、問責",
-      "romaji": "tou"
+      "romaji": "tou",
+      "reading": "とう"
     },
     "れる": {
       "meaning": "被動助動詞",
-      "romaji": "reru"
+      "romaji": "reru",
+      "reading": "れる"
     },
     "事態": {
       "meaning": "事態、局面",
-      "romaji": "jitai"
+      "romaji": "jitai",
+      "reading": "じたい"
     },
     "なる": {
       "meaning": "變成",
-      "romaji": "naru"
+      "romaji": "naru",
+      "reading": "なる"
     },
     "いる": {
       "meaning": "（狀態）持續",
-      "romaji": "iru"
+      "romaji": "iru",
+      "reading": "いる"
     },
     "年金": {
       "meaning": "年金、退休金",
-      "romaji": "nenkin"
+      "romaji": "nenkin",
+      "reading": "ねんきん"
     },
     "医療": {
       "meaning": "醫療",
-      "romaji": "iryou"
+      "romaji": "iryou",
+      "reading": "いりょう"
     },
     "介護": {
       "meaning": "照護",
-      "romaji": "kaigo"
+      "romaji": "kaigo",
+      "reading": "かいご"
     },
     "各": {
       "meaning": "各個、每個",
-      "romaji": "kaku"
+      "romaji": "kaku",
+      "reading": "かく"
     },
     "給付費": {
       "meaning": "給付費用",
-      "romaji": "kyuufu hi"
+      "romaji": "kyuufu hi",
+      "reading": "きゅうふひ"
     },
     "増大": {
       "meaning": "增大",
-      "romaji": "zoudai"
+      "romaji": "zoudai",
+      "reading": "ぞうだい"
     },
     "一方": {
       "meaning": "另一方面（用於對比）",
-      "romaji": "ippou"
+      "romaji": "ippou",
+      "reading": "いっぽう"
     },
     "それ": {
       "meaning": "那個",
-      "romaji": "sore"
+      "romaji": "sore",
+      "reading": "それ"
     },
     "支える": {
       "meaning": "支撐、支持",
-      "romaji": "sasaeru"
+      "romaji": "sasaeru",
+      "reading": "ささえる"
     },
     "現役世代": {
       "meaning": "在職世代",
-      "romaji": "geneki sedai"
+      "romaji": "geneki sedai",
+      "reading": "げんえきせだい"
     },
     "負担": {
       "meaning": "負擔",
-      "romaji": "futan"
+      "romaji": "futan",
+      "reading": "ふたん"
     },
     "臨界点": {
       "meaning": "臨界點",
-      "romaji": "rinkaiten"
+      "romaji": "rinkaiten",
+      "reading": "りんかいてん"
     },
     "達する": {
       "meaning": "達到",
-      "romaji": "tassuru"
+      "romaji": "tassuru",
+      "reading": "たっする"
     },
     "つつ": {
       "meaning": "（書面語）正在進行中",
-      "romaji": "tsutsu"
+      "romaji": "tsutsu",
+      "reading": "つつ"
     },
     "状況": {
       "meaning": "狀況",
-      "romaji": "joukyou"
+      "romaji": "joukyou",
+      "reading": "じょうきょう"
     },
     "対する": {
       "meaning": "針對、對應",
-      "romaji": "taisuru"
+      "romaji": "taisuru",
+      "reading": "たいする"
     },
     "政府": {
       "meaning": "政府",
-      "romaji": "seifu"
+      "romaji": "seifu",
+      "reading": "せいふ"
     },
     "育児支援": {
       "meaning": "育兒支援",
-      "romaji": "ikuji shien"
+      "romaji": "ikuji shien",
+      "reading": "いくじしえん"
     },
     "拡充": {
       "meaning": "擴充、加強",
-      "romaji": "kakujuu"
+      "romaji": "kakujuu",
+      "reading": "かくじゅう"
     },
     "働き方改革": {
       "meaning": "工作方式改革",
-      "romaji": "hataraki kata kaikaku"
+      "romaji": "hataraki kata kaikaku",
+      "reading": "はたらきかたかいかく"
     },
     "推進": {
       "meaning": "推進",
-      "romaji": "suishin"
+      "romaji": "suishin",
+      "reading": "すいしん"
     },
     "効果": {
       "meaning": "效果",
-      "romaji": "kouka"
+      "romaji": "kouka",
+      "reading": "こうか"
     },
     "について": {
       "meaning": "關於～",
-      "romaji": "ni tsuite"
+      "romaji": "ni tsuite",
+      "reading": "について"
     },
     "識者": {
       "meaning": "有識之士、專家",
-      "romaji": "shikisha"
+      "romaji": "shikisha",
+      "reading": "しきしゃ"
     },
     "間": {
       "meaning": "之間",
-      "romaji": "aida"
+      "romaji": "aida",
+      "reading": "あいだ"
     },
     "評価": {
       "meaning": "評價",
-      "romaji": "hyouka"
+      "romaji": "hyouka",
+      "reading": "ひょうか"
     },
     "分かれる": {
       "meaning": "分歧、各持己見",
-      "romaji": "wakareru"
+      "romaji": "wakareru",
+      "reading": "わかれる"
     },
     "構造的問題": {
       "meaning": "結構性問題",
-      "romaji": "kouzouteki mondai"
+      "romaji": "kouzouteki mondai",
+      "reading": "こうぞうてきもんだい"
     },
     "根底": {
       "meaning": "根底、根基",
-      "romaji": "kontei"
+      "romaji": "kontei",
+      "reading": "こんてい"
     },
     "経済的不安定性": {
       "meaning": "經濟不穩定性",
-      "romaji": "keizaiteki fuanteisei"
+      "romaji": "keizaiteki fuanteisei",
+      "reading": "けいざいてきふあんていせい"
     },
     "高まる": {
       "meaning": "高漲、提升",
-      "romaji": "takamaru"
+      "romaji": "takamaru",
+      "reading": "たかまる"
     },
     "長時間労働": {
       "meaning": "長時間工作",
-      "romaji": "chojikan roudou"
+      "romaji": "chojikan roudou",
+      "reading": "ちょうじかんろうどう"
     },
     "是": {
       "meaning": "認為正確（肯定）",
-      "romaji": "ze"
+      "romaji": "ze",
+      "reading": "ぜ"
     },
     "職場文化": {
       "meaning": "職場文化",
-      "romaji": "shokuba bunka"
+      "romaji": "shokuba bunka",
+      "reading": "しょくばぶんか"
     },
     "さらには": {
       "meaning": "進而、更有甚者",
-      "romaji": "sara ni wa"
+      "romaji": "sara ni wa",
+      "reading": "さらには"
     },
     "固定的": {
       "meaning": "固定的、刻板的",
-      "romaji": "koteiteki"
+      "romaji": "koteiteki",
+      "reading": "こていてき"
     },
     "性別役割意識": {
       "meaning": "性別角色意識",
-      "romaji": "seibetsu yakuwari ishiki"
+      "romaji": "seibetsu yakuwari ishiki",
+      "reading": "せいべつやくわりいしき"
     },
     "複合的": {
       "meaning": "複合的、多重的",
-      "romaji": "fukugouteki"
+      "romaji": "fukugouteki",
+      "reading": "ふくごうてき"
     },
     "絡み合う": {
       "meaning": "糾纏、相互交織",
-      "romaji": "karami au"
+      "romaji": "karami au",
+      "reading": "からみあう"
     },
     "したがって": {
       "meaning": "因此（書面語）",
-      "romaji": "shitagatte"
+      "romaji": "shitagatte",
+      "reading": "したがって"
     },
     "回復": {
       "meaning": "恢復",
-      "romaji": "kaifuku"
+      "romaji": "kaifuku",
+      "reading": "かいふく"
     },
     "個別": {
       "meaning": "個別的",
-      "romaji": "kobetsu"
+      "romaji": "kobetsu",
+      "reading": "こべつ"
     },
     "支援策": {
       "meaning": "支援措施",
-      "romaji": "shien saku"
+      "romaji": "shien saku",
+      "reading": "しえんさく"
     },
     "超える": {
       "meaning": "超越",
-      "romaji": "koeru"
+      "romaji": "koeru",
+      "reading": "こえる"
     },
     "社会規範": {
       "meaning": "社會規範",
-      "romaji": "shakai kihan"
+      "romaji": "shakai kihan",
+      "reading": "しゃかいきはん"
     },
     "そのもの": {
       "meaning": "本身",
-      "romaji": "sono mono"
+      "romaji": "sono mono",
+      "reading": "そのもの"
     },
     "変革": {
       "meaning": "變革",
-      "romaji": "henkaku"
+      "romaji": "henkaku",
+      "reading": "へんかく"
     },
     "不可欠": {
       "meaning": "不可或缺",
-      "romaji": "fukaketsu"
+      "romaji": "fukaketsu",
+      "reading": "ふかけつ"
     },
     "という": {
       "meaning": "所謂的",
-      "romaji": "to iu"
+      "romaji": "to iu",
+      "reading": "という"
     },
     "論点": {
       "meaning": "論點",
-      "romaji": "ronten"
+      "romaji": "ronten",
+      "reading": "ろんてん"
     },
     "浮上": {
       "meaning": "浮現、浮出水面",
-      "romaji": "fujou"
+      "romaji": "fujou",
+      "reading": "ふじょう"
     },
     "外国人労働者": {
       "meaning": "外籍勞工",
-      "romaji": "gaikokujin roudousha"
+      "romaji": "gaikokujin roudousha",
+      "reading": "がいこくじんろうどうしゃ"
     },
     "受け入れ": {
       "meaning": "接受、接納",
-      "romaji": "ukeirere"
+      "romaji": "ukeirere",
+      "reading": "うけいれ"
     },
     "拡大": {
       "meaning": "擴大",
-      "romaji": "kakudai"
+      "romaji": "kakudai",
+      "reading": "かくだい"
     },
     "文化的摩擦": {
       "meaning": "文化摩擦",
-      "romaji": "bunkanteki masatsu"
+      "romaji": "bunkanteki masatsu",
+      "reading": "ぶんかてきまさつ"
     },
     "社会統合": {
       "meaning": "社會整合",
-      "romaji": "shakai tougou"
+      "romaji": "shakai tougou",
+      "reading": "しゃかいとうごう"
     },
     "困難性": {
       "meaning": "困難性",
-      "romaji": "konnansei"
+      "romaji": "konnansei",
+      "reading": "こんなんせい"
     },
     "慎重": {
       "meaning": "謹慎",
-      "romaji": "shinchou"
+      "romaji": "shinchou",
+      "reading": "しんちょう"
     },
     "議論": {
       "meaning": "議論、討論",
-      "romaji": "giron"
+      "romaji": "giron",
+      "reading": "ぎろん"
     },
     "求める": {
       "meaning": "要求",
-      "romaji": "motomeru"
+      "romaji": "motomeru",
+      "reading": "もとめる"
     },
     "られる": {
       "meaning": "被動/可能助動詞",
-      "romaji": "rareru"
+      "romaji": "rareru",
+      "reading": "られる"
     },
     "人口問題": {
       "meaning": "人口問題",
-      "romaji": "jinkou mondai"
+      "romaji": "jinkou mondai",
+      "reading": "じんこうもんだい"
     },
     "とどまる": {
       "meaning": "止於",
-      "romaji": "todomaru"
+      "romaji": "todomaru",
+      "reading": "とどまる"
     },
     "ず": {
       "meaning": "否定助動詞（書面語）",
-      "romaji": "zu"
+      "romaji": "zu",
+      "reading": "ず"
     },
     "経済競争力": {
       "meaning": "經濟競爭力",
-      "romaji": "keizai kyousouryoku"
+      "romaji": "keizai kyousouryoku",
+      "reading": "けいざいきょうそうりょく"
     },
     "地域社会": {
       "meaning": "地區社會、社區",
-      "romaji": "chiiki shakai"
+      "romaji": "chiiki shakai",
+      "reading": "ちいきしゃかい"
     },
     "持続性": {
       "meaning": "持續性",
-      "romaji": "jizokusei"
+      "romaji": "jizokusei",
+      "reading": "じぞくせい"
     },
     "そして": {
       "meaning": "然後、而且",
-      "romaji": "soshite"
+      "romaji": "soshite",
+      "reading": "そして"
     },
     "国家": {
       "meaning": "國家",
-      "romaji": "kokka"
+      "romaji": "kokka",
+      "reading": "こっか"
     },
     "アイデンティティ": {
       "meaning": "認同、身分認同",
-      "romaji": "aidentiti"
+      "romaji": "aidentiti",
+      "reading": "アイデンティティ"
     },
     "まで": {
       "meaning": "甚至到～（程度）",
-      "romaji": "made"
+      "romaji": "made",
+      "reading": "まで"
     },
     "波及": {
       "meaning": "波及、擴散影響",
-      "romaji": "hakyuu"
+      "romaji": "hakyuu",
+      "reading": "はきゅう"
     },
     "複合的課題": {
       "meaning": "複合性課題",
-      "romaji": "fukugouteki kadai"
+      "romaji": "fukugouteki kadai",
+      "reading": "ふくごうてきかだい"
     },
     "解決": {
       "meaning": "解決",
-      "romaji": "kaiketsu"
+      "romaji": "kaiketsu",
+      "reading": "かいけつ"
     },
     "世代": {
       "meaning": "世代",
-      "romaji": "sedai"
+      "romaji": "sedai",
+      "reading": "せだい"
     },
     "対話": {
       "meaning": "對話",
-      "romaji": "taiwa"
+      "romaji": "taiwa",
+      "reading": "たいわ"
     },
     "長期的": {
       "meaning": "長期的",
-      "romaji": "choukiteki"
+      "romaji": "choukiteki",
+      "reading": "ちょうきてき"
     },
     "視野": {
       "meaning": "視野",
-      "romaji": "shiya"
+      "romaji": "shiya",
+      "reading": "しや"
     },
     "立つ": {
       "meaning": "立足、站在",
-      "romaji": "tatsu"
+      "romaji": "tatsu",
+      "reading": "たつ"
     },
     "政策立案": {
       "meaning": "政策制定",
-      "romaji": "seisaku ritsuan"
+      "romaji": "seisaku ritsuan",
+      "reading": "せいさくりつあん"
     },
     "よう": {
       "meaning": "推量助動詞（書面語），表示「應該、大概」",
-      "romaji": "you"
+      "romaji": "you",
+      "reading": "よう"
     }
   },
   "particles": {

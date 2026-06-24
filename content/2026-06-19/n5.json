@@ -181,72 +181,86 @@
     "学校": {
       "meaning": "學校",
       "romaji": "gakkou",
-      "example": "学校の食堂でお昼ごはんを食べました。"
+      "example": "学校の食堂でお昼ごはんを食べました。",
+      "reading": "がっこう"
     },
     "食堂": {
       "meaning": "食堂・餐廳",
       "romaji": "shokudou",
-      "example": "学校の食堂でお昼ごはんを食べました。"
+      "example": "学校の食堂でお昼ごはんを食べました。",
+      "reading": "しょくどう"
     },
     "お昼": {
       "meaning": "中午",
       "romaji": "ohiru",
-      "example": "学校の食堂でお昼ごはんを食べました。"
+      "example": "学校の食堂でお昼ごはんを食べました。",
+      "reading": "おひる"
     },
     "ご飯": {
       "meaning": "飯・餐食",
       "romaji": "gohan",
-      "example": "学校の食堂でお昼ごはんを食べました。"
+      "example": "学校の食堂でお昼ごはんを食べました。",
+      "reading": "ごはん"
     },
     "食べる": {
       "meaning": "吃",
       "romaji": "taberu",
-      "example": "学校の食堂でお昼ごはんを食べました。"
+      "example": "学校の食堂でお昼ごはんを食べました。",
+      "reading": "たべる"
     },
     "今日": {
       "meaning": "今天",
       "romaji": "kyou",
-      "example": "今日のランチはカレーでした。"
+      "example": "今日のランチはカレーでした。",
+      "reading": "きょう"
     },
     "ランチ": {
       "meaning": "午餐",
       "romaji": "ranchi",
-      "example": "今日のランチはカレーでした。"
+      "example": "今日のランチはカレーでした。",
+      "reading": "ランチ"
     },
     "カレー": {
       "meaning": "咖哩",
       "romaji": "karee",
-      "example": "今日のランチはカレーでした。"
+      "example": "今日のランチはカレーでした。",
+      "reading": "カレー"
     },
     "友達": {
       "meaning": "朋友",
       "romaji": "tomodachi",
-      "example": "友達と一緒に食べたのでとても楽しかったです。"
+      "example": "友達と一緒に食べたのでとても楽しかったです。",
+      "reading": "ともだち"
     },
     "一緒に": {
       "meaning": "一起",
       "romaji": "issho ni",
-      "example": "友達と一緒に食べたのでとても楽しかったです。"
+      "example": "友達と一緒に食べたのでとても楽しかったです。",
+      "reading": "いっしょに"
     },
     "とても": {
       "meaning": "非常",
       "romaji": "totemo",
-      "example": "友達と一緒に食べたのでとても楽しかったです。"
+      "example": "友達と一緒に食べたのでとても楽しかったです。",
+      "reading": "とても"
     },
     "楽しい": {
       "meaning": "快樂・開心",
       "romaji": "tanoshii",
-      "example": "友達と一緒に食べたのでとても楽しかったです。"
+      "example": "友達と一緒に食べたのでとても楽しかったです。",
+      "reading": "たのしい"
     },
     "また": {
       "meaning": "再次",
       "romaji": "mata",
-      "example": "また来たいです。"
+      "example": "また来たいです。",
+      "reading": "また"
     },
     "来る": {
       "meaning": "來",
       "romaji": "kuru",
-      "example": "また来たいです。"
+      "example": "また来たいです。",
+      "reading": "くる"
     }
   },
   "particles": {

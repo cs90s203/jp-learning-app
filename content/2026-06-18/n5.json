@@ -187,77 +187,92 @@
     "私": {
       "meaning": "我",
       "romaji": "watashi",
-      "example": "私の家族は四人います。"
+      "example": "私の家族は四人います。",
+      "reading": "わたし"
     },
     "家族": {
       "meaning": "家人",
       "romaji": "kazoku",
-      "example": "私の家族は四人います。"
+      "example": "私の家族は四人います。",
+      "reading": "かぞく"
     },
     "四人": {
       "meaning": "四個人",
       "romaji": "yonin",
-      "example": "私の家族は四人います。"
+      "example": "私の家族は四人います。",
+      "reading": "よにん"
     },
     "いる": {
       "meaning": "有・存在（人/動物）",
       "romaji": "iru",
-      "example": "私の家族は四人います。"
+      "example": "私の家族は四人います。",
+      "reading": "いる"
     },
     "父": {
       "meaning": "父親",
       "romaji": "chichi",
-      "example": "父は毎朝早く起きます。"
+      "example": "父は毎朝早く起きます。",
+      "reading": "ちち"
     },
     "母": {
       "meaning": "母親",
       "romaji": "haha",
-      "example": "父と母と妹と私です。"
+      "example": "父と母と妹と私です。",
+      "reading": "はは"
     },
     "妹": {
       "meaning": "妹妹",
       "romaji": "imouto",
-      "example": "父と母と妹と私です。"
+      "example": "父と母と妹と私です。",
+      "reading": "いもうと"
     },
     "毎朝": {
       "meaning": "每天早上",
       "romaji": "maiasa",
-      "example": "父は毎朝早く起きます。"
+      "example": "父は毎朝早く起きます。",
+      "reading": "まいあさ"
     },
     "早い": {
       "meaning": "早",
       "romaji": "hayai",
-      "example": "父は毎朝早く起きます。"
+      "example": "父は毎朝早く起きます。",
+      "reading": "はやい"
     },
     "起きる": {
       "meaning": "起床",
       "romaji": "okiru",
-      "example": "父は毎朝早く起きます。"
+      "example": "父は毎朝早く起きます。",
+      "reading": "おる"
     },
     "私たち": {
       "meaning": "我們",
       "romaji": "watashitachi",
-      "example": "私たちは毎晩一緒にご飯を食べます。"
+      "example": "私たちは毎晩一緒にご飯を食べます。",
+      "reading": "わたしたち"
     },
     "毎晩": {
       "meaning": "每天晚上",
       "romaji": "maiban",
-      "example": "私たちは毎晩一緒にご飯を食べます。"
+      "example": "私たちは毎晩一緒にご飯を食べます。",
+      "reading": "まいばん"
     },
     "一緒に": {
       "meaning": "一起",
       "romaji": "issho ni",
-      "example": "私たちは毎晩一緒にご飯を食べます。"
+      "example": "私たちは毎晩一緒にご飯を食べます。",
+      "reading": "いっしょに"
     },
     "ご飯": {
       "meaning": "飯・餐食",
       "romaji": "gohan",
-      "example": "私たちは毎晩一緒にご飯を食べます。"
+      "example": "私たちは毎晩一緒にご飯を食べます。",
+      "reading": "ごはん"
     },
     "食べる": {
       "meaning": "吃",
       "romaji": "taberu",
-      "example": "私たちは毎晩一緒にご飯を食べます。"
+      "example": "私たちは毎晩一緒にご飯を食べます。",
+      "reading": "たべる"
     }
   },
   "particles": {

@@ -1070,307 +1070,383 @@
   "vocab": {
     "近年": {
       "meaning": "近年",
-      "romaji": "kinnen"
+      "romaji": "kinnen",
+      "reading": "きんねん"
     },
     "テクノロジー": {
       "meaning": "科技、技術",
-      "romaji": "tekunorojii"
+      "romaji": "tekunorojii",
+      "reading": "テクノロジー"
     },
     "急速": {
       "meaning": "急速、迅速",
-      "romaji": "kyuusoku"
+      "romaji": "kyuusoku",
+      "reading": "きゅうそく"
     },
     "発展": {
       "meaning": "發展",
-      "romaji": "hatten"
+      "romaji": "hatten",
+      "reading": "はってん"
     },
     "により": {
       "meaning": "由於、透過（書面語）",
-      "romaji": "ni yori"
+      "romaji": "ni yori",
+      "reading": "により"
     },
     "働き方": {
       "meaning": "工作方式",
-      "romaji": "hataraki kata"
+      "romaji": "hataraki kata",
+      "reading": "はたらきかた"
     },
     "大きい": {
       "meaning": "大的、重大的",
-      "romaji": "ookii"
+      "romaji": "ookii",
+      "reading": "おおきい"
     },
     "変化": {
       "meaning": "變化",
-      "romaji": "henka"
+      "romaji": "henka",
+      "reading": "へんか"
     },
     "する": {
       "meaning": "做",
-      "romaji": "suru"
+      "romaji": "suru",
+      "reading": "する"
     },
     "いる": {
       "meaning": "（狀態）持續",
-      "romaji": "iru"
+      "romaji": "iru",
+      "reading": "いる"
     },
     "特に": {
       "meaning": "特別是",
-      "romaji": "toku ni"
+      "romaji": "toku ni",
+      "reading": "とくに"
     },
     "コロナ禍": {
       "meaning": "新冠疫情期間",
-      "romaji": "korona ka"
+      "romaji": "korona ka",
+      "reading": "ころなか"
     },
     "以降": {
       "meaning": "以降、此後",
-      "romaji": "ikou"
+      "romaji": "ikou",
+      "reading": "いこう"
     },
     "テレワーク": {
       "meaning": "遠端工作、居家辦公",
-      "romaji": "tereewaaku"
+      "romaji": "tereewaaku",
+      "reading": "テレワーク"
     },
     "広い": {
       "meaning": "廣泛的",
-      "romaji": "hiroi"
+      "romaji": "hiroi",
+      "reading": "ひろい"
     },
     "普及": {
       "meaning": "普及、推廣",
-      "romaji": "fukyuu"
+      "romaji": "fukyuu",
+      "reading": "ふきゅう"
     },
     "通勤時間": {
       "meaning": "通勤時間",
-      "romaji": "tsuukin jikan"
+      "romaji": "tsuukin jikan",
+      "reading": "つうきんじかん"
     },
     "削減": {
       "meaning": "削減",
-      "romaji": "sakugen"
+      "romaji": "sakugen",
+      "reading": "さくげん"
     },
     "地方移住": {
       "meaning": "移居地方（非都市）",
-      "romaji": "chihou ijuu"
+      "romaji": "chihou ijuu",
+      "reading": "ちほういじゅう"
     },
     "様々": {
       "meaning": "各種各樣的",
-      "romaji": "samazama"
+      "romaji": "samazama",
+      "reading": "さまざま"
     },
     "生活スタイル": {
       "meaning": "生活方式",
-      "romaji": "seikatsu sutairu"
+      "romaji": "seikatsu sutairu",
+      "reading": "せいかつすたいる"
     },
     "生まれる": {
       "meaning": "產生、誕生",
-      "romaji": "umareru"
+      "romaji": "umareru",
+      "reading": "うまれる"
     },
     "一方で": {
       "meaning": "另一方面",
-      "romaji": "ippou de"
+      "romaji": "ippou de",
+      "reading": "いっぽうで"
     },
     "対面": {
       "meaning": "面對面、對面",
-      "romaji": "taimen"
+      "romaji": "taimen",
+      "reading": "たいめん"
     },
     "コミュニケーション": {
       "meaning": "溝通、交流",
-      "romaji": "komyunikeeshon"
+      "romaji": "komyunikeeshon",
+      "reading": "コミュニケーション"
     },
     "減少": {
       "meaning": "減少",
-      "romaji": "genshou"
+      "romaji": "genshou",
+      "reading": "げんしょう"
     },
     "こと": {
       "meaning": "事情（名詞化）",
-      "romaji": "koto"
+      "romaji": "koto",
+      "reading": "こと"
     },
     "チーム": {
       "meaning": "團隊",
-      "romaji": "chiimu"
+      "romaji": "chiimu",
+      "reading": "チーム"
     },
     "連携": {
       "meaning": "協作、聯繫",
-      "romaji": "renkei"
+      "romaji": "renkei",
+      "reading": "れんけい"
     },
     "課題": {
       "meaning": "課題、問題",
-      "romaji": "kadai"
+      "romaji": "kadai",
+      "reading": "かだい"
     },
     "生じる": {
       "meaning": "產生、出現",
-      "romaji": "shoujiru"
+      "romaji": "shoujiru",
+      "reading": "しょうる"
     },
     "という": {
       "meaning": "所謂的、稱為～的",
-      "romaji": "to iu"
+      "romaji": "to iu",
+      "reading": "という"
     },
     "指摘": {
       "meaning": "指出、指摘",
-      "romaji": "shiteki"
+      "romaji": "shiteki",
+      "reading": "してき"
     },
     "ある": {
       "meaning": "有（存在）",
-      "romaji": "aru"
+      "romaji": "aru",
+      "reading": "ある"
     },
     "したがって": {
       "meaning": "因此（書面語）",
-      "romaji": "shitagatte"
+      "romaji": "shitagatte",
+      "reading": "したがって"
     },
     "多い": {
       "meaning": "多的",
-      "romaji": "ooi"
+      "romaji": "ooi",
+      "reading": "おおい"
     },
     "企業": {
       "meaning": "企業、公司",
-      "romaji": "kigyou"
+      "romaji": "kigyou",
+      "reading": "きぎょう"
     },
     "週": {
       "meaning": "週",
-      "romaji": "shuu"
+      "romaji": "shuu",
+      "reading": "しゅう"
     },
     "数日": {
       "meaning": "數天",
-      "romaji": "suujitsu"
+      "romaji": "suujitsu",
+      "reading": "すうじつ"
     },
     "出社": {
       "meaning": "到公司上班",
-      "romaji": "shussha"
+      "romaji": "shussha",
+      "reading": "しゅっしゃ"
     },
     "義務づける": {
       "meaning": "規定義務、強制要求",
-      "romaji": "gimu zukeru"
+      "romaji": "gimu zukeru",
+      "reading": "ぎむづける"
     },
     "ハイブリッド型": {
       "meaning": "混合型",
-      "romaji": "haiburiddo gata"
+      "romaji": "haiburiddo gata",
+      "reading": "はいぶりっどがた"
     },
     "勤務形態": {
       "meaning": "工作形式",
-      "romaji": "kinmu keitai"
+      "romaji": "kinmu keitai",
+      "reading": "きんむけいたい"
     },
     "採用": {
       "meaning": "採用、錄用",
-      "romaji": "saiyou"
+      "romaji": "saiyou",
+      "reading": "さいよう"
     },
     "なる": {
       "meaning": "變成",
-      "romaji": "naru"
+      "romaji": "naru",
+      "reading": "なる"
     },
     "また": {
       "meaning": "另外、也",
-      "romaji": "mata"
+      "romaji": "mata",
+      "reading": "また"
     },
     "フリーランス": {
       "meaning": "自由工作者",
-      "romaji": "furii ransu"
+      "romaji": "furii ransu",
+      "reading": "フリーランス"
     },
     "として": {
       "meaning": "作為～",
-      "romaji": "to shite"
+      "romaji": "to shite",
+      "reading": "として"
     },
     "働く": {
       "meaning": "工作",
-      "romaji": "hataraku"
+      "romaji": "hataraku",
+      "reading": "はたらく"
     },
     "人": {
       "meaning": "人",
-      "romaji": "hito"
+      "romaji": "hito",
+      "reading": "ひと"
     },
     "増加": {
       "meaning": "增加",
-      "romaji": "zouka"
+      "romaji": "zouka",
+      "reading": "ぞうか"
     },
     "おる": {
       "meaning": "（書面語）正在",
-      "romaji": "oru"
+      "romaji": "oru",
+      "reading": "おる"
     },
     "従来": {
       "meaning": "傳統、以往",
-      "romaji": "juurai"
+      "romaji": "juurai",
+      "reading": "じゅうらい"
     },
     "正社員": {
       "meaning": "正式員工",
-      "romaji": "seishain"
+      "romaji": "seishain",
+      "reading": "せいしゃいん"
     },
     "中心": {
       "meaning": "中心、核心",
-      "romaji": "chuushin"
+      "romaji": "chuushin",
+      "reading": "ちゅうしん"
     },
     "雇用": {
       "meaning": "雇用",
-      "romaji": "koyou"
+      "romaji": "koyou",
+      "reading": "こよう"
     },
     "から": {
       "meaning": "從～（起點）",
-      "romaji": "kara"
+      "romaji": "kara",
+      "reading": "から"
     },
     "多様": {
       "meaning": "多樣的",
-      "romaji": "tayou"
+      "romaji": "tayou",
+      "reading": "たよう"
     },
     "認める": {
       "meaning": "承認、允許",
-      "romaji": "mitomeru"
+      "romaji": "mitomeru",
+      "reading": "みとめる"
     },
     "られる": {
       "meaning": "被動/可能助動詞",
-      "romaji": "rareru"
+      "romaji": "rareru",
+      "reading": "られる"
     },
     "社会": {
       "meaning": "社會",
-      "romaji": "shakai"
+      "romaji": "shakai",
+      "reading": "しゃかい"
     },
     "移行": {
       "meaning": "移轉、過渡",
-      "romaji": "ikou"
+      "romaji": "ikou",
+      "reading": "いこう"
     },
     "つつ": {
       "meaning": "（書面語）正在進行中",
-      "romaji": "tsutsu"
+      "romaji": "tsutsu",
+      "reading": "つつ"
     },
     "対応": {
       "meaning": "應對、因應",
-      "romaji": "taiou"
+      "romaji": "taiou",
+      "reading": "たいおう"
     },
     "ため": {
       "meaning": "為了（目的）",
-      "romaji": "tame"
+      "romaji": "tame",
+      "reading": "ため"
     },
     "個人": {
       "meaning": "個人",
-      "romaji": "kojin"
+      "romaji": "kojin",
+      "reading": "こじん"
     },
     "スキルアップ": {
       "meaning": "提升技能",
-      "romaji": "sukiru appu"
+      "romaji": "sukiru appu",
+      "reading": "スキルアップ"
     },
     "自己管理能力": {
       "meaning": "自我管理能力",
-      "romaji": "jiko kanri nouryoku"
+      "romaji": "jiko kanri nouryoku",
+      "reading": "じこかんりのうりょく"
     },
     "ますます": {
       "meaning": "越來越、愈發",
-      "romaji": "masumasu"
+      "romaji": "masumasu",
+      "reading": "ますます"
     },
     "重要": {
       "meaning": "重要的",
-      "romaji": "juuyou"
+      "romaji": "juuyou",
+      "reading": "じゅうよう"
     },
     "側": {
       "meaning": "一方、方面",
-      "romaji": "gawa"
+      "romaji": "gawa",
+      "reading": "がわ"
     },
     "柔軟": {
       "meaning": "靈活的、彈性的",
-      "romaji": "juunan"
+      "romaji": "juunan",
+      "reading": "じゅうなん"
     },
     "支援": {
       "meaning": "支援、協助",
-      "romaji": "shien"
+      "romaji": "shien",
+      "reading": "しえん"
     },
     "制度": {
       "meaning": "制度",
-      "romaji": "seido"
+      "romaji": "seido",
+      "reading": "せいど"
     },
     "整備": {
       "meaning": "整備、完善",
-      "romaji": "seibi"
+      "romaji": "seibi",
+      "reading": "せいび"
     },
     "急務": {
       "meaning": "當務之急",
-      "romaji": "kyuumu"
+      "romaji": "kyuumu",
+      "reading": "きゅうむ"
     }
   },
   "particles": {

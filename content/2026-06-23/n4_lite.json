@@ -452,127 +452,158 @@
   "vocab": {
     "わたし": {
       "meaning": "我",
-      "romaji": "watashi"
+      "romaji": "watashi",
+      "reading": "わたし"
     },
     "料理": {
       "meaning": "料理、烹飪",
-      "romaji": "ryouri"
+      "romaji": "ryouri",
+      "reading": "りょうり"
     },
     "好き": {
       "meaning": "喜歡的",
-      "romaji": "suki"
+      "romaji": "suki",
+      "reading": "すき"
     },
     "今日": {
       "meaning": "今天",
-      "romaji": "kyou"
+      "romaji": "kyou",
+      "reading": "きょう"
     },
     "夕飯": {
       "meaning": "晚餐",
-      "romaji": "yuuhan"
+      "romaji": "yuuhan",
+      "reading": "ゆうはん"
     },
     "カレー": {
       "meaning": "咖哩",
-      "romaji": "karee"
+      "romaji": "karee",
+      "reading": "カレー"
     },
     "作る": {
       "meaning": "製作、烹煮",
-      "romaji": "tsukuru"
+      "romaji": "tsukuru",
+      "reading": "つくる"
     },
     "まず": {
       "meaning": "首先",
-      "romaji": "mazu"
+      "romaji": "mazu",
+      "reading": "まず"
     },
     "野菜": {
       "meaning": "蔬菜",
-      "romaji": "yasai"
+      "romaji": "yasai",
+      "reading": "やさい"
     },
     "切る": {
       "meaning": "切",
-      "romaji": "kiru"
+      "romaji": "kiru",
+      "reading": "きる"
     },
     "肉": {
       "meaning": "肉",
-      "romaji": "niku"
+      "romaji": "niku",
+      "reading": "おにく"
     },
     "いっしょに": {
       "meaning": "一起",
-      "romaji": "issho ni"
+      "romaji": "issho ni",
+      "reading": "いっしょに"
     },
     "炒める": {
       "meaning": "炒（料理）",
-      "romaji": "itameru"
+      "romaji": "itameru",
+      "reading": "いためる"
     },
     "それから": {
       "meaning": "然後",
-      "romaji": "sorekara"
+      "romaji": "sorekara",
+      "reading": "それから"
     },
     "水": {
       "meaning": "水",
-      "romaji": "mizu"
+      "romaji": "mizu",
+      "reading": "みず"
     },
     "入れる": {
       "meaning": "放入",
-      "romaji": "ireru"
+      "romaji": "ireru",
+      "reading": "いれる"
     },
     "煮る": {
       "meaning": "煮",
-      "romaji": "niru"
+      "romaji": "niru",
+      "reading": "る"
     },
     "カレールー": {
       "meaning": "咖哩塊",
-      "romaji": "karee ruu"
+      "romaji": "karee ruu",
+      "reading": "カレールー"
     },
     "加える": {
       "meaning": "加入",
-      "romaji": "kuwaeru"
+      "romaji": "kuwaeru",
+      "reading": "くわえる"
     },
     "できあがる": {
       "meaning": "完成",
-      "romaji": "dekiagaru"
+      "romaji": "dekiagaru",
+      "reading": "できあがる"
     },
     "とき": {
       "meaning": "時候",
-      "romaji": "toki"
+      "romaji": "toki",
+      "reading": "とき"
     },
     "いい": {
       "meaning": "好的",
-      "romaji": "ii"
+      "romaji": "ii",
+      "reading": "いい"
     },
     "におい": {
       "meaning": "氣味、香味",
-      "romaji": "nioi"
+      "romaji": "nioi",
+      "reading": "におい"
     },
     "する": {
       "meaning": "做（某動作）",
-      "romaji": "suru"
+      "romaji": "suru",
+      "reading": "する"
     },
     "家族": {
       "meaning": "家人",
-      "romaji": "kazoku"
+      "romaji": "kazoku",
+      "reading": "かぞく"
     },
     "みんな": {
       "meaning": "大家",
-      "romaji": "minna"
+      "romaji": "minna",
+      "reading": "みんな"
     },
     "喜ぶ": {
       "meaning": "高興、開心",
-      "romaji": "yorokobu"
+      "romaji": "yorokobu",
+      "reading": "よろこぶ"
     },
     "くれる": {
       "meaning": "（對方）給予",
-      "romaji": "kureru"
+      "romaji": "kureru",
+      "reading": "くれる"
     },
     "また": {
       "meaning": "再、又",
-      "romaji": "mata"
+      "romaji": "mata",
+      "reading": "また"
     },
     "来週": {
       "meaning": "下週",
-      "romaji": "raishuu"
+      "romaji": "raishuu",
+      "reading": "らいしゅう"
     },
     "思う": {
       "meaning": "認為、覺得",
-      "romaji": "omou"
+      "romaji": "omou",
+      "reading": "おもう"
     }
   },
   "particles": {

@@ -3,86 +3,448 @@
   "level": "n5",
   "title": "買い物",
   "text": "今日、お母さんといっしょにスーパーへ行きました。野菜や肉や魚を買いました。レジでお母さんは財布からお金を出しました。店員さんはやさしくて、ありがとうございますと言いました。家に帰ってから、おいしい夕ごはんを食べました。",
-
   "tokens": [
-    { "surface_form": "今日", "basic_form": "今日", "reading": "きょう", "pos": "名詞" },
-    { "surface_form": "、", "basic_form": "、", "reading": "", "pos": "記号" },
-    { "surface_form": "お母さん", "basic_form": "お母さん", "reading": "おかあさん", "pos": "名詞" },
-    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
-    { "surface_form": "いっしょに", "basic_form": "いっしょに", "reading": "いっしょに", "pos": "副詞" },
-    { "surface_form": "スーパー", "basic_form": "スーパー", "reading": "スーパー", "pos": "名詞" },
-    { "surface_form": "へ", "basic_form": "へ", "reading": "へ", "pos": "助詞" },
-    { "surface_form": "行き", "basic_form": "行く", "reading": "いき", "pos": "動詞" },
-    { "surface_form": "まし", "basic_form": "ます", "reading": "まし", "pos": "助動詞" },
-    { "surface_form": "た", "basic_form": "た", "reading": "た", "pos": "助動詞" },
-    { "surface_form": "。", "basic_form": "。", "reading": "", "pos": "記号" },
-    { "surface_form": "野菜", "basic_form": "野菜", "reading": "やさい", "pos": "名詞" },
-    { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
-    { "surface_form": "肉", "basic_form": "肉", "reading": "にく", "pos": "名詞" },
-    { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
-    { "surface_form": "魚", "basic_form": "魚", "reading": "さかな", "pos": "名詞" },
-    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
-    { "surface_form": "買い", "basic_form": "買う", "reading": "かい", "pos": "動詞" },
-    { "surface_form": "まし", "basic_form": "ます", "reading": "まし", "pos": "助動詞" },
-    { "surface_form": "た", "basic_form": "た", "reading": "た", "pos": "助動詞" },
-    { "surface_form": "。", "basic_form": "。", "reading": "", "pos": "記号" },
-    { "surface_form": "レジ", "basic_form": "レジ", "reading": "レジ", "pos": "名詞" },
-    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
-    { "surface_form": "お母さん", "basic_form": "お母さん", "reading": "おかあさん", "pos": "名詞" },
-    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
-    { "surface_form": "財布", "basic_form": "財布", "reading": "さいふ", "pos": "名詞" },
-    { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "助詞" },
-    { "surface_form": "お金", "basic_form": "お金", "reading": "おかね", "pos": "名詞" },
-    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
-    { "surface_form": "出し", "basic_form": "出す", "reading": "だし", "pos": "動詞" },
-    { "surface_form": "まし", "basic_form": "ます", "reading": "まし", "pos": "助動詞" },
-    { "surface_form": "た", "basic_form": "た", "reading": "た", "pos": "助動詞" },
-    { "surface_form": "。", "basic_form": "。", "reading": "", "pos": "記号" },
-    { "surface_form": "店員さん", "basic_form": "店員", "reading": "てんいんさん", "pos": "名詞" },
-    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
-    { "surface_form": "やさしく", "basic_form": "やさしい", "reading": "やさしく", "pos": "形容詞" },
-    { "surface_form": "て", "basic_form": "て", "reading": "て", "pos": "助詞" },
-    { "surface_form": "、", "basic_form": "、", "reading": "", "pos": "記号" },
-    { "surface_form": "ありがとうございます", "basic_form": "ありがとうございます", "reading": "ありがとうございます", "pos": "感動詞" },
-    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
-    { "surface_form": "言い", "basic_form": "言う", "reading": "いい", "pos": "動詞" },
-    { "surface_form": "まし", "basic_form": "ます", "reading": "まし", "pos": "助動詞" },
-    { "surface_form": "た", "basic_form": "た", "reading": "た", "pos": "助動詞" },
-    { "surface_form": "。", "basic_form": "。", "reading": "", "pos": "記号" },
-    { "surface_form": "家", "basic_form": "家", "reading": "いえ", "pos": "名詞" },
-    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
-    { "surface_form": "帰っ", "basic_form": "帰る", "reading": "かえっ", "pos": "動詞" },
-    { "surface_form": "て", "basic_form": "て", "reading": "て", "pos": "助詞" },
-    { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "接続助詞" },
-    { "surface_form": "、", "basic_form": "、", "reading": "", "pos": "記号" },
-    { "surface_form": "おいしい", "basic_form": "おいしい", "reading": "おいしい", "pos": "形容詞" },
-    { "surface_form": "夕ごはん", "basic_form": "夕ごはん", "reading": "ゆうごはん", "pos": "名詞" },
-    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
-    { "surface_form": "食べ", "basic_form": "食べる", "reading": "たべ", "pos": "動詞" },
-    { "surface_form": "まし", "basic_form": "ます", "reading": "まし", "pos": "助動詞" },
-    { "surface_form": "た", "basic_form": "た", "reading": "た", "pos": "助動詞" },
-    { "surface_form": "。", "basic_form": "。", "reading": "", "pos": "記号" }
+    {
+      "surface_form": "今日",
+      "basic_form": "今日",
+      "reading": "きょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "お母さん",
+      "basic_form": "お母さん",
+      "reading": "おかあさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いっしょに",
+      "basic_form": "いっしょに",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "スーパー",
+      "basic_form": "スーパー",
+      "reading": "スーパー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行き",
+      "basic_form": "行く",
+      "reading": "いき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "野菜",
+      "basic_form": "野菜",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "肉",
+      "basic_form": "肉",
+      "reading": "にく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "魚",
+      "basic_form": "魚",
+      "reading": "さかな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買い",
+      "basic_form": "買う",
+      "reading": "かい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "レジ",
+      "basic_form": "レジ",
+      "reading": "レジ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "お母さん",
+      "basic_form": "お母さん",
+      "reading": "おかあさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "財布",
+      "basic_form": "財布",
+      "reading": "さいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "お金",
+      "basic_form": "お金",
+      "reading": "おかね",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出し",
+      "basic_form": "出す",
+      "reading": "だし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "店員さん",
+      "basic_form": "店員",
+      "reading": "てんいんさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "やさしく",
+      "basic_form": "やさしい",
+      "reading": "やさしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ありがとうございます",
+      "basic_form": "ありがとうございます",
+      "reading": "ありがとうございます",
+      "pos": "感動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言い",
+      "basic_form": "言う",
+      "reading": "いい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "帰っ",
+      "basic_form": "帰る",
+      "reading": "かえっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "接続助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おいしい",
+      "basic_form": "おいしい",
+      "reading": "おいしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "夕ごはん",
+      "basic_form": "夕ごはん",
+      "reading": "ゆうごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べ",
+      "basic_form": "食べる",
+      "reading": "たべ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
   ],
-
   "vocab": {
-    "今日": { "meaning": "今天", "romaji": "kyou", "example": "今日、お母さんといっしょにスーパーへ行きました。" },
-    "お母さん": { "meaning": "媽媽", "romaji": "okaasan", "example": "お母さんといっしょにスーパーへ行きました。" },
-    "スーパー": { "meaning": "超市", "romaji": "suupaa", "example": "スーパーへ行きました。" },
-    "野菜": { "meaning": "蔬菜", "romaji": "yasai", "example": "野菜や肉や魚を買いました。" },
-    "肉": { "meaning": "肉", "romaji": "niku", "example": "野菜や肉や魚を買いました。" },
-    "魚": { "meaning": "魚", "romaji": "sakana", "example": "野菜や肉や魚を買いました。" },
-    "財布": { "meaning": "錢包", "romaji": "saifu", "example": "財布からお金を出しました。" },
-    "お金": { "meaning": "錢", "romaji": "okane", "example": "財布からお金を出しました。" },
-    "店員": { "meaning": "店員", "romaji": "ten'in", "example": "店員さんはやさしくて、ありがとうございますと言いました。" },
-    "夕ごはん": { "meaning": "晚餐", "romaji": "yuugohan", "example": "おいしい夕ごはんを食べました。" },
-    "行く": { "meaning": "去", "romaji": "iku", "example": "スーパーへ行きました。" },
-    "買う": { "meaning": "買", "romaji": "kau", "example": "野菜や肉や魚を買いました。" },
-    "帰る": { "meaning": "回去、回家", "romaji": "kaeru", "example": "家に帰ってから、おいしい夕ごはんを食べました。" },
-    "食べる": { "meaning": "吃", "romaji": "taberu", "example": "おいしい夕ごはんを食べました。" },
-    "おいしい": { "meaning": "美味、好吃", "romaji": "oishii", "example": "おいしい夕ごはんを食べました。" },
-    "やさしい": { "meaning": "親切、溫柔", "romaji": "yasashii", "example": "店員さんはやさしくて、ありがとうございますと言いました。" }
+    "今日": {
+      "meaning": "今天",
+      "romaji": "kyou",
+      "example": "今日、お母さんといっしょにスーパーへ行きました。",
+      "reading": "きょう"
+    },
+    "お母さん": {
+      "meaning": "媽媽",
+      "romaji": "okaasan",
+      "example": "お母さんといっしょにスーパーへ行きました。",
+      "reading": "おかあさん"
+    },
+    "スーパー": {
+      "meaning": "超市",
+      "romaji": "suupaa",
+      "example": "スーパーへ行きました。",
+      "reading": "スーパー"
+    },
+    "野菜": {
+      "meaning": "蔬菜",
+      "romaji": "yasai",
+      "example": "野菜や肉や魚を買いました。",
+      "reading": "やさい"
+    },
+    "肉": {
+      "meaning": "肉",
+      "romaji": "niku",
+      "example": "野菜や肉や魚を買いました。",
+      "reading": "にく"
+    },
+    "魚": {
+      "meaning": "魚",
+      "romaji": "sakana",
+      "example": "野菜や肉や魚を買いました。",
+      "reading": "さかな"
+    },
+    "財布": {
+      "meaning": "錢包",
+      "romaji": "saifu",
+      "example": "財布からお金を出しました。",
+      "reading": "さいふ"
+    },
+    "お金": {
+      "meaning": "錢",
+      "romaji": "okane",
+      "example": "財布からお金を出しました。",
+      "reading": "おかね"
+    },
+    "店員": {
+      "meaning": "店員",
+      "romaji": "ten'in",
+      "example": "店員さんはやさしくて、ありがとうございますと言いました。",
+      "reading": "てんいんさん"
+    },
+    "夕ごはん": {
+      "meaning": "晚餐",
+      "romaji": "yuugohan",
+      "example": "おいしい夕ごはんを食べました。",
+      "reading": "ゆうごはん"
+    },
+    "行く": {
+      "meaning": "去",
+      "romaji": "iku",
+      "example": "スーパーへ行きました。",
+      "reading": "いく"
+    },
+    "買う": {
+      "meaning": "買",
+      "romaji": "kau",
+      "example": "野菜や肉や魚を買いました。",
+      "reading": "かう"
+    },
+    "帰る": {
+      "meaning": "回去、回家",
+      "romaji": "kaeru",
+      "example": "家に帰ってから、おいしい夕ごはんを食べました。",
+      "reading": "かえる"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "example": "おいしい夕ごはんを食べました。",
+      "reading": "たべる"
+    },
+    "おいしい": {
+      "meaning": "美味、好吃",
+      "romaji": "oishii",
+      "example": "おいしい夕ごはんを食べました。",
+      "reading": "おいしい"
+    },
+    "やさしい": {
+      "meaning": "親切、溫柔",
+      "romaji": "yasashii",
+      "example": "店員さんはやさしくて、ありがとうございますと言いました。",
+      "reading": "やさしい"
+    }
   },
-
   "particles": {
     "と": "表示「和/與」，連接同行的人物（例：お母さんと＝和媽媽）",
     "へ": "表示移動的方向，「往...去」（例：スーパーへ行く＝去超市）",
@@ -96,39 +458,94 @@
     "ます": "丁寧語助動詞，表示禮貌語氣",
     "た": "助動詞，表示過去式或完成"
   },
-
   "translations": [
     [
-      { "text": "今天，", "word": "今日" },
-      { "text": "和媽媽", "word": "お母さん" },
-      { "text": "一起", "word": "いっしょに" },
-      { "text": "去了超市。", "word": "スーパー" }
+      {
+        "text": "今天，",
+        "word": "今日"
+      },
+      {
+        "text": "和媽媽",
+        "word": "お母さん"
+      },
+      {
+        "text": "一起",
+        "word": "いっしょに"
+      },
+      {
+        "text": "去了超市。",
+        "word": "スーパー"
+      }
     ],
     [
-      { "text": "買了", "word": "買う" },
-      { "text": "蔬菜、", "word": "野菜" },
-      { "text": "肉和", "word": "肉" },
-      { "text": "魚。", "word": "魚" }
+      {
+        "text": "買了",
+        "word": "買う"
+      },
+      {
+        "text": "蔬菜、",
+        "word": "野菜"
+      },
+      {
+        "text": "肉和",
+        "word": "肉"
+      },
+      {
+        "text": "魚。",
+        "word": "魚"
+      }
     ],
     [
-      { "text": "在收銀台，", "word": "レジ" },
-      { "text": "媽媽", "word": "お母さん" },
-      { "text": "從錢包裡", "word": "財布" },
-      { "text": "取出了錢。", "word": "お金" }
+      {
+        "text": "在收銀台，",
+        "word": "レジ"
+      },
+      {
+        "text": "媽媽",
+        "word": "お母さん"
+      },
+      {
+        "text": "從錢包裡",
+        "word": "財布"
+      },
+      {
+        "text": "取出了錢。",
+        "word": "お金"
+      }
     ],
     [
-      { "text": "店員", "word": "店員" },
-      { "text": "很親切，", "word": "やさしい" },
-      { "text": "說了「謝謝惠顧」。", "word": "言う" }
+      {
+        "text": "店員",
+        "word": "店員"
+      },
+      {
+        "text": "很親切，",
+        "word": "やさしい"
+      },
+      {
+        "text": "說了「謝謝惠顧」。",
+        "word": "言う"
+      }
     ],
     [
-      { "text": "回家之後，", "word": "帰る" },
-      { "text": "吃了", "word": "食べる" },
-      { "text": "美味的", "word": "おいしい" },
-      { "text": "晚餐。", "word": "夕ごはん" }
+      {
+        "text": "回家之後，",
+        "word": "帰る"
+      },
+      {
+        "text": "吃了",
+        "word": "食べる"
+      },
+      {
+        "text": "美味的",
+        "word": "おいしい"
+      },
+      {
+        "text": "晚餐。",
+        "word": "夕ごはん"
+      }
     ]
   ],
-
   "difficulty": {
     "target_vocab_rate": 0.08,
     "jlpt_level": "N5"

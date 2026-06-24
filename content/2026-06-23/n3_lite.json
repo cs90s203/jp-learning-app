@@ -740,183 +740,228 @@
   "vocab": {
     "わたし": {
       "meaning": "我",
-      "romaji": "watashi"
+      "romaji": "watashi",
+      "reading": "わたし"
     },
     "読書": {
       "meaning": "讀書",
-      "romaji": "dokusho"
+      "romaji": "dokusho",
+      "reading": "どくしょ"
     },
     "大好き": {
       "meaning": "非常喜歡",
-      "romaji": "daisuki"
+      "romaji": "daisuki",
+      "reading": "だいすき"
     },
     "本": {
       "meaning": "書",
-      "romaji": "hon"
+      "romaji": "hon",
+      "reading": "ほん"
     },
     "読む": {
       "meaning": "閱讀",
-      "romaji": "yomu"
+      "romaji": "yomu",
+      "reading": "よむ"
     },
     "いる": {
       "meaning": "（狀態）正在進行",
-      "romaji": "iru"
+      "romaji": "iru",
+      "reading": "いる"
     },
     "まるで": {
       "meaning": "簡直、宛如",
-      "romaji": "marude"
+      "romaji": "marude",
+      "reading": "まるで"
     },
     "違う": {
       "meaning": "不同、有別",
-      "romaji": "chigau"
+      "romaji": "chigau",
+      "reading": "ちがう"
     },
     "世界": {
       "meaning": "世界",
-      "romaji": "sekai"
+      "romaji": "sekai",
+      "reading": "せかい"
     },
     "入る": {
       "meaning": "進入",
-      "romaji": "hairu"
+      "romaji": "hairu",
+      "reading": "はいる"
     },
     "よう": {
       "meaning": "好像、如同（比喻）",
-      "romaji": "you"
+      "romaji": "you",
+      "reading": "よう"
     },
     "気分": {
       "meaning": "心情、感覺",
-      "romaji": "kibun"
+      "romaji": "kibun",
+      "reading": "きぶん"
     },
     "なる": {
       "meaning": "變成",
-      "romaji": "naru"
+      "romaji": "naru",
+      "reading": "なる"
     },
     "特に": {
       "meaning": "特別是",
-      "romaji": "toku ni"
+      "romaji": "toku ni",
+      "reading": "とくに"
     },
     "小説": {
       "meaning": "小說",
-      "romaji": "shousetsu"
+      "romaji": "shousetsu",
+      "reading": "しょうせつ"
     },
     "好き": {
       "meaning": "喜歡",
-      "romaji": "suki"
+      "romaji": "suki",
+      "reading": "すき"
     },
     "登場人物": {
       "meaning": "登場人物、角色",
-      "romaji": "toujou jinbutsu"
+      "romaji": "toujou jinbutsu",
+      "reading": "とうじょうじんぶつ"
     },
     "気持ち": {
       "meaning": "心情、感受",
-      "romaji": "kimochi"
+      "romaji": "kimochi",
+      "reading": "きもち"
     },
     "想像": {
       "meaning": "想像",
-      "romaji": "souzou"
+      "romaji": "souzou",
+      "reading": "そうぞう"
     },
     "する": {
       "meaning": "做",
-      "romaji": "suru"
+      "romaji": "suru",
+      "reading": "する"
     },
     "ながら": {
       "meaning": "一邊～一邊（同時進行）",
-      "romaji": "nagara"
+      "romaji": "nagara",
+      "reading": "ながら"
     },
     "楽しい": {
       "meaning": "開心的、快樂的",
-      "romaji": "tanoshii"
+      "romaji": "tanoshii",
+      "reading": "たのしい"
     },
     "先週": {
       "meaning": "上週",
-      "romaji": "senshuu"
+      "romaji": "senshuu",
+      "reading": "せんしゅう"
     },
     "図書館": {
       "meaning": "圖書館",
-      "romaji": "toshokan"
+      "romaji": "toshokan",
+      "reading": "としょかん"
     },
     "おもしろい": {
       "meaning": "有趣的",
-      "romaji": "omoshiroi"
+      "romaji": "omoshiroi",
+      "reading": "おもしろい"
     },
     "見つける": {
       "meaning": "找到、發現",
-      "romaji": "mitsukeru"
+      "romaji": "mitsukeru",
+      "reading": "みつける"
     },
     "ミステリー": {
       "meaning": "推理（類型）",
-      "romaji": "misuterii"
+      "romaji": "misuterii",
+      "reading": "ミステリー"
     },
     "最初": {
       "meaning": "最初、開始",
-      "romaji": "saisho"
+      "romaji": "saisho",
+      "reading": "さいしょ"
     },
     "最後": {
       "meaning": "最後、結尾",
-      "romaji": "saigo"
+      "romaji": "saigo",
+      "reading": "さいご"
     },
     "目": {
       "meaning": "眼睛",
-      "romaji": "me"
+      "romaji": "me",
+      "reading": "め"
     },
     "離す": {
       "meaning": "移開、放開",
-      "romaji": "hanasu"
+      "romaji": "hanasu",
+      "reading": "はなせす"
     },
     "読み終わる": {
       "meaning": "讀完",
-      "romaji": "yomi owaru"
+      "romaji": "yomi owaru",
+      "reading": "よみおわる"
     },
     "とき": {
       "meaning": "時候",
-      "romaji": "toki"
+      "romaji": "toki",
+      "reading": "とき"
     },
     "とても": {
       "meaning": "非常",
-      "romaji": "totemo"
+      "romaji": "totemo",
+      "reading": "とても"
     },
     "満足": {
       "meaning": "滿足",
-      "romaji": "manzoku"
+      "romaji": "manzoku",
+      "reading": "まんぞく"
     },
     "こと": {
       "meaning": "事情（名詞化）",
-      "romaji": "koto"
+      "romaji": "koto",
+      "reading": "こと"
     },
     "知る": {
       "meaning": "知道",
-      "romaji": "shiru"
+      "romaji": "shiru",
+      "reading": "しる"
     },
     "言葉": {
       "meaning": "語言、詞彙",
-      "romaji": "kotoba"
+      "romaji": "kotoba",
+      "reading": "ことば"
     },
     "学ぶ": {
       "meaning": "學習",
-      "romaji": "manabu"
+      "romaji": "manabu",
+      "reading": "まなぶ"
     },
     "できる": {
       "meaning": "能夠",
-      "romaji": "dekiru"
+      "romaji": "dekiru",
+      "reading": "できる"
     },
     "これから": {
       "meaning": "從現在起",
-      "romaji": "korekara"
+      "romaji": "korekara",
+      "reading": "これから"
     },
     "いろいろ": {
       "meaning": "各種各樣",
-      "romaji": "iroiro"
+      "romaji": "iroiro",
+      "reading": "いろいろ"
     },
     "ジャンル": {
       "meaning": "類型、流派",
-      "romaji": "janru"
+      "romaji": "janru",
+      "reading": "ジャンル"
     },
     "いく": {
       "meaning": "（表方向）持續下去",
-      "romaji": "iku"
+      "romaji": "iku",
+      "reading": "いく"
     },
     "思う": {
       "meaning": "認為、覺得",
-      "romaji": "omou"
+      "romaji": "omou",
+      "reading": "おもう"
     }
   },
   "particles": {

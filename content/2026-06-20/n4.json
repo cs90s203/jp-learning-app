@@ -4,59 +4,298 @@
   "title": "図書館でのアルバイト",
   "text": "私は週末に図書館でアルバイトをしています。仕事は本を整理したり、利用者の質問に答えたりすることです。静かな環境が好きなので、とても楽しいです。",
   "tokens": [
-    { "surface_form": "私",       "basic_form": "私",       "reading": "わたし",     "pos": "名詞" },
-    { "surface_form": "は",       "basic_form": "は",       "reading": "",           "pos": "助詞" },
-    { "surface_form": "週末",     "basic_form": "週末",     "reading": "しゅうまつ", "pos": "名詞" },
-    { "surface_form": "に",       "basic_form": "に",       "reading": "",           "pos": "助詞" },
-    { "surface_form": "図書館",   "basic_form": "図書館",   "reading": "としょかん", "pos": "名詞" },
-    { "surface_form": "で",       "basic_form": "で",       "reading": "",           "pos": "助詞" },
-    { "surface_form": "アルバイト","basic_form": "アルバイト","reading": "アルバイト", "pos": "名詞" },
-    { "surface_form": "を",       "basic_form": "を",       "reading": "",           "pos": "助詞" },
-    { "surface_form": "しています","basic_form": "する",    "reading": "しています", "pos": "動詞" },
-    { "surface_form": "。",       "basic_form": "。",       "reading": "",           "pos": "記号" },
-    { "surface_form": "仕事",     "basic_form": "仕事",     "reading": "しごと",     "pos": "名詞" },
-    { "surface_form": "は",       "basic_form": "は",       "reading": "",           "pos": "助詞" },
-    { "surface_form": "本",       "basic_form": "本",       "reading": "ほん",       "pos": "名詞" },
-    { "surface_form": "を",       "basic_form": "を",       "reading": "",           "pos": "助詞" },
-    { "surface_form": "整理したり","basic_form": "整理する", "reading": "せいりしたり","pos": "動詞" },
-    { "surface_form": "、",       "basic_form": "、",       "reading": "",           "pos": "記号" },
-    { "surface_form": "利用者",   "basic_form": "利用者",   "reading": "りようしゃ", "pos": "名詞" },
-    { "surface_form": "の",       "basic_form": "の",       "reading": "",           "pos": "助詞" },
-    { "surface_form": "質問",     "basic_form": "質問",     "reading": "しつもん",   "pos": "名詞" },
-    { "surface_form": "に",       "basic_form": "に",       "reading": "",           "pos": "助詞" },
-    { "surface_form": "答えたり", "basic_form": "答える",   "reading": "こたえたり", "pos": "動詞" },
-    { "surface_form": "する",     "basic_form": "する",     "reading": "する",       "pos": "動詞" },
-    { "surface_form": "こと",     "basic_form": "こと",     "reading": "こと",       "pos": "名詞" },
-    { "surface_form": "です",     "basic_form": "です",     "reading": "",           "pos": "助動詞" },
-    { "surface_form": "。",       "basic_form": "。",       "reading": "",           "pos": "記号" },
-    { "surface_form": "静かな",   "basic_form": "静か",     "reading": "しずかな",   "pos": "形容詞" },
-    { "surface_form": "環境",     "basic_form": "環境",     "reading": "かんきょう", "pos": "名詞" },
-    { "surface_form": "が",       "basic_form": "が",       "reading": "",           "pos": "助詞" },
-    { "surface_form": "好きな",   "basic_form": "好き",     "reading": "すきな",     "pos": "形容詞" },
-    { "surface_form": "ので",     "basic_form": "ので",     "reading": "",           "pos": "助詞" },
-    { "surface_form": "、",       "basic_form": "、",       "reading": "",           "pos": "記号" },
-    { "surface_form": "とても",   "basic_form": "とても",   "reading": "とても",     "pos": "副詞" },
-    { "surface_form": "楽しい",   "basic_form": "楽しい",   "reading": "たのしい",   "pos": "形容詞" },
-    { "surface_form": "です",     "basic_form": "です",     "reading": "",           "pos": "助動詞" },
-    { "surface_form": "。",       "basic_form": "。",       "reading": "",           "pos": "記号" }
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "週末",
+      "basic_form": "週末",
+      "reading": "しゅうまつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "図書館",
+      "basic_form": "図書館",
+      "reading": "としょかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "アルバイト",
+      "basic_form": "アルバイト",
+      "reading": "アルバイト",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しています",
+      "basic_form": "する",
+      "reading": "しています",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整理したり",
+      "basic_form": "整理する",
+      "reading": "せいりしたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "利用者",
+      "basic_form": "利用者",
+      "reading": "りようしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "質問",
+      "basic_form": "質問",
+      "reading": "しつもん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "答えたり",
+      "basic_form": "答える",
+      "reading": "こたえたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "静かな",
+      "basic_form": "静か",
+      "reading": "しずかな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "好きな",
+      "basic_form": "好き",
+      "reading": "すきな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しい",
+      "basic_form": "楽しい",
+      "reading": "たのしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "",
+      "pos": "記号"
+    }
   ],
   "vocab": {
-    "私":       { "meaning": "我",         "romaji": "watashi" },
-    "週末":     { "meaning": "週末",       "romaji": "shuumatsu" },
-    "図書館":   { "meaning": "圖書館",     "romaji": "toshokan" },
-    "アルバイト":{ "meaning": "打工",      "romaji": "arubaito" },
-    "する":     { "meaning": "做",         "romaji": "suru" },
-    "仕事":     { "meaning": "工作",       "romaji": "shigoto" },
-    "本":       { "meaning": "書",         "romaji": "hon" },
-    "整理する": { "meaning": "整理",       "romaji": "seirisuru" },
-    "利用者":   { "meaning": "使用者",     "romaji": "riyousha" },
-    "質問":     { "meaning": "問題・提問", "romaji": "shitsumon" },
-    "答える":   { "meaning": "回答",       "romaji": "kotaeru" },
-    "静か":     { "meaning": "安靜的",     "romaji": "shizuka" },
-    "環境":     { "meaning": "環境",       "romaji": "kankyou" },
-    "好き":     { "meaning": "喜歡",       "romaji": "suki" },
-    "とても":   { "meaning": "非常",       "romaji": "totemo" },
-    "楽しい":   { "meaning": "快樂的",     "romaji": "tanoshii" }
+    "私": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "週末": {
+      "meaning": "週末",
+      "romaji": "shuumatsu",
+      "reading": "しゅうまつ"
+    },
+    "図書館": {
+      "meaning": "圖書館",
+      "romaji": "toshokan",
+      "reading": "としょかん"
+    },
+    "アルバイト": {
+      "meaning": "打工",
+      "romaji": "arubaito",
+      "reading": "アルバイト"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "仕事": {
+      "meaning": "工作",
+      "romaji": "shigoto",
+      "reading": "しごと"
+    },
+    "本": {
+      "meaning": "書",
+      "romaji": "hon",
+      "reading": "ほん"
+    },
+    "整理する": {
+      "meaning": "整理",
+      "romaji": "seirisuru",
+      "reading": "せいりしたる"
+    },
+    "利用者": {
+      "meaning": "使用者",
+      "romaji": "riyousha",
+      "reading": "りようしゃ"
+    },
+    "質問": {
+      "meaning": "問題・提問",
+      "romaji": "shitsumon",
+      "reading": "しつもん"
+    },
+    "答える": {
+      "meaning": "回答",
+      "romaji": "kotaeru",
+      "reading": "こたえたる"
+    },
+    "静か": {
+      "meaning": "安靜的",
+      "romaji": "shizuka",
+      "reading": "しずか"
+    },
+    "環境": {
+      "meaning": "環境",
+      "romaji": "kankyou",
+      "reading": "かんきょう"
+    },
+    "好き": {
+      "meaning": "喜歡",
+      "romaji": "suki",
+      "reading": "すき"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    },
+    "楽しい": {
+      "meaning": "快樂的",
+      "romaji": "tanoshii",
+      "reading": "たのしい"
+    }
   },
   "particles": {
     "は": "提示句子的主題，告訴對方接下來要說的是關於「什麼」。",
@@ -69,34 +308,94 @@
   },
   "translations": [
     [
-      { "text": "我", "word": "私" },
-      { "text": "週末", "word": "週末" },
-      { "text": "在", "word": null },
-      { "text": "圖書館", "word": "図書館" },
-      { "text": "打工", "word": "アルバイト" },
-      { "text": "。", "word": null }
+      {
+        "text": "我",
+        "word": "私"
+      },
+      {
+        "text": "週末",
+        "word": "週末"
+      },
+      {
+        "text": "在",
+        "word": null
+      },
+      {
+        "text": "圖書館",
+        "word": "図書館"
+      },
+      {
+        "text": "打工",
+        "word": "アルバイト"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
     ],
     [
-      { "text": "工作內容", "word": "仕事" },
-      { "text": "是整理", "word": "整理する" },
-      { "text": "書本", "word": "本" },
-      { "text": "、回答", "word": "答える" },
-      { "text": "使用者的", "word": "利用者" },
-      { "text": "問題", "word": "質問" },
-      { "text": "等等。", "word": null }
+      {
+        "text": "工作內容",
+        "word": "仕事"
+      },
+      {
+        "text": "是整理",
+        "word": "整理する"
+      },
+      {
+        "text": "書本",
+        "word": "本"
+      },
+      {
+        "text": "、回答",
+        "word": "答える"
+      },
+      {
+        "text": "使用者的",
+        "word": "利用者"
+      },
+      {
+        "text": "問題",
+        "word": "質問"
+      },
+      {
+        "text": "等等。",
+        "word": null
+      }
     ],
     [
-      { "text": "因為喜歡", "word": "好き" },
-      { "text": "安靜", "word": "静か" },
-      { "text": "的環境", "word": "環境" },
-      { "text": "，所以", "word": null },
-      { "text": "非常", "word": "とても" },
-      { "text": "快樂", "word": "楽しい" },
-      { "text": "。", "word": null }
+      {
+        "text": "因為喜歡",
+        "word": "好き"
+      },
+      {
+        "text": "安靜",
+        "word": "静か"
+      },
+      {
+        "text": "的環境",
+        "word": "環境"
+      },
+      {
+        "text": "，所以",
+        "word": null
+      },
+      {
+        "text": "非常",
+        "word": "とても"
+      },
+      {
+        "text": "快樂",
+        "word": "楽しい"
+      },
+      {
+        "text": "。",
+        "word": null
+      }
     ]
   ],
   "difficulty": {
-    "target_vocab_rate": 0.10,
+    "target_vocab_rate": 0.1,
     "jlpt_level": "N4"
   }
 }

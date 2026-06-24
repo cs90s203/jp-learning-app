@@ -151,57 +151,68 @@
     "今朝": {
       "meaning": "今天早上",
       "romaji": "kesa",
-      "example": "今朝は早く起きました。"
+      "example": "今朝は早く起きました。",
+      "reading": "けさ"
     },
     "早い": {
       "meaning": "早",
       "romaji": "hayai",
-      "example": "今朝は早く起きました。"
+      "example": "今朝は早く起きました。",
+      "reading": "はやい"
     },
     "起きる": {
       "meaning": "起床",
       "romaji": "okiru",
-      "example": "今朝は早く起きました。"
+      "example": "今朝は早く起きました。",
+      "reading": "おる"
     },
     "朝ごはん": {
       "meaning": "早餐",
       "romaji": "asagohan",
-      "example": "朝ごはんはトーストと卵です。"
+      "example": "朝ごはんはトーストと卵です。",
+      "reading": "あさごはん"
     },
     "トースト": {
       "meaning": "吐司",
       "romaji": "toosuto",
-      "example": "朝ごはんはトーストと卵です。"
+      "example": "朝ごはんはトーストと卵です。",
+      "reading": "トースト"
     },
     "卵": {
       "meaning": "雞蛋",
       "romaji": "tamago",
-      "example": "朝ごはんはトーストと卵です。"
+      "example": "朝ごはんはトーストと卵です。",
+      "reading": "たまご"
     },
     "牛乳": {
       "meaning": "牛奶",
       "romaji": "gyuunyuu",
-      "example": "牛乳も飲みました。"
+      "example": "牛乳も飲みました。",
+      "reading": "ぎゅうにゅう"
     },
     "飲む": {
       "meaning": "喝",
       "romaji": "nomu",
-      "example": "牛乳も飲みました。"
+      "example": "牛乳も飲みました。",
+      "reading": "のむ"
     },
     "食べる": {
       "meaning": "吃",
       "romaji": "taberu",
-      "example": "朝ごはんを食べてから学校に行きます。"
+      "example": "朝ごはんを食べてから学校に行きます。",
+      "reading": "たべる"
     },
     "学校": {
       "meaning": "學校",
       "romaji": "gakkou",
-      "example": "朝ごはんを食べてから学校に行きます。"
+      "example": "朝ごはんを食べてから学校に行きます。",
+      "reading": "がっこう"
     },
     "行く": {
       "meaning": "去",
       "romaji": "iku",
-      "example": "朝ごはんを食べてから学校に行きます。"
+      "example": "朝ごはんを食べてから学校に行きます。",
+      "reading": "いく"
     }
   },
   "particles": {
