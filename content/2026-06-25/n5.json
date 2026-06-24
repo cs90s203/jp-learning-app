@@ -1,0 +1,498 @@
+{
+  "date": "2026-06-25",
+  "level": "n5",
+  "title": "あめのひ",
+  "text": "きのうはあめでした。わたしはいえでほんをよみました。おとうとはテレビをみて、わらっていました。ははがおちゃをいれてくれました。あたたかくて、おいしかったです。よるになって、あめがやみました。そらにほしがみえました。",
+  "tokens": [
+    {
+      "surface_form": "きのう",
+      "basic_form": "きのう",
+      "reading": "きのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あめ",
+      "basic_form": "あめ",
+      "reading": "あめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でした",
+      "basic_form": "です",
+      "reading": "でした",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いえ",
+      "basic_form": "いえ",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほん",
+      "basic_form": "ほん",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よみました",
+      "basic_form": "よむ",
+      "reading": "よみました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おとうと",
+      "basic_form": "おとうと",
+      "reading": "おとうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "テレビ",
+      "basic_form": "テレビ",
+      "reading": "テレビ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みて",
+      "basic_form": "みる",
+      "reading": "みて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わらって",
+      "basic_form": "わらう",
+      "reading": "わらって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いました",
+      "basic_form": "いる",
+      "reading": "いました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "はは",
+      "basic_form": "はは",
+      "reading": "はは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おちゃ",
+      "basic_form": "おちゃ",
+      "reading": "おちゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いれて",
+      "basic_form": "いれる",
+      "reading": "いれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "くれました",
+      "basic_form": "くれる",
+      "reading": "くれました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あたたかくて",
+      "basic_form": "あたたかい",
+      "reading": "あたたかくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おいしかった",
+      "basic_form": "おいしい",
+      "reading": "おいしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "よる",
+      "basic_form": "よる",
+      "reading": "よる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なって",
+      "basic_form": "なる",
+      "reading": "なって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あめ",
+      "basic_form": "あめ",
+      "reading": "あめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "やみました",
+      "basic_form": "やむ",
+      "reading": "やみました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "そら",
+      "basic_form": "そら",
+      "reading": "そら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほし",
+      "basic_form": "ほし",
+      "reading": "ほし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みえました",
+      "basic_form": "みえる",
+      "reading": "みえました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きのう": {
+      "meaning": "昨天",
+      "romaji": "kinou",
+      "reading": "きのう"
+    },
+    "あめ": {
+      "meaning": "雨",
+      "romaji": "ame",
+      "reading": "あめ"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "いえ": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "いえ"
+    },
+    "ほん": {
+      "meaning": "書",
+      "romaji": "hon",
+      "reading": "ほん"
+    },
+    "よむ": {
+      "meaning": "讀",
+      "romaji": "yomu",
+      "reading": "よむ"
+    },
+    "おとうと": {
+      "meaning": "弟弟",
+      "romaji": "otouto",
+      "reading": "おとうと"
+    },
+    "テレビ": {
+      "meaning": "電視",
+      "romaji": "terebi",
+      "reading": "テレビ"
+    },
+    "みる": {
+      "meaning": "看",
+      "romaji": "miru",
+      "reading": "みる"
+    },
+    "わらう": {
+      "meaning": "笑",
+      "romaji": "warau",
+      "reading": "わらう"
+    },
+    "いる": {
+      "meaning": "在（有生命）",
+      "romaji": "iru",
+      "reading": "いる"
+    },
+    "はは": {
+      "meaning": "（自己的）母親",
+      "romaji": "haha",
+      "reading": "はは"
+    },
+    "おちゃ": {
+      "meaning": "茶",
+      "romaji": "ocha",
+      "reading": "おちゃ"
+    },
+    "いれる": {
+      "meaning": "泡（茶）；放入",
+      "romaji": "ireru",
+      "reading": "いれる"
+    },
+    "くれる": {
+      "meaning": "（別人）給我",
+      "romaji": "kureru",
+      "reading": "くれる"
+    },
+    "あたたかい": {
+      "meaning": "溫暖的",
+      "romaji": "atatakai",
+      "reading": "あたたかい"
+    },
+    "おいしい": {
+      "meaning": "好吃的",
+      "romaji": "oishii",
+      "reading": "おいしい"
+    },
+    "よる": {
+      "meaning": "晚上",
+      "romaji": "yoru",
+      "reading": "よる"
+    },
+    "なる": {
+      "meaning": "變成",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "やむ": {
+      "meaning": "（雨）停",
+      "romaji": "yamu",
+      "reading": "やむ"
+    },
+    "そら": {
+      "meaning": "天空",
+      "romaji": "sora",
+      "reading": "そら"
+    },
+    "ほし": {
+      "meaning": "星星",
+      "romaji": "hoshi",
+      "reading": "ほし"
+    },
+    "みえる": {
+      "meaning": "看得見",
+      "romaji": "mieru",
+      "reading": "みえる"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "で": "表示動作發生的場所",
+    "を": "受格助詞，標示對象",
+    "が": "主格助詞，標示主語",
+    "に": "表示時間、方向或歸著點",
+    "でした": "禮貌體過去斷定，「（過去）是…」",
+    "です": "禮貌體斷定助動詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "昨天",
+        "word": "きのう"
+      },
+      {
+        "text": "下雨了。",
+        "word": "あめ"
+      }
+    ],
+    [
+      {
+        "text": "我在家",
+        "word": "いえ"
+      },
+      {
+        "text": "讀了書。",
+        "word": "よむ"
+      }
+    ],
+    [
+      {
+        "text": "弟弟看著電視，",
+        "word": "みる"
+      },
+      {
+        "text": "笑著。",
+        "word": "わらう"
+      }
+    ],
+    [
+      {
+        "text": "媽媽",
+        "word": "はは"
+      },
+      {
+        "text": "幫我泡了茶。",
+        "word": "いれる"
+      }
+    ],
+    [
+      {
+        "text": "又溫暖，",
+        "word": "あたたかい"
+      },
+      {
+        "text": "又好喝。",
+        "word": "おいしい"
+      }
+    ],
+    [
+      {
+        "text": "到了晚上，",
+        "word": "よる"
+      },
+      {
+        "text": "雨停了。",
+        "word": "やむ"
+      }
+    ],
+    [
+      {
+        "text": "天空中",
+        "word": "そら"
+      },
+      {
+        "text": "看得見星星。",
+        "word": "みえる"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N5"
+  }
+}

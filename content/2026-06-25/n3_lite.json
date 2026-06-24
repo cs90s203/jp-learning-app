@@ -1,0 +1,896 @@
+{
+  "date": "2026-06-25",
+  "level": "n3_lite",
+  "title": "自転車で通勤する",
+  "text": "最近、電車ではなく自転車で通勤する人が増えているそうです。私の同僚も先月から自転車に変えました。理由を聞いてみると、運動になるし、電車の混雑も避けられるからだそうです。たしかに、毎朝決まった時間に駅へ走らなくてもいいので、気持ちに余裕ができます。ただし、雨の日は大変だと言っていました。それでも、健康のために続けたいそうです。私も少し興味がわいてきました。",
+  "tokens": [
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "電車",
+      "basic_form": "電車",
+      "reading": "でんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "自転車",
+      "basic_form": "自転車",
+      "reading": "じてんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通勤",
+      "basic_form": "通勤",
+      "reading": "つうきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えて",
+      "basic_form": "増える",
+      "reading": "ふえて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "そうです",
+      "basic_form": "そうです",
+      "reading": "そうです",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "同僚",
+      "basic_form": "同僚",
+      "reading": "どうりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "先月",
+      "basic_form": "先月",
+      "reading": "せんげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自転車",
+      "basic_form": "自転車",
+      "reading": "じてんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "変えました",
+      "basic_form": "変える",
+      "reading": "かえました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "理由",
+      "basic_form": "理由",
+      "reading": "りゆう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "聞いて",
+      "basic_form": "聞く",
+      "reading": "きいて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みる",
+      "basic_form": "みる",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "運動",
+      "basic_form": "運動",
+      "reading": "うんどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "し",
+      "reading": "し",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "電車",
+      "basic_form": "電車",
+      "reading": "でんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "混雑",
+      "basic_form": "混雑",
+      "reading": "こんざつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "避けられる",
+      "basic_form": "避ける",
+      "reading": "さけられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "そうです",
+      "basic_form": "そうです",
+      "reading": "そうです",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "たしかに",
+      "basic_form": "たしかに",
+      "reading": "たしかに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "毎朝",
+      "basic_form": "毎朝",
+      "reading": "まいあさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "決まった",
+      "basic_form": "決まる",
+      "reading": "きまった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "駅",
+      "basic_form": "駅",
+      "reading": "えき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "走らなくても",
+      "basic_form": "走る",
+      "reading": "はしらなくても",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "気持ち",
+      "basic_form": "気持ち",
+      "reading": "きもち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "余裕",
+      "basic_form": "余裕",
+      "reading": "よゆう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できます",
+      "basic_form": "できる",
+      "reading": "できます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ただし",
+      "basic_form": "ただし",
+      "reading": "ただし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "雨",
+      "basic_form": "雨",
+      "reading": "あめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日",
+      "basic_form": "日",
+      "reading": "ひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大変",
+      "basic_form": "大変",
+      "reading": "たいへん",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言って",
+      "basic_form": "言う",
+      "reading": "いって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いました",
+      "basic_form": "いる",
+      "reading": "いました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それでも",
+      "basic_form": "それでも",
+      "reading": "それでも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "健康",
+      "basic_form": "健康",
+      "reading": "けんこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続けたい",
+      "basic_form": "続ける",
+      "reading": "つづけたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "そうです",
+      "basic_form": "そうです",
+      "reading": "そうです",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "興味",
+      "basic_form": "興味",
+      "reading": "きょうみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "わいて",
+      "basic_form": "わく",
+      "reading": "わいて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "きました",
+      "basic_form": "くる",
+      "reading": "きました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "最近": {
+      "meaning": "最近",
+      "romaji": "saikin",
+      "reading": "さいきん"
+    },
+    "電車": {
+      "meaning": "電車",
+      "romaji": "densha",
+      "reading": "でんしゃ"
+    },
+    "ない": {
+      "meaning": "沒有；不是",
+      "romaji": "nai",
+      "reading": "ない"
+    },
+    "自転車": {
+      "meaning": "腳踏車",
+      "romaji": "jitensha",
+      "reading": "じてんしゃ"
+    },
+    "通勤": {
+      "meaning": "通勤",
+      "romaji": "tsuukin",
+      "reading": "つうきん"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "人": {
+      "meaning": "人",
+      "romaji": "hito",
+      "reading": "ひと"
+    },
+    "増える": {
+      "meaning": "增加",
+      "romaji": "fueru",
+      "reading": "ふえる"
+    },
+    "いる": {
+      "meaning": "在（有生命）",
+      "romaji": "iru",
+      "reading": "いる"
+    },
+    "私": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "同僚": {
+      "meaning": "同事",
+      "romaji": "douryou",
+      "reading": "どうりょう"
+    },
+    "先月": {
+      "meaning": "上個月",
+      "romaji": "sengetsu",
+      "reading": "せんげつ"
+    },
+    "変える": {
+      "meaning": "改變",
+      "romaji": "kaeru",
+      "reading": "かえる"
+    },
+    "理由": {
+      "meaning": "理由",
+      "romaji": "riyuu",
+      "reading": "りゆう"
+    },
+    "聞く": {
+      "meaning": "詢問；聽",
+      "romaji": "kiku",
+      "reading": "きく"
+    },
+    "みる": {
+      "meaning": "試試看",
+      "romaji": "miru",
+      "reading": "みる"
+    },
+    "運動": {
+      "meaning": "運動",
+      "romaji": "undou",
+      "reading": "うんどう"
+    },
+    "なる": {
+      "meaning": "成為",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "混雑": {
+      "meaning": "擁擠",
+      "romaji": "konzatsu",
+      "reading": "こんざつ"
+    },
+    "避ける": {
+      "meaning": "避開",
+      "romaji": "sakeru",
+      "reading": "さける"
+    },
+    "たしかに": {
+      "meaning": "的確",
+      "romaji": "tashikani",
+      "reading": "たしかに"
+    },
+    "毎朝": {
+      "meaning": "每天早上",
+      "romaji": "maiasa",
+      "reading": "まいあさ"
+    },
+    "決まる": {
+      "meaning": "決定；固定",
+      "romaji": "kimaru",
+      "reading": "きまる"
+    },
+    "時間": {
+      "meaning": "時間",
+      "romaji": "jikan",
+      "reading": "じかん"
+    },
+    "駅": {
+      "meaning": "車站",
+      "romaji": "eki",
+      "reading": "えき"
+    },
+    "走る": {
+      "meaning": "跑",
+      "romaji": "hashiru",
+      "reading": "はしる"
+    },
+    "いい": {
+      "meaning": "好的",
+      "romaji": "ii",
+      "reading": "いい"
+    },
+    "気持ち": {
+      "meaning": "心情",
+      "romaji": "kimochi",
+      "reading": "きもち"
+    },
+    "余裕": {
+      "meaning": "從容；餘裕",
+      "romaji": "yoyuu",
+      "reading": "よゆう"
+    },
+    "できる": {
+      "meaning": "產生；能夠",
+      "romaji": "dekiru",
+      "reading": "できる"
+    },
+    "雨": {
+      "meaning": "雨",
+      "romaji": "ame",
+      "reading": "あめ"
+    },
+    "日": {
+      "meaning": "日子",
+      "romaji": "hi",
+      "reading": "ひ"
+    },
+    "大変": {
+      "meaning": "辛苦的；不得了的",
+      "romaji": "taihen",
+      "reading": "たいへん"
+    },
+    "言う": {
+      "meaning": "說",
+      "romaji": "iu",
+      "reading": "いう"
+    },
+    "健康": {
+      "meaning": "健康",
+      "romaji": "kenkou",
+      "reading": "けんこう"
+    },
+    "ため": {
+      "meaning": "為了",
+      "romaji": "tame",
+      "reading": "ため"
+    },
+    "続ける": {
+      "meaning": "持續",
+      "romaji": "tsudukeru",
+      "reading": "つづける"
+    },
+    "少し": {
+      "meaning": "一點",
+      "romaji": "sukoshi",
+      "reading": "すこし"
+    },
+    "興味": {
+      "meaning": "興趣",
+      "romaji": "kyoumi",
+      "reading": "きょうみ"
+    },
+    "わく": {
+      "meaning": "湧現",
+      "romaji": "waku",
+      "reading": "わく"
+    },
+    "くる": {
+      "meaning": "來",
+      "romaji": "kuru",
+      "reading": "くる"
+    }
+  },
+  "particles": {
+    "で": "表示方法、手段或場所",
+    "は": "主題助詞",
+    "が": "主格助詞",
+    "そうです": "傳聞助動詞（聽說…）",
+    "の": "表示修飾關係",
+    "も": "表示「也」",
+    "から": "表示起點或原因（從…／因為…）",
+    "に": "表示時間、方向、對象",
+    "と": "表示引用或條件（…的話）",
+    "し": "列舉並列原因（既…又…）",
+    "だ": "常體斷定助動詞",
+    "ので": "表示原因（因為…）",
+    "へ": "表示移動方向"
+  },
+  "translations": [
+    [
+      {
+        "text": "聽說最近",
+        "word": "最近"
+      },
+      {
+        "text": "不搭電車、",
+        "word": "電車"
+      },
+      {
+        "text": "改騎腳踏車",
+        "word": "自転車"
+      },
+      {
+        "text": "通勤的人增加了。",
+        "word": "増える"
+      }
+    ],
+    [
+      {
+        "text": "我的同事也",
+        "word": "同僚"
+      },
+      {
+        "text": "從上個月",
+        "word": "先月"
+      },
+      {
+        "text": "改騎了腳踏車。",
+        "word": "変える"
+      }
+    ],
+    [
+      {
+        "text": "問了理由，",
+        "word": "聞く"
+      },
+      {
+        "text": "據說是因為既能運動，",
+        "word": "運動"
+      },
+      {
+        "text": "又能避開電車的擁擠。",
+        "word": "避ける"
+      }
+    ],
+    [
+      {
+        "text": "的確，",
+        "word": "たしかに"
+      },
+      {
+        "text": "因為每天早上不用趕固定時間",
+        "word": "毎朝"
+      },
+      {
+        "text": "跑去車站，",
+        "word": "走る"
+      },
+      {
+        "text": "心情變得從容。",
+        "word": "余裕"
+      }
+    ],
+    [
+      {
+        "text": "不過，他說",
+        "word": "ただし"
+      },
+      {
+        "text": "下雨天",
+        "word": "雨"
+      },
+      {
+        "text": "很辛苦。",
+        "word": "大変"
+      }
+    ],
+    [
+      {
+        "text": "即使如此，",
+        "word": "それでも"
+      },
+      {
+        "text": "據說為了健康",
+        "word": "健康"
+      },
+      {
+        "text": "還是想繼續。",
+        "word": "続ける"
+      }
+    ],
+    [
+      {
+        "text": "我也",
+        "word": "私"
+      },
+      {
+        "text": "漸漸產生了一點興趣。",
+        "word": "わく"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.1,
+    "jlpt_level": "N3⁻"
+  }
+}

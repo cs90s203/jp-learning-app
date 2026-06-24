@@ -1,0 +1,1663 @@
+{
+  "date": "2026-06-25",
+  "level": "n1",
+  "title": "消えゆく言語と私たち",
+  "text": "世界には数千もの言語が存在するといわれるが、その多くが消滅の危機に瀕している。ある統計によれば、今世紀末までに現存する言語の半数が失われる可能性すらあるという。言語は単なる意思疎通の道具ではない。それぞれの言語には、その土地で育まれた世界観や価値観、長い歳月をかけて蓄積された知恵が織り込まれている。一つの言語が失われるということは、人類全体にとってかけがえのない財産が永遠に失われることを意味する。むろん、言語の盛衰は歴史の必然であり、すべてを保存することは現実的ではないという見方もあろう。しかしながら、話者が誇りを持って母語を受け継げる環境を整えることは、文化の多様性を守るうえで決して軽視できない課題である。グローバル化が加速する今だからこそ、私たちは足元にある言葉の重みを問い直す必要があるのではないだろうか。",
+  "tokens": [
+    {
+      "surface_form": "世界",
+      "basic_form": "世界",
+      "reading": "せかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "数千",
+      "basic_form": "数千",
+      "reading": "すうせん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言語",
+      "basic_form": "言語",
+      "reading": "げんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "存在",
+      "basic_form": "存在",
+      "reading": "そんざい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いわれる",
+      "basic_form": "いう",
+      "reading": "いわれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "多く",
+      "basic_form": "多く",
+      "reading": "おおく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "消滅",
+      "basic_form": "消滅",
+      "reading": "しょうめつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "危機",
+      "basic_form": "危機",
+      "reading": "きき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "瀕して",
+      "basic_form": "瀕する",
+      "reading": "ひんして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "統計",
+      "basic_form": "統計",
+      "reading": "とうけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によれば",
+      "basic_form": "によれば",
+      "reading": "によれば",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今世紀",
+      "basic_form": "今世紀",
+      "reading": "こんせいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "末",
+      "basic_form": "末",
+      "reading": "まつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現存",
+      "basic_form": "現存",
+      "reading": "げんそん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "言語",
+      "basic_form": "言語",
+      "reading": "げんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "半数",
+      "basic_form": "半数",
+      "reading": "はんすう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "失われる",
+      "basic_form": "失う",
+      "reading": "うしなわれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "可能性",
+      "basic_form": "可能性",
+      "reading": "かのうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "すら",
+      "basic_form": "すら",
+      "reading": "すら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いう",
+      "basic_form": "いう",
+      "reading": "いう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "言語",
+      "basic_form": "言語",
+      "reading": "げんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "単なる",
+      "basic_form": "単なる",
+      "reading": "たんなる",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "意思疎通",
+      "basic_form": "意思疎通",
+      "reading": "いしそつう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "道具",
+      "basic_form": "道具",
+      "reading": "どうぐ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それぞれ",
+      "basic_form": "それぞれ",
+      "reading": "それぞれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言語",
+      "basic_form": "言語",
+      "reading": "げんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "土地",
+      "basic_form": "土地",
+      "reading": "とち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "育まれた",
+      "basic_form": "育む",
+      "reading": "はぐくまれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "世界観",
+      "basic_form": "世界観",
+      "reading": "せかいかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "価値観",
+      "basic_form": "価値観",
+      "reading": "かちかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "長い",
+      "basic_form": "長い",
+      "reading": "ながい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "歳月",
+      "basic_form": "歳月",
+      "reading": "さいげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かけて",
+      "basic_form": "かける",
+      "reading": "かけて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "蓄積",
+      "basic_form": "蓄積",
+      "reading": "ちくせき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "された",
+      "basic_form": "する",
+      "reading": "された",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "知恵",
+      "basic_form": "知恵",
+      "reading": "ちえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "織り込まれて",
+      "basic_form": "織り込む",
+      "reading": "おりこまれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言語",
+      "basic_form": "言語",
+      "reading": "げんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "失われる",
+      "basic_form": "失う",
+      "reading": "うしなわれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いう",
+      "basic_form": "いう",
+      "reading": "いう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人類",
+      "basic_form": "人類",
+      "reading": "じんるい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "全体",
+      "basic_form": "全体",
+      "reading": "ぜんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "にとって",
+      "basic_form": "にとって",
+      "reading": "にとって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かけがえ",
+      "basic_form": "かけがえ",
+      "reading": "かけがえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "財産",
+      "basic_form": "財産",
+      "reading": "ざいさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "永遠",
+      "basic_form": "永遠",
+      "reading": "えいえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "失われる",
+      "basic_form": "失う",
+      "reading": "うしなわれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "意味",
+      "basic_form": "意味",
+      "reading": "いみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "むろん",
+      "basic_form": "むろん",
+      "reading": "むろん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "言語",
+      "basic_form": "言語",
+      "reading": "げんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "盛衰",
+      "basic_form": "盛衰",
+      "reading": "せいすい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "歴史",
+      "basic_form": "歴史",
+      "reading": "れきし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "必然",
+      "basic_form": "必然",
+      "reading": "ひつぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "であり",
+      "basic_form": "だ",
+      "reading": "であり",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すべて",
+      "basic_form": "すべて",
+      "reading": "すべて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保存",
+      "basic_form": "保存",
+      "reading": "ほぞん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現実的",
+      "basic_form": "現実的",
+      "reading": "げんじつてき",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いう",
+      "basic_form": "いう",
+      "reading": "いう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "見方",
+      "basic_form": "見方",
+      "reading": "みかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あろう",
+      "basic_form": "ある",
+      "reading": "あろう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかしながら",
+      "basic_form": "しかしながら",
+      "reading": "しかしながら",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "話者",
+      "basic_form": "話者",
+      "reading": "わしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "誇り",
+      "basic_form": "誇り",
+      "reading": "ほこり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "持って",
+      "basic_form": "持つ",
+      "reading": "もって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "母語",
+      "basic_form": "母語",
+      "reading": "ぼご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受け継げる",
+      "basic_form": "受け継ぐ",
+      "reading": "うけつげる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整える",
+      "basic_form": "整える",
+      "reading": "ととのえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "文化",
+      "basic_form": "文化",
+      "reading": "ぶんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多様性",
+      "basic_form": "多様性",
+      "reading": "たようせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "守る",
+      "basic_form": "守る",
+      "reading": "まもる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "うえ",
+      "basic_form": "うえ",
+      "reading": "うえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "決して",
+      "basic_form": "決して",
+      "reading": "けっして",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "軽視",
+      "basic_form": "軽視",
+      "reading": "けいし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "できない",
+      "basic_form": "できる",
+      "reading": "できない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "だ",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "グローバル化",
+      "basic_form": "グローバル化",
+      "reading": "グローバルか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "加速",
+      "basic_form": "加速",
+      "reading": "かそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "今",
+      "basic_form": "今",
+      "reading": "いま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だからこそ",
+      "basic_form": "だからこそ",
+      "reading": "だからこそ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私たち",
+      "basic_form": "私たち",
+      "reading": "わたしたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "足元",
+      "basic_form": "足元",
+      "reading": "あしもと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "言葉",
+      "basic_form": "言葉",
+      "reading": "ことば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重み",
+      "basic_form": "重み",
+      "reading": "おもみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "問い直す",
+      "basic_form": "問い直す",
+      "reading": "といなおす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "世界": {
+      "meaning": "世界",
+      "romaji": "sekai",
+      "reading": "せかい"
+    },
+    "数千": {
+      "meaning": "數千",
+      "romaji": "suusen",
+      "reading": "すうせん"
+    },
+    "言語": {
+      "meaning": "語言",
+      "romaji": "gengo",
+      "reading": "げんご"
+    },
+    "存在": {
+      "meaning": "存在",
+      "romaji": "sonzai",
+      "reading": "そんざい"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "いう": {
+      "meaning": "說、稱",
+      "romaji": "iu",
+      "reading": "いう"
+    },
+    "多く": {
+      "meaning": "多數、許多",
+      "romaji": "ooku",
+      "reading": "おおく"
+    },
+    "消滅": {
+      "meaning": "消滅",
+      "romaji": "shoumetsu",
+      "reading": "しょうめつ"
+    },
+    "危機": {
+      "meaning": "危機",
+      "romaji": "kiki",
+      "reading": "きき"
+    },
+    "瀕する": {
+      "meaning": "瀕臨",
+      "romaji": "hinsuru",
+      "reading": "ひんする"
+    },
+    "いる": {
+      "meaning": "在（有生命）",
+      "romaji": "iru",
+      "reading": "いる"
+    },
+    "統計": {
+      "meaning": "統計",
+      "romaji": "toukei",
+      "reading": "とうけい"
+    },
+    "今世紀": {
+      "meaning": "本世紀",
+      "romaji": "konseiki",
+      "reading": "こんせいき"
+    },
+    "末": {
+      "meaning": "末、末期",
+      "romaji": "matsu",
+      "reading": "まつ"
+    },
+    "現存": {
+      "meaning": "現存",
+      "romaji": "genson",
+      "reading": "げんそん"
+    },
+    "半数": {
+      "meaning": "半數",
+      "romaji": "hansuu",
+      "reading": "はんすう"
+    },
+    "失う": {
+      "meaning": "失去",
+      "romaji": "ushinau",
+      "reading": "うしなう"
+    },
+    "可能性": {
+      "meaning": "可能性",
+      "romaji": "kanousei",
+      "reading": "かのうせい"
+    },
+    "ある": {
+      "meaning": "有（無生命）",
+      "romaji": "aru",
+      "reading": "ある"
+    },
+    "意思疎通": {
+      "meaning": "溝通、意思交流",
+      "romaji": "ishisotsuu",
+      "reading": "いしそつう"
+    },
+    "道具": {
+      "meaning": "工具",
+      "romaji": "dougu",
+      "reading": "どうぐ"
+    },
+    "ない": {
+      "meaning": "沒有；不是",
+      "romaji": "nai",
+      "reading": "ない"
+    },
+    "それぞれ": {
+      "meaning": "各自",
+      "romaji": "sorezore",
+      "reading": "それぞれ"
+    },
+    "土地": {
+      "meaning": "土地",
+      "romaji": "tochi",
+      "reading": "とち"
+    },
+    "育む": {
+      "meaning": "孕育、培育",
+      "romaji": "hagukumu",
+      "reading": "はぐくむ"
+    },
+    "世界観": {
+      "meaning": "世界觀",
+      "romaji": "sekaikan",
+      "reading": "せかいかん"
+    },
+    "価値観": {
+      "meaning": "價值觀",
+      "romaji": "kachikan",
+      "reading": "かちかん"
+    },
+    "長い": {
+      "meaning": "長的、漫長的",
+      "romaji": "nagai",
+      "reading": "ながい"
+    },
+    "歳月": {
+      "meaning": "歲月",
+      "romaji": "saigetsu",
+      "reading": "さいげつ"
+    },
+    "かける": {
+      "meaning": "花費（時間）",
+      "romaji": "kakeru",
+      "reading": "かける"
+    },
+    "蓄積": {
+      "meaning": "累積",
+      "romaji": "chikuseki",
+      "reading": "ちくせき"
+    },
+    "知恵": {
+      "meaning": "智慧",
+      "romaji": "chie",
+      "reading": "ちえ"
+    },
+    "織り込む": {
+      "meaning": "交織、融入",
+      "romaji": "orikomu",
+      "reading": "おりこむ"
+    },
+    "一つ": {
+      "meaning": "一個",
+      "romaji": "hitotsu",
+      "reading": "ひとつ"
+    },
+    "こと": {
+      "meaning": "事情",
+      "romaji": "koto",
+      "reading": "こと"
+    },
+    "人類": {
+      "meaning": "人類",
+      "romaji": "jinrui",
+      "reading": "じんるい"
+    },
+    "全体": {
+      "meaning": "整體、全部",
+      "romaji": "zentai",
+      "reading": "ぜんたい"
+    },
+    "かけがえ": {
+      "meaning": "（かけがえのない＝）無可替代",
+      "romaji": "kakegae",
+      "reading": "かけがえ"
+    },
+    "財産": {
+      "meaning": "財產",
+      "romaji": "zaisan",
+      "reading": "ざいさん"
+    },
+    "永遠": {
+      "meaning": "永遠",
+      "romaji": "eien",
+      "reading": "えいえん"
+    },
+    "意味": {
+      "meaning": "意味、意義",
+      "romaji": "imi",
+      "reading": "いみ"
+    },
+    "むろん": {
+      "meaning": "當然",
+      "romaji": "muron",
+      "reading": "むろん"
+    },
+    "盛衰": {
+      "meaning": "興衰、盛衰",
+      "romaji": "seisui",
+      "reading": "せいすい"
+    },
+    "歴史": {
+      "meaning": "歷史",
+      "romaji": "rekishi",
+      "reading": "れきし"
+    },
+    "必然": {
+      "meaning": "必然",
+      "romaji": "hitsuzen",
+      "reading": "ひつぜん"
+    },
+    "すべて": {
+      "meaning": "全部",
+      "romaji": "subete",
+      "reading": "すべて"
+    },
+    "保存": {
+      "meaning": "保存",
+      "romaji": "hozon",
+      "reading": "ほぞん"
+    },
+    "現実的": {
+      "meaning": "現實的",
+      "romaji": "genjitsuteki",
+      "reading": "げんじつてき"
+    },
+    "見方": {
+      "meaning": "看法、觀點",
+      "romaji": "mikata",
+      "reading": "みかた"
+    },
+    "話者": {
+      "meaning": "使用者、說話者",
+      "romaji": "washa",
+      "reading": "わしゃ"
+    },
+    "誇り": {
+      "meaning": "自豪、驕傲",
+      "romaji": "hokori",
+      "reading": "ほこり"
+    },
+    "持つ": {
+      "meaning": "持有、抱持",
+      "romaji": "motsu",
+      "reading": "もつ"
+    },
+    "母語": {
+      "meaning": "母語",
+      "romaji": "bogo",
+      "reading": "ぼご"
+    },
+    "受け継ぐ": {
+      "meaning": "傳承、繼承",
+      "romaji": "uketsugu",
+      "reading": "うけつぐ"
+    },
+    "環境": {
+      "meaning": "環境",
+      "romaji": "kankyou",
+      "reading": "かんきょう"
+    },
+    "整える": {
+      "meaning": "整備、調整",
+      "romaji": "totonoeru",
+      "reading": "ととのえる"
+    },
+    "文化": {
+      "meaning": "文化",
+      "romaji": "bunka",
+      "reading": "ぶんか"
+    },
+    "多様性": {
+      "meaning": "多樣性",
+      "romaji": "tayousei",
+      "reading": "たようせい"
+    },
+    "守る": {
+      "meaning": "守護、保護",
+      "romaji": "mamoru",
+      "reading": "まもる"
+    },
+    "うえ": {
+      "meaning": "（…うえで＝）在…方面",
+      "romaji": "ue",
+      "reading": "うえ"
+    },
+    "決して": {
+      "meaning": "絕（不）",
+      "romaji": "kesshite",
+      "reading": "けっして"
+    },
+    "軽視": {
+      "meaning": "輕視",
+      "romaji": "keishi",
+      "reading": "けいし"
+    },
+    "できる": {
+      "meaning": "能夠",
+      "romaji": "dekiru",
+      "reading": "できる"
+    },
+    "課題": {
+      "meaning": "課題、課題",
+      "romaji": "kadai",
+      "reading": "かだい"
+    },
+    "グローバル化": {
+      "meaning": "全球化",
+      "romaji": "guroobaruka",
+      "reading": "グローバルか"
+    },
+    "加速": {
+      "meaning": "加速",
+      "romaji": "kasoku",
+      "reading": "かそく"
+    },
+    "今": {
+      "meaning": "現在、此刻",
+      "romaji": "ima",
+      "reading": "いま"
+    },
+    "私たち": {
+      "meaning": "我們",
+      "romaji": "watashitachi",
+      "reading": "わたしたち"
+    },
+    "足元": {
+      "meaning": "腳邊、身邊",
+      "romaji": "ashimoto",
+      "reading": "あしもと"
+    },
+    "言葉": {
+      "meaning": "語言、話語",
+      "romaji": "kotoba",
+      "reading": "ことば"
+    },
+    "重み": {
+      "meaning": "分量、重要性",
+      "romaji": "omomi",
+      "reading": "おもみ"
+    },
+    "問い直す": {
+      "meaning": "重新質問、重新審視",
+      "romaji": "toinaosu",
+      "reading": "といなおす"
+    },
+    "必要": {
+      "meaning": "必要",
+      "romaji": "hitsuyou",
+      "reading": "ひつよう"
+    }
+  },
+  "particles": {
+    "に": "表示對象、方向或場所",
+    "は": "主題助詞",
+    "も": "表示「也」",
+    "の": "表示修飾或所有",
+    "が": "主格助詞；亦表逆接",
+    "と": "表示引用或並列",
+    "によれば": "表示根據（根據…）",
+    "まで": "表示範圍或終點（到…）",
+    "すら": "表示極端舉例（甚至連…）",
+    "で": "表示場所、手段或範圍",
+    "や": "列舉助詞（…等）",
+    "にとって": "表示立場（對…而言）",
+    "を": "受格助詞",
+    "だからこそ": "表示強調原因（正因為…）",
+    "であり": "書面語斷定中止（即「だ」）",
+    "である": "書面語斷定（即「だ」）",
+    "だろう": "表示推測（…吧）",
+    "か": "表示疑問或反問"
+  },
+  "translations": [
+    [
+      {
+        "text": "據說世界上存在著數千種語言，",
+        "word": "言語"
+      },
+      {
+        "text": "但其中許多",
+        "word": "多く"
+      },
+      {
+        "text": "正瀕臨消滅的危機。",
+        "word": "危機"
+      }
+    ],
+    [
+      {
+        "text": "根據某項統計，",
+        "word": "統計"
+      },
+      {
+        "text": "在本世紀末前",
+        "word": "末"
+      },
+      {
+        "text": "現存語言的半數",
+        "word": "半数"
+      },
+      {
+        "text": "甚至有可能會消失。",
+        "word": "失う"
+      }
+    ],
+    [
+      {
+        "text": "語言並非單純的",
+        "word": "言語"
+      },
+      {
+        "text": "溝通工具。",
+        "word": "道具"
+      }
+    ],
+    [
+      {
+        "text": "每一種語言中，",
+        "word": "言語"
+      },
+      {
+        "text": "都交織著那片土地孕育出的",
+        "word": "育む"
+      },
+      {
+        "text": "世界觀與價值觀，",
+        "word": "世界観"
+      },
+      {
+        "text": "以及歷經漫長歲月累積的智慧。",
+        "word": "知恵"
+      }
+    ],
+    [
+      {
+        "text": "一種語言的消失，",
+        "word": "言語"
+      },
+      {
+        "text": "意味著對全人類而言",
+        "word": "人類"
+      },
+      {
+        "text": "無可替代的財產",
+        "word": "財産"
+      },
+      {
+        "text": "將永遠失去。",
+        "word": "失う"
+      }
+    ],
+    [
+      {
+        "text": "當然，",
+        "word": "むろん"
+      },
+      {
+        "text": "語言的興衰是歷史的必然，",
+        "word": "盛衰"
+      },
+      {
+        "text": "要保存一切並不現實，",
+        "word": "保存"
+      },
+      {
+        "text": "也會有這樣的看法吧。",
+        "word": "見方"
+      }
+    ],
+    [
+      {
+        "text": "然而，",
+        "word": "しかしながら"
+      },
+      {
+        "text": "整備讓使用者能懷著自豪傳承母語的環境，",
+        "word": "受け継ぐ"
+      },
+      {
+        "text": "在守護文化多樣性上",
+        "word": "多様性"
+      },
+      {
+        "text": "是絕不可輕視的課題。",
+        "word": "課題"
+      }
+    ],
+    [
+      {
+        "text": "正因為在全球化加速的此刻，",
+        "word": "加速"
+      },
+      {
+        "text": "我們",
+        "word": "私たち"
+      },
+      {
+        "text": "難道不需要重新審視腳邊語言的分量嗎。",
+        "word": "問い直す"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.16,
+    "jlpt_level": "N1"
+  }
+}

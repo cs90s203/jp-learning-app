@@ -12,6 +12,12 @@
 
 ---
 
+## 0.14.79 — 2026-06-25
+
+PTR：試題頁 quiz-tabs 加 touch-action:pan-x，解除 iOS touch 攔截
+
+---
+
 ## 0.14.78 — 2026-06-25
 
 PTR：移除試題頁 scroll 攔截，恢復 iOS native bounce 手感

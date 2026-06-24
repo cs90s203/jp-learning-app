@@ -1,0 +1,1051 @@
+{
+  "date": "2026-06-25",
+  "level": "n2_lite",
+  "title": "食品ロスを減らす",
+  "text": "近年、まだ食べられるのに捨てられてしまう「食品ロス」が問題になっている。日本では年間で数百万トンもの食料がむだに廃棄されているという。家庭から出るものも多く、買いすぎや作りすぎが主な原因だと言われている。この問題を減らすために、必要な分だけ買う、残った料理を別の料理に作りかえるといった工夫が大切である。また、最近は売れ残りそうな商品を安く提供する店やアプリも登場した。一人ひとりの小さな意識が、大きな変化につながるにちがいない。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まだ",
+      "basic_form": "まだ",
+      "reading": "まだ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "食べられる",
+      "basic_form": "食べる",
+      "reading": "たべられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "のに",
+      "basic_form": "のに",
+      "reading": "のに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "捨てられて",
+      "basic_form": "捨てる",
+      "reading": "すてられて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "しまう",
+      "basic_form": "しまう",
+      "reading": "しまう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "食品",
+      "basic_form": "食品",
+      "reading": "しょくひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ロス",
+      "basic_form": "ロス",
+      "reading": "ロス",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なって",
+      "basic_form": "なる",
+      "reading": "なって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "年間",
+      "basic_form": "年間",
+      "reading": "ねんかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "数百万",
+      "basic_form": "数百万",
+      "reading": "すうひゃくまん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "トン",
+      "basic_form": "トン",
+      "reading": "トン",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食料",
+      "basic_form": "食料",
+      "reading": "しょくりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "むだに",
+      "basic_form": "むだ",
+      "reading": "むだに",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "廃棄",
+      "basic_form": "廃棄",
+      "reading": "はいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "されて",
+      "basic_form": "する",
+      "reading": "されて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いう",
+      "basic_form": "いう",
+      "reading": "いう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家庭",
+      "basic_form": "家庭",
+      "reading": "かてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出る",
+      "basic_form": "出る",
+      "reading": "でる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "もの",
+      "basic_form": "もの",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多く",
+      "basic_form": "多い",
+      "reading": "おおく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "買いすぎ",
+      "basic_form": "買いすぎ",
+      "reading": "かいすぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作りすぎ",
+      "basic_form": "作りすぎ",
+      "reading": "つくりすぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "主な",
+      "basic_form": "主",
+      "reading": "おもな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "原因",
+      "basic_form": "原因",
+      "reading": "げんいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言われて",
+      "basic_form": "言う",
+      "reading": "いわれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "減らす",
+      "basic_form": "減らす",
+      "reading": "へらす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "必要な",
+      "basic_form": "必要",
+      "reading": "ひつような",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "分",
+      "basic_form": "分",
+      "reading": "ぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買う",
+      "basic_form": "買う",
+      "reading": "かう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "残った",
+      "basic_form": "残る",
+      "reading": "のこった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "別",
+      "basic_form": "別",
+      "reading": "べつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作りかえる",
+      "basic_form": "作りかえる",
+      "reading": "つくりかえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "工夫",
+      "basic_form": "工夫",
+      "reading": "くふう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大切",
+      "basic_form": "大切",
+      "reading": "たいせつ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "だ",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "売れ残りそうな",
+      "basic_form": "売れ残る",
+      "reading": "うれのこりそうな",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "商品",
+      "basic_form": "商品",
+      "reading": "しょうひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安く",
+      "basic_form": "安い",
+      "reading": "やすく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "提供",
+      "basic_form": "提供",
+      "reading": "ていきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "店",
+      "basic_form": "店",
+      "reading": "みせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "アプリ",
+      "basic_form": "アプリ",
+      "reading": "アプリ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "登場",
+      "basic_form": "登場",
+      "reading": "とうじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一人ひとり",
+      "basic_form": "一人ひとり",
+      "reading": "ひとりひとり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "小さな",
+      "basic_form": "小さな",
+      "reading": "ちいさな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "意識",
+      "basic_form": "意識",
+      "reading": "いしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "変化",
+      "basic_form": "変化",
+      "reading": "へんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つながる",
+      "basic_form": "つながる",
+      "reading": "つながる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "にちがいない",
+      "basic_form": "にちがいない",
+      "reading": "にちがいない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年",
+      "romaji": "kinnen",
+      "reading": "きんねん"
+    },
+    "まだ": {
+      "meaning": "還、尚",
+      "romaji": "mada",
+      "reading": "まだ"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "reading": "たべる"
+    },
+    "捨てる": {
+      "meaning": "丟棄",
+      "romaji": "suteru",
+      "reading": "すてる"
+    },
+    "しまう": {
+      "meaning": "（無意間／遺憾地）做了",
+      "romaji": "shimau",
+      "reading": "しまう"
+    },
+    "食品": {
+      "meaning": "食品",
+      "romaji": "shokuhin",
+      "reading": "しょくひん"
+    },
+    "ロス": {
+      "meaning": "損耗、浪費",
+      "romaji": "rosu",
+      "reading": "ロス"
+    },
+    "問題": {
+      "meaning": "問題",
+      "romaji": "mondai",
+      "reading": "もんだい"
+    },
+    "なる": {
+      "meaning": "變成",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "いる": {
+      "meaning": "在（有生命）",
+      "romaji": "iru",
+      "reading": "いる"
+    },
+    "日本": {
+      "meaning": "日本",
+      "romaji": "nihon",
+      "reading": "にほん"
+    },
+    "年間": {
+      "meaning": "一年間",
+      "romaji": "nenkan",
+      "reading": "ねんかん"
+    },
+    "数百万": {
+      "meaning": "數百萬",
+      "romaji": "suuhyakuman",
+      "reading": "すうひゃくまん"
+    },
+    "トン": {
+      "meaning": "噸",
+      "romaji": "ton",
+      "reading": "トン"
+    },
+    "食料": {
+      "meaning": "食物、糧食",
+      "romaji": "shokuryou",
+      "reading": "しょくりょう"
+    },
+    "むだ": {
+      "meaning": "浪費、徒勞",
+      "romaji": "muda",
+      "reading": "むだ"
+    },
+    "廃棄": {
+      "meaning": "廢棄、丟棄",
+      "romaji": "haiki",
+      "reading": "はいき"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "いう": {
+      "meaning": "說、稱",
+      "romaji": "iu",
+      "reading": "いう"
+    },
+    "家庭": {
+      "meaning": "家庭",
+      "romaji": "katei",
+      "reading": "かてい"
+    },
+    "出る": {
+      "meaning": "出來、產生",
+      "romaji": "deru",
+      "reading": "でる"
+    },
+    "もの": {
+      "meaning": "東西",
+      "romaji": "mono",
+      "reading": "もの"
+    },
+    "多い": {
+      "meaning": "多的",
+      "romaji": "ooi",
+      "reading": "おおい"
+    },
+    "買いすぎ": {
+      "meaning": "買太多",
+      "romaji": "kaisugi",
+      "reading": "かいすぎ"
+    },
+    "作りすぎ": {
+      "meaning": "做太多",
+      "romaji": "tsukurisugi",
+      "reading": "つくりすぎ"
+    },
+    "主": {
+      "meaning": "主要的",
+      "romaji": "omo",
+      "reading": "おも"
+    },
+    "原因": {
+      "meaning": "原因",
+      "romaji": "genin",
+      "reading": "げんいん"
+    },
+    "言う": {
+      "meaning": "說",
+      "romaji": "iu",
+      "reading": "いう"
+    },
+    "減らす": {
+      "meaning": "減少",
+      "romaji": "herasu",
+      "reading": "へらす"
+    },
+    "ため": {
+      "meaning": "為了",
+      "romaji": "tame",
+      "reading": "ため"
+    },
+    "必要": {
+      "meaning": "必要的",
+      "romaji": "hitsuyou",
+      "reading": "ひつよう"
+    },
+    "分": {
+      "meaning": "份量",
+      "romaji": "bun",
+      "reading": "ぶん"
+    },
+    "買う": {
+      "meaning": "買",
+      "romaji": "kau",
+      "reading": "かう"
+    },
+    "残る": {
+      "meaning": "剩下",
+      "romaji": "nokoru",
+      "reading": "のこる"
+    },
+    "料理": {
+      "meaning": "菜、料理",
+      "romaji": "ryouri",
+      "reading": "りょうり"
+    },
+    "別": {
+      "meaning": "另外、別的",
+      "romaji": "betsu",
+      "reading": "べつ"
+    },
+    "作りかえる": {
+      "meaning": "重新做、改做",
+      "romaji": "tsukurikaeru",
+      "reading": "つくりかえる"
+    },
+    "工夫": {
+      "meaning": "巧思、設法",
+      "romaji": "kufuu",
+      "reading": "くふう"
+    },
+    "大切": {
+      "meaning": "重要的",
+      "romaji": "taisetsu",
+      "reading": "たいせつ"
+    },
+    "最近": {
+      "meaning": "最近",
+      "romaji": "saikin",
+      "reading": "さいきん"
+    },
+    "売れ残る": {
+      "meaning": "賣剩",
+      "romaji": "urenokoru",
+      "reading": "うれのこる"
+    },
+    "商品": {
+      "meaning": "商品",
+      "romaji": "shouhin",
+      "reading": "しょうひん"
+    },
+    "安い": {
+      "meaning": "便宜的",
+      "romaji": "yasui",
+      "reading": "やすい"
+    },
+    "提供": {
+      "meaning": "提供",
+      "romaji": "teikyou",
+      "reading": "ていきょう"
+    },
+    "店": {
+      "meaning": "店",
+      "romaji": "mise",
+      "reading": "みせ"
+    },
+    "アプリ": {
+      "meaning": "應用程式",
+      "romaji": "apuri",
+      "reading": "アプリ"
+    },
+    "登場": {
+      "meaning": "登場、出現",
+      "romaji": "toujou",
+      "reading": "とうじょう"
+    },
+    "一人ひとり": {
+      "meaning": "每一個人",
+      "romaji": "hitorihitori",
+      "reading": "ひとりひとり"
+    },
+    "小さな": {
+      "meaning": "小的",
+      "romaji": "chiisana",
+      "reading": "ちいさな"
+    },
+    "意識": {
+      "meaning": "意識",
+      "romaji": "ishiki",
+      "reading": "いしき"
+    },
+    "大きな": {
+      "meaning": "大的",
+      "romaji": "ookina",
+      "reading": "おおきな"
+    },
+    "変化": {
+      "meaning": "變化",
+      "romaji": "henka",
+      "reading": "へんか"
+    },
+    "つながる": {
+      "meaning": "連結、關連",
+      "romaji": "tsunagaru",
+      "reading": "つながる"
+    }
+  },
+  "particles": {
+    "のに": "表示逆接（明明…卻…）",
+    "が": "主格助詞",
+    "に": "表示對象、結果或方向",
+    "で": "表示場所、手段或範圍",
+    "は": "主題助詞",
+    "も": "表示「也」",
+    "の": "表示修飾或所有",
+    "から": "表示起點或原因",
+    "と": "表示引用或共同",
+    "や": "列舉助詞（…等）",
+    "だ": "常體斷定助動詞",
+    "だけ": "表示「只、僅」",
+    "を": "受格助詞",
+    "といった": "列舉具體例子（…之類的）",
+    "である": "書面語斷定（即「だ」）",
+    "にちがいない": "表示強烈推測（一定…）"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年來，",
+        "word": "近年"
+      },
+      {
+        "text": "明明還能吃",
+        "word": "食べる"
+      },
+      {
+        "text": "卻被丟棄的",
+        "word": "捨てる"
+      },
+      {
+        "text": "「食品損耗」",
+        "word": "食品"
+      },
+      {
+        "text": "正成為問題。",
+        "word": "問題"
+      }
+    ],
+    [
+      {
+        "text": "據說在日本，",
+        "word": "日本"
+      },
+      {
+        "text": "每年數百萬噸的",
+        "word": "年間"
+      },
+      {
+        "text": "食物",
+        "word": "食料"
+      },
+      {
+        "text": "被白白廢棄。",
+        "word": "廃棄"
+      }
+    ],
+    [
+      {
+        "text": "來自家庭的也很多，",
+        "word": "家庭"
+      },
+      {
+        "text": "買太多和做太多",
+        "word": "買いすぎ"
+      },
+      {
+        "text": "被認為是主要原因。",
+        "word": "原因"
+      }
+    ],
+    [
+      {
+        "text": "為了減少這個問題，",
+        "word": "減らす"
+      },
+      {
+        "text": "只買必要的份量、",
+        "word": "必要"
+      },
+      {
+        "text": "把剩菜改做成別的料理",
+        "word": "作りかえる"
+      },
+      {
+        "text": "這類巧思很重要。",
+        "word": "工夫"
+      }
+    ],
+    [
+      {
+        "text": "此外，最近",
+        "word": "また"
+      },
+      {
+        "text": "把可能賣剩的商品",
+        "word": "売れ残る"
+      },
+      {
+        "text": "便宜提供的店家和應用程式",
+        "word": "提供"
+      },
+      {
+        "text": "也出現了。",
+        "word": "登場"
+      }
+    ],
+    [
+      {
+        "text": "每個人小小的意識，",
+        "word": "意識"
+      },
+      {
+        "text": "一定能連結到",
+        "word": "つながる"
+      },
+      {
+        "text": "巨大的改變。",
+        "word": "変化"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.12,
+    "jlpt_level": "N2⁻"
+  }
+}
