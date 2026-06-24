@@ -1,5 +1,21 @@
 # 日語學習 App — 版本記錄
 
+## v0.14.31 — 2026-06-24
+
+**translations 格式精簡**
+- 中文翻譯從逐詞對應 object array 改為每句一個純字串
+- 移除單字高亮翻譯功能（applyAddedWordNoteColors）
+- 同步更新生成 prompt，大幅降低 AI 生成 token 量
+- 舊格式資料向後相容
+
+---
+
+## 0.14.31 — 2026-06-24
+
+translations改純字串，大幅降低生成token量
+
+---
+
 ## v0.14.30 — 2026-06-24
 
 **五十音表：濁音/半濁音改為 toggle chip**

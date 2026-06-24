@@ -841,11 +841,19 @@
   html[data-theme="dark"] #gojuuon-overlay { background: #1A1008; }
   #gojuuon-overlay.open { display: flex; }
   .gojuuon-header {
-    display: flex; align-items: center; justify-content: space-between;
+    display: flex; align-items: center; gap: 8px;
     padding: 6px 8px 5px; flex-shrink: 0;
     border-bottom: 1px solid var(--border);
   }
-  .gojuuon-header h2 { font-size: 17px; font-weight: 700; color: var(--wt); margin: 0; }
+  .gojuuon-header h2 { font-size: 17px; font-weight: 700; color: var(--wt); margin: 0; flex-shrink: 0; }
+  .gojuuon-chips { display: flex; gap: 6px; flex: 1; }
+  .gojuuon-chip {
+    padding: 3px 10px; border-radius: 20px; border: 1px solid var(--border);
+    background: var(--wa-bg2); color: var(--wt3); font-size: 12px; font-weight: 600;
+    cursor: pointer; transition: background .15s, color .15s;
+  }
+  .gojuuon-chip.active { background: var(--wa); color: #FFF; border-color: var(--wa); }
+  .gojuuon-group-hidden { display: none; }
   .gojuuon-close {
     width: 34px; height: 34px; border-radius: 50%; border: none;
     background: var(--wa-bg2); color: var(--wt2); font-size: 18px;
@@ -1623,6 +1631,10 @@
     <div id="gojuuon-overlay">
       <div class="gojuuon-header">
         <h2>五十音表</h2>
+        <div class="gojuuon-chips">
+          <button class="gojuuon-chip" id="chip-dakuten" onclick="toggleGojuuonGroup('dakuten')">濁音</button>
+          <button class="gojuuon-chip" id="chip-handakuten" onclick="toggleGojuuonGroup('handakuten')">半濁音</button>
+        </div>
         <button class="gojuuon-close" onclick="closeGojuuon()">✕</button>
       </div>
       <div class="gojuuon-scroll" id="gojuuon-scroll"></div>
@@ -1871,7 +1883,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.29
+          v0.14.30
         </div>
 
       </div>
@@ -5234,6 +5246,11 @@ const GOJUUON_DATA = [
 
 function buildGojuuonHTML() {
   return GOJUUON_DATA.map(section => {
+    const isDakuten    = section.label.includes('濁音') && !section.label.includes('半濁音');
+    const isHandakuten = section.label.includes('半濁音');
+    const group = isDakuten ? 'dakuten' : isHandakuten ? 'handakuten' : '';
+    const groupAttr  = group ? ` data-group="${group}"` : '';
+    const hiddenClass = group ? ' gojuuon-group-hidden' : '';
     const cells = section.cells.map(c => {
       if (!c) return '<div class="gojuuon-cell empty"></div>';
       return `<div class="gojuuon-cell" onclick="gojuuonSpeak('${c.r}','${c.h}')">
@@ -5245,15 +5262,27 @@ function buildGojuuonHTML() {
         ${c.src ? `<div class="gojuuon-src">${c.src}</div>` : ''}
       </div>`;
     }).join('');
-    return `<div class="gojuuon-section-title">${section.label}</div>
-      <div class="gojuuon-cells">${cells}</div>`;
+    return `<div class="gojuuon-section-title${hiddenClass}"${groupAttr}>${section.label}</div>
+      <div class="gojuuon-cells${hiddenClass}"${groupAttr}>${cells}</div>`;
   }).join('');
+}
+
+function toggleGojuuonGroup(group) {
+  const chip = document.getElementById('chip-' + group);
+  const isActive = chip.classList.toggle('active');
+  document.querySelectorAll(`[data-group="${group}"]`).forEach(el => {
+    el.classList.toggle('gojuuon-group-hidden', !isActive);
+  });
 }
 
 function openGojuuon() {
   const overlay = document.getElementById('gojuuon-overlay');
   const scroll  = document.getElementById('gojuuon-scroll');
-  if (!scroll.innerHTML) scroll.innerHTML = buildGojuuonHTML();
+  scroll.innerHTML = buildGojuuonHTML();
+  // reset chips
+  ['dakuten','handakuten'].forEach(g => {
+    document.getElementById('chip-' + g).classList.remove('active');
+  });
   overlay.classList.add('open');
   const btn = document.getElementById('vocab-gojuuon-btn');
   if (btn) btn.classList.add('open');
