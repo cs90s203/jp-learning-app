@@ -1549,7 +1549,7 @@
   <!-- Pull-to-refresh indicator -->
   <div id="ptr-indicator">
     <!-- r=15, c=94.25, segLen=16.85, gap=2, step=18.85 -->
-    <svg width="50" height="50" viewBox="0 50 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="25" cy="25" r="15" stroke="#E4D8CC" stroke-width="9" fill="none"/>
       <circle id="ptr-seg-0" cx="25" cy="25" r="15" stroke="#D85A30" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="16.85 77.4" stroke-dashoffset="23.56"  transform="rotate(-90 25 25)" opacity="0.15"/>
       <circle id="ptr-seg-1" cx="25" cy="25" r="15" stroke="#1D9E75" stroke-width="9" fill="none" stroke-linecap="round" stroke-dasharray="16.85 77.4" stroke-dashoffset="4.71"   transform="rotate(-90 25 25)" opacity="0.15"/>
@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.63
+          v0.14.64
         </div>
 
       </div>
@@ -4043,7 +4043,7 @@ function loadTheme() {
     const active = pullDist - ANIM_START;           // 有效距離 0~100
     const range  = THRESHOLD - ANIM_START;          // = 100
     const capped = Math.min(active, range);
-    const y = -60 + capped * 0.74;                 // -60 → 14px
+    const y = -60 + capped * 1.2;                  // -60 → 60px
     indicator.style.transition = 'none';
     indicator.style.transform = `translateX(-50%) translateY(${y}px)`;
     indicator.style.opacity = Math.min(capped / 20, 1);
