@@ -585,6 +585,17 @@
   .vocab-kana  { font-size: 16px; color: var(--wt2); margin-top: 4px; }
   .vocab-romaji { font-size: 12px; color: var(--wt3); margin-top: 2px; }
   .vocab-divider { height: 0.5px; background: var(--wa-bg); margin: 16px 0; }
+  .vocab-seen-forms { margin-top: 12px; border-top: 1px solid var(--border); padding-top: 10px; text-align: left; }
+  .vocab-seen-toggle { background: none; border: none; color: var(--wt2); font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 5px; padding: 0; -webkit-tap-highlight-color: transparent; }
+  .seen-count { color: var(--wt3); font-size: 12px; }
+  .seen-arrow { transition: transform .2s; flex-shrink: 0; }
+  .vocab-seen-list { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+  .seen-form-row { display: flex; align-items: center; gap: 8px; }
+  .seen-form-text { font-size: 20px; color: var(--wt); min-width: 80px; line-height: 1; }
+  .seen-form-meta { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+  .seen-form-name { font-size: 11px; color: var(--wa); font-weight: 600; }
+  .seen-form-desc { font-size: 11px; color: var(--wt3); }
+  .speak-btn-sm { width: 26px; height: 26px; border-radius: 50%; background: var(--card-bg); border: 1px solid var(--border); color: var(--wt2); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; -webkit-tap-highlight-color: transparent; }
   .vocab-meaning { font-size: 20px; color: var(--wt); font-weight: 500; }
   .vocab-example { font-size: 13px; color: var(--wt2); margin-top: 10px; line-height: 1.8; transition: color 0.15s, text-shadow 0.15s; }
   .vocab-example ruby rt { font-size: 9px; }
@@ -887,12 +898,18 @@
   #gojuuon-overlay.katakana-mode .gojuuon-h { font-size: 14px; color: var(--wa); }
   #gojuuon-overlay.katakana-mode .gojuuon-k { font-size: 27px; color: var(--wt); }
   .gojuuon-r { font-size: 10px; color: var(--wt3); margin-top: 2px; letter-spacing: .04em; }
-  .gojuuon-src { font-size: 10px; color: var(--wt3); margin-top: 1px; }
-  .src-h { opacity: .75; }
-  .src-sep { opacity: .25; }
-  .src-k { opacity: .3; }
-  #gojuuon-overlay.katakana-mode .src-h { opacity: .3; }
-  #gojuuon-overlay.katakana-mode .src-k { opacity: .75; }
+  .gojuuon-src { font-size: 15px; color: var(--wt2); margin-top: 2px; }
+  .src-h { opacity: .9; }
+  .src-sep { opacity: .35; }
+  .src-k { opacity: .45; }
+  #gojuuon-overlay.katakana-mode .src-h { opacity: .45; }
+  #gojuuon-overlay.katakana-mode .src-k { opacity: .9; }
+  /* daku/handaku active cells: big char in warm light orange */
+  .gojuuon-cell.daku-cell .gojuuon-h { color: #A04800; }
+  html[data-theme="dark"] .gojuuon-cell.daku-cell .gojuuon-h { color: #FF8C00; }
+  #gojuuon-overlay.katakana-mode .gojuuon-cell.daku-cell .gojuuon-h { color: var(--wa); }
+  #gojuuon-overlay.katakana-mode .gojuuon-cell.daku-cell .gojuuon-k { color: #A04800; }
+  html[data-theme="dark"] #gojuuon-overlay.katakana-mode .gojuuon-cell.daku-cell .gojuuon-k { color: #FF8C00; }
 
   /* Add word modal (bottom sheet) */
   .vocab-modal-bd {
@@ -1893,7 +1910,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.35
+          v0.14.38
         </div>
 
       </div>
@@ -3373,6 +3390,7 @@ function renderArticle(tokens) {
       // Any token containing Japanese/Latin characters is interactive (even if not in vocab dict)
       const wordKey = VOCAB_DICT[basic] ? basic : (VOCAB_DICT[surface] ? surface : basic);
       const isAdded = addedWords.has(wordKey);
+      if (isAdded && surface !== wordKey) trackSeenForm(wordKey, surface, reading, tok.pos);
       html += '<span class="tok tok-word' + (isAdded ? ' tok-added' : '') + '" data-idx="' + i + '" data-type="word" data-basic="' + wordKey + '" data-surface="' + surface + '" data-reading="' + reading + '" data-sentence="' + sentenceIndex + '">' + inner + '</span>';
     } else {
       // Pure punctuation/symbols only — non-interactive
@@ -3515,6 +3533,54 @@ function handleTokenLongPress(el) {
   }
 }
 
+function classifyForm(surface, basic, pos) {
+  if (pos === '形容詞' && basic.endsWith('い')) {
+    const s = basic.slice(0, -1);
+    if (surface === s + 'く')         return { name: 'く形',        desc: '副詞化，接なる・て等' };
+    if (surface === s + 'くて')       return { name: 'くて形',      desc: '接續兩個形容詞' };
+    if (surface === s + 'かった')     return { name: 'かった形',    desc: '過去式' };
+    if (surface === s + 'くない')     return { name: 'くない形',    desc: '否定形' };
+    if (surface === s + 'くなかった') return { name: 'くなかった形',desc: '過去否定' };
+    if (surface === s + 'ければ')     return { name: 'ければ形',    desc: '條件「如果…」' };
+  }
+  if (pos === '動詞') {
+    if (/ませんでした$/.test(surface)) return { name: 'ませんでした形', desc: '禮貌體過去否定' };
+    if (/ました$/.test(surface))      return { name: 'ました形',   desc: '禮貌體過去' };
+    if (/ません$/.test(surface))      return { name: 'ません形',   desc: '禮貌體否定' };
+    if (/ます$/.test(surface))        return { name: 'ます形',     desc: '禮貌體現在・習慣' };
+    if (/ていた$/.test(surface))      return { name: 'ていた形',   desc: '過去持續・狀態' };
+    if (/ている$/.test(surface))      return { name: 'ている形',   desc: '持續動作・狀態' };
+    if (/なかった$/.test(surface))    return { name: 'なかった形', desc: '過去否定' };
+    if (/ない$/.test(surface))        return { name: 'ない形',     desc: '否定形' };
+    if (/たら$|だら$/.test(surface))  return { name: 'たら形',     desc: '條件・完了後' };
+    if (/[てで]$/.test(surface))      return { name: 'て形',       desc: '接續、請求、進行' };
+    if (/[ただ]$/.test(surface) && surface !== basic) return { name: 'た形', desc: '過去式・完了' };
+    if (/られる$|れる$/.test(surface)) return { name: '可能形',    desc: '能夠做…' };
+    if (/よう$|おう$/.test(surface))  return { name: '意向形',     desc: '意志「要…」・邀請' };
+    if (/ば$/.test(surface))          return { name: 'ば形',       desc: '條件「如果…」' };
+  }
+  return null;
+}
+
+function trackSeenForm(basic, surface, reading, pos) {
+  const entry = vocabBook[basic];
+  if (!entry) return;
+  if (!entry.seen_forms) entry.seen_forms = [];
+  if (entry.seen_forms.some(f => f.surface === surface)) return;
+  const classified = classifyForm(surface, basic, pos);
+  if (!classified) return;
+  entry.seen_forms.push({ surface, reading, ...classified });
+  saveVocabBook();
+}
+
+function toggleSeenForms(btn) {
+  const list = btn.nextElementSibling;
+  const arrow = btn.querySelector('.seen-arrow');
+  const open = list.style.display !== 'none';
+  list.style.display = open ? 'none' : 'block';
+  arrow.style.transform = open ? '' : 'rotate(180deg)';
+}
+
 function openWordPanel(basic, surface, reading) {
   const entry = VOCAB_DICT[basic] || VOCAB_DICT[surface] || { meaning: '（尚無中文翻譯）', romaji: '' };
   const isAdded = addedWords.has(basic);
@@ -3544,7 +3610,7 @@ function openWordPanel(basic, surface, reading) {
           '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6M10 11v6M14 11v6M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>' +
           '移除單字卡' +
         '</button>'
-      : '<button class="wp-add-btn" onclick="addToVocabCards(\'' + basic + '\',{kana:\'' + (reading||'').replace(/'/g,"\\'") + '\'})">' +
+      : '<button class="wp-add-btn" onclick="addToVocabCards(\'' + basic + '\',{kana:\'' + (/^[ぁ-ヿ]+$/.test(basic) ? basic : (reading||'')).replace(/'/g,"\\'") + '\'})">' +
           '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>' +
           '加入單字卡' +
         '</button>');
@@ -3609,7 +3675,8 @@ function addToVocabCards(basic, extra) {
       example:    extra?.example || entry.example || findExampleSentence(basic) || '',
       familiarity: 0,
       source:     extra?.source  || 'article',
-      addedDate:  new Date().toISOString().slice(0,10)
+      addedDate:  new Date().toISOString().slice(0,10),
+      seen_forms: []
     };
     addedWords.add(basic);
     saveVocabBook();
@@ -5131,7 +5198,32 @@ function renderVocabDisplayCard() {
       (entry.example ? '<div class="vocab-example meaning-hidden" id="vocab-example-text">' + entry.example + '</div>' : '') +
       (!localStorage.getItem('meaningHintSeen') ? '<div class="meaning-reveal-hint" id="meaning-reveal-hint">點擊顯示中文</div>' : '') +
     '</div>' +
-    '<div style="margin-top:12px"><span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span></div>';
+    '<div style="margin-top:12px"><span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span></div>' +
+    (function() {
+      const forms = entry.seen_forms || [];
+      if (!forms.length) return '';
+      return '<div class="vocab-seen-forms">' +
+        '<button class="vocab-seen-toggle" onclick="toggleSeenForms(this)">' +
+          '活用形 <span class="seen-count">(' + forms.length + ')</span>' +
+          '<svg class="seen-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>' +
+        '</button>' +
+        '<div class="vocab-seen-list" style="display:none">' +
+          forms.map(function(f) {
+            const safeS = f.surface.replace(/'/g, "\\'");
+            return '<div class="seen-form-row">' +
+              '<span class="seen-form-text">' + f.surface + '</span>' +
+              '<button class="speak-btn-sm" onclick="speak(\'' + safeS + '\')" aria-label="發音">' +
+                '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
+              '</button>' +
+              '<div class="seen-form-meta">' +
+                '<span class="seen-form-name">' + f.name + '</span>' +
+                '<span class="seen-form-desc">' + f.desc + '</span>' +
+              '</div>' +
+            '</div>';
+          }).join('') +
+        '</div>' +
+      '</div>';
+    })();
 
   // Nav dots
   const total = vocabFilteredList.length;
@@ -5253,13 +5345,14 @@ function buildGojuuonHTML() {
       let a = c;
       if (_dakutenMode === 'dakuten'    && c.daku)    a = {...c, ...c.daku};
       if (_dakutenMode === 'handakuten' && c.handaku) a = {...c, ...c.handaku};
+      const isDakuCell = (_dakutenMode === 'dakuten' && c.daku) || (_dakutenMode === 'handakuten' && c.handaku);
       const speakChar = _katakanaMode ? a.k : a.h;
       let srcHtml = '';
       if (c.src) {
         const [sh, sk] = c.src.split('/');
         srcHtml = `<div class="gojuuon-src"><span class="src-h">${sh}</span><span class="src-sep">/</span><span class="src-k">${sk||''}</span></div>`;
       }
-      return `<div class="gojuuon-cell" onclick="gojuuonSpeak('${a.r}','${speakChar}')">
+      return `<div class="gojuuon-cell${isDakuCell ? ' daku-cell' : ''}" onclick="gojuuonSpeak('${a.r}','${speakChar}')">
         <div class="gojuuon-pair">
           <span class="gojuuon-h">${a.h}</span>
           <span class="gojuuon-k">${a.k}</span>
@@ -5315,7 +5408,7 @@ function gojuuonSpeak(romaji, hira) {
   if (window.speechSynthesis) {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(hira);
-    u.lang = 'ja-JP'; u.rate = 0.4;
+    u.lang = 'ja-JP'; u.rate = 0.2;
     window.speechSynthesis.speak(u);
   }
 }
