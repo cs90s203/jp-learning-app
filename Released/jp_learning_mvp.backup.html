@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.71
+          v0.14.72
         </div>
 
       </div>
@@ -4041,7 +4041,11 @@ function loadTheme() {
   function getActivePage() { return document.querySelector('.page.active'); }
 
   function setIndicator(pullDist) {
-    if (pullDist < ANIM_START) { resetIndicator(); return; }
+    // 頁面從一開始就 1:1 跟著走，不等 ANIM_START
+    const page = getActivePage();
+    if (page) { page.style.transition = 'none'; page.style.transform = `translateY(${pullDist}px)`; }
+
+    if (pullDist < ANIM_START) return; // 環還不出現
     const active = pullDist - ANIM_START;           // 有效距離 0~100
     const range  = THRESHOLD - ANIM_START;          // = 100
     const capped = Math.min(active, range);
@@ -4051,9 +4055,6 @@ function loadTheme() {
     indicator.style.opacity = Math.min(capped / 20, 1);
     const lit = Math.floor(capped / (range / SEGS));
     segs.forEach((s, i) => { if (s) s.style.opacity = i < lit ? '1' : '0.15'; });
-    // 頁面跟著往下移（阻力感，半速）
-    const page = getActivePage();
-    if (page) { page.style.transition = 'none'; page.style.transform = `translateY(${pullDist}px)`; }
   }
 
   function resetIndicator() {
