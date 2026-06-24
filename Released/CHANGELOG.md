@@ -1,5 +1,22 @@
 # 日語學習 App — 版本記錄
 
+## v0.14.46 — 2026-06-24
+
+**單字卡 kana 讀音修正：改從 VOCAB_DICT 取原形讀音**
+- 加入單字時 kana 優先使用 `VOCAB_DICT[basic].reading`（原形讀音），不再使用活用形的讀音
+- Demo 詞彙補上 reading 欄位
+- Content pack 格式規範加入 `reading` 欄位說明及說明
+- 腳本 `backfill_reading.py` 回填所有 33 個既有 pack（219→0 個空缺）
+- 移除「遇到原形 token 才修正 kana」的被動邏輯
+
+---
+
+## 0.14.46 — 2026-06-24
+
+單字卡 kana 改從 VOCAB_DICT.reading 取原形讀音，修正活用形讀音存入 bug
+
+---
+
 ## v0.14.45 — 2026-06-24
 
 **同步衝突偵測改為智慧比對**

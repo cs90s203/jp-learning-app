@@ -193,72 +193,86 @@
     "昨日": {
       "meaning": "昨天",
       "romaji": "kinou",
-      "example": "昨日は雨でした。"
+      "example": "昨日は雨でした。",
+      "reading": "きのう"
     },
     "雨": {
       "meaning": "雨",
       "romaji": "ame",
-      "example": "昨日は雨でした。"
+      "example": "昨日は雨でした。",
+      "reading": "あめ"
     },
     "私": {
       "meaning": "我",
       "romaji": "watashi",
-      "example": "私は傘を持って学校に行きました。"
+      "example": "私は傘を持って学校に行きました。",
+      "reading": "わたし"
     },
     "傘": {
       "meaning": "雨傘",
       "romaji": "kasa",
-      "example": "私は傘を持って学校に行きました。"
+      "example": "私は傘を持って学校に行きました。",
+      "reading": "かさ"
     },
     "持つ": {
       "meaning": "拿・帶",
       "romaji": "motsu",
-      "example": "私は傘を持って学校に行きました。"
+      "example": "私は傘を持って学校に行きました。",
+      "reading": "もつ"
     },
     "学校": {
       "meaning": "學校",
       "romaji": "gakkou",
-      "example": "私は傘を持って学校に行きました。"
+      "example": "私は傘を持って学校に行きました。",
+      "reading": "がっこう"
     },
     "行く": {
       "meaning": "去",
       "romaji": "iku",
-      "example": "私は傘を持って学校に行きました。"
+      "example": "私は傘を持って学校に行きました。",
+      "reading": "いく"
     },
     "放課後": {
       "meaning": "放學後",
       "romaji": "houkago",
-      "example": "放課後に図書館で本を読みました。"
+      "example": "放課後に図書館で本を読みました。",
+      "reading": "ほうかご"
     },
     "図書館": {
       "meaning": "圖書館",
       "romaji": "toshokan",
-      "example": "放課後に図書館で本を読みました。"
+      "example": "放課後に図書館で本を読みました。",
+      "reading": "としょかん"
     },
     "本": {
       "meaning": "書",
       "romaji": "hon",
-      "example": "放課後に図書館で本を読みました。"
+      "example": "放課後に図書館で本を読みました。",
+      "reading": "ほん"
     },
     "読む": {
       "meaning": "讀",
       "romaji": "yomu",
-      "example": "放課後に図書館で本を読みました。"
+      "example": "放課後に図書館で本を読みました。",
+      "reading": "よむ"
     },
     "日": {
       "meaning": "日子・天",
       "romaji": "hi",
-      "example": "雨の日は読書が好きです。"
+      "example": "雨の日は読書が好きです。",
+      "reading": "ひ"
     },
     "読書": {
       "meaning": "閱讀",
       "romaji": "dokusho",
-      "example": "雨の日は読書が好きです。"
+      "example": "雨の日は読書が好きです。",
+      "reading": "どくしょ"
     },
     "好き": {
       "meaning": "喜歡",
       "romaji": "suki",
-      "example": "雨の日は読書が好きです。"
+      "example": "雨の日は読書が好きです。",
+      "reading": "すき"
     }
   },
   "particles": {

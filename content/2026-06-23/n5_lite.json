@@ -206,55 +206,68 @@
   "vocab": {
     "これ": {
       "meaning": "這個",
-      "romaji": "kore"
+      "romaji": "kore",
+      "reading": "これ"
     },
     "りんご": {
       "meaning": "蘋果",
-      "romaji": "ringo"
+      "romaji": "ringo",
+      "reading": "りんご"
     },
     "赤い": {
       "meaning": "紅色的",
-      "romaji": "akai"
+      "romaji": "akai",
+      "reading": "あかい"
     },
     "おいしい": {
       "meaning": "好吃的",
-      "romaji": "oishii"
+      "romaji": "oishii",
+      "reading": "おいしい"
     },
     "みかん": {
       "meaning": "橘子",
-      "romaji": "mikan"
+      "romaji": "mikan",
+      "reading": "みかん"
     },
     "ある": {
       "meaning": "有（存在）",
-      "romaji": "aru"
+      "romaji": "aru",
+      "reading": "ある"
     },
     "黄色い": {
       "meaning": "黃色的",
-      "romaji": "kiiroi"
+      "romaji": "kiiroi",
+      "reading": "きいろい"
     },
     "甘い": {
       "meaning": "甜的",
-      "romaji": "amai"
+      "romaji": "amai",
+      "reading": "あまい"
     },
     "くだもの": {
       "meaning": "水果",
-      "romaji": "kudamono"
+      "romaji": "kudamono",
+      "reading": "くだもの"
     },
     "体": {
       "meaning": "身體",
-      "romaji": "karada"
+      "romaji": "karada",
+      "reading": "からだ"
     },
     "いい": {
       "meaning": "好的",
-      "romaji": "ii"
+      "romaji": "ii",
+      "reading": "いい"
     },
     "毎日": {
       "meaning": "每天",
-      "romaji": "mainichi"
+      "romaji": "mainichi",
+      "reading": "まいにち"
     },
     "食べる": {
       "meaning": "吃",
-      "romaji": "taberu"
+      "romaji": "taberu",
+      "reading": "たべる"
     }
   },
   "particles": {

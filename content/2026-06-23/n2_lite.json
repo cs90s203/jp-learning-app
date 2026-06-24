@@ -1052,267 +1052,333 @@
   "vocab": {
     "日本": {
       "meaning": "日本",
-      "romaji": "nihon"
+      "romaji": "nihon",
+      "reading": "にほん"
     },
     "地域": {
       "meaning": "地區、區域",
-      "romaji": "chiiki"
+      "romaji": "chiiki",
+      "reading": "ちいき"
     },
     "ごとに": {
       "meaning": "每～、各～",
-      "romaji": "goto ni"
+      "romaji": "goto ni",
+      "reading": "ごとに"
     },
     "独自": {
       "meaning": "獨特的、固有的",
-      "romaji": "dokuji"
+      "romaji": "dokuji",
+      "reading": "どくじ"
     },
     "食文化": {
       "meaning": "飲食文化",
-      "romaji": "shoku bunka"
+      "romaji": "shoku bunka",
+      "reading": "しょくぶんか"
     },
     "ある": {
       "meaning": "有（存在）",
-      "romaji": "aru"
+      "romaji": "aru",
+      "reading": "ある"
     },
     "北海道": {
       "meaning": "北海道",
-      "romaji": "hokkaidou"
+      "romaji": "hokkaidou",
+      "reading": "ほっかいどう"
     },
     "新鮮": {
       "meaning": "新鮮的",
-      "romaji": "shinsen"
+      "romaji": "shinsen",
+      "reading": "しんせん"
     },
     "海産物": {
       "meaning": "海產",
-      "romaji": "kaisanbutsu"
+      "romaji": "kaisanbutsu",
+      "reading": "かいさんぶつ"
     },
     "乳製品": {
       "meaning": "乳製品",
-      "romaji": "nyuuseihin"
+      "romaji": "nyuuseihin",
+      "reading": "にゅうせいひん"
     },
     "有名": {
       "meaning": "有名的",
-      "romaji": "yuumei"
+      "romaji": "yuumei",
+      "reading": "ゆうめい"
     },
     "観光客": {
       "meaning": "觀光客",
-      "romaji": "kankokyaku"
+      "romaji": "kankokyaku",
+      "reading": "かんこうきゃく"
     },
     "大変": {
       "meaning": "非常（副詞）",
-      "romaji": "taihen"
+      "romaji": "taihen",
+      "reading": "たいへん"
     },
     "人気": {
       "meaning": "人氣、受歡迎",
-      "romaji": "ninki"
+      "romaji": "ninki",
+      "reading": "にんき"
     },
     "一方": {
       "meaning": "另一方面",
-      "romaji": "ippou"
+      "romaji": "ippou",
+      "reading": "いっぽう"
     },
     "関西地方": {
       "meaning": "關西地區",
-      "romaji": "kansai chihou"
+      "romaji": "kansai chihou",
+      "reading": "かんさいちほう"
     },
     "出汁": {
       "meaning": "高湯",
-      "romaji": "dashi"
+      "romaji": "dashi",
+      "reading": "だし"
     },
     "重視": {
       "meaning": "重視、注重",
-      "romaji": "juushi"
+      "romaji": "juushi",
+      "reading": "じゅうし"
     },
     "する": {
       "meaning": "做",
-      "romaji": "suru"
+      "romaji": "suru",
+      "reading": "する"
     },
     "薄味": {
       "meaning": "清淡口味",
-      "romaji": "usu aji"
+      "romaji": "usu aji",
+      "reading": "うすあじ"
     },
     "料理": {
       "meaning": "料理、菜餚",
-      "romaji": "ryouri"
+      "romaji": "ryouri",
+      "reading": "りょうり"
     },
     "多い": {
       "meaning": "多的",
-      "romaji": "ooi"
+      "romaji": "ooi",
+      "reading": "おおい"
     },
     "文化": {
       "meaning": "文化",
-      "romaji": "bunka"
+      "romaji": "bunka",
+      "reading": "ぶんか"
     },
     "深い": {
       "meaning": "深厚的",
-      "romaji": "fukai"
+      "romaji": "fukai",
+      "reading": "ふかい"
     },
     "根付く": {
       "meaning": "生根、扎根",
-      "romaji": "nezuku"
+      "romaji": "nezuku",
+      "reading": "ねづく"
     },
     "いる": {
       "meaning": "（狀態）持續",
-      "romaji": "iru"
+      "romaji": "iru",
+      "reading": "いる"
     },
     "地域差": {
       "meaning": "地區差異",
-      "romaji": "chiiki sa"
+      "romaji": "chiiki sa",
+      "reading": "ちいきさ"
     },
     "気候": {
       "meaning": "氣候",
-      "romaji": "kikou"
+      "romaji": "kikou",
+      "reading": "きこう"
     },
     "歴史的": {
       "meaning": "歷史性的",
-      "romaji": "rekishiteki"
+      "romaji": "rekishiteki",
+      "reading": "れきしてき"
     },
     "背景": {
       "meaning": "背景",
-      "romaji": "haikei"
+      "romaji": "haikei",
+      "reading": "はいけい"
     },
     "起因": {
       "meaning": "起因、原因",
-      "romaji": "kiin"
+      "romaji": "kiin",
+      "reading": "きいん"
     },
     "言う": {
       "meaning": "說",
-      "romaji": "iu"
+      "romaji": "iu",
+      "reading": "いう"
     },
     "れる": {
       "meaning": "被動助動詞",
-      "romaji": "reru"
+      "romaji": "reru",
+      "reading": "れる"
     },
     "近年": {
       "meaning": "近年",
-      "romaji": "kinnen"
+      "romaji": "kinnen",
+      "reading": "きんねん"
     },
     "日本食": {
       "meaning": "日本料理",
-      "romaji": "nihonshoku"
+      "romaji": "nihonshoku",
+      "reading": "にほんしょく"
     },
     "ユネスコ": {
       "meaning": "聯合國教科文組織",
-      "romaji": "yunesuko"
+      "romaji": "yunesuko",
+      "reading": "ユネスコ"
     },
     "無形文化遺産": {
       "meaning": "無形文化遺產",
-      "romaji": "mukei bunka isan"
+      "romaji": "mukei bunka isan",
+      "reading": "むけいぶんかいさん"
     },
     "登録": {
       "meaning": "登錄、註冊",
-      "romaji": "touroku"
+      "romaji": "touroku",
+      "reading": "とうろく"
     },
     "こと": {
       "meaning": "事情（名詞化）",
-      "romaji": "koto"
+      "romaji": "koto",
+      "reading": "こと"
     },
     "世界的": {
       "meaning": "世界性的、全球性的",
-      "romaji": "sekaiteki"
+      "romaji": "sekaiteki",
+      "reading": "せかいてき"
     },
     "注目": {
       "meaning": "注目、關注",
-      "romaji": "chuumoku"
+      "romaji": "chuumoku",
+      "reading": "ちゅうもく"
     },
     "集める": {
       "meaning": "吸引、收集",
-      "romaji": "atsumeru"
+      "romaji": "atsumeru",
+      "reading": "あつめる"
     },
     "よう": {
       "meaning": "成為～的樣子",
-      "romaji": "you"
+      "romaji": "you",
+      "reading": "よう"
     },
     "なる": {
       "meaning": "變成",
-      "romaji": "naru"
+      "romaji": "naru",
+      "reading": "なる"
     },
     "和食": {
       "meaning": "日式料理",
-      "romaji": "washoku"
+      "romaji": "washoku",
+      "reading": "わしょく"
     },
     "特徴": {
       "meaning": "特徵、特點",
-      "romaji": "tokucho"
+      "romaji": "tokucho",
+      "reading": "とくちょう"
     },
     "食材": {
       "meaning": "食材",
-      "romaji": "shokuzai"
+      "romaji": "shokuzai",
+      "reading": "しょくざい"
     },
     "本来": {
       "meaning": "原本、本來",
-      "romaji": "honrai"
+      "romaji": "honrai",
+      "reading": "ほんらい"
     },
     "味": {
       "meaning": "味道",
-      "romaji": "aji"
+      "romaji": "aji",
+      "reading": "あじ"
     },
     "大切": {
       "meaning": "重要、珍貴",
-      "romaji": "taisetsu"
+      "romaji": "taisetsu",
+      "reading": "たいせつ"
     },
     "季節感": {
       "meaning": "季節感",
-      "romaji": "kisetsukan"
+      "romaji": "kisetsukan",
+      "reading": "きせつかん"
     },
     "点": {
       "meaning": "一點、方面",
-      "romaji": "ten"
+      "romaji": "ten",
+      "reading": "てん"
     },
     "盛り付け": {
       "meaning": "擺盤",
-      "romaji": "moritsuke"
+      "romaji": "moritsuke",
+      "reading": "もりつけ"
     },
     "美的": {
       "meaning": "美的、美觀的",
-      "romaji": "biteki"
+      "romaji": "biteki",
+      "reading": "びてき"
     },
     "センス": {
       "meaning": "品味、感覺",
-      "romaji": "sensu"
+      "romaji": "sensu",
+      "reading": "センス"
     },
     "求める": {
       "meaning": "要求、追求",
-      "romaji": "motomeru"
+      "romaji": "motomeru",
+      "reading": "もとめる"
     },
     "られる": {
       "meaning": "被動/可能助動詞",
-      "romaji": "rareru"
+      "romaji": "rareru",
+      "reading": "られる"
     },
     "見た目": {
       "meaning": "外觀、視覺印象",
-      "romaji": "mitame"
+      "romaji": "mitame",
+      "reading": "みため"
     },
     "美しい": {
       "meaning": "美麗的",
-      "romaji": "utsukushii"
+      "romaji": "utsukushii",
+      "reading": "うつくし"
     },
     "重要": {
       "meaning": "重要的",
-      "romaji": "juuyou"
+      "romaji": "juuyou",
+      "reading": "じゅうよう"
     },
     "要素": {
       "meaning": "要素、元素",
-      "romaji": "youso"
+      "romaji": "youso",
+      "reading": "ようそ"
     },
     "訪れる": {
       "meaning": "造訪、到訪",
-      "romaji": "otozureru"
+      "romaji": "otozureru",
+      "reading": "おとずれる"
     },
     "外国人": {
       "meaning": "外國人",
-      "romaji": "gaikokujin"
+      "romaji": "gaikokujin",
+      "reading": "がいこくじん"
     },
     "多様性": {
       "meaning": "多樣性",
-      "romaji": "tayousei"
+      "romaji": "tayousei",
+      "reading": "たようせい"
     },
     "繊細": {
       "meaning": "纖細、細膩",
-      "romaji": "sensai"
+      "romaji": "sensai",
+      "reading": "せんさい"
     },
     "驚く": {
       "meaning": "驚訝、吃驚",
-      "romaji": "odoroku"
+      "romaji": "odoroku",
+      "reading": "おどろく"
     }
   },
   "particles": {

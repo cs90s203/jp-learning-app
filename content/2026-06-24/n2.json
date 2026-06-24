@@ -4,184 +4,1005 @@
   "title": "リモートワークの普及と都市集中の緩和",
   "text": "新型コロナウイルスの感染拡大を契機として、日本社会においてリモートワークが急速に普及した。テレワークの導入により、通勤時間の削減や仕事と生活の調和が実現しやすくなったという声も多い。一方で、職種や企業規模によっては在宅勤務への対応が困難な場合も少なくなく、デジタル格差が浮き彫りになった。したがって、全労働者がリモートワークの恩恵を均等に受けられるとは言い切れないのが現状である。また、地方移住者の増加に伴い、過疎地域の活性化が期待される反面、地域の受け入れインフラの整備が追いついていないという指摘もある。テレワークの普及を真の地域活性化につなげるためには、行政・企業・住民が一体となって取り組む必要があるだろう。",
   "tokens": [
-    {"surface_form": "新型コロナウイルス", "basic_form": "新型コロナウイルス", "reading": "しんがたコロナウイルス", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "感染拡大", "basic_form": "感染拡大", "reading": "かんせんかくだい", "pos": "名詞"},
-    {"surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞"},
-    {"surface_form": "契機として", "basic_form": "契機", "reading": "けいきとして", "pos": "名詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "日本社会", "basic_form": "日本社会", "reading": "にほんしゃかい", "pos": "名詞"},
-    {"surface_form": "において", "basic_form": "において", "reading": "において", "pos": "助詞"},
-    {"surface_form": "リモートワーク", "basic_form": "リモートワーク", "reading": "リモートワーク", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "急速に", "basic_form": "急速", "reading": "きゅうそくに", "pos": "副詞"},
-    {"surface_form": "普及した", "basic_form": "普及する", "reading": "ふきゅうした", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "テレワーク", "basic_form": "テレワーク", "reading": "テレワーク", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "導入", "basic_form": "導入", "reading": "どうにゅう", "pos": "名詞"},
-    {"surface_form": "により", "basic_form": "により", "reading": "により", "pos": "助詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "通勤時間", "basic_form": "通勤時間", "reading": "つうきんじかん", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "削減", "basic_form": "削減", "reading": "さくげん", "pos": "名詞"},
-    {"surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞"},
-    {"surface_form": "仕事", "basic_form": "仕事", "reading": "しごと", "pos": "名詞"},
-    {"surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞"},
-    {"surface_form": "生活", "basic_form": "生活", "reading": "せいかつ", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "調和", "basic_form": "調和", "reading": "ちょうわ", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "実現しやすく", "basic_form": "実現する", "reading": "じつげんしやすく", "pos": "動詞"},
-    {"surface_form": "なった", "basic_form": "なる", "reading": "なった", "pos": "動詞"},
-    {"surface_form": "という", "basic_form": "という", "reading": "という", "pos": "助詞"},
-    {"surface_form": "声", "basic_form": "声", "reading": "こえ", "pos": "名詞"},
-    {"surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞"},
-    {"surface_form": "多い", "basic_form": "多い", "reading": "おおい", "pos": "形容詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "一方で", "basic_form": "一方", "reading": "いっぽうで", "pos": "名詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "職種", "basic_form": "職種", "reading": "しょくしゅ", "pos": "名詞"},
-    {"surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞"},
-    {"surface_form": "企業規模", "basic_form": "企業規模", "reading": "きぎょうきぼ", "pos": "名詞"},
-    {"surface_form": "によっては", "basic_form": "によっては", "reading": "によっては", "pos": "助詞"},
-    {"surface_form": "在宅勤務", "basic_form": "在宅勤務", "reading": "ざいたくきんむ", "pos": "名詞"},
-    {"surface_form": "への", "basic_form": "への", "reading": "への", "pos": "助詞"},
-    {"surface_form": "対応", "basic_form": "対応", "reading": "たいおう", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "困難な", "basic_form": "困難", "reading": "こんなんな", "pos": "形容詞"},
-    {"surface_form": "場合", "basic_form": "場合", "reading": "ばあい", "pos": "名詞"},
-    {"surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞"},
-    {"surface_form": "少なくなく", "basic_form": "少ない", "reading": "すくなくなく", "pos": "形容詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "デジタル格差", "basic_form": "デジタル格差", "reading": "デジタルかくさ", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "浮き彫りに", "basic_form": "浮き彫り", "reading": "うきぼりに", "pos": "名詞"},
-    {"surface_form": "なった", "basic_form": "なる", "reading": "なった", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "したがって", "basic_form": "したがって", "reading": "したがって", "pos": "接続詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "全労働者", "basic_form": "全労働者", "reading": "ぜんろうどうしゃ", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "リモートワーク", "basic_form": "リモートワーク", "reading": "リモートワーク", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "恩恵", "basic_form": "恩恵", "reading": "おんけい", "pos": "名詞"},
-    {"surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞"},
-    {"surface_form": "均等に", "basic_form": "均等", "reading": "きんとうに", "pos": "副詞"},
-    {"surface_form": "受けられる", "basic_form": "受ける", "reading": "うけられる", "pos": "動詞"},
-    {"surface_form": "とは言い切れない", "basic_form": "言い切れない", "reading": "とはいいきれない", "pos": "動詞"},
-    {"surface_form": "のが", "basic_form": "のが", "reading": "のが", "pos": "助詞"},
-    {"surface_form": "現状", "basic_form": "現状", "reading": "げんじょう", "pos": "名詞"},
-    {"surface_form": "である", "basic_form": "である", "reading": "である", "pos": "助動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "また", "basic_form": "また", "reading": "また", "pos": "副詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "地方移住者", "basic_form": "地方移住者", "reading": "ちほういじゅうしゃ", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "増加", "basic_form": "増加", "reading": "ぞうか", "pos": "名詞"},
-    {"surface_form": "に伴い", "basic_form": "伴う", "reading": "にともない", "pos": "動詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "過疎地域", "basic_form": "過疎地域", "reading": "かそちいき", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "活性化", "basic_form": "活性化", "reading": "かっせいか", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "期待される", "basic_form": "期待する", "reading": "きたいされる", "pos": "動詞"},
-    {"surface_form": "反面", "basic_form": "反面", "reading": "はんめん", "pos": "名詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "地域", "basic_form": "地域", "reading": "ちいき", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "受け入れ", "basic_form": "受け入れ", "reading": "うけいれ", "pos": "名詞"},
-    {"surface_form": "インフラ", "basic_form": "インフラ", "reading": "インフラ", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "整備", "basic_form": "整備", "reading": "せいび", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "追いついていない", "basic_form": "追いつく", "reading": "おいついていない", "pos": "動詞"},
-    {"surface_form": "という", "basic_form": "という", "reading": "という", "pos": "助詞"},
-    {"surface_form": "指摘", "basic_form": "指摘", "reading": "してき", "pos": "名詞"},
-    {"surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞"},
-    {"surface_form": "ある", "basic_form": "ある", "reading": "ある", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "テレワーク", "basic_form": "テレワーク", "reading": "テレワーク", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "普及", "basic_form": "普及", "reading": "ふきゅう", "pos": "名詞"},
-    {"surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞"},
-    {"surface_form": "真の", "basic_form": "真", "reading": "しんの", "pos": "形容詞"},
-    {"surface_form": "地域活性化", "basic_form": "地域活性化", "reading": "ちいきかっせいか", "pos": "名詞"},
-    {"surface_form": "につなげる", "basic_form": "つなげる", "reading": "につなげる", "pos": "動詞"},
-    {"surface_form": "ためには", "basic_form": "ためには", "reading": "ためには", "pos": "助詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "行政", "basic_form": "行政", "reading": "ぎょうせい", "pos": "名詞"},
-    {"surface_form": "・", "basic_form": "・", "reading": "・", "pos": "記号"},
-    {"surface_form": "企業", "basic_form": "企業", "reading": "きぎょう", "pos": "名詞"},
-    {"surface_form": "・", "basic_form": "・", "reading": "・", "pos": "記号"},
-    {"surface_form": "住民", "basic_form": "住民", "reading": "じゅうみん", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "一体となって", "basic_form": "一体", "reading": "いったいとなって", "pos": "名詞"},
-    {"surface_form": "取り組む", "basic_form": "取り組む", "reading": "とりくむ", "pos": "動詞"},
-    {"surface_form": "必要がある", "basic_form": "必要", "reading": "ひつようがある", "pos": "名詞"},
-    {"surface_form": "だろう", "basic_form": "だろう", "reading": "だろう", "pos": "助動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"}
+    {
+      "surface_form": "新型コロナウイルス",
+      "basic_form": "新型コロナウイルス",
+      "reading": "しんがたコロナウイルス",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "感染拡大",
+      "basic_form": "感染拡大",
+      "reading": "かんせんかくだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "契機として",
+      "basic_form": "契機",
+      "reading": "けいきとして",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日本社会",
+      "basic_form": "日本社会",
+      "reading": "にほんしゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "において",
+      "basic_form": "において",
+      "reading": "において",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "リモートワーク",
+      "basic_form": "リモートワーク",
+      "reading": "リモートワーク",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急速に",
+      "basic_form": "急速",
+      "reading": "きゅうそくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "普及した",
+      "basic_form": "普及する",
+      "reading": "ふきゅうした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "テレワーク",
+      "basic_form": "テレワーク",
+      "reading": "テレワーク",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "導入",
+      "basic_form": "導入",
+      "reading": "どうにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "により",
+      "basic_form": "により",
+      "reading": "により",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "通勤時間",
+      "basic_form": "通勤時間",
+      "reading": "つうきんじかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "削減",
+      "basic_form": "削減",
+      "reading": "さくげん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活",
+      "basic_form": "生活",
+      "reading": "せいかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "調和",
+      "basic_form": "調和",
+      "reading": "ちょうわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "実現しやすく",
+      "basic_form": "実現する",
+      "reading": "じつげんしやすく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多い",
+      "basic_form": "多い",
+      "reading": "おおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方",
+      "reading": "いっぽうで",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "職種",
+      "basic_form": "職種",
+      "reading": "しょくしゅ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "企業規模",
+      "basic_form": "企業規模",
+      "reading": "きぎょうきぼ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によっては",
+      "basic_form": "によっては",
+      "reading": "によっては",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "在宅勤務",
+      "basic_form": "在宅勤務",
+      "reading": "ざいたくきんむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "への",
+      "basic_form": "への",
+      "reading": "への",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対応",
+      "basic_form": "対応",
+      "reading": "たいおう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "困難な",
+      "basic_form": "困難",
+      "reading": "こんなんな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "場合",
+      "basic_form": "場合",
+      "reading": "ばあい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくなく",
+      "basic_form": "少ない",
+      "reading": "すくなくなく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "デジタル格差",
+      "basic_form": "デジタル格差",
+      "reading": "デジタルかくさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "浮き彫りに",
+      "basic_form": "浮き彫り",
+      "reading": "うきぼりに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "したがって",
+      "basic_form": "したがって",
+      "reading": "したがって",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "全労働者",
+      "basic_form": "全労働者",
+      "reading": "ぜんろうどうしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "リモートワーク",
+      "basic_form": "リモートワーク",
+      "reading": "リモートワーク",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "恩恵",
+      "basic_form": "恩恵",
+      "reading": "おんけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "均等に",
+      "basic_form": "均等",
+      "reading": "きんとうに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "受けられる",
+      "basic_form": "受ける",
+      "reading": "うけられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "とは言い切れない",
+      "basic_form": "言い切れない",
+      "reading": "とはいいきれない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "のが",
+      "basic_form": "のが",
+      "reading": "のが",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現状",
+      "basic_form": "現状",
+      "reading": "げんじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "である",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方移住者",
+      "basic_form": "地方移住者",
+      "reading": "ちほういじゅうしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増加",
+      "basic_form": "増加",
+      "reading": "ぞうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に伴い",
+      "basic_form": "伴う",
+      "reading": "にともない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "過疎地域",
+      "basic_form": "過疎地域",
+      "reading": "かそちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活性化",
+      "basic_form": "活性化",
+      "reading": "かっせいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "期待される",
+      "basic_form": "期待する",
+      "reading": "きたいされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "反面",
+      "basic_form": "反面",
+      "reading": "はんめん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受け入れ",
+      "basic_form": "受け入れ",
+      "reading": "うけいれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "インフラ",
+      "basic_form": "インフラ",
+      "reading": "インフラ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整備",
+      "basic_form": "整備",
+      "reading": "せいび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "追いついていない",
+      "basic_form": "追いつく",
+      "reading": "おいついていない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "テレワーク",
+      "basic_form": "テレワーク",
+      "reading": "テレワーク",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "普及",
+      "basic_form": "普及",
+      "reading": "ふきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "真の",
+      "basic_form": "真",
+      "reading": "しんの",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "地域活性化",
+      "basic_form": "地域活性化",
+      "reading": "ちいきかっせいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "につなげる",
+      "basic_form": "つなげる",
+      "reading": "につなげる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ためには",
+      "basic_form": "ためには",
+      "reading": "ためには",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "行政",
+      "basic_form": "行政",
+      "reading": "ぎょうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "・",
+      "basic_form": "・",
+      "reading": "・",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "・",
+      "basic_form": "・",
+      "reading": "・",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "住民",
+      "basic_form": "住民",
+      "reading": "じゅうみん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一体となって",
+      "basic_form": "一体",
+      "reading": "いったいとなって",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "取り組む",
+      "basic_form": "取り組む",
+      "reading": "とりくむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要がある",
+      "basic_form": "必要",
+      "reading": "ひつようがある",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
   ],
   "vocab": {
-    "新型コロナウイルス": {"meaning": "新型冠狀病毒", "romaji": "shingata korona uirusu"},
-    "感染拡大": {"meaning": "感染擴大；疫情蔓延", "romaji": "kansen kakudai"},
-    "契機": {"meaning": "契機；轉機", "romaji": "keiki"},
-    "日本社会": {"meaning": "日本社會", "romaji": "nihon shakai"},
-    "リモートワーク": {"meaning": "遠端工作；遠距辦公", "romaji": "rimooto waaku"},
-    "急速": {"meaning": "急速；迅速", "romaji": "kyuusoku"},
-    "普及する": {"meaning": "普及；推廣", "romaji": "fukyuu suru"},
-    "テレワーク": {"meaning": "遠端工作（日式英語）", "romaji": "terewaaku"},
-    "導入": {"meaning": "導入；引進", "romaji": "dounyuu"},
-    "通勤時間": {"meaning": "通勤時間", "romaji": "tsuukin jikan"},
-    "削減": {"meaning": "削減；縮短", "romaji": "sakugen"},
-    "仕事": {"meaning": "工作", "romaji": "shigoto"},
-    "生活": {"meaning": "生活", "romaji": "seikatsu"},
-    "調和": {"meaning": "調和；平衡", "romaji": "chouwa"},
-    "実現する": {"meaning": "實現", "romaji": "jitsugen suru"},
-    "なる": {"meaning": "變成；成為", "romaji": "naru"},
-    "声": {"meaning": "聲音；意見", "romaji": "koe"},
-    "多い": {"meaning": "多的", "romaji": "ooi"},
-    "一方": {"meaning": "另一方面", "romaji": "ippou"},
-    "職種": {"meaning": "職種；工作類型", "romaji": "shokushu"},
-    "企業規模": {"meaning": "企業規模", "romaji": "kigyou kibo"},
-    "在宅勤務": {"meaning": "居家辦公", "romaji": "zaitaku kinmu"},
-    "対応": {"meaning": "應對；因應", "romaji": "taiou"},
-    "困難": {"meaning": "困難的", "romaji": "konnan"},
-    "場合": {"meaning": "情況；場合", "romaji": "baai"},
-    "少ない": {"meaning": "少的", "romaji": "sukunai"},
-    "デジタル格差": {"meaning": "數位落差", "romaji": "dejitaru kakusa"},
-    "浮き彫り": {"meaning": "凸顯；浮現", "romaji": "ukibori"},
-    "全労働者": {"meaning": "所有勞動者", "romaji": "zen roudousha"},
-    "恩恵": {"meaning": "恩惠；好處", "romaji": "onkei"},
-    "均等": {"meaning": "均等；平等", "romaji": "kintou"},
-    "受ける": {"meaning": "接受；得到", "romaji": "ukeru"},
-    "言い切れない": {"meaning": "無法斷言", "romaji": "iikirenai"},
-    "現状": {"meaning": "現狀；現況", "romaji": "genjou"},
-    "また": {"meaning": "此外；另外", "romaji": "mata"},
-    "地方移住者": {"meaning": "遷居地方的人", "romaji": "chihou ijuusha"},
-    "増加": {"meaning": "增加", "romaji": "zouka"},
-    "伴う": {"meaning": "伴隨；隨著", "romaji": "tomonau"},
-    "過疎地域": {"meaning": "人口稀少地區", "romaji": "kaso chiiki"},
-    "活性化": {"meaning": "活化；振興", "romaji": "kasseika"},
-    "期待する": {"meaning": "期待", "romaji": "kitai suru"},
-    "反面": {"meaning": "另一方面；反面", "romaji": "hanmen"},
-    "地域": {"meaning": "地區；地域", "romaji": "chiiki"},
-    "受け入れ": {"meaning": "接納；接受", "romaji": "ukeireru"},
-    "インフラ": {"meaning": "基礎設施", "romaji": "infura"},
-    "整備": {"meaning": "整備；建設", "romaji": "seibi"},
-    "追いつく": {"meaning": "追上；跟上", "romaji": "oitsuku"},
-    "指摘": {"meaning": "指出；批評", "romaji": "shiteki"},
-    "ある": {"meaning": "有；存在", "romaji": "aru"},
-    "普及": {"meaning": "普及", "romaji": "fukyuu"},
-    "真": {"meaning": "真正的", "romaji": "shin"},
-    "地域活性化": {"meaning": "地區活化；地方振興", "romaji": "chiiki kasseika"},
-    "つなげる": {"meaning": "連結；連接", "romaji": "tsunageru"},
-    "行政": {"meaning": "行政；政府", "romaji": "gyousei"},
-    "企業": {"meaning": "企業；公司", "romaji": "kigyou"},
-    "住民": {"meaning": "居民", "romaji": "juumin"},
-    "一体": {"meaning": "一體；一起", "romaji": "ittai"},
-    "取り組む": {"meaning": "致力於；投入", "romaji": "torikumu"},
-    "必要": {"meaning": "必要；需要", "romaji": "hitsuyou"}
+    "新型コロナウイルス": {
+      "meaning": "新型冠狀病毒",
+      "romaji": "shingata korona uirusu",
+      "reading": "しんがたコロナウイルス"
+    },
+    "感染拡大": {
+      "meaning": "感染擴大；疫情蔓延",
+      "romaji": "kansen kakudai",
+      "reading": "かんせんかくだい"
+    },
+    "契機": {
+      "meaning": "契機；轉機",
+      "romaji": "keiki",
+      "reading": "けいきとして"
+    },
+    "日本社会": {
+      "meaning": "日本社會",
+      "romaji": "nihon shakai",
+      "reading": "にほんしゃかい"
+    },
+    "リモートワーク": {
+      "meaning": "遠端工作；遠距辦公",
+      "romaji": "rimooto waaku",
+      "reading": "リモートワーク"
+    },
+    "急速": {
+      "meaning": "急速；迅速",
+      "romaji": "kyuusoku",
+      "reading": "きゅうそく"
+    },
+    "普及する": {
+      "meaning": "普及；推廣",
+      "romaji": "fukyuu suru",
+      "reading": "ふきゅうする"
+    },
+    "テレワーク": {
+      "meaning": "遠端工作（日式英語）",
+      "romaji": "terewaaku",
+      "reading": "テレワーク"
+    },
+    "導入": {
+      "meaning": "導入；引進",
+      "romaji": "dounyuu",
+      "reading": "どうにゅう"
+    },
+    "通勤時間": {
+      "meaning": "通勤時間",
+      "romaji": "tsuukin jikan",
+      "reading": "つうきんじかん"
+    },
+    "削減": {
+      "meaning": "削減；縮短",
+      "romaji": "sakugen",
+      "reading": "さくげん"
+    },
+    "仕事": {
+      "meaning": "工作",
+      "romaji": "shigoto",
+      "reading": "しごと"
+    },
+    "生活": {
+      "meaning": "生活",
+      "romaji": "seikatsu",
+      "reading": "せいかつ"
+    },
+    "調和": {
+      "meaning": "調和；平衡",
+      "romaji": "chouwa",
+      "reading": "ちょうわ"
+    },
+    "実現する": {
+      "meaning": "實現",
+      "romaji": "jitsugen suru",
+      "reading": "じつげんする"
+    },
+    "なる": {
+      "meaning": "變成；成為",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "声": {
+      "meaning": "聲音；意見",
+      "romaji": "koe",
+      "reading": "こえ"
+    },
+    "多い": {
+      "meaning": "多的",
+      "romaji": "ooi",
+      "reading": "おおい"
+    },
+    "一方": {
+      "meaning": "另一方面",
+      "romaji": "ippou",
+      "reading": "いっぽう"
+    },
+    "職種": {
+      "meaning": "職種；工作類型",
+      "romaji": "shokushu",
+      "reading": "しょくしゅ"
+    },
+    "企業規模": {
+      "meaning": "企業規模",
+      "romaji": "kigyou kibo",
+      "reading": "きぎょうきぼ"
+    },
+    "在宅勤務": {
+      "meaning": "居家辦公",
+      "romaji": "zaitaku kinmu",
+      "reading": "ざいたくきんむ"
+    },
+    "対応": {
+      "meaning": "應對；因應",
+      "romaji": "taiou",
+      "reading": "たいおう"
+    },
+    "困難": {
+      "meaning": "困難的",
+      "romaji": "konnan",
+      "reading": "こんなん"
+    },
+    "場合": {
+      "meaning": "情況；場合",
+      "romaji": "baai",
+      "reading": "ばあい"
+    },
+    "少ない": {
+      "meaning": "少的",
+      "romaji": "sukunai",
+      "reading": "すくなくない"
+    },
+    "デジタル格差": {
+      "meaning": "數位落差",
+      "romaji": "dejitaru kakusa",
+      "reading": "デジタルかくさ"
+    },
+    "浮き彫り": {
+      "meaning": "凸顯；浮現",
+      "romaji": "ukibori",
+      "reading": "うきぼり"
+    },
+    "全労働者": {
+      "meaning": "所有勞動者",
+      "romaji": "zen roudousha",
+      "reading": "ぜんろうどうしゃ"
+    },
+    "恩恵": {
+      "meaning": "恩惠；好處",
+      "romaji": "onkei",
+      "reading": "おんけい"
+    },
+    "均等": {
+      "meaning": "均等；平等",
+      "romaji": "kintou",
+      "reading": "きんとう"
+    },
+    "受ける": {
+      "meaning": "接受；得到",
+      "romaji": "ukeru",
+      "reading": "うける"
+    },
+    "言い切れない": {
+      "meaning": "無法斷言",
+      "romaji": "iikirenai",
+      "reading": "とはいいきれい"
+    },
+    "現状": {
+      "meaning": "現狀；現況",
+      "romaji": "genjou",
+      "reading": "げんじょう"
+    },
+    "また": {
+      "meaning": "此外；另外",
+      "romaji": "mata",
+      "reading": "また"
+    },
+    "地方移住者": {
+      "meaning": "遷居地方的人",
+      "romaji": "chihou ijuusha",
+      "reading": "ちほういじゅうしゃ"
+    },
+    "増加": {
+      "meaning": "增加",
+      "romaji": "zouka",
+      "reading": "ぞうか"
+    },
+    "伴う": {
+      "meaning": "伴隨；隨著",
+      "romaji": "tomonau",
+      "reading": "にともう"
+    },
+    "過疎地域": {
+      "meaning": "人口稀少地區",
+      "romaji": "kaso chiiki",
+      "reading": "かそちいき"
+    },
+    "活性化": {
+      "meaning": "活化；振興",
+      "romaji": "kasseika",
+      "reading": "かっせいか"
+    },
+    "期待する": {
+      "meaning": "期待",
+      "romaji": "kitai suru",
+      "reading": "きたいする"
+    },
+    "反面": {
+      "meaning": "另一方面；反面",
+      "romaji": "hanmen",
+      "reading": "はんめん"
+    },
+    "地域": {
+      "meaning": "地區；地域",
+      "romaji": "chiiki",
+      "reading": "ちいき"
+    },
+    "受け入れ": {
+      "meaning": "接納；接受",
+      "romaji": "ukeireru",
+      "reading": "うけいれ"
+    },
+    "インフラ": {
+      "meaning": "基礎設施",
+      "romaji": "infura",
+      "reading": "インフラ"
+    },
+    "整備": {
+      "meaning": "整備；建設",
+      "romaji": "seibi",
+      "reading": "せいび"
+    },
+    "追いつく": {
+      "meaning": "追上；跟上",
+      "romaji": "oitsuku",
+      "reading": "おいつく"
+    },
+    "指摘": {
+      "meaning": "指出；批評",
+      "romaji": "shiteki",
+      "reading": "してき"
+    },
+    "ある": {
+      "meaning": "有；存在",
+      "romaji": "aru",
+      "reading": "ある"
+    },
+    "普及": {
+      "meaning": "普及",
+      "romaji": "fukyuu",
+      "reading": "ふきゅう"
+    },
+    "真": {
+      "meaning": "真正的",
+      "romaji": "shin",
+      "reading": "しんの"
+    },
+    "地域活性化": {
+      "meaning": "地區活化；地方振興",
+      "romaji": "chiiki kasseika",
+      "reading": "ちいきかっせいか"
+    },
+    "つなげる": {
+      "meaning": "連結；連接",
+      "romaji": "tsunageru",
+      "reading": "つなげる"
+    },
+    "行政": {
+      "meaning": "行政；政府",
+      "romaji": "gyousei",
+      "reading": "ぎょうせい"
+    },
+    "企業": {
+      "meaning": "企業；公司",
+      "romaji": "kigyou",
+      "reading": "きぎょう"
+    },
+    "住民": {
+      "meaning": "居民",
+      "romaji": "juumin",
+      "reading": "じゅうみん"
+    },
+    "一体": {
+      "meaning": "一體；一起",
+      "romaji": "ittai",
+      "reading": "いったいとなって"
+    },
+    "取り組む": {
+      "meaning": "致力於；投入",
+      "romaji": "torikumu",
+      "reading": "とりくむ"
+    },
+    "必要": {
+      "meaning": "必要；需要",
+      "romaji": "hitsuyou",
+      "reading": "ひつようがある"
+    }
   },
   "particles": {
     "のが": "「の＋が」，名詞化後作主格",
@@ -203,31 +1024,76 @@
   },
   "translations": [
     [
-      {"text": "以新型冠狀病毒感染擴大為契機，", "word": "契機"},
-      {"text": "遠端工作在日本社會中急速普及。", "word": "普及する"}
+      {
+        "text": "以新型冠狀病毒感染擴大為契機，",
+        "word": "契機"
+      },
+      {
+        "text": "遠端工作在日本社會中急速普及。",
+        "word": "普及する"
+      }
     ],
     [
-      {"text": "由於引進遠端工作，", "word": "導入"},
-      {"text": "縮短通勤時間、實現工作與生活平衡的聲音也很多。", "word": "調和"}
+      {
+        "text": "由於引進遠端工作，",
+        "word": "導入"
+      },
+      {
+        "text": "縮短通勤時間、實現工作與生活平衡的聲音也很多。",
+        "word": "調和"
+      }
     ],
     [
-      {"text": "另一方面，", "word": "一方"},
-      {"text": "依職種和企業規模，也有不少難以應對居家辦公的情況，", "word": "在宅勤務"},
-      {"text": "數位落差因此浮現。", "word": "デジタル格差"}
+      {
+        "text": "另一方面，",
+        "word": "一方"
+      },
+      {
+        "text": "依職種和企業規模，也有不少難以應對居家辦公的情況，",
+        "word": "在宅勤務"
+      },
+      {
+        "text": "數位落差因此浮現。",
+        "word": "デジタル格差"
+      }
     ],
     [
-      {"text": "因此，", "word": null},
-      {"text": "無法斷言所有勞動者都能平等享受遠端工作的好處，", "word": "恩恵"},
-      {"text": "這是現狀。", "word": "現状"}
+      {
+        "text": "因此，",
+        "word": null
+      },
+      {
+        "text": "無法斷言所有勞動者都能平等享受遠端工作的好處，",
+        "word": "恩恵"
+      },
+      {
+        "text": "這是現狀。",
+        "word": "現状"
+      }
     ],
     [
-      {"text": "此外，隨著遷居地方的人增加，", "word": "増加"},
-      {"text": "雖然期待人口稀少地區得以活化，", "word": "活性化"},
-      {"text": "但也有指出地區接納基礎設施的建設跟不上。", "word": "指摘"}
+      {
+        "text": "此外，隨著遷居地方的人增加，",
+        "word": "増加"
+      },
+      {
+        "text": "雖然期待人口稀少地區得以活化，",
+        "word": "活性化"
+      },
+      {
+        "text": "但也有指出地區接納基礎設施的建設跟不上。",
+        "word": "指摘"
+      }
     ],
     [
-      {"text": "為了將遠端工作的普及真正連結至地方振興，", "word": "つなげる"},
-      {"text": "行政、企業與居民需要一體致力推動。", "word": "取り組む"}
+      {
+        "text": "為了將遠端工作的普及真正連結至地方振興，",
+        "word": "つなげる"
+      },
+      {
+        "text": "行政、企業與居民需要一體致力推動。",
+        "word": "取り組む"
+      }
     ]
   ],
   "difficulty": {

@@ -926,231 +926,288 @@
   "vocab": {
     "近年": {
       "meaning": "近年、最近幾年",
-      "romaji": "kinnen"
+      "romaji": "kinnen",
+      "reading": "きんねん"
     },
     "地球温暖化": {
       "meaning": "全球暖化",
-      "romaji": "chikyuu ondanka"
+      "romaji": "chikyuu ondanka",
+      "reading": "ちきゅうおんだんか"
     },
     "影響": {
       "meaning": "影響",
-      "romaji": "eikyou"
+      "romaji": "eikyou",
+      "reading": "えいきょう"
     },
     "自然環境": {
       "meaning": "自然環境",
-      "romaji": "shizen kankyou"
+      "romaji": "shizen kankyou",
+      "reading": "しぜんかんきょう"
     },
     "大きい": {
       "meaning": "大的、重大的",
-      "romaji": "ookii"
+      "romaji": "ookii",
+      "reading": "おおきい"
     },
     "変わる": {
       "meaning": "改變",
-      "romaji": "kawaru"
+      "romaji": "kawaru",
+      "reading": "かわる"
     },
     "いる": {
       "meaning": "（狀態）持續進行",
-      "romaji": "iru"
+      "romaji": "iru",
+      "reading": "いる"
     },
     "山": {
       "meaning": "山",
-      "romaji": "yama"
+      "romaji": "yama",
+      "reading": "やま"
     },
     "雪": {
       "meaning": "雪",
-      "romaji": "yuki"
+      "romaji": "yuki",
+      "reading": "ゆき"
     },
     "少ない": {
       "meaning": "少的",
-      "romaji": "sukunai"
+      "romaji": "sukunai",
+      "reading": "すくない"
     },
     "なる": {
       "meaning": "變成",
-      "romaji": "naru"
+      "romaji": "naru",
+      "reading": "なる"
     },
     "海": {
       "meaning": "海",
-      "romaji": "umi"
+      "romaji": "umi",
+      "reading": "うみ"
     },
     "水温": {
       "meaning": "水溫",
-      "romaji": "suion"
+      "romaji": "suion",
+      "reading": "すいおん"
     },
     "上がる": {
       "meaning": "上升",
-      "romaji": "agaru"
+      "romaji": "agaru",
+      "reading": "あがる"
     },
     "科学者": {
       "meaning": "科學家",
-      "romaji": "kagakusha"
+      "romaji": "kagakusha",
+      "reading": "かがくしゃ"
     },
     "まま": {
       "meaning": "維持原狀",
-      "romaji": "mama"
+      "romaji": "mama",
+      "reading": "まま"
     },
     "温暖化": {
       "meaning": "暖化",
-      "romaji": "ondanka"
+      "romaji": "ondanka",
+      "reading": "おんだんか"
     },
     "進む": {
       "meaning": "進展、推進",
-      "romaji": "susumu"
+      "romaji": "susumu",
+      "reading": "すすめむ"
     },
     "多い": {
       "meaning": "多的",
-      "romaji": "ooi"
+      "romaji": "ooi",
+      "reading": "おおい"
     },
     "生き物": {
       "meaning": "生物",
-      "romaji": "ikimono"
+      "romaji": "ikimono",
+      "reading": "いきもの"
     },
     "絶滅": {
       "meaning": "滅絕",
-      "romaji": "zetsumetsu"
+      "romaji": "zetsumetsu",
+      "reading": "ぜつめつ"
     },
     "する": {
       "meaning": "做",
-      "romaji": "suru"
+      "romaji": "suru",
+      "reading": "する"
     },
     "可能性": {
       "meaning": "可能性",
-      "romaji": "kanousei"
+      "romaji": "kanousei",
+      "reading": "かのうせい"
     },
     "ある": {
       "meaning": "有（存在）",
-      "romaji": "aru"
+      "romaji": "aru",
+      "reading": "ある"
     },
     "警告": {
       "meaning": "警告",
-      "romaji": "keikoku"
+      "romaji": "keikoku",
+      "reading": "けいこく"
     },
     "しかし": {
       "meaning": "但是、然而（逆接）",
-      "romaji": "shikashi"
+      "romaji": "shikashi",
+      "reading": "しかし"
     },
     "わたし": {
       "meaning": "我們",
-      "romaji": "watashi"
+      "romaji": "watashi",
+      "reading": "わたし"
     },
     "生活": {
       "meaning": "生活",
-      "romaji": "seikatsu"
+      "romaji": "seikatsu",
+      "reading": "せいかつ"
     },
     "中": {
       "meaning": "其中、裡面",
-      "romaji": "naka"
+      "romaji": "naka",
+      "reading": "なか"
     },
     "少しずつ": {
       "meaning": "漸漸地、一點一點",
-      "romaji": "sukoshi zutsu"
+      "romaji": "sukoshi zutsu",
+      "reading": "すこしずつ"
     },
     "変化": {
       "meaning": "變化",
-      "romaji": "henka"
+      "romaji": "henka",
+      "reading": "へんか"
     },
     "起きる": {
       "meaning": "發生",
-      "romaji": "okiru"
+      "romaji": "okiru",
+      "reading": "おる"
     },
     "こと": {
       "meaning": "事情（名詞化）",
-      "romaji": "koto"
+      "romaji": "koto",
+      "reading": "こと"
     },
     "気づく": {
       "meaning": "注意到、察覺",
-      "romaji": "kizuku"
+      "romaji": "kizuku",
+      "reading": "きづく"
     },
     "人": {
       "meaning": "人",
-      "romaji": "hito"
+      "romaji": "hito",
+      "reading": "ひと"
     },
     "例えば": {
       "meaning": "例如",
-      "romaji": "tatoeba"
+      "romaji": "tatoeba",
+      "reading": "たとえば"
     },
     "桜": {
       "meaning": "櫻花",
-      "romaji": "sakura"
+      "romaji": "sakura",
+      "reading": "さくら"
     },
     "開花": {
       "meaning": "開花",
-      "romaji": "kaika"
+      "romaji": "kaika",
+      "reading": "かいか"
     },
     "以前": {
       "meaning": "以前",
-      "romaji": "izen"
+      "romaji": "izen",
+      "reading": "いぜん"
     },
     "早い": {
       "meaning": "早的",
-      "romaji": "hayai"
+      "romaji": "hayai",
+      "reading": "はやい"
     },
     "夏": {
       "meaning": "夏天",
-      "romaji": "natsu"
+      "romaji": "natsu",
+      "reading": "なつ"
     },
     "暑さ": {
       "meaning": "炎熱程度",
-      "romaji": "atsusa"
+      "romaji": "atsusa",
+      "reading": "あつさ"
     },
     "年々": {
       "meaning": "年年、逐年",
-      "romaji": "nennnen"
+      "romaji": "nennnen",
+      "reading": "ねんねん"
     },
     "厳しい": {
       "meaning": "嚴峻的、嚴酷的",
-      "romaji": "kibishii"
+      "romaji": "kibishii",
+      "reading": "きびしい"
     },
     "ところが": {
       "meaning": "但是、然而（強調對比）",
-      "romaji": "tokoroga"
+      "romaji": "tokoroga",
+      "reading": "ところが"
     },
     "まだ": {
       "meaning": "還、仍然",
-      "romaji": "mada"
+      "romaji": "mada",
+      "reading": "まだ"
     },
     "問題": {
       "meaning": "問題",
-      "romaji": "mondai"
+      "romaji": "mondai",
+      "reading": "もんだい"
     },
     "自分ごと": {
       "meaning": "自身的事、切身相關的事",
-      "romaji": "jibun goto"
+      "romaji": "jibun goto",
+      "reading": "じぶんごと"
     },
     "考える": {
       "meaning": "思考、考慮",
-      "romaji": "kangaeru"
+      "romaji": "kangaeru",
+      "reading": "かんがえる"
     },
     "環境": {
       "meaning": "環境",
-      "romaji": "kankyou"
+      "romaji": "kankyou",
+      "reading": "かんきょう"
     },
     "守る": {
       "meaning": "守護、保護",
-      "romaji": "mamoru"
+      "romaji": "mamoru",
+      "reading": "まもる"
     },
     "ため": {
       "meaning": "為了（目的）",
-      "romaji": "tame"
+      "romaji": "tame",
+      "reading": "ため"
     },
     "一人一人": {
       "meaning": "每一個人",
-      "romaji": "hitori hitori"
+      "romaji": "hitori hitori",
+      "reading": "ひとりひとり"
     },
     "意識": {
       "meaning": "意識、意念",
-      "romaji": "ishiki"
+      "romaji": "ishiki",
+      "reading": "いしき"
     },
     "変える": {
       "meaning": "改變",
-      "romaji": "kaeru"
+      "romaji": "kaeru",
+      "reading": "かえる"
     },
     "大切": {
       "meaning": "重要的、珍貴的",
-      "romaji": "taisetsu"
+      "romaji": "taisetsu",
+      "reading": "たいせつ"
     },
     "思う": {
       "meaning": "認為、覺得",
-      "romaji": "omou"
+      "romaji": "omou",
+      "reading": "おもう"
     }
   },
   "particles": {

@@ -4,50 +4,249 @@
   "title": "わたしのへや",
   "text": "わたしのへやはせまいです。つくえがあります。いすもあります。まどのそとはにわです。にわにはきがあります。きれいです。",
   "tokens": [
-    {"surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "へや", "basic_form": "へや", "reading": "へや", "pos": "名詞"},
-    {"surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞"},
-    {"surface_form": "せまい", "basic_form": "せまい", "reading": "せまい", "pos": "形容詞"},
-    {"surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "つくえ", "basic_form": "つくえ", "reading": "つくえ", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "いす", "basic_form": "いす", "reading": "いす", "pos": "名詞"},
-    {"surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞"},
-    {"surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "まど", "basic_form": "まど", "reading": "まど", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "そと", "basic_form": "そと", "reading": "そと", "pos": "名詞"},
-    {"surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞"},
-    {"surface_form": "にわ", "basic_form": "にわ", "reading": "にわ", "pos": "名詞"},
-    {"surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "にわ", "basic_form": "にわ", "reading": "にわ", "pos": "名詞"},
-    {"surface_form": "には", "basic_form": "には", "reading": "には", "pos": "助詞"},
-    {"surface_form": "き", "basic_form": "き", "reading": "き", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "きれい", "basic_form": "きれい", "reading": "きれい", "pos": "形容詞"},
-    {"surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"}
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "へや",
+      "basic_form": "へや",
+      "reading": "へや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "せまい",
+      "basic_form": "せまい",
+      "reading": "せまい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "つくえ",
+      "basic_form": "つくえ",
+      "reading": "つくえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いす",
+      "basic_form": "いす",
+      "reading": "いす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まど",
+      "basic_form": "まど",
+      "reading": "まど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "そと",
+      "basic_form": "そと",
+      "reading": "そと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "にわ",
+      "basic_form": "にわ",
+      "reading": "にわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "にわ",
+      "basic_form": "にわ",
+      "reading": "にわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "には",
+      "basic_form": "には",
+      "reading": "には",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "き",
+      "basic_form": "き",
+      "reading": "き",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "きれい",
+      "basic_form": "きれい",
+      "reading": "きれい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
   ],
   "vocab": {
-    "わたし": {"meaning": "我", "romaji": "watashi"},
-    "へや": {"meaning": "房間", "romaji": "heya"},
-    "せまい": {"meaning": "狹窄的", "romaji": "semai"},
-    "つくえ": {"meaning": "書桌", "romaji": "tsukue"},
-    "ある": {"meaning": "有（無生命）", "romaji": "aru"},
-    "いす": {"meaning": "椅子", "romaji": "isu"},
-    "まど": {"meaning": "窗戶", "romaji": "mado"},
-    "そと": {"meaning": "外面", "romaji": "soto"},
-    "にわ": {"meaning": "庭院", "romaji": "niwa"},
-    "き": {"meaning": "樹木", "romaji": "ki"},
-    "きれい": {"meaning": "漂亮的；乾淨的", "romaji": "kirei"}
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "へや": {
+      "meaning": "房間",
+      "romaji": "heya",
+      "reading": "へや"
+    },
+    "せまい": {
+      "meaning": "狹窄的",
+      "romaji": "semai",
+      "reading": "せまい"
+    },
+    "つくえ": {
+      "meaning": "書桌",
+      "romaji": "tsukue",
+      "reading": "つくえ"
+    },
+    "ある": {
+      "meaning": "有（無生命）",
+      "romaji": "aru",
+      "reading": "ある"
+    },
+    "いす": {
+      "meaning": "椅子",
+      "romaji": "isu",
+      "reading": "いす"
+    },
+    "まど": {
+      "meaning": "窗戶",
+      "romaji": "mado",
+      "reading": "まど"
+    },
+    "そと": {
+      "meaning": "外面",
+      "romaji": "soto",
+      "reading": "そと"
+    },
+    "にわ": {
+      "meaning": "庭院",
+      "romaji": "niwa",
+      "reading": "にわ"
+    },
+    "き": {
+      "meaning": "樹木",
+      "romaji": "ki",
+      "reading": "き"
+    },
+    "きれい": {
+      "meaning": "漂亮的；乾淨的",
+      "romaji": "kirei",
+      "reading": "きれい"
+    }
   },
   "particles": {
     "の": "表示所有或修飾關係（…的）",
@@ -59,24 +258,48 @@
   },
   "translations": [
     [
-      {"text": "我的房間", "word": "へや"},
-      {"text": "很狹窄。", "word": "せまい"}
+      {
+        "text": "我的房間",
+        "word": "へや"
+      },
+      {
+        "text": "很狹窄。",
+        "word": "せまい"
+      }
     ],
     [
-      {"text": "有書桌。", "word": "ある"}
+      {
+        "text": "有書桌。",
+        "word": "ある"
+      }
     ],
     [
-      {"text": "也有椅子。", "word": "ある"}
+      {
+        "text": "也有椅子。",
+        "word": "ある"
+      }
     ],
     [
-      {"text": "窗戶外面", "word": "まど"},
-      {"text": "是庭院。", "word": "にわ"}
+      {
+        "text": "窗戶外面",
+        "word": "まど"
+      },
+      {
+        "text": "是庭院。",
+        "word": "にわ"
+      }
     ],
     [
-      {"text": "庭院裡有樹。", "word": "ある"}
+      {
+        "text": "庭院裡有樹。",
+        "word": "ある"
+      }
     ],
     [
-      {"text": "很漂亮。", "word": "きれい"}
+      {
+        "text": "很漂亮。",
+        "word": "きれい"
+      }
     ]
   ],
   "difficulty": {

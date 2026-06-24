@@ -4,105 +4,559 @@
   "title": "週末の料理チャレンジ",
   "text": "先週の週末、はじめて一人で料理をしてみました。カレーを作ったり、サラダを作ったりしました。玉ねぎを切るのが難しかったので、目が痛くなりました。でも、完成したカレーはとてもおいしかったです。家族に食べてもらったら、みんなよろこんでくれました。次は餃子を作ることができるか、チャレンジしてみたいと思います。",
   "tokens": [
-    {"surface_form": "先週", "basic_form": "先週", "reading": "せんしゅう", "pos": "名詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "週末", "basic_form": "週末", "reading": "しゅうまつ", "pos": "名詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "はじめて", "basic_form": "はじめて", "reading": "はじめて", "pos": "副詞"},
-    {"surface_form": "一人で", "basic_form": "一人で", "reading": "ひとりで", "pos": "副詞"},
-    {"surface_form": "料理", "basic_form": "料理", "reading": "りょうり", "pos": "名詞"},
-    {"surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞"},
-    {"surface_form": "して", "basic_form": "する", "reading": "して", "pos": "動詞"},
-    {"surface_form": "みました", "basic_form": "みる", "reading": "みました", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "カレー", "basic_form": "カレー", "reading": "カレー", "pos": "名詞"},
-    {"surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞"},
-    {"surface_form": "作ったり", "basic_form": "作る", "reading": "つくったり", "pos": "動詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "サラダ", "basic_form": "サラダ", "reading": "サラダ", "pos": "名詞"},
-    {"surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞"},
-    {"surface_form": "作ったり", "basic_form": "作る", "reading": "つくったり", "pos": "動詞"},
-    {"surface_form": "しました", "basic_form": "する", "reading": "しました", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "玉ねぎ", "basic_form": "玉ねぎ", "reading": "たまねぎ", "pos": "名詞"},
-    {"surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞"},
-    {"surface_form": "切る", "basic_form": "切る", "reading": "きる", "pos": "動詞"},
-    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "難しかった", "basic_form": "難しい", "reading": "むずかしかった", "pos": "形容詞"},
-    {"surface_form": "ので", "basic_form": "ので", "reading": "ので", "pos": "助詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "目", "basic_form": "目", "reading": "め", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "痛く", "basic_form": "痛い", "reading": "いたく", "pos": "形容詞"},
-    {"surface_form": "なりました", "basic_form": "なる", "reading": "なりました", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "でも", "basic_form": "でも", "reading": "でも", "pos": "接続詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "完成した", "basic_form": "完成する", "reading": "かんせいした", "pos": "動詞"},
-    {"surface_form": "カレー", "basic_form": "カレー", "reading": "カレー", "pos": "名詞"},
-    {"surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞"},
-    {"surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞"},
-    {"surface_form": "おいしかった", "basic_form": "おいしい", "reading": "おいしかった", "pos": "形容詞"},
-    {"surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "家族", "basic_form": "家族", "reading": "かぞく", "pos": "名詞"},
-    {"surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞"},
-    {"surface_form": "食べて", "basic_form": "食べる", "reading": "たべて", "pos": "動詞"},
-    {"surface_form": "もらったら", "basic_form": "もらう", "reading": "もらったら", "pos": "動詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "みんな", "basic_form": "みんな", "reading": "みんな", "pos": "名詞"},
-    {"surface_form": "よろこんで", "basic_form": "よろこぶ", "reading": "よろこんで", "pos": "動詞"},
-    {"surface_form": "くれました", "basic_form": "くれる", "reading": "くれました", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
-    {"surface_form": "次", "basic_form": "次", "reading": "つぎ", "pos": "名詞"},
-    {"surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞"},
-    {"surface_form": "餃子", "basic_form": "餃子", "reading": "ぎょうざ", "pos": "名詞"},
-    {"surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞"},
-    {"surface_form": "作る", "basic_form": "作る", "reading": "つくる", "pos": "動詞"},
-    {"surface_form": "こと", "basic_form": "こと", "reading": "こと", "pos": "名詞"},
-    {"surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞"},
-    {"surface_form": "できる", "basic_form": "できる", "reading": "できる", "pos": "動詞"},
-    {"surface_form": "か", "basic_form": "か", "reading": "か", "pos": "助詞"},
-    {"surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号"},
-    {"surface_form": "チャレンジして", "basic_form": "チャレンジする", "reading": "チャレンジして", "pos": "動詞"},
-    {"surface_form": "みたい", "basic_form": "みたい", "reading": "みたい", "pos": "助動詞"},
-    {"surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞"},
-    {"surface_form": "思います", "basic_form": "思う", "reading": "おもいます", "pos": "動詞"},
-    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"}
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "週末",
+      "basic_form": "週末",
+      "reading": "しゅうまつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "はじめて",
+      "basic_form": "はじめて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "一人で",
+      "basic_form": "一人で",
+      "reading": "ひとりで",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みました",
+      "basic_form": "みる",
+      "reading": "みました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "カレー",
+      "basic_form": "カレー",
+      "reading": "カレー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作ったり",
+      "basic_form": "作る",
+      "reading": "つくったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "サラダ",
+      "basic_form": "サラダ",
+      "reading": "サラダ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作ったり",
+      "basic_form": "作る",
+      "reading": "つくったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "しました",
+      "basic_form": "する",
+      "reading": "しました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "玉ねぎ",
+      "basic_form": "玉ねぎ",
+      "reading": "たまねぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "切る",
+      "basic_form": "切る",
+      "reading": "きる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "難しかった",
+      "basic_form": "難しい",
+      "reading": "むずかしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "目",
+      "basic_form": "目",
+      "reading": "め",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "痛く",
+      "basic_form": "痛い",
+      "reading": "いたく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "なりました",
+      "basic_form": "なる",
+      "reading": "なりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "完成した",
+      "basic_form": "完成する",
+      "reading": "かんせいした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "カレー",
+      "basic_form": "カレー",
+      "reading": "カレー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "おいしかった",
+      "basic_form": "おいしい",
+      "reading": "おいしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家族",
+      "basic_form": "家族",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べて",
+      "basic_form": "食べる",
+      "reading": "たべて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "もらったら",
+      "basic_form": "もらう",
+      "reading": "もらったら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "よろこんで",
+      "basic_form": "よろこぶ",
+      "reading": "よろこんで",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "くれました",
+      "basic_form": "くれる",
+      "reading": "くれました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "次",
+      "basic_form": "次",
+      "reading": "つぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "餃子",
+      "basic_form": "餃子",
+      "reading": "ぎょうざ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作る",
+      "basic_form": "作る",
+      "reading": "つくる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できる",
+      "basic_form": "できる",
+      "reading": "できる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "チャレンジして",
+      "basic_form": "チャレンジする",
+      "reading": "チャレンジして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みたい",
+      "basic_form": "みたい",
+      "reading": "みたい",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思います",
+      "basic_form": "思う",
+      "reading": "おもいます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
   ],
   "vocab": {
-    "先週": {"meaning": "上週", "romaji": "senshuu"},
-    "週末": {"meaning": "週末", "romaji": "shuumatsu"},
-    "はじめて": {"meaning": "第一次；初次", "romaji": "hajimete"},
-    "一人で": {"meaning": "獨自；一個人", "romaji": "hitori de"},
-    "料理": {"meaning": "料理；烹飪", "romaji": "ryouri"},
-    "する": {"meaning": "做", "romaji": "suru"},
-    "みる": {"meaning": "試著（做）", "romaji": "miru"},
-    "カレー": {"meaning": "咖哩", "romaji": "karee"},
-    "作る": {"meaning": "製作；烹調", "romaji": "tsukuru"},
-    "サラダ": {"meaning": "沙拉", "romaji": "sarada"},
-    "玉ねぎ": {"meaning": "洋蔥", "romaji": "tamanegi"},
-    "切る": {"meaning": "切；剪", "romaji": "kiru"},
-    "難しい": {"meaning": "困難的", "romaji": "muzukashii"},
-    "目": {"meaning": "眼睛", "romaji": "me"},
-    "痛い": {"meaning": "痛的；疼的", "romaji": "itai"},
-    "なる": {"meaning": "變成；成為", "romaji": "naru"},
-    "完成する": {"meaning": "完成", "romaji": "kansei suru"},
-    "とても": {"meaning": "非常", "romaji": "totemo"},
-    "おいしい": {"meaning": "好吃的", "romaji": "oishii"},
-    "家族": {"meaning": "家人；家族", "romaji": "kazoku"},
-    "食べる": {"meaning": "吃", "romaji": "taberu"},
-    "もらう": {"meaning": "得到；請（別人做）", "romaji": "morau"},
-    "みんな": {"meaning": "大家；所有人", "romaji": "minna"},
-    "よろこぶ": {"meaning": "高興；開心", "romaji": "yorokobu"},
-    "くれる": {"meaning": "（為我）做…", "romaji": "kureru"},
-    "次": {"meaning": "下次；下一個", "romaji": "tsugi"},
-    "餃子": {"meaning": "餃子", "romaji": "gyouza"},
-    "こと": {"meaning": "事情（名詞化）", "romaji": "koto"},
-    "できる": {"meaning": "能夠；可以", "romaji": "dekiru"},
-    "チャレンジする": {"meaning": "挑戰", "romaji": "charenji suru"},
-    "思う": {"meaning": "認為；覺得", "romaji": "omou"}
+    "先週": {
+      "meaning": "上週",
+      "romaji": "senshuu",
+      "reading": "せんしゅう"
+    },
+    "週末": {
+      "meaning": "週末",
+      "romaji": "shuumatsu",
+      "reading": "しゅうまつ"
+    },
+    "はじめて": {
+      "meaning": "第一次；初次",
+      "romaji": "hajimete",
+      "reading": "はじめて"
+    },
+    "一人で": {
+      "meaning": "獨自；一個人",
+      "romaji": "hitori de",
+      "reading": "ひとりで"
+    },
+    "料理": {
+      "meaning": "料理；烹飪",
+      "romaji": "ryouri",
+      "reading": "りょうり"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "みる": {
+      "meaning": "試著（做）",
+      "romaji": "miru",
+      "reading": "みる"
+    },
+    "カレー": {
+      "meaning": "咖哩",
+      "romaji": "karee",
+      "reading": "カレー"
+    },
+    "作る": {
+      "meaning": "製作；烹調",
+      "romaji": "tsukuru",
+      "reading": "つくる"
+    },
+    "サラダ": {
+      "meaning": "沙拉",
+      "romaji": "sarada",
+      "reading": "サラダ"
+    },
+    "玉ねぎ": {
+      "meaning": "洋蔥",
+      "romaji": "tamanegi",
+      "reading": "たまねぎ"
+    },
+    "切る": {
+      "meaning": "切；剪",
+      "romaji": "kiru",
+      "reading": "きる"
+    },
+    "難しい": {
+      "meaning": "困難的",
+      "romaji": "muzukashii",
+      "reading": "むずかしい"
+    },
+    "目": {
+      "meaning": "眼睛",
+      "romaji": "me",
+      "reading": "め"
+    },
+    "痛い": {
+      "meaning": "痛的；疼的",
+      "romaji": "itai",
+      "reading": "いたい"
+    },
+    "なる": {
+      "meaning": "變成；成為",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "完成する": {
+      "meaning": "完成",
+      "romaji": "kansei suru",
+      "reading": "かんせいする"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    },
+    "おいしい": {
+      "meaning": "好吃的",
+      "romaji": "oishii",
+      "reading": "おいしい"
+    },
+    "家族": {
+      "meaning": "家人；家族",
+      "romaji": "kazoku",
+      "reading": "かぞく"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "reading": "たべる"
+    },
+    "もらう": {
+      "meaning": "得到；請（別人做）",
+      "romaji": "morau",
+      "reading": "もらう"
+    },
+    "みんな": {
+      "meaning": "大家；所有人",
+      "romaji": "minna",
+      "reading": "みんな"
+    },
+    "よろこぶ": {
+      "meaning": "高興；開心",
+      "romaji": "yorokobu",
+      "reading": "よろこぶ"
+    },
+    "くれる": {
+      "meaning": "（為我）做…",
+      "romaji": "kureru",
+      "reading": "くれる"
+    },
+    "次": {
+      "meaning": "下次；下一個",
+      "romaji": "tsugi",
+      "reading": "つぎ"
+    },
+    "餃子": {
+      "meaning": "餃子",
+      "romaji": "gyouza",
+      "reading": "ぎょうざ"
+    },
+    "こと": {
+      "meaning": "事情（名詞化）",
+      "romaji": "koto",
+      "reading": "こと"
+    },
+    "できる": {
+      "meaning": "能夠；可以",
+      "romaji": "dekiru",
+      "reading": "できる"
+    },
+    "チャレンジする": {
+      "meaning": "挑戰",
+      "romaji": "charenji suru",
+      "reading": "チャレンジする"
+    },
+    "思う": {
+      "meaning": "認為；覺得",
+      "romaji": "omou",
+      "reading": "おもう"
+    }
   },
   "particles": {
     "の": "修飾助詞；或將動詞名詞化",
@@ -118,32 +572,68 @@
   },
   "translations": [
     [
-      {"text": "上週週末，", "word": "週末"},
-      {"text": "我第一次獨自嘗試做料理。", "word": "する"}
+      {
+        "text": "上週週末，",
+        "word": "週末"
+      },
+      {
+        "text": "我第一次獨自嘗試做料理。",
+        "word": "する"
+      }
     ],
     [
-      {"text": "做了咖哩、", "word": "作る"},
-      {"text": "又做了沙拉等等。", "word": "作る"}
+      {
+        "text": "做了咖哩、",
+        "word": "作る"
+      },
+      {
+        "text": "又做了沙拉等等。",
+        "word": "作る"
+      }
     ],
     [
-      {"text": "因為切洋蔥很困難，", "word": "難しい"},
-      {"text": "眼睛變得很痛。", "word": "痛い"}
+      {
+        "text": "因為切洋蔥很困難，",
+        "word": "難しい"
+      },
+      {
+        "text": "眼睛變得很痛。",
+        "word": "痛い"
+      }
     ],
     [
-      {"text": "但是，完成的咖哩", "word": "完成する"},
-      {"text": "非常好吃。", "word": "おいしい"}
+      {
+        "text": "但是，完成的咖哩",
+        "word": "完成する"
+      },
+      {
+        "text": "非常好吃。",
+        "word": "おいしい"
+      }
     ],
     [
-      {"text": "請家人吃了之後，", "word": "もらう"},
-      {"text": "大家都很高興。", "word": "よろこぶ"}
+      {
+        "text": "請家人吃了之後，",
+        "word": "もらう"
+      },
+      {
+        "text": "大家都很高興。",
+        "word": "よろこぶ"
+      }
     ],
     [
-      {"text": "下次想挑戰看看", "word": "チャレンジする"},
-      {"text": "能不能做餃子。", "word": "できる"}
+      {
+        "text": "下次想挑戰看看",
+        "word": "チャレンジする"
+      },
+      {
+        "text": "能不能做餃子。",
+        "word": "できる"
+      }
     ]
   ],
   "difficulty": {
-    "target_vocab_rate": 0.10,
+    "target_vocab_rate": 0.1,
     "jlpt_level": "N4"
   }
 }
