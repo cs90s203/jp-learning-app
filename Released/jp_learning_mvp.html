@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.81
+          v0.14.82
         </div>
 
       </div>
@@ -4044,7 +4044,7 @@ function loadTheme() {
     const page = getActivePage();
     if (page && page.id === 'page-quiz') {
       page.style.transition = 'none';
-      page.style.transform = `translateY(${Math.min(pullDist, THRESHOLD)}px)`;
+      page.style.transform = `translateY(${Math.min(pullDist * 0.4, THRESHOLD * 0.4)}px)`;
     }
     if (pullDist < ANIM_START) return;
     const active = pullDist - ANIM_START;
