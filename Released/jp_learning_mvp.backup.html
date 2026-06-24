@@ -1920,7 +1920,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.50
+          v0.14.51
         </div>
 
       </div>
@@ -3693,26 +3693,51 @@ function findExampleSentence(word) {
   const tokens = ARTICLE_TOKENS;
   if (!tokens || !tokens.length) return '';
   let sent = [];
+  let sentIdx = 0;
   for (const tok of tokens) {
     sent.push(tok);
-    if (tok.surface_form === '。') {
+    if (tok.surface_form === '。' || tok.surface_form === '！' || tok.surface_form === '？') {
       if (sent.some(t => t.basic_form === word || t.surface_form === word)) {
         return sent.map(t => t.surface_form).join('');
       }
       sent = [];
+      sentIdx++;
     }
   }
   return '';
 }
 
+function findExampleWithTranslation(word) {
+  const tokens = ARTICLE_TOKENS;
+  if (!tokens || !tokens.length) return { example: '', exampleTrans: '' };
+  let sent = [];
+  let sentIdx = 0;
+  for (const tok of tokens) {
+    sent.push(tok);
+    if (tok.surface_form === '。' || tok.surface_form === '！' || tok.surface_form === '？') {
+      if (sent.some(t => t.basic_form === word || t.surface_form === word)) {
+        const example = sent.map(t => t.surface_form).join('');
+        const tr = SENTENCE_TRANSLATIONS[sentIdx];
+        const exampleTrans = tr ? (typeof tr === 'string' ? tr : tr.map(s => s.text).join('')) : '';
+        return { example, exampleTrans };
+      }
+      sent = [];
+      sentIdx++;
+    }
+  }
+  return { example: '', exampleTrans: '' };
+}
+
 function addToVocabCards(basic, extra) {
   if (!vocabBook[basic]) {
     const entry = VOCAB_DICT[basic] || {};
+    const _ex = findExampleWithTranslation(basic);
     vocabBook[basic] = {
       kana:       extra?.kana    || entry.reading || '',
       romaji:     extra?.romaji  || entry.romaji  || '',
       meaning:    extra?.meaning || entry.meaning || '',
-      example:    extra?.example || entry.example || findExampleSentence(basic) || '',
+      example:    extra?.example || entry.example || _ex.example || '',
+      exampleTrans: extra?.exampleTrans || entry.exampleTrans || _ex.exampleTrans || '',
       familiarity: 0,
       source:     extra?.source  || 'article',
       addedDate:  new Date().toISOString().slice(0,10),
@@ -5224,23 +5249,46 @@ function renderVocabDisplayCard() {
   const safeKana = (entry.kana || word).replace(/'/g, "\\'");
   vocabMeaningRevealed = false;
   const hasKanji = /[一-鿿㐀-䶿]/.test(word);
-  const displayWord = word;
-  contentEl.innerHTML =
-    '<div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:6px">' +
-      '<div class="vocab-kanji">' + displayWord + '</div>' +
-      '<button class="speak-btn" onclick="speak(\'' + safeKana + '\')" aria-label="發音">' +
-        '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
-      '</button>' +
-    '</div>' +
-    (hasKanji && entry.kana ? '<div class="vocab-kana">' + entry.kana + '</div>' : '') +
-    (entry.romaji && _showRomaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
-    '<div class="vocab-divider"></div>' +
-    '<div class="vocab-meaning-wrap" onclick="revealVocabMeaning()">' +
-      '<div class="vocab-meaning meaning-hidden" id="vocab-meaning-text">' + (entry.meaning || '—') + '</div>' +
-      (entry.example ? '<div class="vocab-example meaning-hidden" id="vocab-example-text">' + entry.example + '</div>' : '') +
-      (!localStorage.getItem('meaningHintSeen') ? '<div class="meaning-reveal-hint" id="meaning-reveal-hint">點擊顯示中文</div>' : '') +
-    '</div>' +
-    '<div style="margin-top:12px"><span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span></div>';
+
+  if (hasKanji && entry.kana) {
+    // 漢字單字：正面顯示假名，點擊揭示漢字＋意思＋例句
+    contentEl.innerHTML =
+      '<div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:6px">' +
+        '<div class="vocab-kanji">' + entry.kana + '</div>' +
+        '<button class="speak-btn" onclick="speak(\'' + safeKana + '\')" aria-label="發音">' +
+          '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
+        '</button>' +
+      '</div>' +
+      (entry.romaji && _showRomaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
+      '<div class="vocab-divider"></div>' +
+      '<div class="vocab-meaning-wrap" onclick="revealVocabMeaning()">' +
+        '<div class="vocab-meaning meaning-hidden" id="vocab-meaning-text">' +
+          '<span style="font-size:1.3em;font-weight:700;letter-spacing:.05em">' + word + '</span>' +
+          '<span style="margin:0 8px;color:var(--wt3)">·</span>' +
+          (entry.meaning || '—') +
+        '</div>' +
+        (entry.example ? '<div class="vocab-example meaning-hidden" id="vocab-example-text">' + entry.example + (entry.exampleTrans ? '<div style="font-size:11px;color:var(--wt3);margin-top:4px">' + entry.exampleTrans + '</div>' : '') + '</div>' : '') +
+        (!localStorage.getItem('meaningHintSeen') ? '<div class="meaning-reveal-hint" id="meaning-reveal-hint">點擊顯示中文</div>' : '') +
+      '</div>' +
+      '<div style="margin-top:12px"><span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span></div>';
+  } else {
+    // 純假名單字：維持原設計（正面顯示單字，揭示意思）
+    contentEl.innerHTML =
+      '<div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:6px">' +
+        '<div class="vocab-kanji">' + word + '</div>' +
+        '<button class="speak-btn" onclick="speak(\'' + safeKana + '\')" aria-label="發音">' +
+          '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
+        '</button>' +
+      '</div>' +
+      (entry.romaji && _showRomaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
+      '<div class="vocab-divider"></div>' +
+      '<div class="vocab-meaning-wrap" onclick="revealVocabMeaning()">' +
+        '<div class="vocab-meaning meaning-hidden" id="vocab-meaning-text">' + (entry.meaning || '—') + '</div>' +
+        (entry.example ? '<div class="vocab-example meaning-hidden" id="vocab-example-text">' + entry.example + '</div>' : '') +
+        (!localStorage.getItem('meaningHintSeen') ? '<div class="meaning-reveal-hint" id="meaning-reveal-hint">點擊顯示中文</div>' : '') +
+      '</div>' +
+      '<div style="margin-top:12px"><span class="badge ' + levelClass(lv) + '">' + levelLabel(lv) + '</span></div>';
+  }
 
   // 活用形 fab（右上角）
   const forms = entry.seen_forms || [];
