@@ -812,9 +812,9 @@
   /* FAB */
   /* 單字頁三按鈕群組：置中靠右 */
   .vocab-btn-group {
-    position: fixed; right: 12px;
-    top: 50%; transform: translateY(-50%);
-    display: none; flex-direction: column; gap: 8px; align-items: center;
+    position: fixed; left: 50%; transform: translateX(-50%);
+    bottom: calc(var(--nav-h) + var(--safe-bottom) + 12px);
+    display: none; flex-direction: row; gap: 12px; align-items: center;
     z-index: 50;
   }
   .vocab-btn-group.show { display: flex; }
@@ -1702,11 +1702,11 @@
 
       <!-- FAB -->
       <div class="vocab-btn-group" id="vocab-btn-group">
-        <button class="vocab-gojuuon-btn" id="vocab-gojuuon-btn" onclick="openGojuuon()" aria-label="五十音表">あ</button>
         <button class="vocab-kana-toggle" id="vocab-kana-toggle" onclick="toggleKanaDisplay()" aria-label="顯示羅馬拼音">Aa</button>
         <button class="vocab-fab" id="vocab-fab" onclick="openVocabModal()" aria-label="新增單字">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
+        <button class="vocab-gojuuon-btn" id="vocab-gojuuon-btn" onclick="openGojuuon()" aria-label="五十音表">あ</button>
       </div>
     </div>
 
@@ -1967,7 +1967,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.53
+          v0.14.54
         </div>
 
       </div>
