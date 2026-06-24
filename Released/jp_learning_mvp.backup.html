@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.73
+          v0.14.74
         </div>
 
       </div>
@@ -4038,21 +4038,12 @@ function loadTheme() {
   const indicator = document.getElementById('ptr-indicator');
   const segs = [0,1,2,3,4].map(i => document.getElementById('ptr-seg-' + i));
 
-  function getActivePage() { return document.querySelector('.page.active'); }
-  function isVocabPage() { return document.getElementById('page-vocab')?.classList.contains('active'); }
-
   function setIndicator(pullDist) {
-    // 只有單字頁做頁面移動
-    if (isVocabPage()) {
-      const page = getActivePage();
-      if (page) { page.style.transition = 'none'; page.style.transform = `translateY(${pullDist}px)`; }
-    }
-
-    if (pullDist < ANIM_START) return; // 環還不出現
-    const active = pullDist - ANIM_START;           // 有效距離 0~100
-    const range  = THRESHOLD - ANIM_START;          // = 100
+    if (pullDist < ANIM_START) return;
+    const active = pullDist - ANIM_START;
+    const range  = THRESHOLD - ANIM_START;
     const capped = Math.min(active, range);
-    const y = -10 + capped * 0.4;                  // -10 → 30px
+    const y = -10 + capped * 0.4;
     indicator.style.transition = 'none';
     indicator.style.transform = `translateX(-50%) translateY(${y}px)`;
     indicator.style.opacity = Math.min(capped / 20, 1);
@@ -4065,11 +4056,6 @@ function loadTheme() {
     indicator.style.transform = 'translateX(-50%) translateY(-60px)';
     indicator.style.opacity = '0';
     segs.forEach(s => { if (s) s.style.opacity = '0.15'; });
-    // 只有單字頁需要彈回
-    if (isVocabPage()) {
-      const page = getActivePage();
-      if (page) { page.style.transition = 'transform .3s ease'; page.style.transform = 'translateY(0)'; }
-    }
   }
 
   document.addEventListener('touchstart', e => {
@@ -4093,10 +4079,6 @@ function loadTheme() {
     if (dist >= THRESHOLD) {
       indicator.style.transition = 'opacity .4s ease';
       indicator.style.opacity = '0';
-      if (isVocabPage()) {
-        const page = getActivePage();
-        if (page) { page.style.transition = 'transform .4s ease'; page.style.transform = 'translateY(0)'; }
-      }
       setTimeout(() => location.reload(), 450);
     } else {
       resetIndicator();
