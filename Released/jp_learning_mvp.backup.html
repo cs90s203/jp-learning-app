@@ -1920,7 +1920,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.49
+          v0.14.50
         </div>
 
       </div>
@@ -3784,13 +3784,12 @@ function _onReadAloudEnd() {
 
 function _markSentencePlay(idx) {
   const log = loadStudyLog();
-  const dateStr = getLocalDateStr();
-  if (!log[dateStr]) return;
+  const dateStr = selectedArticleDate || getLocalDateStr();
+  if (!log[dateStr]) log[dateStr] = { tasks:{article:0,vocab:false,listen:false,quiz:false,speak:false}, articleTitle:'', level:'' };
   if (!log[dateStr].articleProgress) log[dateStr].articleProgress = { scrolled:false, sentencePlays:{}, totalSentences:0 };
   const sp = log[dateStr].articleProgress.sentencePlays || {};
   sp[idx] = (sp[idx] || 0) + 1;
   log[dateStr].articleProgress.sentencePlays = sp;
-  // 同步更新 totalSentences（確保有最新句數）
   if (sentenceCount > 0) log[dateStr].articleProgress.totalSentences = sentenceCount;
   saveStudyLog(log);
   updateArticleProgress();
@@ -4693,10 +4692,10 @@ function markTaskDone(taskKey) {
   refreshProgressUI();
 }
 
-// 儲存今日文章資訊（載入文章後呼叫）——不自動標記完成
+// 儲存文章資訊（載入文章後呼叫）——不自動標記完成
 function logTodayArticle(title, level) {
   const log = loadStudyLog();
-  const dateStr = getLocalDateStr();
+  const dateStr = selectedArticleDate || getLocalDateStr();
   if (!log[dateStr]) log[dateStr] = { tasks:{article:0,vocab:false,listen:false,quiz:false,speak:false}, articleTitle:'', level:'' };
   log[dateStr].articleTitle = title || '';
   log[dateStr].level = level || '';
@@ -4716,7 +4715,7 @@ function logTodayArticle(title, level) {
 // 更新 article 進度百分比（依 articleProgress 條件計算）
 function updateArticleProgress() {
   const log = loadStudyLog();
-  const dateStr = getLocalDateStr();
+  const dateStr = selectedArticleDate || getLocalDateStr();
   if (!log[dateStr]) return;
   const ap = log[dateStr].articleProgress || {};
   const sp = ap.sentencePlays || {};
@@ -4772,8 +4771,8 @@ function initDifficultyBar() {
 // 記錄單一文章進度條件
 function markArticleCondition(key, value) {
   const log = loadStudyLog();
-  const dateStr = getLocalDateStr();
-  if (!log[dateStr]) return;
+  const dateStr = selectedArticleDate || getLocalDateStr();
+  if (!log[dateStr]) log[dateStr] = { tasks:{article:0,vocab:false,listen:false,quiz:false,speak:false}, articleTitle:'', level:'' };
   if (!log[dateStr].articleProgress) log[dateStr].articleProgress = { scrolled:false, sentencePlays:{}, totalSentences:0 };
   log[dateStr].articleProgress[key] = value;
   // 同步儲存文章句子總數（供首頁 dashboard 計算）
