@@ -1,0 +1,287 @@
+{
+  "date": "2026-06-25",
+  "level": "n5_lite",
+  "title": "あさごはん",
+  "text": "あさ、わたしはごはんをたべます。みそしるものみます。たまごもたべます。あさごはんはたいせつです。まいにちたべます。げんきです。",
+  "tokens": [
+    {
+      "surface_form": "あさ",
+      "basic_form": "あさ",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ごはん",
+      "basic_form": "ごはん",
+      "reading": "ごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たべます",
+      "basic_form": "たべる",
+      "reading": "たべます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みそしる",
+      "basic_form": "みそしる",
+      "reading": "みそしる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "のみます",
+      "basic_form": "のむ",
+      "reading": "のみます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "たまご",
+      "basic_form": "たまご",
+      "reading": "たまご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たべます",
+      "basic_form": "たべる",
+      "reading": "たべます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あさごはん",
+      "basic_form": "あさごはん",
+      "reading": "あさごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たいせつ",
+      "basic_form": "たいせつ",
+      "reading": "たいせつ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まいにち",
+      "basic_form": "まいにち",
+      "reading": "まいにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "たべます",
+      "basic_form": "たべる",
+      "reading": "たべます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "げんき",
+      "basic_form": "げんき",
+      "reading": "げんき",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "あさ": {
+      "meaning": "早晨",
+      "romaji": "asa",
+      "reading": "あさ"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "ごはん": {
+      "meaning": "飯",
+      "romaji": "gohan",
+      "reading": "ごはん"
+    },
+    "たべる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "reading": "たべる"
+    },
+    "みそしる": {
+      "meaning": "味噌湯",
+      "romaji": "misoshiru",
+      "reading": "みそしる"
+    },
+    "のむ": {
+      "meaning": "喝",
+      "romaji": "nomu",
+      "reading": "のむ"
+    },
+    "たまご": {
+      "meaning": "蛋",
+      "romaji": "tamago",
+      "reading": "たまご"
+    },
+    "あさごはん": {
+      "meaning": "早餐",
+      "romaji": "asagohan",
+      "reading": "あさごはん"
+    },
+    "たいせつ": {
+      "meaning": "重要的",
+      "romaji": "taisetsu",
+      "reading": "たいせつ"
+    },
+    "まいにち": {
+      "meaning": "每天",
+      "romaji": "mainichi",
+      "reading": "まいにち"
+    },
+    "げんき": {
+      "meaning": "有精神的；健康的",
+      "romaji": "genki",
+      "reading": "げんき"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "を": "受格助詞，標示動作對象",
+    "も": "表示「也」，追加同類",
+    "です": "禮貌體斷定助動詞，表示「是…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "早上，",
+        "word": "あさ"
+      },
+      {
+        "text": "我吃飯。",
+        "word": "たべる"
+      }
+    ],
+    [
+      {
+        "text": "也喝味噌湯。",
+        "word": "のむ"
+      }
+    ],
+    [
+      {
+        "text": "也吃蛋。",
+        "word": "たべる"
+      }
+    ],
+    [
+      {
+        "text": "早餐",
+        "word": "あさごはん"
+      },
+      {
+        "text": "很重要。",
+        "word": "たいせつ"
+      }
+    ],
+    [
+      {
+        "text": "每天",
+        "word": "まいにち"
+      },
+      {
+        "text": "都吃。",
+        "word": "たべる"
+      }
+    ],
+    [
+      {
+        "text": "很有精神。",
+        "word": "げんき"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.05,
+    "jlpt_level": "N5⁻"
+  }
+}
