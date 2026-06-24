@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.77
+          v0.14.78
         </div>
 
       </div>
@@ -4110,15 +4110,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add to Home Screen banner（iOS 非 standalone）
   _initA2HSBanner();
 
-  // 試題頁 PTR：scrollTop=0 往下拉時攔截 native scroll，讓 document PTR 接管
-  const _quizPage = document.getElementById('page-quiz');
-  if (_quizPage) {
-    let _qsy = 0;
-    _quizPage.addEventListener('touchstart', e => { _qsy = e.touches[0].clientY; }, { passive: true });
-    _quizPage.addEventListener('touchmove', e => {
-      if (_quizPage.scrollTop === 0 && e.touches[0].clientY > _qsy) e.preventDefault();
-    }, { passive: false });
-  }
 
   // 單字頁 PTR：獨立邏輯，page 跟著手指 1:1 移動，五色環固定 viewport 頂端
   const _vla = document.getElementById('vocab-list-area');
