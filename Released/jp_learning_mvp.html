@@ -1910,7 +1910,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.40
+          v0.14.41
         </div>
 
       </div>
@@ -6679,10 +6679,12 @@ function syncToCloud() {
 
   const vocabRaw = localStorage.getItem('vocabBook_v1');
   const logRaw   = localStorage.getItem('studyLog_v1');
+  const visionKey = localStorage.getItem('googleVisionKey') || '';
   const settings = {
     learnMode:  localStorage.getItem('learnMode') || 'N5',
     quizOrder:  localStorage.getItem('quizOrder') || 'due',
     theme:      localStorage.getItem('theme') || 'light',
+    ...(visionKey ? { googleVisionKey: visionKey } : {}),
     updatedAt:  now
   };
 
@@ -6728,9 +6730,10 @@ function syncFromCloud(silent) {
     }
     if (sSnap.exists) {
       const s = sSnap.data();
-      if (s.learnMode) localStorage.setItem('learnMode', s.learnMode);
-      if (s.quizOrder) localStorage.setItem('quizOrder', s.quizOrder);
-      if (s.theme)     localStorage.setItem('theme', s.theme);
+      if (s.learnMode)       localStorage.setItem('learnMode', s.learnMode);
+      if (s.quizOrder)       localStorage.setItem('quizOrder', s.quizOrder);
+      if (s.theme)           localStorage.setItem('theme', s.theme);
+      if (s.googleVisionKey) localStorage.setItem('googleVisionKey', s.googleVisionKey);
       changed = true;
     }
     if (changed) {
