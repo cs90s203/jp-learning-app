@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.64
+          v0.14.65
         </div>
 
       </div>
@@ -4043,7 +4043,7 @@ function loadTheme() {
     const active = pullDist - ANIM_START;           // 有效距離 0~100
     const range  = THRESHOLD - ANIM_START;          // = 100
     const capped = Math.min(active, range);
-    const y = -60 + capped * 1.2;                  // -60 → 60px
+    const y = -10 + capped * 0.4;                  // -10 → 30px
     indicator.style.transition = 'none';
     indicator.style.transform = `translateX(-50%) translateY(${y}px)`;
     indicator.style.opacity = Math.min(capped / 20, 1);
