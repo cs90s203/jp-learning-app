@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.66
+          v0.14.67
         </div>
 
       </div>
@@ -4107,6 +4107,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Add to Home Screen banner（iOS 非 standalone）
   _initA2HSBanner();
+
+  // 單字頁 list：捲到頂往下拉時讓 PTR 接管，阻止 list 捲動
+  const _vla = document.getElementById('vocab-list-area');
+  if (_vla) {
+    let _vlaTouchY = 0;
+    _vla.addEventListener('touchstart', e => { _vlaTouchY = e.touches[0].clientY; }, { passive: true });
+    _vla.addEventListener('touchmove', e => {
+      if (_vla.scrollTop === 0 && e.touches[0].clientY > _vlaTouchY) e.preventDefault();
+    }, { passive: false });
+  }
 
   // 從 index.json 動態取得有內容的日期，填入 contentDateSet
   fetch(CONTENT_BASE_URL + '/index.json')
