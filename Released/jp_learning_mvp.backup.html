@@ -107,18 +107,11 @@
     position: relative; overflow: hidden;
   }
   #ptr-indicator {
-    position: fixed; top: 0; left: 50%; transform: translateX(-50%) translateY(-56px);
-    width: 40px; height: 40px; border-radius: 50%;
-    background: var(--card-bg); box-shadow: 0 2px 8px rgba(0,0,0,.18);
+    position: fixed; top: 0; left: 50%; transform: translateX(-50%) translateY(-60px);
+    width: 50px; height: 50px;
     display: flex; align-items: center; justify-content: center;
-    transition: transform .2s ease, opacity .2s ease;
     z-index: 9999; opacity: 0; pointer-events: none;
   }
-  #ptr-indicator svg { transition: transform .1s linear; }
-  #ptr-indicator.ptr-ready { background: var(--wa); }
-  #ptr-indicator.ptr-ready svg { stroke: #fff; }
-  #ptr-indicator.ptr-loading { animation: ptr-spin .7s linear infinite; }
-  @keyframes ptr-spin { to { transform: translateX(-50%) translateY(12px) rotate(360deg); } }
 
   /* Safe area spacer only — no fake status bar */
   .status-bar {
@@ -1555,8 +1548,14 @@
 
   <!-- Pull-to-refresh indicator -->
   <div id="ptr-indicator">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--wa)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="ptr-icon">
-      <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.82"/>
+    <!-- r=20, c=125.66, segLen=23.13, gap=2, step=25.13 -->
+    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="25" cy="25" r="20" stroke="#E4D8CC" stroke-width="5" fill="none"/>
+      <circle id="ptr-seg-0" cx="25" cy="25" r="20" stroke="#D85A30" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="23.13 102.53" stroke-dashoffset="31.42"  transform="rotate(-90 25 25)" opacity="0.15"/>
+      <circle id="ptr-seg-1" cx="25" cy="25" r="20" stroke="#1D9E75" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="23.13 102.53" stroke-dashoffset="6.29"   transform="rotate(-90 25 25)" opacity="0.15"/>
+      <circle id="ptr-seg-2" cx="25" cy="25" r="20" stroke="#378ADD" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="23.13 102.53" stroke-dashoffset="-18.84" transform="rotate(-90 25 25)" opacity="0.15"/>
+      <circle id="ptr-seg-3" cx="25" cy="25" r="20" stroke="#BA7517" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="23.13 102.53" stroke-dashoffset="-43.97" transform="rotate(-90 25 25)" opacity="0.15"/>
+      <circle id="ptr-seg-4" cx="25" cy="25" r="20" stroke="#7F77DD" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="23.13 102.53" stroke-dashoffset="-69.1"  transform="rotate(-90 25 25)" opacity="0.15"/>
     </svg>
   </div>
 
@@ -1992,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.57
+          v0.14.58
         </div>
 
       </div>
@@ -4022,13 +4021,13 @@ function loadTheme() {
 
 // ===== Pull-to-Refresh =====
 (function() {
-  const THRESHOLD = 70;  // px to trigger reload
+  const THRESHOLD = 100; // 5 segments × 20px each
+  const SEGS = 5;
   let startY = 0, pulling = false, dist = 0;
 
   function getActiveScroll() {
     const active = document.querySelector('.page.active');
     if (!active) return 0;
-    // 找頁面內第一個可捲動的子元素，或頁面本身
     for (const el of active.querySelectorAll('*')) {
       if (el.scrollTop > 0) return el.scrollTop;
     }
@@ -4036,25 +4035,23 @@ function loadTheme() {
   }
 
   const indicator = document.getElementById('ptr-indicator');
-  const icon = document.getElementById('ptr-icon');
+  const segs = [0,1,2,3,4].map(i => document.getElementById('ptr-seg-' + i));
 
   function setIndicator(pullDist) {
-    const ratio = Math.min(pullDist / THRESHOLD, 1);
-    const y = -56 + pullDist * 0.55;          // 從 -56px 往下滑入
-    const rotate = ratio * 270;               // 旋轉跟著距離走
+    const capped = Math.min(pullDist, THRESHOLD);
+    const y = -60 + capped * 0.74; // slides from -60 to 14px
     indicator.style.transition = 'none';
-    indicator.style.transform = `translateX(-50%) translateY(${Math.min(y, 12)}px)`;
-    indicator.style.opacity = Math.min(ratio * 1.5, 1);
-    icon.style.transform = `rotate(${rotate}deg)`;
-    indicator.classList.toggle('ptr-ready', ratio >= 1);
+    indicator.style.transform = `translateX(-50%) translateY(${y}px)`;
+    indicator.style.opacity = Math.min(capped / 30, 1);
+    const lit = Math.floor(capped / (THRESHOLD / SEGS));
+    segs.forEach((s, i) => { if (s) s.style.opacity = i < lit ? '1' : '0.15'; });
   }
 
   function resetIndicator() {
     indicator.style.transition = 'transform .3s ease, opacity .3s ease';
-    indicator.style.transform = 'translateX(-50%) translateY(-56px)';
+    indicator.style.transform = 'translateX(-50%) translateY(-60px)';
     indicator.style.opacity = '0';
-    indicator.classList.remove('ptr-ready', 'ptr-loading');
-    icon.style.transform = '';
+    segs.forEach(s => { if (s) s.style.opacity = '0.15'; });
   }
 
   document.addEventListener('touchstart', e => {
@@ -4076,11 +4073,7 @@ function loadTheme() {
     if (!pulling) return;
     pulling = false;
     if (dist >= THRESHOLD) {
-      indicator.classList.add('ptr-loading');
-      indicator.style.transition = 'none';
-      indicator.style.transform = 'translateX(-50%) translateY(12px)';
-      indicator.style.opacity = '1';
-      setTimeout(() => location.reload(), 300);
+      setTimeout(() => location.reload(), 150);
     } else {
       resetIndicator();
     }
