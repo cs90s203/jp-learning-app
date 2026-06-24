@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.58
+          v0.14.59
         </div>
 
       </div>
@@ -4021,7 +4021,8 @@ function loadTheme() {
 
 // ===== Pull-to-Refresh =====
 (function() {
-  const THRESHOLD = 100; // 5 segments × 20px each
+  const ANIM_START = 50;  // 開始顯示動畫的距離
+  const THRESHOLD = 150; // 觸發 reload 的距離
   const SEGS = 5;
   let startY = 0, pulling = false, dist = 0;
 
@@ -4038,12 +4039,15 @@ function loadTheme() {
   const segs = [0,1,2,3,4].map(i => document.getElementById('ptr-seg-' + i));
 
   function setIndicator(pullDist) {
-    const capped = Math.min(pullDist, THRESHOLD);
-    const y = -60 + capped * 0.74; // slides from -60 to 14px
+    if (pullDist < ANIM_START) { resetIndicator(); return; }
+    const active = pullDist - ANIM_START;           // 有效距離 0~100
+    const range  = THRESHOLD - ANIM_START;          // = 100
+    const capped = Math.min(active, range);
+    const y = -60 + capped * 0.74;                 // -60 → 14px
     indicator.style.transition = 'none';
     indicator.style.transform = `translateX(-50%) translateY(${y}px)`;
-    indicator.style.opacity = Math.min(capped / 30, 1);
-    const lit = Math.floor(capped / (THRESHOLD / SEGS));
+    indicator.style.opacity = Math.min(capped / 20, 1);
+    const lit = Math.floor(capped / (range / SEGS));
     segs.forEach((s, i) => { if (s) s.style.opacity = i < lit ? '1' : '0.15'; });
   }
 
