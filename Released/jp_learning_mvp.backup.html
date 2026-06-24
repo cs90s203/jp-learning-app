@@ -1883,7 +1883,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.30
+          v0.14.31
         </div>
 
       </div>
@@ -3372,17 +3372,10 @@ function renderArticle(tokens) {
     // 句子結束判斷：關閉句子分組，插入中文備注，開啟下一句分組
     if (surface === '。' || surface === '！' || surface === '？') {
       html += '</span>';
-      const segments = SENTENCE_TRANSLATIONS[sentenceIndex] || [];
-      if (segments.length) {
-        html += '<span class="cn-note" id="cn-note-' + sentenceIndex + '">';
-        segments.forEach(seg => {
-          if (seg.word) {
-            html += '<span class="cn-seg" data-word="' + seg.word + '">' + seg.text + '</span>';
-          } else {
-            html += '<span class="cn-seg">' + seg.text + '</span>';
-          }
-        });
-        html += '</span>';
+      const translation = SENTENCE_TRANSLATIONS[sentenceIndex];
+      if (translation) {
+        const text = typeof translation === 'string' ? translation : translation.map(s => s.text).join('');
+        html += '<span class="cn-note" id="cn-note-' + sentenceIndex + '">' + text + '</span>';
       }
       sentenceIndex++;
       if (i < tokens.length - 1) {
@@ -3449,13 +3442,7 @@ function setupArticleScrollObserver() {
   page.addEventListener('scroll', _scrollHandler, { passive: true });
 }
 
-function applyAddedWordNoteColors() {
-  const container = document.getElementById('article-text');
-  container.querySelectorAll('.cn-seg').forEach(seg => {
-    const word = seg.dataset.word;
-    seg.classList.toggle('cn-note-highlight', !!word && addedWords.has(word));
-  });
-}
+function applyAddedWordNoteColors() {}
 
 // 長按偵測（桌面用滑鼠按住，手機用 touch）
 function bindLongPress(el) {
