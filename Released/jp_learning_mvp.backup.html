@@ -1920,7 +1920,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.48
+          v0.14.49
         </div>
 
       </div>
@@ -7002,6 +7002,13 @@ document.addEventListener('visibilitychange', function() {
 });
 
 // 更新同步狀態列文字
+// 智慧同步：雙向比對，決定 push / pull / 衝突
+function smartSync() {
+  if (!currentUser) { showToast('請先登入'); return; }
+  showToast('同步中…');
+  checkCloudOnLogin();
+}
+
 function _setSyncStatus(state, timeStr) {
   const el = document.getElementById('sync-status-text');
   const btn = document.getElementById('sync-btn');
@@ -7054,7 +7061,7 @@ function renderAuthUI() {
       </div>
       <div style="border-top:1px solid var(--wa-bg2);padding:10px 0 6px;display:flex;align-items:center;justify-content:space-between">
         <span id="sync-status-text" style="font-size:12px;color:var(--wt3)">${localStorage.getItem('lastSyncAt') ? '上次同步：' + new Date(localStorage.getItem('lastSyncAt')).toLocaleTimeString('zh-TW', {hour:'2-digit',minute:'2-digit'}) : '尚未同步'}</span>
-        <button id="sync-btn" onclick="syncToCloud()" style="font-size:12px;color:var(--wa);background:none;border:1px solid var(--wa);border-radius:6px;padding:5px 10px;cursor:pointer">同步</button>
+        <button id="sync-btn" onclick="smartSync()" style="font-size:12px;color:var(--wa);background:none;border:1px solid var(--wa);border-radius:6px;padding:5px 10px;cursor:pointer">同步</button>
       </div>`;
     return;
   }
