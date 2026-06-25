@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.32 — 2026-06-25
+
+Debug: PTR toast 加上 page 資訊，追蹤 startY 設定時機
+
+---
+
 ## 1.0.31 — 2026-06-25
 
 Debug: PTR 觸發前顯示 dist/startY 診斷 toast

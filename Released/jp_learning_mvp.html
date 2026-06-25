@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.31
+          v1.0.32
         </div>
 
       </div>
@@ -4202,6 +4202,8 @@ function loadTheme() {
     if (isTutorialOpen()) return;
     if (getActiveScroll() > 0) return;
     startY = e.touches[0].clientY;
+    window._ptrLastStartY = startY;
+    window._ptrLastPage = (document.querySelector('.page.active') || {}).id || '?';
     pulling = false;
     dist = 0;
   }, { passive: true });
@@ -4227,7 +4229,7 @@ function loadTheme() {
         page.style.transition = 'transform .4s ease';
         page.style.transform = 'translateY(0)';
       }
-      showToast('PTR: dist=' + Math.round(dist) + ' startY=' + Math.round(startY));
+      showToast('PTR: dist=' + Math.round(dist) + ' startY=' + Math.round(startY) + ' page=' + (window._ptrLastPage||'?'));
       setTimeout(() => location.reload(), 450);
     } else {
       resetIndicator();
