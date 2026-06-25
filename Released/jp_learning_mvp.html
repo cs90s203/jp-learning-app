@@ -1248,7 +1248,7 @@
   /* ===== Onboarding ===== */
   /* ── Tutorial overlay ── */
   #tutorial-overlay {
-    display: none; position: fixed; inset: 0; z-index: 8500;
+    display: none; position: fixed; inset: 0; z-index: 9200;
     pointer-events: all;
   }
   .help-btn.tutorial-active { background: var(--wa); color: #fff; }
@@ -1794,11 +1794,11 @@
         <div class="gojuuon-header-top">
           <h2>五十音表</h2>
           <div style="display:flex;align-items:center;gap:15px">
-            <button class="help-btn" style="position:static">？</button>
+            <button class="help-btn" id="gojuuon-help-btn" style="position:static" onclick="showGojuuonTutorial()">？</button>
             <button class="gojuuon-close" onclick="closeGojuuon()">✕</button>
           </div>
         </div>
-        <div class="gojuuon-chips">
+        <div class="gojuuon-chips" id="gojuuon-chips">
           <button class="gojuuon-chip gojuuon-chip-kata" id="chip-katakana" onclick="toggleKatakanaMode()">片</button>
           <button class="gojuuon-chip" id="chip-dakuten" onclick="toggleGojuuonGroup('dakuten')">濁音</button>
           <button class="gojuuon-chip" id="chip-handakuten" onclick="toggleGojuuonGroup('handakuten')">半濁音</button>
@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.40
+          v1.0.41
         </div>
 
       </div>
@@ -6923,6 +6923,13 @@ function showVocabTutorial() {
   ]);
 }
 function showQuizTutorial()    { /* TODO */ }
+function showGojuuonTutorial() {
+  if (_tutBtnId === 'gojuuon-help-btn') { tutorialClose(); return; }
+  tutorialShow('gojuuon-help-btn', [
+    { targetId: 'gojuuon-scroll', text: '點擊任一個假名格子，可即時聆聽該音的發音，方便邊看邊記。' },
+    { targetId: 'gojuuon-chips', snapToId: 'gojuuon-scroll', noScroll: true, text: '「片」切換至片假名對照練習，「濁音」和「半濁音」展開對應的字群。' },
+  ]);
+}
 
 function showSettingsTutorial() {
   if (_tutBtnId === 'settings-help-btn') { tutorialClose(); return; }
