@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.6 — 2026-06-25
+
+Tutorial：改用 instant scroll + rAF，修正 spotlight 定位失敗
+
+---
+
 ## 1.0.5 — 2026-06-25
 
 新增 Tutorial overlay 系統，設定頁 ？ 接線帳號＋進階功能說明
