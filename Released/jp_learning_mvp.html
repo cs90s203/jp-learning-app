@@ -1265,6 +1265,7 @@
     box-shadow: 0 6px 24px rgba(0,0,0,0.28);
     pointer-events: none;
     box-sizing: border-box;
+    min-width: 240px;
   }
   .tutorial-tooltip-text {
     font-size: 14px; line-height: 1.55; color: var(--wt);
@@ -1629,7 +1630,7 @@
       <div class="sec">
 
         <p class="section-title">學習紀錄</p>
-        <div class="card">
+        <div class="card" id="home-calendar-card">
           <div class="cal-month-nav">
             <button class="cal-nav-btn" onclick="calNavMonth(-1)">‹</button>
             <span id="cal-month-label"></span>
@@ -1663,7 +1664,7 @@
         <div id="home-dashboard"></div>
 
         <p class="section-title" style="margin-top:20px">今日任務</p>
-        <div class="card">
+        <div class="card" id="home-tasks-card">
           <div class="today-row">
             <div class="today-ring-center">
               <svg id="home-ring" width="152" height="152" viewBox="0 0 152 152"></svg>
@@ -2041,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.24
+          v1.0.25
         </div>
 
       </div>
@@ -6871,7 +6872,15 @@ function tutorialClose() {
 }
 
 // ── Page tutorial definitions ──
-function showHomeTutorial()    { /* TODO */ }
+function showHomeTutorial() {
+  if (_tutBtnId === 'home-help-btn') { tutorialClose(); return; }
+  tutorialShow('home-help-btn', [
+    { targetId: 'home-level-tag',     text: '顯示目前的學習等級，等級會影響每天推送的文章難度，點擊可以前往設定調整。' },
+    { targetId: 'home-calendar-card', text: '這裡記錄了每天的學習狀態，有文章的日期會有圓點，五色圈會呈現當日的讀書進度，點擊日期可以看到當天的文章以及閱讀進度。' },
+    { targetId: 'home-dashboard',     text: '顯示今天累積的學習量，從左到右分別是新學的單字數、複習的單字數，以及跟讀完成的句子數，讓你對當日進度一目瞭然。' },
+    { targetId: 'home-tasks-card',    text: '每天自動產生三項學習目標：文章、單字卡、試題，完成後對應的任務環會逐步填滿，試著每天集滿三環。' },
+  ]);
+}
 function showArticleTutorial() { /* TODO */ }
 function showVocabTutorial()   { /* TODO */ }
 function showQuizTutorial()    { /* TODO */ }
