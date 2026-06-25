@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.36 — 2026-06-25
+
+今日頁 Tutorial：N5 步驟 spotlight 對齊月曆卡片左右邊緣，加圓角
+
+---
+
 ## 1.0.35 — 2026-06-25
 
 修正 PTR Bug：scroll>0 時同步重設 startY，防止舊 startY 導致 touchmove dy 異常大
