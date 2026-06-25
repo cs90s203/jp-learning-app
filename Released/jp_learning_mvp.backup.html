@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.32
+          v1.0.33
         </div>
 
       </div>
@@ -4191,7 +4191,8 @@ function loadTheme() {
   }
 
   // 供 tutorialClose() 呼叫：startY 設成螢幕外，確保 tutorial 關閉後的殘留 touchmove 不觸發 PTR
-  window.ptrReset = function() { startY = window.innerHeight * 2; pulling = false; dist = 0; };
+  window._ptrResetCount = 0;
+  window.ptrReset = function() { startY = window.innerHeight * 2; pulling = false; dist = 0; window._ptrResetCount++; };
 
   function isTutorialOpen() {
     const ov = document.getElementById('tutorial-overlay');
@@ -4229,7 +4230,7 @@ function loadTheme() {
         page.style.transition = 'transform .4s ease';
         page.style.transform = 'translateY(0)';
       }
-      showToast('PTR: dist=' + Math.round(dist) + ' startY=' + Math.round(startY) + ' page=' + (window._ptrLastPage||'?'));
+      showToast('PTR: dist=' + Math.round(dist) + ' startY=' + Math.round(startY) + ' page=' + (window._ptrLastPage||'?') + ' resets=' + (window._ptrResetCount||0));
       setTimeout(() => location.reload(), 450);
     } else {
       resetIndicator();
