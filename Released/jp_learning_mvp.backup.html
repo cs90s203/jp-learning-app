@@ -1378,6 +1378,9 @@
   <div id="tutorial-spotlight"></div>
 </div>
 
+<!-- 設定頁 ? 按鈕：放 body 直接子層，避免 page transform stacking context 問題 -->
+<button class="help-btn" id="settings-help-btn" onclick="showSettingsTutorial()" style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
+
 <div id="onboarding-screen">
 
   <!-- Page 1：這是什麼 App -->
@@ -1829,7 +1832,6 @@
     <!-- 設定 -->
     <div class="page" id="page-settings">
       <div class="top-bar"><h1>設定</h1></div>
-      <button class="help-btn" id="settings-help-btn" onclick="showSettingsTutorial()" style="position:fixed;top:14px;right:16px;z-index:9000">？</button>
       <div class="sec">
         <p class="section-title">學習模式</p>
         <div class="card" style="padding:4px 16px;margin-bottom:16px">
@@ -2039,7 +2041,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.22
+          v1.0.23
         </div>
 
       </div>
@@ -2336,6 +2338,11 @@ function switchPage(id) {
 
   // 顯示/隱藏固定工具列
   document.getElementById('article-toolbar').classList.toggle('show', id === 'article');
+
+  // 設定頁 ? 按鈕（body 層，避免 page transform stacking context）
+  var _shb = document.getElementById('settings-help-btn');
+  if (_shb) { _shb.style.display = id === 'settings' ? '' : 'none'; }
+  if (id !== 'settings') tutorialClose();
 
   if (id === 'article') {
     if (!articleRendered) {
