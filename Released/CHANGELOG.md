@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.35 — 2026-06-25
+
+修正 PTR Bug：scroll>0 時同步重設 startY，防止舊 startY 導致 touchmove dy 異常大
+
+---
+
 ## 1.0.34 — 2026-06-25
 
 修正 PTR Bug：touchstart 無論 scroll 狀態都先重設 pulling/dist，防止舊手勢殘留觸發重新整理
