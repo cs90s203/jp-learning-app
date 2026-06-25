@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.36
+          v1.0.37
         </div>
 
       </div>
@@ -6906,8 +6906,8 @@ function showArticleTutorial() {
     { targetId: 'cn-toggle-row',     text: '開啟後每個詞彙下方會顯示中文意思，方便對照學習。' },
     { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
-    { targetId: 'play-btn',          text: '點擊播放可聆聽全文朗讀，可調整速度。' },
-    { targetId: 'follow-btn',        text: '開啟逐句跟讀後，系統會逐句播放並等待你開口跟讀，錄音鍵供口語自由練習使用。' },
+    { targetId: 'play-btn',   snapToId: 'difficulty-bar', text: '點擊播放可聆聽全文朗讀，可調整速度。' },
+    { targetId: 'follow-btn', snapToId: 'difficulty-bar', text: '開啟逐句跟讀後，系統會逐句播放並等待你開口跟讀，錄音鍵供口語自由練習使用。' },
   ]);
 }
 function showVocabTutorial()   { /* TODO */ }
