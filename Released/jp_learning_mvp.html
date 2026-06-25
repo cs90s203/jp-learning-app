@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.34
+          v1.0.35
         </div>
 
       </div>
@@ -4203,7 +4203,7 @@ function loadTheme() {
     if (isTutorialOpen()) return;
     pulling = false;
     dist = 0;
-    if (getActiveScroll() > 0) return;
+    if (getActiveScroll() > 0) { startY = window.innerHeight * 2; return; }
     startY = e.touches[0].clientY;
     window._ptrLastStartY = startY;
     window._ptrLastPage = (document.querySelector('.page.active') || {}).id || '?';
