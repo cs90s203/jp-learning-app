@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.12 — 2026-06-25
+
+Tutorial：tooltip 接合 spotlight 下方，寬度對齊，圓角接合
+
+---
+
 ## 1.0.11 — 2026-06-25
 
 Tutorial：重寫為獨立 function，修 const TDZ 導致 onclick 無效
