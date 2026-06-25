@@ -1249,8 +1249,9 @@
   /* ── Tutorial overlay ── */
   #tutorial-overlay {
     display: none; position: fixed; inset: 0; z-index: 8500;
-    pointer-events: all; cursor: pointer;
+    pointer-events: all;
   }
+  .help-btn.tutorial-active { background: var(--wa); color: #fff; }
   #tutorial-spotlight {
     position: absolute; border-radius: 12px;
     box-shadow: 0 0 0 9999px rgba(0,0,0,0.62);
@@ -1823,7 +1824,7 @@
     <!-- 設定 -->
     <div class="page" id="page-settings">
       <div class="top-bar"><h1>設定</h1></div>
-      <button class="help-btn" onclick="showSettingsTutorial()" style="position:fixed;top:14px;right:16px;z-index:100">？</button>
+      <button class="help-btn" id="settings-help-btn" onclick="showSettingsTutorial()" style="position:fixed;top:14px;right:16px;z-index:9000">？</button>
       <div class="sec">
         <p class="section-title">學習模式</p>
         <div class="card" style="padding:4px 16px;margin-bottom:16px">
@@ -2041,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.8
+          v1.0.9
         </div>
 
       </div>
@@ -4180,7 +4181,13 @@ function loadTheme() {
     }
   }
 
+  function isTutorialOpen() {
+    const ov = document.getElementById('tutorial-overlay');
+    return ov && ov.style.display !== 'none';
+  }
+
   document.addEventListener('touchstart', e => {
+    if (isTutorialOpen()) return;
     if (getActiveScroll() > 0) return;
     startY = e.touches[0].clientY;
     pulling = false;
@@ -6745,11 +6752,13 @@ function showSplash() {
 
 // ===== Tutorial overlay system =====
 const Tutorial = (() => {
-  let _steps = [], _idx = 0;
+  let _steps = [], _idx = 0, _btnId = null;
 
-  function show(steps) {
+  function show(triggerBtnId, steps) {
     _steps = steps;
     _idx = 0;
+    _btnId = triggerBtnId;
+    if (_btnId) document.getElementById(_btnId)?.classList.add('tutorial-active');
     _render();
   }
 
@@ -6805,7 +6814,10 @@ const Tutorial = (() => {
   function next() {
     _idx++;
     if (_idx >= _steps.length) {
-      document.getElementById('tutorial-overlay').style.display = 'none';
+      const overlay = document.getElementById('tutorial-overlay');
+      overlay.style.display = 'none';
+      if (_btnId) document.getElementById(_btnId)?.classList.remove('tutorial-active');
+      _btnId = null;
     } else {
       _render();
     }
@@ -6816,13 +6828,18 @@ const Tutorial = (() => {
 
 function tutorialNext() { Tutorial.next(); }
 
+// overlay touchend dismiss (stopPropagation prevents PTR)
+document.addEventListener('DOMContentLoaded', () => {
+  const ov = document.getElementById('tutorial-overlay');
+  if (ov) ov.addEventListener('touchend', e => { e.stopPropagation(); Tutorial.next(); }, { passive: true });
+});
+
 // ── Page tutorial definitions ──
 function showSettingsTutorial() {
-  // debug: force overlay visible immediately
-  var ov = document.getElementById('tutorial-overlay');
-  if (!ov) { alert('tutorial-overlay not found'); return; }
-  ov.style.background = 'rgba(0,0,0,0.6)';
-  ov.style.display = 'block';
+  Tutorial.show('settings-help-btn', [
+    { targetId: 'settings-account-card',  text: '登入帳號確保讀書進度同步設備，以及資料的保存' },
+    { targetId: 'settings-advanced-card', text: '輸入 Google Vision API Key 解鎖手機拍照加詞的功能' },
+  ]);
 }
 
 function showOnboarding() {

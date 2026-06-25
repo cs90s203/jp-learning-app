@@ -2041,7 +2041,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.7
+          v1.0.8
         </div>
 
       </div>
@@ -6818,10 +6818,11 @@ function tutorialNext() { Tutorial.next(); }
 
 // ── Page tutorial definitions ──
 function showSettingsTutorial() {
-  Tutorial.show([
-    { targetId: 'settings-account-card',  text: '登入帳號確保讀書進度同步設備，以及資料的保存' },
-    { targetId: 'settings-advanced-card', text: '輸入 Google Vision API Key 解鎖手機拍照加詞的功能' },
-  ]);
+  // debug: force overlay visible immediately
+  var ov = document.getElementById('tutorial-overlay');
+  if (!ov) { alert('tutorial-overlay not found'); return; }
+  ov.style.background = 'rgba(0,0,0,0.6)';
+  ov.style.display = 'block';
 }
 
 function showOnboarding() {
