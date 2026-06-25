@@ -1,0 +1,857 @@
+{
+  "date": "2026-06-26",
+  "level": "n4",
+  "title": "友達の引っ越しを手伝った",
+  "text": "先週の土曜日、友達の引っ越しを手伝いました。朝から重い荷物を運んだり、部屋を掃除したりして、とても疲れました。友達は一人では大変だったので、わたしが手伝うことができて、よかったと思います。昼ごはんは友達がピザを買ってくれて、みんなで食べました。新しい部屋は前より広くて、駅にも近いです。引っ越しは大変でしたが、友達が喜んでくれたので、わたしもうれしかったです。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "土曜日",
+      "basic_form": "土曜日",
+      "reading": "どようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "引っ越し",
+      "basic_form": "引っ越し",
+      "reading": "ひっこし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "手伝いました",
+      "basic_form": "手伝う",
+      "reading": "てつだいました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝",
+      "basic_form": "朝",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重い",
+      "basic_form": "重い",
+      "reading": "おもい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "荷物",
+      "basic_form": "荷物",
+      "reading": "にもつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "運んだり",
+      "basic_form": "運ぶ",
+      "reading": "はこんだり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "部屋",
+      "basic_form": "部屋",
+      "reading": "へや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "掃除したり",
+      "basic_form": "掃除する",
+      "reading": "そうじしたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "疲れました",
+      "basic_form": "疲れる",
+      "reading": "つかれました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一人",
+      "basic_form": "一人",
+      "reading": "ひとり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大変",
+      "basic_form": "大変",
+      "reading": "たいへん",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "手伝う",
+      "basic_form": "手伝う",
+      "reading": "てつだう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できて",
+      "basic_form": "できる",
+      "reading": "できて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "よかった",
+      "basic_form": "よい",
+      "reading": "よかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思います",
+      "basic_form": "思う",
+      "reading": "おもいます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "昼ごはん",
+      "basic_form": "昼ごはん",
+      "reading": "ひるごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ピザ",
+      "basic_form": "ピザ",
+      "reading": "ピザ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買ってくれて",
+      "basic_form": "買う",
+      "reading": "かってくれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べました",
+      "basic_form": "食べる",
+      "reading": "たべました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "新しい",
+      "basic_form": "新しい",
+      "reading": "あたらしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "部屋",
+      "basic_form": "部屋",
+      "reading": "へや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "前",
+      "basic_form": "前",
+      "reading": "まえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "広くて",
+      "basic_form": "広い",
+      "reading": "ひろくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "駅",
+      "basic_form": "駅",
+      "reading": "えき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近い",
+      "basic_form": "近い",
+      "reading": "ちかい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "引っ越し",
+      "basic_form": "引っ越し",
+      "reading": "ひっこし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大変",
+      "basic_form": "大変",
+      "reading": "たいへん",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "でした",
+      "basic_form": "です",
+      "reading": "でした",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "喜んでくれた",
+      "basic_form": "喜ぶ",
+      "reading": "よろこんでくれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "うれしかった",
+      "basic_form": "うれしい",
+      "reading": "うれしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週",
+      "romaji": "senshuu",
+      "reading": "先週"
+    },
+    "土曜日": {
+      "meaning": "星期六",
+      "romaji": "doyoubi",
+      "reading": "土曜日"
+    },
+    "友達": {
+      "meaning": "朋友",
+      "romaji": "tomodachi",
+      "reading": "友達"
+    },
+    "引っ越し": {
+      "meaning": "搬家",
+      "romaji": "hikkoshi",
+      "reading": "引っ越し"
+    },
+    "手伝う": {
+      "meaning": "幫忙",
+      "romaji": "tetsudau",
+      "reading": "手伝う"
+    },
+    "朝": {
+      "meaning": "早上",
+      "romaji": "asa",
+      "reading": "朝"
+    },
+    "重い": {
+      "meaning": "重的",
+      "romaji": "omoi",
+      "reading": "重い"
+    },
+    "荷物": {
+      "meaning": "行李、貨物",
+      "romaji": "nimotsu",
+      "reading": "荷物"
+    },
+    "運ぶ": {
+      "meaning": "搬運",
+      "romaji": "hakobu",
+      "reading": "運ぶ"
+    },
+    "部屋": {
+      "meaning": "房間",
+      "romaji": "heya",
+      "reading": "部屋"
+    },
+    "掃除する": {
+      "meaning": "打掃",
+      "romaji": "souji suru",
+      "reading": "掃除する"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "疲れる": {
+      "meaning": "疲累",
+      "romaji": "tsukareru",
+      "reading": "疲れる"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    },
+    "一人": {
+      "meaning": "一個人、獨自",
+      "romaji": "hitori",
+      "reading": "一人"
+    },
+    "大変": {
+      "meaning": "辛苦的；不得了",
+      "romaji": "taihen",
+      "reading": "大変"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）",
+      "romaji": "koto",
+      "reading": "こと"
+    },
+    "できる": {
+      "meaning": "能、會、做得到",
+      "romaji": "dekiru",
+      "reading": "できる"
+    },
+    "よい": {
+      "meaning": "好的",
+      "romaji": "yoi",
+      "reading": "よい"
+    },
+    "思う": {
+      "meaning": "想、認為",
+      "romaji": "omou",
+      "reading": "思う"
+    },
+    "昼ごはん": {
+      "meaning": "午餐",
+      "romaji": "hirugohan",
+      "reading": "昼ごはん"
+    },
+    "ピザ": {
+      "meaning": "披薩",
+      "romaji": "piza",
+      "reading": "ピザ"
+    },
+    "買う": {
+      "meaning": "買",
+      "romaji": "kau",
+      "reading": "買う"
+    },
+    "みんな": {
+      "meaning": "大家",
+      "romaji": "minna",
+      "reading": "みんな"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "reading": "食べる"
+    },
+    "新しい": {
+      "meaning": "新的",
+      "romaji": "atarashii",
+      "reading": "新しい"
+    },
+    "前": {
+      "meaning": "之前",
+      "romaji": "mae",
+      "reading": "前"
+    },
+    "広い": {
+      "meaning": "寬廣的",
+      "romaji": "hiroi",
+      "reading": "広い"
+    },
+    "駅": {
+      "meaning": "車站",
+      "romaji": "eki",
+      "reading": "駅"
+    },
+    "近い": {
+      "meaning": "近的",
+      "romaji": "chikai",
+      "reading": "近い"
+    },
+    "喜ぶ": {
+      "meaning": "高興、喜悅",
+      "romaji": "yorokobu",
+      "reading": "喜ぶ"
+    },
+    "うれしい": {
+      "meaning": "開心的",
+      "romaji": "ureshii",
+      "reading": "うれしい"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    }
+  },
+  "particles": {
+    "の": "連接名詞，表示所屬或修飾",
+    "を": "受格助詞，標示動作對象",
+    "から": "表示起點（從…開始）",
+    "は": "主題助詞，標示話題",
+    "で": "表示手段、場所或狀態",
+    "ので": "表示原因、理由（因為…）",
+    "が": "主格助詞；或表示逆接「但是」",
+    "と": "表示引用內容（～と思う）",
+    "より": "表示比較的基準（比…）",
+    "に": "表示方向、歸著點或場所",
+    "も": "表示「也」，追加同類",
+    "です": "禮貌體斷定助動詞",
+    "でした": "禮貌體過去斷定",
+    "だ": "常體斷定助動詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週六，",
+        "word": "土曜日"
+      },
+      {
+        "text": "幫朋友",
+        "word": "友達"
+      },
+      {
+        "text": "搬家。",
+        "word": "引っ越し"
+      }
+    ],
+    [
+      {
+        "text": "從早上開始",
+        "word": "朝"
+      },
+      {
+        "text": "又搬重",
+        "word": "重い"
+      },
+      {
+        "text": "行李，",
+        "word": "荷物"
+      },
+      {
+        "text": "又打掃",
+        "word": "掃除する"
+      },
+      {
+        "text": "房間，",
+        "word": "部屋"
+      },
+      {
+        "text": "非常累。",
+        "word": "疲れる"
+      }
+    ],
+    [
+      {
+        "text": "朋友",
+        "word": "友達"
+      },
+      {
+        "text": "一個人",
+        "word": "一人"
+      },
+      {
+        "text": "很辛苦，",
+        "word": "大変"
+      },
+      {
+        "text": "所以我",
+        "word": "わたし"
+      },
+      {
+        "text": "能幫上忙，",
+        "word": "できる"
+      },
+      {
+        "text": "覺得",
+        "word": "思う"
+      },
+      {
+        "text": "太好了。",
+        "word": "よい"
+      }
+    ],
+    [
+      {
+        "text": "午餐",
+        "word": "昼ごはん"
+      },
+      {
+        "text": "朋友",
+        "word": "友達"
+      },
+      {
+        "text": "買了披薩，",
+        "word": "ピザ"
+      },
+      {
+        "text": "大家一起",
+        "word": "みんな"
+      },
+      {
+        "text": "吃了。",
+        "word": "食べる"
+      }
+    ],
+    [
+      {
+        "text": "新",
+        "word": "新しい"
+      },
+      {
+        "text": "房間",
+        "word": "部屋"
+      },
+      {
+        "text": "比之前",
+        "word": "前"
+      },
+      {
+        "text": "寬敞，",
+        "word": "広い"
+      },
+      {
+        "text": "離車站",
+        "word": "駅"
+      },
+      {
+        "text": "也近。",
+        "word": "近い"
+      }
+    ],
+    [
+      {
+        "text": "搬家",
+        "word": "引っ越し"
+      },
+      {
+        "text": "雖然很辛苦，",
+        "word": "大変"
+      },
+      {
+        "text": "但朋友",
+        "word": "友達"
+      },
+      {
+        "text": "很高興，",
+        "word": "喜ぶ"
+      },
+      {
+        "text": "所以我也",
+        "word": "わたし"
+      },
+      {
+        "text": "很開心。",
+        "word": "うれしい"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.1,
+    "jlpt_level": "N4"
+  }
+}
