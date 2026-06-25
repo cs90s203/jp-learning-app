@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.28 — 2026-06-25
+
+Bug: Tutorial 關閉後觸碰觸發下拉重整，touchmove/touchend 補 isTutorialOpen 檢查
+
+---
+
 ## 1.0.27 — 2026-06-25
 
 文章頁 Tutorial：加六步說明
