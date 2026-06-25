@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.35
+          v1.0.36
         </div>
 
       </div>
@@ -6806,23 +6806,30 @@ function _tutRender() {
   requestAnimationFrame(function() { requestAnimationFrame(function() {
     var r = target.getBoundingClientRect();
     var pad = 6;
-    spotlight.style.left   = (r.left - pad) + 'px';
-    spotlight.style.top    = (r.top - pad) + 'px';
-    spotlight.style.width  = (r.width + pad * 2) + 'px';
-    spotlight.style.height = (r.height + pad * 2) + 'px';
+    // optional snapToId: expand spotlight/tooltip to match another element's width & left
+    var snapEl = step.snapToId ? document.getElementById(step.snapToId) : null;
+    var snapR  = snapEl ? snapEl.getBoundingClientRect() : null;
+    var spLeft = snapR ? snapR.left         : (r.left - pad);
+    var spW    = snapR ? snapR.width        : (r.width + pad * 2);
+    var spTop  = r.top - pad;
+    var spH    = r.height + pad * 2;
+    spotlight.style.left   = spLeft + 'px';
+    spotlight.style.top    = spTop + 'px';
+    spotlight.style.width  = spW + 'px';
+    spotlight.style.height = spH + 'px';
+    // when snapped, all 4 outer corners should be rounded
+    spotlight.style.borderRadius = snapR ? '12px 12px 0 0' : '12px 12px 0 0';
     var old = overlay.querySelector('.tutorial-tooltip');
     if (old) old.remove();
     var tip = document.createElement('div');
     tip.className = 'tutorial-tooltip';
+    if (snapR) tip.style.borderRadius = '0 0 14px 14px'; // bottom only; top connects spotlight
     var dots = _tutSteps.length > 1
       ? '<div class="tutorial-dots">' + _tutSteps.map(function(_, i) {
           return '<div class="tutorial-dot' + (i === _tutIdx ? ' active' : '') + '"></div>';
         }).join('') + '</div>'
       : '';
     tip.innerHTML = '<div class="tutorial-tooltip-text">' + step.text + '</div>' + dots;
-    // width matches spotlight; left aligned to spotlight
-    var spW = r.width + pad * 2;
-    var spLeft = r.left - pad;
     tip.style.width = spW + 'px';
     tip.style.left  = Math.max(8, Math.min(spLeft, window.innerWidth - spW - 8)) + 'px';
     // attach below spotlight; if not enough space, go above
@@ -6886,7 +6893,7 @@ function tutorialClose() {
 function showHomeTutorial() {
   if (_tutBtnId === 'home-help-btn') { tutorialClose(); return; }
   tutorialShow('home-help-btn', [
-    { targetId: 'home-level-tag',     text: '顯示目前的學習等級，等級會影響每天推送的文章難度，點擊可以前往設定調整。' },
+    { targetId: 'home-level-tag', snapToId: 'home-calendar-card', text: '顯示目前的學習等級，等級會影響每天推送的文章難度，點擊可以前往設定調整。' },
     { targetId: 'home-calendar-card', text: '這裡記錄了每天的學習狀態，有文章的日期會有圓點，五色圈會呈現當日的讀書進度，點擊日期可以看到當天的文章以及閱讀進度。' },
     { targetId: 'home-dashboard',     text: '顯示今天累積的學習量，從左到右分別是新學的單字數、複習的單字數，以及跟讀完成的句子數，讓你對當日進度一目瞭然。' },
     { targetId: 'home-tasks-card',    text: '每天自動產生三項學習目標：文章、單字卡、試題，完成後對應的任務環會逐步填滿，試著每天集滿三環。' },
