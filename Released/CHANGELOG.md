@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.33 — 2026-06-25
+
+Debug: PTR toast 加 resets 計數，確認 ptrReset 是否有被呼叫
+
+---
+
 ## 1.0.32 — 2026-06-25
 
 Debug: PTR toast 加上 page 資訊，追蹤 startY 設定時機
