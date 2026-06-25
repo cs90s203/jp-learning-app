@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.41
+          v1.0.42
         </div>
 
       </div>
@@ -6816,6 +6816,10 @@ function _tutRender() {
     var spW    = snapR ? snapR.width        : (r.width + pad * 2);
     var spTop  = r.top - pad;
     var spH    = r.height + pad * 2;
+    // enforce 8px viewport margin on both sides
+    var _vm = 8;
+    if (spLeft < _vm) spLeft = _vm;
+    if (spLeft + spW > window.innerWidth - _vm) spW = window.innerWidth - _vm - spLeft;
     spotlight.style.left   = spLeft + 'px';
     spotlight.style.top    = spTop + 'px';
     spotlight.style.width  = spW + 'px';
