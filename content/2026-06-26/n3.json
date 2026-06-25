@@ -1,0 +1,1036 @@
+{
+  "date": "2026-06-26",
+  "level": "n3",
+  "title": "食品ロスを減らすために",
+  "text": "日本では毎年、まだ食べられる食品が大量に捨てられているという。これを食品ロスと呼ぶ。家庭でも、買いすぎた野菜を腐らせてしまったり、料理を作りすぎて残してしまったりすることが多い。こうした無駄を減らすことは、環境を守ることにもつながる。しかし、少し工夫すれば、無駄はかなり減らせると思う。例えば、買い物の前に冷蔵庫の中を確認したり、残った料理を別の料理に作りかえたりするとよい。一人ひとりの小さな努力が、大きな変化につながると思う。",
+  "tokens": [
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "毎年",
+      "basic_form": "毎年",
+      "reading": "まいとし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まだ",
+      "basic_form": "まだ",
+      "reading": "まだ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "食べられる",
+      "basic_form": "食べる",
+      "reading": "たべられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "食品",
+      "basic_form": "食品",
+      "reading": "しょくひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大量",
+      "basic_form": "大量",
+      "reading": "たいりょう",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "捨てられている",
+      "basic_form": "捨てる",
+      "reading": "すてられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いう",
+      "basic_form": "いう",
+      "reading": "いう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これ",
+      "basic_form": "これ",
+      "reading": "これ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食品ロス",
+      "basic_form": "食品ロス",
+      "reading": "しょくひんロス",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "呼ぶ",
+      "basic_form": "呼ぶ",
+      "reading": "よぶ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家庭",
+      "basic_form": "家庭",
+      "reading": "かてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "買いすぎた",
+      "basic_form": "買いすぎる",
+      "reading": "かいすぎた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "野菜",
+      "basic_form": "野菜",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "腐らせてしまったり",
+      "basic_form": "腐らせる",
+      "reading": "くさらせてしまったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作りすぎて",
+      "basic_form": "作りすぎる",
+      "reading": "つくりすぎて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "残してしまったり",
+      "basic_form": "残す",
+      "reading": "のこしてしまったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多い",
+      "basic_form": "多い",
+      "reading": "おおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "無駄",
+      "basic_form": "無駄",
+      "reading": "むだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "減らす",
+      "basic_form": "減らす",
+      "reading": "へらす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "守る",
+      "basic_form": "守る",
+      "reading": "まもる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つながる",
+      "basic_form": "つながる",
+      "reading": "つながる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかし",
+      "basic_form": "しかし",
+      "reading": "しかし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "工夫すれば",
+      "basic_form": "工夫する",
+      "reading": "くふうすれば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "無駄",
+      "basic_form": "無駄",
+      "reading": "むだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かなり",
+      "basic_form": "かなり",
+      "reading": "かなり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "減らせる",
+      "basic_form": "減らす",
+      "reading": "へらせる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "例えば",
+      "basic_form": "例えば",
+      "reading": "たとえば",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "買い物",
+      "basic_form": "買い物",
+      "reading": "かいもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "前",
+      "basic_form": "前",
+      "reading": "まえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "冷蔵庫",
+      "basic_form": "冷蔵庫",
+      "reading": "れいぞうこ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "中",
+      "basic_form": "中",
+      "reading": "なか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "確認したり",
+      "basic_form": "確認する",
+      "reading": "かくにんしたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "残った",
+      "basic_form": "残る",
+      "reading": "のこった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "別",
+      "basic_form": "別",
+      "reading": "べつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作りかえたり",
+      "basic_form": "作りかえる",
+      "reading": "つくりかえたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よい",
+      "basic_form": "よい",
+      "reading": "よい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一人ひとり",
+      "basic_form": "一人ひとり",
+      "reading": "ひとりひとり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "小さな",
+      "basic_form": "小さな",
+      "reading": "ちいさな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "努力",
+      "basic_form": "努力",
+      "reading": "どりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "変化",
+      "basic_form": "変化",
+      "reading": "へんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つながる",
+      "basic_form": "つながる",
+      "reading": "つながる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "日本": {
+      "meaning": "日本",
+      "romaji": "nihon",
+      "reading": "日本"
+    },
+    "毎年": {
+      "meaning": "每年",
+      "romaji": "maitoshi",
+      "reading": "毎年"
+    },
+    "まだ": {
+      "meaning": "還、仍然",
+      "romaji": "mada",
+      "reading": "まだ"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "reading": "食べる"
+    },
+    "食品": {
+      "meaning": "食品",
+      "romaji": "shokuhin",
+      "reading": "食品"
+    },
+    "大量": {
+      "meaning": "大量的",
+      "romaji": "tairyou",
+      "reading": "大量"
+    },
+    "捨てる": {
+      "meaning": "丟棄",
+      "romaji": "suteru",
+      "reading": "捨てる"
+    },
+    "いう": {
+      "meaning": "說、叫做",
+      "romaji": "iu",
+      "reading": "いう"
+    },
+    "これ": {
+      "meaning": "這個",
+      "romaji": "kore",
+      "reading": "これ"
+    },
+    "食品ロス": {
+      "meaning": "食物浪費",
+      "romaji": "shokuhin rosu",
+      "reading": "食品ロス"
+    },
+    "呼ぶ": {
+      "meaning": "稱呼、叫",
+      "romaji": "yobu",
+      "reading": "呼ぶ"
+    },
+    "家庭": {
+      "meaning": "家庭",
+      "romaji": "katei",
+      "reading": "家庭"
+    },
+    "買いすぎる": {
+      "meaning": "買太多",
+      "romaji": "kaisugiru",
+      "reading": "買いすぎる"
+    },
+    "野菜": {
+      "meaning": "蔬菜",
+      "romaji": "yasai",
+      "reading": "野菜"
+    },
+    "腐らせる": {
+      "meaning": "使腐壞、放壞",
+      "romaji": "kusaraseru",
+      "reading": "腐らせる"
+    },
+    "料理": {
+      "meaning": "料理、菜",
+      "romaji": "ryouri",
+      "reading": "料理"
+    },
+    "作りすぎる": {
+      "meaning": "做太多",
+      "romaji": "tsukurisugiru",
+      "reading": "作りすぎる"
+    },
+    "残す": {
+      "meaning": "剩下、留下",
+      "romaji": "nokosu",
+      "reading": "残す"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）",
+      "romaji": "koto",
+      "reading": "こと"
+    },
+    "多い": {
+      "meaning": "多的",
+      "romaji": "ooi",
+      "reading": "多い"
+    },
+    "少し": {
+      "meaning": "稍微、一點",
+      "romaji": "sukoshi",
+      "reading": "少し"
+    },
+    "工夫する": {
+      "meaning": "下功夫、想辦法",
+      "romaji": "kufuu suru",
+      "reading": "工夫する"
+    },
+    "無駄": {
+      "meaning": "浪費、徒勞",
+      "romaji": "muda",
+      "reading": "無駄"
+    },
+    "かなり": {
+      "meaning": "相當地",
+      "romaji": "kanari",
+      "reading": "かなり"
+    },
+    "減らす": {
+      "meaning": "減少",
+      "romaji": "herasu",
+      "reading": "減らす"
+    },
+    "環境": {
+      "meaning": "環境",
+      "romaji": "kankyou",
+      "reading": "環境"
+    },
+    "守る": {
+      "meaning": "守護、保護",
+      "romaji": "mamoru",
+      "reading": "守る"
+    },
+    "思う": {
+      "meaning": "想、認為",
+      "romaji": "omou",
+      "reading": "思う"
+    },
+    "買い物": {
+      "meaning": "購物",
+      "romaji": "kaimono",
+      "reading": "買い物"
+    },
+    "前": {
+      "meaning": "之前",
+      "romaji": "mae",
+      "reading": "前"
+    },
+    "冷蔵庫": {
+      "meaning": "冰箱",
+      "romaji": "reizouko",
+      "reading": "冷蔵庫"
+    },
+    "中": {
+      "meaning": "裡面",
+      "romaji": "naka",
+      "reading": "中"
+    },
+    "確認する": {
+      "meaning": "確認",
+      "romaji": "kakunin suru",
+      "reading": "確認する"
+    },
+    "残る": {
+      "meaning": "剩下、留下",
+      "romaji": "nokoru",
+      "reading": "残る"
+    },
+    "別": {
+      "meaning": "別的、不同的",
+      "romaji": "betsu",
+      "reading": "別"
+    },
+    "作りかえる": {
+      "meaning": "改做成、重做",
+      "romaji": "tsukurikaeru",
+      "reading": "作りかえる"
+    },
+    "よい": {
+      "meaning": "好的",
+      "romaji": "yoi",
+      "reading": "よい"
+    },
+    "一人ひとり": {
+      "meaning": "每一個人",
+      "romaji": "hitori hitori",
+      "reading": "一人ひとり"
+    },
+    "努力": {
+      "meaning": "努力",
+      "romaji": "doryoku",
+      "reading": "努力"
+    },
+    "変化": {
+      "meaning": "變化",
+      "romaji": "henka",
+      "reading": "変化"
+    },
+    "つながる": {
+      "meaning": "連接、關聯到",
+      "romaji": "tsunagaru",
+      "reading": "つながる"
+    }
+  },
+  "particles": {
+    "で": "表示場所或手段",
+    "は": "主題助詞，標示話題",
+    "が": "主格助詞，標示主語",
+    "に": "表示對象、歸著點或方向",
+    "と": "表示引用內容（～という／～と思う）",
+    "を": "受格助詞，標示動作對象",
+    "も": "表示「也」，追加同類",
+    "の": "連接名詞，表示所屬或修飾"
+  },
+  "translations": [
+    [
+      {
+        "text": "在日本",
+        "word": "日本"
+      },
+      {
+        "text": "每年",
+        "word": "毎年"
+      },
+      {
+        "text": "據說都有還能吃的",
+        "word": "食べる"
+      },
+      {
+        "text": "食品",
+        "word": "食品"
+      },
+      {
+        "text": "被大量",
+        "word": "大量"
+      },
+      {
+        "text": "丟棄。",
+        "word": "捨てる"
+      }
+    ],
+    [
+      {
+        "text": "這",
+        "word": "これ"
+      },
+      {
+        "text": "稱為食物浪費。",
+        "word": "食品ロス"
+      }
+    ],
+    [
+      {
+        "text": "家庭中",
+        "word": "家庭"
+      },
+      {
+        "text": "也常常",
+        "word": "多い"
+      },
+      {
+        "text": "把買太多的",
+        "word": "買いすぎる"
+      },
+      {
+        "text": "蔬菜",
+        "word": "野菜"
+      },
+      {
+        "text": "放壞，",
+        "word": "腐らせる"
+      },
+      {
+        "text": "或是料理",
+        "word": "料理"
+      },
+      {
+        "text": "做太多",
+        "word": "作りすぎる"
+      },
+      {
+        "text": "而剩下。",
+        "word": "残す"
+      }
+    ],
+    [
+      {
+        "text": "減少這樣的",
+        "word": "無駄"
+      },
+      {
+        "text": "浪費，",
+        "word": "減らす"
+      },
+      {
+        "text": "也能連結到保護",
+        "word": "守る"
+      },
+      {
+        "text": "環境。",
+        "word": "環境"
+      }
+    ],
+    [
+      {
+        "text": "但是，",
+        "word": "しかし"
+      },
+      {
+        "text": "稍微",
+        "word": "少し"
+      },
+      {
+        "text": "下點功夫，",
+        "word": "工夫する"
+      },
+      {
+        "text": "浪費",
+        "word": "無駄"
+      },
+      {
+        "text": "相當",
+        "word": "かなり"
+      },
+      {
+        "text": "能減少，",
+        "word": "減らす"
+      },
+      {
+        "text": "我這麼認為。",
+        "word": "思う"
+      }
+    ],
+    [
+      {
+        "text": "例如，",
+        "word": "例えば"
+      },
+      {
+        "text": "購物",
+        "word": "買い物"
+      },
+      {
+        "text": "前",
+        "word": "前"
+      },
+      {
+        "text": "確認一下冰箱",
+        "word": "冷蔵庫"
+      },
+      {
+        "text": "裡面，",
+        "word": "中"
+      },
+      {
+        "text": "或把剩下的",
+        "word": "残る"
+      },
+      {
+        "text": "料理",
+        "word": "料理"
+      },
+      {
+        "text": "做成別的",
+        "word": "別"
+      },
+      {
+        "text": "菜，",
+        "word": "料理"
+      },
+      {
+        "text": "就很好。",
+        "word": "よい"
+      }
+    ],
+    [
+      {
+        "text": "每個人",
+        "word": "一人ひとり"
+      },
+      {
+        "text": "小小的努力，",
+        "word": "努力"
+      },
+      {
+        "text": "會連結到大的",
+        "word": "変化"
+      },
+      {
+        "text": "改變，",
+        "word": "つながる"
+      },
+      {
+        "text": "我這麼想。",
+        "word": "思う"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.12,
+    "jlpt_level": "N3"
+  }
+}

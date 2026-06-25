@@ -1,0 +1,632 @@
+{
+  "date": "2026-06-26",
+  "level": "n4_lite",
+  "title": "図書館へ行った日",
+  "text": "先週、図書館へ行きました。前から本を借りたかったので、とてもうれしかったです。受付の人はとても親切で、使い方を教えてくれました。わたしは小説を三冊借りました。家に帰ってから、すぐに読み始めました。物語がおもしろくて、夜遅くまで読みました。また来週、図書館へ行きたいです。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "図書館",
+      "basic_form": "図書館",
+      "reading": "としょかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行きました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "前",
+      "basic_form": "前",
+      "reading": "まえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "借りたかった",
+      "basic_form": "借りる",
+      "reading": "かりたかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "うれしかった",
+      "basic_form": "うれしい",
+      "reading": "うれしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "受付",
+      "basic_form": "受付",
+      "reading": "うけつけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "親切",
+      "basic_form": "親切",
+      "reading": "しんせつ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "だ",
+      "reading": "で",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "使い方",
+      "basic_form": "使い方",
+      "reading": "つかいかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "教えてくれました",
+      "basic_form": "教える",
+      "reading": "おしえてくれました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "小説",
+      "basic_form": "小説",
+      "reading": "しょうせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "三冊",
+      "basic_form": "三冊",
+      "reading": "さんさつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "借りました",
+      "basic_form": "借りる",
+      "reading": "かりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "帰って",
+      "basic_form": "帰る",
+      "reading": "かえって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すぐに",
+      "basic_form": "すぐ",
+      "reading": "すぐに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "読み始めました",
+      "basic_form": "読み始める",
+      "reading": "よみはじめました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "物語",
+      "basic_form": "物語",
+      "reading": "ものがたり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おもしろくて",
+      "basic_form": "おもしろい",
+      "reading": "おもしろくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "夜",
+      "basic_form": "夜",
+      "reading": "よる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "遅く",
+      "basic_form": "遅い",
+      "reading": "おそく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読みました",
+      "basic_form": "読む",
+      "reading": "よみました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "来週",
+      "basic_form": "来週",
+      "reading": "らいしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "図書館",
+      "basic_form": "図書館",
+      "reading": "としょかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行きたい",
+      "basic_form": "行く",
+      "reading": "いきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週",
+      "romaji": "senshuu",
+      "reading": "先週"
+    },
+    "図書館": {
+      "meaning": "圖書館",
+      "romaji": "toshokan",
+      "reading": "図書館"
+    },
+    "行く": {
+      "meaning": "去",
+      "romaji": "iku",
+      "reading": "行く"
+    },
+    "前": {
+      "meaning": "之前；前面",
+      "romaji": "mae",
+      "reading": "前"
+    },
+    "本": {
+      "meaning": "書",
+      "romaji": "hon",
+      "reading": "本"
+    },
+    "借りる": {
+      "meaning": "借（入）",
+      "romaji": "kariru",
+      "reading": "借りる"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    },
+    "うれしい": {
+      "meaning": "高興的",
+      "romaji": "ureshii",
+      "reading": "うれしい"
+    },
+    "受付": {
+      "meaning": "櫃台、服務台",
+      "romaji": "uketsuke",
+      "reading": "受付"
+    },
+    "人": {
+      "meaning": "人",
+      "romaji": "hito",
+      "reading": "人"
+    },
+    "親切": {
+      "meaning": "親切的",
+      "romaji": "shinsetsu",
+      "reading": "親切"
+    },
+    "使い方": {
+      "meaning": "用法",
+      "romaji": "tsukaikata",
+      "reading": "使い方"
+    },
+    "教える": {
+      "meaning": "教、告知",
+      "romaji": "oshieru",
+      "reading": "教える"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "小説": {
+      "meaning": "小說",
+      "romaji": "shousetsu",
+      "reading": "小説"
+    },
+    "三冊": {
+      "meaning": "三本（書）",
+      "romaji": "sansatsu",
+      "reading": "三冊"
+    },
+    "家": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "家"
+    },
+    "帰る": {
+      "meaning": "回去",
+      "romaji": "kaeru",
+      "reading": "帰る"
+    },
+    "すぐ": {
+      "meaning": "馬上、立刻",
+      "romaji": "sugu",
+      "reading": "すぐ"
+    },
+    "読み始める": {
+      "meaning": "開始讀",
+      "romaji": "yomihajimeru",
+      "reading": "読み始める"
+    },
+    "物語": {
+      "meaning": "故事",
+      "romaji": "monogatari",
+      "reading": "物語"
+    },
+    "おもしろい": {
+      "meaning": "有趣的",
+      "romaji": "omoshiroi",
+      "reading": "おもしろい"
+    },
+    "夜": {
+      "meaning": "夜晚",
+      "romaji": "yoru",
+      "reading": "夜"
+    },
+    "遅い": {
+      "meaning": "晚的；慢的",
+      "romaji": "osoi",
+      "reading": "遅い"
+    },
+    "また": {
+      "meaning": "又、再",
+      "romaji": "mata",
+      "reading": "また"
+    },
+    "来週": {
+      "meaning": "下週",
+      "romaji": "raishuu",
+      "reading": "来週"
+    },
+    "読む": {
+      "meaning": "讀",
+      "romaji": "yomu",
+      "reading": "読む"
+    }
+  },
+  "particles": {
+    "へ": "表示動作的方向",
+    "から": "表示起點（從…）或原因",
+    "を": "受格助詞，標示動作對象",
+    "ので": "表示原因、理由（因為…）",
+    "の": "連接名詞，表示所屬或修飾",
+    "は": "主題助詞，標示話題",
+    "に": "表示方向、歸著點或場所",
+    "が": "主格助詞，標示主語",
+    "まで": "表示時間或範圍的終點（到…為止）",
+    "で": "形容動詞中止形，連接句子",
+    "です": "禮貌體斷定助動詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週，",
+        "word": "先週"
+      },
+      {
+        "text": "去了圖書館。",
+        "word": "図書館"
+      }
+    ],
+    [
+      {
+        "text": "因為之前就想借書，",
+        "word": "借りる"
+      },
+      {
+        "text": "所以非常",
+        "word": "とても"
+      },
+      {
+        "text": "開心。",
+        "word": "うれしい"
+      }
+    ],
+    [
+      {
+        "text": "櫃台的人",
+        "word": "受付"
+      },
+      {
+        "text": "非常",
+        "word": "とても"
+      },
+      {
+        "text": "親切，",
+        "word": "親切"
+      },
+      {
+        "text": "教了我",
+        "word": "教える"
+      },
+      {
+        "text": "使用方法。",
+        "word": "使い方"
+      }
+    ],
+    [
+      {
+        "text": "我",
+        "word": "わたし"
+      },
+      {
+        "text": "借了三本",
+        "word": "三冊"
+      },
+      {
+        "text": "小說。",
+        "word": "小説"
+      }
+    ],
+    [
+      {
+        "text": "回到家後，",
+        "word": "帰る"
+      },
+      {
+        "text": "馬上",
+        "word": "すぐ"
+      },
+      {
+        "text": "就開始讀了。",
+        "word": "読み始める"
+      }
+    ],
+    [
+      {
+        "text": "故事",
+        "word": "物語"
+      },
+      {
+        "text": "很有趣，",
+        "word": "おもしろい"
+      },
+      {
+        "text": "讀到深夜。",
+        "word": "夜"
+      }
+    ],
+    [
+      {
+        "text": "下週",
+        "word": "来週"
+      },
+      {
+        "text": "還想再",
+        "word": "また"
+      },
+      {
+        "text": "去圖書館。",
+        "word": "図書館"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N4⁻"
+  }
+}

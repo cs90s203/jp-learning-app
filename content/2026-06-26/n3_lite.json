@@ -1,0 +1,907 @@
+{
+  "date": "2026-06-26",
+  "level": "n3_lite",
+  "title": "キャッシュレス生活",
+  "text": "最近、現金を使わずに買い物をする人が増えている。スマホやカードで支払うと、財布を出す必要がないので、とても便利だ。わたしも先月から、できるだけキャッシュレスで生活するようにしている。小さな店ではまだ現金しか使えないこともあるが、大きな店ならほとんど問題ない。お金の管理も簡単になって、何にいくら使ったかすぐに分かる。これからもこの習慣を続けたいと思う。",
+  "tokens": [
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "現金",
+      "basic_form": "現金",
+      "reading": "げんきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使わずに",
+      "basic_form": "使う",
+      "reading": "つかわずに",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "買い物",
+      "basic_form": "買い物",
+      "reading": "かいもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スマホ",
+      "basic_form": "スマホ",
+      "reading": "スマホ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "カード",
+      "basic_form": "カード",
+      "reading": "カード",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "支払う",
+      "basic_form": "支払う",
+      "reading": "しはらう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "財布",
+      "basic_form": "財布",
+      "reading": "さいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出す",
+      "basic_form": "出す",
+      "reading": "だす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "便利",
+      "basic_form": "便利",
+      "reading": "べんり",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "先月",
+      "basic_form": "先月",
+      "reading": "せんげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "できるだけ",
+      "basic_form": "できるだけ",
+      "reading": "できるだけ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "キャッシュレス",
+      "basic_form": "キャッシュレス",
+      "reading": "キャッシュレス",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活する",
+      "basic_form": "生活する",
+      "reading": "せいかつする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "している",
+      "basic_form": "する",
+      "reading": "している",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "小さな",
+      "basic_form": "小さな",
+      "reading": "ちいさな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "店",
+      "basic_form": "店",
+      "reading": "みせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "まだ",
+      "basic_form": "まだ",
+      "reading": "まだ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "現金",
+      "basic_form": "現金",
+      "reading": "げんきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "しか",
+      "basic_form": "しか",
+      "reading": "しか",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使えない",
+      "basic_form": "使う",
+      "reading": "つかえない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "店",
+      "basic_form": "店",
+      "reading": "みせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "なら",
+      "basic_form": "なら",
+      "reading": "なら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほとんど",
+      "basic_form": "ほとんど",
+      "reading": "ほとんど",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "お金",
+      "basic_form": "お金",
+      "reading": "おかね",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "管理",
+      "basic_form": "管理",
+      "reading": "かんり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "簡単",
+      "basic_form": "簡単",
+      "reading": "かんたん",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なって",
+      "basic_form": "なる",
+      "reading": "なって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "何",
+      "basic_form": "何",
+      "reading": "なに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いくら",
+      "basic_form": "いくら",
+      "reading": "いくら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "使ったか",
+      "basic_form": "使う",
+      "reading": "つかったか",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "すぐに",
+      "basic_form": "すぐ",
+      "reading": "すぐに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "分かる",
+      "basic_form": "分かる",
+      "reading": "わかる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "習慣",
+      "basic_form": "習慣",
+      "reading": "しゅうかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続けたい",
+      "basic_form": "続ける",
+      "reading": "つづけたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "最近": {
+      "meaning": "最近",
+      "romaji": "saikin",
+      "reading": "最近"
+    },
+    "現金": {
+      "meaning": "現金",
+      "romaji": "genkin",
+      "reading": "現金"
+    },
+    "使う": {
+      "meaning": "使用",
+      "romaji": "tsukau",
+      "reading": "使う"
+    },
+    "買い物": {
+      "meaning": "購物",
+      "romaji": "kaimono",
+      "reading": "買い物"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "人": {
+      "meaning": "人",
+      "romaji": "hito",
+      "reading": "人"
+    },
+    "増える": {
+      "meaning": "增加",
+      "romaji": "fueru",
+      "reading": "増える"
+    },
+    "スマホ": {
+      "meaning": "智慧型手機",
+      "romaji": "sumaho",
+      "reading": "スマホ"
+    },
+    "カード": {
+      "meaning": "卡片",
+      "romaji": "kaado",
+      "reading": "カード"
+    },
+    "支払う": {
+      "meaning": "支付",
+      "romaji": "shiharau",
+      "reading": "支払う"
+    },
+    "財布": {
+      "meaning": "錢包",
+      "romaji": "saifu",
+      "reading": "財布"
+    },
+    "出す": {
+      "meaning": "拿出、取出",
+      "romaji": "dasu",
+      "reading": "出す"
+    },
+    "必要": {
+      "meaning": "必要",
+      "romaji": "hitsuyou",
+      "reading": "必要"
+    },
+    "ない": {
+      "meaning": "沒有；不…",
+      "romaji": "nai",
+      "reading": "ない"
+    },
+    "便利": {
+      "meaning": "方便的",
+      "romaji": "benri",
+      "reading": "便利"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "先月": {
+      "meaning": "上個月",
+      "romaji": "sengetsu",
+      "reading": "先月"
+    },
+    "できるだけ": {
+      "meaning": "盡可能",
+      "romaji": "dekirudake",
+      "reading": "できるだけ"
+    },
+    "キャッシュレス": {
+      "meaning": "無現金（支付）",
+      "romaji": "kyasshuresu",
+      "reading": "キャッシュレス"
+    },
+    "生活する": {
+      "meaning": "生活",
+      "romaji": "seikatsu suru",
+      "reading": "生活する"
+    },
+    "よう": {
+      "meaning": "（形式名詞）樣子、…的狀態",
+      "romaji": "you",
+      "reading": "よう"
+    },
+    "店": {
+      "meaning": "店家",
+      "romaji": "mise",
+      "reading": "店"
+    },
+    "まだ": {
+      "meaning": "還、仍然",
+      "romaji": "mada",
+      "reading": "まだ"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）",
+      "romaji": "koto",
+      "reading": "こと"
+    },
+    "ある": {
+      "meaning": "有、存在",
+      "romaji": "aru",
+      "reading": "ある"
+    },
+    "ほとんど": {
+      "meaning": "幾乎",
+      "romaji": "hotondo",
+      "reading": "ほとんど"
+    },
+    "問題": {
+      "meaning": "問題",
+      "romaji": "mondai",
+      "reading": "問題"
+    },
+    "お金": {
+      "meaning": "錢",
+      "romaji": "okane",
+      "reading": "お金"
+    },
+    "管理": {
+      "meaning": "管理",
+      "romaji": "kanri",
+      "reading": "管理"
+    },
+    "簡単": {
+      "meaning": "簡單的",
+      "romaji": "kantan",
+      "reading": "簡単"
+    },
+    "なる": {
+      "meaning": "變得、成為",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "何": {
+      "meaning": "什麼",
+      "romaji": "nani",
+      "reading": "何"
+    },
+    "いくら": {
+      "meaning": "多少（錢）",
+      "romaji": "ikura",
+      "reading": "いくら"
+    },
+    "すぐ": {
+      "meaning": "馬上、立刻",
+      "romaji": "sugu",
+      "reading": "すぐ"
+    },
+    "分かる": {
+      "meaning": "明白、知道",
+      "romaji": "wakaru",
+      "reading": "分かる"
+    },
+    "これから": {
+      "meaning": "今後、從現在起",
+      "romaji": "korekara",
+      "reading": "これから"
+    },
+    "習慣": {
+      "meaning": "習慣",
+      "romaji": "shuukan",
+      "reading": "習慣"
+    },
+    "続ける": {
+      "meaning": "持續、繼續",
+      "romaji": "tsuzukeru",
+      "reading": "続ける"
+    },
+    "思う": {
+      "meaning": "想、認為",
+      "romaji": "omou",
+      "reading": "思う"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    }
+  },
+  "particles": {
+    "を": "受格助詞，標示動作對象",
+    "が": "主格助詞；或表示逆接「但是」",
+    "や": "列舉「…和…等」",
+    "で": "表示手段、方法或場所",
+    "と": "表示引用內容（～と思う）；或「和」",
+    "ので": "表示原因、理由（因為…）",
+    "も": "表示「也」，追加同類",
+    "から": "表示起點（從…開始）",
+    "に": "表示時間、對象、歸著點",
+    "は": "主題助詞，標示話題",
+    "しか": "與否定呼應，表示「只有…」",
+    "なら": "表示假定條件（如果是…）",
+    "だ": "常體斷定助動詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "最近，",
+        "word": "最近"
+      },
+      {
+        "text": "不用現金",
+        "word": "現金"
+      },
+      {
+        "text": "購物的",
+        "word": "買い物"
+      },
+      {
+        "text": "人",
+        "word": "人"
+      },
+      {
+        "text": "在增加。",
+        "word": "増える"
+      }
+    ],
+    [
+      {
+        "text": "用手機或",
+        "word": "スマホ"
+      },
+      {
+        "text": "卡片",
+        "word": "カード"
+      },
+      {
+        "text": "支付的話，",
+        "word": "支払う"
+      },
+      {
+        "text": "不需要拿出",
+        "word": "出す"
+      },
+      {
+        "text": "錢包，",
+        "word": "財布"
+      },
+      {
+        "text": "所以很方便。",
+        "word": "便利"
+      }
+    ],
+    [
+      {
+        "text": "我",
+        "word": "わたし"
+      },
+      {
+        "text": "也從上個月起，",
+        "word": "先月"
+      },
+      {
+        "text": "盡量",
+        "word": "できるだけ"
+      },
+      {
+        "text": "用無現金方式",
+        "word": "キャッシュレス"
+      },
+      {
+        "text": "過生活。",
+        "word": "生活する"
+      }
+    ],
+    [
+      {
+        "text": "在小店",
+        "word": "店"
+      },
+      {
+        "text": "還有",
+        "word": "まだ"
+      },
+      {
+        "text": "只能用現金的",
+        "word": "現金"
+      },
+      {
+        "text": "情況，",
+        "word": "こと"
+      },
+      {
+        "text": "但大店",
+        "word": "店"
+      },
+      {
+        "text": "幾乎",
+        "word": "ほとんど"
+      },
+      {
+        "text": "沒問題。",
+        "word": "問題"
+      }
+    ],
+    [
+      {
+        "text": "金錢的",
+        "word": "お金"
+      },
+      {
+        "text": "管理",
+        "word": "管理"
+      },
+      {
+        "text": "也變",
+        "word": "なる"
+      },
+      {
+        "text": "簡單了，",
+        "word": "簡単"
+      },
+      {
+        "text": "什麼",
+        "word": "何"
+      },
+      {
+        "text": "花了多少",
+        "word": "いくら"
+      },
+      {
+        "text": "馬上",
+        "word": "すぐ"
+      },
+      {
+        "text": "就知道。",
+        "word": "分かる"
+      }
+    ],
+    [
+      {
+        "text": "今後",
+        "word": "これから"
+      },
+      {
+        "text": "也想繼續",
+        "word": "続ける"
+      },
+      {
+        "text": "這個習慣。",
+        "word": "習慣"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.1,
+    "jlpt_level": "N3⁻"
+  }
+}
