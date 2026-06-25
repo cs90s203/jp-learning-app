@@ -2044,7 +2044,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.12
+          v1.0.13
         </div>
 
       </div>
@@ -6753,6 +6753,25 @@ function showSplash() {
 }
 
 // ===== Tutorial overlay system =====
+// API:
+//   tutorialShow(btnId, steps)
+//     btnId  — 觸發按鈕的 element id（點亮發光；null 可略）
+//     steps  — Array<{ targetId: string, text: string }>
+//              targetId: 要 highlight 的元素 id
+//              text:     顯示在 spotlight 下方的說明文字
+//   tutorialNext()  — 前進到下一步，最後一步後自動關閉（也掛在 overlay onclick/touchend）
+//
+// 使用範例（各頁面 ? 按鈕）:
+//   function showXxxTutorial() {
+//     tutorialShow('xxx-help-btn', [
+//       { targetId: 'some-card-id', text: '這個功能的說明文字' },
+//       { targetId: 'another-id',  text: '第二步說明' },
+//     ]);
+//   }
+//
+// DOM 需求: #tutorial-overlay（style="display:none"）、#tutorial-spotlight 已在 HTML 中
+// PTR: overlay 開啟時自動擋住 pull-to-refresh（isTutorialOpen() 檢查）
+// 視覺: spotlight 框下緣平接 tooltip，寬度對齊，形成一體感
 var _tutSteps = [], _tutIdx = 0, _tutBtnId = null;
 
 function _tutRender() {

@@ -1253,16 +1253,18 @@
   }
   .help-btn.tutorial-active { background: var(--wa); color: #fff; }
   #tutorial-spotlight {
-    position: absolute; border-radius: 12px;
+    position: absolute; border-radius: 12px 12px 0 0;
     box-shadow: 0 0 0 9999px rgba(0,0,0,0.62);
     pointer-events: none;
   }
   .tutorial-tooltip {
     position: absolute;
-    background: var(--wa-ll); border-radius: 14px;
-    padding: 14px 16px; max-width: 280px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+    background: var(--wa-ll);
+    border-radius: 0 0 14px 14px; /* 上緣平接 spotlight，下緣圓角 */
+    padding: 14px 16px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.28);
     pointer-events: none;
+    box-sizing: border-box;
   }
   .tutorial-tooltip-text {
     font-size: 14px; line-height: 1.55; color: var(--wt);
@@ -2042,7 +2044,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.11
+          v1.0.12
         </div>
 
       </div>
@@ -6778,14 +6780,20 @@ function _tutRender() {
         }).join('') + '</div>'
       : '';
     tip.innerHTML = '<div class="tutorial-tooltip-text">' + step.text + '</div>' + dots;
-    var tipH = 90;
-    var below = r.bottom + pad + 12;
-    if (below + tipH < window.innerHeight) {
-      tip.style.top  = below + 'px';
+    // width matches spotlight; left aligned to spotlight
+    var spW = r.width + pad * 2;
+    var spLeft = r.left - pad;
+    tip.style.width = spW + 'px';
+    tip.style.left  = Math.max(8, Math.min(spLeft, window.innerWidth - spW - 8)) + 'px';
+    // attach below spotlight; if not enough space, go above
+    var gap = 0; // flush — visually extends from spotlight
+    var below = r.bottom + pad + gap;
+    var tipH = tip.offsetHeight || 80;
+    if (below + tipH + 8 < window.innerHeight) {
+      tip.style.top = below + 'px';
     } else {
-      tip.style.bottom = (window.innerHeight - r.top + pad + 12) + 'px';
+      tip.style.top = Math.max(8, r.top - pad - gap - tipH) + 'px';
     }
-    tip.style.left = Math.max(12, Math.min(r.left - pad, window.innerWidth - 292)) + 'px';
     overlay.appendChild(tip);
     overlay.style.display = 'block';
   }); });
