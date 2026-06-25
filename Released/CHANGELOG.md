@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.34 — 2026-06-25
+
+修正 PTR Bug：touchstart 無論 scroll 狀態都先重設 pulling/dist，防止舊手勢殘留觸發重新整理
+
+---
+
 ## 1.0.33 — 2026-06-25
 
 Debug: PTR toast 加 resets 計數，確認 ptrReset 是否有被呼叫
