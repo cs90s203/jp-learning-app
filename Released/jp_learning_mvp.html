@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.10
+          v1.0.11
         </div>
 
       </div>
@@ -6751,92 +6751,75 @@ function showSplash() {
 }
 
 // ===== Tutorial overlay system =====
-const Tutorial = (() => {
-  let _steps = [], _idx = 0, _btnId = null;
+var _tutSteps = [], _tutIdx = 0, _tutBtnId = null;
 
-  function show(triggerBtnId, steps) {
-    _steps = steps;
-    _idx = 0;
-    _btnId = triggerBtnId;
-    if (_btnId) document.getElementById(_btnId)?.classList.add('tutorial-active');
-    _render();
-  }
-
-  function _render() {
-    const overlay = document.getElementById('tutorial-overlay');
-    const spotlight = document.getElementById('tutorial-spotlight');
-    if (!overlay || !spotlight) return;
-
-    const step = _steps[_idx];
-    const target = document.getElementById(step.targetId);
-    if (!target) { next(); return; }
-
-    // scroll instantly so getBoundingClientRect is accurate
-    target.scrollIntoView({ behavior: 'instant', block: 'center' });
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      const r = target.getBoundingClientRect();
-      const pad = 6;
-      spotlight.style.left   = (r.left - pad) + 'px';
-      spotlight.style.top    = (r.top - pad) + 'px';
-      spotlight.style.width  = (r.width + pad * 2) + 'px';
-      spotlight.style.height = (r.height + pad * 2) + 'px';
-
-      // remove old tooltip
-      const old = overlay.querySelector('.tutorial-tooltip');
-      if (old) old.remove();
-
-      // build tooltip
-      const tip = document.createElement('div');
-      tip.className = 'tutorial-tooltip';
-
-      const dots = _steps.length > 1
-        ? `<div class="tutorial-dots">${_steps.map((_, i) =>
-            `<div class="tutorial-dot${i === _idx ? ' active' : ''}"></div>`).join('')}</div>`
-        : '';
-
-      tip.innerHTML = `<div class="tutorial-tooltip-text">${step.text}</div>${dots}`;
-
-      // position tooltip: below if space, else above
-      const tipH = 90;
-      const below = r.bottom + pad + 12;
-      if (below + tipH < window.innerHeight) {
-        tip.style.top  = (below) + 'px';
-      } else {
-        tip.style.bottom = (window.innerHeight - r.top + pad + 12) + 'px';
-      }
-      tip.style.left = Math.max(12, Math.min(r.left - pad, window.innerWidth - 292)) + 'px';
-
-      overlay.appendChild(tip);
-      overlay.style.display = 'block';
-    }));
-  }
-
-  function next() {
-    _idx++;
-    if (_idx >= _steps.length) {
-      const overlay = document.getElementById('tutorial-overlay');
-      overlay.style.display = 'none';
-      if (_btnId) document.getElementById(_btnId)?.classList.remove('tutorial-active');
-      _btnId = null;
+function _tutRender() {
+  var overlay = document.getElementById('tutorial-overlay');
+  var spotlight = document.getElementById('tutorial-spotlight');
+  if (!overlay || !spotlight) return;
+  var step = _tutSteps[_tutIdx];
+  var target = document.getElementById(step.targetId);
+  if (!target) { tutorialNext(); return; }
+  target.scrollIntoView({ behavior: 'instant', block: 'center' });
+  requestAnimationFrame(function() { requestAnimationFrame(function() {
+    var r = target.getBoundingClientRect();
+    var pad = 6;
+    spotlight.style.left   = (r.left - pad) + 'px';
+    spotlight.style.top    = (r.top - pad) + 'px';
+    spotlight.style.width  = (r.width + pad * 2) + 'px';
+    spotlight.style.height = (r.height + pad * 2) + 'px';
+    var old = overlay.querySelector('.tutorial-tooltip');
+    if (old) old.remove();
+    var tip = document.createElement('div');
+    tip.className = 'tutorial-tooltip';
+    var dots = _tutSteps.length > 1
+      ? '<div class="tutorial-dots">' + _tutSteps.map(function(_, i) {
+          return '<div class="tutorial-dot' + (i === _tutIdx ? ' active' : '') + '"></div>';
+        }).join('') + '</div>'
+      : '';
+    tip.innerHTML = '<div class="tutorial-tooltip-text">' + step.text + '</div>' + dots;
+    var tipH = 90;
+    var below = r.bottom + pad + 12;
+    if (below + tipH < window.innerHeight) {
+      tip.style.top  = below + 'px';
     } else {
-      _render();
+      tip.style.bottom = (window.innerHeight - r.top + pad + 12) + 'px';
     }
+    tip.style.left = Math.max(12, Math.min(r.left - pad, window.innerWidth - 292)) + 'px';
+    overlay.appendChild(tip);
+    overlay.style.display = 'block';
+  }); });
+}
+
+function tutorialShow(btnId, steps) {
+  _tutSteps = steps; _tutIdx = 0; _tutBtnId = btnId;
+  var btn = btnId && document.getElementById(btnId);
+  if (btn) btn.classList.add('tutorial-active');
+  _tutRender();
+}
+
+function tutorialNext() {
+  _tutIdx++;
+  if (_tutIdx >= _tutSteps.length) {
+    var overlay = document.getElementById('tutorial-overlay');
+    if (overlay) overlay.style.display = 'none';
+    var btn = _tutBtnId && document.getElementById(_tutBtnId);
+    if (btn) btn.classList.remove('tutorial-active');
+    _tutBtnId = null;
+  } else {
+    _tutRender();
   }
-
-  return { show, next };
-})();
-
-function tutorialNext() { Tutorial.next(); }
+}
 
 // overlay touchend dismiss (stopPropagation prevents PTR)
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
   const ov = document.getElementById('tutorial-overlay');
-  if (ov) ov.addEventListener('touchend', e => { e.stopPropagation(); Tutorial.next(); }, { passive: true });
+  if (ov) ov.addEventListener('touchend', function(e) { e.stopPropagation(); tutorialNext(); }, { passive: true });
 });
 
 // ── Page tutorial definitions ──
 function showSettingsTutorial() {
-  Tutorial.show('settings-help-btn', [
+  tutorialShow('settings-help-btn', [
     { targetId: 'settings-account-card',  text: '登入帳號確保讀書進度同步設備，以及資料的保存' },
     { targetId: 'settings-advanced-card', text: '輸入 Google Vision API Key 解鎖手機拍照加詞的功能' },
   ]);
