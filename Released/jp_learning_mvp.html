@@ -2039,7 +2039,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.20
+          v1.0.21
         </div>
 
       </div>
@@ -3269,7 +3269,7 @@ function setUserLevel(key) {
   localStorage.setItem('userLevel', key);
   renderLevelPicker();
   const lvTag = document.getElementById('home-level-tag');
-  if (lvTag) lvTag.textContent = key.toUpperCase();
+  if (lvTag) { const _o = LEVEL_OPTIONS.find(o => o.key === key); lvTag.textContent = _o ? _o.label : key.toUpperCase(); }
   // Fix #6: notify user if they change level while article page is open
   const articleActive = document.getElementById('page-article')?.classList.contains('active');
   if (articleActive) showToast('等級已更新，長按等級標籤可切換目前文章');
@@ -4236,7 +4236,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const el = document.getElementById('today-date');
   if (el) el.textContent = `${dateLabel}${weekLabel}`;
   const lvTag = document.getElementById('home-level-tag');
-  if (lvTag) lvTag.textContent = CURRENT_LEVEL.toUpperCase();
+  if (lvTag) { const _o = LEVEL_OPTIONS.find(o => o.key === CURRENT_LEVEL); lvTag.textContent = _o ? _o.label : CURRENT_LEVEL.toUpperCase(); }
   const artDate = document.getElementById('article-date-tag');
   if (artDate) artDate.textContent = `${_d.getMonth()+1}月${_d.getDate()}日`;
 
