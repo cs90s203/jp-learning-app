@@ -1698,7 +1698,7 @@
 
       <div class="sec" style="padding-top:5px">
 
-        <div class="cn-toggle-row">
+        <div class="cn-toggle-row" id="cn-toggle-row">
           <span class="cn-toggle-label">中文備注</span>
           <div class="toggle" id="cn-toggle" onclick="toggleCN()"></div>
         </div>
@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.26
+          v1.0.27
         </div>
 
       </div>
@@ -6882,7 +6882,17 @@ function showHomeTutorial() {
     { targetId: 'home-tasks-card',    text: '每天自動產生三項學習目標：文章、單字卡、試題，完成後對應的任務環會逐步填滿，試著每天集滿三環。' },
   ]);
 }
-function showArticleTutorial() { /* TODO */ }
+function showArticleTutorial() {
+  if (_tutBtnId === 'article-help-btn') { tutorialClose(); return; }
+  tutorialShow('article-help-btn', [
+    { targetId: 'article-week-bar',  text: '顯示最近七天的學習紀錄，點擊日期可切換閱讀當天的文章，點擊左側箭頭可以回顧上週的文章。' },
+    { targetId: 'cn-toggle-row',     text: '開啟後每個詞彙下方會顯示中文意思，方便對照學習。' },
+    { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
+    { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
+    { targetId: 'play-btn',          text: '點擊播放可聆聽全文朗讀，可調整速度。' },
+    { targetId: 'follow-btn',        text: '開啟逐句跟讀後，系統會逐句播放並等待你開口跟讀，錄音鍵供口語自由練習使用。' },
+  ]);
+}
 function showVocabTutorial()   { /* TODO */ }
 function showQuizTutorial()    { /* TODO */ }
 

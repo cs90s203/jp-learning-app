@@ -1380,7 +1380,7 @@
 </div>
 
 <!-- 各頁 ? 按鈕：放 body 直接子層，避免 page transform stacking context 問題 -->
-<button class="help-btn" id="home-help-btn"     onclick="showHomeTutorial()"     style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
+<button class="help-btn" id="home-help-btn"     onclick="showHomeTutorial()"     style="position:fixed;top:14px;right:16px;z-index:9000">？</button>
 <button class="help-btn" id="article-help-btn"  onclick="showArticleTutorial()"  style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
 <button class="help-btn" id="vocab-help-btn"    onclick="showVocabTutorial()"    style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
 <button class="help-btn" id="quiz-help-btn"     onclick="showQuizTutorial()"     style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.25
+          v1.0.26
         </div>
 
       </div>
@@ -6858,10 +6858,11 @@ function tutorialNext() {
 }
 
 // overlay touchend dismiss (stopPropagation prevents PTR)
-document.addEventListener('DOMContentLoaded', function() {
-  const ov = document.getElementById('tutorial-overlay');
+// tutorial overlay touchend（inline script 在 body 底部，DOM 已就緒）
+(function() {
+  var ov = document.getElementById('tutorial-overlay');
   if (ov) ov.addEventListener('touchend', function(e) { e.stopPropagation(); tutorialNext(); }, { passive: true });
-});
+})();
 
 function tutorialClose() {
   var overlay = document.getElementById('tutorial-overlay');
