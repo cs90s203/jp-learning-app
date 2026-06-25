@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.31 — 2026-06-25
+
+Debug: PTR 觸發前顯示 dist/startY 診斷 toast
+
+---
+
 ## 1.0.30 — 2026-06-25
 
 Bug: Tutorial 關閉後觸碰觸發 PTR，ptrReset 改設 startY 為螢幕外安全值
