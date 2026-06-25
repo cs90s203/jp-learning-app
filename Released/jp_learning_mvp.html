@@ -1840,7 +1840,7 @@
 
         <p class="section-title">學習強度</p>
         <div class="card" style="padding:4px 16px;margin-bottom:16px">
-          <div class="setting-row" style="cursor:pointer" onclick="cycleMasteryThreshold()">
+          <div id="settings-mastery-row" class="setting-row" style="cursor:pointer" onclick="cycleMasteryThreshold()">
             <div><div class="setting-label">熟記定義</div><div class="setting-sub">累積記得次數達此值視為熟悉</div></div>
             <span class="setting-val" id="mastery-threshold-val">10 次</span>
           </div>
@@ -1866,7 +1866,7 @@
 
         <p class="section-title">語言</p>
         <div class="card" style="padding:4px 16px">
-          <div class="setting-row" style="cursor:pointer" onclick="toggleLevelPicker()">
+          <div id="settings-level-row" class="setting-row" style="cursor:pointer" onclick="toggleLevelPicker()">
             <div class="setting-label">目前等級</div>
             <div style="display:flex;align-items:center;gap:6px">
               <span class="setting-val" id="settings-level-val">N5</span>
@@ -2036,7 +2036,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.15
+          v1.0.16
         </div>
 
       </div>
@@ -6847,8 +6847,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // ── Page tutorial definitions ──
 function showSettingsTutorial() {
   tutorialShow('settings-help-btn', [
-    { targetId: 'settings-account-card',  text: '登入帳號確保讀書進度同步設備，以及資料的保存' },
-    { targetId: 'settings-advanced-card', text: '輸入 Google Vision API Key 解鎖手機拍照加詞的功能' },
+    { targetId: 'settings-mastery-row',   text: '此數值用於判定單字熟悉程度，熟悉者將減少重複練習。' },
+    { targetId: 'settings-level-row',     text: '此設定影響每天加入的文章難度。' },
+    { targetId: 'settings-account-card',  text: '登入帳號確保讀書進度同步設備，以及資料的保存。' },
+    { targetId: 'settings-advanced-card', text: '輸入 Google Vision API Key 解鎖手機拍照加詞的功能。' },
   ]);
 }
 
