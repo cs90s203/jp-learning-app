@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.10 — 2026-06-25
+
+PTR：修 isTutorialOpen 誤判導致每次拖動觸發重整
+
+---
+
 ## 1.0.9 — 2026-06-25
 
 Tutorial：修 PTR 穿透、touchend 關閉、? 發光、z-index 修正
