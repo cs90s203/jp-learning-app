@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.30 — 2026-06-25
+
+Bug: Tutorial 關閉後觸碰觸發 PTR，ptrReset 改設 startY 為螢幕外安全值
+
+---
+
 ## 1.0.29 — 2026-06-25
 
 Bug: Tutorial 關閉後 PTR 仍觸發，改用 ptrReset() 在 tutorialClose 強制重置拉動狀態
