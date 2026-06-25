@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.23 — 2026-06-25
+
+設定頁：? 按鈕移至 body 層，修 stacking context 導致被 overlay 蓋住
+
+---
+
 ## 1.0.22 — 2026-06-25
 
 設定頁 Tutorial：再按 ? 可關閉說明頁，新增 tutorialClose()
