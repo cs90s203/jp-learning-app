@@ -1,0 +1,305 @@
+{
+  "date": "2026-06-26",
+  "level": "n5_lite",
+  "title": "あめのひ",
+  "text": "きょうはあめです。わたしはいえにいます。ほんをよみます。おちゃものみます。そとはさむいです。あめはきらいです。",
+  "tokens": [
+    {
+      "surface_form": "きょう",
+      "basic_form": "きょう",
+      "reading": "きょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あめ",
+      "basic_form": "あめ",
+      "reading": "あめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いえ",
+      "basic_form": "いえ",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "います",
+      "basic_form": "いる",
+      "reading": "います",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ほん",
+      "basic_form": "ほん",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よみます",
+      "basic_form": "よむ",
+      "reading": "よみます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おちゃ",
+      "basic_form": "おちゃ",
+      "reading": "おちゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "のみます",
+      "basic_form": "のむ",
+      "reading": "のみます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "そと",
+      "basic_form": "そと",
+      "reading": "そと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さむい",
+      "basic_form": "さむい",
+      "reading": "さむい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あめ",
+      "basic_form": "あめ",
+      "reading": "あめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きらい",
+      "basic_form": "きらい",
+      "reading": "きらい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きょう": {
+      "meaning": "今天",
+      "romaji": "kyou",
+      "reading": "きょう"
+    },
+    "あめ": {
+      "meaning": "雨；雨天",
+      "romaji": "ame",
+      "reading": "あめ"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "いえ": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "いえ"
+    },
+    "いる": {
+      "meaning": "（人、動物）在",
+      "romaji": "iru",
+      "reading": "いる"
+    },
+    "ほん": {
+      "meaning": "書",
+      "romaji": "hon",
+      "reading": "ほん"
+    },
+    "よむ": {
+      "meaning": "讀、唸",
+      "romaji": "yomu",
+      "reading": "よむ"
+    },
+    "おちゃ": {
+      "meaning": "茶",
+      "romaji": "ocha",
+      "reading": "おちゃ"
+    },
+    "のむ": {
+      "meaning": "喝",
+      "romaji": "nomu",
+      "reading": "のむ"
+    },
+    "そと": {
+      "meaning": "外面",
+      "romaji": "soto",
+      "reading": "そと"
+    },
+    "さむい": {
+      "meaning": "冷的",
+      "romaji": "samui",
+      "reading": "さむい"
+    },
+    "きらい": {
+      "meaning": "討厭的",
+      "romaji": "kirai",
+      "reading": "きらい"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "に": "表示存在的場所",
+    "を": "受格助詞，標示動作對象",
+    "も": "表示「也」，追加同類",
+    "です": "禮貌體斷定助動詞，表示「是…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "今天",
+        "word": "きょう"
+      },
+      {
+        "text": "是雨天。",
+        "word": "あめ"
+      }
+    ],
+    [
+      {
+        "text": "我",
+        "word": "わたし"
+      },
+      {
+        "text": "在家裡。",
+        "word": "いる"
+      }
+    ],
+    [
+      {
+        "text": "讀書。",
+        "word": "よむ"
+      }
+    ],
+    [
+      {
+        "text": "也喝茶。",
+        "word": "のむ"
+      }
+    ],
+    [
+      {
+        "text": "外面",
+        "word": "そと"
+      },
+      {
+        "text": "很冷。",
+        "word": "さむい"
+      }
+    ],
+    [
+      {
+        "text": "討厭下雨。",
+        "word": "きらい"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.05,
+    "jlpt_level": "N5⁻"
+  }
+}

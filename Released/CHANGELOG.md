@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.38 — 2026-06-26
+
+文章頁 Tutorial：朗讀/逐句步驟改捲至 difficulty-bar，修正 fixed 元素 scrollIntoView 破壞文章頁捲動
+
+---
+
 ## 1.0.37 — 2026-06-26
 
 文章頁 Tutorial：朗讀/逐句步驟 snap 至 difficulty-bar 寬度，修正說明框超出右側畫面

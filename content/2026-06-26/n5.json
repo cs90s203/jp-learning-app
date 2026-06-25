@@ -1,0 +1,571 @@
+{
+  "date": "2026-06-26",
+  "level": "n5",
+  "title": "あさのさんぽ",
+  "text": "きょうのあさ、はやくおきました。そとはいいてんきでした。ちちといっしょにこうえんをさんぽしました。とりがないて、はながきれいにさいていました。ベンチにすわって、やすみました。みずをのんで、いえへかえりました。さんぽはきもちがよかったです。",
+  "tokens": [
+    {
+      "surface_form": "きょう",
+      "basic_form": "きょう",
+      "reading": "きょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あさ",
+      "basic_form": "あさ",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "はやく",
+      "basic_form": "はやい",
+      "reading": "はやく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "おきました",
+      "basic_form": "おきる",
+      "reading": "おきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "そと",
+      "basic_form": "そと",
+      "reading": "そと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "てんき",
+      "basic_form": "てんき",
+      "reading": "てんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でした",
+      "basic_form": "です",
+      "reading": "でした",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちち",
+      "basic_form": "ちち",
+      "reading": "ちち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いっしょ",
+      "basic_form": "いっしょ",
+      "reading": "いっしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "こうえん",
+      "basic_form": "こうえん",
+      "reading": "こうえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さんぽしました",
+      "basic_form": "さんぽする",
+      "reading": "さんぽしました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とり",
+      "basic_form": "とり",
+      "reading": "とり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ないて",
+      "basic_form": "なく",
+      "reading": "ないて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "はな",
+      "basic_form": "はな",
+      "reading": "はな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きれい",
+      "basic_form": "きれい",
+      "reading": "きれい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さいていました",
+      "basic_form": "さく",
+      "reading": "さいていました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ベンチ",
+      "basic_form": "ベンチ",
+      "reading": "ベンチ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すわって",
+      "basic_form": "すわる",
+      "reading": "すわって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "やすみました",
+      "basic_form": "やすむ",
+      "reading": "やすみました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みず",
+      "basic_form": "みず",
+      "reading": "みず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "のんで",
+      "basic_form": "のむ",
+      "reading": "のんで",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いえ",
+      "basic_form": "いえ",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かえりました",
+      "basic_form": "かえる",
+      "reading": "かえりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "さんぽ",
+      "basic_form": "さんぽ",
+      "reading": "さんぽ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きもち",
+      "basic_form": "きもち",
+      "reading": "きもち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よかった",
+      "basic_form": "よい",
+      "reading": "よかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きょう": {
+      "meaning": "今天",
+      "romaji": "kyou",
+      "reading": "きょう"
+    },
+    "あさ": {
+      "meaning": "早上",
+      "romaji": "asa",
+      "reading": "あさ"
+    },
+    "はやい": {
+      "meaning": "早的；快的",
+      "romaji": "hayai",
+      "reading": "はやい"
+    },
+    "おきる": {
+      "meaning": "起床",
+      "romaji": "okiru",
+      "reading": "おきる"
+    },
+    "そと": {
+      "meaning": "外面",
+      "romaji": "soto",
+      "reading": "そと"
+    },
+    "いい": {
+      "meaning": "好的",
+      "romaji": "ii",
+      "reading": "いい"
+    },
+    "てんき": {
+      "meaning": "天氣",
+      "romaji": "tenki",
+      "reading": "てんき"
+    },
+    "ちち": {
+      "meaning": "（我）父親",
+      "romaji": "chichi",
+      "reading": "ちち"
+    },
+    "いっしょ": {
+      "meaning": "一起",
+      "romaji": "issho",
+      "reading": "いっしょ"
+    },
+    "こうえん": {
+      "meaning": "公園",
+      "romaji": "kouen",
+      "reading": "こうえん"
+    },
+    "さんぽする": {
+      "meaning": "散步",
+      "romaji": "sanpo suru",
+      "reading": "さんぽする"
+    },
+    "とり": {
+      "meaning": "鳥",
+      "romaji": "tori",
+      "reading": "とり"
+    },
+    "なく": {
+      "meaning": "（鳥、動物）鳴叫",
+      "romaji": "naku",
+      "reading": "なく"
+    },
+    "はな": {
+      "meaning": "花",
+      "romaji": "hana",
+      "reading": "はな"
+    },
+    "きれい": {
+      "meaning": "漂亮的；乾淨的",
+      "romaji": "kirei",
+      "reading": "きれい"
+    },
+    "さく": {
+      "meaning": "（花）開",
+      "romaji": "saku",
+      "reading": "さく"
+    },
+    "ベンチ": {
+      "meaning": "長椅",
+      "romaji": "benchi",
+      "reading": "ベンチ"
+    },
+    "すわる": {
+      "meaning": "坐",
+      "romaji": "suwaru",
+      "reading": "すわる"
+    },
+    "やすむ": {
+      "meaning": "休息",
+      "romaji": "yasumu",
+      "reading": "やすむ"
+    },
+    "みず": {
+      "meaning": "水",
+      "romaji": "mizu",
+      "reading": "みず"
+    },
+    "のむ": {
+      "meaning": "喝",
+      "romaji": "nomu",
+      "reading": "のむ"
+    },
+    "いえ": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "いえ"
+    },
+    "かえる": {
+      "meaning": "回去、回家",
+      "romaji": "kaeru",
+      "reading": "かえる"
+    },
+    "さんぽ": {
+      "meaning": "散步",
+      "romaji": "sanpo",
+      "reading": "さんぽ"
+    },
+    "きもち": {
+      "meaning": "心情、感覺",
+      "romaji": "kimochi",
+      "reading": "きもち"
+    },
+    "よい": {
+      "meaning": "好的",
+      "romaji": "yoi",
+      "reading": "よい"
+    }
+  },
+  "particles": {
+    "の": "連接名詞，表示所屬或修飾",
+    "は": "主題助詞，標示話題",
+    "と": "表示「和、跟」的對象",
+    "に": "表示方向、歸著點或場所",
+    "を": "受格助詞，標示動作對象或經過的場所",
+    "が": "主格助詞，標示主語",
+    "へ": "表示動作的方向",
+    "です": "禮貌體斷定助動詞",
+    "でした": "禮貌體過去斷定，「（過去）是…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "今天早上，",
+        "word": "あさ"
+      },
+      {
+        "text": "很早",
+        "word": "はやい"
+      },
+      {
+        "text": "就起床了。",
+        "word": "おきる"
+      }
+    ],
+    [
+      {
+        "text": "外面",
+        "word": "そと"
+      },
+      {
+        "text": "是好天氣。",
+        "word": "てんき"
+      }
+    ],
+    [
+      {
+        "text": "和父親",
+        "word": "ちち"
+      },
+      {
+        "text": "一起",
+        "word": "いっしょ"
+      },
+      {
+        "text": "在公園",
+        "word": "こうえん"
+      },
+      {
+        "text": "散步。",
+        "word": "さんぽする"
+      }
+    ],
+    [
+      {
+        "text": "鳥",
+        "word": "とり"
+      },
+      {
+        "text": "鳴叫著，",
+        "word": "なく"
+      },
+      {
+        "text": "花",
+        "word": "はな"
+      },
+      {
+        "text": "漂亮地",
+        "word": "きれい"
+      },
+      {
+        "text": "開著。",
+        "word": "さく"
+      }
+    ],
+    [
+      {
+        "text": "坐在長椅上，",
+        "word": "ベンチ"
+      },
+      {
+        "text": "休息了一下。",
+        "word": "やすむ"
+      }
+    ],
+    [
+      {
+        "text": "喝了水，",
+        "word": "のむ"
+      },
+      {
+        "text": "回",
+        "word": "かえる"
+      },
+      {
+        "text": "家了。",
+        "word": "いえ"
+      }
+    ],
+    [
+      {
+        "text": "散步",
+        "word": "さんぽ"
+      },
+      {
+        "text": "心情",
+        "word": "きもち"
+      },
+      {
+        "text": "很好。",
+        "word": "よい"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N5"
+  }
+}
