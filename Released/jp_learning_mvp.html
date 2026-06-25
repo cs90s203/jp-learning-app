@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.27
+          v1.0.28
         </div>
 
       </div>
@@ -4204,6 +4204,7 @@ function loadTheme() {
   }, { passive: true });
 
   document.addEventListener('touchmove', e => {
+    if (isTutorialOpen()) return;
     const dy = e.touches[0].clientY - startY;
     if (dy <= 0) { if (pulling) resetIndicator(); pulling = false; return; }
     pulling = true;
@@ -4212,6 +4213,7 @@ function loadTheme() {
   }, { passive: true });
 
   document.addEventListener('touchend', () => {
+    if (isTutorialOpen()) { pulling = false; dist = 0; return; }
     if (!pulling) return;
     pulling = false;
     if (dist >= THRESHOLD) {
