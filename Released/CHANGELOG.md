@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.11 — 2026-06-25
+
+Tutorial：重寫為獨立 function，修 const TDZ 導致 onclick 無效
+
+---
+
 ## 1.0.10 — 2026-06-25
 
 PTR：修 isTutorialOpen 誤判導致每次拖動觸發重整
