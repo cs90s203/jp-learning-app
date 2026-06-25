@@ -20,6 +20,12 @@
 
 ---
 
+## 0.14.85 — 2026-06-25
+
+PTR：單字頁改用 generic PTR，修正 getActiveScroll 封鎖問題
+
+---
+
 ## 0.14.84 — 2026-06-25
 
 PTR：移除 vdcTouchMove 的 preventDefault，解除單字頁 PTR 阻塞
