@@ -1246,6 +1246,35 @@
   #splash-sub  { font-size: 13px; color: #A08070; letter-spacing: 0.06em; }
 
   /* ===== Onboarding ===== */
+  /* ── Tutorial overlay ── */
+  #tutorial-overlay {
+    display: none; position: fixed; inset: 0; z-index: 8500;
+    pointer-events: all; cursor: pointer;
+  }
+  #tutorial-spotlight {
+    position: absolute; border-radius: 12px;
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.62);
+    pointer-events: none;
+  }
+  .tutorial-tooltip {
+    position: absolute;
+    background: var(--wa-ll); border-radius: 14px;
+    padding: 14px 16px; max-width: 280px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+    pointer-events: none;
+  }
+  .tutorial-tooltip-text {
+    font-size: 14px; line-height: 1.55; color: var(--wt);
+  }
+  .tutorial-dots {
+    display: flex; gap: 6px; justify-content: center; margin-top: 10px;
+  }
+  .tutorial-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--wa-bg2);
+  }
+  .tutorial-dot.active { background: var(--wa); }
+
   #onboarding-screen {
     position: fixed; inset: 0; z-index: 9998;
     background: #F5EDE3;
@@ -1342,6 +1371,10 @@
 </div>
 
 <!-- ===== Onboarding ===== -->
+<div id="tutorial-overlay" onclick="tutorialNext()">
+  <div id="tutorial-spotlight"></div>
+</div>
+
 <div id="onboarding-screen">
 
   <!-- Page 1：這是什麼 App -->
@@ -1789,7 +1822,7 @@
 
     <!-- 設定 -->
     <div class="page" id="page-settings">
-      <div class="top-bar"><h1>設定</h1><button class="help-btn">？</button></div>
+      <div class="top-bar"><h1>設定</h1><button class="help-btn" onclick="showSettingsTutorial()">？</button></div>
       <div class="sec">
         <p class="section-title">學習模式</p>
         <div class="card" style="padding:4px 16px;margin-bottom:16px">
@@ -1866,7 +1899,7 @@
         </div>
 
         <p class="section-title" style="margin-top:16px">帳號</p>
-        <div class="card" style="padding:4px 16px;margin-bottom:16px">
+        <div id="settings-account-card" class="card" style="padding:4px 16px;margin-bottom:16px">
           <div id="auth-section">
             <!-- 預設：未登入狀態，Firebase 載入後若已登入會替換 -->
             <div style="padding:12px 0">
@@ -1925,7 +1958,7 @@
         </div>
 
         <p class="section-title">進階功能</p>
-        <div class="card" style="padding:4px 16px">
+        <div id="settings-advanced-card" class="card" style="padding:4px 16px">
           <div class="setting-row" style="flex-direction:column;align-items:flex-start;gap:8px;padding:14px 0">
             <div style="display:flex;justify-content:space-between;align-items:flex-start;width:100%">
               <div>
@@ -2007,7 +2040,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.4
+          v1.0.5
         </div>
 
       </div>
@@ -6707,6 +6740,87 @@ function showSplash() {
       sessionStorage.setItem('_obSplashResult', 'skipped:onboardingDone=' + done);
     }
   }, 2600); // CSS animation 2.4s + 200ms buffer
+}
+
+// ===== Tutorial overlay system =====
+const Tutorial = (() => {
+  let _steps = [], _idx = 0;
+
+  function show(steps) {
+    _steps = steps;
+    _idx = 0;
+    _render();
+  }
+
+  function _render() {
+    const overlay = document.getElementById('tutorial-overlay');
+    const spotlight = document.getElementById('tutorial-spotlight');
+    if (!overlay || !spotlight) return;
+
+    const step = _steps[_idx];
+    const target = document.getElementById(step.targetId);
+    if (!target) { next(); return; }
+
+    // scroll target into view, then measure
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setTimeout(() => {
+      const r = target.getBoundingClientRect();
+      const pad = 6;
+      spotlight.style.left   = (r.left - pad) + 'px';
+      spotlight.style.top    = (r.top - pad) + 'px';
+      spotlight.style.width  = (r.width + pad * 2) + 'px';
+      spotlight.style.height = (r.height + pad * 2) + 'px';
+
+      // remove old tooltip
+      const old = overlay.querySelector('.tutorial-tooltip');
+      if (old) old.remove();
+
+      // build tooltip
+      const tip = document.createElement('div');
+      tip.className = 'tutorial-tooltip';
+
+      const dots = _steps.length > 1
+        ? `<div class="tutorial-dots">${_steps.map((_, i) =>
+            `<div class="tutorial-dot${i === _idx ? ' active' : ''}"></div>`).join('')}</div>`
+        : '';
+
+      tip.innerHTML = `<div class="tutorial-tooltip-text">${step.text}</div>${dots}`;
+
+      // position tooltip: below if space, else above
+      const tipH = 90;
+      const below = r.bottom + pad + 12;
+      if (below + tipH < window.innerHeight) {
+        tip.style.top  = (below) + 'px';
+      } else {
+        tip.style.bottom = (window.innerHeight - r.top + pad + 12) + 'px';
+      }
+      tip.style.left = Math.max(12, Math.min(r.left - pad, window.innerWidth - 292)) + 'px';
+
+      overlay.appendChild(tip);
+      overlay.style.display = 'block';
+    }, 350);
+  }
+
+  function next() {
+    _idx++;
+    if (_idx >= _steps.length) {
+      document.getElementById('tutorial-overlay').style.display = 'none';
+    } else {
+      _render();
+    }
+  }
+
+  return { show, next };
+})();
+
+function tutorialNext() { Tutorial.next(); }
+
+// ── Page tutorial definitions ──
+function showSettingsTutorial() {
+  Tutorial.show([
+    { targetId: 'settings-account-card',  text: '登入帳號確保讀書進度同步設備，以及資料的保存' },
+    { targetId: 'settings-advanced-card', text: '輸入 Google Vision API Key 解鎖手機拍照加詞的功能' },
+  ]);
 }
 
 function showOnboarding() {
