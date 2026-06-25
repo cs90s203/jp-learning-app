@@ -1614,7 +1614,10 @@
     <div class="page active" id="page-home">
       <div class="top-bar">
         <h1>今日學習</h1>
-        <p id="today-date"></p>
+        <div style="display:flex;align-items:center;gap:6px">
+          <p id="today-date" style="margin:0"></p>
+          <span class="level-tag" id="home-level-tag" onclick="switchPage('settings');setTimeout(function(){var el=document.getElementById('settings-level-row');if(el)el.scrollIntoView({behavior:'smooth',block:'center'});},120)"></span>
+        </div>
         <button class="help-btn">？</button>
       </div>
       <div class="sec">
@@ -2036,7 +2039,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.19
+          v1.0.20
         </div>
 
       </div>
@@ -3265,6 +3268,8 @@ function setUserLevel(key) {
   CURRENT_LEVEL = key;
   localStorage.setItem('userLevel', key);
   renderLevelPicker();
+  const lvTag = document.getElementById('home-level-tag');
+  if (lvTag) lvTag.textContent = key.toUpperCase();
   // Fix #6: notify user if they change level while article page is open
   const articleActive = document.getElementById('page-article')?.classList.contains('active');
   if (articleActive) showToast('等級已更新，長按等級標籤可切換目前文章');
@@ -4229,7 +4234,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const dateLabel = `${_d.getFullYear()}年${_d.getMonth()+1}月${_d.getDate()}日`;
   const weekLabel = `（${weekdays[_d.getDay()]}）`;
   const el = document.getElementById('today-date');
-  if (el) el.textContent = `${dateLabel}${weekLabel}・${CURRENT_LEVEL.toUpperCase()}`;
+  if (el) el.textContent = `${dateLabel}${weekLabel}`;
+  const lvTag = document.getElementById('home-level-tag');
+  if (lvTag) lvTag.textContent = CURRENT_LEVEL.toUpperCase();
   const artDate = document.getElementById('article-date-tag');
   if (artDate) artDate.textContent = `${_d.getMonth()+1}月${_d.getDate()}日`;
 
