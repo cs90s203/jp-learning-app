@@ -131,9 +131,18 @@
   }
   .page.active { display: flex; }
 
-  .top-bar { padding: 14px 20px 8px; background: var(--wa-ll); flex-shrink: 0; }
+  .top-bar { padding: 14px 20px 8px; background: var(--wa-ll); flex-shrink: 0; position: relative; }
   .top-bar h1 { font-size: 24px; font-weight: 500; color: var(--wt); }
   .top-bar p { font-size: 13px; color: var(--wt3); margin-top: 3px; }
+  .help-btn {
+    position: absolute; top: 14px; right: 16px;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--wa-bg2); border: none;
+    font-size: 14px; font-weight: 600; color: var(--wt2);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; -webkit-tap-highlight-color: transparent;
+  }
+  .help-btn:active { opacity: 0.6; }
 
   .sec { padding: 8px 16px; }
 
@@ -1570,6 +1579,7 @@
       <div class="top-bar">
         <h1>今日學習</h1>
         <p id="today-date"></p>
+        <button class="help-btn" onclick="showOnboarding()">？</button>
       </div>
       <div class="sec">
 
@@ -1627,6 +1637,7 @@
     <div class="page" id="page-article">
       <div class="top-bar">
         <h1 onclick="_devTitleTap()" style="user-select:none" id="article-page-title">今日文章</h1>
+        <button class="help-btn" onclick="showOnboarding()">？</button>
         <div class="article-meta">
           <span class="level-tag" id="article-level-tag">N5</span>
           <span class="article-date" id="article-date-tag"></span>
@@ -1680,6 +1691,7 @@
       <div class="top-bar" style="flex-shrink:0">
         <h1>單字本</h1>
         <p id="vocab-count-text">共 0 張</p>
+        <button class="help-btn" onclick="showOnboarding()">？</button>
       </div>
 
       <!-- Filter bar + quiz button -->
@@ -1752,6 +1764,7 @@
     <div class="page" id="page-quiz">
       <div class="top-bar" style="flex-shrink:0">
         <h1>今日試題</h1>
+        <button class="help-btn" onclick="showOnboarding()">？</button>
       </div>
       <!-- 週曆列 -->
       <div id="quiz-week-bar">
@@ -1773,7 +1786,7 @@
 
     <!-- 設定 -->
     <div class="page" id="page-settings">
-      <div class="top-bar"><h1>設定</h1></div>
+      <div class="top-bar"><h1>設定</h1><button class="help-btn" onclick="showOnboarding()">？</button></div>
       <div class="sec">
         <p class="section-title">學習模式</p>
         <div class="card" style="padding:4px 16px;margin-bottom:16px">
@@ -1991,7 +2004,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.0
+          v1.0.1
         </div>
 
       </div>
