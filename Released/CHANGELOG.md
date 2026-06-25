@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.24 — 2026-06-25
+
+各頁 ? 按鈕移至 body 層，修 stacking context，統一顯示/隱藏邏輯
+
+---
+
 ## 1.0.23 — 2026-06-25
 
 設定頁：? 按鈕移至 body 層，修 stacking context 導致被 overlay 蓋住

@@ -1378,7 +1378,11 @@
   <div id="tutorial-spotlight"></div>
 </div>
 
-<!-- 設定頁 ? 按鈕：放 body 直接子層，避免 page transform stacking context 問題 -->
+<!-- 各頁 ? 按鈕：放 body 直接子層，避免 page transform stacking context 問題 -->
+<button class="help-btn" id="home-help-btn"     onclick="showHomeTutorial()"     style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
+<button class="help-btn" id="article-help-btn"  onclick="showArticleTutorial()"  style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
+<button class="help-btn" id="vocab-help-btn"    onclick="showVocabTutorial()"    style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
+<button class="help-btn" id="quiz-help-btn"     onclick="showQuizTutorial()"     style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
 <button class="help-btn" id="settings-help-btn" onclick="showSettingsTutorial()" style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
 
 <div id="onboarding-screen">
@@ -1621,7 +1625,6 @@
           <p id="today-date" style="margin:0"></p>
           <span class="level-tag" id="home-level-tag" onclick="switchPage('settings');setTimeout(function(){var el=document.getElementById('settings-level-row');if(el)el.scrollIntoView({behavior:'smooth',block:'center'});},120)"></span>
         </div>
-        <button class="help-btn">？</button>
       </div>
       <div class="sec">
 
@@ -1679,7 +1682,6 @@
     <div class="page" id="page-article">
       <div class="top-bar">
         <h1 onclick="_devTitleTap()" style="user-select:none" id="article-page-title">今日文章</h1>
-        <button class="help-btn">？</button>
         <div class="article-meta">
           <span class="level-tag" id="article-level-tag">N5</span>
           <span class="article-date" id="article-date-tag"></span>
@@ -1733,7 +1735,6 @@
       <div class="top-bar" style="flex-shrink:0">
         <h1>單字本</h1>
         <p id="vocab-count-text">共 0 張</p>
-        <button class="help-btn">？</button>
       </div>
 
       <!-- Filter bar + quiz button -->
@@ -1809,7 +1810,6 @@
     <div class="page" id="page-quiz">
       <div class="top-bar" style="flex-shrink:0">
         <h1>今日試題</h1>
-        <button class="help-btn">？</button>
       </div>
       <!-- 週曆列 -->
       <div id="quiz-week-bar">
@@ -2041,7 +2041,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.23
+          v1.0.24
         </div>
 
       </div>
@@ -2339,10 +2339,12 @@ function switchPage(id) {
   // 顯示/隱藏固定工具列
   document.getElementById('article-toolbar').classList.toggle('show', id === 'article');
 
-  // 設定頁 ? 按鈕（body 層，避免 page transform stacking context）
-  var _shb = document.getElementById('settings-help-btn');
-  if (_shb) { _shb.style.display = id === 'settings' ? '' : 'none'; }
-  if (id !== 'settings') tutorialClose();
+  // ? 按鈕（body 層，避免 page transform stacking context）
+  ['home','article','vocab','quiz','settings'].forEach(function(p) {
+    var b = document.getElementById(p + '-help-btn');
+    if (b) b.style.display = p === id ? '' : 'none';
+  });
+  tutorialClose();
 
   if (id === 'article') {
     if (!articleRendered) {
@@ -6869,6 +6871,11 @@ function tutorialClose() {
 }
 
 // ── Page tutorial definitions ──
+function showHomeTutorial()    { /* TODO */ }
+function showArticleTutorial() { /* TODO */ }
+function showVocabTutorial()   { /* TODO */ }
+function showQuizTutorial()    { /* TODO */ }
+
 function showSettingsTutorial() {
   if (_tutBtnId === 'settings-help-btn') { tutorialClose(); return; }
   tutorialShow('settings-help-btn', [
