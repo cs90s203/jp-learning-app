@@ -1883,7 +1883,7 @@
               <div class="setting-label">靜音門檻</div>
               <div class="setting-sub">低於此音量視為靜音</div>
             </div>
-            <span class="setting-val" id="follow-db-val">等級 2</span>
+            <span class="setting-val" id="follow-db-val">等級 3</span>
           </div>
           <div class="setting-row" style="cursor:pointer" onclick="cycleFollowSec()">
             <div>
@@ -2036,7 +2036,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.17
+          v1.0.18
         </div>
 
       </div>
@@ -4650,8 +4650,8 @@ let _followSilenceCnt = 0;      // 連續靜音次數（每 100ms 一次）
 let _silenceDbThreshold = parseInt(localStorage.getItem('followSilenceDb')   || '-40');
 let _silenceSec         = parseFloat(localStorage.getItem('followSilenceSec') || '1');
 const _SILENCE_DB_OPTIONS  = [-30, -40, -50, -60];
-const _SILENCE_DB_LABEL    = { '-30': '等級 1', '-40': '等級 2', '-50': '等級 3', '-60': '等級 4' };
-function _dbLabel(db) { return _SILENCE_DB_LABEL[String(db)] || '等級 2'; }
+const _SILENCE_DB_LABEL    = { '-30': '等級 4', '-40': '等級 3', '-50': '等級 2', '-60': '等級 1' };
+function _dbLabel(db) { return _SILENCE_DB_LABEL[String(db)] || '等級 3'; }
 const _SILENCE_SEC_OPTIONS = [0.5, 1.0, 1.5, 2.0];
 
 function cycleFollowDb() {
