@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.42 — 2026-06-26
+
+Tutorial：說明框加左右 8px viewport margin，修正全寬元素右側溢出及圓角被裁
+
+---
+
 ## 1.0.41 — 2026-06-26
 
 五十音頁 Tutorial：實作兩步說明，tutorial overlay z-index 調至 9200 蓋過五十音頁面
