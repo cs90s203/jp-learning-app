@@ -20,6 +20,12 @@
 
 ---
 
+## 1.0.22 — 2026-06-25
+
+設定頁 Tutorial：再按 ? 可關閉說明頁，新增 tutorialClose()
+
+---
+
 ## 1.0.21 — 2026-06-25
 
 今日頁：level-tag 改用 LEVEL_OPTIONS label，修正 n5_lite 顯示為 N5-
