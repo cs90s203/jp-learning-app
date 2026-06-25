@@ -1991,7 +1991,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v0.14.83
+          v0.14.84
         </div>
 
       </div>
@@ -3086,19 +3086,77 @@ let VOCAB_DICT = {
   '休む':   { meaning: '休息',       romaji: 'yasumu',  reading: 'やすむ'   },
 };
 
-// 助詞簡短說明（長按助詞時顯示）
-let PARTICLE_NOTES = {
-  'は': '提示句子的主題，告訴對方接下來要說的是關於「什麼」。',
-  'が': '標示動作或狀態的主體，常用於描述眼前看到、注意到的事物。',
-  'に': '標示移動的目的地或時間點，回答「去哪裡」「什麼時候」。',
-  'で': '標示動作發生的場所、方式或手段，回答「在哪裡做」「用什麼做」。',
-  'の': '連接兩個名詞，表示所屬或修飾關係，類似中文的「的」。',
-  'を': '標示動作的對象，回答「做了什麼」。',
-  'と': '表示並列「和」，或引述、共同動作的對象。',
-  'も': '表示「也」，強調同類事物的並列。',
-  'から': '表示起點，時間或地點的「從」。',
-  'まで': '表示終點，時間或地點的「到」。',
+// 助詞/助動詞說明（硬編碼，不依賴生成內容）
+const BUILTIN_PARTICLE_NOTES = {
+  // 格助詞
+  'が': '主格助詞，標示動作或狀態的主體，強調「是誰/什麼」在做或存在。',
+  'を': '受格助詞，標示動作的直接對象，回答「做了什麼」。',
+  'に': '標示方向/目的地、存在位置、時間點，或動作的對象，用法多樣。',
+  'で': '標示動作發生的場所、手段或方式，回答「在哪裡」「用什麼」。',
+  'へ': '標示移動的方向，類似に但更強調方向性，意為「往～」。',
+  'と': '表示並列「和」、共同動作的對象，或引述內容「說～」。',
+  'から': '表示起點，時間或空間的「從～」，也表示原因「因為～」。',
+  'まで': '表示終點，時間或空間的「到～」，常與から搭配。',
+  'より': '表示比較的基準「比～」，或起點（較書面）。',
+  'の': '連接名詞表所屬或修飾「～的」，也可替代が用於子句內。',
+  // 係助詞
+  'は': '主題助詞，提示句子討論的主題「關於～」，與が的區別在於對比或已知資訊。',
+  'も': '表示「也」，強調同類事物並列，或強調程度「連～都」。',
+  'こそ': '強調助詞，強調前面的詞「正是～」「才是～」。',
+  'さえ': '表示「甚至連～都」，強調極端例子。',
+  'しか': '接否定，表示「只有～」「除了～以外都沒有」。',
+  'だけ': '表示「只～」「僅～」，限定範圍。',
+  'ばかり': '表示「盡是～」「光是～」，或剛完成（～たばかり）。',
+  'ほど': '表示程度「到～程度」，或比較「沒有那麼～」。',
+  'くらい／ぐらい': '表示大約程度「大概～」「左右」。',
+  'など': '表示列舉「等等」，暗示還有類似事物。',
+  'とか': '表示模糊列舉「～啦、～啦」，語氣較隨意。',
+  // 接續助詞
+  'て': '連接動詞/形容詞，表示「～後」「～而且」，也用於請求（てください）。',
+  'で': '形容動詞的て形，功能同て。',
+  'が': '接續助詞，用於轉折「但是～」，或鋪墊後句。',
+  'けど／けれど': '表示轉折「雖然～但是～」，語氣比が柔和。',
+  'のに': '表示逆接「明明～卻」，含說話者意外或不滿情緒。',
+  'ので': '表示原因「因為～所以」，語氣較客觀。',
+  'から': '表示原因「因為～」，語氣較主觀直接。',
+  'ば': '表示條件「如果～的話」，強調前提成立則後句成立。',
+  'たら': '表示條件或時序「如果～就」「～之後」，較口語。',
+  'ながら': '表示同時動作「一邊～一邊～」。',
+  // 終助詞
+  'か': '句尾疑問助詞，構成問句「～嗎？」。',
+  'ね': '句尾助詞，尋求共鳴或確認「～對吧」「～呢」。',
+  'よ': '句尾助詞，強調或告知對方新資訊「～喔」「～啊」。',
+  'よね': '句尾助詞，既告知又尋求確認「～對吧？」。',
+  'な': '句尾助詞（男性），表感嘆或確認；也表禁止（動詞＋な）。',
+  'わ': '句尾助詞（偏女性），表輕微強調或感嘆。',
+  'ぞ': '句尾助詞（男性強調），強烈主張「就是這樣！」。',
+  'さ': '句尾助詞，輕描淡寫地斷定「就是這樣嘛」。',
+  // 助動詞
+  'です': '禮貌體斷定助動詞「是～」，接在名詞/形容詞後。',
+  'ます': '禮貌體動詞詞尾，表示禮貌語氣。',
+  'た': '過去式或完了助動詞，表示「～了」「已經～」。',
+  'ない': '否定助動詞，表示「不～」「沒有～」。',
+  'ん／の': '說明/強調語氣，表示「是因為～」「就是～嘛」。',
+  'だ': '普通體斷定助動詞「是～」，接在名詞/形容動詞後。',
+  'だった': '普通體過去斷定「曾是～」「是～（過去）」。',
+  'でした': '禮貌體過去斷定「是～（過去）」。',
+  'らしい': '推測「好像～」「聽說～」，基於客觀資訊。',
+  'ようだ': '推測或比喻「好像～」「如同～」，基於直接觀察。',
+  'そうだ': '樣態「看起來～」，或傳聞「聽說～」，依接法不同。',
+  'かもしれない': '推測可能性「也許～」「可能～」。',
+  'はずだ': '基於理由的推測「應該～」「理應～」。',
+  'たい': '表達願望「想要～」，第一人稱欲望。',
+  'れる／られる': '被動「被～」、可能「能～」、自發或尊敬，依上下文判斷。',
+  'せる／させる': '使役「讓～」「叫～做」。',
+  'ている': '表示動作持續或狀態維持「正在～」「已經是～狀態」。',
+  'てある': '表示動作結果的狀態保留「已經做好了（放著）」。',
+  'ておく': '預先做某事「事先做好」「放著（讓它維持）」。',
+  'てみる': '嘗試「試著做看看」。',
+  'てしまう': '完全完成或遺憾「做完了」「不小心做了」。',
+  'ていく': '動作向未來延伸「逐漸做下去」「離去」。',
+  'てくる': '動作從過去延續或靠近「逐漸變得」「來做～」。',
 };
+let PARTICLE_NOTES = Object.assign({}, BUILTIN_PARTICLE_NOTES);
 
 // 預先準備好的斷詞資料（手動標注，不依賴任何外部函式庫或網路請求）
 // 格式對應 Kuromoji 輸出: surface_form / basic_form / reading（平假名）/ pos
@@ -3255,7 +3313,7 @@ function applyContentPack(pack) {
   ARTICLE_TOKENS = pack.tokens;
   ARTICLE_TOKENS._title = pack.title || '';
   VOCAB_DICT = pack.vocab;
-  PARTICLE_NOTES = pack.particles;
+  PARTICLE_NOTES = pack.particles ? Object.assign({}, BUILTIN_PARTICLE_NOTES, pack.particles) : Object.assign({}, BUILTIN_PARTICLE_NOTES);
   SENTENCE_TRANSLATIONS = pack.translations;
   // 重新渲染文章
   articleRendered = false;
@@ -3269,7 +3327,7 @@ function restoreDemoContent() {
   ARTICLE_TEXT = DEMO_ARTICLE_TEXT;
   ARTICLE_TOKENS = JSON.parse(JSON.stringify(DEMO_ARTICLE_TOKENS));
   VOCAB_DICT = JSON.parse(JSON.stringify(DEMO_VOCAB_DICT));
-  PARTICLE_NOTES = JSON.parse(JSON.stringify(DEMO_PARTICLE_NOTES));
+  PARTICLE_NOTES = Object.assign({}, BUILTIN_PARTICLE_NOTES);
   SENTENCE_TRANSLATIONS = JSON.parse(JSON.stringify(DEMO_SENTENCE_TRANSLATIONS));
   articleRendered = false;
   if (document.getElementById('page-article') && document.getElementById('page-article').classList.contains('active')) {
@@ -5578,7 +5636,7 @@ function dismissSwipeHint() {
 
 // Touch handlers for display card swipe up/down
 function vdcTouchStart(e) { vdcTouchY0 = e.touches[0].clientY; }
-function vdcTouchMove(e)  { e.preventDefault(); } // block page scroll while on card
+function vdcTouchMove(e)  { } // card has no scrollable ancestor; PTR on _vocabPage handles scroll interception
 function vdcTouchEnd(e) {
   const dy = e.changedTouches[0].clientY - vdcTouchY0;
   if (Math.abs(dy) < 28) return;

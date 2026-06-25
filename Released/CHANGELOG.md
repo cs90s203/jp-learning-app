@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v0.14.84 — 2026-06-25
+
+**文章生成 token 優化 + 助詞說明硬編碼**
+- 助詞/助動詞說明（~60條）硬編碼進 App，生成時不再需要 `particles` 欄位（省 ~20% token）
+- 生成規則：tokens 不再包含標點符號（省 ~5–8% token）
+- 生成規則：純假名 vocab key 不寫 reading（省 ~3–5% token）
+- 舊格式向下相容：舊 json 有 particles 欄位時合併使用
+
 ## v0.14.48 — 2026-06-24
 
 **iOS 被登出問題緩解 + 設定同步修正**
@@ -9,6 +17,12 @@
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 0.14.84 — 2026-06-25
+
+PTR：移除 vdcTouchMove 的 preventDefault，解除單字頁 PTR 阻塞
 
 ---
 
