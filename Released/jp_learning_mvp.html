@@ -2053,7 +2053,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.60
+          v1.0.61
         </div>
 
       </div>
@@ -4992,6 +4992,8 @@ function setPlayRecIcon(playing) {
 function speak(text) {
   if (!window.speechSynthesis) return;
   window.speechSynthesis.cancel();
+  // iOS workaround: synthesis can get stuck in paused state after multiple calls
+  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'ja-JP'; u.rate = 0.85;
   window.speechSynthesis.speak(u);
@@ -4999,15 +5001,25 @@ function speak(text) {
 
 // 試題聽力播放（帶視覺回饋）
 function qzPlayWord(text) {
-  speak(text);
+  if (!window.speechSynthesis) return;
   const btn = document.getElementById('qz-play-btn');
-  if (!btn) return;
-  btn.style.opacity = '0.6';
-  btn.textContent = '播放中…';
-  setTimeout(() => {
-    btn.style.opacity = '1';
-    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg> 再播放';
-  }, 1500);
+  if (btn) { btn.style.opacity = '0.6'; btn.textContent = '播放中…'; }
+
+  window.speechSynthesis.cancel();
+  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'ja-JP'; u.rate = 0.85;
+
+  const resetBtn = () => {
+    const b = document.getElementById('qz-play-btn');
+    if (!b) return;
+    b.style.opacity = '1';
+    b.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg> 再播放';
+  };
+  u.onend = resetBtn;
+  u.onerror = resetBtn;
+  setTimeout(resetBtn, 3000); // fallback：iOS onend 有時不觸發
+  window.speechSynthesis.speak(u);
 }
 
 // Toast
