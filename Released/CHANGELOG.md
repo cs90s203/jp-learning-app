@@ -1,5 +1,9 @@
 # 日語學習 App — 版本記錄
 
+## v1.0.59 — 2026-06-26
+
+**A2HS banner：背景透明度調至 20%、位置再上移 50px（bottom 180→230px）**
+
 ## v1.0.58 — 2026-06-26
 
 **A2HS banner：上調 100px（bottom 80→180px）、加 20% 底色（color-mix + backdrop-filter）**
@@ -59,6 +63,12 @@
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.0.59 — 2026-06-26
+
+A2HS banner：背景透明度 20%、位置上移至 bottom:230px
 
 ---
 
