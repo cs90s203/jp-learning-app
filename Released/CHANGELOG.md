@@ -1,5 +1,15 @@
 # 日語學習 App — 版本記錄
 
+## v1.0.64 — 2026-06-26
+
+**Tutorial 問號按鈕未點過時顯示光暈動畫**
+
+- 新增 `.help-btn.glow` CSS 動畫（pulse 橙色光暈，2s 循環）
+- `_updateHelpBtnGlow()`：比對 localStorage `tutBtnSeen`，套用/移除 glow
+- `tutorialShow()` 呼叫 `_markTutSeen()` 記錄已看過，glow 立即消失
+- `switchPage()` / `openGojuuon()` 切換時更新光暈狀態
+- `resetFirstTimeHints()` 同步清除 `tutBtnSeen`，光暈全數還原
+
 ## v1.0.63 — 2026-06-26
 
 **文章頁：新增「＋全部」批次加入單字；「中文備注」改名為「中文」**
@@ -91,6 +101,12 @@
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.0.64 — 2026-06-26
+
+Tutorial 問號按鈕：未點過時顯示橙色光暈，點過後消失，可從設定頁重設
 
 ---
 
