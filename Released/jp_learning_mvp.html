@@ -324,8 +324,9 @@
   }
   .level-sheet-chip.active { background: var(--wa); color: #fff; border-color: var(--wa); }
   .article-date { font-size: 11px; color: var(--wt3); }
-  .cn-toggle-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-  .cn-toggle-label { font-size: 13px; color: var(--wt2); }
+  .cn-toggle-row { display: flex; align-items: center; justify-content: flex-end; margin-bottom: 10px; }
+  .cn-btn { font-size: 12px; font-weight: 500; padding: 4px 12px; border-radius: 99px; border: 1.5px solid var(--wa-bg2); background: transparent; color: var(--wt3); cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background 0.15s, color 0.15s, border-color 0.15s; }
+  .cn-btn.active { background: var(--wa-l); color: var(--wa); border-color: transparent; }
   .toggle {
     width: 46px; height: 28px; background: var(--wa);
     border-radius: 99px; position: relative; cursor: pointer; flex-shrink: 0;
@@ -1701,8 +1702,7 @@
       <div class="sec" style="padding-top:5px">
 
         <div class="cn-toggle-row" id="cn-toggle-row">
-          <span class="cn-toggle-label">中文備注</span>
-          <div class="toggle" id="cn-toggle" onclick="toggleCN()"></div>
+          <button class="cn-btn" id="cn-toggle" onclick="toggleCN()">中文備注</button>
         </div>
 
         <div class="card">
@@ -2049,7 +2049,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.55
+          v1.0.56
         </div>
 
       </div>
@@ -3067,8 +3067,8 @@ async function selectQuizDate(dateStr) {
 // CN toggle
 function toggleCN() {
   const t = document.getElementById('cn-toggle');
-  t.classList.toggle('off');
-  const hidden = t.classList.contains('off');
+  t.classList.toggle('active');
+  const hidden = !t.classList.contains('active');
   document.querySelectorAll('.cn-note').forEach(n => {
     n.classList.toggle('hidden', hidden);
   });
@@ -3665,7 +3665,7 @@ function renderArticle(tokens) {
   container.oncontextmenu = (e) => e.preventDefault();
 
   // 套用目前的中文備注顯示狀態
-  const cnHidden = document.getElementById('cn-toggle').classList.contains('off');
+  const cnHidden = !document.getElementById('cn-toggle').classList.contains('active');
   container.querySelectorAll('.cn-note').forEach(n => n.classList.toggle('hidden', cnHidden));
 
   // 套用已加入單字卡的詞，對應句子的中文備注也標橘色
