@@ -1,0 +1,723 @@
+{
+  "date": "2026-06-27",
+  "level": "n4",
+  "title": "友達と料理教室へ",
+  "text": "先週の日曜日、わたしは友達と料理教室に参加しました。先生はとても親切だったので、初めてでも安心して習うことができました。わたしたちは野菜を切ったり、スープを作ったりしました。難しいところは、先生に手伝ってもらいました。料理ができあがると、みんなで一緒に食べました。家でも作りたいので、レシピをもらって帰りました。とても楽しい一日でした。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日曜日",
+      "basic_form": "日曜日",
+      "reading": "にちようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "料理教室",
+      "basic_form": "料理教室",
+      "reading": "りょうりきょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "参加しました",
+      "basic_form": "参加する",
+      "reading": "さんかしました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "先生",
+      "basic_form": "先生",
+      "reading": "せんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "親切",
+      "basic_form": "親切",
+      "reading": "しんせつ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "初めて",
+      "basic_form": "初めて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安心して",
+      "basic_form": "安心する",
+      "reading": "あんしんして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "習う",
+      "basic_form": "習う",
+      "reading": "ならう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できました",
+      "basic_form": "できる",
+      "reading": "できました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたしたち",
+      "basic_form": "わたしたち",
+      "reading": "わたしたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "野菜",
+      "basic_form": "野菜",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "切ったり",
+      "basic_form": "切る",
+      "reading": "きったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スープ",
+      "basic_form": "スープ",
+      "reading": "スープ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作ったり",
+      "basic_form": "作る",
+      "reading": "つくったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "しました",
+      "basic_form": "する",
+      "reading": "しました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "難しい",
+      "basic_form": "難しい",
+      "reading": "むずかしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ところ",
+      "basic_form": "ところ",
+      "reading": "ところ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "先生",
+      "basic_form": "先生",
+      "reading": "せんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "手伝って",
+      "basic_form": "手伝う",
+      "reading": "てつだって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "もらいました",
+      "basic_form": "もらう",
+      "reading": "もらいました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できあがると",
+      "basic_form": "できあがる",
+      "reading": "できあがると",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一緒に",
+      "basic_form": "一緒に",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "食べました",
+      "basic_form": "食べる",
+      "reading": "たべました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作りたい",
+      "basic_form": "作る",
+      "reading": "つくりたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "レシピ",
+      "basic_form": "レシピ",
+      "reading": "レシピ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もらって",
+      "basic_form": "もらう",
+      "reading": "もらって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "帰りました",
+      "basic_form": "帰る",
+      "reading": "かえりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しい",
+      "basic_form": "楽しい",
+      "reading": "たのしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "一日",
+      "basic_form": "一日",
+      "reading": "いちにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でした",
+      "basic_form": "でした",
+      "reading": "でした",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週",
+      "romaji": "senshuu",
+      "reading": "先週"
+    },
+    "日曜日": {
+      "meaning": "星期日",
+      "romaji": "nichiyoubi",
+      "reading": "日曜日"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "友達": {
+      "meaning": "朋友",
+      "romaji": "tomodachi",
+      "reading": "友達"
+    },
+    "料理教室": {
+      "meaning": "料理教室",
+      "romaji": "ryouri kyoushitsu",
+      "reading": "料理教室"
+    },
+    "参加する": {
+      "meaning": "參加",
+      "romaji": "sanka suru",
+      "reading": "参加する"
+    },
+    "先生": {
+      "meaning": "老師",
+      "romaji": "sensei",
+      "reading": "先生"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    },
+    "親切": {
+      "meaning": "親切的",
+      "romaji": "shinsetsu",
+      "reading": "親切"
+    },
+    "初めて": {
+      "meaning": "第一次、初次",
+      "romaji": "hajimete",
+      "reading": "初めて"
+    },
+    "安心する": {
+      "meaning": "安心、放心",
+      "romaji": "anshin suru",
+      "reading": "安心する"
+    },
+    "習う": {
+      "meaning": "學習",
+      "romaji": "narau",
+      "reading": "習う"
+    },
+    "こと": {
+      "meaning": "事情；（形式名詞）",
+      "romaji": "koto",
+      "reading": "こと"
+    },
+    "できる": {
+      "meaning": "能夠、會",
+      "romaji": "dekiru",
+      "reading": "できる"
+    },
+    "わたしたち": {
+      "meaning": "我們",
+      "romaji": "watashitachi",
+      "reading": "わたしたち"
+    },
+    "野菜": {
+      "meaning": "蔬菜",
+      "romaji": "yasai",
+      "reading": "野菜"
+    },
+    "切る": {
+      "meaning": "切",
+      "romaji": "kiru",
+      "reading": "切る"
+    },
+    "スープ": {
+      "meaning": "湯",
+      "romaji": "suupu",
+      "reading": "スープ"
+    },
+    "作る": {
+      "meaning": "做、製作",
+      "romaji": "tsukuru",
+      "reading": "作る"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "難しい": {
+      "meaning": "困難的",
+      "romaji": "muzukashii",
+      "reading": "難しい"
+    },
+    "ところ": {
+      "meaning": "地方、部分",
+      "romaji": "tokoro",
+      "reading": "ところ"
+    },
+    "手伝う": {
+      "meaning": "幫忙",
+      "romaji": "tetsudau",
+      "reading": "手伝う"
+    },
+    "もらう": {
+      "meaning": "得到、（請人）幫忙做",
+      "romaji": "morau",
+      "reading": "もらう"
+    },
+    "料理": {
+      "meaning": "料理、菜",
+      "romaji": "ryouri",
+      "reading": "料理"
+    },
+    "できあがる": {
+      "meaning": "完成、做好",
+      "romaji": "dekiagaru",
+      "reading": "できあがる"
+    },
+    "みんな": {
+      "meaning": "大家",
+      "romaji": "minna",
+      "reading": "みんな"
+    },
+    "一緒に": {
+      "meaning": "一起",
+      "romaji": "issho ni",
+      "reading": "一緒に"
+    },
+    "食べる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "reading": "食べる"
+    },
+    "家": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "家"
+    },
+    "帰る": {
+      "meaning": "回（家）",
+      "romaji": "kaeru",
+      "reading": "帰る"
+    },
+    "レシピ": {
+      "meaning": "食譜",
+      "romaji": "reshipi",
+      "reading": "レシピ"
+    },
+    "楽しい": {
+      "meaning": "快樂的、愉快的",
+      "romaji": "tanoshii",
+      "reading": "楽しい"
+    },
+    "一日": {
+      "meaning": "一天",
+      "romaji": "ichinichi",
+      "reading": "一日"
+    }
+  },
+  "particles": {
+    "の": "連體助詞，表示所屬或修飾",
+    "は": "主題助詞，標示話題",
+    "と": "表示「和、與」",
+    "に": "表示時間、對象、歸著點",
+    "ので": "表示原因、理由（客觀）",
+    "でも": "即使…也，表示讓步",
+    "が": "主格助詞，標示主語",
+    "を": "受格助詞，標示動作對象",
+    "で": "表示動作的範圍、方式",
+    "だ": "普通體斷定助動詞",
+    "でした": "です的過去式，表示「（過去）是…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週日，",
+        "word": "日曜日"
+      },
+      {
+        "text": "我和朋友",
+        "word": "友達"
+      },
+      {
+        "text": "參加了料理教室。",
+        "word": "参加する"
+      }
+    ],
+    [
+      {
+        "text": "老師非常親切，",
+        "word": "親切"
+      },
+      {
+        "text": "所以即使是第一次",
+        "word": "初めて"
+      },
+      {
+        "text": "也能安心地",
+        "word": "安心する"
+      },
+      {
+        "text": "學習。",
+        "word": "習う"
+      }
+    ],
+    [
+      {
+        "text": "我們",
+        "word": "わたしたち"
+      },
+      {
+        "text": "又是切菜，",
+        "word": "切る"
+      },
+      {
+        "text": "又是煮湯。",
+        "word": "作る"
+      }
+    ],
+    [
+      {
+        "text": "困難的部分，",
+        "word": "ところ"
+      },
+      {
+        "text": "請老師",
+        "word": "先生"
+      },
+      {
+        "text": "幫了忙。",
+        "word": "手伝う"
+      }
+    ],
+    [
+      {
+        "text": "料理做好後，",
+        "word": "できあがる"
+      },
+      {
+        "text": "大家一起",
+        "word": "一緒に"
+      },
+      {
+        "text": "吃了。",
+        "word": "食べる"
+      }
+    ],
+    [
+      {
+        "text": "因為在家也想做，",
+        "word": "作る"
+      },
+      {
+        "text": "所以拿了食譜",
+        "word": "レシピ"
+      },
+      {
+        "text": "回家。",
+        "word": "帰る"
+      }
+    ],
+    [
+      {
+        "text": "是非常愉快的",
+        "word": "楽しい"
+      },
+      {
+        "text": "一天。",
+        "word": "一日"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.1,
+    "jlpt_level": "N4"
+  }
+}

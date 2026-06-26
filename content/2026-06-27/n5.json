@@ -1,0 +1,390 @@
+{
+  "date": "2026-06-27",
+  "level": "n5",
+  "title": "ゆうがたのかいもの",
+  "text": "きのうのゆうがた、ははとおみせへいきました。やさいとさかなをかいました。いえにかえって、ごはんをつくりました。さかなをやいて、たべました。とてもおいしかったです。たのしいゆうがたでした。",
+  "tokens": [
+    {
+      "surface_form": "きのう",
+      "basic_form": "きのう",
+      "reading": "きのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ゆうがた",
+      "basic_form": "ゆうがた",
+      "reading": "ゆうがた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "はは",
+      "basic_form": "はは",
+      "reading": "はは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おみせ",
+      "basic_form": "おみせ",
+      "reading": "おみせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いきました",
+      "basic_form": "いく",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "やさい",
+      "basic_form": "やさい",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さかな",
+      "basic_form": "さかな",
+      "reading": "さかな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かいました",
+      "basic_form": "かう",
+      "reading": "かいました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いえ",
+      "basic_form": "いえ",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かえって",
+      "basic_form": "かえる",
+      "reading": "かえって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ごはん",
+      "basic_form": "ごはん",
+      "reading": "ごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つくりました",
+      "basic_form": "つくる",
+      "reading": "つくりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "さかな",
+      "basic_form": "さかな",
+      "reading": "さかな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "やいて",
+      "basic_form": "やく",
+      "reading": "やいて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "たべました",
+      "basic_form": "たべる",
+      "reading": "たべました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "おいしかった",
+      "basic_form": "おいしい",
+      "reading": "おいしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "たのしい",
+      "basic_form": "たのしい",
+      "reading": "たのしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ゆうがた",
+      "basic_form": "ゆうがた",
+      "reading": "ゆうがた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でした",
+      "basic_form": "でした",
+      "reading": "でした",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きのう": {
+      "meaning": "昨天",
+      "romaji": "kinou",
+      "reading": "きのう"
+    },
+    "ゆうがた": {
+      "meaning": "傍晚",
+      "romaji": "yuugata",
+      "reading": "ゆうがた"
+    },
+    "はは": {
+      "meaning": "（自己的）母親",
+      "romaji": "haha",
+      "reading": "はは"
+    },
+    "おみせ": {
+      "meaning": "商店",
+      "romaji": "omise",
+      "reading": "おみせ"
+    },
+    "いく": {
+      "meaning": "去",
+      "romaji": "iku",
+      "reading": "いく"
+    },
+    "やさい": {
+      "meaning": "蔬菜",
+      "romaji": "yasai",
+      "reading": "やさい"
+    },
+    "さかな": {
+      "meaning": "魚",
+      "romaji": "sakana",
+      "reading": "さかな"
+    },
+    "かう": {
+      "meaning": "買",
+      "romaji": "kau",
+      "reading": "かう"
+    },
+    "いえ": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "いえ"
+    },
+    "かえる": {
+      "meaning": "回（家）",
+      "romaji": "kaeru",
+      "reading": "かえる"
+    },
+    "ごはん": {
+      "meaning": "飯；餐",
+      "romaji": "gohan",
+      "reading": "ごはん"
+    },
+    "つくる": {
+      "meaning": "做、製作",
+      "romaji": "tsukuru",
+      "reading": "つくる"
+    },
+    "やく": {
+      "meaning": "烤、煎",
+      "romaji": "yaku",
+      "reading": "やく"
+    },
+    "たべる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "reading": "たべる"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    },
+    "おいしい": {
+      "meaning": "好吃的",
+      "romaji": "oishii",
+      "reading": "おいしい"
+    },
+    "たのしい": {
+      "meaning": "愉快的",
+      "romaji": "tanoshii",
+      "reading": "たのしい"
+    }
+  },
+  "particles": {
+    "の": "連體助詞，表示所屬或修飾",
+    "と": "表示「和、與」，並列名詞",
+    "へ": "表示移動的方向",
+    "を": "受格助詞，標示動作對象",
+    "に": "表示動作的歸著點、場所",
+    "です": "禮貌體斷定助動詞",
+    "でした": "です的過去式，表示「（過去）是…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "昨天傍晚，",
+        "word": "ゆうがた"
+      },
+      {
+        "text": "和媽媽",
+        "word": "はは"
+      },
+      {
+        "text": "去了商店。",
+        "word": "いく"
+      }
+    ],
+    [
+      {
+        "text": "買了蔬菜和魚。",
+        "word": "かう"
+      }
+    ],
+    [
+      {
+        "text": "回到家，",
+        "word": "かえる"
+      },
+      {
+        "text": "做了飯。",
+        "word": "つくる"
+      }
+    ],
+    [
+      {
+        "text": "煎了魚，",
+        "word": "やく"
+      },
+      {
+        "text": "然後吃了。",
+        "word": "たべる"
+      }
+    ],
+    [
+      {
+        "text": "非常好吃。",
+        "word": "おいしい"
+      }
+    ],
+    [
+      {
+        "text": "是個愉快的傍晚。",
+        "word": "たのしい"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N5"
+  }
+}

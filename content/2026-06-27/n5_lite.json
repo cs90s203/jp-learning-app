@@ -1,0 +1,260 @@
+{
+  "date": "2026-06-27",
+  "level": "n5_lite",
+  "title": "あさごはん",
+  "text": "あさ、わたしはごはんをたべます。それからはをみがきます。ちちはしんぶんをよみます。あさごはんはたのしいです。",
+  "tokens": [
+    {
+      "surface_form": "あさ",
+      "basic_form": "あさ",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ごはん",
+      "basic_form": "ごはん",
+      "reading": "ごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たべます",
+      "basic_form": "たべる",
+      "reading": "たべます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それから",
+      "basic_form": "それから",
+      "reading": "それから",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みがきます",
+      "basic_form": "みがく",
+      "reading": "みがきます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちち",
+      "basic_form": "ちち",
+      "reading": "ちち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しんぶん",
+      "basic_form": "しんぶん",
+      "reading": "しんぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よみます",
+      "basic_form": "よむ",
+      "reading": "よみます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あさごはん",
+      "basic_form": "あさごはん",
+      "reading": "あさごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たのしい",
+      "basic_form": "たのしい",
+      "reading": "たのしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "あさ": {
+      "meaning": "早上",
+      "romaji": "asa",
+      "reading": "あさ"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "ごはん": {
+      "meaning": "飯；餐",
+      "romaji": "gohan",
+      "reading": "ごはん"
+    },
+    "たべる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "reading": "たべる"
+    },
+    "は": {
+      "meaning": "牙齒",
+      "romaji": "ha",
+      "reading": "は"
+    },
+    "みがく": {
+      "meaning": "刷、擦亮",
+      "romaji": "migaku",
+      "reading": "みがく"
+    },
+    "ちち": {
+      "meaning": "（自己的）父親",
+      "romaji": "chichi",
+      "reading": "ちち"
+    },
+    "しんぶん": {
+      "meaning": "報紙",
+      "romaji": "shinbun",
+      "reading": "しんぶん"
+    },
+    "よむ": {
+      "meaning": "讀、看",
+      "romaji": "yomu",
+      "reading": "よむ"
+    },
+    "あさごはん": {
+      "meaning": "早餐",
+      "romaji": "asagohan",
+      "reading": "あさごはん"
+    },
+    "たのしい": {
+      "meaning": "快樂的、愉快的",
+      "romaji": "tanoshii",
+      "reading": "たのしい"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "を": "受格助詞，標示動作對象",
+    "です": "禮貌體斷定助動詞，表示「是…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "早上，",
+        "word": "あさ"
+      },
+      {
+        "text": "我",
+        "word": "わたし"
+      },
+      {
+        "text": "吃飯。",
+        "word": "たべる"
+      }
+    ],
+    [
+      {
+        "text": "接著刷牙。",
+        "word": "みがく"
+      }
+    ],
+    [
+      {
+        "text": "父親",
+        "word": "ちち"
+      },
+      {
+        "text": "看報紙。",
+        "word": "よむ"
+      }
+    ],
+    [
+      {
+        "text": "早餐",
+        "word": "あさごはん"
+      },
+      {
+        "text": "很愉快。",
+        "word": "たのしい"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.05,
+    "jlpt_level": "N5⁻"
+  }
+}

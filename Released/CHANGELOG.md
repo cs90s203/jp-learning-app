@@ -1,5 +1,11 @@
 # 日語學習 App — 版本記錄
 
+## v1.0.71 — 2026-06-27
+
+**UI：試題頁聽力選項框變扁，避免遮擋下一題按鈕**
+
+- 選項 padding 13px→9px，gap 8px→6px，border-radius 12→10px
+
 ## v1.0.70 — 2026-06-26
 
 **試題頁：難度長按切換 + Tutorial + 文章頁雙向連動**
@@ -161,6 +167,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.0.71 — 2026-06-27
+
+UI：試題頁聽力選項框變扁，避免遮擋下一題按鈕
 
 ---
 
