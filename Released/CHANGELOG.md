@@ -1,5 +1,9 @@
 # 日語學習 App — 版本記錄
 
+## v1.0.58 — 2026-06-26
+
+**A2HS banner：上調 100px（bottom 80→180px）、加 20% 底色（color-mix + backdrop-filter）**
+
 ## v1.0.57 — 2026-06-26
 
 **文章頁：中文備注按鈕狀態持久化（localStorage cnToggle）**
@@ -55,6 +59,12 @@
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.0.58 — 2026-06-26
+
+A2HS banner：上調 100px、加 20% 底色
 
 ---
 

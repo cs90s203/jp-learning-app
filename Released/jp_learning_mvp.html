@@ -1154,6 +1154,10 @@
   .nav-btn.active span { color: var(--wa); }
 
   /* Toast */
+  #a2hs-banner {
+    background: color-mix(in srgb, var(--wa-bg) 80%, transparent) !important;
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
   .toast {
     position: fixed; bottom: calc(var(--nav-h) + var(--safe-bottom) + 116px); left: 50%;
     transform: translateX(-50%) translateY(20px);
@@ -2049,7 +2053,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.57
+          v1.0.58
         </div>
 
       </div>
@@ -2154,7 +2158,7 @@
   </div>
 
   <!-- Add to Home Screen Banner (iOS) -->
-  <div id="a2hs-banner" style="display:none;position:fixed;bottom:80px;left:12px;right:12px;z-index:9997;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:12px 14px;align-items:center;gap:10px;box-shadow:0 4px 16px rgba(0,0,0,.2)">
+  <div id="a2hs-banner" style="display:none;position:fixed;bottom:180px;left:12px;right:12px;z-index:9997;border:1px solid var(--border);border-radius:12px;padding:12px 14px;align-items:center;gap:10px;box-shadow:0 4px 16px rgba(0,0,0,.2)">
     <div style="flex:1">
       <div style="font-size:13px;font-weight:600;color:var(--wt);margin-bottom:3px">📲 加到主畫面，避免被登出</div>
       <div style="font-size:11px;color:var(--wt2)">點選瀏覽器底部 <b>分享</b> →「加入主畫面」，登入狀態更穩定</div>
