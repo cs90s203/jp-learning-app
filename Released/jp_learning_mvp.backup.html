@@ -2041,7 +2041,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.48
+          v1.0.49
         </div>
 
       </div>
@@ -6349,7 +6349,7 @@ function vqShowCard() {
   document.getElementById('vq-bar').style.width = (vqIndex / vqQueue.length * 100) + '%';
 
   const hasKanji = /[一-鿿㐀-䶿]/.test(word);
-  document.getElementById('vq-kana').textContent = hasKanji && entry.kana ? entry.kana : (entry.kana || '');
+  document.getElementById('vq-kana').textContent = hasKanji && entry.kana ? entry.kana : '';
   document.getElementById('vq-word').textContent = word;
   document.getElementById('vq-meaning').textContent = entry.meaning || '—';
 
