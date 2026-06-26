@@ -2072,7 +2072,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.66
+          v1.0.67
         </div>
 
       </div>
@@ -3167,7 +3167,7 @@ function renderQuizWeekBar() {
     if (hasContent) {
       const entry      = log[dateStr] || {};
       const tasks      = entry.tasks  || {};
-      const listenPct  = Math.min(1, (tasks.listen || 0) / 100);
+      const listenPct  = Math.min(1, ((tasks.listen || 0) + (tasks.slisten || 0)) / 200);
       const fillPct    = Math.min(1, (tasks.quiz   || 0) / 100);
       const R = 15, SW = 3, CX = 19, CY = 19;
       const circ = 2 * Math.PI * R;
@@ -5424,7 +5424,11 @@ function buildRing(size, strokeRatio, tasksState) {
 
   TASKS.forEach((t, i) => {
     const val = tasksState[t.key];
-    const fillRatio = (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') ? articleFillRatio(val) : (val ? 1 : 0);
+    const fillRatio = (t.key === 'article' || t.key === 'vocab' || t.key === 'speak')
+      ? articleFillRatio(val)
+      : t.key === 'listen'
+        ? Math.min(1, ((tasksState.listen || 0) + (tasksState.slisten || 0)) / 200)
+        : (val ? 1 : 0);
     if (fillRatio <= 0) return;
     const thisSegLen = segLen * fillRatio;
     const offset = -(circumference * (i / n)) + circumference / 4;
@@ -5441,6 +5445,7 @@ function countDone(tasks) {
   if (!tasks) return 0;
   return TASKS.reduce((sum, t) => {
     if (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') return sum + (articleFillRatio(tasks[t.key]) >= 1 ? 1 : 0);
+    if (t.key === 'listen') return sum + (((tasks.listen || 0) + (tasks.slisten || 0)) >= 200 ? 1 : 0);
     return sum + (tasks[t.key] ? 1 : 0);
   }, 0);
 }
@@ -5497,6 +5502,10 @@ function renderHomeRing() {
     if (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') {
       const pct = Math.round(articleFillRatio(val) * 100);
       stateText = pct >= 100 ? '完成' : (pct > 0 ? pct + '%' : '未開始');
+      stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
+    } else if (t.key === 'listen') {
+      const pct = Math.round(((tasks.listen || 0) + (tasks.slisten || 0)) / 2);
+      stateText = pct >= 100 ? '完成' : (pct > 0 ? pct + '%' : '未完成');
       stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
     } else {
       stateText = val ? '完成' : '未完成';
