@@ -2042,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.53
+          v1.0.54
         </div>
 
       </div>
@@ -4230,7 +4230,7 @@ function loadTheme() {
         page.style.transition = 'transform .4s ease';
         page.style.transform = 'translateY(0)';
       }
-      showToast('PTR: dist=' + Math.round(dist) + ' startY=' + Math.round(startY) + ' page=' + (window._ptrLastPage||'?') + ' resets=' + (window._ptrResetCount||0));
+      // showToast('PTR: dist=' + Math.round(dist) + ' startY=' + Math.round(startY) + ' page=' + (window._ptrLastPage||'?') + ' resets=' + (window._ptrResetCount||0));
       setTimeout(() => location.reload(), 450);
     } else {
       resetIndicator();
