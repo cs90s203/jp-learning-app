@@ -324,7 +324,7 @@
   }
   .level-sheet-chip.active { background: var(--wa); color: #fff; border-color: var(--wa); }
   .article-date { font-size: 11px; color: var(--wt3); }
-  .cn-toggle-row { display: flex; align-items: center; justify-content: flex-end; margin-bottom: 10px; }
+  .cn-toggle-row { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-bottom: 10px; }
   .cn-btn { font-size: 12px; font-weight: 500; padding: 4px 12px; border-radius: 99px; border: 1.5px solid var(--wa-bg2); background: transparent; color: var(--wt3); cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background 0.15s, color 0.15s, border-color 0.15s; }
   .cn-btn.active { background: var(--wa-l); color: var(--wa); border-color: transparent; }
   .toggle {
@@ -1712,7 +1712,8 @@
       <div class="sec" style="padding-top:5px">
 
         <div class="cn-toggle-row" id="cn-toggle-row">
-          <button class="cn-btn" id="cn-toggle" onclick="toggleCN()">中文備注</button>
+          <button class="cn-btn" id="add-all-btn" onclick="addAllSelectedWords()">＋全部</button>
+          <button class="cn-btn" id="cn-toggle" onclick="toggleCN()">中文</button>
         </div>
 
         <div class="card">
@@ -2059,7 +2060,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.62
+          v1.0.63
         </div>
 
       </div>
@@ -3960,6 +3961,43 @@ function findExampleWithTranslation(word) {
     }
   }
   return { example: '', exampleTrans: '' };
+}
+
+function addAllSelectedWords() {
+  const container = document.getElementById('article-text');
+  if (!container) return;
+  const toAdd = new Set();
+  container.querySelectorAll('.tok-word:not(.tok-added)').forEach(el => {
+    const si = parseInt(el.dataset.sentence);
+    if (isNaN(si) || !sentenceSelected[si]) return;
+    const basic = el.dataset.basic;
+    if (basic && !vocabBook[basic]) toAdd.add(basic);
+  });
+  if (!toAdd.size) { showToast('選取句的單字都已在單字本中'); return; }
+  if (!window.confirm('加入 ' + toAdd.size + ' 個單字到單字本？')) return;
+  const added = [];
+  toAdd.forEach(basic => {
+    if (vocabBook[basic]) return;
+    const entry = VOCAB_DICT[basic] || {};
+    const _ex = findExampleWithTranslation(basic);
+    vocabBook[basic] = {
+      kana: entry.reading || '', romaji: entry.romaji || '',
+      meaning: entry.meaning || '',
+      example: entry.example || _ex.example || '',
+      exampleTrans: entry.exampleTrans || _ex.exampleTrans || '',
+      familiarity: 0, source: 'article',
+      addedDate: new Date().toISOString().slice(0, 10),
+      seen_forms: []
+    };
+    addedWords.add(basic);
+    added.push(basic);
+  });
+  saveVocabBook();
+  added.forEach(basic => {
+    container.querySelectorAll('.tok-word[data-basic="' + basic + '"]').forEach(el => el.classList.add('tok-added'));
+  });
+  applyAddedWordNoteColors();
+  showToast('已加入 ' + added.length + ' 個單字');
 }
 
 function addToVocabCards(basic, extra) {
@@ -6977,7 +7015,7 @@ function showArticleTutorial() {
   if (_tutBtnId === 'article-help-btn') { tutorialClose(); return; }
   tutorialShow('article-help-btn', [
     { targetId: 'article-week-bar',  text: '顯示最近七天的學習紀錄，點擊日期可切換閱讀當天的文章，點擊左側箭頭可以回顧上週的文章。' },
-    { targetId: 'cn-toggle-row',     text: '開啟後每個詞彙下方會顯示中文意思，方便對照學習。' },
+    { targetId: 'cn-toggle-row',     text: '「中文」開啟後每個詞彙下方會顯示中文意思；「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本。' },
     { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
     { targetId: 'article-first-dot', snapToId: 'article-text', text: '點擊句首的小圓點可選取或取消該句；長按小圓點則單獨選取這一句，方便針對單句練習朗讀或跟讀。' },
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
