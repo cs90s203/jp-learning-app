@@ -769,13 +769,15 @@
     transition: color 0.15s, text-shadow 0.15s;
   }
   .vq-meaning.meaning-hidden,
-  .vq-word.meaning-hidden {
+  .vq-word.meaning-hidden,
+  .vq-kana.meaning-hidden {
     color: transparent;
     text-shadow: 0 0 12px rgba(42,26,8,0.6);
     user-select: none;
   }
   html[data-theme="dark"] .vq-meaning.meaning-hidden,
-  html[data-theme="dark"] .vq-word.meaning-hidden {
+  html[data-theme="dark"] .vq-word.meaning-hidden,
+  html[data-theme="dark"] .vq-kana.meaning-hidden {
     text-shadow: 0 0 12px rgba(240,228,208,0.6);
   }
   .vq-peek-hint { font-size: 12px; color: var(--wt3); margin-top: 10px; }
@@ -1826,7 +1828,11 @@
     <!-- 試題 -->
     <div class="page" id="page-quiz">
       <div class="top-bar" style="flex-shrink:0">
-        <h1>今日試題</h1>
+        <h1 id="quiz-page-title">今日試題</h1>
+        <div class="article-meta">
+          <span class="level-tag" id="quiz-level-tag">N5</span>
+          <span class="article-date" id="quiz-date-tag"></span>
+        </div>
       </div>
       <!-- 週曆列 -->
       <div id="quiz-week-bar">
@@ -1836,7 +1842,8 @@
       </div>
       <!-- 題型分頁 -->
       <div class="quiz-tabs" id="quiz-tabs">
-        <button class="qt active" id="qt-listen" onclick="switchQuizSection('listen')">聽力</button>
+        <button class="qt active" id="qt-listen" onclick="switchQuizSection('listen')">單字聽力</button>
+        <button class="qt" id="qt-slisten" onclick="switchQuizSection('slisten')">句子聽力</button>
         <button class="qt" id="qt-fill" onclick="switchQuizSection('fill')">填空</button>
         <button class="qt" id="qt-judge" onclick="switchQuizSection('judge')">句子判斷</button>
         <button class="qt" id="qt-order" onclick="switchQuizSection('order')">句子排列</button>
@@ -2065,7 +2072,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.64
+          v1.0.66
         </div>
 
       </div>
@@ -2304,8 +2311,20 @@
   <!-- 單字複習考 overlay -->
   <div id="vocab-quiz">
     <button class="vq-close-btn" onclick="exitVocabQuiz()" style="position:fixed;top:50px;right:16px">✕</button>
+    <!-- mode selection screen -->
+    <div id="vq-mode-select" style="display:none;flex-direction:column;align-items:center;justify-content:center;flex:1;gap:20px;padding:32px">
+      <div style="font-size:20px;font-weight:600;color:var(--wt);margin-bottom:8px">選擇複習模式</div>
+      <button onclick="startVocabQuizMode('text')" style="width:100%;max-width:280px;padding:18px 24px;border-radius:14px;border:none;background:var(--wa-bg);cursor:pointer;text-align:left">
+        <div style="font-size:16px;font-weight:600;color:var(--wt);margin-bottom:4px">文字複習</div>
+        <div style="font-size:13px;color:var(--wt3)">看到單字，回想中文意思</div>
+      </button>
+      <button onclick="startVocabQuizMode('listen')" style="width:100%;max-width:280px;padding:18px 24px;border-radius:14px;border:none;background:var(--wa-bg);cursor:pointer;text-align:left">
+        <div style="font-size:16px;font-weight:600;color:var(--wt);margin-bottom:4px">聽力複習</div>
+        <div style="font-size:13px;color:var(--wt3)">聽到發音，回想單字與意思</div>
+      </button>
+    </div>
     <!-- header: counter above, bar below, centered -->
-    <div class="vq-header">
+    <div class="vq-header" id="vq-header">
       <span class="vq-counter" id="vq-counter">0 / 0</span>
       <div class="vq-prog-wrap"><div class="vq-prog-bar" id="vq-bar"></div></div>
     </div>
@@ -2436,8 +2455,25 @@ let QUIZ_PACK   = null;  // 當前試題頁載入的 content pack（獨立於文
 let quizLoadDone = false; // fetch 已完成（成功或失敗），用於區分「載入中」與「無內容」
 let selectedQuizDate = getLocalDateStr();
 let quizWeekBarOffset = 0;
-let quizSection = 'listen'; // 'listen' | 'fill'
+let quizSection = 'listen';
 let QS = null; // quiz session state
+let quizKanjiMode = false; // false=純假名, true=漢字+振り仮名
+
+function qzTokHtml(tok) {
+  if (!quizKanjiMode) return tok.reading || tok.surface_form;
+  const s = tok.surface_form, r = tok.reading || '';
+  return (r && r !== s && /[一-鿿]/.test(s))
+    ? `<ruby>${s}<rt>${r}</rt></ruby>` : s;
+}
+
+function qzSentenceHtml(sentToks, blankTokIdx) {
+  return sentToks.map((t, i) => i === blankTokIdx ? '＿＿＿' : qzTokHtml(t)).join('');
+}
+
+function toggleQuizKanji() {
+  quizKanjiMode = !quizKanjiMode;
+  renderQzQuestion();
+}
 
 function shuffleArr(arr) {
   const a = [...arr];
@@ -2448,8 +2484,22 @@ function shuffleArr(arr) {
   return a;
 }
 
+function _updateQuizHeader() {
+  const pack = QUIZ_PACK;
+  const dateStr = selectedQuizDate;
+  const isToday = dateStr === getLocalDateStr();
+  const titleEl = document.getElementById('quiz-page-title');
+  if (titleEl) titleEl.textContent = isToday ? '今日試題' : (pack && pack.title ? pack.title + '試題' : dateStr + '試題');
+  const _log = loadStudyLog();
+  const _level = (pack && pack.level) || (_log[dateStr] && _log[dateStr].level) || CURRENT_LEVEL;
+  const lvEl = document.getElementById('quiz-level-tag');
+  if (lvEl) { const opt = LEVEL_OPTIONS.find(o => o.key === _level); lvEl.textContent = opt ? opt.label : _level.toUpperCase(); }
+  const dtEl = document.getElementById('quiz-date-tag');
+  if (dtEl) { const _d = new Date(dateStr + 'T00:00:00'); dtEl.textContent = `${_d.getMonth()+1}月${_d.getDate()}日`; }
+}
+
 function switchQuizSection(type) {
-  if (['listen','fill','judge','order'].indexOf(type) < 0) return;
+  if (['listen','slisten','fill','judge','order'].indexOf(type) < 0) return;
   quizSection = type;
   document.querySelectorAll('.qt').forEach(b => b.classList.remove('active'));
   const btn = document.getElementById('qt-' + type);
@@ -2486,6 +2536,12 @@ function generateListeningQuestions(vocabDict) {
       words.filter(w => w !== word).map(w => vocabDict[w].meaning).filter(m => m !== correct)
     ).slice(0, 3);
     while (distractors.length < 3) distractors.push('—');
+    // 第 5 個選項：從個人單字本抽干擾項
+    const extra = shuffleArr(
+      Object.values(vocabBook || {}).map(e => e.meaning).filter(m => m && m !== correct && !distractors.includes(m))
+    )[0];
+    if (extra) distractors.push(extra);
+    while (distractors.length < 4) distractors.push('—');
     return {
       type: 'listen',
       word,
@@ -2522,10 +2578,11 @@ function generateFillInQuestions(tokens, vocabDict) {
       const entry = vocabDict[wordKey] || {};
       const blank = target.surface_form;
       if (!blank || blank.length === 0) continue;
-      const parts = sentToks.map(t => t === target ? '＿＿＿' : (t.surface_form || ''));
+      const blankTokIdx = sentToks.indexOf(target);
       pool.push({
         type: 'fill',
-        sentence: parts.join(''),
+        sentToks,
+        blankTokIdx,
         answer: blank,
         kana: target.reading || '',
         meaning: entry.meaning || '',
@@ -2548,7 +2605,7 @@ function generateSentenceJudgeQuestions(tokens, translations) {
     const correctTrans = translations[i].map(s => s.text).join('');
 
     // Correct question
-    pool.push({ type: 'judge', japanese, translation: correctTrans, isCorrect: true, correctTranslation: correctTrans });
+    pool.push({ type: 'judge', sentToks, japanese, translation: correctTrans, isCorrect: true, correctTranslation: correctTrans });
 
     // Wrong question: use a different sentence's translation
     const otherIdxes = sentences.map((_, j) => j).filter(j => j !== i && translations[j] && translations[j].length);
@@ -2556,7 +2613,7 @@ function generateSentenceJudgeQuestions(tokens, translations) {
       const wrongIdx = otherIdxes[Math.floor(Math.random() * otherIdxes.length)];
       const wrongTrans = translations[wrongIdx].map(s => s.text).join('');
       if (wrongTrans !== correctTrans) {
-        pool.push({ type: 'judge', japanese, translation: wrongTrans, isCorrect: false, correctTranslation: correctTrans });
+        pool.push({ type: 'judge', sentToks, japanese, translation: wrongTrans, isCorrect: false, correctTranslation: correctTrans });
       }
     }
   });
@@ -2574,18 +2631,44 @@ function generateSentenceOrderQuestions(tokens) {
     const contentToks = sentToks.filter(t => /[a-zA-Z぀-ヿ一-鿿]/.test(t.surface_form || ''));
     if (contentToks.length < 3 || contentToks.length > 9) return;
 
-    const correct = contentToks.map(t => t.surface_form);
-    // Shuffle until different order
-    let shuffled;
+    const correctToks = contentToks;
+    let shuffledToks;
     let tries = 0;
-    do { shuffled = shuffleArr([...correct]); tries++; } while (shuffled.join('') === correct.join('') && tries < 10);
+    do { shuffledToks = shuffleArr([...correctToks]); tries++; }
+    while (shuffledToks.map(t => t.surface_form).join('') === correctToks.map(t => t.surface_form).join('') && tries < 10);
 
     const punctuation = sentToks[sentToks.length - 1].surface_form.match(/[。！？]/)
       ? sentToks[sentToks.length - 1].surface_form : '';
 
-    pool.push({ type: 'order', correct, shuffled, punctuation });
+    pool.push({ type: 'order', correctToks, shuffledToks, punctuation });
   });
 
+  const maxQ = Math.min(8, Math.max(1, Math.round(pool.length * getModeVocabPct())));
+  return shuffleArr(pool).slice(0, maxQ);
+}
+
+function generateSentenceListenQuestions(tokens, translations) {
+  const sentences = splitTokensIntoSentences(tokens);
+  if (!sentences.length || !translations || !translations.length) return [];
+  const pool = [];
+  sentences.forEach((sentToks, i) => {
+    if (!translations[i] || !translations[i].length) return;
+    const correctTrans = translations[i].map(s => s.text).join('');
+    const otherTrans = translations
+      .filter((_, j) => j !== i && translations[j] && translations[j].length)
+      .map(t => t.map(s => s.text).join(''))
+      .filter(t => t !== correctTrans);
+    if (!otherTrans.length) return;
+    const distractors = shuffleArr(otherTrans).slice(0, 3);
+    while (distractors.length < 3) distractors.push(distractors[0] || '—');
+    pool.push({
+      type: 'slisten',
+      sentToks,
+      japanese: sentToks.map(t => t.surface_form).join(''),
+      correct: correctTrans,
+      choices: shuffleArr([correctTrans, ...distractors])
+    });
+  });
   const maxQ = Math.min(8, Math.max(1, Math.round(pool.length * getModeVocabPct())));
   return shuffleArr(pool).slice(0, maxQ);
 }
@@ -2612,20 +2695,23 @@ async function initQuizPage() {
     } catch { QUIZ_PACK = null; }
     quizLoadDone = true;
   }
+  _updateQuizHeader();
   renderQuizWeekBar();
   renderQuizMain();
 }
 
 function startQuizSession(isRetake) {
   if (!QUIZ_PACK) { renderQuizMain(); return; }
+  quizKanjiMode = false;
   const vocabDict    = QUIZ_PACK.vocab || {};
   const tokens       = QUIZ_PACK.tokens || [];
   const translations = QUIZ_PACK.translations || [];
   let questions;
-  if      (quizSection === 'listen') questions = generateListeningQuestions(vocabDict);
-  else if (quizSection === 'fill')   questions = generateFillInQuestions(tokens, vocabDict);
-  else if (quizSection === 'judge')  questions = generateSentenceJudgeQuestions(tokens, translations);
-  else if (quizSection === 'order')  questions = generateSentenceOrderQuestions(tokens);
+  if      (quizSection === 'listen')  questions = generateListeningQuestions(vocabDict);
+  else if (quizSection === 'slisten') questions = generateSentenceListenQuestions(tokens, translations);
+  else if (quizSection === 'fill')    questions = generateFillInQuestions(tokens, vocabDict);
+  else if (quizSection === 'judge')   questions = generateSentenceJudgeQuestions(tokens, translations);
+  else if (quizSection === 'order')   questions = generateSentenceOrderQuestions(tokens);
   else questions = [];
   if (!questions.length) { showToast('沒有足夠題目'); return; }
   QS = { questions, idx: 0, answers: [], phase: 'exam', isRetake, orderState: null };
@@ -2654,10 +2740,11 @@ function renderQuizMain() {
 }
 
 const QZ_TYPE_CFG = {
-  listen: { color: '#378ADD', label: '聽力' },
-  fill:   { color: '#BA7517', label: '填空' },
-  judge:  { color: '#9B59B6', label: '句子判斷' },
-  order:  { color: '#27AE60', label: '句子排列' }
+  listen:  { color: '#378ADD', label: '單字聽力' },
+  slisten: { color: '#1A8FBF', label: '句子聽力' },
+  fill:    { color: '#BA7517', label: '填空' },
+  judge:   { color: '#9B59B6', label: '句子判斷' },
+  order:   { color: '#27AE60', label: '句子排列' }
 };
 
 function renderQzStart() {
@@ -2667,10 +2754,11 @@ function renderQzStart() {
   const translations = QUIZ_PACK.translations || [];
   const { color, label } = QZ_TYPE_CFG[quizSection] || QZ_TYPE_CFG.listen;
   let count;
-  if      (quizSection === 'listen') count = Math.min(10, Object.keys(vocabDict).length);
-  else if (quizSection === 'fill')   count = Math.min(10, generateFillInQuestions(tokens, vocabDict).length);
-  else if (quizSection === 'judge')  count = generateSentenceJudgeQuestions(tokens, translations).length;
-  else if (quizSection === 'order')  count = generateSentenceOrderQuestions(tokens).length;
+  if      (quizSection === 'listen')  count = generateListeningQuestions(vocabDict).length;
+  else if (quizSection === 'slisten') count = generateSentenceListenQuestions(tokens, translations).length;
+  else if (quizSection === 'fill')    count = generateFillInQuestions(tokens, vocabDict).length;
+  else if (quizSection === 'judge')   count = generateSentenceJudgeQuestions(tokens, translations).length;
+  else if (quizSection === 'order')   count = generateSentenceOrderQuestions(tokens).length;
   else count = 0;
 
   const log = loadStudyLog();
@@ -2706,6 +2794,10 @@ function renderQzQuestion() {
   const pct   = Math.round(QS.idx / total * 100);
   const { color, label } = QZ_TYPE_CFG[q.type] || QZ_TYPE_CFG.listen;
 
+  const kanjiToggleBtn = (q.type !== 'listen')
+    ? `<button class="cn-btn${quizKanjiMode?' active':''}" onclick="toggleQuizKanji()" style="font-size:11px;padding:3px 10px">あ漢</button>`
+    : '';
+
   let qBody = '';
   if (q.type === 'listen') {
     const choicesHTML = q.choices.map(c =>
@@ -2723,19 +2815,39 @@ function renderQzQuestion() {
         <p style="font-size:12px;color:var(--wt3);margin-top:-8px">選出正確中文意思</p>
       </div>
       <div class="qz-choice-list">${choicesHTML}</div>`;
+  } else if (q.type === 'slisten') {
+    const choicesHTML = q.choices.map(c =>
+      `<button class="qz-choice" data-val="${c.replace(/"/g,'&quot;')}"
+        onclick="qzSubmitSlisten(this,'${c.replace(/'/g,"\\'")}')">
+        ${c}
+      </button>`
+    ).join('');
+    qBody = `
+      <div style="text-align:center;margin:4px 0 16px">
+        <button class="play-btn" id="qz-play-btn" data-word="${q.japanese.replace(/"/g,'&quot;')}" onclick="qzPlayWord(this.dataset.word)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          播放句子
+        </button>
+        <p style="font-size:12px;color:var(--wt3);margin-top:-8px">選出正確中文翻譯</p>
+      </div>
+      <div id="qz-slisten-jp" style="display:none;font-size:14px;color:var(--wt2);margin-bottom:12px;line-height:1.8">${qzSentenceHtml(q.sentToks, -1)}</div>
+      <div class="qz-choice-list">${choicesHTML}</div>`;
   } else if (q.type === 'fill') {
     qBody = `
-      <p class="quiz-q" style="margin-bottom:8px">${q.sentence}</p>
+      <p class="quiz-q" style="margin-bottom:8px">${qzSentenceHtml(q.sentToks, q.blankTokIdx)}</p>
       <p style="font-size:12px;color:var(--wt3);margin-bottom:12px">中文提示：${q.meaning}</p>
       <input type="text" id="qz-fill-input"
         placeholder="輸入日文答案（可用輸入法）"
         style="width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid var(--wa-bg2);border-radius:12px;font-size:16px;background:var(--wb);color:var(--wt);font-family:inherit;outline:none"
         onkeydown="if(event.key==='Enter')qzSubmitFill()"/>
       <div id="qz-fill-result" style="display:none;margin-top:10px;font-size:14px;font-weight:500;text-align:center"></div>
-      <button id="qz-fill-submit" class="submit-btn" onclick="qzSubmitFill()" style="margin-top:10px;padding:12px">確認答案</button>`;
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <button id="qz-fill-skip" class="submit-btn" onclick="qzSkipFill()" style="padding:12px;width:auto;flex:0 0 auto;background:var(--wa-bg2);color:var(--wt2)">不知道</button>
+        <button id="qz-fill-submit" class="submit-btn" onclick="qzSubmitFill()" style="padding:12px;width:auto;flex:1">確認答案</button>
+      </div>`;
   } else if (q.type === 'judge') {
     qBody = `
-      <p style="font-size:16px;line-height:1.8;margin-bottom:12px;font-weight:500;letter-spacing:0.03em">${q.japanese}</p>
+      <p style="font-size:16px;line-height:1.8;margin-bottom:12px;font-weight:500;letter-spacing:0.03em">${qzSentenceHtml(q.sentToks, -1)}</p>
       <div style="background:var(--wa-bg);border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:14px;color:var(--wt2)">
         💬 ${q.translation}
       </div>
@@ -2746,16 +2858,15 @@ function renderQzQuestion() {
       </div>
       <div id="qz-judge-result" style="display:none;margin-top:10px"></div>`;
   } else if (q.type === 'order') {
-    // Init or restore per-question orderState
     if (!QS.orderState || QS.orderState.qIdx !== QS.idx) {
-      QS.orderState = { qIdx: QS.idx, arranged: [], remaining: [...q.shuffled] };
+      QS.orderState = { qIdx: QS.idx, arranged: [], remaining: [...q.shuffledToks] };
     }
     const { arranged, remaining } = QS.orderState;
     const arrangedHTML = arranged.length
-      ? arranged.map((tok, i) => `<button class="qz-order-tok qz-order-placed" onclick="qzOrderRemove(${i})">${tok}</button>`).join('')
+      ? arranged.map((tok, i) => `<button class="qz-order-tok qz-order-placed" onclick="qzOrderRemove(${i})">${qzTokHtml(tok)}</button>`).join('')
       : `<span style="color:var(--wt3);font-size:12px;align-self:center">（點下方詞語依序加入）</span>`;
     const remainHTML = remaining.map((tok, i) =>
-      `<button class="qz-order-tok" onclick="qzOrderAdd(${i})">${tok}</button>`
+      `<button class="qz-order-tok" onclick="qzOrderAdd(${i})">${qzTokHtml(tok)}</button>`
     ).join('');
     const allPlaced = remaining.length === 0;
     qBody = `
@@ -2771,6 +2882,7 @@ function renderQzQuestion() {
     <div class="prog-row">
       <span class="badge" style="background:${color}20;color:${color};border:0.5px solid ${color}40">${label}</span>
       <span class="prog-label" style="color:var(--wt3)">${QS.idx+1} / ${total}</span>
+      ${kanjiToggleBtn}
     </div>
     <div class="prog-bar" style="margin-bottom:14px">
       <div class="prog-fill" style="width:${pct}%;background:${color}"></div>
@@ -2782,7 +2894,7 @@ function renderQzQuestion() {
     </button>`;
 
   // Auto-focus fill input
-  if (!isListen) {
+  if (q.type === 'fill') {
     setTimeout(() => {
       const inp = document.getElementById('qz-fill-input');
       if (inp) inp.focus();
@@ -2802,6 +2914,25 @@ function qzSubmitListen(btn, choice) {
     else if (b === btn && !correct) b.classList.add('qz-wrong');
   });
   QS.answers.push({ correct, q });
+  const nb = document.getElementById('qz-next-btn');
+  if (nb) nb.style.display = 'flex';
+}
+
+function qzSkipFill() {
+  if (!QS || QS.phase !== 'exam') return;
+  const q = QS.questions[QS.idx];
+  QS.answers.push({ correct: false, userAnswer: '', q });
+  const rd = document.getElementById('qz-fill-result');
+  if (rd) {
+    rd.style.display = 'block';
+    rd.innerHTML = `<div style="padding:10px 14px;background:#fdecea;border:1px solid #e05c4a;border-radius:10px;color:#c0392b;font-size:13px">✗ 正解：${q.answer}${q.kana?' ('+q.kana+')':''}</div>`;
+  }
+  const inp = document.getElementById('qz-fill-input');
+  if (inp) inp.disabled = true;
+  const skipBtn = document.getElementById('qz-fill-skip');
+  if (skipBtn) skipBtn.style.display = 'none';
+  const sb = document.getElementById('qz-fill-submit');
+  if (sb) sb.style.display = 'none';
   const nb = document.getElementById('qz-next-btn');
   if (nb) nb.style.display = 'flex';
 }
@@ -2826,6 +2957,25 @@ function qzSubmitFill() {
   if (inp) inp.disabled = true;
   const sb = document.getElementById('qz-fill-submit');
   if (sb) sb.style.display = 'none';
+  const nb = document.getElementById('qz-next-btn');
+  if (nb) nb.style.display = 'flex';
+}
+
+function qzSubmitSlisten(btn, choice) {
+  if (!QS || QS.phase !== 'exam') return;
+  const q = QS.questions[QS.idx];
+  const correct = choice === q.correct;
+  const list = btn.closest('.qz-choice-list');
+  list.querySelectorAll('.qz-choice').forEach(b => {
+    b.onclick = null;
+    const val = b.dataset.val;
+    if (val === q.correct)      b.classList.add('qz-correct');
+    else if (b === btn && !correct) b.classList.add('qz-wrong');
+  });
+  // Reveal Japanese sentence after answering
+  const jpEl = document.getElementById('qz-slisten-jp');
+  if (jpEl) jpEl.style.display = 'block';
+  QS.answers.push({ correct, q });
   const nb = document.getElementById('qz-next-btn');
   if (nb) nb.style.display = 'flex';
 }
@@ -2876,11 +3026,12 @@ function qzSubmitOrder() {
   if (!QS || !QS.orderState || QS.phase !== 'exam') return;
   const q = QS.questions[QS.idx];
   const { arranged } = QS.orderState;
-  if (arranged.length < q.correct.length) { showToast('還有詞語未排入'); return; }
-  const correct = arranged.join('') === q.correct.join('');
-  QS.answers.push({ correct, userArranged: [...arranged], q });
+  if (arranged.length < q.correctToks.length) { showToast('還有詞語未排入'); return; }
+  const arrangedStr = arranged.map(t => t.surface_form).join('');
+  const correctStr  = q.correctToks.map(t => t.surface_form).join('');
+  const correct = arrangedStr === correctStr;
+  QS.answers.push({ correct, userArranged: arranged.map(t => t.surface_form), q });
 
-  // Disable all order buttons
   document.querySelectorAll('.qz-order-tok').forEach(b => b.onclick = null);
   const sb = document.getElementById('qz-order-submit');
   if (sb) { sb.onclick = null; sb.style.opacity = '0.4'; }
@@ -2890,7 +3041,7 @@ function qzSubmitOrder() {
     rd.style.display = 'block';
     rd.innerHTML = correct
       ? `<div style="padding:10px 14px;background:#e6f9f0;border:1px solid #34a369;border-radius:10px;color:#1d7a4a;font-weight:600;text-align:center">✓ 正確！</div>`
-      : `<div style="padding:10px 14px;background:#fdecea;border:1px solid #e05c4a;border-radius:10px;color:#c0392b;font-size:13px">✗ 正解：${q.correct.join('')}${q.punctuation}</div>`;
+      : `<div style="padding:10px 14px;background:#fdecea;border:1px solid #e05c4a;border-radius:10px;color:#c0392b;font-size:13px">✗ 正解：${correctStr}${q.punctuation}</div>`;
   }
   const nb = document.getElementById('qz-next-btn');
   if (nb) nb.style.display = 'flex';
@@ -2931,8 +3082,9 @@ function saveQuizResults() {
   // 更新任務環 (取最佳成績)
   const best = sec.first ? Math.max(pct, sec.first.pct) : pct;
   // 做完就算完成（Math.max 確保 0 分也標記為已做）
-  if      (quizSection === 'listen') log[dateStr].tasks.listen = Math.max(best, 1);
-  else if (quizSection === 'fill')   log[dateStr].tasks.quiz   = Math.max(best, 1);
+  if      (quizSection === 'listen')  log[dateStr].tasks.listen  = Math.max(best, 1);
+  else if (quizSection === 'slisten') log[dateStr].tasks.slisten = Math.max(best, 1);
+  else if (quizSection === 'fill')    log[dateStr].tasks.quiz    = Math.max(best, 1);
   // judge / order 不更新首頁任務環（尚未在 ring 設計中），僅存 quiz log
 
   saveStudyLog(log);
@@ -2954,12 +3106,15 @@ function renderQzResult() {
         let word = '';
         if (a.q.type === 'listen') {
           word = `${a.q.word}（${a.q.kana}）→ <b>${a.q.correct}</b>`;
+        } else if (a.q.type === 'slisten') {
+          word = `${a.q.japanese}<br><span style="color:var(--wt3)">正確翻譯：</span>${a.q.correct}`;
         } else if (a.q.type === 'fill') {
-          word = `${a.q.sentence.replace('＿＿＿','<b>'+a.q.answer+'</b>')}${a.userAnswer?` <span style="color:var(--wt3)">(你填：${a.userAnswer})</span>`:''}`;
+          const filledSentence = a.q.sentToks.map((t, i) => i === a.q.blankTokIdx ? `<b>${a.q.answer}</b>` : (t.surface_form || '')).join('');
+          word = `${filledSentence}${a.userAnswer?` <span style="color:var(--wt3)">(你填：${a.userAnswer})</span>`:''}`;
         } else if (a.q.type === 'judge') {
           word = `${a.q.japanese}<br><span style="color:var(--wt3)">正確翻譯：</span>${a.q.correctTranslation}`;
         } else if (a.q.type === 'order') {
-          word = `正解：<b>${a.q.correct.join('')}${a.q.punctuation}</b>`;
+          word = `正解：<b>${a.q.correctToks.map(t=>t.surface_form).join('')}${a.q.punctuation}</b>`;
         }
         return `<div style="padding:8px 0;border-bottom:0.5px solid var(--wa-bg2);font-size:13px;line-height:1.7">
           <span style="color:var(--wr)">✗</span> <span style="margin-left:6px">${word}</span>
@@ -3073,6 +3228,7 @@ async function selectQuizDate(dateStr) {
     QUIZ_PACK._date = dateStr;
     selectedQuizDate = dateStr;
     QS = null;
+    _updateQuizHeader();
     renderQuizWeekBar();
     renderQuizMain();
     showToast('已載入：' + (QUIZ_PACK.title || dateStr));
@@ -3090,6 +3246,9 @@ function toggleCN() {
   document.querySelectorAll('.cn-note').forEach(n => {
     n.classList.toggle('hidden', !active);
   });
+  // iOS scroll fix: force layout recalc after content height change
+  const page = document.getElementById('page-article');
+  if (page) { const _s = page.scrollTop; page.scrollTop = _s + 1; page.scrollTop = _s; }
 }
 
 // ===== 文章斷詞與互動 =====
@@ -4368,6 +4527,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(idx => {
       idx.dates.forEach(d => contentDateSet.add(d.date));
       renderCalendar();
+      renderWeekBar(); // 補上：讓文章週曆圓點也跟著更新
     })
     .catch(() => {}); // 失敗時靜默，用預設值
 
@@ -6404,6 +6564,7 @@ let vqIndex = 0;
 let vqOk = 0;
 let vqFail = 0;
 let vqForgetMode = false; // 不記得狀態：等待「下一張」
+let vqMode = 'text'; // 'text' | 'listen'
 
 function startVocabQuiz() {
   const words = vocabFilteredList;
@@ -6435,10 +6596,35 @@ function startVocabQuiz() {
   if (hb) hb.style.display = 'none';
   const el = document.getElementById('vocab-quiz');
   el.style.display = 'flex';
-  // 確保 result area 隱藏，card+btns 顯示
+  // 顯示模式選擇，隱藏其他區塊
+  document.getElementById('vq-mode-select').style.display = 'flex';
+  document.getElementById('vq-header').style.display = 'none';
+  document.getElementById('vq-card-area').style.display = 'none';
+  document.getElementById('vq-btns').style.display = 'none';
+  document.getElementById('vq-result-area').style.display = 'none';
+}
+
+function startVocabQuizMode(mode) {
+  vqMode = mode;
+  document.getElementById('vq-mode-select').style.display = 'none';
+  document.getElementById('vq-header').style.display = '';
   document.getElementById('vq-card-area').style.display = 'flex';
   document.getElementById('vq-btns').style.display = 'grid';
-  document.getElementById('vq-result-area').style.display = 'none';
+  // 聽力模式：TTS 按鈕放大
+  const ttsBtn = document.getElementById('vq-tts-btn');
+  if (ttsBtn) {
+    if (mode === 'listen') {
+      ttsBtn.style.width = '45px';
+      ttsBtn.style.height = '45px';
+      ttsBtn.querySelector('svg').setAttribute('width', '22');
+      ttsBtn.querySelector('svg').setAttribute('height', '22');
+    } else {
+      ttsBtn.style.width = '';
+      ttsBtn.style.height = '';
+      ttsBtn.querySelector('svg').setAttribute('width', '16');
+      ttsBtn.querySelector('svg').setAttribute('height', '16');
+    }
+  }
   vqShowCard();
 }
 
@@ -6464,11 +6650,22 @@ function vqShowCard() {
     exEl.classList.add('meaning-hidden');
   }
 
-  // 重置遮擋：中文永遠遮，漢字有就遮
+  // 重置遮擋
   document.getElementById('vq-meaning').classList.add('meaning-hidden');
   const wordEl = document.getElementById('vq-word');
-  if (hasKanji) { wordEl.classList.add('meaning-hidden'); }
-  else           { wordEl.classList.remove('meaning-hidden'); }
+  const kanaEl = document.getElementById('vq-kana');
+  if (vqMode === 'listen') {
+    // 聽力模式：假名、漢字全遮
+    wordEl.classList.add('meaning-hidden');
+    kanaEl.classList.add('meaning-hidden');
+    document.getElementById('vq-peek-hint').textContent = '點擊顯示單字與中文';
+  } else {
+    // 文字模式：漢字遮，假名顯示
+    if (hasKanji) { wordEl.classList.add('meaning-hidden'); }
+    else           { wordEl.classList.remove('meaning-hidden'); }
+    kanaEl.classList.remove('meaning-hidden');
+    document.getElementById('vq-peek-hint').textContent = '點擊顯示中文與例句';
+  }
   document.getElementById('vq-peek-hint').style.display = '';
   document.getElementById('vq-meaning-tap').style.pointerEvents = '';
 
@@ -6488,6 +6685,7 @@ function vqShowCard() {
 function vqPeekMeaning() {
   document.getElementById('vq-meaning').classList.remove('meaning-hidden');
   document.getElementById('vq-word').classList.remove('meaning-hidden');
+  document.getElementById('vq-kana').classList.remove('meaning-hidden');
   const exEl = document.getElementById('vq-example');
   if (exEl) exEl.classList.remove('meaning-hidden');
   document.getElementById('vq-peek-hint').style.display = 'none';
@@ -6792,6 +6990,8 @@ async function selectArticleDate(dateStr) {
     if (titleEl) titleEl.textContent = result.pack.title || dateStr;
     const lt = document.getElementById('article-level-tag');
     if (lt) { const opt = LEVEL_OPTIONS.find(o => o.key === _levelToUse); lt.textContent = opt ? opt.label : _levelToUse.toUpperCase(); }
+    const artDt = document.getElementById('article-date-tag');
+    if (artDt) { const _d = new Date(dateStr + 'T00:00:00'); artDt.textContent = `${_d.getMonth()+1}月${_d.getDate()}日`; }
     if (dateStr === getLocalDateStr()) {
       logTodayArticle(result.pack.title, result.pack.level);
     }
@@ -7066,8 +7266,8 @@ function showQuizTutorial() {
   if (_tutBtnId === 'quiz-help-btn') { tutorialClose(); return; }
   tutorialShow('quiz-help-btn', [
     { targetId: 'quiz-week-bar', snapToId: 'quiz-main', text: '顯示最近七天的學習紀錄，點擊日期可切換到當天的試題，左側箭頭可回顧上週。' },
-    { targetId: 'quiz-tabs',    snapToId: 'quiz-main', text: '四種題型：聽力、填空、句子判斷、句子排列，每天各會產生一組題目，完成所有題型可集滿今日試題任務環。' },
-    { targetId: 'quiz-main', insetTop: 20, insetBottom: 20, text: '依序作答，每題都會即時給分，完成後可重新作答繼續練習。' },
+    { targetId: 'quiz-tabs', snapToId: 'quiz-main', text: '五種題型：單字聽力（聽單字選中文）、句子聽力（聽整句選翻譯）、填空、句子判斷、句子排列。每天各產生一組題目，每日題數可由設定頁的輕鬆、標準、專注模式調整。' },
+    { targetId: 'quiz-main', insetTop: 20, insetBottom: 5, text: '依序作答，每題即時給分；填空、判斷、排列、句子聽力題目右上角的「あ漢」可切換純假名或漢字顯示，完成後可重新作答。' },
   ]);
 }
 function showGojuuonTutorial() {
