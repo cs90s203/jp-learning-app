@@ -2049,7 +2049,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.56
+          v1.0.57
         </div>
 
       </div>
@@ -3068,9 +3068,10 @@ async function selectQuizDate(dateStr) {
 function toggleCN() {
   const t = document.getElementById('cn-toggle');
   t.classList.toggle('active');
-  const hidden = !t.classList.contains('active');
+  const active = t.classList.contains('active');
+  localStorage.setItem('cnToggle', active ? '1' : '0');
   document.querySelectorAll('.cn-note').forEach(n => {
-    n.classList.toggle('hidden', hidden);
+    n.classList.toggle('hidden', !active);
   });
 }
 
@@ -3665,7 +3666,11 @@ function renderArticle(tokens) {
   container.oncontextmenu = (e) => e.preventDefault();
 
   // 套用目前的中文備注顯示狀態
-  const cnHidden = !document.getElementById('cn-toggle').classList.contains('active');
+  const cnSaved = localStorage.getItem('cnToggle');
+  const cnActive = cnSaved === '1';
+  const cnBtn = document.getElementById('cn-toggle');
+  if (cnBtn) cnBtn.classList.toggle('active', cnActive);
+  const cnHidden = !cnActive;
   container.querySelectorAll('.cn-note').forEach(n => n.classList.toggle('hidden', cnHidden));
 
   // 套用已加入單字卡的詞，對應句子的中文備注也標橘色

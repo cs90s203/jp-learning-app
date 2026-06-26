@@ -1,5 +1,9 @@
 # 日語學習 App — 版本記錄
 
+## v1.0.57 — 2026-06-26
+
+**文章頁：中文備注按鈕狀態持久化（localStorage cnToggle）**
+
 ## v1.0.56 — 2026-06-26
 
 **文章頁：中文備注改為單一 pill 按鈕，移除 toggle + 文字標籤**
@@ -51,6 +55,12 @@
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.0.57 — 2026-06-26
+
+文章頁：中文備注按鈕狀態持久化
 
 ---
 
