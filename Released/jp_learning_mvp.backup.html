@@ -726,7 +726,7 @@
     padding-top: env(safe-area-inset-top, 0px);
   }
   .vq-header {
-    display: flex; align-items: center; gap: 12px;
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
     padding: 16px 16px 12px; flex-shrink: 0;
   }
   .vq-close-btn {
@@ -735,13 +735,13 @@
     font-size: 16px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
   }
   .vq-prog-wrap {
-    flex: 1; height: 4px; background: var(--wa-bg2); border-radius: 2px; overflow: hidden;
+    width: 100%; height: 4px; background: var(--wa-bg2); border-radius: 2px; overflow: hidden;
   }
   .vq-prog-bar {
     height: 100%; background: var(--wa); border-radius: 2px;
     transition: width 0.3s ease; width: 0%;
   }
-  .vq-counter { font-size: 13px; color: var(--wt3); flex-shrink: 0; min-width: 52px; text-align: right; }
+  .vq-counter { font-size: 13px; color: var(--wt3); text-align: center; }
   .vq-card-area {
     flex: 1; display: flex; flex-direction: column;
     align-items: center; justify-content: center; padding: 0 32px; text-align: center;
@@ -2040,7 +2040,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.47
+          v1.0.48
         </div>
 
       </div>
@@ -2278,11 +2278,11 @@
 
   <!-- 單字複習考 overlay -->
   <div id="vocab-quiz">
-    <!-- header: close / progress / counter -->
+    <button class="vq-close-btn" onclick="exitVocabQuiz()" style="position:fixed;top:50px;right:16px">✕</button>
+    <!-- header: counter above, bar below, centered -->
     <div class="vq-header">
-      <button class="vq-close-btn" onclick="exitVocabQuiz()">✕</button>
-      <div class="vq-prog-wrap"><div class="vq-prog-bar" id="vq-bar"></div></div>
       <span class="vq-counter" id="vq-counter">0 / 0</span>
+      <div class="vq-prog-wrap"><div class="vq-prog-bar" id="vq-bar"></div></div>
     </div>
     <!-- card area -->
     <div class="vq-card-area" id="vq-card-area">
@@ -6327,6 +6327,8 @@ function startVocabQuiz() {
   }
 
   vqIndex = 0; vqOk = 0; vqFail = 0;
+  var hb = document.getElementById('vocab-help-btn');
+  if (hb) hb.style.display = 'none';
   const el = document.getElementById('vocab-quiz');
   el.style.display = 'flex';
   // 確保 result area 隱藏，card+btns 顯示
@@ -6482,6 +6484,8 @@ function vqShowResult() {
 
 function exitVocabQuiz() {
   document.getElementById('vocab-quiz').style.display = 'none';
+  var hb = document.getElementById('vocab-help-btn');
+  if (hb) hb.style.display = '';
   renderHomeRing(); // 中途離開也同步今日環
 }
 
