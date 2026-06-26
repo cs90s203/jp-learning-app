@@ -1,5 +1,9 @@
 # 日語學習 App — 版本記錄
 
+## v1.0.54 — 2026-06-26
+
+**隱藏 PTR debug toast（保留程式碼，註解關閉）**
+
 ## v1.0.53 — 2026-06-26
 
 **試題頁 Tutorial：題目區說明框上沿再降低 10px、下沿再延伸 10px（共各 20px）**
@@ -36,6 +40,12 @@
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.0.54 — 2026-06-26
+
+隱藏 PTR debug toast
 
 ---
 
