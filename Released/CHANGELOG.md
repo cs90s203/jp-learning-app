@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.0.55 — 2026-06-26
+
+**設定頁 > 顯示：新增「首次登入簡易說明」重新顯示入口**
+
+- 點擊後清除 swipeHintSeen、meaningHintSeen、a2hs_dismissed
+- 立即重現 A2HS banner，進入單字卡頁面可再看到其他提示
+
 ## v1.0.54 — 2026-06-26
 
 **隱藏 PTR debug toast（保留程式碼，註解關閉）**
@@ -40,6 +47,12 @@
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.0.55 — 2026-06-26
+
+設定頁：新增首次登入簡易說明重新顯示入口
 
 ---
 

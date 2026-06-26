@@ -1868,6 +1868,13 @@
             </div>
             <div class="toggle off" id="theme-toggle" onclick="toggleTheme()"></div>
           </div>
+          <div class="setting-row" style="cursor:pointer;border-top:0.5px solid var(--border)" onclick="resetFirstTimeHints()">
+            <div>
+              <div class="setting-label">首次登入簡易說明</div>
+              <div class="setting-sub">重新顯示操作提示</div>
+            </div>
+            <div style="font-size:13px;color:var(--wa)">重新顯示</div>
+          </div>
         </div>
 
         <p class="section-title">語言</p>
@@ -2042,7 +2049,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.54
+          v1.0.55
         </div>
 
       </div>
@@ -7306,6 +7313,15 @@ function _initA2HSBanner() {
   if (!isIOS || isStandalone || dismissed) return;
   const el = document.getElementById('a2hs-banner');
   if (el) el.style.display = 'flex';
+}
+
+function resetFirstTimeHints() {
+  localStorage.removeItem('swipeHintSeen');
+  localStorage.removeItem('meaningHintSeen');
+  localStorage.removeItem('a2hs_dismissed');
+  const banner = document.getElementById('a2hs-banner');
+  if (banner) banner.style.display = 'flex';
+  showToast('已重設，進入單字卡頁面即可看到其他提示');
 }
 
 function dismissA2HS() {
