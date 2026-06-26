@@ -1818,7 +1818,7 @@
         <button class="awb-nav" id="qwb-next" onclick="quizWeekBarNav(1)">›</button>
       </div>
       <!-- 題型分頁 -->
-      <div class="quiz-tabs">
+      <div class="quiz-tabs" id="quiz-tabs">
         <button class="qt active" id="qt-listen" onclick="switchQuizSection('listen')">聽力</button>
         <button class="qt" id="qt-fill" onclick="switchQuizSection('fill')">填空</button>
         <button class="qt" id="qt-judge" onclick="switchQuizSection('judge')">句子判斷</button>
@@ -2041,7 +2041,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.49
+          v1.0.50
         </div>
 
       </div>
@@ -6933,7 +6933,14 @@ function showVocabTutorial() {
     { targetId: 'vocab-btn-group',   snapToId: 'vocab-display-card', noScroll: true, text: '左側「Aa」切換顯示羅馬拼音輔助記憶，中間「＋」可手動新增單字，右側「あ」可開啟五十音表。' },
   ]);
 }
-function showQuizTutorial()    { /* TODO */ }
+function showQuizTutorial() {
+  if (_tutBtnId === 'quiz-help-btn') { tutorialClose(); return; }
+  tutorialShow('quiz-help-btn', [
+    { targetId: 'quiz-week-bar', snapToId: 'quiz-main', text: '顯示最近七天的學習紀錄，點擊日期可切換到當天的試題，左側箭頭可回顧上週。' },
+    { targetId: 'quiz-tabs',    snapToId: 'quiz-main', text: '四種題型：聽力、填空、句子判斷、句子排列，每天各會產生一組題目，完成所有題型可集滿今日試題任務環。' },
+    { targetId: 'quiz-main',                           text: '依序作答，每題都會即時給分，完成後可重新作答繼續練習。' },
+  ]);
+}
 function showGojuuonTutorial() {
   if (_tutBtnId === 'gojuuon-help-btn') { tutorialClose(); return; }
   tutorialShow('gojuuon-help-btn', [

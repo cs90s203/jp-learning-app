@@ -1,5 +1,20 @@
 # 日語學習 App — 版本記錄
 
+## v1.0.52 — 2026-06-26
+
+**試題頁 Tutorial：題目區說明框上沿降低 10px、下沿延伸 10px**
+
+- 新增 `insetTop` / `insetBottom` step 屬性，支援獨立調整 spotlight 上下邊緣
+- quiz-main 步驟套用 `insetTop:10, insetBottom:10`
+
+## v1.0.51 — 2026-06-26
+
+**單字複習 UI：進度條置中對齊 X 圓圈、左右縮短 12px**
+
+- vq-header 改為 position:fixed，top:40px，使進度條中心對齊 X 圓圈中心（64px）
+- 進度條寬度從 max-width:320px 縮短至 296px（左右各縮 12px）
+- vq-card-area 加 padding-top:80px 補回 header 空間
+
 ## v0.14.84 — 2026-06-25
 
 **文章生成 token 優化 + 助詞說明硬編碼**
@@ -17,6 +32,12 @@
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.0.52 — 2026-06-26
+
+試題頁 Tutorial：題目區說明框上下沿各調整 10px
 
 ---
 
