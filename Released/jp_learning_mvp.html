@@ -483,6 +483,12 @@
     border: 1.5px solid var(--wa); background: var(--wa);
     cursor: pointer; transition: background 0.15s, border-color 0.15s;
     -webkit-tap-highlight-color: transparent;
+    position: relative;
+  }
+  .sentence-dot::before {
+    content: ''; position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 36px; height: 36px;
   }
   .sentence-dot.unsel { background: transparent; border-color: var(--wa-bg2); }
   .sentence-sel-row .sentence-group { flex: 1; }
@@ -2053,7 +2059,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.61
+          v1.0.62
         </div>
 
       </div>
