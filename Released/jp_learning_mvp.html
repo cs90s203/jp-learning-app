@@ -2072,7 +2072,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.68
+          v1.0.69
         </div>
 
       </div>
@@ -4395,8 +4395,10 @@ function loadTheme() {
   function getActiveScroll() {
     const active = document.querySelector('.page.active');
     if (!active) return 0;
-    // vocab page: scroll managed by _vla interceptor, not generic PTR
-    if (active.id === 'page-vocab') return 0;
+    if (active.id === 'page-vocab') {
+      const vla = document.getElementById('vocab-list-area');
+      return vla ? vla.scrollTop : 0;
+    }
     for (const el of active.querySelectorAll('*')) {
       if (el.scrollTop > 0) return el.scrollTop;
     }
@@ -4444,7 +4446,10 @@ function loadTheme() {
 
   function isTutorialOpen() {
     const ov = document.getElementById('tutorial-overlay');
-    return ov && ov.style.display !== 'none';
+    if (ov && ov.style.display !== 'none') return true;
+    const go = document.getElementById('gojuuon-overlay');
+    if (go && go.classList.contains('open')) return true;
+    return false;
   }
 
   document.addEventListener('touchstart', e => {
