@@ -2072,7 +2072,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.67
+          v1.0.68
         </div>
 
       </div>
@@ -3079,13 +3079,13 @@ function saveQuizResults() {
     if (!sec.retakes) sec.retakes = [];
     sec.retakes.push({ correct, total, pct });
   }
-  // 更新任務環 (取最佳成績)
+  // 更新任務環 (取最佳成績，但首答永久保留在 sec.first)
   const best = sec.first ? Math.max(pct, sec.first.pct) : pct;
-  // 做完就算完成（Math.max 確保 0 分也標記為已做）
   if      (quizSection === 'listen')  log[dateStr].tasks.listen  = Math.max(best, 1);
   else if (quizSection === 'slisten') log[dateStr].tasks.slisten = Math.max(best, 1);
   else if (quizSection === 'fill')    log[dateStr].tasks.quiz    = Math.max(best, 1);
-  // judge / order 不更新首頁任務環（尚未在 ring 設計中），僅存 quiz log
+  else if (quizSection === 'judge')   log[dateStr].tasks.judge   = Math.max(best, 1);
+  else if (quizSection === 'order')   log[dateStr].tasks.order   = Math.max(best, 1);
 
   saveStudyLog(log);
   renderQuizWeekBar();
@@ -3168,7 +3168,7 @@ function renderQuizWeekBar() {
       const entry      = log[dateStr] || {};
       const tasks      = entry.tasks  || {};
       const listenPct  = Math.min(1, ((tasks.listen || 0) + (tasks.slisten || 0)) / 200);
-      const fillPct    = Math.min(1, (tasks.quiz   || 0) / 100);
+      const fillPct    = Math.min(1, ((tasks.quiz || 0) + (tasks.judge || 0) + (tasks.order || 0)) / 300);
       const R = 15, SW = 3, CX = 19, CY = 19;
       const circ = 2 * Math.PI * R;
       const half = circ / 2;
@@ -5428,7 +5428,9 @@ function buildRing(size, strokeRatio, tasksState) {
       ? articleFillRatio(val)
       : t.key === 'listen'
         ? Math.min(1, ((tasksState.listen || 0) + (tasksState.slisten || 0)) / 200)
-        : (val ? 1 : 0);
+        : t.key === 'quiz'
+          ? Math.min(1, ((tasksState.quiz || 0) + (tasksState.judge || 0) + (tasksState.order || 0)) / 300)
+          : (val ? 1 : 0);
     if (fillRatio <= 0) return;
     const thisSegLen = segLen * fillRatio;
     const offset = -(circumference * (i / n)) + circumference / 4;
@@ -5446,6 +5448,7 @@ function countDone(tasks) {
   return TASKS.reduce((sum, t) => {
     if (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') return sum + (articleFillRatio(tasks[t.key]) >= 1 ? 1 : 0);
     if (t.key === 'listen') return sum + (((tasks.listen || 0) + (tasks.slisten || 0)) >= 200 ? 1 : 0);
+    if (t.key === 'quiz')   return sum + (((tasks.quiz || 0) + (tasks.judge || 0) + (tasks.order || 0)) >= 300 ? 1 : 0);
     return sum + (tasks[t.key] ? 1 : 0);
   }, 0);
 }
@@ -5505,6 +5508,10 @@ function renderHomeRing() {
       stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
     } else if (t.key === 'listen') {
       const pct = Math.round(((tasks.listen || 0) + (tasks.slisten || 0)) / 2);
+      stateText = pct >= 100 ? '完成' : (pct > 0 ? pct + '%' : '未完成');
+      stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
+    } else if (t.key === 'quiz') {
+      const pct = Math.round(((tasks.quiz || 0) + (tasks.judge || 0) + (tasks.order || 0)) / 3);
       stateText = pct >= 100 ? '完成' : (pct > 0 ? pct + '%' : '未完成');
       stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
     } else {
