@@ -143,6 +143,11 @@
     cursor: pointer; -webkit-tap-highlight-color: transparent;
   }
   .help-btn:active { opacity: 0.6; }
+  .help-btn.glow { animation: helpBtnGlow 2s ease-in-out infinite; }
+  @keyframes helpBtnGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(196,120,58,0.7); }
+    50%       { box-shadow: 0 0 0 9px rgba(196,120,58,0); }
+  }
 
   .sec { padding: 8px 16px; }
 
@@ -2060,7 +2065,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.63
+          v1.0.64
         </div>
 
       </div>
@@ -2364,6 +2369,7 @@ function switchPage(id) {
     if (b) b.style.display = p === id ? '' : 'none';
   });
   tutorialClose();
+  _updateHelpBtnGlow();
 
   if (id === 'article') {
     if (!articleRendered) {
@@ -5905,6 +5911,7 @@ function openGojuuon() {
   document.getElementById('gojuuon-overlay').classList.add('open');
   const btn = document.getElementById('vocab-gojuuon-btn');
   if (btn) btn.classList.add('open');
+  _updateHelpBtnGlow();
 }
 
 function closeGojuuon() {
@@ -6958,6 +6965,28 @@ function _tutRender() {
   }); });
 }
 
+// ── Tutorial 問號光暈 ──
+function _getTutSeen() {
+  try { return JSON.parse(localStorage.getItem('tutBtnSeen') || '{}'); } catch(e) { return {}; }
+}
+function _markTutSeen(btnId) {
+  if (!btnId) return;
+  const key = btnId.replace('-help-btn', '');
+  const seen = _getTutSeen();
+  seen[key] = 1;
+  localStorage.setItem('tutBtnSeen', JSON.stringify(seen));
+  const btn = document.getElementById(btnId);
+  if (btn) btn.classList.remove('glow');
+}
+function _updateHelpBtnGlow() {
+  const seen = _getTutSeen();
+  ['home','article','vocab','quiz','settings','gojuuon'].forEach(function(key) {
+    const btn = document.getElementById(key + '-help-btn');
+    if (!btn) return;
+    btn.classList.toggle('glow', !seen[key]);
+  });
+}
+
 function tutorialShow(btnId, steps) {
   // 依元素在頁面的垂直位置排序（由上到下），與傳入順序無關
   _tutSteps = steps.slice().sort(function(a, b) {
@@ -6967,6 +6996,7 @@ function tutorialShow(btnId, steps) {
     return ea.getBoundingClientRect().top - eb.getBoundingClientRect().top;
   });
   _tutIdx = 0; _tutBtnId = btnId;
+  _markTutSeen(btnId);
   var btn = btnId && document.getElementById(btnId);
   if (btn) btn.classList.add('tutorial-active');
   _tutRender();
@@ -7408,8 +7438,10 @@ function resetFirstTimeHints() {
   localStorage.removeItem('swipeHintSeen');
   localStorage.removeItem('meaningHintSeen');
   localStorage.removeItem('a2hs_dismissed');
+  localStorage.removeItem('tutBtnSeen');
   const banner = document.getElementById('a2hs-banner');
   if (banner) banner.style.display = 'flex';
+  _updateHelpBtnGlow();
   showToast('已重設，進入單字卡頁面即可看到其他提示');
 }
 
