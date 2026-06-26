@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.0.60 — 2026-06-26
+
+**文章頁：長按句首小圓點可單選該句；Tutorial 補說明**
+
+- 新增 `soloSentenceSel(idx)`：將所有句子取消選取，僅保留指定句
+- 每個 sentence-dot 綁定 400ms 長按事件，觸發 soloSentenceSel
+- Tutorial 新增「小圓點」步驟，說明點擊與長按差異
+
 ## v1.0.59 — 2026-06-26
 
 **A2HS banner：背景透明度調至 20%、位置再上移 50px（bottom 180→230px）**
@@ -63,6 +71,12 @@
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.0.60 — 2026-06-26
+
+文章頁：長按句首小圓點單選該句 + Tutorial 補說明
 
 ---
 

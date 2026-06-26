@@ -2053,7 +2053,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.59
+          v1.0.60
         </div>
 
       </div>
@@ -3098,6 +3098,15 @@ function toggleSentenceSel(idx) {
   updateSelAllDot();
 }
 
+function soloSentenceSel(idx) {
+  sentenceSelected = sentenceSelected.map((_, i) => i === idx);
+  document.querySelectorAll('.sentence-dot').forEach((d) => {
+    const i = parseInt(d.dataset.si);
+    d.classList.toggle('unsel', i !== idx);
+  });
+  updateSelAllDot();
+}
+
 function toggleSelectAll() {
   const anyOff = sentenceSelected.some(s => !s);
   const newVal = anyOff; // 有任何未選 → 全選；全都選了 → 全消
@@ -3652,7 +3661,21 @@ function renderArticle(tokens) {
     const dot = document.createElement('div');
     dot.className = 'sentence-dot';
     dot.dataset.si = idx;
+    if (idx === 0) dot.id = 'article-first-dot';
     dot.addEventListener('click', () => toggleSentenceSel(idx));
+    // 長按：單選此句
+    let _dotTimer = null, _dotMoved = false, _dotSX = 0, _dotSY = 0;
+    dot.addEventListener('touchstart', (e) => {
+      _dotMoved = false; _dotSX = e.touches[0].clientX; _dotSY = e.touches[0].clientY;
+      if (e.cancelable) e.preventDefault();
+      _dotTimer = setTimeout(() => { if (!_dotMoved) soloSentenceSel(idx); }, 400);
+    }, { passive: false });
+    dot.addEventListener('touchmove', (e) => {
+      if (Math.abs(e.touches[0].clientX - _dotSX) > 8 || Math.abs(e.touches[0].clientY - _dotSY) > 8) {
+        _dotMoved = true; clearTimeout(_dotTimer);
+      }
+    }, { passive: true });
+    dot.addEventListener('touchend', () => clearTimeout(_dotTimer));
     grp.parentNode.insertBefore(row, grp);
     row.appendChild(dot);
     row.appendChild(grp);
@@ -6938,6 +6961,7 @@ function showArticleTutorial() {
     { targetId: 'article-week-bar',  text: '顯示最近七天的學習紀錄，點擊日期可切換閱讀當天的文章，點擊左側箭頭可以回顧上週的文章。' },
     { targetId: 'cn-toggle-row',     text: '開啟後每個詞彙下方會顯示中文意思，方便對照學習。' },
     { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
+    { targetId: 'article-first-dot', snapToId: 'article-text', text: '點擊句首的小圓點可選取或取消該句；長按小圓點則單獨選取這一句，方便針對單句練習朗讀或跟讀。' },
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
     { targetId: 'play-btn',   snapToId: 'difficulty-bar', noScroll: true, text: '點擊播放可聆聽全文朗讀，可調整速度。' },
     { targetId: 'follow-btn', snapToId: 'difficulty-bar', noScroll: true, text: '開啟逐句跟讀後，系統會逐句播放並等待你開口跟讀，錄音鍵供口語自由練習使用。' },
