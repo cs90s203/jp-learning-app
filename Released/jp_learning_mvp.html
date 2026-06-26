@@ -726,8 +726,9 @@
     padding-top: env(safe-area-inset-top, 0px);
   }
   .vq-header {
-    display: flex; flex-direction: column; align-items: center; gap: 6px;
-    padding: 16px 16px 12px; flex-shrink: 0;
+    position: fixed; top: 40px; left: 0; right: 0;
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    pointer-events: none;
   }
   .vq-close-btn {
     width: 28px; height: 28px; border: none; background: var(--wa-bg2);
@@ -735,7 +736,7 @@
     font-size: 14px; display: flex; align-items: center; justify-content: center;
   }
   .vq-prog-wrap {
-    width: calc(100% - 32px); max-width: 320px; height: 4px;
+    width: 296px; height: 4px;
     background: var(--wa-bg2); border-radius: 2px; overflow: hidden;
   }
   .vq-prog-bar {
@@ -745,7 +746,7 @@
   .vq-counter { font-size: 13px; color: var(--wt3); text-align: center; }
   .vq-card-area {
     flex: 1; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; padding: 0 32px; text-align: center;
+    align-items: center; justify-content: center; padding: 80px 32px 0; text-align: center;
   }
   .vq-kana { font-size: 18px; color: var(--wt3); min-height: 26px; letter-spacing: 0.05em; }
   .vq-word { font-size: 44px; font-weight: 500; color: var(--wt); letter-spacing: 0.02em; }
@@ -2041,7 +2042,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.50
+          v1.0.52
         </div>
 
       </div>
@@ -6821,8 +6822,10 @@ function _tutRender() {
     var snapR  = snapEl ? snapEl.getBoundingClientRect() : null;
     var spLeft = snapR ? snapR.left         : (r.left - pad);
     var spW    = snapR ? snapR.width        : (r.width + pad * 2);
-    var spTop  = r.top - pad;
-    var spH    = r.height + pad * 2;
+    var insetTop = step.insetTop || 0;
+    var insetBottom = step.insetBottom || 0;
+    var spTop  = r.top - pad + insetTop;
+    var spH    = r.height + pad * 2 - insetTop + insetBottom;
     // enforce 8px viewport margin on both sides
     var _vm = 8;
     if (spLeft < _vm) spLeft = _vm;
@@ -6848,7 +6851,7 @@ function _tutRender() {
     tip.style.left  = Math.max(8, Math.min(spLeft, window.innerWidth - spW - 8)) + 'px';
     // attach below spotlight; if not enough space, go above
     var gap = 0; // flush — visually extends from spotlight
-    var below = r.bottom + pad + gap;
+    var below = spTop + spH + gap;
     var tipH = tip.offsetHeight || 80;
     if (below + tipH + 8 < window.innerHeight) {
       tip.style.top = below + 'px';
@@ -6938,7 +6941,7 @@ function showQuizTutorial() {
   tutorialShow('quiz-help-btn', [
     { targetId: 'quiz-week-bar', snapToId: 'quiz-main', text: '顯示最近七天的學習紀錄，點擊日期可切換到當天的試題，左側箭頭可回顧上週。' },
     { targetId: 'quiz-tabs',    snapToId: 'quiz-main', text: '四種題型：聽力、填空、句子判斷、句子排列，每天各會產生一組題目，完成所有題型可集滿今日試題任務環。' },
-    { targetId: 'quiz-main',                           text: '依序作答，每題都會即時給分，完成後可重新作答繼續練習。' },
+    { targetId: 'quiz-main', insetTop: 10, insetBottom: 10, text: '依序作答，每題都會即時給分，完成後可重新作答繼續練習。' },
   ]);
 }
 function showGojuuonTutorial() {
