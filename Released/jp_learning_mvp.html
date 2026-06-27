@@ -877,6 +877,17 @@
   }
   .vocab-gojuuon-btn.open { background: var(--wa-bg2); color: var(--wt2); box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
 
+  #gojuuon-fixed-btn {
+    position: fixed; top: 50px; right: 16px; z-index: 9000;
+    width: 28px; height: 28px; border-radius: 50%; border: none;
+    background: var(--wa); color: #fff; font-size: 13px; font-weight: 500;
+    cursor: pointer; display: none;
+    align-items: center; justify-content: center;
+    box-shadow: 0 2px 8px rgba(196,120,58,0.35);
+  }
+  #gojuuon-fixed-btn.show { display: flex; }
+  #gojuuon-fixed-btn.open { background: var(--wa-bg2); color: var(--wt2); box-shadow: none; }
+
   /* 五十音表 overlay */
   #gojuuon-overlay {
     display: none; position: fixed; inset: 0; z-index: 9100;
@@ -1405,6 +1416,7 @@
 <button class="help-btn" id="vocab-help-btn"    onclick="showVocabTutorial()"    style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
 <button class="help-btn" id="quiz-help-btn"     onclick="showQuizTutorial()"     style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
 <button class="help-btn" id="settings-help-btn" onclick="showSettingsTutorial()" style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
+<button id="gojuuon-fixed-btn" onclick="openGojuuon()" aria-label="五十音表">あ</button>
 
 <div id="onboarding-screen">
 
@@ -1804,7 +1816,6 @@
         <button class="vocab-fab" id="vocab-fab" onclick="openVocabModal()" aria-label="新增單字">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <button class="vocab-gojuuon-btn" id="vocab-gojuuon-btn" onclick="openGojuuon()" aria-label="五十音表">あ</button>
       </div>
     </div>
 
@@ -2072,7 +2083,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.72
+          v1.1.0
         </div>
 
       </div>
@@ -2387,6 +2398,9 @@ function switchPage(id) {
     var b = document.getElementById(p + '-help-btn');
     if (b) b.style.display = p === id ? '' : 'none';
   });
+  // 五十音固定按鈕：文章／單字／試題頁顯示
+  var _gfb = document.getElementById('gojuuon-fixed-btn');
+  if (_gfb) _gfb.classList.toggle('show', id === 'article' || id === 'vocab' || id === 'quiz');
   tutorialClose();
   _updateHelpBtnGlow();
 
@@ -2415,7 +2429,7 @@ function switchPage(id) {
   // Show/hide FAB
   document.getElementById('vocab-btn-group').classList.toggle('show', id === 'vocab');
   if (id === 'vocab') updateKanaToggleUI();
-  if (id !== 'vocab') closeGojuuon();
+  closeGojuuon();
 }
 
 // ===== 學習模式 =====
@@ -6179,14 +6193,14 @@ function openGojuuon() {
   document.getElementById('chip-katakana').textContent = '片';
   renderGojuuon();
   document.getElementById('gojuuon-overlay').classList.add('open');
-  const btn = document.getElementById('vocab-gojuuon-btn');
+  const btn = document.getElementById('gojuuon-fixed-btn');
   if (btn) btn.classList.add('open');
   _updateHelpBtnGlow();
 }
 
 function closeGojuuon() {
   document.getElementById('gojuuon-overlay').classList.remove('open');
-  const btn = document.getElementById('vocab-gojuuon-btn');
+  const btn = document.getElementById('gojuuon-fixed-btn');
   if (btn) btn.classList.remove('open');
 }
 
@@ -7361,6 +7375,7 @@ function showArticleTutorial() {
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
     { targetId: 'play-btn',   snapToId: 'difficulty-bar', noScroll: true, text: '點擊播放可聆聽全文朗讀，可調整速度。' },
     { targetId: 'follow-btn', snapToId: 'difficulty-bar', noScroll: true, text: '開啟逐句跟讀後，系統會逐句播放並等待你開口跟讀，錄音鍵供口語自由練習使用。' },
+    { targetId: 'gojuuon-fixed-btn', noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showVocabTutorial() {
@@ -7369,7 +7384,8 @@ function showVocabTutorial() {
     { targetId: 'vocab-filter-bar',  snapToId: 'vocab-display-card', text: '按「生、普、熟」可篩選不同熟悉度的單字；右側「開始複習」會從目前篩選範圍啟動測驗模式。' },
     { targetId: 'vocab-display-card', text: '上下滑動可切換單字卡，點擊下半部可揭示中文意思和例句，幫助自我測驗。' },
     { targetId: 'vocab-list-area',   snapToId: 'vocab-display-card', text: '所有單字依熟悉度列出，點擊任一列可在上方單字卡中快速跳到該單字。' },
-    { targetId: 'vocab-btn-group',   snapToId: 'vocab-display-card', noScroll: true, text: '左側「Aa」切換顯示羅馬拼音輔助記憶，中間「＋」可手動新增單字，右側「あ」可開啟五十音表。' },
+    { targetId: 'vocab-btn-group',   snapToId: 'vocab-display-card', noScroll: true, text: '左側「Aa」切換顯示羅馬拼音輔助記憶，右側「＋」可手動新增單字。' },
+    { targetId: 'gojuuon-fixed-btn', noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showQuizTutorial() {
@@ -7379,6 +7395,7 @@ function showQuizTutorial() {
     { targetId: 'quiz-level-tag', snapToId: 'quiz-main', noScroll: true, text: '顯示目前試題的難度等級。長按可切換此日期的文章與試題難度，文章頁也會同步連動。' },
     { targetId: 'quiz-tabs', snapToId: 'quiz-main', text: '五種題型：單字聽力（聽單字選中文）、句子聽力（聽整句選翻譯）、填空、句子判斷、句子排列。每天各產生一組題目，每日題數可由設定頁的輕鬆、標準、專注模式調整。' },
     { targetId: 'quiz-main', insetTop: 20, insetBottom: 5, text: '依序作答，每題即時給分；填空、判斷、排列、句子聽力題目右上角的「あ漢」可切換純假名或漢字顯示，完成後可重新作答。' },
+    { targetId: 'gojuuon-fixed-btn', noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showGojuuonTutorial() {
