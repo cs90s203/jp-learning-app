@@ -1,5 +1,14 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.15 — 2026-06-28
+
+**Tutorial：新增 center 模式 + spanTopId，並套用至今日頁/文章頁**
+
+- 引擎新增 `tip` 的 **center 模式**（`anchor` 省略）：置中小按鈕，說明框用 ref 全寬、指示框在中間、說明框四角皆圓
+- 引擎新增 `spanTopId`：指示框向上延伸涵蓋卡片上方的 section title
+- 今日頁：等級小標 → center 小指示框；學習紀錄／今日足跡 → 指示框框入 section title（spanTopId）
+- 文章頁：句首小圓點 → 改為小指示框（tip 左靠齊，類似五十音）
+
 ## v1.1.14 — 2026-06-28
 
 **Tutorial：全頁遷移至新規則（修齊脫節的小按鈕）**
@@ -294,6 +303,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.15 — 2026-06-28
+
+Tutorial：新增 center 模式 + spanTopId，套用今日頁等級標/section title、文章頁圓點
 
 ---
 
