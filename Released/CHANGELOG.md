@@ -1,5 +1,18 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.11 — 2026-06-28
+
+**Tutorial UI 統一規則（試題頁為範本）**
+
+- 名稱定義：指示框（spotlight，框住按鈕/區域）、說明框（tooltip，說明文字）
+- 全域：移除說明框投影 box-shadow；指示框永遠平底圓角 `12px 12px 0 0`；指示框留白統一 6px（移除 insetTop/insetBottom 個別覆寫）
+- 說明框圓角規則：下邊永遠圓角；上邊與指示框相接處平角、外露處圓角
+- 新增 `tip:{ ref, anchor }` 引擎，支援角落小按鈕單邊靠齊：
+  - 版型 A 全寬連接（週曆/題型 tabs/quiz-main）：省略 `tip`
+  - 版型 B 右靠齊（50音）：`tip:{ref:'quiz-week-bar', anchor:'right'}`，圓角 `14px 0 14px 14px`
+  - 版型 C 左靠齊（文章難度）：`tip:{ref:'quiz-week-bar', anchor:'left'}`，圓角 `0 14px 14px 14px`
+- 文章頁/單字頁仍走 legacy `snapTooltipOnly` 路徑，待後續逐頁遷移
+
 ## v1.1.10 — 2026-06-27
 
 **Bug 修正：文章頁捲動 — 改用 block 佈局（iOS flex 崩塌根治）**
@@ -258,6 +271,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.11 — 2026-06-28
+
+Tutorial UI 統一規則：指示框/說明框平底連接、移投影、角落按鈕 tip 靠齊
 
 ---
 
