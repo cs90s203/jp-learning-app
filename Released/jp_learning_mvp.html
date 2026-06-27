@@ -2086,7 +2086,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.12
+          v1.1.13
         </div>
 
       </div>
@@ -7333,43 +7333,39 @@ function _tutRender() {
     spotlight.style.top    = spTop + 'px';
     spotlight.style.width  = spW + 'px';
     spotlight.style.height = spH + 'px';
-    spotlight.style.borderRadius = '12px 12px 0 0';
+    // 圓角延後到決定說明框上/下方後再設（見下方 placement 區塊）
 
     var old = overlay.querySelector('.tutorial-tooltip');
     if (old) old.remove();
     var tip = document.createElement('div');
     tip.className = 'tutorial-tooltip';
 
-    // ── 說明框（tooltip）寬度、定位與圓角 ──
-    //   圓角規則：下邊永遠圓；上邊與指示框相接處平角(0)、外露處圓角(14px)
-    var tipLeft, tipW, tipRadius;
+    // ── 說明框（tooltip）寬度、定位 ──
+    //   anchorMode 決定圓角型態：'full'（同寬連接）/ 'right'（右靠齊）/ 'left'（左靠齊）
+    var tipLeft, tipW, anchorMode;
     if (step.tip) {
       // 角落小按鈕：單邊靠齊指示框，另一邊延伸到 ref 元素的邊線
       var refEl = document.getElementById(step.tip.ref);
       var refR  = refEl ? refEl.getBoundingClientRect() : { left: _vm, right: window.innerWidth - _vm };
-      if (step.tip.anchor === 'right') {
-        // 右靠齊：說明框右邊＝指示框右邊；左邊＝ref 左邊；左上角外露→圓角
+      anchorMode = (step.tip.anchor === 'right') ? 'right' : 'left';
+      if (anchorMode === 'right') {
         tipLeft = Math.max(_vm, refR.left);
         tipW = (spLeft + spW) - tipLeft;
-        tipRadius = '14px 0 14px 14px';
       } else {
-        // 左靠齊：說明框左邊＝指示框左邊；右邊＝ref 右邊；右上角外露→圓角
         tipLeft = spLeft;
         tipW = Math.min(window.innerWidth - _vm, refR.right) - tipLeft;
-        tipRadius = '0 14px 14px 14px';
       }
     } else if (snapR && step.snapTooltipOnly) {
       // legacy（文章頁/單字頁尚未遷移）：說明框用 snapR 寬、不與指示框連接
       tipLeft = snapR.left;
       tipW = snapR.width;
-      tipRadius = '0 0 14px 14px';
+      anchorMode = 'full';
     } else {
-      // 版型 A 全寬連接：與指示框同寬同左，兩上角皆平
+      // 版型 A 全寬連接：與指示框同寬同左
       tipLeft = spLeft;
       tipW = spW;
-      tipRadius = '0 0 14px 14px';
+      anchorMode = 'full';
     }
-    tip.style.borderRadius = tipRadius;
     var dots = _tutSteps.length > 1
       ? '<div class="tutorial-dots">' + _tutSteps.map(function(_, i) {
           return '<div class="tutorial-dot' + (i === _tutIdx ? ' active' : '') + '"></div>';
@@ -7378,17 +7374,36 @@ function _tutRender() {
     tip.innerHTML = '<div class="tutorial-tooltip-text">' + step.text + '</div>' + dots;
     tip.style.width = tipW + 'px';
     tip.style.left  = Math.max(8, Math.min(tipLeft, window.innerWidth - tipW - 8)) + 'px';
+    // 先掛上並顯示，offsetHeight 才量得到真實高度（above 定位需要）
+    overlay.style.display = 'block';
+    overlay.appendChild(tip);
     // attach below spotlight; if not enough space, go above
     var gap = 0; // flush — visually extends from spotlight
     var below = spTop + spH + gap;
     var tipH = tip.offsetHeight || 80;
-    if (below + tipH + 8 < window.innerHeight) {
+    var placeAbove = !(below + tipH + 8 < window.innerHeight);
+    if (!placeAbove) {
       tip.style.top = below + 'px';
     } else {
-      tip.style.top = Math.max(8, r.top - pad - gap - tipH) + 'px';
+      tip.style.top = Math.max(8, spTop - gap - tipH) + 'px';
     }
-    overlay.appendChild(tip);
-    overlay.style.display = 'block';
+
+    // ── 圓角：相接邊永遠平角；外露邊圓角。說明框在上方時整組上下反轉 ──
+    if (!placeAbove) {
+      // 說明框在下方（常態）
+      spotlight.style.borderRadius = '12px 12px 0 0'; // 指示框平底
+      tip.style.borderRadius =
+        anchorMode === 'right' ? '14px 0 14px 14px' :   // 左上外露
+        anchorMode === 'left'  ? '0 14px 14px 14px' :   // 右上外露
+                                 '0 0 14px 14px';        // 兩上角皆接
+    } else {
+      // 說明框在上方（edge case）：概念反轉
+      spotlight.style.borderRadius = '0 0 12px 12px'; // 指示框平頂
+      tip.style.borderRadius =
+        anchorMode === 'right' ? '14px 14px 0 14px' :   // 左下外露
+        anchorMode === 'left'  ? '14px 14px 14px 0' :   // 右下外露
+                                 '14px 14px 0 0';        // 兩下角皆接
+    }
   }); });
 }
 
