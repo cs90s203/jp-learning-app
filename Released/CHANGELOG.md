@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.2 — 2026-06-27
+
+**UI / Bug 修正：五十音 Tutorial 框寬度 + 文章頁拉動不一致**
+
+- Tutorial 五十音步驟的說明框現在對齊各頁主要內容寬度（不再只有按鈕那麼窄）
+- 文章頁下拉重新整理動畫現在與試題／單字頁一致（頁面隨手指移動）
+- 修正文章頁 getActiveScroll 偵測，避免誤判捲動位置
+
 ## v1.1.1 — 2026-06-27
 
 **UI：單字頁篩選列與五十音按鈕間距調整**
@@ -188,6 +196,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.2 — 2026-06-27
+
+UI/Bug：五十音Tutorial框對齊內容寬度、文章頁PTR動畫一致、scroll偵測修正
 
 ---
 
