@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.14 — 2026-06-28
+
+**Tutorial：全頁遷移至新規則（修齊脫節的小按鈕）**
+
+- article-level-tag → `tip:{ref:'article-week-bar', anchor:'left'}`（原無 tip，說明框因 min-width 與指示框脫節）
+- 文章頁 / 單字頁 五十音按鈕 → `tip:{ref, anchor:'right'}`（移除 legacy snapTooltipOnly）
+- 其餘小按鈕（home-level-tag、play/follow-btn、article-first-dot、vocab-btn-group 等）維持 `snapToId` 版型 A 全寬連接，本就連接良好故保留
+
 ## v1.1.13 — 2026-06-28
 
 **Tutorial：說明框在上方的 edge case + 圓角反轉**
@@ -286,6 +294,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.14 — 2026-06-28
+
+Tutorial：全頁遷移新規則，修齊脫節小按鈕（article-level-tag、文章/單字頁五十音）
 
 ---
 

@@ -2086,7 +2086,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.13
+          v1.1.14
         </div>
 
       </div>
@@ -7486,7 +7486,7 @@ function showHomeTutorial() {
 function showArticleTutorial() {
   if (_tutBtnId === 'article-help-btn') { tutorialClose(); return; }
   tutorialShow('article-help-btn', [
-    { targetId: 'article-level-tag', noScroll: true, text: '顯示此篇文章的難度等級。長按可為當天文章單獨選擇其他等級（N5～N1），不影響全局設定。' },
+    { targetId: 'article-level-tag', tip: { ref: 'article-week-bar', anchor: 'left' }, noScroll: true, text: '顯示此篇文章的難度等級。長按可為當天文章單獨選擇其他等級（N5～N1），不影響全局設定。' },
     { targetId: 'article-week-bar',  text: '顯示最近七天的學習紀錄，點擊日期可切換閱讀當天的文章，點擊左側箭頭可以回顧上週的文章。' },
     { targetId: 'cn-toggle-row',     text: '「中文」開啟後每個詞彙下方會顯示中文意思；「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本。' },
     { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
@@ -7494,7 +7494,7 @@ function showArticleTutorial() {
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
     { targetId: 'play-btn',   snapToId: 'difficulty-bar', noScroll: true, text: '點擊播放可聆聽全文朗讀，可調整速度。' },
     { targetId: 'follow-btn', snapToId: 'difficulty-bar', noScroll: true, text: '開啟逐句跟讀後，系統會逐句播放並等待你開口跟讀，錄音鍵供口語自由練習使用。' },
-    { targetId: 'gojuuon-fixed-btn', snapToId: 'article-week-bar', snapTooltipOnly: true, noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
+    { targetId: 'gojuuon-fixed-btn', tip: { ref: 'article-week-bar', anchor: 'right' }, noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showVocabTutorial() {
@@ -7504,7 +7504,7 @@ function showVocabTutorial() {
     { targetId: 'vocab-display-card', text: '上下滑動可切換單字卡，點擊下半部可揭示中文意思和例句，幫助自我測驗。' },
     { targetId: 'vocab-list-area',   snapToId: 'vocab-display-card', text: '所有單字依熟悉度列出，點擊任一列可在上方單字卡中快速跳到該單字。' },
     { targetId: 'vocab-btn-group',   snapToId: 'vocab-display-card', noScroll: true, text: '左側「Aa」切換顯示羅馬拼音輔助記憶，右側「＋」可手動新增單字。' },
-    { targetId: 'gojuuon-fixed-btn', snapToId: 'vocab-filter-bar', snapTooltipOnly: true, noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
+    { targetId: 'gojuuon-fixed-btn', tip: { ref: 'vocab-filter-bar', anchor: 'right' }, noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showQuizTutorial() {
