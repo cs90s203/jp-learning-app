@@ -2083,7 +2083,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.1
+          v1.1.2
         </div>
 
       </div>
@@ -4502,6 +4502,7 @@ function loadTheme() {
       const vla = document.getElementById('vocab-list-area');
       return vla ? vla.scrollTop : 0;
     }
+    if (active.id === 'page-article') return active.scrollTop;
     for (const el of active.querySelectorAll('*')) {
       if (el.scrollTop > 0) return el.scrollTop;
     }
@@ -4515,7 +4516,7 @@ function loadTheme() {
 
   function setIndicator(pullDist) {
     const page = getActivePage();
-    if (page && (page.id === 'page-quiz' || page.id === 'page-vocab')) {
+    if (page && (page.id === 'page-quiz' || page.id === 'page-vocab' || page.id === 'page-article')) {
       page.style.transition = 'none';
       page.style.transform = `translateY(${Math.min(pullDist * 0.4, THRESHOLD * 0.4)}px)`;
     }
@@ -4537,7 +4538,7 @@ function loadTheme() {
     indicator.style.opacity = '0';
     segs.forEach(s => { if (s) s.style.opacity = '0.15'; });
     const page = getActivePage();
-    if (page && (page.id === 'page-quiz' || page.id === 'page-vocab')) {
+    if (page && (page.id === 'page-quiz' || page.id === 'page-vocab' || page.id === 'page-article')) {
       page.style.transition = 'transform .3s ease';
       page.style.transform = 'translateY(0)';
     }
@@ -4582,7 +4583,7 @@ function loadTheme() {
       indicator.style.transition = 'opacity .4s ease';
       indicator.style.opacity = '0';
       const page = getActivePage();
-      if (page && (page.id === 'page-quiz' || page.id === 'page-vocab')) {
+      if (page && (page.id === 'page-quiz' || page.id === 'page-vocab' || page.id === 'page-article')) {
         page.style.transition = 'transform .4s ease';
         page.style.transform = 'translateY(0)';
       }
@@ -7375,7 +7376,7 @@ function showArticleTutorial() {
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
     { targetId: 'play-btn',   snapToId: 'difficulty-bar', noScroll: true, text: '點擊播放可聆聽全文朗讀，可調整速度。' },
     { targetId: 'follow-btn', snapToId: 'difficulty-bar', noScroll: true, text: '開啟逐句跟讀後，系統會逐句播放並等待你開口跟讀，錄音鍵供口語自由練習使用。' },
-    { targetId: 'gojuuon-fixed-btn', noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
+    { targetId: 'gojuuon-fixed-btn', snapToId: 'article-week-bar', noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showVocabTutorial() {
@@ -7385,7 +7386,7 @@ function showVocabTutorial() {
     { targetId: 'vocab-display-card', text: '上下滑動可切換單字卡，點擊下半部可揭示中文意思和例句，幫助自我測驗。' },
     { targetId: 'vocab-list-area',   snapToId: 'vocab-display-card', text: '所有單字依熟悉度列出，點擊任一列可在上方單字卡中快速跳到該單字。' },
     { targetId: 'vocab-btn-group',   snapToId: 'vocab-display-card', noScroll: true, text: '左側「Aa」切換顯示羅馬拼音輔助記憶，右側「＋」可手動新增單字。' },
-    { targetId: 'gojuuon-fixed-btn', noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
+    { targetId: 'gojuuon-fixed-btn', snapToId: 'vocab-filter-bar', noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showQuizTutorial() {
@@ -7395,7 +7396,7 @@ function showQuizTutorial() {
     { targetId: 'quiz-level-tag', snapToId: 'quiz-main', noScroll: true, text: '顯示目前試題的難度等級。長按可切換此日期的文章與試題難度，文章頁也會同步連動。' },
     { targetId: 'quiz-tabs', snapToId: 'quiz-main', text: '五種題型：單字聽力（聽單字選中文）、句子聽力（聽整句選翻譯）、填空、句子判斷、句子排列。每天各產生一組題目，每日題數可由設定頁的輕鬆、標準、專注模式調整。' },
     { targetId: 'quiz-main', insetTop: 20, insetBottom: 5, text: '依序作答，每題即時給分；填空、判斷、排列、句子聽力題目右上角的「あ漢」可切換純假名或漢字顯示，完成後可重新作答。' },
-    { targetId: 'gojuuon-fixed-btn', noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
+    { targetId: 'gojuuon-fixed-btn', snapToId: 'quiz-week-bar', noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showGojuuonTutorial() {
