@@ -1,0 +1,1038 @@
+{
+  "date": "2026-06-27",
+  "level": "n2_lite",
+  "title": "地域のリサイクル活動",
+  "text": "私の住む町では、毎月一回、地域の住民が集まってリサイクル活動を行っている。古新聞や空き缶、ペットボトルなどを種類ごとに分けて回収する仕組みだ。最初は面倒だと感じる人も少なくなかった。しかし、続けるうちに資源を大切にする意識が少しずつ広がってきた。子どもたちも参加するようになり、ごみを減らす工夫を家庭で話し合う家も増えている。回収したお金は、公園の整備や子ども会の活動に使われている。こうした小さな取り組みの積み重ねが、住みやすい環境をつくる第一歩になるのだろう。",
+  "tokens": [
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "住む",
+      "basic_form": "住む",
+      "reading": "すむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "町",
+      "basic_form": "町",
+      "reading": "まち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "毎月",
+      "basic_form": "毎月",
+      "reading": "まいつき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "一回",
+      "basic_form": "一回",
+      "reading": "いっかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "住民",
+      "basic_form": "住民",
+      "reading": "じゅうみん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "集まって",
+      "basic_form": "集まる",
+      "reading": "あつまって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "リサイクル活動",
+      "basic_form": "リサイクル活動",
+      "reading": "リサイクルかつどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行っている",
+      "basic_form": "行う",
+      "reading": "おこなっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "古新聞",
+      "basic_form": "古新聞",
+      "reading": "ふるしんぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "空き缶",
+      "basic_form": "空き缶",
+      "reading": "あきかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ペットボトル",
+      "basic_form": "ペットボトル",
+      "reading": "ペットボトル",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "種類",
+      "basic_form": "種類",
+      "reading": "しゅるい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ごとに",
+      "basic_form": "ごとに",
+      "reading": "ごとに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "分けて",
+      "basic_form": "分ける",
+      "reading": "わけて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "回収する",
+      "basic_form": "回収する",
+      "reading": "かいしゅうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "仕組み",
+      "basic_form": "仕組み",
+      "reading": "しくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "面倒",
+      "basic_form": "面倒",
+      "reading": "めんどう",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "感じる",
+      "basic_form": "感じる",
+      "reading": "かんじる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくなかった",
+      "basic_form": "少ない",
+      "reading": "すくなくなかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかし",
+      "basic_form": "しかし",
+      "reading": "しかし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "続ける",
+      "basic_form": "続ける",
+      "reading": "つづける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "うちに",
+      "basic_form": "うちに",
+      "reading": "うちに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "資源",
+      "basic_form": "資源",
+      "reading": "しげん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大切",
+      "basic_form": "大切",
+      "reading": "たいせつ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "意識",
+      "basic_form": "意識",
+      "reading": "いしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少しずつ",
+      "basic_form": "少しずつ",
+      "reading": "すこしずつ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "広がってきた",
+      "basic_form": "広がる",
+      "reading": "ひろがってきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "子どもたち",
+      "basic_form": "子どもたち",
+      "reading": "こどもたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "参加する",
+      "basic_form": "参加する",
+      "reading": "さんかする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なり",
+      "basic_form": "なる",
+      "reading": "なり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ごみ",
+      "basic_form": "ごみ",
+      "reading": "ごみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "減らす",
+      "basic_form": "減らす",
+      "reading": "へらす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "工夫",
+      "basic_form": "工夫",
+      "reading": "くふう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "家庭",
+      "basic_form": "家庭",
+      "reading": "かてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "話し合う",
+      "basic_form": "話し合う",
+      "reading": "はなしあう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "回収した",
+      "basic_form": "回収する",
+      "reading": "かいしゅうした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "お金",
+      "basic_form": "お金",
+      "reading": "おかね",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "公園",
+      "basic_form": "公園",
+      "reading": "こうえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整備",
+      "basic_form": "整備",
+      "reading": "せいび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "子ども会",
+      "basic_form": "子ども会",
+      "reading": "こどもかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活動",
+      "basic_form": "活動",
+      "reading": "かつどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使われている",
+      "basic_form": "使う",
+      "reading": "つかわれている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "小さな",
+      "basic_form": "小さな",
+      "reading": "ちいさな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "取り組み",
+      "basic_form": "取り組み",
+      "reading": "とりくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "積み重ね",
+      "basic_form": "積み重ね",
+      "reading": "つみかさね",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "住みやすい",
+      "basic_form": "住みやすい",
+      "reading": "すみやすい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つくる",
+      "basic_form": "つくる",
+      "reading": "つくる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "第一歩",
+      "basic_form": "第一歩",
+      "reading": "だいいっぽ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "私": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "私"
+    },
+    "住む": {
+      "meaning": "居住",
+      "romaji": "sumu",
+      "reading": "住む"
+    },
+    "町": {
+      "meaning": "城鎮",
+      "romaji": "machi",
+      "reading": "町"
+    },
+    "毎月": {
+      "meaning": "每個月",
+      "romaji": "maitsuki",
+      "reading": "毎月"
+    },
+    "一回": {
+      "meaning": "一次",
+      "romaji": "ikkai",
+      "reading": "一回"
+    },
+    "地域": {
+      "meaning": "地區",
+      "romaji": "chiiki",
+      "reading": "地域"
+    },
+    "住民": {
+      "meaning": "居民",
+      "romaji": "juumin",
+      "reading": "住民"
+    },
+    "集まる": {
+      "meaning": "聚集",
+      "romaji": "atsumaru",
+      "reading": "集まる"
+    },
+    "リサイクル活動": {
+      "meaning": "資源回收活動",
+      "romaji": "risaikuru katsudou",
+      "reading": "リサイクル活動"
+    },
+    "行う": {
+      "meaning": "舉行、進行",
+      "romaji": "okonau",
+      "reading": "行う"
+    },
+    "古新聞": {
+      "meaning": "舊報紙",
+      "romaji": "furushinbun",
+      "reading": "古新聞"
+    },
+    "空き缶": {
+      "meaning": "空罐",
+      "romaji": "akikan",
+      "reading": "空き缶"
+    },
+    "ペットボトル": {
+      "meaning": "寶特瓶",
+      "romaji": "petto botoru",
+      "reading": "ペットボトル"
+    },
+    "種類": {
+      "meaning": "種類",
+      "romaji": "shurui",
+      "reading": "種類"
+    },
+    "分ける": {
+      "meaning": "分類、區分",
+      "romaji": "wakeru",
+      "reading": "分ける"
+    },
+    "回収する": {
+      "meaning": "回收",
+      "romaji": "kaishuu suru",
+      "reading": "回収する"
+    },
+    "仕組み": {
+      "meaning": "機制、結構",
+      "romaji": "shikumi",
+      "reading": "仕組み"
+    },
+    "最初": {
+      "meaning": "最初",
+      "romaji": "saisho",
+      "reading": "最初"
+    },
+    "面倒": {
+      "meaning": "麻煩的",
+      "romaji": "mendou",
+      "reading": "面倒"
+    },
+    "感じる": {
+      "meaning": "感覺、覺得",
+      "romaji": "kanjiru",
+      "reading": "感じる"
+    },
+    "人": {
+      "meaning": "人",
+      "romaji": "hito",
+      "reading": "人"
+    },
+    "少ない": {
+      "meaning": "少的",
+      "romaji": "sukunai",
+      "reading": "少ない"
+    },
+    "続ける": {
+      "meaning": "持續",
+      "romaji": "tsuzukeru",
+      "reading": "続ける"
+    },
+    "資源": {
+      "meaning": "資源",
+      "romaji": "shigen",
+      "reading": "資源"
+    },
+    "大切": {
+      "meaning": "重要的、珍惜的",
+      "romaji": "taisetsu",
+      "reading": "大切"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "意識": {
+      "meaning": "意識",
+      "romaji": "ishiki",
+      "reading": "意識"
+    },
+    "少しずつ": {
+      "meaning": "一點一點地",
+      "romaji": "sukoshizutsu",
+      "reading": "少しずつ"
+    },
+    "広がる": {
+      "meaning": "擴展、蔓延",
+      "romaji": "hirogaru",
+      "reading": "広がる"
+    },
+    "子どもたち": {
+      "meaning": "孩子們",
+      "romaji": "kodomotachi",
+      "reading": "子どもたち"
+    },
+    "参加する": {
+      "meaning": "參加",
+      "romaji": "sanka suru",
+      "reading": "参加する"
+    },
+    "なる": {
+      "meaning": "變成",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "ごみ": {
+      "meaning": "垃圾",
+      "romaji": "gomi",
+      "reading": "ごみ"
+    },
+    "減らす": {
+      "meaning": "減少",
+      "romaji": "herasu",
+      "reading": "減らす"
+    },
+    "工夫": {
+      "meaning": "巧思、辦法",
+      "romaji": "kufuu",
+      "reading": "工夫"
+    },
+    "家庭": {
+      "meaning": "家庭",
+      "romaji": "katei",
+      "reading": "家庭"
+    },
+    "話し合う": {
+      "meaning": "商量、討論",
+      "romaji": "hanashiau",
+      "reading": "話し合う"
+    },
+    "家": {
+      "meaning": "家、家庭",
+      "romaji": "ie",
+      "reading": "家"
+    },
+    "増える": {
+      "meaning": "增加",
+      "romaji": "fueru",
+      "reading": "増える"
+    },
+    "こうした": {
+      "meaning": "這樣的",
+      "romaji": "kou shita",
+      "reading": "こうした"
+    },
+    "小さな": {
+      "meaning": "小的",
+      "romaji": "chiisana",
+      "reading": "小さな"
+    },
+    "取り組み": {
+      "meaning": "努力、舉措",
+      "romaji": "torikumi",
+      "reading": "取り組み"
+    },
+    "積み重ね": {
+      "meaning": "累積",
+      "romaji": "tsumikasane",
+      "reading": "積み重ね"
+    },
+    "住みやすい": {
+      "meaning": "宜居的、好住的",
+      "romaji": "sumiyasui",
+      "reading": "住みやすい"
+    },
+    "環境": {
+      "meaning": "環境",
+      "romaji": "kankyou",
+      "reading": "環境"
+    },
+    "つくる": {
+      "meaning": "打造、創造",
+      "romaji": "tsukuru",
+      "reading": "つくる"
+    },
+    "第一歩": {
+      "meaning": "第一步",
+      "romaji": "daiippo",
+      "reading": "第一歩"
+    },
+    "お金": {
+      "meaning": "錢",
+      "romaji": "okane",
+      "reading": "お金"
+    },
+    "公園": {
+      "meaning": "公園",
+      "romaji": "kouen",
+      "reading": "公園"
+    },
+    "整備": {
+      "meaning": "維護、整修",
+      "romaji": "seibi",
+      "reading": "整備"
+    },
+    "子ども会": {
+      "meaning": "兒童會",
+      "romaji": "kodomokai",
+      "reading": "子ども会"
+    },
+    "活動": {
+      "meaning": "活動",
+      "romaji": "katsudou",
+      "reading": "活動"
+    },
+    "使う": {
+      "meaning": "使用",
+      "romaji": "tsukau",
+      "reading": "使う"
+    },
+    "しかし": {
+      "meaning": "但是、然而",
+      "romaji": "shikashi"
+    }
+  },
+  "particles": {
+    "の": "連體助詞，表示修飾、所屬",
+    "で": "表示場所、方式",
+    "は": "主題助詞，標示話題",
+    "が": "主格助詞，標示主語",
+    "を": "受格助詞，標示動作對象",
+    "や": "表示部分列舉「…等」",
+    "など": "表示舉例「…之類」",
+    "ごとに": "表示「每…」",
+    "と": "引用助詞，標示引用內容",
+    "も": "表示「也」，追加同類",
+    "に": "表示對象、歸著點",
+    "うちに": "表示「趁…的時候、在…期間」",
+    "ように": "表示變化的結果「變得…」",
+    "だ": "普通體斷定助動詞",
+    "だろう": "表示推測「大概…吧」"
+  },
+  "translations": [
+    [
+      {
+        "text": "在我住的城鎮，",
+        "word": "住む"
+      },
+      {
+        "text": "每月一次，",
+        "word": "一回"
+      },
+      {
+        "text": "地區居民",
+        "word": "住民"
+      },
+      {
+        "text": "會聚集起來",
+        "word": "集まる"
+      },
+      {
+        "text": "進行資源回收活動。",
+        "word": "リサイクル活動"
+      }
+    ],
+    [
+      {
+        "text": "這是把舊報紙、空罐、",
+        "word": "古新聞"
+      },
+      {
+        "text": "寶特瓶等",
+        "word": "ペットボトル"
+      },
+      {
+        "text": "依種類分類",
+        "word": "種類"
+      },
+      {
+        "text": "回收的機制。",
+        "word": "仕組み"
+      }
+    ],
+    [
+      {
+        "text": "起初覺得麻煩的人",
+        "word": "面倒"
+      },
+      {
+        "text": "也不少。",
+        "word": "少ない"
+      }
+    ],
+    [
+      {
+        "text": "然而，",
+        "word": null
+      },
+      {
+        "text": "在持續的過程中，",
+        "word": "続ける"
+      },
+      {
+        "text": "珍惜資源的意識",
+        "word": "意識"
+      },
+      {
+        "text": "一點一點地擴展開來。",
+        "word": "広がる"
+      }
+    ],
+    [
+      {
+        "text": "孩子們也開始參加，",
+        "word": "参加する"
+      },
+      {
+        "text": "在家庭中討論減少垃圾的辦法的",
+        "word": "工夫"
+      },
+      {
+        "text": "家庭也在增加。",
+        "word": "増える"
+      }
+    ],
+    [
+      {
+        "text": "這樣的小舉措",
+        "word": "取り組み"
+      },
+      {
+        "text": "的累積，",
+        "word": "積み重ね"
+      },
+      {
+        "text": "大概會成為打造宜居環境的",
+        "word": "環境"
+      },
+      {
+        "text": "第一步吧。",
+        "word": "第一歩"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.12,
+    "jlpt_level": "N2⁻"
+  }
+}
