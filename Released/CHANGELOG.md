@@ -1,5 +1,11 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.5 — 2026-06-27
+
+**Bug 修正：文章頁捲動根因確認修復**
+
+- 將 stale transform 清除移至 switchPage('article')，確保每次進入文章頁都執行（不依賴 DOMContentLoaded，service worker 更新後也有效）
+
 ## v1.1.4 — 2026-06-27
 
 **Bug 修正：文章頁捲動根因修復 + Tutorial 視覺改善**
@@ -212,6 +218,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.5 — 2026-06-27
+
+Bug：文章頁捲動stale transform清除改至switchPage確保每次生效
 
 ---
 

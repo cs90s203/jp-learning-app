@@ -2083,7 +2083,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.4
+          v1.1.5
         </div>
 
       </div>
@@ -2405,6 +2405,9 @@ function switchPage(id) {
   _updateHelpBtnGlow();
 
   if (id === 'article') {
+    // clear stale transform that may have been set by old PTR code (breaks iOS scroll)
+    var _paEl = document.getElementById('page-article');
+    if (_paEl) _paEl.style.transform = '';
     if (!articleRendered) {
       // 首次進入：載入今天的文章（依使用者等級）
       loadContentForDate(getLocalDateStr(), CURRENT_LEVEL).then(result => {
