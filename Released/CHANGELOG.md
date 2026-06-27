@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.13 — 2026-06-28
+
+**Tutorial：說明框在上方的 edge case + 圓角反轉**
+
+- 當說明框因空間不足被擺到指示框上方時，圓角概念上下反轉：指示框平頂圓底 `0 0 12px 12px`、說明框圓頂平底，相接邊仍平角、外露邊圓角
+- 角落小按鈕（tip:right/left）在上方時同樣彈性套用單邊靠齊
+- 修正 above 定位 bug：tooltip 先掛上 DOM 才量 `offsetHeight`，否則量到 0 導致與指示框出現空隙
+
 ## v1.1.12 — 2026-06-28
 
 **Tutorial 微調：quiz-main 指示框固定高度**
@@ -278,6 +286,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.13 — 2026-06-28
+
+Tutorial：說明框在上方 edge case 圓角反轉 + above 定位 bug 修正
 
 ---
 

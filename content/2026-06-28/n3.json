@@ -1,0 +1,1181 @@
+{
+  "date": "2026-06-28",
+  "level": "n3",
+  "title": "スマホと睡眠",
+  "text": "スマートフォンは、今やわたしたちの生活に欠かせない道具になった。調べ物や連絡だけでなく、買い物や勉強まで、画面ひとつでできてしまう。しかし、便利になった一方で、新しい問題も生まれている。とくに、寝る前に長い時間スマホを見続けると、なかなか寝つけなくなると言われている。画面の光が脳を刺激して、眠りを浅くするからだ。わたしは、夜だけでも少しスマホから離れたほうがいいと思う。ところが、いざやってみると、これがなかなか難しいのである。",
+  "tokens": [
+    {
+      "surface_form": "スマートフォン",
+      "basic_form": "スマートフォン",
+      "reading": "スマートフォン",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今",
+      "basic_form": "今",
+      "reading": "いま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "わたしたち",
+      "basic_form": "わたしたち",
+      "reading": "わたしたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活",
+      "basic_form": "生活",
+      "reading": "せいかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "欠かせ",
+      "basic_form": "欠かす",
+      "reading": "かかせ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "道具",
+      "basic_form": "道具",
+      "reading": "どうぐ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっ",
+      "basic_form": "なる",
+      "reading": "なっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "調べ物",
+      "basic_form": "調べ物",
+      "reading": "しらべもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "連絡",
+      "basic_form": "連絡",
+      "reading": "れんらく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "買い物",
+      "basic_form": "買い物",
+      "reading": "かいもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "勉強",
+      "basic_form": "勉強",
+      "reading": "べんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "画面",
+      "basic_form": "画面",
+      "reading": "がめん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ひとつ",
+      "basic_form": "ひとつ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "でき",
+      "basic_form": "できる",
+      "reading": "でき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しまう",
+      "basic_form": "しまう",
+      "reading": "しまう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかし",
+      "basic_form": "しかし",
+      "reading": "しかし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "便利",
+      "basic_form": "便利",
+      "reading": "べんり",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっ",
+      "basic_form": "なる",
+      "reading": "なっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "新しい",
+      "basic_form": "新しい",
+      "reading": "あたらしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生まれ",
+      "basic_form": "生まれる",
+      "reading": "うまれ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とくに",
+      "basic_form": "とくに",
+      "reading": "とくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "寝る",
+      "basic_form": "寝る",
+      "reading": "ねる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "前",
+      "basic_form": "前",
+      "reading": "まえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "長い",
+      "basic_form": "長い",
+      "reading": "ながい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "スマホ",
+      "basic_form": "スマホ",
+      "reading": "スマホ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見続ける",
+      "basic_form": "見続ける",
+      "reading": "みつづける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "なかなか",
+      "basic_form": "なかなか",
+      "reading": "なかなか",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "寝つけ",
+      "basic_form": "寝つける",
+      "reading": "ねつけ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言わ",
+      "basic_form": "言う",
+      "reading": "いわ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "画面",
+      "basic_form": "画面",
+      "reading": "がめん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "光",
+      "basic_form": "光",
+      "reading": "ひかり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "脳",
+      "basic_form": "脳",
+      "reading": "のう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "刺激",
+      "basic_form": "刺激",
+      "reading": "しげき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "眠り",
+      "basic_form": "眠り",
+      "reading": "ねむり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "浅く",
+      "basic_form": "浅い",
+      "reading": "あさく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "夜",
+      "basic_form": "夜",
+      "reading": "よる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "スマホ",
+      "basic_form": "スマホ",
+      "reading": "スマホ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "離れ",
+      "basic_form": "離れる",
+      "reading": "はなれ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ほう",
+      "basic_form": "ほう",
+      "reading": "ほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ところが",
+      "basic_form": "ところが",
+      "reading": "ところが",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いざ",
+      "basic_form": "いざ",
+      "reading": "いざ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "やっ",
+      "basic_form": "やる",
+      "reading": "やっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みる",
+      "basic_form": "みる",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これ",
+      "basic_form": "これ",
+      "reading": "これ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なかなか",
+      "basic_form": "なかなか",
+      "reading": "なかなか",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "難しい",
+      "basic_form": "難しい",
+      "reading": "むずかしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "だ",
+      "reading": "で",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "スマートフォン": {
+      "meaning": "智慧型手機",
+      "romaji": "sumaatofon",
+      "reading": "スマートフォン"
+    },
+    "今": {
+      "meaning": "現在",
+      "romaji": "ima",
+      "reading": "今"
+    },
+    "わたしたち": {
+      "meaning": "我們",
+      "romaji": "watashitachi",
+      "reading": "わたしたち"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "生活": {
+      "meaning": "生活",
+      "romaji": "seikatsu",
+      "reading": "生活"
+    },
+    "欠かす": {
+      "meaning": "欠缺、少了",
+      "romaji": "kakasu",
+      "reading": "欠かす"
+    },
+    "道具": {
+      "meaning": "工具",
+      "romaji": "dougu",
+      "reading": "道具"
+    },
+    "なる": {
+      "meaning": "成為、變成",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "調べ物": {
+      "meaning": "查詢的事物",
+      "romaji": "shirabemono",
+      "reading": "調べ物"
+    },
+    "連絡": {
+      "meaning": "聯絡",
+      "romaji": "renraku",
+      "reading": "連絡"
+    },
+    "ない": {
+      "meaning": "沒有、不",
+      "romaji": "nai",
+      "reading": "ない"
+    },
+    "買い物": {
+      "meaning": "購物",
+      "romaji": "kaimono",
+      "reading": "買い物"
+    },
+    "勉強": {
+      "meaning": "學習、念書",
+      "romaji": "benkyou",
+      "reading": "勉強"
+    },
+    "画面": {
+      "meaning": "畫面、螢幕",
+      "romaji": "gamen",
+      "reading": "画面"
+    },
+    "ひとつ": {
+      "meaning": "一個",
+      "romaji": "hitotsu",
+      "reading": "ひとつ"
+    },
+    "できる": {
+      "meaning": "能夠、辦到",
+      "romaji": "dekiru",
+      "reading": "できる"
+    },
+    "しまう": {
+      "meaning": "（～てしまう）表完成或徹底",
+      "romaji": "shimau",
+      "reading": "しまう"
+    },
+    "しかし": {
+      "meaning": "但是",
+      "romaji": "shikashi",
+      "reading": "しかし"
+    },
+    "便利": {
+      "meaning": "方便",
+      "romaji": "benri",
+      "reading": "便利"
+    },
+    "一方": {
+      "meaning": "另一方面",
+      "romaji": "ippou",
+      "reading": "一方"
+    },
+    "新しい": {
+      "meaning": "新的",
+      "romaji": "atarashii",
+      "reading": "新しい"
+    },
+    "問題": {
+      "meaning": "問題",
+      "romaji": "mondai",
+      "reading": "問題"
+    },
+    "生まれる": {
+      "meaning": "產生、誕生",
+      "romaji": "umareru",
+      "reading": "生まれる"
+    },
+    "いる": {
+      "meaning": "（狀態持續）著",
+      "romaji": "iru",
+      "reading": "いる"
+    },
+    "とくに": {
+      "meaning": "特別是",
+      "romaji": "tokuni",
+      "reading": "とくに"
+    },
+    "寝る": {
+      "meaning": "睡覺",
+      "romaji": "neru",
+      "reading": "寝る"
+    },
+    "前": {
+      "meaning": "之前",
+      "romaji": "mae",
+      "reading": "前"
+    },
+    "長い": {
+      "meaning": "長的",
+      "romaji": "nagai",
+      "reading": "長い"
+    },
+    "時間": {
+      "meaning": "時間",
+      "romaji": "jikan",
+      "reading": "時間"
+    },
+    "スマホ": {
+      "meaning": "手機（口語）",
+      "romaji": "sumaho",
+      "reading": "スマホ"
+    },
+    "見続ける": {
+      "meaning": "持續看、一直看",
+      "romaji": "mitsuzukeru",
+      "reading": "見続ける"
+    },
+    "なかなか": {
+      "meaning": "（後接否定）怎麼也…",
+      "romaji": "nakanaka",
+      "reading": "なかなか"
+    },
+    "寝つける": {
+      "meaning": "入睡",
+      "romaji": "netsukeru",
+      "reading": "寝つける"
+    },
+    "言う": {
+      "meaning": "說",
+      "romaji": "iu",
+      "reading": "言う"
+    },
+    "れる": {
+      "meaning": "被動助動詞，表示被…",
+      "romaji": "reru",
+      "reading": "れる"
+    },
+    "光": {
+      "meaning": "光",
+      "romaji": "hikari",
+      "reading": "光"
+    },
+    "脳": {
+      "meaning": "大腦",
+      "romaji": "nou",
+      "reading": "脳"
+    },
+    "刺激": {
+      "meaning": "刺激",
+      "romaji": "shigeki",
+      "reading": "刺激"
+    },
+    "する": {
+      "meaning": "做、使…",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "眠り": {
+      "meaning": "睡眠",
+      "romaji": "nemuri",
+      "reading": "眠り"
+    },
+    "浅い": {
+      "meaning": "淺的",
+      "romaji": "asai",
+      "reading": "浅い"
+    },
+    "夜": {
+      "meaning": "晚上",
+      "romaji": "yoru",
+      "reading": "夜"
+    },
+    "少し": {
+      "meaning": "稍微、一點",
+      "romaji": "sukoshi",
+      "reading": "少し"
+    },
+    "離れる": {
+      "meaning": "離開、遠離",
+      "romaji": "hanareru",
+      "reading": "離れる"
+    },
+    "ほう": {
+      "meaning": "（～たほうがいい）…比較好",
+      "romaji": "hou",
+      "reading": "ほう"
+    },
+    "いい": {
+      "meaning": "好的",
+      "romaji": "ii",
+      "reading": "いい"
+    },
+    "思う": {
+      "meaning": "認為、覺得",
+      "romaji": "omou",
+      "reading": "思う"
+    },
+    "ところが": {
+      "meaning": "然而、可是",
+      "romaji": "tokoroga",
+      "reading": "ところが"
+    },
+    "いざ": {
+      "meaning": "一旦真的、實際要…時",
+      "romaji": "iza",
+      "reading": "いざ"
+    },
+    "やる": {
+      "meaning": "做、嘗試",
+      "romaji": "yaru",
+      "reading": "やる"
+    },
+    "みる": {
+      "meaning": "（～てみる）試著做",
+      "romaji": "miru",
+      "reading": "みる"
+    },
+    "これ": {
+      "meaning": "這個",
+      "romaji": "kore",
+      "reading": "これ"
+    },
+    "難しい": {
+      "meaning": "困難的",
+      "romaji": "muzukashii",
+      "reading": "難しい"
+    },
+    "ある": {
+      "meaning": "有、是（書面斷定）",
+      "romaji": "aru",
+      "reading": "ある"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示句子的話題",
+    "や": "表示部分列舉「…啦…啦」；「今や」表示如今",
+    "の": "連體助詞，表示修飾或所屬；亦作準體助詞",
+    "に": "表示變化結果、時間點或對象",
+    "だけ": "表示限定「只」；～だけでなく 表示不僅",
+    "で": "表示手段、範圍或場所",
+    "まで": "表示範圍「甚至、連…」",
+    "と": "表示引用，或表示「一…就…」的條件",
+    "も": "表示「也」",
+    "を": "受格助詞，標示動作對象",
+    "から": "表示原因「因為」或起點「從」",
+    "でも": "表示「就算只是…也」",
+    "が": "主格助詞；亦引出後句",
+    "ない": "助動詞，表示否定",
+    "た": "助動詞，表示過去或完成",
+    "れる": "助動詞，表示被動",
+    "だ": "助動詞，表示斷定「是」"
+  },
+  "translations": [
+    [
+      {
+        "text": "智慧型手機",
+        "word": "スマートフォン"
+      },
+      {
+        "text": "如今",
+        "word": "今"
+      },
+      {
+        "text": "已成為我們",
+        "word": "わたしたち"
+      },
+      {
+        "text": "生活中不可或缺的",
+        "word": "欠かす"
+      },
+      {
+        "text": "工具。",
+        "word": "道具"
+      }
+    ],
+    [
+      {
+        "text": "不僅是查資料、",
+        "word": "調べ物"
+      },
+      {
+        "text": "聯絡，",
+        "word": "連絡"
+      },
+      {
+        "text": "連購物、",
+        "word": "買い物"
+      },
+      {
+        "text": "念書都",
+        "word": "勉強"
+      },
+      {
+        "text": "靠一個螢幕就能搞定。",
+        "word": "画面"
+      }
+    ],
+    [
+      {
+        "text": "然而，",
+        "word": "しかし"
+      },
+      {
+        "text": "在變方便的",
+        "word": "便利"
+      },
+      {
+        "text": "另一方面，",
+        "word": "一方"
+      },
+      {
+        "text": "新的問題",
+        "word": "問題"
+      },
+      {
+        "text": "也隨之產生。",
+        "word": "生まれる"
+      }
+    ],
+    [
+      {
+        "text": "尤其，",
+        "word": "とくに"
+      },
+      {
+        "text": "睡前",
+        "word": "寝る"
+      },
+      {
+        "text": "長時間",
+        "word": "時間"
+      },
+      {
+        "text": "一直盯著手機看，",
+        "word": "見続ける"
+      },
+      {
+        "text": "據說會變得難以入睡。",
+        "word": "寝つける"
+      }
+    ],
+    [
+      {
+        "text": "因為螢幕的光",
+        "word": "光"
+      },
+      {
+        "text": "會刺激大腦，",
+        "word": "刺激"
+      },
+      {
+        "text": "使睡眠變淺。",
+        "word": "浅い"
+      }
+    ],
+    [
+      {
+        "text": "我覺得，",
+        "word": "思う"
+      },
+      {
+        "text": "哪怕只在晚上",
+        "word": "夜"
+      },
+      {
+        "text": "稍微遠離手機",
+        "word": "離れる"
+      },
+      {
+        "text": "也比較好。",
+        "word": "ほう"
+      }
+    ],
+    [
+      {
+        "text": "然而，",
+        "word": "ところが"
+      },
+      {
+        "text": "真要做起來，",
+        "word": "やる"
+      },
+      {
+        "text": "這還",
+        "word": "これ"
+      },
+      {
+        "text": "相當困難。",
+        "word": "難しい"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.12,
+    "jlpt_level": "N3"
+  }
+}

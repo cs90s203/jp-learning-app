@@ -1,0 +1,923 @@
+{
+  "date": "2026-06-28",
+  "level": "n3_lite",
+  "title": "コンビニの便利さ",
+  "text": "日本の生活でいちばん便利なものは、やはりコンビニだと思います。コンビニは朝から夜までずっと開いていて、食べ物や飲み物、日用品までそろっています。最近は、荷物を受け取ったり、公共料金を払ったりすることもできます。店員さんの対応もていねいなので、気持ちよく買い物ができます。ただ、便利すぎて、つい無駄なものまで買ってしまうのが問題かもしれません。",
+  "tokens": [
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活",
+      "basic_form": "生活",
+      "reading": "せいかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いちばん",
+      "basic_form": "いちばん",
+      "reading": "いちばん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "便利",
+      "basic_form": "便利",
+      "reading": "べんり",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "もの",
+      "basic_form": "もの",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "やはり",
+      "basic_form": "やはり",
+      "reading": "やはり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "コンビニ",
+      "basic_form": "コンビニ",
+      "reading": "コンビニ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思い",
+      "basic_form": "思う",
+      "reading": "おもい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "コンビニ",
+      "basic_form": "コンビニ",
+      "reading": "コンビニ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "朝",
+      "basic_form": "朝",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "夜",
+      "basic_form": "夜",
+      "reading": "よる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ずっと",
+      "basic_form": "ずっと",
+      "reading": "ずっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "開い",
+      "basic_form": "開く",
+      "reading": "あい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "食べ物",
+      "basic_form": "食べ物",
+      "reading": "たべもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "飲み物",
+      "basic_form": "飲み物",
+      "reading": "のみもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日用品",
+      "basic_form": "日用品",
+      "reading": "にちようひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "そろっ",
+      "basic_form": "そろう",
+      "reading": "そろっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "荷物",
+      "basic_form": "荷物",
+      "reading": "にもつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受け取っ",
+      "basic_form": "受け取る",
+      "reading": "うけとっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たり",
+      "basic_form": "たり",
+      "reading": "たり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "公共",
+      "basic_form": "公共",
+      "reading": "こうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "料金",
+      "basic_form": "料金",
+      "reading": "りょうきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "払っ",
+      "basic_form": "払う",
+      "reading": "はらっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たり",
+      "basic_form": "たり",
+      "reading": "たり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "でき",
+      "basic_form": "できる",
+      "reading": "でき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "店員",
+      "basic_form": "店員",
+      "reading": "てんいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "さん",
+      "basic_form": "さん",
+      "reading": "さん",
+      "pos": "接尾辞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対応",
+      "basic_form": "対応",
+      "reading": "たいおう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ていねい",
+      "basic_form": "ていねい",
+      "reading": "ていねい",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "気持ち",
+      "basic_form": "気持ち",
+      "reading": "きもち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "よく",
+      "basic_form": "よい",
+      "reading": "よく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "買い物",
+      "basic_form": "買い物",
+      "reading": "かいもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "でき",
+      "basic_form": "できる",
+      "reading": "でき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ただ",
+      "basic_form": "ただ",
+      "reading": "ただ",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "便利",
+      "basic_form": "便利",
+      "reading": "べんり",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "すぎ",
+      "basic_form": "すぎる",
+      "reading": "すぎ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "つい",
+      "basic_form": "つい",
+      "reading": "つい",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "無駄",
+      "basic_form": "無駄",
+      "reading": "むだ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "もの",
+      "basic_form": "もの",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買っ",
+      "basic_form": "買う",
+      "reading": "かっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しまう",
+      "basic_form": "しまう",
+      "reading": "しまう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "かも",
+      "basic_form": "かも",
+      "reading": "かも",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しれ",
+      "basic_form": "しれる",
+      "reading": "しれ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ませ",
+      "basic_form": "ます",
+      "reading": "ませ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ん",
+      "basic_form": "ん",
+      "reading": "ん",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "日本": {
+      "meaning": "日本",
+      "romaji": "nihon",
+      "reading": "日本"
+    },
+    "生活": {
+      "meaning": "生活",
+      "romaji": "seikatsu",
+      "reading": "生活"
+    },
+    "いちばん": {
+      "meaning": "最",
+      "romaji": "ichiban",
+      "reading": "いちばん"
+    },
+    "便利": {
+      "meaning": "方便",
+      "romaji": "benri",
+      "reading": "便利"
+    },
+    "もの": {
+      "meaning": "東西、事物",
+      "romaji": "mono",
+      "reading": "もの"
+    },
+    "やはり": {
+      "meaning": "果然、還是",
+      "romaji": "yahari",
+      "reading": "やはり"
+    },
+    "コンビニ": {
+      "meaning": "便利商店",
+      "romaji": "konbini",
+      "reading": "コンビニ"
+    },
+    "思う": {
+      "meaning": "認為、覺得",
+      "romaji": "omou",
+      "reading": "思う"
+    },
+    "朝": {
+      "meaning": "早上",
+      "romaji": "asa",
+      "reading": "朝"
+    },
+    "夜": {
+      "meaning": "晚上",
+      "romaji": "yoru",
+      "reading": "夜"
+    },
+    "ずっと": {
+      "meaning": "一直",
+      "romaji": "zutto",
+      "reading": "ずっと"
+    },
+    "開く": {
+      "meaning": "開（門）、營業",
+      "romaji": "aku",
+      "reading": "開く"
+    },
+    "いる": {
+      "meaning": "（狀態持續）著",
+      "romaji": "iru",
+      "reading": "いる"
+    },
+    "食べ物": {
+      "meaning": "食物",
+      "romaji": "tabemono",
+      "reading": "食べ物"
+    },
+    "飲み物": {
+      "meaning": "飲料",
+      "romaji": "nomimono",
+      "reading": "飲み物"
+    },
+    "日用品": {
+      "meaning": "日用品",
+      "romaji": "nichiyouhin",
+      "reading": "日用品"
+    },
+    "そろう": {
+      "meaning": "齊全、一應俱全",
+      "romaji": "sorou",
+      "reading": "そろう"
+    },
+    "最近": {
+      "meaning": "最近",
+      "romaji": "saikin",
+      "reading": "最近"
+    },
+    "荷物": {
+      "meaning": "包裹、行李",
+      "romaji": "nimotsu",
+      "reading": "荷物"
+    },
+    "受け取る": {
+      "meaning": "領取、收取",
+      "romaji": "uketoru",
+      "reading": "受け取る"
+    },
+    "公共": {
+      "meaning": "公共",
+      "romaji": "koukyou",
+      "reading": "公共"
+    },
+    "料金": {
+      "meaning": "費用",
+      "romaji": "ryoukin",
+      "reading": "料金"
+    },
+    "払う": {
+      "meaning": "支付",
+      "romaji": "harau",
+      "reading": "払う"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "こと": {
+      "meaning": "（形式名詞）事情",
+      "romaji": "koto",
+      "reading": "こと"
+    },
+    "できる": {
+      "meaning": "能夠、可以",
+      "romaji": "dekiru",
+      "reading": "できる"
+    },
+    "店員": {
+      "meaning": "店員",
+      "romaji": "tenin",
+      "reading": "店員"
+    },
+    "対応": {
+      "meaning": "應對、服務",
+      "romaji": "taiou",
+      "reading": "対応"
+    },
+    "ていねい": {
+      "meaning": "有禮貌、周到",
+      "romaji": "teinei",
+      "reading": "ていねい"
+    },
+    "気持ち": {
+      "meaning": "心情",
+      "romaji": "kimochi",
+      "reading": "気持ち"
+    },
+    "よい": {
+      "meaning": "好的",
+      "romaji": "yoi",
+      "reading": "よい"
+    },
+    "買い物": {
+      "meaning": "購物",
+      "romaji": "kaimono",
+      "reading": "買い物"
+    },
+    "ただ": {
+      "meaning": "不過、只是",
+      "romaji": "tada",
+      "reading": "ただ"
+    },
+    "すぎる": {
+      "meaning": "過於、太過",
+      "romaji": "sugiru",
+      "reading": "すぎる"
+    },
+    "つい": {
+      "meaning": "不知不覺、忍不住",
+      "romaji": "tsui",
+      "reading": "つい"
+    },
+    "無駄": {
+      "meaning": "浪費、多餘",
+      "romaji": "muda",
+      "reading": "無駄"
+    },
+    "買う": {
+      "meaning": "買",
+      "romaji": "kau",
+      "reading": "買う"
+    },
+    "しまう": {
+      "meaning": "（～てしまう）表完成或遺憾",
+      "romaji": "shimau",
+      "reading": "しまう"
+    },
+    "問題": {
+      "meaning": "問題",
+      "romaji": "mondai",
+      "reading": "問題"
+    },
+    "しれる": {
+      "meaning": "（かもしれない）也許",
+      "romaji": "shireru",
+      "reading": "しれる"
+    }
+  },
+  "particles": {
+    "の": "連體助詞，表示修飾或所屬；亦作準體助詞",
+    "で": "表示範圍或場所「在…之中」",
+    "な": "形容動詞／斷定的連體形",
+    "は": "主題助詞，標示句子的話題",
+    "だ": "助動詞，表示斷定「是」",
+    "と": "表示引用的內容「…說、…認為」",
+    "から": "表示起點「從」",
+    "まで": "表示終點或範圍「到…為止、甚至」",
+    "や": "表示部分列舉「…啦…啦」",
+    "を": "受格助詞，標示動作對象",
+    "たり": "～たり，列舉動作「…之類的」",
+    "も": "表示「也」",
+    "ので": "表示原因、理由「因為」",
+    "が": "主格助詞；亦引出後句",
+    "かも": "～かもしれない，表示推測「也許」",
+    "ます": "助動詞，表示禮貌（丁寧）",
+    "ん": "助動詞「ぬ」的口語縮約，表示否定"
+  },
+  "translations": [
+    [
+      {
+        "text": "日本生活中",
+        "word": "生活"
+      },
+      {
+        "text": "最方便的",
+        "word": "便利"
+      },
+      {
+        "text": "東西，",
+        "word": "もの"
+      },
+      {
+        "text": "果然還是便利商店吧，",
+        "word": "コンビニ"
+      },
+      {
+        "text": "我這麼覺得。",
+        "word": "思う"
+      }
+    ],
+    [
+      {
+        "text": "便利商店從早",
+        "word": "朝"
+      },
+      {
+        "text": "到晚",
+        "word": "夜"
+      },
+      {
+        "text": "一直營業，",
+        "word": "開く"
+      },
+      {
+        "text": "食物、飲料、",
+        "word": "食べ物"
+      },
+      {
+        "text": "連日用品都",
+        "word": "日用品"
+      },
+      {
+        "text": "一應俱全。",
+        "word": "そろう"
+      }
+    ],
+    [
+      {
+        "text": "最近，",
+        "word": "最近"
+      },
+      {
+        "text": "還能領取包裹、",
+        "word": "受け取る"
+      },
+      {
+        "text": "繳公共",
+        "word": "公共"
+      },
+      {
+        "text": "費用。",
+        "word": "料金"
+      }
+    ],
+    [
+      {
+        "text": "店員",
+        "word": "店員"
+      },
+      {
+        "text": "的服務也很周到，",
+        "word": "対応"
+      },
+      {
+        "text": "能愉快地",
+        "word": "気持ち"
+      },
+      {
+        "text": "購物。",
+        "word": "買い物"
+      }
+    ],
+    [
+      {
+        "text": "不過，",
+        "word": "ただ"
+      },
+      {
+        "text": "太方便了，",
+        "word": "便利"
+      },
+      {
+        "text": "不小心",
+        "word": "つい"
+      },
+      {
+        "text": "連多餘的東西都買下，",
+        "word": "買う"
+      },
+      {
+        "text": "或許才是問題。",
+        "word": "問題"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.1,
+    "jlpt_level": "N3⁻"
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "date": "2026-06-28",
+  "level": "n5_lite",
+  "title": "あさのこうえん",
+  "text": "まいあさ、わたしはこうえんへいきます。いけにさかながいます。とりもたくさんいます。あさのこうえんはとてもしずかです。",
+  "tokens": [
+    {
+      "surface_form": "まいあさ",
+      "basic_form": "まいあさ",
+      "reading": "まいあさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "こうえん",
+      "basic_form": "こうえん",
+      "reading": "こうえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いき",
+      "basic_form": "いく",
+      "reading": "いき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いけ",
+      "basic_form": "いけ",
+      "reading": "いけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さかな",
+      "basic_form": "さかな",
+      "reading": "さかな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とり",
+      "basic_form": "とり",
+      "reading": "とり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たくさん",
+      "basic_form": "たくさん",
+      "reading": "たくさん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あさ",
+      "basic_form": "あさ",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "こうえん",
+      "basic_form": "こうえん",
+      "reading": "こうえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "しずか",
+      "basic_form": "しずか",
+      "reading": "しずか",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "まいあさ": {
+      "meaning": "每天早上",
+      "romaji": "maiasa",
+      "reading": "まいあさ"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "こうえん": {
+      "meaning": "公園",
+      "romaji": "kouen",
+      "reading": "こうえん"
+    },
+    "いく": {
+      "meaning": "去",
+      "romaji": "iku",
+      "reading": "いく"
+    },
+    "いけ": {
+      "meaning": "池塘",
+      "romaji": "ike",
+      "reading": "いけ"
+    },
+    "さかな": {
+      "meaning": "魚",
+      "romaji": "sakana",
+      "reading": "さかな"
+    },
+    "いる": {
+      "meaning": "（生物）在、有",
+      "romaji": "iru",
+      "reading": "いる"
+    },
+    "とり": {
+      "meaning": "鳥",
+      "romaji": "tori",
+      "reading": "とり"
+    },
+    "たくさん": {
+      "meaning": "很多",
+      "romaji": "takusan",
+      "reading": "たくさん"
+    },
+    "あさ": {
+      "meaning": "早上",
+      "romaji": "asa",
+      "reading": "あさ"
+    },
+    "しずか": {
+      "meaning": "安靜",
+      "romaji": "shizuka",
+      "reading": "しずか"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示句子的話題",
+    "へ": "表示移動的方向「往、向」",
+    "に": "表示存在的場所「在」",
+    "が": "主格助詞，標示主語",
+    "も": "表示「也」",
+    "の": "連體助詞，表示修飾或所屬",
+    "ます": "助動詞，表示禮貌（丁寧）",
+    "です": "助動詞，表示禮貌的斷定「是」"
+  },
+  "translations": [
+    [
+      {
+        "text": "每天早上，",
+        "word": "まいあさ"
+      },
+      {
+        "text": "我",
+        "word": "わたし"
+      },
+      {
+        "text": "去公園。",
+        "word": "いく"
+      }
+    ],
+    [
+      {
+        "text": "池塘裡",
+        "word": "いけ"
+      },
+      {
+        "text": "有魚。",
+        "word": "さかな"
+      }
+    ],
+    [
+      {
+        "text": "鳥也",
+        "word": "とり"
+      },
+      {
+        "text": "有很多。",
+        "word": "たくさん"
+      }
+    ],
+    [
+      {
+        "text": "早晨的公園",
+        "word": "こうえん"
+      },
+      {
+        "text": "非常安靜。",
+        "word": "しずか"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.05,
+    "jlpt_level": "N5⁻"
+  }
+}

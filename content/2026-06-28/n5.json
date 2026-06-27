@@ -1,0 +1,632 @@
+{
+  "date": "2026-06-28",
+  "level": "n5",
+  "title": "あめのにちようび",
+  "text": "にちようびはあさからあめがふっていました。わたしはいえでほんをよみました。おひるごはんをたべてから、おかしをつくりました。チョコレートのケーキです。よるにはははがかえってきて、いっしょにたべました。あまくておいしかったです。いいひでした。",
+  "tokens": [
+    {
+      "surface_form": "にちようび",
+      "basic_form": "にちようび",
+      "reading": "にちようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あさ",
+      "basic_form": "あさ",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あめ",
+      "basic_form": "あめ",
+      "reading": "あめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ふっ",
+      "basic_form": "ふる",
+      "reading": "ふっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いえ",
+      "basic_form": "いえ",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほん",
+      "basic_form": "ほん",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よみ",
+      "basic_form": "よむ",
+      "reading": "よみ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おひるごはん",
+      "basic_form": "おひるごはん",
+      "reading": "おひるごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たべ",
+      "basic_form": "たべる",
+      "reading": "たべ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おかし",
+      "basic_form": "おかし",
+      "reading": "おかし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つくり",
+      "basic_form": "つくる",
+      "reading": "つくり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "チョコレート",
+      "basic_form": "チョコレート",
+      "reading": "チョコレート",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ケーキ",
+      "basic_form": "ケーキ",
+      "reading": "ケーキ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "よる",
+      "basic_form": "よる",
+      "reading": "よる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "はは",
+      "basic_form": "はは",
+      "reading": "はは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かえっ",
+      "basic_form": "かえる",
+      "reading": "かえっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "き",
+      "basic_form": "くる",
+      "reading": "き",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いっしょ",
+      "basic_form": "いっしょ",
+      "reading": "いっしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たべ",
+      "basic_form": "たべる",
+      "reading": "たべ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あまく",
+      "basic_form": "あまい",
+      "reading": "あまく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おいしかっ",
+      "basic_form": "おいしい",
+      "reading": "おいしかっ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ひ",
+      "basic_form": "ひ",
+      "reading": "ひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でし",
+      "basic_form": "です",
+      "reading": "でし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "にちようび": {
+      "meaning": "星期日",
+      "romaji": "nichiyoubi",
+      "reading": "にちようび"
+    },
+    "あさ": {
+      "meaning": "早上",
+      "romaji": "asa",
+      "reading": "あさ"
+    },
+    "あめ": {
+      "meaning": "雨",
+      "romaji": "ame",
+      "reading": "あめ"
+    },
+    "ふる": {
+      "meaning": "（雨）下、降",
+      "romaji": "furu",
+      "reading": "ふる"
+    },
+    "いる": {
+      "meaning": "（正在）…著",
+      "romaji": "iru",
+      "reading": "いる"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "いえ": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "いえ"
+    },
+    "ほん": {
+      "meaning": "書",
+      "romaji": "hon",
+      "reading": "ほん"
+    },
+    "よむ": {
+      "meaning": "讀、看",
+      "romaji": "yomu",
+      "reading": "よむ"
+    },
+    "おひるごはん": {
+      "meaning": "午餐",
+      "romaji": "ohirugohan",
+      "reading": "おひるごはん"
+    },
+    "たべる": {
+      "meaning": "吃",
+      "romaji": "taberu",
+      "reading": "たべる"
+    },
+    "おかし": {
+      "meaning": "點心、零食",
+      "romaji": "okashi",
+      "reading": "おかし"
+    },
+    "つくる": {
+      "meaning": "製作、做",
+      "romaji": "tsukuru",
+      "reading": "つくる"
+    },
+    "チョコレート": {
+      "meaning": "巧克力",
+      "romaji": "chokoreeto",
+      "reading": "チョコレート"
+    },
+    "ケーキ": {
+      "meaning": "蛋糕",
+      "romaji": "keeki",
+      "reading": "ケーキ"
+    },
+    "よる": {
+      "meaning": "晚上",
+      "romaji": "yoru",
+      "reading": "よる"
+    },
+    "はは": {
+      "meaning": "（自己的）母親",
+      "romaji": "haha",
+      "reading": "はは"
+    },
+    "かえる": {
+      "meaning": "回來、回去",
+      "romaji": "kaeru",
+      "reading": "かえる"
+    },
+    "くる": {
+      "meaning": "來",
+      "romaji": "kuru",
+      "reading": "くる"
+    },
+    "いっしょ": {
+      "meaning": "一起",
+      "romaji": "issho",
+      "reading": "いっしょ"
+    },
+    "あまい": {
+      "meaning": "甜",
+      "romaji": "amai",
+      "reading": "あまい"
+    },
+    "おいしい": {
+      "meaning": "好吃",
+      "romaji": "oishii",
+      "reading": "おいしい"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    },
+    "いい": {
+      "meaning": "好的",
+      "romaji": "ii",
+      "reading": "いい"
+    },
+    "ひ": {
+      "meaning": "日子、一天",
+      "romaji": "hi",
+      "reading": "ひ"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示句子的話題",
+    "から": "表示起點「從」；接て形時表「…之後」",
+    "が": "主格助詞，標示主語",
+    "で": "表示動作發生的場所「在」",
+    "を": "受格助詞，標示動作對象",
+    "て": "連接動詞，表示動作的接續或方式",
+    "の": "連體助詞，表示修飾或所屬",
+    "に": "表示時間點或歸著點",
+    "ます": "助動詞，表示禮貌（丁寧）",
+    "た": "助動詞，表示過去或完成",
+    "です": "助動詞，表示禮貌的斷定「是」"
+  },
+  "translations": [
+    [
+      {
+        "text": "星期日",
+        "word": "にちようび"
+      },
+      {
+        "text": "從早上",
+        "word": "あさ"
+      },
+      {
+        "text": "就一直下著雨。",
+        "word": "ふる"
+      }
+    ],
+    [
+      {
+        "text": "我",
+        "word": "わたし"
+      },
+      {
+        "text": "在家",
+        "word": "いえ"
+      },
+      {
+        "text": "看了書。",
+        "word": "よむ"
+      }
+    ],
+    [
+      {
+        "text": "吃完午餐後，",
+        "word": "おひるごはん"
+      },
+      {
+        "text": "做了點心。",
+        "word": "つくる"
+      }
+    ],
+    [
+      {
+        "text": "是巧克力",
+        "word": "チョコレート"
+      },
+      {
+        "text": "蛋糕。",
+        "word": "ケーキ"
+      }
+    ],
+    [
+      {
+        "text": "晚上母親",
+        "word": "はは"
+      },
+      {
+        "text": "回來後，",
+        "word": "かえる"
+      },
+      {
+        "text": "一起吃了。",
+        "word": "たべる"
+      }
+    ],
+    [
+      {
+        "text": "又甜",
+        "word": "あまい"
+      },
+      {
+        "text": "又好吃。",
+        "word": "おいしい"
+      }
+    ],
+    [
+      {
+        "text": "是美好的",
+        "word": "いい"
+      },
+      {
+        "text": "一天。",
+        "word": "ひ"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N5"
+  }
+}

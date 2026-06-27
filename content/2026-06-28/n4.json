@@ -1,0 +1,957 @@
+{
+  "date": "2026-06-28",
+  "level": "n4",
+  "title": "友達と山へハイキング",
+  "text": "先月、友達と近くの山へハイキングに行きました。天気がよかったので、朝早く家を出ました。山の道は思ったより険しくて何度も休みました。途中で写真を撮ったり、鳥の声を聞いたりしてとても楽しかったです。重い荷物は友達に持ってもらいました。頂上に着くと、町の景色が全部見えました。また今度、別の山にも登ってみたいです。",
+  "tokens": [
+    {
+      "surface_form": "先月",
+      "basic_form": "先月",
+      "reading": "せんげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近く",
+      "basic_form": "近く",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "山",
+      "basic_form": "山",
+      "reading": "やま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ハイキング",
+      "basic_form": "ハイキング",
+      "reading": "ハイキング",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行き",
+      "basic_form": "行く",
+      "reading": "いき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "天気",
+      "basic_form": "天気",
+      "reading": "てんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よかっ",
+      "basic_form": "よい",
+      "reading": "よかっ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝",
+      "basic_form": "朝",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "早く",
+      "basic_form": "早く",
+      "reading": "はやく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出",
+      "basic_form": "出る",
+      "reading": "で",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "山",
+      "basic_form": "山",
+      "reading": "やま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "道",
+      "basic_form": "道",
+      "reading": "みち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思っ",
+      "basic_form": "思う",
+      "reading": "おもっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "険しく",
+      "basic_form": "険しい",
+      "reading": "けわしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "何度",
+      "basic_form": "何度",
+      "reading": "なんど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "休み",
+      "basic_form": "休む",
+      "reading": "やすみ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "途中",
+      "basic_form": "途中",
+      "reading": "とちゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "撮っ",
+      "basic_form": "撮る",
+      "reading": "とっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たり",
+      "basic_form": "たり",
+      "reading": "たり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "鳥",
+      "basic_form": "鳥",
+      "reading": "とり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "聞い",
+      "basic_form": "聞く",
+      "reading": "きい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たり",
+      "basic_form": "たり",
+      "reading": "たり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しかっ",
+      "basic_form": "楽しい",
+      "reading": "たのしかっ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "重い",
+      "basic_form": "重い",
+      "reading": "おもい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "荷物",
+      "basic_form": "荷物",
+      "reading": "にもつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "持っ",
+      "basic_form": "持つ",
+      "reading": "もっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もらい",
+      "basic_form": "もらう",
+      "reading": "もらい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "頂上",
+      "basic_form": "頂上",
+      "reading": "ちょうじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "着く",
+      "basic_form": "着く",
+      "reading": "つく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "町",
+      "basic_form": "町",
+      "reading": "まち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "景色",
+      "basic_form": "景色",
+      "reading": "けしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "全部",
+      "basic_form": "全部",
+      "reading": "ぜんぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "見え",
+      "basic_form": "見える",
+      "reading": "みえ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "今度",
+      "basic_form": "今度",
+      "reading": "こんど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "別",
+      "basic_form": "別",
+      "reading": "べつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "山",
+      "basic_form": "山",
+      "reading": "やま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "登っ",
+      "basic_form": "登る",
+      "reading": "のぼっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "み",
+      "basic_form": "みる",
+      "reading": "み",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たい",
+      "basic_form": "たい",
+      "reading": "たい",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先月": {
+      "meaning": "上個月",
+      "romaji": "sengetsu",
+      "reading": "先月"
+    },
+    "友達": {
+      "meaning": "朋友",
+      "romaji": "tomodachi",
+      "reading": "友達"
+    },
+    "近く": {
+      "meaning": "附近",
+      "romaji": "chikaku",
+      "reading": "近く"
+    },
+    "山": {
+      "meaning": "山",
+      "romaji": "yama",
+      "reading": "山"
+    },
+    "ハイキング": {
+      "meaning": "健行、遠足",
+      "romaji": "haikingu",
+      "reading": "ハイキング"
+    },
+    "行く": {
+      "meaning": "去",
+      "romaji": "iku",
+      "reading": "行く"
+    },
+    "天気": {
+      "meaning": "天氣",
+      "romaji": "tenki",
+      "reading": "天気"
+    },
+    "よい": {
+      "meaning": "好的",
+      "romaji": "yoi",
+      "reading": "よい"
+    },
+    "朝": {
+      "meaning": "早上",
+      "romaji": "asa",
+      "reading": "朝"
+    },
+    "早く": {
+      "meaning": "早地、快地",
+      "romaji": "hayaku",
+      "reading": "早く"
+    },
+    "家": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "家"
+    },
+    "出る": {
+      "meaning": "出去、離開",
+      "romaji": "deru",
+      "reading": "出る"
+    },
+    "道": {
+      "meaning": "路",
+      "romaji": "michi",
+      "reading": "道"
+    },
+    "思う": {
+      "meaning": "想、認為",
+      "romaji": "omou",
+      "reading": "思う"
+    },
+    "険しい": {
+      "meaning": "陡峭、險峻",
+      "romaji": "kewashii",
+      "reading": "険しい"
+    },
+    "何度": {
+      "meaning": "好幾次",
+      "romaji": "nando",
+      "reading": "何度"
+    },
+    "休む": {
+      "meaning": "休息",
+      "romaji": "yasumu",
+      "reading": "休む"
+    },
+    "途中": {
+      "meaning": "途中",
+      "romaji": "tochuu",
+      "reading": "途中"
+    },
+    "写真": {
+      "meaning": "照片",
+      "romaji": "shashin",
+      "reading": "写真"
+    },
+    "撮る": {
+      "meaning": "拍（照）",
+      "romaji": "toru",
+      "reading": "撮る"
+    },
+    "鳥": {
+      "meaning": "鳥",
+      "romaji": "tori",
+      "reading": "鳥"
+    },
+    "声": {
+      "meaning": "聲音",
+      "romaji": "koe",
+      "reading": "声"
+    },
+    "聞く": {
+      "meaning": "聽",
+      "romaji": "kiku",
+      "reading": "聞く"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    },
+    "楽しい": {
+      "meaning": "快樂、開心",
+      "romaji": "tanoshii",
+      "reading": "楽しい"
+    },
+    "重い": {
+      "meaning": "重",
+      "romaji": "omoi",
+      "reading": "重い"
+    },
+    "荷物": {
+      "meaning": "行李",
+      "romaji": "nimotsu",
+      "reading": "荷物"
+    },
+    "持つ": {
+      "meaning": "拿、持有",
+      "romaji": "motsu",
+      "reading": "持つ"
+    },
+    "もらう": {
+      "meaning": "（請別人）為我做",
+      "romaji": "morau",
+      "reading": "もらう"
+    },
+    "頂上": {
+      "meaning": "山頂",
+      "romaji": "choujou",
+      "reading": "頂上"
+    },
+    "着く": {
+      "meaning": "到達",
+      "romaji": "tsuku",
+      "reading": "着く"
+    },
+    "町": {
+      "meaning": "城鎮",
+      "romaji": "machi",
+      "reading": "町"
+    },
+    "景色": {
+      "meaning": "景色",
+      "romaji": "keshiki",
+      "reading": "景色"
+    },
+    "全部": {
+      "meaning": "全部",
+      "romaji": "zenbu",
+      "reading": "全部"
+    },
+    "見える": {
+      "meaning": "看得見",
+      "romaji": "mieru",
+      "reading": "見える"
+    },
+    "また": {
+      "meaning": "再、又",
+      "romaji": "mata",
+      "reading": "また"
+    },
+    "今度": {
+      "meaning": "下次",
+      "romaji": "kondo",
+      "reading": "今度"
+    },
+    "別": {
+      "meaning": "別的、其他",
+      "romaji": "betsu",
+      "reading": "別"
+    },
+    "登る": {
+      "meaning": "攀登",
+      "romaji": "noboru",
+      "reading": "登る"
+    },
+    "みる": {
+      "meaning": "試著看看（～てみる）",
+      "romaji": "miru",
+      "reading": "みる"
+    }
+  },
+  "particles": {
+    "と": "表示「和、與」，並列名詞",
+    "の": "連體助詞，表示修飾或所屬",
+    "へ": "表示移動的方向「往、向」",
+    "に": "表示對象、歸著點或時間點",
+    "が": "主格助詞，標示主語",
+    "ので": "表示原因、理由「因為…所以」",
+    "を": "受格助詞，標示動作對象",
+    "より": "表示比較的基準「比…」",
+    "て": "連接動詞，表示接續；～てもらう 表示請對方做",
+    "も": "表示「也」",
+    "たり": "～たり～たり，列舉動作「又…又…」",
+    "で": "表示動作發生的場所「在」",
+    "ます": "助動詞，表示禮貌（丁寧）",
+    "た": "助動詞，表示過去或完成",
+    "です": "助動詞，表示禮貌的斷定",
+    "たい": "助動詞，表示說話者的願望「想…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "上個月，",
+        "word": "先月"
+      },
+      {
+        "text": "和朋友",
+        "word": "友達"
+      },
+      {
+        "text": "去附近的山",
+        "word": "山"
+      },
+      {
+        "text": "健行。",
+        "word": "ハイキング"
+      }
+    ],
+    [
+      {
+        "text": "因為天氣很好，",
+        "word": "天気"
+      },
+      {
+        "text": "一早",
+        "word": "朝"
+      },
+      {
+        "text": "就出了家門。",
+        "word": "出る"
+      }
+    ],
+    [
+      {
+        "text": "山路",
+        "word": "道"
+      },
+      {
+        "text": "比想像中",
+        "word": "思う"
+      },
+      {
+        "text": "還險峻，",
+        "word": "険しい"
+      },
+      {
+        "text": "休息了好幾次。",
+        "word": "休む"
+      }
+    ],
+    [
+      {
+        "text": "途中拍拍照、",
+        "word": "写真"
+      },
+      {
+        "text": "聽聽鳥鳴，",
+        "word": "声"
+      },
+      {
+        "text": "非常開心。",
+        "word": "楽しい"
+      }
+    ],
+    [
+      {
+        "text": "沉重的行李",
+        "word": "荷物"
+      },
+      {
+        "text": "請朋友",
+        "word": "友達"
+      },
+      {
+        "text": "幫忙拿了。",
+        "word": "もらう"
+      }
+    ],
+    [
+      {
+        "text": "到達山頂時，",
+        "word": "頂上"
+      },
+      {
+        "text": "小鎮的景色",
+        "word": "景色"
+      },
+      {
+        "text": "全都看得見。",
+        "word": "見える"
+      }
+    ],
+    [
+      {
+        "text": "下次",
+        "word": "今度"
+      },
+      {
+        "text": "還想再爬",
+        "word": "登る"
+      },
+      {
+        "text": "別的山看看。",
+        "word": "別"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.1,
+    "jlpt_level": "N4"
+  }
+}
