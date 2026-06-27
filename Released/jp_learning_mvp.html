@@ -1664,7 +1664,7 @@
       </div>
       <div class="sec">
 
-        <p class="section-title">學習紀錄</p>
+        <p class="section-title" id="home-rec-title">學習紀錄</p>
         <div class="card" id="home-calendar-card">
           <div class="cal-month-nav">
             <button class="cal-nav-btn" onclick="calNavMonth(-1)">‹</button>
@@ -1695,7 +1695,7 @@
           </div>
         </div>
 
-        <p class="section-title">今日足跡</p>
+        <p class="section-title" id="home-trace-title">今日足跡</p>
         <div id="home-dashboard"></div>
 
         <p class="section-title" style="margin-top:20px">今日任務</p>
@@ -2086,7 +2086,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.14
+          v1.1.15
         </div>
 
       </div>
@@ -7327,6 +7327,15 @@ function _tutRender() {
     // spotlightHeight：指定固定高度時，指示框垂直置中對齊 target（避免切到內容）
     var spH    = step.spotlightHeight ? step.spotlightHeight : (r.height + pad * 2);
     var spTop  = step.spotlightHeight ? (r.top + r.height / 2 - spH / 2) : (r.top - pad);
+    // spanTopId：指示框向上延伸涵蓋另一元素（例如卡片上方的 section title）
+    if (step.spanTopId) {
+      var spanEl = document.getElementById(step.spanTopId);
+      if (spanEl) {
+        var sr = spanEl.getBoundingClientRect();
+        spTop = sr.top - pad;
+        spH = (r.bottom + pad) - spTop;
+      }
+    }
     if (spLeft < _vm) spLeft = _vm;
     if (spLeft + spW > window.innerWidth - _vm) spW = window.innerWidth - _vm - spLeft;
     spotlight.style.left   = spLeft + 'px';
@@ -7347,12 +7356,17 @@ function _tutRender() {
       // 角落小按鈕：單邊靠齊指示框，另一邊延伸到 ref 元素的邊線
       var refEl = document.getElementById(step.tip.ref);
       var refR  = refEl ? refEl.getBoundingClientRect() : { left: _vm, right: window.innerWidth - _vm };
-      anchorMode = (step.tip.anchor === 'right') ? 'right' : 'left';
+      anchorMode = (step.tip.anchor === 'right') ? 'right'
+                 : (step.tip.anchor === 'left')  ? 'left'
+                 : 'center'; // 置中小按鈕：說明框用 ref 全寬，指示框在中間
       if (anchorMode === 'right') {
         tipLeft = Math.max(_vm, refR.left);
         tipW = (spLeft + spW) - tipLeft;
-      } else {
+      } else if (anchorMode === 'left') {
         tipLeft = spLeft;
+        tipW = Math.min(window.innerWidth - _vm, refR.right) - tipLeft;
+      } else {
+        tipLeft = Math.max(_vm, refR.left);
         tipW = Math.min(window.innerWidth - _vm, refR.right) - tipLeft;
       }
     } else if (snapR && step.snapTooltipOnly) {
@@ -7393,16 +7407,18 @@ function _tutRender() {
       // 說明框在下方（常態）
       spotlight.style.borderRadius = '12px 12px 0 0'; // 指示框平底
       tip.style.borderRadius =
-        anchorMode === 'right' ? '14px 0 14px 14px' :   // 左上外露
-        anchorMode === 'left'  ? '0 14px 14px 14px' :   // 右上外露
-                                 '0 0 14px 14px';        // 兩上角皆接
+        anchorMode === 'right'  ? '14px 0 14px 14px' :  // 左上外露
+        anchorMode === 'left'   ? '0 14px 14px 14px' :  // 右上外露
+        anchorMode === 'center' ? '14px 14px 14px 14px' : // 兩上角皆外露（指示框在中間）
+                                  '0 0 14px 14px';        // 兩上角皆接
     } else {
       // 說明框在上方（edge case）：概念反轉
       spotlight.style.borderRadius = '0 0 12px 12px'; // 指示框平頂
       tip.style.borderRadius =
-        anchorMode === 'right' ? '14px 14px 0 14px' :   // 左下外露
-        anchorMode === 'left'  ? '14px 14px 14px 0' :   // 右下外露
-                                 '14px 14px 0 0';        // 兩下角皆接
+        anchorMode === 'right'  ? '14px 14px 0 14px' :  // 左下外露
+        anchorMode === 'left'   ? '14px 14px 14px 0' :  // 右下外露
+        anchorMode === 'center' ? '14px 14px 14px 14px' : // 兩下角皆外露
+                                  '14px 14px 0 0';        // 兩下角皆接
     }
   }); });
 }
@@ -7477,9 +7493,9 @@ function tutorialClose() {
 function showHomeTutorial() {
   if (_tutBtnId === 'home-help-btn') { tutorialClose(); return; }
   tutorialShow('home-help-btn', [
-    { targetId: 'home-level-tag', snapToId: 'home-calendar-card', text: '顯示目前的學習等級，等級會影響每天推送的文章難度，點擊可以前往設定調整。' },
-    { targetId: 'home-calendar-card', text: '這裡記錄了每天的學習狀態，有文章的日期會有圓點，五色圈會呈現當日的讀書進度，點擊日期可以看到當天的文章以及閱讀進度。' },
-    { targetId: 'home-dashboard',     text: '顯示今天累積的學習量，從左到右分別是新學的單字數、複習的單字數，以及跟讀完成的句子數，讓你對當日進度一目瞭然。' },
+    { targetId: 'home-level-tag', tip: { ref: 'home-calendar-card' }, noScroll: true, text: '顯示目前的學習等級，等級會影響每天推送的文章難度，點擊可以前往設定調整。' },
+    { targetId: 'home-calendar-card', spanTopId: 'home-rec-title', text: '這裡記錄了每天的學習狀態，有文章的日期會有圓點，五色圈會呈現當日的讀書進度，點擊日期可以看到當天的文章以及閱讀進度。' },
+    { targetId: 'home-dashboard', spanTopId: 'home-trace-title', text: '顯示今天累積的學習量，從左到右分別是新學的單字數、複習的單字數，以及跟讀完成的句子數，讓你對當日進度一目瞭然。' },
     { targetId: 'home-tasks-card',    text: '每天自動產生三項學習目標：文章、單字卡、試題，完成後對應的任務環會逐步填滿，試著每天集滿三環。' },
   ]);
 }
@@ -7490,7 +7506,7 @@ function showArticleTutorial() {
     { targetId: 'article-week-bar',  text: '顯示最近七天的學習紀錄，點擊日期可切換閱讀當天的文章，點擊左側箭頭可以回顧上週的文章。' },
     { targetId: 'cn-toggle-row',     text: '「中文」開啟後每個詞彙下方會顯示中文意思；「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本。' },
     { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
-    { targetId: 'article-first-dot', snapToId: 'article-text', text: '點擊句首的小圓點可選取或取消該句；長按小圓點則單獨選取這一句，方便針對單句練習朗讀或跟讀。' },
+    { targetId: 'article-first-dot', tip: { ref: 'article-text', anchor: 'left' }, text: '點擊句首的小圓點可選取或取消該句；長按小圓點則單獨選取這一句，方便針對單句練習朗讀或跟讀。' },
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
     { targetId: 'play-btn',   snapToId: 'difficulty-bar', noScroll: true, text: '點擊播放可聆聽全文朗讀，可調整速度。' },
     { targetId: 'follow-btn', snapToId: 'difficulty-bar', noScroll: true, text: '開啟逐句跟讀後，系統會逐句播放並等待你開口跟讀，錄音鍵供口語自由練習使用。' },
