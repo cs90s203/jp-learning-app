@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.8 — 2026-06-27
+
+**Bug 修正：文章頁 Tutorial N5 等級按鈕步驟 + Scroll Debug Bar**
+
+- 文章頁 tutorial 補回 `article-level-tag`（N5 按鈕）說明步驟，說明長按可切換當天文章等級
+- 標題連點 3 次可切換 Scroll Debug Bar（顯示 scrollH / clientH / room / spacerH / diffBar 位置），方便手機端即時回報捲動問題；連點 5 次仍開啟 Dev Dashboard
+
 ## v1.1.7 — 2026-06-27
 
 **Bug 修正：短文章捲動（JS spacer 動態方案）**
@@ -234,6 +241,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.8 — 2026-06-27
+
+Bug 修正：文章頁 tutorial N5 步驟補回、scroll debug bar
 
 ---
 

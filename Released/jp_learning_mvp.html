@@ -2085,7 +2085,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.7
+          v1.1.8
         </div>
 
       </div>
@@ -3815,11 +3815,48 @@ async function devLoadIndex() {
 
 let _devTapCount = 0;
 let _devTapTimer = null;
+let _scrollDebugOn = false;
 function _devTitleTap() {
   _devTapCount++;
   clearTimeout(_devTapTimer);
   _devTapTimer = setTimeout(() => { _devTapCount = 0; }, 2000);
+  if (_devTapCount === 3) { _toggleScrollDebug(); }
   if (_devTapCount >= 5) { _devTapCount = 0; openDev(); }
+}
+function _toggleScrollDebug() {
+  _scrollDebugOn = !_scrollDebugOn;
+  var bar = document.getElementById('scroll-debug-bar');
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.id = 'scroll-debug-bar';
+    bar.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:rgba(0,0,0,0.82);color:#0f0;font:11px/1.5 monospace;padding:4px 8px;pointer-events:none;white-space:pre;';
+    document.body.appendChild(bar);
+    var pa = document.getElementById('page-article');
+    if (pa) {
+      pa.addEventListener('scroll', _updateScrollDebug, { passive: true });
+      pa.addEventListener('touchmove', _updateScrollDebug, { passive: true });
+    }
+  }
+  bar.style.display = _scrollDebugOn ? 'block' : 'none';
+  if (_scrollDebugOn) _updateScrollDebug();
+}
+function _updateScrollDebug() {
+  var bar = document.getElementById('scroll-debug-bar');
+  if (!bar || !_scrollDebugOn) return;
+  var pa = document.getElementById('page-article');
+  var sp = document.getElementById('article-scroll-spacer');
+  var db = document.getElementById('difficulty-bar');
+  if (!pa) return;
+  var safeTop = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--safe-top') || '0');
+  var safeBot = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--safe-bottom') || '0');
+  var dbR = db ? db.getBoundingClientRect() : {};
+  var atb = document.getElementById('article-toolbar');
+  var atbR = atb ? atb.getBoundingClientRect() : {};
+  bar.textContent =
+    'scrollH=' + pa.scrollHeight + ' clientH=' + pa.clientHeight + ' room=' + (pa.scrollHeight - pa.clientHeight) + '\n' +
+    'scrollTop=' + Math.round(pa.scrollTop) + ' spacerH=' + (sp ? sp.offsetHeight : '—') + '\n' +
+    'diffBar y=' + Math.round(dbR.top||0) + '~' + Math.round(dbR.bottom||0) + ' toolbar=' + Math.round(atbR.top||0) + '\n' +
+    'safe top=' + safeTop + ' bot=' + safeBot + ' nav=' + getComputedStyle(document.documentElement).getPropertyValue('--nav-h');
 }
 
 let articleRendered = false;
@@ -7404,6 +7441,7 @@ function showHomeTutorial() {
 function showArticleTutorial() {
   if (_tutBtnId === 'article-help-btn') { tutorialClose(); return; }
   tutorialShow('article-help-btn', [
+    { targetId: 'article-level-tag', noScroll: true, text: '顯示此篇文章的難度等級。長按可為當天文章單獨選擇其他等級（N5～N1），不影響全局設定。' },
     { targetId: 'article-week-bar',  text: '顯示最近七天的學習紀錄，點擊日期可切換閱讀當天的文章，點擊左側箭頭可以回顧上週的文章。' },
     { targetId: 'cn-toggle-row',     text: '「中文」開啟後每個詞彙下方會顯示中文意思；「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本。' },
     { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
