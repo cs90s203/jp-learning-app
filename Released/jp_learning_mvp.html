@@ -451,6 +451,8 @@
   .cn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
   /* Article page：底部要讓出固定工具列的空間 */
   #page-article { padding-bottom: calc(var(--nav-h) + var(--safe-bottom) + var(--atb-h) + 12px); }
+  /* 防止內容被 flex 壓縮至 scrollHeight=clientHeight，確保頁面可滾動 */
+  #page-article .sec { flex-shrink: 0; }
 
   /* ── 文章週曆列 ── */
   #article-week-bar {
@@ -2083,7 +2085,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.5
+          v1.1.6
         </div>
 
       </div>
@@ -7244,10 +7246,9 @@ function _tutRender() {
   var step = _tutSteps[_tutIdx];
   var target = document.getElementById(step.targetId);
   if (!target) { tutorialNext(); return; }
-  var scrollAnchor = step.noScroll
-    ? (step.snapToId ? document.getElementById(step.snapToId) : null)
-    : target;
-  if (scrollAnchor) scrollAnchor.scrollIntoView({ behavior: 'instant', block: 'center' });
+  if (!step.noScroll) {
+    target.scrollIntoView({ behavior: 'instant', block: 'center' });
+  }
   requestAnimationFrame(function() { requestAnimationFrame(function() {
     var r = target.getBoundingClientRect();
     var pad = 6;
