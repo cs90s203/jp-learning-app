@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.6 — 2026-06-27
+
+**Bug 修正：文章頁捲動 + Tutorial 難度說明步驟**
+
+- `#page-article .sec { flex-shrink: 0 }`：防止短文章時 flex 壓縮使 scrollHeight = clientHeight，確保頁面永遠可以捲動，difficulty-bar 可藉由下滑到達
+- Tutorial `noScroll: true` 步驟不再呼叫 scrollIntoView（連 snapToId 也不滾），防止試題頁 quiz-level-tag 步驟因滾動錯位而消失
+- 以上兩項修正使文章頁與試題頁的難度說明 Tutorial 步驟正確呈現
+
 ## v1.1.5 — 2026-06-27
 
 **Bug 修正：文章頁捲動根因確認修復**
@@ -218,6 +226,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.6 — 2026-06-27
+
+Bug 修正：文章頁確保可捲動、tutorial 難度步驟修正
 
 ---
 
