@@ -1,0 +1,1506 @@
+{
+  "date": "2026-06-27",
+  "level": "n1_lite",
+  "title": "地方の人口減少",
+  "text": "地方の小さな町や村では、人口の減少と高齢化が深刻な問題となっている。若い世代が仕事を求めて都市へ移り、残された地域では商店や学校の閉鎖が相次いでいる。祭りや伝統行事を続ける担い手が不足し、地域のつながりも弱まりつつある。こうした流れを食い止めるのは容易ではない。しかし、近年は地元の魅力を見直し、独自の取り組みで活気を取り戻そうとする動きも各地で生まれている。例えば、空き家を改装して移住者に貸し出したり、特産品をインターネットで販売したりする試みである。行政だけに頼るのではなく、住民が主体となって知恵を出し合うことが欠かせない。簡単に答えは出ないが、地域の未来を自分たちで築こうとする姿勢こそが、何よりも大切なのではないだろうか。",
+  "tokens": [
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "小さな",
+      "basic_form": "小さな",
+      "reading": "ちいさな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "町",
+      "basic_form": "町",
+      "reading": "まち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "村",
+      "basic_form": "村",
+      "reading": "むら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人口",
+      "basic_form": "人口",
+      "reading": "じんこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "減少",
+      "basic_form": "減少",
+      "reading": "げんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高齢化",
+      "basic_form": "高齢化",
+      "reading": "こうれいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深刻",
+      "basic_form": "深刻",
+      "reading": "しんこく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっている",
+      "basic_form": "なる",
+      "reading": "なっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "若い",
+      "basic_form": "若い",
+      "reading": "わかい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "世代",
+      "basic_form": "世代",
+      "reading": "せだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求めて",
+      "basic_form": "求める",
+      "reading": "もとめて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "都市",
+      "basic_form": "都市",
+      "reading": "とし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "移り",
+      "basic_form": "移る",
+      "reading": "うつり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "残された",
+      "basic_form": "残す",
+      "reading": "のこされた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "商店",
+      "basic_form": "商店",
+      "reading": "しょうてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学校",
+      "basic_form": "学校",
+      "reading": "がっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "閉鎖",
+      "basic_form": "閉鎖",
+      "reading": "へいさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "相次いでいる",
+      "basic_form": "相次ぐ",
+      "reading": "あいついでいる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "祭り",
+      "basic_form": "祭り",
+      "reading": "まつり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伝統行事",
+      "basic_form": "伝統行事",
+      "reading": "でんとうぎょうじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続ける",
+      "basic_form": "続ける",
+      "reading": "つづける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "担い手",
+      "basic_form": "担い手",
+      "reading": "にないて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不足し",
+      "basic_form": "不足する",
+      "reading": "ふそくし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つながり",
+      "basic_form": "つながり",
+      "reading": "つながり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "弱まりつつある",
+      "basic_form": "弱まる",
+      "reading": "よわまりつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "流れ",
+      "basic_form": "流れ",
+      "reading": "ながれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食い止める",
+      "basic_form": "食い止める",
+      "reading": "くいとめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "容易",
+      "basic_form": "容易",
+      "reading": "ようい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかし",
+      "basic_form": "しかし",
+      "reading": "しかし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地元",
+      "basic_form": "地元",
+      "reading": "じもと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "魅力",
+      "basic_form": "魅力",
+      "reading": "みりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見直し",
+      "basic_form": "見直す",
+      "reading": "みなおし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "独自",
+      "basic_form": "独自",
+      "reading": "どくじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取り組み",
+      "basic_form": "取り組み",
+      "reading": "とりくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活気",
+      "basic_form": "活気",
+      "reading": "かっき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取り戻そう",
+      "basic_form": "取り戻す",
+      "reading": "とりもどそう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "動き",
+      "basic_form": "動き",
+      "reading": "うごき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "各地",
+      "basic_form": "各地",
+      "reading": "かくち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生まれている",
+      "basic_form": "生まれる",
+      "reading": "うまれている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "例えば",
+      "basic_form": "例えば",
+      "reading": "たとえば",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "空き家",
+      "basic_form": "空き家",
+      "reading": "あきや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "改装して",
+      "basic_form": "改装する",
+      "reading": "かいそうして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "移住者",
+      "basic_form": "移住者",
+      "reading": "いじゅうしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "貸し出したり",
+      "basic_form": "貸し出す",
+      "reading": "かしだしたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特産品",
+      "basic_form": "特産品",
+      "reading": "とくさんひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "インターネット",
+      "basic_form": "インターネット",
+      "reading": "インターネット",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "販売したり",
+      "basic_form": "販売する",
+      "reading": "はんばいしたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "試み",
+      "basic_form": "試み",
+      "reading": "こころみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "である",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "行政",
+      "basic_form": "行政",
+      "reading": "ぎょうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "頼る",
+      "basic_form": "頼る",
+      "reading": "たよる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "住民",
+      "basic_form": "住民",
+      "reading": "じゅうみん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "主体",
+      "basic_form": "主体",
+      "reading": "しゅたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なって",
+      "basic_form": "なる",
+      "reading": "なって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "知恵",
+      "basic_form": "知恵",
+      "reading": "ちえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出し合う",
+      "basic_form": "出し合う",
+      "reading": "だしあう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "欠かせない",
+      "basic_form": "欠かす",
+      "reading": "かかせない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "簡単",
+      "basic_form": "簡単",
+      "reading": "かんたん",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "答え",
+      "basic_form": "答え",
+      "reading": "こたえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出ない",
+      "basic_form": "出る",
+      "reading": "でない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "未来",
+      "basic_form": "未来",
+      "reading": "みらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自分たち",
+      "basic_form": "自分たち",
+      "reading": "じぶんたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "築こう",
+      "basic_form": "築く",
+      "reading": "きずこう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "姿勢",
+      "basic_form": "姿勢",
+      "reading": "しせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "こそ",
+      "basic_form": "こそ",
+      "reading": "こそ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "何",
+      "basic_form": "何",
+      "reading": "なに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大切",
+      "basic_form": "大切",
+      "reading": "たいせつ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "地方": {
+      "meaning": "地方、鄉下",
+      "romaji": "chihou",
+      "reading": "地方"
+    },
+    "小さな": {
+      "meaning": "小的",
+      "romaji": "chiisana",
+      "reading": "小さな"
+    },
+    "町": {
+      "meaning": "城鎮",
+      "romaji": "machi",
+      "reading": "町"
+    },
+    "村": {
+      "meaning": "村莊",
+      "romaji": "mura",
+      "reading": "村"
+    },
+    "人口": {
+      "meaning": "人口",
+      "romaji": "jinkou",
+      "reading": "人口"
+    },
+    "減少": {
+      "meaning": "減少",
+      "romaji": "genshou",
+      "reading": "減少"
+    },
+    "高齢化": {
+      "meaning": "高齡化",
+      "romaji": "koureika",
+      "reading": "高齢化"
+    },
+    "深刻": {
+      "meaning": "嚴重的、深刻的",
+      "romaji": "shinkoku",
+      "reading": "深刻"
+    },
+    "問題": {
+      "meaning": "問題",
+      "romaji": "mondai",
+      "reading": "問題"
+    },
+    "なる": {
+      "meaning": "成為、變成",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "若い": {
+      "meaning": "年輕的",
+      "romaji": "wakai",
+      "reading": "若い"
+    },
+    "世代": {
+      "meaning": "世代",
+      "romaji": "sedai",
+      "reading": "世代"
+    },
+    "仕事": {
+      "meaning": "工作",
+      "romaji": "shigoto",
+      "reading": "仕事"
+    },
+    "求める": {
+      "meaning": "尋求、追求",
+      "romaji": "motomeru",
+      "reading": "求める"
+    },
+    "都市": {
+      "meaning": "都市",
+      "romaji": "toshi",
+      "reading": "都市"
+    },
+    "移る": {
+      "meaning": "遷移、搬遷",
+      "romaji": "utsuru",
+      "reading": "移る"
+    },
+    "残す": {
+      "meaning": "留下",
+      "romaji": "nokosu",
+      "reading": "残す"
+    },
+    "地域": {
+      "meaning": "地區",
+      "romaji": "chiiki",
+      "reading": "地域"
+    },
+    "商店": {
+      "meaning": "商店",
+      "romaji": "shouten",
+      "reading": "商店"
+    },
+    "学校": {
+      "meaning": "學校",
+      "romaji": "gakkou",
+      "reading": "学校"
+    },
+    "閉鎖": {
+      "meaning": "關閉、停業",
+      "romaji": "heisa",
+      "reading": "閉鎖"
+    },
+    "相次ぐ": {
+      "meaning": "接連發生",
+      "romaji": "aitsugu",
+      "reading": "相次ぐ"
+    },
+    "こうした": {
+      "meaning": "這樣的",
+      "romaji": "kou shita",
+      "reading": "こうした"
+    },
+    "流れ": {
+      "meaning": "趨勢、潮流",
+      "romaji": "nagare",
+      "reading": "流れ"
+    },
+    "食い止める": {
+      "meaning": "阻止、遏止",
+      "romaji": "kuitomeru",
+      "reading": "食い止める"
+    },
+    "容易": {
+      "meaning": "容易的",
+      "romaji": "youi",
+      "reading": "容易"
+    },
+    "ない": {
+      "meaning": "沒有、不",
+      "romaji": "nai",
+      "reading": "ない"
+    },
+    "近年": {
+      "meaning": "近年",
+      "romaji": "kinnen",
+      "reading": "近年"
+    },
+    "地元": {
+      "meaning": "當地",
+      "romaji": "jimoto",
+      "reading": "地元"
+    },
+    "魅力": {
+      "meaning": "魅力",
+      "romaji": "miryoku",
+      "reading": "魅力"
+    },
+    "見直す": {
+      "meaning": "重新審視",
+      "romaji": "minaosu",
+      "reading": "見直す"
+    },
+    "独自": {
+      "meaning": "獨自的、獨特的",
+      "romaji": "dokuji",
+      "reading": "独自"
+    },
+    "取り組み": {
+      "meaning": "努力、舉措",
+      "romaji": "torikumi",
+      "reading": "取り組み"
+    },
+    "活気": {
+      "meaning": "活力、朝氣",
+      "romaji": "kakki",
+      "reading": "活気"
+    },
+    "取り戻す": {
+      "meaning": "找回、奪回",
+      "romaji": "torimodosu",
+      "reading": "取り戻す"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "動き": {
+      "meaning": "動向",
+      "romaji": "ugoki",
+      "reading": "動き"
+    },
+    "各地": {
+      "meaning": "各地",
+      "romaji": "kakuchi",
+      "reading": "各地"
+    },
+    "生まれる": {
+      "meaning": "誕生、產生",
+      "romaji": "umareru",
+      "reading": "生まれる"
+    },
+    "空き家": {
+      "meaning": "空屋",
+      "romaji": "akiya",
+      "reading": "空き家"
+    },
+    "改装する": {
+      "meaning": "改裝、翻修",
+      "romaji": "kaisou suru",
+      "reading": "改装する"
+    },
+    "移住者": {
+      "meaning": "移居者",
+      "romaji": "ijuusha",
+      "reading": "移住者"
+    },
+    "貸し出す": {
+      "meaning": "出借、出租",
+      "romaji": "kashidasu",
+      "reading": "貸し出す"
+    },
+    "特産品": {
+      "meaning": "特產",
+      "romaji": "tokusanhin",
+      "reading": "特産品"
+    },
+    "インターネット": {
+      "meaning": "網際網路",
+      "romaji": "intaanetto",
+      "reading": "インターネット"
+    },
+    "販売する": {
+      "meaning": "販售",
+      "romaji": "hanbai suru",
+      "reading": "販売する"
+    },
+    "試み": {
+      "meaning": "嘗試",
+      "romaji": "kokoromi",
+      "reading": "試み"
+    },
+    "行政": {
+      "meaning": "行政（機關）",
+      "romaji": "gyousei",
+      "reading": "行政"
+    },
+    "頼る": {
+      "meaning": "依賴、依靠",
+      "romaji": "tayoru",
+      "reading": "頼る"
+    },
+    "住民": {
+      "meaning": "居民",
+      "romaji": "juumin",
+      "reading": "住民"
+    },
+    "主体": {
+      "meaning": "主體",
+      "romaji": "shutai",
+      "reading": "主体"
+    },
+    "知恵": {
+      "meaning": "智慧、點子",
+      "romaji": "chie",
+      "reading": "知恵"
+    },
+    "出し合う": {
+      "meaning": "互相提出、集思",
+      "romaji": "dashiau",
+      "reading": "出し合う"
+    },
+    "こと": {
+      "meaning": "事情；（形式名詞）",
+      "romaji": "koto",
+      "reading": "こと"
+    },
+    "欠かす": {
+      "meaning": "缺少、欠缺",
+      "romaji": "kakasu",
+      "reading": "欠かす"
+    },
+    "簡単": {
+      "meaning": "簡單的",
+      "romaji": "kantan",
+      "reading": "簡単"
+    },
+    "答え": {
+      "meaning": "答案",
+      "romaji": "kotae",
+      "reading": "答え"
+    },
+    "出る": {
+      "meaning": "出現、得出",
+      "romaji": "deru",
+      "reading": "出る"
+    },
+    "未来": {
+      "meaning": "未來",
+      "romaji": "mirai",
+      "reading": "未来"
+    },
+    "自分たち": {
+      "meaning": "自己（複數）",
+      "romaji": "jibuntachi",
+      "reading": "自分たち"
+    },
+    "築く": {
+      "meaning": "建立、打造",
+      "romaji": "kizuku",
+      "reading": "築く"
+    },
+    "姿勢": {
+      "meaning": "態度、姿態",
+      "romaji": "shisei",
+      "reading": "姿勢"
+    },
+    "何": {
+      "meaning": "什麼",
+      "romaji": "nani",
+      "reading": "何"
+    },
+    "大切": {
+      "meaning": "重要的",
+      "romaji": "taisetsu",
+      "reading": "大切"
+    },
+    "祭り": {
+      "meaning": "祭典、廟會",
+      "romaji": "matsuri",
+      "reading": "祭り"
+    },
+    "伝統行事": {
+      "meaning": "傳統活動",
+      "romaji": "dentou gyouji",
+      "reading": "伝統行事"
+    },
+    "続ける": {
+      "meaning": "延續、持續",
+      "romaji": "tsuzukeru",
+      "reading": "続ける"
+    },
+    "担い手": {
+      "meaning": "承擔者、骨幹",
+      "romaji": "ninaite",
+      "reading": "担い手"
+    },
+    "不足する": {
+      "meaning": "不足",
+      "romaji": "fusoku suru",
+      "reading": "不足する"
+    },
+    "つながり": {
+      "meaning": "連結、聯繫",
+      "romaji": "tsunagari",
+      "reading": "つながり"
+    },
+    "弱まる": {
+      "meaning": "減弱、變弱",
+      "romaji": "yowamaru",
+      "reading": "弱まる"
+    },
+    "しかし": {
+      "meaning": "但是、然而",
+      "romaji": "shikashi"
+    },
+    "例えば": {
+      "meaning": "例如、比如說",
+      "romaji": "tatoeba"
+    }
+  },
+  "particles": {
+    "の": "連體助詞；形式名詞用法",
+    "や": "表示部分列舉「…等」",
+    "で": "表示場所、方式；斷定助動詞て形",
+    "は": "主題助詞，標示話題",
+    "と": "引用助詞；表示並列、變化結果",
+    "が": "主格助詞，標示主語",
+    "な": "形容動詞連體形語尾",
+    "へ": "表示移動的方向",
+    "を": "受格助詞，標示動作對象",
+    "だけ": "表示限定「只…」",
+    "に": "表示對象、歸著點、結果",
+    "こそ": "表示強調「正是…」",
+    "より": "表示比較的基準",
+    "も": "表示「也」，追加同類",
+    "だろう": "表示推測「大概…吧」",
+    "か": "表示疑問",
+    "である": "書面語斷定助動詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "在地方上的小城鎮和村莊，",
+        "word": "町"
+      },
+      {
+        "text": "人口減少",
+        "word": "減少"
+      },
+      {
+        "text": "與高齡化",
+        "word": "高齢化"
+      },
+      {
+        "text": "成了嚴重的問題。",
+        "word": "深刻"
+      }
+    ],
+    [
+      {
+        "text": "年輕世代",
+        "word": "世代"
+      },
+      {
+        "text": "為了找工作遷往都市，",
+        "word": "都市"
+      },
+      {
+        "text": "在被留下的地區，",
+        "word": "残す"
+      },
+      {
+        "text": "商店和學校的關閉接連發生。",
+        "word": "閉鎖"
+      }
+    ],
+    [
+      {
+        "text": "要遏止這樣的趨勢",
+        "word": "流れ"
+      },
+      {
+        "text": "並不容易。",
+        "word": "容易"
+      }
+    ],
+    [
+      {
+        "text": "然而，近年來重新審視當地魅力，",
+        "word": "魅力"
+      },
+      {
+        "text": "以獨特的舉措",
+        "word": "独自"
+      },
+      {
+        "text": "試圖找回活力的動向",
+        "word": "取り戻す"
+      },
+      {
+        "text": "也在各地誕生。",
+        "word": "生まれる"
+      }
+    ],
+    [
+      {
+        "text": "例如，",
+        "word": null
+      },
+      {
+        "text": "把空屋翻修後出租給移居者，",
+        "word": "移住者"
+      },
+      {
+        "text": "或在網路上販售特產",
+        "word": "特産品"
+      },
+      {
+        "text": "等嘗試。",
+        "word": "試み"
+      }
+    ],
+    [
+      {
+        "text": "不能只依賴行政，",
+        "word": "頼る"
+      },
+      {
+        "text": "居民成為主體",
+        "word": "主体"
+      },
+      {
+        "text": "集思廣益",
+        "word": "出し合う"
+      },
+      {
+        "text": "是不可或缺的。",
+        "word": "欠かす"
+      }
+    ],
+    [
+      {
+        "text": "雖然答案不會輕易得出，",
+        "word": "答え"
+      },
+      {
+        "text": "但想憑自己之力",
+        "word": "自分たち"
+      },
+      {
+        "text": "建立地區未來的態度，",
+        "word": "築く"
+      },
+      {
+        "text": "或許才是最重要的吧。",
+        "word": "大切"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.14,
+    "jlpt_level": "N1⁻"
+  }
+}
