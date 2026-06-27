@@ -1,5 +1,11 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.1 — 2026-06-27
+
+**UI：單字頁篩選列與五十音按鈕間距調整**
+
+- vocab-filter-bar 加 padding-top，使間距與 ?/あ 按鈕間距一致
+
 ## v1.1.0 — 2026-06-27
 
 **五十音表按鈕移至全域固定層**
@@ -182,6 +188,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.1 — 2026-06-27
+
+UI：單字頁篩選列與五十音按鈕間距調整
 
 ---
 
