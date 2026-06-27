@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.4 — 2026-06-27
+
+**Bug 修正：文章頁捲動根因修復 + Tutorial 視覺改善**
+
+- 修正文章頁捲動卡死根因：清除 v1.1.2 遺留的 `transform: translateY(0)` inline style（iOS Safari 對有 transform 的 overflow scroll container 會凍結 native scroll）
+- Tutorial `snapTooltipOnly` 新設計：spotlight 只框住按鈕本身，說明框維持全頁寬，視覺上按鈕位置更清晰
+- 套用至 gojuuon 按鈕（三頁）及試題頁難度標籤
+
 ## v1.1.3 — 2026-06-27
 
 **Bug 修正：文章頁捲動恢復 + Tutorial 難度步驟消失**
@@ -204,6 +212,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.4 — 2026-06-27
+
+Bug：文章頁捲動根因修復（清除stale transform）、Tutorial snapTooltipOnly設計
 
 ---
 
