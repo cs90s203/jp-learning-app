@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.3 — 2026-06-27
+
+**Bug 修正：文章頁捲動恢復 + Tutorial 難度步驟消失**
+
+- 修正文章頁無法往下捲動的問題（translateY 不應套用在 scroll container 上）
+- 修正試題頁 quiz-level-tag tutorial 步驟被捲出畫面的問題
+- 文章頁 difficulty-bar tutorial 步驟隨 scroll 修復後自動恢復
+
 ## v1.1.2 — 2026-06-27
 
 **UI / Bug 修正：五十音 Tutorial 框寬度 + 文章頁拉動不一致**
@@ -196,6 +204,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.3 — 2026-06-27
+
+Bug：文章頁捲動恢復、試題Tutorial難度步驟修正
 
 ---
 
