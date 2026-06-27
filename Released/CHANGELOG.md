@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.12 — 2026-06-28
+
+**Tutorial 微調：quiz-main 指示框固定高度**
+
+- 新增 `spotlightHeight` 參數：指定固定高度時，指示框垂直置中對齊 target，避免切到內容
+- 試題頁 quiz-main step 指示框高度設為 190px（原隨內容約 212px）
+
 ## v1.1.11 — 2026-06-28
 
 **Tutorial UI 統一規則（試題頁為範本）**
@@ -271,6 +278,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.12 — 2026-06-28
+
+Tutorial 微調：quiz-main 指示框固定高度 190px（spotlightHeight 參數）
 
 ---
 

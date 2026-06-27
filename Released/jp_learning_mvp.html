@@ -2086,7 +2086,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.11
+          v1.1.12
         </div>
 
       </div>
@@ -7324,8 +7324,9 @@ function _tutRender() {
     var spUsesSnap = snapR && !step.snapTooltipOnly && !step.tip;
     var spLeft = spUsesSnap ? snapR.left  : (r.left - pad);
     var spW    = spUsesSnap ? snapR.width : (r.width + pad * 2);
-    var spTop  = r.top - pad;
-    var spH    = r.height + pad * 2;
+    // spotlightHeight：指定固定高度時，指示框垂直置中對齊 target（避免切到內容）
+    var spH    = step.spotlightHeight ? step.spotlightHeight : (r.height + pad * 2);
+    var spTop  = step.spotlightHeight ? (r.top + r.height / 2 - spH / 2) : (r.top - pad);
     if (spLeft < _vm) spLeft = _vm;
     if (spLeft + spW > window.innerWidth - _vm) spW = window.innerWidth - _vm - spLeft;
     spotlight.style.left   = spLeft + 'px';
@@ -7497,7 +7498,7 @@ function showQuizTutorial() {
     { targetId: 'quiz-week-bar', snapToId: 'quiz-main', text: '顯示最近七天的學習紀錄，點擊日期可切換到當天的試題，左側箭頭可回顧上週。' },
     { targetId: 'quiz-level-tag', tip: { ref: 'quiz-week-bar', anchor: 'left' }, noScroll: true, text: '顯示目前試題的難度等級。長按可切換此日期的文章與試題難度，文章頁也會同步連動。' },
     { targetId: 'quiz-tabs', snapToId: 'quiz-main', text: '五種題型：單字聽力（聽單字選中文）、句子聽力（聽整句選翻譯）、填空、句子判斷、句子排列。每天各產生一組題目，每日題數可由設定頁的輕鬆、標準、專注模式調整。' },
-    { targetId: 'quiz-main', text: '依序作答，每題即時給分；填空、判斷、排列、句子聽力題目右上角的「あ漢」可切換純假名或漢字顯示，完成後可重新作答。' },
+    { targetId: 'quiz-main', spotlightHeight: 190, text: '依序作答，每題即時給分；填空、判斷、排列、句子聽力題目右上角的「あ漢」可切換純假名或漢字顯示，完成後可重新作答。' },
     { targetId: 'gojuuon-fixed-btn', tip: { ref: 'quiz-week-bar', anchor: 'right' }, noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
