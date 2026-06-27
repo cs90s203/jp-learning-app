@@ -1,5 +1,14 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.9 — 2026-06-27
+
+**Bug 修正：文章頁捲動根本修正（minHeight + inline flexShrink）**
+
+- 完全改寫 `ensureArticleScrollable()`：不再用 spacer 量測法，改直接對 `.sec` 設定 inline `flexShrink=0`（最高優先度）與精確 `minHeight` 確保 `scrollH = clientH + 80px`
+- `setTimeout` 由 `requestAnimationFrame` 改為 50ms，給 iOS Safari 足夠時間完成 layout 再量測
+- CN toggle 等待 transition 250ms（由 350ms 縮短，因 cn-note transition 只有 0.2s）
+- Debug bar 新增一行：`secH / minH / shrink`，方便驗證修正是否生效
+
 ## v1.1.8 — 2026-06-27
 
 **Bug 修正：文章頁 Tutorial N5 等級按鈕步驟 + Scroll Debug Bar**
@@ -241,6 +250,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.9 — 2026-06-27
+
+Bug 修正：文章頁捲動根本修正（inline flexShrink + minHeight）
 
 ---
 
