@@ -2085,7 +2085,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.7
+          v1.1.6
         </div>
 
       </div>
@@ -2426,8 +2426,6 @@ function switchPage(id) {
     initDifficultyBar();
     initArticleLevelTag();
     renderWeekBar();
-    // 切換到文章頁時也確保可捲動（content height 可能已改變）
-    requestAnimationFrame(ensureArticleScrollable);
   }
   if (id === 'home')  { calViewYear = TODAY_YEAR; calViewMonth = TODAY_MONTH; renderHomeRing(); renderCalendar(); }
   if (id === 'vocab') renderVocabPage();
@@ -3259,25 +3257,6 @@ async function selectQuizDate(dateStr) {
   }
 }
 
-// 確保文章頁永遠有 scroll room，避免短文章無法滾動
-function ensureArticleScrollable() {
-  var pa = document.getElementById('page-article');
-  if (!pa) return;
-  var sp = document.getElementById('article-scroll-spacer');
-  if (!sp) {
-    sp = document.createElement('div');
-    sp.id = 'article-scroll-spacer';
-    sp.setAttribute('aria-hidden', 'true');
-    pa.appendChild(sp);
-  }
-  // 先設大值量測自然高度（所有子元素 flex-shrink:0 後不受壓縮）
-  sp.style.cssText = 'flex-shrink:0;height:1000px;display:block;';
-  var withBig = pa.scrollHeight;
-  // 計算讓 scrollH = clientH + 80 所需 spacer
-  var needed = Math.max(0, pa.clientHeight + 1080 - withBig);
-  sp.style.height = needed + 'px';
-}
-
 // CN toggle
 function toggleCN() {
   const t = document.getElementById('cn-toggle');
@@ -3287,8 +3266,9 @@ function toggleCN() {
   document.querySelectorAll('.cn-note').forEach(n => {
     n.classList.toggle('hidden', !active);
   });
-  // cn-note 有 CSS transition，等動畫完成後重新計算 scroll spacer
-  setTimeout(ensureArticleScrollable, 350);
+  // iOS scroll fix: force layout recalc after content height change
+  const page = document.getElementById('page-article');
+  if (page) { const _s = page.scrollTop; page.scrollTop = _s + 1; page.scrollTop = _s; }
 }
 
 // ===== 文章斷詞與互動 =====
@@ -4005,8 +3985,6 @@ function renderArticle(tokens) {
 
   // 條件1：捲到底偵測（文章渲染完後立即設定）
   setupArticleScrollObserver();
-  // 確保短文章也能捲動（spacer 動態補足 scroll room）
-  requestAnimationFrame(ensureArticleScrollable);
 }
 
 let _scrollHandler = null;

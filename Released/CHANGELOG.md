@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.7 — 2026-06-27
+
+**Bug 修正：短文章捲動（JS spacer 動態方案）**
+
+- 新增 `ensureArticleScrollable()`：渲染後動態插入 spacer，確保 `scrollHeight = clientHeight + 80px`，任何長度的文章（包含 CN off）都能捲動
+- `renderArticle()` 結尾、`switchPage('article')` 及 `toggleCN()` 後 350ms 均觸發重算
+- 同步修正短文章 tutorial difficulty-bar 步驟無法呈現的問題（需要 scroll room 才能 scrollIntoView）
+
 ## v1.1.6 — 2026-06-27
 
 **Bug 修正：文章頁捲動 + Tutorial 難度說明步驟**
@@ -226,6 +234,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.7 — 2026-06-27
+
+Bug 修正：JS spacer 確保短文章可捲動、tutorial difficulty-bar 修正
 
 ---
 
