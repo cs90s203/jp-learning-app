@@ -143,6 +143,11 @@
     cursor: pointer; -webkit-tap-highlight-color: transparent;
   }
   .help-btn:active { opacity: 0.6; }
+  .help-btn.glow { animation: helpBtnGlow 2s ease-in-out infinite; }
+  @keyframes helpBtnGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(196,120,58,0.7); }
+    50%       { box-shadow: 0 0 0 9px rgba(196,120,58,0); }
+  }
 
   .sec { padding: 8px 16px; }
 
@@ -324,8 +329,9 @@
   }
   .level-sheet-chip.active { background: var(--wa); color: #fff; border-color: var(--wa); }
   .article-date { font-size: 11px; color: var(--wt3); }
-  .cn-toggle-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-  .cn-toggle-label { font-size: 13px; color: var(--wt2); }
+  .cn-toggle-row { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-bottom: 10px; }
+  .cn-btn { font-size: 12px; font-weight: 500; padding: 4px 12px; border-radius: 99px; border: 1.5px solid var(--wa-bg2); background: transparent; color: var(--wt3); cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background 0.15s, color 0.15s, border-color 0.15s; }
+  .cn-btn.active { background: var(--wa-l); color: var(--wa); border-color: transparent; }
   .toggle {
     width: 46px; height: 28px; background: var(--wa);
     border-radius: 99px; position: relative; cursor: pointer; flex-shrink: 0;
@@ -482,6 +488,12 @@
     border: 1.5px solid var(--wa); background: var(--wa);
     cursor: pointer; transition: background 0.15s, border-color 0.15s;
     -webkit-tap-highlight-color: transparent;
+    position: relative;
+  }
+  .sentence-dot::before {
+    content: ''; position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 36px; height: 36px;
   }
   .sentence-dot.unsel { background: transparent; border-color: var(--wa-bg2); }
   .sentence-sel-row .sentence-group { flex: 1; }
@@ -726,8 +738,9 @@
     padding-top: env(safe-area-inset-top, 0px);
   }
   .vq-header {
-    display: flex; flex-direction: column; align-items: center; gap: 6px;
-    padding: 16px 16px 12px; flex-shrink: 0;
+    position: fixed; top: 40px; left: 0; right: 0;
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    pointer-events: none;
   }
   .vq-close-btn {
     width: 28px; height: 28px; border: none; background: var(--wa-bg2);
@@ -735,7 +748,7 @@
     font-size: 14px; display: flex; align-items: center; justify-content: center;
   }
   .vq-prog-wrap {
-    width: calc(100% - 32px); max-width: 320px; height: 4px;
+    width: 296px; height: 4px;
     background: var(--wa-bg2); border-radius: 2px; overflow: hidden;
   }
   .vq-prog-bar {
@@ -745,7 +758,7 @@
   .vq-counter { font-size: 13px; color: var(--wt3); text-align: center; }
   .vq-card-area {
     flex: 1; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; padding: 0 32px; text-align: center;
+    align-items: center; justify-content: center; padding: 80px 32px 0; text-align: center;
   }
   .vq-kana { font-size: 18px; color: var(--wt3); min-height: 26px; letter-spacing: 0.05em; }
   .vq-word { font-size: 44px; font-weight: 500; color: var(--wt); letter-spacing: 0.02em; }
@@ -756,13 +769,15 @@
     transition: color 0.15s, text-shadow 0.15s;
   }
   .vq-meaning.meaning-hidden,
-  .vq-word.meaning-hidden {
+  .vq-word.meaning-hidden,
+  .vq-kana.meaning-hidden {
     color: transparent;
     text-shadow: 0 0 12px rgba(42,26,8,0.6);
     user-select: none;
   }
   html[data-theme="dark"] .vq-meaning.meaning-hidden,
-  html[data-theme="dark"] .vq-word.meaning-hidden {
+  html[data-theme="dark"] .vq-word.meaning-hidden,
+  html[data-theme="dark"] .vq-kana.meaning-hidden {
     text-shadow: 0 0 12px rgba(240,228,208,0.6);
   }
   .vq-peek-hint { font-size: 12px; color: var(--wt3); margin-top: 10px; }
@@ -1063,11 +1078,11 @@
   }
 
   /* Choice buttons */
-  .qz-choice-list { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+  .qz-choice-list { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
   .qz-choice {
-    width: 100%; padding: 13px 15px; text-align: left;
+    width: 100%; padding: 9px 13px; text-align: left;
     background: var(--wb); border: 0.5px solid var(--wa-bg2);
-    border-radius: 12px; font-size: 14px; color: var(--wt);
+    border-radius: 10px; font-size: 14px; color: var(--wt);
     cursor: pointer; font-family: inherit; font-weight: 500;
   }
   .qz-choice:active { background: var(--wa-bg); }
@@ -1152,6 +1167,10 @@
   .nav-btn.active span { color: var(--wa); }
 
   /* Toast */
+  #a2hs-banner {
+    background: color-mix(in srgb, var(--wa-bg) 20%, transparent) !important;
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
   .toast {
     position: fixed; bottom: calc(var(--nav-h) + var(--safe-bottom) + 116px); left: 50%;
     transform: translateX(-50%) translateY(20px);
@@ -1700,8 +1719,8 @@
       <div class="sec" style="padding-top:5px">
 
         <div class="cn-toggle-row" id="cn-toggle-row">
-          <span class="cn-toggle-label">中文備注</span>
-          <div class="toggle" id="cn-toggle" onclick="toggleCN()"></div>
+          <button class="cn-btn" id="add-all-btn" onclick="addAllSelectedWords()">＋全部</button>
+          <button class="cn-btn" id="cn-toggle" onclick="toggleCN()">中文</button>
         </div>
 
         <div class="card">
@@ -1809,7 +1828,11 @@
     <!-- 試題 -->
     <div class="page" id="page-quiz">
       <div class="top-bar" style="flex-shrink:0">
-        <h1>今日試題</h1>
+        <h1 id="quiz-page-title">今日試題</h1>
+        <div class="article-meta">
+          <span class="level-tag" id="quiz-level-tag">N5</span>
+          <span class="article-date" id="quiz-date-tag"></span>
+        </div>
       </div>
       <!-- 週曆列 -->
       <div id="quiz-week-bar">
@@ -1819,7 +1842,8 @@
       </div>
       <!-- 題型分頁 -->
       <div class="quiz-tabs" id="quiz-tabs">
-        <button class="qt active" id="qt-listen" onclick="switchQuizSection('listen')">聽力</button>
+        <button class="qt active" id="qt-listen" onclick="switchQuizSection('listen')">單字聽力</button>
+        <button class="qt" id="qt-slisten" onclick="switchQuizSection('slisten')">句子聽力</button>
         <button class="qt" id="qt-fill" onclick="switchQuizSection('fill')">填空</button>
         <button class="qt" id="qt-judge" onclick="switchQuizSection('judge')">句子判斷</button>
         <button class="qt" id="qt-order" onclick="switchQuizSection('order')">句子排列</button>
@@ -1866,6 +1890,13 @@
               <div class="setting-sub" id="theme-sub">日間（暖色系）</div>
             </div>
             <div class="toggle off" id="theme-toggle" onclick="toggleTheme()"></div>
+          </div>
+          <div class="setting-row" style="cursor:pointer;border-top:0.5px solid var(--border)" onclick="resetFirstTimeHints()">
+            <div>
+              <div class="setting-label">首次登入簡易說明</div>
+              <div class="setting-sub">重新顯示操作提示</div>
+            </div>
+            <div style="font-size:13px;color:var(--wa)">重新顯示</div>
           </div>
         </div>
 
@@ -2041,7 +2072,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.50
+          v1.0.71
         </div>
 
       </div>
@@ -2146,7 +2177,7 @@
   </div>
 
   <!-- Add to Home Screen Banner (iOS) -->
-  <div id="a2hs-banner" style="display:none;position:fixed;bottom:80px;left:12px;right:12px;z-index:9997;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:12px 14px;align-items:center;gap:10px;box-shadow:0 4px 16px rgba(0,0,0,.2)">
+  <div id="a2hs-banner" style="display:none;position:fixed;bottom:230px;left:12px;right:12px;z-index:9997;border:1px solid var(--border);border-radius:12px;padding:12px 14px;align-items:center;gap:10px;box-shadow:0 4px 16px rgba(0,0,0,.2)">
     <div style="flex:1">
       <div style="font-size:13px;font-weight:600;color:var(--wt);margin-bottom:3px">📲 加到主畫面，避免被登出</div>
       <div style="font-size:11px;color:var(--wt2)">點選瀏覽器底部 <b>分享</b> →「加入主畫面」，登入狀態更穩定</div>
@@ -2280,8 +2311,20 @@
   <!-- 單字複習考 overlay -->
   <div id="vocab-quiz">
     <button class="vq-close-btn" onclick="exitVocabQuiz()" style="position:fixed;top:50px;right:16px">✕</button>
+    <!-- mode selection screen -->
+    <div id="vq-mode-select" style="display:none;flex-direction:column;align-items:center;justify-content:center;flex:1;gap:20px;padding:32px">
+      <div style="font-size:20px;font-weight:600;color:var(--wt);margin-bottom:8px">選擇複習模式</div>
+      <button onclick="startVocabQuizMode('text')" style="width:100%;max-width:280px;padding:18px 24px;border-radius:14px;border:none;background:var(--wa-bg);cursor:pointer;text-align:left">
+        <div style="font-size:16px;font-weight:600;color:var(--wt);margin-bottom:4px">文字複習</div>
+        <div style="font-size:13px;color:var(--wt3)">看到單字，回想中文意思</div>
+      </button>
+      <button onclick="startVocabQuizMode('listen')" style="width:100%;max-width:280px;padding:18px 24px;border-radius:14px;border:none;background:var(--wa-bg);cursor:pointer;text-align:left">
+        <div style="font-size:16px;font-weight:600;color:var(--wt);margin-bottom:4px">聽力複習</div>
+        <div style="font-size:13px;color:var(--wt3)">聽到發音，回想單字與意思</div>
+      </button>
+    </div>
     <!-- header: counter above, bar below, centered -->
-    <div class="vq-header">
+    <div class="vq-header" id="vq-header">
       <span class="vq-counter" id="vq-counter">0 / 0</span>
       <div class="vq-prog-wrap"><div class="vq-prog-bar" id="vq-bar"></div></div>
     </div>
@@ -2345,6 +2388,7 @@ function switchPage(id) {
     if (b) b.style.display = p === id ? '' : 'none';
   });
   tutorialClose();
+  _updateHelpBtnGlow();
 
   if (id === 'article') {
     if (!articleRendered) {
@@ -2411,8 +2455,25 @@ let QUIZ_PACK   = null;  // 當前試題頁載入的 content pack（獨立於文
 let quizLoadDone = false; // fetch 已完成（成功或失敗），用於區分「載入中」與「無內容」
 let selectedQuizDate = getLocalDateStr();
 let quizWeekBarOffset = 0;
-let quizSection = 'listen'; // 'listen' | 'fill'
+let quizSection = 'listen';
 let QS = null; // quiz session state
+let quizKanjiMode = false; // false=純假名, true=漢字+振り仮名
+
+function qzTokHtml(tok) {
+  if (!quizKanjiMode) return tok.reading || tok.surface_form;
+  const s = tok.surface_form, r = tok.reading || '';
+  return (r && r !== s && /[一-鿿]/.test(s))
+    ? `<ruby>${s}<rt>${r}</rt></ruby>` : s;
+}
+
+function qzSentenceHtml(sentToks, blankTokIdx) {
+  return sentToks.map((t, i) => i === blankTokIdx ? '＿＿＿' : qzTokHtml(t)).join('');
+}
+
+function toggleQuizKanji() {
+  quizKanjiMode = !quizKanjiMode;
+  renderQzQuestion();
+}
 
 function shuffleArr(arr) {
   const a = [...arr];
@@ -2423,8 +2484,22 @@ function shuffleArr(arr) {
   return a;
 }
 
+function _updateQuizHeader() {
+  const pack = QUIZ_PACK;
+  const dateStr = selectedQuizDate;
+  const isToday = dateStr === getLocalDateStr();
+  const titleEl = document.getElementById('quiz-page-title');
+  if (titleEl) titleEl.textContent = isToday ? '今日試題' : (pack && pack.title ? pack.title + '試題' : dateStr + '試題');
+  const _log = loadStudyLog();
+  const _level = (pack && pack.level) || (_log[dateStr] && _log[dateStr].level) || CURRENT_LEVEL;
+  const lvEl = document.getElementById('quiz-level-tag');
+  if (lvEl) { const opt = LEVEL_OPTIONS.find(o => o.key === _level); lvEl.textContent = opt ? opt.label : _level.toUpperCase(); }
+  const dtEl = document.getElementById('quiz-date-tag');
+  if (dtEl) { const _d = new Date(dateStr + 'T00:00:00'); dtEl.textContent = `${_d.getMonth()+1}月${_d.getDate()}日`; }
+}
+
 function switchQuizSection(type) {
-  if (['listen','fill','judge','order'].indexOf(type) < 0) return;
+  if (['listen','slisten','fill','judge','order'].indexOf(type) < 0) return;
   quizSection = type;
   document.querySelectorAll('.qt').forEach(b => b.classList.remove('active'));
   const btn = document.getElementById('qt-' + type);
@@ -2461,6 +2536,12 @@ function generateListeningQuestions(vocabDict) {
       words.filter(w => w !== word).map(w => vocabDict[w].meaning).filter(m => m !== correct)
     ).slice(0, 3);
     while (distractors.length < 3) distractors.push('—');
+    // 第 5 個選項：從個人單字本抽干擾項
+    const extra = shuffleArr(
+      Object.values(vocabBook || {}).map(e => e.meaning).filter(m => m && m !== correct && !distractors.includes(m))
+    )[0];
+    if (extra) distractors.push(extra);
+    while (distractors.length < 4) distractors.push('—');
     return {
       type: 'listen',
       word,
@@ -2497,10 +2578,11 @@ function generateFillInQuestions(tokens, vocabDict) {
       const entry = vocabDict[wordKey] || {};
       const blank = target.surface_form;
       if (!blank || blank.length === 0) continue;
-      const parts = sentToks.map(t => t === target ? '＿＿＿' : (t.surface_form || ''));
+      const blankTokIdx = sentToks.indexOf(target);
       pool.push({
         type: 'fill',
-        sentence: parts.join(''),
+        sentToks,
+        blankTokIdx,
         answer: blank,
         kana: target.reading || '',
         meaning: entry.meaning || '',
@@ -2523,7 +2605,7 @@ function generateSentenceJudgeQuestions(tokens, translations) {
     const correctTrans = translations[i].map(s => s.text).join('');
 
     // Correct question
-    pool.push({ type: 'judge', japanese, translation: correctTrans, isCorrect: true, correctTranslation: correctTrans });
+    pool.push({ type: 'judge', sentToks, japanese, translation: correctTrans, isCorrect: true, correctTranslation: correctTrans });
 
     // Wrong question: use a different sentence's translation
     const otherIdxes = sentences.map((_, j) => j).filter(j => j !== i && translations[j] && translations[j].length);
@@ -2531,7 +2613,7 @@ function generateSentenceJudgeQuestions(tokens, translations) {
       const wrongIdx = otherIdxes[Math.floor(Math.random() * otherIdxes.length)];
       const wrongTrans = translations[wrongIdx].map(s => s.text).join('');
       if (wrongTrans !== correctTrans) {
-        pool.push({ type: 'judge', japanese, translation: wrongTrans, isCorrect: false, correctTranslation: correctTrans });
+        pool.push({ type: 'judge', sentToks, japanese, translation: wrongTrans, isCorrect: false, correctTranslation: correctTrans });
       }
     }
   });
@@ -2549,18 +2631,44 @@ function generateSentenceOrderQuestions(tokens) {
     const contentToks = sentToks.filter(t => /[a-zA-Z぀-ヿ一-鿿]/.test(t.surface_form || ''));
     if (contentToks.length < 3 || contentToks.length > 9) return;
 
-    const correct = contentToks.map(t => t.surface_form);
-    // Shuffle until different order
-    let shuffled;
+    const correctToks = contentToks;
+    let shuffledToks;
     let tries = 0;
-    do { shuffled = shuffleArr([...correct]); tries++; } while (shuffled.join('') === correct.join('') && tries < 10);
+    do { shuffledToks = shuffleArr([...correctToks]); tries++; }
+    while (shuffledToks.map(t => t.surface_form).join('') === correctToks.map(t => t.surface_form).join('') && tries < 10);
 
     const punctuation = sentToks[sentToks.length - 1].surface_form.match(/[。！？]/)
       ? sentToks[sentToks.length - 1].surface_form : '';
 
-    pool.push({ type: 'order', correct, shuffled, punctuation });
+    pool.push({ type: 'order', correctToks, shuffledToks, punctuation });
   });
 
+  const maxQ = Math.min(8, Math.max(1, Math.round(pool.length * getModeVocabPct())));
+  return shuffleArr(pool).slice(0, maxQ);
+}
+
+function generateSentenceListenQuestions(tokens, translations) {
+  const sentences = splitTokensIntoSentences(tokens);
+  if (!sentences.length || !translations || !translations.length) return [];
+  const pool = [];
+  sentences.forEach((sentToks, i) => {
+    if (!translations[i] || !translations[i].length) return;
+    const correctTrans = translations[i].map(s => s.text).join('');
+    const otherTrans = translations
+      .filter((_, j) => j !== i && translations[j] && translations[j].length)
+      .map(t => t.map(s => s.text).join(''))
+      .filter(t => t !== correctTrans);
+    if (!otherTrans.length) return;
+    const distractors = shuffleArr(otherTrans).slice(0, 3);
+    while (distractors.length < 3) distractors.push(distractors[0] || '—');
+    pool.push({
+      type: 'slisten',
+      sentToks,
+      japanese: sentToks.map(t => t.surface_form).join(''),
+      correct: correctTrans,
+      choices: shuffleArr([correctTrans, ...distractors])
+    });
+  });
   const maxQ = Math.min(8, Math.max(1, Math.round(pool.length * getModeVocabPct())));
   return shuffleArr(pool).slice(0, maxQ);
 }
@@ -2587,20 +2695,24 @@ async function initQuizPage() {
     } catch { QUIZ_PACK = null; }
     quizLoadDone = true;
   }
+  _updateQuizHeader();
+  initQuizLevelTag();
   renderQuizWeekBar();
   renderQuizMain();
 }
 
 function startQuizSession(isRetake) {
   if (!QUIZ_PACK) { renderQuizMain(); return; }
+  quizKanjiMode = false;
   const vocabDict    = QUIZ_PACK.vocab || {};
   const tokens       = QUIZ_PACK.tokens || [];
   const translations = QUIZ_PACK.translations || [];
   let questions;
-  if      (quizSection === 'listen') questions = generateListeningQuestions(vocabDict);
-  else if (quizSection === 'fill')   questions = generateFillInQuestions(tokens, vocabDict);
-  else if (quizSection === 'judge')  questions = generateSentenceJudgeQuestions(tokens, translations);
-  else if (quizSection === 'order')  questions = generateSentenceOrderQuestions(tokens);
+  if      (quizSection === 'listen')  questions = generateListeningQuestions(vocabDict);
+  else if (quizSection === 'slisten') questions = generateSentenceListenQuestions(tokens, translations);
+  else if (quizSection === 'fill')    questions = generateFillInQuestions(tokens, vocabDict);
+  else if (quizSection === 'judge')   questions = generateSentenceJudgeQuestions(tokens, translations);
+  else if (quizSection === 'order')   questions = generateSentenceOrderQuestions(tokens);
   else questions = [];
   if (!questions.length) { showToast('沒有足夠題目'); return; }
   QS = { questions, idx: 0, answers: [], phase: 'exam', isRetake, orderState: null };
@@ -2629,10 +2741,11 @@ function renderQuizMain() {
 }
 
 const QZ_TYPE_CFG = {
-  listen: { color: '#378ADD', label: '聽力' },
-  fill:   { color: '#BA7517', label: '填空' },
-  judge:  { color: '#9B59B6', label: '句子判斷' },
-  order:  { color: '#27AE60', label: '句子排列' }
+  listen:  { color: '#378ADD', label: '單字聽力' },
+  slisten: { color: '#1A8FBF', label: '句子聽力' },
+  fill:    { color: '#BA7517', label: '填空' },
+  judge:   { color: '#9B59B6', label: '句子判斷' },
+  order:   { color: '#27AE60', label: '句子排列' }
 };
 
 function renderQzStart() {
@@ -2642,10 +2755,11 @@ function renderQzStart() {
   const translations = QUIZ_PACK.translations || [];
   const { color, label } = QZ_TYPE_CFG[quizSection] || QZ_TYPE_CFG.listen;
   let count;
-  if      (quizSection === 'listen') count = Math.min(10, Object.keys(vocabDict).length);
-  else if (quizSection === 'fill')   count = Math.min(10, generateFillInQuestions(tokens, vocabDict).length);
-  else if (quizSection === 'judge')  count = generateSentenceJudgeQuestions(tokens, translations).length;
-  else if (quizSection === 'order')  count = generateSentenceOrderQuestions(tokens).length;
+  if      (quizSection === 'listen')  count = generateListeningQuestions(vocabDict).length;
+  else if (quizSection === 'slisten') count = generateSentenceListenQuestions(tokens, translations).length;
+  else if (quizSection === 'fill')    count = generateFillInQuestions(tokens, vocabDict).length;
+  else if (quizSection === 'judge')   count = generateSentenceJudgeQuestions(tokens, translations).length;
+  else if (quizSection === 'order')   count = generateSentenceOrderQuestions(tokens).length;
   else count = 0;
 
   const log = loadStudyLog();
@@ -2681,6 +2795,10 @@ function renderQzQuestion() {
   const pct   = Math.round(QS.idx / total * 100);
   const { color, label } = QZ_TYPE_CFG[q.type] || QZ_TYPE_CFG.listen;
 
+  const kanjiToggleBtn = (q.type !== 'listen')
+    ? `<button class="cn-btn${quizKanjiMode?' active':''}" onclick="toggleQuizKanji()" style="font-size:11px;padding:3px 10px">あ漢</button>`
+    : '';
+
   let qBody = '';
   if (q.type === 'listen') {
     const choicesHTML = q.choices.map(c =>
@@ -2698,19 +2816,39 @@ function renderQzQuestion() {
         <p style="font-size:12px;color:var(--wt3);margin-top:-8px">選出正確中文意思</p>
       </div>
       <div class="qz-choice-list">${choicesHTML}</div>`;
+  } else if (q.type === 'slisten') {
+    const choicesHTML = q.choices.map(c =>
+      `<button class="qz-choice" data-val="${c.replace(/"/g,'&quot;')}"
+        onclick="qzSubmitSlisten(this,'${c.replace(/'/g,"\\'")}')">
+        ${c}
+      </button>`
+    ).join('');
+    qBody = `
+      <div style="text-align:center;margin:4px 0 16px">
+        <button class="play-btn" id="qz-play-btn" data-word="${q.japanese.replace(/"/g,'&quot;')}" onclick="qzPlayWord(this.dataset.word)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          播放句子
+        </button>
+        <p style="font-size:12px;color:var(--wt3);margin-top:-8px">選出正確中文翻譯</p>
+      </div>
+      <div id="qz-slisten-jp" style="display:none;font-size:14px;color:var(--wt2);margin-bottom:12px;line-height:1.8">${qzSentenceHtml(q.sentToks, -1)}</div>
+      <div class="qz-choice-list">${choicesHTML}</div>`;
   } else if (q.type === 'fill') {
     qBody = `
-      <p class="quiz-q" style="margin-bottom:8px">${q.sentence}</p>
+      <p class="quiz-q" style="margin-bottom:8px">${qzSentenceHtml(q.sentToks, q.blankTokIdx)}</p>
       <p style="font-size:12px;color:var(--wt3);margin-bottom:12px">中文提示：${q.meaning}</p>
       <input type="text" id="qz-fill-input"
         placeholder="輸入日文答案（可用輸入法）"
         style="width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid var(--wa-bg2);border-radius:12px;font-size:16px;background:var(--wb);color:var(--wt);font-family:inherit;outline:none"
         onkeydown="if(event.key==='Enter')qzSubmitFill()"/>
       <div id="qz-fill-result" style="display:none;margin-top:10px;font-size:14px;font-weight:500;text-align:center"></div>
-      <button id="qz-fill-submit" class="submit-btn" onclick="qzSubmitFill()" style="margin-top:10px;padding:12px">確認答案</button>`;
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <button id="qz-fill-skip" class="submit-btn" onclick="qzSkipFill()" style="padding:12px;width:auto;flex:0 0 auto;background:var(--wa-bg2);color:var(--wt2)">不知道</button>
+        <button id="qz-fill-submit" class="submit-btn" onclick="qzSubmitFill()" style="padding:12px;width:auto;flex:1">確認答案</button>
+      </div>`;
   } else if (q.type === 'judge') {
     qBody = `
-      <p style="font-size:16px;line-height:1.8;margin-bottom:12px;font-weight:500;letter-spacing:0.03em">${q.japanese}</p>
+      <p style="font-size:16px;line-height:1.8;margin-bottom:12px;font-weight:500;letter-spacing:0.03em">${qzSentenceHtml(q.sentToks, -1)}</p>
       <div style="background:var(--wa-bg);border-radius:10px;padding:11px 14px;margin-bottom:14px;font-size:14px;color:var(--wt2)">
         💬 ${q.translation}
       </div>
@@ -2721,16 +2859,15 @@ function renderQzQuestion() {
       </div>
       <div id="qz-judge-result" style="display:none;margin-top:10px"></div>`;
   } else if (q.type === 'order') {
-    // Init or restore per-question orderState
     if (!QS.orderState || QS.orderState.qIdx !== QS.idx) {
-      QS.orderState = { qIdx: QS.idx, arranged: [], remaining: [...q.shuffled] };
+      QS.orderState = { qIdx: QS.idx, arranged: [], remaining: [...q.shuffledToks] };
     }
     const { arranged, remaining } = QS.orderState;
     const arrangedHTML = arranged.length
-      ? arranged.map((tok, i) => `<button class="qz-order-tok qz-order-placed" onclick="qzOrderRemove(${i})">${tok}</button>`).join('')
+      ? arranged.map((tok, i) => `<button class="qz-order-tok qz-order-placed" onclick="qzOrderRemove(${i})">${qzTokHtml(tok)}</button>`).join('')
       : `<span style="color:var(--wt3);font-size:12px;align-self:center">（點下方詞語依序加入）</span>`;
     const remainHTML = remaining.map((tok, i) =>
-      `<button class="qz-order-tok" onclick="qzOrderAdd(${i})">${tok}</button>`
+      `<button class="qz-order-tok" onclick="qzOrderAdd(${i})">${qzTokHtml(tok)}</button>`
     ).join('');
     const allPlaced = remaining.length === 0;
     qBody = `
@@ -2746,6 +2883,7 @@ function renderQzQuestion() {
     <div class="prog-row">
       <span class="badge" style="background:${color}20;color:${color};border:0.5px solid ${color}40">${label}</span>
       <span class="prog-label" style="color:var(--wt3)">${QS.idx+1} / ${total}</span>
+      ${kanjiToggleBtn}
     </div>
     <div class="prog-bar" style="margin-bottom:14px">
       <div class="prog-fill" style="width:${pct}%;background:${color}"></div>
@@ -2757,7 +2895,7 @@ function renderQzQuestion() {
     </button>`;
 
   // Auto-focus fill input
-  if (!isListen) {
+  if (q.type === 'fill') {
     setTimeout(() => {
       const inp = document.getElementById('qz-fill-input');
       if (inp) inp.focus();
@@ -2777,6 +2915,25 @@ function qzSubmitListen(btn, choice) {
     else if (b === btn && !correct) b.classList.add('qz-wrong');
   });
   QS.answers.push({ correct, q });
+  const nb = document.getElementById('qz-next-btn');
+  if (nb) nb.style.display = 'flex';
+}
+
+function qzSkipFill() {
+  if (!QS || QS.phase !== 'exam') return;
+  const q = QS.questions[QS.idx];
+  QS.answers.push({ correct: false, userAnswer: '', q });
+  const rd = document.getElementById('qz-fill-result');
+  if (rd) {
+    rd.style.display = 'block';
+    rd.innerHTML = `<div style="padding:10px 14px;background:#fdecea;border:1px solid #e05c4a;border-radius:10px;color:#c0392b;font-size:13px">✗ 正解：${q.answer}${q.kana?' ('+q.kana+')':''}</div>`;
+  }
+  const inp = document.getElementById('qz-fill-input');
+  if (inp) inp.disabled = true;
+  const skipBtn = document.getElementById('qz-fill-skip');
+  if (skipBtn) skipBtn.style.display = 'none';
+  const sb = document.getElementById('qz-fill-submit');
+  if (sb) sb.style.display = 'none';
   const nb = document.getElementById('qz-next-btn');
   if (nb) nb.style.display = 'flex';
 }
@@ -2801,6 +2958,25 @@ function qzSubmitFill() {
   if (inp) inp.disabled = true;
   const sb = document.getElementById('qz-fill-submit');
   if (sb) sb.style.display = 'none';
+  const nb = document.getElementById('qz-next-btn');
+  if (nb) nb.style.display = 'flex';
+}
+
+function qzSubmitSlisten(btn, choice) {
+  if (!QS || QS.phase !== 'exam') return;
+  const q = QS.questions[QS.idx];
+  const correct = choice === q.correct;
+  const list = btn.closest('.qz-choice-list');
+  list.querySelectorAll('.qz-choice').forEach(b => {
+    b.onclick = null;
+    const val = b.dataset.val;
+    if (val === q.correct)      b.classList.add('qz-correct');
+    else if (b === btn && !correct) b.classList.add('qz-wrong');
+  });
+  // Reveal Japanese sentence after answering
+  const jpEl = document.getElementById('qz-slisten-jp');
+  if (jpEl) jpEl.style.display = 'block';
+  QS.answers.push({ correct, q });
   const nb = document.getElementById('qz-next-btn');
   if (nb) nb.style.display = 'flex';
 }
@@ -2851,11 +3027,12 @@ function qzSubmitOrder() {
   if (!QS || !QS.orderState || QS.phase !== 'exam') return;
   const q = QS.questions[QS.idx];
   const { arranged } = QS.orderState;
-  if (arranged.length < q.correct.length) { showToast('還有詞語未排入'); return; }
-  const correct = arranged.join('') === q.correct.join('');
-  QS.answers.push({ correct, userArranged: [...arranged], q });
+  if (arranged.length < q.correctToks.length) { showToast('還有詞語未排入'); return; }
+  const arrangedStr = arranged.map(t => t.surface_form).join('');
+  const correctStr  = q.correctToks.map(t => t.surface_form).join('');
+  const correct = arrangedStr === correctStr;
+  QS.answers.push({ correct, userArranged: arranged.map(t => t.surface_form), q });
 
-  // Disable all order buttons
   document.querySelectorAll('.qz-order-tok').forEach(b => b.onclick = null);
   const sb = document.getElementById('qz-order-submit');
   if (sb) { sb.onclick = null; sb.style.opacity = '0.4'; }
@@ -2865,7 +3042,7 @@ function qzSubmitOrder() {
     rd.style.display = 'block';
     rd.innerHTML = correct
       ? `<div style="padding:10px 14px;background:#e6f9f0;border:1px solid #34a369;border-radius:10px;color:#1d7a4a;font-weight:600;text-align:center">✓ 正確！</div>`
-      : `<div style="padding:10px 14px;background:#fdecea;border:1px solid #e05c4a;border-radius:10px;color:#c0392b;font-size:13px">✗ 正解：${q.correct.join('')}${q.punctuation}</div>`;
+      : `<div style="padding:10px 14px;background:#fdecea;border:1px solid #e05c4a;border-radius:10px;color:#c0392b;font-size:13px">✗ 正解：${correctStr}${q.punctuation}</div>`;
   }
   const nb = document.getElementById('qz-next-btn');
   if (nb) nb.style.display = 'flex';
@@ -2903,12 +3080,13 @@ function saveQuizResults() {
     if (!sec.retakes) sec.retakes = [];
     sec.retakes.push({ correct, total, pct });
   }
-  // 更新任務環 (取最佳成績)
+  // 更新任務環 (取最佳成績，但首答永久保留在 sec.first)
   const best = sec.first ? Math.max(pct, sec.first.pct) : pct;
-  // 做完就算完成（Math.max 確保 0 分也標記為已做）
-  if      (quizSection === 'listen') log[dateStr].tasks.listen = Math.max(best, 1);
-  else if (quizSection === 'fill')   log[dateStr].tasks.quiz   = Math.max(best, 1);
-  // judge / order 不更新首頁任務環（尚未在 ring 設計中），僅存 quiz log
+  if      (quizSection === 'listen')  log[dateStr].tasks.listen  = Math.max(best, 1);
+  else if (quizSection === 'slisten') log[dateStr].tasks.slisten = Math.max(best, 1);
+  else if (quizSection === 'fill')    log[dateStr].tasks.quiz    = Math.max(best, 1);
+  else if (quizSection === 'judge')   log[dateStr].tasks.judge   = Math.max(best, 1);
+  else if (quizSection === 'order')   log[dateStr].tasks.order   = Math.max(best, 1);
 
   saveStudyLog(log);
   renderQuizWeekBar();
@@ -2929,12 +3107,15 @@ function renderQzResult() {
         let word = '';
         if (a.q.type === 'listen') {
           word = `${a.q.word}（${a.q.kana}）→ <b>${a.q.correct}</b>`;
+        } else if (a.q.type === 'slisten') {
+          word = `${a.q.japanese}<br><span style="color:var(--wt3)">正確翻譯：</span>${a.q.correct}`;
         } else if (a.q.type === 'fill') {
-          word = `${a.q.sentence.replace('＿＿＿','<b>'+a.q.answer+'</b>')}${a.userAnswer?` <span style="color:var(--wt3)">(你填：${a.userAnswer})</span>`:''}`;
+          const filledSentence = a.q.sentToks.map((t, i) => i === a.q.blankTokIdx ? `<b>${a.q.answer}</b>` : (t.surface_form || '')).join('');
+          word = `${filledSentence}${a.userAnswer?` <span style="color:var(--wt3)">(你填：${a.userAnswer})</span>`:''}`;
         } else if (a.q.type === 'judge') {
           word = `${a.q.japanese}<br><span style="color:var(--wt3)">正確翻譯：</span>${a.q.correctTranslation}`;
         } else if (a.q.type === 'order') {
-          word = `正解：<b>${a.q.correct.join('')}${a.q.punctuation}</b>`;
+          word = `正解：<b>${a.q.correctToks.map(t=>t.surface_form).join('')}${a.q.punctuation}</b>`;
         }
         return `<div style="padding:8px 0;border-bottom:0.5px solid var(--wa-bg2);font-size:13px;line-height:1.7">
           <span style="color:var(--wr)">✗</span> <span style="margin-left:6px">${word}</span>
@@ -2987,8 +3168,8 @@ function renderQuizWeekBar() {
     if (hasContent) {
       const entry      = log[dateStr] || {};
       const tasks      = entry.tasks  || {};
-      const listenPct  = Math.min(1, (tasks.listen || 0) / 100);
-      const fillPct    = Math.min(1, (tasks.quiz   || 0) / 100);
+      const listenPct  = Math.min(1, ((tasks.listen || 0) + (tasks.slisten || 0)) / 200);
+      const fillPct    = Math.min(1, ((tasks.quiz || 0) + (tasks.judge || 0) + (tasks.order || 0)) / 300);
       const R = 15, SW = 3, CX = 19, CY = 19;
       const circ = 2 * Math.PI * R;
       const half = circ / 2;
@@ -3048,6 +3229,7 @@ async function selectQuizDate(dateStr) {
     QUIZ_PACK._date = dateStr;
     selectedQuizDate = dateStr;
     QS = null;
+    _updateQuizHeader();
     renderQuizWeekBar();
     renderQuizMain();
     showToast('已載入：' + (QUIZ_PACK.title || dateStr));
@@ -3059,11 +3241,15 @@ async function selectQuizDate(dateStr) {
 // CN toggle
 function toggleCN() {
   const t = document.getElementById('cn-toggle');
-  t.classList.toggle('off');
-  const hidden = t.classList.contains('off');
+  t.classList.toggle('active');
+  const active = t.classList.contains('active');
+  localStorage.setItem('cnToggle', active ? '1' : '0');
   document.querySelectorAll('.cn-note').forEach(n => {
-    n.classList.toggle('hidden', hidden);
+    n.classList.toggle('hidden', !active);
   });
+  // iOS scroll fix: force layout recalc after content height change
+  const page = document.getElementById('page-article');
+  if (page) { const _s = page.scrollTop; page.scrollTop = _s + 1; page.scrollTop = _s; }
 }
 
 // ===== 文章斷詞與互動 =====
@@ -3082,6 +3268,15 @@ function toggleSentenceSel(idx) {
   sentenceSelected[idx] = !sentenceSelected[idx];
   const dot = document.querySelector('.sentence-dot[data-si="' + idx + '"]');
   if (dot) dot.classList.toggle('unsel', !sentenceSelected[idx]);
+  updateSelAllDot();
+}
+
+function soloSentenceSel(idx) {
+  sentenceSelected = sentenceSelected.map((_, i) => i === idx);
+  document.querySelectorAll('.sentence-dot').forEach((d) => {
+    const i = parseInt(d.dataset.si);
+    d.classList.toggle('unsel', i !== idx);
+  });
   updateSelAllDot();
 }
 
@@ -3298,6 +3493,75 @@ function renderLevelPicker() {
 // ===== 文章頁等級 sheet =====
 let _levelLpTimer = null;
 
+function initQuizLevelTag() {
+  const tag = document.getElementById('quiz-level-tag');
+  if (!tag || tag._levelInited) return;
+  tag._levelInited = true;
+  let _timer = null;
+  const _lpStart = () => { _timer = setTimeout(openQuizLevelSheet, 600); };
+  const _lpCancel = () => clearTimeout(_timer);
+  tag.addEventListener('touchstart', _lpStart, { passive: true });
+  tag.addEventListener('touchend',   _lpCancel);
+  tag.addEventListener('touchmove',  _lpCancel);
+  tag.addEventListener('pointerdown', e => { if (e.pointerType !== 'touch') _lpStart(); });
+  tag.addEventListener('pointerup',   e => { if (e.pointerType !== 'touch') _lpCancel(); });
+  tag.addEventListener('pointerleave',e => { if (e.pointerType !== 'touch') _lpCancel(); });
+  tag.addEventListener('contextmenu', e => { e.preventDefault(); openQuizLevelSheet(); });
+}
+
+function openQuizLevelSheet() {
+  const chips = document.getElementById('level-sheet-chips');
+  if (chips) {
+    const _activeKey = (loadStudyLog()[selectedQuizDate] || {}).level || CURRENT_LEVEL;
+    const chip = o => `<button class="level-sheet-chip${o.key === _activeKey ? ' active' : ''}" onclick="reloadQuizWithLevel('${o.key}')">${o.label}</button>`;
+    const main = LEVEL_OPTIONS.filter(o => !o.key.includes('_lite'));
+    const lite = LEVEL_OPTIONS.filter(o => o.key.includes('_lite'));
+    chips.innerHTML =
+      `<div class="level-sheet-row">${main.map(chip).join('')}</div>` +
+      `<div class="level-sheet-row">${lite.map(chip).join('')}</div>`;
+  }
+  document.getElementById('level-sheet-backdrop').classList.add('open');
+  document.getElementById('level-sheet').classList.add('open');
+}
+
+async function reloadQuizWithLevel(key) {
+  closeLevelSheet();
+  showToast('載入中…');
+  const url = `${CONTENT_BASE_URL}/${selectedQuizDate}/${key}.json`;
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error();
+    QUIZ_PACK = await res.json();
+    QUIZ_PACK._date = selectedQuizDate;
+  } catch {
+    showToast('此等級尚無內容'); return;
+  }
+  // 儲存此日期的選用等級
+  const log = loadStudyLog();
+  if (!log[selectedQuizDate]) log[selectedQuizDate] = {};
+  log[selectedQuizDate].level = key;
+  saveStudyLog(log);
+  // 更新試題頁 UI
+  const opt = LEVEL_OPTIONS.find(o => o.key === key);
+  const label = opt ? opt.label : key.toUpperCase();
+  const lvEl = document.getElementById('quiz-level-tag');
+  if (lvEl) lvEl.textContent = label;
+  _updateQuizHeader();
+  renderQuizMain();
+  // 同步文章頁（同一天才連動）
+  if (selectedArticleDate === selectedQuizDate) {
+    const result = await loadContentForDate(selectedArticleDate, key);
+    if (result.success) {
+      const lt = document.getElementById('article-level-tag');
+      if (lt) lt.textContent = label;
+      const titleEl = document.getElementById('article-page-title');
+      if (titleEl) titleEl.textContent = result.pack.title || selectedArticleDate;
+      resetArticleProgress();
+    }
+  }
+  showToast('已切換至 ' + label);
+}
+
 function initArticleLevelTag() {
   const tag = document.getElementById('article-level-tag');
   if (!tag || tag._levelInited) return;
@@ -3351,6 +3615,19 @@ async function reloadArticleWithLevel(key) {
   const lt = document.getElementById('article-level-tag');
   if (lt) lt.textContent = label;
   resetArticleProgress();
+  // 同步試題頁（同一天才連動）
+  if (selectedQuizDate === selectedArticleDate) {
+    try {
+      const qRes = await fetch(`${CONTENT_BASE_URL}/${selectedQuizDate}/${key}.json`);
+      if (qRes.ok) {
+        QUIZ_PACK = await qRes.json();
+        QUIZ_PACK._date = selectedQuizDate;
+        const qlEl = document.getElementById('quiz-level-tag');
+        if (qlEl) qlEl.textContent = label;
+        _updateQuizHeader();
+      }
+    } catch {}
+  }
   showToast('已切換至 ' + label);
 }
 
@@ -3639,7 +3916,21 @@ function renderArticle(tokens) {
     const dot = document.createElement('div');
     dot.className = 'sentence-dot';
     dot.dataset.si = idx;
+    if (idx === 0) dot.id = 'article-first-dot';
     dot.addEventListener('click', () => toggleSentenceSel(idx));
+    // 長按：單選此句
+    let _dotTimer = null, _dotMoved = false, _dotSX = 0, _dotSY = 0;
+    dot.addEventListener('touchstart', (e) => {
+      _dotMoved = false; _dotSX = e.touches[0].clientX; _dotSY = e.touches[0].clientY;
+      if (e.cancelable) e.preventDefault();
+      _dotTimer = setTimeout(() => { if (!_dotMoved) soloSentenceSel(idx); }, 400);
+    }, { passive: false });
+    dot.addEventListener('touchmove', (e) => {
+      if (Math.abs(e.touches[0].clientX - _dotSX) > 8 || Math.abs(e.touches[0].clientY - _dotSY) > 8) {
+        _dotMoved = true; clearTimeout(_dotTimer);
+      }
+    }, { passive: true });
+    dot.addEventListener('touchend', () => clearTimeout(_dotTimer));
     grp.parentNode.insertBefore(row, grp);
     row.appendChild(dot);
     row.appendChild(grp);
@@ -3657,7 +3948,11 @@ function renderArticle(tokens) {
   container.oncontextmenu = (e) => e.preventDefault();
 
   // 套用目前的中文備注顯示狀態
-  const cnHidden = document.getElementById('cn-toggle').classList.contains('off');
+  const cnSaved = localStorage.getItem('cnToggle');
+  const cnActive = cnSaved === '1';
+  const cnBtn = document.getElementById('cn-toggle');
+  if (cnBtn) cnBtn.classList.toggle('active', cnActive);
+  const cnHidden = !cnActive;
   container.querySelectorAll('.cn-note').forEach(n => n.classList.toggle('hidden', cnHidden));
 
   // 套用已加入單字卡的詞，對應句子的中文備注也標橘色
@@ -3916,6 +4211,43 @@ function findExampleWithTranslation(word) {
   return { example: '', exampleTrans: '' };
 }
 
+function addAllSelectedWords() {
+  const container = document.getElementById('article-text');
+  if (!container) return;
+  const toAdd = new Set();
+  container.querySelectorAll('.tok-word:not(.tok-added)').forEach(el => {
+    const si = parseInt(el.dataset.sentence);
+    if (isNaN(si) || !sentenceSelected[si]) return;
+    const basic = el.dataset.basic;
+    if (basic && !vocabBook[basic]) toAdd.add(basic);
+  });
+  if (!toAdd.size) { showToast('選取句的單字都已在單字本中'); return; }
+  if (!window.confirm('加入 ' + toAdd.size + ' 個單字到單字本？')) return;
+  const added = [];
+  toAdd.forEach(basic => {
+    if (vocabBook[basic]) return;
+    const entry = VOCAB_DICT[basic] || {};
+    const _ex = findExampleWithTranslation(basic);
+    vocabBook[basic] = {
+      kana: entry.reading || '', romaji: entry.romaji || '',
+      meaning: entry.meaning || '',
+      example: entry.example || _ex.example || '',
+      exampleTrans: entry.exampleTrans || _ex.exampleTrans || '',
+      familiarity: 0, source: 'article',
+      addedDate: new Date().toISOString().slice(0, 10),
+      seen_forms: []
+    };
+    addedWords.add(basic);
+    added.push(basic);
+  });
+  saveVocabBook();
+  added.forEach(basic => {
+    container.querySelectorAll('.tok-word[data-basic="' + basic + '"]').forEach(el => el.classList.add('tok-added'));
+  });
+  applyAddedWordNoteColors();
+  showToast('已加入 ' + added.length + ' 個單字');
+}
+
 function addToVocabCards(basic, extra) {
   if (!vocabBook[basic]) {
     const entry = VOCAB_DICT[basic] || {};
@@ -4146,8 +4478,10 @@ function loadTheme() {
   function getActiveScroll() {
     const active = document.querySelector('.page.active');
     if (!active) return 0;
-    // vocab page: scroll managed by _vla interceptor, not generic PTR
-    if (active.id === 'page-vocab') return 0;
+    if (active.id === 'page-vocab') {
+      const vla = document.getElementById('vocab-list-area');
+      return vla ? vla.scrollTop : 0;
+    }
     for (const el of active.querySelectorAll('*')) {
       if (el.scrollTop > 0) return el.scrollTop;
     }
@@ -4195,7 +4529,10 @@ function loadTheme() {
 
   function isTutorialOpen() {
     const ov = document.getElementById('tutorial-overlay');
-    return ov && ov.style.display !== 'none';
+    if (ov && ov.style.display !== 'none') return true;
+    const go = document.getElementById('gojuuon-overlay');
+    if (go && go.classList.contains('open')) return true;
+    return false;
   }
 
   document.addEventListener('touchstart', e => {
@@ -4229,7 +4566,7 @@ function loadTheme() {
         page.style.transition = 'transform .4s ease';
         page.style.transform = 'translateY(0)';
       }
-      showToast('PTR: dist=' + Math.round(dist) + ' startY=' + Math.round(startY) + ' page=' + (window._ptrLastPage||'?') + ' resets=' + (window._ptrResetCount||0));
+      // showToast('PTR: dist=' + Math.round(dist) + ' startY=' + Math.round(startY) + ' page=' + (window._ptrLastPage||'?') + ' resets=' + (window._ptrResetCount||0));
       setTimeout(() => location.reload(), 450);
     } else {
       resetIndicator();
@@ -4278,6 +4615,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(idx => {
       idx.dates.forEach(d => contentDateSet.add(d.date));
       renderCalendar();
+      renderWeekBar(); // 補上：讓文章週曆圓點也跟著更新
     })
     .catch(() => {}); // 失敗時靜默，用預設值
 
@@ -4952,6 +5290,8 @@ function setPlayRecIcon(playing) {
 function speak(text) {
   if (!window.speechSynthesis) return;
   window.speechSynthesis.cancel();
+  // iOS workaround: synthesis can get stuck in paused state after multiple calls
+  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'ja-JP'; u.rate = 0.85;
   window.speechSynthesis.speak(u);
@@ -4959,15 +5299,25 @@ function speak(text) {
 
 // 試題聽力播放（帶視覺回饋）
 function qzPlayWord(text) {
-  speak(text);
+  if (!window.speechSynthesis) return;
   const btn = document.getElementById('qz-play-btn');
-  if (!btn) return;
-  btn.style.opacity = '0.6';
-  btn.textContent = '播放中…';
-  setTimeout(() => {
-    btn.style.opacity = '1';
-    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg> 再播放';
-  }, 1500);
+  if (btn) { btn.style.opacity = '0.6'; btn.textContent = '播放中…'; }
+
+  window.speechSynthesis.cancel();
+  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'ja-JP'; u.rate = 0.85;
+
+  const resetBtn = () => {
+    const b = document.getElementById('qz-play-btn');
+    if (!b) return;
+    b.style.opacity = '1';
+    b.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg> 再播放';
+  };
+  u.onend = resetBtn;
+  u.onerror = resetBtn;
+  setTimeout(resetBtn, 3000); // fallback：iOS onend 有時不觸發
+  window.speechSynthesis.speak(u);
 }
 
 // Toast
@@ -5162,7 +5512,13 @@ function buildRing(size, strokeRatio, tasksState) {
 
   TASKS.forEach((t, i) => {
     const val = tasksState[t.key];
-    const fillRatio = (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') ? articleFillRatio(val) : (val ? 1 : 0);
+    const fillRatio = (t.key === 'article' || t.key === 'vocab' || t.key === 'speak')
+      ? articleFillRatio(val)
+      : t.key === 'listen'
+        ? Math.min(1, ((tasksState.listen || 0) + (tasksState.slisten || 0)) / 200)
+        : t.key === 'quiz'
+          ? Math.min(1, ((tasksState.quiz || 0) + (tasksState.judge || 0) + (tasksState.order || 0)) / 300)
+          : (val ? 1 : 0);
     if (fillRatio <= 0) return;
     const thisSegLen = segLen * fillRatio;
     const offset = -(circumference * (i / n)) + circumference / 4;
@@ -5179,6 +5535,8 @@ function countDone(tasks) {
   if (!tasks) return 0;
   return TASKS.reduce((sum, t) => {
     if (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') return sum + (articleFillRatio(tasks[t.key]) >= 1 ? 1 : 0);
+    if (t.key === 'listen') return sum + (((tasks.listen || 0) + (tasks.slisten || 0)) >= 200 ? 1 : 0);
+    if (t.key === 'quiz')   return sum + (((tasks.quiz || 0) + (tasks.judge || 0) + (tasks.order || 0)) >= 300 ? 1 : 0);
     return sum + (tasks[t.key] ? 1 : 0);
   }, 0);
 }
@@ -5235,6 +5593,14 @@ function renderHomeRing() {
     if (t.key === 'article' || t.key === 'vocab' || t.key === 'speak') {
       const pct = Math.round(articleFillRatio(val) * 100);
       stateText = pct >= 100 ? '完成' : (pct > 0 ? pct + '%' : '未開始');
+      stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
+    } else if (t.key === 'listen') {
+      const pct = Math.round(((tasks.listen || 0) + (tasks.slisten || 0)) / 2);
+      stateText = pct >= 100 ? '完成' : (pct > 0 ? pct + '%' : '未完成');
+      stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
+    } else if (t.key === 'quiz') {
+      const pct = Math.round(((tasks.quiz || 0) + (tasks.judge || 0) + (tasks.order || 0)) / 3);
+      stateText = pct >= 100 ? '完成' : (pct > 0 ? pct + '%' : '未完成');
       stateColor = pct >= 100 ? 'var(--wg)' : (pct > 0 ? t.color : 'var(--wt3)');
     } else {
       stateText = val ? '完成' : '未完成';
@@ -5809,6 +6175,7 @@ function openGojuuon() {
   document.getElementById('gojuuon-overlay').classList.add('open');
   const btn = document.getElementById('vocab-gojuuon-btn');
   if (btn) btn.classList.add('open');
+  _updateHelpBtnGlow();
 }
 
 function closeGojuuon() {
@@ -6301,6 +6668,7 @@ let vqIndex = 0;
 let vqOk = 0;
 let vqFail = 0;
 let vqForgetMode = false; // 不記得狀態：等待「下一張」
+let vqMode = 'text'; // 'text' | 'listen'
 
 function startVocabQuiz() {
   const words = vocabFilteredList;
@@ -6332,10 +6700,35 @@ function startVocabQuiz() {
   if (hb) hb.style.display = 'none';
   const el = document.getElementById('vocab-quiz');
   el.style.display = 'flex';
-  // 確保 result area 隱藏，card+btns 顯示
+  // 顯示模式選擇，隱藏其他區塊
+  document.getElementById('vq-mode-select').style.display = 'flex';
+  document.getElementById('vq-header').style.display = 'none';
+  document.getElementById('vq-card-area').style.display = 'none';
+  document.getElementById('vq-btns').style.display = 'none';
+  document.getElementById('vq-result-area').style.display = 'none';
+}
+
+function startVocabQuizMode(mode) {
+  vqMode = mode;
+  document.getElementById('vq-mode-select').style.display = 'none';
+  document.getElementById('vq-header').style.display = '';
   document.getElementById('vq-card-area').style.display = 'flex';
   document.getElementById('vq-btns').style.display = 'grid';
-  document.getElementById('vq-result-area').style.display = 'none';
+  // 聽力模式：TTS 按鈕放大
+  const ttsBtn = document.getElementById('vq-tts-btn');
+  if (ttsBtn) {
+    if (mode === 'listen') {
+      ttsBtn.style.width = '45px';
+      ttsBtn.style.height = '45px';
+      ttsBtn.querySelector('svg').setAttribute('width', '22');
+      ttsBtn.querySelector('svg').setAttribute('height', '22');
+    } else {
+      ttsBtn.style.width = '';
+      ttsBtn.style.height = '';
+      ttsBtn.querySelector('svg').setAttribute('width', '16');
+      ttsBtn.querySelector('svg').setAttribute('height', '16');
+    }
+  }
   vqShowCard();
 }
 
@@ -6361,11 +6754,22 @@ function vqShowCard() {
     exEl.classList.add('meaning-hidden');
   }
 
-  // 重置遮擋：中文永遠遮，漢字有就遮
+  // 重置遮擋
   document.getElementById('vq-meaning').classList.add('meaning-hidden');
   const wordEl = document.getElementById('vq-word');
-  if (hasKanji) { wordEl.classList.add('meaning-hidden'); }
-  else           { wordEl.classList.remove('meaning-hidden'); }
+  const kanaEl = document.getElementById('vq-kana');
+  if (vqMode === 'listen') {
+    // 聽力模式：假名、漢字全遮
+    wordEl.classList.add('meaning-hidden');
+    kanaEl.classList.add('meaning-hidden');
+    document.getElementById('vq-peek-hint').textContent = '點擊顯示單字與中文';
+  } else {
+    // 文字模式：漢字遮，假名顯示
+    if (hasKanji) { wordEl.classList.add('meaning-hidden'); }
+    else           { wordEl.classList.remove('meaning-hidden'); }
+    kanaEl.classList.remove('meaning-hidden');
+    document.getElementById('vq-peek-hint').textContent = '點擊顯示中文與例句';
+  }
   document.getElementById('vq-peek-hint').style.display = '';
   document.getElementById('vq-meaning-tap').style.pointerEvents = '';
 
@@ -6385,6 +6789,7 @@ function vqShowCard() {
 function vqPeekMeaning() {
   document.getElementById('vq-meaning').classList.remove('meaning-hidden');
   document.getElementById('vq-word').classList.remove('meaning-hidden');
+  document.getElementById('vq-kana').classList.remove('meaning-hidden');
   const exEl = document.getElementById('vq-example');
   if (exEl) exEl.classList.remove('meaning-hidden');
   document.getElementById('vq-peek-hint').style.display = 'none';
@@ -6689,6 +7094,8 @@ async function selectArticleDate(dateStr) {
     if (titleEl) titleEl.textContent = result.pack.title || dateStr;
     const lt = document.getElementById('article-level-tag');
     if (lt) { const opt = LEVEL_OPTIONS.find(o => o.key === _levelToUse); lt.textContent = opt ? opt.label : _levelToUse.toUpperCase(); }
+    const artDt = document.getElementById('article-date-tag');
+    if (artDt) { const _d = new Date(dateStr + 'T00:00:00'); artDt.textContent = `${_d.getMonth()+1}月${_d.getDate()}日`; }
     if (dateStr === getLocalDateStr()) {
       logTodayArticle(result.pack.title, result.pack.level);
     }
@@ -6821,8 +7228,10 @@ function _tutRender() {
     var snapR  = snapEl ? snapEl.getBoundingClientRect() : null;
     var spLeft = snapR ? snapR.left         : (r.left - pad);
     var spW    = snapR ? snapR.width        : (r.width + pad * 2);
-    var spTop  = r.top - pad;
-    var spH    = r.height + pad * 2;
+    var insetTop = step.insetTop || 0;
+    var insetBottom = step.insetBottom || 0;
+    var spTop  = r.top - pad + insetTop;
+    var spH    = r.height + pad * 2 - insetTop + insetBottom;
     // enforce 8px viewport margin on both sides
     var _vm = 8;
     if (spLeft < _vm) spLeft = _vm;
@@ -6848,7 +7257,7 @@ function _tutRender() {
     tip.style.left  = Math.max(8, Math.min(spLeft, window.innerWidth - spW - 8)) + 'px';
     // attach below spotlight; if not enough space, go above
     var gap = 0; // flush — visually extends from spotlight
-    var below = r.bottom + pad + gap;
+    var below = spTop + spH + gap;
     var tipH = tip.offsetHeight || 80;
     if (below + tipH + 8 < window.innerHeight) {
       tip.style.top = below + 'px';
@@ -6860,6 +7269,28 @@ function _tutRender() {
   }); });
 }
 
+// ── Tutorial 問號光暈 ──
+function _getTutSeen() {
+  try { return JSON.parse(localStorage.getItem('tutBtnSeen') || '{}'); } catch(e) { return {}; }
+}
+function _markTutSeen(btnId) {
+  if (!btnId) return;
+  const key = btnId.replace('-help-btn', '');
+  const seen = _getTutSeen();
+  seen[key] = 1;
+  localStorage.setItem('tutBtnSeen', JSON.stringify(seen));
+  const btn = document.getElementById(btnId);
+  if (btn) btn.classList.remove('glow');
+}
+function _updateHelpBtnGlow() {
+  const seen = _getTutSeen();
+  ['home','article','vocab','quiz','settings','gojuuon'].forEach(function(key) {
+    const btn = document.getElementById(key + '-help-btn');
+    if (!btn) return;
+    btn.classList.toggle('glow', !seen[key]);
+  });
+}
+
 function tutorialShow(btnId, steps) {
   // 依元素在頁面的垂直位置排序（由上到下），與傳入順序無關
   _tutSteps = steps.slice().sort(function(a, b) {
@@ -6869,6 +7300,7 @@ function tutorialShow(btnId, steps) {
     return ea.getBoundingClientRect().top - eb.getBoundingClientRect().top;
   });
   _tutIdx = 0; _tutBtnId = btnId;
+  _markTutSeen(btnId);
   var btn = btnId && document.getElementById(btnId);
   if (btn) btn.classList.add('tutorial-active');
   _tutRender();
@@ -6917,8 +7349,9 @@ function showArticleTutorial() {
   if (_tutBtnId === 'article-help-btn') { tutorialClose(); return; }
   tutorialShow('article-help-btn', [
     { targetId: 'article-week-bar',  text: '顯示最近七天的學習紀錄，點擊日期可切換閱讀當天的文章，點擊左側箭頭可以回顧上週的文章。' },
-    { targetId: 'cn-toggle-row',     text: '開啟後每個詞彙下方會顯示中文意思，方便對照學習。' },
+    { targetId: 'cn-toggle-row',     text: '「中文」開啟後每個詞彙下方會顯示中文意思；「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本。' },
     { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
+    { targetId: 'article-first-dot', snapToId: 'article-text', text: '點擊句首的小圓點可選取或取消該句；長按小圓點則單獨選取這一句，方便針對單句練習朗讀或跟讀。' },
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
     { targetId: 'play-btn',   snapToId: 'difficulty-bar', noScroll: true, text: '點擊播放可聆聽全文朗讀，可調整速度。' },
     { targetId: 'follow-btn', snapToId: 'difficulty-bar', noScroll: true, text: '開啟逐句跟讀後，系統會逐句播放並等待你開口跟讀，錄音鍵供口語自由練習使用。' },
@@ -6937,8 +7370,9 @@ function showQuizTutorial() {
   if (_tutBtnId === 'quiz-help-btn') { tutorialClose(); return; }
   tutorialShow('quiz-help-btn', [
     { targetId: 'quiz-week-bar', snapToId: 'quiz-main', text: '顯示最近七天的學習紀錄，點擊日期可切換到當天的試題，左側箭頭可回顧上週。' },
-    { targetId: 'quiz-tabs',    snapToId: 'quiz-main', text: '四種題型：聽力、填空、句子判斷、句子排列，每天各會產生一組題目，完成所有題型可集滿今日試題任務環。' },
-    { targetId: 'quiz-main',                           text: '依序作答，每題都會即時給分，完成後可重新作答繼續練習。' },
+    { targetId: 'quiz-level-tag', snapToId: 'quiz-main', noScroll: true, text: '顯示目前試題的難度等級。長按可切換此日期的文章與試題難度，文章頁也會同步連動。' },
+    { targetId: 'quiz-tabs', snapToId: 'quiz-main', text: '五種題型：單字聽力（聽單字選中文）、句子聽力（聽整句選翻譯）、填空、句子判斷、句子排列。每天各產生一組題目，每日題數可由設定頁的輕鬆、標準、專注模式調整。' },
+    { targetId: 'quiz-main', insetTop: 20, insetBottom: 5, text: '依序作答，每題即時給分；填空、判斷、排列、句子聽力題目右上角的「あ漢」可切換純假名或漢字顯示，完成後可重新作答。' },
   ]);
 }
 function showGojuuonTutorial() {
@@ -7303,6 +7737,17 @@ function _initA2HSBanner() {
   if (!isIOS || isStandalone || dismissed) return;
   const el = document.getElementById('a2hs-banner');
   if (el) el.style.display = 'flex';
+}
+
+function resetFirstTimeHints() {
+  localStorage.removeItem('swipeHintSeen');
+  localStorage.removeItem('meaningHintSeen');
+  localStorage.removeItem('a2hs_dismissed');
+  localStorage.removeItem('tutBtnSeen');
+  const banner = document.getElementById('a2hs-banner');
+  if (banner) banner.style.display = 'flex';
+  _updateHelpBtnGlow();
+  showToast('已重設，進入單字卡頁面即可看到其他提示');
 }
 
 function dismissA2HS() {
