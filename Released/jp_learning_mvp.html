@@ -2083,7 +2083,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.2
+          v1.1.3
         </div>
 
       </div>
@@ -4516,7 +4516,7 @@ function loadTheme() {
 
   function setIndicator(pullDist) {
     const page = getActivePage();
-    if (page && (page.id === 'page-quiz' || page.id === 'page-vocab' || page.id === 'page-article')) {
+    if (page && (page.id === 'page-quiz' || page.id === 'page-vocab')) {
       page.style.transition = 'none';
       page.style.transform = `translateY(${Math.min(pullDist * 0.4, THRESHOLD * 0.4)}px)`;
     }
@@ -4538,7 +4538,7 @@ function loadTheme() {
     indicator.style.opacity = '0';
     segs.forEach(s => { if (s) s.style.opacity = '0.15'; });
     const page = getActivePage();
-    if (page && (page.id === 'page-quiz' || page.id === 'page-vocab' || page.id === 'page-article')) {
+    if (page && (page.id === 'page-quiz' || page.id === 'page-vocab')) {
       page.style.transition = 'transform .3s ease';
       page.style.transform = 'translateY(0)';
     }
@@ -4583,7 +4583,7 @@ function loadTheme() {
       indicator.style.transition = 'opacity .4s ease';
       indicator.style.opacity = '0';
       const page = getActivePage();
-      if (page && (page.id === 'page-quiz' || page.id === 'page-vocab' || page.id === 'page-article')) {
+      if (page && (page.id === 'page-quiz' || page.id === 'page-vocab')) {
         page.style.transition = 'transform .4s ease';
         page.style.transform = 'translateY(0)';
       }
@@ -7393,7 +7393,7 @@ function showQuizTutorial() {
   if (_tutBtnId === 'quiz-help-btn') { tutorialClose(); return; }
   tutorialShow('quiz-help-btn', [
     { targetId: 'quiz-week-bar', snapToId: 'quiz-main', text: '顯示最近七天的學習紀錄，點擊日期可切換到當天的試題，左側箭頭可回顧上週。' },
-    { targetId: 'quiz-level-tag', snapToId: 'quiz-main', noScroll: true, text: '顯示目前試題的難度等級。長按可切換此日期的文章與試題難度，文章頁也會同步連動。' },
+    { targetId: 'quiz-level-tag', snapToId: 'quiz-week-bar', noScroll: true, text: '顯示目前試題的難度等級。長按可切換此日期的文章與試題難度，文章頁也會同步連動。' },
     { targetId: 'quiz-tabs', snapToId: 'quiz-main', text: '五種題型：單字聽力（聽單字選中文）、句子聽力（聽整句選翻譯）、填空、句子判斷、句子排列。每天各產生一組題目，每日題數可由設定頁的輕鬆、標準、專注模式調整。' },
     { targetId: 'quiz-main', insetTop: 20, insetBottom: 5, text: '依序作答，每題即時給分；填空、判斷、排列、句子聽力題目右上角的「あ漢」可切換純假名或漢字顯示，完成後可重新作答。' },
     { targetId: 'gojuuon-fixed-btn', snapToId: 'quiz-week-bar', noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
