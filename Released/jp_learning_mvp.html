@@ -451,8 +451,10 @@
   .cn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
   /* Article page：底部要讓出固定工具列的空間 */
   #page-article { padding-bottom: calc(var(--nav-h) + var(--safe-bottom) + var(--atb-h) + 12px); }
-  /* 防止內容被 flex 壓縮至 scrollHeight=clientHeight，確保頁面可滾動 */
-  #page-article .sec { flex-shrink: 0; }
+  /* iOS Safari 的 flex column + overflow 容器，在 touch reflow 時會把子元素壓縮，
+     使短文章 scrollHeight 崩塌成 clientHeight 而無法捲動。改用 block 佈局徹底避開。
+     (#page-article.active 特異度高於 .page.active，可覆寫共用的 display:flex) */
+  #page-article.active { display: block; }
 
   /* ── 文章週曆列 ── */
   #article-week-bar {
@@ -2085,7 +2087,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.9
+          v1.1.10
         </div>
 
       </div>
@@ -3259,21 +3261,20 @@ async function selectQuizDate(dateStr) {
   }
 }
 
-// 確保文章頁永遠有 scroll room，避免短文章無法滾動
-// 方案：直接對 .sec 設 inline flexShrink=0 + minHeight，不依賴 spacer 量測
+// 短文章時 difficulty-bar 會被底部固定工具列遮住，需要保證有 scroll room。
+// block 佈局下對 .sec 設 minHeight 即可穩定產生 overflow（無 flex-shrink 干擾）。
 function ensureArticleScrollable() {
   var pa = document.getElementById('page-article');
   if (!pa || pa.clientHeight === 0) return;
   var sec = pa.querySelector('.sec');
   if (!sec) return;
 
-  // inline style 優先度最高，確保不被任何 CSS 規則覆寫
-  sec.style.flexShrink = '0';
-
-  // 計算需要的 minHeight：讓 scrollH >= clientH + 80
+  // 先清掉舊 minHeight 量自然高度，避免上一次的值影響判斷
+  sec.style.minHeight = '0px';
   var topH = (pa.querySelector('.top-bar') || {}).offsetHeight || 68;
   var weekH = (document.getElementById('article-week-bar') || {}).offsetHeight || 78;
   var pb = parseFloat(getComputedStyle(pa).paddingBottom) || 244;
+  // 讓 scrollH >= clientH + 80
   var need = pa.clientHeight + 80 - topH - weekH - pb;
   sec.style.minHeight = (need > 0 ? need : 0) + 'px';
 }

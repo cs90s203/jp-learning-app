@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.10 — 2026-06-27
+
+**Bug 修正：文章頁捲動 — 改用 block 佈局（iOS flex 崩塌根治）**
+
+- 根因確認：iOS Safari 的 `flex column + overflow` 容器在 touch 觸發 reflow 時，會無視 `flex-shrink:0` 把子元素壓縮，使 `scrollHeight` 崩塌成 `clientHeight`（debug 數據顯示 21 號 CN off 觸碰前 room=246、觸碰後 room=0）
+- 解法：`#page-article.active` 改用 `display: block`，完全跳過 flex-shrink 機制，桌面與 iOS 行為一致
+- `ensureArticleScrollable()` 簡化為純 `minHeight` 設定，block 佈局下穩定產生 80px scroll room 供短文章顯示 difficulty-bar
+
 ## v1.1.9 — 2026-06-27
 
 **Bug 修正：文章頁捲動根本修正（minHeight + inline flexShrink）**
@@ -250,6 +258,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.10 — 2026-06-27
+
+Bug 修正：文章頁改 block 佈局，根治 iOS flex 捲動崩塌
 
 ---
 
