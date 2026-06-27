@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.0.72 — 2026-06-27
+
+**Bug 修正：文章頁句子小點點選失效**
+
+- 修正 touchstart 呼叫 preventDefault 導致 click 事件被吃掉的問題
+- 短按正常切換勾選，長按仍維持單選該句功能
+
 ## v1.0.71 — 2026-06-27
 
 **UI：試題頁聽力選項框變扁，避免遮擋下一題按鈕**
@@ -167,6 +174,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.0.72 — 2026-06-27
+
+Bug 修正：文章頁句子小點短按點選失效
 
 ---
 

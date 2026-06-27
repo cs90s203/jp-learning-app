@@ -2072,7 +2072,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.71
+          v1.0.72
         </div>
 
       </div>
@@ -3917,20 +3917,26 @@ function renderArticle(tokens) {
     dot.className = 'sentence-dot';
     dot.dataset.si = idx;
     if (idx === 0) dot.id = 'article-first-dot';
-    dot.addEventListener('click', () => toggleSentenceSel(idx));
-    // 長按：單選此句
-    let _dotTimer = null, _dotMoved = false, _dotSX = 0, _dotSY = 0;
+    // 長按：單選此句；短按：切換勾選
+    let _dotTimer = null, _dotMoved = false, _dotFired = false, _dotSX = 0, _dotSY = 0;
     dot.addEventListener('touchstart', (e) => {
-      _dotMoved = false; _dotSX = e.touches[0].clientX; _dotSY = e.touches[0].clientY;
+      _dotMoved = false; _dotFired = false;
+      _dotSX = e.touches[0].clientX; _dotSY = e.touches[0].clientY;
       if (e.cancelable) e.preventDefault();
-      _dotTimer = setTimeout(() => { if (!_dotMoved) soloSentenceSel(idx); }, 400);
+      _dotTimer = setTimeout(() => {
+        if (!_dotMoved) { _dotFired = true; soloSentenceSel(idx); }
+      }, 400);
     }, { passive: false });
     dot.addEventListener('touchmove', (e) => {
       if (Math.abs(e.touches[0].clientX - _dotSX) > 8 || Math.abs(e.touches[0].clientY - _dotSY) > 8) {
         _dotMoved = true; clearTimeout(_dotTimer);
       }
     }, { passive: true });
-    dot.addEventListener('touchend', () => clearTimeout(_dotTimer));
+    dot.addEventListener('touchend', () => {
+      clearTimeout(_dotTimer);
+      if (!_dotMoved && !_dotFired) toggleSentenceSel(idx);
+    });
+    dot.addEventListener('click', () => toggleSentenceSel(idx));
     grp.parentNode.insertBefore(row, grp);
     row.appendChild(dot);
     row.appendChild(grp);
