@@ -2084,7 +2084,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.21
+          v1.1.22
         </div>
 
       </div>
@@ -3498,6 +3498,12 @@ const LEVEL_OPTIONS = [
   { key: 'n1_lite', label: 'N1-' },
   { key: 'n1',      label: 'N1'  },
 ];
+// 後端等級 key（含 _lite）→ 前端標籤（N5- / N5）。lite 一律顯示為 NX-
+function levelKeyLabel(key) {
+  if (!key) return '';
+  const o = LEVEL_OPTIONS.find(o => o.key === key);
+  return o ? o.label : String(key).toUpperCase();
+}
 const BAKED_VISION_KEY = '__VISION_KEY__';
 let _showRomaji = localStorage.getItem('showRomaji') !== 'false';
 let CURRENT_LEVEL = localStorage.getItem('userLevel') || 'n5';
@@ -5478,7 +5484,7 @@ function logTodayArticle(title, level) {
   // 若 detail panel 正在顯示今天，即時更新（修正 async fetch 完成前已打開面板的問題）
   if (selectedDay === TODAY && document.getElementById('day-detail').classList.contains('open')) {
     document.getElementById('detail-article-title').textContent = title || '（無紀錄）';
-    document.getElementById('detail-article-level').textContent = level ? level.toUpperCase() : '';
+    document.getElementById('detail-article-level').textContent = levelKeyLabel(level);
   }
 }
 
@@ -5821,9 +5827,8 @@ function openDay(day) {
   const d = new Date(calViewYear, calViewMonth - 1, day);
   document.getElementById('detail-date-label').textContent = `${calViewMonth}月${day}日（${weekdays[d.getDay()]}）`;
   document.getElementById('detail-article-title').textContent = entry ? (entry.articleTitle || '（無紀錄）') : '今日文章';
-  // Fix #3: show user's actual current level, not hardcoded N5
-  const _todayLevelOpt = LEVEL_OPTIONS.find(o => o.key === CURRENT_LEVEL);
-  document.getElementById('detail-article-level').textContent = entry ? (entry.level ? entry.level.toUpperCase() : '') : (_todayLevelOpt ? _todayLevelOpt.label : CURRENT_LEVEL.toUpperCase());
+  // Fix #3: show user's actual current level, not hardcoded N5（lite 一律顯示 NX-）
+  document.getElementById('detail-article-level').textContent = entry ? levelKeyLabel(entry.level) : levelKeyLabel(CURRENT_LEVEL);
 
   const tasksEl = document.getElementById('detail-tasks');
   tasksEl.innerHTML = '';

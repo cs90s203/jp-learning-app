@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.22 — 2026-06-28
+
+**Bug 修正：月曆難度等級顯示後端 key（NX_LITE）**
+
+- 今日頁月曆展開的當日詳情，lite 等級原本用 `level.toUpperCase()` 顯示為 `N2_LITE`（後端 key）
+- 新增 `levelKeyLabel()` 共用轉換，前端一律顯示 `N5-/N4-/N3-/N2-/N1-`
+
 ## v1.1.21 — 2026-06-28
 
 **UI：單字複習頁 x 按鈕不再被五十音擋住**
@@ -345,6 +352,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.22 — 2026-06-28
+
+Bug 修正：月曆難度等級 lite 顯示 NX- 而非後端 NX_LITE
 
 ---
 
