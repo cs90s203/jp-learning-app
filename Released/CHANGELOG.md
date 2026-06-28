@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.18 — 2026-06-28
+
+**Tutorial：今日任務框入小標 + 新增 insetY**
+
+- 今日頁「今日任務」步驟 → `spanTopId` 框入「今日任務」section title
+- 引擎新增 `insetY`（上下邊線各內縮 N px，高度 -2N）
+- 單字頁 Filter 步驟 `insetY: 6`（指示框高度減少 12px，貼齊篩選列）
+
 ## v1.1.17 — 2026-06-28
 
 **Tutorial：insetX 改為向外擴（修正方向）**
@@ -317,6 +325,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.18 — 2026-06-28
+
+Tutorial：今日任務 spanTopId 框入小標、新增 insetY、單字頁 Filter 高度減 12px
 
 ---
 
