@@ -483,6 +483,11 @@
   .article-text ruby rt { font-size: 10px; color: var(--wt3); }
   .cn-note { font-size: 12px; color: var(--wt2); display: block; margin: -4px 0 6px 20px; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
   .cn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
+  /* 書寫練習行：每句下方一條滿版底線輸入框 */
+  .write-line { display: block; margin: 2px 16px 10px 20px; max-height: 44px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
+  .write-line.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
+  .write-line .write-input { width: 100%; border: none; border-bottom: 1.5px solid var(--wa-bg2); border-radius: 0; background: transparent; color: var(--wt); font-family: inherit; font-size: 15px; line-height: 1.6; padding: 2px 0; outline: none; -webkit-appearance: none; }
+  .write-line .write-input:focus { border-color: transparent; border-bottom-color: var(--wa); }
   /* Article page：底部要讓出固定工具列的空間 */
   #page-article { padding-bottom: calc(var(--nav-h) + var(--safe-bottom) + var(--atb-h) + 12px); }
   /* iOS Safari 的 flex column + overflow 容器，在 touch reflow 時會把子元素壓縮，
@@ -1773,6 +1778,7 @@
         <div class="cn-toggle-row" id="cn-toggle-row">
           <button class="cn-btn" id="add-all-btn" onclick="addAllSelectedWords()">＋全部</button>
           <button class="cn-btn" id="cn-toggle" onclick="toggleCN()">中文</button>
+          <button class="cn-btn" id="write-toggle">書寫</button>
         </div>
 
         <div class="card">
@@ -2127,7 +2133,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.2.3
+          v1.3.0
         </div>
 
       </div>
@@ -3332,6 +3338,52 @@ function toggleCN() {
   setTimeout(ensureArticleScrollable, 250);
 }
 
+// ===== 書寫練習 =====
+function _loadWriteText() { try { return JSON.parse(localStorage.getItem('writeText_v1') || '{}'); } catch (e) { return {}; } }
+function _saveWriteText(obj) { try { localStorage.setItem('writeText_v1', JSON.stringify(obj)); } catch (e) {} }
+function _saveWriteInput(dateStr, si, val) {
+  const all = _loadWriteText();
+  if (!all[dateStr]) all[dateStr] = {};
+  if (val) all[dateStr][si] = val; else delete all[dateStr][si];
+  if (Object.keys(all[dateStr]).length === 0) delete all[dateStr];
+  _saveWriteText(all);
+}
+function toggleWrite() {
+  const t = document.getElementById('write-toggle');
+  t.classList.toggle('active');
+  const active = t.classList.contains('active');
+  localStorage.setItem('writeToggle', active ? '1' : '0');
+  document.querySelectorAll('.write-line').forEach(n => n.classList.toggle('hidden', !active));
+  setTimeout(ensureArticleScrollable, 250);
+}
+// 長按書寫鈕：清空當前這篇的書寫內容
+function _clearCurrentWriting() {
+  const dateStr = selectedArticleDate || getLocalDateStr();
+  const all = _loadWriteText();
+  if (all[dateStr]) { delete all[dateStr]; _saveWriteText(all); }
+  document.querySelectorAll('.write-input').forEach(inp => { inp.value = ''; });
+  if (typeof showToast === 'function') showToast('已清空本篇書寫');
+}
+function _initWriteBtn() {
+  const btn = document.getElementById('write-toggle');
+  if (!btn || btn._lpInit) return;
+  btn._lpInit = true;
+  let timer = null, fired = false;
+  const start = () => { fired = false; timer = setTimeout(() => { fired = true; _clearCurrentWriting(); }, 600); };
+  const cancel = () => clearTimeout(timer);
+  btn.addEventListener('touchstart', start, { passive: true });
+  btn.addEventListener('touchend', cancel);
+  btn.addEventListener('touchmove', cancel);
+  btn.addEventListener('pointerdown', e => { if (e.pointerType !== 'touch') start(); });
+  btn.addEventListener('pointerup', e => { if (e.pointerType !== 'touch') cancel(); });
+  btn.addEventListener('pointerleave', e => { if (e.pointerType !== 'touch') cancel(); });
+  // 一般點擊＝切換；若剛觸發長按清空則略過這次 click
+  btn.addEventListener('click', e => {
+    if (fired) { e.preventDefault(); e.stopPropagation(); fired = false; return; }
+    toggleWrite();
+  });
+}
+
 // ===== 文章斷詞與互動 =====
 
 // 句子選取狀態 (index → true/false)，預設全選
@@ -4017,6 +4069,8 @@ function renderArticle(tokens) {
     // 句子結束判斷：關閉句子分組，插入中文備注，開啟下一句分組
     if (surface === '。' || surface === '！' || surface === '？') {
       html += '</span>';
+      // 書寫練習行（緊貼句子，在中文注釋上方）
+      html += '<span class="write-line" data-si="' + sentenceIndex + '"><input type="text" class="write-input" data-si="' + sentenceIndex + '" autocapitalize="off" autocomplete="off" spellcheck="false"></span>';
       const translation = SENTENCE_TRANSLATIONS[sentenceIndex];
       if (translation) {
         const text = typeof translation === 'string' ? translation : translation.map(s => s.text).join('');
@@ -4086,6 +4140,22 @@ function renderArticle(tokens) {
   if (cnBtn) cnBtn.classList.toggle('active', cnActive);
   const cnHidden = !cnActive;
   container.querySelectorAll('.cn-note').forEach(n => n.classList.toggle('hidden', cnHidden));
+
+  // 套用書寫練習狀態：開關、填入已存文字、綁定即時儲存
+  const writeActive = localStorage.getItem('writeToggle') === '1';
+  const writeBtn = document.getElementById('write-toggle');
+  if (writeBtn) writeBtn.classList.toggle('active', writeActive);
+  const _wDate = selectedArticleDate || getLocalDateStr();
+  const _wSaved = _loadWriteText()[_wDate] || {};
+  container.querySelectorAll('.write-line').forEach(line => {
+    line.classList.toggle('hidden', !writeActive);
+    const inp = line.querySelector('.write-input');
+    if (inp) {
+      const si = inp.dataset.si;
+      inp.value = _wSaved[si] || '';
+      inp.addEventListener('input', () => _saveWriteInput(_wDate, si, inp.value));
+    }
+  });
 
   // 套用已加入單字卡的詞，對應句子的中文備注也標橘色
   applyAddedWordNoteColors();
@@ -4759,6 +4829,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (_pa) _pa.style.transform = '';
 
   loadTheme();
+  _initWriteBtn();
   // 因切換主題而重載時，跳回原本所在頁面
   try {
     var _rp = sessionStorage.getItem('_restorePage');
@@ -7603,7 +7674,7 @@ function showArticleTutorial() {
   tutorialShow('article-help-btn', [
     { targetId: 'article-level-tag', tip: { ref: 'article-week-bar', anchor: 'left' }, noScroll: true, text: '顯示此篇文章的難度等級。長按可為當天文章單獨選擇其他等級（N5～N1），不影響全局設定。' },
     { targetId: 'article-week-bar',  text: '顯示最近七天的學習紀錄，點擊日期可切換閱讀當天的文章，點擊左側箭頭可以回顧上週的文章。' },
-    { targetId: 'cn-toggle-row',     text: '「中文」開啟後每個詞彙下方會顯示中文意思；「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本。' },
+    { targetId: 'cn-toggle-row',     text: '「中文」開啟後每個詞彙下方會顯示中文意思；「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本；「書寫」開啟後每句下方會出現打字練習行，可邊讀邊對照練習，長按可清空本篇書寫。' },
     { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
     { targetId: 'article-first-dot', tip: { ref: 'article-text', anchor: 'left' }, text: '點擊句首的小圓點可選取或取消該句；長按小圓點則單獨選取這一句，方便針對單句練習朗讀或跟讀。' },
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
