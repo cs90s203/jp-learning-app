@@ -1,5 +1,18 @@
 # 日語學習 App — 版本記錄
 
+## v1.4.0 — 2026-06-28
+
+**新功能：接上 Google Analytics（GA4）事件追蹤**
+
+- 補上 Firebase Analytics SDK + `measurementId`（原本缺，所以 GA 一直沒資料）
+- 新增 `track()` helper，追蹤 6 個使用習慣事件：
+  - `open_article`（開文章，含日期）
+  - `complete_quiz`（完成試題，含題型與答對數）
+  - `use_shadowing`（用跟讀）
+  - `open_writing`（開書寫）
+  - `change_level`（切等級，含等級）
+  - `review_vocab`（複習單字，含篩選與數量）
+
 ## v1.3.1 — 2026-06-28
 
 **Tutorial：多功能說明改為分段顯示**
@@ -400,6 +413,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.4.0 — 2026-06-28
+
+新功能：接上 GA4 事件追蹤（補 measurementId+SDK，追蹤開文章/完成試題/跟讀/書寫/切等級/複習單字）
 
 ---
 
