@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.19 — 2026-06-28
+
+**Bug 修正：Tutorial 第一步停在畫面外**
+
+- 今日頁/文章頁捲到底部再按 ? 開啟 tutorial 時，第一步（頂端 noScroll 小標）停在畫面外，看似沒反應
+- 修正：`tutorialShow()` 開始時先把當前頁捲回頂端，確保最上方的第一步一定可見
+
 ## v1.1.18 — 2026-06-28
 
 **Tutorial：今日任務框入小標 + 新增 insetY**
@@ -325,6 +332,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.19 — 2026-06-28
+
+Bug 修正：Tutorial 開啟時捲回頂端，第一步不再停在畫面外
 
 ---
 
