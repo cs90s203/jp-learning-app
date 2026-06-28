@@ -1,0 +1,738 @@
+{
+  "date": "2026-06-29",
+  "level": "n4_lite",
+  "title": "自転車で通学",
+  "text": "毎朝、私は自転車で学校へ行きます。家から学校まで二十分かかります。途中に大きな公園があって、いつも景色がきれいです。少し疲れますが、運動になるので体にいいです。時々友達と会って、一緒に学校まで走ります。教室に着くと、とても気持ちがいいです。",
+  "tokens": [
+    {
+      "surface_form": "毎朝",
+      "basic_form": "毎朝",
+      "reading": "まいあさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自転車",
+      "basic_form": "自転車",
+      "reading": "じてんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学校",
+      "basic_form": "学校",
+      "reading": "がっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行き",
+      "basic_form": "行く",
+      "reading": "いき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学校",
+      "basic_form": "学校",
+      "reading": "がっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "二十分",
+      "basic_form": "二十分",
+      "reading": "にじゅっぷん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "かかり",
+      "basic_form": "かかる",
+      "reading": "かかり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "途中",
+      "basic_form": "途中",
+      "reading": "とちゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "公園",
+      "basic_form": "公園",
+      "reading": "こうえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あっ",
+      "basic_form": "ある",
+      "reading": "あっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いつも",
+      "basic_form": "いつも",
+      "reading": "いつも",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "景色",
+      "basic_form": "景色",
+      "reading": "けしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きれい",
+      "basic_form": "きれい",
+      "reading": "きれい",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "疲れ",
+      "basic_form": "疲れる",
+      "reading": "つかれ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "運動",
+      "basic_form": "運動",
+      "reading": "うんどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "時々",
+      "basic_form": "時々",
+      "reading": "ときどき",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "会っ",
+      "basic_form": "会う",
+      "reading": "あっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一緒",
+      "basic_form": "一緒",
+      "reading": "いっしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学校",
+      "basic_form": "学校",
+      "reading": "がっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "走り",
+      "basic_form": "走る",
+      "reading": "はしり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "教室",
+      "basic_form": "教室",
+      "reading": "きょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "着く",
+      "basic_form": "着く",
+      "reading": "つく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "気持ち",
+      "basic_form": "気持ち",
+      "reading": "きもち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "毎朝": {
+      "meaning": "每天早上",
+      "romaji": "maiasa",
+      "reading": "まいあさ"
+    },
+    "私": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "自転車": {
+      "meaning": "自行車",
+      "romaji": "jitensha",
+      "reading": "じてんしゃ"
+    },
+    "学校": {
+      "meaning": "學校",
+      "romaji": "gakkou",
+      "reading": "がっこう"
+    },
+    "行く": {
+      "meaning": "去",
+      "romaji": "iku",
+      "reading": "いく"
+    },
+    "家": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "いえ"
+    },
+    "二十分": {
+      "meaning": "二十分鐘",
+      "romaji": "nijuppun",
+      "reading": "にじゅっぷん"
+    },
+    "かかる": {
+      "meaning": "花費（時間）",
+      "romaji": "kakaru",
+      "reading": "かかる"
+    },
+    "途中": {
+      "meaning": "途中",
+      "romaji": "tochuu",
+      "reading": "とちゅう"
+    },
+    "大きな": {
+      "meaning": "大的",
+      "romaji": "ookina",
+      "reading": "おおきな"
+    },
+    "公園": {
+      "meaning": "公園",
+      "romaji": "kouen",
+      "reading": "こうえん"
+    },
+    "ある": {
+      "meaning": "有、存在",
+      "romaji": "aru",
+      "reading": "ある"
+    },
+    "いつも": {
+      "meaning": "總是",
+      "romaji": "itsumo",
+      "reading": "いつも"
+    },
+    "景色": {
+      "meaning": "景色",
+      "romaji": "keshiki",
+      "reading": "けしき"
+    },
+    "きれい": {
+      "meaning": "漂亮、美麗",
+      "romaji": "kirei",
+      "reading": "きれい"
+    },
+    "少し": {
+      "meaning": "稍微、一點",
+      "romaji": "sukoshi",
+      "reading": "すこし"
+    },
+    "疲れる": {
+      "meaning": "疲累",
+      "romaji": "tsukareru",
+      "reading": "つかれる"
+    },
+    "運動": {
+      "meaning": "運動",
+      "romaji": "undou",
+      "reading": "うんどう"
+    },
+    "なる": {
+      "meaning": "成為、變成",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "体": {
+      "meaning": "身體",
+      "romaji": "karada",
+      "reading": "からだ"
+    },
+    "いい": {
+      "meaning": "好的",
+      "romaji": "ii",
+      "reading": "いい"
+    },
+    "時々": {
+      "meaning": "有時",
+      "romaji": "tokidoki",
+      "reading": "ときどき"
+    },
+    "友達": {
+      "meaning": "朋友",
+      "romaji": "tomodachi",
+      "reading": "ともだち"
+    },
+    "会う": {
+      "meaning": "見面、碰面",
+      "romaji": "au",
+      "reading": "あう"
+    },
+    "一緒": {
+      "meaning": "一起",
+      "romaji": "issho",
+      "reading": "いっしょ"
+    },
+    "走る": {
+      "meaning": "跑",
+      "romaji": "hashiru",
+      "reading": "はしる"
+    },
+    "教室": {
+      "meaning": "教室",
+      "romaji": "kyoushitsu",
+      "reading": "きょうしつ"
+    },
+    "着く": {
+      "meaning": "到達",
+      "romaji": "tsuku",
+      "reading": "つく"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    },
+    "気持ち": {
+      "meaning": "心情、感覺",
+      "romaji": "kimochi",
+      "reading": "きもち"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示句子的話題",
+    "で": "表示方法、手段「用、以」",
+    "へ": "表示移動的方向「往、向」",
+    "ます": "助動詞，表示禮貌（丁寧）",
+    "から": "表示起點「從」",
+    "まで": "表示終點「到」",
+    "に": "表示對象、場所或目的",
+    "が": "主格助詞，標示主語，或表示逆接「但是」",
+    "て": "連接動詞，表示動作的先後或方式",
+    "ので": "表示原因、理由「因為」",
+    "と": "表示並列「和」；接動詞後表示「一…就…」",
+    "です": "助動詞，表示禮貌的斷定「是」"
+  },
+  "translations": [
+    [
+      {
+        "text": "每天早上，",
+        "word": "毎朝"
+      },
+      {
+        "text": "我",
+        "word": "私"
+      },
+      {
+        "text": "騎自行車",
+        "word": "自転車"
+      },
+      {
+        "text": "去",
+        "word": "行く"
+      },
+      {
+        "text": "學校。",
+        "word": "学校"
+      }
+    ],
+    [
+      {
+        "text": "從家",
+        "word": "家"
+      },
+      {
+        "text": "到學校",
+        "word": "学校"
+      },
+      {
+        "text": "要花",
+        "word": "かかる"
+      },
+      {
+        "text": "二十分鐘。",
+        "word": "二十分"
+      }
+    ],
+    [
+      {
+        "text": "途中",
+        "word": "途中"
+      },
+      {
+        "text": "有個大",
+        "word": "大きな"
+      },
+      {
+        "text": "公園，",
+        "word": "公園"
+      },
+      {
+        "text": "景色",
+        "word": "景色"
+      },
+      {
+        "text": "總是",
+        "word": "いつも"
+      },
+      {
+        "text": "很美。",
+        "word": "きれい"
+      }
+    ],
+    [
+      {
+        "text": "雖然有點",
+        "word": "少し"
+      },
+      {
+        "text": "累，",
+        "word": "疲れる"
+      },
+      {
+        "text": "但會變成",
+        "word": "なる"
+      },
+      {
+        "text": "運動，",
+        "word": "運動"
+      },
+      {
+        "text": "所以對身體",
+        "word": "体"
+      },
+      {
+        "text": "好。",
+        "word": "いい"
+      }
+    ],
+    [
+      {
+        "text": "有時",
+        "word": "時々"
+      },
+      {
+        "text": "和朋友",
+        "word": "友達"
+      },
+      {
+        "text": "碰面，",
+        "word": "会う"
+      },
+      {
+        "text": "一起",
+        "word": "一緒"
+      },
+      {
+        "text": "跑到學校。",
+        "word": "走る"
+      }
+    ],
+    [
+      {
+        "text": "到",
+        "word": "着く"
+      },
+      {
+        "text": "教室時，",
+        "word": "教室"
+      },
+      {
+        "text": "感覺",
+        "word": "気持ち"
+      },
+      {
+        "text": "非常好。",
+        "word": "いい"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N4⁻"
+  }
+}

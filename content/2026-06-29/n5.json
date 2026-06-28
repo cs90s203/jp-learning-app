@@ -1,0 +1,647 @@
+{
+  "date": "2026-06-29",
+  "level": "n5",
+  "title": "週末の買い物",
+  "text": "昨日の午後、私はスーパーへ買い物に行きました。野菜と卵を買いました。店の前で友達に会いました。一緒にコーヒーを飲んで、少し話しました。それから家へ帰って、晩ご飯を作りました。とても楽しい一日でした。",
+  "tokens": [
+    {
+      "surface_form": "昨日",
+      "basic_form": "昨日",
+      "reading": "きのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "午後",
+      "basic_form": "午後",
+      "reading": "ごご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "スーパー",
+      "basic_form": "スーパー",
+      "reading": "スーパー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買い物",
+      "basic_form": "買い物",
+      "reading": "かいもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行き",
+      "basic_form": "行く",
+      "reading": "いき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "野菜",
+      "basic_form": "野菜",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "卵",
+      "basic_form": "卵",
+      "reading": "たまご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買い",
+      "basic_form": "買う",
+      "reading": "かい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "店",
+      "basic_form": "店",
+      "reading": "みせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "前",
+      "basic_form": "前",
+      "reading": "まえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "会い",
+      "basic_form": "会う",
+      "reading": "あい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一緒",
+      "basic_form": "一緒",
+      "reading": "いっしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "コーヒー",
+      "basic_form": "コーヒー",
+      "reading": "コーヒー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "飲ん",
+      "basic_form": "飲む",
+      "reading": "のん",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "話し",
+      "basic_form": "話す",
+      "reading": "はなし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それから",
+      "basic_form": "それから",
+      "reading": "それから",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "帰っ",
+      "basic_form": "帰る",
+      "reading": "かえっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "晩ご飯",
+      "basic_form": "晩ご飯",
+      "reading": "ばんごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作り",
+      "basic_form": "作る",
+      "reading": "つくり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しい",
+      "basic_form": "楽しい",
+      "reading": "たのしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "一日",
+      "basic_form": "一日",
+      "reading": "いちにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でし",
+      "basic_form": "です",
+      "reading": "でし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "昨日": {
+      "meaning": "昨天",
+      "romaji": "kinou",
+      "reading": "きのう"
+    },
+    "午後": {
+      "meaning": "下午",
+      "romaji": "gogo",
+      "reading": "ごご"
+    },
+    "私": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "スーパー": {
+      "meaning": "超市",
+      "romaji": "suupa",
+      "reading": "スーパー"
+    },
+    "買い物": {
+      "meaning": "購物",
+      "romaji": "kaimono",
+      "reading": "かいもの"
+    },
+    "行く": {
+      "meaning": "去",
+      "romaji": "iku",
+      "reading": "いく"
+    },
+    "野菜": {
+      "meaning": "蔬菜",
+      "romaji": "yasai",
+      "reading": "やさい"
+    },
+    "卵": {
+      "meaning": "雞蛋",
+      "romaji": "tamago",
+      "reading": "たまご"
+    },
+    "買う": {
+      "meaning": "買",
+      "romaji": "kau",
+      "reading": "かう"
+    },
+    "店": {
+      "meaning": "店",
+      "romaji": "mise",
+      "reading": "みせ"
+    },
+    "前": {
+      "meaning": "前面",
+      "romaji": "mae",
+      "reading": "まえ"
+    },
+    "友達": {
+      "meaning": "朋友",
+      "romaji": "tomodachi",
+      "reading": "ともだち"
+    },
+    "会う": {
+      "meaning": "見面、遇到",
+      "romaji": "au",
+      "reading": "あう"
+    },
+    "一緒": {
+      "meaning": "一起",
+      "romaji": "issho",
+      "reading": "いっしょ"
+    },
+    "コーヒー": {
+      "meaning": "咖啡",
+      "romaji": "koohi",
+      "reading": "コーヒー"
+    },
+    "飲む": {
+      "meaning": "喝",
+      "romaji": "nomu",
+      "reading": "のむ"
+    },
+    "少し": {
+      "meaning": "稍微、一點",
+      "romaji": "sukoshi",
+      "reading": "すこし"
+    },
+    "話す": {
+      "meaning": "說、聊",
+      "romaji": "hanasu",
+      "reading": "はなす"
+    },
+    "家": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "いえ"
+    },
+    "帰る": {
+      "meaning": "回去",
+      "romaji": "kaeru",
+      "reading": "かえる"
+    },
+    "晩ご飯": {
+      "meaning": "晚飯",
+      "romaji": "bangohan",
+      "reading": "ばんごはん"
+    },
+    "作る": {
+      "meaning": "做、製作",
+      "romaji": "tsukuru",
+      "reading": "つくる"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo",
+      "reading": "とても"
+    },
+    "楽しい": {
+      "meaning": "開心的、愉快的",
+      "romaji": "tanoshii",
+      "reading": "たのしい"
+    },
+    "一日": {
+      "meaning": "一天",
+      "romaji": "ichinichi",
+      "reading": "いちにち"
+    },
+    "それから": {
+      "meaning": "然後、之後",
+      "romaji": "sorekara",
+      "reading": "それから"
+    }
+  },
+  "particles": {
+    "の": "連體助詞，表示修飾或所屬",
+    "は": "主題助詞，標示句子的話題",
+    "へ": "表示移動的方向「往、向」",
+    "に": "表示對象或場所",
+    "と": "表示並列「和」或共同對象",
+    "を": "受格助詞，標示動作對象",
+    "で": "表示動作發生的場所「在」，或接續て形",
+    "て": "連接動詞，表示動作的先後或方式",
+    "ます": "助動詞，表示禮貌（丁寧）",
+    "た": "助動詞，表示過去式",
+    "です": "助動詞，表示禮貌的斷定「是」"
+  },
+  "translations": [
+    [
+      {
+        "text": "昨天",
+        "word": "昨日"
+      },
+      {
+        "text": "下午，",
+        "word": "午後"
+      },
+      {
+        "text": "我",
+        "word": "私"
+      },
+      {
+        "text": "去",
+        "word": "行く"
+      },
+      {
+        "text": "超市",
+        "word": "スーパー"
+      },
+      {
+        "text": "買東西。",
+        "word": "買い物"
+      }
+    ],
+    [
+      {
+        "text": "買了",
+        "word": "買う"
+      },
+      {
+        "text": "蔬菜",
+        "word": "野菜"
+      },
+      {
+        "text": "和",
+        "word": "と"
+      },
+      {
+        "text": "雞蛋。",
+        "word": "卵"
+      }
+    ],
+    [
+      {
+        "text": "在店",
+        "word": "店"
+      },
+      {
+        "text": "門口",
+        "word": "前"
+      },
+      {
+        "text": "遇到了",
+        "word": "会う"
+      },
+      {
+        "text": "朋友。",
+        "word": "友達"
+      }
+    ],
+    [
+      {
+        "text": "一起",
+        "word": "一緒"
+      },
+      {
+        "text": "喝",
+        "word": "飲む"
+      },
+      {
+        "text": "咖啡，",
+        "word": "コーヒー"
+      },
+      {
+        "text": "聊了",
+        "word": "話す"
+      },
+      {
+        "text": "一會兒。",
+        "word": "少し"
+      }
+    ],
+    [
+      {
+        "text": "之後",
+        "word": "それから"
+      },
+      {
+        "text": "回家，",
+        "word": "帰る"
+      },
+      {
+        "text": "做了",
+        "word": "作る"
+      },
+      {
+        "text": "晚飯。",
+        "word": "晩ご飯"
+      }
+    ],
+    [
+      {
+        "text": "是非常",
+        "word": "とても"
+      },
+      {
+        "text": "開心的",
+        "word": "楽しい"
+      },
+      {
+        "text": "一天。",
+        "word": "一日"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N5"
+  }
+}

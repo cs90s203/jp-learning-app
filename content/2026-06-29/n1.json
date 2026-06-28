@@ -1,0 +1,2051 @@
+{
+  "date": "2026-06-29",
+  "level": "n1",
+  "title": "生成AIと知の在り方",
+  "text": "生成AIの登場は、知の在り方そのものに根本的な変革を迫りつつある。膨大な情報を瞬時に処理し、人間に匹敵する文章や画像を生み出すその能力は、創造性をめぐる従来の前提を大きく揺るがしている。とりわけ教育の現場では、学習者が自ら思考する過程を省略し、安易に答えを得てしまう危険性が指摘されている。もっとも、技術それ自体に善悪があるわけではない。問われているのは、それを用いる人間の側の倫理観と判断力にほかならない。利便性のみを追求すれば、思考の深さや独創性は失われ、ひいては社会全体の知的水準の低下を招きかねない。したがって、私たちは生成AIを単なる便利な道具として消費するのではなく、人間の能力を補完し、拡張する存在として位置づける必要がある。技術と共生する知恵こそが、これからの情報化社会において厳しく問われているのである。",
+  "tokens": [
+    {
+      "surface_form": "生成",
+      "basic_form": "生成",
+      "reading": "せいせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "AI",
+      "basic_form": "AI",
+      "reading": "エーアイ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "登場",
+      "basic_form": "登場",
+      "reading": "とうじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "知",
+      "basic_form": "知",
+      "reading": "ち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "在り方",
+      "basic_form": "在り方",
+      "reading": "ありかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "そのもの",
+      "basic_form": "そのもの",
+      "reading": "そのもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "根本的",
+      "basic_form": "根本的",
+      "reading": "こんぽんてき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "変革",
+      "basic_form": "変革",
+      "reading": "へんかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "迫り",
+      "basic_form": "迫る",
+      "reading": "せまり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "つつ",
+      "basic_form": "つつ",
+      "reading": "つつ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "膨大",
+      "basic_form": "膨大",
+      "reading": "ぼうだい",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "情報",
+      "basic_form": "情報",
+      "reading": "じょうほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "瞬時",
+      "basic_form": "瞬時",
+      "reading": "しゅんじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "処理",
+      "basic_form": "処理",
+      "reading": "しょり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人間",
+      "basic_form": "人間",
+      "reading": "にんげん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "匹敵",
+      "basic_form": "匹敵",
+      "reading": "ひってき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "文章",
+      "basic_form": "文章",
+      "reading": "ぶんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "画像",
+      "basic_form": "画像",
+      "reading": "がぞう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生み出す",
+      "basic_form": "生み出す",
+      "reading": "うみだす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "能力",
+      "basic_form": "能力",
+      "reading": "のうりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "創造性",
+      "basic_form": "創造性",
+      "reading": "そうぞうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "めぐる",
+      "basic_form": "めぐる",
+      "reading": "めぐる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "従来",
+      "basic_form": "従来",
+      "reading": "じゅうらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "前提",
+      "basic_form": "前提",
+      "reading": "ぜんてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きく",
+      "basic_form": "大きい",
+      "reading": "おおきく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "揺るがし",
+      "basic_form": "揺るがす",
+      "reading": "ゆるがし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とりわけ",
+      "basic_form": "とりわけ",
+      "reading": "とりわけ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "教育",
+      "basic_form": "教育",
+      "reading": "きょういく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現場",
+      "basic_form": "現場",
+      "reading": "げんば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "学習者",
+      "basic_form": "学習者",
+      "reading": "がくしゅうしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自ら",
+      "basic_form": "自ら",
+      "reading": "みずから",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "思考",
+      "basic_form": "思考",
+      "reading": "しこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "過程",
+      "basic_form": "過程",
+      "reading": "かてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "省略",
+      "basic_form": "省略",
+      "reading": "しょうりゃく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "安易",
+      "basic_form": "安易",
+      "reading": "あんい",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "答え",
+      "basic_form": "答え",
+      "reading": "こたえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "得",
+      "basic_form": "得る",
+      "reading": "え",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しまう",
+      "basic_form": "しまう",
+      "reading": "しまう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "危険性",
+      "basic_form": "危険性",
+      "reading": "きけんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "さ",
+      "basic_form": "する",
+      "reading": "さ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もっとも",
+      "basic_form": "もっとも",
+      "reading": "もっとも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "技術",
+      "basic_form": "技術",
+      "reading": "ぎじゅつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "それ自体",
+      "basic_form": "それ自体",
+      "reading": "それじたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "善悪",
+      "basic_form": "善悪",
+      "reading": "ぜんあく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "わけ",
+      "basic_form": "わけ",
+      "reading": "わけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "問わ",
+      "basic_form": "問う",
+      "reading": "とわ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それ",
+      "basic_form": "それ",
+      "reading": "それ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "用いる",
+      "basic_form": "用いる",
+      "reading": "もちいる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人間",
+      "basic_form": "人間",
+      "reading": "にんげん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "側",
+      "basic_form": "側",
+      "reading": "がわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "倫理観",
+      "basic_form": "倫理観",
+      "reading": "りんりかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "判断力",
+      "basic_form": "判断力",
+      "reading": "はんだんりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほか",
+      "basic_form": "ほか",
+      "reading": "ほか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "なら",
+      "basic_form": "だ",
+      "reading": "なら",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "利便性",
+      "basic_form": "利便性",
+      "reading": "りべんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "のみ",
+      "basic_form": "のみ",
+      "reading": "のみ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "追求",
+      "basic_form": "追求",
+      "reading": "ついきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "すれ",
+      "basic_form": "する",
+      "reading": "すれ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ば",
+      "basic_form": "ば",
+      "reading": "ば",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "思考",
+      "basic_form": "思考",
+      "reading": "しこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深さ",
+      "basic_form": "深さ",
+      "reading": "ふかさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "独創性",
+      "basic_form": "独創性",
+      "reading": "どくそうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "失わ",
+      "basic_form": "失う",
+      "reading": "うしなわ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ひいては",
+      "basic_form": "ひいては",
+      "reading": "ひいては",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "社会",
+      "basic_form": "社会",
+      "reading": "しゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "全体",
+      "basic_form": "全体",
+      "reading": "ぜんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "知的",
+      "basic_form": "知的",
+      "reading": "ちてき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "水準",
+      "basic_form": "水準",
+      "reading": "すいじゅん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "低下",
+      "basic_form": "低下",
+      "reading": "ていか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "招き",
+      "basic_form": "招く",
+      "reading": "まねき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "かね",
+      "basic_form": "かねる",
+      "reading": "かね",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "したがって",
+      "basic_form": "したがって",
+      "reading": "したがって",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私たち",
+      "basic_form": "私たち",
+      "reading": "わたしたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生成",
+      "basic_form": "生成",
+      "reading": "せいせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "AI",
+      "basic_form": "AI",
+      "reading": "エーアイ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "単なる",
+      "basic_form": "単なる",
+      "reading": "たんなる",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "便利",
+      "basic_form": "便利",
+      "reading": "べんり",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "道具",
+      "basic_form": "道具",
+      "reading": "どうぐ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "消費",
+      "basic_form": "消費",
+      "reading": "しょうひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人間",
+      "basic_form": "人間",
+      "reading": "にんげん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "能力",
+      "basic_form": "能力",
+      "reading": "のうりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "補完",
+      "basic_form": "補完",
+      "reading": "ほかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "拡張",
+      "basic_form": "拡張",
+      "reading": "かくちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "存在",
+      "basic_form": "存在",
+      "reading": "そんざい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "位置づける",
+      "basic_form": "位置づける",
+      "reading": "いちづける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "技術",
+      "basic_form": "技術",
+      "reading": "ぎじゅつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "共生",
+      "basic_form": "共生",
+      "reading": "きょうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "知恵",
+      "basic_form": "知恵",
+      "reading": "ちえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "こそ",
+      "basic_form": "こそ",
+      "reading": "こそ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "情報化",
+      "basic_form": "情報化",
+      "reading": "じょうほうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "社会",
+      "basic_form": "社会",
+      "reading": "しゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "において",
+      "basic_form": "において",
+      "reading": "において",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "厳しく",
+      "basic_form": "厳しい",
+      "reading": "きびしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "問わ",
+      "basic_form": "問う",
+      "reading": "とわ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れ",
+      "basic_form": "れる",
+      "reading": "れ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "だ",
+      "reading": "で",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "生成": {
+      "meaning": "生成",
+      "romaji": "seisei",
+      "reading": "せいせい"
+    },
+    "AI": {
+      "meaning": "人工智慧",
+      "romaji": "eeai",
+      "reading": "エーアイ"
+    },
+    "登場": {
+      "meaning": "登場、出現",
+      "romaji": "toujou",
+      "reading": "とうじょう"
+    },
+    "知": {
+      "meaning": "知識、智識",
+      "romaji": "chi",
+      "reading": "ち"
+    },
+    "在り方": {
+      "meaning": "存在的方式、樣貌",
+      "romaji": "arikata",
+      "reading": "ありかた"
+    },
+    "そのもの": {
+      "meaning": "本身",
+      "romaji": "sonomono",
+      "reading": "そのもの"
+    },
+    "根本的": {
+      "meaning": "根本的",
+      "romaji": "konponteki",
+      "reading": "こんぽんてき"
+    },
+    "変革": {
+      "meaning": "變革",
+      "romaji": "henkaku",
+      "reading": "へんかく"
+    },
+    "迫る": {
+      "meaning": "逼近、迫使",
+      "romaji": "semaru",
+      "reading": "せまる"
+    },
+    "ある": {
+      "meaning": "有、存在",
+      "romaji": "aru",
+      "reading": "ある"
+    },
+    "膨大": {
+      "meaning": "龐大",
+      "romaji": "boudai",
+      "reading": "ぼうだい"
+    },
+    "情報": {
+      "meaning": "資訊",
+      "romaji": "jouhou",
+      "reading": "じょうほう"
+    },
+    "瞬時": {
+      "meaning": "瞬間",
+      "romaji": "shunji",
+      "reading": "しゅんじ"
+    },
+    "処理": {
+      "meaning": "處理",
+      "romaji": "shori",
+      "reading": "しょり"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "人間": {
+      "meaning": "人類",
+      "romaji": "ningen",
+      "reading": "にんげん"
+    },
+    "匹敵": {
+      "meaning": "匹敵、媲美",
+      "romaji": "hitteki",
+      "reading": "ひってき"
+    },
+    "文章": {
+      "meaning": "文章",
+      "romaji": "bunshou",
+      "reading": "ぶんしょう"
+    },
+    "画像": {
+      "meaning": "圖像",
+      "romaji": "gazou",
+      "reading": "がぞう"
+    },
+    "生み出す": {
+      "meaning": "產出、創造",
+      "romaji": "umidasu",
+      "reading": "うみだす"
+    },
+    "その": {
+      "meaning": "那個",
+      "romaji": "sono",
+      "reading": "その"
+    },
+    "能力": {
+      "meaning": "能力",
+      "romaji": "nouryoku",
+      "reading": "のうりょく"
+    },
+    "創造性": {
+      "meaning": "創造性",
+      "romaji": "souzousei",
+      "reading": "そうぞうせい"
+    },
+    "めぐる": {
+      "meaning": "圍繞、關於",
+      "romaji": "meguru",
+      "reading": "めぐる"
+    },
+    "従来": {
+      "meaning": "以往、既有",
+      "romaji": "juurai",
+      "reading": "じゅうらい"
+    },
+    "前提": {
+      "meaning": "前提",
+      "romaji": "zentei",
+      "reading": "ぜんてい"
+    },
+    "大きい": {
+      "meaning": "大的",
+      "romaji": "ookii",
+      "reading": "おおきい"
+    },
+    "揺るがす": {
+      "meaning": "動搖",
+      "romaji": "yurugasu",
+      "reading": "ゆるがす"
+    },
+    "いる": {
+      "meaning": "正在（…著）",
+      "romaji": "iru",
+      "reading": "いる"
+    },
+    "とりわけ": {
+      "meaning": "尤其",
+      "romaji": "toriwake",
+      "reading": "とりわけ"
+    },
+    "教育": {
+      "meaning": "教育",
+      "romaji": "kyouiku",
+      "reading": "きょういく"
+    },
+    "現場": {
+      "meaning": "現場",
+      "romaji": "genba",
+      "reading": "げんば"
+    },
+    "学習者": {
+      "meaning": "學習者",
+      "romaji": "gakushuusha",
+      "reading": "がくしゅうしゃ"
+    },
+    "自ら": {
+      "meaning": "自行、親自",
+      "romaji": "mizukara",
+      "reading": "みずから"
+    },
+    "思考": {
+      "meaning": "思考",
+      "romaji": "shikou",
+      "reading": "しこう"
+    },
+    "過程": {
+      "meaning": "過程",
+      "romaji": "katei",
+      "reading": "かてい"
+    },
+    "省略": {
+      "meaning": "省略",
+      "romaji": "shouryaku",
+      "reading": "しょうりゃく"
+    },
+    "安易": {
+      "meaning": "輕易、草率",
+      "romaji": "ani",
+      "reading": "あんい"
+    },
+    "答え": {
+      "meaning": "答案",
+      "romaji": "kotae",
+      "reading": "こたえ"
+    },
+    "得る": {
+      "meaning": "得到、獲得",
+      "romaji": "eru",
+      "reading": "える"
+    },
+    "しまう": {
+      "meaning": "（不經意、最終）做了…",
+      "romaji": "shimau",
+      "reading": "しまう"
+    },
+    "危険性": {
+      "meaning": "危險性",
+      "romaji": "kikensei",
+      "reading": "きけんせい"
+    },
+    "指摘": {
+      "meaning": "指出",
+      "romaji": "shiteki",
+      "reading": "してき"
+    },
+    "もっとも": {
+      "meaning": "不過、話雖如此",
+      "romaji": "mottomo",
+      "reading": "もっとも"
+    },
+    "技術": {
+      "meaning": "技術",
+      "romaji": "gijutsu",
+      "reading": "ぎじゅつ"
+    },
+    "それ自体": {
+      "meaning": "其本身",
+      "romaji": "sorejitai",
+      "reading": "それじたい"
+    },
+    "善悪": {
+      "meaning": "善惡",
+      "romaji": "zenaku",
+      "reading": "ぜんあく"
+    },
+    "わけ": {
+      "meaning": "道理、緣由（…わけではない＝並非）",
+      "romaji": "wake",
+      "reading": "わけ"
+    },
+    "それ": {
+      "meaning": "那、它",
+      "romaji": "sore",
+      "reading": "それ"
+    },
+    "用いる": {
+      "meaning": "使用、運用",
+      "romaji": "mochiiru",
+      "reading": "もちいる"
+    },
+    "側": {
+      "meaning": "一方、一側",
+      "romaji": "gawa",
+      "reading": "がわ"
+    },
+    "倫理観": {
+      "meaning": "倫理觀",
+      "romaji": "rinrikan",
+      "reading": "りんりかん"
+    },
+    "判断力": {
+      "meaning": "判斷力",
+      "romaji": "handanryoku",
+      "reading": "はんだんりょく"
+    },
+    "ほか": {
+      "meaning": "其他（…にほかならない＝不外乎）",
+      "romaji": "hoka",
+      "reading": "ほか"
+    },
+    "利便性": {
+      "meaning": "便利性",
+      "romaji": "ribensei",
+      "reading": "りべんせい"
+    },
+    "追求": {
+      "meaning": "追求",
+      "romaji": "tsuikyuu",
+      "reading": "ついきゅう"
+    },
+    "深さ": {
+      "meaning": "深度",
+      "romaji": "fukasa",
+      "reading": "ふかさ"
+    },
+    "独創性": {
+      "meaning": "獨創性",
+      "romaji": "dokusousei",
+      "reading": "どくそうせい"
+    },
+    "失う": {
+      "meaning": "失去",
+      "romaji": "ushinau",
+      "reading": "うしなう"
+    },
+    "ひいては": {
+      "meaning": "進而、甚至",
+      "romaji": "hiiteha",
+      "reading": "ひいては"
+    },
+    "社会": {
+      "meaning": "社會",
+      "romaji": "shakai",
+      "reading": "しゃかい"
+    },
+    "全体": {
+      "meaning": "整體",
+      "romaji": "zentai",
+      "reading": "ぜんたい"
+    },
+    "知的": {
+      "meaning": "知性的、知識的",
+      "romaji": "chiteki",
+      "reading": "ちてき"
+    },
+    "水準": {
+      "meaning": "水準",
+      "romaji": "suijun",
+      "reading": "すいじゅん"
+    },
+    "低下": {
+      "meaning": "下降",
+      "romaji": "teika",
+      "reading": "ていか"
+    },
+    "招く": {
+      "meaning": "招致、引起",
+      "romaji": "maneku",
+      "reading": "まねく"
+    },
+    "かねる": {
+      "meaning": "恐怕會…、難以…",
+      "romaji": "kaneru",
+      "reading": "かねる"
+    },
+    "したがって": {
+      "meaning": "因此",
+      "romaji": "shitagatte",
+      "reading": "したがって"
+    },
+    "私たち": {
+      "meaning": "我們",
+      "romaji": "watashitachi",
+      "reading": "わたしたち"
+    },
+    "単なる": {
+      "meaning": "單純的、僅僅",
+      "romaji": "tannaru",
+      "reading": "たんなる"
+    },
+    "便利": {
+      "meaning": "方便",
+      "romaji": "benri",
+      "reading": "べんり"
+    },
+    "道具": {
+      "meaning": "工具",
+      "romaji": "dougu",
+      "reading": "どうぐ"
+    },
+    "消費": {
+      "meaning": "消費",
+      "romaji": "shouhi",
+      "reading": "しょうひ"
+    },
+    "補完": {
+      "meaning": "補足、補充",
+      "romaji": "hokan",
+      "reading": "ほかん"
+    },
+    "拡張": {
+      "meaning": "擴張",
+      "romaji": "kakuchou",
+      "reading": "かくちょう"
+    },
+    "存在": {
+      "meaning": "存在",
+      "romaji": "sonzai",
+      "reading": "そんざい"
+    },
+    "位置づける": {
+      "meaning": "定位",
+      "romaji": "ichizukeru",
+      "reading": "いちづける"
+    },
+    "必要": {
+      "meaning": "必要",
+      "romaji": "hitsuyou",
+      "reading": "ひつよう"
+    },
+    "共生": {
+      "meaning": "共生",
+      "romaji": "kyousei",
+      "reading": "きょうせい"
+    },
+    "知恵": {
+      "meaning": "智慧",
+      "romaji": "chie",
+      "reading": "ちえ"
+    },
+    "これから": {
+      "meaning": "今後、從今以後",
+      "romaji": "korekara",
+      "reading": "これから"
+    },
+    "時代": {
+      "meaning": "時代",
+      "romaji": "jidai",
+      "reading": "じだい"
+    },
+    "問う": {
+      "meaning": "追問、質問",
+      "romaji": "tou",
+      "reading": "とう"
+    },
+    "ない": {
+      "meaning": "沒有、並非",
+      "romaji": "nai",
+      "reading": "ない"
+    },
+    "情報化": {
+      "meaning": "資訊化",
+      "romaji": "jouhouka",
+      "reading": "じょうほうか"
+    },
+    "厳しい": {
+      "meaning": "嚴格的、嚴峻的",
+      "romaji": "kibishii",
+      "reading": "きびしい"
+    }
+  },
+  "particles": {
+    "の": "連體助詞，表示修飾、所屬或名詞化",
+    "は": "主題助詞，標示句子的話題",
+    "に": "表示對象、場所、時間或目的",
+    "を": "受格助詞，標示動作對象",
+    "つつ": "表示「正…著、一邊…」",
+    "や": "表示列舉",
+    "で": "表示場所、手段或斷定中止",
+    "と": "表示引用內容或並列",
+    "のみ": "表示「只、僅」",
+    "ば": "表示假設條件「如果…就」",
+    "として": "表示「作為、當作」",
+    "こそ": "表示強調「正是、就是」",
+    "だ": "斷定助動詞「是」，連體形「な」、條件形「なら」、中止形「で」",
+    "れる": "助動詞，表示被動或可能",
+    "ない": "助動詞，表示否定"
+  },
+  "translations": [
+    [
+      {
+        "text": "生成式",
+        "word": "生成"
+      },
+      {
+        "text": "AI的",
+        "word": "AI"
+      },
+      {
+        "text": "出現，",
+        "word": "登場"
+      },
+      {
+        "text": "知識的",
+        "word": "知"
+      },
+      {
+        "text": "存在方式",
+        "word": "在り方"
+      },
+      {
+        "text": "本身",
+        "word": "そのもの"
+      },
+      {
+        "text": "根本性的",
+        "word": "根本的"
+      },
+      {
+        "text": "變革",
+        "word": "変革"
+      },
+      {
+        "text": "正逼近。",
+        "word": "迫る"
+      }
+    ],
+    [
+      {
+        "text": "龐大",
+        "word": "膨大"
+      },
+      {
+        "text": "資訊",
+        "word": "情報"
+      },
+      {
+        "text": "瞬間",
+        "word": "瞬時"
+      },
+      {
+        "text": "處理、",
+        "word": "処理"
+      },
+      {
+        "text": "媲美人類的",
+        "word": "匹敵"
+      },
+      {
+        "text": "文章",
+        "word": "文章"
+      },
+      {
+        "text": "與圖像",
+        "word": "画像"
+      },
+      {
+        "text": "產出的",
+        "word": "生み出す"
+      },
+      {
+        "text": "能力，",
+        "word": "能力"
+      },
+      {
+        "text": "圍繞創造性的",
+        "word": "創造性"
+      },
+      {
+        "text": "既有",
+        "word": "従来"
+      },
+      {
+        "text": "前提",
+        "word": "前提"
+      },
+      {
+        "text": "大大",
+        "word": "大きい"
+      },
+      {
+        "text": "動搖。",
+        "word": "揺るがす"
+      }
+    ],
+    [
+      {
+        "text": "尤其",
+        "word": "とりわけ"
+      },
+      {
+        "text": "教育",
+        "word": "教育"
+      },
+      {
+        "text": "現場，",
+        "word": "現場"
+      },
+      {
+        "text": "學習者",
+        "word": "学習者"
+      },
+      {
+        "text": "自行",
+        "word": "自ら"
+      },
+      {
+        "text": "思考",
+        "word": "思考"
+      },
+      {
+        "text": "過程",
+        "word": "過程"
+      },
+      {
+        "text": "省略、",
+        "word": "省略"
+      },
+      {
+        "text": "輕易",
+        "word": "安易"
+      },
+      {
+        "text": "得到",
+        "word": "得る"
+      },
+      {
+        "text": "答案的",
+        "word": "答え"
+      },
+      {
+        "text": "危險性",
+        "word": "危険性"
+      },
+      {
+        "text": "被指出。",
+        "word": "指摘"
+      }
+    ],
+    [
+      {
+        "text": "不過，",
+        "word": "もっとも"
+      },
+      {
+        "text": "技術",
+        "word": "技術"
+      },
+      {
+        "text": "本身",
+        "word": "それ自体"
+      },
+      {
+        "text": "善惡",
+        "word": "善悪"
+      },
+      {
+        "text": "並非有之分。",
+        "word": "ない"
+      }
+    ],
+    [
+      {
+        "text": "受到質問的，",
+        "word": "問う"
+      },
+      {
+        "text": "運用",
+        "word": "用いる"
+      },
+      {
+        "text": "它的",
+        "word": "それ"
+      },
+      {
+        "text": "人類",
+        "word": "人間"
+      },
+      {
+        "text": "一方的",
+        "word": "側"
+      },
+      {
+        "text": "倫理觀",
+        "word": "倫理観"
+      },
+      {
+        "text": "與判斷力",
+        "word": "判断力"
+      },
+      {
+        "text": "不外乎。",
+        "word": "ほか"
+      }
+    ],
+    [
+      {
+        "text": "若只",
+        "word": "のみ"
+      },
+      {
+        "text": "追求",
+        "word": "追求"
+      },
+      {
+        "text": "便利性，",
+        "word": "利便性"
+      },
+      {
+        "text": "思考",
+        "word": "思考"
+      },
+      {
+        "text": "深度",
+        "word": "深さ"
+      },
+      {
+        "text": "與獨創性",
+        "word": "独創性"
+      },
+      {
+        "text": "將喪失，",
+        "word": "失う"
+      },
+      {
+        "text": "進而",
+        "word": "ひいては"
+      },
+      {
+        "text": "社會整體",
+        "word": "全体"
+      },
+      {
+        "text": "知識",
+        "word": "知的"
+      },
+      {
+        "text": "水準",
+        "word": "水準"
+      },
+      {
+        "text": "下降",
+        "word": "低下"
+      },
+      {
+        "text": "可能招致。",
+        "word": "招く"
+      }
+    ],
+    [
+      {
+        "text": "因此，",
+        "word": "したがって"
+      },
+      {
+        "text": "我們",
+        "word": "私たち"
+      },
+      {
+        "text": "不應把生成AI當作單純",
+        "word": "単なる"
+      },
+      {
+        "text": "方便的",
+        "word": "便利"
+      },
+      {
+        "text": "工具",
+        "word": "道具"
+      },
+      {
+        "text": "消費，",
+        "word": "消費"
+      },
+      {
+        "text": "人類",
+        "word": "人間"
+      },
+      {
+        "text": "能力",
+        "word": "能力"
+      },
+      {
+        "text": "補足、",
+        "word": "補完"
+      },
+      {
+        "text": "擴張的",
+        "word": "拡張"
+      },
+      {
+        "text": "存在",
+        "word": "存在"
+      },
+      {
+        "text": "定位為，",
+        "word": "位置づける"
+      },
+      {
+        "text": "有必要。",
+        "word": "必要"
+      }
+    ],
+    [
+      {
+        "text": "與技術",
+        "word": "技術"
+      },
+      {
+        "text": "共生的",
+        "word": "共生"
+      },
+      {
+        "text": "智慧，",
+        "word": "知恵"
+      },
+      {
+        "text": "正是",
+        "word": "こそ"
+      },
+      {
+        "text": "今後的",
+        "word": "これから"
+      },
+      {
+        "text": "資訊化",
+        "word": "情報化"
+      },
+      {
+        "text": "社會中",
+        "word": "社会"
+      },
+      {
+        "text": "被嚴格地",
+        "word": "厳しい"
+      },
+      {
+        "text": "追問的。",
+        "word": "問う"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.16,
+    "jlpt_level": "N1"
+  }
+}

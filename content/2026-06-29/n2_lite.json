@@ -1,0 +1,1248 @@
+{
+  "date": "2026-06-29",
+  "level": "n2_lite",
+  "title": "在宅勤務の一長一短",
+  "text": "新型ウイルスの流行をきっかけに、在宅勤務という働き方が急速に普及した。会社まで通勤する必要がなくなり、自分の時間を自由に使えるようになった人も多い。一方で、自宅では仕事とプライベートの区別がつきにくく、かえって集中できないという声も聞かれる。つまり、在宅勤務には一長一短があると言えるだろう。大切なのは、それぞれの環境に合わせて柔軟に働き方を選ぶことだ。会社と社員が話し合いながら、より良い新しい仕組みを作っていく必要があるのではないだろうか。",
+  "tokens": [
+    {
+      "surface_form": "新型",
+      "basic_form": "新型",
+      "reading": "しんがた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ウイルス",
+      "basic_form": "ウイルス",
+      "reading": "ウイルス",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "流行",
+      "basic_form": "流行",
+      "reading": "りゅうこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きっかけ",
+      "basic_form": "きっかけ",
+      "reading": "きっかけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "在宅",
+      "basic_form": "在宅",
+      "reading": "ざいたく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "勤務",
+      "basic_form": "勤務",
+      "reading": "きんむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "働き方",
+      "basic_form": "働き方",
+      "reading": "はたらきかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急速",
+      "basic_form": "急速",
+      "reading": "きゅうそく",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "普及",
+      "basic_form": "普及",
+      "reading": "ふきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "会社",
+      "basic_form": "会社",
+      "reading": "かいしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通勤",
+      "basic_form": "通勤",
+      "reading": "つうきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なくなり",
+      "basic_form": "なくなる",
+      "reading": "なくなり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "自分",
+      "basic_form": "自分",
+      "reading": "じぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自由",
+      "basic_form": "自由",
+      "reading": "じゆう",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使える",
+      "basic_form": "使える",
+      "reading": "つかえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっ",
+      "basic_form": "なる",
+      "reading": "なっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多い",
+      "basic_form": "多い",
+      "reading": "おおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "自宅",
+      "basic_form": "自宅",
+      "reading": "じたく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "プライベート",
+      "basic_form": "プライベート",
+      "reading": "プライベート",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "区別",
+      "basic_form": "区別",
+      "reading": "くべつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つき",
+      "basic_form": "つく",
+      "reading": "つき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "にくく",
+      "basic_form": "にくい",
+      "reading": "にくく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かえって",
+      "basic_form": "かえって",
+      "reading": "かえって",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "集中",
+      "basic_form": "集中",
+      "reading": "しゅうちゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でき",
+      "basic_form": "できる",
+      "reading": "でき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "聞か",
+      "basic_form": "聞く",
+      "reading": "きか",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "れる",
+      "basic_form": "れる",
+      "reading": "れる",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "つまり",
+      "basic_form": "つまり",
+      "reading": "つまり",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "在宅",
+      "basic_form": "在宅",
+      "reading": "ざいたく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "勤務",
+      "basic_form": "勤務",
+      "reading": "きんむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一長一短",
+      "basic_form": "一長一短",
+      "reading": "いっちょういったん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言える",
+      "basic_form": "言える",
+      "reading": "いえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろ",
+      "basic_form": "だ",
+      "reading": "だろ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "う",
+      "basic_form": "う",
+      "reading": "う",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "大切",
+      "basic_form": "大切",
+      "reading": "たいせつ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それぞれ",
+      "basic_form": "それぞれ",
+      "reading": "それぞれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "合わせ",
+      "basic_form": "合わせる",
+      "reading": "あわせ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "柔軟",
+      "basic_form": "柔軟",
+      "reading": "じゅうなん",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "働き方",
+      "basic_form": "働き方",
+      "reading": "はたらきかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "選ぶ",
+      "basic_form": "選ぶ",
+      "reading": "えらぶ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "会社",
+      "basic_form": "会社",
+      "reading": "かいしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "社員",
+      "basic_form": "社員",
+      "reading": "しゃいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "話し合い",
+      "basic_form": "話し合う",
+      "reading": "はなしあい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ながら",
+      "basic_form": "ながら",
+      "reading": "ながら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "良い",
+      "basic_form": "良い",
+      "reading": "よい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "新しい",
+      "basic_form": "新しい",
+      "reading": "あたらしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "仕組み",
+      "basic_form": "仕組み",
+      "reading": "しくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作っ",
+      "basic_form": "作る",
+      "reading": "つくっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いく",
+      "basic_form": "いく",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "だろ",
+      "basic_form": "だ",
+      "reading": "だろ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "う",
+      "basic_form": "う",
+      "reading": "う",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "新型": {
+      "meaning": "新型",
+      "romaji": "shingata",
+      "reading": "しんがた"
+    },
+    "ウイルス": {
+      "meaning": "病毒",
+      "romaji": "uirusu",
+      "reading": "ウイルス"
+    },
+    "流行": {
+      "meaning": "流行",
+      "romaji": "ryuukou",
+      "reading": "りゅうこう"
+    },
+    "きっかけ": {
+      "meaning": "契機、起因",
+      "romaji": "kikkake",
+      "reading": "きっかけ"
+    },
+    "在宅": {
+      "meaning": "在家",
+      "romaji": "zaitaku",
+      "reading": "ざいたく"
+    },
+    "勤務": {
+      "meaning": "工作、上班",
+      "romaji": "kinmu",
+      "reading": "きんむ"
+    },
+    "働き方": {
+      "meaning": "工作方式",
+      "romaji": "hatarakikata",
+      "reading": "はたらきかた"
+    },
+    "急速": {
+      "meaning": "迅速",
+      "romaji": "kyuusoku",
+      "reading": "きゅうそく"
+    },
+    "普及": {
+      "meaning": "普及",
+      "romaji": "fukyuu",
+      "reading": "ふきゅう"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "会社": {
+      "meaning": "公司",
+      "romaji": "kaisha",
+      "reading": "かいしゃ"
+    },
+    "通勤": {
+      "meaning": "通勤",
+      "romaji": "tsuukin",
+      "reading": "つうきん"
+    },
+    "必要": {
+      "meaning": "必要",
+      "romaji": "hitsuyou",
+      "reading": "ひつよう"
+    },
+    "なくなる": {
+      "meaning": "消失、不再有",
+      "romaji": "nakunaru",
+      "reading": "なくなる"
+    },
+    "自分": {
+      "meaning": "自己",
+      "romaji": "jibun",
+      "reading": "じぶん"
+    },
+    "時間": {
+      "meaning": "時間",
+      "romaji": "jikan",
+      "reading": "じかん"
+    },
+    "自由": {
+      "meaning": "自由",
+      "romaji": "jiyuu",
+      "reading": "じゆう"
+    },
+    "使える": {
+      "meaning": "能使用、能運用",
+      "romaji": "tsukaeru",
+      "reading": "つかえる"
+    },
+    "よう": {
+      "meaning": "樣子、狀態（變得…）",
+      "romaji": "you",
+      "reading": "よう"
+    },
+    "なる": {
+      "meaning": "成為、變成",
+      "romaji": "naru",
+      "reading": "なる"
+    },
+    "人": {
+      "meaning": "人",
+      "romaji": "hito",
+      "reading": "ひと"
+    },
+    "多い": {
+      "meaning": "多的",
+      "romaji": "ooi",
+      "reading": "おおい"
+    },
+    "一方": {
+      "meaning": "一方面",
+      "romaji": "ippou",
+      "reading": "いっぽう"
+    },
+    "自宅": {
+      "meaning": "自家、家裡",
+      "romaji": "jitaku",
+      "reading": "じたく"
+    },
+    "仕事": {
+      "meaning": "工作",
+      "romaji": "shigoto",
+      "reading": "しごと"
+    },
+    "プライベート": {
+      "meaning": "私生活、私人",
+      "romaji": "puraibeeto",
+      "reading": "プライベート"
+    },
+    "区別": {
+      "meaning": "區別、區分",
+      "romaji": "kubetsu",
+      "reading": "くべつ"
+    },
+    "つく": {
+      "meaning": "產生、附上",
+      "romaji": "tsuku",
+      "reading": "つく"
+    },
+    "にくい": {
+      "meaning": "難以…的",
+      "romaji": "nikui",
+      "reading": "にくい"
+    },
+    "かえって": {
+      "meaning": "反而",
+      "romaji": "kaette",
+      "reading": "かえって"
+    },
+    "集中": {
+      "meaning": "專心、集中",
+      "romaji": "shuuchuu",
+      "reading": "しゅうちゅう"
+    },
+    "できる": {
+      "meaning": "能夠",
+      "romaji": "dekiru",
+      "reading": "できる"
+    },
+    "声": {
+      "meaning": "聲音、意見",
+      "romaji": "koe",
+      "reading": "こえ"
+    },
+    "聞く": {
+      "meaning": "聽、聽到",
+      "romaji": "kiku",
+      "reading": "きく"
+    },
+    "つまり": {
+      "meaning": "也就是說",
+      "romaji": "tsumari",
+      "reading": "つまり"
+    },
+    "一長一短": {
+      "meaning": "有利有弊",
+      "romaji": "icchouittan",
+      "reading": "いっちょういったん"
+    },
+    "ある": {
+      "meaning": "有、存在",
+      "romaji": "aru",
+      "reading": "ある"
+    },
+    "言える": {
+      "meaning": "可以說",
+      "romaji": "ieru",
+      "reading": "いえる"
+    },
+    "大切": {
+      "meaning": "重要",
+      "romaji": "taisetsu",
+      "reading": "たいせつ"
+    },
+    "それぞれ": {
+      "meaning": "各自",
+      "romaji": "sorezore",
+      "reading": "それぞれ"
+    },
+    "環境": {
+      "meaning": "環境",
+      "romaji": "kankyou",
+      "reading": "かんきょう"
+    },
+    "合わせる": {
+      "meaning": "配合、使一致",
+      "romaji": "awaseru",
+      "reading": "あわせる"
+    },
+    "柔軟": {
+      "meaning": "靈活、柔軟",
+      "romaji": "juunan",
+      "reading": "じゅうなん"
+    },
+    "選ぶ": {
+      "meaning": "選擇",
+      "romaji": "erabu",
+      "reading": "えらぶ"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）",
+      "romaji": "koto",
+      "reading": "こと"
+    },
+    "社員": {
+      "meaning": "員工",
+      "romaji": "shain",
+      "reading": "しゃいん"
+    },
+    "話し合う": {
+      "meaning": "商量、討論",
+      "romaji": "hanashiau",
+      "reading": "はなしあう"
+    },
+    "より": {
+      "meaning": "更加",
+      "romaji": "yori",
+      "reading": "より"
+    },
+    "良い": {
+      "meaning": "好的",
+      "romaji": "yoi",
+      "reading": "よい"
+    },
+    "新しい": {
+      "meaning": "新的",
+      "romaji": "atarashii",
+      "reading": "あたらしい"
+    },
+    "仕組み": {
+      "meaning": "結構、制度",
+      "romaji": "shikumi",
+      "reading": "しくみ"
+    },
+    "作る": {
+      "meaning": "製作、打造",
+      "romaji": "tsukuru",
+      "reading": "つくる"
+    },
+    "いく": {
+      "meaning": "逐漸（…下去）",
+      "romaji": "iku",
+      "reading": "いく"
+    }
+  },
+  "particles": {
+    "の": "連體助詞，表示修飾、所屬或名詞化",
+    "を": "受格助詞，標示動作對象",
+    "に": "表示對象、場所、時間或目的",
+    "という": "表示「叫做…、所謂的…」",
+    "が": "主格助詞，標示主語",
+    "まで": "表示終點「到」",
+    "と": "表示引用內容或並列",
+    "で": "表示場所、手段或狀態",
+    "は": "主題助詞，標示句子的話題",
+    "も": "表示「也」",
+    "ながら": "表示兩動作同時進行",
+    "か": "表示疑問",
+    "た": "助動詞，表示過去式或完成",
+    "ない": "助動詞，表示否定",
+    "れる": "助動詞，表示被動或可能",
+    "だ": "斷定助動詞「是」",
+    "う": "助動詞，表示推量、意志「…吧」"
+  },
+  "translations": [
+    [
+      {
+        "text": "以新型",
+        "word": "新型"
+      },
+      {
+        "text": "病毒的",
+        "word": "ウイルス"
+      },
+      {
+        "text": "流行",
+        "word": "流行"
+      },
+      {
+        "text": "為契機，",
+        "word": "きっかけ"
+      },
+      {
+        "text": "在宅",
+        "word": "在宅"
+      },
+      {
+        "text": "這種工作方式",
+        "word": "働き方"
+      },
+      {
+        "text": "迅速",
+        "word": "急速"
+      },
+      {
+        "text": "普及了。",
+        "word": "普及"
+      }
+    ],
+    [
+      {
+        "text": "不需要",
+        "word": "必要"
+      },
+      {
+        "text": "通勤到公司，",
+        "word": "通勤"
+      },
+      {
+        "text": "能自由",
+        "word": "自由"
+      },
+      {
+        "text": "運用",
+        "word": "使える"
+      },
+      {
+        "text": "自己",
+        "word": "自分"
+      },
+      {
+        "text": "時間的",
+        "word": "時間"
+      },
+      {
+        "text": "人也",
+        "word": "人"
+      },
+      {
+        "text": "變多了。",
+        "word": "多い"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，",
+        "word": "一方"
+      },
+      {
+        "text": "在家裡",
+        "word": "自宅"
+      },
+      {
+        "text": "工作",
+        "word": "仕事"
+      },
+      {
+        "text": "與私生活",
+        "word": "プライベート"
+      },
+      {
+        "text": "難以",
+        "word": "にくい"
+      },
+      {
+        "text": "區分，",
+        "word": "区別"
+      },
+      {
+        "text": "反而",
+        "word": "かえって"
+      },
+      {
+        "text": "無法專心",
+        "word": "集中"
+      },
+      {
+        "text": "這種聲音也存在。",
+        "word": "声"
+      }
+    ],
+    [
+      {
+        "text": "也就是說，",
+        "word": "つまり"
+      },
+      {
+        "text": "在宅工作",
+        "word": "勤務"
+      },
+      {
+        "text": "可說是",
+        "word": "言える"
+      },
+      {
+        "text": "有利有弊",
+        "word": "一長一短"
+      },
+      {
+        "text": "吧。",
+        "word": "だ"
+      }
+    ],
+    [
+      {
+        "text": "重要的是，",
+        "word": "大切"
+      },
+      {
+        "text": "配合各自的",
+        "word": "それぞれ"
+      },
+      {
+        "text": "環境，",
+        "word": "環境"
+      },
+      {
+        "text": "靈活地",
+        "word": "柔軟"
+      },
+      {
+        "text": "選擇",
+        "word": "選ぶ"
+      },
+      {
+        "text": "工作方式。",
+        "word": "働き方"
+      }
+    ],
+    [
+      {
+        "text": "公司",
+        "word": "会社"
+      },
+      {
+        "text": "與員工",
+        "word": "社員"
+      },
+      {
+        "text": "一邊討論，",
+        "word": "話し合う"
+      },
+      {
+        "text": "更",
+        "word": "より"
+      },
+      {
+        "text": "好的",
+        "word": "良い"
+      },
+      {
+        "text": "新",
+        "word": "新しい"
+      },
+      {
+        "text": "制度",
+        "word": "仕組み"
+      },
+      {
+        "text": "逐漸打造，",
+        "word": "作る"
+      },
+      {
+        "text": "不是有必要嗎。",
+        "word": "必要"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.12,
+    "jlpt_level": "N2⁻"
+  }
+}
