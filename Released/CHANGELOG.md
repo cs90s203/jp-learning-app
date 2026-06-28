@@ -1,5 +1,14 @@
 # 日語學習 App — 版本記錄
 
+## v1.2.0 — 2026-06-28
+
+**新功能：深色模式完整化（跟隨系統 + 瀏覽器表面 + Splash）**
+
+- **瀏覽器表面變深**：新增 `<meta name="color-scheme">` 與動態 `<meta name="theme-color">`，夜晚模式下回彈 overscroll、捲軸、網址列底色不再是白色
+- **跟隨系統**：主題設定改為三態（日間／夜晚／自動）；「自動」跟隨手機深淺色，且 App 開著時系統切換能即時連動
+- **Splash 跟著換色**：開場畫面背景與文字在夜晚模式變深；於 `<head>` 加首次繪製前的 inline script 預先套用主題，避免閃一下亮色
+- 主題偏好預設值改為 system
+
 ## v1.1.22 — 2026-06-28
 
 **Bug 修正：月曆難度等級顯示後端 key（NX_LITE）**
@@ -352,6 +361,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.2.0 — 2026-06-28
+
+新功能：深色模式完整化（跟隨系統三態、瀏覽器表面/網址列底色、Splash 防閃爍）
 
 ---
 

@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FDF8F3">
+<script>
+/* 首次繪製前就定好主題，避免 splash 與背景閃一下亮色（防 FOUC）。
+   theme: 'light' | 'dark' | 'system'(或無) → 解析成深/淺 */
+(function(){
+  try {
+    var saved = localStorage.getItem('theme');
+    var isDark = saved === 'dark' ? true
+               : saved === 'light' ? false
+               : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var root = document.documentElement;
+    if (isDark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
+    root.style.colorScheme = isDark ? 'dark' : 'light';
+    var m = document.querySelector('meta[name="theme-color"]');
+    if (m) m.setAttribute('content', isDark ? '#120C04' : '#FDF8F3');
+  } catch(e){}
+})();
+</script>
 <title>日語學習</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
@@ -344,6 +363,15 @@
   }
   .toggle.off { background: var(--wa-bg2); }
   .toggle.off::after { right: auto; left: 3px; }
+
+  /* 主題三態分段控制 */
+  .theme-seg { display: flex; gap: 2px; background: var(--wa-bg2); border-radius: 99px; padding: 2px; flex-shrink: 0; }
+  .theme-seg button {
+    border: none; background: transparent; color: var(--wt3);
+    font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 99px;
+    cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background .15s, color .15s;
+  }
+  .theme-seg button.active { background: var(--wa); color: #FFF; }
 
   /* Audio control bars (read-aloud / follow-read) */
   .av-bar {
@@ -1277,6 +1305,10 @@
   #splash-logo { opacity: 1; }
   #splash-name { font-size: 22px; font-weight: 700; color: #C8784A; letter-spacing: 0.04em; }
   #splash-sub  { font-size: 13px; color: #A08070; letter-spacing: 0.06em; }
+  /* 夜晚模式 splash 配色（data-theme 在首次繪製前由 head inline script 設定，不會閃爍） */
+  html[data-theme="dark"] #splash-screen { background: #120C04; }
+  html[data-theme="dark"] #splash-name { color: #D4884A; }
+  html[data-theme="dark"] #splash-sub  { color: #B89070; }
 
   /* ===== Onboarding ===== */
   /* ── Tutorial overlay ── */
@@ -1899,9 +1931,13 @@
           <div class="setting-row">
             <div>
               <div class="setting-label">夜晚模式</div>
-              <div class="setting-sub" id="theme-sub">日間（暖色系）</div>
+              <div class="setting-sub" id="theme-sub">跟隨系統</div>
             </div>
-            <div class="toggle off" id="theme-toggle" onclick="toggleTheme()"></div>
+            <div class="theme-seg" id="theme-seg">
+              <button data-mode="light"  onclick="setThemeMode('light')">日間</button>
+              <button data-mode="dark"   onclick="setThemeMode('dark')">夜晚</button>
+              <button data-mode="system" onclick="setThemeMode('system')">自動</button>
+            </div>
           </div>
           <div class="setting-row" style="cursor:pointer;border-top:0.5px solid var(--border)" onclick="resetFirstTimeHints()">
             <div>
@@ -2084,7 +2120,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.22
+          v1.2.0
         </div>
 
       </div>
@@ -4531,32 +4567,50 @@ function updateSpeedButtonStates(idx) {
 }
 
 // ===== 主題切換 =====
-function applyTheme(isDark) {
-  if (isDark) {
-    document.documentElement.dataset.theme = 'dark';
-  } else {
-    delete document.documentElement.dataset.theme;
-  }
-  const toggle = document.getElementById('theme-toggle');
-  const sub    = document.getElementById('theme-sub');
-  if (toggle) toggle.classList.toggle('off', !isDark);
-  if (sub)    sub.textContent = isDark ? '夜晚（深色系）' : '日間（暖色系）';
+// 主題三態：'light' | 'dark' | 'system'（或無 = system）
+function _prefersDark() { return window.matchMedia('(prefers-color-scheme: dark)').matches; }
+function getThemeMode() { return localStorage.getItem('theme') || 'system'; }
+function _resolveDark(mode) {
+  mode = mode || getThemeMode();
+  return mode === 'dark' ? true : mode === 'light' ? false : _prefersDark();
 }
 
-function toggleTheme() {
-  const isDark = document.documentElement.dataset.theme === 'dark';
-  const next = !isDark;
-  localStorage.setItem('theme', next ? 'dark' : 'light');
-  applyTheme(next);
+function applyTheme(isDark) {
+  const root = document.documentElement;
+  if (isDark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
+  // 讓瀏覽器自身表面（回彈 overscroll、捲軸、表單）也跟著深色
+  root.style.colorScheme = isDark ? 'dark' : 'light';
+  // 行動瀏覽器 UI（網址列/狀態列底色）
+  const m = document.querySelector('meta[name="theme-color"]');
+  if (m) m.setAttribute('content', isDark ? '#120C04' : '#FDF8F3');
+  _updateThemeUI();
+}
+
+function _updateThemeUI() {
+  const mode = getThemeMode();
+  const sub = document.getElementById('theme-sub');
+  if (sub) sub.textContent = mode === 'light' ? '日間（暖色系）'
+                           : mode === 'dark'  ? '夜晚（深色系）'
+                           : '跟隨系統';
+  const seg = document.getElementById('theme-seg');
+  if (seg) seg.querySelectorAll('button').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.mode === mode);
+  });
+}
+
+function setThemeMode(mode) {
+  localStorage.setItem('theme', mode);
+  applyTheme(_resolveDark(mode));
 }
 
 function loadTheme() {
-  const saved = localStorage.getItem('theme');
-  // 若無偏好，跟隨系統
-  const prefersDark = saved
-    ? saved === 'dark'
-    : window.matchMedia('(prefers-color-scheme: dark)').matches;
-  applyTheme(prefersDark);
+  applyTheme(_resolveDark());
+  // 跟隨系統：App 開著時系統切換深淺色 → 即時更新（僅在 system 模式）
+  try {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+      if (getThemeMode() === 'system') applyTheme(_resolveDark('system'));
+    });
+  } catch (e) {}
 }
 
 // ===== Pull-to-Refresh =====
@@ -7875,10 +7929,8 @@ function _applyRestoredSettings() {
   applyModeUI(localStorage.getItem('learnMode') || 'normal');
   // 複習順序
   updateQuizOrderUI(localStorage.getItem('quizOrder') || 'due');
-  // 主題
-  const theme = localStorage.getItem('theme');
-  if (theme === 'dark') document.documentElement.dataset.theme = 'dark';
-  else delete document.documentElement.dataset.theme;
+  // 主題（含 system 三態）
+  applyTheme(_resolveDark());
   // vocabBook 重新載入
   try { vocabBook = JSON.parse(localStorage.getItem('vocabBook_v1') || '{}'); } catch(e) {}
   addedWords.clear();
@@ -7985,7 +8037,7 @@ function syncToCloud() {
   const settings = {
     learnMode:  localStorage.getItem('learnMode') || 'normal',
     quizOrder:  localStorage.getItem('quizOrder') || 'due',
-    theme:      localStorage.getItem('theme') || 'light',
+    theme:      localStorage.getItem('theme') || 'system',
     userLevel:  localStorage.getItem('userLevel') || 'n5',
     ...(visionKey ? { googleVisionKey: visionKey } : {}),
     updatedAt:  now
