@@ -2086,7 +2086,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.16
+          v1.1.17
         </div>
 
       </div>
@@ -7324,7 +7324,7 @@ function _tutRender() {
     var spUsesSnap = snapR && !step.snapTooltipOnly && !step.tip;
     var spLeft = spUsesSnap ? snapR.left  : (r.left - pad);
     var spW    = spUsesSnap ? snapR.width : (r.width + pad * 2);
-    // insetX：左右邊線各內縮，指示框與說明框（版型A）一起內縮
+    // insetX：左右邊線各內縮 N px（負值＝向外擴），指示框與說明框（版型A）一起變動
     if (step.insetX) { spLeft += step.insetX; spW -= step.insetX * 2; }
     // spotlightHeight：指定固定高度時，指示框垂直置中對齊 target（避免切到內容）
     var spH    = step.spotlightHeight ? step.spotlightHeight : (r.height + pad * 2);
@@ -7338,8 +7338,10 @@ function _tutRender() {
         spH = (r.bottom + pad) - spTop;
       }
     }
-    if (spLeft < _vm) spLeft = _vm;
-    if (spLeft + spW > window.innerWidth - _vm) spW = window.innerWidth - _vm - spLeft;
+    // 向外擴（insetX<0）時放寬視窗邊距夾值，才能真正達到指定的外擴量
+    var edgeMin = (step.insetX && step.insetX < 0) ? 4 : _vm;
+    if (spLeft < edgeMin) spLeft = edgeMin;
+    if (spLeft + spW > window.innerWidth - edgeMin) spW = window.innerWidth - edgeMin - spLeft;
     spotlight.style.left   = spLeft + 'px';
     spotlight.style.top    = spTop + 'px';
     spotlight.style.width  = spW + 'px';
@@ -7389,7 +7391,7 @@ function _tutRender() {
       : '';
     tip.innerHTML = '<div class="tutorial-tooltip-text">' + step.text + '</div>' + dots;
     tip.style.width = tipW + 'px';
-    tip.style.left  = Math.max(8, Math.min(tipLeft, window.innerWidth - tipW - 8)) + 'px';
+    tip.style.left  = Math.max(edgeMin, Math.min(tipLeft, window.innerWidth - tipW - edgeMin)) + 'px';
     // 先掛上並顯示，offsetHeight 才量得到真實高度（above 定位需要）
     overlay.style.display = 'block';
     overlay.appendChild(tip);
@@ -7518,7 +7520,7 @@ function showArticleTutorial() {
 function showVocabTutorial() {
   if (_tutBtnId === 'vocab-help-btn') { tutorialClose(); return; }
   tutorialShow('vocab-help-btn', [
-    { targetId: 'vocab-filter-bar',  snapToId: 'vocab-display-card', insetX: 12, text: '按「生、普、熟」可篩選不同熟悉度的單字；右側「開始複習」會從目前篩選範圍啟動測驗模式。' },
+    { targetId: 'vocab-filter-bar',  snapToId: 'vocab-display-card', insetX: -12, text: '按「生、普、熟」可篩選不同熟悉度的單字；右側「開始複習」會從目前篩選範圍啟動測驗模式。' },
     { targetId: 'vocab-display-card', text: '上下滑動可切換單字卡，點擊下半部可揭示中文意思和例句，幫助自我測驗。' },
     { targetId: 'vocab-list-area',   snapToId: 'vocab-display-card', text: '所有單字依熟悉度列出，點擊任一列可在上方單字卡中快速跳到該單字。' },
     { targetId: 'vocab-btn-group',   snapToId: 'vocab-display-card', noScroll: true, text: '左側「Aa」切換顯示羅馬拼音輔助記憶，右側「＋」可手動新增單字。' },
