@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.17 — 2026-06-28
+
+**Tutorial：insetX 改為向外擴（修正方向）**
+
+- 單字頁 Filter 步驟 `insetX: 12` → `-12`（向外擴 12px，原方向相反）
+- `insetX` 負值（向外擴）時放寬視窗邊距夾值至 4px，指示框與說明框定位同步，才能真正達到指定外擴量
+
 ## v1.1.16 — 2026-06-28
 
 **Tutorial：新增 insetX 參數**
@@ -310,6 +317,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.17 — 2026-06-28
+
+Tutorial：insetX 改向外擴（單字頁 Filter -12px），放寬邊距夾值
 
 ---
 
