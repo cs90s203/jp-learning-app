@@ -19,6 +19,7 @@
     var root = document.documentElement;
     if (isDark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
     root.style.colorScheme = isDark ? 'dark' : 'light';
+    root.style.backgroundColor = isDark ? '#1C1208' : '#F5EDE0';
     var m = document.querySelector('meta[name="theme-color"]');
     if (m) m.setAttribute('content', isDark ? '#120C04' : '#FDF8F3');
   } catch(e){}
@@ -2120,7 +2121,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.2.0
+          v1.2.1
         </div>
 
       </div>
@@ -4580,6 +4581,11 @@ function applyTheme(isDark) {
   if (isDark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
   // 讓瀏覽器自身表面（回彈 overscroll、捲軸、表單）也跟著深色
   root.style.colorScheme = isDark ? 'dark' : 'light';
+  // iOS Safari 的 overscroll 回彈區只認 <html> 的「直接 inline 背景」，
+  // 只改 CSS 變數常殘留上一個主題色（日間卡黑/夜間卡白）。故直接設 inline backgroundColor。
+  const rootBg = isDark ? '#1C1208' : '#F5EDE0';
+  root.style.backgroundColor = rootBg;
+  document.body.style.backgroundColor = rootBg;
   // 行動瀏覽器 UI（網址列/狀態列底色）
   const m = document.querySelector('meta[name="theme-color"]');
   if (m) m.setAttribute('content', isDark ? '#120C04' : '#FDF8F3');

@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.2.1 — 2026-06-28
+
+**Bug 修正：切換主題時功能頁外背景殘留上一個顏色（日間卡黑／夜間卡白）**
+
+- 根因：iOS Safari 的 overscroll 回彈區只認 `<html>` 的直接 inline 背景，只改 CSS 變數常不重繪 → 殘留前一個主題色
+- 修正：`applyTheme()` 與 head inline script 直接對 `<html>`／`<body>` 設 inline `backgroundColor`，強制 iOS 即時更新回彈區
+
 ## v1.2.0 — 2026-06-28
 
 **新功能：深色模式完整化（跟隨系統 + 瀏覽器表面 + Splash）**
@@ -361,6 +368,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.2.1 — 2026-06-28
+
+Bug 修正：切換主題時 iOS overscroll 背景殘留（直接設 html/body inline 背景強制重繪）
 
 ---
 
