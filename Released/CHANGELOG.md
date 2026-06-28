@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.16 — 2026-06-28
+
+**Tutorial：新增 insetX 參數**
+
+- 引擎新增 `insetX`：指示框與說明框左右邊線各內縮 N px
+- 單字頁 Filter+開始複習 步驟套用 `insetX: 12`
+
 ## v1.1.15 — 2026-06-28
 
 **Tutorial：新增 center 模式 + spanTopId，並套用至今日頁/文章頁**
@@ -303,6 +310,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.16 — 2026-06-28
+
+Tutorial：新增 insetX 參數，單字頁 Filter 步驟左右內縮 12px
 
 ---
 
