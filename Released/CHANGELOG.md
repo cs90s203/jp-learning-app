@@ -1,5 +1,11 @@
 # 日語學習 App — 版本記錄
 
+## v1.1.20 — 2026-06-28
+
+**UI：五十音表「片」按鈕配色統一**
+
+- 移除 `.gojuuon-chip-kata` 覆寫，「片」未切換時與「濁音」「半濁音」同樣式（淺底棕字棕邊框）；切換後仍以 `.active` 變橘
+
 ## v1.1.19 — 2026-06-28
 
 **Bug 修正：Tutorial 第一步停在畫面外**
@@ -332,6 +338,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.1.20 — 2026-06-28
+
+UI：五十音表「片」按鈕配色與濁音統一
 
 ---
 

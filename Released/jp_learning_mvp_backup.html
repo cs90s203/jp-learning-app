@@ -2086,7 +2086,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.1.18
+          v1.1.19
         </div>
 
       </div>
@@ -7452,6 +7452,9 @@ function _updateHelpBtnGlow() {
 }
 
 function tutorialShow(btnId, steps) {
+  // 先把當前頁捲回頂端：第一步（最上方元素，常為 noScroll 的頂端小標）才不會停在畫面外
+  var _activePage = document.querySelector('.page.active');
+  if (_activePage) _activePage.scrollTop = 0;
   // 依元素在頁面的垂直位置排序（由上到下），與傳入順序無關
   _tutSteps = steps.slice().sort(function(a, b) {
     var ea = document.getElementById(a.targetId);
