@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.2.2 — 2026-06-28
+
+**Bug 修正：iOS 切換主題後 overscroll 回彈區要重開 App 才更新**
+
+- 規律確認：iOS Safari 切換當下不重繪回彈區，殘留前一主題色（日間卡黑／夜間卡白），重開 App 才正確
+- 修正：iOS 上手動切換主題時靜默 `location.reload()`，並透過 sessionStorage 旗標 + `html.skip-splash` 跳過開場動畫，使用者幾乎無感、回彈區即時正確
+- 桌面／Android 維持即時切換、不重載
+
 ## v1.2.1 — 2026-06-28
 
 **Bug 修正：切換主題時功能頁外背景殘留上一個顏色（日間卡黑／夜間卡白）**
@@ -368,6 +376,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.2.2 — 2026-06-28
+
+Bug 修正：iOS 切換主題靜默重載+跳過 splash，回彈區即時正確
 
 ---
 

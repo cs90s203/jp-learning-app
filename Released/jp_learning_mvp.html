@@ -22,6 +22,11 @@
     root.style.backgroundColor = isDark ? '#1C1208' : '#F5EDE0';
     var m = document.querySelector('meta[name="theme-color"]');
     if (m) m.setAttribute('content', isDark ? '#120C04' : '#FDF8F3');
+    // 因切換主題而重載時跳過開場動畫（iOS overscroll 修正用）
+    if (sessionStorage.getItem('_skipSplash')) {
+      root.classList.add('skip-splash');
+      sessionStorage.removeItem('_skipSplash');
+    }
   } catch(e){}
 })();
 </script>
@@ -1307,6 +1312,7 @@
   #splash-name { font-size: 22px; font-weight: 700; color: #C8784A; letter-spacing: 0.04em; }
   #splash-sub  { font-size: 13px; color: #A08070; letter-spacing: 0.06em; }
   /* 夜晚模式 splash 配色（data-theme 在首次繪製前由 head inline script 設定，不會閃爍） */
+  html.skip-splash #splash-screen { display: none !important; animation: none !important; }
   html[data-theme="dark"] #splash-screen { background: #120C04; }
   html[data-theme="dark"] #splash-name { color: #D4884A; }
   html[data-theme="dark"] #splash-sub  { color: #B89070; }
@@ -2121,7 +2127,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.2.1
+          v1.2.2
         </div>
 
       </div>
@@ -4585,7 +4591,7 @@ function applyTheme(isDark) {
   // 只改 CSS 變數常殘留上一個主題色（日間卡黑/夜間卡白）。故直接設 inline backgroundColor。
   const rootBg = isDark ? '#1C1208' : '#F5EDE0';
   root.style.backgroundColor = rootBg;
-  document.body.style.backgroundColor = rootBg;
+  if (document.body) document.body.style.backgroundColor = rootBg;
   // 行動瀏覽器 UI（網址列/狀態列底色）
   const m = document.querySelector('meta[name="theme-color"]');
   if (m) m.setAttribute('content', isDark ? '#120C04' : '#FDF8F3');
@@ -4604,9 +4610,20 @@ function _updateThemeUI() {
   });
 }
 
+function _isIOS() {
+  return /iP(hone|ad|od)/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+
 function setThemeMode(mode) {
   localStorage.setItem('theme', mode);
   applyTheme(_resolveDark(mode));
+  // iOS Safari 的 overscroll 回彈區背景不會在切換當下重繪（要重開 App 才更新）。
+  // 故 iOS 上手動切換主題時靜默重載並跳過 splash，讓回彈區即時正確、使用者幾乎無感。
+  if (_isIOS()) {
+    try { sessionStorage.setItem('_skipSplash', '1'); } catch (e) {}
+    location.reload();
+  }
 }
 
 function loadTheme() {
