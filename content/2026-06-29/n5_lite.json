@@ -1,0 +1,397 @@
+{
+  "date": "2026-06-29",
+  "level": "n5_lite",
+  "title": "あめのひ",
+  "text": "きょうはあめです。そらはくらいです。まどのそとにあおいかさがあります。わたしはいえでほんをよみます。ねこもそばにいます。",
+  "tokens": [
+    {
+      "surface_form": "きょう",
+      "basic_form": "きょう",
+      "reading": "きょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あめ",
+      "basic_form": "あめ",
+      "reading": "あめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "そら",
+      "basic_form": "そら",
+      "reading": "そら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "くらい",
+      "basic_form": "くらい",
+      "reading": "くらい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まど",
+      "basic_form": "まど",
+      "reading": "まど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "そと",
+      "basic_form": "そと",
+      "reading": "そと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あおい",
+      "basic_form": "あおい",
+      "reading": "あおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "かさ",
+      "basic_form": "かさ",
+      "reading": "かさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いえ",
+      "basic_form": "いえ",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほん",
+      "basic_form": "ほん",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よみ",
+      "basic_form": "よむ",
+      "reading": "よみ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ねこ",
+      "basic_form": "ねこ",
+      "reading": "ねこ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "そば",
+      "basic_form": "そば",
+      "reading": "そば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "い",
+      "basic_form": "いる",
+      "reading": "い",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きょう": {
+      "meaning": "今天",
+      "romaji": "kyou",
+      "reading": "きょう"
+    },
+    "あめ": {
+      "meaning": "雨",
+      "romaji": "ame",
+      "reading": "あめ"
+    },
+    "そら": {
+      "meaning": "天空",
+      "romaji": "sora",
+      "reading": "そら"
+    },
+    "くらい": {
+      "meaning": "暗的",
+      "romaji": "kurai",
+      "reading": "くらい"
+    },
+    "まど": {
+      "meaning": "窗戶",
+      "romaji": "mado",
+      "reading": "まど"
+    },
+    "そと": {
+      "meaning": "外面",
+      "romaji": "soto",
+      "reading": "そと"
+    },
+    "あおい": {
+      "meaning": "藍色的",
+      "romaji": "aoi",
+      "reading": "あおい"
+    },
+    "かさ": {
+      "meaning": "傘",
+      "romaji": "kasa",
+      "reading": "かさ"
+    },
+    "ある": {
+      "meaning": "有、存在（無生命）",
+      "romaji": "aru",
+      "reading": "ある"
+    },
+    "わたし": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "いえ": {
+      "meaning": "家",
+      "romaji": "ie",
+      "reading": "いえ"
+    },
+    "ほん": {
+      "meaning": "書",
+      "romaji": "hon",
+      "reading": "ほん"
+    },
+    "よむ": {
+      "meaning": "讀、看",
+      "romaji": "yomu",
+      "reading": "よむ"
+    },
+    "ねこ": {
+      "meaning": "貓",
+      "romaji": "neko",
+      "reading": "ねこ"
+    },
+    "そば": {
+      "meaning": "旁邊",
+      "romaji": "soba",
+      "reading": "そば"
+    },
+    "いる": {
+      "meaning": "有、在（有生命）",
+      "romaji": "iru",
+      "reading": "いる"
+    }
+  },
+  "particles": {
+    "は": "主題助詞，標示句子的話題",
+    "です": "助動詞，表示禮貌的斷定「是」",
+    "の": "連體助詞，表示修飾或所屬",
+    "に": "表示存在的場所「在」",
+    "が": "主格助詞，標示主語",
+    "ます": "助動詞，表示禮貌（丁寧）",
+    "で": "表示動作發生的場所「在」",
+    "を": "受格助詞，標示動作對象",
+    "も": "表示「也」"
+  },
+  "translations": [
+    [
+      {
+        "text": "今天",
+        "word": "きょう"
+      },
+      {
+        "text": "是雨天。",
+        "word": "あめ"
+      }
+    ],
+    [
+      {
+        "text": "天空",
+        "word": "そら"
+      },
+      {
+        "text": "很暗。",
+        "word": "くらい"
+      }
+    ],
+    [
+      {
+        "text": "窗",
+        "word": "まど"
+      },
+      {
+        "text": "外面",
+        "word": "そと"
+      },
+      {
+        "text": "有",
+        "word": "ある"
+      },
+      {
+        "text": "藍色的",
+        "word": "あおい"
+      },
+      {
+        "text": "傘。",
+        "word": "かさ"
+      }
+    ],
+    [
+      {
+        "text": "我",
+        "word": "わたし"
+      },
+      {
+        "text": "在家裡",
+        "word": "いえ"
+      },
+      {
+        "text": "看",
+        "word": "よむ"
+      },
+      {
+        "text": "書。",
+        "word": "ほん"
+      }
+    ],
+    [
+      {
+        "text": "貓",
+        "word": "ねこ"
+      },
+      {
+        "text": "也",
+        "word": "も"
+      },
+      {
+        "text": "在旁邊。",
+        "word": "そば"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.05,
+    "jlpt_level": "N5⁻"
+  }
+}

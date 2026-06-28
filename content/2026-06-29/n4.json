@@ -1,0 +1,935 @@
+{
+  "date": "2026-06-29",
+  "level": "n4",
+  "title": "母に料理を習う",
+  "text": "先週の日曜日、母に料理を教えてもらいました。私はあまり料理が苦手なので、いつも緊張します。野菜を切ったり、スープを作ったりして、二時間ぐらいかかりました。最初は少し手が震えましたが、母に手伝ってもらいながら、卵焼きを作ることができました。少し焦げてしまったのに、家族はおいしいと言ってくれました。今度は一人で挑戦したいです。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日曜日",
+      "basic_form": "日曜日",
+      "reading": "にちようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "母",
+      "basic_form": "母",
+      "reading": "はは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "教え",
+      "basic_form": "教える",
+      "reading": "おしえ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もらい",
+      "basic_form": "もらう",
+      "reading": "もらい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あまり",
+      "basic_form": "あまり",
+      "reading": "あまり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "苦手",
+      "basic_form": "苦手",
+      "reading": "にがて",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いつも",
+      "basic_form": "いつも",
+      "reading": "いつも",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "緊張",
+      "basic_form": "緊張",
+      "reading": "きんちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ます",
+      "basic_form": "ます",
+      "reading": "ます",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "野菜",
+      "basic_form": "野菜",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "切っ",
+      "basic_form": "切る",
+      "reading": "きっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たり",
+      "basic_form": "たり",
+      "reading": "たり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スープ",
+      "basic_form": "スープ",
+      "reading": "スープ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作っ",
+      "basic_form": "作る",
+      "reading": "つくっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たり",
+      "basic_form": "たり",
+      "reading": "たり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "二時間",
+      "basic_form": "二時間",
+      "reading": "にじかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ぐらい",
+      "basic_form": "ぐらい",
+      "reading": "ぐらい",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かかり",
+      "basic_form": "かかる",
+      "reading": "かかり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "手",
+      "basic_form": "手",
+      "reading": "て",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "震え",
+      "basic_form": "震える",
+      "reading": "ふるえ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "母",
+      "basic_form": "母",
+      "reading": "はは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "手伝っ",
+      "basic_form": "手伝う",
+      "reading": "てつだっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もらい",
+      "basic_form": "もらう",
+      "reading": "もらい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ながら",
+      "basic_form": "ながら",
+      "reading": "ながら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "卵焼き",
+      "basic_form": "卵焼き",
+      "reading": "たまごやき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作る",
+      "basic_form": "作る",
+      "reading": "つくる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "でき",
+      "basic_form": "できる",
+      "reading": "でき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "焦げ",
+      "basic_form": "焦げる",
+      "reading": "こげ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しまっ",
+      "basic_form": "しまう",
+      "reading": "しまっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "のに",
+      "basic_form": "のに",
+      "reading": "のに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家族",
+      "basic_form": "家族",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おいしい",
+      "basic_form": "おいしい",
+      "reading": "おいしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言っ",
+      "basic_form": "言う",
+      "reading": "いっ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "くれ",
+      "basic_form": "くれる",
+      "reading": "くれ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まし",
+      "basic_form": "ます",
+      "reading": "まし",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "た",
+      "basic_form": "た",
+      "reading": "た",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今度",
+      "basic_form": "今度",
+      "reading": "こんど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一人",
+      "basic_form": "一人",
+      "reading": "ひとり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "挑戦",
+      "basic_form": "挑戦",
+      "reading": "ちょうせん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たい",
+      "basic_form": "たい",
+      "reading": "たい",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週",
+      "romaji": "senshuu",
+      "reading": "せんしゅう"
+    },
+    "日曜日": {
+      "meaning": "星期日",
+      "romaji": "nichiyoubi",
+      "reading": "にちようび"
+    },
+    "母": {
+      "meaning": "媽媽",
+      "romaji": "haha",
+      "reading": "はは"
+    },
+    "料理": {
+      "meaning": "料理、菜",
+      "romaji": "ryouri",
+      "reading": "りょうり"
+    },
+    "教える": {
+      "meaning": "教",
+      "romaji": "oshieru",
+      "reading": "おしえる"
+    },
+    "もらう": {
+      "meaning": "得到、（請別人為自己做）",
+      "romaji": "morau",
+      "reading": "もらう"
+    },
+    "私": {
+      "meaning": "我",
+      "romaji": "watashi",
+      "reading": "わたし"
+    },
+    "あまり": {
+      "meaning": "不太（後接否定）",
+      "romaji": "amari",
+      "reading": "あまり"
+    },
+    "苦手": {
+      "meaning": "不擅長",
+      "romaji": "nigate",
+      "reading": "にがて"
+    },
+    "いつも": {
+      "meaning": "總是",
+      "romaji": "itsumo",
+      "reading": "いつも"
+    },
+    "緊張": {
+      "meaning": "緊張",
+      "romaji": "kinchou",
+      "reading": "きんちょう"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru",
+      "reading": "する"
+    },
+    "野菜": {
+      "meaning": "蔬菜",
+      "romaji": "yasai",
+      "reading": "やさい"
+    },
+    "切る": {
+      "meaning": "切",
+      "romaji": "kiru",
+      "reading": "きる"
+    },
+    "スープ": {
+      "meaning": "湯",
+      "romaji": "suupu",
+      "reading": "スープ"
+    },
+    "作る": {
+      "meaning": "製作、做",
+      "romaji": "tsukuru",
+      "reading": "つくる"
+    },
+    "二時間": {
+      "meaning": "兩小時",
+      "romaji": "nijikan",
+      "reading": "にじかん"
+    },
+    "かかる": {
+      "meaning": "花費（時間）",
+      "romaji": "kakaru",
+      "reading": "かかる"
+    },
+    "最初": {
+      "meaning": "最初、一開始",
+      "romaji": "saisho",
+      "reading": "さいしょ"
+    },
+    "少し": {
+      "meaning": "稍微、一點",
+      "romaji": "sukoshi",
+      "reading": "すこし"
+    },
+    "手": {
+      "meaning": "手",
+      "romaji": "te",
+      "reading": "て"
+    },
+    "震える": {
+      "meaning": "顫抖",
+      "romaji": "furueru",
+      "reading": "ふるえる"
+    },
+    "手伝う": {
+      "meaning": "幫忙",
+      "romaji": "tetsudau",
+      "reading": "てつだう"
+    },
+    "卵焼き": {
+      "meaning": "玉子燒",
+      "romaji": "tamagoyaki",
+      "reading": "たまごやき"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）",
+      "romaji": "koto",
+      "reading": "こと"
+    },
+    "できる": {
+      "meaning": "能夠、會",
+      "romaji": "dekiru",
+      "reading": "できる"
+    },
+    "焦げる": {
+      "meaning": "燒焦",
+      "romaji": "kogeru",
+      "reading": "こげる"
+    },
+    "しまう": {
+      "meaning": "（不小心）做了…",
+      "romaji": "shimau",
+      "reading": "しまう"
+    },
+    "家族": {
+      "meaning": "家人",
+      "romaji": "kazoku",
+      "reading": "かぞく"
+    },
+    "おいしい": {
+      "meaning": "好吃的",
+      "romaji": "oishii",
+      "reading": "おいしい"
+    },
+    "言う": {
+      "meaning": "說",
+      "romaji": "iu",
+      "reading": "いう"
+    },
+    "くれる": {
+      "meaning": "（別人為我）給、做",
+      "romaji": "kureru",
+      "reading": "くれる"
+    },
+    "今度": {
+      "meaning": "下次",
+      "romaji": "kondo",
+      "reading": "こんど"
+    },
+    "一人": {
+      "meaning": "一個人",
+      "romaji": "hitori",
+      "reading": "ひとり"
+    },
+    "挑戦": {
+      "meaning": "挑戰",
+      "romaji": "chousen",
+      "reading": "ちょうせん"
+    }
+  },
+  "particles": {
+    "の": "連體助詞，表示修飾或所屬",
+    "に": "表示對象、場所或目的",
+    "を": "受格助詞，標示動作對象",
+    "て": "連接動詞，表示動作的先後或補助動詞",
+    "は": "主題助詞，標示句子的話題",
+    "が": "主格助詞，標示主語，或表示逆接「但是」",
+    "ので": "表示原因、理由「因為」",
+    "だ": "斷定助動詞「是」，連體形為「な」",
+    "たり": "～たり～たり，列舉動作「又…又…」",
+    "ぐらい": "表示大約的程度、數量",
+    "ながら": "表示兩動作同時進行「一邊…一邊…」",
+    "のに": "表示逆接「明明…卻…」",
+    "と": "表示引用內容或並列",
+    "で": "表示方法、手段或狀態",
+    "ます": "助動詞，表示禮貌（丁寧）",
+    "た": "助動詞，表示過去式",
+    "たい": "助動詞，表示願望「想…」",
+    "です": "助動詞，表示禮貌的斷定「是」"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週",
+        "word": "先週"
+      },
+      {
+        "text": "日，",
+        "word": "日曜日"
+      },
+      {
+        "text": "請媽媽",
+        "word": "母"
+      },
+      {
+        "text": "教我",
+        "word": "教える"
+      },
+      {
+        "text": "做菜。",
+        "word": "料理"
+      }
+    ],
+    [
+      {
+        "text": "因為我不太",
+        "word": "あまり"
+      },
+      {
+        "text": "擅長",
+        "word": "苦手"
+      },
+      {
+        "text": "做菜，",
+        "word": "料理"
+      },
+      {
+        "text": "所以總是",
+        "word": "いつも"
+      },
+      {
+        "text": "很緊張。",
+        "word": "緊張"
+      }
+    ],
+    [
+      {
+        "text": "切",
+        "word": "切る"
+      },
+      {
+        "text": "菜、",
+        "word": "野菜"
+      },
+      {
+        "text": "煮",
+        "word": "作る"
+      },
+      {
+        "text": "湯，",
+        "word": "スープ"
+      },
+      {
+        "text": "花了大約",
+        "word": "かかる"
+      },
+      {
+        "text": "兩小時。",
+        "word": "二時間"
+      }
+    ],
+    [
+      {
+        "text": "一開始",
+        "word": "最初"
+      },
+      {
+        "text": "手",
+        "word": "手"
+      },
+      {
+        "text": "有點抖，",
+        "word": "震える"
+      },
+      {
+        "text": "在媽媽",
+        "word": "母"
+      },
+      {
+        "text": "幫忙下，",
+        "word": "手伝う"
+      },
+      {
+        "text": "成功做出了",
+        "word": "できる"
+      },
+      {
+        "text": "玉子燒。",
+        "word": "卵焼き"
+      }
+    ],
+    [
+      {
+        "text": "雖然有點",
+        "word": "少し"
+      },
+      {
+        "text": "燒焦了，",
+        "word": "焦げる"
+      },
+      {
+        "text": "家人",
+        "word": "家族"
+      },
+      {
+        "text": "還是說",
+        "word": "言う"
+      },
+      {
+        "text": "很好吃。",
+        "word": "おいしい"
+      }
+    ],
+    [
+      {
+        "text": "下次",
+        "word": "今度"
+      },
+      {
+        "text": "想一個人",
+        "word": "一人"
+      },
+      {
+        "text": "挑戰看看。",
+        "word": "挑戦"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.1,
+    "jlpt_level": "N4"
+  }
+}
