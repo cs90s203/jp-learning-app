@@ -1346,6 +1346,8 @@
   .tutorial-tooltip-text {
     font-size: 14px; line-height: 1.55; color: var(--wt);
   }
+  .tutorial-tooltip-text p { margin: 0; }
+  .tutorial-tooltip-text p + p { margin-top: 8px; }
   .tutorial-dots {
     display: flex; gap: 6px; justify-content: center; margin-top: 10px;
   }
@@ -2133,7 +2135,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.3.0
+          v1.3.1
         </div>
 
       </div>
@@ -7552,7 +7554,11 @@ function _tutRender() {
           return '<div class="tutorial-dot' + (i === _tutIdx ? ' active' : '') + '"></div>';
         }).join('') + '</div>'
       : '';
-    tip.innerHTML = '<div class="tutorial-tooltip-text">' + step.text + '</div>' + dots;
+    // text 可為字串或陣列；陣列時每個元素自成一段（多功能說明分段更易讀）
+    var _textHtml = Array.isArray(step.text)
+      ? step.text.map(function(t) { return '<p>' + t + '</p>'; }).join('')
+      : step.text;
+    tip.innerHTML = '<div class="tutorial-tooltip-text">' + _textHtml + '</div>' + dots;
     tip.style.width = tipW + 'px';
     tip.style.left  = Math.max(edgeMin, Math.min(tipLeft, window.innerWidth - tipW - edgeMin)) + 'px';
     // 先掛上並顯示，offsetHeight 才量得到真實高度（above 定位需要）
@@ -7674,7 +7680,11 @@ function showArticleTutorial() {
   tutorialShow('article-help-btn', [
     { targetId: 'article-level-tag', tip: { ref: 'article-week-bar', anchor: 'left' }, noScroll: true, text: '顯示此篇文章的難度等級。長按可為當天文章單獨選擇其他等級（N5～N1），不影響全局設定。' },
     { targetId: 'article-week-bar',  text: '顯示最近七天的學習紀錄，點擊日期可切換閱讀當天的文章，點擊左側箭頭可以回顧上週的文章。' },
-    { targetId: 'cn-toggle-row',     text: '「中文」開啟後每個詞彙下方會顯示中文意思；「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本；「書寫」開啟後每句下方會出現打字練習行，可邊讀邊對照練習，長按可清空本篇書寫。' },
+    { targetId: 'cn-toggle-row',     text: [
+      '「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本。',
+      '「中文」開啟後每個詞彙下方會顯示中文意思。',
+      '「書寫」開啟後每句下方會出現打字練習行，可邊讀邊對照練習；長按此鈕可清空本篇書寫。'
+    ] },
     { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
     { targetId: 'article-first-dot', tip: { ref: 'article-text', anchor: 'left' }, text: '點擊句首的小圓點可選取或取消該句；長按小圓點則單獨選取這一句，方便針對單句練習朗讀或跟讀。' },
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
@@ -7686,10 +7696,16 @@ function showArticleTutorial() {
 function showVocabTutorial() {
   if (_tutBtnId === 'vocab-help-btn') { tutorialClose(); return; }
   tutorialShow('vocab-help-btn', [
-    { targetId: 'vocab-filter-bar',  snapToId: 'vocab-display-card', insetX: -12, insetY: 6, text: '按「生、普、熟」可篩選不同熟悉度的單字；右側「開始複習」會從目前篩選範圍啟動測驗模式。' },
+    { targetId: 'vocab-filter-bar',  snapToId: 'vocab-display-card', insetX: -12, insetY: 6, text: [
+      '按「生、普、熟」可篩選不同熟悉度的單字。',
+      '右側「開始複習」會從目前篩選範圍啟動測驗模式。'
+    ] },
     { targetId: 'vocab-display-card', text: '上下滑動可切換單字卡，點擊下半部可揭示中文意思和例句，幫助自我測驗。' },
     { targetId: 'vocab-list-area',   snapToId: 'vocab-display-card', text: '所有單字依熟悉度列出，點擊任一列可在上方單字卡中快速跳到該單字。' },
-    { targetId: 'vocab-btn-group',   snapToId: 'vocab-display-card', noScroll: true, text: '左側「Aa」切換顯示羅馬拼音輔助記憶，右側「＋」可手動新增單字。' },
+    { targetId: 'vocab-btn-group',   snapToId: 'vocab-display-card', noScroll: true, text: [
+      '左側「Aa」切換顯示羅馬拼音輔助記憶。',
+      '右側「＋」可手動新增單字。'
+    ] },
     { targetId: 'gojuuon-fixed-btn', tip: { ref: 'vocab-filter-bar', anchor: 'right' }, noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
@@ -7698,7 +7714,10 @@ function showQuizTutorial() {
   tutorialShow('quiz-help-btn', [
     { targetId: 'quiz-week-bar', snapToId: 'quiz-main', text: '顯示最近七天的學習紀錄，點擊日期可切換到當天的試題，左側箭頭可回顧上週。' },
     { targetId: 'quiz-level-tag', tip: { ref: 'quiz-week-bar', anchor: 'left' }, noScroll: true, text: '顯示目前試題的難度等級。長按可切換此日期的文章與試題難度，文章頁也會同步連動。' },
-    { targetId: 'quiz-tabs', snapToId: 'quiz-main', text: '五種題型：單字聽力（聽單字選中文）、句子聽力（聽整句選翻譯）、填空、句子判斷、句子排列。每天各產生一組題目，每日題數可由設定頁的輕鬆、標準、專注模式調整。' },
+    { targetId: 'quiz-tabs', snapToId: 'quiz-main', text: [
+      '五種題型：單字聽力（聽單字選中文）、句子聽力（聽整句選翻譯）、填空、句子判斷、句子排列。',
+      '每天各產生一組題目，每日題數可由設定頁的輕鬆、標準、專注模式調整。'
+    ] },
     { targetId: 'quiz-main', spotlightHeight: 190, text: '依序作答，每題即時給分；填空、判斷、排列、句子聽力題目右上角的「あ漢」可切換純假名或漢字顯示，完成後可重新作答。' },
     { targetId: 'gojuuon-fixed-btn', tip: { ref: 'quiz-week-bar', anchor: 'right' }, noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
@@ -7707,7 +7726,10 @@ function showGojuuonTutorial() {
   if (_tutBtnId === 'gojuuon-help-btn') { tutorialClose(); return; }
   tutorialShow('gojuuon-help-btn', [
     { targetId: 'gojuuon-scroll', text: '點擊任一個假名格子，可即時聆聽該音的發音，方便邊看邊記。' },
-    { targetId: 'gojuuon-chips', snapToId: 'gojuuon-scroll', noScroll: true, text: '「片」切換至片假名對照練習，「濁音」和「半濁音」展開對應的字群。' },
+    { targetId: 'gojuuon-chips', snapToId: 'gojuuon-scroll', noScroll: true, text: [
+      '「片」切換至片假名對照練習。',
+      '「濁音」和「半濁音」展開對應的字群。'
+    ] },
   ]);
 }
 

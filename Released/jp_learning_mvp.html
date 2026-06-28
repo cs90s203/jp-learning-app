@@ -1418,6 +1418,7 @@
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
 </head>
 <body>
 
@@ -2135,7 +2136,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.3.1
+          v1.4.0
         </div>
 
       </div>
@@ -2457,6 +2458,7 @@ function switchPage(id) {
   _updateHelpBtnGlow();
 
   if (id === 'article') {
+    track('open_article', { date: selectedArticleDate || getLocalDateStr() });
     // clear stale transform that may have been set by old PTR code (breaks iOS scroll)
     var _paEl = document.getElementById('page-article');
     if (_paEl) _paEl.style.transform = '';
@@ -3125,6 +3127,11 @@ function qzNext() {
   if (QS.idx >= QS.questions.length) {
     QS.phase = 'result';
     saveQuizResults();
+    track('complete_quiz', {
+      section: quizSection,
+      correct: QS.answers.filter(a => a.correct).length,
+      total: QS.answers.length
+    });
   }
   renderQuizMain();
 }
@@ -3357,6 +3364,7 @@ function toggleWrite() {
   localStorage.setItem('writeToggle', active ? '1' : '0');
   document.querySelectorAll('.write-line').forEach(n => n.classList.toggle('hidden', !active));
   setTimeout(ensureArticleScrollable, 250);
+  if (active) track('open_writing');
 }
 // 長按書寫鈕：清空當前這篇的書寫內容
 function _clearCurrentWriting() {
@@ -3742,6 +3750,7 @@ async function reloadArticleWithLevel(key) {
   showToast('載入中…');
   const result = await loadContentForDate(selectedArticleDate, key);
   if (!result.success) { showToast('此等級尚無內容'); return; }
+  track('change_level', { level: key });
   // 儲存此日期的選用等級（不影響全局 CURRENT_LEVEL）
   const log = loadStudyLog();
   const dateStr = selectedArticleDate || getLocalDateStr();
@@ -5304,6 +5313,7 @@ async function _startFollowMode() {
   // 取要播放的句子（依目前 sentenceSelected 過濾）
   _followSentences = SENTENCE_TEXTS.filter((_, i) => sentenceSelected[i] !== false);
   if (!_followSentences.length) { showToast('沒有可跟讀的句子'); return; }
+  track('use_shadowing');
 
   // 停止其他音訊
   if (isRecording) { mediaRecorder.stop(); }
@@ -6932,6 +6942,7 @@ function startVocabQuiz() {
     showToast(filterName ? '目前沒有「' + filterName + '」單字可以複習' : '單字本是空的，先加入單字再複習');
     return;
   }
+  track('review_vocab', { filter: vocabFilter, count: words.length });
 
   const order = localStorage.getItem('quizOrder') || 'due';
   vqQueue = words.slice();
@@ -7987,13 +7998,20 @@ const firebaseConfig = {
   projectId: "jp-learning-app-a9f2c",
   storageBucket: "jp-learning-app-a9f2c.appspot.com",
   messagingSenderId: "1068503481615",
-  appId: "1:1068503481615:web:7e2098a24111139729927a"
+  appId: "1:1068503481615:web:7e2098a24111139729927a",
+  measurementId: "G-26WXHGMX2J"
 };
 var fbAuth = null;
 var fbDb   = null;
+var fbAnalytics = null;
 var currentUser = null;
 var firebaseInitError = null;
 var authStateKnown = false; // Firebase auth 狀態是否已確認（避免時序競爭顯示錯誤 UI）
+
+// Google Analytics（GA4）事件追蹤；失敗時靜默不影響 App
+function track(name, params) {
+  try { if (fbAnalytics) fbAnalytics.logEvent(name, params || {}); } catch (e) {}
+}
 
 try {
   if (!firebase.apps || !firebase.apps.length) {
@@ -8001,6 +8019,7 @@ try {
   }
   fbAuth = firebase.auth();
   fbDb   = firebase.firestore();
+  try { if (firebase.analytics) fbAnalytics = firebase.analytics(); } catch (e) {}
 
   // 處理之前未完成的 redirect（舊版遺留，新版改用 popup）
   fbAuth.getRedirectResult().then(result => {
