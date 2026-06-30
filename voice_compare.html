@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日語語音比較</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 20px; background: #f5f5f5; }
+  h2 { color: #333; }
+  .section { background: #fff; border-radius: 12px; padding: 20px; margin: 16px 0; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+  .ja { font-size: 20px; color: #111; margin: 8px 0 6px; }
+  .cn { font-size: 13px; color: #888; margin: 0 0 14px; }
+  .voices { display: flex; flex-wrap: wrap; gap: 8px; }
+  button { padding: 9px 16px; border: none; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 500; transition: opacity .15s; }
+  button:active { opacity: 0.7; }
+  .btn-neural { background: #34a853; color: #fff; }
+  .btn-wavenet { background: #1a73e8; color: #fff; }
+  .btn-system { background: #aaa; color: #fff; }
+  .badge { font-size: 10px; display: block; font-weight: normal; margin-top: 2px; opacity: 0.85; }
+  #log { font-size: 12px; color: #888; margin-top: 16px; text-align: center; min-height: 18px; }
+</style>
+</head>
+<body>
+<h2>🎌 日語語音品質比較</h2>
+<p style="color:#666;font-size:13px">點擊按鈕試聽。綠色 = Google Neural2（最新）；藍色 = Wavenet；灰色 = 系統語音</p>
+
+<div id="sentences"></div>
+<div id="log"></div>
+
+<script>
+const API_KEY = 'AIzaSyCB1a33UuiKczwqoV6zRZH-ftd-M4D3yOE';
+const TTS_URL = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${API_KEY}`;
+
+const SENTENCES = [
+  { ja: '今日はいい天気ですね。', cn: '今天天氣真好呢。' },
+  { ja: '日本語の勉強を頑張っています。', cn: '我正在努力學習日語。' },
+  { ja: 'おすすめの居酒屋はありますか？', cn: '有推薦的居酒屋嗎？' },
+];
+
+const GOOGLE_VOICES = [
+  { label: 'Neural2（女）', cls: 'btn-neural', name: 'ja-JP-Neural2-B', badge: 'Google Neural2' },
+  { label: 'Neural2（男）', cls: 'btn-neural', name: 'ja-JP-Neural2-C', badge: 'Google Neural2' },
+  { label: 'Wavenet（女）', cls: 'btn-wavenet', name: 'ja-JP-Wavenet-A', badge: 'Google Wavenet' },
+  { label: 'Wavenet（男）', cls: 'btn-wavenet', name: 'ja-JP-Wavenet-D', badge: 'Google Wavenet' },
+];
+
+function log(msg) { document.getElementById('log').textContent = msg; }
+
+async function playGoogle(text, voiceName) {
+  log(`載入中… (${voiceName})`);
+  try {
+    const res = await fetch(TTS_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        input: { text },
+        voice: { languageCode: 'ja-JP', name: voiceName },
+        audioConfig: { audioEncoding: 'MP3', speakingRate: 0.95 }
+      })
+    });
+    const data = await res.json();
+    if (data.error) { log('❌ 錯誤: ' + data.error.message); return; }
+    const audio = new Audio('data:audio/mp3;base64,' + data.audioContent);
+    audio.play();
+    log(`▶ ${voiceName}`);
+  } catch(e) { log('❌ ' + e.message); }
+}
+
+let systemVoices = [];
+function loadSystemVoices() {
+  return new Promise(resolve => {
+    const check = () => {
+      const v = speechSynthesis.getVoices().filter(v => v.lang.startsWith('ja'));
+      if (v.length) { systemVoices = v; resolve(); }
+      else setTimeout(check, 100);
+    };
+    speechSynthesis.onvoiceschanged = check;
+    check();
+  });
+}
+
+function playSystem(text, voice) {
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.voice = voice; u.lang = 'ja-JP'; u.rate = 0.95;
+  speechSynthesis.speak(u);
+  log(`▶ ${voice.name}（系統語音）`);
+}
+
+async function init() {
+  await loadSystemVoices();
+  const eddyVoice  = systemVoices.find(v => v.name.startsWith('Eddy')) || systemVoices[0];
+  const kyokoVoice = systemVoices.find(v => v.name === 'Kyoko') || null;
+
+  document.getElementById('sentences').innerHTML = '';
+  SENTENCES.forEach(s => {
+    const div = document.createElement('div');
+    div.className = 'section';
+    div.innerHTML = `<div class="ja">${s.ja}</div><div class="cn">${s.cn}</div><div class="voices"></div>`;
+    const vDiv = div.querySelector('.voices');
+
+    GOOGLE_VOICES.forEach(v => {
+      const btn = document.createElement('button');
+      btn.className = v.cls;
+      btn.innerHTML = `${v.label}<span class="badge">${v.badge}</span>`;
+      btn.onclick = () => playGoogle(s.ja, v.name);
+      vDiv.appendChild(btn);
+    });
+
+    [eddyVoice, kyokoVoice].filter(Boolean).forEach(v => {
+      const btn = document.createElement('button');
+      btn.className = 'btn-system';
+      const label = v.name.startsWith('Eddy') ? 'Eddy（App 現況）' : 'Kyoko（舊）';
+      btn.innerHTML = `${label}<span class="badge">系統語音</span>`;
+      btn.onclick = () => playSystem(s.ja, v);
+      vDiv.appendChild(btn);
+    });
+
+    document.getElementById('sentences').appendChild(div);
+  });
+}
+
+init();
+</script>
+</body>
+</html>

@@ -1972,7 +1972,14 @@
 
         <p class="section-title">語言</p>
         <div class="card" style="padding:4px 16px">
-          <div id="settings-level-row" class="setting-row" style="cursor:pointer" onclick="toggleLevelPicker()">
+          <div class="setting-row" style="cursor:pointer" onclick="cycleTtsVoice()">
+            <div>
+              <div class="setting-label">發音語音</div>
+              <div class="setting-sub">點擊切換，會試播一句確認</div>
+            </div>
+            <span class="setting-val" id="tts-voice-val">Neural2（女）</span>
+          </div>
+          <div id="settings-level-row" class="setting-row" style="cursor:pointer;border-top:0.5px solid var(--border)" onclick="toggleLevelPicker()">
             <div class="setting-label">目前等級</div>
             <div style="display:flex;align-items:center;gap:6px">
               <span class="setting-val" id="settings-level-val">N5</span>
@@ -2142,7 +2149,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.4.3
+          v1.5.0
         </div>
 
       </div>
@@ -2490,7 +2497,7 @@ function switchPage(id) {
   if (id === 'home')  { calViewYear = TODAY_YEAR; calViewMonth = TODAY_MONTH; renderHomeRing(); renderCalendar(); }
   if (id === 'vocab') renderVocabPage();
   if (id === 'quiz')     initQuizPage();
-  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); renderLevelPicker(); renderMasteryThreshold(); initSettings(); _levelPickerOpen = false; const _lpw = document.getElementById('level-picker-wrap'); if (_lpw) _lpw.style.display = 'none'; const _lpc = document.getElementById('level-picker-chevron'); if (_lpc) _lpc.style.transform = ''; }
+  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); renderLevelPicker(); renderMasteryThreshold(); renderTtsVoiceSetting(); initSettings(); _levelPickerOpen = false; const _lpw = document.getElementById('level-picker-wrap'); if (_lpw) _lpw.style.display = 'none'; const _lpc = document.getElementById('level-picker-chevron'); if (_lpc) _lpc.style.transform = ''; }
   // Show/hide FAB
   document.getElementById('vocab-btn-group').classList.toggle('show', id === 'vocab');
   if (id === 'vocab') updateKanaToggleUI();
@@ -4535,15 +4542,24 @@ function removeFromVocabCards(basic) {
   if (document.getElementById('page-vocab').classList.contains('active')) renderVocabPage();
 }
 
-// ===== 日語語音選擇 =====
-// 優先選新世代語音（macOS Ventura+ / iOS 16+），比 Kyoko 自然
+// ===== 日語語音系統 =====
+const GOOGLE_TTS_KEY = 'AIzaSyCB1a33UuiKczwqoV6zRZH-ftd-M4D3yOE';
+const TTS_VOICE_OPTIONS = [
+  { key: 'neural2-f', label: 'Neural2（女）', googleName: 'ja-JP-Neural2-B' },
+  { key: 'neural2-m', label: 'Neural2（男）', googleName: 'ja-JP-Neural2-C' },
+  { key: 'wavenet-f', label: 'Wavenet（女）', googleName: 'ja-JP-Wavenet-A' },
+  { key: 'wavenet-m', label: 'Wavenet（男）', googleName: 'ja-JP-Wavenet-D' },
+  { key: 'system',   label: '系統語音',      googleName: null },
+];
+let _ttsVoiceKey = localStorage.getItem('ttsVoice') || 'neural2-f';
+
+// 系統語音快取
 let _jpVoice = null;
 function getJpVoice() {
   if (_jpVoice) return _jpVoice;
   const voices = window.speechSynthesis.getVoices();
   const ja = voices.filter(v => v.lang.startsWith('ja'));
   if (!ja.length) return null;
-  // 優先順序：新世代命名語音（非 Kyoko）> Kyoko > 任何 ja-JP
   const PREFER = ['O-ren','Eddy','Sandy','Flo','Reed','Rocko','Shelley','Grandma','Grandpa'];
   for (const name of PREFER) {
     const v = ja.find(v => v.name.startsWith(name));
@@ -4552,13 +4568,59 @@ function getJpVoice() {
   _jpVoice = ja.find(v => v.name === 'Kyoko') || ja[0];
   return _jpVoice;
 }
-// voices 非同步載入，重置快取
 window.speechSynthesis.onvoiceschanged = () => { _jpVoice = null; };
 
-function applyJpVoice(u) {
-  const v = getJpVoice();
-  if (v) u.voice = v;
-  u.lang = 'ja-JP';
+// 正在播放的 Google Audio（供 stop 用）
+let _googleAudio = null;
+
+// 統一日語 TTS 入口；rate 預設 1.0，onend 可選
+function speakJa(text, rate, onend) {
+  rate = rate || 1.0;
+  window.speechSynthesis.cancel();
+  if (_googleAudio) { _googleAudio.pause(); _googleAudio = null; }
+
+  const opt = TTS_VOICE_OPTIONS.find(o => o.key === _ttsVoiceKey) || TTS_VOICE_OPTIONS[0];
+  if (opt.googleName) {
+    fetch('https://texttospeech.googleapis.com/v1/text:synthesize?key=' + GOOGLE_TTS_KEY, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        input: { text: text },
+        voice: { languageCode: 'ja-JP', name: opt.googleName },
+        audioConfig: { audioEncoding: 'MP3', speakingRate: rate }
+      })
+    }).then(function(r){ return r.json(); }).then(function(data) {
+      if (!data.audioContent) { if (onend) onend(); return; }
+      var audio = new Audio('data:audio/mp3;base64,' + data.audioContent);
+      _googleAudio = audio;
+      audio.onended = function() { _googleAudio = null; if (onend) onend(); };
+      audio.onerror = function() { _googleAudio = null; if (onend) onend(); };
+      audio.play();
+    }).catch(function() { if (onend) onend(); });
+  } else {
+    var u = new SpeechSynthesisUtterance(text);
+    var v = getJpVoice();
+    if (v) u.voice = v;
+    u.lang = 'ja-JP';
+    u.rate = rate;
+    u.onend = onend || null;
+    window.speechSynthesis.speak(u);
+  }
+}
+
+function renderTtsVoiceSetting() {
+  const opt = TTS_VOICE_OPTIONS.find(o => o.key === _ttsVoiceKey) || TTS_VOICE_OPTIONS[0];
+  const el = document.getElementById('tts-voice-val');
+  if (el) el.textContent = opt.label;
+}
+
+function cycleTtsVoice() {
+  const idx = TTS_VOICE_OPTIONS.findIndex(o => o.key === _ttsVoiceKey);
+  _ttsVoiceKey = TTS_VOICE_OPTIONS[(idx + 1) % TTS_VOICE_OPTIONS.length].key;
+  localStorage.setItem('ttsVoice', _ttsVoiceKey);
+  renderTtsVoiceSetting();
+  // 試播一句讓使用者即時確認
+  speakJa('おはようございます', 1.0);
 }
 
 // ===== 朗讀控制 =====
@@ -4613,12 +4675,7 @@ function _markSentencePlay(idx) {
 
 // 播放單句
 function _speakOne(text, onend) {
-  const u = new SpeechSynthesisUtterance(text);
-  applyJpVoice(u);
-  u.rate = readAloudRate;
-  u.onend = onend;
-  readAloudUtterance = u;
-  window.speechSynthesis.speak(u);
+  speakJa(text, readAloudRate, onend);
 }
 
 // 從 queue 逐句播放，句間暫停 500ms
@@ -4668,6 +4725,7 @@ function toggleReadAloud() {
 
 function stopReadAloud() {
   window.speechSynthesis.cancel();
+  if (_googleAudio) { _googleAudio.pause(); _googleAudio = null; }
   if (readAloudTimer) { clearTimeout(readAloudTimer); readAloudTimer = null; }
   readAloudQueue = [];
   readAloudPlaying = false;
@@ -5479,12 +5537,7 @@ function _followStep() {
     _followRecordWindow(n, total);
   };
 
-  window.speechSynthesis.cancel();
-  const u  = new SpeechSynthesisUtterance(text);
-  applyJpVoice(u);
-  u.rate   = readAloudRate;
-  u.onend  = afterTts;
-  window.speechSynthesis.speak(u);
+  speakJa(text, readAloudRate, afterTts);
   // iOS 備用：估算時間 + 500ms buffer
   setTimeout(afterTts, estMs + 500);
 }
@@ -5610,36 +5663,21 @@ function setPlayRecIcon(playing) {
 
 // TTS speak
 function speak(text) {
-  if (!window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  // iOS workaround: synthesis can get stuck in paused state after multiple calls
-  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
-  const u = new SpeechSynthesisUtterance(text);
-  applyJpVoice(u); u.rate = 0.85;
-  window.speechSynthesis.speak(u);
+  speakJa(text, 0.85);
 }
 
 // 試題聽力播放（帶視覺回饋）
 function qzPlayWord(text) {
-  if (!window.speechSynthesis) return;
   const btn = document.getElementById('qz-play-btn');
   if (btn) { btn.style.opacity = '0.6'; btn.textContent = '播放中…'; }
-
-  window.speechSynthesis.cancel();
-  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
-  const u = new SpeechSynthesisUtterance(text);
-  applyJpVoice(u); u.rate = 0.85;
-
   const resetBtn = () => {
     const b = document.getElementById('qz-play-btn');
     if (!b) return;
     b.style.opacity = '1';
     b.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg> 再播放';
   };
-  u.onend = resetBtn;
-  u.onerror = resetBtn;
-  setTimeout(resetBtn, 3000); // fallback：iOS onend 有時不觸發
-  window.speechSynthesis.speak(u);
+  setTimeout(resetBtn, 4000); // fallback
+  speakJa(text, 0.85, resetBtn);
 }
 
 // Toast
@@ -6506,12 +6544,7 @@ function closeGojuuon() {
 }
 
 function gojuuonSpeak(romaji, hira) {
-  if (window.speechSynthesis) {
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(hira);
-    applyJpVoice(u); u.rate = 0.2;
-    window.speechSynthesis.speak(u);
-  }
+  speakJa(hira, 0.5);
 }
 // ─────────────────────────────────────────────────────────
 

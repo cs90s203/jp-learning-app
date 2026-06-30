@@ -1,5 +1,15 @@
 # 日語學習 App — 版本記錄
 
+## v1.5.0 — 2026-06-30
+
+**新功能：Google Neural TTS 語音整合 + 設定頁語音選擇**
+
+- 整合 Google Cloud Text-to-Speech API，支援 Neural2（女/男）、Wavenet（女/男）四種高品質日語語音
+- 設定頁「語言」區塊新增「發音語音」選項，點擊循環切換並即時試播
+- 語音偏好存入 localStorage（`ttsVoice`），預設 Neural2（女）
+- 全部 TTS 播放點（文章朗讀、跟讀、單字發音、試題聽力、五十音）統一走新系統
+- 停止播放同時中斷 Google Audio，避免殘留聲音
+
 ## v1.4.3 — 2026-06-30
 
 **改善：日語 TTS 語音品質升級**
@@ -439,6 +449,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.5.0 — 2026-06-30
+
+新功能：Google Neural TTS 語音整合，設定頁可選語音
 
 ---
 
