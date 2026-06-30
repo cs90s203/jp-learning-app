@@ -1,0 +1,1085 @@
+{
+  "date": "2026-06-30",
+  "level": "n2_lite",
+  "title": "都市と地方の暮らし",
+  "text": "近年、都市部への人口集中が続く一方で、地方移住に関心を持つ人も増えてきている。都市では交通の便がよく、医療や教育の施設が充実しているが、生活費が高く、住宅も狭いことが多い。これに対して、地方は自然が豊かで物価も安く、ゆとりある生活が送れるという利点がある。しかしながら、雇用機会が限られており、利便性の面では都市に及ばないのも事実だ。テレワークの普及により、都市で働きながら地方に住む「二地域居住」というライフスタイルも注目されつつある。どちらの暮らし方が自分に合っているかは、価値観や生活環境によって異なるだろう。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市部",
+      "basic_form": "都市部",
+      "reading": "としぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人口",
+      "basic_form": "人口",
+      "reading": "じんこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "集中",
+      "basic_form": "集中",
+      "reading": "しゅうちゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続く",
+      "basic_form": "続く",
+      "reading": "つづく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方",
+      "reading": "いっぽうで",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "移住",
+      "basic_form": "移住",
+      "reading": "いじゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "関心",
+      "basic_form": "関心",
+      "reading": "かんしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "持つ",
+      "basic_form": "持つ",
+      "reading": "もつ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えてきている",
+      "basic_form": "増える",
+      "reading": "ふえてきている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市",
+      "basic_form": "都市",
+      "reading": "とし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "交通",
+      "basic_form": "交通",
+      "reading": "こうつう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "便",
+      "basic_form": "便",
+      "reading": "べん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よく",
+      "basic_form": "よい",
+      "reading": "よく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "医療",
+      "basic_form": "医療",
+      "reading": "いりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "教育",
+      "basic_form": "教育",
+      "reading": "きょういく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "施設",
+      "basic_form": "施設",
+      "reading": "しせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "充実している",
+      "basic_form": "充実する",
+      "reading": "じゅうじつしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "生活費",
+      "basic_form": "生活費",
+      "reading": "せいかつひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高く",
+      "basic_form": "高い",
+      "reading": "たかく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "住宅",
+      "basic_form": "住宅",
+      "reading": "じゅうたく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "狭い",
+      "basic_form": "狭い",
+      "reading": "せまい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多い",
+      "basic_form": "多い",
+      "reading": "おおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これに対して",
+      "basic_form": "これに対して",
+      "reading": "これにたいして",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自然",
+      "basic_form": "自然",
+      "reading": "しぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "豊か",
+      "basic_form": "豊か",
+      "reading": "ゆたか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "物価",
+      "basic_form": "物価",
+      "reading": "ぶっか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安く",
+      "basic_form": "安い",
+      "reading": "やすく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ゆとり",
+      "basic_form": "ゆとり",
+      "reading": "ゆとり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "生活",
+      "basic_form": "生活",
+      "reading": "せいかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "送れる",
+      "basic_form": "送る",
+      "reading": "おくれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "利点",
+      "basic_form": "利点",
+      "reading": "りてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかしながら",
+      "basic_form": "しかしながら",
+      "reading": "しかしながら",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "雇用",
+      "basic_form": "雇用",
+      "reading": "こよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "機会",
+      "basic_form": "機会",
+      "reading": "きかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "限られており",
+      "basic_form": "限る",
+      "reading": "かぎられており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "利便性",
+      "basic_form": "利便性",
+      "reading": "りべんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "面",
+      "basic_form": "面",
+      "reading": "めん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "都市",
+      "basic_form": "都市",
+      "reading": "とし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "及ばない",
+      "basic_form": "及ぶ",
+      "reading": "およばない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "事実",
+      "basic_form": "事実",
+      "reading": "じじつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "テレワーク",
+      "basic_form": "テレワーク",
+      "reading": "テレワーク",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "普及",
+      "basic_form": "普及",
+      "reading": "ふきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "により",
+      "basic_form": "により",
+      "reading": "により",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市",
+      "basic_form": "都市",
+      "reading": "とし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "働き",
+      "basic_form": "働く",
+      "reading": "はたらき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ながら",
+      "basic_form": "ながら",
+      "reading": "ながら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "住む",
+      "basic_form": "住む",
+      "reading": "すむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "「二地域居住」",
+      "basic_form": "二地域居住",
+      "reading": "にちいききょじゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ライフスタイル",
+      "basic_form": "ライフスタイル",
+      "reading": "ライフスタイル",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "注目されつつある",
+      "basic_form": "注目する",
+      "reading": "ちゅうもくされつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "どちら",
+      "basic_form": "どちら",
+      "reading": "どちら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "暮らし方",
+      "basic_form": "暮らし方",
+      "reading": "くらしかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自分",
+      "basic_form": "自分",
+      "reading": "じぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "合っている",
+      "basic_form": "合う",
+      "reading": "あっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "価値観",
+      "basic_form": "価値観",
+      "reading": "かちかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活環境",
+      "basic_form": "生活環境",
+      "reading": "せいかつかんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "異なる",
+      "basic_form": "異なる",
+      "reading": "ことなる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だ",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年、最近幾年",
+      "romaji": "kinnen"
+    },
+    "都市部": {
+      "meaning": "城市地區",
+      "romaji": "toshi-bu"
+    },
+    "人口": {
+      "meaning": "人口",
+      "romaji": "jinkou"
+    },
+    "集中": {
+      "meaning": "集中",
+      "romaji": "shuuchuu"
+    },
+    "続く": {
+      "meaning": "持續",
+      "romaji": "tsuzuku"
+    },
+    "一方": {
+      "meaning": "另一方面",
+      "romaji": "ippou"
+    },
+    "地方": {
+      "meaning": "地方、農村",
+      "romaji": "chihou"
+    },
+    "移住": {
+      "meaning": "移居、遷居",
+      "romaji": "ijuu"
+    },
+    "関心": {
+      "meaning": "關心、興趣",
+      "romaji": "kanshin"
+    },
+    "持つ": {
+      "meaning": "持有、具有",
+      "romaji": "motsu"
+    },
+    "増える": {
+      "meaning": "增加",
+      "romaji": "fueru"
+    },
+    "都市": {
+      "meaning": "都市",
+      "romaji": "toshi"
+    },
+    "交通": {
+      "meaning": "交通",
+      "romaji": "koutsuu"
+    },
+    "便": {
+      "meaning": "方便程度",
+      "romaji": "ben"
+    },
+    "よい": {
+      "meaning": "好的",
+      "romaji": "yoi"
+    },
+    "医療": {
+      "meaning": "醫療",
+      "romaji": "iryou"
+    },
+    "教育": {
+      "meaning": "教育",
+      "romaji": "kyouiku"
+    },
+    "施設": {
+      "meaning": "設施",
+      "romaji": "shisetsu"
+    },
+    "充実する": {
+      "meaning": "充實、完善",
+      "romaji": "juujitsu suru"
+    },
+    "生活費": {
+      "meaning": "生活費",
+      "romaji": "seikatsuhi"
+    },
+    "高い": {
+      "meaning": "高的、貴的",
+      "romaji": "takai"
+    },
+    "住宅": {
+      "meaning": "住宅",
+      "romaji": "juutaku"
+    },
+    "狭い": {
+      "meaning": "狹窄的",
+      "romaji": "semai"
+    },
+    "多い": {
+      "meaning": "多的",
+      "romaji": "ooi"
+    },
+    "自然": {
+      "meaning": "自然",
+      "romaji": "shizen"
+    },
+    "豊か": {
+      "meaning": "豐富的、富裕的",
+      "romaji": "yutaka"
+    },
+    "物価": {
+      "meaning": "物價",
+      "romaji": "bukka"
+    },
+    "安い": {
+      "meaning": "便宜的",
+      "romaji": "yasui"
+    },
+    "ゆとり": {
+      "meaning": "餘裕、從容",
+      "romaji": "yutori"
+    },
+    "生活": {
+      "meaning": "生活",
+      "romaji": "seikatsu"
+    },
+    "送る": {
+      "meaning": "度過（生活）、送",
+      "romaji": "okuru"
+    },
+    "利点": {
+      "meaning": "優點、好處",
+      "romaji": "riten"
+    },
+    "ある": {
+      "meaning": "有、存在",
+      "romaji": "aru"
+    },
+    "しかしながら": {
+      "meaning": "然而（較正式）",
+      "romaji": "shikashinagara"
+    },
+    "雇用": {
+      "meaning": "雇用",
+      "romaji": "koyou"
+    },
+    "機会": {
+      "meaning": "機會",
+      "romaji": "kikai"
+    },
+    "限る": {
+      "meaning": "限制、限定",
+      "romaji": "kagiru"
+    },
+    "利便性": {
+      "meaning": "便利性",
+      "romaji": "ribensei"
+    },
+    "面": {
+      "meaning": "方面",
+      "romaji": "men"
+    },
+    "及ぶ": {
+      "meaning": "達到、趕上",
+      "romaji": "oyobu"
+    },
+    "事実": {
+      "meaning": "事實",
+      "romaji": "jijitsu"
+    },
+    "テレワーク": {
+      "meaning": "遠端工作",
+      "romaji": "terewaaku"
+    },
+    "普及": {
+      "meaning": "普及",
+      "romaji": "fukyuu"
+    },
+    "働く": {
+      "meaning": "工作",
+      "romaji": "hataraku"
+    },
+    "住む": {
+      "meaning": "居住",
+      "romaji": "sumu"
+    },
+    "二地域居住": {
+      "meaning": "雙地區居住（在兩個地方生活）",
+      "romaji": "ni-chiiki kyojuu"
+    },
+    "ライフスタイル": {
+      "meaning": "生活方式",
+      "romaji": "raifusutairu"
+    },
+    "注目する": {
+      "meaning": "受到關注",
+      "romaji": "chuumoku suru"
+    },
+    "どちら": {
+      "meaning": "哪一個（二選一）",
+      "romaji": "dochira"
+    },
+    "暮らし方": {
+      "meaning": "生活方式",
+      "romaji": "kurashikata"
+    },
+    "自分": {
+      "meaning": "自己",
+      "romaji": "jibun"
+    },
+    "合う": {
+      "meaning": "適合",
+      "romaji": "au"
+    },
+    "価値観": {
+      "meaning": "價值觀",
+      "romaji": "kachikan"
+    },
+    "生活環境": {
+      "meaning": "生活環境",
+      "romaji": "seikatsu kankyou"
+    },
+    "異なる": {
+      "meaning": "不同、有所差異",
+      "romaji": "kotonaru"
+    },
+    "人": {
+      "meaning": "人",
+      "romaji": "hito"
+    },
+    "こと": {
+      "meaning": "事情、事（抽象名詞）",
+      "romaji": "koto"
+    }
+  },
+  "particles": {
+    "へ": "表示移動方向",
+    "の": "表示所有或修飾",
+    "が": "主語助詞",
+    "で": "表示場所或手段",
+    "は": "主題助詞",
+    "や": "列舉部分例子（…和…等）",
+    "に": "表示對象或方向",
+    "を": "受詞助詞",
+    "も": "也，表示追加",
+    "という": "表示稱為、所謂的",
+    "により": "表示原因或手段（書面語）",
+    "ながら": "表示同時進行（一邊…一邊…）",
+    "によって": "表示依據、根據"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，都市地區的人口集中持續增加，",
+        "word": "集中"
+      },
+      {
+        "text": "另一方面，對移居地方有興趣的人也越來越多。",
+        "word": "移住"
+      }
+    ],
+    [
+      {
+        "text": "都市交通方便，",
+        "word": "交通"
+      },
+      {
+        "text": "醫療和教育設施完善，",
+        "word": "施設"
+      },
+      {
+        "text": "但生活費高，住宅也大多狹窄。",
+        "word": "生活費"
+      }
+    ],
+    [
+      {
+        "text": "相對地，地方自然豐富，物價也便宜，",
+        "word": "物価"
+      },
+      {
+        "text": "有能過從容生活的優點。",
+        "word": "ゆとり"
+      }
+    ],
+    [
+      {
+        "text": "然而，就業機會有限，",
+        "word": "雇用"
+      },
+      {
+        "text": "在便利性方面不及都市也是事實。",
+        "word": "利便性"
+      }
+    ],
+    [
+      {
+        "text": "隨著遠端工作的普及，",
+        "word": "テレワーク"
+      },
+      {
+        "text": "在都市工作卻住在地方的「雙地區居住」生活方式也日益受到關注。",
+        "word": "二地域居住"
+      }
+    ],
+    [
+      {
+        "text": "哪種生活方式適合自己，",
+        "word": "暮らし方"
+      },
+      {
+        "text": "會因價值觀和生活環境而有所不同吧。",
+        "word": "価値観"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.12,
+    "jlpt_level": "N2⁻"
+  }
+}

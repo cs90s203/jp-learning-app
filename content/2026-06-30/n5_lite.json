@@ -1,0 +1,124 @@
+{
+  "date": "2026-06-30",
+  "level": "n5_lite",
+  "title": "わたしのいえ",
+  "text": "わたしのいえはおおきいです。いえのなかにへやがみっつあります。だいどころもあります。にわもあります。にわにきがあります。きはみどりです。いえのまえにくるまがあります。くるまはしろいです。わたしはまいにちいえにいます。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "いえ", "basic_form": "いえ", "reading": "いえ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "おおきい", "basic_form": "おおきい", "reading": "おおきい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "いえ", "basic_form": "いえ", "reading": "いえ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "なか", "basic_form": "なか", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "へや", "basic_form": "へや", "reading": "へや", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "みっつ", "basic_form": "みっつ", "reading": "みっつ", "pos": "名詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "だいどころ", "basic_form": "だいどころ", "reading": "だいどころ", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "にわ", "basic_form": "にわ", "reading": "にわ", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "にわ", "basic_form": "にわ", "reading": "にわ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "き", "basic_form": "き", "reading": "き", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "き", "basic_form": "き", "reading": "き", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "みどり", "basic_form": "みどり", "reading": "みどり", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "いえ", "basic_form": "いえ", "reading": "いえ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "まえ", "basic_form": "まえ", "reading": "まえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "くるま", "basic_form": "くるま", "reading": "くるま", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "くるま", "basic_form": "くるま", "reading": "くるま", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "しろい", "basic_form": "しろい", "reading": "しろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "まいにち", "basic_form": "まいにち", "reading": "まいにち", "pos": "名詞" },
+    { "surface_form": "いえ", "basic_form": "いえ", "reading": "いえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "います", "basic_form": "いる", "reading": "います", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我", "romaji": "watashi" },
+    "いえ": { "meaning": "家", "romaji": "ie" },
+    "おおきい": { "meaning": "大的", "romaji": "ookii" },
+    "なか": { "meaning": "裡面、中間", "romaji": "naka" },
+    "へや": { "meaning": "房間", "romaji": "heya" },
+    "みっつ": { "meaning": "三個", "romaji": "mittsu" },
+    "ある": { "meaning": "有（無生命）", "romaji": "aru" },
+    "だいどころ": { "meaning": "廚房", "romaji": "daidokoro" },
+    "にわ": { "meaning": "庭院", "romaji": "niwa" },
+    "き": { "meaning": "樹木", "romaji": "ki" },
+    "みどり": { "meaning": "綠色", "romaji": "midori" },
+    "まえ": { "meaning": "前面", "romaji": "mae" },
+    "くるま": { "meaning": "汽車", "romaji": "kuruma" },
+    "しろい": { "meaning": "白色的", "romaji": "shiroi" },
+    "まいにち": { "meaning": "每天", "romaji": "mainichi" },
+    "いる": { "meaning": "在（有生命）", "romaji": "iru" }
+  },
+  "particles": {
+    "の": "表示所有或修飾關係（～的）",
+    "は": "主題助詞，標示話題",
+    "に": "表示存在地點或方向",
+    "が": "主語助詞，標示主語",
+    "も": "也、也有，表示同類追加",
+    "で": "表示場所或手段"
+  },
+  "translations": [
+    [
+      { "text": "我的家", "word": "いえ" },
+      { "text": "很大。", "word": "おおきい" }
+    ],
+    [
+      { "text": "家裡面", "word": "なか" },
+      { "text": "有三個房間。", "word": "へや" }
+    ],
+    [
+      { "text": "也有廚房。", "word": "だいどころ" }
+    ],
+    [
+      { "text": "也有庭院。", "word": "にわ" }
+    ],
+    [
+      { "text": "庭院裡有樹。", "word": "き" }
+    ],
+    [
+      { "text": "樹是綠色的。", "word": "みどり" }
+    ],
+    [
+      { "text": "家的前面有一輛車。", "word": "くるま" }
+    ],
+    [
+      { "text": "車是白色的。", "word": "しろい" }
+    ],
+    [
+      { "text": "我每天都在家。", "word": "まいにち" }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.05,
+    "jlpt_level": "N5⁻"
+  }
+}

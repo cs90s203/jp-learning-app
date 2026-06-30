@@ -1,0 +1,1123 @@
+{
+  "date": "2026-06-30",
+  "level": "n2",
+  "title": "少子化と社会への影響",
+  "text": "日本では近年、出生率の低下が深刻な社会問題となっている。少子化が進むにつれて、労働力の不足や社会保障費の増大など、さまざまな課題が生じている。政府はこの問題に対処するため、育児支援の充実や保育所の拡充などの政策を打ち出しているが、抜本的な解決には至っていない。一方、少子化の背景には、若者の晩婚化・非婚化の傾向や、子育てにかかる経済的負担の重さがあると指摘されている。したがって、単に子育て支援を強化するだけでなく、働き方の改革や住宅政策など、社会全体の構造的な見直しが求められている。少子化の進行を食い止めるには、長期的な視点に立った総合的な取り組みが不可欠である。",
+  "tokens": [
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "出生率",
+      "basic_form": "出生率",
+      "reading": "しゅっしょうりつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "低下",
+      "basic_form": "低下",
+      "reading": "ていか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深刻な",
+      "basic_form": "深刻",
+      "reading": "しんこくな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "社会問題",
+      "basic_form": "社会問題",
+      "reading": "しゃかいもんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっている",
+      "basic_form": "なる",
+      "reading": "なっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少子化",
+      "basic_form": "少子化",
+      "reading": "しょうしか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進む",
+      "basic_form": "進む",
+      "reading": "すすむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "につれて",
+      "basic_form": "につれて",
+      "reading": "につれて",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "労働力",
+      "basic_form": "労働力",
+      "reading": "ろうどうりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不足",
+      "basic_form": "不足",
+      "reading": "ふそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "社会保障費",
+      "basic_form": "社会保障費",
+      "reading": "しゃかいほしょうひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増大",
+      "basic_form": "増大",
+      "reading": "ぞうだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "さまざまな",
+      "basic_form": "さまざま",
+      "reading": "さまざまな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生じている",
+      "basic_form": "生じる",
+      "reading": "しょうじている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政府",
+      "basic_form": "政府",
+      "reading": "せいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対処する",
+      "basic_form": "対処する",
+      "reading": "たいしょする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "育児支援",
+      "basic_form": "育児支援",
+      "reading": "いくじしえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "充実",
+      "basic_form": "充実",
+      "reading": "じゅうじつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保育所",
+      "basic_form": "保育所",
+      "reading": "ほいくじょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "拡充",
+      "basic_form": "拡充",
+      "reading": "かくじゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "政策",
+      "basic_form": "政策",
+      "reading": "せいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "打ち出している",
+      "basic_form": "打ち出す",
+      "reading": "うちだしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "抜本的な",
+      "basic_form": "抜本的",
+      "reading": "ばっぽんてきな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "解決",
+      "basic_form": "解決",
+      "reading": "かいけつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "至っていない",
+      "basic_form": "至る",
+      "reading": "いたっていない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少子化",
+      "basic_form": "少子化",
+      "reading": "しょうしか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "背景",
+      "basic_form": "背景",
+      "reading": "はいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "若者",
+      "basic_form": "若者",
+      "reading": "わかもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "晩婚化",
+      "basic_form": "晩婚化",
+      "reading": "ばんこんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "・",
+      "basic_form": "・",
+      "reading": "・",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "非婚化",
+      "basic_form": "非婚化",
+      "reading": "ひこんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "傾向",
+      "basic_form": "傾向",
+      "reading": "けいこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "子育て",
+      "basic_form": "子育て",
+      "reading": "こそだて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かかる",
+      "basic_form": "かかる",
+      "reading": "かかる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "経済的",
+      "basic_form": "経済的",
+      "reading": "けいざいてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "負担",
+      "basic_form": "負担",
+      "reading": "ふたん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重さ",
+      "basic_form": "重さ",
+      "reading": "おもさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘されている",
+      "basic_form": "指摘する",
+      "reading": "してきされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "したがって",
+      "basic_form": "したがって",
+      "reading": "したがって",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "単に",
+      "basic_form": "単に",
+      "reading": "たんに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "子育て",
+      "basic_form": "子育て",
+      "reading": "こそだて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "支援",
+      "basic_form": "支援",
+      "reading": "しえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "強化する",
+      "basic_form": "強化する",
+      "reading": "きょうかする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけでなく",
+      "basic_form": "だけでなく",
+      "reading": "だけでなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "働き方",
+      "basic_form": "働き方",
+      "reading": "はたらきかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "改革",
+      "basic_form": "改革",
+      "reading": "かいかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "住宅政策",
+      "basic_form": "住宅政策",
+      "reading": "じゅうたくせいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "社会全体",
+      "basic_form": "社会全体",
+      "reading": "しゃかいぜんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "構造的な",
+      "basic_form": "構造的",
+      "reading": "こうぞうてきな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "見直し",
+      "basic_form": "見直し",
+      "reading": "みなおし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求められている",
+      "basic_form": "求める",
+      "reading": "もとめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少子化",
+      "basic_form": "少子化",
+      "reading": "しょうしか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進行",
+      "basic_form": "進行",
+      "reading": "しんこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食い止める",
+      "basic_form": "食い止める",
+      "reading": "くいとめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "長期的な",
+      "basic_form": "長期的",
+      "reading": "ちょうきてきな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "視点",
+      "basic_form": "視点",
+      "reading": "してん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "立った",
+      "basic_form": "立つ",
+      "reading": "たった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "総合的な",
+      "basic_form": "総合的",
+      "reading": "そうごうてきな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "取り組み",
+      "basic_form": "取り組み",
+      "reading": "とりくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不可欠",
+      "basic_form": "不可欠",
+      "reading": "ふかけつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "だ",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "日本": {
+      "meaning": "日本",
+      "romaji": "nihon"
+    },
+    "近年": {
+      "meaning": "近年",
+      "romaji": "kinnen"
+    },
+    "出生率": {
+      "meaning": "出生率",
+      "romaji": "shusshouritu"
+    },
+    "低下": {
+      "meaning": "下降、降低",
+      "romaji": "teika"
+    },
+    "深刻": {
+      "meaning": "嚴重的、深刻的",
+      "romaji": "shinkoku"
+    },
+    "社会問題": {
+      "meaning": "社會問題",
+      "romaji": "shakai mondai"
+    },
+    "なる": {
+      "meaning": "成為、變成",
+      "romaji": "naru"
+    },
+    "少子化": {
+      "meaning": "少子化",
+      "romaji": "shoushika"
+    },
+    "進む": {
+      "meaning": "進展、推進",
+      "romaji": "susumu"
+    },
+    "労働力": {
+      "meaning": "勞動力",
+      "romaji": "roudouryoku"
+    },
+    "不足": {
+      "meaning": "不足、短缺",
+      "romaji": "fusoku"
+    },
+    "社会保障費": {
+      "meaning": "社會保障費用",
+      "romaji": "shakai hoshouhi"
+    },
+    "増大": {
+      "meaning": "增大、擴大",
+      "romaji": "zoudai"
+    },
+    "さまざま": {
+      "meaning": "各種各樣",
+      "romaji": "samazama"
+    },
+    "課題": {
+      "meaning": "課題、問題",
+      "romaji": "kadai"
+    },
+    "生じる": {
+      "meaning": "產生、發生",
+      "romaji": "shoujiru"
+    },
+    "政府": {
+      "meaning": "政府",
+      "romaji": "seifu"
+    },
+    "問題": {
+      "meaning": "問題",
+      "romaji": "mondai"
+    },
+    "対処する": {
+      "meaning": "應對、處理",
+      "romaji": "taisho suru"
+    },
+    "ため": {
+      "meaning": "為了",
+      "romaji": "tame"
+    },
+    "育児支援": {
+      "meaning": "育兒支援",
+      "romaji": "ikuji shien"
+    },
+    "充実": {
+      "meaning": "充實、完善",
+      "romaji": "juujitsu"
+    },
+    "保育所": {
+      "meaning": "托兒所",
+      "romaji": "hoikusho"
+    },
+    "拡充": {
+      "meaning": "擴充",
+      "romaji": "kakujuu"
+    },
+    "政策": {
+      "meaning": "政策",
+      "romaji": "seisaku"
+    },
+    "打ち出す": {
+      "meaning": "提出、推出",
+      "romaji": "uchidasu"
+    },
+    "抜本的": {
+      "meaning": "根本性的、徹底的",
+      "romaji": "bappponteki"
+    },
+    "解決": {
+      "meaning": "解決",
+      "romaji": "kaiketsu"
+    },
+    "至る": {
+      "meaning": "達到、抵達",
+      "romaji": "itaru"
+    },
+    "一方": {
+      "meaning": "另一方面",
+      "romaji": "ippou"
+    },
+    "背景": {
+      "meaning": "背景",
+      "romaji": "haikei"
+    },
+    "若者": {
+      "meaning": "年輕人",
+      "romaji": "wakamono"
+    },
+    "晩婚化": {
+      "meaning": "晚婚化趨勢",
+      "romaji": "bankonka"
+    },
+    "非婚化": {
+      "meaning": "不婚化趨勢",
+      "romaji": "hikonka"
+    },
+    "傾向": {
+      "meaning": "傾向、趨勢",
+      "romaji": "keikou"
+    },
+    "子育て": {
+      "meaning": "養育子女",
+      "romaji": "kosodate"
+    },
+    "かかる": {
+      "meaning": "需要、花費",
+      "romaji": "kakaru"
+    },
+    "経済的": {
+      "meaning": "經濟上的",
+      "romaji": "keizaiteki"
+    },
+    "負担": {
+      "meaning": "負擔",
+      "romaji": "futan"
+    },
+    "重さ": {
+      "meaning": "重量、沉重程度",
+      "romaji": "omosa"
+    },
+    "指摘する": {
+      "meaning": "指出",
+      "romaji": "shiteki suru"
+    },
+    "したがって": {
+      "meaning": "因此（書面語）",
+      "romaji": "shitagatte"
+    },
+    "単に": {
+      "meaning": "僅僅、單純地",
+      "romaji": "tanni"
+    },
+    "支援": {
+      "meaning": "支援",
+      "romaji": "shien"
+    },
+    "強化する": {
+      "meaning": "強化",
+      "romaji": "kyouka suru"
+    },
+    "働き方": {
+      "meaning": "工作方式",
+      "romaji": "hatarakikata"
+    },
+    "改革": {
+      "meaning": "改革",
+      "romaji": "kaikaku"
+    },
+    "住宅政策": {
+      "meaning": "住宅政策",
+      "romaji": "juutaku seisaku"
+    },
+    "社会全体": {
+      "meaning": "整個社會",
+      "romaji": "shakai zentai"
+    },
+    "構造的": {
+      "meaning": "結構性的",
+      "romaji": "kouzouteki"
+    },
+    "見直し": {
+      "meaning": "重新審視、修訂",
+      "romaji": "minaoshi"
+    },
+    "求める": {
+      "meaning": "要求、尋求",
+      "romaji": "motomeru"
+    },
+    "進行": {
+      "meaning": "進行、發展",
+      "romaji": "shinkou"
+    },
+    "食い止める": {
+      "meaning": "阻止、遏制",
+      "romaji": "kuitomeru"
+    },
+    "長期的": {
+      "meaning": "長期的",
+      "romaji": "choukiteki"
+    },
+    "視点": {
+      "meaning": "視點、觀點",
+      "romaji": "shiten"
+    },
+    "立つ": {
+      "meaning": "站立；採取（立場）",
+      "romaji": "tatsu"
+    },
+    "総合的": {
+      "meaning": "綜合性的",
+      "romaji": "sougouteki"
+    },
+    "取り組み": {
+      "meaning": "努力、措施",
+      "romaji": "torikumi"
+    },
+    "不可欠": {
+      "meaning": "不可或缺",
+      "romaji": "fukaketsu"
+    },
+    "この": {
+      "meaning": "這個、這～（連體詞）",
+      "romaji": "kono"
+    },
+    "ある": {
+      "meaning": "有、存在（無生命）",
+      "romaji": "aru"
+    }
+  },
+  "particles": {
+    "で": "表示場所或手段",
+    "は": "主題助詞",
+    "が": "主語助詞",
+    "の": "表示所有或修飾",
+    "に": "表示對象或方向",
+    "や": "列舉部分例子",
+    "など": "等等，表示列舉",
+    "を": "受詞助詞",
+    "と": "表示引用內容",
+    "につれて": "隨著…（表伴隨變化）",
+    "だけでなく": "不僅…（還…）"
+  },
+  "translations": [
+    [
+      {
+        "text": "在日本，近年來出生率下降已成為嚴重的社會問題。",
+        "word": "出生率"
+      }
+    ],
+    [
+      {
+        "text": "隨著少子化的推進，",
+        "word": "少子化"
+      },
+      {
+        "text": "勞動力不足、社會保障費增大等各種問題也隨之產生。",
+        "word": "課題"
+      }
+    ],
+    [
+      {
+        "text": "政府為了應對這個問題，",
+        "word": "対処する"
+      },
+      {
+        "text": "推出了充實育兒支援、擴充托兒所等政策，",
+        "word": "政策"
+      },
+      {
+        "text": "但尚未達到根本性的解決。",
+        "word": "解決"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，有指出少子化的背景在於年輕人晚婚化、不婚化的傾向，",
+        "word": "傾向"
+      },
+      {
+        "text": "以及養育子女的經濟負擔沉重。",
+        "word": "負担"
+      }
+    ],
+    [
+      {
+        "text": "因此，不僅是強化育兒支援，",
+        "word": "強化する"
+      },
+      {
+        "text": "還需要從改革工作方式、住宅政策等方面，對整個社會進行結構性的重新審視。",
+        "word": "改革"
+      }
+    ],
+    [
+      {
+        "text": "要阻止少子化的進行，",
+        "word": "食い止める"
+      },
+      {
+        "text": "以長期視角推動綜合性措施是不可或缺的。",
+        "word": "取り組み"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.14,
+    "jlpt_level": "N2"
+  }
+}

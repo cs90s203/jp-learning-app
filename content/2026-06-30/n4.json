@@ -1,0 +1,899 @@
+{
+  "date": "2026-06-30",
+  "level": "n4",
+  "title": "料理を習い始めた",
+  "text": "先月から料理教室に通い始めました。料理が好きなのに、うまく作ることができなかったので、習うことにしました。先生はとても親切で、わからないことを丁寧に教えてもらいました。先週は肉じゃがの作り方を教えてもらいました。材料を切ったり、鍋で煮たりするのは思ったより難しかったです。でも、完成したとき、先生にほめていただいて、うれしかったです。来月は和食だけでなく、パスタも習う予定です。料理ができるようになると、毎日の食事がもっと楽しくなると思います。",
+  "tokens": [
+    {
+      "surface_form": "先月",
+      "basic_form": "先月",
+      "reading": "せんげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "教室",
+      "basic_form": "教室",
+      "reading": "きょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通い",
+      "basic_form": "通う",
+      "reading": "かよい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "始めました",
+      "basic_form": "始める",
+      "reading": "はじめました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "好き",
+      "basic_form": "好き",
+      "reading": "すき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "のに",
+      "basic_form": "のに",
+      "reading": "のに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "うまく",
+      "basic_form": "うまい",
+      "reading": "うまく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "作る",
+      "basic_form": "作る",
+      "reading": "つくる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できなかった",
+      "basic_form": "できる",
+      "reading": "できなかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "習う",
+      "basic_form": "習う",
+      "reading": "ならう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しました",
+      "basic_form": "する",
+      "reading": "しました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "先生",
+      "basic_form": "先生",
+      "reading": "せんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "親切",
+      "basic_form": "親切",
+      "reading": "しんせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わからない",
+      "basic_form": "わかる",
+      "reading": "わからない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "丁寧に",
+      "basic_form": "丁寧",
+      "reading": "ていねいに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "教えて",
+      "basic_form": "教える",
+      "reading": "おしえて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "もらいました",
+      "basic_form": "もらう",
+      "reading": "もらいました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "肉じゃが",
+      "basic_form": "肉じゃが",
+      "reading": "にくじゃが",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作り方",
+      "basic_form": "作り方",
+      "reading": "つくりかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "教えて",
+      "basic_form": "教える",
+      "reading": "おしえて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "もらいました",
+      "basic_form": "もらう",
+      "reading": "もらいました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "材料",
+      "basic_form": "材料",
+      "reading": "ざいりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "切ったり",
+      "basic_form": "切る",
+      "reading": "きったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "鍋",
+      "basic_form": "鍋",
+      "reading": "なべ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "煮たり",
+      "basic_form": "煮る",
+      "reading": "にたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思った",
+      "basic_form": "思う",
+      "reading": "おもった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "難しかった",
+      "basic_form": "難しい",
+      "reading": "むずかしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "完成した",
+      "basic_form": "完成する",
+      "reading": "かんせいした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "とき",
+      "basic_form": "とき",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "先生",
+      "basic_form": "先生",
+      "reading": "せんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほめて",
+      "basic_form": "ほめる",
+      "reading": "ほめて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いただいて",
+      "basic_form": "いただく",
+      "reading": "いただいて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "うれしかった",
+      "basic_form": "うれしい",
+      "reading": "うれしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "来月",
+      "basic_form": "来月",
+      "reading": "らいげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "和食",
+      "basic_form": "和食",
+      "reading": "わしょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけでなく",
+      "basic_form": "だけでなく",
+      "reading": "だけでなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "パスタ",
+      "basic_form": "パスタ",
+      "reading": "パスタ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "習う",
+      "basic_form": "習う",
+      "reading": "ならう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "予定",
+      "basic_form": "予定",
+      "reading": "よてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できる",
+      "basic_form": "できる",
+      "reading": "できる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ようになる",
+      "basic_form": "ようになる",
+      "reading": "ようになる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "毎日",
+      "basic_form": "毎日",
+      "reading": "まいにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食事",
+      "basic_form": "食事",
+      "reading": "しょくじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もっと",
+      "basic_form": "もっと",
+      "reading": "もっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しく",
+      "basic_form": "楽しい",
+      "reading": "たのしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思います",
+      "basic_form": "思う",
+      "reading": "おもいます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先月": {
+      "meaning": "上個月",
+      "romaji": "sengetsu"
+    },
+    "料理": {
+      "meaning": "料理、烹飪",
+      "romaji": "ryouri"
+    },
+    "教室": {
+      "meaning": "教室、課程",
+      "romaji": "kyoushitsu"
+    },
+    "通う": {
+      "meaning": "通勤、定期前往",
+      "romaji": "kayou"
+    },
+    "始める": {
+      "meaning": "開始",
+      "romaji": "hajimeru"
+    },
+    "好き": {
+      "meaning": "喜歡",
+      "romaji": "suki"
+    },
+    "うまい": {
+      "meaning": "擅長的、好吃的",
+      "romaji": "umai"
+    },
+    "作る": {
+      "meaning": "製作、做",
+      "romaji": "tsukuru"
+    },
+    "こと": {
+      "meaning": "事情（名詞化）",
+      "romaji": "koto"
+    },
+    "できる": {
+      "meaning": "能做到、會",
+      "romaji": "dekiru"
+    },
+    "習う": {
+      "meaning": "學習",
+      "romaji": "narau"
+    },
+    "する": {
+      "meaning": "做",
+      "romaji": "suru"
+    },
+    "先生": {
+      "meaning": "老師",
+      "romaji": "sensei"
+    },
+    "とても": {
+      "meaning": "非常",
+      "romaji": "totemo"
+    },
+    "親切": {
+      "meaning": "親切、友善",
+      "romaji": "shinsetsu"
+    },
+    "わかる": {
+      "meaning": "明白、了解",
+      "romaji": "wakaru"
+    },
+    "丁寧": {
+      "meaning": "仔細、有禮貌",
+      "romaji": "teinei"
+    },
+    "教える": {
+      "meaning": "教導",
+      "romaji": "oshieru"
+    },
+    "もらう": {
+      "meaning": "得到（接受別人給的）",
+      "romaji": "morau"
+    },
+    "先週": {
+      "meaning": "上週",
+      "romaji": "senshuu"
+    },
+    "肉じゃが": {
+      "meaning": "馬鈴薯燉肉（日式料理）",
+      "romaji": "nikujaga"
+    },
+    "作り方": {
+      "meaning": "做法",
+      "romaji": "tsukurikata"
+    },
+    "材料": {
+      "meaning": "材料、食材",
+      "romaji": "zairyou"
+    },
+    "切る": {
+      "meaning": "切",
+      "romaji": "kiru"
+    },
+    "鍋": {
+      "meaning": "鍋子",
+      "romaji": "nabe"
+    },
+    "煮る": {
+      "meaning": "燉煮",
+      "romaji": "niru"
+    },
+    "思う": {
+      "meaning": "認為、覺得",
+      "romaji": "omou"
+    },
+    "難しい": {
+      "meaning": "困難的",
+      "romaji": "muzukashii"
+    },
+    "完成する": {
+      "meaning": "完成",
+      "romaji": "kansei suru"
+    },
+    "とき": {
+      "meaning": "時候",
+      "romaji": "toki"
+    },
+    "ほめる": {
+      "meaning": "稱讚",
+      "romaji": "homeru"
+    },
+    "いただく": {
+      "meaning": "收到（謙遜語）",
+      "romaji": "itadaku"
+    },
+    "うれしい": {
+      "meaning": "高興的",
+      "romaji": "ureshii"
+    },
+    "来月": {
+      "meaning": "下個月",
+      "romaji": "raigetsu"
+    },
+    "和食": {
+      "meaning": "日式料理",
+      "romaji": "washoku"
+    },
+    "パスタ": {
+      "meaning": "義大利麵",
+      "romaji": "pasuta"
+    },
+    "予定": {
+      "meaning": "預定、計畫",
+      "romaji": "yotei"
+    },
+    "毎日": {
+      "meaning": "每天",
+      "romaji": "mainichi"
+    },
+    "食事": {
+      "meaning": "飲食、用餐",
+      "romaji": "shokuji"
+    },
+    "もっと": {
+      "meaning": "更加",
+      "romaji": "motto"
+    },
+    "楽しい": {
+      "meaning": "快樂的、有趣的",
+      "romaji": "tanoshii"
+    },
+    "なる": {
+      "meaning": "變成",
+      "romaji": "naru"
+    },
+    "ようになる": {
+      "meaning": "變得會～、開始～（表示變化）",
+      "romaji": "you ni naru"
+    }
+  },
+  "particles": {
+    "から": "表示起點（從…）或原因",
+    "に": "表示目的地或對象",
+    "が": "主語助詞，或標示好惡對象",
+    "のに": "表示「明明…卻…」的意外或遺憾",
+    "ので": "表示原因（因為…所以…）",
+    "は": "主題助詞",
+    "で": "表示場所、手段或工具",
+    "を": "受詞助詞",
+    "より": "表示比較基準（比…）",
+    "も": "也，表示追加",
+    "と": "接在句子後表示所想、所說的內容"
+  },
+  "translations": [
+    [
+      {
+        "text": "從上個月開始去上烹飪課了。",
+        "word": "料理"
+      }
+    ],
+    [
+      {
+        "text": "明明很喜歡料理，",
+        "word": "好き"
+      },
+      {
+        "text": "卻做不好，",
+        "word": "できる"
+      },
+      {
+        "text": "所以決定去學。",
+        "word": "習う"
+      }
+    ],
+    [
+      {
+        "text": "老師非常親切，",
+        "word": "親切"
+      },
+      {
+        "text": "請她仔細教了我不懂的地方。",
+        "word": "教える"
+      }
+    ],
+    [
+      {
+        "text": "上週請她教了我馬鈴薯燉肉的做法。",
+        "word": "肉じゃが"
+      }
+    ],
+    [
+      {
+        "text": "切食材、用鍋燉煮",
+        "word": "切る"
+      },
+      {
+        "text": "比我想像的還要難。",
+        "word": "難しい"
+      }
+    ],
+    [
+      {
+        "text": "不過完成的時候，",
+        "word": "完成する"
+      },
+      {
+        "text": "被老師稱讚，",
+        "word": "ほめる"
+      },
+      {
+        "text": "很開心。",
+        "word": "うれしい"
+      }
+    ],
+    [
+      {
+        "text": "下個月預計不只學日式料理，",
+        "word": "和食"
+      },
+      {
+        "text": "還要學義大利麵。",
+        "word": "パスタ"
+      }
+    ],
+    [
+      {
+        "text": "我覺得學會做料理後，",
+        "word": "料理"
+      },
+      {
+        "text": "每天的飲食會變得更有趣。",
+        "word": "食事"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.1,
+    "jlpt_level": "N4"
+  }
+}
