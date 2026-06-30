@@ -1,5 +1,14 @@
 # 日語學習 App — 版本記錄
 
+## v1.4.3 — 2026-06-30
+
+**改善：日語 TTS 語音品質升級**
+
+- 新增 `getJpVoice()` 優先選取 macOS 新世代語音（Eddy、Sandy、Flo、Reed、Rocko 等）取代舊版 Kyoko
+- 若新世代語音不可用則 fallback 到 Kyoko 或其他日語語音
+- 語音清單變更時自動重新選取（`onvoiceschanged`）
+- 全部 5 處 TTS 播放點套用新選音邏輯
+
 ## v1.4.2 — 2026-06-30
 
 **改善：文章頁移除 demo fallback，改為「尚未準備好」等待畫面**
@@ -430,6 +439,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.4.3 — 2026-06-30
+
+改善：日語 TTS 語音品質升級（優先使用 Eddy 等新世代語音）
 
 ---
 

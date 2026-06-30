@@ -2142,7 +2142,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.4.2
+          v1.4.3
         </div>
 
       </div>
@@ -4535,6 +4535,32 @@ function removeFromVocabCards(basic) {
   if (document.getElementById('page-vocab').classList.contains('active')) renderVocabPage();
 }
 
+// ===== 日語語音選擇 =====
+// 優先選新世代語音（macOS Ventura+ / iOS 16+），比 Kyoko 自然
+let _jpVoice = null;
+function getJpVoice() {
+  if (_jpVoice) return _jpVoice;
+  const voices = window.speechSynthesis.getVoices();
+  const ja = voices.filter(v => v.lang.startsWith('ja'));
+  if (!ja.length) return null;
+  // 優先順序：新世代命名語音（非 Kyoko）> Kyoko > 任何 ja-JP
+  const PREFER = ['O-ren','Eddy','Sandy','Flo','Reed','Rocko','Shelley','Grandma','Grandpa'];
+  for (const name of PREFER) {
+    const v = ja.find(v => v.name.startsWith(name));
+    if (v) { _jpVoice = v; return v; }
+  }
+  _jpVoice = ja.find(v => v.name === 'Kyoko') || ja[0];
+  return _jpVoice;
+}
+// voices 非同步載入，重置快取
+window.speechSynthesis.onvoiceschanged = () => { _jpVoice = null; };
+
+function applyJpVoice(u) {
+  const v = getJpVoice();
+  if (v) u.voice = v;
+  u.lang = 'ja-JP';
+}
+
 // ===== 朗讀控制 =====
 let readAloudUtterance = null;
 let readAloudPlaying = false;
@@ -4588,7 +4614,7 @@ function _markSentencePlay(idx) {
 // 播放單句
 function _speakOne(text, onend) {
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'ja-JP';
+  applyJpVoice(u);
   u.rate = readAloudRate;
   u.onend = onend;
   readAloudUtterance = u;
@@ -5455,7 +5481,7 @@ function _followStep() {
 
   window.speechSynthesis.cancel();
   const u  = new SpeechSynthesisUtterance(text);
-  u.lang   = 'ja-JP';
+  applyJpVoice(u);
   u.rate   = readAloudRate;
   u.onend  = afterTts;
   window.speechSynthesis.speak(u);
@@ -5589,7 +5615,7 @@ function speak(text) {
   // iOS workaround: synthesis can get stuck in paused state after multiple calls
   if (window.speechSynthesis.paused) window.speechSynthesis.resume();
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'ja-JP'; u.rate = 0.85;
+  applyJpVoice(u); u.rate = 0.85;
   window.speechSynthesis.speak(u);
 }
 
@@ -5602,7 +5628,7 @@ function qzPlayWord(text) {
   window.speechSynthesis.cancel();
   if (window.speechSynthesis.paused) window.speechSynthesis.resume();
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'ja-JP'; u.rate = 0.85;
+  applyJpVoice(u); u.rate = 0.85;
 
   const resetBtn = () => {
     const b = document.getElementById('qz-play-btn');
@@ -6483,7 +6509,7 @@ function gojuuonSpeak(romaji, hira) {
   if (window.speechSynthesis) {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(hira);
-    u.lang = 'ja-JP'; u.rate = 0.2;
+    applyJpVoice(u); u.rate = 0.2;
     window.speechSynthesis.speak(u);
   }
 }
