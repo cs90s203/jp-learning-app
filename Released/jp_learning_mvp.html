@@ -1800,7 +1800,7 @@
             <span class="loading-text" id="loading-text">正在分析文章詞彙...</span>
           </div>
         </div>
-        <p style="font-size:12px;color:var(--wt3);text-align:center;margin-bottom:12px">長按文字可加入單字卡</p>
+        <p id="article-longpress-hint" style="font-size:12px;color:var(--wt3);text-align:center;margin-bottom:12px">長按文字可加入單字卡</p>
 
         <!-- 難度量表 -->
         <div class="difficulty-bar" id="difficulty-bar">
@@ -2142,7 +2142,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.4.1
+          v1.4.2
         </div>
 
       </div>
@@ -2476,7 +2476,7 @@ function switchPage(id) {
           const titleEl = document.getElementById('article-page-title');
           if (titleEl) titleEl.textContent = result.pack.title || '今日文章';
         } else {
-          renderArticle(ARTICLE_TOKENS); // fallback demo
+          showArticleNotReady(); // 今日內容未上線 → 等待畫面，不再顯示 demo
         }
         articleRendered = true;
       });
@@ -3827,6 +3827,26 @@ function restoreDemoContent() {
   }
 }
 
+// 今日文章尚未生成/上線時的等待畫面（取代舊的 demo 文章 fallback）
+function showArticleNotReady() {
+  const c = document.getElementById('article-text');
+  if (c) {
+    c.innerHTML = '<div style="text-align:center;padding:40px 16px">'
+      + '<div style="font-size:40px;margin-bottom:12px">📭</div>'
+      + '<div style="font-size:16px;font-weight:500;color:var(--wt2);margin-bottom:6px">今日文章尚未準備好</div>'
+      + '<div style="font-size:13px;color:var(--wt3)">內容通常在當天上午更新，請稍後再試</div>'
+      + '</div>';
+  }
+  // 隱藏選句列、長按提示、難度量表（沒文章時無意義）
+  ['article-sel-header', 'article-longpress-hint', 'difficulty-bar'].forEach(function(id) {
+    const el = document.getElementById(id); if (el) el.style.display = 'none';
+  });
+  const titleEl = document.getElementById('article-page-title');
+  if (titleEl) titleEl.textContent = '今日文章';
+  articleRendered = true;
+  setTimeout(ensureArticleScrollable, 50);
+}
+
 async function loadTodayContent(level) {
   const today = getLocalDateStr();
   return loadContentForDate(today, level || CURRENT_LEVEL);
@@ -4055,6 +4075,10 @@ function levelLabel(lv) { return { raw:'生', mid:'普', ripe:'熟' }[lv]; }
 function renderArticle(tokens) {
   const container = document.getElementById('article-text');
   container.innerHTML = '';
+  // 還原可能被「尚未準備好」畫面隱藏的元素
+  ['article-sel-header', 'article-longpress-hint', 'difficulty-bar'].forEach(function(id) {
+    const el = document.getElementById(id); if (el) el.style.display = '';
+  });
 
   // 句子分組（用於跟讀逐句播放，以「。」「！」「？」斷句）
   let sentenceIndex = 0;
@@ -7321,9 +7345,10 @@ async function selectArticleDate(dateStr) {
   }
   if (!result.success) {
     if (dateStr === getLocalDateStr()) {
-      restoreDemoContent();
+      showArticleNotReady();
+      selectedArticleDate = dateStr;
     } else {
-      showToast('內容載入失敗');
+      showToast('此日期尚無文章');
       return;
     }
   } else {
