@@ -1,0 +1,1153 @@
+{
+  "date": "2026-06-30",
+  "level": "n1",
+  "title": "民主主義の危機と市民の役割",
+  "text": "近年、世界各地で民主主義が揺らいでいるとの指摘が相次いでいる。権威主義的な指導者の台頭、フェイクニュースの蔓延、政治的分極化の深化など、民主的な制度や規範を脅かす要因が複合的に絡み合っている。こうした状況において、選挙への参加や自由な言論といった従来の民主主義的行動は依然として重要であるが、それだけでは不十分だという見方もある。情報環境が複雑化する中で、市民一人ひとりがメディアリテラシーを高め、批判的思考を養うことが、かつてないほど求められている。また、市民社会の活性化や地域コミュニティの強化を通じて、政治的関与の裾野を広げることも、民主主義の持続可能性を担保する上で不可欠な取り組みであると言えよう。民主主義とは単なる制度ではなく、市民の継続的な実践によって初めて成り立つものである。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "世界各地",
+      "basic_form": "世界各地",
+      "reading": "せかいかくち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "民主主義",
+      "basic_form": "民主主義",
+      "reading": "みんしゅしゅぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "揺らいでいる",
+      "basic_form": "揺らぐ",
+      "reading": "ゆらいでいる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "との",
+      "basic_form": "との",
+      "reading": "との",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "相次いでいる",
+      "basic_form": "相次ぐ",
+      "reading": "あいついでいる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "権威主義的な",
+      "basic_form": "権威主義的",
+      "reading": "けんいしゅぎてきな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "指導者",
+      "basic_form": "指導者",
+      "reading": "しどうしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "台頭",
+      "basic_form": "台頭",
+      "reading": "たいとう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "フェイクニュース",
+      "basic_form": "フェイクニュース",
+      "reading": "フェイクニュース",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "蔓延",
+      "basic_form": "蔓延",
+      "reading": "まんえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政治的分極化",
+      "basic_form": "政治的分極化",
+      "reading": "せいじてきぶんきょくか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深化",
+      "basic_form": "深化",
+      "reading": "しんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "民主的な",
+      "basic_form": "民主的",
+      "reading": "みんしゅてきな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "制度",
+      "basic_form": "制度",
+      "reading": "せいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "規範",
+      "basic_form": "規範",
+      "reading": "きはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "脅かす",
+      "basic_form": "脅かす",
+      "reading": "おびやかす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "要因",
+      "basic_form": "要因",
+      "reading": "よういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "複合的に",
+      "basic_form": "複合的",
+      "reading": "ふくごうてきに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "絡み合っている",
+      "basic_form": "絡み合う",
+      "reading": "からみあっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "において",
+      "basic_form": "において",
+      "reading": "において",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "選挙",
+      "basic_form": "選挙",
+      "reading": "せんきょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "への",
+      "basic_form": "への",
+      "reading": "への",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "参加",
+      "basic_form": "参加",
+      "reading": "さんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自由な",
+      "basic_form": "自由",
+      "reading": "じゆうな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "言論",
+      "basic_form": "言論",
+      "reading": "げんろん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "従来の",
+      "basic_form": "従来",
+      "reading": "じゅうらいの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "民主主義的",
+      "basic_form": "民主主義的",
+      "reading": "みんしゅしゅぎてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "行動",
+      "basic_form": "行動",
+      "reading": "こうどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "依然として",
+      "basic_form": "依然",
+      "reading": "いぜんとして",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "重要",
+      "basic_form": "重要",
+      "reading": "じゅうよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "だ",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それだけでは",
+      "basic_form": "それだけ",
+      "reading": "それだけでは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "不十分",
+      "basic_form": "不十分",
+      "reading": "ふじゅうぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だという",
+      "basic_form": "だ",
+      "reading": "だという",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "見方",
+      "basic_form": "見方",
+      "reading": "みかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "情報環境",
+      "basic_form": "情報環境",
+      "reading": "じょうほうかんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "複雑化する",
+      "basic_form": "複雑化する",
+      "reading": "ふくざつかする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "中で",
+      "basic_form": "中",
+      "reading": "なかで",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "市民",
+      "basic_form": "市民",
+      "reading": "しみん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "一人ひとり",
+      "basic_form": "一人ひとり",
+      "reading": "ひとりひとり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "メディアリテラシー",
+      "basic_form": "メディアリテラシー",
+      "reading": "メディアリテラシー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高め",
+      "basic_form": "高める",
+      "reading": "たかめ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "批判的思考",
+      "basic_form": "批判的思考",
+      "reading": "ひはんてきしこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "養う",
+      "basic_form": "養う",
+      "reading": "やしなう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かつてないほど",
+      "basic_form": "かつてない",
+      "reading": "かつてないほど",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "求められている",
+      "basic_form": "求める",
+      "reading": "もとめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "市民社会",
+      "basic_form": "市民社会",
+      "reading": "しみんしゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活性化",
+      "basic_form": "活性化",
+      "reading": "かっせいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地域コミュニティ",
+      "basic_form": "地域コミュニティ",
+      "reading": "ちいきコミュニティ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "強化",
+      "basic_form": "強化",
+      "reading": "きょうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を通じて",
+      "basic_form": "を通じる",
+      "reading": "をつうじて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政治的関与",
+      "basic_form": "政治的関与",
+      "reading": "せいじてきかんよ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "裾野",
+      "basic_form": "裾野",
+      "reading": "すその",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "広げること",
+      "basic_form": "広げる",
+      "reading": "ひろげること",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "民主主義",
+      "basic_form": "民主主義",
+      "reading": "みんしゅしゅぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "持続可能性",
+      "basic_form": "持続可能性",
+      "reading": "じぞくかのうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "担保する",
+      "basic_form": "担保する",
+      "reading": "たんぽする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "上で",
+      "basic_form": "上",
+      "reading": "うえで",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "不可欠な",
+      "basic_form": "不可欠",
+      "reading": "ふかけつな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "取り組み",
+      "basic_form": "取り組み",
+      "reading": "とりくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "だ",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と言えよう",
+      "basic_form": "言う",
+      "reading": "といえよう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "民主主義",
+      "basic_form": "民主主義",
+      "reading": "みんしゅしゅぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "とは",
+      "basic_form": "とは",
+      "reading": "とは",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "単なる",
+      "basic_form": "単なる",
+      "reading": "たんなる",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "制度",
+      "basic_form": "制度",
+      "reading": "せいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ではなく",
+      "basic_form": "ではなく",
+      "reading": "ではなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "市民",
+      "basic_form": "市民",
+      "reading": "しみん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "継続的な",
+      "basic_form": "継続的",
+      "reading": "けいぞくてきな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "実践",
+      "basic_form": "実践",
+      "reading": "じっせん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "初めて",
+      "basic_form": "初めて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "成り立つ",
+      "basic_form": "成り立つ",
+      "reading": "なりたつ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "もの",
+      "basic_form": "もの",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "だ",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年",
+      "romaji": "kinnen"
+    },
+    "世界各地": {
+      "meaning": "世界各地",
+      "romaji": "sekai kakuchi"
+    },
+    "民主主義": {
+      "meaning": "民主主義",
+      "romaji": "minshu shugi"
+    },
+    "揺らぐ": {
+      "meaning": "搖晃、動搖",
+      "romaji": "yuragu"
+    },
+    "指摘": {
+      "meaning": "指出",
+      "romaji": "shiteki"
+    },
+    "相次ぐ": {
+      "meaning": "接連發生",
+      "romaji": "aitsuqu"
+    },
+    "権威主義的": {
+      "meaning": "威權主義的",
+      "romaji": "ken-i shugi teki"
+    },
+    "指導者": {
+      "meaning": "領導者",
+      "romaji": "shidousha"
+    },
+    "台頭": {
+      "meaning": "崛起、抬頭",
+      "romaji": "taitou"
+    },
+    "フェイクニュース": {
+      "meaning": "假新聞",
+      "romaji": "feiku nyuusu"
+    },
+    "蔓延": {
+      "meaning": "蔓延、擴散",
+      "romaji": "manen"
+    },
+    "政治的分極化": {
+      "meaning": "政治極化",
+      "romaji": "seijiteki bunkyokuka"
+    },
+    "深化": {
+      "meaning": "深化、加深",
+      "romaji": "shinka"
+    },
+    "民主的": {
+      "meaning": "民主的",
+      "romaji": "minshuteki"
+    },
+    "制度": {
+      "meaning": "制度",
+      "romaji": "seido"
+    },
+    "規範": {
+      "meaning": "規範",
+      "romaji": "kihan"
+    },
+    "脅かす": {
+      "meaning": "威脅",
+      "romaji": "obiyakasu"
+    },
+    "要因": {
+      "meaning": "要因、原因",
+      "romaji": "youin"
+    },
+    "複合的": {
+      "meaning": "複合性的",
+      "romaji": "fukugouteki"
+    },
+    "絡み合う": {
+      "meaning": "交織、糾纏",
+      "romaji": "karamiau"
+    },
+    "こうした": {
+      "meaning": "這樣的（指上述情況）",
+      "romaji": "koushita"
+    },
+    "状況": {
+      "meaning": "狀況",
+      "romaji": "joukyou"
+    },
+    "選挙": {
+      "meaning": "選舉",
+      "romaji": "senkyo"
+    },
+    "参加": {
+      "meaning": "參加",
+      "romaji": "sanka"
+    },
+    "自由": {
+      "meaning": "自由",
+      "romaji": "jiyuu"
+    },
+    "言論": {
+      "meaning": "言論",
+      "romaji": "genron"
+    },
+    "従来": {
+      "meaning": "以往、傳統上",
+      "romaji": "juurai"
+    },
+    "民主主義的": {
+      "meaning": "民主主義的",
+      "romaji": "minshu shugi teki"
+    },
+    "行動": {
+      "meaning": "行動",
+      "romaji": "koudou"
+    },
+    "依然として": {
+      "meaning": "依然、仍然",
+      "romaji": "izen to shite"
+    },
+    "重要": {
+      "meaning": "重要",
+      "romaji": "juuyou"
+    },
+    "不十分": {
+      "meaning": "不充分、不夠",
+      "romaji": "fujuubun"
+    },
+    "見方": {
+      "meaning": "觀點、看法",
+      "romaji": "mikata"
+    },
+    "ある": {
+      "meaning": "有、存在",
+      "romaji": "aru"
+    },
+    "情報環境": {
+      "meaning": "資訊環境",
+      "romaji": "jouhou kankyou"
+    },
+    "複雑化する": {
+      "meaning": "複雜化",
+      "romaji": "fukuzatsuka suru"
+    },
+    "中": {
+      "meaning": "之中、過程中",
+      "romaji": "naka"
+    },
+    "市民": {
+      "meaning": "市民、公民",
+      "romaji": "shimin"
+    },
+    "一人ひとり": {
+      "meaning": "每一個人",
+      "romaji": "hitori hitori"
+    },
+    "メディアリテラシー": {
+      "meaning": "媒體素養",
+      "romaji": "media riterasii"
+    },
+    "高める": {
+      "meaning": "提升、提高",
+      "romaji": "takameru"
+    },
+    "批判的思考": {
+      "meaning": "批判性思維",
+      "romaji": "hihanteki shikou"
+    },
+    "養う": {
+      "meaning": "培養",
+      "romaji": "yashinau"
+    },
+    "かつてない": {
+      "meaning": "前所未有的",
+      "romaji": "katsute nai"
+    },
+    "求める": {
+      "meaning": "要求、尋求",
+      "romaji": "motomeru"
+    },
+    "また": {
+      "meaning": "另外、也",
+      "romaji": "mata"
+    },
+    "市民社会": {
+      "meaning": "公民社會",
+      "romaji": "shimin shakai"
+    },
+    "活性化": {
+      "meaning": "活性化、振興",
+      "romaji": "kasseika"
+    },
+    "地域コミュニティ": {
+      "meaning": "地區社群",
+      "romaji": "chiiki komyuniti"
+    },
+    "強化": {
+      "meaning": "強化",
+      "romaji": "kyouka"
+    },
+    "政治的関与": {
+      "meaning": "政治參與",
+      "romaji": "seijiteki kanyo"
+    },
+    "裾野": {
+      "meaning": "廣泛基盤（山腳；喻指範圍）",
+      "romaji": "susono"
+    },
+    "広げる": {
+      "meaning": "擴大",
+      "romaji": "hirogeru"
+    },
+    "持続可能性": {
+      "meaning": "可持續性",
+      "romaji": "jizoku kanousei"
+    },
+    "担保する": {
+      "meaning": "保障、確保",
+      "romaji": "tanpo suru"
+    },
+    "上": {
+      "meaning": "方面、上（書面語）",
+      "romaji": "ue"
+    },
+    "不可欠": {
+      "meaning": "不可或缺",
+      "romaji": "fukaketsu"
+    },
+    "取り組み": {
+      "meaning": "努力、措施",
+      "romaji": "torikumi"
+    },
+    "言う": {
+      "meaning": "說",
+      "romaji": "iu"
+    },
+    "単なる": {
+      "meaning": "僅僅、只不過是",
+      "romaji": "tannaru"
+    },
+    "継続的": {
+      "meaning": "持續性的",
+      "romaji": "keizokuteki"
+    },
+    "実践": {
+      "meaning": "實踐",
+      "romaji": "jissen"
+    },
+    "初めて": {
+      "meaning": "才、第一次",
+      "romaji": "hajimete"
+    },
+    "成り立つ": {
+      "meaning": "成立、構成",
+      "romaji": "naritatsu"
+    },
+    "もの": {
+      "meaning": "東西（抽象）",
+      "romaji": "mono"
+    },
+    "を通じる": {
+      "meaning": "透過～、藉由～",
+      "romaji": "wo tsūjiru"
+    },
+    "それだけ": {
+      "meaning": "就那樣、那麼多",
+      "romaji": "soredake"
+    },
+    "こと": {
+      "meaning": "事情、事（抽象名詞）",
+      "romaji": "koto"
+    },
+    "依然": {
+      "meaning": "依然、仍然",
+      "romaji": "izen"
+    }
+  },
+  "particles": {
+    "で": "表示場所或手段",
+    "が": "主語助詞",
+    "との": "表示引用關係（～的…）",
+    "に": "表示方向或對象",
+    "や": "列舉部分例子",
+    "を": "受詞助詞",
+    "の": "表示所有或修飾",
+    "は": "主題助詞",
+    "も": "也，表示追加",
+    "において": "在…方面（書面語）",
+    "といった": "像…之類的",
+    "によって": "通過、依靠",
+    "を通じて": "透過、經由",
+    "とは": "所謂…是、說到…（定義用法）",
+    "ではなく": "不是…而是"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，在世界各地，民主主義正在動搖的指摘接連不斷。",
+        "word": "民主主義"
+      }
+    ],
+    [
+      {
+        "text": "威權主義領導者的崛起、假新聞的蔓延、政治極化的加深等，",
+        "word": "台頭"
+      },
+      {
+        "text": "威脅民主制度和規範的要因正複合地交織在一起。",
+        "word": "絡み合う"
+      }
+    ],
+    [
+      {
+        "text": "在這樣的狀況下，參與選舉、保障言論自由等傳統的民主行動依然重要，",
+        "word": "選挙"
+      },
+      {
+        "text": "但也有觀點認為光靠這些還不夠。",
+        "word": "不十分"
+      }
+    ],
+    [
+      {
+        "text": "在資訊環境日趨複雜之中，",
+        "word": "情報環境"
+      },
+      {
+        "text": "每位市民提升媒體素養、培養批判性思維，",
+        "word": "メディアリテラシー"
+      },
+      {
+        "text": "比以往任何時候都更被需要。",
+        "word": "かつてない"
+      }
+    ],
+    [
+      {
+        "text": "另外，透過活化公民社會、強化地區社群，",
+        "word": "市民社会"
+      },
+      {
+        "text": "擴大政治參與的廣泛基盤，",
+        "word": "裾野"
+      },
+      {
+        "text": "也可以說是保障民主主義可持續性不可或缺的措施。",
+        "word": "持続可能性"
+      }
+    ],
+    [
+      {
+        "text": "民主主義並非單純的制度，",
+        "word": "制度"
+      },
+      {
+        "text": "而是唯有透過市民持續的實踐才能成立的東西。",
+        "word": "実践"
+      }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.16,
+    "jlpt_level": "N1"
+  }
+}
