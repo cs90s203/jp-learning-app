@@ -809,7 +809,7 @@
   .vq-meaning-tap { cursor: pointer; }
   .vq-meaning {
     font-size: 20px; color: var(--wt); font-weight: 500;
-    transition: color 0.15s, text-shadow 0.15s;
+    /* 不加 transition：換卡時遮罩需即時生效，否則會閃出下一張答案約 0.5 秒 */
   }
   .vq-meaning.meaning-hidden,
   .vq-word.meaning-hidden,
@@ -823,6 +823,13 @@
   html[data-theme="dark"] .vq-kana.meaning-hidden {
     text-shadow: 0 0 12px rgba(240,228,208,0.6);
   }
+  /* 大字（44px）要更濃的霧，否則輪廓仍可辨識；疊兩層加密度 */
+  .vq-word.meaning-hidden {
+    text-shadow: 0 0 22px rgba(42,26,8,0.85), 0 0 38px rgba(42,26,8,0.7);
+  }
+  html[data-theme="dark"] .vq-word.meaning-hidden {
+    text-shadow: 0 0 22px rgba(240,228,208,0.85), 0 0 38px rgba(240,228,208,0.7);
+  }
   .vq-peek-hint { font-size: 12px; color: var(--wt3); margin-top: 10px; }
   .vq-word-row { display: flex; align-items: center; justify-content: center; gap: 10px; }
   .vq-tts-btn {
@@ -833,7 +840,6 @@
   }
   .vq-example {
     font-size: 14px; color: var(--wt2); line-height: 1.8; margin-top: 14px;
-    transition: color 0.15s, text-shadow 0.15s;
   }
   .vq-example.meaning-hidden {
     color: transparent; text-shadow: 0 0 8px rgba(42,26,8,0.5); user-select: none;
@@ -2136,7 +2142,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.4.0
+          v1.4.1
         </div>
 
       </div>
@@ -6944,21 +6950,22 @@ function startVocabQuiz() {
   }
   track('review_vocab', { filter: vocabFilter, count: words.length });
 
-  const order = localStorage.getItem('quizOrder') || 'due';
+  // 預設隨機，避免照文章／加入順序造成「位置記憶」式作答；設定頁仍可改回到期先/最新
+  const order = localStorage.getItem('quizOrder') || 'random';
   vqQueue = words.slice();
   if (order === 'due') {
     vqQueue.sort((a, b) => dueScore(vocabBook[b] || {}) - dueScore(vocabBook[a] || {}));
-  } else if (order === 'random') {
-    for (let i = vqQueue.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [vqQueue[i], vqQueue[j]] = [vqQueue[j], vqQueue[i]];
-    }
-  } else { // newest
+  } else if (order === 'newest') {
     vqQueue.sort((a, b) => {
       const da = vocabBook[a].addedDate || '';
       const db = vocabBook[b].addedDate || '';
       return db > da ? 1 : da > db ? -1 : 0;
     });
+  } else { // random（預設）
+    for (let i = vqQueue.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [vqQueue[i], vqQueue[j]] = [vqQueue[j], vqQueue[i]];
+    }
   }
 
   vqIndex = 0; vqOk = 0; vqFail = 0;
@@ -7070,42 +7077,16 @@ function vqSpeak(e) {
 }
 
 function vqRate(remembered) {
-  if (vqForgetMode) return; // 防止重複觸發
-
   const word  = vqQueue[vqIndex];
   const entry = vocabBook[word] || {};
   const fam   = entry.familiarity || 0;
-
-  if (remembered) {
-    entry.familiarity = Math.min(20, fam + 2);
-    entry.lastReviewed = getLocalDateStr();
-    vocabBook[word] = entry;
-    saveVocabBook();
-    vqOk++;
-    vqAdvance();
-  } else {
-    entry.familiarity = Math.max(0, fam - 2);
-    entry.lastReviewed = getLocalDateStr();
-    vocabBook[word] = entry;
-    saveVocabBook();
-    vqFail++;
-    vqForgetMode = true;
-
-    // 公布答案
-    vqPeekMeaning();
-
-    // 不記得按鈕禁用
-    const fBtn = document.getElementById('vq-forget-btn');
-    fBtn.disabled = true;
-    fBtn.style.opacity = '0.4';
-
-    // 記得按鈕改成「下一張」
-    const rBtn = document.getElementById('vq-remember-btn');
-    rBtn.textContent = '下一張 →';
-    rBtn.className = 'vq-btn vq-next-btn';
-    rBtn.onclick = () => vqAdvance();
-  }
-  vqSaveProgress();
+  entry.familiarity = remembered ? Math.min(20, fam + 2) : Math.max(0, fam - 2);
+  entry.lastReviewed = getLocalDateStr();
+  vocabBook[word] = entry;
+  saveVocabBook();
+  if (remembered) vqOk++; else vqFail++;
+  // 記得 / 不記得 都直接跳下一張（想看答案先點卡片揭曉）
+  vqAdvance();
 }
 
 function vqAdvance() {
@@ -7113,9 +7094,6 @@ function vqAdvance() {
   if (vqIndex >= vqQueue.length) {
     vqShowResult();
   } else {
-    // reset forget-btn opacity
-    const fBtn = document.getElementById('vq-forget-btn');
-    fBtn.style.opacity = '';
     vqShowCard();
   }
   vqSaveProgress();
@@ -7168,7 +7146,7 @@ function closeVocabQuizResult() {
 
 // 設定頁：循環切換複習排序
 function cycleQuizOrder() {
-  const cur = localStorage.getItem('quizOrder') || 'due';
+  const cur = localStorage.getItem('quizOrder') || 'random';
   const idx  = VQ_ORDERS.indexOf(cur);
   const next = VQ_ORDERS[(idx + 1) % VQ_ORDERS.length];
   localStorage.setItem('quizOrder', next);
@@ -7431,7 +7409,7 @@ loadAllSlotsOnStartup();
 loadVocabBook();
 initSettings();
 initSort();
-updateQuizOrderUI(localStorage.getItem('quizOrder') || 'due');
+updateQuizOrderUI(localStorage.getItem('quizOrder') || 'random');
 
 // ===== Splash + Onboarding =====
 // Splash 視覺由純 CSS animation 控制，JS 只負責在動畫後觸發 onboarding
@@ -8073,7 +8051,7 @@ function _applyRestoredSettings() {
   // 學習模式
   applyModeUI(localStorage.getItem('learnMode') || 'normal');
   // 複習順序
-  updateQuizOrderUI(localStorage.getItem('quizOrder') || 'due');
+  updateQuizOrderUI(localStorage.getItem('quizOrder') || 'random');
   // 主題（含 system 三態）
   applyTheme(_resolveDark());
   // vocabBook 重新載入
@@ -8181,7 +8159,7 @@ function syncToCloud() {
   const visionKey = localStorage.getItem('googleVisionKey') || '';
   const settings = {
     learnMode:  localStorage.getItem('learnMode') || 'normal',
-    quizOrder:  localStorage.getItem('quizOrder') || 'due',
+    quizOrder:  localStorage.getItem('quizOrder') || 'random',
     theme:      localStorage.getItem('theme') || 'system',
     userLevel:  localStorage.getItem('userLevel') || 'n5',
     ...(visionKey ? { googleVisionKey: visionKey } : {}),
