@@ -1,0 +1,104 @@
+{
+  "date": "2026-07-01",
+  "level": "n5_lite",
+  "title": "なつのそら",
+  "text": "そらはあおいです。たいようがあります。たいようはおおきいです。あついです。うみもあります。うみはひろいです。さかなもいます。みずはつめたいです。わたしはうみがすきです。",
+  "tokens": [
+    { "surface_form": "そら", "basic_form": "そら", "reading": "そら", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "あおい", "basic_form": "あおい", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "たいよう", "basic_form": "たいよう", "reading": "たいよう", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "たいよう", "basic_form": "たいよう", "reading": "たいよう", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "おおきい", "basic_form": "おおきい", "reading": "おおきい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "あつい", "basic_form": "あつい", "reading": "あつい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "うみ", "basic_form": "うみ", "reading": "うみ", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "うみ", "basic_form": "うみ", "reading": "うみ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "ひろい", "basic_form": "ひろい", "reading": "ひろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "さかな", "basic_form": "さかな", "reading": "さかな", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "います", "basic_form": "いる", "reading": "います", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "みず", "basic_form": "みず", "reading": "みず", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "つめたい", "basic_form": "つめたい", "reading": "つめたい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "うみ", "basic_form": "うみ", "reading": "うみ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "すき", "basic_form": "すき", "reading": "すき", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "そら": { "meaning": "天空", "romaji": "sora" },
+    "あおい": { "meaning": "藍色的、青色的", "romaji": "aoi" },
+    "たいよう": { "meaning": "太陽", "romaji": "taiyou" },
+    "ある": { "meaning": "有（無生命）", "romaji": "aru" },
+    "おおきい": { "meaning": "大的", "romaji": "ookii" },
+    "あつい": { "meaning": "熱的", "romaji": "atsui" },
+    "うみ": { "meaning": "海", "romaji": "umi" },
+    "ひろい": { "meaning": "寬廣的", "romaji": "hiroi" },
+    "さかな": { "meaning": "魚", "romaji": "sakana" },
+    "いる": { "meaning": "在（有生命）", "romaji": "iru" },
+    "みず": { "meaning": "水", "romaji": "mizu" },
+    "つめたい": { "meaning": "冷的", "romaji": "tsumetai" },
+    "わたし": { "meaning": "我", "romaji": "watashi" },
+    "すき": { "meaning": "喜歡", "romaji": "suki" }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "が": "主語助詞，標示主語或喜好對象",
+    "も": "也、同樣，表示追加"
+  },
+  "translations": [
+    [
+      { "text": "天空是藍色的。", "word": "そら" }
+    ],
+    [
+      { "text": "有太陽。", "word": "たいよう" }
+    ],
+    [
+      { "text": "太陽很大。", "word": "たいよう" }
+    ],
+    [
+      { "text": "很熱。", "word": "あつい" }
+    ],
+    [
+      { "text": "也有海。", "word": "うみ" }
+    ],
+    [
+      { "text": "海很寬廣。", "word": "うみ" }
+    ],
+    [
+      { "text": "也有魚。", "word": "さかな" }
+    ],
+    [
+      { "text": "水是冷的。", "word": "みず" }
+    ],
+    [
+      { "text": "我喜歡海。", "word": "うみ" }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.05,
+    "jlpt_level": "N5⁻"
+  }
+}

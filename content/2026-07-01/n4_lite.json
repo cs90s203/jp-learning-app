@@ -1,0 +1,125 @@
+{
+  "date": "2026-07-01",
+  "level": "n4_lite",
+  "title": "はじめてのお祭り",
+  "text": "先月、友だちにさそわれて、はじめてお祭りに行きました。夜になると、たくさんの人が来ていました。屋台でたこやきを買って食べました。とてもおいしかったです。花火も見ました。空に大きい花火があがって、きれいでした。また来年も行きたいです。",
+  "tokens": [
+    { "surface_form": "先月", "basic_form": "先月", "reading": "せんげつ", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "友だち", "basic_form": "友だち", "reading": "ともだち", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "さそわれて", "basic_form": "さそう", "reading": "さそわれて", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "はじめて", "basic_form": "はじめて", "reading": "はじめて", "pos": "副詞" },
+    { "surface_form": "お祭り", "basic_form": "お祭り", "reading": "おまつり", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "行きました", "basic_form": "行く", "reading": "いきました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "夜", "basic_form": "夜", "reading": "よる", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "なると", "basic_form": "なる", "reading": "なると", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "たくさん", "basic_form": "たくさん", "reading": "たくさん", "pos": "副詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "人", "basic_form": "人", "reading": "ひと", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "来ていました", "basic_form": "くる", "reading": "きていました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "屋台", "basic_form": "屋台", "reading": "やたい", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "たこやき", "basic_form": "たこやき", "reading": "たこやき", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "買って", "basic_form": "買う", "reading": "かって", "pos": "動詞" },
+    { "surface_form": "食べました", "basic_form": "食べる", "reading": "たべました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "おいしかった", "basic_form": "おいしい", "reading": "おいしかった", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "花火", "basic_form": "花火", "reading": "はなび", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "見ました", "basic_form": "見る", "reading": "みました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "空", "basic_form": "空", "reading": "そら", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "大きい", "basic_form": "大きい", "reading": "おおきい", "pos": "形容詞" },
+    { "surface_form": "花火", "basic_form": "花火", "reading": "はなび", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あがって", "basic_form": "あがる", "reading": "あがって", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "きれい", "basic_form": "きれい", "reading": "きれい", "pos": "名詞" },
+    { "surface_form": "でした", "basic_form": "です", "reading": "でした", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "また", "basic_form": "また", "reading": "また", "pos": "副詞" },
+    { "surface_form": "来年", "basic_form": "来年", "reading": "らいねん", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "行きたい", "basic_form": "行く", "reading": "いきたい", "pos": "動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "先月": { "meaning": "上個月", "romaji": "sengetsu" },
+    "友だち": { "meaning": "朋友", "romaji": "tomodachi" },
+    "さそう": { "meaning": "邀請、招呼", "romaji": "sasou" },
+    "はじめて": { "meaning": "第一次", "romaji": "hajimete" },
+    "お祭り": { "meaning": "祭典", "romaji": "omatsuri" },
+    "行く": { "meaning": "去", "romaji": "iku" },
+    "夜": { "meaning": "夜晚", "romaji": "yoru" },
+    "なる": { "meaning": "變成", "romaji": "naru" },
+    "たくさん": { "meaning": "很多", "romaji": "takusan" },
+    "人": { "meaning": "人", "romaji": "hito" },
+    "くる": { "meaning": "來", "romaji": "kuru" },
+    "屋台": { "meaning": "路邊攤、小吃攤", "romaji": "yatai" },
+    "たこやき": { "meaning": "章魚燒", "romaji": "takoyaki" },
+    "買う": { "meaning": "買", "romaji": "kau" },
+    "食べる": { "meaning": "吃", "romaji": "taberu" },
+    "とても": { "meaning": "非常", "romaji": "totemo" },
+    "おいしい": { "meaning": "好吃的", "romaji": "oishii" },
+    "花火": { "meaning": "煙火", "romaji": "hanabi" },
+    "見る": { "meaning": "看", "romaji": "miru" },
+    "空": { "meaning": "天空", "romaji": "sora" },
+    "大きい": { "meaning": "大的", "romaji": "ookii" },
+    "あがる": { "meaning": "升起、上升", "romaji": "agaru" },
+    "きれい": { "meaning": "漂亮的", "romaji": "kirei" },
+    "また": { "meaning": "再次、又", "romaji": "mata" },
+    "来年": { "meaning": "明年", "romaji": "rainen" }
+  },
+  "particles": {
+    "に": "表示目的地或被動施者",
+    "で": "表示動作發生的場所",
+    "が": "主語助詞",
+    "を": "受格助詞，標示動作對象",
+    "も": "也、同樣",
+    "の": "修飾助詞，表示所有或修飾"
+  },
+  "translations": [
+    [
+      { "text": "上個月，受朋友邀請，", "word": "さそう" },
+      { "text": "第一次去了祭典。", "word": "お祭り" }
+    ],
+    [
+      { "text": "到了晚上，", "word": "夜" },
+      { "text": "來了很多人。", "word": "人" }
+    ],
+    [
+      { "text": "在路邊攤買了章魚燒來吃。", "word": "たこやき" }
+    ],
+    [
+      { "text": "非常好吃。", "word": "おいしい" }
+    ],
+    [
+      { "text": "也看了煙火。", "word": "花火" }
+    ],
+    [
+      { "text": "大煙火在天空升起，", "word": "あがる" },
+      { "text": "非常漂亮。", "word": "きれい" }
+    ],
+    [
+      { "text": "明年也想再去。", "word": "来年" }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N4⁻"
+  }
+}

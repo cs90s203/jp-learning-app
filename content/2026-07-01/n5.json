@@ -1,0 +1,109 @@
+{
+  "date": "2026-07-01",
+  "level": "n5",
+  "title": "なつやすみのけいかく",
+  "text": "もうすぐなつやすみです。わたしはともだちとうみにいきます。うみでおよぎます。すなはまであそびます。おひるごはんはさんどいっちをたべます。のみものもかいます。よるはほてるにとまります。たのしいやすみになります。",
+  "tokens": [
+    { "surface_form": "もうすぐ", "basic_form": "もうすぐ", "reading": "もうすぐ", "pos": "副詞" },
+    { "surface_form": "なつやすみ", "basic_form": "なつやすみ", "reading": "なつやすみ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "ともだち", "basic_form": "ともだち", "reading": "ともだち", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "うみ", "basic_form": "うみ", "reading": "うみ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "いきます", "basic_form": "いく", "reading": "いきます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "うみ", "basic_form": "うみ", "reading": "うみ", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "およぎます", "basic_form": "およぐ", "reading": "およぎます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "すなはま", "basic_form": "すなはま", "reading": "すなはま", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "あそびます", "basic_form": "あそぶ", "reading": "あそびます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "おひるごはん", "basic_form": "おひるごはん", "reading": "おひるごはん", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "さんどいっち", "basic_form": "さんどいっち", "reading": "さんどいっち", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "たべます", "basic_form": "たべる", "reading": "たべます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "のみもの", "basic_form": "のみもの", "reading": "のみもの", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "かいます", "basic_form": "かう", "reading": "かいます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "よる", "basic_form": "よる", "reading": "よる", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "ほてる", "basic_form": "ほてる", "reading": "ほてる", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "とまります", "basic_form": "とまる", "reading": "とまります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "たのしい", "basic_form": "たのしい", "reading": "たのしい", "pos": "形容詞" },
+    { "surface_form": "やすみ", "basic_form": "やすみ", "reading": "やすみ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "なります", "basic_form": "なる", "reading": "なります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "もうすぐ": { "meaning": "快要、即將", "romaji": "mousugu" },
+    "なつやすみ": { "meaning": "暑假、夏假", "romaji": "natsuyasumi" },
+    "わたし": { "meaning": "我", "romaji": "watashi" },
+    "ともだち": { "meaning": "朋友", "romaji": "tomodachi" },
+    "うみ": { "meaning": "海", "romaji": "umi" },
+    "いく": { "meaning": "去", "romaji": "iku" },
+    "およぐ": { "meaning": "游泳", "romaji": "oyogu" },
+    "すなはま": { "meaning": "沙灘", "romaji": "sunahama" },
+    "あそぶ": { "meaning": "玩、遊玩", "romaji": "asobu" },
+    "おひるごはん": { "meaning": "午餐", "romaji": "ohirugohan" },
+    "さんどいっち": { "meaning": "三明治", "romaji": "sandoicchi" },
+    "たべる": { "meaning": "吃", "romaji": "taberu" },
+    "のみもの": { "meaning": "飲料", "romaji": "nomimono" },
+    "かう": { "meaning": "買", "romaji": "kau" },
+    "よる": { "meaning": "晚上", "romaji": "yoru" },
+    "ほてる": { "meaning": "飯店", "romaji": "hoteru" },
+    "とまる": { "meaning": "住宿、停留", "romaji": "tomaru" },
+    "たのしい": { "meaning": "開心的、快樂的", "romaji": "tanoshii" },
+    "やすみ": { "meaning": "假日、休息", "romaji": "yasumi" },
+    "なる": { "meaning": "變成", "romaji": "naru" }
+  },
+  "particles": {
+    "は": "主題助詞，標示話題",
+    "と": "表示一起行動的對象（和…一起）",
+    "に": "表示移動目的地或結果",
+    "で": "表示動作發生的場所",
+    "を": "受格助詞，標示動作的對象",
+    "も": "也、同樣，表示追加"
+  },
+  "translations": [
+    [
+      { "text": "暑假快來了。", "word": "なつやすみ" }
+    ],
+    [
+      { "text": "我要和朋友去海邊。", "word": "うみ" }
+    ],
+    [
+      { "text": "在海裡游泳。", "word": "およぐ" }
+    ],
+    [
+      { "text": "在沙灘上玩。", "word": "すなはま" }
+    ],
+    [
+      { "text": "午餐吃三明治。", "word": "さんどいっち" }
+    ],
+    [
+      { "text": "也買飲料。", "word": "のみもの" }
+    ],
+    [
+      { "text": "晚上住飯店。", "word": "ほてる" }
+    ],
+    [
+      { "text": "會是開心的假期。", "word": "たのしい" }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.08,
+    "jlpt_level": "N5"
+  }
+}
