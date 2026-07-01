@@ -2149,7 +2149,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.5.0
+          v1.5.1
         </div>
 
       </div>
@@ -5537,9 +5537,13 @@ function _followStep() {
     _followRecordWindow(n, total);
   };
 
+  // Google Neural TTS 走 fetch→<audio>（有網路延遲，且 audio.onended 可靠）；
+  // 舊的估時 fallback 對它會太早觸發 → 錄音在 TTS 還在播時就開始 → 麥克風收到 TTS 聲 →
+  // 靜音偵測永遠不成立 → 卡在錄音進不了下一句。故 Google 改用大 buffer 當純兜底（正常靠 onended），
+  // Web Speech（iOS onend 常漏觸發）維持短 fallback。
+  const _isGoogleVoice = !!((TTS_VOICE_OPTIONS.find(o => o.key === _ttsVoiceKey) || {}).googleName);
   speakJa(text, readAloudRate, afterTts);
-  // iOS 備用：估算時間 + 500ms buffer
-  setTimeout(afterTts, estMs + 500);
+  setTimeout(afterTts, estMs + (_isGoogleVoice ? 6000 : 500));
 }
 
 function _followRecordWindow(n, total) {
