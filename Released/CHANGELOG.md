@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.5.1 — 2026-07-01
+
+**Bug 修正：Google Neural TTS 下逐句跟讀卡在錄音、進不了下一句**
+
+- 根因：逐句跟讀靠「靜音偵測」結束錄音窗；`_followStep` 的估時 fallback（`estMs+500`）對 Google TTS（fetch→audio，有網路延遲）會太早觸發，導致錄音在 TTS 還在播放時就開始，麥克風收到自己播的語音、靜音永遠不成立 → 卡住（要等 30 秒上限）
+- 修正：Google 語音時 fallback 改為大 buffer（純兜底，正常靠可靠的 `audio.onended`）；系統語音（Web Speech，iOS onend 常漏）維持短 fallback
+
 ## v1.5.0 — 2026-06-30
 
 **新功能：Google Neural TTS 語音整合 + 設定頁語音選擇**
@@ -449,6 +456,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.5.1 — 2026-07-02
+
+Bug 修正：Google Neural TTS 下逐句跟讀卡在錄音（估時 fallback 太早觸發）
 
 ---
 
