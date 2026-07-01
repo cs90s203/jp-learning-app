@@ -1,6 +1,11 @@
 {
   "dates": [
     {
+      "date": "2026-07-01",
+      "levels": ["n5_lite", "n5", "n4_lite", "n4", "n3_lite", "n3", "n2_lite", "n2", "n1_lite", "n1"],
+      "generated_at": "2026-07-01T00:30:00Z"
+    },
+    {
       "date": "2026-06-30",
       "levels": ["n5_lite", "n5", "n4_lite", "n4", "n3_lite", "n3", "n2_lite", "n2", "n1_lite", "n1"],
       "generated_at": "2026-06-30T00:30:00Z"

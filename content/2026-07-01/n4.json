@@ -1,0 +1,137 @@
+{
+  "date": "2026-07-01",
+  "level": "n4",
+  "title": "夏の料理教室",
+  "text": "今月から料理教室に通い始めました。先生は料理が上手で、いろいろな夏料理を教えてくれます。先週は冷やし中華を作りました。自分で作ることができたので、とてもうれしかったです。家族にも食べてもらいました。「おいしい」と言ってくれたので、また作ってみたいと思います。来月は天ぷらを習う予定です。",
+  "tokens": [
+    { "surface_form": "今月", "basic_form": "今月", "reading": "こんげつ", "pos": "名詞" },
+    { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "助詞" },
+    { "surface_form": "料理教室", "basic_form": "料理教室", "reading": "りょうりきょうしつ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "通い始めました", "basic_form": "通い始める", "reading": "かよいはじめました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "先生", "basic_form": "先生", "reading": "せんせい", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "料理", "basic_form": "料理", "reading": "りょうり", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "上手", "basic_form": "上手", "reading": "じょうず", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "いろいろな", "basic_form": "いろいろ", "reading": "いろいろな", "pos": "名詞" },
+    { "surface_form": "夏料理", "basic_form": "夏料理", "reading": "なつりょうり", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "教えてくれます", "basic_form": "教える", "reading": "おしえてくれます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "先週", "basic_form": "先週", "reading": "せんしゅう", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "冷やし中華", "basic_form": "冷やし中華", "reading": "ひやしちゅうか", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "作りました", "basic_form": "作る", "reading": "つくりました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "自分", "basic_form": "自分", "reading": "じぶん", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "作ること", "basic_form": "作る", "reading": "つくること", "pos": "動詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "できた", "basic_form": "できる", "reading": "できた", "pos": "動詞" },
+    { "surface_form": "ので", "basic_form": "ので", "reading": "ので", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "うれしかった", "basic_form": "うれしい", "reading": "うれしかった", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "家族", "basic_form": "家族", "reading": "かぞく", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "食べてもらいました", "basic_form": "食べる", "reading": "たべてもらいました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "「", "basic_form": "「", "reading": "「", "pos": "記号" },
+    { "surface_form": "おいしい", "basic_form": "おいしい", "reading": "おいしい", "pos": "形容詞" },
+    { "surface_form": "」", "basic_form": "」", "reading": "」", "pos": "記号" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "言ってくれた", "basic_form": "言う", "reading": "いってくれた", "pos": "動詞" },
+    { "surface_form": "ので", "basic_form": "ので", "reading": "ので", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "また", "basic_form": "また", "reading": "また", "pos": "副詞" },
+    { "surface_form": "作ってみたい", "basic_form": "作る", "reading": "つくってみたい", "pos": "動詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "思います", "basic_form": "思う", "reading": "おもいます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "来月", "basic_form": "来月", "reading": "らいげつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "天ぷら", "basic_form": "天ぷら", "reading": "てんぷら", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "習う", "basic_form": "習う", "reading": "ならう", "pos": "動詞" },
+    { "surface_form": "予定", "basic_form": "予定", "reading": "よてい", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "今月": { "meaning": "這個月", "romaji": "kongetsu" },
+    "料理教室": { "meaning": "烹飪教室", "romaji": "ryouri kyoushitsu" },
+    "通い始める": { "meaning": "開始上（課）", "romaji": "kayoi hajimeru" },
+    "先生": { "meaning": "老師", "romaji": "sensei" },
+    "料理": { "meaning": "料理、烹飪", "romaji": "ryouri" },
+    "上手": { "meaning": "擅長、高明", "romaji": "jouzu" },
+    "いろいろ": { "meaning": "各種各樣", "romaji": "iroiro" },
+    "夏料理": { "meaning": "夏日料理", "romaji": "natsuri ryouri" },
+    "教える": { "meaning": "教、告訴", "romaji": "oshieru" },
+    "先週": { "meaning": "上週", "romaji": "senshuu" },
+    "冷やし中華": { "meaning": "冷中華麵", "romaji": "hiyashi chuuka" },
+    "作る": { "meaning": "製作、做", "romaji": "tsukuru" },
+    "自分": { "meaning": "自己", "romaji": "jibun" },
+    "できる": { "meaning": "能夠、做得到", "romaji": "dekiru" },
+    "とても": { "meaning": "非常", "romaji": "totemo" },
+    "うれしい": { "meaning": "開心的、高興的", "romaji": "ureshii" },
+    "家族": { "meaning": "家人", "romaji": "kazoku" },
+    "食べる": { "meaning": "吃", "romaji": "taberu" },
+    "おいしい": { "meaning": "好吃的", "romaji": "oishii" },
+    "言う": { "meaning": "說", "romaji": "iu" },
+    "また": { "meaning": "再次、又", "romaji": "mata" },
+    "思う": { "meaning": "認為、想", "romaji": "omou" },
+    "来月": { "meaning": "下個月", "romaji": "raigetsu" },
+    "天ぷら": { "meaning": "天婦羅", "romaji": "tenpura" },
+    "習う": { "meaning": "學習", "romaji": "narau" },
+    "予定": { "meaning": "預定、計畫", "romaji": "yotei" }
+  },
+  "particles": {
+    "から": "表示起點（從…開始）",
+    "に": "表示目的地或行為對象",
+    "は": "主題助詞",
+    "が": "主語助詞或能力對象",
+    "で": "表示手段或場所",
+    "を": "受格助詞",
+    "ので": "表示原因（因為…所以…）",
+    "と": "引用助詞，標示引用內容或共同動作對象",
+    "も": "也、同樣"
+  },
+  "translations": [
+    [
+      { "text": "從這個月開始上烹飪教室了。", "word": "料理教室" }
+    ],
+    [
+      { "text": "老師很擅長料理，", "word": "上手" },
+      { "text": "教我們各種夏日料理。", "word": "夏料理" }
+    ],
+    [
+      { "text": "上週做了冷中華麵。", "word": "冷やし中華" }
+    ],
+    [
+      { "text": "因為自己做到了，", "word": "できる" },
+      { "text": "非常開心。", "word": "うれしい" }
+    ],
+    [
+      { "text": "也請家人吃了。", "word": "家族" }
+    ],
+    [
+      { "text": "因為他們說「好吃」，", "word": "おいしい" },
+      { "text": "我想再試著做看看。", "word": "作る" }
+    ],
+    [
+      { "text": "下個月預計學天婦羅。", "word": "天ぷら" }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.10,
+    "jlpt_level": "N4"
+  }
+}
