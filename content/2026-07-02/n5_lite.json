@@ -1,0 +1,103 @@
+{
+  "date": "2026-07-02",
+  "level": "n5_lite",
+  "title": "わたしのねこ",
+  "text": "わたしのねこはしろいです。なまえはもちです。もちはめがあおいです。とてもげんきです。まいにちいえにいます。もちのすきなものはさかなです。わたしはもちがだいすきです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ねこ", "basic_form": "ねこ", "reading": "ねこ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "しろい", "basic_form": "しろい", "reading": "しろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "なまえ", "basic_form": "なまえ", "reading": "なまえ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "もち", "basic_form": "もち", "reading": "もち", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "もち", "basic_form": "もち", "reading": "もち", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "め", "basic_form": "め", "reading": "め", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あおい", "basic_form": "あおい", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "げんき", "basic_form": "げんき", "reading": "げんき", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "まいにち", "basic_form": "まいにち", "reading": "まいにち", "pos": "名詞" },
+    { "surface_form": "いえ", "basic_form": "いえ", "reading": "いえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "います", "basic_form": "いる", "reading": "います", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "もち", "basic_form": "もち", "reading": "もち", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "すき", "basic_form": "すき", "reading": "すき", "pos": "名詞" },
+    { "surface_form": "な", "basic_form": "だ", "reading": "な", "pos": "助動詞" },
+    { "surface_form": "もの", "basic_form": "もの", "reading": "もの", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "さかな", "basic_form": "さかな", "reading": "さかな", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "もち", "basic_form": "もち", "reading": "もち", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "だいすき", "basic_form": "だいすき", "reading": "だいすき", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我", "romaji": "watashi" },
+    "ねこ": { "meaning": "貓", "romaji": "neko" },
+    "しろい": { "meaning": "白色的", "romaji": "shiroi" },
+    "なまえ": { "meaning": "名字", "romaji": "namae" },
+    "もち": { "meaning": "麻糬（此處為貓咪的名字）", "romaji": "mochi" },
+    "め": { "meaning": "眼睛", "romaji": "me" },
+    "あおい": { "meaning": "藍色的", "romaji": "aoi" },
+    "とても": { "meaning": "非常", "romaji": "totemo" },
+    "げんき": { "meaning": "有精神、健康", "romaji": "genki" },
+    "まいにち": { "meaning": "每天", "romaji": "mainichi" },
+    "いえ": { "meaning": "家", "romaji": "ie" },
+    "いる": { "meaning": "在（有生命）", "romaji": "iru" },
+    "すき": { "meaning": "喜歡", "romaji": "suki" },
+    "もの": { "meaning": "東西", "romaji": "mono" },
+    "さかな": { "meaning": "魚", "romaji": "sakana" },
+    "だいすき": { "meaning": "最喜歡", "romaji": "daisuki" }
+  },
+  "particles": {
+    "の": "所有格助詞，表示「的」",
+    "は": "主題助詞，標示話題",
+    "が": "主語助詞，標示主語或喜好對象",
+    "に": "表示存在的場所"
+  },
+  "translations": [
+    [
+      { "text": "我的貓是白色的。", "word": "ねこ" }
+    ],
+    [
+      { "text": "名字是MOCHI。", "word": "なまえ" }
+    ],
+    [
+      { "text": "MOCHI的眼睛是藍色的。", "word": "め" }
+    ],
+    [
+      { "text": "牠很有精神。", "word": "げんき" }
+    ],
+    [
+      { "text": "牠每天都在家裡。", "word": "いえ" }
+    ],
+    [
+      { "text": "MOCHI喜歡的東西是魚。", "word": "さかな" }
+    ],
+    [
+      { "text": "我最喜歡MOCHI了。", "word": "だいすき" }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.06,
+    "jlpt_level": "N5⁻"
+  }
+}

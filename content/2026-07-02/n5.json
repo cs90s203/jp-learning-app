@@ -1,0 +1,126 @@
+{
+  "date": "2026-07-02",
+  "level": "n5",
+  "title": "えきまえのパンや",
+  "text": "きのう、駅前に新しいパン屋ができました。友達と一緒に行ってみました。店の中はいいにおいがしました。私はメロンパンを買いました。友達はクロワッサンを買いました。二人でベンチに座って食べました。とても美味しかったです。また今度行きたいです。",
+  "tokens": [
+    { "surface_form": "きのう", "basic_form": "きのう", "reading": "きのう", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "駅前", "basic_form": "駅前", "reading": "えきまえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "パン屋", "basic_form": "パン屋", "reading": "ぱんや", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "できました", "basic_form": "できる", "reading": "できました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "友達", "basic_form": "友達", "reading": "ともだち", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "一緒", "basic_form": "一緒", "reading": "いっしょ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "行ってみました", "basic_form": "行く", "reading": "いってみました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "店", "basic_form": "店", "reading": "みせ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "いい", "basic_form": "いい", "reading": "いい", "pos": "形容詞" },
+    { "surface_form": "におい", "basic_form": "におい", "reading": "におい", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "しました", "basic_form": "する", "reading": "しました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "私", "basic_form": "私", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "メロンパン", "basic_form": "メロンパン", "reading": "めろんぱん", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "買いました", "basic_form": "買う", "reading": "かいました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "友達", "basic_form": "友達", "reading": "ともだち", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "クロワッサン", "basic_form": "クロワッサン", "reading": "くろわっさん", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "買いました", "basic_form": "買う", "reading": "かいました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "二人", "basic_form": "二人", "reading": "ふたり", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "ベンチ", "basic_form": "ベンチ", "reading": "べんち", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "座って", "basic_form": "座る", "reading": "すわって", "pos": "動詞" },
+    { "surface_form": "食べました", "basic_form": "食べる", "reading": "たべました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "美味しかった", "basic_form": "美味しい", "reading": "おいしかった", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "また", "basic_form": "また", "reading": "また", "pos": "接続詞" },
+    { "surface_form": "今度", "basic_form": "今度", "reading": "こんど", "pos": "名詞" },
+    { "surface_form": "行きたい", "basic_form": "行く", "reading": "いきたい", "pos": "動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "きのう": { "meaning": "昨天", "romaji": "kinou" },
+    "駅前": { "meaning": "車站前", "romaji": "ekimae", "reading": "えきまえ" },
+    "新しい": { "meaning": "新的", "romaji": "atarashii", "reading": "あたらしい" },
+    "パン屋": { "meaning": "麵包店", "romaji": "panya", "reading": "ぱんや" },
+    "できる": { "meaning": "完成、出現（新店開張）", "romaji": "dekiru" },
+    "友達": { "meaning": "朋友", "romaji": "tomodachi", "reading": "ともだち" },
+    "一緒": { "meaning": "一起", "romaji": "issho", "reading": "いっしょ" },
+    "行く": { "meaning": "去", "romaji": "iku", "reading": "いく" },
+    "店": { "meaning": "店", "romaji": "mise", "reading": "みせ" },
+    "中": { "meaning": "裡面、中間", "romaji": "naka", "reading": "なか" },
+    "いい": { "meaning": "好的", "romaji": "ii" },
+    "におい": { "meaning": "味道、氣味", "romaji": "nioi" },
+    "する": { "meaning": "做（此處指「散發出味道」）", "romaji": "suru" },
+    "私": { "meaning": "我", "romaji": "watashi", "reading": "わたし" },
+    "メロンパン": { "meaning": "菠蘿麵包", "romaji": "meronpan" },
+    "買う": { "meaning": "買", "romaji": "kau", "reading": "かう" },
+    "クロワッサン": { "meaning": "可頌", "romaji": "kurowassan" },
+    "二人": { "meaning": "兩個人", "romaji": "futari", "reading": "ふたり" },
+    "ベンチ": { "meaning": "長椅", "romaji": "benchi" },
+    "座る": { "meaning": "坐", "romaji": "suwaru", "reading": "すわる" },
+    "食べる": { "meaning": "吃", "romaji": "taberu", "reading": "たべる" },
+    "とても": { "meaning": "非常", "romaji": "totemo" },
+    "美味しい": { "meaning": "好吃的", "romaji": "oishii", "reading": "おいしい" },
+    "また": { "meaning": "又、再", "romaji": "mata" },
+    "今度": { "meaning": "下次", "romaji": "kondo", "reading": "こんど" }
+  },
+  "particles": {
+    "に": "表示地點或目的地",
+    "が": "主語助詞",
+    "と": "表示共同動作的對象",
+    "の": "所有格助詞，表示「的」",
+    "は": "主題助詞",
+    "を": "受格助詞，標示動作對象",
+    "で": "表示動作進行的場所或方式"
+  },
+  "translations": [
+    [
+      { "text": "昨天車站前開了一間新的麵包店。", "word": "パン屋" }
+    ],
+    [
+      { "text": "我和朋友一起去看看了。", "word": "一緒" }
+    ],
+    [
+      { "text": "店裡飄著很香的味道。", "word": "におい" }
+    ],
+    [
+      { "text": "我買了菠蘿麵包。", "word": "メロンパン" }
+    ],
+    [
+      { "text": "朋友買了可頌。", "word": "クロワッサン" }
+    ],
+    [
+      { "text": "兩人坐在長椅上吃了起來。", "word": "座る" }
+    ],
+    [
+      { "text": "非常好吃。", "word": "美味しい" }
+    ],
+    [
+      { "text": "下次還想再去。", "word": "今度" }
+    ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.09,
+    "jlpt_level": "N5"
+  }
+}
