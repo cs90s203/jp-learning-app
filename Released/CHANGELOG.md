@@ -1,5 +1,14 @@
 # 日語學習 App — 版本記錄
 
+## v1.5.2 — 2026-07-01
+
+**Bug 修正：逐句跟讀改用系統語音，徹底解決 Google TTS 時序錯亂**
+
+- 前一版（v1.5.1）用大 buffer fallback 未能根治，還可能加重殘留計時器問題
+- 根因較廣：Google TTS 走 fetch→<audio>，有網路延遲、in-flight 請求無法取消、音檔可能在錄音窗開始時還在播 → 麥克風收到 TTS → 靜音偵測失效、多請求重疊 → 卡住/錯亂/狀態壞掉
+- 修正：逐句跟讀一律強制走系統語音（Web Speech，onend 同步可靠、無網路延遲）；朗讀維持 Google 高品質語音，不受影響
+- speakJa 新增 forceSystem 參數
+
 ## v1.5.1 — 2026-07-01
 
 **Bug 修正：Google Neural TTS 下逐句跟讀卡在錄音、進不了下一句**
@@ -456,6 +465,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.5.2 — 2026-07-02
+
+Bug 修正：逐句跟讀改用系統語音，避開 Google TTS 非同步時序錯亂
 
 ---
 
