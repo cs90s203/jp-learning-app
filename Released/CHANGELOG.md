@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.5.6 — 2026-07-03
+
+**逐句跟讀：移除除錯 log，正式版**
+
+- 確認 v1.5.5 修法有效（Google 語音逐句全程 onended 觸發、靜音也能自動結束）後，移除畫面頂端的臨時 debug overlay 與所有 `_fdbg` 觀測點
+- 純清理，跟讀行為不變
+
 ## v1.5.5 — 2026-07-02
 
 **逐句跟讀：修正 Google 語音第 2 句起被自動播放政策擋掉（NotAllowedError）**
@@ -488,6 +495,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## v1.5.6 — 2026-07-03
+
+移除逐句跟讀除錯 log，正式版
 
 ---
 
