@@ -2149,7 +2149,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.5.2
+          v1.5.3
         </div>
 
       </div>
@@ -4572,32 +4572,44 @@ window.speechSynthesis.onvoiceschanged = () => { _jpVoice = null; };
 
 // 正在播放的 Google Audio（供 stop 用）
 let _googleAudio = null;
+let _googleAbort = null;   // 取消還在路上的 Google TTS fetch
+let _googleReqId = 0;      // 請求代號：忽略過期回應，杜絕晚回來的音檔亂入
 
 // 統一日語 TTS 入口；rate 預設 1.0，onend 可選
 function speakJa(text, rate, onend, forceSystem) {
   rate = rate || 1.0;
   window.speechSynthesis.cancel();
   if (_googleAudio) { _googleAudio.pause(); _googleAudio = null; }
+  // 取消上一個還在路上的 Google 請求，並讓過期回應失效（避免晚回來的音檔在後面的句子亂入）
+  if (_googleAbort) { try { _googleAbort.abort(); } catch (e) {} _googleAbort = null; }
+  const myReq = ++_googleReqId;
 
   const opt = TTS_VOICE_OPTIONS.find(o => o.key === _ttsVoiceKey) || TTS_VOICE_OPTIONS[0];
   // forceSystem：逐句跟讀強制走系統語音（Web Speech），避開 Google 非同步造成的時序問題
   if (opt.googleName && !forceSystem) {
+    _googleAbort = new AbortController();
     fetch('https://texttospeech.googleapis.com/v1/text:synthesize?key=' + GOOGLE_TTS_KEY, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
+      signal: _googleAbort.signal,
       body: JSON.stringify({
         input: { text: text },
         voice: { languageCode: 'ja-JP', name: opt.googleName },
         audioConfig: { audioEncoding: 'MP3', speakingRate: rate }
       })
     }).then(function(r){ return r.json(); }).then(function(data) {
+      if (myReq !== _googleReqId) return;              // 過期回應：忽略
       if (!data.audioContent) { if (onend) onend(); return; }
       var audio = new Audio('data:audio/mp3;base64,' + data.audioContent);
       _googleAudio = audio;
-      audio.onended = function() { _googleAudio = null; if (onend) onend(); };
-      audio.onerror = function() { _googleAudio = null; if (onend) onend(); };
+      audio.onended = function() { if (myReq !== _googleReqId) return; _googleAudio = null; if (onend) onend(); };
+      audio.onerror = function() { if (myReq !== _googleReqId) return; _googleAudio = null; if (onend) onend(); };
       audio.play();
-    }).catch(function() { if (onend) onend(); });
+    }).catch(function(err) {
+      if (err && err.name === 'AbortError') return;    // 被取消：不推進（免得跳錯句）
+      if (myReq !== _googleReqId) return;
+      if (onend) onend();
+    });
   } else {
     var u = new SpeechSynthesisUtterance(text);
     var v = getJpVoice();
@@ -5538,11 +5550,13 @@ function _followStep() {
     _followRecordWindow(n, total);
   };
 
-  // 逐句跟讀「一律用系統語音（Web Speech）」：onend 同步可靠、無網路延遲，
-  // 才能精準抓「這句播完」的時機。Google/Wavenet 走 fetch→<audio> 有網路延遲、in-flight 請求無法取消、
-  // 音檔可能在錄音窗開始時還在播 → 麥克風收到 TTS → 靜音偵測失效 → 卡住/錯亂（朗讀仍用 Google 高品質語音，不受影響）。
-  speakJa(text, readAloudRate, afterTts, true);
-  setTimeout(afterTts, estMs + 500);
+  // 依當前發音設定分流（兩套互不干擾）：
+  //  - 系統語音（Web Speech）：維持現況 —— u.onend ＋ estMs+500 估時 fallback（iOS onend 常漏觸發，需要它）
+  //  - Google 語音：靠可靠的 audio.onended 觸發；不放早觸發的估時 fallback（否則會在還沒播完就進錄音、
+  //    麥克風收到 TTS → 靜音偵測失效），只放很寬的絕對逾時當兜底。speakJa 已會取消過期 fetch，杜絕晚回來的音檔亂入。
+  const _isGoogleVoice = !!((TTS_VOICE_OPTIONS.find(o => o.key === _ttsVoiceKey) || {}).googleName);
+  speakJa(text, readAloudRate, afterTts);
+  setTimeout(afterTts, estMs + (_isGoogleVoice ? 8000 : 500));
 }
 
 function _followRecordWindow(n, total) {
@@ -5607,6 +5621,10 @@ function _stopFollowMode() {
   if (_followTimer) { clearTimeout(_followTimer); _followTimer = null; }
   _cleanFollowDetection();
   window.speechSynthesis.cancel();
+  // 停止時殺掉還在路上的 Google 請求與正在播的音檔（否則停了還會播/亂入）
+  if (_googleAbort) { try { _googleAbort.abort(); } catch (e) {} _googleAbort = null; }
+  _googleReqId++;
+  if (_googleAudio) { _googleAudio.pause(); _googleAudio = null; }
   if (_followMR && (_followMR.state === 'recording' || _followMR.state === 'paused')) {
     // 不覆蓋 onstop：讓原本的 save handler 執行，中途已錄的音也存檔
     _followMR.stop();

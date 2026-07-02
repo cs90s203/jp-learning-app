@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.5.3 — 2026-07-01
+
+**逐句跟讀支援 Google 語音（第一步：時序與請求重疊）**
+
+- 逐句跟讀改為依當前發音設定分流：系統語音維持原本 `u.onend + estMs+500` 做法（不變）；Google 語音改用可靠的 `audio.onended` 為唯一「播完」觸發，移除會早觸發的估時 fallback（只保留很寬的絕對逾時兜底）
+- Google TTS fetch 加入 AbortController + 請求代號：換句/停止時取消還在路上的請求、忽略過期回應，杜絕晚回來的音檔在後面句子亂入（先前錯亂/卡住的主因）
+- `_stopFollowMode` 停止時一併清掉 Google 請求與播放中的音檔
+
 ## v1.5.2 — 2026-07-01
 
 **Bug 修正：逐句跟讀改用系統語音，徹底解決 Google TTS 時序錯亂**
@@ -465,6 +473,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.5.3 — 2026-07-02
+
+逐句跟讀支援 Google 語音（第一步：onended 觸發 + 取消過期 fetch）
 
 ---
 
