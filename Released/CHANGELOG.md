@@ -1,5 +1,13 @@
 # 日語學習 App — 版本記錄
 
+## v1.5.5 — 2026-07-02
+
+**逐句跟讀：修正 Google 語音第 2 句起被自動播放政策擋掉（NotAllowedError）**
+
+- 根因：每句都 `new Audio()`，第 1 句在手勢授權窗內能播，第 2 句起（非同步 fetch 回來才 play）脫離手勢 → `play()` 被擋 → onended 不觸發 → 只能等 8 秒 timer fallback，造成卡頓/殘留
+- 修法：改用**單一持久 `<audio>` 元素**，並在按下「逐句」的手勢當下用靜音 WAV **解鎖一次**；之後所有句子重用該元素播放，不再被擋
+- debug log 暫時保留（本次驗證用），確認修好後下一版移除
+
 ## v1.5.4 — 2026-07-01（除錯版）
 
 **逐句跟讀：加入畫面即時 debug log（暫時，用於定位 Google 語音卡住問題）**
@@ -480,6 +488,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## v1.5.5 — 2026-07-02
+
+修正 Google 語音逐句第2句起 NotAllowedError（持久 audio 元素+手勢解鎖）
 
 ---
 
