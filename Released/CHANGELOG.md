@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.5.4 — 2026-07-01（除錯版）
+
+**逐句跟讀：加入畫面即時 debug log（暫時，用於定位 Google 語音卡住問題）**
+
+- 畫面頂端顯示跟讀流程事件：step/play(onended·timer)/REC start(含 analyser 狀態)/靜音 dB 讀值/endWindow/DONE/STOP/Google fetch 各結果
+- 邏輯不變，只加觀測；定位後即移除
+
 ## v1.5.3 — 2026-07-01
 
 **逐句跟讀支援 Google 語音（第一步：時序與請求重疊）**
@@ -473,6 +480,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.5.4 — 2026-07-02
+
+除錯版：逐句跟讀加畫面即時 debug log，定位 Google 語音卡住點
 
 ---
 

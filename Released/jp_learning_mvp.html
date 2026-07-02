@@ -2149,7 +2149,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.5.3
+          v1.5.4
         </div>
 
       </div>
@@ -4598,16 +4598,18 @@ function speakJa(text, rate, onend, forceSystem) {
         audioConfig: { audioEncoding: 'MP3', speakingRate: rate }
       })
     }).then(function(r){ return r.json(); }).then(function(data) {
-      if (myReq !== _googleReqId) return;              // 過期回應：忽略
-      if (!data.audioContent) { if (onend) onend(); return; }
+      if (myReq !== _googleReqId) { if (typeof _fdbg==='function') _fdbg('g-stale-resp req' + myReq + '/' + _googleReqId); return; }
+      if (!data.audioContent) { if (typeof _fdbg==='function') _fdbg('g-no-audio'); if (onend) onend(); return; }
       var audio = new Audio('data:audio/mp3;base64,' + data.audioContent);
       _googleAudio = audio;
-      audio.onended = function() { if (myReq !== _googleReqId) return; _googleAudio = null; if (onend) onend(); };
-      audio.onerror = function() { if (myReq !== _googleReqId) return; _googleAudio = null; if (onend) onend(); };
-      audio.play();
+      audio.onended = function() { if (myReq !== _googleReqId) { if (typeof _fdbg==='function') _fdbg('g-ended-stale'); return; } if (typeof _fdbg==='function') _fdbg('g-ended req' + myReq); _googleAudio = null; if (onend) onend(); };
+      audio.onerror = function() { if (typeof _fdbg==='function') _fdbg('g-audio-error'); if (myReq !== _googleReqId) return; _googleAudio = null; if (onend) onend(); };
+      var _pp = audio.play();
+      if (_pp && _pp.catch) _pp.catch(function(e){ if (typeof _fdbg==='function') _fdbg('g-play-reject ' + (e && e.name)); });
     }).catch(function(err) {
-      if (err && err.name === 'AbortError') return;    // 被取消：不推進（免得跳錯句）
+      if (err && err.name === 'AbortError') { if (typeof _fdbg==='function') _fdbg('g-abort req' + myReq); return; }
       if (myReq !== _googleReqId) return;
+      if (typeof _fdbg==='function') _fdbg('g-fetch-err ' + (err && err.message));
       if (onend) onend();
     });
   } else {
@@ -5437,9 +5439,11 @@ function toggleFollowMode() {
 }
 
 async function _startFollowMode() {
+  var _dbgEl = document.getElementById('follow-dbg'); if (_dbgEl) { _dbgEl._lines = []; _dbgEl.textContent = ''; }
   // 取要播放的句子（依目前 sentenceSelected 過濾）
   _followSentences = SENTENCE_TEXTS.filter((_, i) => sentenceSelected[i] !== false);
   if (!_followSentences.length) { showToast('沒有可跟讀的句子'); return; }
+  _fdbg('=== START follow, ' + _followSentences.length + ' 句, voice=' + _ttsVoiceKey + ' ===');
   track('use_shadowing');
 
   // 停止其他音訊
@@ -5521,9 +5525,25 @@ async function _startFollowMode() {
   _followStep();
 }
 
+// ── 臨時 debug log（畫面頂端顯示跟讀流程，除錯用，之後移除）──
+function _fdbg(msg) {
+  var d = document.getElementById('follow-dbg');
+  if (!d) {
+    d = document.createElement('div');
+    d.id = 'follow-dbg';
+    d.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:rgba(0,0,0,.85);color:#0f0;font:10px/1.35 monospace;padding:4px 6px;white-space:pre-wrap;max-height:48vh;overflow:auto;pointer-events:none';
+    document.body.appendChild(d);
+    d._lines = [];
+  }
+  d._lines.unshift(((performance.now() / 1000).toFixed(1)) + '  ' + msg);
+  if (d._lines.length > 18) d._lines.pop();
+  d.textContent = d._lines.join('\n');
+}
+
 function _followStep() {
-  if (!_followMode) return;
+  if (!_followMode) { _fdbg('step: mode=false → return'); return; }
   if (_followIdx >= _followSentences.length) {
+    _fdbg('DONE idx=' + _followIdx + '/' + _followSentences.length);
     // 全部完成：清理後停止錄音
     _followMode = false;
     window.speechSynthesis.cancel();
@@ -5544,23 +5564,22 @@ function _followStep() {
   const estMs = Math.max(800, Math.ceil((text.length / charsPerSec) * 1000));
 
   let fired = false;
-  const afterTts = () => {
-    if (fired || !_followMode) return;
+  const afterTts = (src) => {
+    if (fired || !_followMode) { _fdbg('afterTts[' + src + '] skip fired=' + fired + ' mode=' + _followMode); return; }
     fired = true;
+    _fdbg('afterTts[' + src + '] → REC n=' + n);
     _followRecordWindow(n, total);
   };
 
-  // 依當前發音設定分流（兩套互不干擾）：
-  //  - 系統語音（Web Speech）：維持現況 —— u.onend ＋ estMs+500 估時 fallback（iOS onend 常漏觸發，需要它）
-  //  - Google 語音：靠可靠的 audio.onended 觸發；不放早觸發的估時 fallback（否則會在還沒播完就進錄音、
-  //    麥克風收到 TTS → 靜音偵測失效），只放很寬的絕對逾時當兜底。speakJa 已會取消過期 fetch，杜絕晚回來的音檔亂入。
   const _isGoogleVoice = !!((TTS_VOICE_OPTIONS.find(o => o.key === _ttsVoiceKey) || {}).googleName);
-  speakJa(text, readAloudRate, afterTts);
-  setTimeout(afterTts, estMs + (_isGoogleVoice ? 8000 : 500));
+  _fdbg('step n=' + n + '/' + total + ' voice=' + (_isGoogleVoice ? 'G' : 'sys'));
+  speakJa(text, readAloudRate, () => afterTts('onend'));
+  setTimeout(() => afterTts('timer'), estMs + (_isGoogleVoice ? 8000 : 500));
 }
 
 function _followRecordWindow(n, total) {
-  if (!_followMode) return;
+  if (!_followMode) { _fdbg('REC n=' + n + ' skip mode=false'); return; }
+  _fdbg('REC start n=' + n + ' analyser=' + !!_followAnalyser + ' MR=' + (_followMR && _followMR.state) + ' gAudio=' + !!_googleAudio);
   // TTS 已結束，開始錄音
   if (_followMR && _followMR.state === 'paused') _followMR.resume();
 
@@ -5578,6 +5597,7 @@ function _followRecordWindow(n, total) {
 
   // 共用結束邏輯
   const endWindow = () => {
+    _fdbg('endWindow n=' + n + ' → next');
     clearInterval(tick);
     if (_followSilencePoll) { clearInterval(_followSilencePoll); _followSilencePoll = null; }
     if (_followTimer)       { clearTimeout(_followTimer);        _followTimer = null; }
@@ -5590,6 +5610,7 @@ function _followRecordWindow(n, total) {
   _followSilenceCnt = 0;
   if (_followAnalyser) {
     const buf = new Float32Array(_followAnalyser.fftSize);
+    let _pollN = 0;
     _followSilencePoll = setInterval(() => {
       if (!_followMode) { clearInterval(_followSilencePoll); _followSilencePoll = null; return; }
       _followAnalyser.getFloatTimeDomainData(buf);
@@ -5598,6 +5619,7 @@ function _followRecordWindow(n, total) {
       const rms = Math.sqrt(sum / buf.length);
       const db  = rms > 0 ? 20 * Math.log10(rms) : -Infinity;
       const needed = Math.max(1, Math.round(_silenceSec * 10)); // 每 100ms 一次
+      if (++_pollN % 10 === 0) _fdbg('  db=' + (db === -Infinity ? '-inf' : db.toFixed(0)) + ' cnt=' + _followSilenceCnt + '/' + needed + ' thr=' + _silenceDbThreshold);
       if (db < _silenceDbThreshold) {
         _followSilenceCnt++;
         if (_followSilenceCnt >= needed) endWindow();
@@ -5605,6 +5627,8 @@ function _followRecordWindow(n, total) {
         _followSilenceCnt = 0;
       }
     }, 100);
+  } else {
+    _fdbg('REC n=' + n + ' NO analyser → 只能等 30s 逾時');
   }
 
   // 最長上限 30s（靜音偵測不可用時也能兜底）
@@ -5617,6 +5641,7 @@ function _cleanFollowDetection() {
 }
 
 function _stopFollowMode() {
+  if (typeof _fdbg === 'function') _fdbg('STOP (idx=' + _followIdx + ')');
   _followMode = false;
   if (_followTimer) { clearTimeout(_followTimer); _followTimer = null; }
   _cleanFollowDetection();
