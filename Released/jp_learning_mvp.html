@@ -2149,7 +2149,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.5.4
+          v1.5.5
         </div>
 
       </div>
@@ -4574,6 +4574,23 @@ window.speechSynthesis.onvoiceschanged = () => { _jpVoice = null; };
 let _googleAudio = null;
 let _googleAbort = null;   // 取消還在路上的 Google TTS fetch
 let _googleReqId = 0;      // 請求代號：忽略過期回應，杜絕晚回來的音檔亂入
+// 持久的 <audio> 元素：在使用者手勢（按逐句）當下用靜音片段解鎖一次，
+// 之後即使音檔是在非同步 fetch 回來才播放，也不會被自動播放政策擋掉（NotAllowedError）。
+let _ttsAudioEl = null;
+const _SILENT_WAV = 'data:audio/wav;base64,UklGRrQBAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YZABAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA';
+function _getTtsAudioEl() {
+  if (!_ttsAudioEl) { _ttsAudioEl = new Audio(); try { _ttsAudioEl.setAttribute('playsinline', ''); } catch (e) {} }
+  return _ttsAudioEl;
+}
+// 必須在使用者手勢的同步呼叫堆疊內執行，才能解鎖之後的程式化 play()
+function _unlockTtsAudio() {
+  var el = _getTtsAudioEl();
+  try {
+    el.src = _SILENT_WAV;
+    var p = el.play();
+    if (p && p.then) p.then(function(){ try { el.pause(); el.currentTime = 0; } catch (e) {} }).catch(function(){});
+  } catch (e) {}
+}
 
 // 統一日語 TTS 入口；rate 預設 1.0，onend 可選
 function speakJa(text, rate, onend, forceSystem) {
@@ -4600,7 +4617,8 @@ function speakJa(text, rate, onend, forceSystem) {
     }).then(function(r){ return r.json(); }).then(function(data) {
       if (myReq !== _googleReqId) { if (typeof _fdbg==='function') _fdbg('g-stale-resp req' + myReq + '/' + _googleReqId); return; }
       if (!data.audioContent) { if (typeof _fdbg==='function') _fdbg('g-no-audio'); if (onend) onend(); return; }
-      var audio = new Audio('data:audio/mp3;base64,' + data.audioContent);
+      var audio = _getTtsAudioEl();     // 重用已解鎖的元素，避開第 2 句起的 NotAllowedError
+      audio.src = 'data:audio/mp3;base64,' + data.audioContent;
       _googleAudio = audio;
       audio.onended = function() { if (myReq !== _googleReqId) { if (typeof _fdbg==='function') _fdbg('g-ended-stale'); return; } if (typeof _fdbg==='function') _fdbg('g-ended req' + myReq); _googleAudio = null; if (onend) onend(); };
       audio.onerror = function() { if (typeof _fdbg==='function') _fdbg('g-audio-error'); if (myReq !== _googleReqId) return; _googleAudio = null; if (onend) onend(); };
@@ -5450,6 +5468,10 @@ async function _startFollowMode() {
   if (isRecording) { mediaRecorder.stop(); }
   stopPlayRecording();
   stopReadAloud();
+
+  // iOS Safari：必須在 await 前（使用者手勢上下文）先解鎖 Google TTS 用的 <audio>，
+  // 否則第 2 句之後（非同步 fetch 回來才 play）會被自動播放政策擋掉（NotAllowedError）
+  _unlockTtsAudio();
 
   // iOS Safari：必須在 await 前（使用者手勢上下文）先 warm-up TTS，
   // 否則 await 後 speechSynthesis.speak() 會被系統靜默阻擋
