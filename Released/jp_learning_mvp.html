@@ -2167,7 +2167,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.7.0
+          v1.7.1
         </div>
 
       </div>
@@ -8534,7 +8534,7 @@ function fbSignOut() {
 }
 
 // 上傳本機資料到 Firestore
-function syncToCloud() {
+function syncToCloud(silent) {
   if (!currentUser || !fbDb) { showToast('請先登入'); return; }
   const uid = currentUser.uid;
   const now = new Date().toISOString();
@@ -8565,10 +8565,10 @@ function syncToCloud() {
     localStorage.setItem('lastSyncAt', now);
     localStorage.setItem('lastSyncedCloudAt', now);
     _setSyncStatus('done', now);
-    showToast('同步完成');
+    if (!silent) showToast('同步完成');       // 背景自動同步不跳提示，只更新右上角狀態
   }).catch(err => {
     _setSyncStatus('error');
-    showToast('同步失敗：' + err.message);
+    if (!silent) showToast('同步失敗：' + err.message);
   });
 }
 
@@ -8727,7 +8727,7 @@ var _autoSyncTimer = null;
 function autoSyncToCloud() {
   if (!currentUser || !fbDb) return;
   clearTimeout(_autoSyncTimer);
-  _autoSyncTimer = setTimeout(syncToCloud, 3000);
+  _autoSyncTimer = setTimeout(() => syncToCloud(true), 3000);
 }
 
 // 頁面切到背景時立即同步（關閉 app 前）
