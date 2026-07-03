@@ -799,6 +799,21 @@
     transition: width 0.3s ease; width: 0%;
   }
   .vq-counter { font-size: 13px; color: var(--wt3); text-align: center; }
+  /* 自動倒數翻頁：按鈕 + 倒數條 */
+  .vq-cd-btn {
+    min-width: 28px; height: 28px; padding: 0 8px; border: none;
+    background: var(--wa-bg2); border-radius: 14px; cursor: pointer; color: var(--wt2);
+    font-size: 13px; font-weight: 600; gap: 3px;
+    display: flex; align-items: center; justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .vq-cd-btn.active { background: var(--wa); color: #FFF; }
+  .vq-cd-wrap {
+    width: 296px; height: 3px; border-radius: 2px; overflow: hidden;
+    background: var(--wa-bg2);
+  }
+  .vq-cd-bar { height: 100%; width: 0%; border-radius: 2px; background: var(--wa); }
+  .vq-cd-bar.phase-b { background: var(--wr); }
   .vq-card-area {
     flex: 1; display: flex; flex-direction: column;
     align-items: center; justify-content: center; padding: 80px 32px 0; text-align: center;
@@ -2149,7 +2164,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.5.7
+          v1.6.0
         </div>
 
       </div>
@@ -2388,6 +2403,7 @@
   <!-- 單字複習考 overlay -->
   <div id="vocab-quiz">
     <button class="vq-close-btn" onclick="exitVocabQuiz()" style="position:fixed;top:14px;right:16px">✕</button>
+    <button class="vq-cd-btn" id="vq-cd-btn" onclick="vqCycleAuto()" style="position:fixed;top:14px;left:16px;display:none" aria-label="自動倒數翻頁"></button>
     <!-- mode selection screen -->
     <div id="vq-mode-select" style="display:none;flex-direction:column;align-items:center;justify-content:center;flex:1;gap:20px;padding:32px">
       <div style="font-size:20px;font-weight:600;color:var(--wt);margin-bottom:8px">選擇複習模式</div>
@@ -2404,6 +2420,7 @@
     <div class="vq-header" id="vq-header">
       <span class="vq-counter" id="vq-counter">0 / 0</span>
       <div class="vq-prog-wrap"><div class="vq-prog-bar" id="vq-bar"></div></div>
+      <div class="vq-cd-wrap" id="vq-cd-wrap" style="visibility:hidden"><div class="vq-cd-bar" id="vq-cd-bar"></div></div>
     </div>
     <!-- card area -->
     <div class="vq-card-area" id="vq-card-area">
@@ -7163,6 +7180,10 @@ let vqOk = 0;
 let vqFail = 0;
 let vqForgetMode = false; // 不記得狀態：等待「下一張」
 let vqMode = 'text'; // 'text' | 'listen'
+// 自動倒數翻頁（文字複習）：0=關閉, 5, 10, -1=∞(不自動翻)
+let vqAutoSec = parseInt(localStorage.getItem('vqAutoSec')) || 0;
+let vqCdTimer = null;   // 目前階段的計時器
+let vqPhase   = '';     // ''=無, 'A'=題面倒數, 'B'=答案4秒
 
 function startVocabQuiz() {
   const words = vocabFilteredList;
@@ -7202,6 +7223,7 @@ function startVocabQuiz() {
   document.getElementById('vq-card-area').style.display = 'none';
   document.getElementById('vq-btns').style.display = 'none';
   document.getElementById('vq-result-area').style.display = 'none';
+  document.getElementById('vq-cd-btn').style.display = 'none';
 }
 
 function startVocabQuizMode(mode) {
@@ -7210,6 +7232,10 @@ function startVocabQuizMode(mode) {
   document.getElementById('vq-header').style.display = '';
   document.getElementById('vq-card-area').style.display = 'flex';
   document.getElementById('vq-btns').style.display = 'grid';
+  // 自動倒數翻頁按鈕：此版只在文字複習提供
+  const cdBtn = document.getElementById('vq-cd-btn');
+  cdBtn.style.display = (mode === 'text') ? 'flex' : 'none';
+  vqUpdateCdBtn();
   // 聽力模式：TTS 按鈕放大
   const ttsBtn = document.getElementById('vq-tts-btn');
   if (ttsBtn) {
@@ -7230,6 +7256,7 @@ function startVocabQuizMode(mode) {
 
 function vqShowCard() {
   vqForgetMode = false;
+  vqClearCountdown();
 
   const word  = vqQueue[vqIndex];
   const entry = vocabBook[word] || {};
@@ -7280,6 +7307,54 @@ function vqShowCard() {
   rBtn.className = 'vq-btn vq-remember';
   rBtn.onclick = () => vqRate(true);
   rBtn.disabled = false;
+
+  vqStartCountdown();
+}
+
+// ── 自動倒數翻頁 ──
+const VQ_AUTO_CYCLE = [0, 5, 10, -1]; // 關閉 → 5 → 10 → ∞ → 關閉
+function vqCycleAuto() {
+  vqAutoSec = VQ_AUTO_CYCLE[(VQ_AUTO_CYCLE.indexOf(vqAutoSec) + 1) % VQ_AUTO_CYCLE.length];
+  localStorage.setItem('vqAutoSec', vqAutoSec);
+  vqUpdateCdBtn();
+  // 立即套用到目前這張：只有答案還沒揭曉時重新起算題面倒數，已揭曉的維持、下一張才套用
+  vqClearCountdown();
+  if (document.getElementById('vq-meaning').classList.contains('meaning-hidden')) vqStartCountdown();
+}
+function vqUpdateCdBtn() {
+  const b = document.getElementById('vq-cd-btn');
+  if (!b) return;
+  const label = vqAutoSec === -1 ? '∞' : (vqAutoSec > 0 ? String(vqAutoSec) : '');
+  b.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/></svg>' + (label ? '<span>' + label + '</span>' : '');
+  b.classList.toggle('active', vqAutoSec !== 0);
+}
+function vqRunBar(sec, isB) {
+  const wrap = document.getElementById('vq-cd-wrap');
+  const bar  = document.getElementById('vq-cd-bar');
+  if (!wrap || !bar) return;
+  wrap.style.visibility = 'visible';
+  bar.classList.toggle('phase-b', !!isB);
+  bar.style.transition = 'none';
+  bar.style.width = '100%';
+  void bar.offsetWidth; // 強制 reflow，讓下面的 transition 從 100% 起算
+  bar.style.transition = 'width ' + sec + 's linear';
+  bar.style.width = '0%';
+}
+function vqClearCountdown() {
+  if (vqCdTimer) { clearTimeout(vqCdTimer); vqCdTimer = null; }
+  vqPhase = '';
+  const bar  = document.getElementById('vq-cd-bar');
+  const wrap = document.getElementById('vq-cd-wrap');
+  if (bar)  { bar.style.transition = 'none'; bar.style.width = '0%'; bar.classList.remove('phase-b'); }
+  if (wrap) wrap.style.visibility = 'hidden';
+}
+// Phase A：題面倒數（僅文字模式、5/10 秒時啟動；關閉/∞ 不自動翻）
+function vqStartCountdown() {
+  if (vqMode !== 'text') return;
+  if (vqAutoSec !== 5 && vqAutoSec !== 10) return;
+  vqPhase = 'A';
+  vqRunBar(vqAutoSec, false);
+  vqCdTimer = setTimeout(function() { vqPeekMeaning(); }, vqAutoSec * 1000);
 }
 
 function vqPeekMeaning() {
@@ -7290,6 +7365,13 @@ function vqPeekMeaning() {
   if (exEl) exEl.classList.remove('meaning-hidden');
   document.getElementById('vq-peek-hint').style.display = 'none';
   document.getElementById('vq-meaning-tap').style.pointerEvents = 'none';
+  // Phase B：答案一揭曉（自動或手動）→ 固定 4 秒，時間到算不記得；期間可搶按覆蓋
+  if ((vqAutoSec === 5 || vqAutoSec === 10) && vqMode === 'text' && vqPhase !== 'B') {
+    if (vqCdTimer) { clearTimeout(vqCdTimer); vqCdTimer = null; }
+    vqPhase = 'B';
+    vqRunBar(4, true);
+    vqCdTimer = setTimeout(function() { vqRate(false); }, 4000);
+  }
 }
 
 function vqSpeak(e) {
@@ -7300,6 +7382,7 @@ function vqSpeak(e) {
 }
 
 function vqRate(remembered) {
+  vqClearCountdown();
   const word  = vqQueue[vqIndex];
   const entry = vocabBook[word] || {};
   const fam   = entry.familiarity || 0;
@@ -7334,6 +7417,8 @@ function vqSaveProgress() {
 }
 
 function vqShowResult() {
+  vqClearCountdown();
+  document.getElementById('vq-cd-btn').style.display = 'none';
   document.getElementById('vq-bar').style.width = '100%';
   document.getElementById('vq-counter').textContent = '完成 ✓';
   document.getElementById('vq-r-ok').textContent   = vqOk;
@@ -7356,6 +7441,7 @@ function vqShowResult() {
 }
 
 function exitVocabQuiz() {
+  vqClearCountdown();
   document.getElementById('vocab-quiz').style.display = 'none';
   var hb = document.getElementById('vocab-help-btn');
   if (hb) hb.style.display = '';
