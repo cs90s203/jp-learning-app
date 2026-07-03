@@ -1,5 +1,14 @@
 # 日語學習 App — 版本記錄
 
+## v1.5.7 — 2026-07-03
+
+**生成優化：romaji 本地計算 + difficulty 硬編碼**
+- 新增 `kanaToRomaji()` 假名→羅馬拼音函數（Hepburn，含濁音/半濁音/拗音/促音/長音）
+- vocab 不再需要 `romaji` 欄位，App 自動從 kana 計算（省 5–8% 生成 token）
+- 新增 `LEVEL_DIFFICULTY` 常數表，`difficulty` 欄位不再需要 AI 生成（省少量 token）
+- 生成 prompt 改為英文，移除 `romaji`/`difficulty` 欄位規範
+- 新增 `content/recent_titles.json`，標題查重從讀 70 個檔案改為讀 1 個
+
 ## v1.5.6 — 2026-07-03
 
 **逐句跟讀：移除除錯 log，正式版**
@@ -495,6 +504,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.5.7 — 2026-07-03
+
+romaji本地計算、difficulty硬編碼、生成prompt優化
 
 ---
 
