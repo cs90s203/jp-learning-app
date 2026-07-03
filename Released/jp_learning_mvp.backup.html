@@ -5,6 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FDF8F3">
+<script>
+/* 首次繪製前就定好主題，避免 splash 與背景閃一下亮色（防 FOUC）。
+   theme: 'light' | 'dark' | 'system'(或無) → 解析成深/淺 */
+(function(){
+  try {
+    var saved = localStorage.getItem('theme');
+    var isDark = saved === 'dark' ? true
+               : saved === 'light' ? false
+               : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var root = document.documentElement;
+    if (isDark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
+    root.style.colorScheme = isDark ? 'dark' : 'light';
+    root.style.backgroundColor = isDark ? '#1C1208' : '#F5EDE0';
+    var m = document.querySelector('meta[name="theme-color"]');
+    if (m) m.setAttribute('content', isDark ? '#120C04' : '#FDF8F3');
+    // 因切換主題而重載時跳過開場動畫（iOS overscroll 修正用）
+    if (sessionStorage.getItem('_skipSplash')) {
+      root.classList.add('skip-splash');
+      sessionStorage.removeItem('_skipSplash');
+    }
+  } catch(e){}
+})();
+</script>
 <title>日語學習</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
@@ -345,6 +370,15 @@
   .toggle.off { background: var(--wa-bg2); }
   .toggle.off::after { right: auto; left: 3px; }
 
+  /* 主題三態分段控制 */
+  .theme-seg { display: flex; gap: 2px; background: var(--wa-bg2); border-radius: 99px; padding: 2px; flex-shrink: 0; }
+  .theme-seg button {
+    border: none; background: transparent; color: var(--wt3);
+    font-size: 12px; font-weight: 600; padding: 5px 10px; border-radius: 99px;
+    cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background .15s, color .15s;
+  }
+  .theme-seg button.active { background: var(--wa); color: #FFF; }
+
   /* Audio control bars (read-aloud / follow-read) */
   .av-bar {
     display: flex; align-items: center; justify-content: space-between;
@@ -449,8 +483,17 @@
   .article-text ruby rt { font-size: 10px; color: var(--wt3); }
   .cn-note { font-size: 12px; color: var(--wt2); display: block; margin: -4px 0 6px 20px; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
   .cn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
+  /* 書寫練習行：每句下方一條滿版底線輸入框 */
+  .write-line { display: block; margin: 2px 16px 10px 20px; max-height: 44px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
+  .write-line.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
+  .write-line .write-input { width: 100%; border: none; border-bottom: 1.5px solid var(--wa-bg2); border-radius: 0; background: transparent; color: var(--wt); font-family: inherit; font-size: 15px; line-height: 1.6; padding: 2px 0; outline: none; -webkit-appearance: none; }
+  .write-line .write-input:focus { border-color: transparent; border-bottom-color: var(--wa); }
   /* Article page：底部要讓出固定工具列的空間 */
   #page-article { padding-bottom: calc(var(--nav-h) + var(--safe-bottom) + var(--atb-h) + 12px); }
+  /* iOS Safari 的 flex column + overflow 容器，在 touch reflow 時會把子元素壓縮，
+     使短文章 scrollHeight 崩塌成 clientHeight 而無法捲動。改用 block 佈局徹底避開。
+     (#page-article.active 特異度高於 .page.active，可覆寫共用的 display:flex) */
+  #page-article.active { display: block; }
 
   /* ── 文章週曆列 ── */
   #article-week-bar {
@@ -638,7 +681,7 @@
   #page-vocab { overflow-y: hidden; }
 
   .vocab-filter-bar {
-    display: flex; gap: 6px; padding: 0 16px 10px; flex-shrink: 0; align-items: center;
+    display: flex; gap: 6px; padding: 8px 16px 10px; flex-shrink: 0; align-items: center;
   }
   .vocab-filter-bar .vocab-quiz-start-btn { flex-shrink: 0; margin-left: auto; }
   .vocab-filter-btn {
@@ -766,7 +809,7 @@
   .vq-meaning-tap { cursor: pointer; }
   .vq-meaning {
     font-size: 20px; color: var(--wt); font-weight: 500;
-    transition: color 0.15s, text-shadow 0.15s;
+    /* 不加 transition：換卡時遮罩需即時生效，否則會閃出下一張答案約 0.5 秒 */
   }
   .vq-meaning.meaning-hidden,
   .vq-word.meaning-hidden,
@@ -780,6 +823,13 @@
   html[data-theme="dark"] .vq-kana.meaning-hidden {
     text-shadow: 0 0 12px rgba(240,228,208,0.6);
   }
+  /* 大字（44px）要更濃的霧，否則輪廓仍可辨識；疊兩層加密度 */
+  .vq-word.meaning-hidden {
+    text-shadow: 0 0 22px rgba(42,26,8,0.85), 0 0 38px rgba(42,26,8,0.7);
+  }
+  html[data-theme="dark"] .vq-word.meaning-hidden {
+    text-shadow: 0 0 22px rgba(240,228,208,0.85), 0 0 38px rgba(240,228,208,0.7);
+  }
   .vq-peek-hint { font-size: 12px; color: var(--wt3); margin-top: 10px; }
   .vq-word-row { display: flex; align-items: center; justify-content: center; gap: 10px; }
   .vq-tts-btn {
@@ -790,7 +840,6 @@
   }
   .vq-example {
     font-size: 14px; color: var(--wt2); line-height: 1.8; margin-top: 14px;
-    transition: color 0.15s, text-shadow 0.15s;
   }
   .vq-example.meaning-hidden {
     color: transparent; text-shadow: 0 0 8px rgba(42,26,8,0.5); user-select: none;
@@ -877,6 +926,17 @@
   }
   .vocab-gojuuon-btn.open { background: var(--wa-bg2); color: var(--wt2); box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
 
+  #gojuuon-fixed-btn {
+    position: fixed; top: 50px; right: 16px; z-index: 9000;
+    width: 28px; height: 28px; border-radius: 50%; border: none;
+    background: var(--wa); color: #fff; font-size: 13px; font-weight: 500;
+    cursor: pointer; display: none;
+    align-items: center; justify-content: center;
+    box-shadow: 0 2px 8px rgba(196,120,58,0.35);
+  }
+  #gojuuon-fixed-btn.show { display: flex; }
+  #gojuuon-fixed-btn.open { background: var(--wa-bg2); color: var(--wt2); box-shadow: none; }
+
   /* 五十音表 overlay */
   #gojuuon-overlay {
     display: none; position: fixed; inset: 0; z-index: 9100;
@@ -898,8 +958,6 @@
     cursor: pointer; transition: background .15s, color .15s;
   }
   .gojuuon-chip.active { background: var(--wa); color: #FFF; border-color: var(--wa); }
-  .gojuuon-chip-kata { background: var(--wt2); color: var(--card-bg); border-color: var(--wt2); }
-  .gojuuon-chip-kata.active { background: var(--wa); color: #FFF; border-color: var(--wa); }
   .gojuuon-group-hidden { display: none; }
   .gojuuon-close {
     width: 28px; height: 28px; border-radius: 50%; border: none;
@@ -1264,6 +1322,11 @@
   #splash-logo { opacity: 1; }
   #splash-name { font-size: 22px; font-weight: 700; color: #C8784A; letter-spacing: 0.04em; }
   #splash-sub  { font-size: 13px; color: #A08070; letter-spacing: 0.06em; }
+  /* 夜晚模式 splash 配色（data-theme 在首次繪製前由 head inline script 設定，不會閃爍） */
+  html.skip-splash #splash-screen { display: none !important; animation: none !important; }
+  html[data-theme="dark"] #splash-screen { background: #120C04; }
+  html[data-theme="dark"] #splash-name { color: #D4884A; }
+  html[data-theme="dark"] #splash-sub  { color: #B89070; }
 
   /* ===== Onboarding ===== */
   /* ── Tutorial overlay ── */
@@ -1282,7 +1345,6 @@
     background: var(--wa-ll);
     border-radius: 0 0 14px 14px; /* 上緣平接 spotlight，下緣圓角 */
     padding: 14px 16px;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.28);
     pointer-events: none;
     box-sizing: border-box;
     min-width: 240px;
@@ -1290,6 +1352,8 @@
   .tutorial-tooltip-text {
     font-size: 14px; line-height: 1.55; color: var(--wt);
   }
+  .tutorial-tooltip-text p { margin: 0; }
+  .tutorial-tooltip-text p + p { margin-top: 8px; }
   .tutorial-dots {
     display: flex; gap: 6px; justify-content: center; margin-top: 10px;
   }
@@ -1360,6 +1424,7 @@
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
 </head>
 <body>
 
@@ -1405,6 +1470,7 @@
 <button class="help-btn" id="vocab-help-btn"    onclick="showVocabTutorial()"    style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
 <button class="help-btn" id="quiz-help-btn"     onclick="showQuizTutorial()"     style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
 <button class="help-btn" id="settings-help-btn" onclick="showSettingsTutorial()" style="position:fixed;top:14px;right:16px;z-index:9000;display:none">？</button>
+<button id="gojuuon-fixed-btn" onclick="openGojuuon()" aria-label="五十音表">あ</button>
 
 <div id="onboarding-screen">
 
@@ -1649,7 +1715,7 @@
       </div>
       <div class="sec">
 
-        <p class="section-title">學習紀錄</p>
+        <p class="section-title" id="home-rec-title">學習紀錄</p>
         <div class="card" id="home-calendar-card">
           <div class="cal-month-nav">
             <button class="cal-nav-btn" onclick="calNavMonth(-1)">‹</button>
@@ -1680,10 +1746,10 @@
           </div>
         </div>
 
-        <p class="section-title">今日足跡</p>
+        <p class="section-title" id="home-trace-title">今日足跡</p>
         <div id="home-dashboard"></div>
 
-        <p class="section-title" style="margin-top:20px">今日任務</p>
+        <p class="section-title" style="margin-top:20px" id="home-task-title">今日任務</p>
         <div class="card" id="home-tasks-card">
           <div class="today-row">
             <div class="today-ring-center">
@@ -1721,6 +1787,7 @@
         <div class="cn-toggle-row" id="cn-toggle-row">
           <button class="cn-btn" id="add-all-btn" onclick="addAllSelectedWords()">＋全部</button>
           <button class="cn-btn" id="cn-toggle" onclick="toggleCN()">中文</button>
+          <button class="cn-btn" id="write-toggle">書寫</button>
         </div>
 
         <div class="card">
@@ -1733,7 +1800,7 @@
             <span class="loading-text" id="loading-text">正在分析文章詞彙...</span>
           </div>
         </div>
-        <p style="font-size:12px;color:var(--wt3);text-align:center;margin-bottom:12px">長按文字可加入單字卡</p>
+        <p id="article-longpress-hint" style="font-size:12px;color:var(--wt3);text-align:center;margin-bottom:12px">長按文字可加入單字卡</p>
 
         <!-- 難度量表 -->
         <div class="difficulty-bar" id="difficulty-bar">
@@ -1804,7 +1871,6 @@
         <button class="vocab-fab" id="vocab-fab" onclick="openVocabModal()" aria-label="新增單字">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
         </button>
-        <button class="vocab-gojuuon-btn" id="vocab-gojuuon-btn" onclick="openGojuuon()" aria-label="五十音表">あ</button>
       </div>
     </div>
 
@@ -1887,9 +1953,13 @@
           <div class="setting-row">
             <div>
               <div class="setting-label">夜晚模式</div>
-              <div class="setting-sub" id="theme-sub">日間（暖色系）</div>
+              <div class="setting-sub" id="theme-sub">跟隨系統</div>
             </div>
-            <div class="toggle off" id="theme-toggle" onclick="toggleTheme()"></div>
+            <div class="theme-seg" id="theme-seg">
+              <button data-mode="light"  onclick="setThemeMode('light')">日間</button>
+              <button data-mode="dark"   onclick="setThemeMode('dark')">夜晚</button>
+              <button data-mode="system" onclick="setThemeMode('system')">自動</button>
+            </div>
           </div>
           <div class="setting-row" style="cursor:pointer;border-top:0.5px solid var(--border)" onclick="resetFirstTimeHints()">
             <div>
@@ -1902,7 +1972,14 @@
 
         <p class="section-title">語言</p>
         <div class="card" style="padding:4px 16px">
-          <div id="settings-level-row" class="setting-row" style="cursor:pointer" onclick="toggleLevelPicker()">
+          <div class="setting-row" style="cursor:pointer" onclick="cycleTtsVoice()">
+            <div>
+              <div class="setting-label">發音語音</div>
+              <div class="setting-sub">點擊切換，會試播一句確認</div>
+            </div>
+            <span class="setting-val" id="tts-voice-val">Neural2（女）</span>
+          </div>
+          <div id="settings-level-row" class="setting-row" style="cursor:pointer;border-top:0.5px solid var(--border)" onclick="toggleLevelPicker()">
             <div class="setting-label">目前等級</div>
             <div style="display:flex;align-items:center;gap:6px">
               <span class="setting-val" id="settings-level-val">N5</span>
@@ -2072,7 +2149,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.0.71
+          v1.5.7
         </div>
 
       </div>
@@ -2310,7 +2387,7 @@
 
   <!-- 單字複習考 overlay -->
   <div id="vocab-quiz">
-    <button class="vq-close-btn" onclick="exitVocabQuiz()" style="position:fixed;top:50px;right:16px">✕</button>
+    <button class="vq-close-btn" onclick="exitVocabQuiz()" style="position:fixed;top:14px;right:16px">✕</button>
     <!-- mode selection screen -->
     <div id="vq-mode-select" style="display:none;flex-direction:column;align-items:center;justify-content:center;flex:1;gap:20px;padding:32px">
       <div style="font-size:20px;font-weight:600;color:var(--wt);margin-bottom:8px">選擇複習模式</div>
@@ -2387,10 +2464,17 @@ function switchPage(id) {
     var b = document.getElementById(p + '-help-btn');
     if (b) b.style.display = p === id ? '' : 'none';
   });
+  // 五十音固定按鈕：文章／單字／試題頁顯示
+  var _gfb = document.getElementById('gojuuon-fixed-btn');
+  if (_gfb) _gfb.classList.toggle('show', id === 'article' || id === 'vocab' || id === 'quiz');
   tutorialClose();
   _updateHelpBtnGlow();
 
   if (id === 'article') {
+    track('open_article', { date: selectedArticleDate || getLocalDateStr() });
+    // clear stale transform that may have been set by old PTR code (breaks iOS scroll)
+    var _paEl = document.getElementById('page-article');
+    if (_paEl) _paEl.style.transform = '';
     if (!articleRendered) {
       // 首次進入：載入今天的文章（依使用者等級）
       loadContentForDate(getLocalDateStr(), CURRENT_LEVEL).then(result => {
@@ -2399,7 +2483,7 @@ function switchPage(id) {
           const titleEl = document.getElementById('article-page-title');
           if (titleEl) titleEl.textContent = result.pack.title || '今日文章';
         } else {
-          renderArticle(ARTICLE_TOKENS); // fallback demo
+          showArticleNotReady(); // 今日內容未上線 → 等待畫面，不再顯示 demo
         }
         articleRendered = true;
       });
@@ -2407,15 +2491,17 @@ function switchPage(id) {
     initDifficultyBar();
     initArticleLevelTag();
     renderWeekBar();
+    // 切換到文章頁時也確保可捲動（給 iOS 50ms 完成 layout 後再計算）
+    setTimeout(ensureArticleScrollable, 50);
   }
   if (id === 'home')  { calViewYear = TODAY_YEAR; calViewMonth = TODAY_MONTH; renderHomeRing(); renderCalendar(); }
   if (id === 'vocab') renderVocabPage();
   if (id === 'quiz')     initQuizPage();
-  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); renderLevelPicker(); renderMasteryThreshold(); initSettings(); _levelPickerOpen = false; const _lpw = document.getElementById('level-picker-wrap'); if (_lpw) _lpw.style.display = 'none'; const _lpc = document.getElementById('level-picker-chevron'); if (_lpc) _lpc.style.transform = ''; }
+  if (id === 'settings') { initModeUI(); renderAuthUI(); renderRecordingManagement(); renderFollowSettings(); renderLevelPicker(); renderMasteryThreshold(); renderTtsVoiceSetting(); initSettings(); _levelPickerOpen = false; const _lpw = document.getElementById('level-picker-wrap'); if (_lpw) _lpw.style.display = 'none'; const _lpc = document.getElementById('level-picker-chevron'); if (_lpc) _lpc.style.transform = ''; }
   // Show/hide FAB
   document.getElementById('vocab-btn-group').classList.toggle('show', id === 'vocab');
   if (id === 'vocab') updateKanaToggleUI();
-  if (id !== 'vocab') closeGojuuon();
+  closeGojuuon();
 }
 
 // ===== 學習模式 =====
@@ -3054,6 +3140,11 @@ function qzNext() {
   if (QS.idx >= QS.questions.length) {
     QS.phase = 'result';
     saveQuizResults();
+    track('complete_quiz', {
+      section: quizSection,
+      correct: QS.answers.filter(a => a.correct).length,
+      total: QS.answers.length
+    });
   }
   renderQuizMain();
 }
@@ -3238,6 +3329,24 @@ async function selectQuizDate(dateStr) {
   }
 }
 
+// 短文章時 difficulty-bar 會被底部固定工具列遮住，需要保證有 scroll room。
+// block 佈局下對 .sec 設 minHeight 即可穩定產生 overflow（無 flex-shrink 干擾）。
+function ensureArticleScrollable() {
+  var pa = document.getElementById('page-article');
+  if (!pa || pa.clientHeight === 0) return;
+  var sec = pa.querySelector('.sec');
+  if (!sec) return;
+
+  // 先清掉舊 minHeight 量自然高度，避免上一次的值影響判斷
+  sec.style.minHeight = '0px';
+  var topH = (pa.querySelector('.top-bar') || {}).offsetHeight || 68;
+  var weekH = (document.getElementById('article-week-bar') || {}).offsetHeight || 78;
+  var pb = parseFloat(getComputedStyle(pa).paddingBottom) || 244;
+  // 讓 scrollH >= clientH + 80
+  var need = pa.clientHeight + 80 - topH - weekH - pb;
+  sec.style.minHeight = (need > 0 ? need : 0) + 'px';
+}
+
 // CN toggle
 function toggleCN() {
   const t = document.getElementById('cn-toggle');
@@ -3247,9 +3356,55 @@ function toggleCN() {
   document.querySelectorAll('.cn-note').forEach(n => {
     n.classList.toggle('hidden', !active);
   });
-  // iOS scroll fix: force layout recalc after content height change
-  const page = document.getElementById('page-article');
-  if (page) { const _s = page.scrollTop; page.scrollTop = _s + 1; page.scrollTop = _s; }
+  // cn-note transition 0.2s，等完成後重算 minHeight
+  setTimeout(ensureArticleScrollable, 250);
+}
+
+// ===== 書寫練習 =====
+function _loadWriteText() { try { return JSON.parse(localStorage.getItem('writeText_v1') || '{}'); } catch (e) { return {}; } }
+function _saveWriteText(obj) { try { localStorage.setItem('writeText_v1', JSON.stringify(obj)); } catch (e) {} }
+function _saveWriteInput(dateStr, si, val) {
+  const all = _loadWriteText();
+  if (!all[dateStr]) all[dateStr] = {};
+  if (val) all[dateStr][si] = val; else delete all[dateStr][si];
+  if (Object.keys(all[dateStr]).length === 0) delete all[dateStr];
+  _saveWriteText(all);
+}
+function toggleWrite() {
+  const t = document.getElementById('write-toggle');
+  t.classList.toggle('active');
+  const active = t.classList.contains('active');
+  localStorage.setItem('writeToggle', active ? '1' : '0');
+  document.querySelectorAll('.write-line').forEach(n => n.classList.toggle('hidden', !active));
+  setTimeout(ensureArticleScrollable, 250);
+  if (active) track('open_writing');
+}
+// 長按書寫鈕：清空當前這篇的書寫內容
+function _clearCurrentWriting() {
+  const dateStr = selectedArticleDate || getLocalDateStr();
+  const all = _loadWriteText();
+  if (all[dateStr]) { delete all[dateStr]; _saveWriteText(all); }
+  document.querySelectorAll('.write-input').forEach(inp => { inp.value = ''; });
+  if (typeof showToast === 'function') showToast('已清空本篇書寫');
+}
+function _initWriteBtn() {
+  const btn = document.getElementById('write-toggle');
+  if (!btn || btn._lpInit) return;
+  btn._lpInit = true;
+  let timer = null, fired = false;
+  const start = () => { fired = false; timer = setTimeout(() => { fired = true; _clearCurrentWriting(); }, 600); };
+  const cancel = () => clearTimeout(timer);
+  btn.addEventListener('touchstart', start, { passive: true });
+  btn.addEventListener('touchend', cancel);
+  btn.addEventListener('touchmove', cancel);
+  btn.addEventListener('pointerdown', e => { if (e.pointerType !== 'touch') start(); });
+  btn.addEventListener('pointerup', e => { if (e.pointerType !== 'touch') cancel(); });
+  btn.addEventListener('pointerleave', e => { if (e.pointerType !== 'touch') cancel(); });
+  // 一般點擊＝切換；若剛觸發長按清空則略過這次 click
+  btn.addEventListener('click', e => {
+    if (fired) { e.preventDefault(); e.stopPropagation(); fired = false; return; }
+    toggleWrite();
+  });
 }
 
 // ===== 文章斷詞與互動 =====
@@ -3461,9 +3616,113 @@ const LEVEL_OPTIONS = [
   { key: 'n1_lite', label: 'N1-' },
   { key: 'n1',      label: 'N1'  },
 ];
+
+// 各等級難度（固定值，不需 AI 生成）
+const LEVEL_DIFFICULTY = {
+  'n5_lite': { target_vocab_rate: 0.05, jlpt_level: 'N5⁻' },
+  'n5':      { target_vocab_rate: 0.08, jlpt_level: 'N5'  },
+  'n4_lite': { target_vocab_rate: 0.08, jlpt_level: 'N4⁻' },
+  'n4':      { target_vocab_rate: 0.10, jlpt_level: 'N4'  },
+  'n3_lite': { target_vocab_rate: 0.10, jlpt_level: 'N3⁻' },
+  'n3':      { target_vocab_rate: 0.12, jlpt_level: 'N3'  },
+  'n2_lite': { target_vocab_rate: 0.12, jlpt_level: 'N2⁻' },
+  'n2':      { target_vocab_rate: 0.14, jlpt_level: 'N2'  },
+  'n1_lite': { target_vocab_rate: 0.14, jlpt_level: 'N1⁻' },
+  'n1':      { target_vocab_rate: 0.16, jlpt_level: 'N1'  },
+};
+
+// 假名→羅馬拼音（Hepburn）
+function kanaToRomaji(str) {
+  if (!str) return '';
+  const map = {
+    // Hiragana digraphs
+    'きゃ':'kya','きゅ':'kyu','きょ':'kyo','しゃ':'sha','しゅ':'shu','しょ':'sho',
+    'ちゃ':'cha','ちゅ':'chu','ちょ':'cho','にゃ':'nya','にゅ':'nyu','にょ':'nyo',
+    'ひゃ':'hya','ひゅ':'hyu','ひょ':'hyo','みゃ':'mya','みゅ':'myu','みょ':'myo',
+    'りゃ':'rya','りゅ':'ryu','りょ':'ryo','ぎゃ':'gya','ぎゅ':'gyu','ぎょ':'gyo',
+    'じゃ':'ja', 'じゅ':'ju', 'じょ':'jo', 'ぢゃ':'ja', 'ぢゅ':'ju', 'ぢょ':'jo',
+    'びゃ':'bya','びゅ':'byu','びょ':'byo','ぴゃ':'pya','ぴゅ':'pyu','ぴょ':'pyo',
+    // Katakana digraphs
+    'キャ':'kya','キュ':'kyu','キョ':'kyo','シャ':'sha','シュ':'shu','ショ':'sho',
+    'チャ':'cha','チュ':'chu','チョ':'cho','ニャ':'nya','ニュ':'nyu','ニョ':'nyo',
+    'ヒャ':'hya','ヒュ':'hyu','ヒョ':'hyo','ミャ':'mya','ミュ':'myu','ミョ':'myo',
+    'リャ':'rya','リュ':'ryu','リョ':'ryo','ギャ':'gya','ギュ':'gyu','ギョ':'gyo',
+    'ジャ':'ja', 'ジュ':'ju', 'ジョ':'jo', 'ビャ':'bya','ビュ':'byu','ビョ':'byo',
+    'ピャ':'pya','ピュ':'pyu','ピョ':'pyo','ファ':'fa', 'フィ':'fi', 'フェ':'fe','フォ':'fo',
+    'ウィ':'wi', 'ウェ':'we', 'ウォ':'wo', 'ティ':'ti', 'ディ':'di',
+    // Hiragana single
+    'あ':'a','い':'i','う':'u','え':'e','お':'o',
+    'か':'ka','き':'ki','く':'ku','け':'ke','こ':'ko',
+    'が':'ga','ぎ':'gi','ぐ':'gu','げ':'ge','ご':'go',
+    'さ':'sa','し':'shi','す':'su','せ':'se','そ':'so',
+    'ざ':'za','じ':'ji','ず':'zu','ぜ':'ze','ぞ':'zo',
+    'た':'ta','ち':'chi','つ':'tsu','て':'te','と':'to',
+    'だ':'da','ぢ':'ji','づ':'zu','で':'de','ど':'do',
+    'な':'na','に':'ni','ぬ':'nu','ね':'ne','の':'no',
+    'は':'ha','ひ':'hi','ふ':'fu','へ':'he','ほ':'ho',
+    'ば':'ba','び':'bi','ぶ':'bu','べ':'be','ぼ':'bo',
+    'ぱ':'pa','ぴ':'pi','ぷ':'pu','ぺ':'pe','ぽ':'po',
+    'ま':'ma','み':'mi','む':'mu','め':'me','も':'mo',
+    'や':'ya','ゆ':'yu','よ':'yo',
+    'ら':'ra','り':'ri','る':'ru','れ':'re','ろ':'ro',
+    'わ':'wa','ゐ':'i','ゑ':'e','を':'o','ん':'n',
+    // Katakana single
+    'ア':'a','イ':'i','ウ':'u','エ':'e','オ':'o',
+    'カ':'ka','キ':'ki','ク':'ku','ケ':'ke','コ':'ko',
+    'ガ':'ga','ギ':'gi','グ':'gu','ゲ':'ge','ゴ':'go',
+    'サ':'sa','シ':'shi','ス':'su','セ':'se','ソ':'so',
+    'ザ':'za','ジ':'ji','ズ':'zu','ゼ':'ze','ゾ':'zo',
+    'タ':'ta','チ':'chi','ツ':'tsu','テ':'te','ト':'to',
+    'ダ':'da','ヂ':'ji','ヅ':'zu','デ':'de','ド':'do',
+    'ナ':'na','ニ':'ni','ヌ':'nu','ネ':'ne','ノ':'no',
+    'ハ':'ha','ヒ':'hi','フ':'fu','ヘ':'he','ホ':'ho',
+    'バ':'ba','ビ':'bi','ブ':'bu','ベ':'be','ボ':'bo',
+    'パ':'pa','ピ':'pi','プ':'pu','ペ':'pe','ポ':'po',
+    'マ':'ma','ミ':'mi','ム':'mu','メ':'me','モ':'mo',
+    'ヤ':'ya','ユ':'yu','ヨ':'yo',
+    'ラ':'ra','リ':'ri','ル':'ru','レ':'re','ロ':'ro',
+    'ワ':'wa','ヲ':'o','ン':'n','ヴ':'vu',
+  };
+  let result = '', i = 0;
+  while (i < str.length) {
+    const c = str[i];
+    if (c === 'っ' || c === 'ッ') {
+      const nxt = map[str[i+1] + str[i+2]] || map[str[i+1]] || '';
+      if (nxt) result += nxt[0];
+      i++; continue;
+    }
+    if (c === 'ー') {
+      if (result) result += result[result.length - 1];
+      i++; continue;
+    }
+    if ((c === 'ん' || c === 'ン') && i + 1 < str.length) {
+      const nxtR = map[str[i+1]] || '';
+      result += (nxtR && 'aeiou'.includes(nxtR[0])) ? "n'" : 'n';
+      i++; continue;
+    }
+    const two = map[str[i] + str[i+1]];
+    if (two) { result += two; i += 2; continue; }
+    result += map[c] || c;
+    i++;
+  }
+  return result;
+}
+
+function getEntryRomaji(key, entry) {
+  if (entry && entry.romaji) return entry.romaji;
+  const kana = (entry && entry.reading) || (/[一-鿿㐀-䶿]/.test(key) ? '' : key);
+  return kana ? kanaToRomaji(kana) : '';
+}
+// 後端等級 key（含 _lite）→ 前端標籤（N5- / N5）。lite 一律顯示為 NX-
+function levelKeyLabel(key) {
+  if (!key) return '';
+  const o = LEVEL_OPTIONS.find(o => o.key === key);
+  return o ? o.label : String(key).toUpperCase();
+}
 const BAKED_VISION_KEY = '__VISION_KEY__';
 let _showRomaji = localStorage.getItem('showRomaji') !== 'false';
 let CURRENT_LEVEL = localStorage.getItem('userLevel') || 'n5';
+let CURRENT_DIFFICULTY = LEVEL_DIFFICULTY[CURRENT_LEVEL] || {};
 let MASTERY_THRESHOLD = parseInt(localStorage.getItem('masteryThreshold') || '10');
 let _levelPickerOpen = false;
 const _MASTERY_OPTIONS = [8, 10, 15, 20];
@@ -3602,6 +3861,7 @@ async function reloadArticleWithLevel(key) {
   showToast('載入中…');
   const result = await loadContentForDate(selectedArticleDate, key);
   if (!result.success) { showToast('此等級尚無內容'); return; }
+  track('change_level', { level: key });
   // 儲存此日期的選用等級（不影響全局 CURRENT_LEVEL）
   const log = loadStudyLog();
   const dateStr = selectedArticleDate || getLocalDateStr();
@@ -3651,6 +3911,8 @@ function applyContentPack(pack) {
   VOCAB_DICT = pack.vocab;
   PARTICLE_NOTES = pack.particles ? Object.assign({}, BUILTIN_PARTICLE_NOTES, pack.particles) : Object.assign({}, BUILTIN_PARTICLE_NOTES);
   SENTENCE_TRANSLATIONS = pack.translations;
+  // difficulty: use pack value or fall back to hardcoded table
+  CURRENT_DIFFICULTY = pack.difficulty || LEVEL_DIFFICULTY[pack.level] || {};
   // 重新渲染文章
   articleRendered = false;
   if (document.getElementById('page-article') && document.getElementById('page-article').classList.contains('active')) {
@@ -3670,6 +3932,26 @@ function restoreDemoContent() {
     renderArticle(ARTICLE_TOKENS);
     articleRendered = true;
   }
+}
+
+// 今日文章尚未生成/上線時的等待畫面（取代舊的 demo 文章 fallback）
+function showArticleNotReady() {
+  const c = document.getElementById('article-text');
+  if (c) {
+    c.innerHTML = '<div style="text-align:center;padding:40px 16px">'
+      + '<div style="font-size:40px;margin-bottom:12px">📭</div>'
+      + '<div style="font-size:16px;font-weight:500;color:var(--wt2);margin-bottom:6px">今日文章尚未準備好</div>'
+      + '<div style="font-size:13px;color:var(--wt3)">內容通常在當天上午更新，請稍後再試</div>'
+      + '</div>';
+  }
+  // 隱藏選句列、長按提示、難度量表（沒文章時無意義）
+  ['article-sel-header', 'article-longpress-hint', 'difficulty-bar'].forEach(function(id) {
+    const el = document.getElementById(id); if (el) el.style.display = 'none';
+  });
+  const titleEl = document.getElementById('article-page-title');
+  if (titleEl) titleEl.textContent = '今日文章';
+  articleRendered = true;
+  setTimeout(ensureArticleScrollable, 50);
 }
 
 async function loadTodayContent(level) {
@@ -3776,11 +4058,51 @@ async function devLoadIndex() {
 
 let _devTapCount = 0;
 let _devTapTimer = null;
+let _scrollDebugOn = false;
 function _devTitleTap() {
   _devTapCount++;
   clearTimeout(_devTapTimer);
   _devTapTimer = setTimeout(() => { _devTapCount = 0; }, 2000);
+  if (_devTapCount === 3) { _toggleScrollDebug(); }
   if (_devTapCount >= 5) { _devTapCount = 0; openDev(); }
+}
+function _toggleScrollDebug() {
+  _scrollDebugOn = !_scrollDebugOn;
+  var bar = document.getElementById('scroll-debug-bar');
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.id = 'scroll-debug-bar';
+    bar.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:rgba(0,0,0,0.82);color:#0f0;font:11px/1.5 monospace;padding:4px 8px;pointer-events:none;white-space:pre;';
+    document.body.appendChild(bar);
+    var pa = document.getElementById('page-article');
+    if (pa) {
+      pa.addEventListener('scroll', _updateScrollDebug, { passive: true });
+      pa.addEventListener('touchmove', _updateScrollDebug, { passive: true });
+    }
+  }
+  bar.style.display = _scrollDebugOn ? 'block' : 'none';
+  if (_scrollDebugOn) _updateScrollDebug();
+}
+function _updateScrollDebug() {
+  var bar = document.getElementById('scroll-debug-bar');
+  if (!bar || !_scrollDebugOn) return;
+  var pa = document.getElementById('page-article');
+  var sp = document.getElementById('article-scroll-spacer');
+  var db = document.getElementById('difficulty-bar');
+  if (!pa) return;
+  var safeTop = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--safe-top') || '0');
+  var safeBot = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--safe-bottom') || '0');
+  var dbR = db ? db.getBoundingClientRect() : {};
+  var atb = document.getElementById('article-toolbar');
+  var atbR = atb ? atb.getBoundingClientRect() : {};
+  var sec = pa.querySelector('.sec');
+  var secInfo = sec ? ('secH=' + sec.offsetHeight + ' minH=' + (sec.style.minHeight||'—') + ' shrink=' + getComputedStyle(sec).flexShrink) : 'no sec';
+  bar.textContent =
+    'scrollH=' + pa.scrollHeight + ' clientH=' + pa.clientHeight + ' room=' + (pa.scrollHeight - pa.clientHeight) + '\n' +
+    'scrollTop=' + Math.round(pa.scrollTop) + ' pb=' + Math.round(parseFloat(getComputedStyle(pa).paddingBottom)||0) + '\n' +
+    secInfo + '\n' +
+    'diffBar y=' + Math.round(dbR.top||0) + '~' + Math.round(dbR.bottom||0) + ' toolbar=' + Math.round(atbR.top||0) + '\n' +
+    'safe top=' + safeTop + ' bot=' + safeBot + ' nav=' + getComputedStyle(document.documentElement).getPropertyValue('--nav-h');
 }
 
 let articleRendered = false;
@@ -3860,6 +4182,10 @@ function levelLabel(lv) { return { raw:'生', mid:'普', ripe:'熟' }[lv]; }
 function renderArticle(tokens) {
   const container = document.getElementById('article-text');
   container.innerHTML = '';
+  // 還原可能被「尚未準備好」畫面隱藏的元素
+  ['article-sel-header', 'article-longpress-hint', 'difficulty-bar'].forEach(function(id) {
+    const el = document.getElementById(id); if (el) el.style.display = '';
+  });
 
   // 句子分組（用於跟讀逐句播放，以「。」「！」「？」斷句）
   let sentenceIndex = 0;
@@ -3891,6 +4217,8 @@ function renderArticle(tokens) {
     // 句子結束判斷：關閉句子分組，插入中文備注，開啟下一句分組
     if (surface === '。' || surface === '！' || surface === '？') {
       html += '</span>';
+      // 書寫練習行（緊貼句子，在中文注釋上方）
+      html += '<span class="write-line" data-si="' + sentenceIndex + '"><input type="text" class="write-input" data-si="' + sentenceIndex + '" autocapitalize="off" autocomplete="off" spellcheck="false"></span>';
       const translation = SENTENCE_TRANSLATIONS[sentenceIndex];
       if (translation) {
         const text = typeof translation === 'string' ? translation : translation.map(s => s.text).join('');
@@ -3917,20 +4245,26 @@ function renderArticle(tokens) {
     dot.className = 'sentence-dot';
     dot.dataset.si = idx;
     if (idx === 0) dot.id = 'article-first-dot';
-    dot.addEventListener('click', () => toggleSentenceSel(idx));
-    // 長按：單選此句
-    let _dotTimer = null, _dotMoved = false, _dotSX = 0, _dotSY = 0;
+    // 長按：單選此句；短按：切換勾選
+    let _dotTimer = null, _dotMoved = false, _dotFired = false, _dotSX = 0, _dotSY = 0;
     dot.addEventListener('touchstart', (e) => {
-      _dotMoved = false; _dotSX = e.touches[0].clientX; _dotSY = e.touches[0].clientY;
+      _dotMoved = false; _dotFired = false;
+      _dotSX = e.touches[0].clientX; _dotSY = e.touches[0].clientY;
       if (e.cancelable) e.preventDefault();
-      _dotTimer = setTimeout(() => { if (!_dotMoved) soloSentenceSel(idx); }, 400);
+      _dotTimer = setTimeout(() => {
+        if (!_dotMoved) { _dotFired = true; soloSentenceSel(idx); }
+      }, 400);
     }, { passive: false });
     dot.addEventListener('touchmove', (e) => {
       if (Math.abs(e.touches[0].clientX - _dotSX) > 8 || Math.abs(e.touches[0].clientY - _dotSY) > 8) {
         _dotMoved = true; clearTimeout(_dotTimer);
       }
     }, { passive: true });
-    dot.addEventListener('touchend', () => clearTimeout(_dotTimer));
+    dot.addEventListener('touchend', () => {
+      clearTimeout(_dotTimer);
+      if (!_dotMoved && !_dotFired) toggleSentenceSel(idx);
+    });
+    dot.addEventListener('click', () => toggleSentenceSel(idx));
     grp.parentNode.insertBefore(row, grp);
     row.appendChild(dot);
     row.appendChild(grp);
@@ -3955,11 +4289,29 @@ function renderArticle(tokens) {
   const cnHidden = !cnActive;
   container.querySelectorAll('.cn-note').forEach(n => n.classList.toggle('hidden', cnHidden));
 
+  // 套用書寫練習狀態：開關、填入已存文字、綁定即時儲存
+  const writeActive = localStorage.getItem('writeToggle') === '1';
+  const writeBtn = document.getElementById('write-toggle');
+  if (writeBtn) writeBtn.classList.toggle('active', writeActive);
+  const _wDate = selectedArticleDate || getLocalDateStr();
+  const _wSaved = _loadWriteText()[_wDate] || {};
+  container.querySelectorAll('.write-line').forEach(line => {
+    line.classList.toggle('hidden', !writeActive);
+    const inp = line.querySelector('.write-input');
+    if (inp) {
+      const si = inp.dataset.si;
+      inp.value = _wSaved[si] || '';
+      inp.addEventListener('input', () => _saveWriteInput(_wDate, si, inp.value));
+    }
+  });
+
   // 套用已加入單字卡的詞，對應句子的中文備注也標橘色
   applyAddedWordNoteColors();
 
   // 條件1：捲到底偵測（文章渲染完後立即設定）
   setupArticleScrollObserver();
+  // 確保短文章也能捲動（給 iOS 50ms 完成 layout 後再計算）
+  setTimeout(ensureArticleScrollable, 50);
 }
 
 let _scrollHandler = null;
@@ -4124,7 +4476,7 @@ function openWordPanel(basic, surface, reading) {
     '</div>' +
     (isInflected ? '<div class="wp-base-form">原形：<span>' + basic + '</span></div>' : '') +
     (showKana ? '<div class="wp-kana">' + reading + '</div>' : '') +
-    (entry.romaji ? '<div class="wp-romaji">' + entry.romaji + '</div>' : '') +
+    (getEntryRomaji(basic, entry) ? '<div class="wp-romaji">' + getEntryRomaji(basic, entry) + '</div>' : '') +
     '<div class="wp-divider"></div>' +
     '<div class="wp-meaning">' + entry.meaning + '</div>' +
     (isAdded
@@ -4229,7 +4581,7 @@ function addAllSelectedWords() {
     const entry = VOCAB_DICT[basic] || {};
     const _ex = findExampleWithTranslation(basic);
     vocabBook[basic] = {
-      kana: entry.reading || '', romaji: entry.romaji || '',
+      kana: entry.reading || '', romaji: getEntryRomaji(basic, entry),
       meaning: entry.meaning || '',
       example: entry.example || _ex.example || '',
       exampleTrans: entry.exampleTrans || _ex.exampleTrans || '',
@@ -4254,7 +4606,7 @@ function addToVocabCards(basic, extra) {
     const _ex = findExampleWithTranslation(basic);
     vocabBook[basic] = {
       kana:       extra?.kana    || entry.reading || '',
-      romaji:     extra?.romaji  || entry.romaji  || '',
+      romaji:     extra?.romaji  || getEntryRomaji(basic, entry),
       meaning:    extra?.meaning || entry.meaning || '',
       example:    extra?.example || entry.example || _ex.example || '',
       exampleTrans: extra?.exampleTrans || entry.exampleTrans || _ex.exampleTrans || '',
@@ -4288,6 +4640,119 @@ function removeFromVocabCards(basic) {
   }
   applyAddedWordNoteColors();
   if (document.getElementById('page-vocab').classList.contains('active')) renderVocabPage();
+}
+
+// ===== 日語語音系統 =====
+const GOOGLE_TTS_KEY = 'AIzaSyCB1a33UuiKczwqoV6zRZH-ftd-M4D3yOE';
+const TTS_VOICE_OPTIONS = [
+  { key: 'neural2-f', label: 'Neural2（女）', googleName: 'ja-JP-Neural2-B' },
+  { key: 'neural2-m', label: 'Neural2（男）', googleName: 'ja-JP-Neural2-C' },
+  { key: 'wavenet-f', label: 'Wavenet（女）', googleName: 'ja-JP-Wavenet-A' },
+  { key: 'wavenet-m', label: 'Wavenet（男）', googleName: 'ja-JP-Wavenet-D' },
+  { key: 'system',   label: '系統語音',      googleName: null },
+];
+let _ttsVoiceKey = localStorage.getItem('ttsVoice') || 'neural2-f';
+
+// 系統語音快取
+let _jpVoice = null;
+function getJpVoice() {
+  if (_jpVoice) return _jpVoice;
+  const voices = window.speechSynthesis.getVoices();
+  const ja = voices.filter(v => v.lang.startsWith('ja'));
+  if (!ja.length) return null;
+  const PREFER = ['O-ren','Eddy','Sandy','Flo','Reed','Rocko','Shelley','Grandma','Grandpa'];
+  for (const name of PREFER) {
+    const v = ja.find(v => v.name.startsWith(name));
+    if (v) { _jpVoice = v; return v; }
+  }
+  _jpVoice = ja.find(v => v.name === 'Kyoko') || ja[0];
+  return _jpVoice;
+}
+window.speechSynthesis.onvoiceschanged = () => { _jpVoice = null; };
+
+// 正在播放的 Google Audio（供 stop 用）
+let _googleAudio = null;
+let _googleAbort = null;   // 取消還在路上的 Google TTS fetch
+let _googleReqId = 0;      // 請求代號：忽略過期回應，杜絕晚回來的音檔亂入
+// 持久的 <audio> 元素：在使用者手勢（按逐句）當下用靜音片段解鎖一次，
+// 之後即使音檔是在非同步 fetch 回來才播放，也不會被自動播放政策擋掉（NotAllowedError）。
+let _ttsAudioEl = null;
+const _SILENT_WAV = 'data:audio/wav;base64,UklGRrQBAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YZABAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA';
+function _getTtsAudioEl() {
+  if (!_ttsAudioEl) { _ttsAudioEl = new Audio(); try { _ttsAudioEl.setAttribute('playsinline', ''); } catch (e) {} }
+  return _ttsAudioEl;
+}
+// 必須在使用者手勢的同步呼叫堆疊內執行，才能解鎖之後的程式化 play()
+function _unlockTtsAudio() {
+  var el = _getTtsAudioEl();
+  try {
+    el.src = _SILENT_WAV;
+    var p = el.play();
+    if (p && p.then) p.then(function(){ try { el.pause(); el.currentTime = 0; } catch (e) {} }).catch(function(){});
+  } catch (e) {}
+}
+
+// 統一日語 TTS 入口；rate 預設 1.0，onend 可選
+function speakJa(text, rate, onend, forceSystem) {
+  rate = rate || 1.0;
+  window.speechSynthesis.cancel();
+  if (_googleAudio) { _googleAudio.pause(); _googleAudio = null; }
+  // 取消上一個還在路上的 Google 請求，並讓過期回應失效（避免晚回來的音檔在後面的句子亂入）
+  if (_googleAbort) { try { _googleAbort.abort(); } catch (e) {} _googleAbort = null; }
+  const myReq = ++_googleReqId;
+
+  const opt = TTS_VOICE_OPTIONS.find(o => o.key === _ttsVoiceKey) || TTS_VOICE_OPTIONS[0];
+  // forceSystem：逐句跟讀強制走系統語音（Web Speech），避開 Google 非同步造成的時序問題
+  if (opt.googleName && !forceSystem) {
+    _googleAbort = new AbortController();
+    fetch('https://texttospeech.googleapis.com/v1/text:synthesize?key=' + GOOGLE_TTS_KEY, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      signal: _googleAbort.signal,
+      body: JSON.stringify({
+        input: { text: text },
+        voice: { languageCode: 'ja-JP', name: opt.googleName },
+        audioConfig: { audioEncoding: 'MP3', speakingRate: rate }
+      })
+    }).then(function(r){ return r.json(); }).then(function(data) {
+      if (myReq !== _googleReqId) return;
+      if (!data.audioContent) { if (onend) onend(); return; }
+      var audio = _getTtsAudioEl();     // 重用已解鎖的元素，避開第 2 句起的 NotAllowedError
+      audio.src = 'data:audio/mp3;base64,' + data.audioContent;
+      _googleAudio = audio;
+      audio.onended = function() { if (myReq !== _googleReqId) return; _googleAudio = null; if (onend) onend(); };
+      audio.onerror = function() { if (myReq !== _googleReqId) return; _googleAudio = null; if (onend) onend(); };
+      var _pp = audio.play();
+      if (_pp && _pp.catch) _pp.catch(function(){});
+    }).catch(function(err) {
+      if (err && err.name === 'AbortError') return;
+      if (myReq !== _googleReqId) return;
+      if (onend) onend();
+    });
+  } else {
+    var u = new SpeechSynthesisUtterance(text);
+    var v = getJpVoice();
+    if (v) u.voice = v;
+    u.lang = 'ja-JP';
+    u.rate = rate;
+    u.onend = onend || null;
+    window.speechSynthesis.speak(u);
+  }
+}
+
+function renderTtsVoiceSetting() {
+  const opt = TTS_VOICE_OPTIONS.find(o => o.key === _ttsVoiceKey) || TTS_VOICE_OPTIONS[0];
+  const el = document.getElementById('tts-voice-val');
+  if (el) el.textContent = opt.label;
+}
+
+function cycleTtsVoice() {
+  const idx = TTS_VOICE_OPTIONS.findIndex(o => o.key === _ttsVoiceKey);
+  _ttsVoiceKey = TTS_VOICE_OPTIONS[(idx + 1) % TTS_VOICE_OPTIONS.length].key;
+  localStorage.setItem('ttsVoice', _ttsVoiceKey);
+  renderTtsVoiceSetting();
+  // 試播一句讓使用者即時確認
+  speakJa('おはようございます', 1.0);
 }
 
 // ===== 朗讀控制 =====
@@ -4342,12 +4807,7 @@ function _markSentencePlay(idx) {
 
 // 播放單句
 function _speakOne(text, onend) {
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'ja-JP';
-  u.rate = readAloudRate;
-  u.onend = onend;
-  readAloudUtterance = u;
-  window.speechSynthesis.speak(u);
+  speakJa(text, readAloudRate, onend);
 }
 
 // 從 queue 逐句播放，句間暫停 500ms
@@ -4397,6 +4857,7 @@ function toggleReadAloud() {
 
 function stopReadAloud() {
   window.speechSynthesis.cancel();
+  if (_googleAudio) { _googleAudio.pause(); _googleAudio = null; }
   if (readAloudTimer) { clearTimeout(readAloudTimer); readAloudTimer = null; }
   readAloudQueue = [];
   readAloudPlaying = false;
@@ -4440,32 +4901,71 @@ function updateSpeedButtonStates(idx) {
 }
 
 // ===== 主題切換 =====
-function applyTheme(isDark) {
-  if (isDark) {
-    document.documentElement.dataset.theme = 'dark';
-  } else {
-    delete document.documentElement.dataset.theme;
-  }
-  const toggle = document.getElementById('theme-toggle');
-  const sub    = document.getElementById('theme-sub');
-  if (toggle) toggle.classList.toggle('off', !isDark);
-  if (sub)    sub.textContent = isDark ? '夜晚（深色系）' : '日間（暖色系）';
+// 主題三態：'light' | 'dark' | 'system'（或無 = system）
+function _prefersDark() { return window.matchMedia('(prefers-color-scheme: dark)').matches; }
+function getThemeMode() { return localStorage.getItem('theme') || 'system'; }
+function _resolveDark(mode) {
+  mode = mode || getThemeMode();
+  return mode === 'dark' ? true : mode === 'light' ? false : _prefersDark();
 }
 
-function toggleTheme() {
-  const isDark = document.documentElement.dataset.theme === 'dark';
-  const next = !isDark;
-  localStorage.setItem('theme', next ? 'dark' : 'light');
-  applyTheme(next);
+function applyTheme(isDark) {
+  const root = document.documentElement;
+  if (isDark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
+  // 讓瀏覽器自身表面（回彈 overscroll、捲軸、表單）也跟著深色
+  root.style.colorScheme = isDark ? 'dark' : 'light';
+  // iOS Safari 的 overscroll 回彈區只認 <html> 的「直接 inline 背景」，
+  // 只改 CSS 變數常殘留上一個主題色（日間卡黑/夜間卡白）。故直接設 inline backgroundColor。
+  const rootBg = isDark ? '#1C1208' : '#F5EDE0';
+  root.style.backgroundColor = rootBg;
+  if (document.body) document.body.style.backgroundColor = rootBg;
+  // 行動瀏覽器 UI（網址列/狀態列底色）
+  const m = document.querySelector('meta[name="theme-color"]');
+  if (m) m.setAttribute('content', isDark ? '#120C04' : '#FDF8F3');
+  _updateThemeUI();
+}
+
+function _updateThemeUI() {
+  const mode = getThemeMode();
+  const sub = document.getElementById('theme-sub');
+  if (sub) sub.textContent = mode === 'light' ? '日間（暖色系）'
+                           : mode === 'dark'  ? '夜晚（深色系）'
+                           : '跟隨系統';
+  const seg = document.getElementById('theme-seg');
+  if (seg) seg.querySelectorAll('button').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.mode === mode);
+  });
+}
+
+function _isIOS() {
+  return /iP(hone|ad|od)/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+
+function setThemeMode(mode) {
+  localStorage.setItem('theme', mode);
+  applyTheme(_resolveDark(mode));
+  // iOS Safari 的 overscroll 回彈區背景不會在切換當下重繪（要重開 App 才更新）。
+  // 故 iOS 上手動切換主題時靜默重載並跳過 splash，讓回彈區即時正確、使用者幾乎無感。
+  if (_isIOS()) {
+    try {
+      sessionStorage.setItem('_skipSplash', '1');
+      // 記住目前所在頁面，重載後跳回同一頁（避免跳回今日頁的突兀感）
+      var _ap = document.querySelector('.page.active');
+      if (_ap) sessionStorage.setItem('_restorePage', _ap.id.replace('page-', ''));
+    } catch (e) {}
+    location.reload();
+  }
 }
 
 function loadTheme() {
-  const saved = localStorage.getItem('theme');
-  // 若無偏好，跟隨系統
-  const prefersDark = saved
-    ? saved === 'dark'
-    : window.matchMedia('(prefers-color-scheme: dark)').matches;
-  applyTheme(prefersDark);
+  applyTheme(_resolveDark());
+  // 跟隨系統：App 開著時系統切換深淺色 → 即時更新（僅在 system 模式）
+  try {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+      if (getThemeMode() === 'system') applyTheme(_resolveDark('system'));
+    });
+  } catch (e) {}
 }
 
 // ===== Pull-to-Refresh =====
@@ -4482,6 +4982,7 @@ function loadTheme() {
       const vla = document.getElementById('vocab-list-area');
       return vla ? vla.scrollTop : 0;
     }
+    if (active.id === 'page-article') return active.scrollTop;
     for (const el of active.querySelectorAll('*')) {
       if (el.scrollTop > 0) return el.scrollTop;
     }
@@ -4580,7 +5081,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const _go = document.getElementById('gojuuon-overlay');
   if (_go) document.body.appendChild(_go);
 
+  // clear any stale transform left by old PTR code on page-article
+  const _pa = document.getElementById('page-article');
+  if (_pa) _pa.style.transform = '';
+
   loadTheme();
+  _initWriteBtn();
+  // 因切換主題而重載時，跳回原本所在頁面
+  try {
+    var _rp = sessionStorage.getItem('_restorePage');
+    if (_rp) { sessionStorage.removeItem('_restorePage'); if (_rp !== 'home') switchPage(_rp); }
+  } catch (e) {}
   updateSpeedButtonStates(SPEED_STEPS.indexOf(readAloudRate));
 
   // 動態設定今日日期顯示
@@ -5048,11 +5559,16 @@ async function _startFollowMode() {
   // 取要播放的句子（依目前 sentenceSelected 過濾）
   _followSentences = SENTENCE_TEXTS.filter((_, i) => sentenceSelected[i] !== false);
   if (!_followSentences.length) { showToast('沒有可跟讀的句子'); return; }
+  track('use_shadowing');
 
   // 停止其他音訊
   if (isRecording) { mediaRecorder.stop(); }
   stopPlayRecording();
   stopReadAloud();
+
+  // iOS Safari：必須在 await 前（使用者手勢上下文）先解鎖 Google TTS 用的 <audio>，
+  // 否則第 2 句之後（非同步 fetch 回來才 play）會被自動播放政策擋掉（NotAllowedError）
+  _unlockTtsAudio();
 
   // iOS Safari：必須在 await 前（使用者手勢上下文）先 warm-up TTS，
   // 否則 await 後 speechSynthesis.speak() 會被系統靜默阻擋
@@ -5157,14 +5673,9 @@ function _followStep() {
     _followRecordWindow(n, total);
   };
 
-  window.speechSynthesis.cancel();
-  const u  = new SpeechSynthesisUtterance(text);
-  u.lang   = 'ja-JP';
-  u.rate   = readAloudRate;
-  u.onend  = afterTts;
-  window.speechSynthesis.speak(u);
-  // iOS 備用：估算時間 + 500ms buffer
-  setTimeout(afterTts, estMs + 500);
+  const _isGoogleVoice = !!((TTS_VOICE_OPTIONS.find(o => o.key === _ttsVoiceKey) || {}).googleName);
+  speakJa(text, readAloudRate, () => afterTts());
+  setTimeout(() => afterTts(), estMs + (_isGoogleVoice ? 8000 : 500));
 }
 
 function _followRecordWindow(n, total) {
@@ -5229,6 +5740,10 @@ function _stopFollowMode() {
   if (_followTimer) { clearTimeout(_followTimer); _followTimer = null; }
   _cleanFollowDetection();
   window.speechSynthesis.cancel();
+  // 停止時殺掉還在路上的 Google 請求與正在播的音檔（否則停了還會播/亂入）
+  if (_googleAbort) { try { _googleAbort.abort(); } catch (e) {} _googleAbort = null; }
+  _googleReqId++;
+  if (_googleAudio) { _googleAudio.pause(); _googleAudio = null; }
   if (_followMR && (_followMR.state === 'recording' || _followMR.state === 'paused')) {
     // 不覆蓋 onstop：讓原本的 save handler 執行，中途已錄的音也存檔
     _followMR.stop();
@@ -5288,36 +5803,21 @@ function setPlayRecIcon(playing) {
 
 // TTS speak
 function speak(text) {
-  if (!window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  // iOS workaround: synthesis can get stuck in paused state after multiple calls
-  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'ja-JP'; u.rate = 0.85;
-  window.speechSynthesis.speak(u);
+  speakJa(text, 0.85);
 }
 
 // 試題聽力播放（帶視覺回饋）
 function qzPlayWord(text) {
-  if (!window.speechSynthesis) return;
   const btn = document.getElementById('qz-play-btn');
   if (btn) { btn.style.opacity = '0.6'; btn.textContent = '播放中…'; }
-
-  window.speechSynthesis.cancel();
-  if (window.speechSynthesis.paused) window.speechSynthesis.resume();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'ja-JP'; u.rate = 0.85;
-
   const resetBtn = () => {
     const b = document.getElementById('qz-play-btn');
     if (!b) return;
     b.style.opacity = '1';
     b.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg> 再播放';
   };
-  u.onend = resetBtn;
-  u.onerror = resetBtn;
-  setTimeout(resetBtn, 3000); // fallback：iOS onend 有時不觸發
-  window.speechSynthesis.speak(u);
+  setTimeout(resetBtn, 4000); // fallback
+  speakJa(text, 0.85, resetBtn);
 }
 
 // Toast
@@ -5388,7 +5888,7 @@ function logTodayArticle(title, level) {
   // 若 detail panel 正在顯示今天，即時更新（修正 async fetch 完成前已打開面板的問題）
   if (selectedDay === TODAY && document.getElementById('day-detail').classList.contains('open')) {
     document.getElementById('detail-article-title').textContent = title || '（無紀錄）';
-    document.getElementById('detail-article-level').textContent = level ? level.toUpperCase() : '';
+    document.getElementById('detail-article-level').textContent = levelKeyLabel(level);
   }
 }
 
@@ -5731,9 +6231,8 @@ function openDay(day) {
   const d = new Date(calViewYear, calViewMonth - 1, day);
   document.getElementById('detail-date-label').textContent = `${calViewMonth}月${day}日（${weekdays[d.getDay()]}）`;
   document.getElementById('detail-article-title').textContent = entry ? (entry.articleTitle || '（無紀錄）') : '今日文章';
-  // Fix #3: show user's actual current level, not hardcoded N5
-  const _todayLevelOpt = LEVEL_OPTIONS.find(o => o.key === CURRENT_LEVEL);
-  document.getElementById('detail-article-level').textContent = entry ? (entry.level ? entry.level.toUpperCase() : '') : (_todayLevelOpt ? _todayLevelOpt.label : CURRENT_LEVEL.toUpperCase());
+  // Fix #3: show user's actual current level, not hardcoded N5（lite 一律顯示 NX-）
+  document.getElementById('detail-article-level').textContent = entry ? levelKeyLabel(entry.level) : levelKeyLabel(CURRENT_LEVEL);
 
   const tasksEl = document.getElementById('detail-tasks');
   tasksEl.innerHTML = '';
@@ -5930,7 +6429,7 @@ function renderVocabDisplayCard() {
           '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
         '</button>' +
       '</div>' +
-      (entry.romaji && _showRomaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
+      (getEntryRomaji(word, entry) && _showRomaji ? '<div class="vocab-romaji">' + getEntryRomaji(word, entry) + '</div>' : '') +
       '<div class="vocab-divider"></div>' +
       '<div class="vocab-meaning-wrap" onclick="revealVocabMeaning()">' +
         '<div class="vocab-meaning meaning-hidden" id="vocab-meaning-text">' +
@@ -5951,7 +6450,7 @@ function renderVocabDisplayCard() {
           '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
         '</button>' +
       '</div>' +
-      (entry.romaji && _showRomaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
+      (getEntryRomaji(word, entry) && _showRomaji ? '<div class="vocab-romaji">' + getEntryRomaji(word, entry) + '</div>' : '') +
       '<div class="vocab-divider"></div>' +
       '<div class="vocab-meaning-wrap" onclick="revealVocabMeaning()">' +
         '<div class="vocab-meaning meaning-hidden" id="vocab-meaning-text">' + (entry.meaning || '—') + '</div>' +
@@ -6173,24 +6672,19 @@ function openGojuuon() {
   document.getElementById('chip-katakana').textContent = '片';
   renderGojuuon();
   document.getElementById('gojuuon-overlay').classList.add('open');
-  const btn = document.getElementById('vocab-gojuuon-btn');
+  const btn = document.getElementById('gojuuon-fixed-btn');
   if (btn) btn.classList.add('open');
   _updateHelpBtnGlow();
 }
 
 function closeGojuuon() {
   document.getElementById('gojuuon-overlay').classList.remove('open');
-  const btn = document.getElementById('vocab-gojuuon-btn');
+  const btn = document.getElementById('gojuuon-fixed-btn');
   if (btn) btn.classList.remove('open');
 }
 
 function gojuuonSpeak(romaji, hira) {
-  if (window.speechSynthesis) {
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(hira);
-    u.lang = 'ja-JP'; u.rate = 0.2;
-    window.speechSynthesis.speak(u);
-  }
+  speakJa(hira, 0.5);
 }
 // ─────────────────────────────────────────────────────────
 
@@ -6229,7 +6723,7 @@ function renderVocabList() {
     content.className = 'vocab-row-content';
     const hasKanji = /[一-龯㐀-䶿]/.test(word);
     const kanaReading = hasKanji ? (entry.kana || '') : '';
-    const romajiReading = _showRomaji ? (entry.romaji || '') : '';
+    const romajiReading = _showRomaji ? getEntryRomaji(word, entry) : '';
     content.innerHTML =
       '<div class="vocab-row-text">' +
         '<div class="vocab-row-jp">' + word +
@@ -6677,22 +7171,24 @@ function startVocabQuiz() {
     showToast(filterName ? '目前沒有「' + filterName + '」單字可以複習' : '單字本是空的，先加入單字再複習');
     return;
   }
+  track('review_vocab', { filter: vocabFilter, count: words.length });
 
-  const order = localStorage.getItem('quizOrder') || 'due';
+  // 預設隨機，避免照文章／加入順序造成「位置記憶」式作答；設定頁仍可改回到期先/最新
+  const order = localStorage.getItem('quizOrder') || 'random';
   vqQueue = words.slice();
   if (order === 'due') {
     vqQueue.sort((a, b) => dueScore(vocabBook[b] || {}) - dueScore(vocabBook[a] || {}));
-  } else if (order === 'random') {
-    for (let i = vqQueue.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [vqQueue[i], vqQueue[j]] = [vqQueue[j], vqQueue[i]];
-    }
-  } else { // newest
+  } else if (order === 'newest') {
     vqQueue.sort((a, b) => {
       const da = vocabBook[a].addedDate || '';
       const db = vocabBook[b].addedDate || '';
       return db > da ? 1 : da > db ? -1 : 0;
     });
+  } else { // random（預設）
+    for (let i = vqQueue.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [vqQueue[i], vqQueue[j]] = [vqQueue[j], vqQueue[i]];
+    }
   }
 
   vqIndex = 0; vqOk = 0; vqFail = 0;
@@ -6804,42 +7300,16 @@ function vqSpeak(e) {
 }
 
 function vqRate(remembered) {
-  if (vqForgetMode) return; // 防止重複觸發
-
   const word  = vqQueue[vqIndex];
   const entry = vocabBook[word] || {};
   const fam   = entry.familiarity || 0;
-
-  if (remembered) {
-    entry.familiarity = Math.min(20, fam + 2);
-    entry.lastReviewed = getLocalDateStr();
-    vocabBook[word] = entry;
-    saveVocabBook();
-    vqOk++;
-    vqAdvance();
-  } else {
-    entry.familiarity = Math.max(0, fam - 2);
-    entry.lastReviewed = getLocalDateStr();
-    vocabBook[word] = entry;
-    saveVocabBook();
-    vqFail++;
-    vqForgetMode = true;
-
-    // 公布答案
-    vqPeekMeaning();
-
-    // 不記得按鈕禁用
-    const fBtn = document.getElementById('vq-forget-btn');
-    fBtn.disabled = true;
-    fBtn.style.opacity = '0.4';
-
-    // 記得按鈕改成「下一張」
-    const rBtn = document.getElementById('vq-remember-btn');
-    rBtn.textContent = '下一張 →';
-    rBtn.className = 'vq-btn vq-next-btn';
-    rBtn.onclick = () => vqAdvance();
-  }
-  vqSaveProgress();
+  entry.familiarity = remembered ? Math.min(20, fam + 2) : Math.max(0, fam - 2);
+  entry.lastReviewed = getLocalDateStr();
+  vocabBook[word] = entry;
+  saveVocabBook();
+  if (remembered) vqOk++; else vqFail++;
+  // 記得 / 不記得 都直接跳下一張（想看答案先點卡片揭曉）
+  vqAdvance();
 }
 
 function vqAdvance() {
@@ -6847,9 +7317,6 @@ function vqAdvance() {
   if (vqIndex >= vqQueue.length) {
     vqShowResult();
   } else {
-    // reset forget-btn opacity
-    const fBtn = document.getElementById('vq-forget-btn');
-    fBtn.style.opacity = '';
     vqShowCard();
   }
   vqSaveProgress();
@@ -6902,7 +7369,7 @@ function closeVocabQuizResult() {
 
 // 設定頁：循環切換複習排序
 function cycleQuizOrder() {
-  const cur = localStorage.getItem('quizOrder') || 'due';
+  const cur = localStorage.getItem('quizOrder') || 'random';
   const idx  = VQ_ORDERS.indexOf(cur);
   const next = VQ_ORDERS[(idx + 1) % VQ_ORDERS.length];
   localStorage.setItem('quizOrder', next);
@@ -7077,9 +7544,10 @@ async function selectArticleDate(dateStr) {
   }
   if (!result.success) {
     if (dateStr === getLocalDateStr()) {
-      restoreDemoContent();
+      showArticleNotReady();
+      selectedArticleDate = dateStr;
     } else {
-      showToast('內容載入失敗');
+      showToast('此日期尚無文章');
       return;
     }
   } else {
@@ -7165,7 +7633,7 @@ loadAllSlotsOnStartup();
 loadVocabBook();
 initSettings();
 initSort();
-updateQuizOrderUI(localStorage.getItem('quizOrder') || 'due');
+updateQuizOrderUI(localStorage.getItem('quizOrder') || 'random');
 
 // ===== Splash + Onboarding =====
 // Splash 視覺由純 CSS animation 控制，JS 只負責在動畫後觸發 onboarding
@@ -7216,56 +7684,128 @@ function _tutRender() {
   var step = _tutSteps[_tutIdx];
   var target = document.getElementById(step.targetId);
   if (!target) { tutorialNext(); return; }
-  var scrollAnchor = step.noScroll
-    ? (step.snapToId ? document.getElementById(step.snapToId) : null)
-    : target;
-  if (scrollAnchor) scrollAnchor.scrollIntoView({ behavior: 'instant', block: 'center' });
+  if (!step.noScroll) {
+    target.scrollIntoView({ behavior: 'instant', block: 'center' });
+  }
   requestAnimationFrame(function() { requestAnimationFrame(function() {
     var r = target.getBoundingClientRect();
     var pad = 6;
-    // optional snapToId: expand spotlight/tooltip to match another element's width & left
+    var _vm = 8; // viewport 兩側邊距
     var snapEl = step.snapToId ? document.getElementById(step.snapToId) : null;
     var snapR  = snapEl ? snapEl.getBoundingClientRect() : null;
-    var spLeft = snapR ? snapR.left         : (r.left - pad);
-    var spW    = snapR ? snapR.width        : (r.width + pad * 2);
-    var insetTop = step.insetTop || 0;
-    var insetBottom = step.insetBottom || 0;
-    var spTop  = r.top - pad + insetTop;
-    var spH    = r.height + pad * 2 - insetTop + insetBottom;
-    // enforce 8px viewport margin on both sides
-    var _vm = 8;
-    if (spLeft < _vm) spLeft = _vm;
-    if (spLeft + spW > window.innerWidth - _vm) spW = window.innerWidth - _vm - spLeft;
+
+    // ── 指示框（spotlight）：永遠框住 target + 6px、永遠平底 ──
+    //   版型 A 可用 snapToId 把指示框擴展到參考元素寬度（全寬連接）
+    //   有 step.tip（角落按鈕）或 legacy snapTooltipOnly 時，指示框維持 target 本身大小
+    var spUsesSnap = snapR && !step.snapTooltipOnly && !step.tip;
+    var spLeft = spUsesSnap ? snapR.left  : (r.left - pad);
+    var spW    = spUsesSnap ? snapR.width : (r.width + pad * 2);
+    // insetX：左右邊線各內縮 N px（負值＝向外擴），指示框與說明框（版型A）一起變動
+    if (step.insetX) { spLeft += step.insetX; spW -= step.insetX * 2; }
+    // spotlightHeight：指定固定高度時，指示框垂直置中對齊 target（避免切到內容）
+    var spH    = step.spotlightHeight ? step.spotlightHeight : (r.height + pad * 2);
+    var spTop  = step.spotlightHeight ? (r.top + r.height / 2 - spH / 2) : (r.top - pad);
+    // spanTopId：指示框向上延伸涵蓋另一元素（例如卡片上方的 section title）
+    if (step.spanTopId) {
+      var spanEl = document.getElementById(step.spanTopId);
+      if (spanEl) {
+        var sr = spanEl.getBoundingClientRect();
+        spTop = sr.top - pad;
+        spH = (r.bottom + pad) - spTop;
+      }
+    }
+    // insetY：上下邊線各內縮 N px（高度 -2N；負值＝向外擴）
+    if (step.insetY) { spTop += step.insetY; spH -= step.insetY * 2; }
+    // 向外擴（insetX<0）時放寬視窗邊距夾值，才能真正達到指定的外擴量
+    var edgeMin = (step.insetX && step.insetX < 0) ? 4 : _vm;
+    if (spLeft < edgeMin) spLeft = edgeMin;
+    if (spLeft + spW > window.innerWidth - edgeMin) spW = window.innerWidth - edgeMin - spLeft;
     spotlight.style.left   = spLeft + 'px';
     spotlight.style.top    = spTop + 'px';
     spotlight.style.width  = spW + 'px';
     spotlight.style.height = spH + 'px';
-    // when snapped, all 4 outer corners should be rounded
-    spotlight.style.borderRadius = snapR ? '12px 12px 0 0' : '12px 12px 0 0';
+    // 圓角延後到決定說明框上/下方後再設（見下方 placement 區塊）
+
     var old = overlay.querySelector('.tutorial-tooltip');
     if (old) old.remove();
     var tip = document.createElement('div');
     tip.className = 'tutorial-tooltip';
-    if (snapR) tip.style.borderRadius = '0 0 14px 14px'; // bottom only; top connects spotlight
+
+    // ── 說明框（tooltip）寬度、定位 ──
+    //   anchorMode 決定圓角型態：'full'（同寬連接）/ 'right'（右靠齊）/ 'left'（左靠齊）
+    var tipLeft, tipW, anchorMode;
+    if (step.tip) {
+      // 角落小按鈕：單邊靠齊指示框，另一邊延伸到 ref 元素的邊線
+      var refEl = document.getElementById(step.tip.ref);
+      var refR  = refEl ? refEl.getBoundingClientRect() : { left: _vm, right: window.innerWidth - _vm };
+      anchorMode = (step.tip.anchor === 'right') ? 'right'
+                 : (step.tip.anchor === 'left')  ? 'left'
+                 : 'center'; // 置中小按鈕：說明框用 ref 全寬，指示框在中間
+      if (anchorMode === 'right') {
+        tipLeft = Math.max(_vm, refR.left);
+        tipW = (spLeft + spW) - tipLeft;
+      } else if (anchorMode === 'left') {
+        tipLeft = spLeft;
+        tipW = Math.min(window.innerWidth - _vm, refR.right) - tipLeft;
+      } else {
+        tipLeft = Math.max(_vm, refR.left);
+        tipW = Math.min(window.innerWidth - _vm, refR.right) - tipLeft;
+      }
+    } else if (snapR && step.snapTooltipOnly) {
+      // legacy（文章頁/單字頁尚未遷移）：說明框用 snapR 寬、不與指示框連接
+      tipLeft = snapR.left;
+      tipW = snapR.width;
+      anchorMode = 'full';
+    } else {
+      // 版型 A 全寬連接：與指示框同寬同左
+      tipLeft = spLeft;
+      tipW = spW;
+      anchorMode = 'full';
+    }
     var dots = _tutSteps.length > 1
       ? '<div class="tutorial-dots">' + _tutSteps.map(function(_, i) {
           return '<div class="tutorial-dot' + (i === _tutIdx ? ' active' : '') + '"></div>';
         }).join('') + '</div>'
       : '';
-    tip.innerHTML = '<div class="tutorial-tooltip-text">' + step.text + '</div>' + dots;
-    tip.style.width = spW + 'px';
-    tip.style.left  = Math.max(8, Math.min(spLeft, window.innerWidth - spW - 8)) + 'px';
+    // text 可為字串或陣列；陣列時每個元素自成一段（多功能說明分段更易讀）
+    var _textHtml = Array.isArray(step.text)
+      ? step.text.map(function(t) { return '<p>' + t + '</p>'; }).join('')
+      : step.text;
+    tip.innerHTML = '<div class="tutorial-tooltip-text">' + _textHtml + '</div>' + dots;
+    tip.style.width = tipW + 'px';
+    tip.style.left  = Math.max(edgeMin, Math.min(tipLeft, window.innerWidth - tipW - edgeMin)) + 'px';
+    // 先掛上並顯示，offsetHeight 才量得到真實高度（above 定位需要）
+    overlay.style.display = 'block';
+    overlay.appendChild(tip);
     // attach below spotlight; if not enough space, go above
     var gap = 0; // flush — visually extends from spotlight
     var below = spTop + spH + gap;
     var tipH = tip.offsetHeight || 80;
-    if (below + tipH + 8 < window.innerHeight) {
+    var placeAbove = !(below + tipH + 8 < window.innerHeight);
+    if (!placeAbove) {
       tip.style.top = below + 'px';
     } else {
-      tip.style.top = Math.max(8, r.top - pad - gap - tipH) + 'px';
+      tip.style.top = Math.max(8, spTop - gap - tipH) + 'px';
     }
-    overlay.appendChild(tip);
-    overlay.style.display = 'block';
+
+    // ── 圓角：相接邊永遠平角；外露邊圓角。說明框在上方時整組上下反轉 ──
+    if (!placeAbove) {
+      // 說明框在下方（常態）
+      spotlight.style.borderRadius = '12px 12px 0 0'; // 指示框平底
+      tip.style.borderRadius =
+        anchorMode === 'right'  ? '14px 0 14px 14px' :  // 左上外露
+        anchorMode === 'left'   ? '0 14px 14px 14px' :  // 右上外露
+        anchorMode === 'center' ? '14px 14px 14px 14px' : // 兩上角皆外露（指示框在中間）
+                                  '0 0 14px 14px';        // 兩上角皆接
+    } else {
+      // 說明框在上方（edge case）：概念反轉
+      spotlight.style.borderRadius = '0 0 12px 12px'; // 指示框平頂
+      tip.style.borderRadius =
+        anchorMode === 'right'  ? '14px 14px 0 14px' :  // 左下外露
+        anchorMode === 'left'   ? '14px 14px 14px 0' :  // 右下外露
+        anchorMode === 'center' ? '14px 14px 14px 14px' : // 兩下角皆外露
+                                  '14px 14px 0 0';        // 兩下角皆接
+    }
   }); });
 }
 
@@ -7292,6 +7832,9 @@ function _updateHelpBtnGlow() {
 }
 
 function tutorialShow(btnId, steps) {
+  // 先把當前頁捲回頂端：第一步（最上方元素，常為 noScroll 的頂端小標）才不會停在畫面外
+  var _activePage = document.querySelector('.page.active');
+  if (_activePage) _activePage.scrollTop = 0;
   // 依元素在頁面的垂直位置排序（由上到下），與傳入順序無關
   _tutSteps = steps.slice().sort(function(a, b) {
     var ea = document.getElementById(a.targetId);
@@ -7339,47 +7882,67 @@ function tutorialClose() {
 function showHomeTutorial() {
   if (_tutBtnId === 'home-help-btn') { tutorialClose(); return; }
   tutorialShow('home-help-btn', [
-    { targetId: 'home-level-tag', snapToId: 'home-calendar-card', text: '顯示目前的學習等級，等級會影響每天推送的文章難度，點擊可以前往設定調整。' },
-    { targetId: 'home-calendar-card', text: '這裡記錄了每天的學習狀態，有文章的日期會有圓點，五色圈會呈現當日的讀書進度，點擊日期可以看到當天的文章以及閱讀進度。' },
-    { targetId: 'home-dashboard',     text: '顯示今天累積的學習量，從左到右分別是新學的單字數、複習的單字數，以及跟讀完成的句子數，讓你對當日進度一目瞭然。' },
-    { targetId: 'home-tasks-card',    text: '每天自動產生三項學習目標：文章、單字卡、試題，完成後對應的任務環會逐步填滿，試著每天集滿三環。' },
+    { targetId: 'home-level-tag', tip: { ref: 'home-calendar-card' }, noScroll: true, text: '顯示目前的學習等級，等級會影響每天推送的文章難度，點擊可以前往設定調整。' },
+    { targetId: 'home-calendar-card', spanTopId: 'home-rec-title', text: '這裡記錄了每天的學習狀態，有文章的日期會有圓點，五色圈會呈現當日的讀書進度，點擊日期可以看到當天的文章以及閱讀進度。' },
+    { targetId: 'home-dashboard', spanTopId: 'home-trace-title', text: '顯示今天累積的學習量，從左到右分別是新學的單字數、複習的單字數，以及跟讀完成的句子數，讓你對當日進度一目瞭然。' },
+    { targetId: 'home-tasks-card', spanTopId: 'home-task-title', text: '每天自動產生三項學習目標：文章、單字卡、試題，完成後對應的任務環會逐步填滿，試著每天集滿三環。' },
   ]);
 }
 function showArticleTutorial() {
   if (_tutBtnId === 'article-help-btn') { tutorialClose(); return; }
   tutorialShow('article-help-btn', [
+    { targetId: 'article-level-tag', tip: { ref: 'article-week-bar', anchor: 'left' }, noScroll: true, text: '顯示此篇文章的難度等級。長按可為當天文章單獨選擇其他等級（N5～N1），不影響全局設定。' },
     { targetId: 'article-week-bar',  text: '顯示最近七天的學習紀錄，點擊日期可切換閱讀當天的文章，點擊左側箭頭可以回顧上週的文章。' },
-    { targetId: 'cn-toggle-row',     text: '「中文」開啟後每個詞彙下方會顯示中文意思；「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本。' },
+    { targetId: 'cn-toggle-row',     text: [
+      '「＋全部」可一鍵把橘點選取句的所有單字批次加入單字本。',
+      '「中文」開啟後每個詞彙下方會顯示中文意思。',
+      '「書寫」開啟後每句下方會出現打字練習行，可邊讀邊對照練習；長按此鈕可清空本篇書寫。'
+    ] },
     { targetId: 'article-text',      text: '長按任意詞彙可加入單字卡，方便之後複習。' },
-    { targetId: 'article-first-dot', snapToId: 'article-text', text: '點擊句首的小圓點可選取或取消該句；長按小圓點則單獨選取這一句，方便針對單句練習朗讀或跟讀。' },
+    { targetId: 'article-first-dot', tip: { ref: 'article-text', anchor: 'left' }, text: '點擊句首的小圓點可選取或取消該句；長按小圓點則單獨選取這一句，方便針對單句練習朗讀或跟讀。' },
     { targetId: 'difficulty-bar',    text: '閱讀完後替這篇文章打個難度分數，幫助系統了解你目前的程度。' },
     { targetId: 'play-btn',   snapToId: 'difficulty-bar', noScroll: true, text: '點擊播放可聆聽全文朗讀，可調整速度。' },
     { targetId: 'follow-btn', snapToId: 'difficulty-bar', noScroll: true, text: '開啟逐句跟讀後，系統會逐句播放並等待你開口跟讀，錄音鍵供口語自由練習使用。' },
+    { targetId: 'gojuuon-fixed-btn', tip: { ref: 'article-week-bar', anchor: 'right' }, noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showVocabTutorial() {
   if (_tutBtnId === 'vocab-help-btn') { tutorialClose(); return; }
   tutorialShow('vocab-help-btn', [
-    { targetId: 'vocab-filter-bar',  snapToId: 'vocab-display-card', text: '按「生、普、熟」可篩選不同熟悉度的單字；右側「開始複習」會從目前篩選範圍啟動測驗模式。' },
+    { targetId: 'vocab-filter-bar',  snapToId: 'vocab-display-card', insetX: -12, insetY: 6, text: [
+      '按「生、普、熟」可篩選不同熟悉度的單字。',
+      '右側「開始複習」會從目前篩選範圍啟動測驗模式。'
+    ] },
     { targetId: 'vocab-display-card', text: '上下滑動可切換單字卡，點擊下半部可揭示中文意思和例句，幫助自我測驗。' },
     { targetId: 'vocab-list-area',   snapToId: 'vocab-display-card', text: '所有單字依熟悉度列出，點擊任一列可在上方單字卡中快速跳到該單字。' },
-    { targetId: 'vocab-btn-group',   snapToId: 'vocab-display-card', noScroll: true, text: '左側「Aa」切換顯示羅馬拼音輔助記憶，中間「＋」可手動新增單字，右側「あ」可開啟五十音表。' },
+    { targetId: 'vocab-btn-group',   snapToId: 'vocab-display-card', noScroll: true, text: [
+      '左側「Aa」切換顯示羅馬拼音輔助記憶。',
+      '右側「＋」可手動新增單字。'
+    ] },
+    { targetId: 'gojuuon-fixed-btn', tip: { ref: 'vocab-filter-bar', anchor: 'right' }, noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showQuizTutorial() {
   if (_tutBtnId === 'quiz-help-btn') { tutorialClose(); return; }
   tutorialShow('quiz-help-btn', [
     { targetId: 'quiz-week-bar', snapToId: 'quiz-main', text: '顯示最近七天的學習紀錄，點擊日期可切換到當天的試題，左側箭頭可回顧上週。' },
-    { targetId: 'quiz-level-tag', snapToId: 'quiz-main', noScroll: true, text: '顯示目前試題的難度等級。長按可切換此日期的文章與試題難度，文章頁也會同步連動。' },
-    { targetId: 'quiz-tabs', snapToId: 'quiz-main', text: '五種題型：單字聽力（聽單字選中文）、句子聽力（聽整句選翻譯）、填空、句子判斷、句子排列。每天各產生一組題目，每日題數可由設定頁的輕鬆、標準、專注模式調整。' },
-    { targetId: 'quiz-main', insetTop: 20, insetBottom: 5, text: '依序作答，每題即時給分；填空、判斷、排列、句子聽力題目右上角的「あ漢」可切換純假名或漢字顯示，完成後可重新作答。' },
+    { targetId: 'quiz-level-tag', tip: { ref: 'quiz-week-bar', anchor: 'left' }, noScroll: true, text: '顯示目前試題的難度等級。長按可切換此日期的文章與試題難度，文章頁也會同步連動。' },
+    { targetId: 'quiz-tabs', snapToId: 'quiz-main', text: [
+      '五種題型：單字聽力（聽單字選中文）、句子聽力（聽整句選翻譯）、填空、句子判斷、句子排列。',
+      '每天各產生一組題目，每日題數可由設定頁的輕鬆、標準、專注模式調整。'
+    ] },
+    { targetId: 'quiz-main', spotlightHeight: 190, text: '依序作答，每題即時給分；填空、判斷、排列、句子聽力題目右上角的「あ漢」可切換純假名或漢字顯示，完成後可重新作答。' },
+    { targetId: 'gojuuon-fixed-btn', tip: { ref: 'quiz-week-bar', anchor: 'right' }, noScroll: true, text: '點此隨時開啟五十音表查看假名發音對照，不需要離開當前頁面。' },
   ]);
 }
 function showGojuuonTutorial() {
   if (_tutBtnId === 'gojuuon-help-btn') { tutorialClose(); return; }
   tutorialShow('gojuuon-help-btn', [
     { targetId: 'gojuuon-scroll', text: '點擊任一個假名格子，可即時聆聽該音的發音，方便邊看邊記。' },
-    { targetId: 'gojuuon-chips', snapToId: 'gojuuon-scroll', noScroll: true, text: '「片」切換至片假名對照練習，「濁音」和「半濁音」展開對應的字群。' },
+    { targetId: 'gojuuon-chips', snapToId: 'gojuuon-scroll', noScroll: true, text: [
+      '「片」切換至片假名對照練習。',
+      '「濁音」和「半濁音」展開對應的字群。'
+    ] },
   ]);
 }
 
@@ -7637,13 +8200,20 @@ const firebaseConfig = {
   projectId: "jp-learning-app-a9f2c",
   storageBucket: "jp-learning-app-a9f2c.appspot.com",
   messagingSenderId: "1068503481615",
-  appId: "1:1068503481615:web:7e2098a24111139729927a"
+  appId: "1:1068503481615:web:7e2098a24111139729927a",
+  measurementId: "G-26WXHGMX2J"
 };
 var fbAuth = null;
 var fbDb   = null;
+var fbAnalytics = null;
 var currentUser = null;
 var firebaseInitError = null;
 var authStateKnown = false; // Firebase auth 狀態是否已確認（避免時序競爭顯示錯誤 UI）
+
+// Google Analytics（GA4）事件追蹤；失敗時靜默不影響 App
+function track(name, params) {
+  try { if (fbAnalytics) fbAnalytics.logEvent(name, params || {}); } catch (e) {}
+}
 
 try {
   if (!firebase.apps || !firebase.apps.length) {
@@ -7651,6 +8221,7 @@ try {
   }
   fbAuth = firebase.auth();
   fbDb   = firebase.firestore();
+  try { if (firebase.analytics) fbAnalytics = firebase.analytics(); } catch (e) {}
 
   // 處理之前未完成的 redirect（舊版遺留，新版改用 popup）
   fbAuth.getRedirectResult().then(result => {
@@ -7704,11 +8275,9 @@ function _applyRestoredSettings() {
   // 學習模式
   applyModeUI(localStorage.getItem('learnMode') || 'normal');
   // 複習順序
-  updateQuizOrderUI(localStorage.getItem('quizOrder') || 'due');
-  // 主題
-  const theme = localStorage.getItem('theme');
-  if (theme === 'dark') document.documentElement.dataset.theme = 'dark';
-  else delete document.documentElement.dataset.theme;
+  updateQuizOrderUI(localStorage.getItem('quizOrder') || 'random');
+  // 主題（含 system 三態）
+  applyTheme(_resolveDark());
   // vocabBook 重新載入
   try { vocabBook = JSON.parse(localStorage.getItem('vocabBook_v1') || '{}'); } catch(e) {}
   addedWords.clear();
@@ -7814,8 +8383,8 @@ function syncToCloud() {
   const visionKey = localStorage.getItem('googleVisionKey') || '';
   const settings = {
     learnMode:  localStorage.getItem('learnMode') || 'normal',
-    quizOrder:  localStorage.getItem('quizOrder') || 'due',
-    theme:      localStorage.getItem('theme') || 'light',
+    quizOrder:  localStorage.getItem('quizOrder') || 'random',
+    theme:      localStorage.getItem('theme') || 'system',
     userLevel:  localStorage.getItem('userLevel') || 'n5',
     ...(visionKey ? { googleVisionKey: visionKey } : {}),
     updatedAt:  now
