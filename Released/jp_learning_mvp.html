@@ -398,6 +398,7 @@
   }
   .av-btn:disabled { opacity: 0.4; cursor: default; }
   .av-btn.playing { background: var(--wa); color: #FFFFFF; }
+  .av-btn.repeat-on { background: var(--wa); color: #FFFFFF; }
   .av-btn.rec-btn { background: #EEE8FF; color: #7F77DD; }
   .av-btn.rec-btn.recording { background: var(--wr); color: #FFFFFF; }
   .av-btn.follow-btn { background: #EEE8FF; color: #7F77DD; font-size: 11px; font-weight: 600; min-width: 38px; letter-spacing: 0.5px; }
@@ -2166,7 +2167,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.6.2
+          v1.7.0
         </div>
 
       </div>
@@ -2342,6 +2343,9 @@
       <div class="av-bar-controls">
         <button class="av-btn" id="play-btn" onclick="toggleReadAloud()" aria-label="播放">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+        </button>
+        <button class="av-btn" id="repeat-btn" onclick="toggleReadAloudRepeat()" aria-label="重複播放" aria-pressed="false">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
         </button>
         <button class="av-btn" onclick="stopReadAloud()" aria-label="停止">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="5" y="5" width="14" height="14" rx="1"/></svg>
@@ -4779,8 +4783,11 @@ function cycleTtsVoice() {
 let readAloudUtterance = null;
 let readAloudPlaying = false;
 let readAloudRate = 1.0;
-let readAloudQueue  = []; // 待播句子列（每句各自為一個 utterance）
+let readAloudQueue  = []; // 待播句子列（每句 {text, idx}）
 let readAloudTimer  = null; // 句間暫停 timer
+let readAloudPaused = false; // 暫停中（保留 queue，續播從當前句開頭）
+let readAloudRepeat = false; // 重複播放：播完目前選取自動從頭再播
+let readAloudCur    = null;  // 目前正在播的 {text, idx}（暫停時退回 queue 用）
 
 // Token 分句陣列（不依賴 DOM，由 renderArticle 後更新）
 let SENTENCE_TEXTS = [];
@@ -4809,7 +4816,17 @@ function buildPlayText() {
 
 function _onReadAloudEnd() {
   readAloudPlaying = false;
+  readAloudPaused = false;
+  readAloudCur = null;
   setPlayIcon(false);
+}
+
+// 依目前句子選取（文章 filter）建 queue；無選取資料時 fallback 整篇（idx=-1 不計進度）
+function _buildReadAloudQueue() {
+  if (!sentenceCount || !SENTENCE_TEXTS.length) return [{ text: ARTICLE_TEXT, idx: -1 }];
+  return sentenceSelected
+    .map((sel, i) => (sel && SENTENCE_TEXTS[i]) ? { text: SENTENCE_TEXTS[i], idx: i } : null)
+    .filter(Boolean);
 }
 
 function _markSentencePlay(idx) {
@@ -4836,11 +4853,24 @@ function _playNextInQueue() {
     if (readAloudPlaying) _onReadAloudEnd();
     return;
   }
-  const {text, idx} = readAloudQueue.shift();
-  _speakOne(text, () => {
-    _markSentencePlay(idx);
-    if (!readAloudPlaying) return;
-    if (!readAloudQueue.length) { _onReadAloudEnd(); return; }
+  const item = readAloudQueue.shift();
+  readAloudCur = item;
+  _speakOne(item.text, () => {
+    if (!readAloudPlaying) return;   // 已暫停/停止：不推進、不計進度
+    readAloudCur = null;
+    if (item.idx >= 0) _markSentencePlay(item.idx);
+    if (!readAloudQueue.length) {
+      // 重複播放：從目前選取重建 queue 繼續循環
+      if (readAloudRepeat) {
+        readAloudQueue = _buildReadAloudQueue();
+        if (readAloudQueue.length) {
+          readAloudTimer = setTimeout(() => { readAloudTimer = null; _playNextInQueue(); }, 500);
+          return;
+        }
+      }
+      _onReadAloudEnd();
+      return;
+    }
     readAloudTimer = setTimeout(() => {
       readAloudTimer = null;
       _playNextInQueue();
@@ -4848,28 +4878,35 @@ function _playNextInQueue() {
   });
 }
 
+// 播放鍵：停止中→播放、播放中→暫停、暫停中→續播
 function toggleReadAloud() {
-  if (readAloudPlaying) {
-    // 停止（含清除句間計時器）
-    stopReadAloud();
-    return;
-  }
+  if (readAloudPlaying) { pauseReadAloud(); return; }
+  if (readAloudPaused)  { resumeReadAloud(); return; }
+
   window.speechSynthesis.cancel();
   if (readAloudTimer) { clearTimeout(readAloudTimer); readAloudTimer = null; }
-
-  // 無選取資料時 fallback 整篇（無法追蹤逐句，略過進度計算）
-  if (!sentenceCount || !SENTENCE_TEXTS.length) {
-    readAloudPlaying = true;
-    setPlayIcon(true);
-    _speakOne(ARTICLE_TEXT, () => _onReadAloudEnd());
-    return;
-  }
-
-  readAloudQueue = sentenceSelected
-    .map((sel, i) => (sel && SENTENCE_TEXTS[i]) ? {text: SENTENCE_TEXTS[i], idx: i} : null)
-    .filter(Boolean);
-
+  readAloudQueue = _buildReadAloudQueue();
   if (!readAloudQueue.length) return;
+  readAloudPlaying = true;
+  readAloudPaused = false;
+  setPlayIcon(true);
+  _playNextInQueue();
+}
+
+// 暫停：停掉當前音檔但保留 queue，把正在播的那句退回最前面（續播從該句開頭）
+function pauseReadAloud() {
+  readAloudPlaying = false;
+  readAloudPaused = true;
+  window.speechSynthesis.cancel();
+  if (_googleAudio) { _googleAudio.pause(); _googleAudio = null; }
+  if (readAloudTimer) { clearTimeout(readAloudTimer); readAloudTimer = null; }
+  if (readAloudCur) { readAloudQueue.unshift(readAloudCur); readAloudCur = null; }
+  setPlayIcon(false);
+}
+
+function resumeReadAloud() {
+  if (!readAloudQueue.length) { stopReadAloud(); return; }
+  readAloudPaused = false;
   readAloudPlaying = true;
   setPlayIcon(true);
   _playNextInQueue();
@@ -4880,8 +4917,16 @@ function stopReadAloud() {
   if (_googleAudio) { _googleAudio.pause(); _googleAudio = null; }
   if (readAloudTimer) { clearTimeout(readAloudTimer); readAloudTimer = null; }
   readAloudQueue = [];
+  readAloudCur = null;
   readAloudPlaying = false;
+  readAloudPaused = false;
   setPlayIcon(false);
+}
+
+function toggleReadAloudRepeat() {
+  readAloudRepeat = !readAloudRepeat;
+  const b = document.getElementById('repeat-btn');
+  if (b) { b.classList.toggle('repeat-on', readAloudRepeat); b.setAttribute('aria-pressed', readAloudRepeat); }
 }
 
 function setPlayIcon(playing) {
@@ -4904,13 +4949,11 @@ function adjustSpeed(direction) {
   // 若朗讀正在進行，套用新速度：重新從頭播放
   if (readAloudPlaying) {
     window.speechSynthesis.cancel();
+    if (_googleAudio) { _googleAudio.pause(); _googleAudio = null; }
     if (readAloudTimer) { clearTimeout(readAloudTimer); readAloudTimer = null; }
-    const _allSel2 = sentenceSelected.every(Boolean);
-    readAloudQueue = sentenceSelected
-      .map((sel, i) => (sel && SENTENCE_TEXTS[i]) ? SENTENCE_TEXTS[i] : null)
-      .filter(Boolean);
-    if (!readAloudQueue.length) readAloudQueue = [ARTICLE_TEXT];
-    _playNextInQueue(_allSel2);
+    readAloudCur = null;
+    readAloudQueue = _buildReadAloudQueue();
+    _playNextInQueue();
     showToast('已調整為 ' + readAloudRate.toFixed(2).replace(/0$/, '') + 'x，重新播放');
   }
 }

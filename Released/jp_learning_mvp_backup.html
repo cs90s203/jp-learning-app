@@ -2166,7 +2166,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.6.1
+          v1.6.2
         </div>
 
       </div>
@@ -7441,7 +7441,9 @@ function vqSaveProgress() {
   const dateStr = getLocalDateStr();
   if (!log[dateStr]) log[dateStr] = {};
   if (!log[dateStr].tasks) log[dateStr].tasks = {};
-  log[dateStr].tasks.vocab = pct;
+  // 取當日高水位：再次複習時不可把已達成的進度（例如 100%）拉低
+  const prev = (typeof log[dateStr].tasks.vocab === 'number') ? log[dateStr].tasks.vocab : 0;
+  log[dateStr].tasks.vocab = Math.max(prev, pct);
   saveStudyLog(log);
   refreshProgressUI();
 }
