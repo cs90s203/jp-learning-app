@@ -814,6 +814,8 @@
   }
   .vq-cd-bar { height: 100%; width: 0%; border-radius: 2px; background: var(--wa); }
   .vq-cd-bar.phase-b { background: var(--wr); }
+  .vq-elapsed { font-size: 12px; color: var(--wt3); font-variant-numeric: tabular-nums; margin-top: 2px; }
+  .vq-elapsed.frozen { color: var(--wa); font-weight: 600; }
   .vq-card-area {
     flex: 1; display: flex; flex-direction: column;
     align-items: center; justify-content: center; padding: 80px 32px 0; text-align: center;
@@ -2164,7 +2166,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.6.0
+          v1.6.1
         </div>
 
       </div>
@@ -2421,6 +2423,7 @@
       <span class="vq-counter" id="vq-counter">0 / 0</span>
       <div class="vq-prog-wrap"><div class="vq-prog-bar" id="vq-bar"></div></div>
       <div class="vq-cd-wrap" id="vq-cd-wrap" style="visibility:hidden"><div class="vq-cd-bar" id="vq-cd-bar"></div></div>
+      <div class="vq-elapsed" id="vq-elapsed" style="display:none"></div>
     </div>
     <!-- card area -->
     <div class="vq-card-area" id="vq-card-area">
@@ -7184,6 +7187,8 @@ let vqMode = 'text'; // 'text' | 'listen'
 let vqAutoSec = parseInt(localStorage.getItem('vqAutoSec')) || 0;
 let vqCdTimer = null;   // 目前階段的計時器
 let vqPhase   = '';     // ''=無, 'A'=題面倒數, 'B'=答案4秒
+let vqElapsedTimer = null;  // ∞ 模式：回想讀秒累加
+let vqElapsedStart = 0;
 
 function startVocabQuiz() {
   const words = vocabFilteredList;
@@ -7347,10 +7352,33 @@ function vqClearCountdown() {
   const wrap = document.getElementById('vq-cd-wrap');
   if (bar)  { bar.style.transition = 'none'; bar.style.width = '0%'; bar.classList.remove('phase-b'); }
   if (wrap) wrap.style.visibility = 'hidden';
+  vqStopElapsed(false);
 }
-// Phase A：題面倒數（僅文字模式、5/10 秒時啟動；關閉/∞ 不自動翻）
+// ∞ 模式：回想讀秒累加，揭曉時凍結、不自動翻頁
+function vqStartElapsed() {
+  vqStopElapsed(false);
+  vqElapsedStart = Date.now();
+  const el = document.getElementById('vq-elapsed');
+  if (el) { el.style.display = ''; el.classList.remove('frozen'); }
+  vqRenderElapsed();
+  vqElapsedTimer = setInterval(vqRenderElapsed, 200);
+}
+function vqRenderElapsed() {
+  const el = document.getElementById('vq-elapsed');
+  if (!el) return;
+  el.textContent = '⏱ 回想 ' + Math.floor((Date.now() - vqElapsedStart) / 1000) + ' 秒';
+}
+function vqStopElapsed(freeze) {
+  if (vqElapsedTimer) { clearInterval(vqElapsedTimer); vqElapsedTimer = null; }
+  const el = document.getElementById('vq-elapsed');
+  if (!el) return;
+  if (freeze) { vqRenderElapsed(); el.classList.add('frozen'); }
+  else        { el.style.display = 'none'; el.classList.remove('frozen'); }
+}
+// Phase A：題面倒數（僅文字模式；5/10 秒自動翻，∞ 只讀秒不翻，關閉不做事）
 function vqStartCountdown() {
   if (vqMode !== 'text') return;
+  if (vqAutoSec === -1) { vqStartElapsed(); return; }
   if (vqAutoSec !== 5 && vqAutoSec !== 10) return;
   vqPhase = 'A';
   vqRunBar(vqAutoSec, false);
@@ -7372,6 +7400,8 @@ function vqPeekMeaning() {
     vqRunBar(4, true);
     vqCdTimer = setTimeout(function() { vqRate(false); }, 4000);
   }
+  // ∞ 模式：揭曉即凍結回想秒數，不自動翻頁
+  if (vqAutoSec === -1 && vqMode === 'text') vqStopElapsed(true);
 }
 
 function vqSpeak(e) {

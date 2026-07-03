@@ -799,6 +799,21 @@
     transition: width 0.3s ease; width: 0%;
   }
   .vq-counter { font-size: 13px; color: var(--wt3); text-align: center; }
+  /* 自動倒數翻頁：按鈕 + 倒數條 */
+  .vq-cd-btn {
+    min-width: 28px; height: 28px; padding: 0 8px; border: none;
+    background: var(--wa-bg2); border-radius: 14px; cursor: pointer; color: var(--wt2);
+    font-size: 13px; font-weight: 600; gap: 3px;
+    display: flex; align-items: center; justify-content: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .vq-cd-btn.active { background: var(--wa); color: #FFF; }
+  .vq-cd-wrap {
+    width: 296px; height: 3px; border-radius: 2px; overflow: hidden;
+    background: var(--wa-bg2);
+  }
+  .vq-cd-bar { height: 100%; width: 0%; border-radius: 2px; background: var(--wa); }
+  .vq-cd-bar.phase-b { background: var(--wr); }
   .vq-card-area {
     flex: 1; display: flex; flex-direction: column;
     align-items: center; justify-content: center; padding: 80px 32px 0; text-align: center;
@@ -2149,7 +2164,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.5.6
+          v1.6.0
         </div>
 
       </div>
@@ -2388,6 +2403,7 @@
   <!-- 單字複習考 overlay -->
   <div id="vocab-quiz">
     <button class="vq-close-btn" onclick="exitVocabQuiz()" style="position:fixed;top:14px;right:16px">✕</button>
+    <button class="vq-cd-btn" id="vq-cd-btn" onclick="vqCycleAuto()" style="position:fixed;top:14px;left:16px;display:none" aria-label="自動倒數翻頁"></button>
     <!-- mode selection screen -->
     <div id="vq-mode-select" style="display:none;flex-direction:column;align-items:center;justify-content:center;flex:1;gap:20px;padding:32px">
       <div style="font-size:20px;font-weight:600;color:var(--wt);margin-bottom:8px">選擇複習模式</div>
@@ -2404,6 +2420,7 @@
     <div class="vq-header" id="vq-header">
       <span class="vq-counter" id="vq-counter">0 / 0</span>
       <div class="vq-prog-wrap"><div class="vq-prog-bar" id="vq-bar"></div></div>
+      <div class="vq-cd-wrap" id="vq-cd-wrap" style="visibility:hidden"><div class="vq-cd-bar" id="vq-cd-bar"></div></div>
     </div>
     <!-- card area -->
     <div class="vq-card-area" id="vq-card-area">
@@ -3616,6 +3633,103 @@ const LEVEL_OPTIONS = [
   { key: 'n1_lite', label: 'N1-' },
   { key: 'n1',      label: 'N1'  },
 ];
+
+// 各等級難度（固定值，不需 AI 生成）
+const LEVEL_DIFFICULTY = {
+  'n5_lite': { target_vocab_rate: 0.05, jlpt_level: 'N5⁻' },
+  'n5':      { target_vocab_rate: 0.08, jlpt_level: 'N5'  },
+  'n4_lite': { target_vocab_rate: 0.08, jlpt_level: 'N4⁻' },
+  'n4':      { target_vocab_rate: 0.10, jlpt_level: 'N4'  },
+  'n3_lite': { target_vocab_rate: 0.10, jlpt_level: 'N3⁻' },
+  'n3':      { target_vocab_rate: 0.12, jlpt_level: 'N3'  },
+  'n2_lite': { target_vocab_rate: 0.12, jlpt_level: 'N2⁻' },
+  'n2':      { target_vocab_rate: 0.14, jlpt_level: 'N2'  },
+  'n1_lite': { target_vocab_rate: 0.14, jlpt_level: 'N1⁻' },
+  'n1':      { target_vocab_rate: 0.16, jlpt_level: 'N1'  },
+};
+
+// 假名→羅馬拼音（Hepburn）
+function kanaToRomaji(str) {
+  if (!str) return '';
+  const map = {
+    // Hiragana digraphs
+    'きゃ':'kya','きゅ':'kyu','きょ':'kyo','しゃ':'sha','しゅ':'shu','しょ':'sho',
+    'ちゃ':'cha','ちゅ':'chu','ちょ':'cho','にゃ':'nya','にゅ':'nyu','にょ':'nyo',
+    'ひゃ':'hya','ひゅ':'hyu','ひょ':'hyo','みゃ':'mya','みゅ':'myu','みょ':'myo',
+    'りゃ':'rya','りゅ':'ryu','りょ':'ryo','ぎゃ':'gya','ぎゅ':'gyu','ぎょ':'gyo',
+    'じゃ':'ja', 'じゅ':'ju', 'じょ':'jo', 'ぢゃ':'ja', 'ぢゅ':'ju', 'ぢょ':'jo',
+    'びゃ':'bya','びゅ':'byu','びょ':'byo','ぴゃ':'pya','ぴゅ':'pyu','ぴょ':'pyo',
+    // Katakana digraphs
+    'キャ':'kya','キュ':'kyu','キョ':'kyo','シャ':'sha','シュ':'shu','ショ':'sho',
+    'チャ':'cha','チュ':'chu','チョ':'cho','ニャ':'nya','ニュ':'nyu','ニョ':'nyo',
+    'ヒャ':'hya','ヒュ':'hyu','ヒョ':'hyo','ミャ':'mya','ミュ':'myu','ミョ':'myo',
+    'リャ':'rya','リュ':'ryu','リョ':'ryo','ギャ':'gya','ギュ':'gyu','ギョ':'gyo',
+    'ジャ':'ja', 'ジュ':'ju', 'ジョ':'jo', 'ビャ':'bya','ビュ':'byu','ビョ':'byo',
+    'ピャ':'pya','ピュ':'pyu','ピョ':'pyo','ファ':'fa', 'フィ':'fi', 'フェ':'fe','フォ':'fo',
+    'ウィ':'wi', 'ウェ':'we', 'ウォ':'wo', 'ティ':'ti', 'ディ':'di',
+    // Hiragana single
+    'あ':'a','い':'i','う':'u','え':'e','お':'o',
+    'か':'ka','き':'ki','く':'ku','け':'ke','こ':'ko',
+    'が':'ga','ぎ':'gi','ぐ':'gu','げ':'ge','ご':'go',
+    'さ':'sa','し':'shi','す':'su','せ':'se','そ':'so',
+    'ざ':'za','じ':'ji','ず':'zu','ぜ':'ze','ぞ':'zo',
+    'た':'ta','ち':'chi','つ':'tsu','て':'te','と':'to',
+    'だ':'da','ぢ':'ji','づ':'zu','で':'de','ど':'do',
+    'な':'na','に':'ni','ぬ':'nu','ね':'ne','の':'no',
+    'は':'ha','ひ':'hi','ふ':'fu','へ':'he','ほ':'ho',
+    'ば':'ba','び':'bi','ぶ':'bu','べ':'be','ぼ':'bo',
+    'ぱ':'pa','ぴ':'pi','ぷ':'pu','ぺ':'pe','ぽ':'po',
+    'ま':'ma','み':'mi','む':'mu','め':'me','も':'mo',
+    'や':'ya','ゆ':'yu','よ':'yo',
+    'ら':'ra','り':'ri','る':'ru','れ':'re','ろ':'ro',
+    'わ':'wa','ゐ':'i','ゑ':'e','を':'o','ん':'n',
+    // Katakana single
+    'ア':'a','イ':'i','ウ':'u','エ':'e','オ':'o',
+    'カ':'ka','キ':'ki','ク':'ku','ケ':'ke','コ':'ko',
+    'ガ':'ga','ギ':'gi','グ':'gu','ゲ':'ge','ゴ':'go',
+    'サ':'sa','シ':'shi','ス':'su','セ':'se','ソ':'so',
+    'ザ':'za','ジ':'ji','ズ':'zu','ゼ':'ze','ゾ':'zo',
+    'タ':'ta','チ':'chi','ツ':'tsu','テ':'te','ト':'to',
+    'ダ':'da','ヂ':'ji','ヅ':'zu','デ':'de','ド':'do',
+    'ナ':'na','ニ':'ni','ヌ':'nu','ネ':'ne','ノ':'no',
+    'ハ':'ha','ヒ':'hi','フ':'fu','ヘ':'he','ホ':'ho',
+    'バ':'ba','ビ':'bi','ブ':'bu','ベ':'be','ボ':'bo',
+    'パ':'pa','ピ':'pi','プ':'pu','ペ':'pe','ポ':'po',
+    'マ':'ma','ミ':'mi','ム':'mu','メ':'me','モ':'mo',
+    'ヤ':'ya','ユ':'yu','ヨ':'yo',
+    'ラ':'ra','リ':'ri','ル':'ru','レ':'re','ロ':'ro',
+    'ワ':'wa','ヲ':'o','ン':'n','ヴ':'vu',
+  };
+  let result = '', i = 0;
+  while (i < str.length) {
+    const c = str[i];
+    if (c === 'っ' || c === 'ッ') {
+      const nxt = map[str[i+1] + str[i+2]] || map[str[i+1]] || '';
+      if (nxt) result += nxt[0];
+      i++; continue;
+    }
+    if (c === 'ー') {
+      if (result) result += result[result.length - 1];
+      i++; continue;
+    }
+    if ((c === 'ん' || c === 'ン') && i + 1 < str.length) {
+      const nxtR = map[str[i+1]] || '';
+      result += (nxtR && 'aeiou'.includes(nxtR[0])) ? "n'" : 'n';
+      i++; continue;
+    }
+    const two = map[str[i] + str[i+1]];
+    if (two) { result += two; i += 2; continue; }
+    result += map[c] || c;
+    i++;
+  }
+  return result;
+}
+
+function getEntryRomaji(key, entry) {
+  if (entry && entry.romaji) return entry.romaji;
+  const kana = (entry && entry.reading) || (/[一-鿿㐀-䶿]/.test(key) ? '' : key);
+  return kana ? kanaToRomaji(kana) : '';
+}
 // 後端等級 key（含 _lite）→ 前端標籤（N5- / N5）。lite 一律顯示為 NX-
 function levelKeyLabel(key) {
   if (!key) return '';
@@ -3625,6 +3739,7 @@ function levelKeyLabel(key) {
 const BAKED_VISION_KEY = '__VISION_KEY__';
 let _showRomaji = localStorage.getItem('showRomaji') !== 'false';
 let CURRENT_LEVEL = localStorage.getItem('userLevel') || 'n5';
+let CURRENT_DIFFICULTY = LEVEL_DIFFICULTY[CURRENT_LEVEL] || {};
 let MASTERY_THRESHOLD = parseInt(localStorage.getItem('masteryThreshold') || '10');
 let _levelPickerOpen = false;
 const _MASTERY_OPTIONS = [8, 10, 15, 20];
@@ -3813,6 +3928,8 @@ function applyContentPack(pack) {
   VOCAB_DICT = pack.vocab;
   PARTICLE_NOTES = pack.particles ? Object.assign({}, BUILTIN_PARTICLE_NOTES, pack.particles) : Object.assign({}, BUILTIN_PARTICLE_NOTES);
   SENTENCE_TRANSLATIONS = pack.translations;
+  // difficulty: use pack value or fall back to hardcoded table
+  CURRENT_DIFFICULTY = pack.difficulty || LEVEL_DIFFICULTY[pack.level] || {};
   // 重新渲染文章
   articleRendered = false;
   if (document.getElementById('page-article') && document.getElementById('page-article').classList.contains('active')) {
@@ -4376,7 +4493,7 @@ function openWordPanel(basic, surface, reading) {
     '</div>' +
     (isInflected ? '<div class="wp-base-form">原形：<span>' + basic + '</span></div>' : '') +
     (showKana ? '<div class="wp-kana">' + reading + '</div>' : '') +
-    (entry.romaji ? '<div class="wp-romaji">' + entry.romaji + '</div>' : '') +
+    (getEntryRomaji(basic, entry) ? '<div class="wp-romaji">' + getEntryRomaji(basic, entry) + '</div>' : '') +
     '<div class="wp-divider"></div>' +
     '<div class="wp-meaning">' + entry.meaning + '</div>' +
     (isAdded
@@ -4481,7 +4598,7 @@ function addAllSelectedWords() {
     const entry = VOCAB_DICT[basic] || {};
     const _ex = findExampleWithTranslation(basic);
     vocabBook[basic] = {
-      kana: entry.reading || '', romaji: entry.romaji || '',
+      kana: entry.reading || '', romaji: getEntryRomaji(basic, entry),
       meaning: entry.meaning || '',
       example: entry.example || _ex.example || '',
       exampleTrans: entry.exampleTrans || _ex.exampleTrans || '',
@@ -4506,7 +4623,7 @@ function addToVocabCards(basic, extra) {
     const _ex = findExampleWithTranslation(basic);
     vocabBook[basic] = {
       kana:       extra?.kana    || entry.reading || '',
-      romaji:     extra?.romaji  || entry.romaji  || '',
+      romaji:     extra?.romaji  || getEntryRomaji(basic, entry),
       meaning:    extra?.meaning || entry.meaning || '',
       example:    extra?.example || entry.example || _ex.example || '',
       exampleTrans: extra?.exampleTrans || entry.exampleTrans || _ex.exampleTrans || '',
@@ -6329,7 +6446,7 @@ function renderVocabDisplayCard() {
           '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
         '</button>' +
       '</div>' +
-      (entry.romaji && _showRomaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
+      (getEntryRomaji(word, entry) && _showRomaji ? '<div class="vocab-romaji">' + getEntryRomaji(word, entry) + '</div>' : '') +
       '<div class="vocab-divider"></div>' +
       '<div class="vocab-meaning-wrap" onclick="revealVocabMeaning()">' +
         '<div class="vocab-meaning meaning-hidden" id="vocab-meaning-text">' +
@@ -6350,7 +6467,7 @@ function renderVocabDisplayCard() {
           '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
         '</button>' +
       '</div>' +
-      (entry.romaji && _showRomaji ? '<div class="vocab-romaji">' + entry.romaji + '</div>' : '') +
+      (getEntryRomaji(word, entry) && _showRomaji ? '<div class="vocab-romaji">' + getEntryRomaji(word, entry) + '</div>' : '') +
       '<div class="vocab-divider"></div>' +
       '<div class="vocab-meaning-wrap" onclick="revealVocabMeaning()">' +
         '<div class="vocab-meaning meaning-hidden" id="vocab-meaning-text">' + (entry.meaning || '—') + '</div>' +
@@ -6623,7 +6740,7 @@ function renderVocabList() {
     content.className = 'vocab-row-content';
     const hasKanji = /[一-龯㐀-䶿]/.test(word);
     const kanaReading = hasKanji ? (entry.kana || '') : '';
-    const romajiReading = _showRomaji ? (entry.romaji || '') : '';
+    const romajiReading = _showRomaji ? getEntryRomaji(word, entry) : '';
     content.innerHTML =
       '<div class="vocab-row-text">' +
         '<div class="vocab-row-jp">' + word +
@@ -7063,6 +7180,10 @@ let vqOk = 0;
 let vqFail = 0;
 let vqForgetMode = false; // 不記得狀態：等待「下一張」
 let vqMode = 'text'; // 'text' | 'listen'
+// 自動倒數翻頁（文字複習）：0=關閉, 5, 10, -1=∞(不自動翻)
+let vqAutoSec = parseInt(localStorage.getItem('vqAutoSec')) || 0;
+let vqCdTimer = null;   // 目前階段的計時器
+let vqPhase   = '';     // ''=無, 'A'=題面倒數, 'B'=答案4秒
 
 function startVocabQuiz() {
   const words = vocabFilteredList;
@@ -7102,6 +7223,7 @@ function startVocabQuiz() {
   document.getElementById('vq-card-area').style.display = 'none';
   document.getElementById('vq-btns').style.display = 'none';
   document.getElementById('vq-result-area').style.display = 'none';
+  document.getElementById('vq-cd-btn').style.display = 'none';
 }
 
 function startVocabQuizMode(mode) {
@@ -7110,6 +7232,10 @@ function startVocabQuizMode(mode) {
   document.getElementById('vq-header').style.display = '';
   document.getElementById('vq-card-area').style.display = 'flex';
   document.getElementById('vq-btns').style.display = 'grid';
+  // 自動倒數翻頁按鈕：此版只在文字複習提供
+  const cdBtn = document.getElementById('vq-cd-btn');
+  cdBtn.style.display = (mode === 'text') ? 'flex' : 'none';
+  vqUpdateCdBtn();
   // 聽力模式：TTS 按鈕放大
   const ttsBtn = document.getElementById('vq-tts-btn');
   if (ttsBtn) {
@@ -7130,6 +7256,7 @@ function startVocabQuizMode(mode) {
 
 function vqShowCard() {
   vqForgetMode = false;
+  vqClearCountdown();
 
   const word  = vqQueue[vqIndex];
   const entry = vocabBook[word] || {};
@@ -7180,6 +7307,54 @@ function vqShowCard() {
   rBtn.className = 'vq-btn vq-remember';
   rBtn.onclick = () => vqRate(true);
   rBtn.disabled = false;
+
+  vqStartCountdown();
+}
+
+// ── 自動倒數翻頁 ──
+const VQ_AUTO_CYCLE = [0, 5, 10, -1]; // 關閉 → 5 → 10 → ∞ → 關閉
+function vqCycleAuto() {
+  vqAutoSec = VQ_AUTO_CYCLE[(VQ_AUTO_CYCLE.indexOf(vqAutoSec) + 1) % VQ_AUTO_CYCLE.length];
+  localStorage.setItem('vqAutoSec', vqAutoSec);
+  vqUpdateCdBtn();
+  // 立即套用到目前這張：只有答案還沒揭曉時重新起算題面倒數，已揭曉的維持、下一張才套用
+  vqClearCountdown();
+  if (document.getElementById('vq-meaning').classList.contains('meaning-hidden')) vqStartCountdown();
+}
+function vqUpdateCdBtn() {
+  const b = document.getElementById('vq-cd-btn');
+  if (!b) return;
+  const label = vqAutoSec === -1 ? '∞' : (vqAutoSec > 0 ? String(vqAutoSec) : '');
+  b.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/></svg>' + (label ? '<span>' + label + '</span>' : '');
+  b.classList.toggle('active', vqAutoSec !== 0);
+}
+function vqRunBar(sec, isB) {
+  const wrap = document.getElementById('vq-cd-wrap');
+  const bar  = document.getElementById('vq-cd-bar');
+  if (!wrap || !bar) return;
+  wrap.style.visibility = 'visible';
+  bar.classList.toggle('phase-b', !!isB);
+  bar.style.transition = 'none';
+  bar.style.width = '100%';
+  void bar.offsetWidth; // 強制 reflow，讓下面的 transition 從 100% 起算
+  bar.style.transition = 'width ' + sec + 's linear';
+  bar.style.width = '0%';
+}
+function vqClearCountdown() {
+  if (vqCdTimer) { clearTimeout(vqCdTimer); vqCdTimer = null; }
+  vqPhase = '';
+  const bar  = document.getElementById('vq-cd-bar');
+  const wrap = document.getElementById('vq-cd-wrap');
+  if (bar)  { bar.style.transition = 'none'; bar.style.width = '0%'; bar.classList.remove('phase-b'); }
+  if (wrap) wrap.style.visibility = 'hidden';
+}
+// Phase A：題面倒數（僅文字模式、5/10 秒時啟動；關閉/∞ 不自動翻）
+function vqStartCountdown() {
+  if (vqMode !== 'text') return;
+  if (vqAutoSec !== 5 && vqAutoSec !== 10) return;
+  vqPhase = 'A';
+  vqRunBar(vqAutoSec, false);
+  vqCdTimer = setTimeout(function() { vqPeekMeaning(); }, vqAutoSec * 1000);
 }
 
 function vqPeekMeaning() {
@@ -7190,6 +7365,13 @@ function vqPeekMeaning() {
   if (exEl) exEl.classList.remove('meaning-hidden');
   document.getElementById('vq-peek-hint').style.display = 'none';
   document.getElementById('vq-meaning-tap').style.pointerEvents = 'none';
+  // Phase B：答案一揭曉（自動或手動）→ 固定 4 秒，時間到算不記得；期間可搶按覆蓋
+  if ((vqAutoSec === 5 || vqAutoSec === 10) && vqMode === 'text' && vqPhase !== 'B') {
+    if (vqCdTimer) { clearTimeout(vqCdTimer); vqCdTimer = null; }
+    vqPhase = 'B';
+    vqRunBar(4, true);
+    vqCdTimer = setTimeout(function() { vqRate(false); }, 4000);
+  }
 }
 
 function vqSpeak(e) {
@@ -7200,6 +7382,7 @@ function vqSpeak(e) {
 }
 
 function vqRate(remembered) {
+  vqClearCountdown();
   const word  = vqQueue[vqIndex];
   const entry = vocabBook[word] || {};
   const fam   = entry.familiarity || 0;
@@ -7234,6 +7417,8 @@ function vqSaveProgress() {
 }
 
 function vqShowResult() {
+  vqClearCountdown();
+  document.getElementById('vq-cd-btn').style.display = 'none';
   document.getElementById('vq-bar').style.width = '100%';
   document.getElementById('vq-counter').textContent = '完成 ✓';
   document.getElementById('vq-r-ok').textContent   = vqOk;
@@ -7256,6 +7441,7 @@ function vqShowResult() {
 }
 
 function exitVocabQuiz() {
+  vqClearCountdown();
   document.getElementById('vocab-quiz').style.display = 'none';
   var hb = document.getElementById('vocab-help-btn');
   if (hb) hb.style.display = '';
