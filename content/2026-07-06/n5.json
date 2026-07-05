@@ -1,0 +1,70 @@
+{
+  "date": "2026-07-06",
+  "level": "n5",
+  "title": "としょかんでほんをかりた",
+  "text": "今日は図書館に行きました。読みたい本を三冊借りました。静かな場所で少し読んでみました。とても面白かったです。また来週も借りたいです。",
+  "tokens": [
+    { "surface_form": "今日", "basic_form": "今日", "reading": "きょう", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "図書館", "basic_form": "図書館", "reading": "としょかん", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "行きました", "basic_form": "行く", "reading": "いきました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "読みたい", "basic_form": "読む", "reading": "よみたい", "pos": "動詞" },
+    { "surface_form": "本", "basic_form": "本", "reading": "ほん", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "三冊", "basic_form": "三冊", "reading": "さんさつ", "pos": "名詞" },
+    { "surface_form": "借りました", "basic_form": "借りる", "reading": "かりました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "静かな", "basic_form": "静か", "reading": "しずかな", "pos": "形容詞" },
+    { "surface_form": "場所", "basic_form": "場所", "reading": "ばしょ", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "少し", "basic_form": "少し", "reading": "すこし", "pos": "副詞" },
+    { "surface_form": "読んでみました", "basic_form": "読む", "reading": "よんでみました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "面白かった", "basic_form": "面白い", "reading": "おもしろかった", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "また", "basic_form": "また", "reading": "また", "pos": "副詞" },
+    { "surface_form": "来週", "basic_form": "来週", "reading": "らいしゅう", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "借りたい", "basic_form": "借りる", "reading": "かりたい", "pos": "動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "今日": { "meaning": "今天", "romaji": "kyou", "reading": "きょう" },
+    "図書館": { "meaning": "圖書館", "romaji": "toshokan", "reading": "としょかん" },
+    "行く": { "meaning": "去", "romaji": "iku", "reading": "いく" },
+    "読む": { "meaning": "閱讀", "romaji": "yomu", "reading": "よむ" },
+    "本": { "meaning": "書", "romaji": "hon", "reading": "ほん" },
+    "三冊": { "meaning": "三本（書）", "romaji": "sansatsu", "reading": "さんさつ" },
+    "借りる": { "meaning": "借", "romaji": "kariru", "reading": "かりる" },
+    "静か": { "meaning": "安靜的", "romaji": "shizuka", "reading": "しずか" },
+    "場所": { "meaning": "地方", "romaji": "basho", "reading": "ばしょ" },
+    "少し": { "meaning": "稍微、一點", "romaji": "sukoshi", "reading": "すこし" },
+    "面白い": { "meaning": "有趣的", "romaji": "omoshiroi", "reading": "おもしろい" },
+    "とても": { "meaning": "非常", "romaji": "totemo", "reading": "とても" },
+    "また": { "meaning": "再、又", "romaji": "mata", "reading": "また" },
+    "来週": { "meaning": "下週", "romaji": "raishuu", "reading": "らいしゅう" }
+  },
+  "particles": {
+    "は": "主題助詞",
+    "に": "表示動作的方向或目的地",
+    "を": "受格助詞，標示動作對象",
+    "で": "表示動作發生的場所",
+    "も": "表示並列或強調（也）"
+  },
+  "translations": [
+    [ { "text": "今天去了圖書館。", "word": "図書館" } ],
+    [ { "text": "借了三本想看的書。", "word": "借りる" } ],
+    [ { "text": "在安靜的地方稍微看了一下。", "word": "静か" } ],
+    [ { "text": "覺得非常有趣。", "word": "面白い" } ],
+    [ { "text": "下週也想再借。", "word": "来週" } ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.12,
+    "jlpt_level": "N5"
+  }
+}
