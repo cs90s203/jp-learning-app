@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-06",
+  "level": "n5_lite",
+  "title": "わたしのとけい",
+  "text": "これは私の時計です。赤い時計です。毎朝使います。かばんの中に入れます。とても大切です。",
+  "tokens": [
+    { "surface_form": "これ", "basic_form": "これ", "reading": "これ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "私", "basic_form": "私", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "赤い", "basic_form": "赤い", "reading": "あかい", "pos": "形容詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎朝", "basic_form": "毎朝", "reading": "まいあさ", "pos": "名詞" },
+    { "surface_form": "使います", "basic_form": "使う", "reading": "つかいます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "入れます", "basic_form": "入れる", "reading": "いれます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "これ": { "meaning": "這個", "romaji": "kore", "reading": "これ" },
+    "私": { "meaning": "我", "romaji": "watashi", "reading": "わたし" },
+    "時計": { "meaning": "時鐘、手錶", "romaji": "tokei", "reading": "とけい" },
+    "赤い": { "meaning": "紅色的", "romaji": "akai", "reading": "あかい" },
+    "毎朝": { "meaning": "每天早上", "romaji": "maiasa", "reading": "まいあさ" },
+    "使う": { "meaning": "使用", "romaji": "tsukau", "reading": "つかう" },
+    "かばん": { "meaning": "書包、包包", "romaji": "kaban", "reading": "かばん" },
+    "中": { "meaning": "裡面", "romaji": "naka", "reading": "なか" },
+    "入れる": { "meaning": "放入", "romaji": "ireru", "reading": "いれる" },
+    "とても": { "meaning": "非常", "romaji": "totemo", "reading": "とても" },
+    "大切": { "meaning": "重要的、珍貴的", "romaji": "taisetsu", "reading": "たいせつ" }
+  },
+  "particles": {
+    "は": "主題助詞",
+    "の": "所有格助詞（的）",
+    "に": "表示動作的方向或存在的場所"
+  },
+  "translations": [
+    [ { "text": "這是我的手錶。", "word": "時計" } ],
+    [ { "text": "是紅色的手錶。", "word": "赤い" } ],
+    [ { "text": "每天早上都會用。", "word": "使う" } ],
+    [ { "text": "會放進包包裡。", "word": "入れる" } ],
+    [ { "text": "非常珍貴。", "word": "大切" } ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.12,
+    "jlpt_level": "N5-"
+  }
+}
