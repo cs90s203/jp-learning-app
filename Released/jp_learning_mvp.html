@@ -2167,7 +2167,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.7.1
+          v1.7.2
         </div>
 
       </div>
@@ -3935,6 +3935,15 @@ function applyContentPack(pack) {
   VOCAB_DICT = pack.vocab;
   PARTICLE_NOTES = pack.particles ? Object.assign({}, BUILTIN_PARTICLE_NOTES, pack.particles) : Object.assign({}, BUILTIN_PARTICLE_NOTES);
   SENTENCE_TRANSLATIONS = pack.translations;
+  // 防呆：app 用 tokens 的 。！？ 切句、按 index 配 translations；句數不一致會讓翻譯整段位移。
+  // 這裡只在 console 警示（不改變顯示），方便測試時抓到不良內容。
+  if (Array.isArray(pack.tokens) && Array.isArray(pack.translations)) {
+    const _tokSent = pack.tokens.filter(t => /[。！？]/.test(t.surface_form || '')).length;
+    if (_tokSent !== pack.translations.length) {
+      console.warn('[content] 句數不一致：tokens句=' + _tokSent + ' translations=' + pack.translations.length +
+        '（' + (pack.date || '?') + '/' + (pack.level || '?') + '）→ 文章頁翻譯可能位移');
+    }
+  }
   // difficulty: use pack value or fall back to hardcoded table
   CURRENT_DIFFICULTY = pack.difficulty || LEVEL_DIFFICULTY[pack.level] || {};
   // 重新渲染文章
