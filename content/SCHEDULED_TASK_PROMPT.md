@@ -103,6 +103,13 @@ _lite: grammar one tier below same level, sentences 20–30% shorter, topic is f
 
 6. `level` = filename; `difficulty` field is **not needed** (hardcoded in app by level).
 
+7. **Sentence-count consistency (CRITICAL — verify before saving each file).** The app splits sentences from `tokens` on 。！？ and pairs each with `translations` by index, so all three must be exactly equal:
+   **count(。！？ in tokens) == count(。！？ in text) == length(translations)** — one sentence ↔ one translations element, strict order.
+   Common mistakes that break alignment (fix until equal):
+   - (a) A sentence-final `。` written as `、` in tokens (tokens punctuation must match text) → one missing boundary shifts every later translation.
+   - (b) Missing one sentence's translation (often the last) → last sentence has no Chinese, or shift.
+   - (c) A `？` inside quotes (e.g. 「…ですか？」) splits `text` into two sentences but `translations` only has one → split the translation into two matching segments.
+
 ---
 
 ## After All 10 Articles: Update Files & Push
