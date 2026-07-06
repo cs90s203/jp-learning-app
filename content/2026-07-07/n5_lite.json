@@ -1,0 +1,64 @@
+{
+  "date": "2026-07-07",
+  "level": "n5_lite",
+  "title": "わたしのめがね",
+  "text": "わたしのめがねは黒いです。本を読む時にかけます。机の上にいつもあります。とても大切です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "めがね", "basic_form": "めがね", "reading": "めがね", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "黒い", "basic_form": "黒い", "reading": "くろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "本", "basic_form": "本", "reading": "ほん", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "読む", "basic_form": "読む", "reading": "よむ", "pos": "動詞" },
+    { "surface_form": "時", "basic_form": "時", "reading": "とき", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "かけます", "basic_form": "かける", "reading": "かけます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "机", "basic_form": "机", "reading": "つくえ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "上", "basic_form": "上", "reading": "うえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "いつも", "basic_form": "いつも", "reading": "いつも", "pos": "副詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我", "romaji": "watashi", "reading": "わたし" },
+    "めがね": { "meaning": "眼鏡", "romaji": "megane", "reading": "めがね" },
+    "黒い": { "meaning": "黑色的", "romaji": "kuroi", "reading": "くろい" },
+    "本": { "meaning": "書", "romaji": "hon", "reading": "ほん" },
+    "読む": { "meaning": "閱讀", "romaji": "yomu", "reading": "よむ" },
+    "時": { "meaning": "…的時候", "romaji": "toki", "reading": "とき" },
+    "かける": { "meaning": "戴上（眼鏡）", "romaji": "kakeru", "reading": "かける" },
+    "机": { "meaning": "書桌", "romaji": "tsukue", "reading": "つくえ" },
+    "上": { "meaning": "上面", "romaji": "ue", "reading": "うえ" },
+    "いつも": { "meaning": "總是", "romaji": "itsumo", "reading": "いつも" },
+    "ある": { "meaning": "有（放置）", "romaji": "aru", "reading": "ある" },
+    "とても": { "meaning": "非常", "romaji": "totemo", "reading": "とても" },
+    "大切": { "meaning": "重要的", "romaji": "taisetsu", "reading": "たいせつ" }
+  },
+  "particles": {
+    "の": "所有格助詞（的）",
+    "は": "主題助詞",
+    "を": "受格助詞，標示動作對象",
+    "に": "表示時間點或存在的場所"
+  },
+  "translations": [
+    [ { "text": "我的眼鏡是黑色的。", "word": "めがね" } ],
+    [ { "text": "看書的時候會戴上。", "word": "かける" } ],
+    [ { "text": "一直放在書桌上。", "word": "ある" } ],
+    [ { "text": "非常重要。", "word": "大切" } ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.11,
+    "jlpt_level": "N5-"
+  }
+}
