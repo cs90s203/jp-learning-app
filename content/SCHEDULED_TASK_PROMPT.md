@@ -112,7 +112,7 @@ _lite: grammar one tier below same level, sentences 20–30% shorter, topic is f
 
 ---
 
-## After All 10 Articles: Update Files & Push
+## After All 10 Articles: Update Files & Mark Done
 
 ### Step 1 — Update recent_titles.json
 
@@ -141,11 +141,8 @@ Prepend to `dates` array:
 }
 ```
 
-### Step 3 — git commit & push
+### Step 3 — Write .done marker (NO git push)
 
 ```bash
-cd /Users/mick/Documents/Language
-git add content/{{TODAY}}/ content/index.json content/recent_titles.json
-git commit -m "content: {{TODAY}} daily articles (10 levels)"
-git push
+cd /Users/mick/Documents/Language && touch content/{{TODAY}}/.done
 ```
