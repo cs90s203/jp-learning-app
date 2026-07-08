@@ -1796,10 +1796,19 @@
       <!-- 週曆列 -->
       <div id="article-week-bar">
         <button class="awb-nav" id="awb-prev" onclick="weekBarNav(-1)">‹</button>
-        <div class="awb-days" id="awb-days"></div>
+        <div class="awb-days" id="awb-days" style="touch-action:pan-y;"
+          onpointerdown="startAwbSwipe(event.clientX,event.clientY)"
+          onpointermove="moveAwbSwipe(event.clientX,event.clientY)"
+          onpointerup="endAwbSwipe(event.clientX)"
+          onpointercancel="cancelAwbSwipe()"></div>
         <button class="awb-nav" id="awb-next" onclick="weekBarNav(1)">›</button>
       </div>
 
+      <div id="article-swipe-area" style="touch-action:pan-y;"
+        onpointerdown="startArticleSwipe(event.clientX,event.clientY)"
+        onpointermove="moveArticleSwipe(event.clientX,event.clientY)"
+        onpointerup="endArticleSwipe(event.clientX)"
+        onpointercancel="cancelArticleSwipe()">
       <div class="sec" style="padding-top:5px">
 
         <div class="cn-toggle-row" id="cn-toggle-row">
@@ -1833,6 +1842,7 @@
           <p class="difficulty-hint">輕鬆 ←　　　→ 很難</p>
         </div>
       </div>
+      </div><!-- #article-swipe-area -->
 
     </div>
 
@@ -7692,11 +7702,113 @@ function renderWeekBar() {
   // next 按鈕：不能超過本週
   const nextBtn = document.getElementById('awb-next');
   if (nextBtn) nextBtn.disabled = weekBarOffset >= 0;
+  const prevBtn = document.getElementById('awb-prev');
+  if (prevBtn) prevBtn.disabled = weekBarOffset <= minWeekBarOffset();
+}
+
+function minWeekBarOffset() {
+  const sorted = [...contentDateSet].sort();
+  if (!sorted.length) return -52;
+  const earliest = new Date(sorted[0] + 'T00:00:00');
+  const now = new Date();
+  const mondayDiff = (now.getDay() + 6) % 7;
+  const thisMonday = new Date(now); thisMonday.setDate(now.getDate() - mondayDiff); thisMonday.setHours(0,0,0,0);
+  return -Math.floor((thisMonday - earliest) / (7 * 86400000));
 }
 
 function weekBarNav(dir) {
-  weekBarOffset = Math.min(0, weekBarOffset + dir);
+  weekBarOffset = Math.max(minWeekBarOffset(), Math.min(0, weekBarOffset + dir));
   renderWeekBar();
+}
+
+// ===== 週曆列 Swipe =====
+let _awbSwipe = null;
+function startAwbSwipe(cx, cy) { _awbSwipe = { startX: cx, startY: cy, locked: null }; }
+function moveAwbSwipe(cx, cy) {
+  const s = _awbSwipe; if (!s) return;
+  const dx = cx - s.startX, dy = cy - s.startY;
+  if (s.locked === null) {
+    if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+    s.locked = Math.abs(dx) > Math.abs(dy) ? 'h' : 'v';
+    if (s.locked === 'v') { _awbSwipe = null; return; }
+  }
+  if (s.locked !== 'h') return;
+  const blocked = (dx < 0 && weekBarOffset >= 0) || (dx > 0 && weekBarOffset <= minWeekBarOffset());
+  const eff = blocked ? dx * 0.25 : dx;
+  const node = document.getElementById('awb-days');
+  if (node) { node.style.transition = 'none'; node.style.transform = `translateX(${eff}px)`; node.style.opacity = String(Math.max(0.5, 1 - Math.abs(eff) / 400)); }
+}
+function _awbSpringBack() {
+  const node = document.getElementById('awb-days');
+  if (node) { node.style.transition = 'transform .2s ease, opacity .2s ease'; node.style.transform = ''; node.style.opacity = '1'; }
+}
+function cancelAwbSwipe() { const s = _awbSwipe; _awbSwipe = null; if (s && s.locked === 'h') _awbSpringBack(); }
+function endAwbSwipe(cx) {
+  const s = _awbSwipe; _awbSwipe = null;
+  if (!s || s.locked !== 'h') return;
+  const dx = cx - s.startX;
+  const node = document.getElementById('awb-days');
+  const w = node ? node.offsetWidth : 280;
+  const commit = Math.abs(dx) > Math.min(60, w * 0.2);
+  const dir = dx < 0 ? 1 : -1;
+  const next = Math.max(minWeekBarOffset(), Math.min(0, weekBarOffset + dir));
+  if (commit && next !== weekBarOffset) {
+    if (node) { node.style.transition = 'transform .15s ease, opacity .15s ease'; node.style.transform = `translateX(${dx < 0 ? -w : w}px)`; node.style.opacity = '0'; }
+    weekBarOffset = next;
+    setTimeout(() => { const n = document.getElementById('awb-days'); if (n) { n.style.transition = 'none'; n.style.transform = ''; n.style.opacity = '1'; } renderWeekBar(); }, 150);
+  } else { _awbSpringBack(); }
+}
+
+// ===== 文章內容 Swipe =====
+let _artSwipe = null;
+function startArticleSwipe(cx, cy) { _artSwipe = { startX: cx, startY: cy, locked: null }; }
+function moveArticleSwipe(cx, cy) {
+  const s = _artSwipe; if (!s) return;
+  const dx = cx - s.startX, dy = cy - s.startY;
+  if (s.locked === null) {
+    if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+    s.locked = Math.abs(dx) > Math.abs(dy) ? 'h' : 'v';
+    if (s.locked === 'v') { _artSwipe = null; return; }
+  }
+  if (s.locked !== 'h') return;
+  const adj = getAdjacentArticleDate(selectedArticleDate, dx < 0 ? 1 : -1);
+  const eff = adj ? dx : dx * 0.2;
+  const node = document.getElementById('article-swipe-area');
+  if (node) { node.style.transition = 'none'; node.style.transform = `translateX(${eff}px)`; node.style.opacity = String(Math.max(0.5, 1 - Math.abs(eff) / 600)); }
+}
+function _artSpringBack() {
+  const node = document.getElementById('article-swipe-area');
+  if (node) { node.style.transition = 'transform .2s ease, opacity .2s ease'; node.style.transform = ''; node.style.opacity = '1'; }
+}
+function cancelArticleSwipe() { const s = _artSwipe; _artSwipe = null; if (s && s.locked === 'h') _artSpringBack(); }
+function endArticleSwipe(cx) {
+  const s = _artSwipe; _artSwipe = null;
+  if (!s || s.locked !== 'h') return;
+  const dx = cx - s.startX;
+  const node = document.getElementById('article-swipe-area');
+  const w = node ? node.offsetWidth : 360;
+  const commit = Math.abs(dx) > Math.min(80, w * 0.22);
+  if (commit) {
+    const dir = dx < 0 ? 1 : -1;
+    const nextDate = getAdjacentArticleDate(selectedArticleDate, dir);
+    if (nextDate) {
+      if (node) { node.style.transition = 'transform .15s ease, opacity .15s ease'; node.style.transform = `translateX(${dx < 0 ? -w : w}px)`; node.style.opacity = '0'; }
+      setTimeout(() => { if (node) { node.style.transition = 'none'; node.style.transform = ''; node.style.opacity = '1'; } selectArticleDate(nextDate); }, 150);
+      return;
+    }
+  }
+  _artSpringBack();
+}
+
+function getAdjacentArticleDate(currentDate, dir) {
+  const today = getLocalDateStr();
+  const all = [...contentDateSet].filter(d => d <= today).sort();
+  if (!all.includes(today)) all.push(today);
+  all.sort();
+  const idx = all.indexOf(currentDate);
+  if (idx === -1) return null;
+  const next = idx + dir;
+  return (next >= 0 && next < all.length) ? all[next] : null;
 }
 
 async function selectArticleDate(dateStr) {
