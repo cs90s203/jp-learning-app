@@ -4,8 +4,13 @@
     {
       "name": "jp-app",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8766", "--directory", "/Users/mick/Documents/Language"],
-      "port": 8766
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "--directory",
+        "/Users/mick/Documents/Language"
+      ],
+      "autoPort": true
     }
   ]
 }
