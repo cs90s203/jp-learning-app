@@ -2177,7 +2177,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.8.0
+          v1.8.1
         </div>
 
       </div>
@@ -2434,7 +2434,10 @@
     </div>
     <!-- header: counter above, bar below, centered -->
     <div class="vq-header" id="vq-header">
-      <span class="vq-counter" id="vq-counter">0 / 0</span>
+      <div style="display:flex;align-items:center;gap:14px;pointer-events:auto;">
+        <span class="vq-counter" id="vq-counter">0 / 0</span>
+        <button id="vq-restart-btn" onclick="vqRestartQuiz()" style="font-size:11px;color:var(--wt3);background:none;border:none;cursor:pointer;padding:4px 0;">重新開始</button>
+      </div>
       <div class="vq-prog-wrap"><div class="vq-prog-bar" id="vq-bar"></div></div>
       <div class="vq-cd-wrap" id="vq-cd-wrap" style="visibility:hidden"><div class="vq-cd-bar" id="vq-cd-bar"></div></div>
       <div class="vq-elapsed" id="vq-elapsed" style="display:none"></div>
@@ -2476,6 +2479,7 @@
         </div>
       </div>
       <button class="vq-done-btn" onclick="closeVocabQuizResult()">完成</button>
+      <button onclick="vqRestartQuiz()" style="margin-top:8px;font-size:13px;color:var(--wt3);background:none;border:none;cursor:pointer;padding:8px;">再來一次</button>
     </div>
   </div>
 
@@ -7243,6 +7247,20 @@ let vqQueue = [];
 let vqIndex = 0;
 let vqOk = 0;
 let vqFail = 0;
+
+function vqSaveQuizState() {
+  if (!vqQueue.length || vqIndex >= vqQueue.length) return;
+  localStorage.setItem('vqProgress', JSON.stringify({ queue: vqQueue, index: vqIndex, ok: vqOk, fail: vqFail, mode: vqMode, filter: vocabFilter }));
+}
+function vqLoadQuizState() {
+  try { return JSON.parse(localStorage.getItem('vqProgress')); } catch(e) { return null; }
+}
+function vqClearQuizState() { localStorage.removeItem('vqProgress'); }
+function vqRestartQuiz() {
+  vqClearQuizState();
+  exitVocabQuiz();
+  startVocabQuiz();
+}
 let vqForgetMode = false; // 不記得狀態：等待「下一張」
 let vqMode = 'text'; // 'text' | 'listen'
 // 自動倒數翻頁（文字複習）：0=關閉, 5, 10, -1=∞(不自動翻)
@@ -7260,6 +7278,30 @@ function startVocabQuiz() {
     return;
   }
   track('review_vocab', { filter: vocabFilter, count: words.length });
+
+  // 靜默繼續上次進度
+  const _saved = vqLoadQuizState();
+  if (_saved && _saved.filter === vocabFilter && _saved.index > 0 && _saved.index < (_saved.queue || []).length) {
+    vqQueue = _saved.queue; vqIndex = _saved.index; vqOk = _saved.ok || 0; vqFail = _saved.fail || 0; vqMode = _saved.mode || 'text';
+    var _hb = document.getElementById('vocab-help-btn'); if (_hb) _hb.style.display = 'none';
+    document.getElementById('vocab-quiz').style.display = 'flex';
+    document.getElementById('vq-mode-select').style.display = 'none';
+    document.getElementById('vq-header').style.display = '';
+    document.getElementById('vq-card-area').style.display = 'flex';
+    document.getElementById('vq-btns').style.display = 'grid';
+    document.getElementById('vq-result-area').style.display = 'none';
+    const _cdBtn = document.getElementById('vq-cd-btn');
+    _cdBtn.style.display = (vqMode === 'text') ? 'flex' : 'none';
+    vqUpdateCdBtn();
+    const _ttsBtn = document.getElementById('vq-tts-btn');
+    if (_ttsBtn) {
+      if (vqMode === 'listen') { _ttsBtn.style.width='45px';_ttsBtn.style.height='45px';_ttsBtn.querySelector('svg').setAttribute('width','22');_ttsBtn.querySelector('svg').setAttribute('height','22'); }
+      else { _ttsBtn.style.width='';_ttsBtn.style.height='';_ttsBtn.querySelector('svg').setAttribute('width','16');_ttsBtn.querySelector('svg').setAttribute('height','16'); }
+    }
+    vqShowCard();
+    showToast('繼續上次進度（' + vqIndex + '/' + vqQueue.length + '）');
+    return;
+  }
 
   // 預設隨機，避免照文章／加入順序造成「位置記憶」式作答；設定頁仍可改回到期先/最新
   const order = localStorage.getItem('quizOrder') || 'random';
@@ -7492,6 +7534,7 @@ function vqAdvance() {
   if (vqIndex >= vqQueue.length) {
     vqShowResult();
   } else {
+    vqSaveQuizState();
     vqShowCard();
   }
   vqSaveProgress();
@@ -7512,6 +7555,7 @@ function vqSaveProgress() {
 
 function vqShowResult() {
   vqClearCountdown();
+  vqClearQuizState();
   document.getElementById('vq-cd-btn').style.display = 'none';
   document.getElementById('vq-bar').style.width = '100%';
   document.getElementById('vq-counter').textContent = '完成 ✓';
