@@ -2177,7 +2177,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.8.1
+          v1.8.2
         </div>
 
       </div>
@@ -2420,6 +2420,9 @@
   <div id="vocab-quiz">
     <button class="vq-close-btn" onclick="exitVocabQuiz()" style="position:fixed;top:14px;right:16px">✕</button>
     <button class="vq-cd-btn" id="vq-cd-btn" onclick="vqCycleAuto()" style="position:fixed;top:14px;left:16px;display:none" aria-label="自動倒數翻頁"></button>
+    <button id="vq-restart-btn" onclick="vqRestartQuiz()" style="position:fixed;top:14px;left:52px;display:none;width:28px;height:28px;border:none;background:var(--wa-bg2);border-radius:50%;cursor:pointer;color:var(--wt2);align-items:center;justify-content:center;" aria-label="重新開始">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.5"/></svg>
+    </button>
     <!-- mode selection screen -->
     <div id="vq-mode-select" style="display:none;flex-direction:column;align-items:center;justify-content:center;flex:1;gap:20px;padding:32px">
       <div style="font-size:20px;font-weight:600;color:var(--wt);margin-bottom:8px">選擇複習模式</div>
@@ -2434,10 +2437,7 @@
     </div>
     <!-- header: counter above, bar below, centered -->
     <div class="vq-header" id="vq-header">
-      <div style="display:flex;align-items:center;gap:14px;pointer-events:auto;">
-        <span class="vq-counter" id="vq-counter">0 / 0</span>
-        <button id="vq-restart-btn" onclick="vqRestartQuiz()" style="font-size:11px;color:var(--wt3);background:none;border:none;cursor:pointer;padding:4px 0;">重新開始</button>
-      </div>
+      <span class="vq-counter" id="vq-counter">0 / 0</span>
       <div class="vq-prog-wrap"><div class="vq-prog-bar" id="vq-bar"></div></div>
       <div class="vq-cd-wrap" id="vq-cd-wrap" style="visibility:hidden"><div class="vq-cd-bar" id="vq-cd-bar"></div></div>
       <div class="vq-elapsed" id="vq-elapsed" style="display:none"></div>
@@ -7248,6 +7248,11 @@ let vqIndex = 0;
 let vqOk = 0;
 let vqFail = 0;
 
+function _vqSetRestartBtn(visible) {
+  const btn = document.getElementById('vq-restart-btn');
+  if (btn) btn.style.display = visible ? 'flex' : 'none';
+}
+
 function vqSaveQuizState() {
   if (!vqQueue.length || vqIndex >= vqQueue.length) return;
   localStorage.setItem('vqProgress', JSON.stringify({ queue: vqQueue, index: vqIndex, ok: vqOk, fail: vqFail, mode: vqMode, filter: vocabFilter }));
@@ -7287,6 +7292,7 @@ function startVocabQuiz() {
     document.getElementById('vocab-quiz').style.display = 'flex';
     document.getElementById('vq-mode-select').style.display = 'none';
     document.getElementById('vq-header').style.display = '';
+    _vqSetRestartBtn(true);
     document.getElementById('vq-card-area').style.display = 'flex';
     document.getElementById('vq-btns').style.display = 'grid';
     document.getElementById('vq-result-area').style.display = 'none';
@@ -7329,6 +7335,7 @@ function startVocabQuiz() {
   // 顯示模式選擇，隱藏其他區塊
   document.getElementById('vq-mode-select').style.display = 'flex';
   document.getElementById('vq-header').style.display = 'none';
+  _vqSetRestartBtn(false);
   document.getElementById('vq-card-area').style.display = 'none';
   document.getElementById('vq-btns').style.display = 'none';
   document.getElementById('vq-result-area').style.display = 'none';
@@ -7339,6 +7346,7 @@ function startVocabQuizMode(mode) {
   vqMode = mode;
   document.getElementById('vq-mode-select').style.display = 'none';
   document.getElementById('vq-header').style.display = '';
+  _vqSetRestartBtn(true);
   document.getElementById('vq-card-area').style.display = 'flex';
   document.getElementById('vq-btns').style.display = 'grid';
   // 自動倒數翻頁按鈕：此版只在文字複習提供
@@ -7576,6 +7584,7 @@ function vqShowResult() {
   document.getElementById('vq-card-area').style.display  = 'none';
   document.getElementById('vq-btns').style.display       = 'none';
   document.getElementById('vq-result-area').style.display = 'flex';
+  _vqSetRestartBtn(false);
 }
 
 function exitVocabQuiz() {
