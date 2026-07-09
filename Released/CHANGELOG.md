@@ -1,5 +1,12 @@
 # 日語學習 App — 版本記錄
 
+## v1.8.4 — 2026-07-09
+
+**修正：新人首開選程度後，首頁仍顯示預設等級（n5）**
+
+- 啟動時 `loadTodayContent` 會以預設等級 n5 預抓並記錄當日文章
+- onboarding 選定程度後，新增 `reloadTodayForLevel()`：依所選等級重抓今日文章、覆蓋當日學習紀錄的 title/level、刷新首頁任務環與等級標籤
+
 ## v1.8.3 — 2026-07-08
 
 **修正：重新開始按鈕遮擋倒數無限按鈕**
@@ -588,6 +595,12 @@ Tutorial：
 - 修正 learnMode 上傳時 default 值錯誤（N5 → normal）
 - syncFromCloud 還原後立即套用 CURRENT_LEVEL、learnMode、theme 到 live 變數
 - 還原後自動重新載入文章頁（使用正確等級）
+
+---
+
+## 1.8.4 — 2026-07-09
+
+修正新人首開選程度後首頁仍顯示預設等級 n5
 
 ---
 

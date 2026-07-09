@@ -2177,7 +2177,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.8.3
+          v1.8.4
         </div>
 
       </div>
@@ -8346,9 +8346,29 @@ function finishOnboarding() {
   if (_obSelectedLevel) {
     localStorage.setItem('userLevel', _obSelectedLevel);
     CURRENT_LEVEL = _obSelectedLevel;
+    // 啟動時 loadTodayContent 會用預設等級（n5）預抓並記錄當日文章；
+    // 使用者選定程度後，依所選等級重抓今日文章並覆蓋當日紀錄，避免首頁顯示錯誤等級。
+    reloadTodayForLevel(_obSelectedLevel);
   }
   localStorage.setItem('onboardingDone', '1');
   document.getElementById('onboarding-screen').classList.remove('visible');
+}
+
+// onboarding 選定程度後：依該等級重抓今日文章、覆蓋當日學習紀錄、刷新首頁與等級標籤
+async function reloadTodayForLevel(level) {
+  const today = getLocalDateStr();
+  articleRendered = false; // 讓文章頁下次進入時以新等級重繪（applyContentPack 也會處理已開啟的情況）
+  const result = await loadContentForDate(today, level);
+  if (result.success) {
+    const _lv = result.pack.level || level;
+    logTodayArticle(result.pack.title, _lv); // 覆蓋預設等級記下的 title/level
+    const lt = document.getElementById('article-level-tag');
+    if (lt) {
+      const _o = LEVEL_OPTIONS.find(o => o.key === _lv);
+      lt.textContent = _o ? _o.label : _lv.toUpperCase();
+    }
+    refreshProgressUI();
+  }
 }
 
 // ===== 開發工具 =====

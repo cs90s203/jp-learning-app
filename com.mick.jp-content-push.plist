@@ -8,7 +8,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/mick/Documents/Language/auto_push_content.sh</string>
+        <string>/Users/mick/Documents/Projects/Language/auto_push_content.sh</string>
     </array>
 
     <!-- 每天 00:05 執行（本地時間） -->
@@ -21,8 +21,8 @@
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/mick/Documents/Language/auto_push.log</string>
+    <string>/Users/mick/Documents/Projects/Language/auto_push.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/mick/Documents/Language/auto_push.log</string>
+    <string>/Users/mick/Documents/Projects/Language/auto_push.log</string>
 </dict>
 </plist>
