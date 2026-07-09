@@ -1,0 +1,58 @@
+{
+  "date": "2026-07-09",
+  "level": "n5_lite",
+  "title": "わたしのほんだな",
+  "text": "これはわたしのほんだなです。木でできています。本がたくさんあります。よく本を読みます。",
+  "tokens": [
+    { "surface_form": "これ", "basic_form": "これ", "reading": "これ", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ほんだな", "basic_form": "ほんだな", "reading": "ほんだな", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "木", "basic_form": "木", "reading": "き", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "できています", "basic_form": "できる", "reading": "できています", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "本", "basic_form": "本", "reading": "ほん", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "たくさん", "basic_form": "たくさん", "reading": "たくさん", "pos": "副詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "よく", "basic_form": "よく", "reading": "よく", "pos": "副詞" },
+    { "surface_form": "本", "basic_form": "本", "reading": "ほん", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "読みます", "basic_form": "読む", "reading": "よみます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "これ": { "meaning": "這個", "romaji": "kore", "reading": "これ" },
+    "わたし": { "meaning": "我", "romaji": "watashi", "reading": "わたし" },
+    "ほんだな": { "meaning": "書架", "romaji": "hondana", "reading": "ほんだな" },
+    "木": { "meaning": "木頭、樹", "romaji": "ki", "reading": "き" },
+    "できる": { "meaning": "製成、做成", "romaji": "dekiru", "reading": "できる" },
+    "本": { "meaning": "書", "romaji": "hon", "reading": "ほん" },
+    "たくさん": { "meaning": "很多", "romaji": "takusan", "reading": "たくさん" },
+    "ある": { "meaning": "有（存在）", "romaji": "aru", "reading": "ある" },
+    "よく": { "meaning": "常常", "romaji": "yoku", "reading": "よく" },
+    "読む": { "meaning": "讀、看", "romaji": "yomu", "reading": "よむ" }
+  },
+  "particles": {
+    "は": "主題助詞，標示句子的主題",
+    "の": "所有格助詞（的）",
+    "で": "表示材料或手段",
+    "が": "主語助詞",
+    "を": "受格助詞，標示動作的對象"
+  },
+  "translations": [
+    [ { "text": "這是我的書架。", "word": "ほんだな" } ],
+    [ { "text": "是木頭做的。", "word": "木" } ],
+    [ { "text": "有很多書。", "word": "たくさん" } ],
+    [ { "text": "我常常看書。", "word": "読む" } ]
+  ],
+  "difficulty": {
+    "target_vocab_rate": 0.11,
+    "jlpt_level": "N5"
+  }
+}
