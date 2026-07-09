@@ -10,7 +10,7 @@
 確認今天本地日期 TODAY（YYYY-MM-DD，用 `date +%Y-%m-%d` 取得）。
 
 ```bash
-cd /Users/mick/Documents/Language
+cd /Users/mick/Documents/Projects/Language
 ```
 
 - 若 `content/TODAY/.pushed` 已存在 → 今天已成功 push，直接結束，輸出「✅ 今天已 push，跳過」。
@@ -52,7 +52,7 @@ count(。！？ in tokens) == count(。！？ in text) == len(translations)
 ## 步驟 2：git push with retry
 
 ```bash
-cd /Users/mick/Documents/Language
+cd /Users/mick/Documents/Projects/Language
 git add content/TODAY/ content/index.json content/recent_titles.json
 git commit -m "content: TODAY daily articles (10 levels)"
 git push

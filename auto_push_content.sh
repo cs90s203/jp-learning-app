@@ -2,7 +2,7 @@
 # auto_push_content.sh
 # 由 launchd 每天 00:05 自動執行，將 Cowork 排程生成的 content JSON push 到 GitHub
 
-cd /Users/mick/Documents/Language || exit 1
+cd /Users/mick/Documents/Projects/Language || exit 1
 
 TODAY=$(date +%Y-%m-%d)
 

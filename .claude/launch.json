@@ -8,7 +8,7 @@
         "-m",
         "http.server",
         "--directory",
-        "/Users/mick/Documents/Language"
+        "/Users/mick/Documents/Projects/Language"
       ],
       "autoPort": true
     }

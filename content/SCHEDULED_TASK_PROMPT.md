@@ -12,7 +12,7 @@ Today is {{TODAY}} (format: YYYY-MM-DD).
 
 Generate 10 Japanese learning articles, one per level. Complete and save each article before starting the next.
 
-Save path: `/Users/mick/Documents/Language/content/{{TODAY}}/`
+Save path: `/Users/mick/Documents/Projects/Language/content/{{TODAY}}/`
 
 Files: `n5_lite.json` `n5.json` `n4_lite.json` `n4.json` `n3_lite.json` `n3.json` `n2_lite.json` `n2.json` `n1_lite.json` `n1.json`
 
@@ -20,7 +20,7 @@ Files: `n5_lite.json` `n5.json` `n4_lite.json` `n4.json` `n3_lite.json` `n3.json
 
 ## Avoid Recent Topics
 
-Read `/Users/mick/Documents/Language/content/recent_titles.json` — it lists the last 7 days of titles per level. **Do not repeat any title in today's 10 articles.**
+Read `/Users/mick/Documents/Projects/Language/content/recent_titles.json` — it lists the last 7 days of titles per level. **Do not repeat any title in today's 10 articles.**
 
 ---
 
@@ -116,7 +116,7 @@ _lite: grammar one tier below same level, sentences 20–30% shorter, topic is f
 
 ### Step 1 — Update recent_titles.json
 
-Path: `/Users/mick/Documents/Language/content/recent_titles.json`
+Path: `/Users/mick/Documents/Projects/Language/content/recent_titles.json`
 
 Prepend today's entry and keep only the latest 7 entries:
 ```json
@@ -130,7 +130,7 @@ Prepend today's entry and keep only the latest 7 entries:
 
 ### Step 2 — Update index.json
 
-Path: `/Users/mick/Documents/Language/content/index.json`
+Path: `/Users/mick/Documents/Projects/Language/content/index.json`
 
 Prepend to `dates` array:
 ```json
@@ -144,5 +144,5 @@ Prepend to `dates` array:
 ### Step 3 — Write .done marker (NO git push)
 
 ```bash
-cd /Users/mick/Documents/Language && touch content/{{TODAY}}/.done
+cd /Users/mick/Documents/Projects/Language && touch content/{{TODAY}}/.done
 ```
