@@ -1,0 +1,416 @@
+{
+  "date": "2026-07-10",
+  "level": "n4_lite",
+  "title": "図書館でボランティアをした",
+  "text": "先週から、近くの図書館でボランティアを始めた。本を棚に戻したり、返却された本を整理したりする仕事だ。最初は少し緊張したけど、スタッフの人たちが優しくて、すぐに慣れることができた。来週も行く予定だ。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "近く",
+      "basic_form": "近く",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "図書館",
+      "basic_form": "図書館",
+      "reading": "としょかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ボランティア",
+      "basic_form": "ボランティア",
+      "reading": "ボランティア",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "始めた",
+      "basic_form": "始める",
+      "reading": "はじめた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "棚",
+      "basic_form": "棚",
+      "reading": "たな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "戻したり",
+      "basic_form": "戻す",
+      "reading": "もどしたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "返却された",
+      "basic_form": "返却する",
+      "reading": "へんきゃくされた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整理したり",
+      "basic_form": "整理する",
+      "reading": "せいりしたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "緊張した",
+      "basic_form": "緊張する",
+      "reading": "きんちょうした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スタッフ",
+      "basic_form": "スタッフ",
+      "reading": "スタッフ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人たち",
+      "basic_form": "人たち",
+      "reading": "ひとたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "優しくて",
+      "basic_form": "優しい",
+      "reading": "やさしくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すぐに",
+      "basic_form": "すぐに",
+      "reading": "すぐに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "慣れる",
+      "basic_form": "慣れる",
+      "reading": "なれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できた",
+      "basic_form": "できる",
+      "reading": "できた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "来週",
+      "basic_form": "来週",
+      "reading": "らいしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行く",
+      "basic_form": "行く",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "予定",
+      "basic_form": "予定",
+      "reading": "よてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週"
+    },
+    "近く": {
+      "meaning": "附近"
+    },
+    "図書館": {
+      "meaning": "圖書館"
+    },
+    "ボランティア": {
+      "meaning": "志工"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "本": {
+      "meaning": "書"
+    },
+    "棚": {
+      "meaning": "書架"
+    },
+    "戻す": {
+      "meaning": "放回"
+    },
+    "返却する": {
+      "meaning": "歸還"
+    },
+    "整理する": {
+      "meaning": "整理"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "仕事": {
+      "meaning": "工作"
+    },
+    "最初": {
+      "meaning": "一開始"
+    },
+    "少し": {
+      "meaning": "有點、稍微"
+    },
+    "緊張する": {
+      "meaning": "緊張"
+    },
+    "スタッフ": {
+      "meaning": "工作人員"
+    },
+    "人たち": {
+      "meaning": "…們"
+    },
+    "優しい": {
+      "meaning": "溫柔的、親切的"
+    },
+    "すぐに": {
+      "meaning": "馬上"
+    },
+    "慣れる": {
+      "meaning": "習慣"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "できる": {
+      "meaning": "能夠"
+    },
+    "来週": {
+      "meaning": "下週"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "予定": {
+      "meaning": "預定、計畫"
+    }
+  },
+  "particles": {
+    "から": "表示起點（從…）",
+    "の": "所有格助詞（的）",
+    "で": "表示動作發生的場所",
+    "を": "受格助詞",
+    "に": "表示方向或對象",
+    "は": "主題助詞",
+    "が": "主語助詞",
+    "も": "表示並列（也）",
+    "けど": "表示轉折（但是、不過）"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週開始，在附近的圖書館當志工。",
+        "word": "ボランティア"
+      }
+    ],
+    [
+      {
+        "text": "工作是把書放回書架，還有整理被歸還的書。",
+        "word": "整理する"
+      }
+    ],
+    [
+      {
+        "text": "一開始有點緊張，不過工作人員都很親切，很快就習慣了。",
+        "word": "慣れる"
+      }
+    ],
+    [
+      {
+        "text": "下週也預定要去。",
+        "word": "予定"
+      }
+    ]
+  ]
+}

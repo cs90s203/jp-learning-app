@@ -1,0 +1,983 @@
+{
+  "date": "2026-07-10",
+  "level": "n2",
+  "title": "カスタマーハラスメント対策の広がり",
+  "text": "近年、客が店員に対して過度な要求や暴言を浴びせる、いわゆるカスタマーハラスメントが社会問題として注目されている。従業員が精神的な苦痛を訴え、休職や離職に追い込まれるケースも少なくない。こうした状況を受け、企業や自治体が対策条例やマニュアルを整備する動きが広がりつつある。具体的には、悪質なクレームに対して従業員が一人で対応せず、上司や専門部署に相談できる体制を整えることが求められている。また、店内に注意喚起のポスターを掲示するなど、利用者側への意識づけも進められている。もっとも、正当な苦情まで一律に拒否してしまえば、企業と客との信頼関係を損なう恐れがあるため、線引きの難しさも指摘されている。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "客",
+      "basic_form": "客",
+      "reading": "きゃく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "店員",
+      "basic_form": "店員",
+      "reading": "てんいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に対して",
+      "basic_form": "に対して",
+      "reading": "にたいして",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "過度な",
+      "basic_form": "過度",
+      "reading": "かどな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "要求",
+      "basic_form": "要求",
+      "reading": "ようきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "暴言",
+      "basic_form": "暴言",
+      "reading": "ぼうげん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "浴びせる",
+      "basic_form": "浴びせる",
+      "reading": "あびせる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いわゆる",
+      "basic_form": "いわゆる",
+      "reading": "いわゆる",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "カスタマーハラスメント",
+      "basic_form": "カスタマーハラスメント",
+      "reading": "カスタマーハラスメント",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "社会問題",
+      "basic_form": "社会問題",
+      "reading": "しゃかいもんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "注目されている",
+      "basic_form": "注目する",
+      "reading": "ちゅうもくされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "従業員",
+      "basic_form": "従業員",
+      "reading": "じゅうぎょういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "精神的な",
+      "basic_form": "精神的",
+      "reading": "せいしんてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "苦痛",
+      "basic_form": "苦痛",
+      "reading": "くつう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "訴え",
+      "basic_form": "訴える",
+      "reading": "うったえ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "休職",
+      "basic_form": "休職",
+      "reading": "きゅうしょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "離職",
+      "basic_form": "離職",
+      "reading": "りしょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "追い込まれる",
+      "basic_form": "追い込まれる",
+      "reading": "おいこまれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ケース",
+      "basic_form": "ケース",
+      "reading": "ケース",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受け",
+      "basic_form": "受ける",
+      "reading": "うけ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自治体",
+      "basic_form": "自治体",
+      "reading": "じちたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対策条例",
+      "basic_form": "対策条例",
+      "reading": "たいさくじょうれい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "マニュアル",
+      "basic_form": "マニュアル",
+      "reading": "マニュアル",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整備する",
+      "basic_form": "整備する",
+      "reading": "せいびする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "動き",
+      "basic_form": "動き",
+      "reading": "うごき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "広がりつつある",
+      "basic_form": "広がる",
+      "reading": "ひろがりつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "具体的には",
+      "basic_form": "具体的には",
+      "reading": "ぐたいてきには",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "悪質な",
+      "basic_form": "悪質",
+      "reading": "あくしつな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "クレーム",
+      "basic_form": "クレーム",
+      "reading": "クレーム",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に対して",
+      "basic_form": "に対して",
+      "reading": "にたいして",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "従業員",
+      "basic_form": "従業員",
+      "reading": "じゅうぎょういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一人で",
+      "basic_form": "一人で",
+      "reading": "ひとりで",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "対応せず",
+      "basic_form": "対応する",
+      "reading": "たいおうせず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "上司",
+      "basic_form": "上司",
+      "reading": "じょうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "専門部署",
+      "basic_form": "専門部署",
+      "reading": "せんもんぶしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "相談できる",
+      "basic_form": "相談する",
+      "reading": "そうだんできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "体制",
+      "basic_form": "体制",
+      "reading": "たいせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整える",
+      "basic_form": "整える",
+      "reading": "ととのえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求められている",
+      "basic_form": "求める",
+      "reading": "もとめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "店内",
+      "basic_form": "店内",
+      "reading": "てんない",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "注意喚起",
+      "basic_form": "注意喚起",
+      "reading": "ちゅういかんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ポスター",
+      "basic_form": "ポスター",
+      "reading": "ポスター",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "掲示する",
+      "basic_form": "掲示する",
+      "reading": "けいじする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "利用者側",
+      "basic_form": "利用者側",
+      "reading": "りようしゃがわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "意識づけ",
+      "basic_form": "意識づけ",
+      "reading": "いしきづけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進められている",
+      "basic_form": "進める",
+      "reading": "すすめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もっとも",
+      "basic_form": "もっとも",
+      "reading": "もっとも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "正当な",
+      "basic_form": "正当",
+      "reading": "せいとうな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "苦情",
+      "basic_form": "苦情",
+      "reading": "くじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一律に",
+      "basic_form": "一律に",
+      "reading": "いちりつに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "拒否して",
+      "basic_form": "拒否する",
+      "reading": "きょひして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "しまえば",
+      "basic_form": "しまう",
+      "reading": "しまえば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "客",
+      "basic_form": "客",
+      "reading": "きゃく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "信頼関係",
+      "basic_form": "信頼関係",
+      "reading": "しんらいかんけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "損なう",
+      "basic_form": "損なう",
+      "reading": "そこなう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "恐れ",
+      "basic_form": "恐れ",
+      "reading": "おそれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "線引き",
+      "basic_form": "線引き",
+      "reading": "せんびき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "難しさ",
+      "basic_form": "難しい",
+      "reading": "むずかしさ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘されている",
+      "basic_form": "指摘する",
+      "reading": "してきされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年"
+    },
+    "客": {
+      "meaning": "顧客"
+    },
+    "店員": {
+      "meaning": "店員"
+    },
+    "過度": {
+      "meaning": "過度"
+    },
+    "要求": {
+      "meaning": "要求"
+    },
+    "暴言": {
+      "meaning": "辱罵、惡言"
+    },
+    "浴びせる": {
+      "meaning": "施加、澆（引申為施以言語攻擊）"
+    },
+    "いわゆる": {
+      "meaning": "所謂的"
+    },
+    "カスタマーハラスメント": {
+      "meaning": "顧客騷擾（奧客行為）"
+    },
+    "社会問題": {
+      "meaning": "社會問題"
+    },
+    "注目する": {
+      "meaning": "關注、矚目"
+    },
+    "従業員": {
+      "meaning": "員工"
+    },
+    "精神的": {
+      "meaning": "精神上的"
+    },
+    "苦痛": {
+      "meaning": "痛苦"
+    },
+    "訴える": {
+      "meaning": "訴說、控訴"
+    },
+    "休職": {
+      "meaning": "留職停薪"
+    },
+    "離職": {
+      "meaning": "離職"
+    },
+    "追い込まれる": {
+      "meaning": "被逼入（困境）"
+    },
+    "ケース": {
+      "meaning": "案例"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "受ける": {
+      "meaning": "接受、因應"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "自治体": {
+      "meaning": "地方自治體"
+    },
+    "対策条例": {
+      "meaning": "對策條例"
+    },
+    "マニュアル": {
+      "meaning": "手冊、指南"
+    },
+    "整備する": {
+      "meaning": "建置、完善"
+    },
+    "動き": {
+      "meaning": "動向、趨勢"
+    },
+    "広がる": {
+      "meaning": "擴大、蔓延"
+    },
+    "具体的には": {
+      "meaning": "具體來說"
+    },
+    "悪質": {
+      "meaning": "惡劣"
+    },
+    "クレーム": {
+      "meaning": "客訴、抱怨"
+    },
+    "一人で": {
+      "meaning": "獨自"
+    },
+    "対応する": {
+      "meaning": "應對、處理"
+    },
+    "上司": {
+      "meaning": "上司"
+    },
+    "専門部署": {
+      "meaning": "專門部門"
+    },
+    "相談する": {
+      "meaning": "商量、諮詢"
+    },
+    "体制": {
+      "meaning": "體制"
+    },
+    "整える": {
+      "meaning": "整頓、建立"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "求める": {
+      "meaning": "要求、尋求"
+    },
+    "また": {
+      "meaning": "另外、又"
+    },
+    "店内": {
+      "meaning": "店內"
+    },
+    "注意喚起": {
+      "meaning": "提醒注意"
+    },
+    "ポスター": {
+      "meaning": "海報"
+    },
+    "掲示する": {
+      "meaning": "張貼、公告"
+    },
+    "利用者側": {
+      "meaning": "使用者一方"
+    },
+    "意識づけ": {
+      "meaning": "意識培養"
+    },
+    "進める": {
+      "meaning": "推進"
+    },
+    "もっとも": {
+      "meaning": "不過、話雖如此"
+    },
+    "正当": {
+      "meaning": "正當的"
+    },
+    "苦情": {
+      "meaning": "抱怨、投訴"
+    },
+    "一律に": {
+      "meaning": "一律地"
+    },
+    "拒否する": {
+      "meaning": "拒絕"
+    },
+    "しまう": {
+      "meaning": "…完了（表示遺憾或徹底）"
+    },
+    "信頼関係": {
+      "meaning": "信賴關係"
+    },
+    "損なう": {
+      "meaning": "損害"
+    },
+    "恐れ": {
+      "meaning": "顧慮、擔憂"
+    },
+    "ある": {
+      "meaning": "有（事物存在）"
+    },
+    "線引き": {
+      "meaning": "劃界線"
+    },
+    "難しい": {
+      "meaning": "困難的"
+    },
+    "指摘する": {
+      "meaning": "指出"
+    }
+  },
+  "particles": {
+    "が": "主語助詞",
+    "に対して": "表示對象（對於…）",
+    "や": "列舉助詞（和、及）",
+    "を": "受格助詞",
+    "として": "表示身分或立場（作為…）",
+    "も": "表示並列（也）",
+    "に": "表示方向或結果",
+    "の": "所有格助詞（的）",
+    "へ": "表示方向",
+    "まで": "表示範圍的終點（到…為止）",
+    "と": "表示並列或共同對象",
+    "ため": "表示原因或目的"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，顧客對店員提出過度要求或惡言相向，也就是所謂的「奧客騷擾」，正作為社會問題受到關注。",
+        "word": "カスタマーハラスメント"
+      }
+    ],
+    [
+      {
+        "text": "有不少員工因此訴說精神上的痛苦，甚至被逼到留職停薪或離職的地步。",
+        "word": "追い込まれる"
+      }
+    ],
+    [
+      {
+        "text": "因應這樣的狀況，企業與地方政府正逐漸展開建立對策條例與應對手冊的動向。",
+        "word": "整備する"
+      }
+    ],
+    [
+      {
+        "text": "具體來說，社會要求建立一套讓員工面對惡意客訴時不必獨自應對、可以向上司或專門部門諮詢的體制。",
+        "word": "体制"
+      }
+    ],
+    [
+      {
+        "text": "此外，店內張貼提醒海報等做法，也在推動顧客一方的意識培養。",
+        "word": "意識づけ"
+      }
+    ],
+    [
+      {
+        "text": "不過，若將正當的抱怨也一律拒絕，恐怕會損害企業與顧客之間的信賴關係，因此劃定界線的難處也受到指摘。",
+        "word": "線引き"
+      }
+    ]
+  ]
+}

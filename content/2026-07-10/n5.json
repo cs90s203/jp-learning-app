@@ -1,0 +1,338 @@
+{
+  "date": "2026-07-10",
+  "level": "n5",
+  "title": "えきまえのパンやにいった",
+  "text": "きのう、えきまえのあたらしいパンやにいった。パンがたくさんあって、いいにおいがした。チョコレートパンをかった。ともだちのぶんもかった。いっしょにこうえんでたべた。とてもおいしかった。",
+  "tokens": [
+    {
+      "surface_form": "きのう",
+      "basic_form": "きのう",
+      "reading": "きのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "えきまえ",
+      "basic_form": "えきまえ",
+      "reading": "えきまえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あたらしい",
+      "basic_form": "あたらしい",
+      "reading": "あたらしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "パンや",
+      "basic_form": "パンや",
+      "reading": "パンや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いった",
+      "basic_form": "いく",
+      "reading": "いった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "パン",
+      "basic_form": "パン",
+      "reading": "パン",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たくさん",
+      "basic_form": "たくさん",
+      "reading": "たくさん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "あって",
+      "basic_form": "ある",
+      "reading": "あって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "におい",
+      "basic_form": "におい",
+      "reading": "におい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "チョコレートパン",
+      "basic_form": "チョコレートパン",
+      "reading": "チョコレートパン",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かった",
+      "basic_form": "かう",
+      "reading": "かった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ともだち",
+      "basic_form": "ともだち",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ぶん",
+      "basic_form": "ぶん",
+      "reading": "ぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かった",
+      "basic_form": "かう",
+      "reading": "かった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いっしょに",
+      "basic_form": "いっしょに",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "こうえん",
+      "basic_form": "こうえん",
+      "reading": "こうえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たべた",
+      "basic_form": "たべる",
+      "reading": "たべた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "おいしかった",
+      "basic_form": "おいしい",
+      "reading": "おいしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きのう": {
+      "meaning": "昨天"
+    },
+    "えきまえ": {
+      "meaning": "車站前"
+    },
+    "あたらしい": {
+      "meaning": "新的"
+    },
+    "パンや": {
+      "meaning": "麵包店"
+    },
+    "いく": {
+      "meaning": "去"
+    },
+    "パン": {
+      "meaning": "麵包"
+    },
+    "たくさん": {
+      "meaning": "很多"
+    },
+    "ある": {
+      "meaning": "有（事物存在）"
+    },
+    "いい": {
+      "meaning": "好的"
+    },
+    "におい": {
+      "meaning": "味道、氣味"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "チョコレートパン": {
+      "meaning": "巧克力麵包"
+    },
+    "かう": {
+      "meaning": "買"
+    },
+    "ともだち": {
+      "meaning": "朋友"
+    },
+    "ぶん": {
+      "meaning": "…的份"
+    },
+    "いっしょに": {
+      "meaning": "一起"
+    },
+    "こうえん": {
+      "meaning": "公園"
+    },
+    "たべる": {
+      "meaning": "吃"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "おいしい": {
+      "meaning": "好吃的"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞（的）",
+    "に": "表示方向或對象",
+    "が": "主語助詞",
+    "を": "受格助詞",
+    "も": "表示並列（也）",
+    "で": "表示動作發生的場所"
+  },
+  "translations": [
+    [
+      {
+        "text": "昨天去了車站前新開的麵包店。",
+        "word": "パンや"
+      }
+    ],
+    [
+      {
+        "text": "麵包很多，聞起來很香。",
+        "word": "におい"
+      }
+    ],
+    [
+      {
+        "text": "買了巧克力麵包。",
+        "word": "チョコレートパン"
+      }
+    ],
+    [
+      {
+        "text": "也買了朋友的份。",
+        "word": "ぶん"
+      }
+    ],
+    [
+      {
+        "text": "一起在公園吃了。",
+        "word": "こうえん"
+      }
+    ],
+    [
+      {
+        "text": "非常好吃。",
+        "word": "おいしい"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,663 @@
+{
+  "date": "2026-07-10",
+  "level": "n4",
+  "title": "母との花火大会",
+  "text": "先週の土曜日、母と近所の花火大会に行った。浴衣を着たり、屋台でたこ焼きを食べたりして、とても楽しかった。人がとても多かったので、席を取るのに苦労したけど、綺麗な場所に座ることができた。花火の音はとても大きくて、体に響くようだった。大きな花火が上がるたびに、母は嬉しそうな顔をしていた。また来年も一緒に行きたいと思う。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "土曜日",
+      "basic_form": "土曜日",
+      "reading": "どようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "母",
+      "basic_form": "母",
+      "reading": "はは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近所",
+      "basic_form": "近所",
+      "reading": "きんじょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "花火大会",
+      "basic_form": "花火大会",
+      "reading": "はなびたいかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行った",
+      "basic_form": "行く",
+      "reading": "いった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "浴衣",
+      "basic_form": "浴衣",
+      "reading": "ゆかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "着たり",
+      "basic_form": "着る",
+      "reading": "きたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "屋台",
+      "basic_form": "屋台",
+      "reading": "やたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たこ焼き",
+      "basic_form": "たこ焼き",
+      "reading": "たこやき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べたり",
+      "basic_form": "食べる",
+      "reading": "たべたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しかった",
+      "basic_form": "楽しい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "多かった",
+      "basic_form": "多い",
+      "reading": "おおかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "席",
+      "basic_form": "席",
+      "reading": "せき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取る",
+      "basic_form": "取る",
+      "reading": "とる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "苦労した",
+      "basic_form": "苦労する",
+      "reading": "くろうした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "綺麗な",
+      "basic_form": "綺麗",
+      "reading": "きれいな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "場所",
+      "basic_form": "場所",
+      "reading": "ばしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "座る",
+      "basic_form": "座る",
+      "reading": "すわる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できた",
+      "basic_form": "できる",
+      "reading": "できた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "花火",
+      "basic_form": "花火",
+      "reading": "はなび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "音",
+      "basic_form": "音",
+      "reading": "おと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "大きくて",
+      "basic_form": "大きい",
+      "reading": "おおきくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "響く",
+      "basic_form": "響く",
+      "reading": "ひびく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ようだった",
+      "basic_form": "ようだ",
+      "reading": "ようだった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "花火",
+      "basic_form": "花火",
+      "reading": "はなび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "上がる",
+      "basic_form": "上がる",
+      "reading": "あがる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たびに",
+      "basic_form": "たびに",
+      "reading": "たびに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "母",
+      "basic_form": "母",
+      "reading": "はは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "嬉しそうな",
+      "basic_form": "嬉しい",
+      "reading": "うれしそうな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "顔",
+      "basic_form": "顔",
+      "reading": "かお",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "していた",
+      "basic_form": "する",
+      "reading": "していた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "来年",
+      "basic_form": "来年",
+      "reading": "らいねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一緒に",
+      "basic_form": "一緒に",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "行きたい",
+      "basic_form": "行く",
+      "reading": "いきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週"
+    },
+    "土曜日": {
+      "meaning": "星期六"
+    },
+    "母": {
+      "meaning": "媽媽"
+    },
+    "近所": {
+      "meaning": "附近、鄰近"
+    },
+    "花火大会": {
+      "meaning": "煙火大會"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "浴衣": {
+      "meaning": "浴衣"
+    },
+    "着る": {
+      "meaning": "穿"
+    },
+    "屋台": {
+      "meaning": "路邊攤"
+    },
+    "たこ焼き": {
+      "meaning": "章魚燒"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "楽しい": {
+      "meaning": "開心的"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "席": {
+      "meaning": "座位"
+    },
+    "取る": {
+      "meaning": "取得、佔（位）"
+    },
+    "苦労する": {
+      "meaning": "辛苦、費心"
+    },
+    "綺麗": {
+      "meaning": "漂亮、乾淨"
+    },
+    "場所": {
+      "meaning": "地方"
+    },
+    "座る": {
+      "meaning": "坐"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "できる": {
+      "meaning": "能夠"
+    },
+    "大きな": {
+      "meaning": "大的"
+    },
+    "花火": {
+      "meaning": "煙火"
+    },
+    "上がる": {
+      "meaning": "升起"
+    },
+    "たびに": {
+      "meaning": "每當…就"
+    },
+    "嬉しい": {
+      "meaning": "開心的、高興的"
+    },
+    "顔": {
+      "meaning": "臉、表情"
+    },
+    "また": {
+      "meaning": "又、再"
+    },
+    "来年": {
+      "meaning": "明年"
+    },
+    "一緒に": {
+      "meaning": "一起"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    },
+    "音": {
+      "meaning": "聲音"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "体": {
+      "meaning": "身體"
+    },
+    "響く": {
+      "meaning": "回響、震動"
+    },
+    "ようだ": {
+      "meaning": "好像…（樣態）"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞（的）",
+    "と": "表示共同動作的對象",
+    "に": "表示方向、時間或對象",
+    "を": "受格助詞",
+    "が": "主語助詞",
+    "ので": "表示原因理由（因為…）",
+    "けど": "表示轉折（但是）",
+    "は": "主題助詞",
+    "も": "表示並列（也）",
+    "たびに": "表示每當…就會…"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週六，和媽媽一起去了附近的煙火大會。",
+        "word": "花火大会"
+      }
+    ],
+    [
+      {
+        "text": "穿了浴衣，也在路邊攤吃了章魚燒，非常開心。",
+        "word": "たこ焼き"
+      }
+    ],
+    [
+      {
+        "text": "因為人非常多，找位子很辛苦，不過還是找到了一個很漂亮的位置坐下。",
+        "word": "苦労する"
+      }
+    ],
+    [
+      {
+        "text": "煙火的聲音非常大，好像連身體都在震動。",
+        "word": "響く"
+      }
+    ],
+    [
+      {
+        "text": "每當大煙火升起，媽媽都露出開心的表情。",
+        "word": "嬉しい"
+      }
+    ],
+    [
+      {
+        "text": "明年也想再一起去。",
+        "word": "一緒に"
+      }
+    ]
+  ]
+}
