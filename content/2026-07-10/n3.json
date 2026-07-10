@@ -1,0 +1,685 @@
+{
+  "date": "2026-07-10",
+  "level": "n3",
+  "title": "週末の断捨離に挑戦した",
+  "text": "先週末、思い切って部屋の断捨離に挑戦してみた。「いつか使うかもしれない」と思って取っておいた物が、押し入れの奥にたくさん眠っていることに気づいた。使わなくなった服や本を思い切って処分すると、部屋は驚くほどすっきりした。捨てるのはもったいないと感じる反面、不要な物に囲まれて暮らしていたことのほうがもったいなかったのかもしれないと思うようになった。これからは物を増やす前に、本当に必要かどうかをよく考えるようにしたい。",
+  "tokens": [
+    {
+      "surface_form": "先週末",
+      "basic_form": "先週末",
+      "reading": "せんしゅうまつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "思い切って",
+      "basic_form": "思い切る",
+      "reading": "おもいきって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "部屋",
+      "basic_form": "部屋",
+      "reading": "へや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "断捨離",
+      "basic_form": "断捨離",
+      "reading": "だんしゃり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "挑戦して",
+      "basic_form": "挑戦する",
+      "reading": "ちょうせんして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みた",
+      "basic_form": "みる",
+      "reading": "みた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いつか",
+      "basic_form": "いつか",
+      "reading": "いつか",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "使う",
+      "basic_form": "使う",
+      "reading": "つかう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "かもしれない",
+      "basic_form": "かもしれない",
+      "reading": "かもしれない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思って",
+      "basic_form": "思う",
+      "reading": "おもって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "取って",
+      "basic_form": "取る",
+      "reading": "とって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "おいた",
+      "basic_form": "おく",
+      "reading": "おいた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "物",
+      "basic_form": "物",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "押し入れ",
+      "basic_form": "押し入れ",
+      "reading": "おしいれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "奥",
+      "basic_form": "奥",
+      "reading": "おく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たくさん",
+      "basic_form": "たくさん",
+      "reading": "たくさん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "眠っている",
+      "basic_form": "眠る",
+      "reading": "ねむっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "気づいた",
+      "basic_form": "気づく",
+      "reading": "きづいた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "使わなくなった",
+      "basic_form": "使う",
+      "reading": "つかわなくなった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "服",
+      "basic_form": "服",
+      "reading": "ふく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思い切って",
+      "basic_form": "思い切る",
+      "reading": "おもいきって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "処分する",
+      "basic_form": "処分する",
+      "reading": "しょぶんする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "部屋",
+      "basic_form": "部屋",
+      "reading": "へや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "驚くほど",
+      "basic_form": "驚く",
+      "reading": "おどろくほど",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "すっきりした",
+      "basic_form": "すっきりする",
+      "reading": "すっきりした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "捨てる",
+      "basic_form": "捨てる",
+      "reading": "すてる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "のは",
+      "basic_form": "のは",
+      "reading": "のは",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もったいない",
+      "basic_form": "もったいない",
+      "reading": "もったいない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "感じる",
+      "basic_form": "感じる",
+      "reading": "かんじる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "反面",
+      "basic_form": "反面",
+      "reading": "はんめん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "不要な",
+      "basic_form": "不要",
+      "reading": "ふような",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "物",
+      "basic_form": "物",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "囲まれて",
+      "basic_form": "囲まれる",
+      "reading": "かこまれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "暮らしていた",
+      "basic_form": "暮らす",
+      "reading": "くらしていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほう",
+      "basic_form": "ほう",
+      "reading": "ほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もったいなかった",
+      "basic_form": "もったいない",
+      "reading": "もったいなかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "のかもしれない",
+      "basic_form": "のかもしれない",
+      "reading": "のかもしれない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "物",
+      "basic_form": "物",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増やす",
+      "basic_form": "増やす",
+      "reading": "ふやす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "前に",
+      "basic_form": "前に",
+      "reading": "まえに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "本当に",
+      "basic_form": "本当に",
+      "reading": "ほんとうに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "かどうか",
+      "basic_form": "かどうか",
+      "reading": "かどうか",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よく",
+      "basic_form": "よく",
+      "reading": "よく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "考える",
+      "basic_form": "考える",
+      "reading": "かんがえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "したい",
+      "basic_form": "する",
+      "reading": "したい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週末": {
+      "meaning": "上週末"
+    },
+    "思い切る": {
+      "meaning": "下定決心、狠下心"
+    },
+    "部屋": {
+      "meaning": "房間"
+    },
+    "断捨離": {
+      "meaning": "斷捨離"
+    },
+    "挑戦する": {
+      "meaning": "挑戰、嘗試"
+    },
+    "みる": {
+      "meaning": "試著做…看看"
+    },
+    "いつか": {
+      "meaning": "總有一天"
+    },
+    "使う": {
+      "meaning": "使用"
+    },
+    "かもしれない": {
+      "meaning": "說不定、也許"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    },
+    "取る": {
+      "meaning": "拿、取"
+    },
+    "おく": {
+      "meaning": "放著、事先做好"
+    },
+    "物": {
+      "meaning": "東西"
+    },
+    "押し入れ": {
+      "meaning": "壁櫥"
+    },
+    "奥": {
+      "meaning": "深處"
+    },
+    "たくさん": {
+      "meaning": "很多"
+    },
+    "眠る": {
+      "meaning": "沉睡（引申為閒置）"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "気づく": {
+      "meaning": "察覺、發現"
+    },
+    "服": {
+      "meaning": "衣服"
+    },
+    "本": {
+      "meaning": "書"
+    },
+    "処分する": {
+      "meaning": "處理、丟棄"
+    },
+    "驚く": {
+      "meaning": "驚訝"
+    },
+    "すっきりする": {
+      "meaning": "整潔清爽"
+    },
+    "捨てる": {
+      "meaning": "丟棄"
+    },
+    "もったいない": {
+      "meaning": "可惜、浪費"
+    },
+    "感じる": {
+      "meaning": "感覺"
+    },
+    "反面": {
+      "meaning": "另一方面"
+    },
+    "不要": {
+      "meaning": "不需要的"
+    },
+    "囲まれる": {
+      "meaning": "被…包圍"
+    },
+    "暮らす": {
+      "meaning": "生活"
+    },
+    "ほう": {
+      "meaning": "…那一方、…那邊"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "これから": {
+      "meaning": "今後"
+    },
+    "増やす": {
+      "meaning": "增加"
+    },
+    "本当に": {
+      "meaning": "真的"
+    },
+    "必要": {
+      "meaning": "必要"
+    },
+    "よく": {
+      "meaning": "好好地、經常"
+    },
+    "考える": {
+      "meaning": "思考"
+    },
+    "する": {
+      "meaning": "做"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞（的）",
+    "に": "表示方向、對象或時間",
+    "と": "引用助詞，表示引用內容",
+    "が": "主語助詞",
+    "や": "列舉助詞（和、及）",
+    "を": "受格助詞",
+    "は": "主題助詞，亦可表對比",
+    "のは": "將前面內容名詞化並強調",
+    "ように": "表示目的或期望的狀態",
+    "反面": "表示對比的另一面（另一方面）",
+    "かどうか": "表示是否…"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週末，我下定決心挑戰整理房間、來一場斷捨離。",
+        "word": "断捨離"
+      }
+    ],
+    [
+      {
+        "text": "我發現，那些「總有一天可能會用到」而留下來的東西，其實有很多都一直閒置在壁櫥深處。",
+        "word": "眠る"
+      }
+    ],
+    [
+      {
+        "text": "狠下心處理掉不再穿的衣服和書之後，房間變得出乎意料地整潔清爽。",
+        "word": "すっきりする"
+      }
+    ],
+    [
+      {
+        "text": "雖然一方面覺得丟掉很可惜，但另一方面又覺得，被不需要的東西包圍著生活，或許才是更可惜的事。",
+        "word": "反面"
+      }
+    ],
+    [
+      {
+        "text": "今後在增加東西之前，我想好好想清楚是不是真的需要。",
+        "word": "考える"
+      }
+    ]
+  ]
+}

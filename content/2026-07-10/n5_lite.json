@@ -1,0 +1,234 @@
+{
+  "date": "2026-07-10",
+  "level": "n5_lite",
+  "title": "わたしのくつ",
+  "text": "これはわたしのくつです。しろくて、あたらしいです。がっこうへいくときにはきます。にわのくつばこにいれます。",
+  "tokens": [
+    {
+      "surface_form": "これ",
+      "basic_form": "これ",
+      "reading": "これ",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "くつ",
+      "basic_form": "くつ",
+      "reading": "くつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しろくて",
+      "basic_form": "しろい",
+      "reading": "しろくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あたらしい",
+      "basic_form": "あたらしい",
+      "reading": "あたらしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "がっこう",
+      "basic_form": "がっこう",
+      "reading": "がっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いく",
+      "basic_form": "いく",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "とき",
+      "basic_form": "とき",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "はきます",
+      "basic_form": "はく",
+      "reading": "はきます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "にわ",
+      "basic_form": "にわ",
+      "reading": "にわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "くつばこ",
+      "basic_form": "くつばこ",
+      "reading": "くつばこ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いれます",
+      "basic_form": "いれる",
+      "reading": "いれます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "これ": {
+      "meaning": "這個"
+    },
+    "わたし": {
+      "meaning": "我"
+    },
+    "くつ": {
+      "meaning": "鞋子"
+    },
+    "しろい": {
+      "meaning": "白色的"
+    },
+    "あたらしい": {
+      "meaning": "新的"
+    },
+    "がっこう": {
+      "meaning": "學校"
+    },
+    "いく": {
+      "meaning": "去"
+    },
+    "とき": {
+      "meaning": "…的時候"
+    },
+    "はく": {
+      "meaning": "穿（鞋、褲）"
+    },
+    "にわ": {
+      "meaning": "庭院"
+    },
+    "くつばこ": {
+      "meaning": "鞋櫃"
+    },
+    "いれる": {
+      "meaning": "放入"
+    }
+  },
+  "particles": {
+    "は": "主題助詞（是…）",
+    "の": "所有格助詞（的）",
+    "へ": "表示方向",
+    "に": "表示時間點或場所"
+  },
+  "translations": [
+    [
+      {
+        "text": "這是我的鞋子。",
+        "word": "くつ"
+      }
+    ],
+    [
+      {
+        "text": "白色的，是新的。",
+        "word": "あたらしい"
+      }
+    ],
+    [
+      {
+        "text": "去學校的時候會穿。",
+        "word": "はく"
+      }
+    ],
+    [
+      {
+        "text": "放在庭院的鞋櫃裡。",
+        "word": "いれる"
+      }
+    ]
+  ]
+}

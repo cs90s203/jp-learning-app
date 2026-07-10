@@ -1,0 +1,702 @@
+{
+  "date": "2026-07-10",
+  "level": "n3_lite",
+  "title": "中古レコード店で掘り出し物を見つけた",
+  "text": "先週末、駅の裏にある中古レコード店に初めて入ってみた。店内にはジャズやロックのレコードが所狭しと並んでいて、見ているだけでわくわくした。棚を眺めていたら、昔好きだったバンドのアルバムを見つけて、思わず声が出そうになった。値段も意外と安くて、迷わず買った。家に帰ってすぐに聴いてみたら、懐かしさで胸がいっぱいになった。また時間があるときに、あの店を覗きに行きたいと思う。",
+  "tokens": [
+    {
+      "surface_form": "先週末",
+      "basic_form": "先週末",
+      "reading": "せんしゅうまつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "駅",
+      "basic_form": "駅",
+      "reading": "えき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "裏",
+      "basic_form": "裏",
+      "reading": "うら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "中古レコード店",
+      "basic_form": "中古レコード店",
+      "reading": "ちゅうこレコードてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "初めて",
+      "basic_form": "初めて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "入って",
+      "basic_form": "入る",
+      "reading": "はいって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みた",
+      "basic_form": "みる",
+      "reading": "みた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "店内",
+      "basic_form": "店内",
+      "reading": "てんない",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "には",
+      "basic_form": "には",
+      "reading": "には",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ジャズ",
+      "basic_form": "ジャズ",
+      "reading": "ジャズ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ロック",
+      "basic_form": "ロック",
+      "reading": "ロック",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "レコード",
+      "basic_form": "レコード",
+      "reading": "レコード",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "所狭しと",
+      "basic_form": "所狭しと",
+      "reading": "ところせましと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "並んでいて",
+      "basic_form": "並ぶ",
+      "reading": "ならんでいて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "見ている",
+      "basic_form": "見る",
+      "reading": "みている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけで",
+      "basic_form": "だけで",
+      "reading": "だけで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "わくわくした",
+      "basic_form": "わくわくする",
+      "reading": "わくわくした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "棚",
+      "basic_form": "棚",
+      "reading": "たな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "眺めて",
+      "basic_form": "眺める",
+      "reading": "ながめて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いたら",
+      "basic_form": "いる",
+      "reading": "いたら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "昔",
+      "basic_form": "昔",
+      "reading": "むかし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "好きだった",
+      "basic_form": "好きだ",
+      "reading": "すきだった",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "バンド",
+      "basic_form": "バンド",
+      "reading": "バンド",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "アルバム",
+      "basic_form": "アルバム",
+      "reading": "アルバム",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見つけて",
+      "basic_form": "見つける",
+      "reading": "みつけて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "思わず",
+      "basic_form": "思わず",
+      "reading": "おもわず",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出そうに",
+      "basic_form": "出る",
+      "reading": "でそうに",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "値段",
+      "basic_form": "値段",
+      "reading": "ねだん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "意外と",
+      "basic_form": "意外と",
+      "reading": "いがいと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "安くて",
+      "basic_form": "安い",
+      "reading": "やすくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "迷わず",
+      "basic_form": "迷わず",
+      "reading": "まよわず",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "買った",
+      "basic_form": "買う",
+      "reading": "かった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "帰って",
+      "basic_form": "帰る",
+      "reading": "かえって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "すぐに",
+      "basic_form": "すぐに",
+      "reading": "すぐに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "聴いて",
+      "basic_form": "聴く",
+      "reading": "きいて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みたら",
+      "basic_form": "みる",
+      "reading": "みたら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "懐かしさ",
+      "basic_form": "懐かしい",
+      "reading": "なつかしさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "胸",
+      "basic_form": "胸",
+      "reading": "むね",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いっぱいに",
+      "basic_form": "いっぱい",
+      "reading": "いっぱいに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "がある",
+      "basic_form": "ある",
+      "reading": "がある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "とき",
+      "basic_form": "とき",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あの",
+      "basic_form": "あの",
+      "reading": "あの",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "店",
+      "basic_form": "店",
+      "reading": "みせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "覗きに",
+      "basic_form": "覗く",
+      "reading": "のぞきに",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "行きたい",
+      "basic_form": "行く",
+      "reading": "いきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週末": {
+      "meaning": "上週末"
+    },
+    "駅": {
+      "meaning": "車站"
+    },
+    "裏": {
+      "meaning": "後面、背面"
+    },
+    "ある": {
+      "meaning": "有（事物存在）"
+    },
+    "中古レコード店": {
+      "meaning": "二手唱片行"
+    },
+    "初めて": {
+      "meaning": "第一次"
+    },
+    "入る": {
+      "meaning": "進入"
+    },
+    "みる": {
+      "meaning": "試著做…看看"
+    },
+    "棚": {
+      "meaning": "架子"
+    },
+    "眺める": {
+      "meaning": "眺望、瀏覽"
+    },
+    "いる": {
+      "meaning": "在（表狀態持續）"
+    },
+    "昔": {
+      "meaning": "以前"
+    },
+    "好きだ": {
+      "meaning": "喜歡"
+    },
+    "バンド": {
+      "meaning": "樂團"
+    },
+    "アルバム": {
+      "meaning": "專輯"
+    },
+    "見つける": {
+      "meaning": "找到"
+    },
+    "思わず": {
+      "meaning": "不由得、忍不住"
+    },
+    "声": {
+      "meaning": "聲音"
+    },
+    "出る": {
+      "meaning": "發出、出現"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "値段": {
+      "meaning": "價格"
+    },
+    "意外と": {
+      "meaning": "意外地"
+    },
+    "安い": {
+      "meaning": "便宜的"
+    },
+    "迷わず": {
+      "meaning": "毫不猶豫地"
+    },
+    "買う": {
+      "meaning": "買"
+    },
+    "家": {
+      "meaning": "家"
+    },
+    "帰る": {
+      "meaning": "回去"
+    },
+    "すぐに": {
+      "meaning": "馬上"
+    },
+    "聴く": {
+      "meaning": "聽"
+    },
+    "懐かしい": {
+      "meaning": "令人懷念的"
+    },
+    "胸": {
+      "meaning": "胸口"
+    },
+    "いっぱい": {
+      "meaning": "充滿"
+    },
+    "また": {
+      "meaning": "又、再"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "とき": {
+      "meaning": "…的時候"
+    },
+    "あの": {
+      "meaning": "那個"
+    },
+    "店": {
+      "meaning": "店"
+    },
+    "覗く": {
+      "meaning": "探望、窺看"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    },
+    "店内": {
+      "meaning": "店內"
+    },
+    "ジャズ": {
+      "meaning": "爵士樂"
+    },
+    "ロック": {
+      "meaning": "搖滾樂"
+    },
+    "レコード": {
+      "meaning": "黑膠唱片"
+    },
+    "所狭しと": {
+      "meaning": "擠得滿滿地"
+    },
+    "並ぶ": {
+      "meaning": "排列"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "わくわくする": {
+      "meaning": "興奮期待"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞（的）",
+    "に": "表示方向、時間或對象",
+    "を": "受格助詞",
+    "が": "主語助詞",
+    "も": "表示並列（也）",
+    "で": "表示原因或方式",
+    "と": "引用助詞",
+    "には": "表示場所加強語氣（在…裡）",
+    "や": "列舉part分（和、及）",
+    "だけで": "表示僅僅…就"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週末，第一次走進車站後面的一間二手唱片行。",
+        "word": "中古レコード店"
+      }
+    ],
+    [
+      {
+        "text": "店裡爵士樂和搖滾樂的唱片擺得滿滿的，光是看著就讓人興奮。",
+        "word": "わくわくする"
+      }
+    ],
+    [
+      {
+        "text": "瀏覽架子時，發現了以前喜歡的樂團的專輯，忍不住差點叫出聲來。",
+        "word": "見つける"
+      }
+    ],
+    [
+      {
+        "text": "價格也意外便宜，毫不猶豫就買了。",
+        "word": "値段"
+      }
+    ],
+    [
+      {
+        "text": "回家後馬上聽了一下，滿滿的懷念感湧上心頭。",
+        "word": "懐かしい"
+      }
+    ],
+    [
+      {
+        "text": "有時間的話，還想再去那家店看看。",
+        "word": "覗く"
+      }
+    ]
+  ]
+}
