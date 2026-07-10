@@ -1,0 +1,692 @@
+{
+  "date": "2026-07-11",
+  "level": "n2_lite",
+  "title": "副業解禁の動き",
+  "text": "最近、会社員の副業を認める企業が増えている。以前は副業を禁止する会社が多かったが、働き方の多様化にともなって、少しずつ考え方が変わってきた。副業を通じてスキルを広げたり、収入を増やしたりできる点は大きな魅力だ。一方で、本業に支障が出ないように、時間管理をしっかり行う必要がある。企業側も、情報管理のルールを整えたうえで、社員の挑戦を後押しする姿勢を見せ始めている。",
+  "tokens": [
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "会社員",
+      "basic_form": "会社員",
+      "reading": "かいしゃいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "副業",
+      "basic_form": "副業",
+      "reading": "ふくぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "認める",
+      "basic_form": "認める",
+      "reading": "みとめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "以前",
+      "basic_form": "以前",
+      "reading": "いぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "副業",
+      "basic_form": "副業",
+      "reading": "ふくぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "禁止する",
+      "basic_form": "禁止する",
+      "reading": "きんしする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "会社",
+      "basic_form": "会社",
+      "reading": "かいしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多かった",
+      "basic_form": "多い",
+      "reading": "おおかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "働き方",
+      "basic_form": "働き方",
+      "reading": "はたらきかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多様化",
+      "basic_form": "多様化",
+      "reading": "たようか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ともなって",
+      "basic_form": "ともなう",
+      "reading": "ともなって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少しずつ",
+      "basic_form": "少しずつ",
+      "reading": "すこしずつ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "考え方",
+      "basic_form": "考え方",
+      "reading": "かんがえかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "変わってきた",
+      "basic_form": "変わる",
+      "reading": "かわってきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "副業",
+      "basic_form": "副業",
+      "reading": "ふくぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通じて",
+      "basic_form": "通じる",
+      "reading": "つうじて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "スキル",
+      "basic_form": "スキル",
+      "reading": "スキル",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "広げたり",
+      "basic_form": "広げる",
+      "reading": "ひろげたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "収入",
+      "basic_form": "収入",
+      "reading": "しゅうにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増やしたり",
+      "basic_form": "増やす",
+      "reading": "ふやしたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "できる",
+      "basic_form": "できる",
+      "reading": "できる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "点",
+      "basic_form": "点",
+      "reading": "てん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "魅力",
+      "basic_form": "魅力",
+      "reading": "みりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "本業",
+      "basic_form": "本業",
+      "reading": "ほんぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "支障",
+      "basic_form": "支障",
+      "reading": "ししょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出ない",
+      "basic_form": "出る",
+      "reading": "でない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "時間管理",
+      "basic_form": "時間管理",
+      "reading": "じかんかんり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しっかり",
+      "basic_form": "しっかり",
+      "reading": "しっかり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "行う",
+      "basic_form": "行う",
+      "reading": "おこなう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業側",
+      "basic_form": "企業側",
+      "reading": "きぎょうがわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "情報管理",
+      "basic_form": "情報管理",
+      "reading": "じょうほうかんり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ルール",
+      "basic_form": "ルール",
+      "reading": "ルール",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整えた",
+      "basic_form": "整える",
+      "reading": "ととのえた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "うえで",
+      "basic_form": "うえで",
+      "reading": "うえで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "社員",
+      "basic_form": "社員",
+      "reading": "しゃいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "挑戦",
+      "basic_form": "挑戦",
+      "reading": "ちょうせん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "後押しする",
+      "basic_form": "後押しする",
+      "reading": "あとおしする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "姿勢",
+      "basic_form": "姿勢",
+      "reading": "しせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見せ始めている",
+      "basic_form": "見せ始める",
+      "reading": "みせはじめている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "最近": {
+      "meaning": "最近"
+    },
+    "会社員": {
+      "meaning": "上班族"
+    },
+    "副業": {
+      "meaning": "副業"
+    },
+    "認める": {
+      "meaning": "允許；承認"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "以前": {
+      "meaning": "以前"
+    },
+    "禁止する": {
+      "meaning": "禁止"
+    },
+    "会社": {
+      "meaning": "公司"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "働き方": {
+      "meaning": "工作方式"
+    },
+    "多様化": {
+      "meaning": "多樣化"
+    },
+    "ともなう": {
+      "meaning": "伴隨"
+    },
+    "少しずつ": {
+      "meaning": "一點一點地"
+    },
+    "考え方": {
+      "meaning": "想法"
+    },
+    "変わる": {
+      "meaning": "改變"
+    },
+    "通じる": {
+      "meaning": "透過"
+    },
+    "スキル": {
+      "meaning": "技能"
+    },
+    "広げる": {
+      "meaning": "拓展"
+    },
+    "収入": {
+      "meaning": "收入"
+    },
+    "増やす": {
+      "meaning": "增加（某物）"
+    },
+    "できる": {
+      "meaning": "能夠"
+    },
+    "点": {
+      "meaning": "這一點"
+    },
+    "大きな": {
+      "meaning": "大的"
+    },
+    "魅力": {
+      "meaning": "魅力"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "本業": {
+      "meaning": "本業；正職"
+    },
+    "支障": {
+      "meaning": "妨礙；障礙"
+    },
+    "出る": {
+      "meaning": "出現"
+    },
+    "時間管理": {
+      "meaning": "時間管理"
+    },
+    "しっかり": {
+      "meaning": "確實地"
+    },
+    "行う": {
+      "meaning": "進行"
+    },
+    "必要": {
+      "meaning": "必要"
+    },
+    "ある": {
+      "meaning": "有"
+    },
+    "企業側": {
+      "meaning": "企業方面"
+    },
+    "情報管理": {
+      "meaning": "資訊管理"
+    },
+    "ルール": {
+      "meaning": "規則"
+    },
+    "整える": {
+      "meaning": "建立完善"
+    },
+    "社員": {
+      "meaning": "員工"
+    },
+    "挑戦": {
+      "meaning": "挑戰"
+    },
+    "後押しする": {
+      "meaning": "支持；推一把"
+    },
+    "姿勢": {
+      "meaning": "態度；姿態"
+    },
+    "見せ始める": {
+      "meaning": "開始展現"
+    }
+  },
+  "particles": {
+    "の": "表示所有或修飾關係",
+    "を": "表示動作的對象（受詞）",
+    "が": "表示句子的主語或逆接連接",
+    "は": "主題標記",
+    "に": "表示對象或方向",
+    "ように": "表示目的，「為了不要…」",
+    "うえで": "表示「在…之後（基礎上）」",
+    "も": "表示「也」",
+    "だ": "斷定助動詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "最近，允許員工從事副業的企業增加了。",
+        "word": "副業"
+      }
+    ],
+    [
+      {
+        "text": "以前禁止副業的公司很多，但隨著工作方式的多樣化，想法也漸漸改變了。",
+        "word": "変わる"
+      }
+    ],
+    [
+      {
+        "text": "透過副業拓展技能、增加收入，是很大的魅力。",
+        "word": "魅力"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，為了不影響本業，必須確實做好時間管理。",
+        "word": "時間管理"
+      }
+    ],
+    [
+      {
+        "text": "企業方面也在建立好資訊管理規則後，開始展現出支持員工挑戰的態度。",
+        "word": "後押しする"
+      }
+    ]
+  ]
+}

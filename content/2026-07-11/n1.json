@@ -1,0 +1,1294 @@
+{
+  "date": "2026-07-11",
+  "level": "n1",
+  "title": "少子化対策の効果と限界",
+  "text": "少子化対策は、長年にわたり日本社会の重要な政策課題として位置づけられてきた。政府は児童手当の拡充や保育所整備、育児休業制度の改善など、多方面にわたる施策を講じてきたが、出生率の劇的な回復には至っていない。専門家の間では、経済的支援だけでは根本的な解決に結びつかないという指摘が根強い。実際、結婚や出産に踏み切れない背景には、雇用の不安定さや将来への漠然とした不安、さらには価値観の多様化といった複合的な要因が絡み合っている。したがって、単発的な給付金政策にとどまらず、若年層が安心して人生設計を描ける社会基盤を整えることこそが、真に求められているのではないだろうか。もっとも、こうした構造的な課題の解決には、相応の時間と社会全体の合意形成が不可欠であり、即効性を期待すること自体、現実的とは言いがたい。今後は、短期的な成果に一喜一憂するのではなく、長期的な視点に立った継続的な取り組みが欠かせない。",
+  "tokens": [
+    {
+      "surface_form": "少子化対策",
+      "basic_form": "少子化対策",
+      "reading": "しょうしかたいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "長年",
+      "basic_form": "長年",
+      "reading": "ながねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "にわたり",
+      "basic_form": "にわたり",
+      "reading": "にわたり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日本社会",
+      "basic_form": "日本社会",
+      "reading": "にほんしゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重要な",
+      "basic_form": "重要",
+      "reading": "じゅうような",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "政策課題",
+      "basic_form": "政策課題",
+      "reading": "せいさくかだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "位置づけられてきた",
+      "basic_form": "位置づける",
+      "reading": "いちづけられてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政府",
+      "basic_form": "政府",
+      "reading": "せいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "児童手当",
+      "basic_form": "児童手当",
+      "reading": "じどうてあて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "拡充",
+      "basic_form": "拡充",
+      "reading": "かくじゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保育所整備",
+      "basic_form": "保育所整備",
+      "reading": "ほいくしょせいび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "育児休業制度",
+      "basic_form": "育児休業制度",
+      "reading": "いくじきゅうぎょうせいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "改善",
+      "basic_form": "改善",
+      "reading": "かいぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "多方面にわたる",
+      "basic_form": "多方面にわたる",
+      "reading": "たほうめんにわたる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "施策",
+      "basic_form": "施策",
+      "reading": "しさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "講じてきた",
+      "basic_form": "講じる",
+      "reading": "こうじてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "出生率",
+      "basic_form": "出生率",
+      "reading": "しゅっしょうりつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "劇的な",
+      "basic_form": "劇的",
+      "reading": "げきてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "回復",
+      "basic_form": "回復",
+      "reading": "かいふく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "至っていない",
+      "basic_form": "至る",
+      "reading": "いたっていない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "専門家",
+      "basic_form": "専門家",
+      "reading": "せんもんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "間",
+      "basic_form": "間",
+      "reading": "あいだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "経済的支援",
+      "basic_form": "経済的支援",
+      "reading": "けいざいてきしえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "根本的な",
+      "basic_form": "根本的",
+      "reading": "こんぽんてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "解決",
+      "basic_form": "解決",
+      "reading": "かいけつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "結びつかない",
+      "basic_form": "結びつく",
+      "reading": "むすびつかない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "根強い",
+      "basic_form": "根強い",
+      "reading": "ねづよい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実際",
+      "basic_form": "実際",
+      "reading": "じっさい",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "結婚",
+      "basic_form": "結婚",
+      "reading": "けっこん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出産",
+      "basic_form": "出産",
+      "reading": "しゅっさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "踏み切れない",
+      "basic_form": "踏み切る",
+      "reading": "ふみきれない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "背景",
+      "basic_form": "背景",
+      "reading": "はいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "雇用",
+      "basic_form": "雇用",
+      "reading": "こよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不安定さ",
+      "basic_form": "不安定さ",
+      "reading": "ふあんていさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "将来",
+      "basic_form": "将来",
+      "reading": "しょうらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "漠然とした",
+      "basic_form": "漠然とする",
+      "reading": "ばくぜんとした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "不安",
+      "basic_form": "不安",
+      "reading": "ふあん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "さらには",
+      "basic_form": "さらには",
+      "reading": "さらには",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "価値観",
+      "basic_form": "価値観",
+      "reading": "かちかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多様化",
+      "basic_form": "多様化",
+      "reading": "たようか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "複合的な",
+      "basic_form": "複合的",
+      "reading": "ふくごうてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "要因",
+      "basic_form": "要因",
+      "reading": "よういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "絡み合っている",
+      "basic_form": "絡み合う",
+      "reading": "からみあっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "したがって",
+      "basic_form": "したがって",
+      "reading": "したがって",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "単発的な",
+      "basic_form": "単発的",
+      "reading": "たんぱつてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "給付金政策",
+      "basic_form": "給付金政策",
+      "reading": "きゅうふきんせいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とどまらず",
+      "basic_form": "とどまる",
+      "reading": "とどまらず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "若年層",
+      "basic_form": "若年層",
+      "reading": "じゃくねんそう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安心して",
+      "basic_form": "安心する",
+      "reading": "あんしんして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人生設計",
+      "basic_form": "人生設計",
+      "reading": "じんせいせっけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "描ける",
+      "basic_form": "描く",
+      "reading": "えがける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "社会基盤",
+      "basic_form": "社会基盤",
+      "reading": "しゃかいきばん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整える",
+      "basic_form": "整える",
+      "reading": "ととのえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "形式名詞"
+    },
+    {
+      "surface_form": "こそが",
+      "basic_form": "こそが",
+      "reading": "こそが",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "真に",
+      "basic_form": "真に",
+      "reading": "しんに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "求められている",
+      "basic_form": "求める",
+      "reading": "もとめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ではないだろうか",
+      "basic_form": "ではないだろうか",
+      "reading": "ではないだろうか",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もっとも",
+      "basic_form": "もっとも",
+      "reading": "もっとも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "構造的な",
+      "basic_form": "構造的",
+      "reading": "こうぞうてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "解決",
+      "basic_form": "解決",
+      "reading": "かいけつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "相応",
+      "basic_form": "相応",
+      "reading": "そうおう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "社会全体",
+      "basic_form": "社会全体",
+      "reading": "しゃかいぜんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "合意形成",
+      "basic_form": "合意形成",
+      "reading": "ごういけいせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不可欠であり",
+      "basic_form": "不可欠",
+      "reading": "ふかけつであり",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "即効性",
+      "basic_form": "即効性",
+      "reading": "そっこうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "期待する",
+      "basic_form": "期待する",
+      "reading": "きたいする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "形式名詞"
+    },
+    {
+      "surface_form": "自体",
+      "basic_form": "自体",
+      "reading": "じたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "現実的",
+      "basic_form": "現実的",
+      "reading": "げんじつてき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言いがたい",
+      "basic_form": "言う",
+      "reading": "いいがたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "短期的な",
+      "basic_form": "短期的",
+      "reading": "たんきてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "成果",
+      "basic_form": "成果",
+      "reading": "せいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一喜一憂する",
+      "basic_form": "一喜一憂する",
+      "reading": "いっきいちゆうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ではなく",
+      "basic_form": "ではなく",
+      "reading": "ではなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "長期的な",
+      "basic_form": "長期的",
+      "reading": "ちょうきてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "視点",
+      "basic_form": "視点",
+      "reading": "してん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "立った",
+      "basic_form": "立つ",
+      "reading": "たった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "継続的な",
+      "basic_form": "継続的",
+      "reading": "けいぞくてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "取り組み",
+      "basic_form": "取り組み",
+      "reading": "とりくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "欠かせない",
+      "basic_form": "欠かす",
+      "reading": "かかせない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "少子化対策": {
+      "meaning": "少子化對策"
+    },
+    "長年": {
+      "meaning": "多年；長年"
+    },
+    "日本社会": {
+      "meaning": "日本社會"
+    },
+    "重要": {
+      "meaning": "重要"
+    },
+    "政策課題": {
+      "meaning": "政策課題"
+    },
+    "位置づける": {
+      "meaning": "定位"
+    },
+    "政府": {
+      "meaning": "政府"
+    },
+    "児童手当": {
+      "meaning": "兒童津貼"
+    },
+    "拡充": {
+      "meaning": "擴充"
+    },
+    "保育所整備": {
+      "meaning": "托兒所建置"
+    },
+    "育児休業制度": {
+      "meaning": "育嬰假制度"
+    },
+    "改善": {
+      "meaning": "改善"
+    },
+    "多方面にわたる": {
+      "meaning": "涉及多個層面"
+    },
+    "施策": {
+      "meaning": "政策措施"
+    },
+    "講じる": {
+      "meaning": "採取（措施）"
+    },
+    "出生率": {
+      "meaning": "出生率"
+    },
+    "劇的": {
+      "meaning": "戲劇性的；顯著的"
+    },
+    "回復": {
+      "meaning": "恢復"
+    },
+    "至る": {
+      "meaning": "達到"
+    },
+    "専門家": {
+      "meaning": "專家"
+    },
+    "間": {
+      "meaning": "之間"
+    },
+    "経済的支援": {
+      "meaning": "經濟支援"
+    },
+    "根本的": {
+      "meaning": "根本性的"
+    },
+    "解決": {
+      "meaning": "解決"
+    },
+    "結びつく": {
+      "meaning": "連結；帶來"
+    },
+    "指摘": {
+      "meaning": "指出；指摘"
+    },
+    "根強い": {
+      "meaning": "根深蒂固"
+    },
+    "実際": {
+      "meaning": "實際上"
+    },
+    "結婚": {
+      "meaning": "結婚"
+    },
+    "出産": {
+      "meaning": "生產；生育"
+    },
+    "踏み切る": {
+      "meaning": "下定決心；邁出（一步）"
+    },
+    "背景": {
+      "meaning": "背景"
+    },
+    "雇用": {
+      "meaning": "雇用"
+    },
+    "不安定さ": {
+      "meaning": "不穩定性"
+    },
+    "将来": {
+      "meaning": "未來"
+    },
+    "漠然とする": {
+      "meaning": "模糊；茫然"
+    },
+    "不安": {
+      "meaning": "不安"
+    },
+    "価値観": {
+      "meaning": "價值觀"
+    },
+    "多様化": {
+      "meaning": "多樣化"
+    },
+    "複合的": {
+      "meaning": "複合性的"
+    },
+    "要因": {
+      "meaning": "因素"
+    },
+    "絡み合う": {
+      "meaning": "交織"
+    },
+    "したがって": {
+      "meaning": "因此"
+    },
+    "さらには": {
+      "meaning": "甚至；再加上"
+    },
+    "単発的": {
+      "meaning": "一次性的"
+    },
+    "給付金政策": {
+      "meaning": "補助金政策"
+    },
+    "とどまる": {
+      "meaning": "停留；止於"
+    },
+    "若年層": {
+      "meaning": "年輕世代"
+    },
+    "安心する": {
+      "meaning": "安心"
+    },
+    "人生設計": {
+      "meaning": "人生規劃"
+    },
+    "描く": {
+      "meaning": "描繪"
+    },
+    "社会基盤": {
+      "meaning": "社會基礎建設"
+    },
+    "整える": {
+      "meaning": "建立完善"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "真に": {
+      "meaning": "真正地"
+    },
+    "求める": {
+      "meaning": "要求；期望"
+    },
+    "もっとも": {
+      "meaning": "不過；話雖如此"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "構造的": {
+      "meaning": "結構性的"
+    },
+    "課題": {
+      "meaning": "課題"
+    },
+    "相応": {
+      "meaning": "相應"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "社会全体": {
+      "meaning": "整個社會"
+    },
+    "合意形成": {
+      "meaning": "形成共識"
+    },
+    "不可欠": {
+      "meaning": "不可或缺"
+    },
+    "即効性": {
+      "meaning": "立即見效"
+    },
+    "期待する": {
+      "meaning": "期待"
+    },
+    "自体": {
+      "meaning": "本身"
+    },
+    "現実的": {
+      "meaning": "現實的"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "短期的": {
+      "meaning": "短期的"
+    },
+    "成果": {
+      "meaning": "成果"
+    },
+    "一喜一憂する": {
+      "meaning": "為一時得失而或喜或憂"
+    },
+    "長期的": {
+      "meaning": "長期的"
+    },
+    "視点": {
+      "meaning": "視角"
+    },
+    "立つ": {
+      "meaning": "站在（立場）"
+    },
+    "継続的": {
+      "meaning": "持續性的"
+    },
+    "取り組み": {
+      "meaning": "努力；作為"
+    },
+    "欠かす": {
+      "meaning": "缺少"
+    }
+  },
+  "particles": {
+    "は": "主題標記",
+    "にわたり": "表示範圍或期間橫跨，「長達…」",
+    "の": "表示所有或修飾關係",
+    "として": "表示身份或立場，「作為…」",
+    "や": "列舉助詞，「…等」",
+    "など": "表示列舉，「等等」",
+    "を": "表示動作的對象（受詞）",
+    "が": "表示句子的主語",
+    "で": "表示範圍或狀態",
+    "だけ": "表示限定，「只是…」",
+    "に": "表示對象或方向",
+    "へ": "表示方向，「對…」",
+    "という": "表示引用或說明內容",
+    "さらには": "表示進一步列舉，「甚至；再加上」",
+    "といった": "表示例示，「…之類的」",
+    "したがって": "表示因果的連接詞，「因此」",
+    "こそが": "強調助詞，「正是…」",
+    "ではないだろうか": "表示委婉的推測或反問，「難道不是…嗎」",
+    "と": "表示並列或引用",
+    "ではなく": "表示否定並列，「而不是…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "少子化對策長年以來一直被定位為日本社會重要的政策課題。",
+        "word": "位置づける"
+      }
+    ],
+    [
+      {
+        "text": "政府雖採取了擴充兒童津貼、建置托兒所、改善育嬰假制度等多方面的政策措施，但出生率仍未有戲劇性的恢復。",
+        "word": "至る"
+      }
+    ],
+    [
+      {
+        "text": "專家之間根深蒂固地指出，僅靠經濟支援無法帶來根本性的解決。",
+        "word": "指摘"
+      }
+    ],
+    [
+      {
+        "text": "事實上，人們難以下定決心結婚生育的背景，交織著雇用不穩定、對未來模糊的不安，以及價值觀多樣化等複合性因素。",
+        "word": "絡み合う"
+      }
+    ],
+    [
+      {
+        "text": "因此，與其止步於一次性的補助金政策，真正需要的難道不是建立讓年輕世代能安心規劃人生的社會基礎建設嗎。",
+        "word": "求める"
+      }
+    ],
+    [
+      {
+        "text": "不過，解決這類結構性課題，需要相應的時間與整個社會的共識形成，期待立竿見影的效果本身並不現實。",
+        "word": "期待する"
+      }
+    ],
+    [
+      {
+        "text": "今後不應為短期成果而或喜或憂，而是需要立足長期視角、持續不斷的努力。",
+        "word": "取り組み"
+      }
+    ]
+  ]
+}

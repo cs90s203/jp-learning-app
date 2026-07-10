@@ -1,0 +1,205 @@
+{
+  "date": "2026-07-11",
+  "level": "n5_lite",
+  "title": "わたしのさいふ",
+  "text": "わたしのさいふはちゃいろです。ちいさいさいふです。なかに三まいカードがあります。とてもべんりです。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さいふ",
+      "basic_form": "さいふ",
+      "reading": "さいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ちゃいろ",
+      "basic_form": "ちゃいろ",
+      "reading": "ちゃいろ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちいさい",
+      "basic_form": "ちいさい",
+      "reading": "ちいさい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "さいふ",
+      "basic_form": "さいふ",
+      "reading": "さいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "なか",
+      "basic_form": "なか",
+      "reading": "なか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "三まい",
+      "basic_form": "三まい",
+      "reading": "さんまい",
+      "pos": "数詞"
+    },
+    {
+      "surface_form": "カード",
+      "basic_form": "カード",
+      "reading": "カード",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "べんり",
+      "basic_form": "べんり",
+      "reading": "べんり",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我"
+    },
+    "さいふ": {
+      "meaning": "錢包"
+    },
+    "ちゃいろ": {
+      "meaning": "咖啡色"
+    },
+    "ちいさい": {
+      "meaning": "小的"
+    },
+    "なか": {
+      "meaning": "裡面"
+    },
+    "三まい": {
+      "meaning": "三張"
+    },
+    "カード": {
+      "meaning": "卡片"
+    },
+    "ある": {
+      "meaning": "有；存在"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "べんり": {
+      "meaning": "方便"
+    }
+  },
+  "particles": {
+    "は": "主題標記，用來提示句子的主題",
+    "の": "表示所有或修飾關係",
+    "に": "表示存在的位置",
+    "が": "表示句子的主語",
+    "です": "表示斷定的禮貌語氣"
+  },
+  "translations": [
+    [
+      {
+        "text": "我的錢包是咖啡色的。",
+        "word": "さいふ"
+      }
+    ],
+    [
+      {
+        "text": "是個小錢包。",
+        "word": "ちいさい"
+      }
+    ],
+    [
+      {
+        "text": "裡面有三張卡片。",
+        "word": "ある"
+      }
+    ],
+    [
+      {
+        "text": "非常方便。",
+        "word": "べんり"
+      }
+    ]
+  ]
+}
