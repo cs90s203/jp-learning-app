@@ -1,0 +1,341 @@
+{
+  "date": "2026-07-11",
+  "level": "n5",
+  "title": "ゆうびんきょくでにもつをおくった",
+  "text": "きょうのあさ、ちかくのゆうびんきょくへいきました。ともだちにおくるおおきいにもつをもっていきました。まどぐちのひとはとてもしんせつで、やりかたをおしえてくれました。れしーとをもらってから、あんしんしてうちへかえりました。",
+  "tokens": [
+    {
+      "surface_form": "きょう",
+      "basic_form": "きょう",
+      "reading": "きょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あさ",
+      "basic_form": "あさ",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちかく",
+      "basic_form": "ちかく",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ゆうびんきょく",
+      "basic_form": "ゆうびんきょく",
+      "reading": "ゆうびんきょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いきました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ともだち",
+      "basic_form": "ともだち",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おくる",
+      "basic_form": "おくる",
+      "reading": "おくる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "おおきい",
+      "basic_form": "おおきい",
+      "reading": "おおきい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "にもつ",
+      "basic_form": "にもつ",
+      "reading": "にもつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もっていきました",
+      "basic_form": "持っていく",
+      "reading": "もっていきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まどぐち",
+      "basic_form": "まどぐち",
+      "reading": "まどぐち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ひと",
+      "basic_form": "ひと",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "しんせつで",
+      "basic_form": "しんせつ",
+      "reading": "しんせつで",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "やりかた",
+      "basic_form": "やりかた",
+      "reading": "やりかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おしえてくれました",
+      "basic_form": "教えてくれる",
+      "reading": "おしえてくれました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "れしーと",
+      "basic_form": "れしーと",
+      "reading": "れしーと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もらって",
+      "basic_form": "もらう",
+      "reading": "もらって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あんしんして",
+      "basic_form": "安心する",
+      "reading": "あんしんして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "うち",
+      "basic_form": "うち",
+      "reading": "うち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かえりました",
+      "basic_form": "帰る",
+      "reading": "かえりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きょう": {
+      "meaning": "今天"
+    },
+    "あさ": {
+      "meaning": "早上"
+    },
+    "ちかく": {
+      "meaning": "附近"
+    },
+    "ゆうびんきょく": {
+      "meaning": "郵局"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "ともだち": {
+      "meaning": "朋友"
+    },
+    "おくる": {
+      "meaning": "寄送"
+    },
+    "おおきい": {
+      "meaning": "大的"
+    },
+    "にもつ": {
+      "meaning": "行李；包裹"
+    },
+    "持っていく": {
+      "meaning": "帶去"
+    },
+    "まどぐち": {
+      "meaning": "窗口"
+    },
+    "ひと": {
+      "meaning": "人"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "しんせつ": {
+      "meaning": "親切"
+    },
+    "やりかた": {
+      "meaning": "做法"
+    },
+    "教えてくれる": {
+      "meaning": "教我"
+    },
+    "れしーと": {
+      "meaning": "收據"
+    },
+    "もらう": {
+      "meaning": "收到；拿到"
+    },
+    "安心する": {
+      "meaning": "安心"
+    },
+    "うち": {
+      "meaning": "家"
+    },
+    "帰る": {
+      "meaning": "回去"
+    }
+  },
+  "particles": {
+    "の": "表示所有或修飾關係",
+    "へ": "表示移動的方向",
+    "に": "表示動作的對象或目的",
+    "を": "表示動作的對象（受詞）",
+    "は": "主題標記，用來提示句子的主題",
+    "から": "表示動作的先後順序，「…之後」"
+  },
+  "translations": [
+    [
+      {
+        "text": "今天早上，我去了附近的郵局。",
+        "word": "行く"
+      }
+    ],
+    [
+      {
+        "text": "帶著要寄給朋友的大包裹去了。",
+        "word": "持っていく"
+      }
+    ],
+    [
+      {
+        "text": "窗口的人非常親切，教了我做法。",
+        "word": "教えてくれる"
+      }
+    ],
+    [
+      {
+        "text": "拿到收據後，安心地回家了。",
+        "word": "安心する"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,727 @@
+{
+  "date": "2026-07-11",
+  "level": "n3",
+  "title": "一人旅の計画を立てた",
+  "text": "先週から、久しぶりに一人旅の計画を立てている。行き先はまだ迷っているが、「静かな温泉町でゆっくりしたい」という気持ちが一番強い。友達には「一人で大丈夫なの」とよく聞かれるけれど、誰にも予定を合わせなくていいところが、一人旅の一番の魅力だと思う。もちろん寂しく感じる時もあるだろうが、それも含めて楽しんでみようと考えている。出発の日が近づくにつれて、少しずつわくわくしてきた。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "久しぶりに",
+      "basic_form": "久しぶり",
+      "reading": "ひさしぶりに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "一人旅",
+      "basic_form": "一人旅",
+      "reading": "ひとりたび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "計画",
+      "basic_form": "計画",
+      "reading": "けいかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "立てている",
+      "basic_form": "立てる",
+      "reading": "たてている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "行き先",
+      "basic_form": "行き先",
+      "reading": "いきさき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "まだ",
+      "basic_form": "まだ",
+      "reading": "まだ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "迷っている",
+      "basic_form": "迷う",
+      "reading": "まよっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "静かな",
+      "basic_form": "静か",
+      "reading": "しずかな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "温泉町",
+      "basic_form": "温泉町",
+      "reading": "おんせんまち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ゆっくり",
+      "basic_form": "ゆっくり",
+      "reading": "ゆっくり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "したい",
+      "basic_form": "する",
+      "reading": "したい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "気持ち",
+      "basic_form": "気持ち",
+      "reading": "きもち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一番",
+      "basic_form": "一番",
+      "reading": "いちばん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "強い",
+      "basic_form": "強い",
+      "reading": "つよい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一人",
+      "basic_form": "一人",
+      "reading": "ひとり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大丈夫な",
+      "basic_form": "大丈夫",
+      "reading": "だいじょうぶな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よく",
+      "basic_form": "よく",
+      "reading": "よく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "聞かれる",
+      "basic_form": "聞く",
+      "reading": "きかれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "けれど",
+      "basic_form": "けれど",
+      "reading": "けれど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "誰",
+      "basic_form": "誰",
+      "reading": "だれ",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "にも",
+      "basic_form": "にも",
+      "reading": "にも",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "予定",
+      "basic_form": "予定",
+      "reading": "よてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "合わせなくて",
+      "basic_form": "合わせる",
+      "reading": "あわせなくて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ところ",
+      "basic_form": "ところ",
+      "reading": "ところ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一人旅",
+      "basic_form": "一人旅",
+      "reading": "ひとりたび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一番",
+      "basic_form": "一番",
+      "reading": "いちばん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "魅力",
+      "basic_form": "魅力",
+      "reading": "みりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もちろん",
+      "basic_form": "もちろん",
+      "reading": "もちろん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "寂しく",
+      "basic_form": "寂しい",
+      "reading": "さびしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "感じる",
+      "basic_form": "感じる",
+      "reading": "かんじる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時",
+      "basic_form": "時",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それ",
+      "basic_form": "それ",
+      "reading": "それ",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "含めて",
+      "basic_form": "含める",
+      "reading": "ふくめて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "楽しんで",
+      "basic_form": "楽しむ",
+      "reading": "たのしんで",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みよう",
+      "basic_form": "みる",
+      "reading": "みよう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "考えている",
+      "basic_form": "考える",
+      "reading": "かんがえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "出発",
+      "basic_form": "出発",
+      "reading": "しゅっぱつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日",
+      "basic_form": "日",
+      "reading": "ひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近づく",
+      "basic_form": "近づく",
+      "reading": "ちかづく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "につれて",
+      "basic_form": "につれて",
+      "reading": "につれて",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少しずつ",
+      "basic_form": "少しずつ",
+      "reading": "すこしずつ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "わくわく",
+      "basic_form": "わくわく",
+      "reading": "わくわく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "きた",
+      "basic_form": "くる",
+      "reading": "きた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上星期"
+    },
+    "久しぶり": {
+      "meaning": "久違；隔了好一陣子"
+    },
+    "一人旅": {
+      "meaning": "一個人的旅行"
+    },
+    "計画": {
+      "meaning": "計畫"
+    },
+    "立てる": {
+      "meaning": "訂定（計畫）"
+    },
+    "行き先": {
+      "meaning": "目的地"
+    },
+    "まだ": {
+      "meaning": "還；尚未"
+    },
+    "迷う": {
+      "meaning": "猶豫；迷惘"
+    },
+    "静か": {
+      "meaning": "安靜"
+    },
+    "温泉町": {
+      "meaning": "溫泉小鎮"
+    },
+    "ゆっくり": {
+      "meaning": "慢慢地；悠閒地"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "気持ち": {
+      "meaning": "心情；感受"
+    },
+    "一番": {
+      "meaning": "最；第一"
+    },
+    "強い": {
+      "meaning": "強烈的"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "一人": {
+      "meaning": "一個人"
+    },
+    "大丈夫": {
+      "meaning": "沒問題；不要緊"
+    },
+    "よく": {
+      "meaning": "常常"
+    },
+    "聞く": {
+      "meaning": "問；聽"
+    },
+    "誰": {
+      "meaning": "誰"
+    },
+    "予定": {
+      "meaning": "行程；預定"
+    },
+    "合わせる": {
+      "meaning": "配合"
+    },
+    "いい": {
+      "meaning": "好的"
+    },
+    "ところ": {
+      "meaning": "地方；之處"
+    },
+    "魅力": {
+      "meaning": "魅力"
+    },
+    "思う": {
+      "meaning": "覺得；認為"
+    },
+    "もちろん": {
+      "meaning": "當然"
+    },
+    "寂しい": {
+      "meaning": "寂寞"
+    },
+    "感じる": {
+      "meaning": "感覺"
+    },
+    "時": {
+      "meaning": "時候"
+    },
+    "ある": {
+      "meaning": "有；存在"
+    },
+    "それ": {
+      "meaning": "那個"
+    },
+    "含める": {
+      "meaning": "包含"
+    },
+    "楽しむ": {
+      "meaning": "享受"
+    },
+    "みる": {
+      "meaning": "（嘗試）看看"
+    },
+    "考える": {
+      "meaning": "思考；考慮"
+    },
+    "出発": {
+      "meaning": "出發"
+    },
+    "日": {
+      "meaning": "日子"
+    },
+    "近づく": {
+      "meaning": "接近"
+    },
+    "少しずつ": {
+      "meaning": "一點一點地"
+    },
+    "わくわく": {
+      "meaning": "興奮雀躍"
+    },
+    "くる": {
+      "meaning": "來（表變化趨向）"
+    }
+  },
+  "particles": {
+    "から": "表示起點，「從…」",
+    "の": "表示所有或修飾關係",
+    "を": "表示動作的對象（受詞）",
+    "は": "主題標記",
+    "が": "表示句子的主語或逆接連接，「但是」",
+    "で": "表示場所、方式或狀態",
+    "という": "表示引用或說明內容，「…這樣的」",
+    "と": "表示引用內容",
+    "けれど": "表示轉折，「雖然…但是」",
+    "にも": "表示「也（對誰）」，強調對象範圍",
+    "だろう": "表示推測，「大概…吧」",
+    "だ": "斷定助動詞",
+    "につれて": "表示隨著…而…",
+    "も": "表示「也」"
+  },
+  "translations": [
+    [
+      {
+        "text": "從上星期開始，久違地在規劃一個人的旅行。",
+        "word": "一人旅"
+      }
+    ],
+    [
+      {
+        "text": "目的地還在猶豫，但「想在安靜的溫泉小鎮悠閒待著」的念頭最強烈。",
+        "word": "気持ち"
+      }
+    ],
+    [
+      {
+        "text": "朋友常問我「一個人沒問題嗎」，但不用配合任何人的行程，正是一個人旅行最大的魅力。",
+        "word": "魅力"
+      }
+    ],
+    [
+      {
+        "text": "當然也會有感到寂寞的時候吧，但我打算連那份寂寞也一起享受。",
+        "word": "楽しむ"
+      }
+    ],
+    [
+      {
+        "text": "隨著出發的日子接近，心情也一點一點地興奮起來了。",
+        "word": "わくわく"
+      }
+    ]
+  ]
+}

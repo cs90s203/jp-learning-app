@@ -1,0 +1,840 @@
+{
+  "date": "2026-07-11",
+  "level": "n2",
+  "title": "男性の育休取得率上昇",
+  "text": "近年、男性の育児休業取得率が着実に上昇している。厚生労働省の調査によれば、数年前まで一割に満たなかった取得率が、法改正や企業の意識改革を経て、大きく伸びてきたという。背景には、育休を取得しやすい制度を整える企業が増えたことに加え、男性自身の意識も変わりつつあることが挙げられる。とはいえ、実際に取得したいと思っても、職場の雰囲気や人手不足を理由にためらう人は依然として少なくない。今後は、制度を整えるだけでなく、上司や同僚が積極的に育休取得を後押しする職場文化を築くことが求められるだろう。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "男性",
+      "basic_form": "男性",
+      "reading": "だんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "育児休業",
+      "basic_form": "育児休業",
+      "reading": "いくじきゅうぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "取得率",
+      "basic_form": "取得率",
+      "reading": "しゅとくりつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "着実に",
+      "basic_form": "着実",
+      "reading": "ちゃくじつに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "上昇している",
+      "basic_form": "上昇する",
+      "reading": "じょうしょうしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "厚生労働省",
+      "basic_form": "厚生労働省",
+      "reading": "こうせいろうどうしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "調査",
+      "basic_form": "調査",
+      "reading": "ちょうさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によれば",
+      "basic_form": "によれば",
+      "reading": "によれば",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "数年前",
+      "basic_form": "数年前",
+      "reading": "すうねんまえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一割",
+      "basic_form": "一割",
+      "reading": "いちわり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "満たなかった",
+      "basic_form": "満たない",
+      "reading": "みたなかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "取得率",
+      "basic_form": "取得率",
+      "reading": "しゅとくりつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "法改正",
+      "basic_form": "法改正",
+      "reading": "ほうかいせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "意識改革",
+      "basic_form": "意識改革",
+      "reading": "いしきかいかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "経て",
+      "basic_form": "経る",
+      "reading": "へて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "大きく",
+      "basic_form": "大きい",
+      "reading": "おおきく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "伸びてきた",
+      "basic_form": "伸びる",
+      "reading": "のびてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "背景",
+      "basic_form": "背景",
+      "reading": "はいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "育休",
+      "basic_form": "育休",
+      "reading": "いくきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取得しやすい",
+      "basic_form": "取得する",
+      "reading": "しゅとくしやすい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "制度",
+      "basic_form": "制度",
+      "reading": "せいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整える",
+      "basic_form": "整える",
+      "reading": "ととのえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えた",
+      "basic_form": "増える",
+      "reading": "ふえた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "形式名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "加え",
+      "basic_form": "加える",
+      "reading": "くわえ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "男性自身",
+      "basic_form": "男性自身",
+      "reading": "だんせいじしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "意識",
+      "basic_form": "意識",
+      "reading": "いしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "変わりつつある",
+      "basic_form": "変わる",
+      "reading": "かわりつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "形式名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "挙げられる",
+      "basic_form": "挙げる",
+      "reading": "あげられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とはいえ",
+      "basic_form": "とはいえ",
+      "reading": "とはいえ",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実際に",
+      "basic_form": "実際に",
+      "reading": "じっさいに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "取得したい",
+      "basic_form": "取得する",
+      "reading": "しゅとくしたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思っても",
+      "basic_form": "思う",
+      "reading": "おもっても",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "職場",
+      "basic_form": "職場",
+      "reading": "しょくば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "雰囲気",
+      "basic_form": "雰囲気",
+      "reading": "ふんいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人手不足",
+      "basic_form": "人手不足",
+      "reading": "ひとでぶそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "理由に",
+      "basic_form": "理由",
+      "reading": "りゆうに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ためらう",
+      "basic_form": "ためらう",
+      "reading": "ためらう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "依然として",
+      "basic_form": "依然として",
+      "reading": "いぜんとして",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "制度",
+      "basic_form": "制度",
+      "reading": "せいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整える",
+      "basic_form": "整える",
+      "reading": "ととのえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけでなく",
+      "basic_form": "だけでなく",
+      "reading": "だけでなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "上司",
+      "basic_form": "上司",
+      "reading": "じょうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "同僚",
+      "basic_form": "同僚",
+      "reading": "どうりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "積極的に",
+      "basic_form": "積極的",
+      "reading": "せっきょくてきに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "育休",
+      "basic_form": "育休",
+      "reading": "いくきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "取得",
+      "basic_form": "取得",
+      "reading": "しゅとく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "後押しする",
+      "basic_form": "後押しする",
+      "reading": "あとおしする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "職場文化",
+      "basic_form": "職場文化",
+      "reading": "しょくばぶんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "築く",
+      "basic_form": "築く",
+      "reading": "きずく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "形式名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求められる",
+      "basic_form": "求める",
+      "reading": "もとめられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年"
+    },
+    "男性": {
+      "meaning": "男性"
+    },
+    "育児休業": {
+      "meaning": "育嬰假；育兒休業"
+    },
+    "取得率": {
+      "meaning": "取得比率"
+    },
+    "着実": {
+      "meaning": "穩健；踏實"
+    },
+    "上昇する": {
+      "meaning": "上升"
+    },
+    "厚生労働省": {
+      "meaning": "厚生勞動省"
+    },
+    "調査": {
+      "meaning": "調查"
+    },
+    "数年前": {
+      "meaning": "幾年前"
+    },
+    "一割": {
+      "meaning": "一成"
+    },
+    "満たない": {
+      "meaning": "不到；未滿"
+    },
+    "法改正": {
+      "meaning": "法律修正"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "意識改革": {
+      "meaning": "意識改革"
+    },
+    "経る": {
+      "meaning": "經過"
+    },
+    "大きい": {
+      "meaning": "大幅地（大的）"
+    },
+    "伸びる": {
+      "meaning": "成長；提升"
+    },
+    "背景": {
+      "meaning": "背景"
+    },
+    "育休": {
+      "meaning": "育嬰假（簡稱）"
+    },
+    "取得する": {
+      "meaning": "取得"
+    },
+    "取得": {
+      "meaning": "取得（名詞）"
+    },
+    "制度": {
+      "meaning": "制度"
+    },
+    "整える": {
+      "meaning": "完善；建立"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "加える": {
+      "meaning": "加上"
+    },
+    "男性自身": {
+      "meaning": "男性本身"
+    },
+    "意識": {
+      "meaning": "意識"
+    },
+    "変わる": {
+      "meaning": "改變"
+    },
+    "挙げる": {
+      "meaning": "舉出"
+    },
+    "とはいえ": {
+      "meaning": "話雖如此"
+    },
+    "実際に": {
+      "meaning": "實際上"
+    },
+    "思う": {
+      "meaning": "想；認為"
+    },
+    "職場": {
+      "meaning": "職場"
+    },
+    "雰囲気": {
+      "meaning": "氛圍"
+    },
+    "人手不足": {
+      "meaning": "人手不足"
+    },
+    "理由": {
+      "meaning": "理由"
+    },
+    "ためらう": {
+      "meaning": "猶豫"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "依然として": {
+      "meaning": "依然"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "上司": {
+      "meaning": "上司"
+    },
+    "同僚": {
+      "meaning": "同事"
+    },
+    "積極的": {
+      "meaning": "積極的"
+    },
+    "後押しする": {
+      "meaning": "推動；支持"
+    },
+    "職場文化": {
+      "meaning": "職場文化"
+    },
+    "築く": {
+      "meaning": "建立"
+    },
+    "求める": {
+      "meaning": "要求；期望"
+    }
+  },
+  "particles": {
+    "の": "表示所有或修飾關係",
+    "が": "表示句子的主語",
+    "によれば": "表示引用消息來源，「根據…」",
+    "まで": "表示範圍的終點，「到…為止」",
+    "に": "表示對象或基準",
+    "や": "列舉助詞，「…等」",
+    "を": "表示動作的對象（受詞）",
+    "という": "表示傳聞或引用，「據說…」",
+    "は": "主題標記",
+    "も": "表示「也」",
+    "と": "表示引用內容",
+    "だけでなく": "表示「不僅…而且…」",
+    "だろう": "表示推測，「大概…吧」"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，男性的育嬰假取得比率穩健上升。",
+        "word": "上昇する"
+      }
+    ],
+    [
+      {
+        "text": "根據厚生勞動省的調查，幾年前還不到一成的取得率，在法律修正與企業意識改革之下大幅提升了。",
+        "word": "伸びる"
+      }
+    ],
+    [
+      {
+        "text": "背景可以歸因於建立便於申請育嬰假制度的企業增加，加上男性本身的意識也逐漸改變。",
+        "word": "変わる"
+      }
+    ],
+    [
+      {
+        "text": "話雖如此，即使實際上想申請，仍有不少人以職場氛圍或人手不足為由而猶豫。",
+        "word": "ためらう"
+      }
+    ],
+    [
+      {
+        "text": "今後除了完善制度之外，還需要上司和同事積極推動申請育嬰假、建立支持性的職場文化。",
+        "word": "後押しする"
+      }
+    ]
+  ]
+}

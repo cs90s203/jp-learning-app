@@ -1,0 +1,335 @@
+{
+  "date": "2026-07-11",
+  "level": "n4_lite",
+  "title": "はじめてのプール",
+  "text": "せんしゅう、はじめてともだちとプールへおよぎにいきました。すいえいはずっとにがてだったけど、ともだちがていねいにおよぎかたをおしえてくれたので、すこしじょうずになりました。つぎのしゅうまつもまたいっしょにいきたいとおもっています。",
+  "tokens": [
+    {
+      "surface_form": "せんしゅう",
+      "basic_form": "せんしゅう",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "はじめて",
+      "basic_form": "はじめて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "ともだち",
+      "basic_form": "ともだち",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "プール",
+      "basic_form": "プール",
+      "reading": "プール",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "およぎ",
+      "basic_form": "泳ぎ",
+      "reading": "およぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いきました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すいえい",
+      "basic_form": "すいえい",
+      "reading": "すいえい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ずっと",
+      "basic_form": "ずっと",
+      "reading": "ずっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "にがてだった",
+      "basic_form": "にがて",
+      "reading": "にがてだった",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ともだち",
+      "basic_form": "ともだち",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ていねいに",
+      "basic_form": "ていねい",
+      "reading": "ていねいに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "およぎかた",
+      "basic_form": "泳ぎ方",
+      "reading": "およぎかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おしえてくれた",
+      "basic_form": "教えてくれる",
+      "reading": "おしえてくれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すこし",
+      "basic_form": "すこし",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "じょうずに",
+      "basic_form": "じょうず",
+      "reading": "じょうずに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "なりました",
+      "basic_form": "なる",
+      "reading": "なりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "つぎ",
+      "basic_form": "つぎ",
+      "reading": "つぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しゅうまつ",
+      "basic_form": "しゅうまつ",
+      "reading": "しゅうまつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "いっしょに",
+      "basic_form": "いっしょ",
+      "reading": "いっしょに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "いきたい",
+      "basic_form": "行く",
+      "reading": "いきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おもっています",
+      "basic_form": "思う",
+      "reading": "おもっています",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "せんしゅう": {
+      "meaning": "上星期"
+    },
+    "はじめて": {
+      "meaning": "第一次"
+    },
+    "ともだち": {
+      "meaning": "朋友"
+    },
+    "プール": {
+      "meaning": "游泳池"
+    },
+    "泳ぎ": {
+      "meaning": "游泳（名詞）"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "すいえい": {
+      "meaning": "游泳（運動）"
+    },
+    "にがて": {
+      "meaning": "不擅長"
+    },
+    "ていねい": {
+      "meaning": "仔細；用心"
+    },
+    "泳ぎ方": {
+      "meaning": "游泳的方法"
+    },
+    "教えてくれる": {
+      "meaning": "教我"
+    },
+    "すこし": {
+      "meaning": "一點點"
+    },
+    "じょうず": {
+      "meaning": "擅長"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "つぎ": {
+      "meaning": "下次"
+    },
+    "しゅうまつ": {
+      "meaning": "週末"
+    },
+    "また": {
+      "meaning": "再次"
+    },
+    "いっしょ": {
+      "meaning": "一起"
+    },
+    "思う": {
+      "meaning": "覺得；認為"
+    },
+    "ずっと": {
+      "meaning": "一直"
+    }
+  },
+  "particles": {
+    "と": "表示動作的共同對象，「和…」",
+    "へ": "表示移動的方向",
+    "に": "接在名詞後表示動作的目的",
+    "は": "主題標記",
+    "けど": "表示轉折，「雖然…但是」",
+    "が": "表示句子的主語",
+    "ので": "表示原因，「因為…」",
+    "の": "表示所有或修飾關係",
+    "も": "表示「也」"
+  },
+  "translations": [
+    [
+      {
+        "text": "上星期，我第一次和朋友去游泳池游泳了。",
+        "word": "行く"
+      }
+    ],
+    [
+      {
+        "text": "雖然我一直不擅長游泳，但朋友仔細教了我游泳的方法，所以稍微變得擅長了一些。",
+        "word": "教えてくれる"
+      }
+    ],
+    [
+      {
+        "text": "下次週末也想再一起去。",
+        "word": "思う"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "date": "2026-07-11",
+  "level": "n4",
+  "title": "兄とのハイキング",
+  "text": "せんじつ、あにといっしょにちかくのやまへハイキングにいきました。みちはすこしけわしかったですが、きれいなけしきをみたり、つめたいわきみずをのんだりして、とてもたのしかったです。あにはやまのぼりになれているので、わたしにいろいろおしえてくれました。おかげで、さいごまであるくことができました。",
+  "tokens": [
+    {
+      "surface_form": "せんじつ",
+      "basic_form": "せんじつ",
+      "reading": "せんじつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あに",
+      "basic_form": "あに",
+      "reading": "あに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いっしょに",
+      "basic_form": "いっしょ",
+      "reading": "いっしょに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ちかく",
+      "basic_form": "ちかく",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "やま",
+      "basic_form": "やま",
+      "reading": "やま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ハイキング",
+      "basic_form": "ハイキング",
+      "reading": "ハイキング",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いきました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みち",
+      "basic_form": "みち",
+      "reading": "みち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すこし",
+      "basic_form": "すこし",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "けわしかった",
+      "basic_form": "けわしい",
+      "reading": "けわしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "きれいな",
+      "basic_form": "きれい",
+      "reading": "きれいな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "けしき",
+      "basic_form": "けしき",
+      "reading": "けしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みたり",
+      "basic_form": "見る",
+      "reading": "みたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "つめたい",
+      "basic_form": "つめたい",
+      "reading": "つめたい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "わきみず",
+      "basic_form": "わきみず",
+      "reading": "わきみず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "のんだり",
+      "basic_form": "飲む",
+      "reading": "のんだり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "たのしかった",
+      "basic_form": "たのしい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あに",
+      "basic_form": "あに",
+      "reading": "あに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "やまのぼり",
+      "basic_form": "やまのぼり",
+      "reading": "やまのぼり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なれている",
+      "basic_form": "慣れる",
+      "reading": "なれている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いろいろ",
+      "basic_form": "いろいろ",
+      "reading": "いろいろ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "おしえてくれました",
+      "basic_form": "教えてくれる",
+      "reading": "おしえてくれました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おかげで",
+      "basic_form": "おかげで",
+      "reading": "おかげで",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "さいご",
+      "basic_form": "さいご",
+      "reading": "さいご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あるく",
+      "basic_form": "歩く",
+      "reading": "あるく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "形式名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できました",
+      "basic_form": "できる",
+      "reading": "できました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "せんじつ": {
+      "meaning": "前幾天"
+    },
+    "あに": {
+      "meaning": "哥哥"
+    },
+    "いっしょ": {
+      "meaning": "一起"
+    },
+    "ちかく": {
+      "meaning": "附近"
+    },
+    "やま": {
+      "meaning": "山"
+    },
+    "ハイキング": {
+      "meaning": "健行"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "みち": {
+      "meaning": "路"
+    },
+    "けわしい": {
+      "meaning": "陡峭；險峻"
+    },
+    "きれい": {
+      "meaning": "美麗"
+    },
+    "けしき": {
+      "meaning": "風景"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "つめたい": {
+      "meaning": "冰涼的"
+    },
+    "わきみず": {
+      "meaning": "山泉水"
+    },
+    "飲む": {
+      "meaning": "喝"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "たのしい": {
+      "meaning": "開心"
+    },
+    "やまのぼり": {
+      "meaning": "爬山"
+    },
+    "慣れる": {
+      "meaning": "習慣；熟悉"
+    },
+    "わたし": {
+      "meaning": "我"
+    },
+    "いろいろ": {
+      "meaning": "各種"
+    },
+    "教えてくれる": {
+      "meaning": "教我"
+    },
+    "おかげで": {
+      "meaning": "多虧；因為…的緣故"
+    },
+    "さいご": {
+      "meaning": "最後"
+    },
+    "歩く": {
+      "meaning": "走路"
+    },
+    "できる": {
+      "meaning": "能夠；可以"
+    },
+    "すこし": {
+      "meaning": "一點；稍微"
+    }
+  },
+  "particles": {
+    "と": "表示共同動作的對象，「和…」",
+    "へ": "表示移動的方向",
+    "に": "表示目的或對象",
+    "は": "主題標記",
+    "が": "表示句子的主語或逆接連接",
+    "ので": "表示原因，「因為…」",
+    "まで": "表示到達的範圍或終點，「到…為止」",
+    "こと": "形式名詞，與「できる」搭配表示「能夠做…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "前幾天，我和哥哥一起去附近的山上健行了。",
+        "word": "行く"
+      }
+    ],
+    [
+      {
+        "text": "雖然路有點陡峭，但看了美麗的風景、喝了冰涼的山泉水，非常開心。",
+        "word": "たのしい"
+      }
+    ],
+    [
+      {
+        "text": "哥哥因為習慣爬山，教了我很多東西。",
+        "word": "教えてくれる"
+      }
+    ],
+    [
+      {
+        "text": "多虧如此，我才能走到最後。",
+        "word": "できる"
+      }
+    ]
+  ]
+}

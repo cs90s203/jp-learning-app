@@ -1,0 +1,602 @@
+{
+  "date": "2026-07-11",
+  "level": "n3_lite",
+  "title": "近所のパン屋巡り",
+  "text": "うちの近くには、小さいパン屋さんがいくつかある。週末になると、その日の気分でパン屋を選んで歩いていくのが楽しみだ。あるお店は焼きたてのクロワッサンが人気で、朝早くから行列ができている。別のお店は変わった惣菜パンが多くて、行くたびに新しい味に出会える。こういう小さな楽しみが、毎日をちょっと豊かにしてくれる。",
+  "tokens": [
+    {
+      "surface_form": "うち",
+      "basic_form": "うち",
+      "reading": "うち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近く",
+      "basic_form": "近く",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "小さい",
+      "basic_form": "小さい",
+      "reading": "ちいさい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "パン屋さん",
+      "basic_form": "パン屋",
+      "reading": "ぱんやさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いくつか",
+      "basic_form": "いくつか",
+      "reading": "いくつか",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "週末",
+      "basic_form": "週末",
+      "reading": "しゅうまつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なると",
+      "basic_form": "なる",
+      "reading": "なると",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "日",
+      "basic_form": "日",
+      "reading": "ひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "気分",
+      "basic_form": "気分",
+      "reading": "きぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "パン屋",
+      "basic_form": "パン屋",
+      "reading": "ぱんや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "選んで",
+      "basic_form": "選ぶ",
+      "reading": "えらんで",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "歩いて",
+      "basic_form": "歩く",
+      "reading": "あるいて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いく",
+      "basic_form": "行く",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しみ",
+      "basic_form": "楽しみ",
+      "reading": "たのしみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "お店",
+      "basic_form": "お店",
+      "reading": "おみせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "焼きたて",
+      "basic_form": "焼きたて",
+      "reading": "やきたて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "クロワッサン",
+      "basic_form": "クロワッサン",
+      "reading": "クロワッサン",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人気",
+      "basic_form": "人気",
+      "reading": "にんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝早く",
+      "basic_form": "朝早く",
+      "reading": "あさはやく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行列",
+      "basic_form": "行列",
+      "reading": "ぎょうれつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できている",
+      "basic_form": "できる",
+      "reading": "できている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "別",
+      "basic_form": "別",
+      "reading": "べつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "お店",
+      "basic_form": "お店",
+      "reading": "おみせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "変わった",
+      "basic_form": "変わる",
+      "reading": "かわった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "惣菜パン",
+      "basic_form": "惣菜パン",
+      "reading": "そうざいパン",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多くて",
+      "basic_form": "多い",
+      "reading": "おおくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "行く",
+      "basic_form": "行く",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たびに",
+      "basic_form": "たびに",
+      "reading": "たびに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "新しい",
+      "basic_form": "新しい",
+      "reading": "あたらしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "味",
+      "basic_form": "味",
+      "reading": "あじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出会える",
+      "basic_form": "出会う",
+      "reading": "であえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こういう",
+      "basic_form": "こういう",
+      "reading": "こういう",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "小さな",
+      "basic_form": "小さな",
+      "reading": "ちいさな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "楽しみ",
+      "basic_form": "楽しみ",
+      "reading": "たのしみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "毎日",
+      "basic_form": "毎日",
+      "reading": "まいにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ちょっと",
+      "basic_form": "ちょっと",
+      "reading": "ちょっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "豊かに",
+      "basic_form": "豊か",
+      "reading": "ゆたかに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "してくれる",
+      "basic_form": "してくれる",
+      "reading": "してくれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "うち": {
+      "meaning": "自己家；家裡"
+    },
+    "近く": {
+      "meaning": "附近"
+    },
+    "小さい": {
+      "meaning": "小的"
+    },
+    "パン屋": {
+      "meaning": "麵包店"
+    },
+    "いくつか": {
+      "meaning": "幾家；幾個"
+    },
+    "ある": {
+      "meaning": "有；存在／某個"
+    },
+    "週末": {
+      "meaning": "週末"
+    },
+    "なる": {
+      "meaning": "變成；到了（時候）"
+    },
+    "その": {
+      "meaning": "那個；當時的"
+    },
+    "日": {
+      "meaning": "日子"
+    },
+    "気分": {
+      "meaning": "心情"
+    },
+    "選ぶ": {
+      "meaning": "挑選"
+    },
+    "歩く": {
+      "meaning": "走路"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "楽しみ": {
+      "meaning": "樂趣；期待"
+    },
+    "お店": {
+      "meaning": "店家"
+    },
+    "焼きたて": {
+      "meaning": "剛出爐的"
+    },
+    "クロワッサン": {
+      "meaning": "可頌"
+    },
+    "人気": {
+      "meaning": "受歡迎"
+    },
+    "朝早く": {
+      "meaning": "一大早"
+    },
+    "行列": {
+      "meaning": "排隊；隊伍"
+    },
+    "できる": {
+      "meaning": "形成；能夠"
+    },
+    "別": {
+      "meaning": "另一個；別的"
+    },
+    "変わる": {
+      "meaning": "特別；不尋常"
+    },
+    "惣菜パン": {
+      "meaning": "熟食麵包"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "新しい": {
+      "meaning": "新的"
+    },
+    "味": {
+      "meaning": "味道"
+    },
+    "出会う": {
+      "meaning": "遇到"
+    },
+    "こういう": {
+      "meaning": "這樣的"
+    },
+    "小さな": {
+      "meaning": "小小的"
+    },
+    "毎日": {
+      "meaning": "每天"
+    },
+    "ちょっと": {
+      "meaning": "稍微"
+    },
+    "豊か": {
+      "meaning": "豐富"
+    },
+    "してくれる": {
+      "meaning": "為（我們）帶來"
+    }
+  },
+  "particles": {
+    "の": "表示所有或修飾關係",
+    "に": "表示時間點或對象",
+    "は": "主題標記",
+    "が": "表示句子的主語",
+    "で": "表示狀態、原因或方式",
+    "から": "表示起點，「從…」",
+    "を": "表示動作的對象（受詞）",
+    "だ": "斷定助動詞",
+    "たびに": "表示「每次…就…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "家附近有幾家小小的麵包店。",
+        "word": "パン屋"
+      }
+    ],
+    [
+      {
+        "text": "一到週末，就會依照當天的心情挑一家麵包店走著去，是一種樂趣。",
+        "word": "楽しみ"
+      }
+    ],
+    [
+      {
+        "text": "有一家店剛出爐的可頌很受歡迎，一大早就開始排隊。",
+        "word": "人気"
+      }
+    ],
+    [
+      {
+        "text": "另一家店有很多特別的熟食麵包，每次去都能遇到新口味。",
+        "word": "出会う"
+      }
+    ],
+    [
+      {
+        "text": "這樣的小小樂趣，讓每天都稍微變得豐富一些。",
+        "word": "豊か"
+      }
+    ]
+  ]
+}
