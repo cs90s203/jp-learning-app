@@ -1,0 +1,1133 @@
+{
+  "date": "2026-07-12",
+  "level": "n2",
+  "title": "地方移住を選ぶ若者たち",
+  "text": "これまで地方移住といえば、定年後の生活を見据えた選択というイメージが強かった。しかしながら近年では、テレワークの普及に伴い、二十代や三十代の若い世代が積極的に地方への移住を選ぶ傾向が見られるようになった。都市部の高い家賃や満員電車での通勤に疲れを感じ、より自然に近い環境で働きたいと考える人が増えているためである。とはいえ、地方には都市部ほど仕事の選択肢がないうえに、地域独自の人間関係に馴染むまで時間がかかることも少なくない。それでもなお、生活の質を優先し、あえて不便を受け入れる若者が増えているのは興味深い現象だといえるだろう。今後、こうした若者たちの動きが地方活性化の鍵を握ると言えそうだ。",
+  "tokens": [
+    {
+      "surface_form": "これまで",
+      "basic_form": "これまで",
+      "reading": "これまで",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "地方移住",
+      "basic_form": "地方移住",
+      "reading": "ちほういじゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いえば",
+      "basic_form": "言う",
+      "reading": "いえば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "定年後",
+      "basic_form": "定年後",
+      "reading": "ていねんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活",
+      "basic_form": "生活",
+      "reading": "せいかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見据えた",
+      "basic_form": "見据える",
+      "reading": "みすえた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "選択",
+      "basic_form": "選択",
+      "reading": "せんたく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いう",
+      "basic_form": "言う",
+      "reading": "いう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "イメージ",
+      "basic_form": "イメージ",
+      "reading": "イメージ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "強かった",
+      "basic_form": "強い",
+      "reading": "つよかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかしながら",
+      "basic_form": "しかしながら",
+      "reading": "しかしながら",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "テレワーク",
+      "basic_form": "テレワーク",
+      "reading": "テレワーク",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "普及",
+      "basic_form": "普及",
+      "reading": "ふきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伴い",
+      "basic_form": "伴う",
+      "reading": "ともない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "二十代",
+      "basic_form": "二十代",
+      "reading": "にじゅうだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "三十代",
+      "basic_form": "三十代",
+      "reading": "さんじゅうだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "若い",
+      "basic_form": "若い",
+      "reading": "わかい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "世代",
+      "basic_form": "世代",
+      "reading": "せだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "積極的に",
+      "basic_form": "積極的",
+      "reading": "せっきょくてきに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "移住",
+      "basic_form": "移住",
+      "reading": "いじゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "選ぶ",
+      "basic_form": "選ぶ",
+      "reading": "えらぶ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "傾向",
+      "basic_form": "傾向",
+      "reading": "けいこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見られる",
+      "basic_form": "見られる",
+      "reading": "みられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ようになった",
+      "basic_form": "ようになる",
+      "reading": "ようになった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市部",
+      "basic_form": "都市部",
+      "reading": "としぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高い",
+      "basic_form": "高い",
+      "reading": "たかい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "家賃",
+      "basic_form": "家賃",
+      "reading": "やちん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "満員電車",
+      "basic_form": "満員電車",
+      "reading": "まんいんでんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "での",
+      "basic_form": "で",
+      "reading": "での",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通勤",
+      "basic_form": "通勤",
+      "reading": "つうきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "疲れ",
+      "basic_form": "疲れ",
+      "reading": "つかれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "感じ",
+      "basic_form": "感じる",
+      "reading": "かんじ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "自然",
+      "basic_form": "自然",
+      "reading": "しぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近い",
+      "basic_form": "近い",
+      "reading": "ちかい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "働きたい",
+      "basic_form": "働く",
+      "reading": "はたらきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "考える",
+      "basic_form": "考える",
+      "reading": "かんがえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "である",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とはいえ",
+      "basic_form": "とはいえ",
+      "reading": "とはいえ",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "都市部",
+      "basic_form": "都市部",
+      "reading": "としぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ほど",
+      "basic_form": "ほど",
+      "reading": "ほど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "選択肢",
+      "basic_form": "選択肢",
+      "reading": "せんたくし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "うえに",
+      "basic_form": "うえに",
+      "reading": "うえに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域独自",
+      "basic_form": "地域独自",
+      "reading": "ちいきどくじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人間関係",
+      "basic_form": "人間関係",
+      "reading": "にんげんかんけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "馴染む",
+      "basic_form": "馴染む",
+      "reading": "なじむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かかる",
+      "basic_form": "かかる",
+      "reading": "かかる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それでもなお",
+      "basic_form": "それでもなお",
+      "reading": "それでもなお",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "生活",
+      "basic_form": "生活",
+      "reading": "せいかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "質",
+      "basic_form": "質",
+      "reading": "しつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "優先し",
+      "basic_form": "優先する",
+      "reading": "ゆうせんし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あえて",
+      "basic_form": "あえて",
+      "reading": "あえて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "不便",
+      "basic_form": "不便",
+      "reading": "ふべん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受け入れる",
+      "basic_form": "受け入れる",
+      "reading": "うけいれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "若者",
+      "basic_form": "若者",
+      "reading": "わかもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "興味深い",
+      "basic_form": "興味深い",
+      "reading": "きょうみぶかい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "現象",
+      "basic_form": "現象",
+      "reading": "げんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いえる",
+      "basic_form": "言える",
+      "reading": "いえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "若者たち",
+      "basic_form": "若者たち",
+      "reading": "わかものたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "動き",
+      "basic_form": "動き",
+      "reading": "うごき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地方活性化",
+      "basic_form": "地方活性化",
+      "reading": "ちほうかっせいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "鍵",
+      "basic_form": "鍵",
+      "reading": "かぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "握る",
+      "basic_form": "握る",
+      "reading": "にぎる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言えそうだ",
+      "basic_form": "言えそうだ",
+      "reading": "いえそうだ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "これまで": {
+      "meaning": "至今為止"
+    },
+    "地方移住": {
+      "meaning": "地方移居"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "定年後": {
+      "meaning": "退休後"
+    },
+    "生活": {
+      "meaning": "生活"
+    },
+    "見据える": {
+      "meaning": "著眼於；正視"
+    },
+    "選択": {
+      "meaning": "選擇"
+    },
+    "イメージ": {
+      "meaning": "印象"
+    },
+    "強い": {
+      "meaning": "強烈的"
+    },
+    "しかしながら": {
+      "meaning": "然而"
+    },
+    "近年": {
+      "meaning": "近年"
+    },
+    "テレワーク": {
+      "meaning": "遠距工作"
+    },
+    "普及": {
+      "meaning": "普及"
+    },
+    "伴う": {
+      "meaning": "伴隨；隨著"
+    },
+    "二十代": {
+      "meaning": "二十幾歲"
+    },
+    "三十代": {
+      "meaning": "三十幾歲"
+    },
+    "若い": {
+      "meaning": "年輕的"
+    },
+    "世代": {
+      "meaning": "世代"
+    },
+    "積極的": {
+      "meaning": "積極的"
+    },
+    "地方": {
+      "meaning": "地方"
+    },
+    "移住": {
+      "meaning": "移居"
+    },
+    "選ぶ": {
+      "meaning": "選擇"
+    },
+    "傾向": {
+      "meaning": "傾向"
+    },
+    "見られる": {
+      "meaning": "可見；被看到"
+    },
+    "ようになる": {
+      "meaning": "變得…"
+    },
+    "都市部": {
+      "meaning": "都市地區"
+    },
+    "高い": {
+      "meaning": "高的"
+    },
+    "家賃": {
+      "meaning": "房租"
+    },
+    "満員電車": {
+      "meaning": "擁擠的電車"
+    },
+    "通勤": {
+      "meaning": "通勤"
+    },
+    "疲れ": {
+      "meaning": "疲勞"
+    },
+    "感じる": {
+      "meaning": "感受到"
+    },
+    "より": {
+      "meaning": "更加"
+    },
+    "自然": {
+      "meaning": "自然"
+    },
+    "近い": {
+      "meaning": "接近的"
+    },
+    "環境": {
+      "meaning": "環境"
+    },
+    "働く": {
+      "meaning": "工作"
+    },
+    "考える": {
+      "meaning": "認為；思考"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "ため": {
+      "meaning": "原因；緣故"
+    },
+    "である": {
+      "meaning": "是（書面斷定）"
+    },
+    "とはいえ": {
+      "meaning": "雖說如此"
+    },
+    "ほど": {
+      "meaning": "…的程度"
+    },
+    "仕事": {
+      "meaning": "工作"
+    },
+    "選択肢": {
+      "meaning": "選項"
+    },
+    "ない": {
+      "meaning": "沒有"
+    },
+    "うえに": {
+      "meaning": "而且；加上"
+    },
+    "地域独自": {
+      "meaning": "當地特有"
+    },
+    "人間関係": {
+      "meaning": "人際關係"
+    },
+    "馴染む": {
+      "meaning": "融入；熟悉"
+    },
+    "かかる": {
+      "meaning": "花費"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "それでもなお": {
+      "meaning": "即便如此"
+    },
+    "質": {
+      "meaning": "品質"
+    },
+    "優先する": {
+      "meaning": "優先考慮"
+    },
+    "あえて": {
+      "meaning": "刻意；特意"
+    },
+    "不便": {
+      "meaning": "不便"
+    },
+    "受け入れる": {
+      "meaning": "接受"
+    },
+    "若者": {
+      "meaning": "年輕人"
+    },
+    "興味深い": {
+      "meaning": "有趣的；引人入勝的"
+    },
+    "現象": {
+      "meaning": "現象"
+    },
+    "だ": {
+      "meaning": "斷定「是」"
+    },
+    "言える": {
+      "meaning": "可以說"
+    },
+    "だろう": {
+      "meaning": "大概吧；表推測"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "若者たち": {
+      "meaning": "年輕人們"
+    },
+    "動き": {
+      "meaning": "動向；動態"
+    },
+    "地方活性化": {
+      "meaning": "地方活化"
+    },
+    "鍵": {
+      "meaning": "關鍵"
+    },
+    "握る": {
+      "meaning": "掌握"
+    },
+    "言えそうだ": {
+      "meaning": "似乎可以說"
+    },
+    "時間": {
+      "meaning": "時間"
+    }
+  },
+  "particles": {
+    "と": "表示引用或成為的結果",
+    "の": "所有格助詞或形式名詞",
+    "が": "主語標記",
+    "や": "列舉，「…和…等」",
+    "に": "表示對象或時間",
+    "へ": "表示方向",
+    "で": "表示場所或手段",
+    "ほど": "「…的程度」",
+    "うえに": "「而且」",
+    "まで": "「到…為止」",
+    "も": "「也」",
+    "は": "主題標記"
+  },
+  "translations": [
+    [
+      {
+        "text": "至今為止，一提到地方移居，給人的印象大多是著眼於退休後生活的選擇。",
+        "word": "イメージ"
+      }
+    ],
+    [
+      {
+        "text": "然而近年來，隨著遠距工作的普及，二十幾歲、三十幾歲的年輕世代積極選擇移居地方的傾向變得越來越明顯。",
+        "word": "選ぶ"
+      }
+    ],
+    [
+      {
+        "text": "這是因為越來越多人對都市地區高昂的房租及擁擠電車的通勤感到疲憊，想在更貼近大自然的環境中工作。",
+        "word": "増えている"
+      }
+    ],
+    [
+      {
+        "text": "話雖如此，地方的工作選項不如都市地區多，再加上要融入當地特有的人際關係也往往需要時間。",
+        "word": "馴染む"
+      }
+    ],
+    [
+      {
+        "text": "即便如此，仍有越來越多年輕人優先考慮生活品質，刻意接受這種不便，這可說是一個耐人尋味的現象。",
+        "word": "増えている"
+      }
+    ],
+    [
+      {
+        "text": "今後，這些年輕人的動向或許將掌握地方活化的關鍵。",
+        "word": "握る"
+      }
+    ]
+  ]
+}

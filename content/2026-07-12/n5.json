@@ -1,0 +1,286 @@
+{
+  "date": "2026-07-12",
+  "level": "n5",
+  "title": "えいがかんでえいがをみた",
+  "text": "きのう、ともだちとえいがかんへいきました。とてもおもしろいえいがをみました。えいがのあと、レストランでごはんをたべました。たのしいいちにちでした。またいきたいです。",
+  "tokens": [
+    {
+      "surface_form": "きのう",
+      "basic_form": "きのう",
+      "reading": "きのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ともだち",
+      "basic_form": "ともだち",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "えいがかん",
+      "basic_form": "えいがかん",
+      "reading": "えいがかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いきました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "おもしろい",
+      "basic_form": "おもしろい",
+      "reading": "おもしろい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "えいが",
+      "basic_form": "えいが",
+      "reading": "えいが",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みました",
+      "basic_form": "見る",
+      "reading": "みました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "えいが",
+      "basic_form": "えいが",
+      "reading": "えいが",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あと",
+      "basic_form": "あと",
+      "reading": "あと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "レストラン",
+      "basic_form": "レストラン",
+      "reading": "レストラン",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ごはん",
+      "basic_form": "ごはん",
+      "reading": "ごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たべました",
+      "basic_form": "食べる",
+      "reading": "たべました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "たのしい",
+      "basic_form": "たのしい",
+      "reading": "たのしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "いちにち",
+      "basic_form": "いちにち",
+      "reading": "いちにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でした",
+      "basic_form": "です",
+      "reading": "でした",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "いきたい",
+      "basic_form": "行く",
+      "reading": "いきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きのう": {
+      "meaning": "昨天"
+    },
+    "ともだち": {
+      "meaning": "朋友"
+    },
+    "えいがかん": {
+      "meaning": "電影院"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "おもしろい": {
+      "meaning": "有趣的"
+    },
+    "えいが": {
+      "meaning": "電影"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "あと": {
+      "meaning": "之後"
+    },
+    "レストラン": {
+      "meaning": "餐廳"
+    },
+    "ごはん": {
+      "meaning": "飯；餐點"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "たのしい": {
+      "meaning": "開心；愉快"
+    },
+    "いちにち": {
+      "meaning": "一天"
+    },
+    "また": {
+      "meaning": "再；又"
+    }
+  },
+  "particles": {
+    "と": "表示共同動作的對象，「和…」",
+    "へ": "表示移動的方向",
+    "を": "受詞標記",
+    "で": "表示動作進行的場所",
+    "の": "所有格助詞，「的」"
+  },
+  "translations": [
+    [
+      {
+        "text": "昨天，我和朋友去了電影院。",
+        "word": "行く"
+      }
+    ],
+    [
+      {
+        "text": "看了非常有趣的電影。",
+        "word": "おもしろい"
+      }
+    ],
+    [
+      {
+        "text": "看完電影後，在餐廳吃了飯。",
+        "word": "食べる"
+      }
+    ],
+    [
+      {
+        "text": "是開心的一天。",
+        "word": "たのしい"
+      }
+    ],
+    [
+      {
+        "text": "還想再去。",
+        "word": "行く"
+      }
+    ]
+  ]
+}

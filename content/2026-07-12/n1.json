@@ -1,0 +1,1399 @@
+{
+  "date": "2026-07-12",
+  "level": "n1",
+  "title": "終身雇用制度の崩壊と個人のキャリア形成",
+  "text": "戦後日本の経済成長を支えてきた終身雇用制度は、長らく労働者に安定した生活基盤を提供してきたが、近年その前提は大きく揺らいでいる。グローバル化や技術革新の加速により、企業が求める人材像は急速に変化し、一つの組織に長期間所属することが必ずしも安泰を意味しなくなったのである。こうした構造的な変化を背景に、個人は自らのキャリアを企業任せにするのではなく、主体的に設計する必要に迫られている。もっとも、リスキリングや副業の推奨が叫ばれる一方で、実際にそれらを実践できる環境や時間的余裕を持つ労働者は限られているのが現状だ。制度の転換期にあって、個人の努力のみに責任を帰す風潮には、慎重であるべきだろう。企業と社会がいかにして新たな支援の枠組みを構築できるかが、今後問われることになるだろう。こうした議論の行方は、単に労働政策の一分野にとどまらず、日本社会全体の構造そのものを問い直す契機となる可能性を秘めている。",
+  "tokens": [
+    {
+      "surface_form": "戦後",
+      "basic_form": "戦後",
+      "reading": "せんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "経済成長",
+      "basic_form": "経済成長",
+      "reading": "けいざいせいちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "支えてきた",
+      "basic_form": "支えてくる",
+      "reading": "ささえてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "終身雇用制度",
+      "basic_form": "終身雇用制度",
+      "reading": "しゅうしんこようせいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "長らく",
+      "basic_form": "長らく",
+      "reading": "ながらく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "労働者",
+      "basic_form": "労働者",
+      "reading": "ろうどうしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安定した",
+      "basic_form": "安定する",
+      "reading": "あんていした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "生活基盤",
+      "basic_form": "生活基盤",
+      "reading": "せいかつきばん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "提供してきた",
+      "basic_form": "提供してくる",
+      "reading": "ていきょうしてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "前提",
+      "basic_form": "前提",
+      "reading": "ぜんてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きく",
+      "basic_form": "大きい",
+      "reading": "おおきく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "揺らいでいる",
+      "basic_form": "揺らぐ",
+      "reading": "ゆらいでいる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "グローバル化",
+      "basic_form": "グローバル化",
+      "reading": "グローバルか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "技術革新",
+      "basic_form": "技術革新",
+      "reading": "ぎじゅつかくしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "加速",
+      "basic_form": "加速",
+      "reading": "かそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "により",
+      "basic_form": "により",
+      "reading": "により",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求める",
+      "basic_form": "求める",
+      "reading": "もとめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人材像",
+      "basic_form": "人材像",
+      "reading": "じんざいぞう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急速に",
+      "basic_form": "急速",
+      "reading": "きゅうそくに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "変化し",
+      "basic_form": "変化する",
+      "reading": "へんかし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "組織",
+      "basic_form": "組織",
+      "reading": "そしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "長期間",
+      "basic_form": "長期間",
+      "reading": "ちょうきかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "所属する",
+      "basic_form": "所属する",
+      "reading": "しょぞくする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "必ずしも",
+      "basic_form": "必ずしも",
+      "reading": "かならずしも",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "安泰",
+      "basic_form": "安泰",
+      "reading": "あんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "意味しなくなった",
+      "basic_form": "意味する",
+      "reading": "いみしなくなった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "である",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "構造的な",
+      "basic_form": "構造的",
+      "reading": "こうぞうてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "変化",
+      "basic_form": "変化",
+      "reading": "へんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "背景",
+      "basic_form": "背景",
+      "reading": "はいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "個人",
+      "basic_form": "個人",
+      "reading": "こじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自ら",
+      "basic_form": "自ら",
+      "reading": "みずから",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "キャリア",
+      "basic_form": "キャリア",
+      "reading": "キャリア",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "企業任せ",
+      "basic_form": "企業任せ",
+      "reading": "きぎょうまかせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "主体的に",
+      "basic_form": "主体的",
+      "reading": "しゅたいてきに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "設計する",
+      "basic_form": "設計する",
+      "reading": "せっけいする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "迫られている",
+      "basic_form": "迫られる",
+      "reading": "せまられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もっとも",
+      "basic_form": "もっとも",
+      "reading": "もっとも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "リスキリング",
+      "basic_form": "リスキリング",
+      "reading": "リスキリング",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "副業",
+      "basic_form": "副業",
+      "reading": "ふくぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "推奨",
+      "basic_form": "推奨",
+      "reading": "すいしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "叫ばれる",
+      "basic_form": "叫ばれる",
+      "reading": "さけばれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実際に",
+      "basic_form": "実際に",
+      "reading": "じっさいに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "それら",
+      "basic_form": "それら",
+      "reading": "それら",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "実践できる",
+      "basic_form": "実践できる",
+      "reading": "じっせんできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "時間的余裕",
+      "basic_form": "時間的余裕",
+      "reading": "じかんてきよゆう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "持つ",
+      "basic_form": "持つ",
+      "reading": "もつ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "労働者",
+      "basic_form": "労働者",
+      "reading": "ろうどうしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "限られている",
+      "basic_form": "限られる",
+      "reading": "かぎられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現状",
+      "basic_form": "現状",
+      "reading": "げんじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "制度",
+      "basic_form": "制度",
+      "reading": "せいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "転換期",
+      "basic_form": "転換期",
+      "reading": "てんかんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あって",
+      "basic_form": "ある",
+      "reading": "あって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "個人",
+      "basic_form": "個人",
+      "reading": "こじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "努力",
+      "basic_form": "努力",
+      "reading": "どりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "のみに",
+      "basic_form": "のみに",
+      "reading": "のみに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "責任",
+      "basic_form": "責任",
+      "reading": "せきにん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "帰す",
+      "basic_form": "帰す",
+      "reading": "きす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "風潮",
+      "basic_form": "風潮",
+      "reading": "ふうちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "には",
+      "basic_form": "には",
+      "reading": "には",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "慎重である",
+      "basic_form": "慎重",
+      "reading": "しんちょうである",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "べきだろう",
+      "basic_form": "べきだ",
+      "reading": "べきだろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "社会",
+      "basic_form": "社会",
+      "reading": "しゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いかにして",
+      "basic_form": "いかにして",
+      "reading": "いかにして",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "新たな",
+      "basic_form": "新たな",
+      "reading": "あらたな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "支援",
+      "basic_form": "支援",
+      "reading": "しえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "枠組み",
+      "basic_form": "枠組み",
+      "reading": "わくぐみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "構築できるか",
+      "basic_form": "構築できる",
+      "reading": "こうちくできるか",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "問われる",
+      "basic_form": "問われる",
+      "reading": "とわれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "議論",
+      "basic_form": "議論",
+      "reading": "ぎろん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行方",
+      "basic_form": "行方",
+      "reading": "ゆくえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "単に",
+      "basic_form": "単に",
+      "reading": "たんに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "労働政策",
+      "basic_form": "労働政策",
+      "reading": "ろうどうせいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一分野",
+      "basic_form": "一分野",
+      "reading": "いちぶんや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とどまらず",
+      "basic_form": "とどまる",
+      "reading": "とどまらず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日本社会",
+      "basic_form": "日本社会",
+      "reading": "にほんしゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "全体",
+      "basic_form": "全体",
+      "reading": "ぜんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "構造",
+      "basic_form": "構造",
+      "reading": "こうぞう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "そのもの",
+      "basic_form": "そのもの",
+      "reading": "そのもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "問い直す",
+      "basic_form": "問い直す",
+      "reading": "といなおす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "契機",
+      "basic_form": "契機",
+      "reading": "けいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "可能性",
+      "basic_form": "可能性",
+      "reading": "かのうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "秘めている",
+      "basic_form": "秘める",
+      "reading": "ひめている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "戦後": {
+      "meaning": "戰後"
+    },
+    "日本": {
+      "meaning": "日本"
+    },
+    "経済成長": {
+      "meaning": "經濟成長"
+    },
+    "支えてくる": {
+      "meaning": "一直支撐著"
+    },
+    "終身雇用制度": {
+      "meaning": "終身雇用制度"
+    },
+    "長らく": {
+      "meaning": "長久以來"
+    },
+    "労働者": {
+      "meaning": "勞工"
+    },
+    "安定する": {
+      "meaning": "穩定"
+    },
+    "生活基盤": {
+      "meaning": "生活基礎"
+    },
+    "提供してくる": {
+      "meaning": "一直提供"
+    },
+    "近年": {
+      "meaning": "近年"
+    },
+    "前提": {
+      "meaning": "前提"
+    },
+    "大きい": {
+      "meaning": "大的；巨大的"
+    },
+    "揺らぐ": {
+      "meaning": "動搖"
+    },
+    "グローバル化": {
+      "meaning": "全球化"
+    },
+    "技術革新": {
+      "meaning": "技術革新"
+    },
+    "加速": {
+      "meaning": "加速"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "求める": {
+      "meaning": "要求；尋求"
+    },
+    "人材像": {
+      "meaning": "人才樣貌"
+    },
+    "急速": {
+      "meaning": "急速的"
+    },
+    "変化する": {
+      "meaning": "變化"
+    },
+    "組織": {
+      "meaning": "組織"
+    },
+    "長期間": {
+      "meaning": "長期間"
+    },
+    "所属する": {
+      "meaning": "隸屬；歸屬"
+    },
+    "必ずしも": {
+      "meaning": "不見得；未必"
+    },
+    "安泰": {
+      "meaning": "安穩；安泰"
+    },
+    "意味する": {
+      "meaning": "意味著"
+    },
+    "である": {
+      "meaning": "是（書面斷定）"
+    },
+    "構造的": {
+      "meaning": "結構性的"
+    },
+    "背景": {
+      "meaning": "背景"
+    },
+    "個人": {
+      "meaning": "個人"
+    },
+    "自ら": {
+      "meaning": "自己；本身"
+    },
+    "キャリア": {
+      "meaning": "職涯"
+    },
+    "企業任せ": {
+      "meaning": "交給企業決定"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "ない": {
+      "meaning": "沒有"
+    },
+    "主体的": {
+      "meaning": "主動的"
+    },
+    "設計する": {
+      "meaning": "規劃；設計"
+    },
+    "必要": {
+      "meaning": "必要；需要"
+    },
+    "迫られる": {
+      "meaning": "被迫"
+    },
+    "もっとも": {
+      "meaning": "不過；話雖如此"
+    },
+    "リスキリング": {
+      "meaning": "技能再造"
+    },
+    "副業": {
+      "meaning": "副業"
+    },
+    "推奨": {
+      "meaning": "提倡"
+    },
+    "叫ばれる": {
+      "meaning": "被大聲疾呼"
+    },
+    "実際に": {
+      "meaning": "實際上"
+    },
+    "それら": {
+      "meaning": "那些"
+    },
+    "実践できる": {
+      "meaning": "能夠實踐"
+    },
+    "環境": {
+      "meaning": "環境"
+    },
+    "時間的余裕": {
+      "meaning": "時間上的餘裕"
+    },
+    "持つ": {
+      "meaning": "擁有"
+    },
+    "限られる": {
+      "meaning": "受限；有限"
+    },
+    "現状": {
+      "meaning": "現狀"
+    },
+    "制度": {
+      "meaning": "制度"
+    },
+    "転換期": {
+      "meaning": "轉換期"
+    },
+    "ある": {
+      "meaning": "在；處於"
+    },
+    "努力": {
+      "meaning": "努力"
+    },
+    "帰す": {
+      "meaning": "歸咎"
+    },
+    "風潮": {
+      "meaning": "風潮"
+    },
+    "慎重": {
+      "meaning": "謹慎的"
+    },
+    "べきだ": {
+      "meaning": "應該"
+    },
+    "社会": {
+      "meaning": "社會"
+    },
+    "いかにして": {
+      "meaning": "以何種方式"
+    },
+    "新たな": {
+      "meaning": "嶄新的"
+    },
+    "支援": {
+      "meaning": "支援"
+    },
+    "枠組み": {
+      "meaning": "框架"
+    },
+    "構築できる": {
+      "meaning": "能夠建構"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "問われる": {
+      "meaning": "受到質疑；被追問"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "だろう": {
+      "meaning": "大概吧；表推測"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "議論": {
+      "meaning": "議論；討論"
+    },
+    "行方": {
+      "meaning": "走向；去向"
+    },
+    "単に": {
+      "meaning": "僅僅；只是"
+    },
+    "労働政策": {
+      "meaning": "勞動政策"
+    },
+    "一分野": {
+      "meaning": "一個領域"
+    },
+    "日本社会": {
+      "meaning": "日本社會"
+    },
+    "全体": {
+      "meaning": "整體"
+    },
+    "構造": {
+      "meaning": "結構"
+    },
+    "そのもの": {
+      "meaning": "本身"
+    },
+    "問い直す": {
+      "meaning": "重新審視；重新質問"
+    },
+    "契機": {
+      "meaning": "契機"
+    },
+    "可能性": {
+      "meaning": "可能性"
+    },
+    "秘める": {
+      "meaning": "蘊含；潛藏"
+    },
+    "一つ": {
+      "meaning": "一個"
+    },
+    "変化": {
+      "meaning": "變化"
+    },
+    "とどまる": {
+      "meaning": "僅止於"
+    },
+    "その": {
+      "meaning": "那個"
+    },
+    "責任": {
+      "meaning": "責任"
+    },
+    "こと": {
+      "meaning": "事情"
+    }
+  },
+  "particles": {
+    "を": "受詞標記",
+    "は": "主題標記",
+    "が": "主語標記或表示逆接",
+    "に": "表示對象、場所或結果",
+    "や": "列舉",
+    "により": "「由於」",
+    "の": "所有格助詞或形式名詞",
+    "で": "表示方式或並列",
+    "のみに": "「僅僅…」",
+    "には": "「對於…」",
+    "と": "表示共同對象或成為的結果"
+  },
+  "translations": [
+    [
+      {
+        "text": "支撐著戰後日本經濟成長的終身雇用制度，長久以來為勞工提供了穩定的生活基礎，但近年來這個前提正大幅動搖。",
+        "word": "揺らいでいる"
+      }
+    ],
+    [
+      {
+        "text": "隨著全球化與技術革新的加速，企業所需要的人才樣貌急速變化，隸屬於單一組織長期任職未必再意味著安穩無虞。",
+        "word": "意味しなくなった"
+      }
+    ],
+    [
+      {
+        "text": "在這樣的結構性變化背景下，個人被迫必須主動規劃自己的職涯，而非將其交由企業決定。",
+        "word": "迫られている"
+      }
+    ],
+    [
+      {
+        "text": "不過，儘管技能再造與副業備受提倡，實際上擁有能夠實踐這些條件的環境與時間餘裕的勞工卻十分有限，這才是現狀。",
+        "word": "限られている"
+      }
+    ],
+    [
+      {
+        "text": "在制度轉換的時期，將責任僅僅歸咎於個人努力的風潮，應當謹慎看待。",
+        "word": "べきだろう"
+      }
+    ],
+    [
+      {
+        "text": "企業與社會今後將被追問，究竟能以何種方式建構出新的支援框架。",
+        "word": "問われる"
+      }
+    ],
+    [
+      {
+        "text": "這場討論的走向，恐怕不僅止於勞動政策的一個領域，更蘊含著重新審視日本社會整體結構的契機。",
+        "word": "秘めている"
+      }
+    ]
+  ]
+}

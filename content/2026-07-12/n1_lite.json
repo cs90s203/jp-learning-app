@@ -1,0 +1,1115 @@
+{
+  "date": "2026-07-12",
+  "level": "n1_lite",
+  "title": "情報過多社会と可処分時間",
+  "text": "インターネットやSNSの普及により、私たちは膨大な情報に常時アクセスできる環境に置かれている。一見便利に思えるこの状況だが、実際には取捨選択のコストが増大し、かえって思考の質を低下させかねないという指摘もある。とりわけ通知機能は注意力を細切れに分断し、一つの作業に集中する時間を確保することを困難にしている。こうした状況に対し、あえて情報から距離を置くデジタルデトックスという発想が広がりつつある。可処分時間をいかに主体的に管理するかが、現代人にとって重要な課題となっている。こうした流れは一時的な流行にとどまらず、今後の働き方や学び方にも影響を及ぼす可能性がある。加えて、情報の質を見極めるメディアリテラシーの重要性も、これまで以上に高まっていくだろう。",
+  "tokens": [
+    {
+      "surface_form": "インターネット",
+      "basic_form": "インターネット",
+      "reading": "インターネット",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "SNS",
+      "basic_form": "SNS",
+      "reading": "エスエヌエス",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "普及",
+      "basic_form": "普及",
+      "reading": "ふきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "により",
+      "basic_form": "により",
+      "reading": "により",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私たち",
+      "basic_form": "私たち",
+      "reading": "わたしたち",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "膨大な",
+      "basic_form": "膨大",
+      "reading": "ぼうだいな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "情報",
+      "basic_form": "情報",
+      "reading": "じょうほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "常時",
+      "basic_form": "常時",
+      "reading": "じょうじ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "アクセスできる",
+      "basic_form": "アクセスできる",
+      "reading": "あくせすできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "置かれている",
+      "basic_form": "置かれる",
+      "reading": "おかれている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一見",
+      "basic_form": "一見",
+      "reading": "いっけん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "便利に",
+      "basic_form": "便利",
+      "reading": "べんりに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "思える",
+      "basic_form": "思える",
+      "reading": "おもえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実際",
+      "basic_form": "実際",
+      "reading": "じっさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取捨選択",
+      "basic_form": "取捨選択",
+      "reading": "しゅしゃせんたく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "コスト",
+      "basic_form": "コスト",
+      "reading": "コスト",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増大し",
+      "basic_form": "増大する",
+      "reading": "ぞうだいし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かえって",
+      "basic_form": "かえって",
+      "reading": "かえって",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "思考",
+      "basic_form": "思考",
+      "reading": "しこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "質",
+      "basic_form": "質",
+      "reading": "しつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "低下させかねない",
+      "basic_form": "低下させる",
+      "reading": "ていかさせかねない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いう",
+      "basic_form": "言う",
+      "reading": "いう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とりわけ",
+      "basic_form": "とりわけ",
+      "reading": "とりわけ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "通知機能",
+      "basic_form": "通知機能",
+      "reading": "つうちきのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "注意力",
+      "basic_form": "注意力",
+      "reading": "ちゅういりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "細切れに",
+      "basic_form": "細切れ",
+      "reading": "こまぎれに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "分断し",
+      "basic_form": "分断する",
+      "reading": "ぶんだんし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作業",
+      "basic_form": "作業",
+      "reading": "さぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "集中する",
+      "basic_form": "集中する",
+      "reading": "しゅうちゅうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "確保する",
+      "basic_form": "確保する",
+      "reading": "かくほする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "困難にしている",
+      "basic_form": "困難にする",
+      "reading": "こんなんにしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対し",
+      "basic_form": "対する",
+      "reading": "たいし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あえて",
+      "basic_form": "あえて",
+      "reading": "あえて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "情報",
+      "basic_form": "情報",
+      "reading": "じょうほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "距離",
+      "basic_form": "距離",
+      "reading": "きょり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "置く",
+      "basic_form": "置く",
+      "reading": "おく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "デジタルデトックス",
+      "basic_form": "デジタルデトックス",
+      "reading": "デジタルデトックス",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "連語"
+    },
+    {
+      "surface_form": "発想",
+      "basic_form": "発想",
+      "reading": "はっそう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "広がりつつある",
+      "basic_form": "広がる",
+      "reading": "ひろがりつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "可処分時間",
+      "basic_form": "可処分時間",
+      "reading": "かしょぶんじかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いかに",
+      "basic_form": "いかに",
+      "reading": "いかに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "主体的に",
+      "basic_form": "主体的",
+      "reading": "しゅたいてきに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "管理する",
+      "basic_form": "管理する",
+      "reading": "かんりする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "現代人",
+      "basic_form": "現代人",
+      "reading": "げんだいじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "にとって",
+      "basic_form": "にとって",
+      "reading": "にとって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重要な",
+      "basic_form": "重要",
+      "reading": "じゅうような",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっている",
+      "basic_form": "なる",
+      "reading": "なっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "流れ",
+      "basic_form": "流れ",
+      "reading": "ながれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一時的な",
+      "basic_form": "一時的",
+      "reading": "いちじてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "流行",
+      "basic_form": "流行",
+      "reading": "りゅうこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とどまらず",
+      "basic_form": "とどまる",
+      "reading": "とどまらず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "働き方",
+      "basic_form": "働き方",
+      "reading": "はたらきかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学び方",
+      "basic_form": "学び方",
+      "reading": "まなびかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "影響",
+      "basic_form": "影響",
+      "reading": "えいきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "及ぼす",
+      "basic_form": "及ぼす",
+      "reading": "およぼす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "可能性",
+      "basic_form": "可能性",
+      "reading": "かのうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "加えて",
+      "basic_form": "加えて",
+      "reading": "くわえて",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "情報",
+      "basic_form": "情報",
+      "reading": "じょうほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "質",
+      "basic_form": "質",
+      "reading": "しつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見極める",
+      "basic_form": "見極める",
+      "reading": "みきわめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "メディアリテラシー",
+      "basic_form": "メディアリテラシー",
+      "reading": "メディアリテラシー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重要性",
+      "basic_form": "重要性",
+      "reading": "じゅうようせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これまで",
+      "basic_form": "これまで",
+      "reading": "これまで",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "以上に",
+      "basic_form": "以上に",
+      "reading": "いじょうに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高まっていく",
+      "basic_form": "高まっていく",
+      "reading": "たかまっていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "インターネット": {
+      "meaning": "網際網路"
+    },
+    "SNS": {
+      "meaning": "社群媒體"
+    },
+    "普及": {
+      "meaning": "普及"
+    },
+    "私たち": {
+      "meaning": "我們"
+    },
+    "膨大": {
+      "meaning": "龐大的"
+    },
+    "情報": {
+      "meaning": "資訊"
+    },
+    "常時": {
+      "meaning": "隨時；經常"
+    },
+    "アクセスできる": {
+      "meaning": "能夠存取"
+    },
+    "環境": {
+      "meaning": "環境"
+    },
+    "置かれる": {
+      "meaning": "被置於"
+    },
+    "一見": {
+      "meaning": "乍看之下"
+    },
+    "便利": {
+      "meaning": "方便的"
+    },
+    "思える": {
+      "meaning": "覺得；看起來像"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "だ": {
+      "meaning": "斷定「是」"
+    },
+    "実際": {
+      "meaning": "實際上"
+    },
+    "取捨選択": {
+      "meaning": "取捨選擇"
+    },
+    "コスト": {
+      "meaning": "成本"
+    },
+    "増大する": {
+      "meaning": "增大；增加"
+    },
+    "かえって": {
+      "meaning": "反而"
+    },
+    "思考": {
+      "meaning": "思考"
+    },
+    "質": {
+      "meaning": "品質"
+    },
+    "低下させる": {
+      "meaning": "使…下降"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "指摘": {
+      "meaning": "指出的看法"
+    },
+    "ある": {
+      "meaning": "有；存在"
+    },
+    "とりわけ": {
+      "meaning": "尤其；特別是"
+    },
+    "通知機能": {
+      "meaning": "通知功能"
+    },
+    "注意力": {
+      "meaning": "注意力"
+    },
+    "細切れ": {
+      "meaning": "零碎"
+    },
+    "分断する": {
+      "meaning": "切割；分斷"
+    },
+    "一つ": {
+      "meaning": "一個"
+    },
+    "作業": {
+      "meaning": "作業；工作"
+    },
+    "集中する": {
+      "meaning": "集中"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "確保する": {
+      "meaning": "確保"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "困難にする": {
+      "meaning": "使…變得困難"
+    },
+    "対する": {
+      "meaning": "針對；面對"
+    },
+    "あえて": {
+      "meaning": "刻意"
+    },
+    "距離": {
+      "meaning": "距離"
+    },
+    "置く": {
+      "meaning": "放置；保持"
+    },
+    "デジタルデトックス": {
+      "meaning": "數位排毒"
+    },
+    "発想": {
+      "meaning": "構想；想法"
+    },
+    "広がる": {
+      "meaning": "擴大；普及"
+    },
+    "可処分時間": {
+      "meaning": "可支配時間"
+    },
+    "いかに": {
+      "meaning": "如何；怎樣"
+    },
+    "主体的": {
+      "meaning": "主動的；自主的"
+    },
+    "管理する": {
+      "meaning": "管理"
+    },
+    "現代人": {
+      "meaning": "現代人"
+    },
+    "重要": {
+      "meaning": "重要的"
+    },
+    "課題": {
+      "meaning": "課題；議題"
+    },
+    "なる": {
+      "meaning": "成為"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "流れ": {
+      "meaning": "趨勢；潮流"
+    },
+    "一時的": {
+      "meaning": "暫時性的"
+    },
+    "流行": {
+      "meaning": "流行"
+    },
+    "とどまる": {
+      "meaning": "僅止於"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "働き方": {
+      "meaning": "工作方式"
+    },
+    "学び方": {
+      "meaning": "學習方式"
+    },
+    "影響": {
+      "meaning": "影響"
+    },
+    "及ぼす": {
+      "meaning": "帶來；造成"
+    },
+    "可能性": {
+      "meaning": "可能性"
+    },
+    "加えて": {
+      "meaning": "此外；加上"
+    },
+    "見極める": {
+      "meaning": "看清；辨別"
+    },
+    "メディアリテラシー": {
+      "meaning": "媒體素養"
+    },
+    "重要性": {
+      "meaning": "重要性"
+    },
+    "これまで": {
+      "meaning": "至今為止"
+    },
+    "高まっていく": {
+      "meaning": "逐漸提高"
+    },
+    "この": {
+      "meaning": "這個"
+    },
+    "という": {
+      "meaning": "所謂的…"
+    }
+  },
+  "particles": {
+    "や": "列舉",
+    "の": "所有格助詞",
+    "により": "「由於」",
+    "は": "主題標記",
+    "に": "表示對象或場所",
+    "が": "主語標記或表示逆接",
+    "とは": "「所謂的…」",
+    "を": "受詞標記",
+    "という": "「所謂的…」",
+    "も": "「也」",
+    "から": "「從…」",
+    "にとって": "「對…而言」",
+    "と": "表示引述或成為的結果",
+    "か": "疑問助詞",
+    "以上に": "「超過…；比…更」"
+  },
+  "translations": [
+    [
+      {
+        "text": "由於網路和社群媒體的普及，我們被置於一個能隨時取得龐大資訊的環境中。",
+        "word": "置かれている"
+      }
+    ],
+    [
+      {
+        "text": "這種乍看之下很方便的狀況，實際上也有人指出，取捨選擇的成本增加，反而可能會使思考的品質下降。",
+        "word": "低下させかねない"
+      }
+    ],
+    [
+      {
+        "text": "尤其是通知功能，把注意力切割得零碎不堪，使人難以確保專注於單一作業的時間。",
+        "word": "困難にしている"
+      }
+    ],
+    [
+      {
+        "text": "面對這樣的狀況，一種刻意與資訊保持距離的數位排毒構想正逐漸擴散開來。",
+        "word": "広がりつつある"
+      }
+    ],
+    [
+      {
+        "text": "如何主動管理可支配時間，成為現代人重要的課題。",
+        "word": "なっている"
+      }
+    ],
+    [
+      {
+        "text": "這股潮流不僅止於一時的流行，未來很可能也會影響到工作與學習的方式。",
+        "word": "及ぼす"
+      }
+    ],
+    [
+      {
+        "text": "此外，辨別資訊品質的媒體素養，其重要性恐怕也將比以往更加提升。",
+        "word": "高まっていく"
+      }
+    ]
+  ]
+}

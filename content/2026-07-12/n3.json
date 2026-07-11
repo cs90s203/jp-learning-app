@@ -1,0 +1,668 @@
+{
+  "date": "2026-07-12",
+  "level": "n3",
+  "title": "料理教室に通い始めた",
+  "text": "さいきん、しごとがおわったあと、りょうりきょうしつに通い始めた。もともと料理は苦手だったが、じぶんでつくったものはおいしく感じるという友人のことばがきっかけだった。さいしょはほうちょうのつかいかたすら分からなかったものの、せんせいがていねいに教えてくれるおかげで、少しずつじょうたつしている。かていりょうりとはいえ、味付けのバランスをとるのはおもったよりむずかしい。それでも、家族においしくなったねと言われると、つづけるゆうきがわく。",
+  "tokens": [
+    {
+      "surface_form": "さいきん",
+      "basic_form": "さいきん",
+      "reading": "さいきん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しごと",
+      "basic_form": "しごと",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おわった",
+      "basic_form": "終わる",
+      "reading": "おわった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "あと",
+      "basic_form": "あと",
+      "reading": "あと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "りょうりきょうしつ",
+      "basic_form": "りょうりきょうしつ",
+      "reading": "りょうりきょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通い始めた",
+      "basic_form": "通い始める",
+      "reading": "かよいはじめた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もともと",
+      "basic_form": "もともと",
+      "reading": "もともと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "苦手",
+      "basic_form": "苦手",
+      "reading": "にがて",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "じぶん",
+      "basic_form": "自分",
+      "reading": "じぶん",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つくった",
+      "basic_form": "作る",
+      "reading": "つくった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "もの",
+      "basic_form": "もの",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おいしく",
+      "basic_form": "おいしい",
+      "reading": "おいしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "感じる",
+      "basic_form": "感じる",
+      "reading": "かんじる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "連語"
+    },
+    {
+      "surface_form": "友人",
+      "basic_form": "友人",
+      "reading": "ゆうじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ことば",
+      "basic_form": "ことば",
+      "reading": "ことば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きっかけ",
+      "basic_form": "きっかけ",
+      "reading": "きっかけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "さいしょ",
+      "basic_form": "さいしょ",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほうちょう",
+      "basic_form": "ほうちょう",
+      "reading": "ほうちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つかいかた",
+      "basic_form": "つかいかた",
+      "reading": "つかいかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "すら",
+      "basic_form": "すら",
+      "reading": "すら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "分からなかった",
+      "basic_form": "分かる",
+      "reading": "わからなかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ものの",
+      "basic_form": "ものの",
+      "reading": "ものの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "せんせい",
+      "basic_form": "せんせい",
+      "reading": "せんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ていねいに",
+      "basic_form": "ていねい",
+      "reading": "ていねいに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "教えてくれる",
+      "basic_form": "教えてくれる",
+      "reading": "おしえてくれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "おかげで",
+      "basic_form": "おかげで",
+      "reading": "おかげで",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少しずつ",
+      "basic_form": "少しずつ",
+      "reading": "すこしずつ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "じょうたつしている",
+      "basic_form": "上達する",
+      "reading": "じょうたつしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かていりょうり",
+      "basic_form": "かていりょうり",
+      "reading": "かていりょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "とはいえ",
+      "basic_form": "とはいえ",
+      "reading": "とはいえ",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "味付け",
+      "basic_form": "味付け",
+      "reading": "あじつけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "バランス",
+      "basic_form": "バランス",
+      "reading": "バランス",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とる",
+      "basic_form": "取る",
+      "reading": "とる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "形式名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おもった",
+      "basic_form": "思う",
+      "reading": "おもった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "むずかしい",
+      "basic_form": "むずかしい",
+      "reading": "むずかしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それでも",
+      "basic_form": "それでも",
+      "reading": "それでも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家族",
+      "basic_form": "家族",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おいしく",
+      "basic_form": "おいしい",
+      "reading": "おいしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ね",
+      "basic_form": "ね",
+      "reading": "ね",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言われる",
+      "basic_form": "言われる",
+      "reading": "いわれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "つづける",
+      "basic_form": "続ける",
+      "reading": "つづける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ゆうき",
+      "basic_form": "ゆうき",
+      "reading": "ゆうき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "わく",
+      "basic_form": "湧く",
+      "reading": "わく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "さいきん": {
+      "meaning": "最近"
+    },
+    "しごと": {
+      "meaning": "工作"
+    },
+    "終わる": {
+      "meaning": "結束"
+    },
+    "りょうりきょうしつ": {
+      "meaning": "烹飪教室"
+    },
+    "通い始める": {
+      "meaning": "開始去上；開始通勤"
+    },
+    "もともと": {
+      "meaning": "原本"
+    },
+    "料理": {
+      "meaning": "料理；做菜"
+    },
+    "苦手": {
+      "meaning": "不擅長"
+    },
+    "自分": {
+      "meaning": "自己"
+    },
+    "作る": {
+      "meaning": "製作"
+    },
+    "もの": {
+      "meaning": "東西"
+    },
+    "おいしい": {
+      "meaning": "好吃"
+    },
+    "感じる": {
+      "meaning": "感覺"
+    },
+    "という": {
+      "meaning": "所謂的…"
+    },
+    "友人": {
+      "meaning": "朋友"
+    },
+    "ことば": {
+      "meaning": "話語；言詞"
+    },
+    "きっかけ": {
+      "meaning": "契機"
+    },
+    "さいしょ": {
+      "meaning": "一開始"
+    },
+    "ほうちょう": {
+      "meaning": "菜刀"
+    },
+    "つかいかた": {
+      "meaning": "使用方法"
+    },
+    "分かる": {
+      "meaning": "懂；知道"
+    },
+    "せんせい": {
+      "meaning": "老師"
+    },
+    "ていねい": {
+      "meaning": "仔細；用心"
+    },
+    "教えてくれる": {
+      "meaning": "教我"
+    },
+    "おかげで": {
+      "meaning": "多虧"
+    },
+    "少しずつ": {
+      "meaning": "一點一點地"
+    },
+    "上達する": {
+      "meaning": "進步"
+    },
+    "かていりょうり": {
+      "meaning": "家常菜"
+    },
+    "味付け": {
+      "meaning": "調味"
+    },
+    "バランス": {
+      "meaning": "平衡"
+    },
+    "取る": {
+      "meaning": "取得；掌握"
+    },
+    "思う": {
+      "meaning": "認為；覺得"
+    },
+    "むずかしい": {
+      "meaning": "困難的"
+    },
+    "それでも": {
+      "meaning": "即使如此"
+    },
+    "家族": {
+      "meaning": "家人"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "言われる": {
+      "meaning": "被說"
+    },
+    "続ける": {
+      "meaning": "繼續"
+    },
+    "ゆうき": {
+      "meaning": "勇氣"
+    },
+    "湧く": {
+      "meaning": "湧現"
+    },
+    "とはいえ": {
+      "meaning": "雖說如此"
+    },
+    "あと": {
+      "meaning": "之後"
+    }
+  },
+  "particles": {
+    "が": "主語標記或表示逆接",
+    "で": "表示方式，「靠…；用…」",
+    "の": "所有格助詞或形式名詞",
+    "は": "主題標記",
+    "すら": "「甚至連…」",
+    "ものの": "「雖然…但是…」",
+    "に": "表示對象",
+    "とはいえ": "「雖說…」的轉折連語",
+    "を": "受詞標記",
+    "より": "表示比較，「比…」",
+    "と": "表示引用或條件，「一…就…」",
+    "ね": "語氣助詞，用於尋求同意"
+  },
+  "translations": [
+    [
+      {
+        "text": "最近，工作結束後，我開始去上烹飪教室。",
+        "word": "通い始める"
+      }
+    ],
+    [
+      {
+        "text": "原本我不擅長做菜，但「自己做的東西吃起來比較美味」這句朋友的話成了契機。",
+        "word": "きっかけ"
+      }
+    ],
+    [
+      {
+        "text": "一開始我甚至連菜刀的用法都不懂，不過多虧老師仔細地教我，才漸漸進步。",
+        "word": "上達する"
+      }
+    ],
+    [
+      {
+        "text": "雖說是家常菜，但抓味道的平衡比想像中困難。",
+        "word": "むずかしい"
+      }
+    ],
+    [
+      {
+        "text": "即便如此，每當家人說「變好吃了呢」，就會湧現繼續下去的勇氣。",
+        "word": "湧く"
+      }
+    ]
+  ]
+}

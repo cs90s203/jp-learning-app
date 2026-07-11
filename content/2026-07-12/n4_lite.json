@@ -1,0 +1,392 @@
+{
+  "date": "2026-07-12",
+  "level": "n4_lite",
+  "title": "はじめてのキャンプ",
+  "text": "せんしゅう、かぞくとはじめてキャンプにいきました。テントをたてるのがむずかしくて、ちちにてつだってもらいました。よるは、たきびをしながらはなしをしました。ほしがとてもきれいで、かんどうしました。つぎは、ともだちもさそいたいです。",
+  "tokens": [
+    {
+      "surface_form": "せんしゅう",
+      "basic_form": "せんしゅう",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かぞく",
+      "basic_form": "かぞく",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "はじめて",
+      "basic_form": "はじめて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "キャンプ",
+      "basic_form": "キャンプ",
+      "reading": "キャンプ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いきました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "テント",
+      "basic_form": "テント",
+      "reading": "テント",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たてる",
+      "basic_form": "建てる",
+      "reading": "たてる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "むずかしくて",
+      "basic_form": "むずかしい",
+      "reading": "むずかしくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちち",
+      "basic_form": "ちち",
+      "reading": "ちち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "てつだってもらいました",
+      "basic_form": "手伝ってもらう",
+      "reading": "てつだってもらいました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "よる",
+      "basic_form": "よる",
+      "reading": "よる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "たきび",
+      "basic_form": "たきび",
+      "reading": "たきび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ながら",
+      "basic_form": "ながら",
+      "reading": "ながら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "はなし",
+      "basic_form": "はなし",
+      "reading": "はなし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しました",
+      "basic_form": "する",
+      "reading": "しました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ほし",
+      "basic_form": "ほし",
+      "reading": "ほし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "きれいで",
+      "basic_form": "きれい",
+      "reading": "きれいで",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かんどうしました",
+      "basic_form": "感動する",
+      "reading": "かんどうしました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "つぎ",
+      "basic_form": "つぎ",
+      "reading": "つぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ともだち",
+      "basic_form": "ともだち",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さそいたい",
+      "basic_form": "誘う",
+      "reading": "さそいたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "せんしゅう": {
+      "meaning": "上星期"
+    },
+    "かぞく": {
+      "meaning": "家人"
+    },
+    "はじめて": {
+      "meaning": "第一次"
+    },
+    "キャンプ": {
+      "meaning": "露營"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "テント": {
+      "meaning": "帳篷"
+    },
+    "建てる": {
+      "meaning": "搭建；建造"
+    },
+    "むずかしい": {
+      "meaning": "困難的"
+    },
+    "ちち": {
+      "meaning": "爸爸"
+    },
+    "手伝ってもらう": {
+      "meaning": "請人幫忙"
+    },
+    "よる": {
+      "meaning": "晚上"
+    },
+    "たきび": {
+      "meaning": "營火"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "はなし": {
+      "meaning": "話；聊天"
+    },
+    "ほし": {
+      "meaning": "星星"
+    },
+    "きれい": {
+      "meaning": "美麗；漂亮"
+    },
+    "感動する": {
+      "meaning": "感動"
+    },
+    "つぎ": {
+      "meaning": "下次"
+    },
+    "ともだち": {
+      "meaning": "朋友"
+    },
+    "誘う": {
+      "meaning": "邀請"
+    },
+    "とても": {
+      "meaning": "非常"
+    }
+  },
+  "particles": {
+    "と": "表示共同動作的對象，「和…」",
+    "に": "表示方向、對象或時間點",
+    "の": "形式名詞，「…的事」",
+    "が": "主語標記",
+    "ながら": "表示同時進行，「一邊…一邊…」",
+    "は": "主題標記",
+    "を": "受詞標記",
+    "で": "表示な形容詞的連用形，「…而且…」",
+    "も": "「也」"
+  },
+  "translations": [
+    [
+      {
+        "text": "上星期，我和家人第一次去露營了。",
+        "word": "行く"
+      }
+    ],
+    [
+      {
+        "text": "搭帳篷很困難，所以請爸爸幫忙了。",
+        "word": "手伝ってもらう"
+      }
+    ],
+    [
+      {
+        "text": "晚上一邊生營火一邊聊天。",
+        "word": "する"
+      }
+    ],
+    [
+      {
+        "text": "星星非常漂亮，讓人很感動。",
+        "word": "感動する"
+      }
+    ],
+    [
+      {
+        "text": "下次也想邀請朋友一起去。",
+        "word": "誘う"
+      }
+    ]
+  ]
+}

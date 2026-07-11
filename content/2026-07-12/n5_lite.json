@@ -1,0 +1,243 @@
+{
+  "date": "2026-07-12",
+  "level": "n5_lite",
+  "title": "わたしのぼうし",
+  "text": "わたしのぼうしはあかいです。ぼうしはたなのうえにあります。あにのぼうしはあおいです。わたしはぼうしがすきです。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ぼうし",
+      "basic_form": "ぼうし",
+      "reading": "ぼうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あかい",
+      "basic_form": "あかい",
+      "reading": "あかい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ぼうし",
+      "basic_form": "ぼうし",
+      "reading": "ぼうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たな",
+      "basic_form": "たな",
+      "reading": "たな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "うえ",
+      "basic_form": "うえ",
+      "reading": "うえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あに",
+      "basic_form": "あに",
+      "reading": "あに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ぼうし",
+      "basic_form": "ぼうし",
+      "reading": "ぼうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あおい",
+      "basic_form": "あおい",
+      "reading": "あおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ぼうし",
+      "basic_form": "ぼうし",
+      "reading": "ぼうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すき",
+      "basic_form": "すき",
+      "reading": "すき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我"
+    },
+    "ぼうし": {
+      "meaning": "帽子"
+    },
+    "あかい": {
+      "meaning": "紅色的"
+    },
+    "たな": {
+      "meaning": "架子"
+    },
+    "うえ": {
+      "meaning": "上面"
+    },
+    "ある": {
+      "meaning": "有；在"
+    },
+    "あに": {
+      "meaning": "哥哥"
+    },
+    "あおい": {
+      "meaning": "藍色的"
+    },
+    "すき": {
+      "meaning": "喜歡"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞，表示「的」",
+    "は": "主題標記",
+    "に": "表示存在的位置",
+    "が": "表示喜好等對象的助詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "我的帽子是紅色的。",
+        "word": "あかい"
+      }
+    ],
+    [
+      {
+        "text": "帽子在架子上面。",
+        "word": "ある"
+      }
+    ],
+    [
+      {
+        "text": "哥哥的帽子是藍色的。",
+        "word": "あおい"
+      }
+    ],
+    [
+      {
+        "text": "我喜歡帽子。",
+        "word": "すき"
+      }
+    ]
+  ]
+}
