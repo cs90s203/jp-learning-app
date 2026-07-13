@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-13",
+  "level": "n5_lite",
+  "title": "わたしのかさ",
+  "text": "わたしのかさはあおいです。かさはドアのちかくにあります。あにのかさはくろいです。わたしはかさがすきです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "かさ", "basic_form": "かさ", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "あおい", "basic_form": "あおい", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "かさ", "basic_form": "かさ", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "ドア", "basic_form": "ドア", "reading": "ドア", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ちかく", "basic_form": "ちかく", "reading": "ちかく", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "あに", "basic_form": "あに", "reading": "あに", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "かさ", "basic_form": "かさ", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "くろい", "basic_form": "くろい", "reading": "くろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "かさ", "basic_form": "かさ", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "すき", "basic_form": "すき", "reading": "すき", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "かさ": { "meaning": "雨傘" },
+    "あおい": { "meaning": "藍色的" },
+    "ドア": { "meaning": "門" },
+    "ちかく": { "meaning": "附近" },
+    "ある": { "meaning": "有、在（表示物品存在）" },
+    "あに": { "meaning": "哥哥" },
+    "くろい": { "meaning": "黑色的" },
+    "すき": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "の": "所有格助詞，表示「的」",
+    "は": "主題助詞，標示句子的主題",
+    "に": "表示存在的場所",
+    "が": "表示喜好、能力等的對象"
+  },
+  "translations": [
+    [ { "text": "我的傘是藍色的。", "word": "あおい" } ],
+    [ { "text": "傘在門的附近。", "word": "ちかく" } ],
+    [ { "text": "哥哥的傘是黑色的。", "word": "あに" } ],
+    [ { "text": "我喜歡傘。", "word": "すき" } ]
+  ]
+}

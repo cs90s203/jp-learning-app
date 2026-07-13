@@ -1,0 +1,583 @@
+{
+  "date": "2026-07-12",
+  "level": "n3_lite",
+  "title": "近所のカフェ巡り",
+  "text": "さいきん、近所のカフェを巡るのがしゅみになった。あたらしくオープンしたカフェは、てんないがおちついたふんいきで、コーヒーのかおりがとてもよかった。ちゅうもんしたケーキもあまさひかえめで、おいしかった。てんいんさんがしんせつに、豆のとくちょうをせつめいしてくれたので、こんどはべつのしゅるいをためしてみたい。このしゅうまつも、あたらしいみせをさがしにいくつもりだ。",
+  "tokens": [
+    {
+      "surface_form": "さいきん",
+      "basic_form": "さいきん",
+      "reading": "さいきん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "近所",
+      "basic_form": "近所",
+      "reading": "きんじょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "カフェ",
+      "basic_form": "カフェ",
+      "reading": "カフェ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "巡る",
+      "basic_form": "巡る",
+      "reading": "めぐる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "形式名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しゅみ",
+      "basic_form": "しゅみ",
+      "reading": "しゅみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あたらしく",
+      "basic_form": "あたらしい",
+      "reading": "あたらしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "オープンした",
+      "basic_form": "オープンする",
+      "reading": "おーぷんした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "カフェ",
+      "basic_form": "カフェ",
+      "reading": "カフェ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "てんない",
+      "basic_form": "てんない",
+      "reading": "てんない",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おちついた",
+      "basic_form": "落ち着く",
+      "reading": "おちついた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ふんいき",
+      "basic_form": "ふんいき",
+      "reading": "ふんいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "コーヒー",
+      "basic_form": "コーヒー",
+      "reading": "コーヒー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かおり",
+      "basic_form": "かおり",
+      "reading": "かおり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "よかった",
+      "basic_form": "いい",
+      "reading": "よかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちゅうもんした",
+      "basic_form": "注文する",
+      "reading": "ちゅうもんした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ケーキ",
+      "basic_form": "ケーキ",
+      "reading": "ケーキ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あまさ",
+      "basic_form": "あまさ",
+      "reading": "あまさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ひかえめで",
+      "basic_form": "ひかえめ",
+      "reading": "ひかえめで",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おいしかった",
+      "basic_form": "おいしい",
+      "reading": "おいしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "てんいんさん",
+      "basic_form": "てんいんさん",
+      "reading": "てんいんさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しんせつに",
+      "basic_form": "しんせつ",
+      "reading": "しんせつに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "豆",
+      "basic_form": "豆",
+      "reading": "まめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とくちょう",
+      "basic_form": "とくちょう",
+      "reading": "とくちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "せつめいしてくれた",
+      "basic_form": "説明してくれる",
+      "reading": "せつめいしてくれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こんど",
+      "basic_form": "こんど",
+      "reading": "こんど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "べつ",
+      "basic_form": "べつ",
+      "reading": "べつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しゅるい",
+      "basic_form": "しゅるい",
+      "reading": "しゅるい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ためしてみたい",
+      "basic_form": "試してみる",
+      "reading": "ためしてみたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "しゅうまつ",
+      "basic_form": "しゅうまつ",
+      "reading": "しゅうまつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あたらしい",
+      "basic_form": "あたらしい",
+      "reading": "あたらしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "みせ",
+      "basic_form": "みせ",
+      "reading": "みせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さがし",
+      "basic_form": "探す",
+      "reading": "さがし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いく",
+      "basic_form": "行く",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "つもり",
+      "basic_form": "つもり",
+      "reading": "つもり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "さいきん": {
+      "meaning": "最近"
+    },
+    "近所": {
+      "meaning": "附近"
+    },
+    "カフェ": {
+      "meaning": "咖啡廳"
+    },
+    "巡る": {
+      "meaning": "巡遊；走訪"
+    },
+    "しゅみ": {
+      "meaning": "興趣"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "あたらしい": {
+      "meaning": "新的"
+    },
+    "オープンする": {
+      "meaning": "開幕；開張"
+    },
+    "てんない": {
+      "meaning": "店內"
+    },
+    "落ち着く": {
+      "meaning": "沉靜；安穩"
+    },
+    "ふんいき": {
+      "meaning": "氣氛"
+    },
+    "コーヒー": {
+      "meaning": "咖啡"
+    },
+    "かおり": {
+      "meaning": "香氣"
+    },
+    "いい": {
+      "meaning": "好的"
+    },
+    "注文する": {
+      "meaning": "點餐"
+    },
+    "ケーキ": {
+      "meaning": "蛋糕"
+    },
+    "あまさ": {
+      "meaning": "甜度"
+    },
+    "ひかえめ": {
+      "meaning": "適中；不過分"
+    },
+    "おいしい": {
+      "meaning": "好吃"
+    },
+    "てんいんさん": {
+      "meaning": "店員"
+    },
+    "しんせつ": {
+      "meaning": "親切"
+    },
+    "豆": {
+      "meaning": "豆子"
+    },
+    "とくちょう": {
+      "meaning": "特徵"
+    },
+    "説明してくれる": {
+      "meaning": "為我說明"
+    },
+    "こんど": {
+      "meaning": "下次"
+    },
+    "べつ": {
+      "meaning": "另外"
+    },
+    "しゅるい": {
+      "meaning": "種類"
+    },
+    "試してみる": {
+      "meaning": "嘗試看看"
+    },
+    "しゅうまつ": {
+      "meaning": "週末"
+    },
+    "みせ": {
+      "meaning": "店"
+    },
+    "探す": {
+      "meaning": "尋找"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "つもり": {
+      "meaning": "打算"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "この": {
+      "meaning": "這個"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞或形式名詞",
+    "を": "受詞標記",
+    "が": "主語標記",
+    "に": "表示結果「變成…」或目的",
+    "で": "表示狀態並列，「而且…」",
+    "も": "「也」",
+    "ので": "表示原因，「因為…」",
+    "だ": "斷定助動詞，「是…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "最近，走訪附近的咖啡廳成了我的興趣。",
+        "word": "しゅみ"
+      }
+    ],
+    [
+      {
+        "text": "新開幕的咖啡廳店內氣氛沉穩，咖啡的香氣也非常棒。",
+        "word": "いい"
+      }
+    ],
+    [
+      {
+        "text": "點的蛋糕甜度也恰到好處，很好吃。",
+        "word": "おいしい"
+      }
+    ],
+    [
+      {
+        "text": "店員親切地為我說明了豆子的特色，所以下次想試試別的種類。",
+        "word": "説明してくれる"
+      }
+    ],
+    [
+      {
+        "text": "這個週末也打算去找找新的店。",
+        "word": "行く"
+      }
+    ]
+  ]
+}

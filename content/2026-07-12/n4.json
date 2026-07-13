@@ -1,0 +1,495 @@
+{
+  "date": "2026-07-12",
+  "level": "n4",
+  "title": "妹との水族館",
+  "text": "せんしゅう、いもうとといっしょにすいぞくかんへいきました。おおきなさかなをみたり、いるかのショーをみたりして、とてもたのしかったです。いもうとはさかながすきなのに、くらげをみるとこわがっていました。わたしがてをつないであげたので、さいごまでみることができました。かえりに、おそろいのぬいぐるみをかいました。",
+  "tokens": [
+    {
+      "surface_form": "せんしゅう",
+      "basic_form": "せんしゅう",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いもうと",
+      "basic_form": "いもうと",
+      "reading": "いもうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いっしょに",
+      "basic_form": "いっしょ",
+      "reading": "いっしょに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "すいぞくかん",
+      "basic_form": "すいぞくかん",
+      "reading": "すいぞくかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いきました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おおきな",
+      "basic_form": "おおきな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "さかな",
+      "basic_form": "さかな",
+      "reading": "さかな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みたり",
+      "basic_form": "見る",
+      "reading": "みたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いるか",
+      "basic_form": "いるか",
+      "reading": "いるか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ショー",
+      "basic_form": "ショー",
+      "reading": "ショー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みたり",
+      "basic_form": "見る",
+      "reading": "みたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "たのしかった",
+      "basic_form": "たのしい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いもうと",
+      "basic_form": "いもうと",
+      "reading": "いもうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さかな",
+      "basic_form": "さかな",
+      "reading": "さかな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すきな",
+      "basic_form": "すき",
+      "reading": "すきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "のに",
+      "basic_form": "のに",
+      "reading": "のに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "くらげ",
+      "basic_form": "くらげ",
+      "reading": "くらげ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みる",
+      "basic_form": "見る",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "こわがっていました",
+      "basic_form": "怖がる",
+      "reading": "こわがっていました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "て",
+      "basic_form": "て",
+      "reading": "て",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つないであげた",
+      "basic_form": "繋いであげる",
+      "reading": "つないであげた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "さいご",
+      "basic_form": "さいご",
+      "reading": "さいご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みる",
+      "basic_form": "見る",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "形式名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できました",
+      "basic_form": "できる",
+      "reading": "できました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かえり",
+      "basic_form": "かえり",
+      "reading": "かえり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おそろい",
+      "basic_form": "おそろい",
+      "reading": "おそろい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ぬいぐるみ",
+      "basic_form": "ぬいぐるみ",
+      "reading": "ぬいぐるみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かいました",
+      "basic_form": "買う",
+      "reading": "かいました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "せんしゅう": {
+      "meaning": "上星期"
+    },
+    "いもうと": {
+      "meaning": "妹妹"
+    },
+    "いっしょ": {
+      "meaning": "一起"
+    },
+    "すいぞくかん": {
+      "meaning": "水族館"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "おおきな": {
+      "meaning": "大的"
+    },
+    "さかな": {
+      "meaning": "魚"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "いるか": {
+      "meaning": "海豚"
+    },
+    "ショー": {
+      "meaning": "秀；表演"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "たのしい": {
+      "meaning": "開心"
+    },
+    "すき": {
+      "meaning": "喜歡"
+    },
+    "怖がる": {
+      "meaning": "害怕"
+    },
+    "わたし": {
+      "meaning": "我"
+    },
+    "て": {
+      "meaning": "手"
+    },
+    "繋いであげる": {
+      "meaning": "為對方牽著"
+    },
+    "さいご": {
+      "meaning": "最後"
+    },
+    "できる": {
+      "meaning": "能夠"
+    },
+    "かえり": {
+      "meaning": "回程"
+    },
+    "おそろい": {
+      "meaning": "成套；同款"
+    },
+    "ぬいぐるみ": {
+      "meaning": "玩偶"
+    },
+    "買う": {
+      "meaning": "買"
+    },
+    "くらげ": {
+      "meaning": "水母"
+    }
+  },
+  "particles": {
+    "と": "表示共同動作的對象或條件，「和…」／「一…就…」",
+    "に": "表示方向、時間點",
+    "へ": "表示移動的方向",
+    "を": "受詞標記",
+    "の": "所有格助詞，「的」",
+    "が": "主語標記",
+    "のに": "表示轉折，「明明…卻…」",
+    "ので": "表示原因，「因為…」",
+    "まで": "「到…為止」",
+    "こと": "形式名詞，常搭配できる表示「能夠做…」"
+  },
+  "translations": [
+    [
+      {
+        "text": "上星期，我和妹妹一起去了水族館。",
+        "word": "行く"
+      }
+    ],
+    [
+      {
+        "text": "看了大魚，也看了海豚秀，非常開心。",
+        "word": "たのしい"
+      }
+    ],
+    [
+      {
+        "text": "妹妹雖然喜歡魚，但看到水母就會害怕。",
+        "word": "怖がる"
+      }
+    ],
+    [
+      {
+        "text": "因為我牽著她的手，所以才能看到最後。",
+        "word": "できる"
+      }
+    ],
+    [
+      {
+        "text": "回程時，我們買了成套的玩偶。",
+        "word": "買う"
+      }
+    ]
+  ]
+}
