@@ -1,0 +1,61 @@
+{
+  "date": "2026-07-15",
+  "level": "n5_lite",
+  "title": "わたしのつくえ",
+  "text": "わたしのつくえは白いです。つくえの上に本とノートがあります。ペンも三本あります。つくえのよこにいすがあります。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "つくえ", "basic_form": "つくえ", "reading": "つくえ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "白い", "basic_form": "白い", "reading": "しろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "つくえ", "basic_form": "つくえ", "reading": "つくえ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "上", "basic_form": "上", "reading": "うえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "本", "basic_form": "本", "reading": "ほん", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "ノート", "basic_form": "ノート", "reading": "ノート", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "三本", "basic_form": "三本", "reading": "さんぼん", "pos": "名詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "つくえ", "basic_form": "つくえ", "reading": "つくえ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "よこ", "basic_form": "よこ", "reading": "よこ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "いす", "basic_form": "いす", "reading": "いす", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "つくえ": { "meaning": "書桌" },
+    "白い": { "meaning": "白色的" },
+    "上": { "meaning": "上面" },
+    "本": { "meaning": "書" },
+    "ノート": { "meaning": "筆記本" },
+    "ペン": { "meaning": "筆" },
+    "三本": { "meaning": "三支" },
+    "よこ": { "meaning": "旁邊" },
+    "いす": { "meaning": "椅子" },
+    "ある": { "meaning": "有（無生物）" }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬關係",
+    "は": "主題助詞，標示句子的主題",
+    "に": "表示存在的地點",
+    "と": "並列助詞，表示「和」",
+    "が": "表示存在句中的主語",
+    "も": "表示「也」，並列追加"
+  },
+  "translations": [
+    [ { "text": "我的桌子是白色的。", "word": "白い" } ],
+    [ { "text": "桌子上有書和筆記本。", "word": "本" } ],
+    [ { "text": "筆也有三支。", "word": "ペン" } ],
+    [ { "text": "桌子旁邊有椅子。", "word": "いす" } ]
+  ]
+}
