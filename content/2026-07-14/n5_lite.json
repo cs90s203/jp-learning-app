@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-14",
+  "level": "n5_lite",
+  "title": "わたしのねこ",
+  "text": "わたしのねこはしろいです。名前はゆきです。とてもかわいいです。いつもわたしのそばにいます。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ねこ", "basic_form": "ねこ", "reading": "ねこ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "しろい", "basic_form": "しろい", "reading": "しろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "名前", "basic_form": "名前", "reading": "なまえ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "ゆき", "basic_form": "ゆき", "reading": "ゆき", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "かわいい", "basic_form": "かわいい", "reading": "かわいい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "いつも", "basic_form": "いつも", "reading": "いつも", "pos": "副詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "そば", "basic_form": "そば", "reading": "そば", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "います", "basic_form": "いる", "reading": "います", "pos": "動詞" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "ねこ": { "meaning": "貓" },
+    "しろい": { "meaning": "白色的" },
+    "名前": { "meaning": "名字" },
+    "ゆき": { "meaning": "雪(名字)" },
+    "とても": { "meaning": "非常" },
+    "かわいい": { "meaning": "可愛的" },
+    "いつも": { "meaning": "總是" },
+    "そば": { "meaning": "旁邊" },
+    "いる": { "meaning": "在(有生命的東西存在)" }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬關係",
+    "は": "主題標示助詞",
+    "に": "表示存在的地點"
+  },
+  "translations": [
+    [ { "text": "我的貓是白色的。", "word": "しろい" } ],
+    [ { "text": "牠的名字叫雪。", "word": "名前" } ],
+    [ { "text": "非常可愛。", "word": "かわいい" } ],
+    [ { "text": "總是在我身邊。", "word": "そば" } ]
+  ]
+}
