@@ -1,0 +1,833 @@
+{
+  "date": "2026-07-16",
+  "level": "n3",
+  "title": "早朝ジョギングを始めた理由",
+  "text": "最近、早朝ジョギングを始めた。きっかけは、健康診断で医者に「もう少し運動したほうがいいですね」と言われたことだった。最初は5分走るだけで息が切れていたが、少しずつ距離を伸ばしていくうちに、体が軽くなってきた気がする。仕事前に走ると、頭がすっきりして、一日を気持ちよく始められるというメリットもある。ただ、雨の日は続けるのが難しく、正直サボりたくなることも少なくない。それでも、三日坊主にならないように、無理のない範囲で続けていきたいと思っている。",
+  "tokens": [
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "早朝",
+      "basic_form": "早朝",
+      "reading": "そうちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ジョギング",
+      "basic_form": "ジョギング",
+      "reading": "じょぎんぐ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "始めた",
+      "basic_form": "始める",
+      "reading": "はじめた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "きっかけ",
+      "basic_form": "きっかけ",
+      "reading": "きっかけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "健康診断",
+      "basic_form": "健康診断",
+      "reading": "けんこうしんだん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "医者",
+      "basic_form": "医者",
+      "reading": "いしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もう少し",
+      "basic_form": "もう少し",
+      "reading": "もうすこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "運動した",
+      "basic_form": "運動する",
+      "reading": "うんどうした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ほう",
+      "basic_form": "ほう",
+      "reading": "ほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いい",
+      "basic_form": "いい",
+      "reading": "いい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ね",
+      "basic_form": "ね",
+      "reading": "ね",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言われた",
+      "basic_form": "言う",
+      "reading": "いわれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "5分",
+      "basic_form": "5分",
+      "reading": "ごふん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "走る",
+      "basic_form": "走る",
+      "reading": "はしる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "息",
+      "basic_form": "息",
+      "reading": "いき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "切れていた",
+      "basic_form": "切れる",
+      "reading": "きれていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少しずつ",
+      "basic_form": "少しずつ",
+      "reading": "すこしずつ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "距離",
+      "basic_form": "距離",
+      "reading": "きょり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伸ばしていく",
+      "basic_form": "伸ばす",
+      "reading": "のばしていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "うち",
+      "basic_form": "うち",
+      "reading": "うち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "軽くなってきた",
+      "basic_form": "軽い",
+      "reading": "かるくなってきた",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "気",
+      "basic_form": "気",
+      "reading": "き",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "仕事前",
+      "basic_form": "仕事前",
+      "reading": "しごとまえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "走ると",
+      "basic_form": "走る",
+      "reading": "はしると",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "頭",
+      "basic_form": "頭",
+      "reading": "あたま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すっきりして",
+      "basic_form": "すっきりする",
+      "reading": "すっきりして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一日",
+      "basic_form": "一日",
+      "reading": "いちにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "気持ちよく",
+      "basic_form": "気持ちいい",
+      "reading": "きもちよく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "始められる",
+      "basic_form": "始める",
+      "reading": "はじめられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "メリット",
+      "basic_form": "メリット",
+      "reading": "めりっと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ただ",
+      "basic_form": "ただ",
+      "reading": "ただ",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "雨",
+      "basic_form": "雨",
+      "reading": "あめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日",
+      "basic_form": "日",
+      "reading": "ひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続ける",
+      "basic_form": "続ける",
+      "reading": "つづける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "難しく",
+      "basic_form": "難しい",
+      "reading": "むずかしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "正直",
+      "basic_form": "正直",
+      "reading": "しょうじき",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "サボりたくなる",
+      "basic_form": "サボる",
+      "reading": "さぼりたくなる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それでも",
+      "basic_form": "それでも",
+      "reading": "それでも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "三日坊主",
+      "basic_form": "三日坊主",
+      "reading": "みっかぼうず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ならない",
+      "basic_form": "なる",
+      "reading": "ならない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "無理",
+      "basic_form": "無理",
+      "reading": "むり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "範囲",
+      "basic_form": "範囲",
+      "reading": "はんい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続けていきたい",
+      "basic_form": "続ける",
+      "reading": "つづけていきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思っている",
+      "basic_form": "思う",
+      "reading": "おもっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "最近": {
+      "meaning": "最近"
+    },
+    "早朝": {
+      "meaning": "清晨"
+    },
+    "ジョギング": {
+      "meaning": "慢跑"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "きっかけ": {
+      "meaning": "契機"
+    },
+    "健康診断": {
+      "meaning": "健康檢查"
+    },
+    "医者": {
+      "meaning": "醫生"
+    },
+    "もう少し": {
+      "meaning": "再稍微"
+    },
+    "運動する": {
+      "meaning": "運動"
+    },
+    "ほう": {
+      "meaning": "（比較選擇時的）那一方"
+    },
+    "いい": {
+      "meaning": "好"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "最初": {
+      "meaning": "一開始"
+    },
+    "5分": {
+      "meaning": "五分鐘"
+    },
+    "走る": {
+      "meaning": "跑步"
+    },
+    "息": {
+      "meaning": "呼吸、氣"
+    },
+    "切れる": {
+      "meaning": "（氣息）中斷、喘不過氣"
+    },
+    "少しずつ": {
+      "meaning": "一點一點地"
+    },
+    "距離": {
+      "meaning": "距離"
+    },
+    "伸ばす": {
+      "meaning": "拉長、延伸"
+    },
+    "うち": {
+      "meaning": "在～期間內"
+    },
+    "体": {
+      "meaning": "身體"
+    },
+    "軽い": {
+      "meaning": "輕的、輕鬆的"
+    },
+    "気": {
+      "meaning": "感覺、心情"
+    },
+    "する": {
+      "meaning": "做、（感覺）產生"
+    },
+    "仕事前": {
+      "meaning": "上班前"
+    },
+    "頭": {
+      "meaning": "頭腦"
+    },
+    "すっきりする": {
+      "meaning": "神清氣爽"
+    },
+    "一日": {
+      "meaning": "一天"
+    },
+    "気持ちいい": {
+      "meaning": "心情舒暢"
+    },
+    "という": {
+      "meaning": "所謂的、稱作"
+    },
+    "メリット": {
+      "meaning": "優點"
+    },
+    "ある": {
+      "meaning": "有"
+    },
+    "ただ": {
+      "meaning": "只是、不過"
+    },
+    "雨": {
+      "meaning": "雨"
+    },
+    "日": {
+      "meaning": "天、日子"
+    },
+    "続ける": {
+      "meaning": "持續"
+    },
+    "難しい": {
+      "meaning": "困難"
+    },
+    "正直": {
+      "meaning": "老實說"
+    },
+    "サボる": {
+      "meaning": "偷懶、蹺（課、班）"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "それでも": {
+      "meaning": "即便如此"
+    },
+    "三日坊主": {
+      "meaning": "三分鐘熱度"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "よう": {
+      "meaning": "（那樣的）狀態"
+    },
+    "無理": {
+      "meaning": "勉強、過度"
+    },
+    "ない": {
+      "meaning": "沒有的"
+    },
+    "範囲": {
+      "meaning": "範圍"
+    },
+    "思う": {
+      "meaning": "覺得、想"
+    }
+  },
+  "particles": {
+    "を": "受格助詞，標示動作的對象",
+    "は": "主題助詞，提示句子的主題",
+    "で": "表示手段、場所或原因",
+    "に": "表示動作的對象、方向或時間點",
+    "と": "表示引用內容",
+    "が": "主格助詞或逆接連接詞「雖然～」",
+    "だけ": "表示限定範圍，「只、僅」",
+    "の": "將前面內容名詞化，或表示所屬",
+    "も": "表示「也」，並列或附加語氣"
+  },
+  "translations": [
+    [
+      {
+        "text": "最近開始了清晨慢跑。",
+        "word": "ジョギング"
+      }
+    ],
+    [
+      {
+        "text": "契機是健康檢查時醫生說「你最好再多運動一點喔」。",
+        "word": "きっかけ"
+      }
+    ],
+    [
+      {
+        "text": "一開始只跑五分鐘就喘不過氣，但漸漸拉長距離之後，感覺身體變輕鬆了。",
+        "word": "軽い"
+      }
+    ],
+    [
+      {
+        "text": "上班前跑步的話，頭腦會變得清爽，也有能讓一天心情愉快地展開的好處。",
+        "word": "メリット"
+      }
+    ],
+    [
+      {
+        "text": "只是下雨天很難持續，老實說也不少次想乾脆偷懶。",
+        "word": "サボる"
+      }
+    ],
+    [
+      {
+        "text": "即便如此，我還是想在不勉強的範圍內持續下去，不要三分鐘熱度。",
+        "word": "三日坊主"
+      }
+    ]
+  ]
+}

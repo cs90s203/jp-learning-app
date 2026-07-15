@@ -1,0 +1,446 @@
+{
+  "date": "2026-07-16",
+  "level": "n4_lite",
+  "title": "初めての釣り",
+  "text": "先週、初めて釣りに行ってみた。朝早くて、少し眠かったけど、頑張って準備した。友達が誘ってくれて、川へ向かった。魚はなかなか釣れなくて、ちょっと大変だった。でも、最後に一匹釣れて、すごく嬉しかった。今度はもっと大きい魚を釣りたい。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "初めて",
+      "basic_form": "初めて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "釣り",
+      "basic_form": "釣り",
+      "reading": "つり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行ってみた",
+      "basic_form": "行く",
+      "reading": "いってみた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝",
+      "basic_form": "朝",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "早くて",
+      "basic_form": "早い",
+      "reading": "はやくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "眠かった",
+      "basic_form": "眠い",
+      "reading": "ねむかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "頑張って",
+      "basic_form": "頑張る",
+      "reading": "がんばって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "準備した",
+      "basic_form": "準備する",
+      "reading": "じゅんびした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "誘ってくれて",
+      "basic_form": "誘う",
+      "reading": "さそってくれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "川",
+      "basic_form": "川",
+      "reading": "かわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "向かった",
+      "basic_form": "向かう",
+      "reading": "むかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "魚",
+      "basic_form": "魚",
+      "reading": "さかな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なかなか",
+      "basic_form": "なかなか",
+      "reading": "なかなか",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "釣れなくて",
+      "basic_form": "釣れる",
+      "reading": "つれなくて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちょっと",
+      "basic_form": "ちょっと",
+      "reading": "ちょっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "大変だった",
+      "basic_form": "大変",
+      "reading": "たいへんだった",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最後",
+      "basic_form": "最後",
+      "reading": "さいご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一匹",
+      "basic_form": "一匹",
+      "reading": "いっぴき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "釣れて",
+      "basic_form": "釣れる",
+      "reading": "つれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すごく",
+      "basic_form": "すごい",
+      "reading": "すごく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "嬉しかった",
+      "basic_form": "嬉しい",
+      "reading": "うれしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今度",
+      "basic_form": "今度",
+      "reading": "こんど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もっと",
+      "basic_form": "もっと",
+      "reading": "もっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "大きい",
+      "basic_form": "大きい",
+      "reading": "おおきい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "魚",
+      "basic_form": "魚",
+      "reading": "さかな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "釣りたい",
+      "basic_form": "釣る",
+      "reading": "つりたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週"
+    },
+    "初めて": {
+      "meaning": "第一次"
+    },
+    "釣り": {
+      "meaning": "釣魚"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "朝": {
+      "meaning": "早上"
+    },
+    "早い": {
+      "meaning": "早的"
+    },
+    "少し": {
+      "meaning": "稍微、一點"
+    },
+    "眠い": {
+      "meaning": "想睡"
+    },
+    "頑張る": {
+      "meaning": "努力"
+    },
+    "準備する": {
+      "meaning": "準備"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "誘う": {
+      "meaning": "邀約"
+    },
+    "川": {
+      "meaning": "河川"
+    },
+    "向かう": {
+      "meaning": "前往"
+    },
+    "魚": {
+      "meaning": "魚"
+    },
+    "なかなか": {
+      "meaning": "（後接否定）不容易、怎麼也不"
+    },
+    "釣れる": {
+      "meaning": "釣得到（可能形）"
+    },
+    "ちょっと": {
+      "meaning": "有點、稍微"
+    },
+    "大変": {
+      "meaning": "辛苦、糟糕"
+    },
+    "でも": {
+      "meaning": "但是"
+    },
+    "最後": {
+      "meaning": "最後"
+    },
+    "一匹": {
+      "meaning": "一隻（魚等）"
+    },
+    "すごい": {
+      "meaning": "非常、厲害"
+    },
+    "嬉しい": {
+      "meaning": "開心"
+    },
+    "今度": {
+      "meaning": "下次"
+    },
+    "もっと": {
+      "meaning": "更加"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "釣る": {
+      "meaning": "釣（魚）"
+    }
+  },
+  "particles": {
+    "に": "表示動作發生的對象或目的",
+    "が": "主格助詞，標示句子的主語",
+    "へ": "方向助詞，表示移動的方向",
+    "は": "主題助詞，提示句子的主題",
+    "を": "受格助詞，標示動作的對象",
+    "けど": "表示轉折，「雖然～但是」"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週第一次去釣魚看看。",
+        "word": "釣り"
+      }
+    ],
+    [
+      {
+        "text": "早上有點早，雖然有點想睡，但還是努力準備了。",
+        "word": "準備する"
+      }
+    ],
+    [
+      {
+        "text": "朋友約我，一起往河邊出發了。",
+        "word": "誘う"
+      }
+    ],
+    [
+      {
+        "text": "魚怎麼也釣不到，有點辛苦。",
+        "word": "釣れる"
+      }
+    ],
+    [
+      {
+        "text": "不過最後釣到一隻，非常開心。",
+        "word": "嬉しい"
+      }
+    ],
+    [
+      {
+        "text": "下次想釣更大的魚。",
+        "word": "釣る"
+      }
+    ]
+  ]
+}

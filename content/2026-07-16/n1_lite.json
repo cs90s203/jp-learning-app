@@ -1,0 +1,1145 @@
+{
+  "date": "2026-07-16",
+  "level": "n1_lite",
+  "title": "都市部における待機児童問題の背景",
+  "text": "都市部を中心に、保育施設に入所できない、いわゆる待機児童の問題が依然として解消されずにいる。共働き世帯の増加に伴って保育需要は年々高まっているものの、保育士の人手不足や施設用地の確保難といった構造的な要因が、供給の拡大を阻んでいる。行政による保育料の補助や新規施設の整備は進められているが、都市部特有の地価の高さもあり、抜本的な解決には至っていないのが現状だ。一部の自治体では、認可外施設への補助拡充や保育士確保のための家賃補助といった独自の取り組みも見られる。また、保育士という職業自体の待遇改善なくして、担い手を増やすことは難しいという指摘もある。今後は、保育の量的拡大だけでなく、質の維持や保育士の労働環境の改善にも同時に取り組む必要があるだろう。",
+  "tokens": [
+    {
+      "surface_form": "都市部",
+      "basic_form": "都市部",
+      "reading": "としぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "中心",
+      "basic_form": "中心",
+      "reading": "ちゅうしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "保育施設",
+      "basic_form": "保育施設",
+      "reading": "ほいくしせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "入所できない",
+      "basic_form": "入所する",
+      "reading": "にゅうしょできない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いわゆる",
+      "basic_form": "いわゆる",
+      "reading": "いわゆる",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "待機児童",
+      "basic_form": "待機児童",
+      "reading": "たいきじどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "依然として",
+      "basic_form": "依然として",
+      "reading": "いぜんとして",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "解消されず",
+      "basic_form": "解消する",
+      "reading": "かいしょうされず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "共働き世帯",
+      "basic_form": "共働き世帯",
+      "reading": "ともばたらきせたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増加",
+      "basic_form": "増加",
+      "reading": "ぞうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伴って",
+      "basic_form": "伴う",
+      "reading": "ともなって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "保育需要",
+      "basic_form": "保育需要",
+      "reading": "ほいくじゅよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "年々",
+      "basic_form": "年々",
+      "reading": "ねんねん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "高まっている",
+      "basic_form": "高まる",
+      "reading": "たかまっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ものの",
+      "basic_form": "ものの",
+      "reading": "ものの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "保育士",
+      "basic_form": "保育士",
+      "reading": "ほいくし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人手不足",
+      "basic_form": "人手不足",
+      "reading": "ひとでぶそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "施設用地",
+      "basic_form": "施設用地",
+      "reading": "しせつようち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "確保難",
+      "basic_form": "確保難",
+      "reading": "かくほなん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "構造的な",
+      "basic_form": "構造的",
+      "reading": "こうぞうてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "要因",
+      "basic_form": "要因",
+      "reading": "よういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "供給",
+      "basic_form": "供給",
+      "reading": "きょうきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "拡大",
+      "basic_form": "拡大",
+      "reading": "かくだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "阻んでいる",
+      "basic_form": "阻む",
+      "reading": "はばんでいる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "行政",
+      "basic_form": "行政",
+      "reading": "ぎょうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "による",
+      "basic_form": "による",
+      "reading": "による",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保育料",
+      "basic_form": "保育料",
+      "reading": "ほいくりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "補助",
+      "basic_form": "補助",
+      "reading": "ほじょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "新規施設",
+      "basic_form": "新規施設",
+      "reading": "しんきしせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整備",
+      "basic_form": "整備",
+      "reading": "せいび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進められている",
+      "basic_form": "進める",
+      "reading": "すすめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市部特有",
+      "basic_form": "都市部特有",
+      "reading": "としぶとくゆう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地価",
+      "basic_form": "地価",
+      "reading": "ちか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高さ",
+      "basic_form": "高さ",
+      "reading": "たかさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "抜本的な",
+      "basic_form": "抜本的",
+      "reading": "ばっぽんてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "解決",
+      "basic_form": "解決",
+      "reading": "かいけつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "至っていない",
+      "basic_form": "至る",
+      "reading": "いたっていない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現状だ",
+      "basic_form": "現状",
+      "reading": "げんじょうだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一部",
+      "basic_form": "一部",
+      "reading": "いちぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自治体",
+      "basic_form": "自治体",
+      "reading": "じちたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "では",
+      "basic_form": "では",
+      "reading": "では",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "認可外施設",
+      "basic_form": "認可外施設",
+      "reading": "にんかがいしせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "補助拡充",
+      "basic_form": "補助拡充",
+      "reading": "ほじょかくじゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保育士確保",
+      "basic_form": "保育士確保",
+      "reading": "ほいくしかくほ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "家賃補助",
+      "basic_form": "家賃補助",
+      "reading": "やちんほじょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "独自",
+      "basic_form": "独自",
+      "reading": "どくじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取り組み",
+      "basic_form": "取り組み",
+      "reading": "とりくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見られる",
+      "basic_form": "見られる",
+      "reading": "みられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "保育士",
+      "basic_form": "保育士",
+      "reading": "ほいくし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "職業自体",
+      "basic_form": "職業自体",
+      "reading": "しょくぎょうじたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "待遇改善",
+      "basic_form": "待遇改善",
+      "reading": "たいぐうかいぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "なくして",
+      "basic_form": "なくして",
+      "reading": "なくして",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "担い手",
+      "basic_form": "担い手",
+      "reading": "にないて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増やす",
+      "basic_form": "増やす",
+      "reading": "ふやす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "難しい",
+      "basic_form": "難しい",
+      "reading": "むずかしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "保育",
+      "basic_form": "保育",
+      "reading": "ほいく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "量的拡大",
+      "basic_form": "量的拡大",
+      "reading": "りょうてきかくだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけでなく",
+      "basic_form": "だけでなく",
+      "reading": "だけでなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "質",
+      "basic_form": "質",
+      "reading": "しつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "維持",
+      "basic_form": "維持",
+      "reading": "いじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保育士",
+      "basic_form": "保育士",
+      "reading": "ほいくし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "労働環境",
+      "basic_form": "労働環境",
+      "reading": "ろうどうかんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "改善",
+      "basic_form": "改善",
+      "reading": "かいぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "同時に",
+      "basic_form": "同時に",
+      "reading": "どうじに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "取り組む",
+      "basic_form": "取り組む",
+      "reading": "とりくむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "都市部": {
+      "meaning": "都市地區"
+    },
+    "中心": {
+      "meaning": "中心、主要"
+    },
+    "保育施設": {
+      "meaning": "托育設施"
+    },
+    "入所する": {
+      "meaning": "入托、入所"
+    },
+    "いわゆる": {
+      "meaning": "所謂的"
+    },
+    "待機児童": {
+      "meaning": "候補入托兒童（等待入托名額的孩童）"
+    },
+    "問題": {
+      "meaning": "問題"
+    },
+    "依然として": {
+      "meaning": "依然、仍舊"
+    },
+    "解消する": {
+      "meaning": "解決、消除"
+    },
+    "いる": {
+      "meaning": "（狀態）持續存在"
+    },
+    "共働き世帯": {
+      "meaning": "雙薪家庭"
+    },
+    "増加": {
+      "meaning": "增加"
+    },
+    "伴う": {
+      "meaning": "伴隨"
+    },
+    "保育需要": {
+      "meaning": "托育需求"
+    },
+    "年々": {
+      "meaning": "逐年"
+    },
+    "高まる": {
+      "meaning": "提高、升高"
+    },
+    "保育士": {
+      "meaning": "保育員"
+    },
+    "人手不足": {
+      "meaning": "人力不足"
+    },
+    "施設用地": {
+      "meaning": "設施用地"
+    },
+    "確保難": {
+      "meaning": "難以確保"
+    },
+    "構造的": {
+      "meaning": "結構性的"
+    },
+    "要因": {
+      "meaning": "原因、因素"
+    },
+    "供給": {
+      "meaning": "供給"
+    },
+    "拡大": {
+      "meaning": "擴大"
+    },
+    "阻む": {
+      "meaning": "阻礙"
+    },
+    "行政": {
+      "meaning": "行政機關"
+    },
+    "による": {
+      "meaning": "由～、根據～"
+    },
+    "保育料": {
+      "meaning": "托育費用"
+    },
+    "補助": {
+      "meaning": "補助"
+    },
+    "新規施設": {
+      "meaning": "新設施"
+    },
+    "整備": {
+      "meaning": "整建、完善"
+    },
+    "進める": {
+      "meaning": "推進"
+    },
+    "都市部特有": {
+      "meaning": "都市地區特有的"
+    },
+    "地価": {
+      "meaning": "地價"
+    },
+    "高さ": {
+      "meaning": "高度、高昂程度"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    },
+    "抜本的": {
+      "meaning": "根本性的"
+    },
+    "解決": {
+      "meaning": "解決"
+    },
+    "至る": {
+      "meaning": "達到"
+    },
+    "現状": {
+      "meaning": "現狀"
+    },
+    "一部": {
+      "meaning": "一部分"
+    },
+    "自治体": {
+      "meaning": "地方自治體"
+    },
+    "認可外施設": {
+      "meaning": "未受認可的托育設施"
+    },
+    "補助拡充": {
+      "meaning": "擴大補助"
+    },
+    "保育士確保": {
+      "meaning": "確保保育員人力"
+    },
+    "ため": {
+      "meaning": "為了～"
+    },
+    "家賃補助": {
+      "meaning": "房租補助"
+    },
+    "独自": {
+      "meaning": "獨自、獨特"
+    },
+    "取り組み": {
+      "meaning": "措施、努力"
+    },
+    "見られる": {
+      "meaning": "可見到、觀察到"
+    },
+    "また": {
+      "meaning": "此外、還有"
+    },
+    "職業自体": {
+      "meaning": "職業本身"
+    },
+    "待遇改善": {
+      "meaning": "待遇改善"
+    },
+    "担い手": {
+      "meaning": "承擔者、人才"
+    },
+    "増やす": {
+      "meaning": "增加"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "難しい": {
+      "meaning": "困難的"
+    },
+    "指摘": {
+      "meaning": "指出、指摘"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "保育": {
+      "meaning": "托育"
+    },
+    "量的拡大": {
+      "meaning": "數量上的擴大"
+    },
+    "質": {
+      "meaning": "品質"
+    },
+    "維持": {
+      "meaning": "維持"
+    },
+    "労働環境": {
+      "meaning": "勞動環境"
+    },
+    "改善": {
+      "meaning": "改善"
+    },
+    "同時に": {
+      "meaning": "同時"
+    },
+    "取り組む": {
+      "meaning": "致力於、著手處理"
+    },
+    "必要": {
+      "meaning": "必要"
+    }
+  },
+  "particles": {
+    "を": "受格助詞，標示動作的對象",
+    "に": "表示對象、方向或時間點",
+    "の": "所有格助詞，表示所屬關係",
+    "が": "主格助詞，標示句子的主語",
+    "は": "主題助詞，提示句子的主題",
+    "や": "列舉部分事物，「～和～等」",
+    "ものの": "表示逆接，「雖然～但是」",
+    "といった": "舉例說明，「像～這樣的」",
+    "による": "表示依據或行為主體，「由～」",
+    "も": "表示「也」，並列或附加語氣",
+    "という": "表示稱作、所謂的內容",
+    "なくして": "表示「若無～」的假定條件，書面語",
+    "だけでなく": "表示「不僅～而且～」的遞進關係",
+    "では": "表示範圍或場所的主題，「在～方面」",
+    "へ": "方向助詞，表示對象或方向"
+  },
+  "translations": [
+    [
+      {
+        "text": "以都市地區為主，所謂進不了托育機構的候補入托兒童問題，至今仍未獲得解決。",
+        "word": "待機児童"
+      }
+    ],
+    [
+      {
+        "text": "隨著雙薪家庭增加，托育需求逐年提高，但保育員人力不足、設施用地難以確保等結構性因素，正阻礙著供給的擴大。",
+        "word": "構造的"
+      }
+    ],
+    [
+      {
+        "text": "雖然行政單位持續推動托育費補助與新設施的整建，但由於都市地區地價高昂，仍未達到根本性的解決，這就是現狀。",
+        "word": "抜本的"
+      }
+    ],
+    [
+      {
+        "text": "部分地方自治體也可見到擴大未受認可設施補助、提供保育員房租補助等獨自的措施。",
+        "word": "取り組み"
+      }
+    ],
+    [
+      {
+        "text": "此外，也有人指出，若不改善保育員這項職業本身的待遇，就很難增加從事這份工作的人才。",
+        "word": "担い手"
+      }
+    ],
+    [
+      {
+        "text": "今後不僅要擴大托育的數量，也有必要同時致力於維持品質與改善保育員的勞動環境。",
+        "word": "取り組む"
+      }
+    ]
+  ]
+}

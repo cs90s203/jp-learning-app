@@ -1,0 +1,612 @@
+{
+  "date": "2026-07-16",
+  "level": "n4",
+  "title": "高校の同窓会",
+  "text": "先週の土曜日に、高校の同窓会があった。10年ぶりに会う友達も多かったので、最初はちょっと緊張した。でも、昔の話をしたり、写真を見せ合ったりしているうちに、すぐに昔のような気持ちに戻ることができた。時間が短かったのに、みんなと近況を話すことができて、本当に楽しかった。また来年も会いたいと思う。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "土曜日",
+      "basic_form": "土曜日",
+      "reading": "どようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "高校",
+      "basic_form": "高校",
+      "reading": "こうこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "同窓会",
+      "basic_form": "同窓会",
+      "reading": "どうそうかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あった",
+      "basic_form": "ある",
+      "reading": "あった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "10年",
+      "basic_form": "10年",
+      "reading": "じゅうねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ぶりに",
+      "basic_form": "ぶりに",
+      "reading": "ぶりに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "会う",
+      "basic_form": "会う",
+      "reading": "あう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多かった",
+      "basic_form": "多い",
+      "reading": "おおかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ちょっと",
+      "basic_form": "ちょっと",
+      "reading": "ちょっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "緊張した",
+      "basic_form": "緊張する",
+      "reading": "きんちょうした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "昔",
+      "basic_form": "昔",
+      "reading": "むかし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "話",
+      "basic_form": "話",
+      "reading": "はなし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "したり",
+      "basic_form": "する",
+      "reading": "したり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見せ合ったり",
+      "basic_form": "見せ合う",
+      "reading": "みせあったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "している",
+      "basic_form": "する",
+      "reading": "している",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "うち",
+      "basic_form": "うち",
+      "reading": "うち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すぐに",
+      "basic_form": "すぐに",
+      "reading": "すぐに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "昔",
+      "basic_form": "昔",
+      "reading": "むかし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "気持ち",
+      "basic_form": "気持ち",
+      "reading": "きもち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "戻る",
+      "basic_form": "戻る",
+      "reading": "もどる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できた",
+      "basic_form": "できる",
+      "reading": "できた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "短かった",
+      "basic_form": "短い",
+      "reading": "みじかかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "のに",
+      "basic_form": "のに",
+      "reading": "のに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近況",
+      "basic_form": "近況",
+      "reading": "きんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "話す",
+      "basic_form": "話す",
+      "reading": "はなす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できて",
+      "basic_form": "できる",
+      "reading": "できて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "本当に",
+      "basic_form": "本当に",
+      "reading": "ほんとうに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しかった",
+      "basic_form": "楽しい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "来年",
+      "basic_form": "来年",
+      "reading": "らいねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "会いたい",
+      "basic_form": "会う",
+      "reading": "あいたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週"
+    },
+    "土曜日": {
+      "meaning": "星期六"
+    },
+    "高校": {
+      "meaning": "高中"
+    },
+    "同窓会": {
+      "meaning": "同學會"
+    },
+    "ある": {
+      "meaning": "有（事件、活動舉行）"
+    },
+    "10年": {
+      "meaning": "十年"
+    },
+    "ぶりに": {
+      "meaning": "相隔～之後"
+    },
+    "会う": {
+      "meaning": "見面"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "最初": {
+      "meaning": "一開始"
+    },
+    "ちょっと": {
+      "meaning": "有點、稍微"
+    },
+    "緊張する": {
+      "meaning": "緊張"
+    },
+    "でも": {
+      "meaning": "但是"
+    },
+    "昔": {
+      "meaning": "從前"
+    },
+    "話": {
+      "meaning": "話題、故事"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "写真": {
+      "meaning": "照片"
+    },
+    "見せ合う": {
+      "meaning": "互相展示"
+    },
+    "うち": {
+      "meaning": "之內、期間"
+    },
+    "すぐに": {
+      "meaning": "馬上"
+    },
+    "よう": {
+      "meaning": "（像）～那樣"
+    },
+    "気持ち": {
+      "meaning": "心情"
+    },
+    "戻る": {
+      "meaning": "回到"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "できる": {
+      "meaning": "能夠、可以"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "短い": {
+      "meaning": "短的"
+    },
+    "みんな": {
+      "meaning": "大家"
+    },
+    "近況": {
+      "meaning": "近況"
+    },
+    "話す": {
+      "meaning": "說、聊"
+    },
+    "本当に": {
+      "meaning": "真的"
+    },
+    "楽しい": {
+      "meaning": "開心"
+    },
+    "また": {
+      "meaning": "還、再"
+    },
+    "来年": {
+      "meaning": "明年"
+    },
+    "思う": {
+      "meaning": "覺得、想"
+    }
+  },
+  "particles": {
+    "に": "表示時間點或動作發生的對象",
+    "が": "主格助詞，標示句子的主語",
+    "の": "所有格助詞，表示所屬關係",
+    "も": "表示「也」，並列或附加語氣",
+    "ので": "表示原因、理由，「因為～」",
+    "は": "主題助詞，提示句子的主題",
+    "を": "受格助詞，標示動作的對象",
+    "な": "形容動詞或「ような」連體修飾用法",
+    "のに": "表示逆接，「明明～卻」",
+    "と": "表示引用內容或共同動作的對象"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週六，辦了高中同學會。",
+        "word": "同窓会"
+      }
+    ],
+    [
+      {
+        "text": "因為很多都是十年沒見的朋友，一開始有點緊張。",
+        "word": "緊張する"
+      }
+    ],
+    [
+      {
+        "text": "不過，一邊聊著從前的事、互相看照片，不知不覺就找回了以前的心情。",
+        "word": "戻る"
+      }
+    ],
+    [
+      {
+        "text": "雖然時間很短，卻能和大家聊到彼此的近況，真的很開心。",
+        "word": "楽しい"
+      }
+    ],
+    [
+      {
+        "text": "希望明年也能再見面。",
+        "word": "会う"
+      }
+    ]
+  ]
+}
