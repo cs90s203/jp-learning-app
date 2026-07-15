@@ -5,6 +5,7 @@
   "text": "先月、弟と一緒に山の中の温泉旅館に泊まりに行った。電車が遅れたので、着いたのはもう夜だった。温泉はとても広くて、露天風呂に入ることができた。星がきれいなのに、弟は寒いと言って早くお風呂から出た。夕食では、地元の魚を食べたり、日本酒を飲んだりして、二人とも満足した。次はもっとゆっくり休みたいと思う。",
   "tokens": [
     { "surface_form": "先月", "basic_form": "先月", "reading": "せんげつ", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "弟", "basic_form": "弟", "reading": "おとうと", "pos": "名詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
     { "surface_form": "一緒に", "basic_form": "一緒に", "reading": "いっしょに", "pos": "副詞" },
@@ -15,25 +16,31 @@
     { "surface_form": "温泉旅館", "basic_form": "温泉旅館", "reading": "おんせんりょかん", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "泊まりに行った", "basic_form": "泊まる", "reading": "とまりにいった", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "電車", "basic_form": "電車", "reading": "でんしゃ", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "遅れたので", "basic_form": "遅れる", "reading": "おくれたので", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "着いた", "basic_form": "着く", "reading": "ついた", "pos": "動詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "もう", "basic_form": "もう", "reading": "もう", "pos": "副詞" },
     { "surface_form": "夜", "basic_form": "夜", "reading": "よる", "pos": "名詞" },
     { "surface_form": "だった", "basic_form": "だ", "reading": "だった", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "温泉", "basic_form": "温泉", "reading": "おんせん", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
     { "surface_form": "広くて", "basic_form": "広い", "reading": "ひろくて", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "露天風呂", "basic_form": "露天風呂", "reading": "ろてんぶろ", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "入ることができた", "basic_form": "入る", "reading": "はいることができた", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "星", "basic_form": "星", "reading": "ほし", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "きれいなのに", "basic_form": "きれい", "reading": "きれいなのに", "pos": "形容動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "弟", "basic_form": "弟", "reading": "おとうと", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "寒い", "basic_form": "寒い", "reading": "さむい", "pos": "形容詞" },
@@ -43,66 +50,148 @@
     { "surface_form": "お風呂", "basic_form": "お風呂", "reading": "おふろ", "pos": "名詞" },
     { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "助詞" },
     { "surface_form": "出た", "basic_form": "出る", "reading": "でた", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "夕食", "basic_form": "夕食", "reading": "ゆうしょく", "pos": "名詞" },
     { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "地元", "basic_form": "地元", "reading": "じもと", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "魚", "basic_form": "魚", "reading": "さかな", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "食べたり", "basic_form": "食べる", "reading": "たべたり", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "日本酒", "basic_form": "日本酒", "reading": "にほんしゅ", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "飲んだりして", "basic_form": "飲む", "reading": "のんだりして", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "二人とも", "basic_form": "二人とも", "reading": "ふたりとも", "pos": "名詞" },
     { "surface_form": "満足した", "basic_form": "満足する", "reading": "まんぞくした", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "次", "basic_form": "次", "reading": "つぎ", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "もっと", "basic_form": "もっと", "reading": "もっと", "pos": "副詞" },
     { "surface_form": "ゆっくり", "basic_form": "ゆっくり", "reading": "ゆっくり", "pos": "副詞" },
     { "surface_form": "休みたい", "basic_form": "休む", "reading": "やすみたい", "pos": "動詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
-    { "surface_form": "思う", "basic_form": "思う", "reading": "おもう", "pos": "動詞" }
+    { "surface_form": "思う", "basic_form": "思う", "reading": "おもう", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "先月": { "meaning": "上個月" },
-    "とても": { "meaning": "非常" },
-    "弟": { "meaning": "弟弟" },
-    "一緒に": { "meaning": "一起" },
-    "山": { "meaning": "山" },
-    "中": { "meaning": "裡面、中間" },
-    "温泉旅館": { "meaning": "溫泉旅館" },
-    "泊まる": { "meaning": "住宿" },
-    "電車": { "meaning": "電車" },
-    "遅れる": { "meaning": "遲到、誤點" },
-    "着く": { "meaning": "抵達" },
-    "もう": { "meaning": "已經" },
-    "夜": { "meaning": "夜晚" },
-    "だ": { "meaning": "是(斷定)" },
-    "温泉": { "meaning": "溫泉" },
-    "広い": { "meaning": "寬廣的" },
-    "露天風呂": { "meaning": "露天溫泉" },
-    "入る": { "meaning": "進入" },
-    "星": { "meaning": "星星" },
-    "きれい": { "meaning": "美麗的" },
-    "寒い": { "meaning": "寒冷的" },
-    "言う": { "meaning": "說" },
-    "早い": { "meaning": "早的" },
-    "お風呂": { "meaning": "浴池" },
-    "出る": { "meaning": "出去" },
-    "夕食": { "meaning": "晚餐" },
-    "地元": { "meaning": "當地" },
-    "魚": { "meaning": "魚" },
-    "食べる": { "meaning": "吃" },
-    "日本酒": { "meaning": "日本酒" },
-    "飲む": { "meaning": "喝" },
-    "二人とも": { "meaning": "兩人都" },
-    "満足する": { "meaning": "滿足" },
-    "次": { "meaning": "下次" },
-    "もっと": { "meaning": "更加" },
-    "ゆっくり": { "meaning": "悠閒地、慢慢地" },
-    "休む": { "meaning": "休息" },
-    "思う": { "meaning": "覺得、認為" }
+    "先月": {
+      "meaning": "上個月"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "弟": {
+      "meaning": "弟弟"
+    },
+    "一緒に": {
+      "meaning": "一起"
+    },
+    "山": {
+      "meaning": "山"
+    },
+    "中": {
+      "meaning": "裡面、中間"
+    },
+    "温泉旅館": {
+      "meaning": "溫泉旅館"
+    },
+    "泊まる": {
+      "meaning": "住宿"
+    },
+    "電車": {
+      "meaning": "電車"
+    },
+    "遅れる": {
+      "meaning": "遲到、誤點"
+    },
+    "着く": {
+      "meaning": "抵達"
+    },
+    "もう": {
+      "meaning": "已經"
+    },
+    "夜": {
+      "meaning": "夜晚"
+    },
+    "だ": {
+      "meaning": "是(斷定)"
+    },
+    "温泉": {
+      "meaning": "溫泉"
+    },
+    "広い": {
+      "meaning": "寬廣的"
+    },
+    "露天風呂": {
+      "meaning": "露天溫泉"
+    },
+    "入る": {
+      "meaning": "進入"
+    },
+    "星": {
+      "meaning": "星星"
+    },
+    "きれい": {
+      "meaning": "美麗的"
+    },
+    "寒い": {
+      "meaning": "寒冷的"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "早い": {
+      "meaning": "早的"
+    },
+    "お風呂": {
+      "meaning": "浴池"
+    },
+    "出る": {
+      "meaning": "出去"
+    },
+    "夕食": {
+      "meaning": "晚餐"
+    },
+    "地元": {
+      "meaning": "當地"
+    },
+    "魚": {
+      "meaning": "魚"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "日本酒": {
+      "meaning": "日本酒"
+    },
+    "飲む": {
+      "meaning": "喝"
+    },
+    "二人とも": {
+      "meaning": "兩人都"
+    },
+    "満足する": {
+      "meaning": "滿足"
+    },
+    "次": {
+      "meaning": "下次"
+    },
+    "もっと": {
+      "meaning": "更加"
+    },
+    "ゆっくり": {
+      "meaning": "悠閒地、慢慢地"
+    },
+    "休む": {
+      "meaning": "休息"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    }
   },
   "particles": {
     "と": "表示共同動作對象或引用內容",
@@ -117,11 +206,41 @@
     "は": "主題標示助詞"
   },
   "translations": [
-    [ { "text": "上個月和弟弟一起去山裡的溫泉旅館住宿。", "word": "温泉旅館" } ],
-    [ { "text": "因為電車誤點，抵達時已經是晚上了。", "word": "遅れる" } ],
-    [ { "text": "溫泉非常寬廣，還能泡到露天溫泉。", "word": "露天風呂" } ],
-    [ { "text": "星星很美，弟弟卻說很冷，很快就從浴池出來了。", "word": "きれい" } ],
-    [ { "text": "晚餐吃了當地的魚，也喝了日本酒，兩人都很滿足。", "word": "満足する" } ],
-    [ { "text": "下次想要更悠閒地休息。", "word": "ゆっくり" } ]
+    [
+      {
+        "text": "上個月和弟弟一起去山裡的溫泉旅館住宿。",
+        "word": "温泉旅館"
+      }
+    ],
+    [
+      {
+        "text": "因為電車誤點，抵達時已經是晚上了。",
+        "word": "遅れる"
+      }
+    ],
+    [
+      {
+        "text": "溫泉非常寬廣，還能泡到露天溫泉。",
+        "word": "露天風呂"
+      }
+    ],
+    [
+      {
+        "text": "星星很美，弟弟卻說很冷，很快就從浴池出來了。",
+        "word": "きれい"
+      }
+    ],
+    [
+      {
+        "text": "晚餐吃了當地的魚，也喝了日本酒，兩人都很滿足。",
+        "word": "満足する"
+      }
+    ],
+    [
+      {
+        "text": "下次想要更悠閒地休息。",
+        "word": "ゆっくり"
+      }
+    ]
   ]
 }

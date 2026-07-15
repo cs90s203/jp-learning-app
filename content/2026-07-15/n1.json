@@ -8,6 +8,7 @@
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "本格化する", "basic_form": "本格化する", "reading": "ほんかくかする", "pos": "動詞" },
     { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "地方自治体", "basic_form": "地方自治体", "reading": "ちほうじちたい", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "財政運営", "basic_form": "財政運営", "reading": "ざいせいうんえい", "pos": "名詞" },
@@ -16,6 +17,7 @@
     { "surface_form": "厳しさ", "basic_form": "厳しさ", "reading": "きびしさ", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "直面している", "basic_form": "直面する", "reading": "ちょくめんしている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "税収", "basic_form": "税収", "reading": "ぜいしゅう", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "基盤", "basic_form": "基盤", "reading": "きばん", "pos": "名詞" },
@@ -24,6 +26,7 @@
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "減少する", "basic_form": "減少する", "reading": "げんしょうする", "pos": "動詞" },
     { "surface_form": "一方", "basic_form": "一方", "reading": "いっぽう", "pos": "接続詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "高齢化", "basic_form": "高齢化", "reading": "こうれいか", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "伴う", "basic_form": "伴う", "reading": "ともなう", "pos": "動詞" },
@@ -34,6 +37,7 @@
     { "surface_form": "一途", "basic_form": "一途", "reading": "いっと", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "たどっており", "basic_form": "たどる", "reading": "たどっており", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "歳入", "basic_form": "歳入", "reading": "さいにゅう", "pos": "名詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
     { "surface_form": "歳出", "basic_form": "歳出", "reading": "さいしゅつ", "pos": "名詞" },
@@ -46,12 +50,15 @@
     { "surface_form": "ますます", "basic_form": "ますます", "reading": "ますます", "pos": "副詞" },
     { "surface_form": "困難に", "basic_form": "困難に", "reading": "こんなんに", "pos": "形容動詞" },
     { "surface_form": "なりつつある", "basic_form": "なる", "reading": "なりつつある", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "加えて", "basic_form": "加えて", "reading": "くわえて", "pos": "接続詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "老朽化した", "basic_form": "老朽化する", "reading": "ろうきゅうかした", "pos": "動詞" },
     { "surface_form": "インフラ", "basic_form": "インフラ", "reading": "インフラ", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "更新費用", "basic_form": "更新費用", "reading": "こうしんひよう", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "人口減少", "basic_form": "人口減少", "reading": "じんこうげんしょう", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "応じた", "basic_form": "応じる", "reading": "おうじた", "pos": "動詞" },
@@ -62,15 +69,18 @@
     { "surface_form": "伴う", "basic_form": "伴う", "reading": "ともなう", "pos": "動詞" },
     { "surface_form": "調整コスト", "basic_form": "調整コスト", "reading": "ちょうせいコスト", "pos": "名詞" },
     { "surface_form": "など", "basic_form": "など", "reading": "など", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "従来", "basic_form": "従来", "reading": "じゅうらい", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "想定されていなかった", "basic_form": "想定する", "reading": "そうていされていなかった", "pos": "動詞" },
     { "surface_form": "財政負担", "basic_form": "財政負担", "reading": "ざいせいふたん", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "顕在化している", "basic_form": "顕在化する", "reading": "けんざいかしている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "こうした", "basic_form": "こうした", "reading": "こうした", "pos": "連体詞" },
     { "surface_form": "状況", "basic_form": "状況", "reading": "じょうきょう", "pos": "名詞" },
     { "surface_form": "において", "basic_form": "において", "reading": "において", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "単に", "basic_form": "単に", "reading": "たんに", "pos": "副詞" },
     { "surface_form": "歳出", "basic_form": "歳出", "reading": "さいしゅつ", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
@@ -85,6 +95,7 @@
     { "surface_form": "ジレンマ", "basic_form": "ジレンマ", "reading": "ジレンマ", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "指摘されており", "basic_form": "指摘する", "reading": "してきされており", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "自治体", "basic_form": "自治体", "reading": "じちたい", "pos": "名詞" },
     { "surface_form": "には", "basic_form": "には", "reading": "には", "pos": "助詞" },
     { "surface_form": "限られた", "basic_form": "限る", "reading": "かぎられた", "pos": "動詞" },
@@ -98,15 +109,18 @@
     { "surface_form": "経営判断", "basic_form": "経営判断", "reading": "けいえいはんだん", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "求められている", "basic_form": "求める", "reading": "もとめられている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "一部", "basic_form": "一部", "reading": "いちぶ", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "自治体", "basic_form": "自治体", "reading": "じちたい", "pos": "名詞" },
     { "surface_form": "では", "basic_form": "では", "reading": "では", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "広域連携", "basic_form": "広域連携", "reading": "こういきれんけい", "pos": "名詞" },
     { "surface_form": "によって", "basic_form": "によって", "reading": "によって", "pos": "助詞" },
     { "surface_form": "行政コスト", "basic_form": "行政コスト", "reading": "ぎょうせいコスト", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "分担したり", "basic_form": "分担する", "reading": "ぶんたんしたり", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "民間資金", "basic_form": "民間資金", "reading": "みんかんしきん", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
     { "surface_form": "ノウハウ", "basic_form": "ノウハウ", "reading": "ノウハウ", "pos": "名詞" },
@@ -117,19 +131,23 @@
     { "surface_form": "導入したり", "basic_form": "導入する", "reading": "どうにゅうしたり", "pos": "動詞" },
     { "surface_form": "する", "basic_form": "する", "reading": "する", "pos": "動詞" },
     { "surface_form": "など", "basic_form": "など", "reading": "など", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "新たな", "basic_form": "新たな", "reading": "あらたな", "pos": "形容動詞" },
     { "surface_form": "財政運営モデル", "basic_form": "財政運営モデル", "reading": "ざいせいうんえいモデル", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "模索", "basic_form": "模索", "reading": "もさく", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "進められている", "basic_form": "進める", "reading": "すすめられている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "しかし", "basic_form": "しかし", "reading": "しかし", "pos": "接続詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "こうした", "basic_form": "こうした", "reading": "こうした", "pos": "連体詞" },
     { "surface_form": "取り組み", "basic_form": "取り組み", "reading": "とりくみ", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "全国一律に", "basic_form": "全国一律に", "reading": "ぜんこくいちりつに", "pos": "副詞" },
     { "surface_form": "普及している", "basic_form": "普及する", "reading": "ふきゅうしている", "pos": "動詞" },
     { "surface_form": "わけではなく", "basic_form": "わけではなく", "reading": "わけではなく", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "地域間", "basic_form": "地域間", "reading": "ちいきかん", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "財政格差", "basic_form": "財政格差", "reading": "ざいせいかくさ", "pos": "名詞" },
@@ -140,6 +158,7 @@
     { "surface_form": "指摘", "basic_form": "指摘", "reading": "してき", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "あり", "basic_form": "ある", "reading": "あり", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "国", "basic_form": "国", "reading": "くに", "pos": "名詞" },
     { "surface_form": "による", "basic_form": "による", "reading": "による", "pos": "助詞" },
     { "surface_form": "財政調整制度", "basic_form": "財政調整制度", "reading": "ざいせいちょうせいせいど", "pos": "名詞" },
@@ -152,106 +171,284 @@
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "不可欠だ", "basic_form": "不可欠だ", "reading": "ふかけつだ", "pos": "形容動詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
-    { "surface_form": "言える", "basic_form": "言える", "reading": "いえる", "pos": "動詞" }
+    { "surface_form": "言える", "basic_form": "言える", "reading": "いえる", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "人口減少": { "meaning": "人口減少" },
-    "本格化する": { "meaning": "全面化、正式展開" },
-    "中": { "meaning": "……之中" },
-    "地方自治体": { "meaning": "地方自治體" },
-    "財政運営": { "meaning": "財政運營" },
-    "かつてない": { "meaning": "前所未有的" },
-    "厳しさ": { "meaning": "嚴峻程度" },
-    "直面する": { "meaning": "面臨" },
-    "税収": { "meaning": "稅收" },
-    "基盤": { "meaning": "基礎、根基" },
-    "である": { "meaning": "書面語斷定，「是」" },
-    "生産年齢人口": { "meaning": "生產年齡人口（15-64歲）" },
-    "減少する": { "meaning": "減少" },
-    "一方": { "meaning": "另一方面" },
-    "高齢化": { "meaning": "高齡化" },
-    "伴う": { "meaning": "伴隨" },
-    "社会保障関連支出": { "meaning": "社會保障相關支出" },
-    "増加": { "meaning": "增加" },
-    "一途": { "meaning": "一路、單一趨勢" },
-    "たどる": { "meaning": "沿著（趨勢）發展" },
-    "歳入": { "meaning": "歲入" },
-    "歳出": { "meaning": "歲出" },
-    "バランス": { "meaning": "平衡" },
-    "維持する": { "meaning": "維持" },
-    "こと": { "meaning": "事情" },
-    "ますます": { "meaning": "愈發、越來越" },
-    "困難に": { "meaning": "困難地" },
-    "なる": { "meaning": "變成" },
-    "加えて": { "meaning": "此外、加上" },
-    "老朽化する": { "meaning": "老舊化" },
-    "インフラ": { "meaning": "基礎建設" },
-    "更新費用": { "meaning": "更新費用" },
-    "人口減少": { "meaning": "人口減少" },
-    "応じる": { "meaning": "因應、配合" },
-    "公共施設": { "meaning": "公共設施" },
-    "統廃合": { "meaning": "整併、裁併" },
-    "調整コスト": { "meaning": "調整成本" },
-    "従来": { "meaning": "以往、向來" },
-    "想定する": { "meaning": "預設、設想" },
-    "財政負担": { "meaning": "財政負擔" },
-    "顕在化する": { "meaning": "浮現、顯現出來" },
-    "こうした": { "meaning": "這樣的" },
-    "状況": { "meaning": "狀況" },
-    "単に": { "meaning": "僅僅" },
-    "削減する": { "meaning": "削減" },
-    "住民サービス": { "meaning": "居民服務" },
-    "質": { "meaning": "品質" },
-    "ジレンマ": { "meaning": "兩難、困境" },
-    "指摘する": { "meaning": "指出" },
-    "自治体": { "meaning": "地方自治體" },
-    "限る": { "meaning": "限定、有限" },
-    "財源": { "meaning": "財源" },
-    "いかに": { "meaning": "如何" },
-    "効率的に": { "meaning": "有效率地" },
-    "配分する": { "meaning": "分配" },
-    "高度な": { "meaning": "高度的" },
-    "経営判断": { "meaning": "經營判斷" },
-    "求める": { "meaning": "要求、尋求" },
-    "一部": { "meaning": "一部分" },
-    "広域連携": { "meaning": "跨區域合作" },
-    "行政コスト": { "meaning": "行政成本" },
-    "分担する": { "meaning": "分擔" },
-    "民間資金": { "meaning": "民間資金" },
-    "ノウハウ": { "meaning": "專門技術、know-how" },
-    "活用する": { "meaning": "活用" },
-    "PPP・PFI方式": { "meaning": "公私合夥／民間融資提案模式" },
-    "導入する": { "meaning": "導入、引進" },
-    "する": { "meaning": "做" },
-    "新たな": { "meaning": "新的" },
-    "財政運営モデル": { "meaning": "財政運營模式" },
-    "模索": { "meaning": "摸索" },
-    "進める": { "meaning": "推進" },
-    "しかし": { "meaning": "然而" },
-    "取り組み": { "meaning": "努力、措施" },
-    "全国一律に": { "meaning": "全國一致地" },
-    "普及する": { "meaning": "普及" },
-    "地域間": { "meaning": "地區之間" },
-    "財政格差": { "meaning": "財政落差" },
-    "むしろ": { "meaning": "反而" },
-    "拡大する": { "meaning": "擴大" },
-    "指摘": { "meaning": "指出的意見" },
-    "ある": { "meaning": "有" },
-    "国": { "meaning": "國家" },
-    "財政調整制度": { "meaning": "財政調整制度" },
-    "あり方": { "meaning": "應有的樣貌、狀態" },
-    "含める": { "meaning": "包含" },
-    "包括的な": { "meaning": "全面性的、包括性的" },
-    "議論": { "meaning": "討論" },
-    "不可欠だ": { "meaning": "不可或缺" },
-    "言える": { "meaning": "可以說" }
+    "人口減少": {
+      "meaning": "人口減少"
+    },
+    "本格化する": {
+      "meaning": "全面化、正式展開"
+    },
+    "中": {
+      "meaning": "……之中"
+    },
+    "地方自治体": {
+      "meaning": "地方自治體"
+    },
+    "財政運営": {
+      "meaning": "財政運營"
+    },
+    "かつてない": {
+      "meaning": "前所未有的"
+    },
+    "厳しさ": {
+      "meaning": "嚴峻程度"
+    },
+    "直面する": {
+      "meaning": "面臨"
+    },
+    "税収": {
+      "meaning": "稅收"
+    },
+    "基盤": {
+      "meaning": "基礎、根基"
+    },
+    "である": {
+      "meaning": "書面語斷定，「是」"
+    },
+    "生産年齢人口": {
+      "meaning": "生產年齡人口（15-64歲）"
+    },
+    "減少する": {
+      "meaning": "減少"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "高齢化": {
+      "meaning": "高齡化"
+    },
+    "伴う": {
+      "meaning": "伴隨"
+    },
+    "社会保障関連支出": {
+      "meaning": "社會保障相關支出"
+    },
+    "増加": {
+      "meaning": "增加"
+    },
+    "一途": {
+      "meaning": "一路、單一趨勢"
+    },
+    "たどる": {
+      "meaning": "沿著（趨勢）發展"
+    },
+    "歳入": {
+      "meaning": "歲入"
+    },
+    "歳出": {
+      "meaning": "歲出"
+    },
+    "バランス": {
+      "meaning": "平衡"
+    },
+    "維持する": {
+      "meaning": "維持"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "ますます": {
+      "meaning": "愈發、越來越"
+    },
+    "困難に": {
+      "meaning": "困難地"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "加えて": {
+      "meaning": "此外、加上"
+    },
+    "老朽化する": {
+      "meaning": "老舊化"
+    },
+    "インフラ": {
+      "meaning": "基礎建設"
+    },
+    "更新費用": {
+      "meaning": "更新費用"
+    },
+    "応じる": {
+      "meaning": "因應、配合"
+    },
+    "公共施設": {
+      "meaning": "公共設施"
+    },
+    "統廃合": {
+      "meaning": "整併、裁併"
+    },
+    "調整コスト": {
+      "meaning": "調整成本"
+    },
+    "従来": {
+      "meaning": "以往、向來"
+    },
+    "想定する": {
+      "meaning": "預設、設想"
+    },
+    "財政負担": {
+      "meaning": "財政負擔"
+    },
+    "顕在化する": {
+      "meaning": "浮現、顯現出來"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "単に": {
+      "meaning": "僅僅"
+    },
+    "削減する": {
+      "meaning": "削減"
+    },
+    "住民サービス": {
+      "meaning": "居民服務"
+    },
+    "質": {
+      "meaning": "品質"
+    },
+    "ジレンマ": {
+      "meaning": "兩難、困境"
+    },
+    "指摘する": {
+      "meaning": "指出"
+    },
+    "自治体": {
+      "meaning": "地方自治體"
+    },
+    "限る": {
+      "meaning": "限定、有限"
+    },
+    "財源": {
+      "meaning": "財源"
+    },
+    "いかに": {
+      "meaning": "如何"
+    },
+    "効率的に": {
+      "meaning": "有效率地"
+    },
+    "配分する": {
+      "meaning": "分配"
+    },
+    "高度な": {
+      "meaning": "高度的"
+    },
+    "経営判断": {
+      "meaning": "經營判斷"
+    },
+    "求める": {
+      "meaning": "要求、尋求"
+    },
+    "一部": {
+      "meaning": "一部分"
+    },
+    "広域連携": {
+      "meaning": "跨區域合作"
+    },
+    "行政コスト": {
+      "meaning": "行政成本"
+    },
+    "分担する": {
+      "meaning": "分擔"
+    },
+    "民間資金": {
+      "meaning": "民間資金"
+    },
+    "ノウハウ": {
+      "meaning": "專門技術、know-how"
+    },
+    "活用する": {
+      "meaning": "活用"
+    },
+    "PPP・PFI方式": {
+      "meaning": "公私合夥／民間融資提案模式"
+    },
+    "導入する": {
+      "meaning": "導入、引進"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "新たな": {
+      "meaning": "新的"
+    },
+    "財政運営モデル": {
+      "meaning": "財政運營模式"
+    },
+    "模索": {
+      "meaning": "摸索"
+    },
+    "進める": {
+      "meaning": "推進"
+    },
+    "しかし": {
+      "meaning": "然而"
+    },
+    "取り組み": {
+      "meaning": "努力、措施"
+    },
+    "全国一律に": {
+      "meaning": "全國一致地"
+    },
+    "普及する": {
+      "meaning": "普及"
+    },
+    "地域間": {
+      "meaning": "地區之間"
+    },
+    "財政格差": {
+      "meaning": "財政落差"
+    },
+    "むしろ": {
+      "meaning": "反而"
+    },
+    "拡大する": {
+      "meaning": "擴大"
+    },
+    "指摘": {
+      "meaning": "指出的意見"
+    },
+    "ある": {
+      "meaning": "有"
+    },
+    "国": {
+      "meaning": "國家"
+    },
+    "財政調整制度": {
+      "meaning": "財政調整制度"
+    },
+    "あり方": {
+      "meaning": "應有的樣貌、狀態"
+    },
+    "含める": {
+      "meaning": "包含"
+    },
+    "包括的な": {
+      "meaning": "全面性的、包括性的"
+    },
+    "議論": {
+      "meaning": "討論"
+    },
+    "不可欠だ": {
+      "meaning": "不可或缺"
+    },
+    "言える": {
+      "meaning": "可以說"
+    }
   },
   "particles": {
     "が": "表示主語",
     "の": "所有格助詞，表示所屬關係",
     "は": "主題助詞，標示句子的主題",
     "に": "表示對象、方向或時點",
-    "と": "並列助詞，表示「和」或引用",
+    "と": "引用助詞，表示引用內容",
     "を": "表示動作的對象",
     "や": "並列助詞，表示列舉（不完全列舉）",
     "など": "表示「等等」，列舉未盡",
@@ -263,15 +460,44 @@
     "では": "表示範圍或場合",
     "によって": "表示依據或手段，「藉由……」",
     "との": "表示引用內容的連體修飾，「……這樣的」",
-    "による": "表示原因或依據，「因……」",
-    "と": "引用助詞，表示引用內容"
+    "による": "表示原因或依據，「因……」"
   },
   "translations": [
-    [ { "text": "在人口減少全面加劇的背景下，地方自治體的財政運營正面臨前所未有的嚴峻局面。", "word": "直面する" } ],
-    [ { "text": "作為稅收基礎的生產年齡人口不斷減少，另一方面隨高齡化而來的社會保障相關支出卻持續增加，使得維持歲入與歲出的平衡變得越來越困難。", "word": "たどる" } ],
-    [ { "text": "此外，老舊基礎建設的更新費用，以及因應人口減少而進行公共設施整併所伴隨的調整成本等，過去未曾預想到的財政負擔也逐漸浮現。", "word": "顕在化する" } ],
-    [ { "text": "在這樣的狀況下，也有人指出僅僅削減歲出無法維持居民服務品質的兩難，自治體被要求做出如何有效分配有限財源的高度經營判斷。", "word": "ジレンマ" } ],
-    [ { "text": "部分自治體正透過跨區域合作分擔行政成本，或導入運用民間資金與專業技術的PPP、PFI模式等，摸索新的財政運營模式。", "word": "模索" } ],
-    [ { "text": "然而，這類做法並未在全國一致普及，反而有意見指出地區間的財政落差正在擴大，因此包含國家財政調整制度應有樣貌在內的全面性討論實屬不可或缺。", "word": "不可欠だ" } ]
+    [
+      {
+        "text": "在人口減少全面加劇的背景下，地方自治體的財政運營正面臨前所未有的嚴峻局面。",
+        "word": "直面する"
+      }
+    ],
+    [
+      {
+        "text": "作為稅收基礎的生產年齡人口不斷減少，另一方面隨高齡化而來的社會保障相關支出卻持續增加，使得維持歲入與歲出的平衡變得越來越困難。",
+        "word": "たどる"
+      }
+    ],
+    [
+      {
+        "text": "此外，老舊基礎建設的更新費用，以及因應人口減少而進行公共設施整併所伴隨的調整成本等，過去未曾預想到的財政負擔也逐漸浮現。",
+        "word": "顕在化する"
+      }
+    ],
+    [
+      {
+        "text": "在這樣的狀況下，也有人指出僅僅削減歲出無法維持居民服務品質的兩難，自治體被要求做出如何有效分配有限財源的高度經營判斷。",
+        "word": "ジレンマ"
+      }
+    ],
+    [
+      {
+        "text": "部分自治體正透過跨區域合作分擔行政成本，或導入運用民間資金與專業技術的PPP、PFI模式等，摸索新的財政運營模式。",
+        "word": "模索"
+      }
+    ],
+    [
+      {
+        "text": "然而，這類做法並未在全國一致普及，反而有意見指出地區間的財政落差正在擴大，因此包含國家財政調整制度應有樣貌在內的全面性討論實屬不可或缺。",
+        "word": "不可欠だ"
+      }
+    ]
   ]
 }

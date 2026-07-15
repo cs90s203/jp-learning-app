@@ -16,21 +16,25 @@
     { "surface_form": "水準", "basic_form": "水準", "reading": "すいじゅん", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "とどまっており", "basic_form": "とどまる", "reading": "とどまっており", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "長年", "basic_form": "長年", "reading": "ながねん", "pos": "名詞" },
     { "surface_form": "にわたり", "basic_form": "にわたり", "reading": "にわたり", "pos": "助詞" },
     { "surface_form": "改善", "basic_form": "改善", "reading": "かいぜん", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "叫ばれてきた", "basic_form": "叫ぶ", "reading": "さけばれてきた", "pos": "動詞" },
     { "surface_form": "にもかかわらず", "basic_form": "にもかかわらず", "reading": "にもかかわらず", "pos": "接続詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "大きな", "basic_form": "大きい", "reading": "おおきな", "pos": "連体詞" },
     { "surface_form": "進展", "basic_form": "進展", "reading": "しんてん", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "見られていない", "basic_form": "見る", "reading": "みられていない", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "輸入", "basic_form": "輸入", "reading": "ゆにゅう", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "依存する", "basic_form": "依存する", "reading": "いぞんする", "pos": "動詞" },
     { "surface_form": "構造", "basic_form": "構造", "reading": "こうぞう", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "国際情勢", "basic_form": "国際情勢", "reading": "こくさいじょうせい", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "変化", "basic_form": "変化", "reading": "へんか", "pos": "名詞" },
@@ -43,9 +47,11 @@
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "常に", "basic_form": "常に", "reading": "つねに", "pos": "副詞" },
     { "surface_form": "抱えている", "basic_form": "抱える", "reading": "かかえている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "特に", "basic_form": "特に", "reading": "とくに", "pos": "副詞" },
     { "surface_form": "近年", "basic_form": "近年", "reading": "きんねん", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "気候変動", "basic_form": "気候変動", "reading": "きこうへんどう", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
     { "surface_form": "紛争", "basic_form": "紛争", "reading": "ふんそう", "pos": "名詞" },
@@ -56,13 +62,16 @@
     { "surface_form": "穀物価格", "basic_form": "穀物価格", "reading": "こくもつかかく", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "乱高下し", "basic_form": "乱高下する", "reading": "らんこうげし", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "食料安全保障", "basic_form": "食料安全保障", "reading": "しょくりょうあんぜんほしょう", "pos": "名詞" },
     { "surface_form": "への", "basic_form": "へ", "reading": "への", "pos": "助詞" },
     { "surface_form": "懸念", "basic_form": "懸念", "reading": "けねん", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "一層", "basic_form": "一層", "reading": "いっそう", "pos": "副詞" },
     { "surface_form": "高まっている", "basic_form": "高まる", "reading": "たかまっている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "一方", "basic_form": "一方", "reading": "いっぽう", "pos": "接続詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "国内", "basic_form": "国内", "reading": "こくない", "pos": "名詞" },
     { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
@@ -73,13 +82,16 @@
     { "surface_form": "後継者不足", "basic_form": "後継者不足", "reading": "こうけいしゃぶそく", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "深刻で", "basic_form": "深刻", "reading": "しんこくで", "pos": "形容動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "耕作放棄地", "basic_form": "耕作放棄地", "reading": "こうさくほうきち", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "増え続けている", "basic_form": "増え続ける", "reading": "ふえつづけている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "こうした", "basic_form": "こうした", "reading": "こうした", "pos": "連体詞" },
     { "surface_form": "状況", "basic_form": "状況", "reading": "じょうきょう", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "打開するため", "basic_form": "打開する", "reading": "だかいするため", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "スマート農業技術", "basic_form": "スマート農業技術", "reading": "すまーとのうぎょうぎじゅつ", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "導入", "basic_form": "導入", "reading": "どうにゅう", "pos": "名詞" },
@@ -91,6 +103,7 @@
     { "surface_form": "各地", "basic_form": "各地", "reading": "かくち", "pos": "名詞" },
     { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
     { "surface_form": "進められているが", "basic_form": "進める", "reading": "すすめられているが", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "効果", "basic_form": "効果", "reading": "こうか", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "実感できるまでには", "basic_form": "実感する", "reading": "じっかんできるまでには", "pos": "動詞" },
@@ -98,6 +111,7 @@
     { "surface_form": "時間", "basic_form": "時間", "reading": "じかん", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "かかりそうだ", "basic_form": "かかる", "reading": "かかりそうだ", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "食料自給率", "basic_form": "食料自給率", "reading": "しょくりょうじきゅうりつ", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "向上", "basic_form": "向上", "reading": "こうじょう", "pos": "名詞" },
@@ -105,6 +119,7 @@
     { "surface_form": "一朝一夕", "basic_form": "一朝一夕", "reading": "いっちょういっせき", "pos": "名詞" },
     { "surface_form": "には", "basic_form": "には", "reading": "には", "pos": "助詞" },
     { "surface_form": "実現しないが", "basic_form": "実現する", "reading": "じつげんしないが", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "地道な", "basic_form": "地道", "reading": "じみちな", "pos": "形容動詞" },
     { "surface_form": "取り組み", "basic_form": "取り組み", "reading": "とりくみ", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
@@ -112,74 +127,205 @@
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "不可欠だ", "basic_form": "不可欠", "reading": "ふかけつだ", "pos": "形容動詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
-    { "surface_form": "言える", "basic_form": "言える", "reading": "いえる", "pos": "動詞" }
+    { "surface_form": "言える", "basic_form": "言える", "reading": "いえる", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "日本": { "meaning": "日本" },
-    "食料自給率": { "meaning": "糧食自給率" },
-    "先進国": { "meaning": "先進國家" },
-    "中": { "meaning": "之中" },
-    "低い": { "meaning": "低的" },
-    "水準": { "meaning": "水準" },
-    "とどまる": { "meaning": "停留在" },
-    "長年": { "meaning": "長年" },
-    "改善": { "meaning": "改善" },
-    "叫ぶ": { "meaning": "呼籲" },
-    "大きい": { "meaning": "大的" },
-    "にもかかわらず": { "meaning": "儘管如此" },
-    "進展": { "meaning": "進展" },
-    "見る": { "meaning": "看見" },
-    "輸入": { "meaning": "進口" },
-    "依存する": { "meaning": "依賴" },
-    "構造": { "meaning": "結構" },
-    "国際情勢": { "meaning": "國際情勢" },
-    "変化": { "meaning": "變化" },
-    "価格変動": { "meaning": "價格波動" },
-    "供給不安": { "meaning": "供應不安" },
-    "リスク": { "meaning": "風險" },
-    "常に": { "meaning": "經常、總是" },
-    "抱える": { "meaning": "承擔、懷有" },
-    "特に": { "meaning": "特別是" },
-    "近年": { "meaning": "近年" },
-    "気候変動": { "meaning": "氣候變遷" },
-    "紛争": { "meaning": "紛爭" },
-    "影響": { "meaning": "影響" },
-    "穀物価格": { "meaning": "穀物價格" },
-    "乱高下する": { "meaning": "劇烈波動" },
-    "食料安全保障": { "meaning": "糧食安全保障" },
-    "懸念": { "meaning": "憂慮" },
-    "一層": { "meaning": "更加" },
-    "高まる": { "meaning": "提高" },
-    "一方": { "meaning": "另一方面" },
-    "国内": { "meaning": "國內" },
-    "農業従事者": { "meaning": "農業從業人員" },
-    "高齢化": { "meaning": "高齡化" },
-    "後継者不足": { "meaning": "接班人不足" },
-    "深刻": { "meaning": "嚴重" },
-    "耕作放棄地": { "meaning": "廢耕地" },
-    "増え続ける": { "meaning": "持續增加" },
-    "こうした": { "meaning": "這樣的" },
-    "状況": { "meaning": "狀況" },
-    "打開する": { "meaning": "打破、突破" },
-    "スマート農業技術": { "meaning": "智慧農業技術" },
-    "導入": { "meaning": "導入" },
-    "若手就農者": { "meaning": "年輕從農者" },
-    "支援策": { "meaning": "支援政策" },
-    "各地": { "meaning": "各地" },
-    "進める": { "meaning": "推動" },
-    "効果": { "meaning": "效果" },
-    "実感する": { "meaning": "實際感受到" },
-    "まだ": { "meaning": "尚未" },
-    "時間": { "meaning": "時間" },
-    "かかる": { "meaning": "花費" },
-    "向上": { "meaning": "提升" },
-    "一朝一夕": { "meaning": "一朝一夕" },
-    "実現する": { "meaning": "實現" },
-    "地道": { "meaning": "踏實" },
-    "取り組み": { "meaning": "努力、措施" },
-    "積み重ねる": { "meaning": "累積" },
-    "不可欠": { "meaning": "不可或缺" },
-    "言える": { "meaning": "可以說" }
+    "日本": {
+      "meaning": "日本"
+    },
+    "食料自給率": {
+      "meaning": "糧食自給率"
+    },
+    "先進国": {
+      "meaning": "先進國家"
+    },
+    "中": {
+      "meaning": "之中"
+    },
+    "低い": {
+      "meaning": "低的"
+    },
+    "水準": {
+      "meaning": "水準"
+    },
+    "とどまる": {
+      "meaning": "停留在"
+    },
+    "長年": {
+      "meaning": "長年"
+    },
+    "改善": {
+      "meaning": "改善"
+    },
+    "叫ぶ": {
+      "meaning": "呼籲"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "にもかかわらず": {
+      "meaning": "儘管如此"
+    },
+    "進展": {
+      "meaning": "進展"
+    },
+    "見る": {
+      "meaning": "看見"
+    },
+    "輸入": {
+      "meaning": "進口"
+    },
+    "依存する": {
+      "meaning": "依賴"
+    },
+    "構造": {
+      "meaning": "結構"
+    },
+    "国際情勢": {
+      "meaning": "國際情勢"
+    },
+    "変化": {
+      "meaning": "變化"
+    },
+    "価格変動": {
+      "meaning": "價格波動"
+    },
+    "供給不安": {
+      "meaning": "供應不安"
+    },
+    "リスク": {
+      "meaning": "風險"
+    },
+    "常に": {
+      "meaning": "經常、總是"
+    },
+    "抱える": {
+      "meaning": "承擔、懷有"
+    },
+    "特に": {
+      "meaning": "特別是"
+    },
+    "近年": {
+      "meaning": "近年"
+    },
+    "気候変動": {
+      "meaning": "氣候變遷"
+    },
+    "紛争": {
+      "meaning": "紛爭"
+    },
+    "影響": {
+      "meaning": "影響"
+    },
+    "穀物価格": {
+      "meaning": "穀物價格"
+    },
+    "乱高下する": {
+      "meaning": "劇烈波動"
+    },
+    "食料安全保障": {
+      "meaning": "糧食安全保障"
+    },
+    "懸念": {
+      "meaning": "憂慮"
+    },
+    "一層": {
+      "meaning": "更加"
+    },
+    "高まる": {
+      "meaning": "提高"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "国内": {
+      "meaning": "國內"
+    },
+    "農業従事者": {
+      "meaning": "農業從業人員"
+    },
+    "高齢化": {
+      "meaning": "高齡化"
+    },
+    "後継者不足": {
+      "meaning": "接班人不足"
+    },
+    "深刻": {
+      "meaning": "嚴重"
+    },
+    "耕作放棄地": {
+      "meaning": "廢耕地"
+    },
+    "増え続ける": {
+      "meaning": "持續增加"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "打開する": {
+      "meaning": "打破、突破"
+    },
+    "スマート農業技術": {
+      "meaning": "智慧農業技術"
+    },
+    "導入": {
+      "meaning": "導入"
+    },
+    "若手就農者": {
+      "meaning": "年輕從農者"
+    },
+    "支援策": {
+      "meaning": "支援政策"
+    },
+    "各地": {
+      "meaning": "各地"
+    },
+    "進める": {
+      "meaning": "推動"
+    },
+    "効果": {
+      "meaning": "效果"
+    },
+    "実感する": {
+      "meaning": "實際感受到"
+    },
+    "まだ": {
+      "meaning": "尚未"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "かかる": {
+      "meaning": "花費"
+    },
+    "向上": {
+      "meaning": "提升"
+    },
+    "一朝一夕": {
+      "meaning": "一朝一夕"
+    },
+    "実現する": {
+      "meaning": "實現"
+    },
+    "地道": {
+      "meaning": "踏實"
+    },
+    "取り組み": {
+      "meaning": "努力、措施"
+    },
+    "積み重ねる": {
+      "meaning": "累積"
+    },
+    "不可欠": {
+      "meaning": "不可或缺"
+    },
+    "言える": {
+      "meaning": "可以說"
+    }
   },
   "particles": {
     "の": "所有格助詞，表示修飾關係",
@@ -198,11 +344,41 @@
     "が": "主詞標示助詞或逆接連接"
   },
   "translations": [
-    [ { "text": "日本的糧食自給率在先進國家中仍處於偏低水準，儘管多年來一直呼籲改善，卻未見明顯進展。", "word": "食料自給率" } ],
-    [ { "text": "依賴進口的結構，始終背負著因國際情勢變化而導致的價格波動與供應不安風險。", "word": "依存する" } ],
-    [ { "text": "尤其近年因氣候變遷與紛爭等影響，穀物價格劇烈波動，對糧食安全保障的憂慮也日益升高。", "word": "乱高下する" } ],
-    [ { "text": "另一方面，國內農業從業人員高齡化與接班人不足問題嚴重，廢耕地也持續增加。", "word": "高齢化" } ],
-    [ { "text": "為突破此狀況，各地正推動智慧農業技術導入及對年輕從農者的支援政策，但要感受到效果恐怕還需要時間。", "word": "進める" } ],
-    [ { "text": "糧食自給率的提升無法一蹴可幾，但持續累積踏實的努力可說是不可或缺的。", "word": "積み重ねる" } ]
+    [
+      {
+        "text": "日本的糧食自給率在先進國家中仍處於偏低水準，儘管多年來一直呼籲改善，卻未見明顯進展。",
+        "word": "食料自給率"
+      }
+    ],
+    [
+      {
+        "text": "依賴進口的結構，始終背負著因國際情勢變化而導致的價格波動與供應不安風險。",
+        "word": "依存する"
+      }
+    ],
+    [
+      {
+        "text": "尤其近年因氣候變遷與紛爭等影響，穀物價格劇烈波動，對糧食安全保障的憂慮也日益升高。",
+        "word": "乱高下する"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，國內農業從業人員高齡化與接班人不足問題嚴重，廢耕地也持續增加。",
+        "word": "高齢化"
+      }
+    ],
+    [
+      {
+        "text": "為突破此狀況，各地正推動智慧農業技術導入及對年輕從農者的支援政策，但要感受到效果恐怕還需要時間。",
+        "word": "進める"
+      }
+    ],
+    [
+      {
+        "text": "糧食自給率的提升無法一蹴可幾，但持續累積踏實的努力可說是不可或缺的。",
+        "word": "積み重ねる"
+      }
+    ]
   ]
 }

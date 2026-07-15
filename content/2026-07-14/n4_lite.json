@@ -5,6 +5,7 @@
   "text": "先週、友達と一緒に茶道の体験教室に行きました。着物を着て、正座をしました。お茶を点てるのはとても難しかったです。抹茶は少し苦かったですが、和菓子は甘くておいしかったです。いい経験になりました。先生はとても親切でした。",
   "tokens": [
     { "surface_form": "先週", "basic_form": "先週", "reading": "せんしゅう", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "友達", "basic_form": "友達", "reading": "ともだち", "pos": "名詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
     { "surface_form": "一緒に", "basic_form": "一緒に", "reading": "いっしょに", "pos": "副詞" },
@@ -13,12 +14,15 @@
     { "surface_form": "体験教室", "basic_form": "体験教室", "reading": "たいけんきょうしつ", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "行きました", "basic_form": "行く", "reading": "いきました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "着物", "basic_form": "着物", "reading": "きもの", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "着て", "basic_form": "着る", "reading": "きて", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "正座", "basic_form": "正座", "reading": "せいざ", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "しました", "basic_form": "する", "reading": "しました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "お茶", "basic_form": "お茶", "reading": "おちゃ", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "点てる", "basic_form": "点てる", "reading": "たてる", "pos": "動詞" },
@@ -27,52 +31,107 @@
     { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
     { "surface_form": "難しかった", "basic_form": "難しい", "reading": "むずかしかった", "pos": "形容詞" },
     { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "抹茶", "basic_form": "抹茶", "reading": "まっちゃ", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "少し", "basic_form": "少し", "reading": "すこし", "pos": "副詞" },
     { "surface_form": "苦かった", "basic_form": "苦い", "reading": "にがかった", "pos": "形容詞" },
     { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "和菓子", "basic_form": "和菓子", "reading": "わがし", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "甘くて", "basic_form": "甘い", "reading": "あまくて", "pos": "形容詞" },
     { "surface_form": "おいしかった", "basic_form": "おいしい", "reading": "おいしかった", "pos": "形容詞" },
     { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "いい", "basic_form": "いい", "reading": "いい", "pos": "形容詞" },
     { "surface_form": "経験", "basic_form": "経験", "reading": "けいけん", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "なりました", "basic_form": "なる", "reading": "なりました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "先生", "basic_form": "先生", "reading": "せんせい", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
-    { "surface_form": "親切でした", "basic_form": "親切", "reading": "しんせつでした", "pos": "形容動詞" }
+    { "surface_form": "親切でした", "basic_form": "親切", "reading": "しんせつでした", "pos": "形容動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "先週": { "meaning": "上星期" },
-    "とても": { "meaning": "非常" },
-    "友達": { "meaning": "朋友" },
-    "一緒に": { "meaning": "一起" },
-    "茶道": { "meaning": "茶道" },
-    "体験教室": { "meaning": "體驗教室" },
-    "行く": { "meaning": "去" },
-    "着物": { "meaning": "和服" },
-    "着る": { "meaning": "穿" },
-    "正座": { "meaning": "跪坐" },
-    "する": { "meaning": "做" },
-    "お茶": { "meaning": "茶" },
-    "点てる": { "meaning": "沏茶、點茶" },
-    "難しい": { "meaning": "困難的" },
-    "抹茶": { "meaning": "抹茶" },
-    "少し": { "meaning": "稍微、一點" },
-    "苦い": { "meaning": "苦的" },
-    "和菓子": { "meaning": "日式點心" },
-    "甘い": { "meaning": "甜的" },
-    "おいしい": { "meaning": "好吃的" },
-    "いい": { "meaning": "好的" },
-    "経験": { "meaning": "經驗" },
-    "なる": { "meaning": "變成" },
-    "先生": { "meaning": "老師" },
-    "親切": { "meaning": "親切" }
+    "先週": {
+      "meaning": "上星期"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "一緒に": {
+      "meaning": "一起"
+    },
+    "茶道": {
+      "meaning": "茶道"
+    },
+    "体験教室": {
+      "meaning": "體驗教室"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "着物": {
+      "meaning": "和服"
+    },
+    "着る": {
+      "meaning": "穿"
+    },
+    "正座": {
+      "meaning": "跪坐"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "お茶": {
+      "meaning": "茶"
+    },
+    "点てる": {
+      "meaning": "沏茶、點茶"
+    },
+    "難しい": {
+      "meaning": "困難的"
+    },
+    "抹茶": {
+      "meaning": "抹茶"
+    },
+    "少し": {
+      "meaning": "稍微、一點"
+    },
+    "苦い": {
+      "meaning": "苦的"
+    },
+    "和菓子": {
+      "meaning": "日式點心"
+    },
+    "甘い": {
+      "meaning": "甜的"
+    },
+    "おいしい": {
+      "meaning": "好吃的"
+    },
+    "いい": {
+      "meaning": "好的"
+    },
+    "経験": {
+      "meaning": "經驗"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "先生": {
+      "meaning": "老師"
+    },
+    "親切": {
+      "meaning": "親切"
+    }
   },
   "particles": {
     "と": "表示共同動作的對象",
@@ -83,11 +142,41 @@
     "が": "逆接連接詞，表示「雖然…但是」"
   },
   "translations": [
-    [ { "text": "上星期和朋友一起去了茶道體驗教室。", "word": "茶道" } ],
-    [ { "text": "穿上和服，跪坐了下來。", "word": "着物" } ],
-    [ { "text": "點茶非常困難。", "word": "点てる" } ],
-    [ { "text": "抹茶有點苦，但和菓子又甜又好吃。", "word": "苦い" } ],
-    [ { "text": "成為了很棒的經驗。", "word": "経験" } ],
-    [ { "text": "老師非常親切。", "word": "親切" } ]
+    [
+      {
+        "text": "上星期和朋友一起去了茶道體驗教室。",
+        "word": "茶道"
+      }
+    ],
+    [
+      {
+        "text": "穿上和服，跪坐了下來。",
+        "word": "着物"
+      }
+    ],
+    [
+      {
+        "text": "點茶非常困難。",
+        "word": "点てる"
+      }
+    ],
+    [
+      {
+        "text": "抹茶有點苦，但和菓子又甜又好吃。",
+        "word": "苦い"
+      }
+    ],
+    [
+      {
+        "text": "成為了很棒的經驗。",
+        "word": "経験"
+      }
+    ],
+    [
+      {
+        "text": "老師非常親切。",
+        "word": "親切"
+      }
+    ]
   ]
 }

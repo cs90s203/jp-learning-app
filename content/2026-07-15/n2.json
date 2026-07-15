@@ -8,6 +8,7 @@
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "増加", "basic_form": "増加", "reading": "ぞうか", "pos": "名詞" },
     { "surface_form": "に伴い", "basic_form": "に伴う", "reading": "にともない", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "駅", "basic_form": "駅", "reading": "えき", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
     { "surface_form": "観光地", "basic_form": "観光地", "reading": "かんこうち", "pos": "名詞" },
@@ -18,6 +19,7 @@
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "急務", "basic_form": "急務", "reading": "きゅうむ", "pos": "名詞" },
     { "surface_form": "となっている", "basic_form": "となる", "reading": "となっている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "従来", "basic_form": "従来", "reading": "じゅうらい", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "表示", "basic_form": "表示", "reading": "ひょうじ", "pos": "名詞" },
@@ -31,18 +33,22 @@
     { "surface_form": "もの", "basic_form": "もの", "reading": "もの", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "多く", "basic_form": "多い", "reading": "おおく", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "多言語対応", "basic_form": "多言語対応", "reading": "たげんごたいおう", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "十分", "basic_form": "十分", "reading": "じゅうぶん", "pos": "形容動詞" },
     { "surface_form": "とは", "basic_form": "とは", "reading": "とは", "pos": "助詞" },
     { "surface_form": "言えなかった", "basic_form": "言える", "reading": "いえなかった", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "そこで", "basic_form": "そこで", "reading": "そこで", "pos": "接続詞" },
     { "surface_form": "近年", "basic_form": "近年", "reading": "きんねん", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "ピクトグラム", "basic_form": "ピクトグラム", "reading": "ピクトグラム", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
     { "surface_form": "QRコード", "basic_form": "QRコード", "reading": "キューアールコード", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "活用し", "basic_form": "活用する", "reading": "かつようし", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "多言語音声案内", "basic_form": "多言語音声案内", "reading": "たげんごおんせいあんない", "pos": "名詞" },
     { "surface_form": "へ", "basic_form": "へ", "reading": "へ", "pos": "助詞" },
     { "surface_form": "即座に", "basic_form": "即座に", "reading": "そくざに", "pos": "副詞" },
@@ -53,7 +59,9 @@
     { "surface_form": "自治体", "basic_form": "自治体", "reading": "じちたい", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "増えつつある", "basic_form": "増える", "reading": "ふえつつある", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "ただし", "basic_form": "ただし", "reading": "ただし", "pos": "接続詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "地域", "basic_form": "地域", "reading": "ちいき", "pos": "名詞" },
     { "surface_form": "によって", "basic_form": "によって", "reading": "によって", "pos": "助詞" },
     { "surface_form": "整備状況", "basic_form": "整備状況", "reading": "せいびじょうきょう", "pos": "名詞" },
@@ -61,6 +69,7 @@
     { "surface_form": "ばらつき", "basic_form": "ばらつき", "reading": "ばらつき", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "あり", "basic_form": "ある", "reading": "あり", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "財政面", "basic_form": "財政面", "reading": "ざいせいめん", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "制約", "basic_form": "制約", "reading": "せいやく", "pos": "名詞" },
@@ -71,12 +80,15 @@
     { "surface_form": "自治体", "basic_form": "自治体", "reading": "じちたい", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "少なくない", "basic_form": "少なくない", "reading": "すくなくない", "pos": "形容詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "さらに", "basic_form": "さらに", "reading": "さらに", "pos": "副詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "単に", "basic_form": "単に", "reading": "たんに", "pos": "副詞" },
     { "surface_form": "言語", "basic_form": "言語", "reading": "げんご", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "増やす", "basic_form": "増やす", "reading": "ふやす", "pos": "動詞" },
     { "surface_form": "だけでなく", "basic_form": "だけでなく", "reading": "だけでなく", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "文化的背景", "basic_form": "文化的背景", "reading": "ぶんかてきはいけい", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "違い", "basic_form": "違い", "reading": "ちがい", "pos": "名詞" },
@@ -87,81 +99,203 @@
     { "surface_form": "工夫", "basic_form": "工夫", "reading": "くふう", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "求められている", "basic_form": "求める", "reading": "もとめられている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "今後", "basic_form": "今後", "reading": "こんご", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "国", "basic_form": "国", "reading": "くに", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
     { "surface_form": "自治体", "basic_form": "自治体", "reading": "じちたい", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "連携しながら", "basic_form": "連携する", "reading": "れんけいしながら", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "統一的な", "basic_form": "統一的な", "reading": "とういつてきな", "pos": "形容動詞" },
     { "surface_form": "指針", "basic_form": "指針", "reading": "ししん", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "策定していく", "basic_form": "策定する", "reading": "さくていしていく", "pos": "動詞" },
     { "surface_form": "こと", "basic_form": "こと", "reading": "こと", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
-    { "surface_form": "望まれる", "basic_form": "望まれる", "reading": "のぞまれる", "pos": "動詞" }
+    { "surface_form": "望まれる", "basic_form": "望まれる", "reading": "のぞまれる", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "訪日外国人観光客": { "meaning": "訪日外國觀光客" },
-    "増加": { "meaning": "增加" },
-    "駅": { "meaning": "車站" },
-    "観光地": { "meaning": "觀光地" },
-    "案内表示": { "meaning": "指引標示" },
-    "改善": { "meaning": "改善" },
-    "急務": { "meaning": "當務之急" },
-    "となる": { "meaning": "成為" },
-    "従来": { "meaning": "以往、向來" },
-    "表示": { "meaning": "標示" },
-    "日本語": { "meaning": "日語" },
-    "英語": { "meaning": "英語" },
-    "併記": { "meaning": "並列標示" },
-    "にとどまる": { "meaning": "僅止於" },
-    "もの": { "meaning": "東西、事物" },
-    "多い": { "meaning": "多的" },
-    "多言語対応": { "meaning": "多語言因應" },
-    "十分": { "meaning": "充分" },
-    "言える": { "meaning": "可以說" },
-    "そこで": { "meaning": "因此、於是" },
-    "近年": { "meaning": "近年來" },
-    "ピクトグラム": { "meaning": "圖標、圖形符號" },
-    "QRコード": { "meaning": "QR碼" },
-    "活用する": { "meaning": "活用" },
-    "多言語音声案内": { "meaning": "多語言語音導覽" },
-    "即座に": { "meaning": "立即" },
-    "アクセスできる": { "meaning": "能夠存取、能夠連上" },
-    "仕組み": { "meaning": "機制" },
-    "導入する": { "meaning": "導入、引進" },
-    "自治体": { "meaning": "地方自治體" },
-    "増える": { "meaning": "增加" },
-    "ただし": { "meaning": "但是、不過" },
-    "地域": { "meaning": "地區" },
-    "整備状況": { "meaning": "建置狀況" },
-    "ばらつき": { "meaning": "參差不齊、不一致" },
-    "ある": { "meaning": "有" },
-    "財政面": { "meaning": "財政方面" },
-    "制約": { "meaning": "限制" },
-    "対応": { "meaning": "因應、對應" },
-    "遅れる": { "meaning": "落後、延遲" },
-    "少なくない": { "meaning": "不在少數" },
-    "さらに": { "meaning": "此外、進一步" },
-    "単に": { "meaning": "僅僅" },
-    "言語": { "meaning": "語言" },
-    "増やす": { "meaning": "增加（他動詞）" },
-    "文化的背景": { "meaning": "文化背景" },
-    "違い": { "meaning": "差異" },
-    "踏まえる": { "meaning": "根據、基於" },
-    "表現": { "meaning": "表達方式" },
-    "工夫": { "meaning": "巧思、下功夫" },
-    "求める": { "meaning": "要求、尋求" },
-    "今後": { "meaning": "今後" },
-    "国": { "meaning": "國家" },
-    "連携する": { "meaning": "合作、聯手" },
-    "統一的な": { "meaning": "統一的" },
-    "指針": { "meaning": "方針、指引" },
-    "策定する": { "meaning": "制定" },
-    "こと": { "meaning": "事情" },
-    "望まれる": { "meaning": "被期望、被盼望" }
+    "訪日外国人観光客": {
+      "meaning": "訪日外國觀光客"
+    },
+    "増加": {
+      "meaning": "增加"
+    },
+    "駅": {
+      "meaning": "車站"
+    },
+    "観光地": {
+      "meaning": "觀光地"
+    },
+    "案内表示": {
+      "meaning": "指引標示"
+    },
+    "改善": {
+      "meaning": "改善"
+    },
+    "急務": {
+      "meaning": "當務之急"
+    },
+    "となる": {
+      "meaning": "成為"
+    },
+    "従来": {
+      "meaning": "以往、向來"
+    },
+    "表示": {
+      "meaning": "標示"
+    },
+    "日本語": {
+      "meaning": "日語"
+    },
+    "英語": {
+      "meaning": "英語"
+    },
+    "併記": {
+      "meaning": "並列標示"
+    },
+    "にとどまる": {
+      "meaning": "僅止於"
+    },
+    "もの": {
+      "meaning": "東西、事物"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "多言語対応": {
+      "meaning": "多語言因應"
+    },
+    "十分": {
+      "meaning": "充分"
+    },
+    "言える": {
+      "meaning": "可以說"
+    },
+    "そこで": {
+      "meaning": "因此、於是"
+    },
+    "近年": {
+      "meaning": "近年來"
+    },
+    "ピクトグラム": {
+      "meaning": "圖標、圖形符號"
+    },
+    "QRコード": {
+      "meaning": "QR碼"
+    },
+    "活用する": {
+      "meaning": "活用"
+    },
+    "多言語音声案内": {
+      "meaning": "多語言語音導覽"
+    },
+    "即座に": {
+      "meaning": "立即"
+    },
+    "アクセスできる": {
+      "meaning": "能夠存取、能夠連上"
+    },
+    "仕組み": {
+      "meaning": "機制"
+    },
+    "導入する": {
+      "meaning": "導入、引進"
+    },
+    "自治体": {
+      "meaning": "地方自治體"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "ただし": {
+      "meaning": "但是、不過"
+    },
+    "地域": {
+      "meaning": "地區"
+    },
+    "整備状況": {
+      "meaning": "建置狀況"
+    },
+    "ばらつき": {
+      "meaning": "參差不齊、不一致"
+    },
+    "ある": {
+      "meaning": "有"
+    },
+    "財政面": {
+      "meaning": "財政方面"
+    },
+    "制約": {
+      "meaning": "限制"
+    },
+    "対応": {
+      "meaning": "因應、對應"
+    },
+    "遅れる": {
+      "meaning": "落後、延遲"
+    },
+    "少なくない": {
+      "meaning": "不在少數"
+    },
+    "さらに": {
+      "meaning": "此外、進一步"
+    },
+    "単に": {
+      "meaning": "僅僅"
+    },
+    "言語": {
+      "meaning": "語言"
+    },
+    "増やす": {
+      "meaning": "增加（他動詞）"
+    },
+    "文化的背景": {
+      "meaning": "文化背景"
+    },
+    "違い": {
+      "meaning": "差異"
+    },
+    "踏まえる": {
+      "meaning": "根據、基於"
+    },
+    "表現": {
+      "meaning": "表達方式"
+    },
+    "工夫": {
+      "meaning": "巧思、下功夫"
+    },
+    "求める": {
+      "meaning": "要求、尋求"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "国": {
+      "meaning": "國家"
+    },
+    "連携する": {
+      "meaning": "合作、聯手"
+    },
+    "統一的な": {
+      "meaning": "統一的"
+    },
+    "指針": {
+      "meaning": "方針、指引"
+    },
+    "策定する": {
+      "meaning": "制定"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "望まれる": {
+      "meaning": "被期望、被盼望"
+    }
   },
   "particles": {
     "の": "所有格助詞，表示所屬關係",
@@ -181,11 +315,41 @@
     "だけでなく": "表示「不僅……」"
   },
   "translations": [
-    [ { "text": "隨著訪日外國觀光客的增加，車站與觀光景點的指引標示改善已成為當務之急。", "word": "急務" } ],
-    [ { "text": "以往的標示多半僅止於日語與英語並列，難以說已充分因應多語言需求。", "word": "併記" } ],
-    [ { "text": "因此近年來，越來越多地方自治體導入活用圖標與QR碼、能立即連上多語言語音導覽的機制。", "word": "導入する" } ],
-    [ { "text": "不過，各地區的建置狀況參差不齊，也有不少自治體因財政限制而因應進度落後。", "word": "ばらつき" } ],
-    [ { "text": "此外，不僅僅是增加語言種類，考量文化背景差異的表達巧思也是必要的。", "word": "工夫" } ],
-    [ { "text": "今後期望國家與地方自治體能攜手合作，制定出統一的指引方針。", "word": "策定する" } ]
+    [
+      {
+        "text": "隨著訪日外國觀光客的增加，車站與觀光景點的指引標示改善已成為當務之急。",
+        "word": "急務"
+      }
+    ],
+    [
+      {
+        "text": "以往的標示多半僅止於日語與英語並列，難以說已充分因應多語言需求。",
+        "word": "併記"
+      }
+    ],
+    [
+      {
+        "text": "因此近年來，越來越多地方自治體導入活用圖標與QR碼、能立即連上多語言語音導覽的機制。",
+        "word": "導入する"
+      }
+    ],
+    [
+      {
+        "text": "不過，各地區的建置狀況參差不齊，也有不少自治體因財政限制而因應進度落後。",
+        "word": "ばらつき"
+      }
+    ],
+    [
+      {
+        "text": "此外，不僅僅是增加語言種類，考量文化背景差異的表達巧思也是必要的。",
+        "word": "工夫"
+      }
+    ],
+    [
+      {
+        "text": "今後期望國家與地方自治體能攜手合作，制定出統一的指引方針。",
+        "word": "策定する"
+      }
+    ]
   ]
 }
