@@ -5,6 +5,7 @@
   "text": "最近、地方から都市部の大学に進学し、一人暮らしを始める学生が増えている。実家を離れることで自由な時間が増える一方、家事や家計の管理を自分でこなさなければならず、戸惑う学生も少なくない。特に食費や光熱費の管理が難しいと感じる学生が多く、外食が続いて体調を崩すケースも見られる。特にコンビニ弁当やインスタント食品に頼る学生の姿もよく見られる。大学側もこうした問題を受けて、一人暮らしの学生向けに料理教室や家計簿講座を開くところが増えてきた。今後も学生の生活を支える取り組みが求められている。",
   "tokens": [
     { "surface_form": "最近", "basic_form": "最近", "reading": "さいきん", "pos": "副詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "地方", "basic_form": "地方", "reading": "ちほう", "pos": "名詞" },
     { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "助詞" },
     { "surface_form": "都市部", "basic_form": "都市部", "reading": "としぶ", "pos": "名詞" },
@@ -12,12 +13,14 @@
     { "surface_form": "大学", "basic_form": "大学", "reading": "だいがく", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "進学し", "basic_form": "進学する", "reading": "しんがくし", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "一人暮らし", "basic_form": "一人暮らし", "reading": "ひとりぐらし", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "始める", "basic_form": "始める", "reading": "はじめる", "pos": "動詞" },
     { "surface_form": "学生", "basic_form": "学生", "reading": "がくせい", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "増えている", "basic_form": "増える", "reading": "ふえている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "実家", "basic_form": "実家", "reading": "じっか", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "離れることで", "basic_form": "離れる", "reading": "はなれることで", "pos": "動詞" },
@@ -26,6 +29,7 @@
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "増える", "basic_form": "増える", "reading": "ふえる", "pos": "動詞" },
     { "surface_form": "一方", "basic_form": "一方", "reading": "いっぽう", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "家事", "basic_form": "家事", "reading": "かじ", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
     { "surface_form": "家計", "basic_form": "家計", "reading": "かけい", "pos": "名詞" },
@@ -34,10 +38,12 @@
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "自分で", "basic_form": "自分", "reading": "じぶんで", "pos": "代名詞" },
     { "surface_form": "こなさなければならず", "basic_form": "こなす", "reading": "こなさなければならず", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "戸惑う", "basic_form": "戸惑う", "reading": "とまどう", "pos": "動詞" },
     { "surface_form": "学生", "basic_form": "学生", "reading": "がくせい", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "少なくない", "basic_form": "少ない", "reading": "すくなくない", "pos": "形容詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "特に", "basic_form": "特に", "reading": "とくに", "pos": "副詞" },
     { "surface_form": "食費", "basic_form": "食費", "reading": "しょくひ", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
@@ -51,6 +57,7 @@
     { "surface_form": "学生", "basic_form": "学生", "reading": "がくせい", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "多く", "basic_form": "多い", "reading": "おおく", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "外食", "basic_form": "外食", "reading": "がいしょく", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "続いて", "basic_form": "続く", "reading": "つづいて", "pos": "動詞" },
@@ -60,6 +67,7 @@
     { "surface_form": "ケース", "basic_form": "ケース", "reading": "けーす", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "見られる", "basic_form": "見る", "reading": "みられる", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "特に", "basic_form": "特に", "reading": "とくに", "pos": "副詞" },
     { "surface_form": "コンビニ弁当", "basic_form": "コンビニ弁当", "reading": "こんびにべんとう", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
@@ -72,12 +80,14 @@
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "よく", "basic_form": "よく", "reading": "よく", "pos": "副詞" },
     { "surface_form": "見られる", "basic_form": "見る", "reading": "みられる", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "大学側", "basic_form": "大学側", "reading": "だいがくがわ", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "こうした", "basic_form": "こうした", "reading": "こうした", "pos": "連体詞" },
     { "surface_form": "問題", "basic_form": "問題", "reading": "もんだい", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "受けて", "basic_form": "受ける", "reading": "うけて", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "一人暮らし", "basic_form": "一人暮らし", "reading": "ひとりぐらし", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "学生向けに", "basic_form": "学生向け", "reading": "がくせいむけに", "pos": "名詞" },
@@ -89,6 +99,7 @@
     { "surface_form": "ところ", "basic_form": "ところ", "reading": "ところ", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "増えてきた", "basic_form": "増える", "reading": "ふえてきた", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "今後", "basic_form": "今後", "reading": "こんご", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "学生", "basic_form": "学生", "reading": "がくせい", "pos": "名詞" },
@@ -98,61 +109,166 @@
     { "surface_form": "支える", "basic_form": "支える", "reading": "ささえる", "pos": "動詞" },
     { "surface_form": "取り組み", "basic_form": "取り組み", "reading": "とりくみ", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
-    { "surface_form": "求められている", "basic_form": "求める", "reading": "もとめられている", "pos": "動詞" }
+    { "surface_form": "求められている", "basic_form": "求める", "reading": "もとめられている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "最近": { "meaning": "最近" },
-    "地方": { "meaning": "地方" },
-    "都市部": { "meaning": "都市地區" },
-    "大学": { "meaning": "大學" },
-    "進学する": { "meaning": "升學" },
-    "一人暮らし": { "meaning": "獨居" },
-    "始める": { "meaning": "開始" },
-    "学生": { "meaning": "學生" },
-    "増える": { "meaning": "增加" },
-    "実家": { "meaning": "老家" },
-    "離れる": { "meaning": "離開" },
-    "自由": { "meaning": "自由" },
-    "時間": { "meaning": "時間" },
-    "一方": { "meaning": "另一方面" },
-    "家事": { "meaning": "家事" },
-    "家計": { "meaning": "家計" },
-    "管理": { "meaning": "管理" },
-    "自分": { "meaning": "自己" },
-    "こなす": { "meaning": "應付、處理" },
-    "戸惑う": { "meaning": "困惑" },
-    "少ない": { "meaning": "少的" },
-    "特に": { "meaning": "特別是" },
-    "食費": { "meaning": "飲食費" },
-    "光熱費": { "meaning": "水電瓦斯費" },
-    "難しい": { "meaning": "困難的" },
-    "感じる": { "meaning": "感覺" },
-    "多い": { "meaning": "多的" },
-    "外食": { "meaning": "外食" },
-    "続く": { "meaning": "持續" },
-    "体調": { "meaning": "身體狀況" },
-    "崩す": { "meaning": "弄壞" },
-    "ケース": { "meaning": "案例" },
-    "見る": { "meaning": "看、見到" },
-    "コンビニ弁当": { "meaning": "便利商店便當" },
-    "インスタント食品": { "meaning": "即食食品" },
-    "頼る": { "meaning": "依賴" },
-    "姿": { "meaning": "樣子" },
-    "よく": { "meaning": "經常" },
-    "大学側": { "meaning": "大學方面" },
-    "こうした": { "meaning": "這樣的" },
-    "問題": { "meaning": "問題" },
-    "受ける": { "meaning": "接收、因應" },
-    "学生向け": { "meaning": "面向學生" },
-    "料理教室": { "meaning": "料理教室" },
-    "家計簿講座": { "meaning": "記帳講座" },
-    "開く": { "meaning": "開設" },
-    "ところ": { "meaning": "地方、單位" },
-    "今後": { "meaning": "今後" },
-    "生活": { "meaning": "生活" },
-    "支える": { "meaning": "支持" },
-    "取り組み": { "meaning": "措施、努力" },
-    "求める": { "meaning": "要求、需要" }
+    "最近": {
+      "meaning": "最近"
+    },
+    "地方": {
+      "meaning": "地方"
+    },
+    "都市部": {
+      "meaning": "都市地區"
+    },
+    "大学": {
+      "meaning": "大學"
+    },
+    "進学する": {
+      "meaning": "升學"
+    },
+    "一人暮らし": {
+      "meaning": "獨居"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "学生": {
+      "meaning": "學生"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "実家": {
+      "meaning": "老家"
+    },
+    "離れる": {
+      "meaning": "離開"
+    },
+    "自由": {
+      "meaning": "自由"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "家事": {
+      "meaning": "家事"
+    },
+    "家計": {
+      "meaning": "家計"
+    },
+    "管理": {
+      "meaning": "管理"
+    },
+    "自分": {
+      "meaning": "自己"
+    },
+    "こなす": {
+      "meaning": "應付、處理"
+    },
+    "戸惑う": {
+      "meaning": "困惑"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "特に": {
+      "meaning": "特別是"
+    },
+    "食費": {
+      "meaning": "飲食費"
+    },
+    "光熱費": {
+      "meaning": "水電瓦斯費"
+    },
+    "難しい": {
+      "meaning": "困難的"
+    },
+    "感じる": {
+      "meaning": "感覺"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "外食": {
+      "meaning": "外食"
+    },
+    "続く": {
+      "meaning": "持續"
+    },
+    "体調": {
+      "meaning": "身體狀況"
+    },
+    "崩す": {
+      "meaning": "弄壞"
+    },
+    "ケース": {
+      "meaning": "案例"
+    },
+    "見る": {
+      "meaning": "看、見到"
+    },
+    "コンビニ弁当": {
+      "meaning": "便利商店便當"
+    },
+    "インスタント食品": {
+      "meaning": "即食食品"
+    },
+    "頼る": {
+      "meaning": "依賴"
+    },
+    "姿": {
+      "meaning": "樣子"
+    },
+    "よく": {
+      "meaning": "經常"
+    },
+    "大学側": {
+      "meaning": "大學方面"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "問題": {
+      "meaning": "問題"
+    },
+    "受ける": {
+      "meaning": "接收、因應"
+    },
+    "学生向け": {
+      "meaning": "面向學生"
+    },
+    "料理教室": {
+      "meaning": "料理教室"
+    },
+    "家計簿講座": {
+      "meaning": "記帳講座"
+    },
+    "開く": {
+      "meaning": "開設"
+    },
+    "ところ": {
+      "meaning": "地方、單位"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "生活": {
+      "meaning": "生活"
+    },
+    "支える": {
+      "meaning": "支持"
+    },
+    "取り組み": {
+      "meaning": "措施、努力"
+    },
+    "求める": {
+      "meaning": "要求、需要"
+    }
   },
   "particles": {
     "から": "表示起點",
@@ -165,11 +281,41 @@
     "も": "表示「也」"
   },
   "translations": [
-    [ { "text": "最近，從地方前往都市大學升學、開始獨居生活的學生正在增加。", "word": "一人暮らし" } ],
-    [ { "text": "離開老家後自由時間變多，但也必須自己處理家事與家計管理，因此感到困惑的學生也不少。", "word": "戸惑う" } ],
-    [ { "text": "尤其許多學生覺得飲食費和水電費的管理很困難，也有人因為經常外食而弄壞身體。", "word": "難しい" } ],
-    [ { "text": "也常看到依賴便利商店便當或即食食品的學生身影。", "word": "頼る" } ],
-    [ { "text": "大學方面也因應這些問題，逐漸增加為獨居學生開設的料理教室與記帳講座。", "word": "開く" } ],
-    [ { "text": "今後仍需要更多支持學生生活的措施。", "word": "支える" } ]
+    [
+      {
+        "text": "最近，從地方前往都市大學升學、開始獨居生活的學生正在增加。",
+        "word": "一人暮らし"
+      }
+    ],
+    [
+      {
+        "text": "離開老家後自由時間變多，但也必須自己處理家事與家計管理，因此感到困惑的學生也不少。",
+        "word": "戸惑う"
+      }
+    ],
+    [
+      {
+        "text": "尤其許多學生覺得飲食費和水電費的管理很困難，也有人因為經常外食而弄壞身體。",
+        "word": "難しい"
+      }
+    ],
+    [
+      {
+        "text": "也常看到依賴便利商店便當或即食食品的學生身影。",
+        "word": "頼る"
+      }
+    ],
+    [
+      {
+        "text": "大學方面也因應這些問題，逐漸增加為獨居學生開設的料理教室與記帳講座。",
+        "word": "開く"
+      }
+    ],
+    [
+      {
+        "text": "今後仍需要更多支持學生生活的措施。",
+        "word": "支える"
+      }
+    ]
   ]
 }

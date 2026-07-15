@@ -5,26 +5,32 @@
   "text": "今日、公園でお弁当を食べました。天気がよかったので、外で食べました。となりに犬もいました。とてもかわいかったです。また来週も公園へ行きたいです。楽しい一日でした。",
   "tokens": [
     { "surface_form": "今日", "basic_form": "今日", "reading": "きょう", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "公園", "basic_form": "公園", "reading": "こうえん", "pos": "名詞" },
     { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
     { "surface_form": "お弁当", "basic_form": "お弁当", "reading": "おべんとう", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "食べました", "basic_form": "食べる", "reading": "たべました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "天気", "basic_form": "天気", "reading": "てんき", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "よかった", "basic_form": "良い", "reading": "よかった", "pos": "形容詞" },
     { "surface_form": "ので", "basic_form": "ので", "reading": "ので", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "外", "basic_form": "外", "reading": "そと", "pos": "名詞" },
     { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
     { "surface_form": "食べました", "basic_form": "食べる", "reading": "たべました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "となり", "basic_form": "となり", "reading": "となり", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "犬", "basic_form": "犬", "reading": "いぬ", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "いました", "basic_form": "いる", "reading": "いました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
     { "surface_form": "かわいかった", "basic_form": "かわいい", "reading": "かわいかった", "pos": "形容詞" },
     { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "また", "basic_form": "また", "reading": "また", "pos": "副詞" },
     { "surface_form": "来週", "basic_form": "来週", "reading": "らいしゅう", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
@@ -32,28 +38,64 @@
     { "surface_form": "へ", "basic_form": "へ", "reading": "へ", "pos": "助詞" },
     { "surface_form": "行きたい", "basic_form": "行く", "reading": "いきたい", "pos": "動詞" },
     { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "楽しい", "basic_form": "楽しい", "reading": "たのしい", "pos": "形容詞" },
     { "surface_form": "一日", "basic_form": "一日", "reading": "いちにち", "pos": "名詞" },
-    { "surface_form": "でした", "basic_form": "です", "reading": "でした", "pos": "助動詞" }
+    { "surface_form": "でした", "basic_form": "です", "reading": "でした", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "今日": { "meaning": "今天" },
-    "公園": { "meaning": "公園" },
-    "お弁当": { "meaning": "便當" },
-    "食べる": { "meaning": "吃" },
-    "天気": { "meaning": "天氣" },
-    "良い": { "meaning": "好的" },
-    "外": { "meaning": "外面" },
-    "となり": { "meaning": "隔壁、旁邊" },
-    "犬": { "meaning": "狗" },
-    "いる": { "meaning": "有（生物）、在" },
-    "とても": { "meaning": "非常" },
-    "かわいい": { "meaning": "可愛的" },
-    "また": { "meaning": "再、又" },
-    "来週": { "meaning": "下週" },
-    "行く": { "meaning": "去" },
-    "楽しい": { "meaning": "快樂的、愉快的" },
-    "一日": { "meaning": "一天" }
+    "今日": {
+      "meaning": "今天"
+    },
+    "公園": {
+      "meaning": "公園"
+    },
+    "お弁当": {
+      "meaning": "便當"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "天気": {
+      "meaning": "天氣"
+    },
+    "良い": {
+      "meaning": "好的"
+    },
+    "外": {
+      "meaning": "外面"
+    },
+    "となり": {
+      "meaning": "隔壁、旁邊"
+    },
+    "犬": {
+      "meaning": "狗"
+    },
+    "いる": {
+      "meaning": "有（生物）、在"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "かわいい": {
+      "meaning": "可愛的"
+    },
+    "また": {
+      "meaning": "再、又"
+    },
+    "来週": {
+      "meaning": "下週"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "楽しい": {
+      "meaning": "快樂的、愉快的"
+    },
+    "一日": {
+      "meaning": "一天"
+    }
   },
   "particles": {
     "で": "表示動作發生的場所",
@@ -65,11 +107,41 @@
     "へ": "表示移動的方向"
   },
   "translations": [
-    [ { "text": "今天在公園吃了便當。", "word": "食べる" } ],
-    [ { "text": "因為天氣很好，所以在外面吃了。", "word": "良い" } ],
-    [ { "text": "旁邊也有一隻狗。", "word": "犬" } ],
-    [ { "text": "非常可愛。", "word": "かわいい" } ],
-    [ { "text": "下週也想再去公園。", "word": "行く" } ],
-    [ { "text": "是快樂的一天。", "word": "楽しい" } ]
+    [
+      {
+        "text": "今天在公園吃了便當。",
+        "word": "食べる"
+      }
+    ],
+    [
+      {
+        "text": "因為天氣很好，所以在外面吃了。",
+        "word": "良い"
+      }
+    ],
+    [
+      {
+        "text": "旁邊也有一隻狗。",
+        "word": "犬"
+      }
+    ],
+    [
+      {
+        "text": "非常可愛。",
+        "word": "かわいい"
+      }
+    ],
+    [
+      {
+        "text": "下週也想再去公園。",
+        "word": "行く"
+      }
+    ],
+    [
+      {
+        "text": "是快樂的一天。",
+        "word": "楽しい"
+      }
+    ]
   ]
 }

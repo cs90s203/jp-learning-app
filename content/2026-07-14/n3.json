@@ -6,11 +6,13 @@
   "tokens": [
     { "surface_form": "去年", "basic_form": "去年", "reading": "きょねん", "pos": "名詞" },
     { "surface_form": "まで", "basic_form": "まで", "reading": "まで", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "私", "basic_form": "私", "reading": "わたし", "pos": "代名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "夜", "basic_form": "夜", "reading": "よる", "pos": "名詞" },
     { "surface_form": "遅くまで", "basic_form": "遅い", "reading": "おそくまで", "pos": "形容詞" },
     { "surface_form": "起きていて", "basic_form": "起きる", "reading": "おきていて", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "朝", "basic_form": "朝", "reading": "あさ", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "いつも", "basic_form": "いつも", "reading": "いつも", "pos": "副詞" },
@@ -18,31 +20,37 @@
     { "surface_form": "寝ている", "basic_form": "寝る", "reading": "ねている", "pos": "動詞" },
     { "surface_form": "タイプ", "basic_form": "タイプ", "reading": "たいぷ", "pos": "名詞" },
     { "surface_form": "だった", "basic_form": "だ", "reading": "だった", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "しかし", "basic_form": "しかし", "reading": "しかし", "pos": "接続詞" },
     { "surface_form": "体調", "basic_form": "体調", "reading": "たいちょう", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "崩したこと", "basic_form": "崩す", "reading": "くずしたこと", "pos": "動詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "きっかけに", "basic_form": "きっかけ", "reading": "きっかけに", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "早起き", "basic_form": "早起き", "reading": "はやおき", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "習慣", "basic_form": "習慣", "reading": "しゅうかん", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "身につけようと", "basic_form": "身につける", "reading": "みにつけようと", "pos": "動詞" },
     { "surface_form": "決めた", "basic_form": "決める", "reading": "きめた", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "最初", "basic_form": "最初", "reading": "さいしょ", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "一週間", "basic_form": "一週間", "reading": "いっしゅうかん", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "本当に", "basic_form": "本当に", "reading": "ほんとうに", "pos": "副詞" },
     { "surface_form": "つらくて", "basic_form": "つらい", "reading": "つらくて", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "何度も", "basic_form": "何度も", "reading": "なんども", "pos": "副詞" },
     { "surface_form": "やめたくなった", "basic_form": "やめる", "reading": "やめたくなった", "pos": "動詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "少しずつ", "basic_form": "少しずつ", "reading": "すこしずつ", "pos": "副詞" },
     { "surface_form": "体", "basic_form": "体", "reading": "からだ", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "慣れてきた", "basic_form": "慣れる", "reading": "なれてきた", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "今", "basic_form": "今", "reading": "いま", "pos": "名詞" },
     { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
@@ -50,19 +58,23 @@
     { "surface_form": "五時", "basic_form": "五時", "reading": "ごじ", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "起きて", "basic_form": "起きる", "reading": "おきて", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "静かな", "basic_form": "静か", "reading": "しずかな", "pos": "形容動詞" },
     { "surface_form": "時間", "basic_form": "時間", "reading": "じかん", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "本", "basic_form": "本", "reading": "ほん", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "読んだり", "basic_form": "読む", "reading": "よんだり", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "軽く", "basic_form": "軽い", "reading": "かるく", "pos": "形容詞" },
     { "surface_form": "運動したりしている", "basic_form": "運動する", "reading": "うんどうしたりしている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "朝", "basic_form": "朝", "reading": "あさ", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "時間", "basic_form": "時間", "reading": "じかん", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "増えたことで", "basic_form": "増える", "reading": "ふえたことで", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "一日", "basic_form": "一日", "reading": "いちにち", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "過ごし方", "basic_form": "過ごし方", "reading": "すごしかた", "pos": "名詞" },
@@ -71,59 +83,151 @@
     { "surface_form": "変わった", "basic_form": "変わる", "reading": "かわった", "pos": "動詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
     { "surface_form": "感じている", "basic_form": "感じる", "reading": "かんじている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "これから", "basic_form": "これから", "reading": "これから", "pos": "副詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "この", "basic_form": "この", "reading": "この", "pos": "連体詞" },
     { "surface_form": "習慣", "basic_form": "習慣", "reading": "しゅうかん", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
-    { "surface_form": "続けていきたい", "basic_form": "続ける", "reading": "つづけていきたい", "pos": "動詞" }
+    { "surface_form": "続けていきたい", "basic_form": "続ける", "reading": "つづけていきたい", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "去年": { "meaning": "去年" },
-    "増える": { "meaning": "增加" },
-    "私": { "meaning": "我" },
-    "夜": { "meaning": "夜晚" },
-    "遅い": { "meaning": "晚的" },
-    "起きる": { "meaning": "起床" },
-    "朝": { "meaning": "早上" },
-    "いつも": { "meaning": "總是" },
-    "ぎりぎり": { "meaning": "勉強趕上、極限" },
-    "寝る": { "meaning": "睡覺" },
-    "タイプ": { "meaning": "類型" },
-    "だ": { "meaning": "是(斷定)" },
-    "しかし": { "meaning": "但是" },
-    "体調": { "meaning": "身體狀況" },
-    "崩す": { "meaning": "弄壞(健康)" },
-    "きっかけ": { "meaning": "契機" },
-    "早起き": { "meaning": "早起" },
-    "習慣": { "meaning": "習慣" },
-    "身につける": { "meaning": "養成、掌握" },
-    "決める": { "meaning": "決定" },
-    "最初": { "meaning": "一開始" },
-    "一週間": { "meaning": "一星期" },
-    "本当に": { "meaning": "真的" },
-    "つらい": { "meaning": "痛苦的" },
-    "何度も": { "meaning": "好幾次" },
-    "やめる": { "meaning": "放棄" },
-    "少しずつ": { "meaning": "一點一點地" },
-    "体": { "meaning": "身體" },
-    "慣れる": { "meaning": "習慣、適應" },
-    "今": { "meaning": "現在" },
-    "五時": { "meaning": "五點" },
-    "静か": { "meaning": "安靜的" },
-    "時間": { "meaning": "時間" },
-    "本": { "meaning": "書" },
-    "読む": { "meaning": "讀" },
-    "軽い": { "meaning": "輕的" },
-    "運動する": { "meaning": "運動" },
-    "一日": { "meaning": "一天" },
-    "過ごし方": { "meaning": "度過方式" },
-    "大きい": { "meaning": "大的" },
-    "変わる": { "meaning": "改變" },
-    "感じる": { "meaning": "感覺" },
-    "これから": { "meaning": "從今以後" },
-    "この": { "meaning": "這個" },
-    "続ける": { "meaning": "繼續" }
+    "去年": {
+      "meaning": "去年"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "私": {
+      "meaning": "我"
+    },
+    "夜": {
+      "meaning": "夜晚"
+    },
+    "遅い": {
+      "meaning": "晚的"
+    },
+    "起きる": {
+      "meaning": "起床"
+    },
+    "朝": {
+      "meaning": "早上"
+    },
+    "いつも": {
+      "meaning": "總是"
+    },
+    "ぎりぎり": {
+      "meaning": "勉強趕上、極限"
+    },
+    "寝る": {
+      "meaning": "睡覺"
+    },
+    "タイプ": {
+      "meaning": "類型"
+    },
+    "だ": {
+      "meaning": "是(斷定)"
+    },
+    "しかし": {
+      "meaning": "但是"
+    },
+    "体調": {
+      "meaning": "身體狀況"
+    },
+    "崩す": {
+      "meaning": "弄壞(健康)"
+    },
+    "きっかけ": {
+      "meaning": "契機"
+    },
+    "早起き": {
+      "meaning": "早起"
+    },
+    "習慣": {
+      "meaning": "習慣"
+    },
+    "身につける": {
+      "meaning": "養成、掌握"
+    },
+    "決める": {
+      "meaning": "決定"
+    },
+    "最初": {
+      "meaning": "一開始"
+    },
+    "一週間": {
+      "meaning": "一星期"
+    },
+    "本当に": {
+      "meaning": "真的"
+    },
+    "つらい": {
+      "meaning": "痛苦的"
+    },
+    "何度も": {
+      "meaning": "好幾次"
+    },
+    "やめる": {
+      "meaning": "放棄"
+    },
+    "少しずつ": {
+      "meaning": "一點一點地"
+    },
+    "体": {
+      "meaning": "身體"
+    },
+    "慣れる": {
+      "meaning": "習慣、適應"
+    },
+    "今": {
+      "meaning": "現在"
+    },
+    "五時": {
+      "meaning": "五點"
+    },
+    "静か": {
+      "meaning": "安靜的"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "本": {
+      "meaning": "書"
+    },
+    "読む": {
+      "meaning": "讀"
+    },
+    "軽い": {
+      "meaning": "輕的"
+    },
+    "運動する": {
+      "meaning": "運動"
+    },
+    "一日": {
+      "meaning": "一天"
+    },
+    "過ごし方": {
+      "meaning": "度過方式"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "変わる": {
+      "meaning": "改變"
+    },
+    "感じる": {
+      "meaning": "感覺"
+    },
+    "これから": {
+      "meaning": "從今以後"
+    },
+    "この": {
+      "meaning": "這個"
+    },
+    "続ける": {
+      "meaning": "繼續"
+    }
   },
   "particles": {
     "まで": "表示「直到…為止」",
@@ -137,11 +241,41 @@
     "も": "表示「也」"
   },
   "translations": [
-    [ { "text": "直到去年，我都是晚上熬夜、早上總是拖到最後一刻才起床的類型。", "word": "起きる" } ],
-    [ { "text": "但因為身體出狀況，我決定養成早起的習慣。", "word": "早起き" } ],
-    [ { "text": "最初一星期真的很痛苦，好幾次都想放棄，但身體漸漸習慣了。", "word": "慣れる" } ],
-    [ { "text": "現在每天早上五點起床，在安靜的時間裡看書或輕鬆運動。", "word": "運動する" } ],
-    [ { "text": "因為早上的時間變多了，我覺得一天的過法有了很大改變。", "word": "変わる" } ],
-    [ { "text": "往後也想繼續保持這個習慣。", "word": "続ける" } ]
+    [
+      {
+        "text": "直到去年，我都是晚上熬夜、早上總是拖到最後一刻才起床的類型。",
+        "word": "起きる"
+      }
+    ],
+    [
+      {
+        "text": "但因為身體出狀況，我決定養成早起的習慣。",
+        "word": "早起き"
+      }
+    ],
+    [
+      {
+        "text": "最初一星期真的很痛苦，好幾次都想放棄，但身體漸漸習慣了。",
+        "word": "慣れる"
+      }
+    ],
+    [
+      {
+        "text": "現在每天早上五點起床，在安靜的時間裡看書或輕鬆運動。",
+        "word": "運動する"
+      }
+    ],
+    [
+      {
+        "text": "因為早上的時間變多了，我覺得一天的過法有了很大改變。",
+        "word": "変わる"
+      }
+    ],
+    [
+      {
+        "text": "往後也想繼續保持這個習慣。",
+        "word": "続ける"
+      }
+    ]
   ]
 }

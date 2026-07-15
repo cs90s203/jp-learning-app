@@ -88,10 +88,11 @@ _lite: grammar one tier below same level, sentences 20–30% shorter, topic is f
 
 ## Rules
 
-1. **tokens**: Cover all words. **Skip punctuation** (。、！？ etc. need no token). **Verb and adjective inflections are ONE token** — `basic_form` = dictionary form, `reading` = full hiragana of the inflected form. Do NOT split into stem + auxiliary. Examples:
+1. **tokens**: Cover all words. **Punctuation `。！？、` MUST each be its own token** — `{ "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }` (same for `！？、`). **This is critical, not optional**: the app splits the article into sentences and inserts Chinese translations by scanning `tokens` for a `surface_form` of exactly `。`/`！`/`？` — omitting these tokens breaks sentence segmentation and hides all Chinese translations, even though `translations` itself is correct. **Verb and adjective inflections are ONE token** — `basic_form` = dictionary form, `reading` = full hiragana of the inflected form. Do NOT split into stem + auxiliary. Examples:
    - `行きました` → one token `{ surface:"行きました", basic:"行く", reading:"いきました", pos:"動詞" }`
    - `減っている` → `{ surface:"減っている", basic:"減る", reading:"へっている", pos:"動詞" }`
-   - Exception: standalone particles (は・を・に・へ・と・で・が…) and sentence-final auxiliaries (です・だ・ます etc.) are each their own token.
+   - Exception: standalone particles (は・を・に・へ・と・で・が…) and sentence-final auxiliaries (です・だ・ます etc.) are each their own token — same as punctuation, never merged into a neighboring word.
+   - **Self-check before saving**: concatenating every token's `surface_form` in order must reproduce `text` exactly, character for character (including all `。！？、`). If it doesn't, punctuation tokens are missing — this is the #1 cause of broken articles.
 
 2. **vocab**: Include all nouns, verbs, adjectives, adverbs, conjunctions, interjections. **Exclude** particles and auxiliaries. Key must exactly match the token's `basic_form`. Value must include `meaning` (Traditional Chinese). Do NOT include `romaji` (computed locally by the app). After generating, self-check: every content-word token's `basic_form` must have a vocab entry. **Missing entries cause "尚無中文翻譯" errors.**
 
@@ -141,8 +142,65 @@ Prepend to `dates` array:
 }
 ```
 
-### Step 3 — Write .done marker (NO git push)
+### Step 3 — Write .done marker
 
 ```bash
 cd /Users/mick/Documents/Projects/Language && touch content/{{TODAY}}/.done
+```
+
+---
+
+## After .done: Validate, Push, and Verify (no manual intervention required)
+
+**Important — avoid permission hangs**: do not use command substitution `$(...)` or shell variables like `$TODAY` inside a single bash command. Resolve `{{TODAY}}` to the literal date string (e.g. `2026-07-15`) once, then hardcode that literal string into every command below.
+
+### Step 4 — Validate the 10 JSON files
+
+For each of the 10 files (`n5_lite.json` … `n1.json`):
+
+**4a — Token/punctuation reconstruction (CRITICAL — this is what broke articles on 2026-07-14/15)**
+Concatenate every token's `surface_form` in order and compare to `text`, character for character. **They must be identical.** If tokens are missing punctuation (`。！？、`), the article renders as one unbroken block with no sentence breaks and no Chinese — even though `translations` itself may be fine.
+If they don't match, fix by re-inserting a punctuation token (`{ "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }`, same pattern for `！？、`) at every point where `text` has a punctuation character not present in the token stream. Re-check after fixing.
+
+**4b — Sentence-count consistency (CRITICAL)**
+```
+count(。！？ in tokens) == count(。！？ in text) == length(translations)
+```
+If mismatched, fix directly in the file (common causes: a sentence-final `。` mis-tokenized as `、`; a missing last-sentence translation; a `？` inside quotes splitting `text` but not `translations`). Re-check after fixing. Do not stop the whole run for one bad file — fix what you can, note what you can't, and continue.
+
+**4c — Vocab coverage**
+Every noun/verb/adjective/adverb/conjunction token's `basic_form` must have a `vocab` entry. For common missing conjunctions/adverbs, backfill with:
+```
+それから → 然後、接著  しかし → 但是、然而  また → 又、還有
+例えば → 例如         したがって → 因此       ところが → 然而、沒想到
+とはいえ → 即便如此    つまり → 也就是說      だから → 所以
+でも → 但是           そして → 然後、接著     さらに → 此外、更加
+もし → 如果           たとえ → 即使          一方 → 另一方面
+```
+Save fixes back to the file (overwrite). Anything you can't auto-fix — note it, don't block the push.
+
+### Step 5 — git push with retry (ensures nothing needs manual handling)
+
+Replace `{{TODAY}}` below with the **literal resolved date string** (e.g. `2026-07-15`) — never a shell variable:
+
+```bash
+cd /Users/mick/Documents/Projects/Language
+git add content/{{TODAY}}/ content/index.json content/recent_titles.json
+git commit -m "content: {{TODAY}} daily articles (10 levels)"
+git push
+```
+
+- **If push fails**: wait 30 seconds, retry. Retry up to **5 times total**.
+- **On any success** → run `touch content/{{TODAY}}/.pushed` (literal date), output "✅ Push 成功（第 N 次）", done.
+- **If all 5 attempts fail** → output "❌ Push 失敗，已重試 5 次，將由備援 routine（jp-content-git-push，每 15 分鐘檢查 `.pushed`）自動接手重試". Do not treat this as a fatal error — the backup routine will pick it up automatically because `.pushed` was never created. No manual step is needed from the user in either case.
+
+### Step 6 — Output summary
+
+```
+📅 {{TODAY}} 生成＋驗證＋Push 摘要
+---
+✅ 成功篇數：X/10
+⚠️  自動修正：[列出修正的篇名與項目]
+❌ 無法自動修正：[列出問題篇名與描述]
+🚀 Push 狀態：成功（第 N 次）/ 失敗（備援 routine 將接手）
 ```

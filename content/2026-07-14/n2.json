@@ -13,13 +13,16 @@
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "数", "basic_form": "数", "reading": "かず", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "ここ数年", "basic_form": "ここ数年", "reading": "ここすうねん", "pos": "名詞" },
     { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
     { "surface_form": "急速に", "basic_form": "急速に", "reading": "きゅうそくに", "pos": "副詞" },
     { "surface_form": "回復してきている", "basic_form": "回復する", "reading": "かいふくしてきている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "円安", "basic_form": "円安", "reading": "えんやす", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "追い風となり", "basic_form": "追い風", "reading": "おいかぜとなり", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "多くの", "basic_form": "多く", "reading": "おおくの", "pos": "連体詞" },
     { "surface_form": "観光地", "basic_form": "観光地", "reading": "かんこうち", "pos": "名詞" },
     { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
@@ -30,6 +33,7 @@
     { "surface_form": "姿", "basic_form": "姿", "reading": "すがた", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "目立つようになった", "basic_form": "目立つ", "reading": "めだつようになった", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "地域経済", "basic_form": "地域経済", "reading": "ちいきけいざい", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "とっては", "basic_form": "とって", "reading": "とっては", "pos": "助詞" },
@@ -37,6 +41,7 @@
     { "surface_form": "動き", "basic_form": "動き", "reading": "うごき", "pos": "名詞" },
     { "surface_form": "である", "basic_form": "である", "reading": "である", "pos": "助動詞" },
     { "surface_form": "一方", "basic_form": "一方", "reading": "いっぽう", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "観光客", "basic_form": "観光客", "reading": "かんこうきゃく", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "急増", "basic_form": "急増", "reading": "きゅうぞう", "pos": "名詞" },
@@ -45,7 +50,9 @@
     { "surface_form": "課題", "basic_form": "課題", "reading": "かだい", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "浮き彫りになっている", "basic_form": "浮き彫りになる", "reading": "うきぼりになっている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "例えば", "basic_form": "例えば", "reading": "たとえば", "pos": "副詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "人気", "basic_form": "人気", "reading": "にんき", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "観光地", "basic_form": "観光地", "reading": "かんこうち", "pos": "名詞" },
@@ -58,6 +65,7 @@
     { "surface_form": "騒音問題", "basic_form": "騒音問題", "reading": "そうおんもんだい", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "深刻化し", "basic_form": "深刻化する", "reading": "しんこくかし", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "地元住民", "basic_form": "地元住民", "reading": "じもとじゅうみん", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "生活", "basic_form": "生活", "reading": "せいかつ", "pos": "名詞" },
@@ -66,13 +74,16 @@
     { "surface_form": "事例", "basic_form": "事例", "reading": "じれい", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "報告されている", "basic_form": "報告する", "reading": "ほうこくされている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "また", "basic_form": "また", "reading": "また", "pos": "接続詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "宿泊施設", "basic_form": "宿泊施設", "reading": "しゅくはくしせつ", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "不足", "basic_form": "不足", "reading": "ふそく", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
     { "surface_form": "価格高騰", "basic_form": "価格高騰", "reading": "かかくこうとう", "pos": "名詞" },
     { "surface_form": "により", "basic_form": "により", "reading": "により", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "国内旅行者", "basic_form": "国内旅行者", "reading": "こくないりょこうしゃ", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "旅行", "basic_form": "旅行", "reading": "りょこう", "pos": "名詞" },
@@ -81,10 +92,12 @@
     { "surface_form": "傾向", "basic_form": "傾向", "reading": "けいこう", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "出てきた", "basic_form": "出る", "reading": "でてきた", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "こうした", "basic_form": "こうした", "reading": "こうした", "pos": "連体詞" },
     { "surface_form": "状況", "basic_form": "状況", "reading": "じょうきょう", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "受け", "basic_form": "受ける", "reading": "うけ", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "自治体", "basic_form": "自治体", "reading": "じちたい", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "中には", "basic_form": "中", "reading": "なかには", "pos": "名詞" },
@@ -97,6 +110,7 @@
     { "surface_form": "ところ", "basic_form": "ところ", "reading": "ところ", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "増えている", "basic_form": "増える", "reading": "ふえている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "持続可能な", "basic_form": "持続可能", "reading": "じぞくかのうな", "pos": "形容動詞" },
     { "surface_form": "観光", "basic_form": "観光", "reading": "かんこう", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
@@ -104,83 +118,221 @@
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "模索すること", "basic_form": "模索する", "reading": "もさくすること", "pos": "動詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "今後", "basic_form": "今後", "reading": "こんご", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "重要な", "basic_form": "重要", "reading": "じゅうような", "pos": "形容動詞" },
     { "surface_form": "課題", "basic_form": "課題", "reading": "かだい", "pos": "名詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
     { "surface_form": "なる", "basic_form": "なる", "reading": "なる", "pos": "動詞" },
-    { "surface_form": "だろう", "basic_form": "だろう", "reading": "だろう", "pos": "助動詞" }
+    { "surface_form": "だろう", "basic_form": "だろう", "reading": "だろう", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "新型コロナウイルス": { "meaning": "新冠病毒" },
-    "影響": { "meaning": "影響" },
-    "落ち込む": { "meaning": "低迷、下滑" },
-    "訪日外国人観光客": { "meaning": "訪日外國觀光客" },
-    "数": { "meaning": "數量" },
-    "ここ数年": { "meaning": "這幾年" },
-    "急速に": { "meaning": "快速地" },
-    "回復する": { "meaning": "恢復" },
-    "円安": { "meaning": "日圓貶值" },
-    "追い風": { "meaning": "順風(有利因素)" },
-    "多く": { "meaning": "許多" },
-    "観光地": { "meaning": "觀光地" },
-    "以前": { "meaning": "以前" },
-    "外国人観光客": { "meaning": "外國觀光客" },
-    "姿": { "meaning": "身影" },
-    "目立つ": { "meaning": "顯眼、明顯" },
-    "地域経済": { "meaning": "地區經濟" },
-    "とって": { "meaning": "對於" },
-    "歓迎する": { "meaning": "歡迎" },
-    "動き": { "meaning": "動向" },
-    "である": { "meaning": "是" },
-    "一方": { "meaning": "另一方面" },
-    "観光客": { "meaning": "觀光客" },
-    "急増": { "meaning": "激增" },
-    "によって": { "meaning": "因為、由於" },
-    "新た": { "meaning": "新的" },
-    "課題": { "meaning": "課題" },
-    "浮き彫りになる": { "meaning": "凸顯出來" },
-    "例えば": { "meaning": "例如" },
-    "人気": { "meaning": "受歡迎" },
-    "交通機関": { "meaning": "交通工具" },
-    "混雑": { "meaning": "擁擠" },
-    "騒音問題": { "meaning": "噪音問題" },
-    "深刻化する": { "meaning": "惡化、嚴重化" },
-    "地元住民": { "meaning": "當地居民" },
-    "生活": { "meaning": "生活" },
-    "支障をきたす": { "meaning": "造成阻礙" },
-    "事例": { "meaning": "案例" },
-    "報告する": { "meaning": "報告" },
-    "また": { "meaning": "另外" },
-    "宿泊施設": { "meaning": "住宿設施" },
-    "不足": { "meaning": "不足" },
-    "価格高騰": { "meaning": "價格高漲" },
-    "により": { "meaning": "因為" },
-    "国内旅行者": { "meaning": "國內旅客" },
-    "旅行": { "meaning": "旅行" },
-    "ためらう": { "meaning": "猶豫" },
-    "傾向": { "meaning": "傾向" },
-    "出る": { "meaning": "出現" },
-    "こうした": { "meaning": "這樣的" },
-    "状況": { "meaning": "狀況" },
-    "受ける": { "meaning": "因應、接受" },
-    "自治体": { "meaning": "地方政府" },
-    "中": { "meaning": "之中" },
-    "観光客数": { "meaning": "觀光客人數" },
-    "分散する": { "meaning": "分散" },
-    "取り組み": { "meaning": "措施" },
-    "始める": { "meaning": "開始" },
-    "ところ": { "meaning": "單位、地方" },
-    "増える": { "meaning": "增加" },
-    "持続可能": { "meaning": "永續" },
-    "観光": { "meaning": "觀光" },
-    "あり方": { "meaning": "應有的樣貌" },
-    "模索する": { "meaning": "摸索" },
-    "今後": { "meaning": "今後" },
-    "重要": { "meaning": "重要" },
-    "なる": { "meaning": "成為" },
-    "だろう": { "meaning": "大概、吧" }
+    "新型コロナウイルス": {
+      "meaning": "新冠病毒"
+    },
+    "影響": {
+      "meaning": "影響"
+    },
+    "落ち込む": {
+      "meaning": "低迷、下滑"
+    },
+    "訪日外国人観光客": {
+      "meaning": "訪日外國觀光客"
+    },
+    "数": {
+      "meaning": "數量"
+    },
+    "ここ数年": {
+      "meaning": "這幾年"
+    },
+    "急速に": {
+      "meaning": "快速地"
+    },
+    "回復する": {
+      "meaning": "恢復"
+    },
+    "円安": {
+      "meaning": "日圓貶值"
+    },
+    "追い風": {
+      "meaning": "順風(有利因素)"
+    },
+    "多く": {
+      "meaning": "許多"
+    },
+    "観光地": {
+      "meaning": "觀光地"
+    },
+    "以前": {
+      "meaning": "以前"
+    },
+    "外国人観光客": {
+      "meaning": "外國觀光客"
+    },
+    "姿": {
+      "meaning": "身影"
+    },
+    "目立つ": {
+      "meaning": "顯眼、明顯"
+    },
+    "地域経済": {
+      "meaning": "地區經濟"
+    },
+    "とって": {
+      "meaning": "對於"
+    },
+    "歓迎する": {
+      "meaning": "歡迎"
+    },
+    "動き": {
+      "meaning": "動向"
+    },
+    "である": {
+      "meaning": "是"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "観光客": {
+      "meaning": "觀光客"
+    },
+    "急増": {
+      "meaning": "激增"
+    },
+    "によって": {
+      "meaning": "因為、由於"
+    },
+    "新た": {
+      "meaning": "新的"
+    },
+    "課題": {
+      "meaning": "課題"
+    },
+    "浮き彫りになる": {
+      "meaning": "凸顯出來"
+    },
+    "例えば": {
+      "meaning": "例如"
+    },
+    "人気": {
+      "meaning": "受歡迎"
+    },
+    "交通機関": {
+      "meaning": "交通工具"
+    },
+    "混雑": {
+      "meaning": "擁擠"
+    },
+    "騒音問題": {
+      "meaning": "噪音問題"
+    },
+    "深刻化する": {
+      "meaning": "惡化、嚴重化"
+    },
+    "地元住民": {
+      "meaning": "當地居民"
+    },
+    "生活": {
+      "meaning": "生活"
+    },
+    "支障をきたす": {
+      "meaning": "造成阻礙"
+    },
+    "事例": {
+      "meaning": "案例"
+    },
+    "報告する": {
+      "meaning": "報告"
+    },
+    "また": {
+      "meaning": "另外"
+    },
+    "宿泊施設": {
+      "meaning": "住宿設施"
+    },
+    "不足": {
+      "meaning": "不足"
+    },
+    "価格高騰": {
+      "meaning": "價格高漲"
+    },
+    "により": {
+      "meaning": "因為"
+    },
+    "国内旅行者": {
+      "meaning": "國內旅客"
+    },
+    "旅行": {
+      "meaning": "旅行"
+    },
+    "ためらう": {
+      "meaning": "猶豫"
+    },
+    "傾向": {
+      "meaning": "傾向"
+    },
+    "出る": {
+      "meaning": "出現"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "受ける": {
+      "meaning": "因應、接受"
+    },
+    "自治体": {
+      "meaning": "地方政府"
+    },
+    "中": {
+      "meaning": "之中"
+    },
+    "観光客数": {
+      "meaning": "觀光客人數"
+    },
+    "分散する": {
+      "meaning": "分散"
+    },
+    "取り組み": {
+      "meaning": "措施"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "ところ": {
+      "meaning": "單位、地方"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "持続可能": {
+      "meaning": "永續"
+    },
+    "観光": {
+      "meaning": "觀光"
+    },
+    "あり方": {
+      "meaning": "應有的樣貌"
+    },
+    "模索する": {
+      "meaning": "摸索"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "重要": {
+      "meaning": "重要"
+    },
+    "なる": {
+      "meaning": "成為"
+    },
+    "だろう": {
+      "meaning": "大概、吧"
+    }
   },
   "particles": {
     "で": "表示原因或場所",
@@ -196,12 +348,47 @@
     "と": "表示變化結果"
   },
   "translations": [
-    [ { "text": "因新冠疫情而低迷的訪日外國觀光客人數，這幾年正快速恢復。", "word": "回復する" } ],
-    [ { "text": "日圓貶值也成為助力，許多觀光地外國觀光客的身影比以往更加明顯。", "word": "目立つ" } ],
-    [ { "text": "這對地區經濟而言雖是值得歡迎的動向，但觀光客激增也凸顯出新的課題。", "word": "浮き彫りになる" } ],
-    [ { "text": "例如，在熱門觀光地，交通擁擠與噪音問題日益嚴重，也有造成當地居民生活困擾的案例被報導。", "word": "深刻化する" } ],
-    [ { "text": "此外，由於住宿設施不足與價格高漲，國內旅客猶豫是否出遊的傾向也開始出現。", "word": "ためらう" } ],
-    [ { "text": "因應這種狀況，開始著手分散觀光客人數措施的地方政府也在增加。", "word": "分散する" } ],
-    [ { "text": "摸索永續觀光的樣貌，將成為今後重要的課題。", "word": "模索する" } ]
+    [
+      {
+        "text": "因新冠疫情而低迷的訪日外國觀光客人數，這幾年正快速恢復。",
+        "word": "回復する"
+      }
+    ],
+    [
+      {
+        "text": "日圓貶值也成為助力，許多觀光地外國觀光客的身影比以往更加明顯。",
+        "word": "目立つ"
+      }
+    ],
+    [
+      {
+        "text": "這對地區經濟而言雖是值得歡迎的動向，但觀光客激增也凸顯出新的課題。",
+        "word": "浮き彫りになる"
+      }
+    ],
+    [
+      {
+        "text": "例如，在熱門觀光地，交通擁擠與噪音問題日益嚴重，也有造成當地居民生活困擾的案例被報導。",
+        "word": "深刻化する"
+      }
+    ],
+    [
+      {
+        "text": "此外，由於住宿設施不足與價格高漲，國內旅客猶豫是否出遊的傾向也開始出現。",
+        "word": "ためらう"
+      }
+    ],
+    [
+      {
+        "text": "因應這種狀況，開始著手分散觀光客人數措施的地方政府也在增加。",
+        "word": "分散する"
+      }
+    ],
+    [
+      {
+        "text": "摸索永續觀光的樣貌，將成為今後重要的課題。",
+        "word": "模索する"
+      }
+    ]
   ]
 }

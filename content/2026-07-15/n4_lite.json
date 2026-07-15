@@ -5,70 +5,132 @@
   "text": "先週、初めて野球の試合を見に行った。友達と一緒にドームへ行って、応援した。ホームランが出た時は、みんなで大きな声を出した。ちょっと疲れたけど、すごく楽しかった。また今度、友達を誘ってぜひ行きたいと思う。",
   "tokens": [
     { "surface_form": "先週", "basic_form": "先週", "reading": "せんしゅう", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "初めて", "basic_form": "初めて", "reading": "はじめて", "pos": "副詞" },
     { "surface_form": "野球", "basic_form": "野球", "reading": "やきゅう", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "試合", "basic_form": "試合", "reading": "しあい", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "見に行った", "basic_form": "見に行く", "reading": "みにいった", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "友達", "basic_form": "友達", "reading": "ともだち", "pos": "名詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
     { "surface_form": "一緒に", "basic_form": "一緒に", "reading": "いっしょに", "pos": "副詞" },
     { "surface_form": "ドーム", "basic_form": "ドーム", "reading": "ドーム", "pos": "名詞" },
     { "surface_form": "へ", "basic_form": "へ", "reading": "へ", "pos": "助詞" },
     { "surface_form": "行って", "basic_form": "行く", "reading": "いって", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "応援した", "basic_form": "応援する", "reading": "おうえんした", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "ホームラン", "basic_form": "ホームラン", "reading": "ホームラン", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "出た", "basic_form": "出る", "reading": "でた", "pos": "動詞" },
     { "surface_form": "時", "basic_form": "時", "reading": "とき", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "みんなで", "basic_form": "みんなで", "reading": "みんなで", "pos": "副詞" },
     { "surface_form": "大きな", "basic_form": "大きな", "reading": "おおきな", "pos": "連体詞" },
     { "surface_form": "声", "basic_form": "声", "reading": "こえ", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "出した", "basic_form": "出す", "reading": "だした", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "ちょっと", "basic_form": "ちょっと", "reading": "ちょっと", "pos": "副詞" },
     { "surface_form": "疲れたけど", "basic_form": "疲れる", "reading": "つかれたけど", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "すごく", "basic_form": "すごく", "reading": "すごく", "pos": "副詞" },
     { "surface_form": "楽しかった", "basic_form": "楽しい", "reading": "たのしかった", "pos": "形容詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "また", "basic_form": "また", "reading": "また", "pos": "副詞" },
     { "surface_form": "今度", "basic_form": "今度", "reading": "こんど", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "友達", "basic_form": "友達", "reading": "ともだち", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "誘って", "basic_form": "誘う", "reading": "さそって", "pos": "動詞" },
     { "surface_form": "ぜひ", "basic_form": "ぜひ", "reading": "ぜひ", "pos": "副詞" },
     { "surface_form": "行きたい", "basic_form": "行く", "reading": "いきたい", "pos": "動詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
-    { "surface_form": "思う", "basic_form": "思う", "reading": "おもう", "pos": "動詞" }
+    { "surface_form": "思う", "basic_form": "思う", "reading": "おもう", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "先週": { "meaning": "上週" },
-    "初めて": { "meaning": "第一次" },
-    "野球": { "meaning": "棒球" },
-    "試合": { "meaning": "比賽" },
-    "見に行く": { "meaning": "去看" },
-    "友達": { "meaning": "朋友" },
-    "一緒に": { "meaning": "一起" },
-    "ドーム": { "meaning": "巨蛋（球場）" },
-    "行く": { "meaning": "去" },
-    "応援する": { "meaning": "加油、應援" },
-    "ホームラン": { "meaning": "全壘打" },
-    "出る": { "meaning": "出現、打出" },
-    "時": { "meaning": "……的時候" },
-    "みんなで": { "meaning": "大家一起" },
-    "大きな": { "meaning": "大的" },
-    "声": { "meaning": "聲音" },
-    "出す": { "meaning": "發出" },
-    "ちょっと": { "meaning": "有點、稍微" },
-    "疲れる": { "meaning": "累" },
-    "すごく": { "meaning": "非常" },
-    "楽しい": { "meaning": "開心的、愉快的" },
-    "また": { "meaning": "再、又" },
-    "今度": { "meaning": "下次" },
-    "誘う": { "meaning": "邀約" },
-    "ぜひ": { "meaning": "一定、務必" },
-    "思う": { "meaning": "覺得、想" }
+    "先週": {
+      "meaning": "上週"
+    },
+    "初めて": {
+      "meaning": "第一次"
+    },
+    "野球": {
+      "meaning": "棒球"
+    },
+    "試合": {
+      "meaning": "比賽"
+    },
+    "見に行く": {
+      "meaning": "去看"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "一緒に": {
+      "meaning": "一起"
+    },
+    "ドーム": {
+      "meaning": "巨蛋（球場）"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "応援する": {
+      "meaning": "加油、應援"
+    },
+    "ホームラン": {
+      "meaning": "全壘打"
+    },
+    "出る": {
+      "meaning": "出現、打出"
+    },
+    "時": {
+      "meaning": "……的時候"
+    },
+    "みんなで": {
+      "meaning": "大家一起"
+    },
+    "大きな": {
+      "meaning": "大的"
+    },
+    "声": {
+      "meaning": "聲音"
+    },
+    "出す": {
+      "meaning": "發出"
+    },
+    "ちょっと": {
+      "meaning": "有點、稍微"
+    },
+    "疲れる": {
+      "meaning": "累"
+    },
+    "すごく": {
+      "meaning": "非常"
+    },
+    "楽しい": {
+      "meaning": "開心的、愉快的"
+    },
+    "また": {
+      "meaning": "再、又"
+    },
+    "今度": {
+      "meaning": "下次"
+    },
+    "誘う": {
+      "meaning": "邀約"
+    },
+    "ぜひ": {
+      "meaning": "一定、務必"
+    },
+    "思う": {
+      "meaning": "覺得、想"
+    }
   },
   "particles": {
     "の": "所有格助詞，表示所屬關係",
@@ -79,10 +141,35 @@
     "は": "主題助詞，標示句子的主題"
   },
   "translations": [
-    [ { "text": "上週第一次去看了棒球比賽。", "word": "見に行く" } ],
-    [ { "text": "和朋友一起去了巨蛋球場加油。", "word": "応援する" } ],
-    [ { "text": "打出全壘打的時候，大家都一起大聲歡呼。", "word": "出す" } ],
-    [ { "text": "雖然有點累，但真的很開心。", "word": "楽しい" } ],
-    [ { "text": "下次還想約朋友一定要再去。", "word": "誘う" } ]
+    [
+      {
+        "text": "上週第一次去看了棒球比賽。",
+        "word": "見に行く"
+      }
+    ],
+    [
+      {
+        "text": "和朋友一起去了巨蛋球場加油。",
+        "word": "応援する"
+      }
+    ],
+    [
+      {
+        "text": "打出全壘打的時候，大家都一起大聲歡呼。",
+        "word": "出す"
+      }
+    ],
+    [
+      {
+        "text": "雖然有點累，但真的很開心。",
+        "word": "楽しい"
+      }
+    ],
+    [
+      {
+        "text": "下次還想約朋友一定要再去。",
+        "word": "誘う"
+      }
+    ]
   ]
 }

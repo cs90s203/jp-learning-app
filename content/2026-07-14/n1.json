@@ -14,6 +14,7 @@
     { "surface_form": "とともに", "basic_form": "とともに", "reading": "とともに", "pos": "助詞" },
     { "surface_form": "年々", "basic_form": "年々", "reading": "ねんねん", "pos": "副詞" },
     { "surface_form": "増加を続けており", "basic_form": "続ける", "reading": "ぞうかをつづけており", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "国", "basic_form": "国", "reading": "くに", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "財政", "basic_form": "財政", "reading": "ざいせい", "pos": "名詞" },
@@ -24,16 +25,19 @@
     { "surface_form": "一つ", "basic_form": "一つ", "reading": "ひとつ", "pos": "名詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
     { "surface_form": "なっている", "basic_form": "なる", "reading": "なっている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "厚生労働省", "basic_form": "厚生労働省", "reading": "こうせいろうどうしょう", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "統計", "basic_form": "統計", "reading": "とうけい", "pos": "名詞" },
     { "surface_form": "によれば", "basic_form": "によれば", "reading": "によれば", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "国民医療費", "basic_form": "国民医療費", "reading": "こくみんいりょうひ", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "既に", "basic_form": "既に", "reading": "すでに", "pos": "副詞" },
     { "surface_form": "四十兆円", "basic_form": "四十兆円", "reading": "よんじゅっちょうえん", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "超え", "basic_form": "超える", "reading": "こえ", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "今後", "basic_form": "今後", "reading": "こんご", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "高齢者人口", "basic_form": "高齢者人口", "reading": "こうれいしゃじんこう", "pos": "名詞" },
@@ -45,11 +49,13 @@
     { "surface_form": "膨張", "basic_form": "膨張", "reading": "ぼうちょう", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "見込まれている", "basic_form": "見込む", "reading": "みこまれている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "こうした", "basic_form": "こうした", "reading": "こうした", "pos": "連体詞" },
     { "surface_form": "状況", "basic_form": "状況", "reading": "じょうきょう", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "背景", "basic_form": "背景", "reading": "はいけい", "pos": "名詞" },
     { "surface_form": "には", "basic_form": "には", "reading": "には", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "医療技術", "basic_form": "医療技術", "reading": "いりょうぎじゅつ", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "高度化", "basic_form": "高度化", "reading": "こうどか", "pos": "名詞" },
@@ -58,6 +64,7 @@
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "高騰", "basic_form": "高騰", "reading": "こうとう", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "長期的な", "basic_form": "長期的", "reading": "ちょうきてきな", "pos": "形容動詞" },
     { "surface_form": "慢性疾患", "basic_form": "慢性疾患", "reading": "まんせいしっかん", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
@@ -67,11 +74,14 @@
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "増大", "basic_form": "増大", "reading": "ぞうだい", "pos": "名詞" },
     { "surface_form": "など", "basic_form": "など", "reading": "など", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "複合的な", "basic_form": "複合的", "reading": "ふくごうてきな", "pos": "形容動詞" },
     { "surface_form": "要因", "basic_form": "要因", "reading": "よういん", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "存在する", "basic_form": "存在する", "reading": "そんざいする", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "特に", "basic_form": "特に", "reading": "とくに", "pos": "副詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "高額な", "basic_form": "高額", "reading": "こうがくな", "pos": "形容動詞" },
     { "surface_form": "先進医療", "basic_form": "先進医療", "reading": "せんしんいりょう", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
@@ -84,11 +94,13 @@
     { "surface_form": "福音", "basic_form": "福音", "reading": "ふくいん", "pos": "名詞" },
     { "surface_form": "である", "basic_form": "である", "reading": "である", "pos": "助動詞" },
     { "surface_form": "一方", "basic_form": "一方", "reading": "いっぽう", "pos": "接続詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "公的医療保険財政", "basic_form": "公的医療保険財政", "reading": "こうてきいりょうほけんざいせい", "pos": "名詞" },
     { "surface_form": "にとっては", "basic_form": "にとって", "reading": "にとっては", "pos": "助詞" },
     { "surface_form": "大きな", "basic_form": "大きい", "reading": "おおきな", "pos": "連体詞" },
     { "surface_form": "負担", "basic_form": "負担", "reading": "ふたん", "pos": "名詞" },
     { "surface_form": "となっており", "basic_form": "なる", "reading": "となっており", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "給付", "basic_form": "給付", "reading": "きゅうふ", "pos": "名詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
     { "surface_form": "負担", "basic_form": "負担", "reading": "ふたん", "pos": "名詞" },
@@ -102,9 +114,11 @@
     { "surface_form": "課題", "basic_form": "課題", "reading": "かだい", "pos": "名詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
     { "surface_form": "なっている", "basic_form": "なる", "reading": "なっている", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "政府", "basic_form": "政府", "reading": "せいふ", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
     { "surface_form": "これまで", "basic_form": "これまで", "reading": "これまで", "pos": "副詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "自己負担割合", "basic_form": "自己負担割合", "reading": "じこふたんわりあい", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "引き上げ", "basic_form": "引き上げ", "reading": "ひきあげ", "pos": "名詞" },
@@ -113,16 +127,20 @@
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "使用促進", "basic_form": "使用促進", "reading": "しようそくしん", "pos": "名詞" },
     { "surface_form": "など", "basic_form": "など", "reading": "など", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "様々な", "basic_form": "様々", "reading": "さまざまな", "pos": "形容動詞" },
     { "surface_form": "対策", "basic_form": "対策", "reading": "たいさく", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "講じてきたが", "basic_form": "講じる", "reading": "こうじてきたが", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "抜本的な", "basic_form": "抜本的", "reading": "ばっぽんてきな", "pos": "形容動詞" },
     { "surface_form": "解決", "basic_form": "解決", "reading": "かいけつ", "pos": "名詞" },
     { "surface_form": "には", "basic_form": "には", "reading": "には", "pos": "助詞" },
     { "surface_form": "至っていない", "basic_form": "至る", "reading": "いたっていない", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "今後", "basic_form": "今後", "reading": "こんご", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "予防医療", "basic_form": "予防医療", "reading": "よぼういりょう", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "充実", "basic_form": "充実", "reading": "じゅうじつ", "pos": "名詞" },
@@ -133,11 +151,13 @@
     { "surface_form": "減らす", "basic_form": "減らす", "reading": "へらす", "pos": "動詞" },
     { "surface_form": "取り組み", "basic_form": "取り組み", "reading": "とりくみ", "pos": "名詞" },
     { "surface_form": "や", "basic_form": "や", "reading": "や", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "地域医療体制", "basic_form": "地域医療体制", "reading": "ちいきいりょうたいせい", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "効率化", "basic_form": "効率化", "reading": "こうりつか", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "進めることで", "basic_form": "進める", "reading": "すすめることで", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "医療費", "basic_form": "医療費", "reading": "いりょうひ", "pos": "名詞" },
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "伸び", "basic_form": "伸び", "reading": "のび", "pos": "名詞" },
@@ -149,16 +169,19 @@
     { "surface_form": "維持すること", "basic_form": "維持する", "reading": "いじすること", "pos": "動詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "求められる", "basic_form": "求める", "reading": "もとめられる", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "少子高齢化", "basic_form": "少子高齢化", "reading": "しょうしこうれいか", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "加速する", "basic_form": "加速する", "reading": "かそくする", "pos": "動詞" },
     { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "次世代", "basic_form": "次世代", "reading": "じせだい", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "過度な", "basic_form": "過度", "reading": "かどな", "pos": "形容動詞" },
     { "surface_form": "負担", "basic_form": "負担", "reading": "ふたん", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
     { "surface_form": "残さないためにも", "basic_form": "残す", "reading": "のこさないためにも", "pos": "動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "社会全体", "basic_form": "社会全体", "reading": "しゃかいぜんたい", "pos": "名詞" },
     { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
     { "surface_form": "制度", "basic_form": "制度", "reading": "せいど", "pos": "名詞" },
@@ -168,106 +191,301 @@
     { "surface_form": "議論していく", "basic_form": "議論する", "reading": "ぎろんしていく", "pos": "動詞" },
     { "surface_form": "必要", "basic_form": "必要", "reading": "ひつよう", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
-    { "surface_form": "あるだろう", "basic_form": "ある", "reading": "あるだろう", "pos": "動詞" }
+    { "surface_form": "あるだろう", "basic_form": "ある", "reading": "あるだろう", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
   ],
   "vocab": {
-    "日本": { "meaning": "日本" },
-    "医療費": { "meaning": "醫療費" },
-    "高齢化": { "meaning": "高齡化" },
-    "進展": { "meaning": "進展" },
-    "年々": { "meaning": "逐年" },
-    "続ける": { "meaning": "持續" },
-    "国": { "meaning": "國家" },
-    "財政": { "meaning": "財政" },
-    "圧迫する": { "meaning": "壓迫" },
-    "要因": { "meaning": "原因" },
-    "一つ": { "meaning": "一個" },
-    "なる": { "meaning": "成為" },
-    "厚生労働省": { "meaning": "厚生勞動省" },
-    "統計": { "meaning": "統計" },
-    "国民医療費": { "meaning": "國民醫療費" },
-    "既に": { "meaning": "已經" },
-    "四十兆円": { "meaning": "四十兆日圓" },
-    "超える": { "meaning": "超過" },
-    "今後": { "meaning": "今後" },
-    "高齢者人口": { "meaning": "高齡人口" },
-    "増加": { "meaning": "增加" },
-    "伴う": { "meaning": "伴隨" },
-    "さらなる": { "meaning": "進一步的" },
-    "膨張": { "meaning": "膨脹" },
-    "見込む": { "meaning": "預估" },
-    "こうした": { "meaning": "這樣的" },
-    "状況": { "meaning": "狀況" },
-    "背景": { "meaning": "背景" },
-    "医療技術": { "meaning": "醫療技術" },
-    "高度化": { "meaning": "高度化" },
-    "治療費": { "meaning": "治療費" },
-    "高騰": { "meaning": "高漲" },
-    "長期的": { "meaning": "長期的" },
-    "慢性疾患": { "meaning": "慢性疾病" },
-    "管理": { "meaning": "管理" },
-    "かかる": { "meaning": "花費" },
-    "費用": { "meaning": "費用" },
-    "増大": { "meaning": "增大" },
-    "複合的": { "meaning": "複合性的" },
-    "存在する": { "meaning": "存在" },
-    "特に": { "meaning": "特別是" },
-    "高額": { "meaning": "高額" },
-    "先進医療": { "meaning": "先進醫療" },
-    "新薬": { "meaning": "新藥" },
-    "登場": { "meaning": "出現" },
-    "患者": { "meaning": "病患" },
-    "福音": { "meaning": "福音" },
-    "である": { "meaning": "是" },
-    "一方": { "meaning": "另一方面" },
-    "公的医療保険財政": { "meaning": "公共醫療保險財政" },
-    "大きい": { "meaning": "大的" },
-    "負担": { "meaning": "負擔" },
-    "給付": { "meaning": "給付" },
-    "バランス": { "meaning": "平衡" },
-    "どう": { "meaning": "如何" },
-    "保つ": { "meaning": "維持" },
-    "喫緊": { "meaning": "緊迫、迫切" },
-    "課題": { "meaning": "課題" },
-    "政府": { "meaning": "政府" },
-    "これまで": { "meaning": "至今為止" },
-    "自己負担割合": { "meaning": "自付比例" },
-    "引き上げ": { "meaning": "提高" },
-    "後発医薬品": { "meaning": "學名藥" },
-    "使用促進": { "meaning": "使用推廣" },
-    "様々": { "meaning": "各式各樣" },
-    "対策": { "meaning": "對策" },
-    "講じる": { "meaning": "採取(對策)" },
-    "抜本的": { "meaning": "根本性的" },
-    "解決": { "meaning": "解決" },
-    "至る": { "meaning": "達到" },
-    "予防医療": { "meaning": "預防醫療" },
-    "充実": { "meaning": "充實" },
-    "病気": { "meaning": "疾病" },
-    "そのもの": { "meaning": "本身" },
-    "減らす": { "meaning": "減少" },
-    "取り組み": { "meaning": "措施" },
-    "地域医療体制": { "meaning": "地區醫療體制" },
-    "効率化": { "meaning": "效率化" },
-    "進める": { "meaning": "推動" },
-    "伸び": { "meaning": "增長" },
-    "抑制する": { "meaning": "抑制" },
-    "高い": { "meaning": "高的" },
-    "医療": { "meaning": "醫療" },
-    "維持する": { "meaning": "維持" },
-    "求める": { "meaning": "要求" },
-    "少子高齢化": { "meaning": "少子高齡化" },
-    "加速する": { "meaning": "加速" },
-    "中": { "meaning": "之中" },
-    "次世代": { "meaning": "下一代" },
-    "過度": { "meaning": "過度" },
-    "残す": { "meaning": "留下" },
-    "社会全体": { "meaning": "整個社會" },
-    "制度": { "meaning": "制度" },
-    "あり方": { "meaning": "應有樣貌" },
-    "議論する": { "meaning": "討論" },
-    "必要": { "meaning": "必要" },
-    "ある": { "meaning": "有" }
+    "日本": {
+      "meaning": "日本"
+    },
+    "医療費": {
+      "meaning": "醫療費"
+    },
+    "高齢化": {
+      "meaning": "高齡化"
+    },
+    "進展": {
+      "meaning": "進展"
+    },
+    "年々": {
+      "meaning": "逐年"
+    },
+    "続ける": {
+      "meaning": "持續"
+    },
+    "国": {
+      "meaning": "國家"
+    },
+    "財政": {
+      "meaning": "財政"
+    },
+    "圧迫する": {
+      "meaning": "壓迫"
+    },
+    "要因": {
+      "meaning": "原因"
+    },
+    "一つ": {
+      "meaning": "一個"
+    },
+    "なる": {
+      "meaning": "成為"
+    },
+    "厚生労働省": {
+      "meaning": "厚生勞動省"
+    },
+    "統計": {
+      "meaning": "統計"
+    },
+    "国民医療費": {
+      "meaning": "國民醫療費"
+    },
+    "既に": {
+      "meaning": "已經"
+    },
+    "四十兆円": {
+      "meaning": "四十兆日圓"
+    },
+    "超える": {
+      "meaning": "超過"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "高齢者人口": {
+      "meaning": "高齡人口"
+    },
+    "増加": {
+      "meaning": "增加"
+    },
+    "伴う": {
+      "meaning": "伴隨"
+    },
+    "さらなる": {
+      "meaning": "進一步的"
+    },
+    "膨張": {
+      "meaning": "膨脹"
+    },
+    "見込む": {
+      "meaning": "預估"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "背景": {
+      "meaning": "背景"
+    },
+    "医療技術": {
+      "meaning": "醫療技術"
+    },
+    "高度化": {
+      "meaning": "高度化"
+    },
+    "治療費": {
+      "meaning": "治療費"
+    },
+    "高騰": {
+      "meaning": "高漲"
+    },
+    "長期的": {
+      "meaning": "長期的"
+    },
+    "慢性疾患": {
+      "meaning": "慢性疾病"
+    },
+    "管理": {
+      "meaning": "管理"
+    },
+    "かかる": {
+      "meaning": "花費"
+    },
+    "費用": {
+      "meaning": "費用"
+    },
+    "増大": {
+      "meaning": "增大"
+    },
+    "複合的": {
+      "meaning": "複合性的"
+    },
+    "存在する": {
+      "meaning": "存在"
+    },
+    "特に": {
+      "meaning": "特別是"
+    },
+    "高額": {
+      "meaning": "高額"
+    },
+    "先進医療": {
+      "meaning": "先進醫療"
+    },
+    "新薬": {
+      "meaning": "新藥"
+    },
+    "登場": {
+      "meaning": "出現"
+    },
+    "患者": {
+      "meaning": "病患"
+    },
+    "福音": {
+      "meaning": "福音"
+    },
+    "である": {
+      "meaning": "是"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "公的医療保険財政": {
+      "meaning": "公共醫療保險財政"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "負担": {
+      "meaning": "負擔"
+    },
+    "給付": {
+      "meaning": "給付"
+    },
+    "バランス": {
+      "meaning": "平衡"
+    },
+    "どう": {
+      "meaning": "如何"
+    },
+    "保つ": {
+      "meaning": "維持"
+    },
+    "喫緊": {
+      "meaning": "緊迫、迫切"
+    },
+    "課題": {
+      "meaning": "課題"
+    },
+    "政府": {
+      "meaning": "政府"
+    },
+    "これまで": {
+      "meaning": "至今為止"
+    },
+    "自己負担割合": {
+      "meaning": "自付比例"
+    },
+    "引き上げ": {
+      "meaning": "提高"
+    },
+    "後発医薬品": {
+      "meaning": "學名藥"
+    },
+    "使用促進": {
+      "meaning": "使用推廣"
+    },
+    "様々": {
+      "meaning": "各式各樣"
+    },
+    "対策": {
+      "meaning": "對策"
+    },
+    "講じる": {
+      "meaning": "採取(對策)"
+    },
+    "抜本的": {
+      "meaning": "根本性的"
+    },
+    "解決": {
+      "meaning": "解決"
+    },
+    "至る": {
+      "meaning": "達到"
+    },
+    "予防医療": {
+      "meaning": "預防醫療"
+    },
+    "充実": {
+      "meaning": "充實"
+    },
+    "病気": {
+      "meaning": "疾病"
+    },
+    "そのもの": {
+      "meaning": "本身"
+    },
+    "減らす": {
+      "meaning": "減少"
+    },
+    "取り組み": {
+      "meaning": "措施"
+    },
+    "地域医療体制": {
+      "meaning": "地區醫療體制"
+    },
+    "効率化": {
+      "meaning": "效率化"
+    },
+    "進める": {
+      "meaning": "推動"
+    },
+    "伸び": {
+      "meaning": "增長"
+    },
+    "抑制する": {
+      "meaning": "抑制"
+    },
+    "高い": {
+      "meaning": "高的"
+    },
+    "医療": {
+      "meaning": "醫療"
+    },
+    "維持する": {
+      "meaning": "維持"
+    },
+    "求める": {
+      "meaning": "要求"
+    },
+    "少子高齢化": {
+      "meaning": "少子高齡化"
+    },
+    "加速する": {
+      "meaning": "加速"
+    },
+    "中": {
+      "meaning": "之中"
+    },
+    "次世代": {
+      "meaning": "下一代"
+    },
+    "過度": {
+      "meaning": "過度"
+    },
+    "残す": {
+      "meaning": "留下"
+    },
+    "社会全体": {
+      "meaning": "整個社會"
+    },
+    "制度": {
+      "meaning": "制度"
+    },
+    "あり方": {
+      "meaning": "應有樣貌"
+    },
+    "議論する": {
+      "meaning": "討論"
+    },
+    "必要": {
+      "meaning": "必要"
+    },
+    "ある": {
+      "meaning": "有"
+    }
   },
   "particles": {
     "とともに": "表示「隨著…」",
@@ -285,12 +503,47 @@
     "が": "主詞標示助詞或逆接連接"
   },
   "translations": [
-    [ { "text": "日本的醫療費隨著高齡化的進展逐年增加，成為壓迫國家財政的原因之一。", "word": "医療費" } ],
-    [ { "text": "根據厚生勞動省的統計，國民醫療費已超過四十兆日圓，隨著高齡人口增加，今後預估將進一步膨脹。", "word": "見込む" } ],
-    [ { "text": "這種狀況的背景中，存在著醫療技術高度化導致治療費高漲、長期慢性疾病管理費用增大等複合性原因。", "word": "存在する" } ],
-    [ { "text": "尤其昂貴的先進醫療與新藥的出現對病患而言是一大福音，但對公共醫療保險財政卻是沉重負擔，如何在給付與負擔間取得平衡成為迫切課題。", "word": "負担" } ],
-    [ { "text": "政府至今已採取提高自付比例、推廣學名藥使用等各種對策，但尚未達到根本性的解決。", "word": "対策" } ],
-    [ { "text": "今後需要透過充實預防醫療來減少疾病本身的措施，以及推動地區醫療體制效率化，在抑制醫療費增長的同時維持高品質醫療。", "word": "効率化" } ],
-    [ { "text": "在少子高齡化加速之際，為了不將過度負擔留給下一代，整個社會有必要討論制度應有的樣貌。", "word": "議論する" } ]
+    [
+      {
+        "text": "日本的醫療費隨著高齡化的進展逐年增加，成為壓迫國家財政的原因之一。",
+        "word": "医療費"
+      }
+    ],
+    [
+      {
+        "text": "根據厚生勞動省的統計，國民醫療費已超過四十兆日圓，隨著高齡人口增加，今後預估將進一步膨脹。",
+        "word": "見込む"
+      }
+    ],
+    [
+      {
+        "text": "這種狀況的背景中，存在著醫療技術高度化導致治療費高漲、長期慢性疾病管理費用增大等複合性原因。",
+        "word": "存在する"
+      }
+    ],
+    [
+      {
+        "text": "尤其昂貴的先進醫療與新藥的出現對病患而言是一大福音，但對公共醫療保險財政卻是沉重負擔，如何在給付與負擔間取得平衡成為迫切課題。",
+        "word": "負担"
+      }
+    ],
+    [
+      {
+        "text": "政府至今已採取提高自付比例、推廣學名藥使用等各種對策，但尚未達到根本性的解決。",
+        "word": "対策"
+      }
+    ],
+    [
+      {
+        "text": "今後需要透過充實預防醫療來減少疾病本身的措施，以及推動地區醫療體制效率化，在抑制醫療費增長的同時維持高品質醫療。",
+        "word": "効率化"
+      }
+    ],
+    [
+      {
+        "text": "在少子高齡化加速之際，為了不將過度負擔留給下一代，整個社會有必要討論制度應有的樣貌。",
+        "word": "議論する"
+      }
+    ]
   ]
 }
