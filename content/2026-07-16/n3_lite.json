@@ -1,0 +1,638 @@
+{
+  "date": "2026-07-16",
+  "level": "n3_lite",
+  "title": "フリーマーケットに出店してみた",
+  "text": "先月、初めてフリーマーケットに出店してみた。朝早くから場所取りをして、天気にも恵まれたのが良かった。使わなくなった服や雑貨を並べて、値段をつけるのがけっこう大変だった。お客さんと値段交渉をするのは緊張したけど、思ったより楽しかった。売れ残った物もあったけど、半日で結構な数が売れて満足した。次はもっと工夫して、看板やディスプレイにもこだわってみたい。",
+  "tokens": [
+    {
+      "surface_form": "先月",
+      "basic_form": "先月",
+      "reading": "せんげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "初めて",
+      "basic_form": "初めて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "フリーマーケット",
+      "basic_form": "フリーマーケット",
+      "reading": "ふりーまーけっと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出店してみた",
+      "basic_form": "出店する",
+      "reading": "しゅってんしてみた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝",
+      "basic_form": "朝",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "早く",
+      "basic_form": "早い",
+      "reading": "はやく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "場所取り",
+      "basic_form": "場所取り",
+      "reading": "ばしょとり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "天気",
+      "basic_form": "天気",
+      "reading": "てんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "恵まれた",
+      "basic_form": "恵まれる",
+      "reading": "めぐまれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "良かった",
+      "basic_form": "良い",
+      "reading": "よかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "使わなくなった",
+      "basic_form": "使う",
+      "reading": "つかわなくなった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "服",
+      "basic_form": "服",
+      "reading": "ふく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "雑貨",
+      "basic_form": "雑貨",
+      "reading": "ざっか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "並べて",
+      "basic_form": "並べる",
+      "reading": "ならべて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "値段",
+      "basic_form": "値段",
+      "reading": "ねだん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つける",
+      "basic_form": "つける",
+      "reading": "つける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "けっこう",
+      "basic_form": "けっこう",
+      "reading": "けっこう",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "大変だった",
+      "basic_form": "大変",
+      "reading": "たいへんだった",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "お客さん",
+      "basic_form": "お客さん",
+      "reading": "おきゃくさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "値段交渉",
+      "basic_form": "値段交渉",
+      "reading": "ねだんこうしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "緊張した",
+      "basic_form": "緊張する",
+      "reading": "きんちょうした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "思った",
+      "basic_form": "思う",
+      "reading": "おもった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しかった",
+      "basic_form": "楽しい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "売れ残った",
+      "basic_form": "売れ残る",
+      "reading": "うれのこった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "物",
+      "basic_form": "物",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あった",
+      "basic_form": "ある",
+      "reading": "あった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "半日",
+      "basic_form": "半日",
+      "reading": "はんにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "結構な",
+      "basic_form": "結構",
+      "reading": "けっこうな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "数",
+      "basic_form": "数",
+      "reading": "かず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "売れて",
+      "basic_form": "売れる",
+      "reading": "うれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "満足した",
+      "basic_form": "満足する",
+      "reading": "まんぞくした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "次",
+      "basic_form": "次",
+      "reading": "つぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もっと",
+      "basic_form": "もっと",
+      "reading": "もっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "工夫して",
+      "basic_form": "工夫する",
+      "reading": "くふうして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "看板",
+      "basic_form": "看板",
+      "reading": "かんばん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ディスプレイ",
+      "basic_form": "ディスプレイ",
+      "reading": "でぃすぷれい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "こだわってみたい",
+      "basic_form": "こだわる",
+      "reading": "こだわってみたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先月": {
+      "meaning": "上個月"
+    },
+    "初めて": {
+      "meaning": "第一次"
+    },
+    "フリーマーケット": {
+      "meaning": "跳蚤市場"
+    },
+    "出店する": {
+      "meaning": "擺攤、設攤"
+    },
+    "使う": {
+      "meaning": "使用"
+    },
+    "服": {
+      "meaning": "衣服"
+    },
+    "雑貨": {
+      "meaning": "雜貨"
+    },
+    "並べる": {
+      "meaning": "擺放、排列"
+    },
+    "値段": {
+      "meaning": "價格"
+    },
+    "つける": {
+      "meaning": "訂定（價格）"
+    },
+    "けっこう": {
+      "meaning": "相當、蠻"
+    },
+    "大変": {
+      "meaning": "辛苦、費工夫"
+    },
+    "お客さん": {
+      "meaning": "客人"
+    },
+    "値段交渉": {
+      "meaning": "議價"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "緊張する": {
+      "meaning": "緊張"
+    },
+    "思う": {
+      "meaning": "覺得、想"
+    },
+    "楽しい": {
+      "meaning": "開心"
+    },
+    "売れ残る": {
+      "meaning": "賣剩、滯銷"
+    },
+    "物": {
+      "meaning": "東西"
+    },
+    "ある": {
+      "meaning": "有"
+    },
+    "半日": {
+      "meaning": "半天"
+    },
+    "結構": {
+      "meaning": "相當、不少"
+    },
+    "数": {
+      "meaning": "數量"
+    },
+    "売れる": {
+      "meaning": "賣出去"
+    },
+    "満足する": {
+      "meaning": "滿足"
+    },
+    "朝": {
+      "meaning": "早上"
+    },
+    "早い": {
+      "meaning": "早的"
+    },
+    "場所取り": {
+      "meaning": "佔位、佔攤位"
+    },
+    "天気": {
+      "meaning": "天氣"
+    },
+    "恵まれる": {
+      "meaning": "受到眷顧、得天獨厚"
+    },
+    "良い": {
+      "meaning": "好的"
+    },
+    "次": {
+      "meaning": "下次"
+    },
+    "もっと": {
+      "meaning": "更加"
+    },
+    "工夫する": {
+      "meaning": "花心思、下工夫"
+    },
+    "看板": {
+      "meaning": "招牌"
+    },
+    "ディスプレイ": {
+      "meaning": "陳列、展示"
+    },
+    "こだわる": {
+      "meaning": "講究、堅持"
+    }
+  },
+  "particles": {
+    "に": "表示動作發生的對象或地點",
+    "から": "表示動作開始的時間或起點",
+    "や": "列舉部分事物，「～和～等」",
+    "を": "受格助詞，標示動作的對象",
+    "の": "將前面內容名詞化，形成形式名詞用法",
+    "が": "主格助詞，標示句子的主語",
+    "と": "表示一起做動作的對象",
+    "は": "主題助詞，提示句子的主題",
+    "けど": "表示轉折，「雖然～但是」",
+    "より": "表示比較的基準，「比起～」",
+    "で": "表示動作發生的時間範圍或方式",
+    "も": "表示「也」，並列或附加語氣"
+  },
+  "translations": [
+    [
+      {
+        "text": "上個月，第一次在跳蚤市場擺攤看看。",
+        "word": "出店する"
+      }
+    ],
+    [
+      {
+        "text": "一大早就去佔位置，加上天氣也很好，真是幸運。",
+        "word": "恵まれる"
+      }
+    ],
+    [
+      {
+        "text": "把不再穿的衣服和雜貨擺出來，訂價格相當費工夫。",
+        "word": "値段"
+      }
+    ],
+    [
+      {
+        "text": "跟客人議價雖然讓人緊張，但比想像中還開心。",
+        "word": "値段交渉"
+      }
+    ],
+    [
+      {
+        "text": "雖然也有賣剩的東西，但半天就賣出不少，覺得很滿足。",
+        "word": "満足する"
+      }
+    ],
+    [
+      {
+        "text": "下次想多花點心思，連招牌和陳列都講究一下。",
+        "word": "こだわる"
+      }
+    ]
+  ]
+}

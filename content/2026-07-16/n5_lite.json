@@ -1,0 +1,238 @@
+{
+  "date": "2026-07-16",
+  "level": "n5_lite",
+  "title": "わたしのへや",
+  "text": "わたしのへやです。ベッドがあります。つくえもあります。まどのちかくにほんだながあります。まいにちほんをよみます。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "へや",
+      "basic_form": "へや",
+      "reading": "へや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ベッド",
+      "basic_form": "ベッド",
+      "reading": "べっど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "つくえ",
+      "basic_form": "つくえ",
+      "reading": "つくえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まど",
+      "basic_form": "まど",
+      "reading": "まど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ちかく",
+      "basic_form": "ちかく",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほんだな",
+      "basic_form": "ほんだな",
+      "reading": "ほんだな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まいにち",
+      "basic_form": "まいにち",
+      "reading": "まいにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ほん",
+      "basic_form": "ほん",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よみます",
+      "basic_form": "よむ",
+      "reading": "よみます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我"
+    },
+    "へや": {
+      "meaning": "房間"
+    },
+    "ベッド": {
+      "meaning": "床"
+    },
+    "つくえ": {
+      "meaning": "桌子"
+    },
+    "まど": {
+      "meaning": "窗戶"
+    },
+    "ちかく": {
+      "meaning": "附近"
+    },
+    "ほんだな": {
+      "meaning": "書架"
+    },
+    "まいにち": {
+      "meaning": "每天"
+    },
+    "ほん": {
+      "meaning": "書"
+    },
+    "ある": {
+      "meaning": "有（無生物存在）"
+    },
+    "よむ": {
+      "meaning": "讀、看"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬關係",
+    "が": "主格助詞，標示句子的主語",
+    "も": "表示「也」，並列或附加語氣",
+    "に": "表示場所或存在的位置",
+    "を": "受格助詞，標示動作的對象"
+  },
+  "translations": [
+    [
+      {
+        "text": "這是我的房間。",
+        "word": "へや"
+      }
+    ],
+    [
+      {
+        "text": "有一張床。",
+        "word": "ベッド"
+      }
+    ],
+    [
+      {
+        "text": "也有一張桌子。",
+        "word": "つくえ"
+      }
+    ],
+    [
+      {
+        "text": "窗戶附近有書架。",
+        "word": "ほんだな"
+      }
+    ],
+    [
+      {
+        "text": "我每天看書。",
+        "word": "よむ"
+      }
+    ]
+  ]
+}

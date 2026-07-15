@@ -1,0 +1,1314 @@
+{
+  "date": "2026-07-16",
+  "level": "n1",
+  "title": "人工知能の普及がもたらす雇用倫理の課題",
+  "text": "生成AIをはじめとする人工知能技術の急速な普及は、労働市場に不可逆的な変化をもたらしつつある。従来、定型的な業務の自動化が主眼とされてきたが、近年では創造性や判断力を要するとされてきた領域にまで、その影響が及び始めている。こうした状況下において、単なる効率化や省力化の議論にとどまらず、雇用の在り方そのものを問い直す倫理的な視座が求められている。すなわち、技術革新によって代替される職種が存在する一方で、新たに生まれる職種への円滑な移行を支える制度設計が不可欠であるという点である。とりわけ、再教育や職業訓練の機会をいかに公平に提供するかという課題は、社会全体の分断を防ぐ上で看過できない。企業には短期的な利益追求のみならず、長期的な社会的責任を踏まえた人材活用の姿勢が求められており、政策立案者もまた、技術の進展に法制度が追いつかない現状を直視し、迅速かつ柔軟な対応を講じる必要があるだろう。",
+  "tokens": [
+    {
+      "surface_form": "生成AI",
+      "basic_form": "生成AI",
+      "reading": "せいせいえーあい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "はじめとする",
+      "basic_form": "はじめとする",
+      "reading": "はじめとする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人工知能技術",
+      "basic_form": "人工知能技術",
+      "reading": "じんこうちのうぎじゅつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急速な",
+      "basic_form": "急速",
+      "reading": "きゅうそくな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "普及",
+      "basic_form": "普及",
+      "reading": "ふきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "労働市場",
+      "basic_form": "労働市場",
+      "reading": "ろうどうしじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不可逆的な",
+      "basic_form": "不可逆的",
+      "reading": "ふかぎゃくてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "変化",
+      "basic_form": "変化",
+      "reading": "へんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もたらしつつある",
+      "basic_form": "もたらす",
+      "reading": "もたらしつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "従来",
+      "basic_form": "従来",
+      "reading": "じゅうらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "定型的な",
+      "basic_form": "定型的",
+      "reading": "ていけいてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "業務",
+      "basic_form": "業務",
+      "reading": "ぎょうむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自動化",
+      "basic_form": "自動化",
+      "reading": "じどうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "主眼",
+      "basic_form": "主眼",
+      "reading": "しゅがん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "されてきた",
+      "basic_form": "される",
+      "reading": "されてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "創造性",
+      "basic_form": "創造性",
+      "reading": "そうぞうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "判断力",
+      "basic_form": "判断力",
+      "reading": "はんだんりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "要する",
+      "basic_form": "要する",
+      "reading": "ようする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "されてきた",
+      "basic_form": "される",
+      "reading": "されてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "領域",
+      "basic_form": "領域",
+      "reading": "りょういき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "影響",
+      "basic_form": "影響",
+      "reading": "えいきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "及び始めている",
+      "basic_form": "及ぶ",
+      "reading": "およびはじめている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "状況下",
+      "basic_form": "状況下",
+      "reading": "じょうきょうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "において",
+      "basic_form": "において",
+      "reading": "において",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "単なる",
+      "basic_form": "単なる",
+      "reading": "たんなる",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "効率化",
+      "basic_form": "効率化",
+      "reading": "こうりつか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "省力化",
+      "basic_form": "省力化",
+      "reading": "しょうりょくか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "議論",
+      "basic_form": "議論",
+      "reading": "ぎろん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とどまらず",
+      "basic_form": "とどまる",
+      "reading": "とどまらず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "雇用",
+      "basic_form": "雇用",
+      "reading": "こよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "在り方",
+      "basic_form": "在り方",
+      "reading": "ありかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "そのもの",
+      "basic_form": "そのもの",
+      "reading": "そのもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "問い直す",
+      "basic_form": "問い直す",
+      "reading": "といなおす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "倫理的な",
+      "basic_form": "倫理的",
+      "reading": "りんりてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "視座",
+      "basic_form": "視座",
+      "reading": "しざ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求められている",
+      "basic_form": "求める",
+      "reading": "もとめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すなわち",
+      "basic_form": "すなわち",
+      "reading": "すなわち",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "技術革新",
+      "basic_form": "技術革新",
+      "reading": "ぎじゅつかくしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "代替される",
+      "basic_form": "代替する",
+      "reading": "だいたいされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "職種",
+      "basic_form": "職種",
+      "reading": "しょくしゅ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "存在する",
+      "basic_form": "存在する",
+      "reading": "そんざいする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "新たに",
+      "basic_form": "新たに",
+      "reading": "あらたに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "生まれる",
+      "basic_form": "生まれる",
+      "reading": "うまれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "職種",
+      "basic_form": "職種",
+      "reading": "しょくしゅ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "円滑な",
+      "basic_form": "円滑",
+      "reading": "えんかつな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "移行",
+      "basic_form": "移行",
+      "reading": "いこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "支える",
+      "basic_form": "支える",
+      "reading": "ささえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "制度設計",
+      "basic_form": "制度設計",
+      "reading": "せいどせっけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不可欠である",
+      "basic_form": "不可欠",
+      "reading": "ふかけつである",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "点",
+      "basic_form": "点",
+      "reading": "てん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "である",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とりわけ",
+      "basic_form": "とりわけ",
+      "reading": "とりわけ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "再教育",
+      "basic_form": "再教育",
+      "reading": "さいきょういく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "職業訓練",
+      "basic_form": "職業訓練",
+      "reading": "しょくぎょうくんれん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "機会",
+      "basic_form": "機会",
+      "reading": "きかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いかに",
+      "basic_form": "いかに",
+      "reading": "いかに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "公平に",
+      "basic_form": "公平",
+      "reading": "こうへいに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "提供する",
+      "basic_form": "提供する",
+      "reading": "ていきょうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "社会全体",
+      "basic_form": "社会全体",
+      "reading": "しゃかいぜんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "分断",
+      "basic_form": "分断",
+      "reading": "ぶんだん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "防ぐ",
+      "basic_form": "防ぐ",
+      "reading": "ふせぐ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "上で",
+      "basic_form": "上で",
+      "reading": "うえで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "看過できない",
+      "basic_form": "看過する",
+      "reading": "かんかできない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "短期的な",
+      "basic_form": "短期的",
+      "reading": "たんきてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "利益追求",
+      "basic_form": "利益追求",
+      "reading": "りえきついきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "のみならず",
+      "basic_form": "のみならず",
+      "reading": "のみならず",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "長期的な",
+      "basic_form": "長期的",
+      "reading": "ちょうきてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "社会的責任",
+      "basic_form": "社会的責任",
+      "reading": "しゃかいてきせきにん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "踏まえた",
+      "basic_form": "踏まえる",
+      "reading": "ふまえた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人材活用",
+      "basic_form": "人材活用",
+      "reading": "じんざいかつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "姿勢",
+      "basic_form": "姿勢",
+      "reading": "しせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求められており",
+      "basic_form": "求める",
+      "reading": "もとめられており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政策立案者",
+      "basic_form": "政策立案者",
+      "reading": "せいさくりつあんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "技術",
+      "basic_form": "技術",
+      "reading": "ぎじゅつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進展",
+      "basic_form": "進展",
+      "reading": "しんてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "法制度",
+      "basic_form": "法制度",
+      "reading": "ほうせいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "追いつかない",
+      "basic_form": "追いつく",
+      "reading": "おいつかない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "現状",
+      "basic_form": "現状",
+      "reading": "げんじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "直視し",
+      "basic_form": "直視する",
+      "reading": "ちょくしし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "迅速",
+      "basic_form": "迅速",
+      "reading": "じんそく",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "かつ",
+      "basic_form": "かつ",
+      "reading": "かつ",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "柔軟な",
+      "basic_form": "柔軟",
+      "reading": "じゅうなんな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "対応",
+      "basic_form": "対応",
+      "reading": "たいおう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "講じる",
+      "basic_form": "講じる",
+      "reading": "こうじる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "生成AI": {
+      "meaning": "生成式AI"
+    },
+    "はじめとする": {
+      "meaning": "以～為首、以～為代表"
+    },
+    "人工知能技術": {
+      "meaning": "人工智慧技術"
+    },
+    "急速": {
+      "meaning": "急速的"
+    },
+    "普及": {
+      "meaning": "普及"
+    },
+    "労働市場": {
+      "meaning": "勞動市場"
+    },
+    "不可逆的": {
+      "meaning": "不可逆的"
+    },
+    "変化": {
+      "meaning": "變化"
+    },
+    "もたらす": {
+      "meaning": "帶來"
+    },
+    "従来": {
+      "meaning": "以往、過去"
+    },
+    "定型的": {
+      "meaning": "定型化的"
+    },
+    "業務": {
+      "meaning": "業務"
+    },
+    "自動化": {
+      "meaning": "自動化"
+    },
+    "主眼": {
+      "meaning": "主要著眼點"
+    },
+    "される": {
+      "meaning": "被視為（する的被動形）"
+    },
+    "近年": {
+      "meaning": "近年"
+    },
+    "創造性": {
+      "meaning": "創造性"
+    },
+    "判断力": {
+      "meaning": "判斷力"
+    },
+    "要する": {
+      "meaning": "需要、要求"
+    },
+    "領域": {
+      "meaning": "領域"
+    },
+    "その": {
+      "meaning": "那個"
+    },
+    "影響": {
+      "meaning": "影響"
+    },
+    "及ぶ": {
+      "meaning": "波及、影響到"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "状況下": {
+      "meaning": "狀況之下"
+    },
+    "において": {
+      "meaning": "在～（方面、情況下）"
+    },
+    "単なる": {
+      "meaning": "單純的、僅僅是"
+    },
+    "効率化": {
+      "meaning": "效率化"
+    },
+    "省力化": {
+      "meaning": "省力化"
+    },
+    "議論": {
+      "meaning": "討論"
+    },
+    "とどまる": {
+      "meaning": "停留、僅止於"
+    },
+    "雇用": {
+      "meaning": "雇用"
+    },
+    "在り方": {
+      "meaning": "應有的樣貌、狀態"
+    },
+    "そのもの": {
+      "meaning": "本身"
+    },
+    "問い直す": {
+      "meaning": "重新審視"
+    },
+    "倫理的": {
+      "meaning": "倫理上的"
+    },
+    "視座": {
+      "meaning": "觀點、視角"
+    },
+    "求める": {
+      "meaning": "要求、尋求"
+    },
+    "すなわち": {
+      "meaning": "也就是說"
+    },
+    "技術革新": {
+      "meaning": "技術革新"
+    },
+    "代替する": {
+      "meaning": "取代"
+    },
+    "職種": {
+      "meaning": "職種"
+    },
+    "存在する": {
+      "meaning": "存在"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "新たに": {
+      "meaning": "新地、重新"
+    },
+    "生まれる": {
+      "meaning": "產生、誕生"
+    },
+    "円滑": {
+      "meaning": "順利、圓滑"
+    },
+    "移行": {
+      "meaning": "轉移、過渡"
+    },
+    "支える": {
+      "meaning": "支撐"
+    },
+    "制度設計": {
+      "meaning": "制度設計"
+    },
+    "不可欠": {
+      "meaning": "不可或缺"
+    },
+    "点": {
+      "meaning": "點、之處"
+    },
+    "である": {
+      "meaning": "是（書面語的斷定助動詞）"
+    },
+    "とりわけ": {
+      "meaning": "尤其、特別是"
+    },
+    "再教育": {
+      "meaning": "再教育"
+    },
+    "職業訓練": {
+      "meaning": "職業訓練"
+    },
+    "機会": {
+      "meaning": "機會"
+    },
+    "いかに": {
+      "meaning": "如何"
+    },
+    "公平": {
+      "meaning": "公平"
+    },
+    "提供する": {
+      "meaning": "提供"
+    },
+    "課題": {
+      "meaning": "課題、議題"
+    },
+    "社会全体": {
+      "meaning": "整體社會"
+    },
+    "分断": {
+      "meaning": "分裂、分斷"
+    },
+    "防ぐ": {
+      "meaning": "防止"
+    },
+    "看過する": {
+      "meaning": "忽視、放任不管"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "短期的": {
+      "meaning": "短期性的"
+    },
+    "利益追求": {
+      "meaning": "追求利益"
+    },
+    "長期的": {
+      "meaning": "長期性的"
+    },
+    "社会的責任": {
+      "meaning": "社會責任"
+    },
+    "踏まえる": {
+      "meaning": "根據、考量到"
+    },
+    "人材活用": {
+      "meaning": "人才運用"
+    },
+    "姿勢": {
+      "meaning": "態度、姿態"
+    },
+    "政策立案者": {
+      "meaning": "政策制定者"
+    },
+    "また": {
+      "meaning": "也、又"
+    },
+    "技術": {
+      "meaning": "技術"
+    },
+    "進展": {
+      "meaning": "進展"
+    },
+    "法制度": {
+      "meaning": "法律制度"
+    },
+    "追いつく": {
+      "meaning": "跟上、趕上"
+    },
+    "現状": {
+      "meaning": "現狀"
+    },
+    "直視する": {
+      "meaning": "正視"
+    },
+    "迅速": {
+      "meaning": "迅速"
+    },
+    "かつ": {
+      "meaning": "並且、且（書面連接詞）"
+    },
+    "柔軟": {
+      "meaning": "柔軟、靈活"
+    },
+    "対応": {
+      "meaning": "應對"
+    },
+    "講じる": {
+      "meaning": "採取（措施）"
+    },
+    "必要": {
+      "meaning": "必要"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    }
+  },
+  "particles": {
+    "を": "受格助詞，標示動作的對象",
+    "の": "所有格助詞，表示所屬關係",
+    "は": "主題助詞，提示句子的主題",
+    "に": "表示對象、方向或時間點",
+    "が": "主格助詞，標示句子的主語",
+    "と": "表示引用內容或視為的結果",
+    "や": "列舉部分事物，「～和～等」",
+    "まで": "表示範圍延伸到的終點，「甚至到～」",
+    "において": "表示範疇或情境，「在～之中」",
+    "によって": "表示原因或依據，「由於～、根據～」",
+    "へ": "方向助詞，表示對象或方向",
+    "という": "表示稱作、所謂的內容",
+    "か": "表示疑問或不確定的內容",
+    "上で": "表示「在～之際、在～方面」",
+    "のみならず": "表示「不僅～」的書面遞進表現",
+    "も": "表示「也」，並列或附加語氣"
+  },
+  "translations": [
+    [
+      {
+        "text": "以生成式AI為首的人工智慧技術快速普及，正為勞動市場帶來不可逆的變化。",
+        "word": "人工知能技術"
+      }
+    ],
+    [
+      {
+        "text": "以往，自動化的重點主要放在制式化的業務上，但近年來，這股影響力也開始波及過去被認為需要創造力與判斷力的領域。",
+        "word": "創造性"
+      }
+    ],
+    [
+      {
+        "text": "在這樣的狀況下，人們不再只停留於效率化、省力化的討論，而是要求以倫理的視角重新審視雇用本身的樣貌。",
+        "word": "倫理的"
+      }
+    ],
+    [
+      {
+        "text": "也就是說，一方面存在因技術革新而被取代的職種，另一方面，建立能支撐順利轉往新興職種的制度設計也是不可或缺的一點。",
+        "word": "制度設計"
+      }
+    ],
+    [
+      {
+        "text": "尤其是，該如何公平地提供再教育與職業訓練機會這項課題，在防止整體社會分裂上是不可忽視的。",
+        "word": "職業訓練"
+      }
+    ],
+    [
+      {
+        "text": "企業不僅需要追求短期利益，也被要求秉持考量長期社會責任的人才運用態度；政策制定者同樣必須正視法律制度跟不上技術進展的現狀，採取迅速且靈活的應對措施。",
+        "word": "社会的責任"
+      }
+    ]
+  ]
+}
