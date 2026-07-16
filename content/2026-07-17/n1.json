@@ -1,0 +1,1460 @@
+{
+  "date": "2026-07-17",
+  "level": "n1",
+  "title": "格差社会における教育機会の不平等",
+  "text": "経済的格差が拡大するにつれ、教育機会の不平等が深刻な社会問題として浮き彫りになっている。家庭の経済状況によって塾や習い事にかけられる費用に大きな差が生じ、それが学力や進学率の差に直結すると指摘されている。特に大学進学に関しては学費の高騰もあいまって、経済的に恵まれない家庭の子どもが進学を諦めざるを得ないケースも少なくない。こうした状況は単に個人の努力不足として片付けられる問題ではなく、生まれ育った環境によって将来の選択肢そのものが制限される構造的な問題だといえる。こうした格差は世代を超えて受け継がれる傾向にあり、貧困の連鎖を生む要因の一つと見なされている。こうした問題に対し、政府や自治体は奨学金制度の拡充や授業料の無償化などを進めているが、こうした施策だけで根本的な解決に至るかは疑問視する声もある。教育は本来個人の可能性を広げるはずのものであり、生まれによってその機会が左右される社会は公正だとは言い難い。",
+  "tokens": [
+    {
+      "surface_form": "経済的",
+      "basic_form": "経済的",
+      "reading": "けいざいてき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "格差",
+      "basic_form": "格差",
+      "reading": "かくさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "拡大する",
+      "basic_form": "拡大する",
+      "reading": "かくだいする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "につれ",
+      "basic_form": "につれ",
+      "reading": "につれ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "教育",
+      "basic_form": "教育",
+      "reading": "きょういく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "機会",
+      "basic_form": "機会",
+      "reading": "きかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不平等",
+      "basic_form": "不平等",
+      "reading": "ふびょうどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深刻な",
+      "basic_form": "深刻",
+      "reading": "しんこくな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "社会",
+      "basic_form": "社会",
+      "reading": "しゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "浮き彫りになっている",
+      "basic_form": "浮き彫りになる",
+      "reading": "うきぼりになっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家庭",
+      "basic_form": "家庭",
+      "reading": "かてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "経済状況",
+      "basic_form": "経済状況",
+      "reading": "けいざいじょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "塾",
+      "basic_form": "塾",
+      "reading": "じゅく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "習い事",
+      "basic_form": "習い事",
+      "reading": "ならいごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かけられる",
+      "basic_form": "かけられる",
+      "reading": "かけられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "費用",
+      "basic_form": "費用",
+      "reading": "ひよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "差",
+      "basic_form": "差",
+      "reading": "さ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生じ",
+      "basic_form": "生じる",
+      "reading": "しょうじ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それ",
+      "basic_form": "それ",
+      "reading": "それ",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学力",
+      "basic_form": "学力",
+      "reading": "がくりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進学",
+      "basic_form": "進学",
+      "reading": "しんがく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "率",
+      "basic_form": "率",
+      "reading": "りつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "差",
+      "basic_form": "差",
+      "reading": "さ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "直結する",
+      "basic_form": "直結する",
+      "reading": "ちょっけつする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘されている",
+      "basic_form": "指摘される",
+      "reading": "してきされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特に",
+      "basic_form": "特に",
+      "reading": "とくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "大学",
+      "basic_form": "大学",
+      "reading": "だいがく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "進学",
+      "basic_form": "進学",
+      "reading": "しんがく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "関して",
+      "basic_form": "関する",
+      "reading": "かんして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学費",
+      "basic_form": "学費",
+      "reading": "がくひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高騰",
+      "basic_form": "高騰",
+      "reading": "こうとう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あいまって",
+      "basic_form": "あいまって",
+      "reading": "あいまって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "経済的",
+      "basic_form": "経済的",
+      "reading": "けいざいてき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "恵まれない",
+      "basic_form": "恵まれる",
+      "reading": "めぐまれない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "家庭",
+      "basic_form": "家庭",
+      "reading": "かてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "子ども",
+      "basic_form": "子ども",
+      "reading": "こども",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進学",
+      "basic_form": "進学",
+      "reading": "しんがく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "諦めざるを得ない",
+      "basic_form": "諦める",
+      "reading": "あきらめざるをえない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ケース",
+      "basic_form": "ケース",
+      "reading": "けーす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少なくない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "単に",
+      "basic_form": "単に",
+      "reading": "たんに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "個人",
+      "basic_form": "個人",
+      "reading": "こじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "努力不足",
+      "basic_form": "努力不足",
+      "reading": "どりょくぶそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "片付けられる",
+      "basic_form": "片付ける",
+      "reading": "かたづけられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "では",
+      "basic_form": "では",
+      "reading": "では",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "生まれ育った",
+      "basic_form": "生まれ育つ",
+      "reading": "うまれそだった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "将来",
+      "basic_form": "将来",
+      "reading": "しょうらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "選択肢",
+      "basic_form": "選択肢",
+      "reading": "せんたくし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "そのもの",
+      "basic_form": "そのもの",
+      "reading": "そのもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "制限される",
+      "basic_form": "制限される",
+      "reading": "せいげんされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "構造的な",
+      "basic_form": "構造的",
+      "reading": "こうぞうてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いえる",
+      "basic_form": "いえる",
+      "reading": "いえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "格差",
+      "basic_form": "格差",
+      "reading": "かくさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "世代",
+      "basic_form": "世代",
+      "reading": "せだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "超えて",
+      "basic_form": "超える",
+      "reading": "こえて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "受け継がれる",
+      "basic_form": "受け継がれる",
+      "reading": "うけつがれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "傾向",
+      "basic_form": "傾向",
+      "reading": "けいこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "貧困",
+      "basic_form": "貧困",
+      "reading": "ひんこん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "連鎖",
+      "basic_form": "連鎖",
+      "reading": "れんさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生む",
+      "basic_form": "生む",
+      "reading": "うむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "要因",
+      "basic_form": "要因",
+      "reading": "よういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見なされている",
+      "basic_form": "見なされる",
+      "reading": "みなされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対し",
+      "basic_form": "対する",
+      "reading": "たいし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政府",
+      "basic_form": "政府",
+      "reading": "せいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自治体",
+      "basic_form": "自治体",
+      "reading": "じちたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "奨学金",
+      "basic_form": "奨学金",
+      "reading": "しょうがくきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "制度",
+      "basic_form": "制度",
+      "reading": "せいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "拡充",
+      "basic_form": "拡充",
+      "reading": "かくじゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "授業料",
+      "basic_form": "授業料",
+      "reading": "じゅぎょうりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "無償化",
+      "basic_form": "無償化",
+      "reading": "むしょうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進めているが",
+      "basic_form": "進める",
+      "reading": "すすめているが",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "施策",
+      "basic_form": "施策",
+      "reading": "しさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "根本的な",
+      "basic_form": "根本的",
+      "reading": "こんぽんてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "解決",
+      "basic_form": "解決",
+      "reading": "かいけつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "至る",
+      "basic_form": "至る",
+      "reading": "いたる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "疑問視",
+      "basic_form": "疑問視",
+      "reading": "ぎもんし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "教育",
+      "basic_form": "教育",
+      "reading": "きょういく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本来",
+      "basic_form": "本来",
+      "reading": "ほんらい",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "個人",
+      "basic_form": "個人",
+      "reading": "こじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "可能性",
+      "basic_form": "可能性",
+      "reading": "かのうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "広げる",
+      "basic_form": "広げる",
+      "reading": "ひろげる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "はず",
+      "basic_form": "はず",
+      "reading": "はず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もの",
+      "basic_form": "もの",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "であり",
+      "basic_form": "である",
+      "reading": "であり",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "生まれ",
+      "basic_form": "生まれ",
+      "reading": "うまれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よって",
+      "basic_form": "よって",
+      "reading": "よって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "機会",
+      "basic_form": "機会",
+      "reading": "きかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "左右される",
+      "basic_form": "左右される",
+      "reading": "さゆうされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "社会",
+      "basic_form": "社会",
+      "reading": "しゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "公正だ",
+      "basic_form": "公正",
+      "reading": "こうせいだ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言い難い",
+      "basic_form": "言い難い",
+      "reading": "いいがたい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "経済的": {
+      "meaning": "經濟上的"
+    },
+    "格差": {
+      "meaning": "差距、落差"
+    },
+    "拡大する": {
+      "meaning": "擴大"
+    },
+    "教育": {
+      "meaning": "教育"
+    },
+    "機会": {
+      "meaning": "機會"
+    },
+    "不平等": {
+      "meaning": "不平等"
+    },
+    "深刻": {
+      "meaning": "嚴重、深刻"
+    },
+    "社会": {
+      "meaning": "社會"
+    },
+    "問題": {
+      "meaning": "問題"
+    },
+    "浮き彫りになる": {
+      "meaning": "浮現、凸顯出來"
+    },
+    "家庭": {
+      "meaning": "家庭"
+    },
+    "経済状況": {
+      "meaning": "經濟狀況"
+    },
+    "塾": {
+      "meaning": "補習班"
+    },
+    "習い事": {
+      "meaning": "才藝課程"
+    },
+    "かけられる": {
+      "meaning": "能夠花費（かける的可能形）"
+    },
+    "費用": {
+      "meaning": "費用"
+    },
+    "差": {
+      "meaning": "差距"
+    },
+    "生じる": {
+      "meaning": "產生"
+    },
+    "それ": {
+      "meaning": "那個"
+    },
+    "学力": {
+      "meaning": "學力、學業能力"
+    },
+    "進学": {
+      "meaning": "升學"
+    },
+    "率": {
+      "meaning": "比率"
+    },
+    "直結する": {
+      "meaning": "直接相關、直接連結"
+    },
+    "指摘される": {
+      "meaning": "被指出"
+    },
+    "特に": {
+      "meaning": "特別是"
+    },
+    "大学": {
+      "meaning": "大學"
+    },
+    "関する": {
+      "meaning": "關於"
+    },
+    "学費": {
+      "meaning": "學費"
+    },
+    "高騰": {
+      "meaning": "高漲、飆升"
+    },
+    "あいまって": {
+      "meaning": "加上、與～相結合"
+    },
+    "恵まれる": {
+      "meaning": "得天獨厚、受惠"
+    },
+    "子ども": {
+      "meaning": "小孩"
+    },
+    "諦める": {
+      "meaning": "放棄"
+    },
+    "ケース": {
+      "meaning": "案例"
+    },
+    "少なくない": {
+      "meaning": "不少"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "単に": {
+      "meaning": "僅僅、單純"
+    },
+    "個人": {
+      "meaning": "個人"
+    },
+    "努力不足": {
+      "meaning": "努力不足"
+    },
+    "ない": {
+      "meaning": "沒有、不"
+    },
+    "生まれ育つ": {
+      "meaning": "出生成長"
+    },
+    "環境": {
+      "meaning": "環境"
+    },
+    "将来": {
+      "meaning": "未來"
+    },
+    "選択肢": {
+      "meaning": "選項"
+    },
+    "そのもの": {
+      "meaning": "本身"
+    },
+    "制限される": {
+      "meaning": "被限制"
+    },
+    "構造的": {
+      "meaning": "結構性的"
+    },
+    "いえる": {
+      "meaning": "可以說（言える）"
+    },
+    "世代": {
+      "meaning": "世代"
+    },
+    "超える": {
+      "meaning": "超越"
+    },
+    "受け継がれる": {
+      "meaning": "被繼承、被傳承"
+    },
+    "傾向": {
+      "meaning": "傾向"
+    },
+    "ある": {
+      "meaning": "有（無生物存在）"
+    },
+    "貧困": {
+      "meaning": "貧困"
+    },
+    "連鎖": {
+      "meaning": "連鎖、循環"
+    },
+    "生む": {
+      "meaning": "產生、催生"
+    },
+    "要因": {
+      "meaning": "要因、原因"
+    },
+    "一つ": {
+      "meaning": "一個"
+    },
+    "見なされる": {
+      "meaning": "被視為"
+    },
+    "対する": {
+      "meaning": "針對、對於"
+    },
+    "政府": {
+      "meaning": "政府"
+    },
+    "自治体": {
+      "meaning": "地方自治體"
+    },
+    "奨学金": {
+      "meaning": "獎學金"
+    },
+    "制度": {
+      "meaning": "制度"
+    },
+    "拡充": {
+      "meaning": "擴充"
+    },
+    "授業料": {
+      "meaning": "學費"
+    },
+    "無償化": {
+      "meaning": "免費化"
+    },
+    "など": {
+      "meaning": "等等"
+    },
+    "進める": {
+      "meaning": "推進"
+    },
+    "施策": {
+      "meaning": "政策措施"
+    },
+    "根本的": {
+      "meaning": "根本性的"
+    },
+    "解決": {
+      "meaning": "解決"
+    },
+    "至る": {
+      "meaning": "達到、抵達"
+    },
+    "疑問視": {
+      "meaning": "表示質疑"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "声": {
+      "meaning": "聲音、意見"
+    },
+    "本来": {
+      "meaning": "本來、原本"
+    },
+    "可能性": {
+      "meaning": "可能性"
+    },
+    "広げる": {
+      "meaning": "拓展、擴大"
+    },
+    "はず": {
+      "meaning": "應該、理應"
+    },
+    "もの": {
+      "meaning": "事物"
+    },
+    "である": {
+      "meaning": "是（書面斷定用法）"
+    },
+    "生まれ": {
+      "meaning": "出身"
+    },
+    "よって": {
+      "meaning": "因～、由於～"
+    },
+    "その": {
+      "meaning": "那個"
+    },
+    "左右される": {
+      "meaning": "被左右、被影響"
+    },
+    "公正": {
+      "meaning": "公正"
+    },
+    "言い難い": {
+      "meaning": "難以說是"
+    },
+    "片付ける": {
+      "meaning": "處理、歸結"
+    },
+    "大きな": {
+      "meaning": "大的"
+    }
+  },
+  "particles": {
+    "が": "主格助詞，標示句子的主語",
+    "につれ": "表示隨著前項的變化，後項也隨之變化",
+    "の": "所有格助詞，表示所屬關係",
+    "として": "表示身分或立場，「作為～」",
+    "によって": "表示原因、依據或方式，「因為～、依～而定」",
+    "や": "列舉助詞，「和～等等」",
+    "に": "表示動作的對象、方向或結果",
+    "と": "並列或引用助詞",
+    "は": "主題標示助詞",
+    "も": "表示「也」，並列語氣",
+    "を": "受格助詞，標示動作的對象",
+    "では": "否定前提用法，「並非～」",
+    "だけ": "表示限定，「只有～」",
+    "で": "表示狀態、方式或原因",
+    "か": "疑問或不確定語氣助詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "隨著經濟差距的擴大，教育機會的不平等已成為一個日益凸顯的嚴重社會問題。",
+        "word": "不平等"
+      }
+    ],
+    [
+      {
+        "text": "根據家庭的經濟狀況，能花在補習班或才藝課程上的費用出現很大差距，據指出這會直接反映在學力與升學率的差距上。",
+        "word": "直結する"
+      }
+    ],
+    [
+      {
+        "text": "特別是在大學升學方面，加上學費的高漲，經濟條件不佳家庭的孩子被迫放棄升學的案例也不少。",
+        "word": "諦める"
+      }
+    ],
+    [
+      {
+        "text": "這樣的狀況並非單純可以歸結為個人努力不足的問題，而可以說是一個因出身成長環境不同、未來的選項本身就受到限制的結構性問題。",
+        "word": "構造的"
+      }
+    ],
+    [
+      {
+        "text": "這種差距有著跨越世代被傳承下去的傾向，被視為造成貧困循環的原因之一。",
+        "word": "連鎖"
+      }
+    ],
+    [
+      {
+        "text": "針對這樣的問題，政府和地方自治體正在推動擴充獎學金制度、學費免費化等措施，但也有人質疑僅憑這些政策能否達到根本性的解決。",
+        "word": "疑問視"
+      }
+    ],
+    [
+      {
+        "text": "教育本應是拓展個人可能性的事物，一個機會因出身而被左右的社會，很難說是公正的。",
+        "word": "公正"
+      }
+    ]
+  ]
+}

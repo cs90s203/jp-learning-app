@@ -1,0 +1,377 @@
+{
+  "date": "2026-07-17",
+  "level": "n4_lite",
+  "title": "新しいアルバイトを始めた",
+  "text": "先週から新しいアルバイトを始めた。駅前のカフェで働いている。最初は緊張したけど、店長も同僚も優しくて、少しずつ慣れてきた。お客さんに「ありがとう」と言われると、すごく嬉しい。これからもっと頑張りたい。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "新しい",
+      "basic_form": "新しい",
+      "reading": "あたらしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "アルバイト",
+      "basic_form": "アルバイト",
+      "reading": "あるばいと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "始めた",
+      "basic_form": "始める",
+      "reading": "はじめた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "駅前",
+      "basic_form": "駅前",
+      "reading": "えきまえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "カフェ",
+      "basic_form": "カフェ",
+      "reading": "かふぇ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "働いている",
+      "basic_form": "働く",
+      "reading": "はたらいている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "緊張した",
+      "basic_form": "緊張する",
+      "reading": "きんちょうした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "店長",
+      "basic_form": "店長",
+      "reading": "てんちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "同僚",
+      "basic_form": "同僚",
+      "reading": "どうりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "優しくて",
+      "basic_form": "優しい",
+      "reading": "やさしくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少しずつ",
+      "basic_form": "少しずつ",
+      "reading": "すこしずつ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "慣れてきた",
+      "basic_form": "慣れる",
+      "reading": "なれてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "お客さん",
+      "basic_form": "お客さん",
+      "reading": "おきゃくさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ありがとう",
+      "basic_form": "ありがとう",
+      "reading": "ありがとう",
+      "pos": "感動詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言われる",
+      "basic_form": "言う",
+      "reading": "いわれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すごく",
+      "basic_form": "すごく",
+      "reading": "すごく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "嬉しい",
+      "basic_form": "嬉しい",
+      "reading": "うれしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "もっと",
+      "basic_form": "もっと",
+      "reading": "もっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "頑張りたい",
+      "basic_form": "頑張る",
+      "reading": "がんばりたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週"
+    },
+    "新しい": {
+      "meaning": "新的"
+    },
+    "アルバイト": {
+      "meaning": "兼職、打工"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "駅前": {
+      "meaning": "車站前"
+    },
+    "カフェ": {
+      "meaning": "咖啡廳"
+    },
+    "働く": {
+      "meaning": "工作"
+    },
+    "最初": {
+      "meaning": "一開始"
+    },
+    "緊張する": {
+      "meaning": "緊張"
+    },
+    "店長": {
+      "meaning": "店長"
+    },
+    "同僚": {
+      "meaning": "同事"
+    },
+    "優しい": {
+      "meaning": "親切、溫柔"
+    },
+    "少しずつ": {
+      "meaning": "一點一點地"
+    },
+    "慣れる": {
+      "meaning": "習慣"
+    },
+    "お客さん": {
+      "meaning": "客人"
+    },
+    "ありがとう": {
+      "meaning": "謝謝"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "すごく": {
+      "meaning": "非常"
+    },
+    "嬉しい": {
+      "meaning": "開心"
+    },
+    "これから": {
+      "meaning": "今後"
+    },
+    "もっと": {
+      "meaning": "更加"
+    },
+    "頑張る": {
+      "meaning": "努力"
+    }
+  },
+  "particles": {
+    "から": "表示起點，「從」",
+    "を": "受格助詞，標示動作的對象",
+    "の": "所有格助詞，表示所屬關係",
+    "で": "表示動作進行的場所",
+    "は": "主題標示助詞",
+    "けど": "表示轉折，「不過、可是」",
+    "も": "表示「也」，並列語氣",
+    "に": "表示動作的對象",
+    "と": "表示引用內容，相當於中文的引號後接續"
+  },
+  "translations": [
+    [
+      {
+        "text": "從上週開始做新的兼職工作。",
+        "word": "アルバイト"
+      }
+    ],
+    [
+      {
+        "text": "在車站前的咖啡廳工作。",
+        "word": "働く"
+      }
+    ],
+    [
+      {
+        "text": "一開始很緊張，不過店長和同事都很親切，漸漸地習慣了。",
+        "word": "慣れる"
+      }
+    ],
+    [
+      {
+        "text": "被客人說「謝謝」的時候，覺得很開心。",
+        "word": "嬉しい"
+      }
+    ],
+    [
+      {
+        "text": "之後想要更加努力。",
+        "word": "頑張る"
+      }
+    ]
+  ]
+}

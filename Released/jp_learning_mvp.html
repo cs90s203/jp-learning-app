@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#FDF8F3">
+<meta name="theme-color" content="#CBC8C0">
 <script>
 /* 首次繪製前就定好主題，避免 splash 與背景閃一下亮色（防 FOUC）。
    theme: 'light' | 'dark' | 'system'(或無) → 解析成深/淺 */
@@ -19,9 +19,9 @@
     var root = document.documentElement;
     if (isDark) root.dataset.theme = 'dark'; else delete root.dataset.theme;
     root.style.colorScheme = isDark ? 'dark' : 'light';
-    root.style.backgroundColor = isDark ? '#1C1208' : '#F5EDE0';
+    root.style.backgroundColor = isDark ? '#222220' : '#EDE8E0';
     var m = document.querySelector('meta[name="theme-color"]');
-    if (m) m.setAttribute('content', isDark ? '#120C04' : '#FDF8F3');
+    if (m) m.setAttribute('content', isDark ? '#181816' : '#CBC8C0');
     // 因切換主題而重載時跳過開場動畫（iOS overscroll 修正用）
     if (sessionStorage.getItem('_skipSplash')) {
       root.classList.add('skip-splash');
@@ -33,23 +33,24 @@
 <title>日語學習</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
 
   :root {
-    /* ── Brand colours ── */
-    --wa:    #C4783A;   /* primary amber */
-    --wa-l:  #F0D9BE;   /* amber light */
-    --wa-ll: #FDF8F3;   /* page background */
-    --wa-bg: #F5EDE0;   /* subtle warm fill */
-    --wa-bg2:#E8DDD0;   /* divider / border */
-    --wt:    #2A1A08;   /* text primary */
-    --wt2:   #5A3A1A;   /* text secondary */
-    --wt3:   #9A7A5A;   /* text tertiary */
-    --wg:    #3A6B47;   /* green / success */
-    --wg-bg: #D4EDDA;
-    --wy:    #8B6200;   /* yellow / warn */
-    --wy-bg: #FFF0CC;
-    --wr:    #9B2617;   /* red / danger */
-    --wr-bg: #FDDDD9;
+    /* ── Brand colours（Dashboard 設計規範重新配色：終端機冷灰 + 紅色強調）── */
+    --wa:    #E53935;   /* primary accent — design spec 重點強調色 --red */
+    --wa-l:  #ECC8C1;   /* accent light tint */
+    --wa-ll: #CBC8C0;   /* page background — design spec --bg */
+    --wa-bg: #EDE8E0;   /* card / content fill — design spec --cd */
+    --wa-bg2:#E4DFD8;   /* divider / secondary surface — design spec --sf */
+    --wt:    #111111;   /* text primary — design spec --t0 */
+    --wt2:   #777777;   /* text secondary — design spec --t1 */
+    --wt3:   #959595;   /* text tertiary — design spec --t2 */
+    --wg:    #3B9A68;   /* green / success — design spec life(light) */
+    --wg-bg: #D2DCCE;
+    --wy:    #D46820;   /* orange / warn — design spec train(light), spec 無獨立黃色 */
+    --wy-bg: #E9D5C3;
+    --wr:    #E02020;   /* red / danger — design spec 優先級 red（與強調色分開，避免混淆）*/
+    --wr-bg: #EBCAC3;
     /* ── Radius design tokens ── */
     --r-card: 16px;     /* card, sheet, panel */
     --r-btn:  10px;     /* standard button */
@@ -63,20 +64,26 @@
 
   /* ── 夜晚模式：覆寫所有 CSS 變數 ── */
   html[data-theme="dark"] {
-    --wa:    #D4884A;
-    --wa-l:  #3D2410;
-    --wa-ll: #120C04;
-    --wa-bg: #1C1208;
-    --wa-bg2:#2E1E0C;
-    --wt:    #F0E4D0;
-    --wt2:   #B89070;
-    --wt3:   #7A5A3C;
-    --wg:    #5BAB6A;
-    --wg-bg: #0E2A18;
-    --wy:    #C8A020;
-    --wy-bg: #2A2000;
-    --wr:    #D05050;
-    --wr-bg: #3A1515;
+    --wa:    #E53935;   /* 強調色固定不隨主題（design spec 規則）*/
+    --wa-l:  #4D2725;
+    --wa-ll: #181816;   /* design spec --bg dark */
+    --wa-bg: #222220;   /* design spec --cd dark */
+    --wa-bg2:#2C2C2A;   /* design spec --sf dark */
+    --wt:    #E0DED6;   /* design spec --t0 dark */
+    --wt2:   #706E68;   /* design spec --t1 dark */
+    --wt3:   #7A756C;   /* design spec --t2 dark */
+    --wg:    #5CC97A;   /* design spec life(dark) */
+    --wg-bg: #2E4332;
+    --wy:    #FF9050;   /* design spec train(dark) */
+    --wy-bg: #4E382A;
+    --wr:    #E02020;   /* 危險色固定不隨主題（design spec 規則）*/
+    --wr-bg: #482220;
+  }
+
+  /* ── 字體分工（design spec 測試版）：Silkscreen 做「標籤/數據/時間」，Noto Sans TC 做中文內容，日文文章本身維持 Noto Sans JP 不變 ── */
+  #article-text, #article-text .tok, #article-text ruby, #article-text rt { font-family: 'Noto Sans JP', sans-serif; }
+  .level-tag, .article-date, .detail-date, #today-date, .count-num, .av-speed, .version-tag, .dash-tile-num {
+    font-family: 'Silkscreen', monospace; letter-spacing: 0.04em;
   }
   /* 夜晚模式：覆寫 hardcoded #FFFFFF 白色背景 */
   html[data-theme="dark"] .card,
@@ -93,23 +100,23 @@
   html[data-theme="dark"] #article-toolbar,
   html[data-theme="dark"] .mode-tab.active,
   html[data-theme="dark"] .speed-step-btn,
-  html[data-theme="dark"] .rating-btn { background: #1C1208; }
+  html[data-theme="dark"] .rating-btn { background: #222220; }
 
-  html[data-theme="dark"] .vocab-row-content { background: #1C1208; }
-  html[data-theme="dark"] .vocab-list-row.selected .vocab-row-content { background: #2E1E0C; }
-  html[data-theme="dark"] .dict-result:active { background: #2E1E0C; }
+  html[data-theme="dark"] .vocab-row-content { background: #222220; }
+  html[data-theme="dark"] .vocab-list-row.selected .vocab-row-content { background: #2C2C2A; }
+  html[data-theme="dark"] .dict-result:active { background: #2C2C2A; }
 
-  html[data-theme="dark"] .confirm-cancel { background: #2E1E0C; }
-  html[data-theme="dark"] .toggle::after  { background: #F0E4D0; }
+  html[data-theme="dark"] .confirm-cancel { background: #2C2C2A; }
+  html[data-theme="dark"] .toggle::after  { background: #E0DED6; }
 
   /* 工具列漸消也需跟隨深色背景 */
   html[data-theme="dark"] #article-toolbar::before {
-    background: linear-gradient(to bottom, transparent, #120C04);
+    background: linear-gradient(to bottom, transparent, #181816);
   }
 
   html[data-theme="dark"] input[type="text"],
   html[data-theme="dark"] textarea {
-    background: #2E1E0C; color: var(--wt);
+    background: #2C2C2A; color: var(--wt);
     border-color: var(--wa-bg2);
   }
 
@@ -118,7 +125,7 @@
   html, body {
     height: 100%; width: 100%;
     background: var(--wa-bg);
-    font-family: 'Noto Sans JP', -apple-system, sans-serif;
+    font-family: 'Noto Sans TC', -apple-system, sans-serif;
     color: var(--wt);
     overflow: hidden;
   }
@@ -215,7 +222,7 @@
     font-size: 32px; font-weight: 600; line-height: 1;
     color: var(--wa); transition: color 0.2s;
   }
-  .dash-tile-num.zero { color: var(--wa-bg2); }
+  .dash-tile-num.zero { color: var(--wt3); }
   .dash-tile-label { font-size: 11px; color: var(--wt3); text-align: center; line-height: 1.4; }
   .dash-tile-unit { font-size: 12px; font-weight: 400; color: var(--wt3); margin-left: 1px; }
 
@@ -885,7 +892,7 @@
     border-radius: var(--r-card); padding: 20px 0; margin-bottom: 32px;
     display: flex; justify-content: space-around;
   }
-  html[data-theme="dark"] .vq-result-card { background: #1C1208; }
+  html[data-theme="dark"] .vq-result-card { background: #222220; }
   .vq-done-btn {
     width: 100%; height: 52px; background: var(--wa); color: #FFF; border: none;
     border-radius: var(--r-btn); font-size: 16px; font-weight: 500; cursor: pointer;
@@ -1100,7 +1107,7 @@
     cursor: pointer;
   }
   .swipe-hint-icon { font-size: 30px; animation: bounceUD 1.3s ease-in-out infinite; }
-  .swipe-hint-text { color: #FDF8F3; font-size: 13px; text-align: center; line-height: 1.7; }
+  .swipe-hint-text { color: #CBC8C0; font-size: 13px; text-align: center; line-height: 1.7; }
   @keyframes bounceUD {
     0%,100% { transform: translateY(0); }
     50%      { transform: translateY(-10px); }
@@ -1135,7 +1142,7 @@
   }
   .qt.active { background: var(--wa); color: #FFFFFF; border-color: var(--wa); }
   .qt-locked { opacity: 0.38; cursor: not-allowed; }
-  html[data-theme="dark"] .qt:not(.active) { background: #1C1208; }
+  html[data-theme="dark"] .qt:not(.active) { background: #222220; }
 
   /* Quiz elements */
   .quiz-q { font-size: 16px; color: var(--wt); line-height: 1.9; margin-bottom: 14px; }
@@ -1250,7 +1257,7 @@
   .toast {
     position: fixed; bottom: calc(var(--nav-h) + var(--safe-bottom) + 116px); left: 50%;
     transform: translateX(-50%) translateY(20px);
-    background: rgba(28,16,4,0.38); color: #F0E4D0;
+    background: rgba(28,16,4,0.38); color: #E0DED6;
     backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
     padding: 10px 20px; border-radius: 99px; font-size: 13px;
     opacity: 0; transition: all 0.3s; pointer-events: none; white-space: nowrap; z-index: 200;
@@ -1342,8 +1349,8 @@
   #splash-sub  { font-size: 13px; color: #A08070; letter-spacing: 0.06em; }
   /* 夜晚模式 splash 配色（data-theme 在首次繪製前由 head inline script 設定，不會閃爍） */
   html.skip-splash #splash-screen { display: none !important; animation: none !important; }
-  html[data-theme="dark"] #splash-screen { background: #120C04; }
-  html[data-theme="dark"] #splash-name { color: #D4884A; }
+  html[data-theme="dark"] #splash-screen { background: #181816; }
+  html[data-theme="dark"] #splash-name { color: #E53935; }
   html[data-theme="dark"] #splash-sub  { color: #B89070; }
 
   /* ===== Onboarding ===== */
@@ -1430,7 +1437,7 @@
   }
   .ob-level-btn {
     padding: 14px 8px; border-radius: 12px; border: 2px solid #D9C4B0;
-    background: #FDF8F3; color: #6B5040; font-size: 18px; font-weight: 700;
+    background: #CBC8C0; color: #6B5040; font-size: 18px; font-weight: 700;
     cursor: pointer; text-align: center; transition: border-color .15s, background .15s;
   }
   .ob-level-btn.selected {
@@ -2176,8 +2183,8 @@
         </div>
 
         <!-- 版本號 -->
-        <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em">
-          v1.8.4
+        <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em;font-family:'Silkscreen',monospace">
+          v1.9.0
         </div>
 
       </div>
@@ -5002,12 +5009,12 @@ function applyTheme(isDark) {
   root.style.colorScheme = isDark ? 'dark' : 'light';
   // iOS Safari 的 overscroll 回彈區只認 <html> 的「直接 inline 背景」，
   // 只改 CSS 變數常殘留上一個主題色（日間卡黑/夜間卡白）。故直接設 inline backgroundColor。
-  const rootBg = isDark ? '#1C1208' : '#F5EDE0';
+  const rootBg = isDark ? '#222220' : '#EDE8E0';
   root.style.backgroundColor = rootBg;
   if (document.body) document.body.style.backgroundColor = rootBg;
   // 行動瀏覽器 UI（網址列/狀態列底色）
   const m = document.querySelector('meta[name="theme-color"]');
-  if (m) m.setAttribute('content', isDark ? '#120C04' : '#FDF8F3');
+  if (m) m.setAttribute('content', isDark ? '#181816' : '#CBC8C0');
   _updateThemeUI();
 }
 

@@ -1,0 +1,936 @@
+{
+  "date": "2026-07-17",
+  "level": "n2_lite",
+  "title": "電子書籍市場の広がり",
+  "text": "近年、電子書籍の市場が急速に広がっている。スマートフォンや専用端末さえあればどこでも読書を楽しめるため、特に通勤中の会社員に人気がある。紙の本と比べて値段が安いことや収納スペースを取らないことも魅力の一つだ。最近では文字を読む代わりに耳で聞くオーディオブックも人気を集めており、家事をしながら楽しむ人も増えている。一方、紙の質感や匂いが好きな人も多く、完全に電子書籍に切り替わるわけではない。これからも紙と電子と音声が共存する形で読書文化が続いていくだろう。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "電子書籍",
+      "basic_form": "電子書籍",
+      "reading": "でんししょせき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "市場",
+      "basic_form": "市場",
+      "reading": "しじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急速に",
+      "basic_form": "急速に",
+      "reading": "きゅうそくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "広がっている",
+      "basic_form": "広がる",
+      "reading": "ひろがっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スマートフォン",
+      "basic_form": "スマートフォン",
+      "reading": "すまーとふぉん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "専用",
+      "basic_form": "専用",
+      "reading": "せんよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "端末",
+      "basic_form": "端末",
+      "reading": "たんまつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "さえ",
+      "basic_form": "さえ",
+      "reading": "さえ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あれば",
+      "basic_form": "ある",
+      "reading": "あれば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "どこ",
+      "basic_form": "どこ",
+      "reading": "どこ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読書",
+      "basic_form": "読書",
+      "reading": "どくしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しめる",
+      "basic_form": "楽しめる",
+      "reading": "たのしめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特に",
+      "basic_form": "特に",
+      "reading": "とくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "通勤中",
+      "basic_form": "通勤中",
+      "reading": "つうきんちゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "会社員",
+      "basic_form": "会社員",
+      "reading": "かいしゃいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人気",
+      "basic_form": "人気",
+      "reading": "にんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "紙",
+      "basic_form": "紙",
+      "reading": "かみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "比べて",
+      "basic_form": "比べる",
+      "reading": "くらべて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "値段",
+      "basic_form": "値段",
+      "reading": "ねだん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安い",
+      "basic_form": "安い",
+      "reading": "やすい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "収納",
+      "basic_form": "収納",
+      "reading": "しゅうのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "スペース",
+      "basic_form": "スペース",
+      "reading": "すぺーす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取らない",
+      "basic_form": "取る",
+      "reading": "とらない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "魅力",
+      "basic_form": "魅力",
+      "reading": "みりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "文字",
+      "basic_form": "文字",
+      "reading": "もじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読む",
+      "basic_form": "読む",
+      "reading": "よむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "代わりに",
+      "basic_form": "代わりに",
+      "reading": "かわりに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "耳",
+      "basic_form": "耳",
+      "reading": "みみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "聞く",
+      "basic_form": "聞く",
+      "reading": "きく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "オーディオブック",
+      "basic_form": "オーディオブック",
+      "reading": "おーでぃおぶっく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人気",
+      "basic_form": "人気",
+      "reading": "にんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "集めており",
+      "basic_form": "集める",
+      "reading": "あつめており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家事",
+      "basic_form": "家事",
+      "reading": "かじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "する",
+      "reading": "し",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ながら",
+      "basic_form": "ながら",
+      "reading": "ながら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しむ",
+      "basic_form": "楽しむ",
+      "reading": "たのしむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "紙",
+      "basic_form": "紙",
+      "reading": "かみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "質感",
+      "basic_form": "質感",
+      "reading": "しつかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "匂い",
+      "basic_form": "匂い",
+      "reading": "におい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "好き",
+      "basic_form": "好き",
+      "reading": "すき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多く",
+      "basic_form": "多い",
+      "reading": "おおく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "完全に",
+      "basic_form": "完全に",
+      "reading": "かんぜんに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "電子書籍",
+      "basic_form": "電子書籍",
+      "reading": "でんししょせき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "切り替わる",
+      "basic_form": "切り替わる",
+      "reading": "きりかわる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "わけ",
+      "basic_form": "わけ",
+      "reading": "わけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "紙",
+      "basic_form": "紙",
+      "reading": "かみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "電子",
+      "basic_form": "電子",
+      "reading": "でんし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "音声",
+      "basic_form": "音声",
+      "reading": "おんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "共存する",
+      "basic_form": "共存する",
+      "reading": "きょうぞんする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "形",
+      "basic_form": "形",
+      "reading": "かたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読書",
+      "basic_form": "読書",
+      "reading": "どくしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "文化",
+      "basic_form": "文化",
+      "reading": "ぶんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続いていく",
+      "basic_form": "続く",
+      "reading": "つづいていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年來"
+    },
+    "電子書籍": {
+      "meaning": "電子書"
+    },
+    "市場": {
+      "meaning": "市場"
+    },
+    "急速に": {
+      "meaning": "急速地"
+    },
+    "広がる": {
+      "meaning": "擴大、擴展"
+    },
+    "スマートフォン": {
+      "meaning": "智慧型手機"
+    },
+    "専用": {
+      "meaning": "專用"
+    },
+    "端末": {
+      "meaning": "終端裝置"
+    },
+    "ある": {
+      "meaning": "有（無生物存在）"
+    },
+    "どこ": {
+      "meaning": "哪裡"
+    },
+    "読書": {
+      "meaning": "閱讀"
+    },
+    "楽しめる": {
+      "meaning": "能夠享受（楽しむ的可能形）"
+    },
+    "ため": {
+      "meaning": "因為、為了（表原因/目的）"
+    },
+    "特に": {
+      "meaning": "特別是"
+    },
+    "通勤中": {
+      "meaning": "通勤途中"
+    },
+    "会社員": {
+      "meaning": "上班族"
+    },
+    "人気": {
+      "meaning": "受歡迎"
+    },
+    "紙": {
+      "meaning": "紙"
+    },
+    "本": {
+      "meaning": "書"
+    },
+    "比べる": {
+      "meaning": "比較"
+    },
+    "値段": {
+      "meaning": "價格"
+    },
+    "安い": {
+      "meaning": "便宜"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "収納": {
+      "meaning": "收納"
+    },
+    "スペース": {
+      "meaning": "空間"
+    },
+    "取る": {
+      "meaning": "佔用、取用"
+    },
+    "魅力": {
+      "meaning": "魅力"
+    },
+    "一つ": {
+      "meaning": "一個"
+    },
+    "最近": {
+      "meaning": "最近"
+    },
+    "文字": {
+      "meaning": "文字"
+    },
+    "読む": {
+      "meaning": "閱讀"
+    },
+    "代わりに": {
+      "meaning": "取而代之地"
+    },
+    "耳": {
+      "meaning": "耳朵"
+    },
+    "聞く": {
+      "meaning": "聽"
+    },
+    "オーディオブック": {
+      "meaning": "有聲書"
+    },
+    "集める": {
+      "meaning": "聚集、獲得"
+    },
+    "家事": {
+      "meaning": "家事"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "楽しむ": {
+      "meaning": "享受"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "質感": {
+      "meaning": "質感"
+    },
+    "匂い": {
+      "meaning": "味道、氣味"
+    },
+    "好き": {
+      "meaning": "喜歡"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "完全に": {
+      "meaning": "完全地"
+    },
+    "切り替わる": {
+      "meaning": "轉換、切換"
+    },
+    "わけ": {
+      "meaning": "理由、緣故"
+    },
+    "ない": {
+      "meaning": "沒有、不"
+    },
+    "これから": {
+      "meaning": "今後"
+    },
+    "電子": {
+      "meaning": "電子"
+    },
+    "音声": {
+      "meaning": "聲音、語音"
+    },
+    "共存する": {
+      "meaning": "共存"
+    },
+    "形": {
+      "meaning": "形式"
+    },
+    "文化": {
+      "meaning": "文化"
+    },
+    "続く": {
+      "meaning": "持續"
+    }
+  },
+  "particles": {
+    "が": "主格助詞，標示句子的主語",
+    "の": "所有格助詞，表示所屬關係",
+    "や": "列舉助詞，「和～等等」",
+    "さえ": "表示「只要～就」的最低條件",
+    "でも": "表示「即使～也」，任何情況下皆可",
+    "を": "受格助詞，標示動作的對象",
+    "に": "表示動作的對象或方向",
+    "と": "並列或比較助詞",
+    "も": "表示「也」，並列語氣",
+    "な": "形容動詞連接名詞時使用",
+    "で": "表示狀態、方式或原因",
+    "は": "主題標示助詞",
+    "ながら": "表示同時進行兩個動作"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年來，電子書的市場正急速擴大。",
+        "word": "電子書籍"
+      }
+    ],
+    [
+      {
+        "text": "只要有智慧型手機或專用裝置，在哪裡都能享受閱讀，因此特別受通勤途中的上班族歡迎。",
+        "word": "通勤中"
+      }
+    ],
+    [
+      {
+        "text": "和紙本書相比，價格便宜、又不佔收納空間，也是它的魅力之一。",
+        "word": "魅力"
+      }
+    ],
+    [
+      {
+        "text": "最近，用耳朵聽而非用眼睛讀文字的有聲書也很受歡迎，一邊做家事一邊享受閱讀的人也增加了。",
+        "word": "オーディオブック"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，喜歡紙張質感和氣味的人也不少，並非完全轉向電子書。",
+        "word": "一方"
+      }
+    ],
+    [
+      {
+        "text": "今後，紙本、電子和有聲書共存的閱讀文化應該還會持續下去吧。",
+        "word": "共存する"
+      }
+    ]
+  ]
+}

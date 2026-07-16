@@ -1,0 +1,1333 @@
+{
+  "date": "2026-07-17",
+  "level": "n1_lite",
+  "title": "気候変動と農業生産への影響",
+  "text": "気候変動の影響は農業生産の現場にも色濃く表れ始めている。記録的な猛暑や大雨といった異常気象が頻発するようになり、野菜や果物の収穫量が大きく減少する年も珍しくない。農家の中には品種を変えたり栽培時期を調整したりするなど対応に追われている人も多い。中には設備投資を重ねた結果、借金が膨らんでしまった農家もいる。しかし、こうした努力だけでは追いつかないほど気候の変化が急激だと訴える声も少なくない。消費者の間でも野菜や果物の値上がりを実感する機会が増えている。海外では干ばつや洪水により主要な穀物の生産が落ち込む地域もあり、輸入に頼る日本にとっても無関係ではいられない。食料の安定供給を守るためには生産者だけに負担を押し付けず、社会全体で支援策を考えていく必要があるだろう。",
+  "tokens": [
+    {
+      "surface_form": "気候変動",
+      "basic_form": "気候変動",
+      "reading": "きこうへんどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "影響",
+      "basic_form": "影響",
+      "reading": "えいきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "農業",
+      "basic_form": "農業",
+      "reading": "のうぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "生産",
+      "basic_form": "生産",
+      "reading": "せいさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現場",
+      "basic_form": "現場",
+      "reading": "げんば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "色濃く",
+      "basic_form": "色濃く",
+      "reading": "いろこく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "表れ始めている",
+      "basic_form": "表れる",
+      "reading": "あらわれはじめている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "記録的な",
+      "basic_form": "記録的",
+      "reading": "きろくてき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "猛暑",
+      "basic_form": "猛暑",
+      "reading": "もうしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大雨",
+      "basic_form": "大雨",
+      "reading": "おおあめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "異常気象",
+      "basic_form": "異常気象",
+      "reading": "いじょうきしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "頻発する",
+      "basic_form": "頻発する",
+      "reading": "ひんぱつする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ようになり",
+      "basic_form": "ようになる",
+      "reading": "ようになり",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "野菜",
+      "basic_form": "野菜",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "果物",
+      "basic_form": "果物",
+      "reading": "くだもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "収穫量",
+      "basic_form": "収穫量",
+      "reading": "しゅうかくりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きく",
+      "basic_form": "大きい",
+      "reading": "おおきく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "減少する",
+      "basic_form": "減少する",
+      "reading": "げんしょうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "年",
+      "basic_form": "年",
+      "reading": "とし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "珍しくない",
+      "basic_form": "珍しい",
+      "reading": "めずらしくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "農家",
+      "basic_form": "農家",
+      "reading": "のうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "中",
+      "basic_form": "中",
+      "reading": "なか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "品種",
+      "basic_form": "品種",
+      "reading": "ひんしゅ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "変えたり",
+      "basic_form": "変える",
+      "reading": "かえたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "栽培",
+      "basic_form": "栽培",
+      "reading": "さいばい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "時期",
+      "basic_form": "時期",
+      "reading": "じき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "調整したり",
+      "basic_form": "調整する",
+      "reading": "ちょうせいしたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対応",
+      "basic_form": "対応",
+      "reading": "たいおう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "追われている",
+      "basic_form": "追われる",
+      "reading": "おわれている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多い",
+      "basic_form": "多い",
+      "reading": "おおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "中",
+      "basic_form": "中",
+      "reading": "なか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "設備",
+      "basic_form": "設備",
+      "reading": "せつび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "投資",
+      "basic_form": "投資",
+      "reading": "とうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重ねた",
+      "basic_form": "重ねる",
+      "reading": "かさねた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "結果",
+      "basic_form": "結果",
+      "reading": "けっか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "借金",
+      "basic_form": "借金",
+      "reading": "しゃっきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "膨らんで",
+      "basic_form": "膨らむ",
+      "reading": "ふくらんで",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "しまった",
+      "basic_form": "しまう",
+      "reading": "しまった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "農家",
+      "basic_form": "農家",
+      "reading": "のうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いる",
+      "basic_form": "いる",
+      "reading": "いる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかし",
+      "basic_form": "しかし",
+      "reading": "しかし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "努力",
+      "basic_form": "努力",
+      "reading": "どりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "追いつかない",
+      "basic_form": "追いつく",
+      "reading": "おいつかない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ほど",
+      "basic_form": "ほど",
+      "reading": "ほど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "気候",
+      "basic_form": "気候",
+      "reading": "きこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "変化",
+      "basic_form": "変化",
+      "reading": "へんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急激だ",
+      "basic_form": "急激",
+      "reading": "きゅうげきだ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "訴える",
+      "basic_form": "訴える",
+      "reading": "うったえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少なくない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "消費者",
+      "basic_form": "消費者",
+      "reading": "しょうひしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "間",
+      "basic_form": "間",
+      "reading": "あいだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "野菜",
+      "basic_form": "野菜",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "果物",
+      "basic_form": "果物",
+      "reading": "くだもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "値上がり",
+      "basic_form": "値上がり",
+      "reading": "ねあがり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "実感する",
+      "basic_form": "実感する",
+      "reading": "じっかんする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "機会",
+      "basic_form": "機会",
+      "reading": "きかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "海外",
+      "basic_form": "海外",
+      "reading": "かいがい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "干ばつ",
+      "basic_form": "干ばつ",
+      "reading": "かんばつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "洪水",
+      "basic_form": "洪水",
+      "reading": "こうずい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "により",
+      "basic_form": "により",
+      "reading": "により",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "主要",
+      "basic_form": "主要",
+      "reading": "しゅよう",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "な",
+      "reading": "な",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "穀物",
+      "basic_form": "穀物",
+      "reading": "こくもつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生産",
+      "basic_form": "生産",
+      "reading": "せいさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "落ち込む",
+      "basic_form": "落ち込む",
+      "reading": "おちこむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "輸入",
+      "basic_form": "輸入",
+      "reading": "ゆにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "頼る",
+      "basic_form": "頼る",
+      "reading": "たよる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とって",
+      "basic_form": "とって",
+      "reading": "とって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "無関係",
+      "basic_form": "無関係",
+      "reading": "むかんけい",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "では",
+      "basic_form": "では",
+      "reading": "では",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いられない",
+      "basic_form": "いられる",
+      "reading": "いられない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "食料",
+      "basic_form": "食料",
+      "reading": "しょくりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安定",
+      "basic_form": "安定",
+      "reading": "あんてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "供給",
+      "basic_form": "供給",
+      "reading": "きょうきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "守る",
+      "basic_form": "守る",
+      "reading": "まもる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生産",
+      "basic_form": "生産",
+      "reading": "せいさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "者",
+      "basic_form": "者",
+      "reading": "しゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "負担",
+      "basic_form": "負担",
+      "reading": "ふたん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "押し付けず",
+      "basic_form": "押し付ける",
+      "reading": "おしつけず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "社会",
+      "basic_form": "社会",
+      "reading": "しゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "全体",
+      "basic_form": "全体",
+      "reading": "ぜんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "支援",
+      "basic_form": "支援",
+      "reading": "しえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "策",
+      "basic_form": "策",
+      "reading": "さく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "考えていく",
+      "basic_form": "考える",
+      "reading": "かんがえていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "気候変動": {
+      "meaning": "氣候變遷"
+    },
+    "影響": {
+      "meaning": "影響"
+    },
+    "農業": {
+      "meaning": "農業"
+    },
+    "生産": {
+      "meaning": "生產"
+    },
+    "現場": {
+      "meaning": "現場"
+    },
+    "色濃く": {
+      "meaning": "濃厚地、明顯地"
+    },
+    "表れる": {
+      "meaning": "顯現、出現"
+    },
+    "記録的": {
+      "meaning": "創紀錄的"
+    },
+    "猛暑": {
+      "meaning": "酷暑"
+    },
+    "大雨": {
+      "meaning": "大雨"
+    },
+    "といった": {
+      "meaning": "諸如～之類的"
+    },
+    "異常気象": {
+      "meaning": "異常氣候"
+    },
+    "頻発する": {
+      "meaning": "頻繁發生"
+    },
+    "ようになる": {
+      "meaning": "變得～"
+    },
+    "野菜": {
+      "meaning": "蔬菜"
+    },
+    "果物": {
+      "meaning": "水果"
+    },
+    "収穫量": {
+      "meaning": "收穫量"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "減少する": {
+      "meaning": "減少"
+    },
+    "年": {
+      "meaning": "年份"
+    },
+    "珍しい": {
+      "meaning": "罕見的"
+    },
+    "農家": {
+      "meaning": "農戶"
+    },
+    "中": {
+      "meaning": "當中"
+    },
+    "品種": {
+      "meaning": "品種"
+    },
+    "変える": {
+      "meaning": "改變"
+    },
+    "栽培": {
+      "meaning": "栽培"
+    },
+    "時期": {
+      "meaning": "時期"
+    },
+    "調整する": {
+      "meaning": "調整"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "など": {
+      "meaning": "等等"
+    },
+    "対応": {
+      "meaning": "應對"
+    },
+    "追われる": {
+      "meaning": "被追趕、忙於"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "設備": {
+      "meaning": "設備"
+    },
+    "投資": {
+      "meaning": "投資"
+    },
+    "重ねる": {
+      "meaning": "反覆累積"
+    },
+    "結果": {
+      "meaning": "結果"
+    },
+    "借金": {
+      "meaning": "借款、負債"
+    },
+    "膨らむ": {
+      "meaning": "膨脹、增多"
+    },
+    "しまう": {
+      "meaning": "（無意中）做完，帶遺憾語氣"
+    },
+    "いる": {
+      "meaning": "在（表狀態持續）"
+    },
+    "しかし": {
+      "meaning": "但是"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "努力": {
+      "meaning": "努力"
+    },
+    "追いつく": {
+      "meaning": "趕得上"
+    },
+    "気候": {
+      "meaning": "氣候"
+    },
+    "変化": {
+      "meaning": "變化"
+    },
+    "急激": {
+      "meaning": "急遽"
+    },
+    "訴える": {
+      "meaning": "訴說、主張"
+    },
+    "声": {
+      "meaning": "聲音、意見"
+    },
+    "少なくない": {
+      "meaning": "不少"
+    },
+    "消費者": {
+      "meaning": "消費者"
+    },
+    "間": {
+      "meaning": "之間"
+    },
+    "値上がり": {
+      "meaning": "漲價"
+    },
+    "実感する": {
+      "meaning": "切身感受到"
+    },
+    "機会": {
+      "meaning": "機會"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "食料": {
+      "meaning": "糧食"
+    },
+    "安定": {
+      "meaning": "穩定"
+    },
+    "供給": {
+      "meaning": "供給"
+    },
+    "守る": {
+      "meaning": "守護"
+    },
+    "ため": {
+      "meaning": "為了"
+    },
+    "者": {
+      "meaning": "～者"
+    },
+    "負担": {
+      "meaning": "負擔"
+    },
+    "押し付ける": {
+      "meaning": "強加"
+    },
+    "社会": {
+      "meaning": "社會"
+    },
+    "全体": {
+      "meaning": "整體"
+    },
+    "支援": {
+      "meaning": "支援"
+    },
+    "策": {
+      "meaning": "策略、對策"
+    },
+    "考える": {
+      "meaning": "思考"
+    },
+    "必要": {
+      "meaning": "必要"
+    },
+    "海外": {
+      "meaning": "海外"
+    },
+    "干ばつ": {
+      "meaning": "乾旱"
+    },
+    "洪水": {
+      "meaning": "洪水"
+    },
+    "により": {
+      "meaning": "由於～（表原因）"
+    },
+    "主要": {
+      "meaning": "主要"
+    },
+    "穀物": {
+      "meaning": "穀物"
+    },
+    "落ち込む": {
+      "meaning": "下滑、萎靡"
+    },
+    "地域": {
+      "meaning": "地區"
+    },
+    "輸入": {
+      "meaning": "進口"
+    },
+    "頼る": {
+      "meaning": "依賴"
+    },
+    "日本": {
+      "meaning": "日本"
+    },
+    "とって": {
+      "meaning": "對～而言"
+    },
+    "無関係": {
+      "meaning": "無關"
+    },
+    "いられる": {
+      "meaning": "能夠保持（いる的可能形）"
+    },
+    "ある": {
+      "meaning": "有（無生物存在）"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬關係",
+    "は": "主題標示助詞",
+    "に": "表示動作的對象、方向或結果",
+    "も": "表示「也」，並列語氣",
+    "や": "列舉助詞，「和～等等」",
+    "が": "主格助詞，標示句子的主語",
+    "を": "受格助詞，標示動作的對象",
+    "と": "並列或引用助詞",
+    "で": "表示狀態、方式或原因",
+    "だけ": "表示限定，「只有～」",
+    "ほど": "表示程度，「～的程度」",
+    "とって": "表示立場，「對～而言」",
+    "では": "否定前提用法，「並非～」",
+    "でも": "表示「即使～也」"
+  },
+  "translations": [
+    [
+      {
+        "text": "氣候變遷的影響也開始明顯地顯現在農業生產的現場。",
+        "word": "気候変動"
+      }
+    ],
+    [
+      {
+        "text": "創紀錄的酷暑和大雨等異常氣候變得頻繁發生，蔬菜和水果收穫量大幅減少的年份也不罕見。",
+        "word": "異常気象"
+      }
+    ],
+    [
+      {
+        "text": "許多農戶忙於改變品種、調整栽培時期等應對措施。",
+        "word": "対応"
+      }
+    ],
+    [
+      {
+        "text": "當中也有農戶因反覆投資設備，結果導致負債累累。",
+        "word": "借金"
+      }
+    ],
+    [
+      {
+        "text": "但是，也有不少人主張氣候的變化過於急遽，光靠這樣的努力已經追趕不上。",
+        "word": "急激"
+      }
+    ],
+    [
+      {
+        "text": "消費者之間也越來越常切身感受到蔬菜和水果的漲價。",
+        "word": "値上がり"
+      }
+    ],
+    [
+      {
+        "text": "海外也有因乾旱或洪水導致主要穀物產量下滑的地區，這對依賴進口的日本而言也並非事不關己。",
+        "word": "無関係"
+      }
+    ],
+    [
+      {
+        "text": "為了守護糧食的穩定供給，恐怕有必要不把負擔全部強加給生產者，而是由整個社會一起思考支援對策。",
+        "word": "支援"
+      }
+    ]
+  ]
+}
