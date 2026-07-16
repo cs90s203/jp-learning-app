@@ -1,0 +1,214 @@
+{
+  "date": "2026-07-17",
+  "level": "n5_lite",
+  "title": "わたしのかぞく",
+  "text": "わたしのかぞくです。ちちとははとあにがいます。いぬもいます。まいにちいっしょにごはんをたべます。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かぞく",
+      "basic_form": "かぞく",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちち",
+      "basic_form": "ちち",
+      "reading": "ちち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "はは",
+      "basic_form": "はは",
+      "reading": "はは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あに",
+      "basic_form": "あに",
+      "reading": "あに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "います",
+      "basic_form": "いる",
+      "reading": "います",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いぬ",
+      "basic_form": "いぬ",
+      "reading": "いぬ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "います",
+      "basic_form": "いる",
+      "reading": "います",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まいにち",
+      "basic_form": "まいにち",
+      "reading": "まいにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "いっしょに",
+      "basic_form": "いっしょに",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "ごはん",
+      "basic_form": "ごはん",
+      "reading": "ごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たべます",
+      "basic_form": "たべる",
+      "reading": "たべます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我"
+    },
+    "かぞく": {
+      "meaning": "家人"
+    },
+    "ちち": {
+      "meaning": "爸爸"
+    },
+    "はは": {
+      "meaning": "媽媽"
+    },
+    "あに": {
+      "meaning": "哥哥"
+    },
+    "いる": {
+      "meaning": "有（生物存在）"
+    },
+    "いぬ": {
+      "meaning": "狗"
+    },
+    "まいにち": {
+      "meaning": "每天"
+    },
+    "いっしょに": {
+      "meaning": "一起"
+    },
+    "ごはん": {
+      "meaning": "飯"
+    },
+    "たべる": {
+      "meaning": "吃"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬關係",
+    "と": "並列助詞，表示「和」",
+    "が": "主格助詞，標示句子的主語",
+    "も": "表示「也」，並列或附加語氣",
+    "を": "受格助詞，標示動作的對象"
+  },
+  "translations": [
+    [
+      {
+        "text": "這是我的家人。",
+        "word": "かぞく"
+      }
+    ],
+    [
+      {
+        "text": "我有爸爸、媽媽和哥哥。",
+        "word": "ちち"
+      }
+    ],
+    [
+      {
+        "text": "也有一隻狗。",
+        "word": "いぬ"
+      }
+    ],
+    [
+      {
+        "text": "我們每天一起吃飯。",
+        "word": "たべる"
+      }
+    ]
+  ]
+}

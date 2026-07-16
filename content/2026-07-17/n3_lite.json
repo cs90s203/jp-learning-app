@@ -1,0 +1,734 @@
+{
+  "date": "2026-07-17",
+  "level": "n3_lite",
+  "title": "週末の陶芸教室",
+  "text": "先週の土曜日、前から興味があった陶芸教室に友達と参加した。粘土を触るのは子供のとき以来で、最初は思うように形がうまく作れなかった。先生に手の動かし方や力の入れ方などコツを教えてもらったら、だんだん上手になってきた。2時間かけて最後に自分だけの茶碗を完成させて、とても達成感があった。焼き上がるのは1か月後らしいので、完成が楽しみだ。また時間があれば通いたいと思う。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "土曜日",
+      "basic_form": "土曜日",
+      "reading": "どようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "前",
+      "basic_form": "前",
+      "reading": "まえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "興味",
+      "basic_form": "興味",
+      "reading": "きょうみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あった",
+      "basic_form": "ある",
+      "reading": "あった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "陶芸",
+      "basic_form": "陶芸",
+      "reading": "とうげい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "教室",
+      "basic_form": "教室",
+      "reading": "きょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "参加した",
+      "basic_form": "参加する",
+      "reading": "さんかした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "粘土",
+      "basic_form": "粘土",
+      "reading": "ねんど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "触る",
+      "basic_form": "触る",
+      "reading": "さわる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "子供",
+      "basic_form": "子供",
+      "reading": "こども",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とき",
+      "basic_form": "とき",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "以来",
+      "basic_form": "以来",
+      "reading": "いらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "形",
+      "basic_form": "形",
+      "reading": "かたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "うまく",
+      "basic_form": "うまい",
+      "reading": "うまく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "作れなかった",
+      "basic_form": "作れる",
+      "reading": "つくれなかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "先生",
+      "basic_form": "先生",
+      "reading": "せんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "手",
+      "basic_form": "手",
+      "reading": "て",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "動かし方",
+      "basic_form": "動かし方",
+      "reading": "うごかしかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "力",
+      "basic_form": "力",
+      "reading": "ちから",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "入れ方",
+      "basic_form": "入れ方",
+      "reading": "いれかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "コツ",
+      "basic_form": "コツ",
+      "reading": "こつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "教えてもらったら",
+      "basic_form": "教える",
+      "reading": "おしえてもらったら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "だんだん",
+      "basic_form": "だんだん",
+      "reading": "だんだん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "上手に",
+      "basic_form": "上手",
+      "reading": "じょうずに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "なってきた",
+      "basic_form": "なる",
+      "reading": "なってきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "2時間",
+      "basic_form": "2時間",
+      "reading": "にじかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "かけて",
+      "basic_form": "かける",
+      "reading": "かけて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "最後",
+      "basic_form": "最後",
+      "reading": "さいご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自分",
+      "basic_form": "自分",
+      "reading": "じぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "茶碗",
+      "basic_form": "茶碗",
+      "reading": "ちゃわん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "完成させて",
+      "basic_form": "完成させる",
+      "reading": "かんせいさせて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "達成感",
+      "basic_form": "達成感",
+      "reading": "たっせいかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あった",
+      "basic_form": "ある",
+      "reading": "あった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "焼き上がる",
+      "basic_form": "焼き上がる",
+      "reading": "やきあがる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "1か月後",
+      "basic_form": "1か月後",
+      "reading": "いっかげつご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "らしい",
+      "basic_form": "らしい",
+      "reading": "らしい",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "完成",
+      "basic_form": "完成",
+      "reading": "かんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しみだ",
+      "basic_form": "楽しみだ",
+      "reading": "たのしみだ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あれば",
+      "basic_form": "ある",
+      "reading": "あれば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "通いたい",
+      "basic_form": "通う",
+      "reading": "かよいたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週"
+    },
+    "前": {
+      "meaning": "以前"
+    },
+    "興味": {
+      "meaning": "興趣"
+    },
+    "ある": {
+      "meaning": "有（無生物存在）"
+    },
+    "陶芸": {
+      "meaning": "陶藝"
+    },
+    "教室": {
+      "meaning": "教室、課程"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "参加する": {
+      "meaning": "參加"
+    },
+    "粘土": {
+      "meaning": "黏土"
+    },
+    "触る": {
+      "meaning": "觸摸"
+    },
+    "子供": {
+      "meaning": "小孩"
+    },
+    "とき": {
+      "meaning": "時候"
+    },
+    "以来": {
+      "meaning": "以來"
+    },
+    "最初": {
+      "meaning": "一開始"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    },
+    "ように": {
+      "meaning": "像～那樣（表比況）"
+    },
+    "形": {
+      "meaning": "形狀"
+    },
+    "うまい": {
+      "meaning": "熟練、擅長"
+    },
+    "作れる": {
+      "meaning": "能做出（作る的可能形）"
+    },
+    "先生": {
+      "meaning": "老師"
+    },
+    "手": {
+      "meaning": "手"
+    },
+    "動かし方": {
+      "meaning": "移動的方式"
+    },
+    "力": {
+      "meaning": "力氣"
+    },
+    "入れ方": {
+      "meaning": "施力的方式"
+    },
+    "コツ": {
+      "meaning": "訣竅"
+    },
+    "教える": {
+      "meaning": "教導"
+    },
+    "だんだん": {
+      "meaning": "漸漸地"
+    },
+    "上手": {
+      "meaning": "擅長、拿手"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "2時間": {
+      "meaning": "兩小時"
+    },
+    "かける": {
+      "meaning": "花費（時間）"
+    },
+    "最後": {
+      "meaning": "最後"
+    },
+    "自分": {
+      "meaning": "自己"
+    },
+    "茶碗": {
+      "meaning": "碗"
+    },
+    "完成させる": {
+      "meaning": "完成"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "達成感": {
+      "meaning": "成就感"
+    },
+    "焼き上がる": {
+      "meaning": "燒製完成"
+    },
+    "1か月後": {
+      "meaning": "一個月後"
+    },
+    "らしい": {
+      "meaning": "聽說、據說"
+    },
+    "完成": {
+      "meaning": "完成"
+    },
+    "楽しみだ": {
+      "meaning": "值得期待"
+    },
+    "また": {
+      "meaning": "再、又"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "通う": {
+      "meaning": "定期往返、通勤"
+    },
+    "土曜日": {
+      "meaning": "星期六"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬關係",
+    "から": "表示時間或動作的起點",
+    "が": "主格助詞，標示句子的主語",
+    "に": "表示動作的對象或方向",
+    "と": "並列或引用助詞",
+    "を": "受格助詞，標示動作的對象",
+    "は": "主題標示助詞",
+    "で": "表示狀態或原因",
+    "や": "列舉助詞，「和～等等」",
+    "など": "表示列舉，「等等」",
+    "だけ": "表示限定，「只有～」",
+    "ので": "表示原因、理由"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週六，和朋友一起參加了一直很感興趣的陶藝教室。",
+        "word": "陶芸"
+      }
+    ],
+    [
+      {
+        "text": "碰黏土是小時候以來的第一次，一開始怎麼想都做不出理想的形狀。",
+        "word": "粘土"
+      }
+    ],
+    [
+      {
+        "text": "請老師教了手的動作和施力的方式等訣竅之後，漸漸地變得熟練起來。",
+        "word": "コツ"
+      }
+    ],
+    [
+      {
+        "text": "花了兩個小時，最後完成了只屬於自己的碗，很有成就感。",
+        "word": "達成感"
+      }
+    ],
+    [
+      {
+        "text": "聽說要一個月後才能燒製完成，所以很期待成品。",
+        "word": "楽しみだ"
+      }
+    ],
+    [
+      {
+        "text": "如果有時間的話，還想再去上課。",
+        "word": "通う"
+      }
+    ]
+  ]
+}

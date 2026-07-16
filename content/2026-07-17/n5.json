@@ -1,0 +1,323 @@
+{
+  "date": "2026-07-17",
+  "level": "n5",
+  "title": "スーパーで買い物をした",
+  "text": "きのう、ちかくのスーパーへ買い物に行きました。野菜と果物をたくさん買いました。とても安かったです。家に帰ってから、晩ごはんを作りました。家族と一緒に食べて、とても楽しかったです。",
+  "tokens": [
+    {
+      "surface_form": "きのう",
+      "basic_form": "きのう",
+      "reading": "きのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちかく",
+      "basic_form": "ちかく",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "スーパー",
+      "basic_form": "スーパー",
+      "reading": "すーぱー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買い物",
+      "basic_form": "買い物",
+      "reading": "かいもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行きました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "野菜",
+      "basic_form": "野菜",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "果物",
+      "basic_form": "果物",
+      "reading": "くだもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たくさん",
+      "basic_form": "たくさん",
+      "reading": "たくさん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "買いました",
+      "basic_form": "買う",
+      "reading": "かいました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "安かったです",
+      "basic_form": "安い",
+      "reading": "やすかったです",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "帰ってから",
+      "basic_form": "帰る",
+      "reading": "かえってから",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "晩ごはん",
+      "basic_form": "晩ごはん",
+      "reading": "ばんごはん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作りました",
+      "basic_form": "作る",
+      "reading": "つくりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家族",
+      "basic_form": "家族",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一緒に",
+      "basic_form": "一緒に",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "食べて",
+      "basic_form": "食べる",
+      "reading": "たべて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しかったです",
+      "basic_form": "楽しい",
+      "reading": "たのしかったです",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きのう": {
+      "meaning": "昨天"
+    },
+    "ちかく": {
+      "meaning": "附近"
+    },
+    "スーパー": {
+      "meaning": "超市"
+    },
+    "買い物": {
+      "meaning": "購物"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "野菜": {
+      "meaning": "蔬菜"
+    },
+    "果物": {
+      "meaning": "水果"
+    },
+    "たくさん": {
+      "meaning": "很多"
+    },
+    "買う": {
+      "meaning": "買"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "安い": {
+      "meaning": "便宜"
+    },
+    "家": {
+      "meaning": "家"
+    },
+    "帰る": {
+      "meaning": "回去、回家"
+    },
+    "晩ごはん": {
+      "meaning": "晚餐"
+    },
+    "作る": {
+      "meaning": "做、製作"
+    },
+    "家族": {
+      "meaning": "家人"
+    },
+    "一緒に": {
+      "meaning": "一起"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "楽しい": {
+      "meaning": "開心、快樂"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬關係",
+    "へ": "方向助詞，表示前往的方向",
+    "に": "表示動作的對象、目的或場所",
+    "と": "並列助詞，表示「和」",
+    "を": "受格助詞，標示動作的對象",
+    "から": "表示動作發生的先後，「之後」"
+  },
+  "translations": [
+    [
+      {
+        "text": "昨天去了附近的超市買東西。",
+        "word": "買い物"
+      }
+    ],
+    [
+      {
+        "text": "買了很多蔬菜和水果。",
+        "word": "買う"
+      }
+    ],
+    [
+      {
+        "text": "非常便宜。",
+        "word": "安い"
+      }
+    ],
+    [
+      {
+        "text": "回家後，做了晚餐。",
+        "word": "作る"
+      }
+    ],
+    [
+      {
+        "text": "和家人一起吃，非常開心。",
+        "word": "楽しい"
+      }
+    ]
+  ]
+}

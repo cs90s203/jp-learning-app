@@ -1,0 +1,1127 @@
+{
+  "date": "2026-07-17",
+  "level": "n2",
+  "title": "フリーランス人口の増加とその課題",
+  "text": "働き方の多様化に伴い、フリーランスとして働く人が年々増加している。インターネット環境の整備により場所や時間に縛られずに仕事ができるようになったことが背景にある。企業に雇用される場合と異なり、フリーランスは自分の裁量でスケジュールを調整できるという利点がある一方、収入が不安定になりやすいという課題もある。さらに、社会保険や福利厚生の面で会社員に比べて不利な立場に置かれることも少なくない。仕事を失った場合の補償や病気や怪我の際の保障が十分ではない点も問題視されている。政府はこうした状況を受け、フリーランスの保護を目的とした法整備を進めているが、実効性をどう確保するかが今後の課題となるだろう。",
+  "tokens": [
+    {
+      "surface_form": "働き方",
+      "basic_form": "働き方",
+      "reading": "はたらきかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多様化",
+      "basic_form": "多様化",
+      "reading": "たようか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伴い",
+      "basic_form": "伴う",
+      "reading": "ともない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "フリーランス",
+      "basic_form": "フリーランス",
+      "reading": "ふりーらんす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "働く",
+      "basic_form": "働く",
+      "reading": "はたらく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "年々",
+      "basic_form": "年々",
+      "reading": "ねんねん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "増加している",
+      "basic_form": "増加する",
+      "reading": "ぞうかしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "インターネット",
+      "basic_form": "インターネット",
+      "reading": "いんたーねっと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整備",
+      "basic_form": "整備",
+      "reading": "せいび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "により",
+      "basic_form": "により",
+      "reading": "により",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "場所",
+      "basic_form": "場所",
+      "reading": "ばしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "縛られず",
+      "basic_form": "縛る",
+      "reading": "しばられず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できる",
+      "basic_form": "できる",
+      "reading": "できる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ようになった",
+      "basic_form": "ようになる",
+      "reading": "ようになった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "背景",
+      "basic_form": "背景",
+      "reading": "はいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "雇用される",
+      "basic_form": "雇用される",
+      "reading": "こようされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "場合",
+      "basic_form": "場合",
+      "reading": "ばあい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "異なり",
+      "basic_form": "異なる",
+      "reading": "ことなり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "フリーランス",
+      "basic_form": "フリーランス",
+      "reading": "ふりーらんす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自分",
+      "basic_form": "自分",
+      "reading": "じぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "裁量",
+      "basic_form": "裁量",
+      "reading": "さいりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "スケジュール",
+      "basic_form": "スケジュール",
+      "reading": "すけじゅーる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "調整できる",
+      "basic_form": "調整できる",
+      "reading": "ちょうせいできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "利点",
+      "basic_form": "利点",
+      "reading": "りてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "収入",
+      "basic_form": "収入",
+      "reading": "しゅうにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不安定",
+      "basic_form": "不安定",
+      "reading": "ふあんてい",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なりやすい",
+      "basic_form": "なりやすい",
+      "reading": "なりやすい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "さらに",
+      "basic_form": "さらに",
+      "reading": "さらに",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "社会保険",
+      "basic_form": "社会保険",
+      "reading": "しゃかいほけん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "福利厚生",
+      "basic_form": "福利厚生",
+      "reading": "ふくりこうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "面",
+      "basic_form": "面",
+      "reading": "めん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "会社員",
+      "basic_form": "会社員",
+      "reading": "かいしゃいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "比べて",
+      "basic_form": "比べる",
+      "reading": "くらべて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "不利な",
+      "basic_form": "不利",
+      "reading": "ふりな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "立場",
+      "basic_form": "立場",
+      "reading": "たちば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "置かれる",
+      "basic_form": "置かれる",
+      "reading": "おかれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少なくない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "失った",
+      "basic_form": "失う",
+      "reading": "うしなった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "場合",
+      "basic_form": "場合",
+      "reading": "ばあい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "補償",
+      "basic_form": "補償",
+      "reading": "ほしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "病気",
+      "basic_form": "病気",
+      "reading": "びょうき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "怪我",
+      "basic_form": "怪我",
+      "reading": "けが",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "際",
+      "basic_form": "際",
+      "reading": "さい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保障",
+      "basic_form": "保障",
+      "reading": "ほしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "十分",
+      "basic_form": "十分",
+      "reading": "じゅうぶん",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "だ",
+      "reading": "で",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "点",
+      "basic_form": "点",
+      "reading": "てん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "問題視",
+      "basic_form": "問題視",
+      "reading": "もんだいし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "されている",
+      "basic_form": "される",
+      "reading": "されている",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政府",
+      "basic_form": "政府",
+      "reading": "せいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受け",
+      "basic_form": "受ける",
+      "reading": "うけ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "フリーランス",
+      "basic_form": "フリーランス",
+      "reading": "ふりーらんす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保護",
+      "basic_form": "保護",
+      "reading": "ほご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "目的",
+      "basic_form": "目的",
+      "reading": "もくてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "法整備",
+      "basic_form": "法整備",
+      "reading": "ほうせいび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進めている",
+      "basic_form": "進める",
+      "reading": "すすめている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実効性",
+      "basic_form": "実効性",
+      "reading": "じっこうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "どう",
+      "basic_form": "どう",
+      "reading": "どう",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "確保する",
+      "basic_form": "確保する",
+      "reading": "かくほする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "働き方": {
+      "meaning": "工作方式"
+    },
+    "多様化": {
+      "meaning": "多樣化"
+    },
+    "伴う": {
+      "meaning": "伴隨"
+    },
+    "フリーランス": {
+      "meaning": "自由工作者"
+    },
+    "働く": {
+      "meaning": "工作"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "年々": {
+      "meaning": "逐年"
+    },
+    "増加する": {
+      "meaning": "增加"
+    },
+    "インターネット": {
+      "meaning": "網路"
+    },
+    "環境": {
+      "meaning": "環境"
+    },
+    "整備": {
+      "meaning": "完善、建置"
+    },
+    "場所": {
+      "meaning": "場所"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "縛る": {
+      "meaning": "束縛"
+    },
+    "仕事": {
+      "meaning": "工作"
+    },
+    "できる": {
+      "meaning": "能夠"
+    },
+    "ようになる": {
+      "meaning": "變得能夠～"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "背景": {
+      "meaning": "背景"
+    },
+    "ある": {
+      "meaning": "有（無生物存在）"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "雇用される": {
+      "meaning": "被雇用"
+    },
+    "場合": {
+      "meaning": "情況、場合"
+    },
+    "異なる": {
+      "meaning": "不同"
+    },
+    "自分": {
+      "meaning": "自己"
+    },
+    "裁量": {
+      "meaning": "裁量、自主決定"
+    },
+    "スケジュール": {
+      "meaning": "日程"
+    },
+    "調整できる": {
+      "meaning": "能夠調整"
+    },
+    "という": {
+      "meaning": "所謂的～"
+    },
+    "利点": {
+      "meaning": "優點"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "収入": {
+      "meaning": "收入"
+    },
+    "不安定": {
+      "meaning": "不穩定"
+    },
+    "なりやすい": {
+      "meaning": "容易變成"
+    },
+    "課題": {
+      "meaning": "課題、待解決的問題"
+    },
+    "さらに": {
+      "meaning": "此外、更加"
+    },
+    "社会保険": {
+      "meaning": "社會保險"
+    },
+    "福利厚生": {
+      "meaning": "福利待遇"
+    },
+    "面": {
+      "meaning": "方面"
+    },
+    "会社員": {
+      "meaning": "上班族"
+    },
+    "比べる": {
+      "meaning": "比較"
+    },
+    "不利": {
+      "meaning": "不利"
+    },
+    "立場": {
+      "meaning": "立場、處境"
+    },
+    "置かれる": {
+      "meaning": "被置於（某處境）"
+    },
+    "少なくない": {
+      "meaning": "不少"
+    },
+    "失う": {
+      "meaning": "失去"
+    },
+    "補償": {
+      "meaning": "補償"
+    },
+    "病気": {
+      "meaning": "生病"
+    },
+    "怪我": {
+      "meaning": "受傷"
+    },
+    "際": {
+      "meaning": "之時、之際"
+    },
+    "保障": {
+      "meaning": "保障"
+    },
+    "十分": {
+      "meaning": "充分、足夠"
+    },
+    "だ": {
+      "meaning": "斷定助動詞"
+    },
+    "ない": {
+      "meaning": "沒有、不"
+    },
+    "点": {
+      "meaning": "這一點"
+    },
+    "問題視": {
+      "meaning": "視為問題"
+    },
+    "される": {
+      "meaning": "被（する的被動形）"
+    },
+    "政府": {
+      "meaning": "政府"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "受ける": {
+      "meaning": "承受、應對"
+    },
+    "保護": {
+      "meaning": "保護"
+    },
+    "目的": {
+      "meaning": "目的"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "法整備": {
+      "meaning": "法律制度的完善"
+    },
+    "進める": {
+      "meaning": "推進"
+    },
+    "実効性": {
+      "meaning": "實效性"
+    },
+    "どう": {
+      "meaning": "如何"
+    },
+    "確保する": {
+      "meaning": "確保"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "なる": {
+      "meaning": "成為"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬關係",
+    "に": "表示動作的對象、方向或結果",
+    "として": "表示身分或立場，「作為～」",
+    "が": "主格助詞，標示句子的主語",
+    "や": "列舉助詞，「和～等等」",
+    "により": "表示原因或依據，「由於～」",
+    "と": "並列或比較助詞",
+    "は": "主題標示助詞",
+    "で": "表示狀態、方式或原因",
+    "を": "受格助詞，標示動作的對象",
+    "も": "表示「也」，並列語氣",
+    "か": "疑問或不確定語氣助詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "隨著工作方式的多樣化，以自由工作者身分工作的人逐年增加。",
+        "word": "フリーランス"
+      }
+    ],
+    [
+      {
+        "text": "這背後的原因在於，網路環境的完善使人們能夠不受場所和時間的束縛進行工作。",
+        "word": "背景"
+      }
+    ],
+    [
+      {
+        "text": "與受雇於企業的情況不同，自由工作者雖有能依自己裁量調整行程的優點，但也存在收入容易不穩定的課題。",
+        "word": "裁量"
+      }
+    ],
+    [
+      {
+        "text": "此外，在社會保險和福利待遇方面，相較於上班族，自由工作者常處於不利的處境。",
+        "word": "不利"
+      }
+    ],
+    [
+      {
+        "text": "失業時的補償，以及生病或受傷時的保障不夠充分，這一點也被視為問題。",
+        "word": "保障"
+      }
+    ],
+    [
+      {
+        "text": "政府因應這樣的狀況，正在推動以保護自由工作者為目的的法律制度，但今後的課題將是如何確保其實效性。",
+        "word": "実効性"
+      }
+    ]
+  ]
+}
