@@ -172,7 +172,9 @@ cd /Users/mick/Documents/Projects/Language && touch content/{{TODAY}}/.done
 
 ### Step 4 — Validate the 10 JSON files
 
-**Critical — avoid permission hangs**: do this validation using **only the Read and Edit tools** — never write or run a script via Bash (no `python3 -c`, no heredoc `<< EOF`, nothing). This runs unattended overnight; any Bash command containing a heredoc, unusual quoting, or brace expansion can get flagged by the permission classifier as looking "obfuscated" and trigger a confirmation prompt that nobody is there to answer, hanging the whole run — exactly like the `.git/*.lock` issue. Read each file's JSON directly, reason about the checks below yourself, and use Edit to patch anything that needs fixing. Plain file I/O never goes through that classifier.
+**Critical — avoid permission hangs, no exceptions**: do this validation using **only the Read and Edit tools** — never write or run a script via Bash (no `python3 -c`, no heredoc `<< EOF`, nothing), no matter how confusing the data looks or how tempting it is to write something to double-check. This runs unattended overnight; any Bash command containing a heredoc, unusual quoting, or brace expansion can get flagged by the permission classifier as looking "obfuscated" and trigger a confirmation prompt that nobody is there to answer, hanging the whole run — exactly like the `.git/*.lock` issue, and **hanging is far worse than leaving one file unvalidated.**
+
+**If a file's structure is ever unclear, or a fix isn't a trivial one-line Edit, skip validating that file, note "skipped" in the summary, and move on.** Skipping is always safe — do not, under any circumstance, write a script to help you inspect or figure out the structure. Read each file's JSON directly, reason about the checks below yourself, and use Edit only for clear, simple fixes. Plain file I/O never goes through that classifier; scripting always risks it.
 
 For each of the 10 files (`n5_lite.json` … `n1.json`):
 
