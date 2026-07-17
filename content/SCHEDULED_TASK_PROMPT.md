@@ -172,6 +172,8 @@ cd /Users/mick/Documents/Projects/Language && touch content/{{TODAY}}/.done
 
 ### Step 4 — Validate the 10 JSON files
 
+**Critical — avoid permission hangs**: do this validation using **only the Read and Edit tools** — never write or run a script via Bash (no `python3 -c`, no heredoc `<< EOF`, nothing). This runs unattended overnight; any Bash command containing a heredoc, unusual quoting, or brace expansion can get flagged by the permission classifier as looking "obfuscated" and trigger a confirmation prompt that nobody is there to answer, hanging the whole run — exactly like the `.git/*.lock` issue. Read each file's JSON directly, reason about the checks below yourself, and use Edit to patch anything that needs fixing. Plain file I/O never goes through that classifier.
+
 For each of the 10 files (`n5_lite.json` … `n1.json`):
 
 **4a — Token/punctuation reconstruction (CRITICAL — this is what broke articles on 2026-07-14/15)**
@@ -197,7 +199,7 @@ Save fixes back to the file (overwrite). Anything you can't auto-fix — note it
 
 ### Step 5 — git commit (local only — do NOT attempt `git push`)
 
-**This sandbox has no GitHub credentials, so `git push` will always fail here — do not run it, do not retry it.** Committing locally is enough: the host-side backup routine (`jp-content-git-push`, runs every 15 minutes from 00:00–02:45 on the machine that owns the GitHub credentials) picks up any local commit and pushes it automatically. Nothing further is needed from this task.
+**This sandbox has no GitHub credentials, so `git push` will always fail here — do not run it, do not retry it.** Committing locally is enough: the host-side backup routine (`jp-content-git-push`, runs every 15 minutes from 22:00–02:45 on the machine that owns the GitHub credentials) picks up any local commit and pushes it automatically. Nothing further is needed from this task.
 
 Use the literal date string resolved in Step 0 — hardcode it into every command, do NOT use `$TODAY` or `$(date ...)`:
 
