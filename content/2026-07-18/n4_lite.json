@@ -1,0 +1,378 @@
+{
+  "date": "2026-07-18",
+  "level": "n4_lite",
+  "title": "はじめてのボルダリング",
+  "text": "先週、友達とボルダリングジムに行った。初めてだったから、ちょっと怖かった。でも、コーチが優しく教えてくれた。何回も落ちたけど、諦めずに頑張った。最後は少し登れるようになって、すごく嬉しかった。また挑戦したい。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ボルダリングジム",
+      "basic_form": "ボルダリングジム",
+      "reading": "ぼるだりんぐじむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行った",
+      "basic_form": "行く",
+      "reading": "いった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "初めて",
+      "basic_form": "初めて",
+      "reading": "はじめて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちょっと",
+      "basic_form": "ちょっと",
+      "reading": "ちょっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "怖かった",
+      "basic_form": "怖い",
+      "reading": "こわかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "コーチ",
+      "basic_form": "コーチ",
+      "reading": "こーち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "優しく",
+      "basic_form": "優しい",
+      "reading": "やさしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "教えてくれた",
+      "basic_form": "教えてくれる",
+      "reading": "おしえてくれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "何回も",
+      "basic_form": "何回も",
+      "reading": "なんかいも",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "落ちた",
+      "basic_form": "落ちる",
+      "reading": "おちた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "諦めずに",
+      "basic_form": "諦める",
+      "reading": "あきらめずに",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "頑張った",
+      "basic_form": "頑張る",
+      "reading": "がんばった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最後",
+      "basic_form": "最後",
+      "reading": "さいご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "登れる",
+      "basic_form": "登る",
+      "reading": "のぼれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なって",
+      "basic_form": "なる",
+      "reading": "なって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すごく",
+      "basic_form": "すごい",
+      "reading": "すごく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "嬉しかった",
+      "basic_form": "嬉しい",
+      "reading": "うれしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "挑戦したい",
+      "basic_form": "挑戦する",
+      "reading": "ちょうせんしたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "ボルダリングジム": {
+      "meaning": "抱石攀岩館"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "初めて": {
+      "meaning": "第一次"
+    },
+    "ちょっと": {
+      "meaning": "有點"
+    },
+    "怖い": {
+      "meaning": "可怕的"
+    },
+    "でも": {
+      "meaning": "但是"
+    },
+    "コーチ": {
+      "meaning": "教練"
+    },
+    "優しい": {
+      "meaning": "溫柔的、親切的"
+    },
+    "教えてくれる": {
+      "meaning": "教我（為我做）"
+    },
+    "何回も": {
+      "meaning": "好幾次"
+    },
+    "落ちる": {
+      "meaning": "掉落"
+    },
+    "諦める": {
+      "meaning": "放棄"
+    },
+    "頑張る": {
+      "meaning": "努力、加油"
+    },
+    "最後": {
+      "meaning": "最後"
+    },
+    "少し": {
+      "meaning": "一點點"
+    },
+    "登る": {
+      "meaning": "攀登"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "すごい": {
+      "meaning": "厲害的、非常"
+    },
+    "嬉しい": {
+      "meaning": "開心的"
+    },
+    "また": {
+      "meaning": "再、又"
+    },
+    "挑戦する": {
+      "meaning": "挑戰"
+    }
+  },
+  "particles": {
+    "と": "表示一起做動作的對象",
+    "に": "表示動作的對象或到達點",
+    "から": "表示原因或理由",
+    "が": "表示主語",
+    "けど": "逆接助詞，表示「雖然～但是」，較口語",
+    "は": "主題助詞，標示句子的主題",
+    "ように": "表示變化的結果或目標狀態"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週和朋友一起去了抱石攀岩館。",
+        "word": "ボルダリングジム"
+      }
+    ],
+    [
+      {
+        "text": "因為是第一次，所以有點害怕。",
+        "word": "怖い"
+      }
+    ],
+    [
+      {
+        "text": "不過，教練很親切地教了我。",
+        "word": "教えてくれる"
+      }
+    ],
+    [
+      {
+        "text": "雖然掉下來好幾次，但還是不放棄地努力了。",
+        "word": "頑張る"
+      }
+    ],
+    [
+      {
+        "text": "最後變得能爬一點了，非常開心。",
+        "word": "嬉しい"
+      }
+    ],
+    [
+      {
+        "text": "還想再挑戰一次。",
+        "word": "挑戦する"
+      }
+    ]
+  ]
+}

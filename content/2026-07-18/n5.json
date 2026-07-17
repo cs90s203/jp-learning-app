@@ -1,0 +1,317 @@
+{
+  "date": "2026-07-18",
+  "level": "n5",
+  "title": "ゆうえんちであそんだ",
+  "text": "きのう、かぞくとゆうえんちへいきました。あにとジェットコースターにのりました。すこしこわかったですが、とてもたのしかったです。そのあと、みんなでアイスをたべました。またいきたいです。",
+  "tokens": [
+    {
+      "surface_form": "きのう",
+      "basic_form": "きのう",
+      "reading": "きのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かぞく",
+      "basic_form": "かぞく",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ゆうえんち",
+      "basic_form": "ゆうえんち",
+      "reading": "ゆうえんち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いきました",
+      "basic_form": "いく",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あに",
+      "basic_form": "あに",
+      "reading": "あに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ジェットコースター",
+      "basic_form": "ジェットコースター",
+      "reading": "じぇっとこーすたー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "のりました",
+      "basic_form": "のる",
+      "reading": "のりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すこし",
+      "basic_form": "すこし",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "こわかった",
+      "basic_form": "こわい",
+      "reading": "こわかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "たのしかった",
+      "basic_form": "たのしい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "あと",
+      "basic_form": "あと",
+      "reading": "あと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "アイス",
+      "basic_form": "アイス",
+      "reading": "あいす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たべました",
+      "basic_form": "たべる",
+      "reading": "たべました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "いきたい",
+      "basic_form": "いく",
+      "reading": "いきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きのう": {
+      "meaning": "昨天"
+    },
+    "かぞく": {
+      "meaning": "家人"
+    },
+    "ゆうえんち": {
+      "meaning": "遊樂園"
+    },
+    "いく": {
+      "meaning": "去"
+    },
+    "あに": {
+      "meaning": "哥哥"
+    },
+    "ジェットコースター": {
+      "meaning": "雲霄飛車"
+    },
+    "のる": {
+      "meaning": "搭乘"
+    },
+    "すこし": {
+      "meaning": "一點點"
+    },
+    "こわい": {
+      "meaning": "可怕的"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "たのしい": {
+      "meaning": "開心的"
+    },
+    "その": {
+      "meaning": "那個"
+    },
+    "あと": {
+      "meaning": "之後"
+    },
+    "みんな": {
+      "meaning": "大家"
+    },
+    "アイス": {
+      "meaning": "冰淇淋"
+    },
+    "たべる": {
+      "meaning": "吃"
+    },
+    "また": {
+      "meaning": "再、又"
+    }
+  },
+  "particles": {
+    "と": "表示一起做動作的對象",
+    "へ": "表示移動的方向",
+    "に": "表示動作到達的對象或地點",
+    "で": "表示動作進行的場所或方式",
+    "を": "表示動作的對象",
+    "が": "逆接助詞，連接「雖然～但是」的兩個句子"
+  },
+  "translations": [
+    [
+      {
+        "text": "昨天和家人一起去了遊樂園。",
+        "word": "ゆうえんち"
+      }
+    ],
+    [
+      {
+        "text": "和哥哥一起搭了雲霄飛車。",
+        "word": "ジェットコースター"
+      }
+    ],
+    [
+      {
+        "text": "雖然有點可怕，但非常開心。",
+        "word": "たのしい"
+      }
+    ],
+    [
+      {
+        "text": "之後，大家一起吃了冰淇淋。",
+        "word": "たべる"
+      }
+    ],
+    [
+      {
+        "text": "還想再去。",
+        "word": "いく"
+      }
+    ]
+  ]
+}

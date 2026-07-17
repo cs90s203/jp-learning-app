@@ -1,0 +1,833 @@
+{
+  "date": "2026-07-18",
+  "level": "n2_lite",
+  "title": "ペーパーレス化の広がり",
+  "text": "最近、職場でペーパーレス化が急速に進んでいる。会議の資料はすべてタブレットで配布されるようになり、紙の書類はほとんど見かけなくなった。最初は画面での読みにくさに戸惑ったが、慣れてくると検索機能が便利で、必要な情報をすぐに見つけられるようになった。印刷や保管にかかっていたコストも大幅に削減できたそうだ。一方で、手書きでメモを取りながら考えを整理していた人にとっては、やりにくさを感じる場面もあるらしい。便利さと使いやすさのバランスを取ることが、今後の課題になりそうだ。",
+  "tokens": [
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "職場",
+      "basic_form": "職場",
+      "reading": "しょくば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ペーパーレス化",
+      "basic_form": "ペーパーレス化",
+      "reading": "ぺーぱーれすか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急速に",
+      "basic_form": "急速に",
+      "reading": "きゅうそくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "進んでいる",
+      "basic_form": "進む",
+      "reading": "すすんでいる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "会議",
+      "basic_form": "会議",
+      "reading": "かいぎ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "資料",
+      "basic_form": "資料",
+      "reading": "しりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すべて",
+      "basic_form": "すべて",
+      "reading": "すべて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "タブレット",
+      "basic_form": "タブレット",
+      "reading": "たぶれっと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "配布される",
+      "basic_form": "配布される",
+      "reading": "はいふされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なり",
+      "basic_form": "なる",
+      "reading": "なり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "紙",
+      "basic_form": "紙",
+      "reading": "かみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "書類",
+      "basic_form": "書類",
+      "reading": "しょるい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ほとんど",
+      "basic_form": "ほとんど",
+      "reading": "ほとんど",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "見かけなくなった",
+      "basic_form": "見かけなくなる",
+      "reading": "みかけなくなった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "画面",
+      "basic_form": "画面",
+      "reading": "がめん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読みにくさ",
+      "basic_form": "読みにくさ",
+      "reading": "よみにくさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "戸惑った",
+      "basic_form": "戸惑う",
+      "reading": "とまどった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "慣れてくる",
+      "basic_form": "慣れてくる",
+      "reading": "なれてくる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "検索機能",
+      "basic_form": "検索機能",
+      "reading": "けんさくきのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "便利で",
+      "basic_form": "便利だ",
+      "reading": "べんりで",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "必要な",
+      "basic_form": "必要だ",
+      "reading": "ひつような",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "情報",
+      "basic_form": "情報",
+      "reading": "じょうほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すぐに",
+      "basic_form": "すぐに",
+      "reading": "すぐに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "見つけられる",
+      "basic_form": "見つけられる",
+      "reading": "みつけられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "印刷",
+      "basic_form": "印刷",
+      "reading": "いんさつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保管",
+      "basic_form": "保管",
+      "reading": "ほかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かかっていた",
+      "basic_form": "かかる",
+      "reading": "かかっていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "コスト",
+      "basic_form": "コスト",
+      "reading": "こすと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大幅に",
+      "basic_form": "大幅に",
+      "reading": "おおはばに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "削減できた",
+      "basic_form": "削減できる",
+      "reading": "さくげんできた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "そうだ",
+      "basic_form": "そうだ",
+      "reading": "そうだ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "手書き",
+      "basic_form": "手書き",
+      "reading": "てがき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "メモ",
+      "basic_form": "メモ",
+      "reading": "めも",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取りながら",
+      "basic_form": "取る",
+      "reading": "とりながら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "考え",
+      "basic_form": "考え",
+      "reading": "かんがえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整理していた",
+      "basic_form": "整理する",
+      "reading": "せいりしていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とって",
+      "basic_form": "とって",
+      "reading": "とって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "やりにくさ",
+      "basic_form": "やりにくさ",
+      "reading": "やりにくさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "感じる",
+      "basic_form": "感じる",
+      "reading": "かんじる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "場面",
+      "basic_form": "場面",
+      "reading": "ばめん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "らしい",
+      "basic_form": "らしい",
+      "reading": "らしい",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "便利さ",
+      "basic_form": "便利さ",
+      "reading": "べんりさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使いやすさ",
+      "basic_form": "使いやすさ",
+      "reading": "つかいやすさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "バランス",
+      "basic_form": "バランス",
+      "reading": "ばらんす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取る",
+      "basic_form": "取る",
+      "reading": "とる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なりそうだ",
+      "basic_form": "なりそうだ",
+      "reading": "なりそうだ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "最近": {
+      "meaning": "最近"
+    },
+    "職場": {
+      "meaning": "職場"
+    },
+    "ペーパーレス化": {
+      "meaning": "無紙化"
+    },
+    "急速に": {
+      "meaning": "急速地"
+    },
+    "進む": {
+      "meaning": "推進、進展"
+    },
+    "会議": {
+      "meaning": "會議"
+    },
+    "資料": {
+      "meaning": "資料"
+    },
+    "すべて": {
+      "meaning": "全部"
+    },
+    "タブレット": {
+      "meaning": "平板電腦"
+    },
+    "配布される": {
+      "meaning": "被分發"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "紙": {
+      "meaning": "紙"
+    },
+    "書類": {
+      "meaning": "文件"
+    },
+    "ほとんど": {
+      "meaning": "幾乎"
+    },
+    "見かけなくなる": {
+      "meaning": "變得很少見到"
+    },
+    "最初": {
+      "meaning": "一開始"
+    },
+    "画面": {
+      "meaning": "螢幕"
+    },
+    "読みにくさ": {
+      "meaning": "難以閱讀（的程度）"
+    },
+    "戸惑う": {
+      "meaning": "困惑、不知所措"
+    },
+    "慣れてくる": {
+      "meaning": "漸漸習慣"
+    },
+    "検索機能": {
+      "meaning": "搜尋功能"
+    },
+    "便利だ": {
+      "meaning": "方便的"
+    },
+    "必要だ": {
+      "meaning": "必要的"
+    },
+    "情報": {
+      "meaning": "資訊"
+    },
+    "すぐに": {
+      "meaning": "馬上"
+    },
+    "見つけられる": {
+      "meaning": "能夠找到"
+    },
+    "印刷": {
+      "meaning": "印刷"
+    },
+    "保管": {
+      "meaning": "保管"
+    },
+    "かかる": {
+      "meaning": "花費（成本、時間）"
+    },
+    "コスト": {
+      "meaning": "成本"
+    },
+    "大幅に": {
+      "meaning": "大幅地"
+    },
+    "削減できる": {
+      "meaning": "能夠削減"
+    },
+    "そうだ": {
+      "meaning": "聽說～（傳聞）"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "手書き": {
+      "meaning": "手寫"
+    },
+    "メモ": {
+      "meaning": "筆記"
+    },
+    "取る": {
+      "meaning": "做（筆記）、取得"
+    },
+    "考え": {
+      "meaning": "想法"
+    },
+    "整理する": {
+      "meaning": "整理"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "とって": {
+      "meaning": "對於～而言"
+    },
+    "やりにくさ": {
+      "meaning": "難以進行（的程度）"
+    },
+    "感じる": {
+      "meaning": "感受到"
+    },
+    "場面": {
+      "meaning": "場面、情況"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    },
+    "らしい": {
+      "meaning": "聽說、似乎（推測）"
+    },
+    "便利さ": {
+      "meaning": "便利性"
+    },
+    "使いやすさ": {
+      "meaning": "易用性"
+    },
+    "バランス": {
+      "meaning": "平衡"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "課題": {
+      "meaning": "課題、待解決的問題"
+    },
+    "なりそうだ": {
+      "meaning": "看起來會變成"
+    }
+  },
+  "particles": {
+    "で": "表示動作進行的場所或方式",
+    "が": "表示主語",
+    "の": "所有格助詞或名詞化用法",
+    "は": "主題助詞，標示句子的主題",
+    "に": "表示動作到達的對象或狀態變化的方向",
+    "ように": "表示變化的結果或目標狀態",
+    "と": "表示條件，「一旦～就」",
+    "や": "列舉部分事物的並列助詞",
+    "も": "表示同類事物的並列，「也」",
+    "とって": "表示立場，「對～而言」"
+  },
+  "translations": [
+    [
+      {
+        "text": "最近，職場的無紙化正急速推進。",
+        "word": "ペーパーレス化"
+      }
+    ],
+    [
+      {
+        "text": "會議資料變成全部用平板電腦分發，紙本文件幾乎看不到了。",
+        "word": "配布される"
+      }
+    ],
+    [
+      {
+        "text": "一開始對螢幕上難以閱讀感到困惑，",
+        "word": "戸惑う"
+      },
+      {
+        "text": "但漸漸習慣之後，搜尋功能很方便，能馬上找到需要的資訊。",
+        "word": "検索機能"
+      }
+    ],
+    [
+      {
+        "text": "聽說印刷和保管所花費的成本也大幅削減了。",
+        "word": "削減できる"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，對於習慣邊手寫筆記邊整理想法的人來說，",
+        "word": "手書き"
+      },
+      {
+        "text": "似乎也有感到不順手的場合。",
+        "word": "やりにくさ"
+      }
+    ],
+    [
+      {
+        "text": "如何在便利性與易用性之間取得平衡，看來會成為今後的課題。",
+        "word": "バランス"
+      }
+    ]
+  ]
+}

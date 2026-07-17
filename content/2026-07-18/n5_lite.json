@@ -1,0 +1,192 @@
+{
+  "date": "2026-07-18",
+  "level": "n5_lite",
+  "title": "わたしのじてんしゃ",
+  "text": "わたしのじてんしゃはあおいです。まいにちがっこうへいきます。かごがあります。とてもべんりです。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "じてんしゃ",
+      "basic_form": "じてんしゃ",
+      "reading": "じてんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あおい",
+      "basic_form": "あおい",
+      "reading": "あおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "まいにち",
+      "basic_form": "まいにち",
+      "reading": "まいにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "がっこう",
+      "basic_form": "がっこう",
+      "reading": "がっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いきます",
+      "basic_form": "いく",
+      "reading": "いきます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かご",
+      "basic_form": "かご",
+      "reading": "かご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "べんり",
+      "basic_form": "べんり",
+      "reading": "べんり",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我"
+    },
+    "じてんしゃ": {
+      "meaning": "腳踏車"
+    },
+    "あおい": {
+      "meaning": "藍色的"
+    },
+    "まいにち": {
+      "meaning": "每天"
+    },
+    "がっこう": {
+      "meaning": "學校"
+    },
+    "いく": {
+      "meaning": "去"
+    },
+    "かご": {
+      "meaning": "籃子"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "べんり": {
+      "meaning": "方便"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬關係",
+    "は": "主題助詞，標示句子的主題",
+    "へ": "表示移動的方向",
+    "が": "表示主語，常用於存在句"
+  },
+  "translations": [
+    [
+      {
+        "text": "我的腳踏車是藍色的。",
+        "word": "じてんしゃ"
+      }
+    ],
+    [
+      {
+        "text": "每天去學校。",
+        "word": "いく"
+      }
+    ],
+    [
+      {
+        "text": "有籃子。",
+        "word": "ある"
+      }
+    ],
+    [
+      {
+        "text": "非常方便。",
+        "word": "べんり"
+      }
+    ]
+  ]
+}
