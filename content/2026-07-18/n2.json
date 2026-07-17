@@ -1,0 +1,1028 @@
+{
+  "date": "2026-07-18",
+  "level": "n2",
+  "title": "在宅勤務と睡眠の質の関係",
+  "text": "在宅勤務が定着するにつれ、通勤の負担が減った一方で、睡眠の質が下がったと訴える人が増えているという。通勤という強制的な区切りがなくなったことで、仕事とプライベートの境界が曖昧になり、つい深夜まで作業を続けてしまう人が少なくないそうだ。また、日中に外出する機会が減ったために日光を浴びる時間が短くなり、体内時計が乱れやすくなることも一因として挙げられている。専門家によれば、決まった時間に起床し、朝のうちに太陽の光を浴びる習慣を意識的に取り入れるだけでも、睡眠のリズムはかなり改善されるという。効率を追求するあまり生活習慣がおろそかになれば、結局は仕事のパフォーマンスにも悪影響を及ぼしかねない。",
+  "tokens": [
+    {
+      "surface_form": "在宅勤務",
+      "basic_form": "在宅勤務",
+      "reading": "ざいたくきんむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "定着する",
+      "basic_form": "定着する",
+      "reading": "ていちゃくする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つれ",
+      "basic_form": "つれ",
+      "reading": "つれ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "通勤",
+      "basic_form": "通勤",
+      "reading": "つうきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "負担",
+      "basic_form": "負担",
+      "reading": "ふたん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "減った",
+      "basic_form": "減る",
+      "reading": "へった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "睡眠",
+      "basic_form": "睡眠",
+      "reading": "すいみん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "質",
+      "basic_form": "質",
+      "reading": "しつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "下がった",
+      "basic_form": "下がる",
+      "reading": "さがった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "訴える",
+      "basic_form": "訴える",
+      "reading": "うったえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "通勤",
+      "basic_form": "通勤",
+      "reading": "つうきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "強制的な",
+      "basic_form": "強制的だ",
+      "reading": "きょうせいてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "区切り",
+      "basic_form": "区切り",
+      "reading": "くぎり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なくなった",
+      "basic_form": "なくなる",
+      "reading": "なくなった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "プライベート",
+      "basic_form": "プライベート",
+      "reading": "ぷらいべーと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "境界",
+      "basic_form": "境界",
+      "reading": "きょうかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "曖昧になり",
+      "basic_form": "曖昧になる",
+      "reading": "あいまいになり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "つい",
+      "basic_form": "つい",
+      "reading": "つい",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "深夜",
+      "basic_form": "深夜",
+      "reading": "しんや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作業",
+      "basic_form": "作業",
+      "reading": "さぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続けてしまう",
+      "basic_form": "続けてしまう",
+      "reading": "つづけてしまう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少なくない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "そうだ",
+      "basic_form": "そうだ",
+      "reading": "そうだ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日中",
+      "basic_form": "日中",
+      "reading": "にっちゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "外出する",
+      "basic_form": "外出する",
+      "reading": "がいしゅつする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "機会",
+      "basic_form": "機会",
+      "reading": "きかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "減った",
+      "basic_form": "減る",
+      "reading": "へった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ために",
+      "basic_form": "ために",
+      "reading": "ために",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日光",
+      "basic_form": "日光",
+      "reading": "にっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "浴びる",
+      "basic_form": "浴びる",
+      "reading": "あびる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "短くなり",
+      "basic_form": "短くなる",
+      "reading": "みじかくなり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "体内時計",
+      "basic_form": "体内時計",
+      "reading": "たいないどけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "乱れやすくなる",
+      "basic_form": "乱れやすくなる",
+      "reading": "みだれやすくなる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一因",
+      "basic_form": "一因",
+      "reading": "いちいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "挙げられている",
+      "basic_form": "挙げられる",
+      "reading": "あげられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "専門家",
+      "basic_form": "専門家",
+      "reading": "せんもんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によれば",
+      "basic_form": "によれば",
+      "reading": "によれば",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "決まった",
+      "basic_form": "決まる",
+      "reading": "きまった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "起床し",
+      "basic_form": "起床する",
+      "reading": "きしょうし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝",
+      "basic_form": "朝",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "うち",
+      "basic_form": "うち",
+      "reading": "うち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "太陽",
+      "basic_form": "太陽",
+      "reading": "たいよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "光",
+      "basic_form": "光",
+      "reading": "ひかり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "浴びる",
+      "basic_form": "浴びる",
+      "reading": "あびる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "習慣",
+      "basic_form": "習慣",
+      "reading": "しゅうかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "意識的に",
+      "basic_form": "意識的に",
+      "reading": "いしきてきに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "取り入れる",
+      "basic_form": "取り入れる",
+      "reading": "とりいれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "睡眠",
+      "basic_form": "睡眠",
+      "reading": "すいみん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "リズム",
+      "basic_form": "リズム",
+      "reading": "りずむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かなり",
+      "basic_form": "かなり",
+      "reading": "かなり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "改善される",
+      "basic_form": "改善される",
+      "reading": "かいぜんされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "効率",
+      "basic_form": "効率",
+      "reading": "こうりつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "追求する",
+      "basic_form": "追求する",
+      "reading": "ついきゅうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "あまり",
+      "basic_form": "あまり",
+      "reading": "あまり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活習慣",
+      "basic_form": "生活習慣",
+      "reading": "せいかつしゅうかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おろそかになれば",
+      "basic_form": "おろそかになる",
+      "reading": "おろそかになれば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "結局",
+      "basic_form": "結局",
+      "reading": "けっきょく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "パフォーマンス",
+      "basic_form": "パフォーマンス",
+      "reading": "ぱふぉーまんす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "悪影響",
+      "basic_form": "悪影響",
+      "reading": "あくえいきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "及ぼしかねない",
+      "basic_form": "及ぼしかねない",
+      "reading": "およぼしかねない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "在宅勤務": {
+      "meaning": "居家辦公"
+    },
+    "定着する": {
+      "meaning": "普及、扎根"
+    },
+    "通勤": {
+      "meaning": "通勤"
+    },
+    "負担": {
+      "meaning": "負擔"
+    },
+    "減る": {
+      "meaning": "減少"
+    },
+    "睡眠": {
+      "meaning": "睡眠"
+    },
+    "質": {
+      "meaning": "品質"
+    },
+    "下がる": {
+      "meaning": "下降"
+    },
+    "訴える": {
+      "meaning": "訴說、抱怨"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "強制的だ": {
+      "meaning": "強制性的"
+    },
+    "区切り": {
+      "meaning": "分界、段落"
+    },
+    "なくなる": {
+      "meaning": "消失、不再有"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "仕事": {
+      "meaning": "工作"
+    },
+    "プライベート": {
+      "meaning": "私人生活"
+    },
+    "境界": {
+      "meaning": "界線"
+    },
+    "曖昧になる": {
+      "meaning": "變得模糊"
+    },
+    "つい": {
+      "meaning": "不自覺地、忍不住"
+    },
+    "深夜": {
+      "meaning": "深夜"
+    },
+    "作業": {
+      "meaning": "作業、工作"
+    },
+    "続けてしまう": {
+      "meaning": "不禁持續下去"
+    },
+    "少なくない": {
+      "meaning": "不少"
+    },
+    "そうだ": {
+      "meaning": "聽說～（傳聞）"
+    },
+    "また": {
+      "meaning": "此外、又"
+    },
+    "日中": {
+      "meaning": "白天"
+    },
+    "外出する": {
+      "meaning": "外出"
+    },
+    "機会": {
+      "meaning": "機會"
+    },
+    "日光": {
+      "meaning": "陽光"
+    },
+    "浴びる": {
+      "meaning": "沐浴、照射"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "短くなる": {
+      "meaning": "變短"
+    },
+    "体内時計": {
+      "meaning": "生理時鐘"
+    },
+    "乱れやすくなる": {
+      "meaning": "變得容易紊亂"
+    },
+    "一因": {
+      "meaning": "一個原因"
+    },
+    "挙げられる": {
+      "meaning": "被列舉出來"
+    },
+    "専門家": {
+      "meaning": "專家"
+    },
+    "決まる": {
+      "meaning": "固定、確定"
+    },
+    "起床する": {
+      "meaning": "起床"
+    },
+    "朝": {
+      "meaning": "早上"
+    },
+    "うち": {
+      "meaning": "～之內、趁著"
+    },
+    "太陽": {
+      "meaning": "太陽"
+    },
+    "光": {
+      "meaning": "光"
+    },
+    "習慣": {
+      "meaning": "習慣"
+    },
+    "意識的に": {
+      "meaning": "有意識地"
+    },
+    "取り入れる": {
+      "meaning": "納入、採納"
+    },
+    "リズム": {
+      "meaning": "節奏"
+    },
+    "かなり": {
+      "meaning": "相當"
+    },
+    "改善される": {
+      "meaning": "被改善"
+    },
+    "効率": {
+      "meaning": "效率"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "追求する": {
+      "meaning": "追求"
+    },
+    "生活習慣": {
+      "meaning": "生活習慣"
+    },
+    "おろそかになる": {
+      "meaning": "變得疏忽、馬虎"
+    },
+    "結局": {
+      "meaning": "結果、終究"
+    },
+    "パフォーマンス": {
+      "meaning": "表現、績效"
+    },
+    "悪影響": {
+      "meaning": "不良影響"
+    },
+    "及ぼしかねない": {
+      "meaning": "有可能造成（不良影響）"
+    }
+  },
+  "particles": {
+    "が": "表示主語",
+    "に": "表示動作到達的對象或狀態變化的方向",
+    "つれ": "表示「隨著～」的固定搭配助詞",
+    "の": "所有格助詞",
+    "と": "引用助詞，用於引用內容",
+    "という": "用於引述傳聞或說明的內容",
+    "で": "表示原因或方式",
+    "まで": "表示動作持續的終點，「到～為止」",
+    "ために": "表示原因，「因為～」",
+    "も": "表示同類事物的並列，「也」",
+    "として": "表示身分或立場，「作為～」",
+    "によれば": "表示消息來源，「根據～」",
+    "だけ": "表示限定範圍，「只～」",
+    "でも": "表示極端的例子，「即使～也」",
+    "は": "主題助詞，標示句子的主題",
+    "あまり": "表示程度過度而導致的結果，「過於～以致於」",
+    "を": "表示動作的對象"
+  },
+  "translations": [
+    [
+      {
+        "text": "據說隨著居家辦公的普及，通勤負擔雖然減少了，",
+        "word": "在宅勤務"
+      },
+      {
+        "text": "但抱怨睡眠品質下降的人卻在增加。",
+        "word": "下がった"
+      }
+    ],
+    [
+      {
+        "text": "由於失去了通勤這種強制性的分界，工作與私生活的界線變得模糊，",
+        "word": "境界"
+      },
+      {
+        "text": "據說不少人會不自覺地把工作持續到深夜。",
+        "word": "続けてしまう"
+      }
+    ],
+    [
+      {
+        "text": "此外，由於白天外出的機會減少，曬太陽的時間變短，",
+        "word": "日光"
+      },
+      {
+        "text": "生理時鐘容易紊亂也被視為原因之一。",
+        "word": "体内時計"
+      }
+    ],
+    [
+      {
+        "text": "專家表示，只要有意識地養成固定時間起床、",
+        "word": "専門家"
+      },
+      {
+        "text": "並在早上曬太陽的習慣，睡眠節奏就能有相當程度的改善。",
+        "word": "リズム"
+      }
+    ],
+    [
+      {
+        "text": "若為了追求效率而疏忽了生活習慣，最終恐怕也會對工作表現造成不良影響。",
+        "word": "悪影響"
+      }
+    ]
+  ]
+}

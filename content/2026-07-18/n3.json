@@ -1,0 +1,829 @@
+{
+  "date": "2026-07-18",
+  "level": "n3",
+  "title": "図書館ボランティアに参加した",
+  "text": "先月、区の図書館で子ども向けの読み聞かせボランティアを始めた。人前で話すのは苦手だと思っていたが、実際にやってみると、思ったより楽しく続けられている。「もう一回読んで」と言ってくれる子もいて、そのたびにやりがいを感じる。絵本選びも意外と奥が深く、年齢に合わせて内容を工夫する必要がある。準備には時間がかかるし、うまく声が出せない日もあるが、子どもたちの笑顔を見ると疲れも忘れてしまう。これからも無理のない範囲で、長く続けていきたいと思っている。",
+  "tokens": [
+    {
+      "surface_form": "先月",
+      "basic_form": "先月",
+      "reading": "せんげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "区",
+      "basic_form": "区",
+      "reading": "く",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "図書館",
+      "basic_form": "図書館",
+      "reading": "としょかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "子ども",
+      "basic_form": "子ども",
+      "reading": "こども",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "向け",
+      "basic_form": "向け",
+      "reading": "むけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読み聞かせ",
+      "basic_form": "読み聞かせ",
+      "reading": "よみきかせ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ボランティア",
+      "basic_form": "ボランティア",
+      "reading": "ぼらんてぃあ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "始めた",
+      "basic_form": "始める",
+      "reading": "はじめた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人前",
+      "basic_form": "人前",
+      "reading": "ひとまえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "話す",
+      "basic_form": "話す",
+      "reading": "はなす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "苦手だ",
+      "basic_form": "苦手だ",
+      "reading": "にがてだ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思っていた",
+      "basic_form": "思う",
+      "reading": "おもっていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実際に",
+      "basic_form": "実際に",
+      "reading": "じっさいに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "やってみる",
+      "basic_form": "やってみる",
+      "reading": "やってみる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "思った",
+      "basic_form": "思う",
+      "reading": "おもった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しく",
+      "basic_form": "楽しい",
+      "reading": "たのしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "続けられている",
+      "basic_form": "続けられる",
+      "reading": "つづけられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もう一回",
+      "basic_form": "もう一回",
+      "reading": "もういっかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "読んで",
+      "basic_form": "読む",
+      "reading": "よんで",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言ってくれる",
+      "basic_form": "言ってくれる",
+      "reading": "いってくれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "子",
+      "basic_form": "子",
+      "reading": "こ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いて",
+      "basic_form": "いる",
+      "reading": "いて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "たびに",
+      "basic_form": "たびに",
+      "reading": "たびに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "やりがい",
+      "basic_form": "やりがい",
+      "reading": "やりがい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "感じる",
+      "basic_form": "感じる",
+      "reading": "かんじる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "絵本",
+      "basic_form": "絵本",
+      "reading": "えほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "選び",
+      "basic_form": "選び",
+      "reading": "えらび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "意外と",
+      "basic_form": "意外と",
+      "reading": "いがいと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "奥が深く",
+      "basic_form": "奥が深い",
+      "reading": "おくがふかく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "年齢",
+      "basic_form": "年齢",
+      "reading": "ねんれい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "合わせて",
+      "basic_form": "合わせる",
+      "reading": "あわせて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "内容",
+      "basic_form": "内容",
+      "reading": "ないよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "工夫する",
+      "basic_form": "工夫する",
+      "reading": "くふうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要がある",
+      "basic_form": "必要がある",
+      "reading": "ひつようがある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "準備",
+      "basic_form": "準備",
+      "reading": "じゅんび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "には",
+      "basic_form": "には",
+      "reading": "には",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かかる",
+      "basic_form": "かかる",
+      "reading": "かかる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "し",
+      "basic_form": "し",
+      "reading": "し",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "うまく",
+      "basic_form": "うまい",
+      "reading": "うまく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出せない",
+      "basic_form": "出せる",
+      "reading": "だせない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "日",
+      "basic_form": "日",
+      "reading": "ひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "子どもたち",
+      "basic_form": "子どもたち",
+      "reading": "こどもたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "笑顔",
+      "basic_form": "笑顔",
+      "reading": "えがお",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見る",
+      "basic_form": "見る",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "疲れ",
+      "basic_form": "疲れ",
+      "reading": "つかれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "忘れてしまう",
+      "basic_form": "忘れてしまう",
+      "reading": "わすれてしまう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "無理のない",
+      "basic_form": "無理のない",
+      "reading": "むりのない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "範囲",
+      "basic_form": "範囲",
+      "reading": "はんい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "長く",
+      "basic_form": "長い",
+      "reading": "ながく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "続けていきたい",
+      "basic_form": "続けていく",
+      "reading": "つづけていきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思っている",
+      "basic_form": "思う",
+      "reading": "おもっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先月": {
+      "meaning": "上個月"
+    },
+    "区": {
+      "meaning": "區（行政區）"
+    },
+    "図書館": {
+      "meaning": "圖書館"
+    },
+    "子ども": {
+      "meaning": "小孩"
+    },
+    "向け": {
+      "meaning": "針對～、面向～"
+    },
+    "読み聞かせ": {
+      "meaning": "朗讀給人聽（說故事）"
+    },
+    "ボランティア": {
+      "meaning": "志工"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "人前": {
+      "meaning": "眾人面前"
+    },
+    "話す": {
+      "meaning": "說話"
+    },
+    "苦手だ": {
+      "meaning": "不擅長"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    },
+    "実際に": {
+      "meaning": "實際上"
+    },
+    "やってみる": {
+      "meaning": "試著做"
+    },
+    "楽しい": {
+      "meaning": "開心的"
+    },
+    "続けられる": {
+      "meaning": "能夠持續"
+    },
+    "もう一回": {
+      "meaning": "再一次"
+    },
+    "読む": {
+      "meaning": "讀"
+    },
+    "言ってくれる": {
+      "meaning": "為我說、對我說"
+    },
+    "子": {
+      "meaning": "孩子"
+    },
+    "いる": {
+      "meaning": "有、在（人或動物）"
+    },
+    "その": {
+      "meaning": "那個"
+    },
+    "たびに": {
+      "meaning": "每當～的時候"
+    },
+    "やりがい": {
+      "meaning": "價值感、成就感"
+    },
+    "感じる": {
+      "meaning": "感受到"
+    },
+    "絵本": {
+      "meaning": "繪本"
+    },
+    "選び": {
+      "meaning": "選擇"
+    },
+    "意外と": {
+      "meaning": "意外地、出乎意料"
+    },
+    "奥が深い": {
+      "meaning": "深奧、有內涵"
+    },
+    "年齢": {
+      "meaning": "年齡"
+    },
+    "合わせる": {
+      "meaning": "配合、對應"
+    },
+    "内容": {
+      "meaning": "內容"
+    },
+    "工夫する": {
+      "meaning": "花心思、下功夫"
+    },
+    "必要がある": {
+      "meaning": "有必要"
+    },
+    "準備": {
+      "meaning": "準備"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "かかる": {
+      "meaning": "花費（時間、金錢）"
+    },
+    "うまい": {
+      "meaning": "拿手的、順利的"
+    },
+    "声": {
+      "meaning": "聲音"
+    },
+    "出せる": {
+      "meaning": "能夠發出"
+    },
+    "日": {
+      "meaning": "日子"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    },
+    "子どもたち": {
+      "meaning": "孩子們"
+    },
+    "笑顔": {
+      "meaning": "笑容"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "疲れ": {
+      "meaning": "疲勞"
+    },
+    "忘れてしまう": {
+      "meaning": "不小心忘記"
+    },
+    "これから": {
+      "meaning": "今後、從現在起"
+    },
+    "無理のない": {
+      "meaning": "不勉強的、量力而為的"
+    },
+    "範囲": {
+      "meaning": "範圍"
+    },
+    "長い": {
+      "meaning": "長的、久的"
+    },
+    "続けていく": {
+      "meaning": "持續下去"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞或名詞化用法",
+    "で": "表示動作進行的場所",
+    "は": "主題助詞，標示句子的主題",
+    "と": "引用助詞，用於引用說話內容，或表示條件",
+    "が": "逆接助詞或表示主語",
+    "より": "表示比較的基準，「比～」",
+    "も": "表示同類事物的並列，「也」",
+    "たびに": "表示「每當～時」的固定搭配助詞",
+    "に": "表示動作對應或到達的對象",
+    "には": "強調的助詞組合，標示某範圍或對象",
+    "し": "列舉理由的助詞，「而且～」"
+  },
+  "translations": [
+    [
+      {
+        "text": "上個月，我開始在區立圖書館做兒童說故事志工。",
+        "word": "読み聞かせ"
+      }
+    ],
+    [
+      {
+        "text": "原本以為自己不擅長在眾人面前說話，",
+        "word": "苦手だ"
+      },
+      {
+        "text": "但實際做了之後，發現比想像中更能樂在其中地持續下去。",
+        "word": "楽しい"
+      }
+    ],
+    [
+      {
+        "text": "有孩子會對我說「再讀一次」，",
+        "word": "言ってくれる"
+      },
+      {
+        "text": "每次聽到都讓我感到很有成就感。",
+        "word": "やりがい"
+      }
+    ],
+    [
+      {
+        "text": "選繪本也意外地很有學問，需要配合年齡下功夫調整內容。",
+        "word": "工夫する"
+      }
+    ],
+    [
+      {
+        "text": "雖然準備很花時間，也有聲音發不出來的日子，",
+        "word": "かかる"
+      },
+      {
+        "text": "但看到孩子們的笑容，疲勞也都忘了。",
+        "word": "笑顔"
+      }
+    ],
+    [
+      {
+        "text": "今後也想在不勉強的範圍內，長久地持續下去。",
+        "word": "続けていく"
+      }
+    ]
+  ]
+}

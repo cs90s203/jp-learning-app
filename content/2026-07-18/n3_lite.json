@@ -1,0 +1,598 @@
+{
+  "date": "2026-07-18",
+  "level": "n3_lite",
+  "title": "ベランダ菜園を始めた",
+  "text": "先月からベランダで小さな菜園を始めた。土を買ってきて、プランターにミニトマトとバジルの種を植えてみた。毎朝水をやるのが日課になっていて、芽が出たときは本当に嬉しかった。虫がついたり、なかなか育たなかったりして苦労することも多いけど、少しずつ大きくなっていく様子を見るのが楽しい。収穫できたら、サラダにして食べるつもりだ。",
+  "tokens": [
+    {
+      "surface_form": "先月",
+      "basic_form": "先月",
+      "reading": "せんげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ベランダ",
+      "basic_form": "ベランダ",
+      "reading": "べらんだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "小さな",
+      "basic_form": "小さな",
+      "reading": "ちいさな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "菜園",
+      "basic_form": "菜園",
+      "reading": "さいえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "始めた",
+      "basic_form": "始める",
+      "reading": "はじめた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "土",
+      "basic_form": "土",
+      "reading": "つち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買ってきて",
+      "basic_form": "買ってくる",
+      "reading": "かってきて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "プランター",
+      "basic_form": "プランター",
+      "reading": "ぷらんたー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ミニトマト",
+      "basic_form": "ミニトマト",
+      "reading": "みにとまと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "バジル",
+      "basic_form": "バジル",
+      "reading": "ばじる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "種",
+      "basic_form": "種",
+      "reading": "たね",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "植えてみた",
+      "basic_form": "植えてみる",
+      "reading": "うえてみた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "毎朝",
+      "basic_form": "毎朝",
+      "reading": "まいあさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "水",
+      "basic_form": "水",
+      "reading": "みず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "やる",
+      "basic_form": "やる",
+      "reading": "やる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日課",
+      "basic_form": "日課",
+      "reading": "にっか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっていて",
+      "basic_form": "なる",
+      "reading": "なっていて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "芽",
+      "basic_form": "芽",
+      "reading": "め",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出た",
+      "basic_form": "出る",
+      "reading": "でた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "とき",
+      "basic_form": "とき",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本当に",
+      "basic_form": "本当に",
+      "reading": "ほんとうに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "嬉しかった",
+      "basic_form": "嬉しい",
+      "reading": "うれしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "虫",
+      "basic_form": "虫",
+      "reading": "むし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ついたり",
+      "basic_form": "つく",
+      "reading": "ついたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "なかなか",
+      "basic_form": "なかなか",
+      "reading": "なかなか",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "育たなかったり",
+      "basic_form": "育つ",
+      "reading": "そだたなかったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "苦労する",
+      "basic_form": "苦労する",
+      "reading": "くろうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多い",
+      "basic_form": "多い",
+      "reading": "おおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少しずつ",
+      "basic_form": "少しずつ",
+      "reading": "すこしずつ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "大きくなっていく",
+      "basic_form": "大きくなる",
+      "reading": "おおきくなっていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "様子",
+      "basic_form": "様子",
+      "reading": "ようす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見る",
+      "basic_form": "見る",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しい",
+      "basic_form": "楽しい",
+      "reading": "たのしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "収穫できたら",
+      "basic_form": "収穫できる",
+      "reading": "しゅうかくできたら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "サラダ",
+      "basic_form": "サラダ",
+      "reading": "さらだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "食べる",
+      "basic_form": "食べる",
+      "reading": "たべる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "つもりだ",
+      "basic_form": "つもりだ",
+      "reading": "つもりだ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先月": {
+      "meaning": "上個月"
+    },
+    "ベランダ": {
+      "meaning": "陽台"
+    },
+    "小さな": {
+      "meaning": "小的"
+    },
+    "菜園": {
+      "meaning": "菜園"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "土": {
+      "meaning": "土壤"
+    },
+    "買ってくる": {
+      "meaning": "買回來"
+    },
+    "プランター": {
+      "meaning": "花盆、種植箱"
+    },
+    "ミニトマト": {
+      "meaning": "小番茄"
+    },
+    "バジル": {
+      "meaning": "羅勒"
+    },
+    "種": {
+      "meaning": "種子"
+    },
+    "植えてみる": {
+      "meaning": "試著種種看"
+    },
+    "毎朝": {
+      "meaning": "每天早上"
+    },
+    "水": {
+      "meaning": "水"
+    },
+    "やる": {
+      "meaning": "給予（澆水）"
+    },
+    "日課": {
+      "meaning": "每日必做的事"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "芽": {
+      "meaning": "芽"
+    },
+    "出る": {
+      "meaning": "冒出、長出"
+    },
+    "とき": {
+      "meaning": "時候"
+    },
+    "本当に": {
+      "meaning": "真的"
+    },
+    "嬉しい": {
+      "meaning": "開心的"
+    },
+    "虫": {
+      "meaning": "蟲子"
+    },
+    "つく": {
+      "meaning": "附著、沾上"
+    },
+    "なかなか": {
+      "meaning": "不容易、怎麼也不"
+    },
+    "育つ": {
+      "meaning": "生長"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "苦労する": {
+      "meaning": "辛苦、費心"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "少しずつ": {
+      "meaning": "一點一點地"
+    },
+    "大きくなる": {
+      "meaning": "變大"
+    },
+    "様子": {
+      "meaning": "樣子、狀態"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "楽しい": {
+      "meaning": "開心的、快樂的"
+    },
+    "収穫できる": {
+      "meaning": "能夠收穫"
+    },
+    "サラダ": {
+      "meaning": "沙拉"
+    },
+    "食べる": {
+      "meaning": "吃"
+    }
+  },
+  "particles": {
+    "から": "表示起點，「從～開始」",
+    "で": "表示動作進行的場所",
+    "を": "表示動作的對象",
+    "に": "表示動作到達的對象或地點",
+    "と": "表示並列的對象，「和」",
+    "の": "所有格助詞或形式名詞化用法",
+    "が": "表示主語",
+    "は": "主題助詞，標示句子的主題",
+    "も": "表示同類事物的並列，「也」",
+    "けど": "逆接助詞，「雖然～但是」，口語表現"
+  },
+  "translations": [
+    [
+      {
+        "text": "上個月開始在陽台上開闢了一個小菜園。",
+        "word": "菜園"
+      }
+    ],
+    [
+      {
+        "text": "買了土回來，試著在花盆裡種下了小番茄和羅勒的種子。",
+        "word": "植えてみる"
+      }
+    ],
+    [
+      {
+        "text": "每天早上澆水已經成了習慣，發芽的時候真的很開心。",
+        "word": "日課"
+      }
+    ],
+    [
+      {
+        "text": "雖然常有蟲害或長不好而辛苦的時候，",
+        "word": "苦労する"
+      },
+      {
+        "text": "但看著它一點一點長大的樣子很開心。",
+        "word": "楽しい"
+      }
+    ],
+    [
+      {
+        "text": "如果能收成的話，打算做成沙拉來吃。",
+        "word": "収穫できる"
+      }
+    ]
+  ]
+}

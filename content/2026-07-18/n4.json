@@ -1,0 +1,545 @@
+{
+  "date": "2026-07-18",
+  "level": "n4",
+  "title": "妹とのピクニック",
+  "text": "先週の日曜日、妹と近くの公園でピクニックをした。天気が良かったので、みんな気持ちよさそうだった。お弁当を食べたり、写真を撮ったりして、のんびり過ごした。妹は運動が苦手なのに、フリスビーを一生懸命に投げていた。おかげで、私も久しぶりに体を動かすことができた。来月も一緒に出かけたいと思っている。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日曜日",
+      "basic_form": "日曜日",
+      "reading": "にちようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "妹",
+      "basic_form": "妹",
+      "reading": "いもうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近く",
+      "basic_form": "近く",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "公園",
+      "basic_form": "公園",
+      "reading": "こうえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ピクニック",
+      "basic_form": "ピクニック",
+      "reading": "ぴくにっく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "天気",
+      "basic_form": "天気",
+      "reading": "てんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "良かった",
+      "basic_form": "良い",
+      "reading": "よかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "気持ちよさそう",
+      "basic_form": "気持ちよさそう",
+      "reading": "きもちよさそう",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "お弁当",
+      "basic_form": "お弁当",
+      "reading": "おべんとう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べたり",
+      "basic_form": "食べる",
+      "reading": "たべたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "撮ったり",
+      "basic_form": "撮る",
+      "reading": "とったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "のんびり",
+      "basic_form": "のんびり",
+      "reading": "のんびり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "過ごした",
+      "basic_form": "過ごす",
+      "reading": "すごした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "妹",
+      "basic_form": "妹",
+      "reading": "いもうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "運動",
+      "basic_form": "運動",
+      "reading": "うんどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "苦手",
+      "basic_form": "苦手",
+      "reading": "にがて",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "な",
+      "basic_form": "だ",
+      "reading": "な",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "のに",
+      "basic_form": "のに",
+      "reading": "のに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "フリスビー",
+      "basic_form": "フリスビー",
+      "reading": "ふりすびー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一生懸命に",
+      "basic_form": "一生懸命に",
+      "reading": "いっしょうけんめいに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "投げていた",
+      "basic_form": "投げる",
+      "reading": "なげていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おかげで",
+      "basic_form": "おかげで",
+      "reading": "おかげで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "久しぶりに",
+      "basic_form": "久しぶりに",
+      "reading": "ひさしぶりに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "動かす",
+      "basic_form": "動かす",
+      "reading": "うごかす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ことができた",
+      "basic_form": "ことができる",
+      "reading": "ことができた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "来月",
+      "basic_form": "来月",
+      "reading": "らいげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一緒に",
+      "basic_form": "一緒に",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "出かけたい",
+      "basic_form": "出かける",
+      "reading": "でかけたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思っている",
+      "basic_form": "思う",
+      "reading": "おもっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週"
+    },
+    "日曜日": {
+      "meaning": "星期日"
+    },
+    "妹": {
+      "meaning": "妹妹"
+    },
+    "近く": {
+      "meaning": "附近"
+    },
+    "公園": {
+      "meaning": "公園"
+    },
+    "ピクニック": {
+      "meaning": "野餐"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "天気": {
+      "meaning": "天氣"
+    },
+    "良い": {
+      "meaning": "好的"
+    },
+    "みんな": {
+      "meaning": "大家"
+    },
+    "気持ちよさそう": {
+      "meaning": "看起來很舒服"
+    },
+    "お弁当": {
+      "meaning": "便當"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "写真": {
+      "meaning": "照片"
+    },
+    "撮る": {
+      "meaning": "拍攝"
+    },
+    "のんびり": {
+      "meaning": "悠閒地"
+    },
+    "過ごす": {
+      "meaning": "度過"
+    },
+    "運動": {
+      "meaning": "運動"
+    },
+    "苦手": {
+      "meaning": "不擅長"
+    },
+    "フリスビー": {
+      "meaning": "飛盤"
+    },
+    "一生懸命に": {
+      "meaning": "拼命地、努力地"
+    },
+    "投げる": {
+      "meaning": "投擲"
+    },
+    "おかげで": {
+      "meaning": "多虧、託福"
+    },
+    "私": {
+      "meaning": "我"
+    },
+    "久しぶりに": {
+      "meaning": "久違地"
+    },
+    "体": {
+      "meaning": "身體"
+    },
+    "動かす": {
+      "meaning": "活動、移動"
+    },
+    "ことができる": {
+      "meaning": "能夠、可以"
+    },
+    "来月": {
+      "meaning": "下個月"
+    },
+    "一緒に": {
+      "meaning": "一起"
+    },
+    "出かける": {
+      "meaning": "出門"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞，連接名詞",
+    "と": "表示一起做動作的對象",
+    "で": "表示動作進行的場所",
+    "を": "表示動作的對象",
+    "が": "表示主語",
+    "ので": "表示原因，語氣較委婉客觀",
+    "は": "主題助詞，標示句子的主題",
+    "のに": "逆接助詞，表示「明明～卻」，帶有意外或不滿語氣",
+    "も": "表示同類事物的並列，「也」的意思"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週日，我和妹妹在附近的公園野餐。",
+        "word": "ピクニック"
+      }
+    ],
+    [
+      {
+        "text": "因為天氣很好，大家看起來都很舒服。",
+        "word": "気持ちよさそう"
+      }
+    ],
+    [
+      {
+        "text": "我們吃便當、拍照，悠閒地度過了時間。",
+        "word": "過ごす"
+      }
+    ],
+    [
+      {
+        "text": "妹妹明明不擅長運動，卻很拼命地丟著飛盤。",
+        "word": "苦手"
+      }
+    ],
+    [
+      {
+        "text": "多虧如此，我也久違地活動了身體。",
+        "word": "おかげで"
+      }
+    ],
+    [
+      {
+        "text": "下個月也想再一起出門。",
+        "word": "出かける"
+      }
+    ]
+  ]
+}

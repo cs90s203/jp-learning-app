@@ -1,0 +1,1058 @@
+{
+  "date": "2026-07-18",
+  "level": "n1_lite",
+  "title": "単身世帯の増加と住宅市場",
+  "text": "近年、単身世帯の増加が住宅市場のあり方を大きく変えつつある。かつては家族向けの広い間取りが主流だったが、需要の中心は徐々にコンパクトな住戸へと移行してきた。晩婚化や非婚化、高齢者の独居といった要因が複合的に絡み合い、単身世帯は今や全世帯の三割を超える水準にまで達しているという。こうした流れを受け、デベロッパー各社は狭小でも機能性を重視した物件の開発に乗り出しており、収納の工夫や設備の充実によって単身者のニーズを取り込もうとしている。一方で、単身高齢者の増加は孤独死や見守り体制の不備といった社会的課題も浮き彫りにしており、住宅政策には居住の質だけでなく、地域とのつながりをいかに確保するかという視点も求められている。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "単身世帯",
+      "basic_form": "単身世帯",
+      "reading": "たんしんせたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増加",
+      "basic_form": "増加",
+      "reading": "ぞうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "住宅市場",
+      "basic_form": "住宅市場",
+      "reading": "じゅうたくしじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり方",
+      "basic_form": "あり方",
+      "reading": "ありかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きく",
+      "basic_form": "大きい",
+      "reading": "おおきく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "変えつつある",
+      "basic_form": "変える",
+      "reading": "かえつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かつて",
+      "basic_form": "かつて",
+      "reading": "かつて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "家族向け",
+      "basic_form": "家族向け",
+      "reading": "かぞくむけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "広い",
+      "basic_form": "広い",
+      "reading": "ひろい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "間取り",
+      "basic_form": "間取り",
+      "reading": "まどり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "主流だった",
+      "basic_form": "主流だ",
+      "reading": "しゅりゅうだった",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "需要",
+      "basic_form": "需要",
+      "reading": "じゅよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "中心",
+      "basic_form": "中心",
+      "reading": "ちゅうしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "徐々に",
+      "basic_form": "徐々に",
+      "reading": "じょじょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "コンパクトな",
+      "basic_form": "コンパクトだ",
+      "reading": "こんぱくとな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "住戸",
+      "basic_form": "住戸",
+      "reading": "じゅうこ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "移行してきた",
+      "basic_form": "移行する",
+      "reading": "いこうしてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "晩婚化",
+      "basic_form": "晩婚化",
+      "reading": "ばんこんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "非婚化",
+      "basic_form": "非婚化",
+      "reading": "ひこんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "高齢者",
+      "basic_form": "高齢者",
+      "reading": "こうれいしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "独居",
+      "basic_form": "独居",
+      "reading": "どっきょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "要因",
+      "basic_form": "要因",
+      "reading": "よういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "複合的に",
+      "basic_form": "複合的だ",
+      "reading": "ふくごうてきに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "絡み合い",
+      "basic_form": "絡み合う",
+      "reading": "からみあい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "単身世帯",
+      "basic_form": "単身世帯",
+      "reading": "たんしんせたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "今や",
+      "basic_form": "今や",
+      "reading": "いまや",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "全世帯",
+      "basic_form": "全世帯",
+      "reading": "ぜんせたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "三割",
+      "basic_form": "三割",
+      "reading": "さんわり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "超える",
+      "basic_form": "超える",
+      "reading": "こえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "水準",
+      "basic_form": "水準",
+      "reading": "すいじゅん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "達している",
+      "basic_form": "達する",
+      "reading": "たっしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "流れ",
+      "basic_form": "流れ",
+      "reading": "ながれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受け",
+      "basic_form": "受ける",
+      "reading": "うけ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "デベロッパー",
+      "basic_form": "デベロッパー",
+      "reading": "でべろっぱー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "各社",
+      "basic_form": "各社",
+      "reading": "かくしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "狭小",
+      "basic_form": "狭小",
+      "reading": "きょうしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "機能性",
+      "basic_form": "機能性",
+      "reading": "きのうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重視した",
+      "basic_form": "重視する",
+      "reading": "じゅうしした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "物件",
+      "basic_form": "物件",
+      "reading": "ぶっけん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "開発",
+      "basic_form": "開発",
+      "reading": "かいはつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "乗り出しており",
+      "basic_form": "乗り出す",
+      "reading": "のりだしており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "収納",
+      "basic_form": "収納",
+      "reading": "しゅうのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "工夫",
+      "basic_form": "工夫",
+      "reading": "くふう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "設備",
+      "basic_form": "設備",
+      "reading": "せつび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "充実",
+      "basic_form": "充実",
+      "reading": "じゅうじつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "単身者",
+      "basic_form": "単身者",
+      "reading": "たんしんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ニーズ",
+      "basic_form": "ニーズ",
+      "reading": "にーず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取り込もうとしている",
+      "basic_form": "取り込む",
+      "reading": "とりこもうとしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "単身",
+      "basic_form": "単身",
+      "reading": "たんしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "高齢者",
+      "basic_form": "高齢者",
+      "reading": "こうれいしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増加",
+      "basic_form": "増加",
+      "reading": "ぞうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "孤独死",
+      "basic_form": "孤独死",
+      "reading": "こどくし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見守り体制",
+      "basic_form": "見守り体制",
+      "reading": "みまもりたいせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不備",
+      "basic_form": "不備",
+      "reading": "ふび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "社会的課題",
+      "basic_form": "社会的課題",
+      "reading": "しゃかいてきかだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "浮き彫りにしており",
+      "basic_form": "浮き彫りにする",
+      "reading": "うきぼりにしており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "住宅政策",
+      "basic_form": "住宅政策",
+      "reading": "じゅうたくせいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "には",
+      "basic_form": "には",
+      "reading": "には",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "居住",
+      "basic_form": "居住",
+      "reading": "きょじゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "質",
+      "basic_form": "質",
+      "reading": "しつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけでなく",
+      "basic_form": "だけでなく",
+      "reading": "だけでなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つながり",
+      "basic_form": "つながり",
+      "reading": "つながり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いかに",
+      "basic_form": "いかに",
+      "reading": "いかに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "確保する",
+      "basic_form": "確保する",
+      "reading": "かくほする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "視点",
+      "basic_form": "視点",
+      "reading": "してん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求められている",
+      "basic_form": "求められる",
+      "reading": "もとめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年"
+    },
+    "単身世帯": {
+      "meaning": "單身戶、獨居家庭"
+    },
+    "増加": {
+      "meaning": "增加"
+    },
+    "住宅市場": {
+      "meaning": "住宅市場"
+    },
+    "あり方": {
+      "meaning": "應有的樣貌、型態"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "変える": {
+      "meaning": "改變"
+    },
+    "かつて": {
+      "meaning": "曾經、過去"
+    },
+    "家族向け": {
+      "meaning": "面向家庭的"
+    },
+    "広い": {
+      "meaning": "寬敞的"
+    },
+    "間取り": {
+      "meaning": "房屋格局"
+    },
+    "主流だ": {
+      "meaning": "主流的"
+    },
+    "需要": {
+      "meaning": "需求"
+    },
+    "中心": {
+      "meaning": "中心"
+    },
+    "徐々に": {
+      "meaning": "逐漸地"
+    },
+    "コンパクトだ": {
+      "meaning": "小巧的、精簡的"
+    },
+    "住戸": {
+      "meaning": "住宅單位"
+    },
+    "移行する": {
+      "meaning": "轉移、過渡"
+    },
+    "晩婚化": {
+      "meaning": "晚婚化"
+    },
+    "非婚化": {
+      "meaning": "不婚化"
+    },
+    "高齢者": {
+      "meaning": "高齡者"
+    },
+    "独居": {
+      "meaning": "獨居"
+    },
+    "要因": {
+      "meaning": "原因、因素"
+    },
+    "複合的だ": {
+      "meaning": "複合性的"
+    },
+    "絡み合う": {
+      "meaning": "相互交織"
+    },
+    "今や": {
+      "meaning": "如今"
+    },
+    "全世帯": {
+      "meaning": "全體家庭"
+    },
+    "三割": {
+      "meaning": "三成"
+    },
+    "超える": {
+      "meaning": "超過"
+    },
+    "水準": {
+      "meaning": "水準"
+    },
+    "達する": {
+      "meaning": "達到"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "流れ": {
+      "meaning": "趨勢、潮流"
+    },
+    "受ける": {
+      "meaning": "接受、承接"
+    },
+    "デベロッパー": {
+      "meaning": "開發商"
+    },
+    "各社": {
+      "meaning": "各家公司"
+    },
+    "狭小": {
+      "meaning": "狹小"
+    },
+    "機能性": {
+      "meaning": "機能性"
+    },
+    "重視する": {
+      "meaning": "重視"
+    },
+    "物件": {
+      "meaning": "房屋物件"
+    },
+    "開発": {
+      "meaning": "開發"
+    },
+    "乗り出す": {
+      "meaning": "著手進行、投入"
+    },
+    "収納": {
+      "meaning": "收納"
+    },
+    "工夫": {
+      "meaning": "巧思、下功夫"
+    },
+    "設備": {
+      "meaning": "設備"
+    },
+    "充実": {
+      "meaning": "充實、完善"
+    },
+    "単身者": {
+      "meaning": "單身人士"
+    },
+    "ニーズ": {
+      "meaning": "需求"
+    },
+    "取り込む": {
+      "meaning": "納入、吸收"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "単身": {
+      "meaning": "單身、獨自一人"
+    },
+    "孤独死": {
+      "meaning": "孤獨死"
+    },
+    "見守り体制": {
+      "meaning": "照護關懷體制"
+    },
+    "不備": {
+      "meaning": "不完善、缺失"
+    },
+    "社会的課題": {
+      "meaning": "社會性課題"
+    },
+    "浮き彫りにする": {
+      "meaning": "凸顯出來"
+    },
+    "住宅政策": {
+      "meaning": "住宅政策"
+    },
+    "居住": {
+      "meaning": "居住"
+    },
+    "質": {
+      "meaning": "品質"
+    },
+    "地域": {
+      "meaning": "地區、社區"
+    },
+    "つながり": {
+      "meaning": "連結、聯繫"
+    },
+    "いかに": {
+      "meaning": "如何"
+    },
+    "確保する": {
+      "meaning": "確保"
+    },
+    "視点": {
+      "meaning": "視角、觀點"
+    },
+    "求められる": {
+      "meaning": "被要求、被需要"
+    }
+  },
+  "particles": {
+    "の": "所有格助詞",
+    "が": "表示主語",
+    "を": "表示動作的對象",
+    "は": "主題助詞，標示句子的主題",
+    "へ": "表示移動的方向",
+    "と": "表示轉變的結果或並列",
+    "や": "列舉部分事物的並列助詞",
+    "といった": "舉例助詞，「像～這樣的」",
+    "に": "表示動作到達的對象或狀態",
+    "まで": "表示範圍或程度的終點，「到～為止」",
+    "でも": "表示即使在極端條件下也成立，「即使～也」",
+    "によって": "表示手段或原因，「藉由～、因為～」",
+    "も": "表示同類事物的並列，「也」",
+    "には": "強調的助詞組合，標示某範圍或對象",
+    "だけでなく": "表示不僅限於前項，「不僅～」",
+    "か": "表示疑問或不確定的內容",
+    "という": "用於引述或說明前面的內容"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，單身戶的增加正大幅改變著住宅市場的樣貌。",
+        "word": "単身世帯"
+      }
+    ],
+    [
+      {
+        "text": "過去以家庭為主的寬敞格局曾是主流，",
+        "word": "間取り"
+      },
+      {
+        "text": "但需求的重心已逐漸轉移到小巧的住宅單位。",
+        "word": "移行してきた"
+      }
+    ],
+    [
+      {
+        "text": "晚婚化、不婚化、高齡者獨居等因素複合交織，",
+        "word": "絡み合い"
+      },
+      {
+        "text": "據說單身戶如今已達到超過全體家庭三成的水準。",
+        "word": "水準"
+      }
+    ],
+    [
+      {
+        "text": "面對這樣的趨勢，各家開發商開始著手開發即使狹小也重視機能性的物件，",
+        "word": "乗り出しており"
+      },
+      {
+        "text": "試圖透過收納巧思與設備完善來吸引單身者的需求。",
+        "word": "取り込もうとしている"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，單身高齡者的增加也凸顯出孤獨死與照護關懷體制不完善等社會課題，",
+        "word": "浮き彫りにしており"
+      },
+      {
+        "text": "住宅政策不僅需要居住品質，也需要考量如何確保與地區的連結這一視角。",
+        "word": "つながり"
+      }
+    ]
+  ]
+}
