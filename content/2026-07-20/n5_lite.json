@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-20",
+  "level": "n5_lite",
+  "title": "わたしの帽子",
+  "text": "わたしの帽子です。赤い帽子です。とても好きな帽子です。新しい帽子です。今日は晴れです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "赤い", "basic_form": "赤い", "reading": "あかい", "pos": "形容詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "好きな", "basic_form": "好き", "reading": "すきな", "pos": "形容動詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "今日", "basic_form": "今日", "reading": "きょう", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "晴れ", "basic_form": "晴れ", "reading": "はれ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "帽子": { "meaning": "帽子" },
+    "赤い": { "meaning": "紅色的" },
+    "とても": { "meaning": "非常" },
+    "好き": { "meaning": "喜歡" },
+    "新しい": { "meaning": "新的" },
+    "今日": { "meaning": "今天" },
+    "晴れ": { "meaning": "晴天" }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬關係，相當於中文的「的」",
+    "は": "主題助詞，用來標示句子的主題",
+    "です": "斷定助動詞，禮貌的「是」"
+  },
+  "translations": [
+    [ { "text": "這是我的帽子。", "word": "帽子" } ],
+    [ { "text": "是紅色的帽子。", "word": "赤い" } ],
+    [ { "text": "是我非常喜歡的帽子。", "word": "好き" } ],
+    [ { "text": "是新的帽子。", "word": "新しい" } ],
+    [ { "text": "今天是晴天。", "word": "晴れ" } ]
+  ]
+}
