@@ -6,6 +6,16 @@
 
 ---
 
+## 🚫 Global rule (applies to every step in this document, no exceptions)
+
+**This runs unattended overnight — nobody is there to click an approval prompt. Anything that triggers one means the whole run hangs forever.**
+
+These are **forbidden in any bash command, for any reason**: command substitution `$(...)`, shell arithmetic expansion `$((...))`, heredocs (`<< EOF` etc.), `while`/`for`/`until` loops, assigning-then-using custom shell variables. **Every bash command must be a single, flat, obviously-simple command** (e.g. `git push`, `sleep 15`, a one-line `python3 -c "..."` with no variables).
+
+**Nothing in this document needs "wait and retry" logic — if any step fails, just stop and end normally.** The host-side backup routine (`jp-content-git-push`) checks every 15 minutes and picks up anything this task didn't finish, so there's no need to sleep, retry, or loop here at all. When unsure whether something might look "obfuscated," pick the dumbest, most literal version.
+
+---
+
 ## Step 0 — Resolve target date & idempotency check (avoid duplicate runs)
 
 **Critical**: at 22:00 the wall-clock date is still the day *before* the article's date. Do NOT use today's date — resolve **tomorrow's date** instead, with a single standalone command (avoid `$(...)` command substitution or a shell variable combined with other commands in the same line — that triggers a permission prompt and can hang the run):
