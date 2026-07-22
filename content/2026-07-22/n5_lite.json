@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-22",
+  "level": "n5_lite",
+  "title": "わたしのくつ",
+  "text": "わたしのくつは白いです。あたらしいくつです。とてもかるいです。あしたがっこうではきます。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "くつ", "basic_form": "くつ", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "白い", "basic_form": "白い", "reading": "しろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "あたらしい", "basic_form": "あたらしい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "くつ", "basic_form": "くつ", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "かるい", "basic_form": "かるい", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "あした", "basic_form": "あした", "reading": "あした", "pos": "名詞" },
+    { "surface_form": "がっこう", "basic_form": "がっこう", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "はきます", "basic_form": "はく", "reading": "はきます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "くつ": { "meaning": "鞋子" },
+    "白い": { "meaning": "白色的" },
+    "あたらしい": { "meaning": "新的" },
+    "とても": { "meaning": "非常" },
+    "かるい": { "meaning": "輕的" },
+    "あした": { "meaning": "明天" },
+    "がっこう": { "meaning": "學校" },
+    "はく": { "meaning": "穿（鞋、褲子等）" }
+  },
+  "particles": {
+    "の": "所有格助詞，連接名詞表示所屬關係",
+    "は": "主題標記，提示句子的主題",
+    "で": "表示動作發生的場所"
+  },
+  "translations": [
+    [ { "text": "我的鞋子是白色的。", "word": "白い" } ],
+    [ { "text": "是新鞋子。", "word": "あたらしい" } ],
+    [ { "text": "非常輕。", "word": "かるい" } ],
+    [ { "text": "明天要在學校穿。", "word": "はく" } ]
+  ]
+}
