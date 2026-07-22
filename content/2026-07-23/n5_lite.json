@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-23",
+  "level": "n5_lite",
+  "title": "わたしのペン",
+  "text": "これはわたしのペンです。あおくてほそいペンです。がっこうのペンです。とてもだいじです。",
+  "tokens": [
+    { "surface_form": "これ", "basic_form": "これ", "reading": "これ", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "あおくて", "basic_form": "青い", "reading": "あおくて", "pos": "形容詞" },
+    { "surface_form": "ほそい", "basic_form": "細い", "reading": "ほそい", "pos": "形容詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "がっこう", "basic_form": "学校", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "だいじ", "basic_form": "大事", "reading": "だいじ", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "これ": { "meaning": "這；這個" },
+    "わたし": { "meaning": "我" },
+    "ペン": { "meaning": "筆" },
+    "青い": { "meaning": "藍色的" },
+    "細い": { "meaning": "細的、瘦的" },
+    "学校": { "meaning": "學校" },
+    "とても": { "meaning": "非常" },
+    "大事": { "meaning": "重要、珍惜" }
+  },
+  "particles": {
+    "は": "主題標示助詞，標出句子的主題",
+    "の": "所有格助詞，表示所屬或修飾關係"
+  },
+  "translations": [
+    [ { "text": "這是我的筆。", "word": "これ" } ],
+    [ { "text": "是藍色又細的筆。", "word": "青い" } ],
+    [ { "text": "是學校用的筆。", "word": "学校" } ],
+    [ { "text": "我非常珍惜它。", "word": "大事" } ]
+  ]
+}
