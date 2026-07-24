@@ -1,0 +1,58 @@
+{
+  "date": "2026-07-25",
+  "level": "n5_lite",
+  "title": "わたしの財布",
+  "text": "わたしの財布は青いです。かばんの中にあります。中にお金と写真があります。とても大切です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "財布", "basic_form": "財布", "reading": "さいふ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "お金", "basic_form": "お金", "reading": "おかね", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "写真", "basic_form": "写真", "reading": "しゃしん", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "財布": { "meaning": "錢包" },
+    "青い": { "meaning": "藍色的" },
+    "かばん": { "meaning": "包包" },
+    "中": { "meaning": "裡面" },
+    "ある": { "meaning": "有（存在）" },
+    "お金": { "meaning": "錢" },
+    "写真": { "meaning": "照片" },
+    "とても": { "meaning": "非常" },
+    "大切": { "meaning": "重要、珍貴" }
+  },
+  "particles": {
+    "の": "所有格助詞，表示「的」",
+    "は": "主題標記，標示句子的主題",
+    "に": "表示存在的場所",
+    "と": "表示並列，「和」",
+    "が": "表示存在句中的主語"
+  },
+  "translations": [
+    [ { "text": "我的錢包是藍色的。", "word": "財布" } ],
+    [ { "text": "在包包裡面。", "word": "かばん" } ],
+    [ { "text": "裡面有錢和照片。", "word": "お金" } ],
+    [ { "text": "非常重要。", "word": "大切" } ]
+  ]
+}
