@@ -106,6 +106,9 @@ _lite: grammar one tier below same level, sentences 20–30% shorter, topic is f
   "translations": [
     [ { "text": "Full Chinese for sentence 1", "word": "corresponding vocab basic_form" } ],
     [ { "text": "First part,", "word": "wordA" }, { "text": "second part.", "word": "wordB" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "も", "note": "「也」，取代原本該用的が/を，但と、で等助詞會保留" }
   ]
 }
 ```
@@ -127,6 +130,13 @@ _lite: grammar one tier below same level, sentences 20–30% shorter, topic is f
 4. **translations**: Nested array — each outer element = one sentence; each sentence = array of `{ "text": "...", "word": "..." }`. `text` = Chinese fragment, `word` = corresponding Japanese `basic_form`. One segment per sentence is fine. **Must be nested array, not plain strings.**
 
 5. Topics: different each day, everyday life/culture/current events. All Chinese output in **Traditional Chinese**.
+
+5a. **grammar_notes** (文章解析 feature): Read `/Users/mick/Documents/Projects/Language/content/JLPT_GRAMMAR_LEVELS.md` first. It's a fixed reference table — do NOT regenerate or rephrase it, just look things up.
+   - Map filename → JLPT tier for lookup: `n5_lite`/`n5` → N5 table; `n4_lite`/`n4` → N4 table; `n3_lite`/`n3` → N3 table; `n2_lite`/`n2` → N2 table; `n1_lite`/`n1` → N1 table.
+   - Scan the article's sentences and pick grammar points that appear in **this level's table only** (each level's table already excludes anything covered by a lower level — do not also explain a lower-level point just because it appears in the sentence). Copy the `note` text from the table as-is (Traditional Chinese, already written) — don't rewrite it.
+   - Pick **at most 4** points, prioritizing whichever are most central to the article's sentences. If nothing in the article matches this level's table (e.g. the article only used grammar from lower levels), it's fine to output `"grammar_notes": []` — do not force a match.
+   - `pattern` = the grammar point as written in the table (e.g. `も`, `〜たら（條件）`); `note` = the table's note text.
+   - This field is optional/best-effort — if it's unclear or would take real analysis, just output `[]` rather than guessing. A wrong or missing grammar note is not worth blocking the run over.
 
 6. `level` = filename; `difficulty` field is **not needed** (hardcoded in app by level).
 
