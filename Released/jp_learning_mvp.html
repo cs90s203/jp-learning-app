@@ -440,6 +440,24 @@
   .level-chip.active { background: var(--wa); color: #fff; border-color: var(--wa); }
 
   /* 難度量表 */
+  .grammar-card { padding: 0; margin-bottom: 16px; overflow: hidden; }
+  .grammar-card-header {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    background: none; border: none; cursor: pointer;
+    font-size: 14px; font-weight: 600; color: var(--wt); padding: 14px 16px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .grammar-card-chevron { font-size: 12px; color: var(--wt3); transition: transform 0.2s; }
+  .grammar-card.expanded .grammar-card-chevron { transform: rotate(180deg); }
+  .grammar-card-body {
+    display: none; padding: 0 16px 14px;
+  }
+  .grammar-card.expanded .grammar-card-body { display: block; }
+  .grammar-note-item { margin-bottom: 12px; }
+  .grammar-note-item:last-child { margin-bottom: 0; }
+  .grammar-note-pattern { font-size: 13px; font-weight: 600; color: var(--wa); margin-bottom: 3px; }
+  .grammar-note-text { font-size: 13px; color: var(--wt2); line-height: 1.5; }
+
   .difficulty-bar {
     background: #FFFFFF; border: 0.5px solid var(--wa-bg2);
     border-radius: 13px; padding: 14px 16px 12px;
@@ -1840,6 +1858,15 @@
         </div>
         <p id="article-longpress-hint" style="font-size:12px;color:var(--wt3);text-align:center;margin-bottom:12px">長按文字可加入單字卡</p>
 
+        <!-- 文章解析（有 grammar_notes 才顯示） -->
+        <div class="card grammar-card" id="grammar-notes-card" style="display:none">
+          <button class="grammar-card-header" id="grammar-notes-toggle" onclick="toggleGrammarNotes()">
+            <span>文章解析</span>
+            <span class="grammar-card-chevron" id="grammar-notes-chevron">▾</span>
+          </button>
+          <div class="grammar-card-body" id="grammar-notes-body"></div>
+        </div>
+
         <!-- 難度量表 -->
         <div class="difficulty-bar" id="difficulty-bar">
           <p class="difficulty-label">這篇對你的難度？</p>
@@ -2188,7 +2215,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em;font-family:'Silkscreen',monospace">
-          v1.10.1
+          v1.11.0
         </div>
 
       </div>
@@ -3984,11 +4011,36 @@ async function loadContentForDate(date, level) {
   }
 }
 
+function renderGrammarNotes(notes) {
+  const card = document.getElementById('grammar-notes-card');
+  const body = document.getElementById('grammar-notes-body');
+  if (!card || !body) return;
+  if (!Array.isArray(notes) || notes.length === 0) {
+    card.style.display = 'none';
+    body.innerHTML = '';
+    return;
+  }
+  body.innerHTML = notes.map(n =>
+    '<div class="grammar-note-item">' +
+      '<div class="grammar-note-pattern">' + n.pattern + '</div>' +
+      '<div class="grammar-note-text">' + n.note + '</div>' +
+    '</div>'
+  ).join('');
+  card.style.display = '';
+  card.classList.remove('expanded');
+  document.getElementById('grammar-notes-chevron').textContent = '▾';
+}
+
+function toggleGrammarNotes() {
+  document.getElementById('grammar-notes-card').classList.toggle('expanded');
+}
+
 function applyContentPack(pack) {
   ARTICLE_TEXT = pack.text;
   ARTICLE_TOKENS = pack.tokens;
   ARTICLE_TOKENS._title = pack.title || '';
   VOCAB_DICT = pack.vocab;
+  renderGrammarNotes(pack.grammar_notes);
   PARTICLE_NOTES = pack.particles ? Object.assign({}, BUILTIN_PARTICLE_NOTES, pack.particles) : Object.assign({}, BUILTIN_PARTICLE_NOTES);
   SENTENCE_TRANSLATIONS = pack.translations;
   // 防呆：app 用 tokens 的 。！？ 切句、按 index 配 translations；句數不一致會讓翻譯整段位移。
@@ -4016,6 +4068,7 @@ function restoreDemoContent() {
   VOCAB_DICT = JSON.parse(JSON.stringify(DEMO_VOCAB_DICT));
   PARTICLE_NOTES = Object.assign({}, BUILTIN_PARTICLE_NOTES);
   SENTENCE_TRANSLATIONS = JSON.parse(JSON.stringify(DEMO_SENTENCE_TRANSLATIONS));
+  renderGrammarNotes(null);
   articleRendered = false;
   if (document.getElementById('page-article') && document.getElementById('page-article').classList.contains('active')) {
     renderArticle(ARTICLE_TOKENS);
