@@ -219,6 +219,9 @@ Every noun/verb/adjective/adverb/conjunction token's `basic_form` must have a `v
 ```
 Save fixes back to the file (overwrite). Anything you can't auto-fix — note it, don't block the commit.
 
+**4d — grammar_notes (optional, never blocks)**
+Missing field or empty array `[]` is fine — do not add or fix it during validation.
+
 ### Step 5 — git commit (local only — do NOT attempt `git push`)
 
 **This sandbox has no GitHub credentials, so `git push` will always fail here — do not run it, do not retry it.** Committing locally is enough: the host-side backup routine (`jp-content-git-push`, runs every 15 minutes from 22:00–02:45 on the machine that owns the GitHub credentials) picks up any local commit and pushes it automatically. Nothing further is needed from this task.
