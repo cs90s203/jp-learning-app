@@ -603,10 +603,13 @@
   .wp-kanji { font-size: 30px; font-weight: 500; color: var(--wt); }
   .wp-kana { font-size: 15px; color: var(--wt2); text-align: center; }
   .wp-romaji { font-size: 12px; color: var(--wt3); text-align: center; margin-top: 2px; }
-  .wp-base-form { font-size: 11px; color: var(--wt3); text-align: center; margin-top: 4px; }
+  .wp-base-form { font-size: 11px; color: var(--wt3); margin-top: 4px; display: flex; align-items: center; justify-content: center; gap: 6px; }
   .wp-base-form span { color: var(--wa); font-weight: 600; }
+  .wp-base-form .wp-base-speak { width: 20px; height: 20px; }
+  .wp-base-form .wp-base-speak svg { width: 11px; height: 11px; }
   .wp-divider { height: 0.5px; background: var(--wa-bg); margin: 14px 0; }
   .wp-meaning { font-size: 18px; color: var(--wt); font-weight: 500; text-align: center; }
+  .wp-infl-note { font-size: 13px; color: var(--wt3); font-weight: 400; }
   .wp-example { font-size: 13px; color: var(--wt2); margin-top: 10px; line-height: 1.8; text-align: center; }
   .wp-pos-tag {
     display: inline-block; font-size: 11px; font-weight: 500;
@@ -2184,7 +2187,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em;font-family:'Silkscreen',monospace">
-          v1.9.0
+          v1.10.0
         </div>
 
       </div>
@@ -3610,6 +3613,37 @@ const BUILTIN_PARTICLE_NOTES = {
 };
 let PARTICLE_NOTES = Object.assign({}, BUILTIN_PARTICLE_NOTES);
 
+// 活用語尾偵測表：用於「動詞/形容詞＋語尾」融合成單一 token 的情況（例：集まりたい、切ったり）。
+// vocab 的中文意思只反映原形（例：聚集），這裡額外補一個簡短提示，讓語感/文法不會被吃掉。
+// 依語尾字串長度由長到短排序，避免短語尾誤先比對到長語尾的尾段（例：たい 不能比 たがる 先比對）。
+const INFLECTION_SUFFIX_NOTES = [
+  { suffix: 'なかった', note: '過去否定，沒～／不～' },
+  { suffix: 'たかった', note: '過去，想～過' },
+  { suffix: 'たがる',   note: '第三人稱想～' },
+  { suffix: 'やすい',   note: '容易～' },
+  { suffix: 'にくい',   note: '不容易～／難～' },
+  { suffix: 'すぎる',   note: '太～／過度' },
+  { suffix: 'させる',   note: '使役，讓／叫～' },
+  { suffix: 'られる',   note: '被動或可能，依上下文判斷' },
+  { suffix: 'ながら',   note: '一邊～一邊～' },
+  { suffix: 'たり',     note: '列舉動作「～或～」' },
+  { suffix: 'たら',     note: '如果～的話' },
+  { suffix: 'ければ',   note: '如果～的話' },
+  { suffix: 'ても',     note: '即使～也' },
+  { suffix: 'でも',     note: '即使～也' },
+  { suffix: 'たい',     note: '想～' },
+  { suffix: 'ない',     note: '不～／沒～' },
+  { suffix: 'れる',     note: '被動或可能，依上下文判斷' },
+  { suffix: 'そう',     note: '看起來像～／快要～' },
+];
+function getInflectionSuffixNote(surface, basic) {
+  if (!surface || !basic || surface === basic) return '';
+  for (const rule of INFLECTION_SUFFIX_NOTES) {
+    if (surface.endsWith(rule.suffix)) return rule.note;
+  }
+  return '';
+}
+
 // 預先準備好的斷詞資料（手動標注，不依賴任何外部函式庫或網路請求）
 // 格式對應 Kuromoji 輸出: surface_form / basic_form / reading（平假名）/ pos
 let ARTICLE_TOKENS = [
@@ -4511,35 +4545,48 @@ function openWordPanel(basic, surface, reading) {
   const entry = VOCAB_DICT[basic] || VOCAB_DICT[surface] || { meaning: '（尚無中文翻譯）', romaji: '' };
   const isAdded = addedWords.has(basic);
   const isInflected = surface && surface !== basic;
-  // 原形讀音：優先用 VOCAB_DICT.reading（最可靠）→ 純假名直接用 basic → fallback surface reading
-  if (entry.reading) reading = entry.reading;
-  else if (/^[ぁ-ヿ]+$/.test(basic)) reading = basic;
+  // 活用形讀音：長按當下傳進來的讀音（文章 token 自己的），絕對不能被下面「原形讀音」的計算覆蓋掉——
+  // 這正是舊版的 bug：原形是純假名時（例：ある）會把這裡直接蓋成原形文字，導致活用形讀音消失。
+  const inflectedReading = reading || surface;
+  // 原形讀音：VOCAB_DICT 有讀音就用（最可靠）；沒有就直接用原形文字本身讓 TTS 唸（TTS 認得漢字，不需要額外轉換）。
+  const baseReading = entry.reading || basic;
   // 活用形：大字顯示文中形，下方標「原形」；原形：大字顯示basic，下方顯示讀音
   const displayWord = isInflected ? surface : basic;
-  const speakWord = reading || surface;
-  // 讀音行：有漢字時顯示假名讀音；純假名時若與顯示字相同則隱藏（避免重複）
+  const displayReading = isInflected ? inflectedReading : baseReading;
+  const speakWord = displayReading; // 大字旁邊的主要發音鍵，永遠播「目前顯示的形態」
+  // 讀音行：只有「真的是純假名」時才當作讀音顯示（避免原形本身含漢字時，讀音行變成漢字重複顯示一次）；
+  // 且與顯示字相同時（例：あります 本身就是純假名，讀音也是 あります）不重複顯示。
+  const readingIsKana = /^[ぁ-ヿー・]+$/.test(displayReading);
   const hasKanji = /[一-龯㐀-䶿]/.test(displayWord);
-  const showKana = hasKanji || (reading && reading !== displayWord);
+  const showKana = readingIsKana && (hasKanji || displayReading !== displayWord);
   const content = document.getElementById('word-panel-content');
   content.innerHTML =
     '<div class="wp-word-row">' +
       '<span class="wp-kanji">' + displayWord + '</span>' +
-      '<button class="speak-btn" onclick="speak(\'' + speakWord + '\')" aria-label="發音">' +
+      '<button class="speak-btn" onclick="speak(\'' + speakWord.replace(/'/g,"\\'") + '\')" aria-label="發音">' +
         '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
       '</button>' +
     '</div>' +
-    (isInflected ? '<div class="wp-base-form">原形：<span>' + basic + '</span></div>' : '') +
-    (showKana ? '<div class="wp-kana">' + reading + '</div>' : '') +
+    (isInflected
+      ? '<div class="wp-base-form">原形：<span>' + basic + '</span>' +
+          '<button class="speak-btn-sm wp-base-speak" onclick="speak(\'' + baseReading.replace(/'/g,"\\'") + '\')" aria-label="原形發音">' +
+            '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>' +
+          '</button>' +
+        '</div>'
+      : '') +
+    (showKana ? '<div class="wp-kana">' + displayReading + '</div>' : '') +
     (getEntryRomaji(basic, entry) ? '<div class="wp-romaji">' + getEntryRomaji(basic, entry) + '</div>' : '') +
     '<div class="wp-divider"></div>' +
-    '<div class="wp-meaning">' + entry.meaning + '</div>' +
+    '<div class="wp-meaning">' + entry.meaning +
+      (getInflectionSuffixNote(surface, basic) ? '<span class="wp-infl-note">（' + getInflectionSuffixNote(surface, basic) + '）</span>' : '') +
+    '</div>' +
     (isAdded
       ? '<div class="wp-added-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--wg)" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>已在單字卡中</div>' +
         '<button class="wp-remove-btn" onclick="showConfirm(\'確定移除「' + basic + '」？\', () => removeFromVocabCards(\'' + basic + '\'))">' +
           '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6M10 11v6M14 11v6M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>' +
           '移除單字卡' +
         '</button>'
-      : '<button class="wp-add-btn" onclick="addToVocabCards(\'' + basic + '\',{kana:\'' + (/^[ぁ-ヿ]+$/.test(basic) ? basic : (reading||'')).replace(/'/g,"\\'") + '\'' + (isInflected ? _seenFormExtra(basic, surface) : '') + '})">' +
+      : '<button class="wp-add-btn" onclick="addToVocabCards(\'' + basic + '\',{kana:\'' + baseReading.replace(/'/g,"\\'") + '\'' + (isInflected ? _seenFormExtra(basic, surface) : '') + '})">' +
           '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>' +
           '加入單字卡' +
         '</button>');
