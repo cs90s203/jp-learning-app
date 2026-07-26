@@ -1,0 +1,58 @@
+{
+  "date": "2026-07-26",
+  "level": "n5_lite",
+  "title": "わたしの鏡",
+  "text": "わたしの鏡は丸いです。小さいです。軽いです。バッグの中にあります。ピンク色です。好きです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "鏡", "basic_form": "鏡", "reading": "かがみ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "丸い", "basic_form": "丸い", "reading": "まるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "バッグ", "basic_form": "バッグ", "reading": "バッグ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "ピンク色", "basic_form": "ピンク色", "reading": "ピンクいろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "好き", "basic_form": "好き", "reading": "すき", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "鏡": { "meaning": "鏡子" },
+    "丸い": { "meaning": "圓的" },
+    "小さい": { "meaning": "小的" },
+    "軽い": { "meaning": "輕的" },
+    "バッグ": { "meaning": "包包" },
+    "中": { "meaning": "裡面" },
+    "ある": { "meaning": "有；存在" },
+    "ピンク色": { "meaning": "粉紅色" },
+    "好き": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "の": "所有格助詞，表示「...的」",
+    "は": "主題標記，用來標示句子的主題",
+    "に": "表示場所或存在的位置"
+  },
+  "translations": [
+    [ { "text": "我的鏡子是圓的。", "word": "丸い" } ],
+    [ { "text": "很小。", "word": "小さい" } ],
+    [ { "text": "很輕。", "word": "軽い" } ],
+    [ { "text": "在包包裡面。", "word": "ある" } ],
+    [ { "text": "是粉紅色的。", "word": "ピンク色" } ],
+    [ { "text": "我很喜歡。", "word": "好き" } ]
+  ]
+}
