@@ -60,7 +60,13 @@ Read `/Users/mick/Documents/Projects/Language/content/recent_titles.json` — it
 - Any more colloquial/natural word choices? (e.g. うち over いえ, ちょっと over 少し, てる over ている)
 - Fix issues silently and continue.
 
-**③ Write full JSON and save**
+**③ grammar_notes lookup (REQUIRED step — do this for every article, no exceptions)**
+Read `/Users/mick/Documents/Projects/Language/content/JLPT_GRAMMAR_LEVELS.md` (only needs reading once per run, not once per article) and actually do the lookup below before writing the JSON — do not skip straight to an empty array without checking.
+- Map this file's level → JLPT tier: `n5_lite`/`n5` → N5 table; `n4_lite`/`n4` → N4 table; `n3_lite`/`n3` → N3 table; `n2_lite`/`n2` → N2 table; `n1_lite`/`n1` → N1 table.
+- Actually scan the article's sentences against that level's table and pick up to 4 matching grammar points (copy the table's `note` text as-is, don't rewrite it).
+- The *only* case where `grammar_notes: []` is correct output is after you've actually checked and genuinely found no match at this level — an empty array should be the exception, not the default. Do not treat "it's optional" as "skip the lookup."
+
+**④ Write full JSON and save** (must include the `grammar_notes` array from step ③, even if empty)
 
 ---
 
@@ -131,12 +137,7 @@ _lite: grammar one tier below same level, sentences 20–30% shorter, topic is f
 
 5. Topics: different each day, everyday life/culture/current events. All Chinese output in **Traditional Chinese**.
 
-5a. **grammar_notes** (文章解析 feature): Read `/Users/mick/Documents/Projects/Language/content/JLPT_GRAMMAR_LEVELS.md` first. It's a fixed reference table — do NOT regenerate or rephrase it, just look things up.
-   - Map filename → JLPT tier for lookup: `n5_lite`/`n5` → N5 table; `n4_lite`/`n4` → N4 table; `n3_lite`/`n3` → N3 table; `n2_lite`/`n2` → N2 table; `n1_lite`/`n1` → N1 table.
-   - Scan the article's sentences and pick grammar points that appear in **this level's table only** (each level's table already excludes anything covered by a lower level — do not also explain a lower-level point just because it appears in the sentence). Copy the `note` text from the table as-is (Traditional Chinese, already written) — don't rewrite it.
-   - Pick **at most 4** points, prioritizing whichever are most central to the article's sentences. If nothing in the article matches this level's table (e.g. the article only used grammar from lower levels), it's fine to output `"grammar_notes": []` — do not force a match.
-   - `pattern` = the grammar point as written in the table (e.g. `も`, `〜たら（條件）`); `note` = the table's note text.
-   - This field is optional/best-effort — if it's unclear or would take real analysis, just output `[]` rather than guessing. A wrong or missing grammar note is not worth blocking the run over.
+5a. **grammar_notes**: see step ③ under "Per-Article Steps" above — this is a required lookup done per-article, not an optional add-on. `pattern` = the grammar point as written in the table (e.g. `も`, `〜たら（條件）`); `note` = the table's note text, copied as-is.
 
 6. `level` = filename; `difficulty` field is **not needed** (hardcoded in app by level).
 
@@ -219,8 +220,8 @@ Every noun/verb/adjective/adverb/conjunction token's `basic_form` must have a `v
 ```
 Save fixes back to the file (overwrite). Anything you can't auto-fix — note it, don't block the commit.
 
-**4d — grammar_notes (optional, never blocks)**
-Missing field or empty array `[]` is fine — do not add or fix it during validation.
+**4d — grammar_notes (validation-time only — does not re-litigate step ③)**
+This check is only about not blocking the commit: if a file reaches this validation step with the field missing or empty, leave it as-is, don't try to backfill it here. This does **not** mean the lookup in step ③ was optional — that step should already have been done while writing the article. This check exists only so a missed/empty case doesn't hold up the git commit at the end.
 
 ### Step 5 — git commit (local only — do NOT attempt `git push`)
 
