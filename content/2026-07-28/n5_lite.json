@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-28",
+  "level": "n5_lite",
+  "title": "わたしの朝ごはん",
+  "text": "けさ、パンを食べました。ジャムをぬりました。とてもおいしかったです。コーヒーも飲みました。",
+  "tokens": [
+    { "surface_form": "けさ", "basic_form": "けさ", "reading": "けさ", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "パン", "basic_form": "パン", "reading": "パン", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "食べました", "basic_form": "食べる", "reading": "たべました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "ジャム", "basic_form": "ジャム", "reading": "ジャム", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "ぬりました", "basic_form": "ぬる", "reading": "ぬりました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "おいしかったです", "basic_form": "おいしい", "reading": "おいしかったです", "pos": "形容詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "コーヒー", "basic_form": "コーヒー", "reading": "コーヒー", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "飲みました", "basic_form": "飲む", "reading": "のみました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "けさ": { "meaning": "今天早上" },
+    "パン": { "meaning": "麵包" },
+    "食べる": { "meaning": "吃" },
+    "ジャム": { "meaning": "果醬" },
+    "ぬる": { "meaning": "塗抹" },
+    "とても": { "meaning": "非常" },
+    "おいしい": { "meaning": "好吃" },
+    "コーヒー": { "meaning": "咖啡" },
+    "飲む": { "meaning": "喝" }
+  },
+  "particles": {
+    "を": "受詞標記，標示動作的對象",
+    "も": "「也」，會取代が/を，但と、で等助詞會保留"
+  },
+  "translations": [
+    [ { "text": "今天早上吃了麵包。", "word": "食べる" } ],
+    [ { "text": "塗了果醬。", "word": "ぬる" } ],
+    [ { "text": "非常好吃。", "word": "おいしい" } ],
+    [ { "text": "也喝了咖啡。", "word": "飲む" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "動詞ます形", "note": "禮貌體現在式，肯定/否定/過去/過去否定四段變化" },
+    { "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" },
+    { "pattern": "い形容詞（現在/過去/否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" }
+  ]
+}
