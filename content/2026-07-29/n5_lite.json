@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-29",
+  "level": "n5_lite",
+  "title": "わたしの傘",
+  "text": "わたしの傘は青いです。デパートで買いました。雨の日によく使います。とても気に入っています。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "デパート", "basic_form": "デパート", "reading": "デパート", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "買いました", "basic_form": "買う", "reading": "かいました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "雨", "basic_form": "雨", "reading": "あめ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "日", "basic_form": "日", "reading": "ひ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "よく", "basic_form": "よく", "reading": "よく", "pos": "副詞" },
+    { "surface_form": "使います", "basic_form": "使う", "reading": "つかいます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "気に入っています", "basic_form": "気に入る", "reading": "きにいっています", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "傘": { "meaning": "雨傘" },
+    "青い": { "meaning": "藍色的" },
+    "デパート": { "meaning": "百貨公司" },
+    "買う": { "meaning": "買" },
+    "雨": { "meaning": "雨" },
+    "日": { "meaning": "天、日子" },
+    "よく": { "meaning": "常常" },
+    "使う": { "meaning": "使用" },
+    "とても": { "meaning": "非常" },
+    "気に入る": { "meaning": "喜歡、中意" }
+  },
+  "particles": {
+    "の": "所屬或修飾關係，「〜的」",
+    "は": "主題標記，標示句子的主題",
+    "で": "表示動作發生的場所",
+    "に": "表示時間點或情境"
+  },
+  "translations": [
+    [ { "text": "我的傘是藍色的。", "word": "青い" } ],
+    [ { "text": "在百貨公司買的。", "word": "買う" } ],
+    [ { "text": "下雨天常常使用。", "word": "使う" } ],
+    [ { "text": "非常喜歡它。", "word": "気に入る" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "〜で（場所/方法）", "note": "表示動作發生的場所，或使用的方法/工具" },
+    { "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" },
+    { "pattern": "い形容詞（現在/過去/否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" }
+  ]
+}
