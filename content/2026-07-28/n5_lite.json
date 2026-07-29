@@ -15,7 +15,8 @@
     { "surface_form": "ぬりました", "basic_form": "ぬる", "reading": "ぬりました", "pos": "動詞" },
     { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
-    { "surface_form": "おいしかったです", "basic_form": "おいしい", "reading": "おいしかったです", "pos": "形容詞" },
+    { "surface_form": "おいしかった", "basic_form": "おいしい", "reading": "おいしかった", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
     { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
     { "surface_form": "コーヒー", "basic_form": "コーヒー", "reading": "コーヒー", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
@@ -46,6 +47,6 @@
   "grammar_notes": [
     { "pattern": "動詞ます形", "note": "禮貌體現在式，肯定/否定/過去/過去否定四段變化" },
     { "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" },
-    { "pattern": "い形容詞（現在/過去/否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" }
+    { "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" }
   ]
 }
