@@ -1,0 +1,71 @@
+{
+  "date": "2026-07-31",
+  "level": "n5_lite",
+  "title": "わたしの部屋",
+  "text": "わたしの部屋はあまり大きくないです。まどのそばにつくえがあります。上に本とペンがあります。ねこもいます。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "部屋", "basic_form": "部屋", "reading": "へや", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "あまり", "basic_form": "あまり", "reading": "あまり", "pos": "副詞" },
+    { "surface_form": "大きくない", "basic_form": "大きい", "reading": "おおきくない", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "まど", "basic_form": "まど", "reading": "まど", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "そば", "basic_form": "そば", "reading": "そば", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "つくえ", "basic_form": "つくえ", "reading": "つくえ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "上", "basic_form": "上", "reading": "うえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "本", "basic_form": "本", "reading": "ほん", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "ねこ", "basic_form": "ねこ", "reading": "ねこ", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "います", "basic_form": "いる", "reading": "います", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "部屋": { "meaning": "房間" },
+    "あまり": { "meaning": "不太、不怎麼" },
+    "大きい": { "meaning": "大的" },
+    "まど": { "meaning": "窗戶" },
+    "そば": { "meaning": "旁邊" },
+    "つくえ": { "meaning": "桌子" },
+    "ある": { "meaning": "有（無生命）" },
+    "上": { "meaning": "上面" },
+    "本": { "meaning": "書" },
+    "ペン": { "meaning": "筆" },
+    "ねこ": { "meaning": "貓" },
+    "いる": { "meaning": "有、在（有生命）" }
+  },
+  "particles": {
+    "の": "表示所屬關係，「的」",
+    "は": "標示句子的主題",
+    "に": "表示存在的場所",
+    "が": "標示句子的主語",
+    "と": "連接名詞，表示「和」",
+    "も": "「也」，取代原本該用的が/を，但に等助詞會保留"
+  },
+  "translations": [
+    [ { "text": "我的房間不太大。", "word": "部屋" } ],
+    [ { "text": "窗戶旁邊有一張桌子。", "word": "つくえ" } ],
+    [ { "text": "上面有書和筆。", "word": "本" } ],
+    [ { "text": "貓也在。", "word": "ねこ" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" },
+    { "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" }
+  ]
+}
