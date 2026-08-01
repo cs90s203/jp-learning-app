@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-02",
+  "level": "n5_lite",
+  "title": "わたしの自転車",
+  "text": "わたしの自転車は青いです。とても軽いです。かごは大きいです。学校まで近いです。とても便利です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "自転車", "basic_form": "自転車", "reading": "じてんしゃ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "かご", "basic_form": "かご", "reading": "かご", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "大きい", "basic_form": "大きい", "reading": "おおきい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "学校", "basic_form": "学校", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "まで", "basic_form": "まで", "reading": "まで", "pos": "助詞" },
+    { "surface_form": "近い", "basic_form": "近い", "reading": "ちかい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "便利", "basic_form": "便利", "reading": "べんり", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "自転車": { "meaning": "腳踏車" },
+    "青い": { "meaning": "藍色的" },
+    "とても": { "meaning": "非常" },
+    "軽い": { "meaning": "輕的" },
+    "かご": { "meaning": "籃子" },
+    "大きい": { "meaning": "大的" },
+    "学校": { "meaning": "學校" },
+    "近い": { "meaning": "近的" },
+    "便利": { "meaning": "方便" }
+  },
+  "particles": {
+    "は": "主題標記，用來標示句子的主題",
+    "の": "表示所屬或修飾關係，「的」",
+    "まで": "表示範圍或距離的終點，「到〜為止」"
+  },
+  "translations": [
+    [ { "text": "我的腳踏車是藍色的。", "word": "自転車" } ],
+    [ { "text": "非常輕。", "word": "軽い" } ],
+    [ { "text": "籃子很大。", "word": "かご" } ],
+    [ { "text": "到學校很近。", "word": "学校" } ],
+    [ { "text": "非常方便。", "word": "便利" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" }
+  ]
+}
