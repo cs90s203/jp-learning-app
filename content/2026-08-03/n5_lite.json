@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-03",
+  "level": "n5_lite",
+  "title": "わたしの靴",
+  "text": "わたしの靴は黒いです。とても軽いです。とても丈夫です。歩きやすいです。お気に入りです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "黒い", "basic_form": "黒い", "reading": "くろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "丈夫", "basic_form": "丈夫", "reading": "じょうぶ", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "歩きやすい", "basic_form": "歩きやすい", "reading": "あるきやすい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "お気に入り", "basic_form": "お気に入り", "reading": "おきにいり", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "靴": { "meaning": "鞋子" },
+    "黒い": { "meaning": "黑色的" },
+    "とても": { "meaning": "非常" },
+    "軽い": { "meaning": "輕的" },
+    "丈夫": { "meaning": "耐用、堅固" },
+    "歩きやすい": { "meaning": "好走的、方便走路的" },
+    "お気に入り": { "meaning": "喜愛的東西、愛用品" }
+  },
+  "particles": {
+    "は": "主題標記，用來標示句子的主題",
+    "の": "表示所屬或修飾關係，「的」"
+  },
+  "translations": [
+    [ { "text": "我的鞋子是黑色的。", "word": "靴" } ],
+    [ { "text": "非常輕。", "word": "軽い" } ],
+    [ { "text": "非常耐穿。", "word": "丈夫" } ],
+    [ { "text": "很好走。", "word": "歩きやすい" } ],
+    [ { "text": "是我最喜愛的鞋子。", "word": "お気に入り" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" }
+  ]
+}
