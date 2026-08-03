@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-04",
+  "level": "n5_lite",
+  "title": "わたしのぼうし",
+  "text": "わたしのぼうしはあおいです。あたらしいぼうしです。かぞくからのプレゼントです。なつはぼうしがひつようです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ぼうし", "basic_form": "ぼうし", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "あおい", "basic_form": "あおい", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "あたらしい", "basic_form": "あたらしい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "ぼうし", "basic_form": "ぼうし", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "かぞく", "basic_form": "かぞく", "reading": "かぞく", "pos": "名詞" },
+    { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "助詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "プレゼント", "basic_form": "プレゼント", "reading": "プレゼント", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "なつ", "basic_form": "なつ", "reading": "なつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "ぼうし", "basic_form": "ぼうし", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "ひつよう", "basic_form": "ひつよう", "reading": "ひつよう", "pos": "形容動詞語幹" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "ぼうし": { "meaning": "帽子" },
+    "あおい": { "meaning": "藍色的" },
+    "あたらしい": { "meaning": "新的" },
+    "かぞく": { "meaning": "家人、家族" },
+    "プレゼント": { "meaning": "禮物" },
+    "なつ": { "meaning": "夏天" },
+    "ひつよう": { "meaning": "需要、必要" }
+  },
+  "particles": {
+    "の": "所屬或修飾關係，「的」",
+    "は": "主題標記，提出句子的主題",
+    "から": "表示來源，「從〜」",
+    "が": "主語標記，標示句子的主語"
+  },
+  "translations": [
+    [ { "text": "我的帽子是藍色的。", "word": "ぼうし" } ],
+    [ { "text": "是新帽子。", "word": "あたらしい" } ],
+    [ { "text": "是家人給的禮物。", "word": "プレゼント" } ],
+    [ { "text": "夏天需要帽子。", "word": "ひつよう" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" }
+  ]
+}
