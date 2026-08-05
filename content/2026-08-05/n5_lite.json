@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-05",
+  "level": "n5_lite",
+  "title": "わたしの財布",
+  "text": "わたしの財布は茶色です。小さいですが、便利です。中にお金とカードが入っています。とても大切です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "財布", "basic_form": "財布", "reading": "さいふ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "茶色", "basic_form": "茶色", "reading": "ちゃいろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "便利", "basic_form": "便利", "reading": "べんり", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "お金", "basic_form": "お金", "reading": "おかね", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "カード", "basic_form": "カード", "reading": "カード", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "入っています", "basic_form": "入る", "reading": "はいっています", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "財布": { "meaning": "錢包" },
+    "茶色": { "meaning": "棕色" },
+    "小さい": { "meaning": "小的" },
+    "便利": { "meaning": "方便" },
+    "中": { "meaning": "裡面" },
+    "お金": { "meaning": "錢" },
+    "カード": { "meaning": "卡片" },
+    "入る": { "meaning": "放入、裝入" },
+    "とても": { "meaning": "非常" },
+    "大切": { "meaning": "重要、珍貴" }
+  },
+  "particles": {
+    "の": "表示所屬關係，「的」",
+    "は": "主題標記，標示句子的主題",
+    "が": "這裡連接兩個子句，表示「雖然～但是～」",
+    "に": "表示東西存在的位置",
+    "と": "連接名詞，表示「和」"
+  },
+  "translations": [
+    [ { "text": "我的錢包是棕色的。", "word": "財布" } ],
+    [ { "text": "雖然很小，但很方便。", "word": "便利" } ],
+    [ { "text": "裡面裝著錢和卡片。", "word": "入る" } ],
+    [ { "text": "非常重要。", "word": "大切" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" },
+    { "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
