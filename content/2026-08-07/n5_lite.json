@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-07",
+  "level": "n5_lite",
+  "title": "わたしのかばん",
+  "text": "わたしのかばんは黒いです。学校で使います。中にペンとノートがあります。とても軽いです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "黒い", "basic_form": "黒い", "reading": "くろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "学校", "basic_form": "学校", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "使います", "basic_form": "使う", "reading": "つかいます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ぺん", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "ノート", "basic_form": "ノート", "reading": "のーと", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "かばん": { "meaning": "包包／書包" },
+    "黒い": { "meaning": "黑色的" },
+    "学校": { "meaning": "學校" },
+    "使う": { "meaning": "使用" },
+    "中": { "meaning": "裡面" },
+    "ペン": { "meaning": "筆" },
+    "ノート": { "meaning": "筆記本" },
+    "ある": { "meaning": "有、存在" },
+    "とても": { "meaning": "非常" },
+    "軽い": { "meaning": "輕的" }
+  },
+  "particles": {
+    "の": "表示所屬或修飾關係",
+    "は": "主題標記，標示句子的主題",
+    "で": "表示動作發生的場所",
+    "に": "表示存在的位置「在～裡」",
+    "と": "連接名詞表示「和」",
+    "が": "標示句子的主語"
+  },
+  "translations": [
+    [ { "text": "我的包包是黑色的。", "word": "かばん" } ],
+    [ { "text": "在學校使用。", "word": "使う" } ],
+    [ { "text": "裡面有筆和筆記本。", "word": "ある" } ],
+    [ { "text": "非常輕。", "word": "軽い" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "pattern": "〜で（場所/方法）", "note": "表示動作發生的場所，或使用的方法/工具" },
+    { "pattern": "〜と（並列/一起）", "note": "連接名詞表示「和」，或表示「跟誰一起」" }
+  ]
+}
