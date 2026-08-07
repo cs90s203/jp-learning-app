@@ -1,0 +1,72 @@
+{
+  "date": "2026-08-08",
+  "level": "n5_lite",
+  "title": "わたしのノート",
+  "text": "これはわたしのノートです。ノートは青いです。中に絵があります。絵は花の絵です。わたしはこのノートが好きです。",
+  "tokens": [
+    { "surface_form": "これ", "basic_form": "これ", "reading": "これ", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ノート", "basic_form": "ノート", "reading": "ノート", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "ノート", "basic_form": "ノート", "reading": "ノート", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "絵", "basic_form": "絵", "reading": "え", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "絵", "basic_form": "絵", "reading": "え", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "花", "basic_form": "花", "reading": "はな", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "絵", "basic_form": "絵", "reading": "え", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "この", "basic_form": "この", "reading": "この", "pos": "連体詞" },
+    { "surface_form": "ノート", "basic_form": "ノート", "reading": "ノート", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "好き", "basic_form": "好き", "reading": "すき", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "これ": { "meaning": "這個" },
+    "わたし": { "meaning": "我" },
+    "ノート": { "meaning": "筆記本" },
+    "青い": { "meaning": "藍色的" },
+    "中": { "meaning": "裡面" },
+    "絵": { "meaning": "畫" },
+    "ある": { "meaning": "有（存在）" },
+    "花": { "meaning": "花" },
+    "この": { "meaning": "這個（修飾名詞）" },
+    "好き": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "は": "主題標記，用來提示句子的主題",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "に": "表示場所或存在的地點",
+    "が": "標示句子的主語，常用於あります／います句型"
+  },
+  "translations": [
+    [ { "text": "這是我的筆記本。", "word": "ノート" } ],
+    [ { "text": "筆記本是藍色的。", "word": "青い" } ],
+    [ { "text": "裡面有一幅畫。", "word": "絵" } ],
+    [ { "text": "畫是花的畫。", "word": "花" } ],
+    [ { "text": "我喜歡這本筆記本。", "word": "好き" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" },
+    { "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
