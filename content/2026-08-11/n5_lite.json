@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-11",
+  "level": "n5_lite",
+  "title": "わたしのめがね",
+  "text": "わたしのめがねです。黒くて、軽いです。新しいめがねです。とても好きです。毎日、使います。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "めがね", "basic_form": "めがね", "reading": "めがね", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "黒くて", "basic_form": "黒い", "reading": "くろくて", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "めがね", "basic_form": "めがね", "reading": "めがね", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "好き", "basic_form": "好き", "reading": "すき", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎日", "basic_form": "毎日", "reading": "まいにち", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "使います", "basic_form": "使う", "reading": "つかいます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "めがね": { "meaning": "眼鏡" },
+    "黒い": { "meaning": "黑色的" },
+    "軽い": { "meaning": "輕的" },
+    "新しい": { "meaning": "新的" },
+    "とても": { "meaning": "非常" },
+    "好き": { "meaning": "喜歡" },
+    "毎日": { "meaning": "每天" },
+    "使う": { "meaning": "使用" }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞修飾名詞"
+  },
+  "translations": [
+    [ { "text": "這是我的眼鏡。", "word": "めがね" } ],
+    [ { "text": "黑色的，很輕。", "word": "軽い" } ],
+    [ { "text": "是新的眼鏡。", "word": "新しい" } ],
+    [ { "text": "非常喜歡。", "word": "好き" } ],
+    [ { "text": "每天都會使用。", "word": "使う" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" },
+    { "pattern": "動詞ます形", "note": "禮貌體現在式，肯定/否定/過去/過去否定四段變化" }
+  ]
+}
