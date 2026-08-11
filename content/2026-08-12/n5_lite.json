@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-12",
+  "level": "n5_lite",
+  "title": "わたしの帽子",
+  "text": "わたしの帽子は青いです。夏に帽子をかぶります。公園でも帽子が好きです。帽子はとても大切です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "夏", "basic_form": "夏", "reading": "なつ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "かぶります", "basic_form": "かぶる", "reading": "かぶります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "公園", "basic_form": "公園", "reading": "こうえん", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "好き", "basic_form": "好き", "reading": "すき", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "帽子": { "meaning": "帽子" },
+    "青い": { "meaning": "藍色的" },
+    "夏": { "meaning": "夏天" },
+    "かぶる": { "meaning": "戴、穿戴（帽子等）" },
+    "公園": { "meaning": "公園" },
+    "好き": { "meaning": "喜歡" },
+    "とても": { "meaning": "非常" },
+    "大切": { "meaning": "重要、珍惜" }
+  },
+  "particles": {
+    "の": "所屬助詞，表示「的」",
+    "は": "主題標記，提示句子的主題",
+    "に": "表示時間點，「在〜的時候」",
+    "を": "受詞標記，標示動作的對象",
+    "で": "表示動作發生的場所",
+    "も": "「也」，表示同類事物",
+    "が": "主語標記，標示喜好、存在的主體"
+  },
+  "translations": [
+    [ { "text": "我的帽子是藍色的。", "word": "帽子" } ],
+    [ { "text": "夏天我會戴帽子。", "word": "かぶる" } ],
+    [ { "text": "在公園也喜歡戴帽子。", "word": "好き" } ],
+    [ { "text": "帽子非常重要。", "word": "大切" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "〜を（受詞標記）", "note": "標示動作的對象" },
+    { "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" }
+  ]
+}
