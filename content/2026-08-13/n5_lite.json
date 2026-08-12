@@ -1,0 +1,60 @@
+{
+  "date": "2026-08-13",
+  "level": "n5_lite",
+  "title": "わたしの靴",
+  "text": "わたしの靴は白いです。とても軽くて、歩きやすいです。毎日この靴を履いて学校へ行きます。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "白い", "basic_form": "白い", "reading": "しろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "軽くて", "basic_form": "軽い", "reading": "かるくて", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "歩きやすい", "basic_form": "歩きやすい", "reading": "あるきやすい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎日", "basic_form": "毎日", "reading": "まいにち", "pos": "副詞" },
+    { "surface_form": "この", "basic_form": "この", "reading": "この", "pos": "連体詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "履いて", "basic_form": "履く", "reading": "はいて", "pos": "動詞" },
+    { "surface_form": "学校", "basic_form": "学校", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "へ", "basic_form": "へ", "reading": "へ", "pos": "助詞" },
+    { "surface_form": "行きます", "basic_form": "行く", "reading": "いきます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "靴": { "meaning": "鞋子" },
+    "白い": { "meaning": "白色的" },
+    "とても": { "meaning": "非常、很" },
+    "軽い": { "meaning": "輕的" },
+    "歩きやすい": { "meaning": "好走、容易走" },
+    "毎日": { "meaning": "每天" },
+    "履く": { "meaning": "穿（鞋、褲）" },
+    "学校": { "meaning": "學校" },
+    "行く": { "meaning": "去" }
+  },
+  "particles": {
+    "の": "所屬助詞，表示「的」",
+    "は": "主題標記，提示句子的主題",
+    "を": "受詞標記，標示動作的對象",
+    "へ": "方向助詞，表示移動的方向",
+    "です": "禮貌斷定助動詞，「是」"
+  },
+  "translations": [
+    [ { "text": "我的鞋子是白色的。", "word": "白い" } ],
+    [ { "text": "非常輕，很好走。", "word": "歩きやすい" } ],
+    [ { "text": "每天穿這雙鞋去學校。", "word": "履く" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "〜を（受詞標記）", "note": "標示動作的對象" },
+    { "pattern": "〜へ（方向）", "note": "表示移動的方向（口語常與に互換）" },
+    { "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" }
+  ]
+}
