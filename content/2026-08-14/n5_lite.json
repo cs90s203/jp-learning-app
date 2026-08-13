@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-14",
+  "level": "n5_lite",
+  "title": "わたしの傘",
+  "text": "わたしの傘は青いです。傘は長いです。傘は軽いです。玄関に傘があります。友達も傘を持っています。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "長い", "basic_form": "長い", "reading": "ながい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "玄関", "basic_form": "玄関", "reading": "げんかん", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "友達", "basic_form": "友達", "reading": "ともだち", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "持っています", "basic_form": "持つ", "reading": "もっています", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "傘": { "meaning": "雨傘" },
+    "青い": { "meaning": "藍色的" },
+    "長い": { "meaning": "長的" },
+    "軽い": { "meaning": "輕的" },
+    "玄関": { "meaning": "玄關" },
+    "ある": { "meaning": "有（存在）" },
+    "友達": { "meaning": "朋友" },
+    "持つ": { "meaning": "拿、持有" }
+  },
+  "particles": {
+    "の": "所有格助詞，表示「的」",
+    "は": "主題助詞，標示句子的主題",
+    "に": "表示存在的地點",
+    "が": "主格助詞，標示主語",
+    "も": "「也」的意思",
+    "を": "受詞標記，標示動作的對象"
+  },
+  "translations": [
+    [ { "text": "我的傘是藍色的。", "word": "傘" } ],
+    [ { "text": "傘很長。", "word": "長い" } ],
+    [ { "text": "傘很輕。", "word": "軽い" } ],
+    [ { "text": "玄關有傘。", "word": "ある" } ],
+    [ { "text": "朋友也拿著傘。", "word": "持つ" } ]
+  ],
+  "grammar_notes": [
+    { "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" },
+    { "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" }
+  ]
+}
