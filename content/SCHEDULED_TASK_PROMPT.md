@@ -64,6 +64,7 @@ Read `/Users/mick/Documents/Projects/Language/content/recent_titles.json` — it
 Read `/Users/mick/Documents/Projects/Language/content/JLPT_GRAMMAR_LEVELS.md` (only needs reading once per run, not once per article) and actually do the lookup below before writing the JSON — do not skip straight to an empty array without checking.
 - Map this file's level → JLPT tier: `n5_lite`/`n5` → N5 table; `n4_lite`/`n4` → N4 table; `n3_lite`/`n3` → N3 table; `n2_lite`/`n2` → N2 table; `n1_lite`/`n1` → N1 table.
 - Actually scan the article's sentences against that level's table and pick up to 4 matching grammar points (copy the table's `note` text as-is, don't rewrite it).
+- For each match, record which sentence it came from as `sentence` (0-based index into `translations` — sentence 1 = 0, sentence 2 = 1, etc.). The app displays the note directly under that sentence, so a wrong index shows the note under the wrong sentence — double-check it before saving.
 - The *only* case where `grammar_notes: []` is correct output is after you've actually checked and genuinely found no match at this level — an empty array should be the exception, not the default. Do not treat "it's optional" as "skip the lookup."
 
 **④ Write full JSON and save** (must include the `grammar_notes` array from step ③, even if empty)
@@ -114,10 +115,12 @@ _lite: grammar one tier below same level, sentences 20–30% shorter, topic is f
     [ { "text": "First part,", "word": "wordA" }, { "text": "second part.", "word": "wordB" } ]
   ],
   "grammar_notes": [
-    { "pattern": "も", "note": "「也」，取代原本該用的が/を，但と、で等助詞會保留" }
+    { "sentence": 0, "pattern": "も", "note": "「也」，取代原本該用的が/を，但と、で等助詞會保留" }
   ]
 }
 ```
+
+`sentence` = which sentence this point belongs to, as a 0-based index into `translations` (sentence 1 in the article = index 0, sentence 2 = index 1, etc.). The app displays each note directly under its matching sentence, so this index must exactly match the sentence the pattern actually appears in — do not guess or default to 0.
 
 ---
 
@@ -138,7 +141,7 @@ _lite: grammar one tier below same level, sentences 20–30% shorter, topic is f
 
 5. Topics: different each day, everyday life/culture/current events. All Chinese output in **Traditional Chinese**.
 
-5a. **grammar_notes**: see step ③ under "Per-Article Steps" above — this is a required lookup done per-article, not an optional add-on. `pattern` = the grammar point as written in the table (e.g. `も`, `〜たら（條件）`); `note` = the table's note text, copied as-is.
+5a. **grammar_notes**: see step ③ under "Per-Article Steps" above — this is a required lookup done per-article, not an optional add-on. `pattern` = the grammar point as written in the table (e.g. `も`, `〜たら（條件）`); `note` = the table's note text, copied as-is; `sentence` = 0-based index of which sentence it belongs to (must match `translations` order).
 
 6. `level` = filename; `difficulty` field is **not needed** (hardcoded in app by level).
 

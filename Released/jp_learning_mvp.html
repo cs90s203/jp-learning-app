@@ -510,6 +510,9 @@
   .article-text ruby rt { font-size: 10px; color: var(--wt3); }
   .cn-note { font-size: 12px; color: var(--wt2); display: block; margin: -4px 0 6px 20px; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
   .cn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
+  .gn-note { font-size: 12px; color: var(--wa); font-weight: 500; display: block; margin: -2px 0 6px 20px; max-height: 40px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
+  .gn-note.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
+  .gn-note .gn-pattern { font-weight: 700; }
   /* 書寫練習行：每句下方一條滿版底線輸入框 */
   .write-line { display: block; margin: 2px 16px 10px 20px; max-height: 44px; overflow: hidden; transition: opacity 0.2s, max-height 0.2s, margin 0.2s; }
   .write-line.hidden { opacity: 0; max-height: 0; margin: 0; pointer-events: none; }
@@ -1841,6 +1844,7 @@
       <div class="sec" style="padding-top:5px">
 
         <div class="cn-toggle-row" id="cn-toggle-row">
+          <button class="cn-btn" id="gn-toggle" onclick="toggleGrammarInline()" style="display:none">簡析</button>
           <button class="cn-btn" id="add-all-btn" onclick="addAllSelectedWords()">＋全部</button>
           <button class="cn-btn" id="cn-toggle" onclick="toggleCN()">中文</button>
           <button class="cn-btn" id="write-toggle">書寫</button>
@@ -2215,7 +2219,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em;font-family:'Silkscreen',monospace">
-          v1.11.1
+          v1.12.0
         </div>
 
       </div>
@@ -3436,6 +3440,18 @@ function toggleCN() {
   setTimeout(ensureArticleScrollable, 250);
 }
 
+// 文章簡析 toggle（逐句對照，跟中文備注同樣的開關邏輯）
+function toggleGrammarInline() {
+  const t = document.getElementById('gn-toggle');
+  t.classList.toggle('active');
+  const active = t.classList.contains('active');
+  localStorage.setItem('gnToggle', active ? '1' : '0');
+  document.querySelectorAll('.gn-note').forEach(n => {
+    n.classList.toggle('hidden', !active);
+  });
+  setTimeout(ensureArticleScrollable, 250);
+}
+
 // ===== 書寫練習 =====
 function _loadWriteText() { try { return JSON.parse(localStorage.getItem('writeText_v1') || '{}'); } catch (e) { return {}; } }
 function _saveWriteText(obj) { try { localStorage.setItem('writeText_v1', JSON.stringify(obj)); } catch (e) {} }
@@ -4015,12 +4031,30 @@ async function loadContentForDate(date, level) {
 function renderGrammarNotes(notes) {
   const card = document.getElementById('grammar-notes-card');
   const body = document.getElementById('grammar-notes-body');
-  if (!card || !body) return;
+  const gnBtn = document.getElementById('gn-toggle');
+  SENTENCE_GRAMMAR_NOTES = {};
   if (!Array.isArray(notes) || notes.length === 0) {
-    card.style.display = 'none';
-    body.innerHTML = '';
+    if (card) { card.style.display = 'none'; }
+    if (body) body.innerHTML = '';
+    if (gnBtn) gnBtn.style.display = 'none';
     return;
   }
+  // 新格式：至少一筆有 sentence 索引 → 逐句對照，用「簡析」按鈕顯示，舊的整篇卡片不用
+  const hasSentenceIndex = notes.some(n => typeof n.sentence === 'number');
+  if (hasSentenceIndex) {
+    notes.forEach(n => {
+      if (typeof n.sentence !== 'number') return;
+      if (!SENTENCE_GRAMMAR_NOTES[n.sentence]) SENTENCE_GRAMMAR_NOTES[n.sentence] = [];
+      SENTENCE_GRAMMAR_NOTES[n.sentence].push({ pattern: n.pattern, note: n.note });
+    });
+    if (card) card.style.display = 'none';
+    if (body) body.innerHTML = '';
+    if (gnBtn) gnBtn.style.display = '';
+    return;
+  }
+  // 舊格式（無 sentence 索引，例如 07/25~07/30 已生成的舊文章）：退回整篇卡片顯示
+  if (gnBtn) gnBtn.style.display = 'none';
+  if (!card || !body) return;
   body.innerHTML = notes.map(n =>
     '<div class="grammar-note-item">' +
       '<div class="grammar-note-pattern">' + n.pattern + '</div>' +
@@ -4249,6 +4283,7 @@ function _updateScrollDebug() {
 }
 
 let articleRendered = false;
+let SENTENCE_GRAMMAR_NOTES = {}; // { [sentenceIndex]: [{pattern, note}, ...] } — built from grammar_notes items that carry a `sentence` field
 
 // 每句的中文翻譯（Demo 預設內容），拆成片段，每段標記對應的日文詞（basic_form），不對應任何詞則 word 為 null
 let SENTENCE_TRANSLATIONS = [
@@ -4367,6 +4402,12 @@ function renderArticle(tokens) {
         const text = typeof translation === 'string' ? translation : translation.map(s => s.text).join('');
         html += '<span class="cn-note" id="cn-note-' + sentenceIndex + '">' + text + '</span>';
       }
+      const gnotes = SENTENCE_GRAMMAR_NOTES[sentenceIndex];
+      if (gnotes && gnotes.length) {
+        html += '<span class="gn-note hidden" id="gn-note-' + sentenceIndex + '">' + gnotes.map(n =>
+          '<span class="gn-pattern">' + n.pattern + '</span>　' + n.note
+        ).join('　·　') + '</span>';
+      }
       sentenceIndex++;
       if (i < tokens.length - 1) {
         html += '<span class="sentence-group" data-sentence="' + sentenceIndex + '">';
@@ -4431,6 +4472,13 @@ function renderArticle(tokens) {
   if (cnBtn) cnBtn.classList.toggle('active', cnActive);
   const cnHidden = !cnActive;
   container.querySelectorAll('.cn-note').forEach(n => n.classList.toggle('hidden', cnHidden));
+
+  // 套用目前的文章簡析顯示狀態
+  const gnSaved = localStorage.getItem('gnToggle');
+  const gnActive = gnSaved === '1';
+  const gnBtn = document.getElementById('gn-toggle');
+  if (gnBtn) gnBtn.classList.toggle('active', gnActive);
+  container.querySelectorAll('.gn-note').forEach(n => n.classList.toggle('hidden', !gnActive));
 
   // 套用書寫練習狀態：開關、填入已存文字、綁定即時儲存
   const writeActive = localStorage.getItem('writeToggle') === '1';
