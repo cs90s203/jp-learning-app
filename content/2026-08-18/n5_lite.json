@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-18",
+  "level": "n5_lite",
+  "title": "わたしの自転車",
+  "text": "わたしの自転車は赤いです。自転車は新しいです。自転車は玄関にあります。とても便利です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "自転車", "basic_form": "自転車", "reading": "じてんしゃ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "赤い", "basic_form": "赤い", "reading": "あかい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "自転車", "basic_form": "自転車", "reading": "じてんしゃ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "自転車", "basic_form": "自転車", "reading": "じてんしゃ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "玄関", "basic_form": "玄関", "reading": "げんかん", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "便利", "basic_form": "便利", "reading": "べんり", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "自転車": { "meaning": "腳踏車" },
+    "赤い": { "meaning": "紅色的" },
+    "新しい": { "meaning": "新的" },
+    "玄関": { "meaning": "玄關" },
+    "ある": { "meaning": "有、在（無生命物存在）" },
+    "とても": { "meaning": "非常" },
+    "便利": { "meaning": "方便" }
+  },
+  "particles": {
+    "の": "表示所屬關係，「的」",
+    "は": "主題標記",
+    "に": "表示存在的地點",
+    "です": "禮貌斷定助動詞，「是」"
+  },
+  "translations": [
+    [ { "text": "我的腳踏車是紅色的。", "word": "自転車" } ],
+    [ { "text": "腳踏車是新的。", "word": "新しい" } ],
+    [ { "text": "腳踏車在玄關。", "word": "玄関" } ],
+    [ { "text": "非常方便。", "word": "便利" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 2, "pattern": "〜に（時間/対象/到達点）", "note": "表示時間點、動作對象、或到達的地點" }
+  ]
+}
