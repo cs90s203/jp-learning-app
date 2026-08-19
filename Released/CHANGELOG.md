@@ -598,6 +598,12 @@ Tutorial：
 
 ---
 
+## v1.12.2 — 2026-08-20
+
+修正 Google TTS 失敗時完全靜音沒有 fallback 的問題：fetch 失敗、回應無 audioContent、音檔播放出錯這三種情況，現在都會改用瀏覽器內建 speechSynthesis 唸出來，不會再靜音無提示；為之後設定 TTS 每日配額上限鋪路
+
+---
+
 ## v1.12.1 — 2026-08-19
 
 頁面 title/meta 標籤改為「Bird Hide Learning｜靜靜地，學會日語」，跟首頁 landing page 品牌一致；補上 og:/twitter: 社群分享預覽標籤

@@ -2227,7 +2227,7 @@
 
         <!-- 版本號 -->
         <div style="text-align:center;padding:24px 0 8px;color:var(--wt3);font-size:11px;letter-spacing:0.05em;font-family:'Silkscreen',monospace">
-          v1.12.1
+          v1.12.2
         </div>
 
       </div>
@@ -4914,6 +4914,18 @@ function speakJa(text, rate, onend, forceSystem) {
   const myReq = ++_googleReqId;
 
   const opt = TTS_VOICE_OPTIONS.find(o => o.key === _ttsVoiceKey) || TTS_VOICE_OPTIONS[0];
+
+  // Google TTS 失敗時的備援：改用瀏覽器內建、不受配額限制的 speechSynthesis
+  function speakSystem() {
+    var u = new SpeechSynthesisUtterance(text);
+    var v = getJpVoice();
+    if (v) u.voice = v;
+    u.lang = 'ja-JP';
+    u.rate = rate;
+    u.onend = onend || null;
+    window.speechSynthesis.speak(u);
+  }
+
   // forceSystem：逐句跟讀強制走系統語音（Web Speech），避開 Google 非同步造成的時序問題
   if (opt.googleName && !forceSystem) {
     _googleAbort = new AbortController();
@@ -4928,27 +4940,21 @@ function speakJa(text, rate, onend, forceSystem) {
       })
     }).then(function(r){ return r.json(); }).then(function(data) {
       if (myReq !== _googleReqId) return;
-      if (!data.audioContent) { if (onend) onend(); return; }
+      if (!data.audioContent) { speakSystem(); return; }
       var audio = _getTtsAudioEl();     // 重用已解鎖的元素，避開第 2 句起的 NotAllowedError
       audio.src = 'data:audio/mp3;base64,' + data.audioContent;
       _googleAudio = audio;
       audio.onended = function() { if (myReq !== _googleReqId) return; _googleAudio = null; if (onend) onend(); };
-      audio.onerror = function() { if (myReq !== _googleReqId) return; _googleAudio = null; if (onend) onend(); };
+      audio.onerror = function() { if (myReq !== _googleReqId) return; _googleAudio = null; speakSystem(); };
       var _pp = audio.play();
       if (_pp && _pp.catch) _pp.catch(function(){});
     }).catch(function(err) {
       if (err && err.name === 'AbortError') return;
       if (myReq !== _googleReqId) return;
-      if (onend) onend();
+      speakSystem();
     });
   } else {
-    var u = new SpeechSynthesisUtterance(text);
-    var v = getJpVoice();
-    if (v) u.voice = v;
-    u.lang = 'ja-JP';
-    u.rate = rate;
-    u.onend = onend || null;
-    window.speechSynthesis.speak(u);
+    speakSystem();
   }
 }
 
