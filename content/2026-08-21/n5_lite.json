@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-21",
+  "level": "n5_lite",
+  "title": "わたしの帽子",
+  "text": "わたしの帽子は青いです。夏に公園でかぶります。母からのプレゼントです。とても大切です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "夏", "basic_form": "夏", "reading": "なつ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "公園", "basic_form": "公園", "reading": "こうえん", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "かぶります", "basic_form": "かぶる", "reading": "かぶります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "母", "basic_form": "母", "reading": "はは", "pos": "名詞" },
+    { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "助詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "プレゼント", "basic_form": "プレゼント", "reading": "プレゼント", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "帽子": { "meaning": "帽子" },
+    "青い": { "meaning": "藍色的" },
+    "夏": { "meaning": "夏天" },
+    "公園": { "meaning": "公園" },
+    "かぶる": { "meaning": "戴（帽子）" },
+    "母": { "meaning": "媽媽" },
+    "プレゼント": { "meaning": "禮物" },
+    "とても": { "meaning": "非常" },
+    "大切": { "meaning": "珍貴、重要" }
+  },
+  "particles": {
+    "の": "所屬/修飾標記",
+    "は": "主題標記",
+    "に": "表示時間點",
+    "で": "表示場所",
+    "から": "表示來源、起點"
+  },
+  "translations": [
+    [ { "text": "我的帽子是藍色的。", "word": "青い" } ],
+    [ { "text": "夏天在公園戴。", "word": "かぶる" } ],
+    [ { "text": "是媽媽送的禮物。", "word": "プレゼント" } ],
+    [ { "text": "非常珍貴。", "word": "大切" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" },
+    { "sentence": 1, "pattern": "〜で（場所/方法）", "note": "表示動作發生的場所，或使用的方法/工具" },
+    { "sentence": 2, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" }
+  ]
+}
