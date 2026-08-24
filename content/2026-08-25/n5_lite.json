@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-25",
+  "level": "n5_lite",
+  "title": "わたしの靴",
+  "text": "これはわたしの靴です。白くて軽いです。新しい靴です。毎日はきます。とても好きです。",
+  "tokens": [
+    { "surface_form": "これ", "basic_form": "これ", "reading": "これ", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "白くて", "basic_form": "白い", "reading": "しろくて", "pos": "形容詞" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎日", "basic_form": "毎日", "reading": "まいにち", "pos": "名詞" },
+    { "surface_form": "はきます", "basic_form": "履く", "reading": "はきます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "好き", "basic_form": "好き", "reading": "すき", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "靴": { "meaning": "鞋子" },
+    "白い": { "meaning": "白色的" },
+    "軽い": { "meaning": "輕的" },
+    "新しい": { "meaning": "新的" },
+    "毎日": { "meaning": "每天" },
+    "履く": { "meaning": "穿（鞋、褲）" },
+    "とても": { "meaning": "非常" },
+    "好き": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "は": "主題標記，用來標示句子談論的主題",
+    "の": "表示所屬關係，「的」"
+  },
+  "translations": [
+    [ { "text": "這是我的鞋子。", "word": "靴" } ],
+    [ { "text": "又白又輕。", "word": "軽い" } ],
+    [ { "text": "是新鞋子。", "word": "新しい" } ],
+    [ { "text": "我每天穿。", "word": "履く" } ],
+    [ { "text": "我很喜歡。", "word": "好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "sentence": 3, "pattern": "動詞ます形", "note": "禮貌體現在式，肯定/否定/過去/過去否定四段變化" }
+  ]
+}
