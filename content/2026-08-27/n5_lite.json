@@ -1,0 +1,71 @@
+{
+  "date": "2026-08-27",
+  "level": "n5_lite",
+  "title": "わたしの時計",
+  "text": "わたしの時計は白いです。とても軽いです。毎朝六時に鳴ります。学校へ行くとき、いつもつけます。大切な時計です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "白い", "basic_form": "白い", "reading": "しろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎朝", "basic_form": "毎朝", "reading": "まいあさ", "pos": "名詞" },
+    { "surface_form": "六時", "basic_form": "六時", "reading": "ろくじ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "鳴ります", "basic_form": "鳴る", "reading": "なります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "学校", "basic_form": "学校", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "へ", "basic_form": "へ", "reading": "へ", "pos": "助詞" },
+    { "surface_form": "行く", "basic_form": "行く", "reading": "いく", "pos": "動詞" },
+    { "surface_form": "とき", "basic_form": "とき", "reading": "とき", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "いつも", "basic_form": "いつも", "reading": "いつも", "pos": "副詞" },
+    { "surface_form": "つけます", "basic_form": "つける", "reading": "つけます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "大切な", "basic_form": "大切", "reading": "たいせつな", "pos": "形容動詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "時計": { "meaning": "時鐘、手錶" },
+    "白い": { "meaning": "白色的" },
+    "とても": { "meaning": "非常" },
+    "軽い": { "meaning": "輕的" },
+    "毎朝": { "meaning": "每天早上" },
+    "六時": { "meaning": "六點" },
+    "鳴る": { "meaning": "響、鳴叫" },
+    "学校": { "meaning": "學校" },
+    "行く": { "meaning": "去" },
+    "とき": { "meaning": "時候" },
+    "いつも": { "meaning": "總是" },
+    "つける": { "meaning": "戴上、繫上" },
+    "大切": { "meaning": "重要、珍惜" }
+  },
+  "particles": {
+    "の": "表示所屬關係，「的」",
+    "は": "提示句子的主題",
+    "に": "表示時間點",
+    "へ": "表示移動的方向"
+  },
+  "translations": [
+    [ { "text": "我的時鐘是白色的。", "word": "時計" } ],
+    [ { "text": "非常輕。", "word": "軽い" } ],
+    [ { "text": "每天早上六點會響。", "word": "鳴る" } ],
+    [ { "text": "去學校的時候，總是會戴上它。", "word": "つける" } ],
+    [ { "text": "是很重要的時鐘。", "word": "大切" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" },
+    { "sentence": 3, "pattern": "〜へ（方向）", "note": "表示移動的方向（口語常與に互換）" },
+    { "sentence": 4, "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
