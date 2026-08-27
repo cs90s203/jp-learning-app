@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-24",
+  "level": "n5",
+  "title": "動物園でパンダを見た",
+  "text": "今日、動物園へ行きました。パンダを見ました。パンダは笹を食べていました。とてもかわいかったです。売店でパンダのぬいぐるみを買いました。",
+  "tokens": [
+    { "surface_form": "今日", "basic_form": "今日", "reading": "きょう", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "動物園", "basic_form": "動物園", "reading": "どうぶつえん", "pos": "名詞" },
+    { "surface_form": "へ", "basic_form": "へ", "reading": "へ", "pos": "助詞" },
+    { "surface_form": "行きました", "basic_form": "行く", "reading": "いきました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "パンダ", "basic_form": "パンダ", "reading": "パンダ", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "見ました", "basic_form": "見る", "reading": "みました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "パンダ", "basic_form": "パンダ", "reading": "パンダ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "笹", "basic_form": "笹", "reading": "ささ", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "食べていました", "basic_form": "食べる", "reading": "たべていました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "かわいかった", "basic_form": "かわいい", "reading": "かわいかった", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "売店", "basic_form": "売店", "reading": "ばいてん", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "パンダ", "basic_form": "パンダ", "reading": "パンダ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ぬいぐるみ", "basic_form": "ぬいぐるみ", "reading": "ぬいぐるみ", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "買いました", "basic_form": "買う", "reading": "かいました", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "今日": { "meaning": "今天" },
+    "動物園": { "meaning": "動物園" },
+    "行く": { "meaning": "去" },
+    "パンダ": { "meaning": "貓熊" },
+    "見る": { "meaning": "看" },
+    "笹": { "meaning": "竹葉" },
+    "食べる": { "meaning": "吃" },
+    "とても": { "meaning": "非常" },
+    "かわいい": { "meaning": "可愛" },
+    "売店": { "meaning": "販賣部" },
+    "ぬいぐるみ": { "meaning": "絨毛娃娃" },
+    "買う": { "meaning": "買" }
+  },
+  "particles": {
+    "へ": "表示移動的方向（口語常與に互換）",
+    "を": "受詞標記，標示動作的對象",
+    "で": "表示動作發生的場所"
+  },
+  "translations": [
+    [ { "text": "今天去了動物園。", "word": "動物園" } ],
+    [ { "text": "看到了貓熊。", "word": "パンダ" } ],
+    [ { "text": "貓熊在吃竹葉。", "word": "笹" } ],
+    [ { "text": "非常可愛。", "word": "かわいかった" } ],
+    [ { "text": "在販賣部買了貓熊絨毛娃娃。", "word": "ぬいぐるみ" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 2, "pattern": "〜ている（進行/狀態）", "note": "表示動作正在進行，或動作結果的持續狀態" }
+  ]
+}
