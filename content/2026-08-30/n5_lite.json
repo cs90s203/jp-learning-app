@@ -1,0 +1,278 @@
+{
+  "date": "2026-08-30",
+  "level": "n5_lite",
+  "title": "わたしのカメラ",
+  "text": "わたしのカメラは黒いです。誕生日にもらいました。とても軽いです。旅行によく使います。写真を撮るのが好きです。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "カメラ",
+      "basic_form": "カメラ",
+      "reading": "カメラ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "黒い",
+      "basic_form": "黒い",
+      "reading": "くろい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "誕生日",
+      "basic_form": "誕生日",
+      "reading": "たんじょうび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もらいました",
+      "basic_form": "もらう",
+      "reading": "もらいました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "軽い",
+      "basic_form": "軽い",
+      "reading": "かるい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "旅行",
+      "basic_form": "旅行",
+      "reading": "りょこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よく",
+      "basic_form": "よく",
+      "reading": "よく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "使います",
+      "basic_form": "使う",
+      "reading": "つかいます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "撮る",
+      "basic_form": "撮る",
+      "reading": "とる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "好き",
+      "basic_form": "好き",
+      "reading": "すき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我"
+    },
+    "カメラ": {
+      "meaning": "相機"
+    },
+    "黒い": {
+      "meaning": "黑色的"
+    },
+    "誕生日": {
+      "meaning": "生日"
+    },
+    "もらう": {
+      "meaning": "收到"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "軽い": {
+      "meaning": "輕的"
+    },
+    "旅行": {
+      "meaning": "旅行"
+    },
+    "使う": {
+      "meaning": "使用"
+    },
+    "写真": {
+      "meaning": "照片"
+    },
+    "撮る": {
+      "meaning": "拍攝"
+    },
+    "好き": {
+      "meaning": "喜歡"
+    },
+    "よく": {
+      "meaning": "常常"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係，「的」",
+    "は": "主題標記，用來提出句子的主題",
+    "に": "表示時間點或動作對象",
+    "を": "標示動作的對象",
+    "が": "標示句子的主語，帶出新資訊"
+  },
+  "translations": [
+    [
+      {
+        "text": "我的相機是黑色的。",
+        "word": "カメラ"
+      }
+    ],
+    [
+      {
+        "text": "是生日時收到的。",
+        "word": "もらう"
+      }
+    ],
+    [
+      {
+        "text": "非常輕。",
+        "word": "軽い"
+      }
+    ],
+    [
+      {
+        "text": "旅行時常常使用。",
+        "word": "使う"
+      }
+    ],
+    [
+      {
+        "text": "喜歡拍照。",
+        "word": "撮る"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜は〜です",
+      "note": "「是」的肯定/否定敘述句"
+    },
+    {
+      "sentence": 2,
+      "pattern": "い形容詞（現在/否定/過去/過去否定）",
+      "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった"
+    },
+    {
+      "sentence": 3,
+      "pattern": "〜に（時間/対象/到達点）",
+      "note": "表示時間點、動作對象、或到達的地點"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜が（主語標記）",
+      "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）"
+    }
+  ]
+}
