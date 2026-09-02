@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-01",
+  "level": "n5_lite",
+  "title": "わたしの自転車",
+  "text": "わたしの自転車は青いです。新しい自転車です。前にかごがあります。わたしはこの自転車が大好きです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "自転車", "basic_form": "自転車", "reading": "じてんしゃ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "自転車", "basic_form": "自転車", "reading": "じてんしゃ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "前", "basic_form": "前", "reading": "まえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "かご", "basic_form": "かご", "reading": "かご", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "この", "basic_form": "この", "reading": "この", "pos": "連体詞" },
+    { "surface_form": "自転車", "basic_form": "自転車", "reading": "じてんしゃ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "大好き", "basic_form": "大好き", "reading": "だいすき", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "自転車": { "meaning": "腳踏車" },
+    "青い": { "meaning": "藍色的" },
+    "新しい": { "meaning": "新的" },
+    "前": { "meaning": "前面" },
+    "かご": { "meaning": "籃子" },
+    "ある": { "meaning": "有、存在" },
+    "この": { "meaning": "這個" },
+    "大好き": { "meaning": "非常喜歡" }
+  },
+  "particles": {
+    "の": "表示所屬關係，「的」",
+    "は": "提示句子的主題",
+    "に": "表示存在的位置",
+    "が": "標示句子的主語"
+  },
+  "translations": [
+    [ { "text": "我的腳踏車是藍色的。", "word": "青い" } ],
+    [ { "text": "是一台新的腳踏車。", "word": "新しい" } ],
+    [ { "text": "前面有一個籃子。", "word": "ある" } ],
+    [ { "text": "我非常喜歡這台腳踏車。", "word": "大好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 2, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" },
+    { "sentence": 3, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" }
+  ]
+}

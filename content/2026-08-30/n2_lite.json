@@ -1,0 +1,906 @@
+{
+  "date": "2026-08-30",
+  "level": "n2_lite",
+  "title": "電子チケットの普及",
+  "text": "近年、コンサートやスポーツ観戦で電子チケットが急速に普及している。紙のチケットと違って紛失の心配がなく、スマホ一つで入場できる手軽さが支持を集めている。転売防止のために、購入者本人の顔写真や身分証と紐づけるシステムを導入する会場も増えてきた。一方で、スマホの電池切れや通信トラブルが起きた際に入場できなくなるという新たな不安の声も上がっている。主催者側は、紙のチケットとの併用や予備の入場手段を用意して、利用者が安心して使える仕組みづくりを進めている。今後技術の進化に伴って、電子チケットは多様なイベントで活用されていくと見られている。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "コンサート",
+      "basic_form": "コンサート",
+      "reading": "コンサート",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "スポーツ観戦",
+      "basic_form": "スポーツ観戦",
+      "reading": "スポーツかんせん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "電子チケット",
+      "basic_form": "電子チケット",
+      "reading": "でんしチケット",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急速に",
+      "basic_form": "急速だ",
+      "reading": "きゅうそくに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "普及している",
+      "basic_form": "普及する",
+      "reading": "ふきゅうしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "紙",
+      "basic_form": "紙",
+      "reading": "かみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "チケット",
+      "basic_form": "チケット",
+      "reading": "チケット",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "違って",
+      "basic_form": "違う",
+      "reading": "ちがって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "紛失",
+      "basic_form": "紛失",
+      "reading": "ふんしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "心配",
+      "basic_form": "心配",
+      "reading": "しんぱい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スマホ",
+      "basic_form": "スマホ",
+      "reading": "スマホ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "入場できる",
+      "basic_form": "入場する",
+      "reading": "にゅうじょうできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "手軽さ",
+      "basic_form": "手軽さ",
+      "reading": "てがるさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "支持",
+      "basic_form": "支持",
+      "reading": "しじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "集めている",
+      "basic_form": "集める",
+      "reading": "あつめている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "転売防止",
+      "basic_form": "転売防止",
+      "reading": "てんばいぼうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ために",
+      "basic_form": "ために",
+      "reading": "ために",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "購入者本人",
+      "basic_form": "購入者本人",
+      "reading": "こうにゅうしゃほんにん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "顔写真",
+      "basic_form": "顔写真",
+      "reading": "かおじゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "身分証",
+      "basic_form": "身分証",
+      "reading": "みぶんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "紐づける",
+      "basic_form": "紐づける",
+      "reading": "ひもづける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "システム",
+      "basic_form": "システム",
+      "reading": "システム",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "導入する",
+      "basic_form": "導入する",
+      "reading": "どうにゅうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "会場",
+      "basic_form": "会場",
+      "reading": "かいじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えてきた",
+      "basic_form": "増える",
+      "reading": "ふえてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スマホ",
+      "basic_form": "スマホ",
+      "reading": "スマホ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "電池切れ",
+      "basic_form": "電池切れ",
+      "reading": "でんちぎれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通信トラブル",
+      "basic_form": "通信トラブル",
+      "reading": "つうしんトラブル",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "起きた",
+      "basic_form": "起きる",
+      "reading": "おきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "際",
+      "basic_form": "際",
+      "reading": "さい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "入場できなくなる",
+      "basic_form": "入場する",
+      "reading": "にゅうじょうできなくなる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "新たな",
+      "basic_form": "新ただ",
+      "reading": "あらたな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "不安",
+      "basic_form": "不安",
+      "reading": "ふあん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "上がっている",
+      "basic_form": "上がる",
+      "reading": "あがっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "主催者側",
+      "basic_form": "主催者側",
+      "reading": "しゅさいしゃがわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "紙",
+      "basic_form": "紙",
+      "reading": "かみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "チケット",
+      "basic_form": "チケット",
+      "reading": "チケット",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "併用",
+      "basic_form": "併用",
+      "reading": "へいよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "予備",
+      "basic_form": "予備",
+      "reading": "よび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "入場手段",
+      "basic_form": "入場手段",
+      "reading": "にゅうじょうしゅだん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "用意して",
+      "basic_form": "用意する",
+      "reading": "よういして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "利用者",
+      "basic_form": "利用者",
+      "reading": "りようしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安心して",
+      "basic_form": "安心する",
+      "reading": "あんしんして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "使える",
+      "basic_form": "使う",
+      "reading": "つかえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "仕組みづくり",
+      "basic_form": "仕組みづくり",
+      "reading": "しくみづくり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進めている",
+      "basic_form": "進める",
+      "reading": "すすめている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "技術",
+      "basic_form": "技術",
+      "reading": "ぎじゅつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進化",
+      "basic_form": "進化",
+      "reading": "しんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伴って",
+      "basic_form": "伴う",
+      "reading": "ともなって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "電子チケット",
+      "basic_form": "電子チケット",
+      "reading": "でんしチケット",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多様な",
+      "basic_form": "多様だ",
+      "reading": "たような",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "イベント",
+      "basic_form": "イベント",
+      "reading": "イベント",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活用されていく",
+      "basic_form": "活用する",
+      "reading": "かつようされていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見られている",
+      "basic_form": "見る",
+      "reading": "みられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年"
+    },
+    "コンサート": {
+      "meaning": "演唱會"
+    },
+    "スポーツ観戦": {
+      "meaning": "觀賽"
+    },
+    "入場方法": {
+      "meaning": "入場方式"
+    },
+    "電子チケット": {
+      "meaning": "電子票券"
+    },
+    "急速だ": {
+      "meaning": "急速的"
+    },
+    "普及する": {
+      "meaning": "普及"
+    },
+    "紙": {
+      "meaning": "紙"
+    },
+    "チケット": {
+      "meaning": "票券"
+    },
+    "違う": {
+      "meaning": "不同"
+    },
+    "紛失": {
+      "meaning": "遺失"
+    },
+    "心配": {
+      "meaning": "擔心"
+    },
+    "ない": {
+      "meaning": "沒有"
+    },
+    "スマホ": {
+      "meaning": "智慧型手機"
+    },
+    "一つ": {
+      "meaning": "一個"
+    },
+    "入場する": {
+      "meaning": "入場"
+    },
+    "手軽さ": {
+      "meaning": "便利、輕便"
+    },
+    "支持": {
+      "meaning": "支持"
+    },
+    "集める": {
+      "meaning": "聚集、贏得"
+    },
+    "転売防止": {
+      "meaning": "防止轉賣"
+    },
+    "購入者本人": {
+      "meaning": "購買者本人"
+    },
+    "顔写真": {
+      "meaning": "大頭照"
+    },
+    "身分証": {
+      "meaning": "身分證"
+    },
+    "紐づける": {
+      "meaning": "連結、綁定"
+    },
+    "システム": {
+      "meaning": "系統"
+    },
+    "導入する": {
+      "meaning": "導入"
+    },
+    "会場": {
+      "meaning": "會場"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "電池切れ": {
+      "meaning": "電池沒電"
+    },
+    "通信トラブル": {
+      "meaning": "通訊故障"
+    },
+    "起きる": {
+      "meaning": "發生"
+    },
+    "際": {
+      "meaning": "時候、之際"
+    },
+    "という": {
+      "meaning": "叫做〜、這樣的"
+    },
+    "新ただ": {
+      "meaning": "新的"
+    },
+    "不安": {
+      "meaning": "不安"
+    },
+    "声": {
+      "meaning": "聲音、意見"
+    },
+    "上がる": {
+      "meaning": "出現、提高"
+    },
+    "主催者側": {
+      "meaning": "主辦方"
+    },
+    "併用": {
+      "meaning": "併用"
+    },
+    "予備": {
+      "meaning": "備用"
+    },
+    "入場手段": {
+      "meaning": "入場方式"
+    },
+    "用意する": {
+      "meaning": "準備"
+    },
+    "利用者": {
+      "meaning": "使用者"
+    },
+    "安心する": {
+      "meaning": "安心"
+    },
+    "使う": {
+      "meaning": "使用"
+    },
+    "仕組みづくり": {
+      "meaning": "建立機制"
+    },
+    "進める": {
+      "meaning": "推進"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "技術": {
+      "meaning": "技術"
+    },
+    "進化": {
+      "meaning": "進化"
+    },
+    "伴う": {
+      "meaning": "伴隨"
+    },
+    "さらに": {
+      "meaning": "更加"
+    },
+    "多様だ": {
+      "meaning": "多樣的"
+    },
+    "イベント": {
+      "meaning": "活動"
+    },
+    "活用する": {
+      "meaning": "活用"
+    },
+    "見る": {
+      "meaning": "看、視為"
+    }
+  },
+  "particles": {
+    "や": "列舉部分事物",
+    "として": "「作為〜」的身分/立場",
+    "が": "標示句子的主語",
+    "と": "表示比較對象或引用",
+    "で": "表示場所或方法",
+    "ために": "「為了〜」，目的",
+    "も": "「也」，表示追加",
+    "という": "「叫做〜、這樣的」，引用說法",
+    "は": "主題標記",
+    "など": "「等等」，列舉",
+    "に": "表示對象或到達點",
+    "の": "表示所屬關係"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，演唱會和觀賽現場的電子票券正快速普及。",
+        "word": "電子チケット"
+      }
+    ],
+    [
+      {
+        "text": "與紙本票券不同，沒有遺失的擔憂，光靠一支手機就能入場的便利性廣受支持。",
+        "word": "手軽さ"
+      }
+    ],
+    [
+      {
+        "text": "為了防止轉賣，也有越來越多場館導入將購買者本人的大頭照和身分證綁定的系統。",
+        "word": "紐づける"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，也出現了手機沒電或通訊故障時無法入場的新不安聲浪。",
+        "word": "不安"
+      }
+    ],
+    [
+      {
+        "text": "主辦方準備與紙本票券併用、備用入場方式，讓使用者能安心使用。",
+        "word": "仕組みづくり"
+      }
+    ],
+    [
+      {
+        "text": "隨著技術的進步，電子票券預計會在多樣的活動中被進一步運用。",
+        "word": "伴う"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 5,
+      "pattern": "〜に伴って",
+      "note": "「伴隨〜」，同步變化"
+    }
+  ]
+}

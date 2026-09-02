@@ -1,0 +1,589 @@
+{
+  "date": "2026-08-30",
+  "level": "n4",
+  "title": "祖母との梅干し作り",
+  "text": "今年の夏、祖母と一緒に梅干し作りをした。庭で採れた梅を洗ったり、塩をまぶしたりして、時間をかけて漬け込んだ。祖母は昔からのやり方を知っているので、教わりながら作業を進めた。途中で失敗しそうになったが、祖母のおかげで最後までやり遂げることができた。出来上がった梅干しは酸っぱくて、家族みんなで美味しく食べた。",
+  "tokens": [
+    {
+      "surface_form": "今年",
+      "basic_form": "今年",
+      "reading": "ことし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "夏",
+      "basic_form": "夏",
+      "reading": "なつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "祖母",
+      "basic_form": "祖母",
+      "reading": "そぼ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一緒に",
+      "basic_form": "一緒に",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "梅干し作り",
+      "basic_form": "梅干し作り",
+      "reading": "うめぼしづくり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "庭",
+      "basic_form": "庭",
+      "reading": "にわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "採れた",
+      "basic_form": "採れる",
+      "reading": "とれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "梅",
+      "basic_form": "梅",
+      "reading": "うめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "洗ったり",
+      "basic_form": "洗う",
+      "reading": "あらったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "塩",
+      "basic_form": "塩",
+      "reading": "しお",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "まぶしたり",
+      "basic_form": "まぶす",
+      "reading": "まぶしたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かけて",
+      "basic_form": "かける",
+      "reading": "かけて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "漬け込んだ",
+      "basic_form": "漬け込む",
+      "reading": "つけこんだ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "祖母",
+      "basic_form": "祖母",
+      "reading": "そぼ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "昔",
+      "basic_form": "昔",
+      "reading": "むかし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "やり方",
+      "basic_form": "やり方",
+      "reading": "やりかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "知っている",
+      "basic_form": "知る",
+      "reading": "しっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "教わりながら",
+      "basic_form": "教わる",
+      "reading": "おそわりながら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "作業",
+      "basic_form": "作業",
+      "reading": "さぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進めた",
+      "basic_form": "進める",
+      "reading": "すすめた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "途中",
+      "basic_form": "途中",
+      "reading": "とちゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "失敗しそうになった",
+      "basic_form": "失敗する",
+      "reading": "しっぱいしそうになった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "祖母",
+      "basic_form": "祖母",
+      "reading": "そぼ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おかげで",
+      "basic_form": "おかげで",
+      "reading": "おかげで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "最後",
+      "basic_form": "最後",
+      "reading": "さいご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "やり遂げる",
+      "basic_form": "やり遂げる",
+      "reading": "やりとげる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できた",
+      "basic_form": "できる",
+      "reading": "できた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "出来上がった",
+      "basic_form": "出来上がる",
+      "reading": "できあがった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "梅干し",
+      "basic_form": "梅干し",
+      "reading": "うめぼし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "酸っぱくて",
+      "basic_form": "酸っぱい",
+      "reading": "すっぱくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家族",
+      "basic_form": "家族",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "美味しく",
+      "basic_form": "美味しい",
+      "reading": "おいしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "食べた",
+      "basic_form": "食べる",
+      "reading": "たべた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "今年": {
+      "meaning": "今年"
+    },
+    "夏": {
+      "meaning": "夏天"
+    },
+    "祖母": {
+      "meaning": "祖母"
+    },
+    "一緒に": {
+      "meaning": "一起"
+    },
+    "梅干し作り": {
+      "meaning": "醃梅乾"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "庭": {
+      "meaning": "庭院"
+    },
+    "採れる": {
+      "meaning": "採到、產出"
+    },
+    "梅": {
+      "meaning": "梅子"
+    },
+    "洗う": {
+      "meaning": "洗"
+    },
+    "塩": {
+      "meaning": "鹽"
+    },
+    "まぶす": {
+      "meaning": "撒上、裹上"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "かける": {
+      "meaning": "花費"
+    },
+    "漬け込む": {
+      "meaning": "醃漬"
+    },
+    "昔": {
+      "meaning": "從前"
+    },
+    "やり方": {
+      "meaning": "做法"
+    },
+    "知る": {
+      "meaning": "知道"
+    },
+    "教わる": {
+      "meaning": "受教、學習"
+    },
+    "作業": {
+      "meaning": "作業、工作"
+    },
+    "進める": {
+      "meaning": "推進、進行"
+    },
+    "途中": {
+      "meaning": "途中、中途"
+    },
+    "失敗する": {
+      "meaning": "失敗"
+    },
+    "おかげで": {
+      "meaning": "多虧"
+    },
+    "最後": {
+      "meaning": "最後"
+    },
+    "やり遂げる": {
+      "meaning": "完成、做到底"
+    },
+    "できる": {
+      "meaning": "能夠"
+    },
+    "出来上がる": {
+      "meaning": "完成"
+    },
+    "梅干し": {
+      "meaning": "醃梅乾"
+    },
+    "酸っぱい": {
+      "meaning": "酸的"
+    },
+    "家族": {
+      "meaning": "家人"
+    },
+    "みんな": {
+      "meaning": "大家"
+    },
+    "美味しい": {
+      "meaning": "好吃的"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "と": "表示「和」某人一起",
+    "で": "表示動作發生的場所",
+    "を": "標示動作的對象",
+    "から": "表示起點，「從〜」",
+    "ので": "「因為〜，所以」，連接原因與結果",
+    "が": "標示句子的主語，或表示逆接「但是」",
+    "は": "主題標記，用來提出句子的主題",
+    "まで": "表示範圍的終點"
+  },
+  "translations": [
+    [
+      {
+        "text": "今年夏天，和祖母一起醃了梅乾。",
+        "word": "梅干し作り"
+      }
+    ],
+    [
+      {
+        "text": "把院子裡採到的梅子洗一洗、裹上鹽，花時間慢慢醃漬。",
+        "word": "漬け込む"
+      }
+    ],
+    [
+      {
+        "text": "祖母很了解從前的做法，我就一邊跟她學一邊進行作業。",
+        "word": "教わる"
+      }
+    ],
+    [
+      {
+        "text": "途中差點失敗，但多虧祖母才得以完成到最後。",
+        "word": "やり遂げる"
+      }
+    ],
+    [
+      {
+        "text": "完成的梅乾很酸，全家人都吃得很開心。",
+        "word": "出来上がる"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "普通形（辞書形/ない形/た形/なかった形）",
+      "note": "常體，用於複句、思考/傳聞句型前接"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜ので（因為）",
+      "note": "客觀原因，比から更委婉/書面"
+    },
+    {
+      "sentence": 3,
+      "pattern": "〜そうだ（傳聞/樣態）",
+      "note": "「聽說」或「看起來」，依接續判斷語意"
+    }
+  ]
+}
