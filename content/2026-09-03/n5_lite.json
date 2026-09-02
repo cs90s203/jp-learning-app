@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-03",
+  "level": "n5_lite",
+  "title": "わたしの靴",
+  "text": "わたしの靴は青いです。新しい靴です。学校でいつも履きます。運動会でも使います。とても丈夫です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "学校", "basic_form": "学校", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "いつも", "basic_form": "いつも", "reading": "いつも", "pos": "副詞" },
+    { "surface_form": "履きます", "basic_form": "履く", "reading": "はきます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "運動会", "basic_form": "運動会", "reading": "うんどうかい", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "使います", "basic_form": "使う", "reading": "つかいます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "丈夫", "basic_form": "丈夫", "reading": "じょうぶ", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "靴": { "meaning": "鞋子" },
+    "青い": { "meaning": "藍色的" },
+    "新しい": { "meaning": "新的" },
+    "学校": { "meaning": "學校" },
+    "いつも": { "meaning": "總是" },
+    "履く": { "meaning": "穿（鞋、褲子等）" },
+    "運動会": { "meaning": "運動會" },
+    "使う": { "meaning": "使用" },
+    "とても": { "meaning": "非常" },
+    "丈夫": { "meaning": "堅固、耐用" }
+  },
+  "particles": {
+    "の": "所屬/修飾，表示「的」",
+    "は": "主題標記，標示句子的主題",
+    "で": "表示動作發生的場所",
+    "も": "「也」，取代原本該用的が/を，但と、で等助詞會保留"
+  },
+  "translations": [
+    [ { "text": "我的鞋子是藍色的。", "word": "靴" } ],
+    [ { "text": "是新鞋子。", "word": "新しい" } ],
+    [ { "text": "在學校總是穿這雙鞋。", "word": "履く" } ],
+    [ { "text": "運動會也會穿。", "word": "使う" } ],
+    [ { "text": "非常耐穿。", "word": "丈夫" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 2, "pattern": "〜で（場所/方法）", "note": "表示動作發生的場所，或使用的方法/工具" },
+    { "sentence": 3, "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" }
+  ]
+}
