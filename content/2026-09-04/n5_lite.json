@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-04",
+  "level": "n5_lite",
+  "title": "わたしの鍵",
+  "text": "わたしの鍵はピンクです。小さいうさぎのキーホルダーです。かばんの中にいつもあります。とても大切です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "鍵", "basic_form": "鍵", "reading": "かぎ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "ピンク", "basic_form": "ピンク", "reading": "ピンク", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "うさぎ", "basic_form": "うさぎ", "reading": "うさぎ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "キーホルダー", "basic_form": "キーホルダー", "reading": "キーホルダー", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "いつも", "basic_form": "いつも", "reading": "いつも", "pos": "副詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "鍵": { "meaning": "鑰匙" },
+    "ピンク": { "meaning": "粉紅色" },
+    "小さい": { "meaning": "小的" },
+    "うさぎ": { "meaning": "兔子" },
+    "キーホルダー": { "meaning": "鑰匙圈" },
+    "かばん": { "meaning": "包包" },
+    "中": { "meaning": "裡面、中間" },
+    "いつも": { "meaning": "總是" },
+    "ある": { "meaning": "有、在（表存在）" },
+    "とても": { "meaning": "非常" },
+    "大切": { "meaning": "重要、珍惜" }
+  },
+  "particles": {
+    "の": "所屬/修飾——表示所屬關係，或名詞修飾名詞",
+    "は": "主題標記——標示句子的主題",
+    "に": "表示存在的場所、時間點或動作對象"
+  },
+  "translations": [
+    [ { "text": "我的鑰匙是粉紅色的。", "word": "鍵" } ],
+    [ { "text": "是小兔子造型的鑰匙圈。", "word": "キーホルダー" } ],
+    [ { "text": "一直放在包包裡。", "word": "かばん" } ],
+    [ { "text": "非常重要。", "word": "大切" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 2, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" }
+  ]
+}
