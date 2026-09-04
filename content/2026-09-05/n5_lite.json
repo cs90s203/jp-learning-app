@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-05",
+  "level": "n5_lite",
+  "title": "わたしの手帳",
+  "text": "わたしの手帳は茶色です。中に小さいペンがあります。手帳はかばんの中にいつもあります。とても大事です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "手帳", "basic_form": "手帳", "reading": "てちょう", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "茶色", "basic_form": "茶色", "reading": "ちゃいろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "手帳", "basic_form": "手帳", "reading": "てちょう", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "いつも", "basic_form": "いつも", "reading": "いつも", "pos": "副詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大事", "basic_form": "大事", "reading": "だいじ", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "手帳": { "meaning": "手冊、記事本" },
+    "茶色": { "meaning": "咖啡色" },
+    "中": { "meaning": "裡面、中間" },
+    "小さい": { "meaning": "小的" },
+    "ペン": { "meaning": "筆" },
+    "ある": { "meaning": "有、在（表存在）" },
+    "かばん": { "meaning": "包包" },
+    "いつも": { "meaning": "總是" },
+    "とても": { "meaning": "非常" },
+    "大事": { "meaning": "重要" }
+  },
+  "particles": {
+    "の": "所屬/修飾——表示所屬關係，或名詞修飾名詞",
+    "は": "主題標記——標示句子的主題",
+    "に": "表示存在的場所、時間點或動作對象",
+    "が": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）"
+  },
+  "translations": [
+    [ { "text": "我的手帳是咖啡色的。", "word": "手帳" } ],
+    [ { "text": "裡面有一支小小的筆。", "word": "ペン" } ],
+    [ { "text": "手帳總是放在包包裡。", "word": "かばん" } ],
+    [ { "text": "非常重要。", "word": "大事" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 1, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 2, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" }
+  ]
+}
