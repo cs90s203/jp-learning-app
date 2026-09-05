@@ -70,7 +70,7 @@
     { "surface_form": "通信障害", "basic_form": "通信障害", "reading": "つうしんしょうがい", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
     { "surface_form": "起きた", "basic_form": "起きる", "reading": "おきた", "pos": "動詞" },
-    { "surface_form": "際", "basic_form": "際", "reading": "きわ", "pos": "名詞" },
+    { "surface_form": "際", "basic_form": "際", "reading": "さい", "pos": "名詞" },
     { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
     { "surface_form": "決済", "basic_form": "決済", "reading": "けっさい", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
