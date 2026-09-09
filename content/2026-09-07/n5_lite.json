@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-07",
+  "level": "n5_lite",
+  "title": "わたしの眼鏡",
+  "text": "わたしの眼鏡は黒いです。とても軽いです。毎日、眼鏡をかけます。眼鏡はわたしの宝物です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "眼鏡", "basic_form": "眼鏡", "reading": "めがね", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "黒い", "basic_form": "黒い", "reading": "くろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎日", "basic_form": "毎日", "reading": "まいにち", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "眼鏡", "basic_form": "眼鏡", "reading": "めがね", "pos": "名詞" },
+    { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+    { "surface_form": "かけます", "basic_form": "かける", "reading": "かけます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "眼鏡", "basic_form": "眼鏡", "reading": "めがね", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "宝物", "basic_form": "宝物", "reading": "たからもの", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "眼鏡": { "meaning": "眼鏡" },
+    "黒い": { "meaning": "黑色的" },
+    "とても": { "meaning": "非常" },
+    "軽い": { "meaning": "輕的" },
+    "毎日": { "meaning": "每天" },
+    "かける": { "meaning": "戴（眼鏡）" },
+    "宝物": { "meaning": "寶物" }
+  },
+  "particles": {
+    "の": "所屬/修飾，表示所屬關係或名詞修飾名詞",
+    "は": "主題標記，標示句子的主題",
+    "を": "受詞標記，標示動作的對象",
+    "です": "斷定助動詞，禮貌體的「是」"
+  },
+  "translations": [
+    [ { "text": "我的眼鏡是黑色的。", "word": "眼鏡" } ],
+    [ { "text": "非常輕。", "word": "軽い" } ],
+    [ { "text": "每天都會戴眼鏡。", "word": "かける" } ],
+    [ { "text": "眼鏡是我的寶物。", "word": "宝物" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 2, "pattern": "〜を（受詞標記）", "note": "標示動作的對象" },
+    { "sentence": 2, "pattern": "動詞ます形", "note": "禮貌體現在式，肯定/否定/過去/過去否定四段變化" }
+  ]
+}
