@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-11",
+  "level": "n5_lite",
+  "title": "わたしの傘",
+  "text": "わたしの傘は青いです。長いです。柄に猫の絵があります。姉からのプレゼントです。とても便利です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "長い", "basic_form": "長い", "reading": "ながい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "柄", "basic_form": "柄", "reading": "え", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "猫", "basic_form": "猫", "reading": "ねこ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "絵", "basic_form": "絵", "reading": "え", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "姉", "basic_form": "姉", "reading": "あね", "pos": "名詞" },
+    { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "助詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "プレゼント", "basic_form": "プレゼント", "reading": "ぷれぜんと", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "便利", "basic_form": "便利", "reading": "べんり", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "傘": { "meaning": "雨傘" },
+    "青い": { "meaning": "藍色的" },
+    "長い": { "meaning": "長的" },
+    "柄": { "meaning": "握把、柄" },
+    "猫": { "meaning": "貓" },
+    "絵": { "meaning": "圖畫" },
+    "ある": { "meaning": "有（存在）" },
+    "姉": { "meaning": "姊姊" },
+    "プレゼント": { "meaning": "禮物" },
+    "とても": { "meaning": "非常" },
+    "便利": { "meaning": "方便" }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "は": "主題標記，標示句子的主題",
+    "に": "表示存在的場所",
+    "が": "標示句子的主語，帶出新資訊",
+    "から": "表示來源，「從〜」"
+  },
+  "translations": [
+    [ { "text": "我的傘是藍色的。", "word": "傘" } ],
+    [ { "text": "很長。", "word": "長い" } ],
+    [ { "text": "柄上有貓的圖案。", "word": "絵" } ],
+    [ { "text": "是姊姊給的禮物。", "word": "プレゼント" } ],
+    [ { "text": "非常方便。", "word": "便利" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 4, "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
