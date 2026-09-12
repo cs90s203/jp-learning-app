@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-13",
+  "level": "n5_lite",
+  "title": "わたしの財布",
+  "text": "わたしの財布は茶色です。小さいです。中に写真が一枚あります。父からのプレゼントです。とても大切です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "財布", "basic_form": "財布", "reading": "さいふ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "茶色", "basic_form": "茶色", "reading": "ちゃいろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "写真", "basic_form": "写真", "reading": "しゃしん", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "一枚", "basic_form": "一枚", "reading": "いちまい", "pos": "名詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "父", "basic_form": "父", "reading": "ちち", "pos": "名詞" },
+    { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "助詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "プレゼント", "basic_form": "プレゼント", "reading": "ぷれぜんと", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "財布": { "meaning": "錢包" },
+    "茶色": { "meaning": "棕色" },
+    "小さい": { "meaning": "小的" },
+    "中": { "meaning": "裡面" },
+    "写真": { "meaning": "照片" },
+    "一枚": { "meaning": "一張" },
+    "ある": { "meaning": "有（存在）" },
+    "父": { "meaning": "爸爸" },
+    "プレゼント": { "meaning": "禮物" },
+    "とても": { "meaning": "非常" },
+    "大切": { "meaning": "珍貴、重要" }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "は": "主題標記，標示句子的主題",
+    "に": "表示存在的場所",
+    "が": "標示句子的主語，帶出新資訊",
+    "から": "表示來源，「從〜」"
+  },
+  "translations": [
+    [ { "text": "我的錢包是棕色的。", "word": "財布" } ],
+    [ { "text": "很小。", "word": "小さい" } ],
+    [ { "text": "裡面有一張照片。", "word": "写真" } ],
+    [ { "text": "是爸爸給的禮物。", "word": "プレゼント" } ],
+    [ { "text": "非常珍貴。", "word": "大切" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 4, "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
