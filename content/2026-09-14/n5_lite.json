@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-14",
+  "level": "n5_lite",
+  "title": "わたしの本",
+  "text": "わたしの本はねこの本です。とても大きくて厚いです。毎日少し読みます。絵もたくさんあります。ねこがすきです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "本", "basic_form": "本", "reading": "ほん", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "ねこ", "basic_form": "ねこ", "reading": "ねこ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "本", "basic_form": "本", "reading": "ほん", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大きくて", "basic_form": "大きい", "reading": "おおきくて", "pos": "形容詞" },
+    { "surface_form": "厚い", "basic_form": "厚い", "reading": "あつい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎日", "basic_form": "毎日", "reading": "まいにち", "pos": "名詞" },
+    { "surface_form": "少し", "basic_form": "少し", "reading": "すこし", "pos": "副詞" },
+    { "surface_form": "読みます", "basic_form": "読む", "reading": "よみます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "絵", "basic_form": "絵", "reading": "え", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "たくさん", "basic_form": "たくさん", "reading": "たくさん", "pos": "副詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "ねこ", "basic_form": "ねこ", "reading": "ねこ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "すき", "basic_form": "すき", "reading": "すき", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "本": { "meaning": "書、書本" },
+    "ねこ": { "meaning": "貓" },
+    "とても": { "meaning": "非常" },
+    "大きい": { "meaning": "大的" },
+    "厚い": { "meaning": "厚的" },
+    "毎日": { "meaning": "每天" },
+    "少し": { "meaning": "一點點" },
+    "読む": { "meaning": "讀" },
+    "絵": { "meaning": "圖畫" },
+    "たくさん": { "meaning": "很多" },
+    "ある": { "meaning": "有（無生物存在）" },
+    "すき": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "は": "主題標記，「是」句型的主題",
+    "が": "標示句子的主語",
+    "も": "「也」，會取代が/を，但と、で等助詞保留"
+  },
+  "translations": [
+    [ { "text": "我的書是貓的書。", "word": "本" } ],
+    [ { "text": "非常大，而且很厚。", "word": "大きい" } ],
+    [ { "text": "每天讀一點點。", "word": "読む" } ],
+    [ { "text": "圖畫也很多。", "word": "絵" } ],
+    [ { "text": "我喜歡貓。", "word": "すき" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "sentence": 3, "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" },
+    { "sentence": 4, "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
