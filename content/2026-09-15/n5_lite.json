@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-15",
+  "level": "n5_lite",
+  "title": "わたしのかばん",
+  "text": "これはわたしのかばんです。色は黒で、大きいです。中にノートとペンがあります。かばんはいすの上にあります。",
+  "tokens": [
+    { "surface_form": "これ", "basic_form": "これ", "reading": "これ", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "色", "basic_form": "色", "reading": "いろ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "黒", "basic_form": "黒", "reading": "くろ", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "だ", "reading": "で", "pos": "助動詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "大きい", "basic_form": "大きい", "reading": "おおきい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "ノート", "basic_form": "ノート", "reading": "ノート", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "いす", "basic_form": "いす", "reading": "いす", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "上", "basic_form": "上", "reading": "うえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "これ": { "meaning": "這個" },
+    "わたし": { "meaning": "我" },
+    "かばん": { "meaning": "包包" },
+    "色": { "meaning": "顏色" },
+    "黒": { "meaning": "黑色" },
+    "大きい": { "meaning": "大的" },
+    "中": { "meaning": "裡面" },
+    "ノート": { "meaning": "筆記本" },
+    "ペン": { "meaning": "筆" },
+    "ある": { "meaning": "有（事物存在）" },
+    "いす": { "meaning": "椅子" },
+    "上": { "meaning": "上面" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "で": "な形容詞／名詞的て形，表示並列或原因",
+    "に": "表示東西存在的地點",
+    "と": "連接名詞，表示「和」",
+    "が": "標示存在句的主語"
+  },
+  "translations": [
+    [ { "text": "這是我的包包。", "word": "かばん" } ],
+    [ { "text": "顏色是黑色的，而且很大。", "word": "大きい" } ],
+    [ { "text": "裡面有筆記本和筆。", "word": "ある" } ],
+    [ { "text": "包包在椅子上面。", "word": "ある" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 3, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" }
+  ]
+}
