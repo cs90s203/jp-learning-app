@@ -55,7 +55,7 @@
     { "surface_form": "この", "basic_form": "この", "reading": "この", "pos": "連体詞" },
     { "surface_form": "流れ", "basic_form": "流れ", "reading": "ながれ", "pos": "名詞" },
     { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
-    { "surface_form": "後押ししている", "basic_form": "後押しする", "reading": "あとおしている", "pos": "動詞" },
+    { "surface_form": "後押ししている", "basic_form": "後押しする", "reading": "あとおししている", "pos": "動詞" },
     { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
     { "surface_form": "言えよう", "basic_form": "言える", "reading": "いえよう", "pos": "動詞" },
     { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
