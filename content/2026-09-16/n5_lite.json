@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-16",
+  "level": "n5_lite",
+  "title": "わたしのノート",
+  "text": "わたしのノートです。青くてかわいいです。学校で使います。友だちのノートも青いです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ノート", "basic_form": "ノート", "reading": "ノート", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "青くて", "basic_form": "青い", "reading": "あおくて", "pos": "形容詞" },
+    { "surface_form": "かわいい", "basic_form": "かわいい", "reading": "かわいい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "学校", "basic_form": "学校", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "使います", "basic_form": "使う", "reading": "つかいます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "友だち", "basic_form": "友だち", "reading": "ともだち", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ノート", "basic_form": "ノート", "reading": "ノート", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "ノート": { "meaning": "筆記本" },
+    "青い": { "meaning": "藍色的" },
+    "かわいい": { "meaning": "可愛" },
+    "学校": { "meaning": "學校" },
+    "使う": { "meaning": "使用" },
+    "友だち": { "meaning": "朋友" }
+  },
+  "particles": {
+    "の": "所屬/修飾，表示所屬關係或名詞修飾名詞",
+    "で": "表示動作發生的場所",
+    "も": "「也」，取代が/を"
+  },
+  "translations": [
+    [ { "text": "這是我的筆記本。", "word": "ノート" } ],
+    [ { "text": "藍色的，很可愛。", "word": "青い" } ],
+    [ { "text": "在學校使用。", "word": "使う" } ],
+    [ { "text": "朋友的筆記本也是藍色的。", "word": "青い" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "sentence": 2, "pattern": "〜で（場所/方法）", "note": "表示動作發生的場所，或使用的方法/工具" },
+    { "sentence": 3, "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" }
+  ]
+}
