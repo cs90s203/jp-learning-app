@@ -1,0 +1,63 @@
+{
+  "date": "2026-09-18",
+  "level": "n5_lite",
+  "title": "わたしの時計",
+  "text": "私の時計は青いです。毎朝、六時に鳴ります。学校に行く時、いつも見ます。とても大切です。",
+  "tokens": [
+    { "surface_form": "私", "basic_form": "私", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎朝", "basic_form": "毎朝", "reading": "まいあさ", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "六時", "basic_form": "六時", "reading": "ろくじ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "鳴ります", "basic_form": "鳴る", "reading": "なります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "学校", "basic_form": "学校", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "行く", "basic_form": "行く", "reading": "いく", "pos": "動詞" },
+    { "surface_form": "時", "basic_form": "時", "reading": "とき", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "いつも", "basic_form": "いつも", "reading": "いつも", "pos": "副詞" },
+    { "surface_form": "見ます", "basic_form": "見る", "reading": "みます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "私": { "meaning": "我" },
+    "時計": { "meaning": "時鐘、手錶" },
+    "青い": { "meaning": "藍色的" },
+    "毎朝": { "meaning": "每天早上" },
+    "六時": { "meaning": "六點" },
+    "鳴る": { "meaning": "響" },
+    "学校": { "meaning": "學校" },
+    "行く": { "meaning": "去" },
+    "時": { "meaning": "……的時候" },
+    "いつも": { "meaning": "總是" },
+    "見る": { "meaning": "看" },
+    "とても": { "meaning": "非常" },
+    "大切": { "meaning": "重要" }
+  },
+  "particles": {
+    "の": "表示所屬或修飾關係",
+    "は": "標示句子的主題",
+    "に": "表示時間點或動作發生的對象"
+  },
+  "translations": [
+    [ { "text": "我的時鐘是藍色的。", "word": "時計" } ],
+    [ { "text": "每天早上六點會響。", "word": "鳴る" } ],
+    [ { "text": "去學校的時候，總是會看它。", "word": "見る" } ],
+    [ { "text": "非常重要。", "word": "大切" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" }
+  ]
+}
