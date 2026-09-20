@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-21",
+  "level": "n5_lite",
+  "title": "わたしの帽子",
+  "text": "わたしの帽子は青いです。とても軽いです。リボンが一つあります。休みの日にかぶります。公園でよくかぶります。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "リボン", "basic_form": "リボン", "reading": "リボン", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "一つ", "basic_form": "一つ", "reading": "ひとつ", "pos": "名詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "休み", "basic_form": "休み", "reading": "やすみ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "日", "basic_form": "日", "reading": "ひ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "かぶります", "basic_form": "かぶる", "reading": "かぶります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "公園", "basic_form": "公園", "reading": "こうえん", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "よく", "basic_form": "よく", "reading": "よく", "pos": "副詞" },
+    { "surface_form": "かぶります", "basic_form": "かぶる", "reading": "かぶります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "帽子": { "meaning": "帽子" },
+    "青い": { "meaning": "藍色的" },
+    "とても": { "meaning": "非常" },
+    "軽い": { "meaning": "輕的" },
+    "リボン": { "meaning": "緞帶" },
+    "一つ": { "meaning": "一個" },
+    "ある": { "meaning": "有、存在" },
+    "休み": { "meaning": "休假、休息" },
+    "日": { "meaning": "日子" },
+    "かぶる": { "meaning": "戴（帽子）" },
+    "公園": { "meaning": "公園" },
+    "よく": { "meaning": "常常" }
+  },
+  "particles": {
+    "の": "所屬或修飾關係，「的」",
+    "は": "主題標記，點出句子談論的對象",
+    "が": "標示句子的主語，帶出新資訊",
+    "に": "表示時間點或對象",
+    "で": "表示動作發生的場所"
+  },
+  "translations": [
+    [ { "text": "我的帽子是藍色的。", "word": "帽子" } ],
+    [ { "text": "非常輕。", "word": "軽い" } ],
+    [ { "text": "有一個緞帶。", "word": "リボン" } ],
+    [ { "text": "休假的日子會戴。", "word": "かぶる" } ],
+    [ { "text": "常常在公園戴。", "word": "かぶる" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 3, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" },
+    { "sentence": 4, "pattern": "〜で（場所/方法）", "note": "表示動作發生的場所，或使用的方法/工具" }
+  ]
+}
