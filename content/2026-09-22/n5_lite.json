@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-22",
+  "level": "n5_lite",
+  "title": "わたしのめがね",
+  "text": "わたしのめがねは黒いです。とても軽いです。レンズが二つあります。勉強するときにかけます。学校でよくかけます。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "めがね", "basic_form": "めがね", "reading": "めがね", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "黒い", "basic_form": "黒い", "reading": "くろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "レンズ", "basic_form": "レンズ", "reading": "レンズ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "二つ", "basic_form": "二つ", "reading": "ふたつ", "pos": "名詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "勉強する", "basic_form": "勉強する", "reading": "べんきょうする", "pos": "動詞" },
+    { "surface_form": "とき", "basic_form": "とき", "reading": "とき", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "かけます", "basic_form": "かける", "reading": "かけます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "学校", "basic_form": "学校", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "よく", "basic_form": "よく", "reading": "よく", "pos": "副詞" },
+    { "surface_form": "かけます", "basic_form": "かける", "reading": "かけます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "めがね": { "meaning": "眼鏡" },
+    "黒い": { "meaning": "黑色的" },
+    "とても": { "meaning": "非常" },
+    "軽い": { "meaning": "輕的" },
+    "レンズ": { "meaning": "鏡片" },
+    "二つ": { "meaning": "兩個" },
+    "ある": { "meaning": "有、存在" },
+    "勉強する": { "meaning": "讀書、學習" },
+    "とき": { "meaning": "…的時候" },
+    "かける": { "meaning": "戴（眼鏡）" },
+    "学校": { "meaning": "學校" },
+    "よく": { "meaning": "常常" }
+  },
+  "particles": {
+    "の": "所屬或修飾關係，「的」",
+    "は": "主題標記，點出句子談論的對象",
+    "が": "標示句子的主語，帶出新資訊",
+    "に": "表示時間點或對象",
+    "で": "表示動作發生的場所"
+  },
+  "translations": [
+    [ { "text": "我的眼鏡是黑色的。", "word": "めがね" } ],
+    [ { "text": "非常輕。", "word": "軽い" } ],
+    [ { "text": "有兩個鏡片。", "word": "レンズ" } ],
+    [ { "text": "讀書的時候會戴。", "word": "かける" } ],
+    [ { "text": "常常在學校戴。", "word": "かける" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 3, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" },
+    { "sentence": 4, "pattern": "〜で（場所/方法）", "note": "表示動作發生的場所，或使用的方法/工具" }
+  ]
+}
