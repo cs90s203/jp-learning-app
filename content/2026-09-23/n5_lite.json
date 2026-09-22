@@ -1,0 +1,71 @@
+{
+  "date": "2026-09-23",
+  "level": "n5_lite",
+  "title": "わたしの財布",
+  "text": "私の財布は黒いです。小さくて薄いです。中にお金とカードがあります。ポケットも三つあります。とても便利です。",
+  "tokens": [
+    { "surface_form": "私", "basic_form": "私", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "財布", "basic_form": "財布", "reading": "さいふ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "黒い", "basic_form": "黒い", "reading": "くろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "小さくて", "basic_form": "小さい", "reading": "ちいさくて", "pos": "形容詞" },
+    { "surface_form": "薄い", "basic_form": "薄い", "reading": "うすい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "お金", "basic_form": "お金", "reading": "おかね", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "カード", "basic_form": "カード", "reading": "カード", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "ポケット", "basic_form": "ポケット", "reading": "ポケット", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "三つ", "basic_form": "三つ", "reading": "みっつ", "pos": "名詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "便利", "basic_form": "便利", "reading": "べんり", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "私": { "meaning": "我" },
+    "財布": { "meaning": "錢包" },
+    "黒い": { "meaning": "黑色的" },
+    "小さい": { "meaning": "小的" },
+    "薄い": { "meaning": "薄的" },
+    "中": { "meaning": "裡面" },
+    "お金": { "meaning": "錢" },
+    "カード": { "meaning": "卡片" },
+    "ポケット": { "meaning": "口袋" },
+    "三つ": { "meaning": "三個" },
+    "ある": { "meaning": "有（存在）" },
+    "とても": { "meaning": "非常" },
+    "便利": { "meaning": "方便" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "に": "表示存在的地點",
+    "と": "連接名詞，表示「和」",
+    "が": "標示句子的主語（新資訊/焦點）",
+    "も": "「也」，取代が/を，但と、で等助詞會保留"
+  },
+  "translations": [
+    [ { "text": "我的錢包是黑色的。", "word": "財布" } ],
+    [ { "text": "小小的、薄薄的。", "word": "薄い" } ],
+    [ { "text": "裡面有錢和卡片。", "word": "ある" } ],
+    [ { "text": "口袋也有三個。", "word": "ポケット" } ],
+    [ { "text": "非常方便。", "word": "便利" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 3, "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" }
+  ]
+}
