@@ -1,0 +1,1117 @@
+{
+  "date": "2026-09-24",
+  "level": "n1_lite",
+  "title": "物価高騰をめぐる課題",
+  "text": "近年、世界的な資源価格の上昇が円安と相まって、日常生活に欠かせない食料品や光熱費の値上がりを招いている。給与の伸びが物価上昇に追いつかない家庭も多く、実質的な生活水準の低下を感じている人は少なくないという。とりわけ、収入の限られる高齢者世帯や子育て世帯にとって、この状況はきわめて深刻だ。政府は補助金や給付金といった対策を講じているものの、その効果は一時的なものにとどまりかねないとの指摘もある。専門家の間では、賃金の引き上げを伴わない物価高は、経済全体の停滞につながりかねないと懸念する声が根強い。今後、物価と賃金のバランスをどう取り戻していくかが、社会全体で取り組むべき大きな課題として残されている。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "世界的な",
+      "basic_form": "世界的",
+      "reading": "せかいてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "資源",
+      "basic_form": "資源",
+      "reading": "しげん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "価格",
+      "basic_form": "価格",
+      "reading": "かかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "上昇",
+      "basic_form": "上昇",
+      "reading": "じょうしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "円安",
+      "basic_form": "円安",
+      "reading": "えんやす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "相まって",
+      "basic_form": "相まる",
+      "reading": "あいまって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日常生活",
+      "basic_form": "日常生活",
+      "reading": "にちじょうせいかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "欠かせない",
+      "basic_form": "欠かす",
+      "reading": "かかせない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "食料品",
+      "basic_form": "食料品",
+      "reading": "しょくりょうひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "光熱費",
+      "basic_form": "光熱費",
+      "reading": "こうねつひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "値上がり",
+      "basic_form": "値上がり",
+      "reading": "ねあがり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "招いている",
+      "basic_form": "招く",
+      "reading": "まねいている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "給与",
+      "basic_form": "給与",
+      "reading": "きゅうよ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伸び",
+      "basic_form": "伸び",
+      "reading": "のび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "物価",
+      "basic_form": "物価",
+      "reading": "ぶっか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "上昇",
+      "basic_form": "上昇",
+      "reading": "じょうしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "追いつかない",
+      "basic_form": "追いつく",
+      "reading": "おいつかない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "家庭",
+      "basic_form": "家庭",
+      "reading": "かてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多く",
+      "basic_form": "多い",
+      "reading": "おおく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実質的な",
+      "basic_form": "実質的",
+      "reading": "じっしつてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "生活水準",
+      "basic_form": "生活水準",
+      "reading": "せいかつすいじゅん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "低下",
+      "basic_form": "低下",
+      "reading": "ていか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "感じている",
+      "basic_form": "感じる",
+      "reading": "かんじている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とりわけ",
+      "basic_form": "とりわけ",
+      "reading": "とりわけ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "収入",
+      "basic_form": "収入",
+      "reading": "しゅうにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "限られる",
+      "basic_form": "限る",
+      "reading": "かぎられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "高齢者",
+      "basic_form": "高齢者",
+      "reading": "こうれいしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "世帯",
+      "basic_form": "世帯",
+      "reading": "せたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "子育て",
+      "basic_form": "子育て",
+      "reading": "こそだて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "世帯",
+      "basic_form": "世帯",
+      "reading": "せたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "にとって",
+      "basic_form": "にとって",
+      "reading": "にとって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きわめて",
+      "basic_form": "きわめて",
+      "reading": "きわめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "深刻",
+      "basic_form": "深刻",
+      "reading": "しんこく",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政府",
+      "basic_form": "政府",
+      "reading": "せいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "補助金",
+      "basic_form": "補助金",
+      "reading": "ほじょきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "給付金",
+      "basic_form": "給付金",
+      "reading": "きゅうふきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対策",
+      "basic_form": "対策",
+      "reading": "たいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "講じている",
+      "basic_form": "講じる",
+      "reading": "こうじている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ものの",
+      "basic_form": "ものの",
+      "reading": "ものの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "効果",
+      "basic_form": "効果",
+      "reading": "こうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一時的な",
+      "basic_form": "一時的",
+      "reading": "いちじてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "もの",
+      "basic_form": "もの",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とどまりかねない",
+      "basic_form": "とどまる",
+      "reading": "とどまりかねない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "専門家",
+      "basic_form": "専門家",
+      "reading": "せんもんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "間",
+      "basic_form": "間",
+      "reading": "あいだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "賃金",
+      "basic_form": "賃金",
+      "reading": "ちんぎん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "引き上げ",
+      "basic_form": "引き上げ",
+      "reading": "ひきあげ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伴わない",
+      "basic_form": "伴う",
+      "reading": "ともなわない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "物価高",
+      "basic_form": "物価高",
+      "reading": "ぶっかだか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "経済",
+      "basic_form": "経済",
+      "reading": "けいざい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "全体",
+      "basic_form": "全体",
+      "reading": "ぜんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "停滞",
+      "basic_form": "停滞",
+      "reading": "ていたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つながりかねない",
+      "basic_form": "つながる",
+      "reading": "つながりかねない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "懸念する",
+      "basic_form": "懸念する",
+      "reading": "けねんする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "根強い",
+      "basic_form": "根強い",
+      "reading": "ねづよい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "物価",
+      "basic_form": "物価",
+      "reading": "ぶっか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "賃金",
+      "basic_form": "賃金",
+      "reading": "ちんぎん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "バランス",
+      "basic_form": "バランス",
+      "reading": "バランス",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "どう",
+      "basic_form": "どう",
+      "reading": "どう",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "取り戻していく",
+      "basic_form": "取り戻す",
+      "reading": "とりもどしていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "社会",
+      "basic_form": "社会",
+      "reading": "しゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "全体",
+      "basic_form": "全体",
+      "reading": "ぜんたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取り組む",
+      "basic_form": "取り組む",
+      "reading": "とりくむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "べき",
+      "basic_form": "べき",
+      "reading": "べき",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "残されている",
+      "basic_form": "残す",
+      "reading": "のこされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年來"
+    },
+    "世界的": {
+      "meaning": "全球性的"
+    },
+    "資源": {
+      "meaning": "資源"
+    },
+    "価格": {
+      "meaning": "價格"
+    },
+    "上昇": {
+      "meaning": "上升"
+    },
+    "円安": {
+      "meaning": "日圓貶值"
+    },
+    "相まる": {
+      "meaning": "相互結合、相互作用"
+    },
+    "日常生活": {
+      "meaning": "日常生活"
+    },
+    "欠かす": {
+      "meaning": "缺少"
+    },
+    "食料品": {
+      "meaning": "食品"
+    },
+    "光熱費": {
+      "meaning": "水電燃料費"
+    },
+    "値上がり": {
+      "meaning": "漲價"
+    },
+    "招く": {
+      "meaning": "招致、引起"
+    },
+    "給与": {
+      "meaning": "薪資"
+    },
+    "伸び": {
+      "meaning": "成長、增幅"
+    },
+    "物価": {
+      "meaning": "物價"
+    },
+    "追いつく": {
+      "meaning": "追上、趕上"
+    },
+    "家庭": {
+      "meaning": "家庭"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "実質的": {
+      "meaning": "實質上的"
+    },
+    "生活水準": {
+      "meaning": "生活水準"
+    },
+    "低下": {
+      "meaning": "下降"
+    },
+    "感じる": {
+      "meaning": "感受到"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "という": {
+      "meaning": "所謂、叫做〜"
+    },
+    "とりわけ": {
+      "meaning": "尤其、特別是"
+    },
+    "収入": {
+      "meaning": "收入"
+    },
+    "限る": {
+      "meaning": "限定、限於"
+    },
+    "高齢者": {
+      "meaning": "高齡者"
+    },
+    "世帯": {
+      "meaning": "家庭、戶"
+    },
+    "子育て": {
+      "meaning": "育兒"
+    },
+    "この": {
+      "meaning": "這個"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "きわめて": {
+      "meaning": "極為、非常"
+    },
+    "深刻": {
+      "meaning": "嚴重的"
+    },
+    "だ": {
+      "meaning": "斷定助動詞，「是」"
+    },
+    "政府": {
+      "meaning": "政府"
+    },
+    "補助金": {
+      "meaning": "補助金"
+    },
+    "給付金": {
+      "meaning": "津貼、補貼金"
+    },
+    "といった": {
+      "meaning": "諸如〜之類的"
+    },
+    "対策": {
+      "meaning": "對策"
+    },
+    "講じる": {
+      "meaning": "採取（對策）"
+    },
+    "その": {
+      "meaning": "那個"
+    },
+    "効果": {
+      "meaning": "效果"
+    },
+    "一時的": {
+      "meaning": "暫時性的"
+    },
+    "もの": {
+      "meaning": "東西、事物"
+    },
+    "とどまる": {
+      "meaning": "停留、止於"
+    },
+    "指摘": {
+      "meaning": "指出、指摘"
+    },
+    "ある": {
+      "meaning": "有（存在）"
+    },
+    "専門家": {
+      "meaning": "專家"
+    },
+    "間": {
+      "meaning": "之間"
+    },
+    "賃金": {
+      "meaning": "工資"
+    },
+    "引き上げ": {
+      "meaning": "調漲、提高"
+    },
+    "伴う": {
+      "meaning": "伴隨"
+    },
+    "物価高": {
+      "meaning": "物價高漲"
+    },
+    "経済": {
+      "meaning": "經濟"
+    },
+    "全体": {
+      "meaning": "整體"
+    },
+    "停滞": {
+      "meaning": "停滯"
+    },
+    "つながる": {
+      "meaning": "導致、連結到"
+    },
+    "懸念する": {
+      "meaning": "擔憂"
+    },
+    "声": {
+      "meaning": "聲音、意見"
+    },
+    "根強い": {
+      "meaning": "根深蒂固的"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "バランス": {
+      "meaning": "平衡"
+    },
+    "どう": {
+      "meaning": "如何"
+    },
+    "取り戻す": {
+      "meaning": "找回、恢復"
+    },
+    "社会": {
+      "meaning": "社會"
+    },
+    "取り組む": {
+      "meaning": "致力於、處理"
+    },
+    "大きな": {
+      "meaning": "大的"
+    },
+    "課題": {
+      "meaning": "課題、待解決的問題"
+    },
+    "残す": {
+      "meaning": "留下"
+    }
+  },
+  "particles": {
+    "の": "表示所屬或修飾關係",
+    "が": "標示句子的主語",
+    "と": "表示引用的內容，或動作共同的對象",
+    "に": "表示變化的結果，或動作的對象",
+    "や": "列舉部分事物，「〜和〜等」",
+    "を": "標示動作的對象",
+    "は": "主題標記",
+    "にとって": "「對〜來說」，立場觀點",
+    "も": "「也」",
+    "という": "「叫做〜」，用於引用說法",
+    "ものの": "「雖然〜」，書面逆接",
+    "といった": "「諸如〜之類的」，舉例",
+    "か": "表示不確定，「是否〜」",
+    "べき": "「應該〜」",
+    "として": "「作為〜」的身分或立場",
+    "で": "表示範圍或場所"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年來，全球資源價格上漲與日圓貶值相互疊加，導致日常生活不可或缺的食品和水電燃料費接連上漲。",
+        "word": "相まる"
+      }
+    ],
+    [
+      {
+        "text": "許多家庭的薪資成長跟不上物價上漲的速度，據說感受到實質生活水準下降的人不在少數。",
+        "word": "生活水準"
+      }
+    ],
+    [
+      {
+        "text": "尤其對收入有限的高齡者家庭和育兒家庭來說，這種情況極為嚴重。",
+        "word": "きわめて"
+      }
+    ],
+    [
+      {
+        "text": "政府雖然採取了補助金、津貼等對策，但也有人指出其效果可能只是暫時的。",
+        "word": "ものの"
+      }
+    ],
+    [
+      {
+        "text": "專家之間普遍擔心，若沒有伴隨加薪的物價上漲，可能會導致整體經濟停滯。",
+        "word": "つながる"
+      }
+    ],
+    [
+      {
+        "text": "今後，該如何重新取得物價與薪資之間的平衡，仍是全社會需要共同面對的重大課題。",
+        "word": "バランス"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜と相まって",
+      "note": "「與〜相結合」，書面因果"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "date": "2026-09-24",
+  "level": "n5_lite",
+  "title": "わたしのかばん",
+  "text": "わたしのかばんは青いです。学校のかばんです。中に本とノートがあります。ペンもあります。とても軽いです。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かばん",
+      "basic_form": "かばん",
+      "reading": "かばん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "青い",
+      "basic_form": "青い",
+      "reading": "あおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "学校",
+      "basic_form": "学校",
+      "reading": "がっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かばん",
+      "basic_form": "かばん",
+      "reading": "かばん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "中",
+      "basic_form": "中",
+      "reading": "なか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ノート",
+      "basic_form": "ノート",
+      "reading": "ノート",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ペン",
+      "basic_form": "ペン",
+      "reading": "ペン",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "軽い",
+      "basic_form": "軽い",
+      "reading": "かるい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我"
+    },
+    "かばん": {
+      "meaning": "包包、書包"
+    },
+    "青い": {
+      "meaning": "藍色的"
+    },
+    "学校": {
+      "meaning": "學校"
+    },
+    "中": {
+      "meaning": "裡面"
+    },
+    "本": {
+      "meaning": "書"
+    },
+    "ノート": {
+      "meaning": "筆記本"
+    },
+    "ある": {
+      "meaning": "有（存在）"
+    },
+    "ペン": {
+      "meaning": "筆"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "軽い": {
+      "meaning": "輕的"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係，「的」",
+    "は": "主題標記，用來點出句子的主題",
+    "に": "表示事物存在的場所，「在〜裡」",
+    "と": "連接名詞，表示「和」",
+    "が": "標示存在句「あります」前面的主語",
+    "も": "「也」，表示同樣的情況"
+  },
+  "translations": [
+    [
+      {
+        "text": "我的包包是藍色的。",
+        "word": "青い"
+      }
+    ],
+    [
+      {
+        "text": "是上學用的包包。",
+        "word": "学校"
+      }
+    ],
+    [
+      {
+        "text": "裡面有書和筆記本。",
+        "word": "ある"
+      }
+    ],
+    [
+      {
+        "text": "也有筆。",
+        "word": "ペン"
+      }
+    ],
+    [
+      {
+        "text": "非常輕。",
+        "word": "軽い"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜は〜です／〜ではありません",
+      "note": "「是」的肯定/否定敘述句"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜が（主語標記）",
+      "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）"
+    },
+    {
+      "sentence": 3,
+      "pattern": "〜も（也）",
+      "note": "「也」，會取代が/を，但と、で等助詞保留"
+    },
+    {
+      "sentence": 4,
+      "pattern": "い形容詞（現在/否定/過去/過去否定）",
+      "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった"
+    }
+  ]
+}

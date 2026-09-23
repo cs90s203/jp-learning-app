@@ -1,0 +1,476 @@
+{
+  "date": "2026-09-24",
+  "level": "n5",
+  "title": "駅で電車を待った",
+  "text": "きのう、駅で電車を待った。少し遅れていたから、ホームで友達と話しながら待った。電車が来たとき、みんなで急いで乗った。窓の外の景色を見て、なんだか楽しくなった。電車の中はすいていたから、座って本を読んだ。",
+  "tokens": [
+    {
+      "surface_form": "きのう",
+      "basic_form": "きのう",
+      "reading": "きのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "駅",
+      "basic_form": "駅",
+      "reading": "えき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "電車",
+      "basic_form": "電車",
+      "reading": "でんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "待った",
+      "basic_form": "待つ",
+      "reading": "まった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "遅れていた",
+      "basic_form": "遅れる",
+      "reading": "おくれていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ホーム",
+      "basic_form": "ホーム",
+      "reading": "ホーム",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "話し",
+      "basic_form": "話す",
+      "reading": "はなし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ながら",
+      "basic_form": "ながら",
+      "reading": "ながら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "待った",
+      "basic_form": "待つ",
+      "reading": "まった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "電車",
+      "basic_form": "電車",
+      "reading": "でんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "来た",
+      "basic_form": "来る",
+      "reading": "きた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "とき",
+      "basic_form": "とき",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急いで",
+      "basic_form": "急ぐ",
+      "reading": "いそいで",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "乗った",
+      "basic_form": "乗る",
+      "reading": "のった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "窓",
+      "basic_form": "窓",
+      "reading": "まど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "外",
+      "basic_form": "外",
+      "reading": "そと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "景色",
+      "basic_form": "景色",
+      "reading": "けしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見て",
+      "basic_form": "見る",
+      "reading": "みて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "なんだか",
+      "basic_form": "なんだか",
+      "reading": "なんだか",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しく",
+      "basic_form": "楽しい",
+      "reading": "たのしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "電車",
+      "basic_form": "電車",
+      "reading": "でんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "中",
+      "basic_form": "中",
+      "reading": "なか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すいていた",
+      "basic_form": "空く",
+      "reading": "すいていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "座って",
+      "basic_form": "座る",
+      "reading": "すわって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読んだ",
+      "basic_form": "読む",
+      "reading": "よんだ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きのう": {
+      "meaning": "昨天"
+    },
+    "駅": {
+      "meaning": "車站"
+    },
+    "電車": {
+      "meaning": "電車"
+    },
+    "待つ": {
+      "meaning": "等待"
+    },
+    "少し": {
+      "meaning": "稍微、一點"
+    },
+    "遅れる": {
+      "meaning": "遲到、延遲"
+    },
+    "ホーム": {
+      "meaning": "月台"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "話す": {
+      "meaning": "說話、聊天"
+    },
+    "来る": {
+      "meaning": "來"
+    },
+    "とき": {
+      "meaning": "……的時候"
+    },
+    "みんな": {
+      "meaning": "大家"
+    },
+    "急ぐ": {
+      "meaning": "趕、匆忙"
+    },
+    "乗る": {
+      "meaning": "搭乘"
+    },
+    "窓": {
+      "meaning": "窗戶"
+    },
+    "外": {
+      "meaning": "外面"
+    },
+    "景色": {
+      "meaning": "風景"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "なんだか": {
+      "meaning": "不知怎麼地"
+    },
+    "楽しい": {
+      "meaning": "開心的、愉快的"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "中": {
+      "meaning": "裡面"
+    },
+    "空く": {
+      "meaning": "空、變空"
+    },
+    "座る": {
+      "meaning": "坐"
+    },
+    "本": {
+      "meaning": "書"
+    },
+    "読む": {
+      "meaning": "閱讀"
+    }
+  },
+  "particles": {
+    "で": "表示動作發生的場所，或使用的方法",
+    "を": "標示動作的對象",
+    "から": "表示原因、理由，「因為〜」",
+    "と": "表示「跟誰一起」的對象",
+    "が": "標示句子的主語",
+    "は": "主題標記",
+    "の": "表示所屬或修飾關係",
+    "ながら": "表示兩個動作同時進行，「一邊〜一邊〜」"
+  },
+  "translations": [
+    [
+      {
+        "text": "昨天，我在車站等電車。",
+        "word": "待つ"
+      }
+    ],
+    [
+      {
+        "text": "因為稍微遲到了，所以在月台上一邊和朋友聊天一邊等。",
+        "word": "話す"
+      }
+    ],
+    [
+      {
+        "text": "電車來的時候，大家匆忙地上車了。",
+        "word": "乗る"
+      }
+    ],
+    [
+      {
+        "text": "看著窗外的風景，不知怎麼地開心了起來。",
+        "word": "楽しい"
+      }
+    ],
+    [
+      {
+        "text": "電車裡人很少，所以就坐下看書了。",
+        "word": "座る"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 1,
+      "pattern": "〜ながら（一邊〜一邊）",
+      "note": "表示兩個動作同時進行"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜が（主語標記）",
+      "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）"
+    },
+    {
+      "sentence": 3,
+      "pattern": "動詞て形",
+      "note": "連接兩個動作（先後順序）、或用於て形句型（ている等）"
+    },
+    {
+      "sentence": 0,
+      "pattern": "〜で（場所/方法）",
+      "note": "表示動作發生的場所，或使用的方法/工具"
+    }
+  ]
+}

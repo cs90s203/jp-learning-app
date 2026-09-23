@@ -1,0 +1,668 @@
+{
+  "date": "2026-09-24",
+  "level": "n4",
+  "title": "弟との魚釣り",
+  "text": "日曜日に、弟と近くの川へ魚釣りに行った。朝は天気が良かったが、昼になると急に曇ってきたので、少し心配だった。それでも、弟は諦めずに何度も竿を投げたり糸を巻いたりしていた。私はなかなか釣れなかったのに、弟は小さな魚を三匹も釣ることができた。悔しかったけれど、弟の笑顔を見て、なんだか嬉しくなった。",
+  "tokens": [
+    {
+      "surface_form": "日曜日",
+      "basic_form": "日曜日",
+      "reading": "にちようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "弟",
+      "basic_form": "弟",
+      "reading": "おとうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近く",
+      "basic_form": "近く",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "川",
+      "basic_form": "川",
+      "reading": "かわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "魚釣り",
+      "basic_form": "魚釣り",
+      "reading": "さかなつり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行った",
+      "basic_form": "行く",
+      "reading": "いった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝",
+      "basic_form": "朝",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "天気",
+      "basic_form": "天気",
+      "reading": "てんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "良かった",
+      "basic_form": "良い",
+      "reading": "よかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "昼",
+      "basic_form": "昼",
+      "reading": "ひる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急に",
+      "basic_form": "急に",
+      "reading": "きゅうに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "曇ってきた",
+      "basic_form": "曇る",
+      "reading": "くもってきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "心配",
+      "basic_form": "心配",
+      "reading": "しんぱい",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それでも",
+      "basic_form": "それでも",
+      "reading": "それでも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "弟",
+      "basic_form": "弟",
+      "reading": "おとうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "諦め",
+      "basic_form": "諦める",
+      "reading": "あきらめ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ずに",
+      "basic_form": "ずに",
+      "reading": "ずに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "何度も",
+      "basic_form": "何度も",
+      "reading": "なんども",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "竿",
+      "basic_form": "竿",
+      "reading": "さお",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "投げ",
+      "basic_form": "投げる",
+      "reading": "なげ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たり",
+      "basic_form": "たり",
+      "reading": "たり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "糸",
+      "basic_form": "糸",
+      "reading": "いと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "巻い",
+      "basic_form": "巻く",
+      "reading": "まい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たり",
+      "basic_form": "たり",
+      "reading": "たり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "していた",
+      "basic_form": "する",
+      "reading": "していた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "私",
+      "basic_form": "私",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なかなか",
+      "basic_form": "なかなか",
+      "reading": "なかなか",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "釣れなかった",
+      "basic_form": "釣れる",
+      "reading": "つれなかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "のに",
+      "basic_form": "のに",
+      "reading": "のに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "弟",
+      "basic_form": "弟",
+      "reading": "おとうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "小さな",
+      "basic_form": "小さな",
+      "reading": "ちいさな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "魚",
+      "basic_form": "魚",
+      "reading": "さかな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "三匹",
+      "basic_form": "三匹",
+      "reading": "さんびき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "釣る",
+      "basic_form": "釣る",
+      "reading": "つる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できた",
+      "basic_form": "できる",
+      "reading": "できた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "悔しかった",
+      "basic_form": "悔しい",
+      "reading": "くやしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "けれど",
+      "basic_form": "けれど",
+      "reading": "けれど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "弟",
+      "basic_form": "弟",
+      "reading": "おとうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "笑顔",
+      "basic_form": "笑顔",
+      "reading": "えがお",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見て",
+      "basic_form": "見る",
+      "reading": "みて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "なんだか",
+      "basic_form": "なんだか",
+      "reading": "なんだか",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "嬉しく",
+      "basic_form": "嬉しい",
+      "reading": "うれしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "日曜日": {
+      "meaning": "星期天"
+    },
+    "弟": {
+      "meaning": "弟弟"
+    },
+    "近く": {
+      "meaning": "附近"
+    },
+    "川": {
+      "meaning": "河川"
+    },
+    "魚釣り": {
+      "meaning": "釣魚"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "朝": {
+      "meaning": "早上"
+    },
+    "天気": {
+      "meaning": "天氣"
+    },
+    "良い": {
+      "meaning": "好的"
+    },
+    "昼": {
+      "meaning": "中午、白天"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "急に": {
+      "meaning": "突然"
+    },
+    "曇る": {
+      "meaning": "轉陰、變陰天"
+    },
+    "少し": {
+      "meaning": "稍微、一點"
+    },
+    "心配": {
+      "meaning": "擔心"
+    },
+    "だ": {
+      "meaning": "斷定助動詞，「是」"
+    },
+    "それでも": {
+      "meaning": "即使如此、儘管這樣"
+    },
+    "諦める": {
+      "meaning": "放棄"
+    },
+    "何度も": {
+      "meaning": "好幾次"
+    },
+    "竿": {
+      "meaning": "釣竿"
+    },
+    "投げる": {
+      "meaning": "投、拋"
+    },
+    "糸": {
+      "meaning": "線"
+    },
+    "巻く": {
+      "meaning": "捲、收（線）"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "私": {
+      "meaning": "我"
+    },
+    "なかなか": {
+      "meaning": "（後接否定）怎麼也、遲遲"
+    },
+    "釣れる": {
+      "meaning": "釣得到（自動詞）"
+    },
+    "小さな": {
+      "meaning": "小的"
+    },
+    "魚": {
+      "meaning": "魚"
+    },
+    "三匹": {
+      "meaning": "三隻（魚等的量詞）"
+    },
+    "釣る": {
+      "meaning": "釣（魚）"
+    },
+    "こと": {
+      "meaning": "事情，接在動詞後表示「〜這件事」"
+    },
+    "できる": {
+      "meaning": "能夠、可以"
+    },
+    "悔しい": {
+      "meaning": "不甘心的、懊悔的"
+    },
+    "笑顔": {
+      "meaning": "笑容"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "なんだか": {
+      "meaning": "不知怎麼地"
+    },
+    "嬉しい": {
+      "meaning": "開心的"
+    }
+  },
+  "particles": {
+    "に": "表示時間點，或動作的到達點/對象",
+    "と": "表示「跟誰一起」的對象",
+    "へ": "表示移動的方向",
+    "は": "主題標記",
+    "が": "標示句子的主語，或連接兩句表示「但是」",
+    "ので": "表示客觀原因，「因為〜」",
+    "のに": "逆接，帶有不滿或意外的語氣，「明明〜卻〜」",
+    "けれど": "逆接連接詞，「雖然〜但是〜」",
+    "も": "「也」，或表示程度之高「竟然〜之多」",
+    "を": "標示動作的對象",
+    "ずに": "「不〜地」，表示在不做某動作的狀態下做另一件事",
+    "たり": "列舉動作，「或做〜或做〜」",
+    "の": "表示所屬或修飾關係"
+  },
+  "translations": [
+    [
+      {
+        "text": "星期天，我和弟弟去了附近的河邊釣魚。",
+        "word": "魚釣り"
+      }
+    ],
+    [
+      {
+        "text": "早上天氣很好，但到了中午突然轉陰，有點擔心。",
+        "word": "ので"
+      }
+    ],
+    [
+      {
+        "text": "儘管如此，弟弟不放棄地一直拋竿、收線。",
+        "word": "諦める"
+      }
+    ],
+    [
+      {
+        "text": "我怎麼也釣不到魚，弟弟卻釣到了三條小魚。",
+        "word": "のに"
+      }
+    ],
+    [
+      {
+        "text": "雖然不甘心，但看到弟弟的笑容，不知怎麼地開心了起來。",
+        "word": "笑顔"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "普通形（辞書形/ない形/た形/なかった形）",
+      "note": "常體，用於複句、思考/傳聞句型前接"
+    },
+    {
+      "sentence": 1,
+      "pattern": "〜ので（因為）",
+      "note": "客觀原因，比から更委婉/書面"
+    },
+    {
+      "sentence": 3,
+      "pattern": "〜のに（雖然/卻）",
+      "note": "逆接，帶有不滿/意外語氣"
+    }
+  ]
+}
