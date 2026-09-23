@@ -1,0 +1,1347 @@
+{
+  "date": "2026-09-24",
+  "level": "n1",
+  "title": "生成AIの著作権をめぐる議論",
+  "text": "生成AIが文章や画像を瞬時に作り出す時代になり、その利便性は目を見張るものがある。しかしその一方で、学習データとして既存の作品が無断で使用されているのではないかという疑念が、創作者たちの間で根強くくすぶっている。とりわけ、自分の作品が想像だにしなかった形で学習素材として使われていたと知った作家やイラストレーターの怒りは大きい。企業側は法律上は適法だとの立場を崩さないが、倫理的に許されるかどうかは別問題だと反論する声も少なくない。実際、一部のクリエイターは模倣作品の氾濫によって仕事を奪われかねない状況に立たされ、活動の方針転換を余儀なくされている。現行の著作権法だけでは対応しきれないという指摘も出ており、立法府による議論の加速が待たれている。技術の進歩は止められないとしても、創作者の権利をないがしろにしたまま突き進むことだけは避けるべきだろう。",
+  "tokens": [
+    {
+      "surface_form": "生成AI",
+      "basic_form": "生成AI",
+      "reading": "せいせいエーアイ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "文章",
+      "basic_form": "文章",
+      "reading": "ぶんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "画像",
+      "basic_form": "画像",
+      "reading": "がぞう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "瞬時に",
+      "basic_form": "瞬時に",
+      "reading": "しゅんじに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "作り出す",
+      "basic_form": "作り出す",
+      "reading": "つくりだす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時代",
+      "basic_form": "時代",
+      "reading": "じだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なり",
+      "basic_form": "なる",
+      "reading": "なり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "利便性",
+      "basic_form": "利便性",
+      "reading": "りべんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "目",
+      "basic_form": "目",
+      "reading": "め",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見張る",
+      "basic_form": "見張る",
+      "reading": "みはる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "もの",
+      "basic_form": "もの",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかし",
+      "basic_form": "しかし",
+      "reading": "しかし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "学習",
+      "basic_form": "学習",
+      "reading": "がくしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "データ",
+      "basic_form": "データ",
+      "reading": "データ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "既存",
+      "basic_form": "既存",
+      "reading": "きぞん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作品",
+      "basic_form": "作品",
+      "reading": "さくひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "無断",
+      "basic_form": "無断",
+      "reading": "むだん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使用されている",
+      "basic_form": "使用する",
+      "reading": "しようされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "疑念",
+      "basic_form": "疑念",
+      "reading": "ぎねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "創作者",
+      "basic_form": "創作者",
+      "reading": "そうさくしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "たち",
+      "basic_form": "たち",
+      "reading": "たち",
+      "pos": "接尾辞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "間",
+      "basic_form": "間",
+      "reading": "あいだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "根強く",
+      "basic_form": "根強い",
+      "reading": "ねづよく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "くすぶっている",
+      "basic_form": "くすぶる",
+      "reading": "くすぶっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とりわけ",
+      "basic_form": "とりわけ",
+      "reading": "とりわけ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "自分",
+      "basic_form": "自分",
+      "reading": "じぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作品",
+      "basic_form": "作品",
+      "reading": "さくひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "想像",
+      "basic_form": "想像",
+      "reading": "そうぞう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だに",
+      "basic_form": "だに",
+      "reading": "だに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しなかった",
+      "basic_form": "する",
+      "reading": "しなかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "形",
+      "basic_form": "形",
+      "reading": "かたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学習素材",
+      "basic_form": "学習素材",
+      "reading": "がくしゅうそざい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使われていた",
+      "basic_form": "使う",
+      "reading": "つかわれていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "知った",
+      "basic_form": "知る",
+      "reading": "しった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "作家",
+      "basic_form": "作家",
+      "reading": "さっか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "イラストレーター",
+      "basic_form": "イラストレーター",
+      "reading": "イラストレーター",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "怒り",
+      "basic_form": "怒り",
+      "reading": "いかり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きい",
+      "basic_form": "大きい",
+      "reading": "おおきい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業側",
+      "basic_form": "企業側",
+      "reading": "きぎょうがわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "法律上",
+      "basic_form": "法律上",
+      "reading": "ほうりつじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "適法",
+      "basic_form": "適法",
+      "reading": "てきほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "立場",
+      "basic_form": "立場",
+      "reading": "たちば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "崩さない",
+      "basic_form": "崩す",
+      "reading": "くずさない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "倫理的に",
+      "basic_form": "倫理的に",
+      "reading": "りんりてきに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "許される",
+      "basic_form": "許す",
+      "reading": "ゆるされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "どうか",
+      "basic_form": "どうか",
+      "reading": "どうか",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "別問題",
+      "basic_form": "別問題",
+      "reading": "べつもんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "反論する",
+      "basic_form": "反論する",
+      "reading": "はんろんする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実際",
+      "basic_form": "実際",
+      "reading": "じっさい",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一部",
+      "basic_form": "一部",
+      "reading": "いちぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "クリエイター",
+      "basic_form": "クリエイター",
+      "reading": "クリエイター",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "模倣",
+      "basic_form": "模倣",
+      "reading": "もほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "作品",
+      "basic_form": "作品",
+      "reading": "さくひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "氾濫",
+      "basic_form": "氾濫",
+      "reading": "はんらん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "奪われかねない",
+      "basic_form": "奪う",
+      "reading": "うばわれかねない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "立たされ",
+      "basic_form": "立たされる",
+      "reading": "たたされ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "活動",
+      "basic_form": "活動",
+      "reading": "かつどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "方針転換",
+      "basic_form": "方針転換",
+      "reading": "ほうしんてんかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "余儀なくされている",
+      "basic_form": "余儀なくされる",
+      "reading": "よぎなくされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "現行",
+      "basic_form": "現行",
+      "reading": "げんこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "著作権法",
+      "basic_form": "著作権法",
+      "reading": "ちょさくけんほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対応しきれない",
+      "basic_form": "対応する",
+      "reading": "たいおうしきれない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出ており",
+      "basic_form": "出る",
+      "reading": "でており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "立法府",
+      "basic_form": "立法府",
+      "reading": "りっぽうふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "による",
+      "basic_form": "による",
+      "reading": "による",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "議論",
+      "basic_form": "議論",
+      "reading": "ぎろん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "加速",
+      "basic_form": "加速",
+      "reading": "かそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "待たれている",
+      "basic_form": "待つ",
+      "reading": "またれている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "技術",
+      "basic_form": "技術",
+      "reading": "ぎじゅつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進歩",
+      "basic_form": "進歩",
+      "reading": "しんぽ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "止められない",
+      "basic_form": "止める",
+      "reading": "とめられない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "としても",
+      "basic_form": "としても",
+      "reading": "としても",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "創作者",
+      "basic_form": "創作者",
+      "reading": "そうさくしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "権利",
+      "basic_form": "権利",
+      "reading": "けんり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ないがしろにした",
+      "basic_form": "ないがしろにする",
+      "reading": "ないがしろにした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まま",
+      "basic_form": "まま",
+      "reading": "まま",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "突き進む",
+      "basic_form": "突き進む",
+      "reading": "つきすすむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "避ける",
+      "basic_form": "避ける",
+      "reading": "さける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "べき",
+      "basic_form": "べき",
+      "reading": "べき",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "生成AI": {
+      "meaning": "生成式AI（生成式人工智慧）"
+    },
+    "文章": {
+      "meaning": "文章"
+    },
+    "画像": {
+      "meaning": "圖像"
+    },
+    "瞬時に": {
+      "meaning": "瞬間、一瞬之間"
+    },
+    "作り出す": {
+      "meaning": "創造出、製作出"
+    },
+    "時代": {
+      "meaning": "時代"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "その": {
+      "meaning": "那個"
+    },
+    "利便性": {
+      "meaning": "便利性"
+    },
+    "目": {
+      "meaning": "眼睛"
+    },
+    "見張る": {
+      "meaning": "睜大（眼睛）、令人矚目"
+    },
+    "もの": {
+      "meaning": "東西、事物"
+    },
+    "ある": {
+      "meaning": "有（存在）"
+    },
+    "しかし": {
+      "meaning": "然而、但是"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "学習": {
+      "meaning": "學習"
+    },
+    "データ": {
+      "meaning": "資料、數據"
+    },
+    "既存": {
+      "meaning": "既有的、現存的"
+    },
+    "作品": {
+      "meaning": "作品"
+    },
+    "無断": {
+      "meaning": "未經許可、擅自"
+    },
+    "使用する": {
+      "meaning": "使用"
+    },
+    "ない": {
+      "meaning": "沒有、不是（否定）"
+    },
+    "疑念": {
+      "meaning": "疑慮、懷疑"
+    },
+    "創作者": {
+      "meaning": "創作者"
+    },
+    "たち": {
+      "meaning": "表示複數，「〜們」"
+    },
+    "間": {
+      "meaning": "之間"
+    },
+    "根強い": {
+      "meaning": "根深蒂固的"
+    },
+    "くすぶる": {
+      "meaning": "（不滿等）悶燒、持續存在"
+    },
+    "とりわけ": {
+      "meaning": "尤其、特別是"
+    },
+    "自分": {
+      "meaning": "自己"
+    },
+    "想像": {
+      "meaning": "想像"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "形": {
+      "meaning": "形式、方式"
+    },
+    "学習素材": {
+      "meaning": "學習素材"
+    },
+    "使う": {
+      "meaning": "使用"
+    },
+    "知る": {
+      "meaning": "得知、知道"
+    },
+    "作家": {
+      "meaning": "作家"
+    },
+    "イラストレーター": {
+      "meaning": "插畫家"
+    },
+    "怒り": {
+      "meaning": "憤怒"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "企業側": {
+      "meaning": "企業方"
+    },
+    "法律上": {
+      "meaning": "法律上"
+    },
+    "適法": {
+      "meaning": "合法"
+    },
+    "だ": {
+      "meaning": "斷定助動詞，「是」"
+    },
+    "立場": {
+      "meaning": "立場"
+    },
+    "崩す": {
+      "meaning": "打破、瓦解"
+    },
+    "倫理的に": {
+      "meaning": "在倫理上"
+    },
+    "許す": {
+      "meaning": "允許、原諒"
+    },
+    "どうか": {
+      "meaning": "是否"
+    },
+    "別問題": {
+      "meaning": "另一回事、另一個問題"
+    },
+    "反論する": {
+      "meaning": "反駁"
+    },
+    "声": {
+      "meaning": "聲音、意見"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "実際": {
+      "meaning": "實際上"
+    },
+    "一部": {
+      "meaning": "一部分"
+    },
+    "クリエイター": {
+      "meaning": "創作者、創意工作者"
+    },
+    "模倣": {
+      "meaning": "模仿"
+    },
+    "氾濫": {
+      "meaning": "氾濫、泛濫"
+    },
+    "仕事": {
+      "meaning": "工作"
+    },
+    "奪う": {
+      "meaning": "奪走"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "立たされる": {
+      "meaning": "被置於（某種處境）"
+    },
+    "活動": {
+      "meaning": "活動"
+    },
+    "方針転換": {
+      "meaning": "方針轉變、轉型"
+    },
+    "余儀なくされる": {
+      "meaning": "被迫（不得不）"
+    },
+    "現行": {
+      "meaning": "現行的"
+    },
+    "著作権法": {
+      "meaning": "著作權法"
+    },
+    "対応する": {
+      "meaning": "應對、處理"
+    },
+    "指摘": {
+      "meaning": "指出、指摘"
+    },
+    "出る": {
+      "meaning": "出現、提出"
+    },
+    "立法府": {
+      "meaning": "立法機構"
+    },
+    "議論": {
+      "meaning": "討論、議論"
+    },
+    "加速": {
+      "meaning": "加速"
+    },
+    "待つ": {
+      "meaning": "等待"
+    },
+    "技術": {
+      "meaning": "技術"
+    },
+    "進歩": {
+      "meaning": "進步"
+    },
+    "止める": {
+      "meaning": "阻止、停止"
+    },
+    "権利": {
+      "meaning": "權利"
+    },
+    "ないがしろにする": {
+      "meaning": "輕視、置之不理"
+    },
+    "突き進む": {
+      "meaning": "一味向前衝、勇往直前"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "避ける": {
+      "meaning": "避免"
+    }
+  },
+  "particles": {
+    "が": "標示句子的主語",
+    "や": "列舉部分事物，「〜和〜等」",
+    "を": "標示動作的對象",
+    "に": "表示變化的結果，或動作的對象",
+    "は": "主題標記",
+    "で": "表示方法、場所，或連接子句",
+    "として": "「作為〜」的身分或立場",
+    "の": "表示所屬或修飾關係，或名詞化",
+    "か": "表示不確定，「是否〜」",
+    "という": "「叫做〜」，用於引用說法",
+    "と": "表示引用的內容",
+    "によって": "「依據〜」／「因〜而異」",
+    "による": "「由〜」，表示原因或主體",
+    "だけ": "「只〜」，表示限定",
+    "としても": "「即使〜」，表示讓步",
+    "まま": "「保持〜的狀態」",
+    "べき": "「應該〜」",
+    "も": "「也」",
+    "だに": "「連〜都」，強調極端"
+  },
+  "translations": [
+    [
+      {
+        "text": "生成式AI能瞬間創作出文章和圖像的時代已經到來，其便利性令人矚目。",
+        "word": "生成AI"
+      }
+    ],
+    [
+      {
+        "text": "然而另一方面，創作者之間也持續存在著一種疑慮：既有作品是否被未經許可地當作學習資料使用。",
+        "word": "疑念"
+      }
+    ],
+    [
+      {
+        "text": "尤其是得知自己的作品竟以連做夢都沒想過的方式被用作學習素材的作家和插畫家，他們的憤怒相當強烈。",
+        "word": "だに"
+      }
+    ],
+    [
+      {
+        "text": "企業方堅持法律上屬於合法的立場，但也有不少反對的聲音認為，是否符合倫理是另一回事。",
+        "word": "適法"
+      }
+    ],
+    [
+      {
+        "text": "實際上，部分創作者因仿冒作品氾濫而面臨可能失去工作的處境，被迫轉換活動方針。",
+        "word": "余儀なくされる"
+      }
+    ],
+    [
+      {
+        "text": "也有人指出，僅憑現行著作權法無法完全因應，立法機構加快討論備受期待。",
+        "word": "著作権法"
+      }
+    ],
+    [
+      {
+        "text": "即使技術的進步無法阻擋，也應該避免在輕視創作者權利的情況下一味向前推進。",
+        "word": "べき"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 2,
+      "pattern": "〜だに",
+      "note": "「連〜都」，強調極端"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜を余儀なくされる",
+      "note": "「被迫〜」，書面被動"
+    }
+  ]
+}

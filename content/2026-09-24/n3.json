@@ -1,0 +1,978 @@
+{
+  "date": "2026-09-24",
+  "level": "n3",
+  "title": "合気道を習い始めた理由",
+  "text": "子供のころから体を動かすことが好きだったが、大人になってからは仕事に追われ、運動不足になりがちだった。そんなとき、友人の勧めで合気道の道場を見学したところ、想像していたよりも奥が深く、すっかり興味を持った。合気道は力に頼るというより、相手の動きを利用して技をかけるという点が特徴的で、年齢に関係なく続けられるというのも魅力だった。実際に始めてみると、体力づくりになるだけでなく、精神的にも落ち着けるようになった気がする。今では、週末に道場へ行くたびに、新しい発見があって楽しい。",
+  "tokens": [
+    {
+      "surface_form": "子供",
+      "basic_form": "子供",
+      "reading": "こども",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ころ",
+      "basic_form": "ころ",
+      "reading": "ころ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "動かす",
+      "basic_form": "動かす",
+      "reading": "うごかす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "好き",
+      "basic_form": "好き",
+      "reading": "すき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "大人",
+      "basic_form": "大人",
+      "reading": "おとな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なって",
+      "basic_form": "なる",
+      "reading": "なって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "追われ",
+      "basic_form": "追われる",
+      "reading": "おわれ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "運動不足",
+      "basic_form": "運動不足",
+      "reading": "うんどうぶそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なり",
+      "basic_form": "なる",
+      "reading": "なり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "がち",
+      "basic_form": "がち",
+      "reading": "がち",
+      "pos": "接尾辞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "そんな",
+      "basic_form": "そんな",
+      "reading": "そんな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "とき",
+      "basic_form": "とき",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友人",
+      "basic_form": "友人",
+      "reading": "ゆうじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "勧め",
+      "basic_form": "勧め",
+      "reading": "すすめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "合気道",
+      "basic_form": "合気道",
+      "reading": "あいきどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "道場",
+      "basic_form": "道場",
+      "reading": "どうじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見学した",
+      "basic_form": "見学する",
+      "reading": "けんがくした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ところ",
+      "basic_form": "ところ",
+      "reading": "ところ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "想像していた",
+      "basic_form": "想像する",
+      "reading": "そうぞうしていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "奥",
+      "basic_form": "奥",
+      "reading": "おく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深く",
+      "basic_form": "深い",
+      "reading": "ふかく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すっかり",
+      "basic_form": "すっかり",
+      "reading": "すっかり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "興味",
+      "basic_form": "興味",
+      "reading": "きょうみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "持った",
+      "basic_form": "持つ",
+      "reading": "もった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "合気道",
+      "basic_form": "合気道",
+      "reading": "あいきどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "力",
+      "basic_form": "力",
+      "reading": "ちから",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "頼る",
+      "basic_form": "頼る",
+      "reading": "たよる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "相手",
+      "basic_form": "相手",
+      "reading": "あいて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "動き",
+      "basic_form": "動き",
+      "reading": "うごき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "利用して",
+      "basic_form": "利用する",
+      "reading": "りようして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "技",
+      "basic_form": "技",
+      "reading": "わざ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かける",
+      "basic_form": "かける",
+      "reading": "かける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "点",
+      "basic_form": "点",
+      "reading": "てん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "特徴的",
+      "basic_form": "特徴的",
+      "reading": "とくちょうてき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "だ",
+      "reading": "で",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "年齢",
+      "basic_form": "年齢",
+      "reading": "ねんれい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "関係なく",
+      "basic_form": "関係ない",
+      "reading": "かんけいなく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "続けられる",
+      "basic_form": "続ける",
+      "reading": "つづけられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "魅力",
+      "basic_form": "魅力",
+      "reading": "みりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実際に",
+      "basic_form": "実際に",
+      "reading": "じっさいに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "始めて",
+      "basic_form": "始める",
+      "reading": "はじめて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みる",
+      "basic_form": "みる",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "体力づくり",
+      "basic_form": "体力づくり",
+      "reading": "たいりょくづくり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけでなく",
+      "basic_form": "だけでなく",
+      "reading": "だけでなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "精神的に",
+      "basic_form": "精神的",
+      "reading": "せいしんてきに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "落ち着ける",
+      "basic_form": "落ち着ける",
+      "reading": "おちつける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "気",
+      "basic_form": "気",
+      "reading": "き",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今",
+      "basic_form": "今",
+      "reading": "いま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "週末",
+      "basic_form": "週末",
+      "reading": "しゅうまつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "道場",
+      "basic_form": "道場",
+      "reading": "どうじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行く",
+      "basic_form": "行く",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "たびに",
+      "basic_form": "たびに",
+      "reading": "たびに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "新しい",
+      "basic_form": "新しい",
+      "reading": "あたらしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "発見",
+      "basic_form": "発見",
+      "reading": "はっけん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あって",
+      "basic_form": "ある",
+      "reading": "あって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "楽しい",
+      "basic_form": "楽しい",
+      "reading": "たのしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "子供": {
+      "meaning": "小孩、孩子"
+    },
+    "ころ": {
+      "meaning": "時候、時期"
+    },
+    "体": {
+      "meaning": "身體"
+    },
+    "動かす": {
+      "meaning": "活動、使…動"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "好き": {
+      "meaning": "喜歡的"
+    },
+    "だ": {
+      "meaning": "斷定助動詞，「是」"
+    },
+    "大人": {
+      "meaning": "大人、成年人"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "仕事": {
+      "meaning": "工作"
+    },
+    "追われる": {
+      "meaning": "被追趕、忙於（某事）"
+    },
+    "運動不足": {
+      "meaning": "運動不足"
+    },
+    "がち": {
+      "meaning": "容易〜、動不動就〜的傾向"
+    },
+    "そんな": {
+      "meaning": "那樣的"
+    },
+    "とき": {
+      "meaning": "……的時候"
+    },
+    "友人": {
+      "meaning": "朋友"
+    },
+    "勧め": {
+      "meaning": "建議、推薦"
+    },
+    "合気道": {
+      "meaning": "合氣道"
+    },
+    "道場": {
+      "meaning": "道場"
+    },
+    "見学する": {
+      "meaning": "參觀學習"
+    },
+    "ところ": {
+      "meaning": "結果、正當…時"
+    },
+    "想像する": {
+      "meaning": "想像"
+    },
+    "奥": {
+      "meaning": "深處、內涵"
+    },
+    "深い": {
+      "meaning": "深的"
+    },
+    "すっかり": {
+      "meaning": "完全地"
+    },
+    "興味": {
+      "meaning": "興趣"
+    },
+    "持つ": {
+      "meaning": "擁有、抱持"
+    },
+    "力": {
+      "meaning": "力量"
+    },
+    "頼る": {
+      "meaning": "依賴"
+    },
+    "という": {
+      "meaning": "所謂、叫做〜"
+    },
+    "相手": {
+      "meaning": "對方"
+    },
+    "動き": {
+      "meaning": "動作"
+    },
+    "利用する": {
+      "meaning": "利用"
+    },
+    "技": {
+      "meaning": "招式、技巧"
+    },
+    "かける": {
+      "meaning": "施展（招式）"
+    },
+    "点": {
+      "meaning": "點、方面"
+    },
+    "特徴的": {
+      "meaning": "具特色的"
+    },
+    "年齢": {
+      "meaning": "年齡"
+    },
+    "関係ない": {
+      "meaning": "無關"
+    },
+    "続ける": {
+      "meaning": "繼續"
+    },
+    "魅力": {
+      "meaning": "魅力"
+    },
+    "実際に": {
+      "meaning": "實際上"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "みる": {
+      "meaning": "試著做做看（接動詞て形之後）"
+    },
+    "体力づくり": {
+      "meaning": "鍛鍊體力"
+    },
+    "だけでなく": {
+      "meaning": "不僅〜"
+    },
+    "精神的": {
+      "meaning": "精神上的"
+    },
+    "落ち着ける": {
+      "meaning": "使…沉穩、能夠冷靜下來"
+    },
+    "ように": {
+      "meaning": "變得〜（狀態變化的方向）"
+    },
+    "気": {
+      "meaning": "感覺"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "今": {
+      "meaning": "現在"
+    },
+    "週末": {
+      "meaning": "週末"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "たびに": {
+      "meaning": "每當〜"
+    },
+    "新しい": {
+      "meaning": "新的"
+    },
+    "発見": {
+      "meaning": "發現"
+    },
+    "ある": {
+      "meaning": "有（存在）"
+    },
+    "楽しい": {
+      "meaning": "開心的、有趣的"
+    }
+  },
+  "particles": {
+    "の": "表示所屬或修飾關係",
+    "から": "表示起點，「從〜」；接在動詞て形後表示「做完〜之後」",
+    "を": "標示動作的對象",
+    "が": "標示句子的主語",
+    "に": "表示對象、方向或轉變的結果",
+    "は": "主題標記",
+    "で": "表示方法、場所，或連接子句",
+    "より": "表示比較的基準，「比起〜」",
+    "も": "「也」",
+    "と": "表示條件「一旦〜就」",
+    "だけでなく": "「不僅〜」，表示不僅止於此",
+    "ように": "「變得〜」的目標或狀態變化",
+    "へ": "表示移動的方向"
+  },
+  "translations": [
+    [
+      {
+        "text": "從小就喜歡活動身體，但長大後忙於工作，變得幾乎不運動。",
+        "word": "がち"
+      }
+    ],
+    [
+      {
+        "text": "就在那時，因為朋友的推薦去參觀了合氣道的道場，結果發現比想像中更有深度，讓我徹底產生了興趣。",
+        "word": "見学する"
+      }
+    ],
+    [
+      {
+        "text": "合氣道與其說是依賴力量，不如說是利用對方的動作來施展招式，這一點很有特色，而且不分年齡都能持續下去，這也是它的魅力所在。",
+        "word": "特徴的"
+      }
+    ],
+    [
+      {
+        "text": "實際開始之後，發現不僅能鍛鍊體力，精神上似乎也變得比較沉穩。",
+        "word": "体力づくり"
+      }
+    ],
+    [
+      {
+        "text": "現在，每次到週末去道場，都會有新發現，很開心。",
+        "word": "たびに"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜がち",
+      "note": "「容易〜、動不動就〜」的傾向"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜たびに",
+      "note": "「每當〜」"
+    }
+  ]
+}

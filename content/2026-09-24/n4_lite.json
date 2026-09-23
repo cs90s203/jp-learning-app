@@ -1,0 +1,487 @@
+{
+  "date": "2026-09-24",
+  "level": "n4_lite",
+  "title": "はじめての潮干狩り",
+  "text": "先週、家族とはじめて潮干狩りに行った。海は風が強くて、少し寒かった。でも、あさりがたくさん採れて、うれしかった。うちに帰ってから、みんなで味噌汁を作って食べた。貝の味がしっかりしていて、とてもおいしかった。また来年も行きたいと思う。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家族",
+      "basic_form": "家族",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "はじめて",
+      "basic_form": "はじめて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "潮干狩り",
+      "basic_form": "潮干狩り",
+      "reading": "しおひがり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行った",
+      "basic_form": "行く",
+      "reading": "いった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "海",
+      "basic_form": "海",
+      "reading": "うみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "風",
+      "basic_form": "風",
+      "reading": "かぜ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "強くて",
+      "basic_form": "強い",
+      "reading": "つよくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "寒かった",
+      "basic_form": "寒い",
+      "reading": "さむかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "あさり",
+      "basic_form": "あさり",
+      "reading": "あさり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たくさん",
+      "basic_form": "たくさん",
+      "reading": "たくさん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "採れて",
+      "basic_form": "採れる",
+      "reading": "とれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "うれしかった",
+      "basic_form": "うれしい",
+      "reading": "うれしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "うち",
+      "basic_form": "うち",
+      "reading": "うち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "帰って",
+      "basic_form": "帰る",
+      "reading": "かえって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "味噌汁",
+      "basic_form": "味噌汁",
+      "reading": "みそしる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作って",
+      "basic_form": "作る",
+      "reading": "つくって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "食べた",
+      "basic_form": "食べる",
+      "reading": "たべた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "貝",
+      "basic_form": "貝",
+      "reading": "かい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "味",
+      "basic_form": "味",
+      "reading": "あじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "しっかりしていて",
+      "basic_form": "しっかりする",
+      "reading": "しっかりしていて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "おいしかった",
+      "basic_form": "おいしい",
+      "reading": "おいしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "来年",
+      "basic_form": "来年",
+      "reading": "らいねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行きたい",
+      "basic_form": "行く",
+      "reading": "いきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上星期"
+    },
+    "家族": {
+      "meaning": "家人"
+    },
+    "はじめて": {
+      "meaning": "第一次"
+    },
+    "潮干狩り": {
+      "meaning": "挖蛤蜊、潮間帶採貝"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "海": {
+      "meaning": "海邊、海"
+    },
+    "風": {
+      "meaning": "風"
+    },
+    "強い": {
+      "meaning": "強的"
+    },
+    "少し": {
+      "meaning": "稍微、一點"
+    },
+    "寒い": {
+      "meaning": "冷的"
+    },
+    "でも": {
+      "meaning": "不過、但是"
+    },
+    "あさり": {
+      "meaning": "蛤蜊"
+    },
+    "たくさん": {
+      "meaning": "很多"
+    },
+    "採れる": {
+      "meaning": "採到、捕獲到"
+    },
+    "うれしい": {
+      "meaning": "開心的"
+    },
+    "うち": {
+      "meaning": "家、自己家裡"
+    },
+    "帰る": {
+      "meaning": "回去"
+    },
+    "みんな": {
+      "meaning": "大家"
+    },
+    "味噌汁": {
+      "meaning": "味噌湯"
+    },
+    "作る": {
+      "meaning": "做、製作"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "貝": {
+      "meaning": "貝類"
+    },
+    "味": {
+      "meaning": "味道"
+    },
+    "しっかりする": {
+      "meaning": "紮實、濃郁"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "おいしい": {
+      "meaning": "好吃的"
+    },
+    "また": {
+      "meaning": "再、又"
+    },
+    "来年": {
+      "meaning": "明年"
+    },
+    "思う": {
+      "meaning": "覺得、想"
+    }
+  },
+  "particles": {
+    "と": "表示「跟誰一起」的對象",
+    "に": "表示動作的到達點或對象",
+    "は": "主題標記",
+    "が": "標示句子的主語",
+    "で": "表示動作發生的場所，或使用的方法",
+    "を": "標示動作的對象",
+    "から": "接在動詞て形後，表示「做完〜之後」",
+    "も": "「也」，表示同樣的情況"
+  },
+  "translations": [
+    [
+      {
+        "text": "上星期，我第一次和家人去了挖蛤蜊。",
+        "word": "潮干狩り"
+      }
+    ],
+    [
+      {
+        "text": "海邊風很大，有點冷。",
+        "word": "強い"
+      }
+    ],
+    [
+      {
+        "text": "不過，挖到了很多蛤蜊，很開心。",
+        "word": "採れる"
+      }
+    ],
+    [
+      {
+        "text": "回家之後，大家一起煮味噌湯吃了。",
+        "word": "味噌汁"
+      }
+    ],
+    [
+      {
+        "text": "貝類的味道很濃郁，非常好吃。",
+        "word": "おいしい"
+      }
+    ],
+    [
+      {
+        "text": "我想明年也再去一次。",
+        "word": "思う"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 3,
+      "pattern": "〜てから",
+      "note": "「做完〜之後」，強調先後"
+    },
+    {
+      "sentence": 5,
+      "pattern": "〜と思う",
+      "note": "「我覺得〜」，表示個人想法"
+    }
+  ]
+}

@@ -1,0 +1,961 @@
+{
+  "date": "2026-09-24",
+  "level": "n2_lite",
+  "title": "フリマアプリの普及",
+  "text": "近年、スマートフォンの普及に伴って、フリマアプリを使って不要になった物を売買する人が増えている。以前は、使わなくなった服や本を処分するとき、そのまま捨てることが多かったが、今ではスマートフォン一つで簡単に出品できるようになった。写真を撮って説明を書くだけで、欲しい人が見つかることも珍しくない。特に若い世代を中心に、新品を買うより先にフリマアプリで探すという人も増えているという。環境への配慮という観点からも、この流れは今後さらに広がっていくと考えられている。個人にとっても、手軽に不用品を活用できる便利な仕組みとして定着しつつある。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スマートフォン",
+      "basic_form": "スマートフォン",
+      "reading": "スマートフォン",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "普及",
+      "basic_form": "普及",
+      "reading": "ふきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伴って",
+      "basic_form": "伴う",
+      "reading": "ともなって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "フリマアプリ",
+      "basic_form": "フリマアプリ",
+      "reading": "フリマアプリ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使って",
+      "basic_form": "使う",
+      "reading": "つかって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "不要",
+      "basic_form": "不要",
+      "reading": "ふよう",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "物",
+      "basic_form": "物",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "売買する",
+      "basic_form": "売買する",
+      "reading": "ばいばいする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "以前",
+      "basic_form": "以前",
+      "reading": "いぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "使わなくなった",
+      "basic_form": "使う",
+      "reading": "つかわなくなった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "服",
+      "basic_form": "服",
+      "reading": "ふく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "処分する",
+      "basic_form": "処分する",
+      "reading": "しょぶんする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "とき",
+      "basic_form": "とき",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "そのまま",
+      "basic_form": "そのまま",
+      "reading": "そのまま",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "捨てる",
+      "basic_form": "捨てる",
+      "reading": "すてる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多かった",
+      "basic_form": "多い",
+      "reading": "おおかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今",
+      "basic_form": "今",
+      "reading": "いま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "スマートフォン",
+      "basic_form": "スマートフォン",
+      "reading": "スマートフォン",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "簡単",
+      "basic_form": "簡単",
+      "reading": "かんたんに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出品できる",
+      "basic_form": "出品する",
+      "reading": "しゅっぴんできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "撮って",
+      "basic_form": "撮る",
+      "reading": "とって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "説明",
+      "basic_form": "説明",
+      "reading": "せつめい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "書く",
+      "basic_form": "書く",
+      "reading": "かく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "欲しい",
+      "basic_form": "欲しい",
+      "reading": "ほしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見つかる",
+      "basic_form": "見つかる",
+      "reading": "みつかる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "珍しくない",
+      "basic_form": "珍しい",
+      "reading": "めずらしくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特に",
+      "basic_form": "特に",
+      "reading": "とくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "若い",
+      "basic_form": "若い",
+      "reading": "わかい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "世代",
+      "basic_form": "世代",
+      "reading": "せだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "中心",
+      "basic_form": "中心",
+      "reading": "ちゅうしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "新品",
+      "basic_form": "新品",
+      "reading": "しんぴん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買う",
+      "basic_form": "買う",
+      "reading": "かう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "先に",
+      "basic_form": "先に",
+      "reading": "さきに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "フリマアプリ",
+      "basic_form": "フリマアプリ",
+      "reading": "フリマアプリ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "探す",
+      "basic_form": "探す",
+      "reading": "さがす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "配慮",
+      "basic_form": "配慮",
+      "reading": "はいりょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "観点",
+      "basic_form": "観点",
+      "reading": "かんてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "流れ",
+      "basic_form": "流れ",
+      "reading": "ながれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "さらに",
+      "basic_form": "さらに",
+      "reading": "さらに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "広がっていく",
+      "basic_form": "広がる",
+      "reading": "ひろがっていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "考えられている",
+      "basic_form": "考える",
+      "reading": "かんがえられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "個人",
+      "basic_form": "個人",
+      "reading": "こじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "にとって",
+      "basic_form": "にとって",
+      "reading": "にとって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "手軽に",
+      "basic_form": "手軽に",
+      "reading": "てがるに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "不用品",
+      "basic_form": "不用品",
+      "reading": "ふようひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活用できる",
+      "basic_form": "活用する",
+      "reading": "かつようできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "便利な",
+      "basic_form": "便利",
+      "reading": "べんりな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "仕組み",
+      "basic_form": "仕組み",
+      "reading": "しくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "定着しつつある",
+      "basic_form": "定着する",
+      "reading": "ていちゃくしつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年來"
+    },
+    "スマートフォン": {
+      "meaning": "智慧型手機"
+    },
+    "普及": {
+      "meaning": "普及"
+    },
+    "伴う": {
+      "meaning": "伴隨"
+    },
+    "フリマアプリ": {
+      "meaning": "二手交易APP、跳蚤市場APP"
+    },
+    "使う": {
+      "meaning": "使用"
+    },
+    "不要": {
+      "meaning": "不需要的"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "物": {
+      "meaning": "物品"
+    },
+    "売買する": {
+      "meaning": "買賣"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "以前": {
+      "meaning": "以前"
+    },
+    "服": {
+      "meaning": "衣服"
+    },
+    "本": {
+      "meaning": "書"
+    },
+    "処分する": {
+      "meaning": "處理掉"
+    },
+    "とき": {
+      "meaning": "……的時候"
+    },
+    "そのまま": {
+      "meaning": "就這樣、原封不動地"
+    },
+    "捨てる": {
+      "meaning": "丟棄"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "今": {
+      "meaning": "現在"
+    },
+    "一つ": {
+      "meaning": "一個"
+    },
+    "簡単": {
+      "meaning": "簡單"
+    },
+    "出品する": {
+      "meaning": "上架商品、出品"
+    },
+    "写真": {
+      "meaning": "照片"
+    },
+    "撮る": {
+      "meaning": "拍攝"
+    },
+    "説明": {
+      "meaning": "說明"
+    },
+    "書く": {
+      "meaning": "寫"
+    },
+    "欲しい": {
+      "meaning": "想要的"
+    },
+    "見つかる": {
+      "meaning": "被找到"
+    },
+    "珍しい": {
+      "meaning": "少見的、稀奇的"
+    },
+    "特に": {
+      "meaning": "特別是"
+    },
+    "若い": {
+      "meaning": "年輕的"
+    },
+    "世代": {
+      "meaning": "世代"
+    },
+    "中心": {
+      "meaning": "中心"
+    },
+    "新品": {
+      "meaning": "全新商品"
+    },
+    "買う": {
+      "meaning": "購買"
+    },
+    "先に": {
+      "meaning": "先"
+    },
+    "探す": {
+      "meaning": "尋找"
+    },
+    "環境": {
+      "meaning": "環境"
+    },
+    "配慮": {
+      "meaning": "關懷、顧慮"
+    },
+    "観点": {
+      "meaning": "觀點、角度"
+    },
+    "この": {
+      "meaning": "這個"
+    },
+    "流れ": {
+      "meaning": "趨勢、潮流"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "さらに": {
+      "meaning": "進一步、更加"
+    },
+    "広がる": {
+      "meaning": "擴大、擴展"
+    },
+    "考える": {
+      "meaning": "認為、思考"
+    },
+    "個人": {
+      "meaning": "個人"
+    },
+    "手軽に": {
+      "meaning": "輕鬆地、簡便地"
+    },
+    "不用品": {
+      "meaning": "閒置物品、不需要的物品"
+    },
+    "活用する": {
+      "meaning": "活用、善加利用"
+    },
+    "便利": {
+      "meaning": "方便的"
+    },
+    "仕組み": {
+      "meaning": "機制、系統"
+    },
+    "定着する": {
+      "meaning": "落地生根、固定下來"
+    }
+  },
+  "particles": {
+    "に": "表示變化的結果，或動作的對象",
+    "を": "標示動作的對象",
+    "が": "標示句子的主語",
+    "は": "主題標記",
+    "や": "列舉部分事物，「〜和〜等」",
+    "で": "表示方法、手段，或場所",
+    "も": "「也」",
+    "という": "「叫做〜」，用於引用說法",
+    "から": "表示依據或起點，「從〜」",
+    "へ": "表示方向或對象",
+    "の": "表示所屬或修飾關係",
+    "より": "表示比較的基準，「比起〜」",
+    "にとって": "「對〜來說」，立場觀點",
+    "として": "「作為〜」的身分或立場",
+    "だけ": "「只〜」，表示限定",
+    "と": "表示引用的內容"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，隨著智慧型手機的普及，使用二手交易APP買賣不需要物品的人越來越多。",
+        "word": "伴う"
+      }
+    ],
+    [
+      {
+        "text": "以前在處理不再穿的衣服或不看的書時，大多直接丟掉，但現在只要一支手機就能輕鬆上架商品。",
+        "word": "出品する"
+      }
+    ],
+    [
+      {
+        "text": "只要拍張照片、寫上說明，就能找到想要的人，這種情況並不少見。",
+        "word": "見つかる"
+      }
+    ],
+    [
+      {
+        "text": "據說尤其以年輕世代為中心，比起買新品，先在二手交易APP上尋找的人也越來越多。",
+        "word": "世代"
+      }
+    ],
+    [
+      {
+        "text": "從關懷環境的角度來看，這股趨勢預計今後會進一步擴大。",
+        "word": "環境"
+      }
+    ],
+    [
+      {
+        "text": "對個人來說，這也逐漸成為一種能輕鬆活用閒置物品的便利機制。",
+        "word": "にとって"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜に伴って",
+      "note": "「伴隨〜」，同步變化"
+    }
+  ]
+}
