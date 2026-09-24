@@ -1,0 +1,705 @@
+{
+  "date": "2026-09-25",
+  "level": "n3_lite",
+  "title": "写真撮影を始めてみた",
+  "text": "最近、写真撮影を始めてみた。きっかけは、友達が撮った写真がとてもきれいだったからだ。安いカメラを買って、休みの日に近所を歩きながら写真を撮っている。最初はうまく撮れなかったが、少しずつコツがわかってきた気がする。特に、夕方の光で撮る写真が好きだ。空の色や光の加減で写真の印象が変わるのがおもしろい。これからもいろいろな場所で撮ってみたい。",
+  "tokens": [
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "写真撮影",
+      "basic_form": "写真撮影",
+      "reading": "しゃしんさつえい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "始めて",
+      "basic_form": "始める",
+      "reading": "はじめて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みた",
+      "basic_form": "みる",
+      "reading": "みた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "きっかけ",
+      "basic_form": "きっかけ",
+      "reading": "きっかけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "撮った",
+      "basic_form": "撮る",
+      "reading": "とった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "きれいだった",
+      "basic_form": "きれい",
+      "reading": "きれいだった",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "安い",
+      "basic_form": "安い",
+      "reading": "やすい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "カメラ",
+      "basic_form": "カメラ",
+      "reading": "かめら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買って",
+      "basic_form": "買う",
+      "reading": "かって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "休み",
+      "basic_form": "休み",
+      "reading": "やすみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日",
+      "basic_form": "日",
+      "reading": "ひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近所",
+      "basic_form": "近所",
+      "reading": "きんじょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "歩きながら",
+      "basic_form": "歩く",
+      "reading": "あるきながら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "撮っている",
+      "basic_form": "撮る",
+      "reading": "とっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "うまく",
+      "basic_form": "うまい",
+      "reading": "うまく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "撮れなかった",
+      "basic_form": "撮れる",
+      "reading": "とれなかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少しずつ",
+      "basic_form": "少しずつ",
+      "reading": "すこしずつ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "コツ",
+      "basic_form": "コツ",
+      "reading": "こつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "わかって",
+      "basic_form": "わかる",
+      "reading": "わかって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "きた",
+      "basic_form": "くる",
+      "reading": "きた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "気",
+      "basic_form": "気",
+      "reading": "き",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特に",
+      "basic_form": "特に",
+      "reading": "とくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "夕方",
+      "basic_form": "夕方",
+      "reading": "ゆうがた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "光",
+      "basic_form": "光",
+      "reading": "ひかり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "撮る",
+      "basic_form": "撮る",
+      "reading": "とる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "好きだ",
+      "basic_form": "好き",
+      "reading": "すきだ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "空",
+      "basic_form": "空",
+      "reading": "そら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "色",
+      "basic_form": "色",
+      "reading": "いろ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "光",
+      "basic_form": "光",
+      "reading": "ひかり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "加減",
+      "basic_form": "加減",
+      "reading": "かげん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "印象",
+      "basic_form": "印象",
+      "reading": "いんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "変わる",
+      "basic_form": "変わる",
+      "reading": "かわる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おもしろい",
+      "basic_form": "おもしろい",
+      "reading": "おもしろい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いろいろな",
+      "basic_form": "いろいろ",
+      "reading": "いろいろな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "場所",
+      "basic_form": "場所",
+      "reading": "ばしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "撮って",
+      "basic_form": "撮る",
+      "reading": "とって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みたい",
+      "basic_form": "みる",
+      "reading": "みたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "最近": {
+      "meaning": "最近"
+    },
+    "写真撮影": {
+      "meaning": "攝影"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "みる": {
+      "meaning": "試著做（動詞て形＋みる）"
+    },
+    "きっかけ": {
+      "meaning": "契機、起因"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "撮る": {
+      "meaning": "拍攝"
+    },
+    "写真": {
+      "meaning": "照片"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "きれい": {
+      "meaning": "漂亮、美麗"
+    },
+    "安い": {
+      "meaning": "便宜的"
+    },
+    "カメラ": {
+      "meaning": "相機"
+    },
+    "買う": {
+      "meaning": "購買"
+    },
+    "休み": {
+      "meaning": "休假、休息"
+    },
+    "日": {
+      "meaning": "天、日子"
+    },
+    "近所": {
+      "meaning": "附近、鄰近"
+    },
+    "歩く": {
+      "meaning": "走路"
+    },
+    "最初": {
+      "meaning": "最初、一開始"
+    },
+    "うまい": {
+      "meaning": "拿手的、巧妙的"
+    },
+    "撮れる": {
+      "meaning": "能拍、拍得到"
+    },
+    "少しずつ": {
+      "meaning": "一點一點地"
+    },
+    "コツ": {
+      "meaning": "訣竅"
+    },
+    "わかる": {
+      "meaning": "明白、理解"
+    },
+    "くる": {
+      "meaning": "來（〜てくる：逐漸〜）"
+    },
+    "気": {
+      "meaning": "感覺、心情"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "特に": {
+      "meaning": "特別是"
+    },
+    "夕方": {
+      "meaning": "傍晚"
+    },
+    "光": {
+      "meaning": "光線"
+    },
+    "好き": {
+      "meaning": "喜歡"
+    },
+    "空": {
+      "meaning": "天空"
+    },
+    "色": {
+      "meaning": "顏色"
+    },
+    "加減": {
+      "meaning": "程度、狀態"
+    },
+    "印象": {
+      "meaning": "印象"
+    },
+    "変わる": {
+      "meaning": "改變"
+    },
+    "おもしろい": {
+      "meaning": "有趣的"
+    },
+    "これから": {
+      "meaning": "從今以後"
+    },
+    "いろいろ": {
+      "meaning": "各式各樣"
+    },
+    "場所": {
+      "meaning": "地方、場所"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞化用法（〜のが：〜這件事）",
+    "を": "標示動作的對象",
+    "が": "標示主語",
+    "は": "主題標記",
+    "から": "表示原因，「因為〜」",
+    "で": "表示動作發生的場所或方式",
+    "に": "表示時間點",
+    "や": "列舉部分事物，「〜和〜等」",
+    "も": "「也」"
+  },
+  "translations": [
+    [
+      {
+        "text": "最近開始嘗試攝影。",
+        "word": "写真撮影"
+      }
+    ],
+    [
+      {
+        "text": "契機是朋友拍的照片非常漂亮。",
+        "word": "写真"
+      }
+    ],
+    [
+      {
+        "text": "買了便宜的相機，休假時邊在附近散步邊拍照。",
+        "word": "カメラ"
+      }
+    ],
+    [
+      {
+        "text": "一開始拍得不好，但漸漸抓到了一些訣竅。",
+        "word": "コツ"
+      }
+    ],
+    [
+      {
+        "text": "特別喜歡在傍晚光線下拍的照片。",
+        "word": "夕方"
+      }
+    ],
+    [
+      {
+        "text": "天空的顏色和光線的變化會讓照片的印象改變，這點很有趣。",
+        "word": "印象"
+      }
+    ],
+    [
+      {
+        "text": "今後也想在各種不同的地方拍拍看。",
+        "word": "場所"
+      }
+    ]
+  ],
+  "grammar_notes": []
+}

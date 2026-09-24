@@ -1,0 +1,835 @@
+{
+  "date": "2026-09-25",
+  "level": "n2_lite",
+  "title": "オンライン診療の普及",
+  "text": "近年、スマートフォンやパソコンを使って自宅から診察を受けられるオンライン診療が急速に広まっている。忙しくて病院に行く時間がない人や、高齢で通院が難しい人にとって、この仕組みは大きな助けになっている。医師は画面越しに患者の様子を確認し、必要に応じて薬を処方することもできる。一方で、対面でなければ分からない症状もあるため、すべての診療をオンラインで済ませるのは難しいという指摘もある。今後は、対面診療とうまく組み合わせながら活用していくことが求められるだろう。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スマートフォン",
+      "basic_form": "スマートフォン",
+      "reading": "すまーとふぉん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "パソコン",
+      "basic_form": "パソコン",
+      "reading": "ぱそこん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使って",
+      "basic_form": "使う",
+      "reading": "つかって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "自宅",
+      "basic_form": "自宅",
+      "reading": "じたく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "診察",
+      "basic_form": "診察",
+      "reading": "しんさつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受けられる",
+      "basic_form": "受ける",
+      "reading": "うけられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "オンライン診療",
+      "basic_form": "オンライン診療",
+      "reading": "おんらいんしんりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急速に",
+      "basic_form": "急速に",
+      "reading": "きゅうそくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "広まっている",
+      "basic_form": "広まる",
+      "reading": "ひろまっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "忙しくて",
+      "basic_form": "忙しい",
+      "reading": "いそがしくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "病院",
+      "basic_form": "病院",
+      "reading": "びょういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行く",
+      "basic_form": "行く",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "高齢",
+      "basic_form": "高齢",
+      "reading": "こうれい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通院",
+      "basic_form": "通院",
+      "reading": "つういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "難しい",
+      "basic_form": "難しい",
+      "reading": "むずかしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "にとって",
+      "basic_form": "にとって",
+      "reading": "にとって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "仕組み",
+      "basic_form": "仕組み",
+      "reading": "しくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "助け",
+      "basic_form": "助け",
+      "reading": "たすけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっている",
+      "basic_form": "なる",
+      "reading": "なっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "医師",
+      "basic_form": "医師",
+      "reading": "いし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "画面越し",
+      "basic_form": "画面越し",
+      "reading": "がめんごし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "患者",
+      "basic_form": "患者",
+      "reading": "かんじゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "様子",
+      "basic_form": "様子",
+      "reading": "ようす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "確認し",
+      "basic_form": "確認する",
+      "reading": "かくにんし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "応じて",
+      "basic_form": "応じる",
+      "reading": "おうじて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "薬",
+      "basic_form": "薬",
+      "reading": "くすり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "処方する",
+      "basic_form": "処方する",
+      "reading": "しょほうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できる",
+      "basic_form": "できる",
+      "reading": "できる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "対面",
+      "basic_form": "対面",
+      "reading": "たいめん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なければ",
+      "basic_form": "ない",
+      "reading": "なければ",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "分からない",
+      "basic_form": "分かる",
+      "reading": "わからない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "症状",
+      "basic_form": "症状",
+      "reading": "しょうじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すべて",
+      "basic_form": "すべて",
+      "reading": "すべて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "診療",
+      "basic_form": "診療",
+      "reading": "しんりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "オンライン",
+      "basic_form": "オンライン",
+      "reading": "おんらいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "済ませる",
+      "basic_form": "済ませる",
+      "reading": "すませる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "難しい",
+      "basic_form": "難しい",
+      "reading": "むずかしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "対面診療",
+      "basic_form": "対面診療",
+      "reading": "たいめんしんりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "うまく",
+      "basic_form": "うまい",
+      "reading": "うまく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "組み合わせながら",
+      "basic_form": "組み合わせる",
+      "reading": "くみあわせながら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "活用して",
+      "basic_form": "活用する",
+      "reading": "かつようして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いく",
+      "basic_form": "いく",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求められる",
+      "basic_form": "求める",
+      "reading": "もとめられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年來"
+    },
+    "スマートフォン": {
+      "meaning": "智慧型手機"
+    },
+    "パソコン": {
+      "meaning": "個人電腦"
+    },
+    "使う": {
+      "meaning": "使用"
+    },
+    "自宅": {
+      "meaning": "自家、家中"
+    },
+    "診察": {
+      "meaning": "看診、診察"
+    },
+    "受ける": {
+      "meaning": "接受"
+    },
+    "オンライン診療": {
+      "meaning": "線上看診"
+    },
+    "急速に": {
+      "meaning": "迅速地"
+    },
+    "広まる": {
+      "meaning": "普及、傳開"
+    },
+    "忙しい": {
+      "meaning": "忙碌的"
+    },
+    "病院": {
+      "meaning": "醫院"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "ない": {
+      "meaning": "沒有、不存在"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "高齢": {
+      "meaning": "高齡"
+    },
+    "通院": {
+      "meaning": "定期到醫院看病"
+    },
+    "難しい": {
+      "meaning": "困難的"
+    },
+    "仕組み": {
+      "meaning": "機制、系統"
+    },
+    "助け": {
+      "meaning": "幫助"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "医師": {
+      "meaning": "醫生"
+    },
+    "画面越し": {
+      "meaning": "隔著螢幕"
+    },
+    "患者": {
+      "meaning": "病患"
+    },
+    "様子": {
+      "meaning": "情況、樣子"
+    },
+    "確認する": {
+      "meaning": "確認"
+    },
+    "必要": {
+      "meaning": "必要"
+    },
+    "応じる": {
+      "meaning": "因應、回應"
+    },
+    "薬": {
+      "meaning": "藥"
+    },
+    "処方する": {
+      "meaning": "開處方"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "できる": {
+      "meaning": "能夠"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "対面": {
+      "meaning": "面對面"
+    },
+    "分かる": {
+      "meaning": "明白、了解"
+    },
+    "症状": {
+      "meaning": "症狀"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    },
+    "ため": {
+      "meaning": "因為、原因"
+    },
+    "すべて": {
+      "meaning": "全部"
+    },
+    "診療": {
+      "meaning": "診療"
+    },
+    "オンライン": {
+      "meaning": "線上"
+    },
+    "済ませる": {
+      "meaning": "完成、辦完"
+    },
+    "指摘": {
+      "meaning": "指出、指摘"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "対面診療": {
+      "meaning": "面對面看診"
+    },
+    "うまい": {
+      "meaning": "巧妙的、順利的"
+    },
+    "組み合わせる": {
+      "meaning": "搭配、組合"
+    },
+    "活用する": {
+      "meaning": "靈活運用"
+    },
+    "いく": {
+      "meaning": "去（〜ていく：逐漸〜下去）"
+    },
+    "求める": {
+      "meaning": "要求、期望"
+    }
+  },
+  "particles": {
+    "や": "列舉部分事物，「〜和〜等」",
+    "を": "標示動作的對象",
+    "から": "表示起點，「從〜」",
+    "が": "標示主語",
+    "に": "表示時間點、對象或到達點",
+    "で": "表示場所、方式或原因",
+    "にとって": "「對〜來說」，表示立場",
+    "と": "表示並列或引用",
+    "の": "表示所屬關係，或名詞化用法",
+    "は": "主題標記",
+    "という": "「稱作〜」，用於引用說法或名稱",
+    "だろう": "表示推測，「大概〜吧」",
+    "も": "「也」"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，越來越多人利用智慧型手機或電腦，在家中就能接受看診的線上診療正快速普及。",
+        "word": "オンライン診療"
+      }
+    ],
+    [
+      {
+        "text": "對於忙到沒有時間去醫院的人，或因年長而難以定期回診的人來說，這個機制成了很大的幫助。",
+        "word": "仕組み"
+      }
+    ],
+    [
+      {
+        "text": "醫生可以隔著螢幕確認病患的狀況，並視需要開立藥物處方。",
+        "word": "医師"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，也有人指出，有些症狀若不當面診察就無法判斷，因此把所有診療都改成線上進行並不容易。",
+        "word": "症状"
+      }
+    ],
+    [
+      {
+        "text": "今後應該會被要求妥善結合面對面看診與線上診療來加以運用。",
+        "word": "対面診療"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 2,
+      "pattern": "〜に応じて",
+      "note": "「依據〜而」，對應變化"
+    }
+  ]
+}

@@ -1,0 +1,828 @@
+{
+  "date": "2026-09-25",
+  "level": "n3",
+  "title": "ヨガを習い始めた理由",
+  "text": "半年前からヨガを習い始めた。きっかけは、仕事のストレスで肩や首が痛くなったことだ。最初は体が硬くて、簡単なポーズさえできなかった。しかし、先生が丁寧に教えてくれたおかげで、少しずつ体が柔らかくなってきた。今では週に二回、ヨガ教室に通っている。家族からは「熱心だね」と言われることもある。ヨガを始めてから、体だけでなく心も落ち着くようになった気がする。これからも無理せず、長く続けていきたいと思っている。",
+  "tokens": [
+    {
+      "surface_form": "半年前",
+      "basic_form": "半年前",
+      "reading": "はんとしまえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ヨガ",
+      "basic_form": "ヨガ",
+      "reading": "よが",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "習い始めた",
+      "basic_form": "習い始める",
+      "reading": "ならいはじめた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "きっかけ",
+      "basic_form": "きっかけ",
+      "reading": "きっかけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ストレス",
+      "basic_form": "ストレス",
+      "reading": "すとれす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "肩",
+      "basic_form": "肩",
+      "reading": "かた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "首",
+      "basic_form": "首",
+      "reading": "くび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "痛く",
+      "basic_form": "痛い",
+      "reading": "いたく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "硬くて",
+      "basic_form": "硬い",
+      "reading": "かたくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "簡単な",
+      "basic_form": "簡単",
+      "reading": "かんたんな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "ポーズ",
+      "basic_form": "ポーズ",
+      "reading": "ぽーず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "さえ",
+      "basic_form": "さえ",
+      "reading": "さえ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できなかった",
+      "basic_form": "できる",
+      "reading": "できなかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかし",
+      "basic_form": "しかし",
+      "reading": "しかし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "先生",
+      "basic_form": "先生",
+      "reading": "せんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "丁寧に",
+      "basic_form": "丁寧に",
+      "reading": "ていねいに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "教えて",
+      "basic_form": "教える",
+      "reading": "おしえて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "くれた",
+      "basic_form": "くれる",
+      "reading": "くれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "おかげで",
+      "basic_form": "おかげで",
+      "reading": "おかげで",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少しずつ",
+      "basic_form": "少しずつ",
+      "reading": "すこしずつ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "柔らかく",
+      "basic_form": "柔らかい",
+      "reading": "やわらかく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "なって",
+      "basic_form": "なる",
+      "reading": "なって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "きた",
+      "basic_form": "くる",
+      "reading": "きた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今",
+      "basic_form": "今",
+      "reading": "いま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "週",
+      "basic_form": "週",
+      "reading": "しゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "二回",
+      "basic_form": "二回",
+      "reading": "にかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ヨガ教室",
+      "basic_form": "ヨガ教室",
+      "reading": "よがきょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通っている",
+      "basic_form": "通う",
+      "reading": "かよっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家族",
+      "basic_form": "家族",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "熱心だ",
+      "basic_form": "熱心",
+      "reading": "ねっしんだ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "ね",
+      "basic_form": "ね",
+      "reading": "ね",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言われる",
+      "basic_form": "言う",
+      "reading": "いわれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ヨガ",
+      "basic_form": "ヨガ",
+      "reading": "よが",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "始めて",
+      "basic_form": "始める",
+      "reading": "はじめて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけでなく",
+      "basic_form": "だけでなく",
+      "reading": "だけでなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "心",
+      "basic_form": "心",
+      "reading": "こころ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "落ち着く",
+      "basic_form": "落ち着く",
+      "reading": "おちつく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "気",
+      "basic_form": "気",
+      "reading": "き",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "無理せず",
+      "basic_form": "無理する",
+      "reading": "むりせず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "長く",
+      "basic_form": "長い",
+      "reading": "ながく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "続けて",
+      "basic_form": "続ける",
+      "reading": "つづけて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いきたい",
+      "basic_form": "いく",
+      "reading": "いきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思っている",
+      "basic_form": "思う",
+      "reading": "おもっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "半年前": {
+      "meaning": "半年前"
+    },
+    "ヨガ": {
+      "meaning": "瑜珈"
+    },
+    "習い始める": {
+      "meaning": "開始學習"
+    },
+    "きっかけ": {
+      "meaning": "契機、起因"
+    },
+    "仕事": {
+      "meaning": "工作"
+    },
+    "ストレス": {
+      "meaning": "壓力"
+    },
+    "肩": {
+      "meaning": "肩膀"
+    },
+    "首": {
+      "meaning": "脖子"
+    },
+    "痛い": {
+      "meaning": "痛的"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "最初": {
+      "meaning": "最初、一開始"
+    },
+    "体": {
+      "meaning": "身體"
+    },
+    "硬い": {
+      "meaning": "硬的、僵硬的"
+    },
+    "簡単": {
+      "meaning": "簡單"
+    },
+    "ポーズ": {
+      "meaning": "姿勢、動作"
+    },
+    "できる": {
+      "meaning": "能夠、可以"
+    },
+    "しかし": {
+      "meaning": "但是、然而"
+    },
+    "先生": {
+      "meaning": "老師"
+    },
+    "丁寧に": {
+      "meaning": "仔細地、有禮貌地"
+    },
+    "教える": {
+      "meaning": "教導"
+    },
+    "くれる": {
+      "meaning": "給（我）、為我做"
+    },
+    "おかげで": {
+      "meaning": "多虧、託福於"
+    },
+    "少しずつ": {
+      "meaning": "一點一點地"
+    },
+    "柔らかい": {
+      "meaning": "柔軟的"
+    },
+    "くる": {
+      "meaning": "來（〜てくる：逐漸〜）"
+    },
+    "今": {
+      "meaning": "現在"
+    },
+    "週": {
+      "meaning": "星期、週"
+    },
+    "二回": {
+      "meaning": "兩次"
+    },
+    "ヨガ教室": {
+      "meaning": "瑜珈教室"
+    },
+    "通う": {
+      "meaning": "往返、定期前往"
+    },
+    "家族": {
+      "meaning": "家人"
+    },
+    "熱心": {
+      "meaning": "熱衷、熱心"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "ある": {
+      "meaning": "有（〜こともある：也有〜的情況）"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "心": {
+      "meaning": "心、內心"
+    },
+    "落ち着く": {
+      "meaning": "平靜下來、沉著"
+    },
+    "よう": {
+      "meaning": "……的樣子、狀態（〜ようになる：變得〜）"
+    },
+    "気": {
+      "meaning": "感覺"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "これから": {
+      "meaning": "從今以後"
+    },
+    "無理する": {
+      "meaning": "勉強、逞強"
+    },
+    "長い": {
+      "meaning": "長的、長久的"
+    },
+    "続ける": {
+      "meaning": "繼續"
+    },
+    "いく": {
+      "meaning": "去（〜ていく：逐漸〜下去）"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    }
+  },
+  "particles": {
+    "から": "表示原因，「因為〜」；或表示起點「從〜」",
+    "を": "標示動作的對象",
+    "は": "主題標記",
+    "で": "表示原因、方式或場所",
+    "や": "列舉部分事物，「〜和〜等」",
+    "が": "標示主語",
+    "の": "表示所屬關係",
+    "に": "表示時間點、頻率或到達點",
+    "さえ": "「連〜都」，強調極端例子",
+    "と": "表示引用內容",
+    "も": "「也」，或「〜こともある：也有〜的情況」",
+    "ね": "句尾語氣詞，尋求同意或表示感嘆",
+    "だけでなく": "「不僅〜而且」"
+  },
+  "translations": [
+    [
+      {
+        "text": "半年前開始學瑜珈。",
+        "word": "ヨガ"
+      }
+    ],
+    [
+      {
+        "text": "契機是因為工作壓力導致肩膀和脖子疼痛。",
+        "word": "ストレス"
+      }
+    ],
+    [
+      {
+        "text": "一開始身體很僵硬，連簡單的姿勢都做不到。",
+        "word": "硬い"
+      }
+    ],
+    [
+      {
+        "text": "但是，多虧老師仔細地教導，身體漸漸變得柔軟起來。",
+        "word": "おかげで"
+      }
+    ],
+    [
+      {
+        "text": "現在每週上兩次瑜珈課。",
+        "word": "ヨガ教室"
+      }
+    ],
+    [
+      {
+        "text": "家人有時候會說「妳真是熱衷呢」。",
+        "word": "熱心"
+      }
+    ],
+    [
+      {
+        "text": "開始瑜珈之後，感覺不只身體，連心情也變得平靜了。",
+        "word": "落ち着く"
+      }
+    ],
+    [
+      {
+        "text": "今後也想不勉強自己，長久地持續下去。",
+        "word": "続ける"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 3,
+      "pattern": "〜おかげで／〜せいで",
+      "note": "「多虧〜」／「都怪〜」，正負面歸因"
+    },
+    {
+      "sentence": 7,
+      "pattern": "〜ずに",
+      "note": "「不〜地」，書面的ない形替代"
+    }
+  ]
+}

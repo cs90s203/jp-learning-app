@@ -1,0 +1,1152 @@
+{
+  "date": "2026-09-25",
+  "level": "n1_lite",
+  "title": "医師不足をめぐる課題",
+  "text": "地方における医師不足が深刻な社会課題として指摘されている。都市部に医師が集中する一方で、地方の病院では医師の確保が難しく、診療科目の縮小や病院の閉鎖に追い込まれるケースも少なくない。特に産科や小児科など、特定の診療科での不足が顕著だという指摘もある。背景には、都市部の方が最新の医療設備や研修環境が整っており、若い医師が都市部を選びやすいという事情がある。国や自治体はこれまで、地方勤務の医師に対する奨学金制度や、医学部における地域枠の拡大といった対策を講じてきた。しかし、こうした施策だけでは医師の偏在を根本的に解消するには至っておらず、より実効性のある対策が求められている。地域医療をどう維持していくかは、喫緊の課題となっている。",
+  "tokens": [
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "における",
+      "basic_form": "における",
+      "reading": "における",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "医師不足",
+      "basic_form": "医師不足",
+      "reading": "いしぶそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深刻な",
+      "basic_form": "深刻",
+      "reading": "しんこくな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "社会課題",
+      "basic_form": "社会課題",
+      "reading": "しゃかいかだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘されている",
+      "basic_form": "指摘する",
+      "reading": "してきされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市部",
+      "basic_form": "都市部",
+      "reading": "としぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "医師",
+      "basic_form": "医師",
+      "reading": "いし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "集中する",
+      "basic_form": "集中する",
+      "reading": "しゅうちゅうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "病院",
+      "basic_form": "病院",
+      "reading": "びょういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "医師",
+      "basic_form": "医師",
+      "reading": "いし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "確保",
+      "basic_form": "確保",
+      "reading": "かくほ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "難しく",
+      "basic_form": "難しい",
+      "reading": "むずかしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "診療科目",
+      "basic_form": "診療科目",
+      "reading": "しんりょうかもく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "縮小",
+      "basic_form": "縮小",
+      "reading": "しゅくしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "病院",
+      "basic_form": "病院",
+      "reading": "びょういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "閉鎖",
+      "basic_form": "閉鎖",
+      "reading": "へいさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "追い込まれる",
+      "basic_form": "追い込む",
+      "reading": "おいこまれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ケース",
+      "basic_form": "ケース",
+      "reading": "けーす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特に",
+      "basic_form": "特に",
+      "reading": "とくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "産科",
+      "basic_form": "産科",
+      "reading": "さんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "小児科",
+      "basic_form": "小児科",
+      "reading": "しょうにか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特定",
+      "basic_form": "特定",
+      "reading": "とくてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "診療科",
+      "basic_form": "診療科",
+      "reading": "しんりょうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不足",
+      "basic_form": "不足",
+      "reading": "ふそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "顕著だ",
+      "basic_form": "顕著",
+      "reading": "けんちょだ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "背景",
+      "basic_form": "背景",
+      "reading": "はいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市部",
+      "basic_form": "都市部",
+      "reading": "としぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "方",
+      "basic_form": "方",
+      "reading": "ほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "最新",
+      "basic_form": "最新",
+      "reading": "さいしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "医療設備",
+      "basic_form": "医療設備",
+      "reading": "いりょうせつび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "研修環境",
+      "basic_form": "研修環境",
+      "reading": "けんしゅうかんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整っており",
+      "basic_form": "整う",
+      "reading": "ととのっており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "若い",
+      "basic_form": "若い",
+      "reading": "わかい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "医師",
+      "basic_form": "医師",
+      "reading": "いし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "都市部",
+      "basic_form": "都市部",
+      "reading": "としぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "選びやすい",
+      "basic_form": "選ぶ",
+      "reading": "えらびやすい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "事情",
+      "basic_form": "事情",
+      "reading": "じじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "国",
+      "basic_form": "国",
+      "reading": "くに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自治体",
+      "basic_form": "自治体",
+      "reading": "じちたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "これまで",
+      "basic_form": "これまで",
+      "reading": "これまで",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方勤務",
+      "basic_form": "地方勤務",
+      "reading": "ちほうきんむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "医師",
+      "basic_form": "医師",
+      "reading": "いし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対する",
+      "basic_form": "対する",
+      "reading": "たいする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "奨学金制度",
+      "basic_form": "奨学金制度",
+      "reading": "しょうがくきんせいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "医学部",
+      "basic_form": "医学部",
+      "reading": "いがくぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "における",
+      "basic_form": "における",
+      "reading": "における",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地域枠",
+      "basic_form": "地域枠",
+      "reading": "ちいきわく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "拡大",
+      "basic_form": "拡大",
+      "reading": "かくだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対策",
+      "basic_form": "対策",
+      "reading": "たいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "講じて",
+      "basic_form": "講じる",
+      "reading": "こうじて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "きた",
+      "basic_form": "くる",
+      "reading": "きた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかし",
+      "basic_form": "しかし",
+      "reading": "しかし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "施策",
+      "basic_form": "施策",
+      "reading": "しさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけでは",
+      "basic_form": "だけでは",
+      "reading": "だけでは",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "医師",
+      "basic_form": "医師",
+      "reading": "いし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "偏在",
+      "basic_form": "偏在",
+      "reading": "へんざい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "根本的に",
+      "basic_form": "根本的に",
+      "reading": "こんぽんてきに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "解消する",
+      "basic_form": "解消する",
+      "reading": "かいしょうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "至っておらず",
+      "basic_form": "至る",
+      "reading": "いたっておらず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "実効性",
+      "basic_form": "実効性",
+      "reading": "じっこうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "対策",
+      "basic_form": "対策",
+      "reading": "たいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求められている",
+      "basic_form": "求める",
+      "reading": "もとめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域医療",
+      "basic_form": "地域医療",
+      "reading": "ちいきいりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "どう",
+      "basic_form": "どう",
+      "reading": "どう",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "維持して",
+      "basic_form": "維持する",
+      "reading": "いじして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いく",
+      "basic_form": "いく",
+      "reading": "いく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "喫緊",
+      "basic_form": "喫緊",
+      "reading": "きっきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっている",
+      "basic_form": "なる",
+      "reading": "なっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "地方": {
+      "meaning": "地方"
+    },
+    "医師不足": {
+      "meaning": "醫師不足"
+    },
+    "深刻": {
+      "meaning": "嚴重的、深刻的"
+    },
+    "社会課題": {
+      "meaning": "社會課題"
+    },
+    "指摘する": {
+      "meaning": "指出"
+    },
+    "都市部": {
+      "meaning": "都市地區"
+    },
+    "医師": {
+      "meaning": "醫生"
+    },
+    "集中する": {
+      "meaning": "集中"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "病院": {
+      "meaning": "醫院"
+    },
+    "確保": {
+      "meaning": "確保"
+    },
+    "難しい": {
+      "meaning": "困難的"
+    },
+    "診療科目": {
+      "meaning": "診療科別"
+    },
+    "縮小": {
+      "meaning": "縮小"
+    },
+    "閉鎖": {
+      "meaning": "關閉"
+    },
+    "追い込む": {
+      "meaning": "逼迫、逼入（困境）"
+    },
+    "ケース": {
+      "meaning": "案例、情況"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "特に": {
+      "meaning": "特別是"
+    },
+    "産科": {
+      "meaning": "婦產科"
+    },
+    "小児科": {
+      "meaning": "小兒科"
+    },
+    "特定": {
+      "meaning": "特定"
+    },
+    "診療科": {
+      "meaning": "診療科"
+    },
+    "不足": {
+      "meaning": "不足"
+    },
+    "顕著": {
+      "meaning": "顯著"
+    },
+    "指摘": {
+      "meaning": "指出、指摘"
+    },
+    "ある": {
+      "meaning": "有"
+    },
+    "背景": {
+      "meaning": "背景"
+    },
+    "方": {
+      "meaning": "一方、方面"
+    },
+    "最新": {
+      "meaning": "最新"
+    },
+    "医療設備": {
+      "meaning": "醫療設備"
+    },
+    "研修環境": {
+      "meaning": "研習環境"
+    },
+    "整う": {
+      "meaning": "完善、齊備"
+    },
+    "若い": {
+      "meaning": "年輕的"
+    },
+    "選ぶ": {
+      "meaning": "選擇"
+    },
+    "事情": {
+      "meaning": "情況、緣由"
+    },
+    "国": {
+      "meaning": "國家"
+    },
+    "自治体": {
+      "meaning": "地方政府"
+    },
+    "これまで": {
+      "meaning": "至今為止"
+    },
+    "地方勤務": {
+      "meaning": "地方任職"
+    },
+    "対する": {
+      "meaning": "針對、對於"
+    },
+    "奨学金制度": {
+      "meaning": "獎學金制度"
+    },
+    "医学部": {
+      "meaning": "醫學系"
+    },
+    "地域枠": {
+      "meaning": "地區保障名額"
+    },
+    "拡大": {
+      "meaning": "擴大"
+    },
+    "対策": {
+      "meaning": "對策"
+    },
+    "講じる": {
+      "meaning": "採取（對策）"
+    },
+    "くる": {
+      "meaning": "來（〜てくる：一直以來〜）"
+    },
+    "しかし": {
+      "meaning": "但是"
+    },
+    "施策": {
+      "meaning": "政策措施"
+    },
+    "偏在": {
+      "meaning": "分布不均"
+    },
+    "根本的に": {
+      "meaning": "根本上"
+    },
+    "解消する": {
+      "meaning": "解決、消除"
+    },
+    "至る": {
+      "meaning": "達到、到達"
+    },
+    "より": {
+      "meaning": "更加"
+    },
+    "実効性": {
+      "meaning": "實效性"
+    },
+    "求める": {
+      "meaning": "要求、期望"
+    },
+    "地域医療": {
+      "meaning": "地區醫療"
+    },
+    "どう": {
+      "meaning": "如何、怎麼"
+    },
+    "維持する": {
+      "meaning": "維持"
+    },
+    "いく": {
+      "meaning": "去（〜ていく：逐漸〜下去）"
+    },
+    "喫緊": {
+      "meaning": "當務之急、緊迫"
+    },
+    "課題": {
+      "meaning": "課題"
+    },
+    "なる": {
+      "meaning": "成為"
+    }
+  },
+  "particles": {
+    "における": "「在〜方面」，書面語表示範圍",
+    "が": "標示主語",
+    "として": "「作為〜」的身分/立場",
+    "に": "表示對象、時間點或到達點",
+    "の": "表示所屬關係",
+    "や": "列舉部分事物",
+    "も": "「也」",
+    "と": "表示引用或並列",
+    "で": "表示場所或方式",
+    "は": "主題標記",
+    "など": "「等等」，列舉不完全",
+    "といった": "「像〜這樣的」，列舉例子",
+    "だけでは": "「僅憑〜」，強調不足以達成",
+    "か": "表示疑問或不確定",
+    "を": "標示動作的對象"
+  },
+  "translations": [
+    [
+      {
+        "text": "地方醫師不足被指出是嚴重的社會課題。",
+        "word": "医師不足"
+      }
+    ],
+    [
+      {
+        "text": "醫生集中在都市地區，另一方面，地方醫院則難以確保醫師人力，不少醫院因而被迫縮減診療科別甚至關閉。",
+        "word": "地方"
+      }
+    ],
+    [
+      {
+        "text": "特別是婦產科、小兒科等特定科別的不足尤為顯著，也有這樣的指摘。",
+        "word": "診療科"
+      }
+    ],
+    [
+      {
+        "text": "背景在於都市地區擁有較新的醫療設備與研習環境，使年輕醫師更容易選擇留在都市。",
+        "word": "医療設備"
+      }
+    ],
+    [
+      {
+        "text": "國家與地方政府至今已採取了針對地方任職醫師的獎學金制度，以及擴大醫學系地區保障名額等對策。",
+        "word": "対策"
+      }
+    ],
+    [
+      {
+        "text": "但是，僅憑這些政策措施，尚未能根本解決醫師分布不均的問題，因此需要更具實效性的對策。",
+        "word": "偏在"
+      }
+    ],
+    [
+      {
+        "text": "該如何維持地區醫療，已成為當務之急的課題。",
+        "word": "地域医療"
+      }
+    ]
+  ],
+  "grammar_notes": []
+}

@@ -1,0 +1,253 @@
+{
+  "date": "2026-09-25",
+  "level": "n5_lite",
+  "title": "わたしの自転車",
+  "text": "わたしの自転車は白いです。かごが大きいです。ベルは黄色いです。庭にあります。とても大切です。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自転車",
+      "basic_form": "自転車",
+      "reading": "じてんしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "白い",
+      "basic_form": "白い",
+      "reading": "しろい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かご",
+      "basic_form": "かご",
+      "reading": "かご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きい",
+      "basic_form": "大きい",
+      "reading": "おおきい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ベル",
+      "basic_form": "ベル",
+      "reading": "べる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "黄色い",
+      "basic_form": "黄色い",
+      "reading": "きいろい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "庭",
+      "basic_form": "庭",
+      "reading": "にわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "大切",
+      "basic_form": "大切",
+      "reading": "たいせつ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我"
+    },
+    "自転車": {
+      "meaning": "腳踏車"
+    },
+    "白い": {
+      "meaning": "白色的"
+    },
+    "かご": {
+      "meaning": "籃子"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "ベル": {
+      "meaning": "鈴鐺"
+    },
+    "黄色い": {
+      "meaning": "黃色的"
+    },
+    "庭": {
+      "meaning": "庭院"
+    },
+    "ある": {
+      "meaning": "有、在（表存在）"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "大切": {
+      "meaning": "珍貴的、重要的"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係，「的」",
+    "は": "主題標記，標示句子的主題",
+    "が": "主語標記，標示句子的主語",
+    "に": "表示存在的場所"
+  },
+  "translations": [
+    [
+      {
+        "text": "我的腳踏車是白色的。",
+        "word": "自転車"
+      }
+    ],
+    [
+      {
+        "text": "籃子很大。",
+        "word": "かご"
+      }
+    ],
+    [
+      {
+        "text": "鈴鐺是黃色的。",
+        "word": "ベル"
+      }
+    ],
+    [
+      {
+        "text": "在庭院裡。",
+        "word": "庭"
+      }
+    ],
+    [
+      {
+        "text": "非常珍貴。",
+        "word": "大切"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "い形容詞（現在/否定/過去/過去否定）",
+      "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった"
+    },
+    {
+      "sentence": 1,
+      "pattern": "〜が（主語標記）",
+      "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）"
+    },
+    {
+      "sentence": 3,
+      "pattern": "〜に（時間/対象/到達点）",
+      "note": "表示時間點、動作對象、或到達的地點"
+    },
+    {
+      "sentence": 4,
+      "pattern": "な形容詞（現在/否定/過去/過去否定）",
+      "note": "な形容詞加です的四段變化"
+    }
+  ]
+}
