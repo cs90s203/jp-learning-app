@@ -1,0 +1,470 @@
+{
+  "date": "2026-09-25",
+  "level": "n5",
+  "title": "動物園でキリンを見た",
+  "text": "先週の日曜日、家族と動物園へ行きました。天気がとても良かったです。動物園でキリンを見ました。キリンの首はとても長くて、驚きました。子供たちは「すごいね」と言いました。それから、みんなでお弁当を食べました。とても楽しい一日でした。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日曜日",
+      "basic_form": "日曜日",
+      "reading": "にちようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家族",
+      "basic_form": "家族",
+      "reading": "かぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "動物園",
+      "basic_form": "動物園",
+      "reading": "どうぶつえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行きました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "天気",
+      "basic_form": "天気",
+      "reading": "てんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "良かった",
+      "basic_form": "良い",
+      "reading": "よかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "動物園",
+      "basic_form": "動物園",
+      "reading": "どうぶつえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "キリン",
+      "basic_form": "キリン",
+      "reading": "きりん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見ました",
+      "basic_form": "見る",
+      "reading": "みました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "キリン",
+      "basic_form": "キリン",
+      "reading": "きりん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "首",
+      "basic_form": "首",
+      "reading": "くび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "長くて",
+      "basic_form": "長い",
+      "reading": "ながくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "驚きました",
+      "basic_form": "驚く",
+      "reading": "おどろきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "子供たち",
+      "basic_form": "子供たち",
+      "reading": "こどもたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すごい",
+      "basic_form": "すごい",
+      "reading": "すごい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ね",
+      "basic_form": "ね",
+      "reading": "ね",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言いました",
+      "basic_form": "言う",
+      "reading": "いいました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それから",
+      "basic_form": "それから",
+      "reading": "それから",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "お弁当",
+      "basic_form": "お弁当",
+      "reading": "おべんとう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べました",
+      "basic_form": "食べる",
+      "reading": "たべました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しい",
+      "basic_form": "楽しい",
+      "reading": "たのしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "一日",
+      "basic_form": "一日",
+      "reading": "いちにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でした",
+      "basic_form": "です",
+      "reading": "でした",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上星期"
+    },
+    "日曜日": {
+      "meaning": "星期日"
+    },
+    "家族": {
+      "meaning": "家人"
+    },
+    "動物園": {
+      "meaning": "動物園"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "天気": {
+      "meaning": "天氣"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "良い": {
+      "meaning": "好的"
+    },
+    "キリン": {
+      "meaning": "長頸鹿"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "首": {
+      "meaning": "脖子"
+    },
+    "長い": {
+      "meaning": "長的"
+    },
+    "驚く": {
+      "meaning": "驚訝"
+    },
+    "子供たち": {
+      "meaning": "孩子們"
+    },
+    "すごい": {
+      "meaning": "厲害、了不起"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "それから": {
+      "meaning": "然後、接著"
+    },
+    "みんな": {
+      "meaning": "大家"
+    },
+    "お弁当": {
+      "meaning": "便當"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "楽しい": {
+      "meaning": "開心的、愉快的"
+    },
+    "一日": {
+      "meaning": "一天"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係，「的」",
+    "と": "連接名詞表示「和」，或表示跟誰一起",
+    "へ": "表示移動的方向",
+    "が": "主語標記",
+    "で": "表示動作發生的場所，或表示方式（如みんなで：大家一起）",
+    "を": "標示動作的對象",
+    "は": "主題標記",
+    "ね": "句尾語氣詞，尋求同意或表示感嘆"
+  },
+  "translations": [
+    [
+      {
+        "text": "上星期天，我和家人去了動物園。",
+        "word": "動物園"
+      }
+    ],
+    [
+      {
+        "text": "天氣非常好。",
+        "word": "天気"
+      }
+    ],
+    [
+      {
+        "text": "在動物園裡看到了長頸鹿。",
+        "word": "キリン"
+      }
+    ],
+    [
+      {
+        "text": "長頸鹿的脖子非常長，讓我很驚訝。",
+        "word": "長い"
+      }
+    ],
+    [
+      {
+        "text": "孩子們說「好厲害喔」。",
+        "word": "すごい"
+      }
+    ],
+    [
+      {
+        "text": "然後，大家一起吃了便當。",
+        "word": "お弁当"
+      }
+    ],
+    [
+      {
+        "text": "真是開心的一天。",
+        "word": "楽しい"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "動詞ます形",
+      "note": "禮貌體現在式，肯定/否定/過去/過去否定四段變化"
+    },
+    {
+      "sentence": 0,
+      "pattern": "〜と（並列/一起）",
+      "note": "連接名詞表示「和」，或表示「跟誰一起」"
+    },
+    {
+      "sentence": 1,
+      "pattern": "い形容詞（現在/否定/過去/過去否定）",
+      "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜を（受詞標記）",
+      "note": "標示動作的對象"
+    }
+  ]
+}

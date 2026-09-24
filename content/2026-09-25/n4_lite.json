@@ -1,0 +1,456 @@
+{
+  "date": "2026-09-25",
+  "level": "n4_lite",
+  "title": "はじめてのマラソン大会",
+  "text": "先週の日曜日、はじめてマラソン大会に出ました。距離は五キロでした。朝はちょっと寒かったですが、走っているうちに体が温まりました。途中で友達に会って、一緒に走りました。ゴールした時、本当にうれしかったです。来年もまた出たいと思います。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "日曜日",
+      "basic_form": "日曜日",
+      "reading": "にちようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "はじめて",
+      "basic_form": "はじめて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "マラソン大会",
+      "basic_form": "マラソン大会",
+      "reading": "まらそんたいかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出ました",
+      "basic_form": "出る",
+      "reading": "でました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "距離",
+      "basic_form": "距離",
+      "reading": "きょり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "五キロ",
+      "basic_form": "五キロ",
+      "reading": "ごきろ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "でした",
+      "basic_form": "です",
+      "reading": "でした",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝",
+      "basic_form": "朝",
+      "reading": "あさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ちょっと",
+      "basic_form": "ちょっと",
+      "reading": "ちょっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "寒かった",
+      "basic_form": "寒い",
+      "reading": "さむかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "走っている",
+      "basic_form": "走る",
+      "reading": "はしっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "うち",
+      "basic_form": "うち",
+      "reading": "うち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "温まりました",
+      "basic_form": "温まる",
+      "reading": "あたたまりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "途中",
+      "basic_form": "途中",
+      "reading": "とちゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "会って",
+      "basic_form": "会う",
+      "reading": "あって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一緒",
+      "basic_form": "一緒",
+      "reading": "いっしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "走りました",
+      "basic_form": "走る",
+      "reading": "はしりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ゴールした",
+      "basic_form": "ゴールする",
+      "reading": "ごーるした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時",
+      "basic_form": "時",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "本当に",
+      "basic_form": "本当に",
+      "reading": "ほんとうに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "うれしかった",
+      "basic_form": "うれしい",
+      "reading": "うれしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "来年",
+      "basic_form": "来年",
+      "reading": "らいねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "出たい",
+      "basic_form": "出る",
+      "reading": "でたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思います",
+      "basic_form": "思う",
+      "reading": "おもいます",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上星期"
+    },
+    "日曜日": {
+      "meaning": "星期日"
+    },
+    "はじめて": {
+      "meaning": "第一次"
+    },
+    "マラソン大会": {
+      "meaning": "馬拉松大會"
+    },
+    "出る": {
+      "meaning": "出場、出去"
+    },
+    "距離": {
+      "meaning": "距離"
+    },
+    "五キロ": {
+      "meaning": "五公里"
+    },
+    "朝": {
+      "meaning": "早上"
+    },
+    "ちょっと": {
+      "meaning": "有點、稍微"
+    },
+    "寒い": {
+      "meaning": "冷的"
+    },
+    "走る": {
+      "meaning": "跑步"
+    },
+    "うち": {
+      "meaning": "之內、期間"
+    },
+    "体": {
+      "meaning": "身體"
+    },
+    "温まる": {
+      "meaning": "變暖和"
+    },
+    "途中": {
+      "meaning": "途中、半路上"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "会う": {
+      "meaning": "見面、遇見"
+    },
+    "一緒": {
+      "meaning": "一起"
+    },
+    "ゴールする": {
+      "meaning": "抵達終點"
+    },
+    "時": {
+      "meaning": "……的時候"
+    },
+    "本当に": {
+      "meaning": "真的"
+    },
+    "うれしい": {
+      "meaning": "開心的、高興的"
+    },
+    "来年": {
+      "meaning": "明年"
+    },
+    "また": {
+      "meaning": "再、又"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係",
+    "に": "表示時間點、動作對象、或到達的地點",
+    "は": "主題標記",
+    "が": "接續助詞，表示轉折「雖然〜但是」；也可作主語標記",
+    "で": "表示動作發生的場所",
+    "も": "「也」，取代原本該用的が/を，但と、で等助詞會保留",
+    "と": "表示引用內容，「覺得〜」的前接助詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "上星期天，我第一次參加了馬拉松大會。",
+        "word": "マラソン大会"
+      }
+    ],
+    [
+      {
+        "text": "距離是五公里。",
+        "word": "距離"
+      }
+    ],
+    [
+      {
+        "text": "早上有點冷，不過跑著跑著身體就暖和起來了。",
+        "word": "温まる"
+      }
+    ],
+    [
+      {
+        "text": "途中遇到朋友，就一起跑了。",
+        "word": "友達"
+      }
+    ],
+    [
+      {
+        "text": "抵達終點的時候，真的很開心。",
+        "word": "うれしい"
+      }
+    ],
+    [
+      {
+        "text": "明年還想再參加。",
+        "word": "出る"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 4,
+      "pattern": "普通形（辞書形/ない形/た形/なかった形）",
+      "note": "常體，用於複句、思考/傳聞句型前接"
+    },
+    {
+      "sentence": 5,
+      "pattern": "〜と思う",
+      "note": "「我覺得〜」，表示個人想法"
+    }
+  ]
+}
