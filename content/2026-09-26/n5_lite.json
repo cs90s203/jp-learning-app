@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-26",
+  "level": "n5_lite",
+  "title": "わたしの時計",
+  "text": "わたしの時計はおじいちゃんの時計です。とても古いです。でも、色はきれいな金色です。わたしはこの時計が大好きです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "おじいちゃん", "basic_form": "おじいちゃん", "reading": "おじいちゃん", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "古い", "basic_form": "古い", "reading": "ふるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "でも", "basic_form": "でも", "reading": "でも", "pos": "接続詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "色", "basic_form": "色", "reading": "いろ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "きれいな", "basic_form": "きれい", "reading": "きれいな", "pos": "形容動詞" },
+    { "surface_form": "金色", "basic_form": "金色", "reading": "きんいろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "この", "basic_form": "この", "reading": "この", "pos": "連体詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "大好き", "basic_form": "大好き", "reading": "だいすき", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "時計": { "meaning": "錶、時鐘" },
+    "おじいちゃん": { "meaning": "爺爺" },
+    "とても": { "meaning": "非常" },
+    "古い": { "meaning": "舊的" },
+    "でも": { "meaning": "但是" },
+    "色": { "meaning": "顏色" },
+    "きれい": { "meaning": "漂亮、美麗" },
+    "金色": { "meaning": "金色" },
+    "この": { "meaning": "這個" },
+    "大好き": { "meaning": "非常喜歡" }
+  },
+  "particles": {
+    "の": "所屬或修飾關係，「〜的」",
+    "は": "主題標記，提示句子的主題",
+    "が": "主語標記，標示句子的主語或焦點"
+  },
+  "translations": [
+    [ { "text": "我的錶是爺爺的錶。", "word": "時計" } ],
+    [ { "text": "非常舊。", "word": "古い" } ],
+    [ { "text": "但是，顏色是漂亮的金色。", "word": "きれい" } ],
+    [ { "text": "我非常喜歡這個錶。", "word": "大好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 3, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 3, "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
