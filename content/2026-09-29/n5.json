@@ -1,0 +1,105 @@
+{
+    "date": "2026-09-29",
+    "level": "n5",
+    "title": "町のお祭り",
+    "text": "昨日の夜、友達と町のお祭りに行った。神社の前にたくさんの屋台があって、りんご飴とたこ焼きを買って食べた。花火もきれいで、写真をたくさん撮った。楽しかったから、来年も行きたい。",
+    "tokens": [
+      {"surface_form":"昨日","basic_form":"昨日","reading":"きのう","pos":"名詞"},
+      {"surface_form":"の","basic_form":"の","reading":"の","pos":"助詞"},
+      {"surface_form":"夜","basic_form":"夜","reading":"よる","pos":"名詞"},
+      {"surface_form":"、","basic_form":"、","reading":"、","pos":"記号"},
+      {"surface_form":"友達","basic_form":"友達","reading":"ともだち","pos":"名詞"},
+      {"surface_form":"と","basic_form":"と","reading":"と","pos":"助詞"},
+      {"surface_form":"町","basic_form":"町","reading":"まち","pos":"名詞"},
+      {"surface_form":"の","basic_form":"の","reading":"の","pos":"助詞"},
+      {"surface_form":"お祭り","basic_form":"お祭り","reading":"おまつり","pos":"名詞"},
+      {"surface_form":"に","basic_form":"に","reading":"に","pos":"助詞"},
+      {"surface_form":"行った","basic_form":"行く","reading":"いった","pos":"動詞"},
+      {"surface_form":"。","basic_form":"。","reading":"。","pos":"記号"},
+      {"surface_form":"神社","basic_form":"神社","reading":"じんじゃ","pos":"名詞"},
+      {"surface_form":"の","basic_form":"の","reading":"の","pos":"助詞"},
+      {"surface_form":"前","basic_form":"前","reading":"まえ","pos":"名詞"},
+      {"surface_form":"に","basic_form":"に","reading":"に","pos":"助詞"},
+      {"surface_form":"たくさん","basic_form":"たくさん","reading":"たくさん","pos":"副詞"},
+      {"surface_form":"の","basic_form":"の","reading":"の","pos":"助詞"},
+      {"surface_form":"屋台","basic_form":"屋台","reading":"やたい","pos":"名詞"},
+      {"surface_form":"が","basic_form":"が","reading":"が","pos":"助詞"},
+      {"surface_form":"あって","basic_form":"ある","reading":"あって","pos":"動詞"},
+      {"surface_form":"、","basic_form":"、","reading":"、","pos":"記号"},
+      {"surface_form":"りんご飴","basic_form":"りんご飴","reading":"りんごあめ","pos":"名詞"},
+      {"surface_form":"と","basic_form":"と","reading":"と","pos":"助詞"},
+      {"surface_form":"たこ焼き","basic_form":"たこ焼き","reading":"たこやき","pos":"名詞"},
+      {"surface_form":"を","basic_form":"を","reading":"を","pos":"助詞"},
+      {"surface_form":"買って","basic_form":"買う","reading":"かって","pos":"動詞"},
+      {"surface_form":"食べた","basic_form":"食べる","reading":"たべた","pos":"動詞"},
+      {"surface_form":"。","basic_form":"。","reading":"。","pos":"記号"},
+      {"surface_form":"花火","basic_form":"花火","reading":"はなび","pos":"名詞"},
+      {"surface_form":"も","basic_form":"も","reading":"も","pos":"助詞"},
+      {"surface_form":"きれいで","basic_form":"きれい","reading":"きれいで","pos":"形容動詞"},
+      {"surface_form":"、","basic_form":"、","reading":"、","pos":"記号"},
+      {"surface_form":"写真","basic_form":"写真","reading":"しゃしん","pos":"名詞"},
+      {"surface_form":"を","basic_form":"を","reading":"を","pos":"助詞"},
+      {"surface_form":"たくさん","basic_form":"たくさん","reading":"たくさん","pos":"副詞"},
+      {"surface_form":"撮った","basic_form":"撮る","reading":"とった","pos":"動詞"},
+      {"surface_form":"。","basic_form":"。","reading":"。","pos":"記号"},
+      {"surface_form":"楽しかった","basic_form":"楽しい","reading":"たのしかった","pos":"形容詞"},
+      {"surface_form":"から","basic_form":"から","reading":"から","pos":"助詞"},
+      {"surface_form":"、","basic_form":"、","reading":"、","pos":"記号"},
+      {"surface_form":"来年","basic_form":"来年","reading":"らいねん","pos":"名詞"},
+      {"surface_form":"も","basic_form":"も","reading":"も","pos":"助詞"},
+      {"surface_form":"行きたい","basic_form":"行く","reading":"いきたい","pos":"動詞"},
+      {"surface_form":"。","basic_form":"。","reading":"。","pos":"記号"}
+    ],
+    "vocab": {
+      "昨日": {"meaning":"昨天"},
+      "夜": {"meaning":"晚上"},
+      "友達": {"meaning":"朋友"},
+      "町": {"meaning":"城鎮、街上"},
+      "お祭り": {"meaning":"祭典、廟會"},
+      "行く": {"meaning":"去"},
+      "神社": {"meaning":"神社"},
+      "前": {"meaning":"前面"},
+      "たくさん": {"meaning":"很多"},
+      "屋台": {"meaning":"攤位、小吃攤"},
+      "ある": {"meaning":"有（表示存在）"},
+      "りんご飴": {"meaning":"蘋果糖（糖葫蘆式蘋果糖）"},
+      "たこ焼き": {"meaning":"章魚燒"},
+      "買う": {"meaning":"買"},
+      "食べる": {"meaning":"吃"},
+      "花火": {"meaning":"煙火"},
+      "きれい": {"meaning":"漂亮、美麗"},
+      "写真": {"meaning":"照片"},
+      "撮る": {"meaning":"拍（照）"},
+      "楽しい": {"meaning":"開心、快樂"},
+      "来年": {"meaning":"明年"}
+    },
+    "particles": {
+      "の": "表示所屬關係或名詞修飾名詞，如「町のお祭り」。",
+      "と": "表示「和」，用來連接名詞或表示一起做動作的對象。",
+      "に": "表示動作的到達點或對象，如「〜に行く」。",
+      "が": "標示句子的主語，常用於描述存在句「〜がある」。",
+      "を": "標示動作作用的對象，如「〜を買う」「〜を食べる」。",
+      "も": "表示「也」，取代前面該用的が/を等助詞。",
+      "から": "表示原因或理由，「因為〜」。"
+    },
+    "translations": [
+      [
+        {"text":"昨天晚上，和朋友一起去了城裡的廟會。","word":"行く"}
+      ],
+      [
+        {"text":"神社前面有很多攤位，買了蘋果糖和章魚燒來吃。","word":"屋台"}
+      ],
+      [
+        {"text":"煙火也很漂亮，拍了很多照片。","word":"花火"}
+      ],
+      [
+        {"text":"因為很開心，明年也想再去。","word":"楽しい"}
+      ]
+    ],
+    "grammar_notes": [
+      {"sentence":1,"pattern":"〜を（受詞標記）","note":"標示動作的對象"},
+      {"sentence":0,"pattern":"〜と（並列/一起）","note":"連接名詞表示「和」，或表示「跟誰一起」"},
+      {"sentence":1,"pattern":"動詞て形","note":"連接兩個動作（先後順序）、或用於て形句型（ている等）"},
+      {"sentence":3,"pattern":"〜たい（想要）","note":"動詞ます形去ます加たい，表示說話者的願望"}
+    ]
+}

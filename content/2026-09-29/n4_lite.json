@@ -1,0 +1,116 @@
+{
+    "date": "2026-09-29",
+    "level": "n4_lite",
+    "title": "初めての茶道体験",
+    "text": "今日、友だちと一緒に茶道を体験してきた。正座がつらくて、足がしびれてしまった。お茶は思ったより苦かったけど、お菓子は甘くておいしかった。先生の動きがきれいで、ちょっと感動した。また行ってみたいと思う。",
+    "tokens": [
+      { "surface_form": "今日", "basic_form": "今日", "reading": "きょう", "pos": "名詞" },
+      { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+      { "surface_form": "友だち", "basic_form": "友達", "reading": "ともだち", "pos": "名詞" },
+      { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+      { "surface_form": "一緒", "basic_form": "一緒", "reading": "いっしょ", "pos": "名詞" },
+      { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+      { "surface_form": "茶道", "basic_form": "茶道", "reading": "さどう", "pos": "名詞" },
+      { "surface_form": "を", "basic_form": "を", "reading": "を", "pos": "助詞" },
+      { "surface_form": "体験して", "basic_form": "体験する", "reading": "たいけんして", "pos": "動詞" },
+      { "surface_form": "きた", "basic_form": "来る", "reading": "きた", "pos": "動詞" },
+      { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+      { "surface_form": "正座", "basic_form": "正座", "reading": "せいざ", "pos": "名詞" },
+      { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+      { "surface_form": "つらくて", "basic_form": "つらい", "reading": "つらくて", "pos": "形容詞" },
+      { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+      { "surface_form": "足", "basic_form": "足", "reading": "あし", "pos": "名詞" },
+      { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+      { "surface_form": "しびれて", "basic_form": "しびれる", "reading": "しびれて", "pos": "動詞" },
+      { "surface_form": "しまった", "basic_form": "しまう", "reading": "しまった", "pos": "動詞" },
+      { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+      { "surface_form": "お茶", "basic_form": "お茶", "reading": "おちゃ", "pos": "名詞" },
+      { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+      { "surface_form": "思った", "basic_form": "思う", "reading": "おもった", "pos": "動詞" },
+      { "surface_form": "より", "basic_form": "より", "reading": "より", "pos": "助詞" },
+      { "surface_form": "苦かった", "basic_form": "苦い", "reading": "にがかった", "pos": "形容詞" },
+      { "surface_form": "けど", "basic_form": "けど", "reading": "けど", "pos": "接続詞" },
+      { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+      { "surface_form": "お菓子", "basic_form": "お菓子", "reading": "おかし", "pos": "名詞" },
+      { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+      { "surface_form": "甘くて", "basic_form": "甘い", "reading": "あまくて", "pos": "形容詞" },
+      { "surface_form": "おいしかった", "basic_form": "おいしい", "reading": "おいしかった", "pos": "形容詞" },
+      { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+      { "surface_form": "先生", "basic_form": "先生", "reading": "せんせい", "pos": "名詞" },
+      { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+      { "surface_form": "動き", "basic_form": "動き", "reading": "うごき", "pos": "名詞" },
+      { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+      { "surface_form": "きれいで", "basic_form": "きれい", "reading": "きれいで", "pos": "形容動詞" },
+      { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+      { "surface_form": "ちょっと", "basic_form": "ちょっと", "reading": "ちょっと", "pos": "副詞" },
+      { "surface_form": "感動した", "basic_form": "感動する", "reading": "かんどうした", "pos": "動詞" },
+      { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+      { "surface_form": "また", "basic_form": "また", "reading": "また", "pos": "副詞" },
+      { "surface_form": "行って", "basic_form": "行く", "reading": "いって", "pos": "動詞" },
+      { "surface_form": "みたい", "basic_form": "みる", "reading": "みたい", "pos": "動詞" },
+      { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+      { "surface_form": "思う", "basic_form": "思う", "reading": "おもう", "pos": "動詞" },
+      { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+    ],
+    "vocab": {
+      "今日": { "meaning": "今天" },
+      "友達": { "meaning": "朋友" },
+      "一緒": { "meaning": "一起" },
+      "茶道": { "meaning": "茶道" },
+      "体験する": { "meaning": "體驗" },
+      "来る": { "meaning": "來" },
+      "正座": { "meaning": "跪坐（日式端坐）" },
+      "つらい": { "meaning": "痛苦的、難受的" },
+      "足": { "meaning": "腳" },
+      "しびれる": { "meaning": "發麻" },
+      "しまう": { "meaning": "表示動作完成或帶有遺憾語氣的補助動詞" },
+      "お茶": { "meaning": "茶" },
+      "思う": { "meaning": "覺得、想" },
+      "苦い": { "meaning": "苦的" },
+      "けど": { "meaning": "不過、但是" },
+      "お菓子": { "meaning": "點心、甜點" },
+      "甘い": { "meaning": "甜的" },
+      "おいしい": { "meaning": "好吃的" },
+      "先生": { "meaning": "老師" },
+      "動き": { "meaning": "動作" },
+      "きれい": { "meaning": "漂亮、優美" },
+      "ちょっと": { "meaning": "有點、稍微" },
+      "感動する": { "meaning": "感動" },
+      "また": { "meaning": "再、又" },
+      "行く": { "meaning": "去" },
+      "みる": { "meaning": "看、嘗試（用於てみる）" }
+    },
+    "particles": {
+      "は": "主題標記，用於提出句子的主題",
+      "が": "標示句子的主語",
+      "を": "標示動作的受詞",
+      "に": "表示狀態或方式，此處用於「一緒に」表示「一起」",
+      "と": "表示一起做動作的對象，或引用說話/想法的內容",
+      "より": "用於比較，表示「比〜」",
+      "けど": "逆接連接詞，「不過、但是」，語氣較口語柔和",
+      "の": "表示所屬或修飾關係，「的」"
+    },
+    "translations": [
+      [
+        { "text": "今天和朋友一起體驗了茶道。", "word": "体験する" }
+      ],
+      [
+        { "text": "跪坐好痛苦，腳都麻掉了。", "word": "しびれる" }
+      ],
+      [
+        { "text": "抹茶比想像中苦，不過點心甜甜的很好吃。", "word": "苦い" }
+      ],
+      [
+        { "text": "老師的動作很優美，讓我有點感動。", "word": "感動する" }
+      ],
+      [
+        { "text": "還想再去看看，我覺得。", "word": "思う" }
+      ]
+    ],
+    "grammar_notes": [
+      { "sentence": 0, "pattern": "動詞て形", "note": "連接兩個動作、或用於て形句型（ている等）" },
+      { "sentence": 1, "pattern": "〜てしまう", "note": "動作完成（遺憾/徹底語氣）" },
+      { "sentence": 4, "pattern": "〜てみる", "note": "嘗試做某事" },
+      { "sentence": 4, "pattern": "〜と思う", "note": "「我覺得〜」，表示個人想法" }
+    ]
+}
