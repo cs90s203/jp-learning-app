@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-30",
+  "level": "n5_lite",
+  "title": "わたしのペン",
+  "text": "わたしのペンです。青くて、細いペンです。かばんの中にあります。とても大切なペンです。友だちのペンも青いです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "青くて", "basic_form": "青い", "reading": "あおくて", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "細い", "basic_form": "細い", "reading": "ほそい", "pos": "形容詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切な", "basic_form": "大切", "reading": "たいせつな", "pos": "形容動詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "友だち", "basic_form": "友だち", "reading": "ともだち", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "ペン": { "meaning": "筆" },
+    "青い": { "meaning": "藍色的" },
+    "細い": { "meaning": "細的" },
+    "かばん": { "meaning": "包包" },
+    "中": { "meaning": "裡面、中間" },
+    "ある": { "meaning": "有、在（無生命物）" },
+    "とても": { "meaning": "非常" },
+    "大切": { "meaning": "重要、珍惜" },
+    "友だち": { "meaning": "朋友" }
+  },
+  "particles": {
+    "の": "所屬或修飾關係，「的」",
+    "に": "表示存在的場所",
+    "も": "「也」，取代原本該用的が/を"
+  },
+  "translations": [
+    [ { "text": "這是我的筆。", "word": "ペン" } ],
+    [ { "text": "是藍色、細細的筆。", "word": "青い" } ],
+    [ { "text": "在包包裡面。", "word": "ある" } ],
+    [ { "text": "是非常重要的筆。", "word": "大切" } ],
+    [ { "text": "朋友的筆也是藍色的。", "word": "青い" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "sentence": 3, "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" },
+    { "sentence": 4, "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" }
+  ]
+}
