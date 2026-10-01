@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-02",
+  "level": "n5_lite",
+  "title": "わたしの帽子",
+  "text": "わたしの帽子は青いです。新しい帽子です。帽子は部屋のたなにあります。とても好きな帽子です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "部屋", "basic_form": "部屋", "reading": "へや", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "たな", "basic_form": "たな", "reading": "たな", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "好き", "basic_form": "好き", "reading": "すき", "pos": "形容動詞" },
+    { "surface_form": "な", "basic_form": "だ", "reading": "な", "pos": "助動詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "帽子": { "meaning": "帽子" },
+    "青い": { "meaning": "藍色的" },
+    "新しい": { "meaning": "新的" },
+    "部屋": { "meaning": "房間" },
+    "たな": { "meaning": "架子、櫃子" },
+    "ある": { "meaning": "有、在（表示物品存在）" },
+    "とても": { "meaning": "非常" },
+    "好き": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，「的」",
+    "に": "表示存在的地點",
+    "です": "禮貌的斷定助動詞，「是」"
+  },
+  "translations": [
+    [ { "text": "我的帽子是藍色的。", "word": "青い" } ],
+    [ { "text": "是新的帽子。", "word": "新しい" } ],
+    [ { "text": "帽子在房間的架子上。", "word": "ある" } ],
+    [ { "text": "是非常喜歡的帽子。", "word": "好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 1, "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" },
+    { "sentence": 3, "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
