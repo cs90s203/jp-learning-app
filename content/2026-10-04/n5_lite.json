@@ -1,0 +1,296 @@
+{
+  "date": "2026-10-04",
+  "level": "n5_lite",
+  "title": "わたしのコップ",
+  "text": "わたしのコップは青いです。花の絵があります。毎朝、台所にあります。これは母のプレゼントです。とても大切なコップです。",
+  "tokens": [
+    {
+      "surface_form": "わたし",
+      "basic_form": "わたし",
+      "reading": "わたし",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "コップ",
+      "basic_form": "コップ",
+      "reading": "こっぷ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "青い",
+      "basic_form": "青い",
+      "reading": "あおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "花",
+      "basic_form": "花",
+      "reading": "はな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "絵",
+      "basic_form": "絵",
+      "reading": "え",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "毎朝",
+      "basic_form": "毎朝",
+      "reading": "まいあさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "台所",
+      "basic_form": "台所",
+      "reading": "だいどころ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あります",
+      "basic_form": "ある",
+      "reading": "あります",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これ",
+      "basic_form": "これ",
+      "reading": "これ",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "母",
+      "basic_form": "母",
+      "reading": "はは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "プレゼント",
+      "basic_form": "プレゼント",
+      "reading": "ぷれぜんと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "大切な",
+      "basic_form": "大切",
+      "reading": "たいせつな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "コップ",
+      "basic_form": "コップ",
+      "reading": "こっぷ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "わたし": {
+      "meaning": "我"
+    },
+    "コップ": {
+      "meaning": "杯子"
+    },
+    "青い": {
+      "meaning": "藍色的"
+    },
+    "花": {
+      "meaning": "花"
+    },
+    "絵": {
+      "meaning": "圖畫"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    },
+    "毎朝": {
+      "meaning": "每天早上"
+    },
+    "台所": {
+      "meaning": "廚房"
+    },
+    "これ": {
+      "meaning": "這個"
+    },
+    "母": {
+      "meaning": "媽媽"
+    },
+    "プレゼント": {
+      "meaning": "禮物"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "大切": {
+      "meaning": "重要、珍惜"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "は": "主題標記，標示句子的主題",
+    "が": "標示句子的主語（新資訊/焦點）",
+    "に": "表示時間點、動作對象、或到達的地點",
+    "です": "「是」的肯定敘述句結尾"
+  },
+  "translations": [
+    [
+      {
+        "text": "我的杯子是藍色的。",
+        "word": "青い"
+      }
+    ],
+    [
+      {
+        "text": "上面有花朵的圖案。",
+        "word": "絵"
+      }
+    ],
+    [
+      {
+        "text": "每天早上，它都放在廚房。",
+        "word": "台所"
+      }
+    ],
+    [
+      {
+        "text": "這是媽媽送的禮物。",
+        "word": "プレゼント"
+      }
+    ],
+    [
+      {
+        "text": "是一個非常重要的杯子。",
+        "word": "大切"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜は〜です",
+      "note": "「是」的肯定/否定敘述句"
+    },
+    {
+      "sentence": 1,
+      "pattern": "〜が（主語標記）",
+      "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜に（時間/對象/到達點）",
+      "note": "表示時間點、動作對象、或到達的地點"
+    },
+    {
+      "sentence": 3,
+      "pattern": "〜の（所屬/修飾）",
+      "note": "表示所屬關係，或名詞修飾名詞"
+    }
+  ]
+}

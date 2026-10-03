@@ -1,0 +1,1333 @@
+{
+  "date": "2026-10-04",
+  "level": "n1",
+  "title": "定年延長をめぐる議論",
+  "text": "少子高齢化が進み、労働力人口の減少が懸念されるなか、企業に定年の延長や廃止を求める議論が活発化している。政府はすでに希望する従業員を六十五歳まで雇用する義務を企業に課しており、さらに七十歳までの就業機会確保を努力義務として求めている。この背景には、年金の受給開始年齢が引き上げられつつあるなかで、年金だけに頼らず働き続けられる環境を整える必要性があるという事情も関係している。一方で、定年を延長すれば、若手社員の昇進や賃金が頭打ちになりかねないという懸念や、体力や健康状態に個人差がある高齢の従業員にどこまで同じ業務を求めるべきかという課題も指摘されている。企業の中には、再雇用後の役割や待遇を見直し、経験豊富な高齢社員の知識を若手の育成に生かす仕組みを導入するところも出てきている。定年延長を一律に進めるのではなく、個々の企業ならではの事情に応じた柔軟な制度設計が求められているといえるだろう。",
+  "tokens": [
+    {
+      "surface_form": "少子高齢化",
+      "basic_form": "少子高齢化",
+      "reading": "しょうしこうれいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進み",
+      "basic_form": "進む",
+      "reading": "すすみ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "労働力人口",
+      "basic_form": "労働力人口",
+      "reading": "ろうどうりょくじんこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "減少",
+      "basic_form": "減少",
+      "reading": "げんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "懸念される",
+      "basic_form": "懸念する",
+      "reading": "けねんされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "なか",
+      "basic_form": "なか",
+      "reading": "なか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "定年",
+      "basic_form": "定年",
+      "reading": "ていねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "延長",
+      "basic_form": "延長",
+      "reading": "えんちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "廃止",
+      "basic_form": "廃止",
+      "reading": "はいし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求める",
+      "basic_form": "求める",
+      "reading": "もとめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "議論",
+      "basic_form": "議論",
+      "reading": "ぎろん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活発化している",
+      "basic_form": "活発化する",
+      "reading": "かっぱつかしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政府",
+      "basic_form": "政府",
+      "reading": "せいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すでに",
+      "basic_form": "すでに",
+      "reading": "すでに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "希望する",
+      "basic_form": "希望する",
+      "reading": "きぼうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "従業員",
+      "basic_form": "従業員",
+      "reading": "じゅうぎょういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "六十五歳",
+      "basic_form": "六十五歳",
+      "reading": "ろくじゅうごさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "雇用する",
+      "basic_form": "雇用する",
+      "reading": "こようする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "義務",
+      "basic_form": "義務",
+      "reading": "ぎむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課しており",
+      "basic_form": "課す",
+      "reading": "かしており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "さらに",
+      "basic_form": "さらに",
+      "reading": "さらに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "七十歳",
+      "basic_form": "七十歳",
+      "reading": "ななじゅっさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "就業機会確保",
+      "basic_form": "就業機会確保",
+      "reading": "しゅうぎょうきかいかくほ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "努力義務",
+      "basic_form": "努力義務",
+      "reading": "どりょくぎむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求めている",
+      "basic_form": "求める",
+      "reading": "もとめている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "背景",
+      "basic_form": "背景",
+      "reading": "はいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "年金",
+      "basic_form": "年金",
+      "reading": "ねんきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受給開始年齢",
+      "basic_form": "受給開始年齢",
+      "reading": "じゅきゅうかいしねんれい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "引き上げられつつある",
+      "basic_form": "引き上げる",
+      "reading": "ひきあげられつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "なか",
+      "basic_form": "なか",
+      "reading": "なか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "年金",
+      "basic_form": "年金",
+      "reading": "ねんきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "頼らず",
+      "basic_form": "頼る",
+      "reading": "たよらず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "働き続けられる",
+      "basic_form": "働き続ける",
+      "reading": "はたらきつづけられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整える",
+      "basic_form": "整える",
+      "reading": "ととのえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "必要性",
+      "basic_form": "必要性",
+      "reading": "ひつようせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "事情",
+      "basic_form": "事情",
+      "reading": "じじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "関係している",
+      "basic_form": "関係する",
+      "reading": "かんけいしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "定年",
+      "basic_form": "定年",
+      "reading": "ていねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "延長すれば",
+      "basic_form": "延長する",
+      "reading": "えんちょうすれば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "若手社員",
+      "basic_form": "若手社員",
+      "reading": "わかてしゃいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "昇進",
+      "basic_form": "昇進",
+      "reading": "しょうしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "賃金",
+      "basic_form": "賃金",
+      "reading": "ちんぎん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "頭打ちになりかねない",
+      "basic_form": "頭打ちになる",
+      "reading": "あたまうちになりかねない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "懸念",
+      "basic_form": "懸念",
+      "reading": "けねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "体力",
+      "basic_form": "体力",
+      "reading": "たいりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "健康状態",
+      "basic_form": "健康状態",
+      "reading": "けんこうじょうたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "個人差",
+      "basic_form": "個人差",
+      "reading": "こじんさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "高齢",
+      "basic_form": "高齢",
+      "reading": "こうれい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "従業員",
+      "basic_form": "従業員",
+      "reading": "じゅうぎょういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "どこまで",
+      "basic_form": "どこまで",
+      "reading": "どこまで",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "同じ",
+      "basic_form": "同じ",
+      "reading": "おなじ",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "業務",
+      "basic_form": "業務",
+      "reading": "ぎょうむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求めるべきか",
+      "basic_form": "求める",
+      "reading": "もとめるべきか",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘されている",
+      "basic_form": "指摘する",
+      "reading": "してきされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "中",
+      "basic_form": "中",
+      "reading": "なか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "再雇用後",
+      "basic_form": "再雇用後",
+      "reading": "さいこようご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "役割",
+      "basic_form": "役割",
+      "reading": "やくわり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "待遇",
+      "basic_form": "待遇",
+      "reading": "たいぐう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見直し",
+      "basic_form": "見直す",
+      "reading": "みなおし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "経験豊富な",
+      "basic_form": "経験豊富",
+      "reading": "けいけんほうふな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "高齢社員",
+      "basic_form": "高齢社員",
+      "reading": "こうれいしゃいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "知識",
+      "basic_form": "知識",
+      "reading": "ちしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "若手",
+      "basic_form": "若手",
+      "reading": "わかて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "育成",
+      "basic_form": "育成",
+      "reading": "いくせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生かす",
+      "basic_form": "生かす",
+      "reading": "いかす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "仕組み",
+      "basic_form": "仕組み",
+      "reading": "しくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "導入する",
+      "basic_form": "導入する",
+      "reading": "どうにゅうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ところ",
+      "basic_form": "ところ",
+      "reading": "ところ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出てきている",
+      "basic_form": "出てくる",
+      "reading": "でてきている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "定年延長",
+      "basic_form": "定年延長",
+      "reading": "ていねんえんちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一律に",
+      "basic_form": "一律",
+      "reading": "いちりつに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "進める",
+      "basic_form": "進める",
+      "reading": "すすめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ではなく",
+      "basic_form": "ではなく",
+      "reading": "ではなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "個々",
+      "basic_form": "個々",
+      "reading": "ここ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ならでは",
+      "basic_form": "ならでは",
+      "reading": "ならでは",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "事情",
+      "basic_form": "事情",
+      "reading": "じじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "応じた",
+      "basic_form": "応じる",
+      "reading": "おうじた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "柔軟な",
+      "basic_form": "柔軟",
+      "reading": "じゅうなんな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "制度設計",
+      "basic_form": "制度設計",
+      "reading": "せいどせっけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求められている",
+      "basic_form": "求める",
+      "reading": "もとめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いえる",
+      "basic_form": "言う",
+      "reading": "いえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "少子高齢化": {
+      "meaning": "少子高齡化"
+    },
+    "進む": {
+      "meaning": "進展、推進"
+    },
+    "労働力人口": {
+      "meaning": "勞動力人口"
+    },
+    "減少": {
+      "meaning": "減少"
+    },
+    "懸念する": {
+      "meaning": "擔憂"
+    },
+    "なか": {
+      "meaning": "〜之中"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "定年": {
+      "meaning": "退休年齡"
+    },
+    "延長": {
+      "meaning": "延長"
+    },
+    "廃止": {
+      "meaning": "廢止"
+    },
+    "求める": {
+      "meaning": "要求、尋求"
+    },
+    "議論": {
+      "meaning": "議論、討論"
+    },
+    "活発化する": {
+      "meaning": "活躍化、熱絡起來"
+    },
+    "政府": {
+      "meaning": "政府"
+    },
+    "すでに": {
+      "meaning": "已經"
+    },
+    "希望する": {
+      "meaning": "希望"
+    },
+    "従業員": {
+      "meaning": "員工"
+    },
+    "六十五歳": {
+      "meaning": "六十五歲"
+    },
+    "雇用する": {
+      "meaning": "雇用"
+    },
+    "義務": {
+      "meaning": "義務"
+    },
+    "課す": {
+      "meaning": "課以、施加"
+    },
+    "さらに": {
+      "meaning": "再者、進一步"
+    },
+    "七十歳": {
+      "meaning": "七十歲"
+    },
+    "就業機会確保": {
+      "meaning": "確保就業機會"
+    },
+    "努力義務": {
+      "meaning": "努力義務"
+    },
+    "この": {
+      "meaning": "這個"
+    },
+    "背景": {
+      "meaning": "背景"
+    },
+    "年金": {
+      "meaning": "年金"
+    },
+    "受給開始年齢": {
+      "meaning": "開始領取年齡"
+    },
+    "引き上げる": {
+      "meaning": "調漲、提高"
+    },
+    "頼る": {
+      "meaning": "依賴"
+    },
+    "働き続ける": {
+      "meaning": "持續工作"
+    },
+    "環境": {
+      "meaning": "環境"
+    },
+    "整える": {
+      "meaning": "整頓、建立"
+    },
+    "必要性": {
+      "meaning": "必要性"
+    },
+    "ある": {
+      "meaning": "有"
+    },
+    "という": {
+      "meaning": "所謂"
+    },
+    "事情": {
+      "meaning": "情況"
+    },
+    "関係する": {
+      "meaning": "有關係"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "延長する": {
+      "meaning": "延長"
+    },
+    "若手社員": {
+      "meaning": "年輕員工"
+    },
+    "昇進": {
+      "meaning": "升遷"
+    },
+    "賃金": {
+      "meaning": "薪資"
+    },
+    "頭打ちになる": {
+      "meaning": "達到上限、停滯不前"
+    },
+    "懸念": {
+      "meaning": "憂慮"
+    },
+    "体力": {
+      "meaning": "體力"
+    },
+    "健康状態": {
+      "meaning": "健康狀態"
+    },
+    "個人差": {
+      "meaning": "個人差異"
+    },
+    "高齢": {
+      "meaning": "高齡"
+    },
+    "どこまで": {
+      "meaning": "到什麼程度"
+    },
+    "同じ": {
+      "meaning": "相同的"
+    },
+    "業務": {
+      "meaning": "業務"
+    },
+    "課題": {
+      "meaning": "課題"
+    },
+    "指摘する": {
+      "meaning": "指出"
+    },
+    "中": {
+      "meaning": "當中"
+    },
+    "再雇用後": {
+      "meaning": "再雇用後"
+    },
+    "役割": {
+      "meaning": "角色"
+    },
+    "待遇": {
+      "meaning": "待遇"
+    },
+    "見直す": {
+      "meaning": "重新檢視"
+    },
+    "経験豊富": {
+      "meaning": "經驗豐富"
+    },
+    "高齢社員": {
+      "meaning": "高齡員工"
+    },
+    "知識": {
+      "meaning": "知識"
+    },
+    "若手": {
+      "meaning": "年輕人"
+    },
+    "育成": {
+      "meaning": "培育"
+    },
+    "生かす": {
+      "meaning": "活用、發揮"
+    },
+    "仕組み": {
+      "meaning": "機制、制度"
+    },
+    "導入する": {
+      "meaning": "導入、引進"
+    },
+    "ところ": {
+      "meaning": "地方、情況"
+    },
+    "出てくる": {
+      "meaning": "出現"
+    },
+    "定年延長": {
+      "meaning": "延長退休年齡"
+    },
+    "一律": {
+      "meaning": "一律、統一"
+    },
+    "進める": {
+      "meaning": "推動"
+    },
+    "ではなく": {
+      "meaning": "而不是"
+    },
+    "個々": {
+      "meaning": "各個、每一個"
+    },
+    "ならでは": {
+      "meaning": "唯有〜才有的"
+    },
+    "応じる": {
+      "meaning": "因應、回應"
+    },
+    "柔軟": {
+      "meaning": "柔軟、靈活"
+    },
+    "制度設計": {
+      "meaning": "制度設計"
+    },
+    "言う": {
+      "meaning": "說"
+    }
+  },
+  "particles": {
+    "が": "標示句子的主語",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "や": "列舉名詞中的部分項目，「和」",
+    "を": "標示動作的對象",
+    "に": "表示動作對象或到達點",
+    "は": "主題標記",
+    "まで": "表示範圍終點，「到〜為止」",
+    "として": "「作為〜」的身分/立場",
+    "で": "表示場所、方法，或狀態",
+    "だけ": "「只有〜」，限定範圍",
+    "も": "「也」",
+    "という": "「所謂〜」，或用於引用說法",
+    "と": "表示引用內容，或並列",
+    "ではなく": "「而不是〜」，否定前項以凸顯後項",
+    "ならでは": "「唯有〜才有的」，強調獨特性",
+    "だろう": "表示推測，「大概、應該〜吧」"
+  },
+  "translations": [
+    [
+      {
+        "text": "隨著少子高齡化加劇，勞動力人口減少令人憂心，企業被要求延長或廢除退休年齡的討論日益熱絡。",
+        "word": "定年"
+      }
+    ],
+    [
+      {
+        "text": "政府已要求企業對有意願的員工雇用至六十五歲的義務，並進一步將確保七十歲前就業機會列為努力義務。",
+        "word": "雇用する"
+      }
+    ],
+    [
+      {
+        "text": "這背後的原因，也與年金開始領取年齡不斷調漲、需要建立不單靠年金也能持續工作的環境有關。",
+        "word": "年金"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，也有人指出，延長退休年齡可能導致年輕員工升遷與薪資停滯的隱憂，以及該要求體力、健康狀況因人而異的高齡員工做到什麼程度的課題。",
+        "word": "懸念"
+      }
+    ],
+    [
+      {
+        "text": "也有企業開始重新檢視再雇用後的角色與待遇，建立起將經驗豐富的高齡員工知識活用於培育年輕人的機制。",
+        "word": "生かす"
+      }
+    ],
+    [
+      {
+        "text": "與其一律推動延長退休年齡，應該說更需要的是因應各企業獨特情況的彈性制度設計吧。",
+        "word": "ならでは"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 5,
+      "pattern": "〜ならでは",
+      "note": "「唯有〜才有的」"
+    }
+  ]
+}

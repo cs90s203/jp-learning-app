@@ -1,0 +1,791 @@
+{
+  "date": "2026-10-04",
+  "level": "n3",
+  "title": "社交ダンスを習い始めた理由",
+  "text": "去年の冬、同僚に誘われて社交ダンスを習い始めた。もともと運動は苦手で、人前で踊ることにも抵抗があったが、ストレス解消になるかもしれないと思って参加してみることにした。実際に通ってみると、ステップを覚えるのは大変なものの、音楽に合わせて体を動かすのは思っていた以上に楽しかった。何よりも、年齢も職業も違う人たちと知り合えたことが大きな収穫だった。今では週に一度のレッスンが生活の楽しみの一つになっている。",
+  "tokens": [
+    {
+      "surface_form": "去年",
+      "basic_form": "去年",
+      "reading": "きょねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "冬",
+      "basic_form": "冬",
+      "reading": "ふゆ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "同僚",
+      "basic_form": "同僚",
+      "reading": "どうりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "誘われて",
+      "basic_form": "誘う",
+      "reading": "さそわれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "社交ダンス",
+      "basic_form": "社交ダンス",
+      "reading": "しゃこうだんす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "習い始めた",
+      "basic_form": "習い始める",
+      "reading": "ならいはじめた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もともと",
+      "basic_form": "もともと",
+      "reading": "もともと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "運動",
+      "basic_form": "運動",
+      "reading": "うんどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "苦手で",
+      "basic_form": "苦手",
+      "reading": "にがてで",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人前",
+      "basic_form": "人前",
+      "reading": "ひとまえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "踊る",
+      "basic_form": "踊る",
+      "reading": "おどる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "抵抗",
+      "basic_form": "抵抗",
+      "reading": "ていこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あった",
+      "basic_form": "ある",
+      "reading": "あった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ストレス解消",
+      "basic_form": "ストレス解消",
+      "reading": "すとれすかいしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "かもしれない",
+      "basic_form": "かもしれない",
+      "reading": "かもしれない",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思って",
+      "basic_form": "思う",
+      "reading": "おもって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "参加して",
+      "basic_form": "参加する",
+      "reading": "さんかして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みる",
+      "basic_form": "みる",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実際に",
+      "basic_form": "実際に",
+      "reading": "じっさいに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "通って",
+      "basic_form": "通う",
+      "reading": "かよって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みる",
+      "basic_form": "みる",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ステップ",
+      "basic_form": "ステップ",
+      "reading": "すてっぷ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "覚える",
+      "basic_form": "覚える",
+      "reading": "おぼえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大変な",
+      "basic_form": "大変",
+      "reading": "たいへんな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "ものの",
+      "basic_form": "ものの",
+      "reading": "ものの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "音楽",
+      "basic_form": "音楽",
+      "reading": "おんがく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "合わせて",
+      "basic_form": "合わせる",
+      "reading": "あわせて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "体",
+      "basic_form": "体",
+      "reading": "からだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "動かす",
+      "basic_form": "動かす",
+      "reading": "うごかす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思っていた",
+      "basic_form": "思う",
+      "reading": "おもっていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "以上",
+      "basic_form": "以上",
+      "reading": "いじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しかった",
+      "basic_form": "楽しい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "何よりも",
+      "basic_form": "何よりも",
+      "reading": "なによりも",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "年齢",
+      "basic_form": "年齢",
+      "reading": "ねんれい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "職業",
+      "basic_form": "職業",
+      "reading": "しょくぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "違う",
+      "basic_form": "違う",
+      "reading": "ちがう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人たち",
+      "basic_form": "人たち",
+      "reading": "ひとたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "知り合えた",
+      "basic_form": "知り合う",
+      "reading": "しりあえた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "収穫",
+      "basic_form": "収穫",
+      "reading": "しゅうかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今",
+      "basic_form": "今",
+      "reading": "いま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "週",
+      "basic_form": "週",
+      "reading": "しゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一度",
+      "basic_form": "一度",
+      "reading": "いちど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "レッスン",
+      "basic_form": "レッスン",
+      "reading": "れっすん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活",
+      "basic_form": "生活",
+      "reading": "せいかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しみ",
+      "basic_form": "楽しみ",
+      "reading": "たのしみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっている",
+      "basic_form": "なる",
+      "reading": "なっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "去年": {
+      "meaning": "去年"
+    },
+    "冬": {
+      "meaning": "冬天"
+    },
+    "同僚": {
+      "meaning": "同事"
+    },
+    "誘う": {
+      "meaning": "邀請"
+    },
+    "社交ダンス": {
+      "meaning": "社交舞"
+    },
+    "習い始める": {
+      "meaning": "開始學習"
+    },
+    "もともと": {
+      "meaning": "原本"
+    },
+    "運動": {
+      "meaning": "運動"
+    },
+    "苦手": {
+      "meaning": "不擅長"
+    },
+    "人前": {
+      "meaning": "人前、眾人面前"
+    },
+    "踊る": {
+      "meaning": "跳舞"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "抵抗": {
+      "meaning": "抗拒、抵抗"
+    },
+    "ある": {
+      "meaning": "有"
+    },
+    "ストレス解消": {
+      "meaning": "紓解壓力"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "かもしれない": {
+      "meaning": "說不定、也許"
+    },
+    "思う": {
+      "meaning": "覺得、想"
+    },
+    "参加する": {
+      "meaning": "參加"
+    },
+    "みる": {
+      "meaning": "試著做"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "実際に": {
+      "meaning": "實際上"
+    },
+    "通う": {
+      "meaning": "往返、通勤上課"
+    },
+    "ステップ": {
+      "meaning": "舞步"
+    },
+    "覚える": {
+      "meaning": "記住、學會"
+    },
+    "大変": {
+      "meaning": "辛苦、費勁"
+    },
+    "音楽": {
+      "meaning": "音樂"
+    },
+    "合わせる": {
+      "meaning": "配合"
+    },
+    "体": {
+      "meaning": "身體"
+    },
+    "動かす": {
+      "meaning": "活動、使〜動"
+    },
+    "以上": {
+      "meaning": "以上、超過"
+    },
+    "楽しい": {
+      "meaning": "開心、快樂"
+    },
+    "何よりも": {
+      "meaning": "最重要的是"
+    },
+    "年齢": {
+      "meaning": "年齡"
+    },
+    "職業": {
+      "meaning": "職業"
+    },
+    "違う": {
+      "meaning": "不同"
+    },
+    "人たち": {
+      "meaning": "人們"
+    },
+    "知り合う": {
+      "meaning": "結識、認識"
+    },
+    "大きな": {
+      "meaning": "大的"
+    },
+    "収穫": {
+      "meaning": "收穫"
+    },
+    "今": {
+      "meaning": "現在"
+    },
+    "週": {
+      "meaning": "每週、星期"
+    },
+    "一度": {
+      "meaning": "一次"
+    },
+    "レッスン": {
+      "meaning": "課程"
+    },
+    "生活": {
+      "meaning": "生活"
+    },
+    "楽しみ": {
+      "meaning": "樂趣"
+    },
+    "一つ": {
+      "meaning": "一個"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "に": "表示時間點、動作對象、或到達的地點",
+    "で": "表示場所、方法",
+    "が": "標示句子的主語，此處也作「雖然、但是」的逆接用法",
+    "は": "主題標記",
+    "も": "「也」",
+    "と": "連接名詞表示「和」，或表示引用內容",
+    "だ": "常體斷定助動詞，「是」",
+    "ものの": "「雖然〜」的逆接用法",
+    "を": "標示動作的對象",
+    "かもしれない": "「說不定、也許〜」，表示不確定的推測"
+  },
+  "translations": [
+    [
+      {
+        "text": "去年冬天，我被同事邀請，開始學起社交舞。",
+        "word": "習い始める"
+      }
+    ],
+    [
+      {
+        "text": "原本運動神經就不好，對在人前跳舞也有些抗拒，但心想或許能紓解壓力，於是決定先參加看看。",
+        "word": "参加する"
+      }
+    ],
+    [
+      {
+        "text": "實際去上課後發現，雖然記舞步很辛苦，但隨著音樂活動身體，比想像中還要開心。",
+        "word": "楽しい"
+      }
+    ],
+    [
+      {
+        "text": "最重要的是，能認識到年齡、職業都不同的人，這是很大的收穫。",
+        "word": "知り合う"
+      }
+    ],
+    [
+      {
+        "text": "現在，每週一次的課已經成為生活中的一個樂趣。",
+        "word": "レッスン"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 1,
+      "pattern": "〜ことにする／〜ことになる",
+      "note": "決定／自然而然演變成的結果"
+    }
+  ]
+}
