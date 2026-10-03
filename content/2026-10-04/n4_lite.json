@@ -1,0 +1,409 @@
+{
+  "date": "2026-10-04",
+  "level": "n4_lite",
+  "title": "はじめての料理教室",
+  "text": "せんしゅう、はじめて料理教室に行った。先生はとても親切だった。野菜を切ったり、スープを作ったりした。初めてだった。でも、意外と上手にできた。自分で作った料理はすごくおいしかった。また来月も参加したい。",
+  "tokens": [
+    {
+      "surface_form": "せんしゅう",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "はじめて",
+      "basic_form": "初めて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "料理教室",
+      "basic_form": "料理教室",
+      "reading": "りょうりきょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行った",
+      "basic_form": "行く",
+      "reading": "いった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "先生",
+      "basic_form": "先生",
+      "reading": "せんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "親切",
+      "basic_form": "親切",
+      "reading": "しんせつ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "野菜",
+      "basic_form": "野菜",
+      "reading": "やさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "切ったり",
+      "basic_form": "切る",
+      "reading": "きったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スープ",
+      "basic_form": "スープ",
+      "reading": "すーぷ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作ったり",
+      "basic_form": "作る",
+      "reading": "つくったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "初めて",
+      "basic_form": "初めて",
+      "reading": "はじめて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "意外",
+      "basic_form": "意外",
+      "reading": "いがい",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "上手",
+      "basic_form": "上手",
+      "reading": "じょうず",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できた",
+      "basic_form": "できる",
+      "reading": "できた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "自分",
+      "basic_form": "自分",
+      "reading": "じぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "作った",
+      "basic_form": "作る",
+      "reading": "つくった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "料理",
+      "basic_form": "料理",
+      "reading": "りょうり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すごく",
+      "basic_form": "すごい",
+      "reading": "すごく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "おいしかった",
+      "basic_form": "おいしい",
+      "reading": "おいしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "来月",
+      "basic_form": "来月",
+      "reading": "らいげつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "参加したい",
+      "basic_form": "参加する",
+      "reading": "さんかしたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上星期"
+    },
+    "初めて": {
+      "meaning": "第一次"
+    },
+    "料理教室": {
+      "meaning": "烹飪教室"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "先生": {
+      "meaning": "老師"
+    },
+    "親切": {
+      "meaning": "親切"
+    },
+    "野菜": {
+      "meaning": "蔬菜"
+    },
+    "切る": {
+      "meaning": "切"
+    },
+    "スープ": {
+      "meaning": "湯"
+    },
+    "作る": {
+      "meaning": "做、製作"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "意外": {
+      "meaning": "意外"
+    },
+    "上手": {
+      "meaning": "擅長、拿手"
+    },
+    "できる": {
+      "meaning": "能夠、做得到"
+    },
+    "自分": {
+      "meaning": "自己"
+    },
+    "料理": {
+      "meaning": "料理、菜餚"
+    },
+    "すごい": {
+      "meaning": "厲害、很"
+    },
+    "おいしい": {
+      "meaning": "好吃"
+    },
+    "また": {
+      "meaning": "又、再"
+    },
+    "来月": {
+      "meaning": "下個月"
+    },
+    "参加する": {
+      "meaning": "參加"
+    },
+    "でも": {
+      "meaning": "但是、不過"
+    },
+    "とても": {
+      "meaning": "非常"
+    }
+  },
+  "particles": {
+    "に": "表示動作的對象或到達點",
+    "は": "主題標記，標示句子的主題",
+    "だ": "常體斷定助動詞，「是」",
+    "を": "標示動作的對象",
+    "と": "表示並列、引用或動作方式",
+    "も": "「也」，取代原本該用的が/を，但と、で等助詞會保留",
+    "で": "表示動作發生的場所，或使用的方法/工具"
+  },
+  "translations": [
+    [
+      {
+        "text": "上星期，我第一次去了烹飪教室。",
+        "word": "料理教室"
+      }
+    ],
+    [
+      {
+        "text": "老師人很親切。",
+        "word": "親切"
+      }
+    ],
+    [
+      {
+        "text": "我切了蔬菜，也煮了湯。",
+        "word": "作る"
+      }
+    ],
+    [
+      {
+        "text": "這是我第一次做。",
+        "word": "初めて"
+      }
+    ],
+    [
+      {
+        "text": "不過，意外地做得很順手。",
+        "word": "上手"
+      }
+    ],
+    [
+      {
+        "text": "自己做的料理非常好吃。",
+        "word": "おいしい"
+      }
+    ],
+    [
+      {
+        "text": "下個月還想再參加。",
+        "word": "参加する"
+      }
+    ]
+  ],
+  "grammar_notes": []
+}

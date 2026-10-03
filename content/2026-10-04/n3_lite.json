@@ -1,0 +1,584 @@
+{
+  "date": "2026-10-04",
+  "level": "n3_lite",
+  "title": "ウクレレを始めてみた",
+  "text": "最近、ずっと気になっていたウクレレを始めてみることにした。楽器店で小さくて可愛いウクレレを買って、家で毎日少しずつ練習している。最初は指が痛くて、思うように音が出せなかったが、一週間くらい続けるうちに簡単な曲なら弾けるようになった。友達に聞かせたら、意外と上手だねと褒められて嬉しかった。これからも楽しみながら続けていきたい。",
+  "tokens": [
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ずっと",
+      "basic_form": "ずっと",
+      "reading": "ずっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "気になっていた",
+      "basic_form": "気になる",
+      "reading": "きになっていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ウクレレ",
+      "basic_form": "ウクレレ",
+      "reading": "うくれれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "始めて",
+      "basic_form": "始める",
+      "reading": "はじめて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "みる",
+      "basic_form": "みる",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "楽器店",
+      "basic_form": "楽器店",
+      "reading": "がっきてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "小さくて",
+      "basic_form": "小さい",
+      "reading": "ちいさくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "可愛い",
+      "basic_form": "可愛い",
+      "reading": "かわいい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ウクレレ",
+      "basic_form": "ウクレレ",
+      "reading": "うくれれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買って",
+      "basic_form": "買う",
+      "reading": "かって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "毎日",
+      "basic_form": "毎日",
+      "reading": "まいにち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "ずつ",
+      "basic_form": "ずつ",
+      "reading": "ずつ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "練習している",
+      "basic_form": "練習する",
+      "reading": "れんしゅうしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指",
+      "basic_form": "指",
+      "reading": "ゆび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "痛くて",
+      "basic_form": "痛い",
+      "reading": "いたくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "ように",
+      "reading": "ように",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "音",
+      "basic_form": "音",
+      "reading": "おと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出せなかった",
+      "basic_form": "出す",
+      "reading": "だせなかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一週間",
+      "basic_form": "一週間",
+      "reading": "いっしゅうかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "くらい",
+      "basic_form": "くらい",
+      "reading": "くらい",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続ける",
+      "basic_form": "続ける",
+      "reading": "つづける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "うちに",
+      "basic_form": "うちに",
+      "reading": "うちに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "簡単な",
+      "basic_form": "簡単",
+      "reading": "かんたんな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "曲",
+      "basic_form": "曲",
+      "reading": "きょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "なら",
+      "basic_form": "なら",
+      "reading": "なら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "弾ける",
+      "basic_form": "弾く",
+      "reading": "ひける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ようになった",
+      "basic_form": "ようになる",
+      "reading": "ようになった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "聞かせたら",
+      "basic_form": "聞かせる",
+      "reading": "きかせたら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "意外",
+      "basic_form": "意外",
+      "reading": "いがい",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "上手",
+      "basic_form": "上手",
+      "reading": "じょうず",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "ね",
+      "basic_form": "ね",
+      "reading": "ね",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "褒められて",
+      "basic_form": "褒める",
+      "reading": "ほめられて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "嬉しかった",
+      "basic_form": "嬉しい",
+      "reading": "うれしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "楽しみながら",
+      "basic_form": "楽しむ",
+      "reading": "たのしみながら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "続けていきたい",
+      "basic_form": "続ける",
+      "reading": "つづけていきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "最近": {
+      "meaning": "最近"
+    },
+    "ずっと": {
+      "meaning": "一直"
+    },
+    "気になる": {
+      "meaning": "在意、掛心"
+    },
+    "ウクレレ": {
+      "meaning": "烏克麗麗"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "みる": {
+      "meaning": "試著做"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "楽器店": {
+      "meaning": "樂器行"
+    },
+    "小さい": {
+      "meaning": "小的"
+    },
+    "可愛い": {
+      "meaning": "可愛的"
+    },
+    "買う": {
+      "meaning": "買"
+    },
+    "家": {
+      "meaning": "家"
+    },
+    "毎日": {
+      "meaning": "每天"
+    },
+    "少し": {
+      "meaning": "一點"
+    },
+    "ずつ": {
+      "meaning": "逐步、每次一點"
+    },
+    "練習する": {
+      "meaning": "練習"
+    },
+    "最初": {
+      "meaning": "一開始"
+    },
+    "指": {
+      "meaning": "手指"
+    },
+    "痛い": {
+      "meaning": "痛"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    },
+    "音": {
+      "meaning": "聲音"
+    },
+    "出す": {
+      "meaning": "發出、拿出"
+    },
+    "一週間": {
+      "meaning": "一星期"
+    },
+    "続ける": {
+      "meaning": "持續、繼續"
+    },
+    "簡単": {
+      "meaning": "簡單"
+    },
+    "曲": {
+      "meaning": "曲子"
+    },
+    "弾く": {
+      "meaning": "彈奏"
+    },
+    "ようになる": {
+      "meaning": "變得（能夠）"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "聞かせる": {
+      "meaning": "讓〜聽"
+    },
+    "意外": {
+      "meaning": "意外"
+    },
+    "上手": {
+      "meaning": "擅長、厲害"
+    },
+    "褒める": {
+      "meaning": "稱讚"
+    },
+    "嬉しい": {
+      "meaning": "開心"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "これから": {
+      "meaning": "從今以後"
+    },
+    "楽しむ": {
+      "meaning": "享受、樂在其中"
+    }
+  },
+  "particles": {
+    "を": "標示動作的對象",
+    "に": "表示動作對象或到達點",
+    "で": "表示場所或方法",
+    "が": "標示句子的主語",
+    "は": "主題標記",
+    "と": "表示引用內容，或並列",
+    "も": "「也」",
+    "ね": "句尾語氣詞，尋求同意或確認，「對吧」",
+    "だ": "常體斷定助動詞，「是」",
+    "ように": "表示「像〜那樣」，說明方式或期望達成的狀態",
+    "くらい": "表示大略的程度或數量，「大約」",
+    "うちに": "表示「趁著〜的時候」",
+    "なら": "針對對方所說的話題提出建議或條件",
+    "ずつ": "表示等量分配或逐步進行，「每次〜地」"
+  },
+  "translations": [
+    [
+      {
+        "text": "最近，我開始嘗試學習一直很想學的烏克麗麗。",
+        "word": "始める"
+      }
+    ],
+    [
+      {
+        "text": "在樂器行買了一把小巧可愛的烏克麗麗，每天在家一點一點地練習。",
+        "word": "練習する"
+      }
+    ],
+    [
+      {
+        "text": "一開始手指很痛，怎麼彈都彈不出想要的聲音，但持續練習一週後，漸漸能彈簡單的曲子了。",
+        "word": "弾く"
+      }
+    ],
+    [
+      {
+        "text": "彈給朋友聽之後，被說「意外地蠻厲害的呢」，讓我很開心。",
+        "word": "褒める"
+      }
+    ],
+    [
+      {
+        "text": "以後也想樂在其中地繼續彈下去。",
+        "word": "続ける"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜ことにする／〜ことになる",
+      "note": "決定／自然而然演變成的結果"
+    }
+  ]
+}
