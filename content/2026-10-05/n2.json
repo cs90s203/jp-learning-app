@@ -1,0 +1,1028 @@
+{
+  "date": "2026-10-05",
+  "level": "n2",
+  "title": "空き家を活用した地域活動の広がり",
+  "text": "人口減少や高齢化にもかかわらず、空き家を地域の資源として再活用する動きが各地で広がっている。かつては放置されるばかりだった古い民家が、改修を通じて交流スペースや子ども食堂に生まれ変わる例も少なくない。あるNPOの調査をきっかけに始まったこの取り組みは、行政の支援だけでなく、住民同士の協力によって支えられている一面もある。空き家所有者の高齢化という課題はあるものの、地域活性化の観点からは十分な効果があると評価されている。一方で、資金やノウハウの不足から活動が長続きしないケースもあり、継続的な支援体制の構築が求められている。都市部はもとより、過疎化が進む地方においても、こうした活用例は今後さらに広がっていくだろう。",
+  "tokens": [
+    {
+      "surface_form": "人口減少",
+      "basic_form": "人口減少",
+      "reading": "じんこうげんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高齢化",
+      "basic_form": "高齢化",
+      "reading": "こうれいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "にもかかわらず",
+      "basic_form": "にもかかわらず",
+      "reading": "にもかかわらず",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "空き家",
+      "basic_form": "空き家",
+      "reading": "あきや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "資源",
+      "basic_form": "資源",
+      "reading": "しげん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "再活用する",
+      "basic_form": "再活用する",
+      "reading": "さいかつようする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "動き",
+      "basic_form": "動き",
+      "reading": "うごき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "各地",
+      "basic_form": "各地",
+      "reading": "かくち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "広がっている",
+      "basic_form": "広がる",
+      "reading": "ひろがっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かつて",
+      "basic_form": "かつて",
+      "reading": "かつて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "放置される",
+      "basic_form": "放置する",
+      "reading": "ほうちされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ばかり",
+      "basic_form": "ばかり",
+      "reading": "ばかり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "古い",
+      "basic_form": "古い",
+      "reading": "ふるい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "民家",
+      "basic_form": "民家",
+      "reading": "みんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "改修",
+      "basic_form": "改修",
+      "reading": "かいしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通じて",
+      "basic_form": "通じる",
+      "reading": "つうじて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "交流スペース",
+      "basic_form": "交流スペース",
+      "reading": "こうりゅうすぺーす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "子ども食堂",
+      "basic_form": "子ども食堂",
+      "reading": "こどもしょくどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生まれ変わる",
+      "basic_form": "生まれ変わる",
+      "reading": "うまれかわる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "例",
+      "basic_form": "例",
+      "reading": "れい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "NPO",
+      "basic_form": "NPO",
+      "reading": "えぬぴーおー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "調査",
+      "basic_form": "調査",
+      "reading": "ちょうさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きっかけ",
+      "basic_form": "きっかけ",
+      "reading": "きっかけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "始まった",
+      "basic_form": "始まる",
+      "reading": "はじまった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "取り組み",
+      "basic_form": "取り組み",
+      "reading": "とりくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "行政",
+      "basic_form": "行政",
+      "reading": "ぎょうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "支援",
+      "basic_form": "支援",
+      "reading": "しえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけでなく",
+      "basic_form": "だけでなく",
+      "reading": "だけでなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "住民同士",
+      "basic_form": "住民同士",
+      "reading": "じゅうみんどうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "協力",
+      "basic_form": "協力",
+      "reading": "きょうりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "支えられている",
+      "basic_form": "支える",
+      "reading": "ささえられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一面",
+      "basic_form": "一面",
+      "reading": "いちめん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "空き家所有者",
+      "basic_form": "空き家所有者",
+      "reading": "あきやしょゆうしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高齢化",
+      "basic_form": "高齢化",
+      "reading": "こうれいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ものの",
+      "basic_form": "ものの",
+      "reading": "ものの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域活性化",
+      "basic_form": "地域活性化",
+      "reading": "ちいきかっせいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "観点",
+      "basic_form": "観点",
+      "reading": "かんてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "十分な",
+      "basic_form": "十分",
+      "reading": "じゅうぶんな",
+      "pos": "形状詞"
+    },
+    {
+      "surface_form": "効果",
+      "basic_form": "効果",
+      "reading": "こうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "評価されている",
+      "basic_form": "評価する",
+      "reading": "ひょうかされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "資金",
+      "basic_form": "資金",
+      "reading": "しきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ノウハウ",
+      "basic_form": "ノウハウ",
+      "reading": "のうはう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不足",
+      "basic_form": "不足",
+      "reading": "ふそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "活動",
+      "basic_form": "活動",
+      "reading": "かつどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "長続きしない",
+      "basic_form": "長続きする",
+      "reading": "ながつづきしない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ケース",
+      "basic_form": "ケース",
+      "reading": "けーす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "継続的な",
+      "basic_form": "継続的",
+      "reading": "けいぞくてきな",
+      "pos": "形状詞"
+    },
+    {
+      "surface_form": "支援体制",
+      "basic_form": "支援体制",
+      "reading": "しえんたいせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "構築",
+      "basic_form": "構築",
+      "reading": "こうちく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求められている",
+      "basic_form": "求める",
+      "reading": "もとめられている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市部",
+      "basic_form": "都市部",
+      "reading": "としぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もとより",
+      "basic_form": "もとより",
+      "reading": "もとより",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "過疎化",
+      "basic_form": "過疎化",
+      "reading": "かそか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進む",
+      "basic_form": "進む",
+      "reading": "すすむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "において",
+      "basic_form": "において",
+      "reading": "において",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "活用例",
+      "basic_form": "活用例",
+      "reading": "かつようれい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "さらに",
+      "basic_form": "さらに",
+      "reading": "さらに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "広がっていく",
+      "basic_form": "広がる",
+      "reading": "ひろがっていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だ",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "人口減少": {
+      "meaning": "人口減少"
+    },
+    "高齢化": {
+      "meaning": "高齡化"
+    },
+    "空き家": {
+      "meaning": "空屋"
+    },
+    "地域": {
+      "meaning": "地區"
+    },
+    "資源": {
+      "meaning": "資源"
+    },
+    "再活用する": {
+      "meaning": "再利用"
+    },
+    "動き": {
+      "meaning": "動向、動態"
+    },
+    "各地": {
+      "meaning": "各地"
+    },
+    "広がる": {
+      "meaning": "擴展、擴散"
+    },
+    "かつて": {
+      "meaning": "曾經、過去"
+    },
+    "放置する": {
+      "meaning": "放置不管"
+    },
+    "古い": {
+      "meaning": "舊的"
+    },
+    "民家": {
+      "meaning": "民宅"
+    },
+    "改修": {
+      "meaning": "改建、修繕"
+    },
+    "通じる": {
+      "meaning": "透過、經由"
+    },
+    "交流スペース": {
+      "meaning": "交流空間"
+    },
+    "子ども食堂": {
+      "meaning": "兒童食堂（供餐給孩童的公益食堂）"
+    },
+    "生まれ変わる": {
+      "meaning": "脫胎換骨、重生"
+    },
+    "例": {
+      "meaning": "例子"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "ある": {
+      "meaning": "有、存在；放在名詞前表示「某個」"
+    },
+    "NPO": {
+      "meaning": "非營利組織"
+    },
+    "調査": {
+      "meaning": "調查"
+    },
+    "きっかけ": {
+      "meaning": "契機、起因"
+    },
+    "始まる": {
+      "meaning": "開始"
+    },
+    "この": {
+      "meaning": "這個"
+    },
+    "取り組み": {
+      "meaning": "努力、措施"
+    },
+    "行政": {
+      "meaning": "行政機關"
+    },
+    "支援": {
+      "meaning": "支援"
+    },
+    "住民同士": {
+      "meaning": "居民彼此之間"
+    },
+    "協力": {
+      "meaning": "協助、合作"
+    },
+    "支える": {
+      "meaning": "支撐、支持"
+    },
+    "一面": {
+      "meaning": "一個面向"
+    },
+    "空き家所有者": {
+      "meaning": "空屋所有者"
+    },
+    "という": {
+      "meaning": "所謂、這樣的（引用內容）"
+    },
+    "課題": {
+      "meaning": "課題、待解決的問題"
+    },
+    "地域活性化": {
+      "meaning": "地區活化"
+    },
+    "観点": {
+      "meaning": "觀點"
+    },
+    "十分": {
+      "meaning": "充分、足夠"
+    },
+    "効果": {
+      "meaning": "效果"
+    },
+    "評価する": {
+      "meaning": "評價、評估"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "資金": {
+      "meaning": "資金"
+    },
+    "ノウハウ": {
+      "meaning": "know-how、專門知識"
+    },
+    "不足": {
+      "meaning": "不足"
+    },
+    "活動": {
+      "meaning": "活動"
+    },
+    "長続きする": {
+      "meaning": "持續長久"
+    },
+    "ケース": {
+      "meaning": "案例、情況"
+    },
+    "継続的": {
+      "meaning": "持續性的"
+    },
+    "支援体制": {
+      "meaning": "支援體制"
+    },
+    "構築": {
+      "meaning": "構建"
+    },
+    "求める": {
+      "meaning": "要求、尋求"
+    },
+    "都市部": {
+      "meaning": "城市地區"
+    },
+    "もとより": {
+      "meaning": "不用說、本來就"
+    },
+    "過疎化": {
+      "meaning": "人口過稀化"
+    },
+    "進む": {
+      "meaning": "進展、推進"
+    },
+    "地方": {
+      "meaning": "地方"
+    },
+    "こうした": {
+      "meaning": "像這樣的"
+    },
+    "活用例": {
+      "meaning": "活用案例"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "さらに": {
+      "meaning": "進一步、更加"
+    }
+  },
+  "particles": {
+    "にもかかわらず": "「儘管〜」，強逆接，較のに更書面",
+    "として": "「作為〜」的身分、立場",
+    "ばかり": "「只是〜、淨是〜」，表示程度或範圍的侷限",
+    "通じる": "（動詞，常以「〜を通じて」出現）「透過〜」，表示媒介或期間",
+    "をきっかけに": "「以〜為契機」",
+    "だけでなく": "「不僅〜」，表示不僅限於前項",
+    "によって": "「依據〜」／「因〜而異」，也用於被動的動作者",
+    "という": "引用名稱或說法，「所謂〜」",
+    "ものの": "「雖然〜」，書面逆接",
+    "もとより": "「不用說〜，就連〜也」",
+    "において": "「在〜方面」，書面語的場所、範圍標記"
+  },
+  "translations": [
+    [
+      {
+        "text": "儘管面臨人口減少與高齡化，將空屋作為地區資源再利用的行動正在各地擴展。",
+        "word": "にもかかわらず"
+      }
+    ],
+    [
+      {
+        "text": "過去只是被放置不管的老舊民宅，透過改建重生為交流空間或兒童食堂的例子也不少。",
+        "word": "通じる"
+      }
+    ],
+    [
+      {
+        "text": "以某非營利組織的調查為契機展開的這項措施，不僅有行政機關的支援，也靠居民彼此的協助支撐著。",
+        "word": "きっかけ"
+      }
+    ],
+    [
+      {
+        "text": "儘管存在空屋所有者高齡化的課題，但從地區活化的角度來看，仍被評價為具有足夠的效果。",
+        "word": "ものの"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，也有因資金或專業知識不足而無法長久持續的案例，因此需要建立持續性的支援體制。",
+        "word": "長続きする"
+      }
+    ],
+    [
+      {
+        "text": "不用說城市地區，就連人口過稀化的地方，這類活用案例今後應該也會進一步擴展。",
+        "word": "もとより"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜にもかかわらず",
+      "note": "「儘管〜」，強逆接，較のに更書面"
+    },
+    {
+      "sentence": 1,
+      "pattern": "〜を通じて／〜を通して",
+      "note": "「透過〜」，媒介或期間"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜をきっかけに",
+      "note": "「以〜為契機」"
+    },
+    {
+      "sentence": 5,
+      "pattern": "〜はもとより",
+      "note": "「不用說〜，就連〜也」"
+    }
+  ]
+}

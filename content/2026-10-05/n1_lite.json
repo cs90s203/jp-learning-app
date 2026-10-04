@@ -1,0 +1,1032 @@
+{
+  "date": "2026-10-05",
+  "level": "n1_lite",
+  "title": "奨学金制度をめぐる課題",
+  "text": "日本の奨学金制度は、経済的事情を抱える学生の就学機会を支える重要な仕組みとして一定の役割を果たしてきた。しかし、卒業後に重い返済負担を強いられる若者が少なくなく、低賃金や非正規雇用と相まって、生活設計の見直しを余儀なくされるケースも生じている。返済の見通しが立たないことへの不安から、結婚や子育てといった将来設計を諦めざるを得ないという声すら聞かれる。奨学金破産という言葉さえ使われるようになったことを踏まえれば、問題の深刻さは軽視するべきではない。制度の存続意義自体を否定するまでには至らないものの、給付型奨学金の拡充や所得に応じた返済方式の導入など、抜本的な見直しを図るべき時期に来ていると言わざるを得ない。",
+  "tokens": [
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "奨学金制度",
+      "basic_form": "奨学金制度",
+      "reading": "しょうがくきんせいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "経済的事情",
+      "basic_form": "経済的事情",
+      "reading": "けいざいてきじじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "抱える",
+      "basic_form": "抱える",
+      "reading": "かかえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "学生",
+      "basic_form": "学生",
+      "reading": "がくせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "就学機会",
+      "basic_form": "就学機会",
+      "reading": "しゅうがくきかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "支える",
+      "basic_form": "支える",
+      "reading": "ささえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "重要な",
+      "basic_form": "重要",
+      "reading": "じゅうような",
+      "pos": "形状詞"
+    },
+    {
+      "surface_form": "仕組み",
+      "basic_form": "仕組み",
+      "reading": "しくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一定",
+      "basic_form": "一定",
+      "reading": "いってい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "役割",
+      "basic_form": "役割",
+      "reading": "やくわり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "果たしてきた",
+      "basic_form": "果たす",
+      "reading": "はたしてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかし",
+      "basic_form": "しかし",
+      "reading": "しかし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "卒業後",
+      "basic_form": "卒業後",
+      "reading": "そつぎょうご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重い",
+      "basic_form": "重い",
+      "reading": "おもい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "返済負担",
+      "basic_form": "返済負担",
+      "reading": "へんさいふたん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "強いられる",
+      "basic_form": "強いる",
+      "reading": "しいられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "若者",
+      "basic_form": "若者",
+      "reading": "わかもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくなく",
+      "basic_form": "少ない",
+      "reading": "すくなくなく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "低賃金",
+      "basic_form": "低賃金",
+      "reading": "ていちんぎん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "非正規雇用",
+      "basic_form": "非正規雇用",
+      "reading": "ひせいきこよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "相まって",
+      "basic_form": "相まって",
+      "reading": "あいまって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "生活設計",
+      "basic_form": "生活設計",
+      "reading": "せいかつせっけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見直し",
+      "basic_form": "見直し",
+      "reading": "みなおし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "余儀なくされる",
+      "basic_form": "余儀なくされる",
+      "reading": "よぎなくされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ケース",
+      "basic_form": "ケース",
+      "reading": "けーす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生じている",
+      "basic_form": "生じる",
+      "reading": "しょうじている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "返済",
+      "basic_form": "返済",
+      "reading": "へんさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見通し",
+      "basic_form": "見通し",
+      "reading": "みとおし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "立たない",
+      "basic_form": "立つ",
+      "reading": "たたない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不安",
+      "basic_form": "不安",
+      "reading": "ふあん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "結婚",
+      "basic_form": "結婚",
+      "reading": "けっこん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "子育て",
+      "basic_form": "子育て",
+      "reading": "こそだて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いった",
+      "basic_form": "いう",
+      "reading": "いった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "将来設計",
+      "basic_form": "将来設計",
+      "reading": "しょうらいせっけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "諦めざる",
+      "basic_form": "諦める",
+      "reading": "あきらめざる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "得ない",
+      "basic_form": "得る",
+      "reading": "えない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "すら",
+      "basic_form": "すら",
+      "reading": "すら",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "聞かれる",
+      "basic_form": "聞く",
+      "reading": "きかれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "奨学金破産",
+      "basic_form": "奨学金破産",
+      "reading": "しょうがくきんはさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言葉",
+      "basic_form": "言葉",
+      "reading": "ことば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "さえ",
+      "basic_form": "さえ",
+      "reading": "さえ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使われる",
+      "basic_form": "使う",
+      "reading": "つかわれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ように",
+      "basic_form": "よう",
+      "reading": "ように",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "踏まえれば",
+      "basic_form": "踏まえる",
+      "reading": "ふまえれば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深刻さ",
+      "basic_form": "深刻さ",
+      "reading": "しんこくさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "軽視するべき",
+      "basic_form": "軽視する",
+      "reading": "けいしするべき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ではない",
+      "basic_form": "ではない",
+      "reading": "ではない",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "制度",
+      "basic_form": "制度",
+      "reading": "せいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "存続意義自体",
+      "basic_form": "存続意義自体",
+      "reading": "そんぞくいぎじたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "否定する",
+      "basic_form": "否定する",
+      "reading": "ひていする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "至らない",
+      "basic_form": "至る",
+      "reading": "いたらない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ものの",
+      "basic_form": "ものの",
+      "reading": "ものの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "給付型奨学金",
+      "basic_form": "給付型奨学金",
+      "reading": "きゅうふがたしょうがくきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "拡充",
+      "basic_form": "拡充",
+      "reading": "かくじゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "所得",
+      "basic_form": "所得",
+      "reading": "しょとく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "応じた",
+      "basic_form": "応じる",
+      "reading": "おうじた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "返済方式",
+      "basic_form": "返済方式",
+      "reading": "へんさいほうしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "導入",
+      "basic_form": "導入",
+      "reading": "どうにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "抜本的な",
+      "basic_form": "抜本的",
+      "reading": "ばっぽんてきな",
+      "pos": "形状詞"
+    },
+    {
+      "surface_form": "見直し",
+      "basic_form": "見直し",
+      "reading": "みなおし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "図るべき",
+      "basic_form": "図る",
+      "reading": "はかるべき",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時期",
+      "basic_form": "時期",
+      "reading": "じき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "来ている",
+      "basic_form": "来る",
+      "reading": "きている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言わざる",
+      "basic_form": "言う",
+      "reading": "いわざる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "得ない",
+      "basic_form": "得る",
+      "reading": "えない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "日本": {
+      "meaning": "日本"
+    },
+    "奨学金制度": {
+      "meaning": "獎學金制度"
+    },
+    "経済的事情": {
+      "meaning": "經濟方面的狀況"
+    },
+    "抱える": {
+      "meaning": "背負、懷有（問題等）"
+    },
+    "学生": {
+      "meaning": "學生"
+    },
+    "就学機会": {
+      "meaning": "就學機會"
+    },
+    "支える": {
+      "meaning": "支撐、支持"
+    },
+    "重要": {
+      "meaning": "重要"
+    },
+    "仕組み": {
+      "meaning": "機制、架構"
+    },
+    "一定": {
+      "meaning": "一定、固定"
+    },
+    "役割": {
+      "meaning": "作用、角色"
+    },
+    "果たす": {
+      "meaning": "實現、履行（職責、作用）"
+    },
+    "しかし": {
+      "meaning": "然而、但是"
+    },
+    "卒業後": {
+      "meaning": "畢業後"
+    },
+    "重い": {
+      "meaning": "沉重的"
+    },
+    "返済負担": {
+      "meaning": "還款負擔"
+    },
+    "強いる": {
+      "meaning": "強迫"
+    },
+    "若者": {
+      "meaning": "年輕人"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "低賃金": {
+      "meaning": "低薪"
+    },
+    "非正規雇用": {
+      "meaning": "非正式雇用"
+    },
+    "相まって": {
+      "meaning": "與〜相結合、加在一起"
+    },
+    "生活設計": {
+      "meaning": "生活規劃"
+    },
+    "見直し": {
+      "meaning": "重新檢討、檢視"
+    },
+    "余儀なくされる": {
+      "meaning": "被迫〜、不得不〜"
+    },
+    "ケース": {
+      "meaning": "案例、情況"
+    },
+    "生じる": {
+      "meaning": "產生、發生"
+    },
+    "返済": {
+      "meaning": "還款、償還"
+    },
+    "見通し": {
+      "meaning": "前景、展望"
+    },
+    "立つ": {
+      "meaning": "成立、立定（見通しが立つ：有明確前景）"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "不安": {
+      "meaning": "不安"
+    },
+    "結婚": {
+      "meaning": "結婚"
+    },
+    "子育て": {
+      "meaning": "育兒"
+    },
+    "いう": {
+      "meaning": "說、稱為"
+    },
+    "将来設計": {
+      "meaning": "未來規劃"
+    },
+    "諦める": {
+      "meaning": "放棄"
+    },
+    "得る": {
+      "meaning": "獲得、能夠（用於ざるを得ない：不得不）"
+    },
+    "という": {
+      "meaning": "所謂、這樣的（引用內容）"
+    },
+    "声": {
+      "meaning": "聲音、意見"
+    },
+    "聞く": {
+      "meaning": "聽、問"
+    },
+    "奨学金破産": {
+      "meaning": "獎學金破產"
+    },
+    "言葉": {
+      "meaning": "詞語、說法"
+    },
+    "使う": {
+      "meaning": "使用"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "踏まえる": {
+      "meaning": "根據、考慮到"
+    },
+    "問題": {
+      "meaning": "問題"
+    },
+    "深刻さ": {
+      "meaning": "嚴重性"
+    },
+    "軽視する": {
+      "meaning": "輕視"
+    },
+    "制度": {
+      "meaning": "制度"
+    },
+    "存続意義自体": {
+      "meaning": "存續意義本身"
+    },
+    "否定する": {
+      "meaning": "否定"
+    },
+    "至る": {
+      "meaning": "達到、到達（某種程度）"
+    },
+    "給付型奨学金": {
+      "meaning": "給付型獎學金（無須償還的獎學金）"
+    },
+    "拡充": {
+      "meaning": "擴充"
+    },
+    "所得": {
+      "meaning": "所得、收入"
+    },
+    "応じる": {
+      "meaning": "依照、回應"
+    },
+    "返済方式": {
+      "meaning": "還款方式"
+    },
+    "導入": {
+      "meaning": "引進、導入"
+    },
+    "抜本的": {
+      "meaning": "根本性的"
+    },
+    "図る": {
+      "meaning": "謀求、策劃（進行某事）"
+    },
+    "時期": {
+      "meaning": "時期"
+    },
+    "来る": {
+      "meaning": "來、到來"
+    },
+    "言う": {
+      "meaning": "說"
+    }
+  },
+  "particles": {
+    "の": "所屬／修飾",
+    "は": "主題標記——標示句子的主題",
+    "を": "受詞標記——標示動作的對象",
+    "に": "表示對象、依據或變化的結果",
+    "へ": "表示方向或對象，「對〜（的不安）」",
+    "から": "表示原因或起點，「因為〜／從〜」",
+    "や": "列舉部分事物，「〜和〜之類的」",
+    "と": "表示並列「和〜」，或引用內容「〜と言う」",
+    "が": "主語標記——標示句子的主語",
+    "すら": "「連〜都」，強調極端例子",
+    "さえ": "「連〜都、甚至〜」，強調極端例子",
+    "など": "列舉例子，「〜等等」",
+    "という": "引用名稱或說法，「所謂〜」",
+    "として": "「作為〜」的身分、立場",
+    "ものの": "「雖然〜」，書面逆接",
+    "ではない": "常體斷定的否定形，「不是〜」"
+  },
+  "translations": [
+    [
+      {
+        "text": "日本的獎學金制度，作為支撐有經濟困難學生就學機會的重要機制，一直發揮著一定的作用。",
+        "word": "仕組み"
+      }
+    ],
+    [
+      {
+        "text": "然而，畢業後被迫背負沉重還款負擔的年輕人不在少數，再加上低薪與非正式雇用，甚至出現被迫重新檢討生活規劃的情況。",
+        "word": "相まって"
+      }
+    ],
+    [
+      {
+        "text": "由於對還款前景不明感到不安，甚至能聽到不得不放棄結婚、育兒等未來規劃的聲音。",
+        "word": "諦める"
+      }
+    ],
+    [
+      {
+        "text": "考慮到甚至開始出現「獎學金破產」這樣的說法，問題的嚴重性不應被輕視。",
+        "word": "深刻さ"
+      }
+    ],
+    [
+      {
+        "text": "雖然還不至於否定制度本身存在的意義，但不得不說，擴充給付型獎學金、導入依所得調整的還款方式等根本性的檢討，已經到了該進行的時候。",
+        "word": "見直し"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 1,
+      "pattern": "〜と相まって",
+      "note": "「與〜相結合」，書面因果"
+    },
+    {
+      "sentence": 1,
+      "pattern": "〜を余儀なくされる",
+      "note": "「被迫〜」，書面被動"
+    }
+  ]
+}

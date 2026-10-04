@@ -1,0 +1,492 @@
+{
+  "date": "2026-10-05",
+  "level": "n4_lite",
+  "title": "はじめてのサーフィン体験",
+  "text": "先週、友達と海でサーフィンをしてみた。初めてだったから、ちょっと怖かった。インストラクターさんが優しく教えてくれて、少し安心した。でも、波に乗れた時はすごく楽しかった。塩水を飲んじゃったけど、気にならなかった。日焼けして肌が痛かったけど、またやりたいと思った。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "海",
+      "basic_form": "海",
+      "reading": "うみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "サーフィン",
+      "basic_form": "サーフィン",
+      "reading": "さーふぃん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "してみた",
+      "basic_form": "する",
+      "reading": "してみた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "初めて",
+      "basic_form": "初めて",
+      "reading": "はじめて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちょっと",
+      "basic_form": "ちょっと",
+      "reading": "ちょっと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "怖かった",
+      "basic_form": "怖い",
+      "reading": "こわかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "インストラクターさん",
+      "basic_form": "インストラクターさん",
+      "reading": "いんすとらくたーさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "優しく",
+      "basic_form": "優しい",
+      "reading": "やさしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "教えてくれて",
+      "basic_form": "教える",
+      "reading": "おしえてくれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少し",
+      "basic_form": "少し",
+      "reading": "すこし",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "安心した",
+      "basic_form": "安心する",
+      "reading": "あんしんした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "波",
+      "basic_form": "波",
+      "reading": "なみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "乗れた",
+      "basic_form": "乗れる",
+      "reading": "のれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時",
+      "basic_form": "時",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すごく",
+      "basic_form": "すごい",
+      "reading": "すごく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しかった",
+      "basic_form": "楽しい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "塩水",
+      "basic_form": "塩水",
+      "reading": "しおみず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "飲んじゃった",
+      "basic_form": "飲む",
+      "reading": "のんじゃった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "気",
+      "basic_form": "気",
+      "reading": "き",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ならなかった",
+      "basic_form": "なる",
+      "reading": "ならなかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日焼けして",
+      "basic_form": "日焼けする",
+      "reading": "ひやけして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "肌",
+      "basic_form": "肌",
+      "reading": "はだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "痛かった",
+      "basic_form": "痛い",
+      "reading": "いたかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "けど",
+      "basic_form": "けど",
+      "reading": "けど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "やりたい",
+      "basic_form": "やる",
+      "reading": "やりたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思った",
+      "basic_form": "思う",
+      "reading": "おもった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上星期"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "海": {
+      "meaning": "海"
+    },
+    "サーフィン": {
+      "meaning": "衝浪"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "初めて": {
+      "meaning": "第一次"
+    },
+    "ちょっと": {
+      "meaning": "一點、稍微"
+    },
+    "怖い": {
+      "meaning": "可怕的、害怕的"
+    },
+    "インストラクターさん": {
+      "meaning": "教練、指導員"
+    },
+    "優しい": {
+      "meaning": "溫柔的、親切的"
+    },
+    "教える": {
+      "meaning": "教導"
+    },
+    "少し": {
+      "meaning": "一點、稍微"
+    },
+    "安心する": {
+      "meaning": "安心、放心"
+    },
+    "でも": {
+      "meaning": "不過、但是"
+    },
+    "波": {
+      "meaning": "浪"
+    },
+    "乗れる": {
+      "meaning": "能乘、能搭上（乗る的可能形）"
+    },
+    "時": {
+      "meaning": "……的時候"
+    },
+    "すごい": {
+      "meaning": "很、非常（口語強調）"
+    },
+    "楽しい": {
+      "meaning": "開心的、愉快的"
+    },
+    "塩水": {
+      "meaning": "海水、鹽水"
+    },
+    "飲む": {
+      "meaning": "喝"
+    },
+    "気": {
+      "meaning": "心情、感覺"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "日焼けする": {
+      "meaning": "曬傷、曬黑"
+    },
+    "肌": {
+      "meaning": "皮膚"
+    },
+    "痛い": {
+      "meaning": "痛的"
+    },
+    "また": {
+      "meaning": "再、又"
+    },
+    "やる": {
+      "meaning": "做"
+    },
+    "思う": {
+      "meaning": "覺得、想"
+    }
+  },
+  "particles": {
+    "と": "表示「和〜一起」的同伴，或用於「〜と思う」引用想法",
+    "で": "表示動作發生的場所",
+    "を": "受詞標記——標示動作的對象",
+    "から": "表示原因，「因為〜」",
+    "けど": "口語的逆接用法，「雖然〜、不過〜」",
+    "が": "主語標記——標示句子的主語",
+    "に": "表示動作的對象或方向，如「波に乗る」「気になる」",
+    "は": "主題標記——標示句子的主題"
+  },
+  "translations": [
+    [
+      {
+        "text": "上星期，我和朋友在海邊試著衝浪。",
+        "word": "する"
+      }
+    ],
+    [
+      {
+        "text": "因為是第一次，有點害怕。",
+        "word": "怖い"
+      }
+    ],
+    [
+      {
+        "text": "教練很親切地教我，讓我稍微安心了一些。",
+        "word": "教える"
+      }
+    ],
+    [
+      {
+        "text": "不過，成功乘上浪的時候真的很開心。",
+        "word": "楽しい"
+      }
+    ],
+    [
+      {
+        "text": "雖然喝到了海水，但我並不在意。",
+        "word": "飲む"
+      }
+    ],
+    [
+      {
+        "text": "曬傷讓皮膚有點痛，但我還是想再挑戰一次。",
+        "word": "思う"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜てみる",
+      "note": "嘗試做某事"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜てあげる／〜てくれる／〜てもらう",
+      "note": "授受表現（幫忙的方向性）"
+    },
+    {
+      "sentence": 5,
+      "pattern": "〜と思う",
+      "note": "「我覺得〜」，表示個人想法"
+    }
+  ]
+}

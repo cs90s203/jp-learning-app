@@ -1,0 +1,976 @@
+{
+  "date": "2026-10-05",
+  "level": "n2_lite",
+  "title": "セルフレジの普及",
+  "text": "近年、人手不足の深刻化に伴って、スーパーやコンビニでセルフレジを導入する店舗が増えている。会計時間の短縮や人件費の削減につながることから、多くの企業がセルフレジの設置を進めてきた。一方で、操作に不慣れな高齢者にとっては使いにくいという声もあり、店員によるサポートが欠かせない場合も少なくない。また、万引きなどの不正行為を防ぐための監視カメラやセンサーの導入も進んでいる。客の立場からすれば会計が早く済むのは助かるが、店側にとっては初期投資の負担も軽視できない。便利さと安心感を両立させることが、今後の課題だと言えるだろう。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人手不足",
+      "basic_form": "人手不足",
+      "reading": "ひとでふそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深刻化",
+      "basic_form": "深刻化",
+      "reading": "しんこくか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伴って",
+      "basic_form": "伴う",
+      "reading": "ともなって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スーパー",
+      "basic_form": "スーパー",
+      "reading": "すーぱー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "コンビニ",
+      "basic_form": "コンビニ",
+      "reading": "こんびに",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "セルフレジ",
+      "basic_form": "セルフレジ",
+      "reading": "せるふれじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "導入する",
+      "basic_form": "導入する",
+      "reading": "どうにゅうする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "店舗",
+      "basic_form": "店舗",
+      "reading": "てんぽ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "会計時間",
+      "basic_form": "会計時間",
+      "reading": "かいけいじかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "短縮",
+      "basic_form": "短縮",
+      "reading": "たんしゅく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人件費",
+      "basic_form": "人件費",
+      "reading": "じんけんひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "削減",
+      "basic_form": "削減",
+      "reading": "さくげん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つながる",
+      "basic_form": "つながる",
+      "reading": "つながる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "多く",
+      "basic_form": "多く",
+      "reading": "おおく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "セルフレジ",
+      "basic_form": "セルフレジ",
+      "reading": "せるふれじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "設置",
+      "basic_form": "設置",
+      "reading": "せっち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進めてきた",
+      "basic_form": "進める",
+      "reading": "すすめてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "操作",
+      "basic_form": "操作",
+      "reading": "そうさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不慣れな",
+      "basic_form": "不慣れ",
+      "reading": "ふなれな",
+      "pos": "形状詞"
+    },
+    {
+      "surface_form": "高齢者",
+      "basic_form": "高齢者",
+      "reading": "こうれいしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "にとって",
+      "basic_form": "にとって",
+      "reading": "にとって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使いにくい",
+      "basic_form": "使いにくい",
+      "reading": "つかいにくい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "店員",
+      "basic_form": "店員",
+      "reading": "てんいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "による",
+      "basic_form": "による",
+      "reading": "による",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "サポート",
+      "basic_form": "サポート",
+      "reading": "さぽーと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "欠かせない",
+      "basic_form": "欠かせる",
+      "reading": "かかせない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "場合",
+      "basic_form": "場合",
+      "reading": "ばあい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "万引き",
+      "basic_form": "万引き",
+      "reading": "まんびき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不正行為",
+      "basic_form": "不正行為",
+      "reading": "ふせいこうい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "防ぐ",
+      "basic_form": "防ぐ",
+      "reading": "ふせぐ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "監視カメラ",
+      "basic_form": "監視カメラ",
+      "reading": "かんしかめら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "センサー",
+      "basic_form": "センサー",
+      "reading": "せんさー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "導入",
+      "basic_form": "導入",
+      "reading": "どうにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進んでいる",
+      "basic_form": "進む",
+      "reading": "すすんでいる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "客",
+      "basic_form": "客",
+      "reading": "きゃく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "立場",
+      "basic_form": "立場",
+      "reading": "たちば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "すれば",
+      "basic_form": "する",
+      "reading": "すれば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "会計",
+      "basic_form": "会計",
+      "reading": "かいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "早く",
+      "basic_form": "早い",
+      "reading": "はやく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "済む",
+      "basic_form": "済む",
+      "reading": "すむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "助かる",
+      "basic_form": "助かる",
+      "reading": "たすかる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "店側",
+      "basic_form": "店側",
+      "reading": "みせがわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "にとって",
+      "basic_form": "にとって",
+      "reading": "にとって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "初期投資",
+      "basic_form": "初期投資",
+      "reading": "しょきとうし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "負担",
+      "basic_form": "負担",
+      "reading": "ふたん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "軽視できない",
+      "basic_form": "軽視する",
+      "reading": "けいしできない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "便利さ",
+      "basic_form": "便利さ",
+      "reading": "べんりさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安心感",
+      "basic_form": "安心感",
+      "reading": "あんしんかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "両立させる",
+      "basic_form": "両立する",
+      "reading": "りょうりつさせる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言える",
+      "basic_form": "言える",
+      "reading": "いえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だ",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年"
+    },
+    "人手不足": {
+      "meaning": "人力不足"
+    },
+    "深刻化": {
+      "meaning": "嚴重化"
+    },
+    "伴う": {
+      "meaning": "伴隨"
+    },
+    "スーパー": {
+      "meaning": "超市"
+    },
+    "コンビニ": {
+      "meaning": "便利商店"
+    },
+    "セルフレジ": {
+      "meaning": "自助結帳機"
+    },
+    "導入する": {
+      "meaning": "引進、導入"
+    },
+    "店舗": {
+      "meaning": "店鋪"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "会計時間": {
+      "meaning": "結帳時間"
+    },
+    "短縮": {
+      "meaning": "縮短"
+    },
+    "人件費": {
+      "meaning": "人事費用"
+    },
+    "削減": {
+      "meaning": "削減"
+    },
+    "つながる": {
+      "meaning": "連結、導致"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "多く": {
+      "meaning": "許多"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "設置": {
+      "meaning": "設置"
+    },
+    "進める": {
+      "meaning": "推進"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "操作": {
+      "meaning": "操作"
+    },
+    "不慣れ": {
+      "meaning": "不熟悉"
+    },
+    "高齢者": {
+      "meaning": "高齡者"
+    },
+    "使いにくい": {
+      "meaning": "難以使用"
+    },
+    "という": {
+      "meaning": "所謂、這樣的（引用內容）"
+    },
+    "声": {
+      "meaning": "聲音、意見"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    },
+    "店員": {
+      "meaning": "店員"
+    },
+    "による": {
+      "meaning": "由〜、依靠〜"
+    },
+    "サポート": {
+      "meaning": "支援"
+    },
+    "欠かせる": {
+      "meaning": "能缺少（多用於欠かせない：不可或缺）"
+    },
+    "場合": {
+      "meaning": "情況"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "また": {
+      "meaning": "此外、又"
+    },
+    "万引き": {
+      "meaning": "順手牽羊、偷竊"
+    },
+    "不正行為": {
+      "meaning": "不正當行為"
+    },
+    "防ぐ": {
+      "meaning": "防止"
+    },
+    "ため": {
+      "meaning": "為了〜（目的）"
+    },
+    "監視カメラ": {
+      "meaning": "監視攝影機"
+    },
+    "センサー": {
+      "meaning": "感測器"
+    },
+    "導入": {
+      "meaning": "引進、導入（名詞）"
+    },
+    "進む": {
+      "meaning": "推進、進展"
+    },
+    "客": {
+      "meaning": "顧客"
+    },
+    "立場": {
+      "meaning": "立場"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "会計": {
+      "meaning": "結帳、會計"
+    },
+    "早い": {
+      "meaning": "快的、早的"
+    },
+    "済む": {
+      "meaning": "完成、結束"
+    },
+    "助かる": {
+      "meaning": "得救、省事"
+    },
+    "店側": {
+      "meaning": "店家方面"
+    },
+    "初期投資": {
+      "meaning": "初期投資"
+    },
+    "負担": {
+      "meaning": "負擔"
+    },
+    "軽視する": {
+      "meaning": "輕視"
+    },
+    "便利さ": {
+      "meaning": "便利性"
+    },
+    "安心感": {
+      "meaning": "安心感"
+    },
+    "両立する": {
+      "meaning": "兼顧、兩者並存"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "課題": {
+      "meaning": "課題、待解決的問題"
+    },
+    "言える": {
+      "meaning": "可以說是（言う的可能形）"
+    }
+  },
+  "particles": {
+    "に": "表示對象、依據，或用於「〜に伴って」「〜にとって」等固定搭配",
+    "や": "列舉部分事物，「〜和〜之類的」",
+    "で": "表示場所或方法",
+    "を": "受詞標記——標示動作的對象",
+    "の": "所屬／修飾，或將動詞句名詞化",
+    "から": "表示原因或立場的出發點，「從〜來看」",
+    "にとって": "「對〜來說」，表示立場觀點",
+    "という": "引用名稱或說法，「所謂〜」",
+    "も": "「也」，表示並列或強調程度",
+    "による": "「依據〜」「由〜」，表示方式或主體",
+    "など": "列舉例子，「〜等等」",
+    "が": "主語標記，也用於逆接「〜が、〜」",
+    "と": "引用內容，或表示並列「〜和〜」"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，隨著人力不足的嚴重化，超市和便利商店引進自助結帳機的店鋪正在增加。",
+        "word": "伴う"
+      }
+    ],
+    [
+      {
+        "text": "因為能縮短結帳時間並削減人事費用，許多企業都持續推進自助結帳機的設置。",
+        "word": "導入する"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，也有聲音表示操作不熟悉的高齡者覺得難以使用，店員的支援在不少情況下仍不可或缺。",
+        "word": "欠かせる"
+      }
+    ],
+    [
+      {
+        "text": "此外，為了防止順手牽羊等不正當行為，監視攝影機和感測器的導入也在推進中。",
+        "word": "防ぐ"
+      }
+    ],
+    [
+      {
+        "text": "從顧客的立場來說，結帳快速令人省事，但對店家而言，初期投資的負擔也不可輕視。",
+        "word": "軽視する"
+      }
+    ],
+    [
+      {
+        "text": "如何兼顧便利性與安心感，可以說是今後的課題。",
+        "word": "両立する"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜に伴って",
+      "note": "伴隨〜，同步變化"
+    }
+  ]
+}

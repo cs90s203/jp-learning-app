@@ -1,0 +1,377 @@
+{
+  "date": "2026-10-05",
+  "level": "n5",
+  "title": "本屋で新しい本を買った",
+  "text": "きのう、駅前の本屋に行きました。新しい小説を買いたかったので、たくさん探しました。店員さんに人気の本を聞いて、面白そうな一冊を見つけました。レジで払って、うれしい気持ちで家に帰りました。",
+  "tokens": [
+    {
+      "surface_form": "きのう",
+      "basic_form": "きのう",
+      "reading": "きのう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "駅前",
+      "basic_form": "駅前",
+      "reading": "えきまえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本屋",
+      "basic_form": "本屋",
+      "reading": "ほんや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行きました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "新しい",
+      "basic_form": "新しい",
+      "reading": "あたらしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "小説",
+      "basic_form": "小説",
+      "reading": "しょうせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買いたかった",
+      "basic_form": "買う",
+      "reading": "かいたかった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "たくさん",
+      "basic_form": "たくさん",
+      "reading": "たくさん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "探しました",
+      "basic_form": "探す",
+      "reading": "さがしました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "店員さん",
+      "basic_form": "店員さん",
+      "reading": "てんいんさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人気",
+      "basic_form": "人気",
+      "reading": "にんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "聞いて",
+      "basic_form": "聞く",
+      "reading": "きいて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "面白そうな",
+      "basic_form": "面白い",
+      "reading": "おもしろそうな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "一冊",
+      "basic_form": "一冊",
+      "reading": "いっさつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見つけました",
+      "basic_form": "見つける",
+      "reading": "みつけました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "レジ",
+      "basic_form": "レジ",
+      "reading": "れじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "払って",
+      "basic_form": "払う",
+      "reading": "はらって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "うれしい",
+      "basic_form": "うれしい",
+      "reading": "うれしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "気持ち",
+      "basic_form": "気持ち",
+      "reading": "きもち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "帰りました",
+      "basic_form": "帰る",
+      "reading": "かえりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きのう": {
+      "meaning": "昨天"
+    },
+    "駅前": {
+      "meaning": "車站前"
+    },
+    "本屋": {
+      "meaning": "書店"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "新しい": {
+      "meaning": "新的"
+    },
+    "小説": {
+      "meaning": "小說"
+    },
+    "買う": {
+      "meaning": "買"
+    },
+    "たくさん": {
+      "meaning": "很多、大量"
+    },
+    "探す": {
+      "meaning": "尋找"
+    },
+    "店員さん": {
+      "meaning": "店員"
+    },
+    "人気": {
+      "meaning": "受歡迎、人氣"
+    },
+    "本": {
+      "meaning": "書"
+    },
+    "聞く": {
+      "meaning": "詢問、聽"
+    },
+    "面白い": {
+      "meaning": "有趣的"
+    },
+    "一冊": {
+      "meaning": "一冊、一本"
+    },
+    "見つける": {
+      "meaning": "找到"
+    },
+    "レジ": {
+      "meaning": "收銀台"
+    },
+    "払う": {
+      "meaning": "付款"
+    },
+    "うれしい": {
+      "meaning": "開心的、高興的"
+    },
+    "気持ち": {
+      "meaning": "心情"
+    },
+    "家": {
+      "meaning": "家"
+    },
+    "帰る": {
+      "meaning": "回去、回家"
+    }
+  },
+  "particles": {
+    "の": "所屬／修飾——表示所屬關係或名詞修飾名詞",
+    "に": "表示到達點或動作對象——如行く場所、聞く對象",
+    "を": "受詞標記——標示動作的對象",
+    "で": "表示場所、方法或狀態——如在哪裡做、用什麼方式、帶著什麼心情",
+    "ので": "表示客觀原因，「因為〜所以〜」"
+  },
+  "translations": [
+    [
+      {
+        "text": "昨天，我去了車站前的書店。",
+        "word": "行く"
+      }
+    ],
+    [
+      {
+        "text": "因為想買一本新小說，所以找了很久。",
+        "word": "探す"
+      }
+    ],
+    [
+      {
+        "text": "向店員詢問受歡迎的書，找到了一本看起來很有趣的書。",
+        "word": "見つける"
+      }
+    ],
+    [
+      {
+        "text": "在收銀台付了錢，帶著愉快的心情回家了。",
+        "word": "帰る"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "動詞ます形",
+      "note": "禮貌體現在式，肯定/否定/過去/過去否定四段變化"
+    },
+    {
+      "sentence": 2,
+      "pattern": "動詞て形",
+      "note": "連接兩個動作（先後順序）、或用於て形句型（ている等）"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜を（受詞標記）",
+      "note": "標示動作的對象"
+    },
+    {
+      "sentence": 3,
+      "pattern": "〜に（時間/對象/到達點）",
+      "note": "表示時間點、動作對象、或到達的地點"
+    }
+  ]
+}
