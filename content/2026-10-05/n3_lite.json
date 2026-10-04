@@ -1,0 +1,762 @@
+{
+  "date": "2026-10-05",
+  "level": "n3_lite",
+  "title": "俳句を始めてみた",
+  "text": "最近、俳句を始めてみた。五・七・五の十七音で季節を表すのが面白くて、すっかりはまっている。最初は言葉を削るのが難しくて、何度も書き直した。でも、少ない言葉で情景を伝えられた時は、ちょっとした達成感がある。季語を覚える一方で、十七音に収めるのはまだ苦手だ。先輩の句会に参加してみたら、みんなの発想が全然違っていて、とても勉強になった。これからも続けていくことにした。",
+  "tokens": [
+    {
+      "surface_form": "最近",
+      "basic_form": "最近",
+      "reading": "さいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "俳句",
+      "basic_form": "俳句",
+      "reading": "はいく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "始めてみた",
+      "basic_form": "始める",
+      "reading": "はじめてみた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "五",
+      "basic_form": "五",
+      "reading": "ご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "・",
+      "basic_form": "・",
+      "reading": "・",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "七",
+      "basic_form": "七",
+      "reading": "なな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "・",
+      "basic_form": "・",
+      "reading": "・",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "五",
+      "basic_form": "五",
+      "reading": "ご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "十七音",
+      "basic_form": "十七音",
+      "reading": "じゅうななおん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "季節",
+      "basic_form": "季節",
+      "reading": "きせつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "表す",
+      "basic_form": "表す",
+      "reading": "あらわす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "面白くて",
+      "basic_form": "面白い",
+      "reading": "おもしろくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "すっかり",
+      "basic_form": "すっかり",
+      "reading": "すっかり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "はまっている",
+      "basic_form": "はまる",
+      "reading": "はまっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最初",
+      "basic_form": "最初",
+      "reading": "さいしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言葉",
+      "basic_form": "言葉",
+      "reading": "ことば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "削る",
+      "basic_form": "削る",
+      "reading": "けずる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "難しくて",
+      "basic_form": "難しい",
+      "reading": "むずかしくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "何度",
+      "basic_form": "何度",
+      "reading": "なんど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "書き直した",
+      "basic_form": "書き直す",
+      "reading": "かきなおした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "でも",
+      "basic_form": "でも",
+      "reading": "でも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "少ない",
+      "basic_form": "少ない",
+      "reading": "すくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "言葉",
+      "basic_form": "言葉",
+      "reading": "ことば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "情景",
+      "basic_form": "情景",
+      "reading": "じょうけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伝えられた",
+      "basic_form": "伝える",
+      "reading": "つたえられた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時",
+      "basic_form": "時",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちょっとした",
+      "basic_form": "ちょっとした",
+      "reading": "ちょっとした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "達成感",
+      "basic_form": "達成感",
+      "reading": "たっせいかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "季語",
+      "basic_form": "季語",
+      "reading": "きご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "覚える",
+      "basic_form": "覚える",
+      "reading": "おぼえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "十七音",
+      "basic_form": "十七音",
+      "reading": "じゅうななおん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "収める",
+      "basic_form": "収める",
+      "reading": "おさめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "まだ",
+      "basic_form": "まだ",
+      "reading": "まだ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "苦手",
+      "basic_form": "苦手",
+      "reading": "にがて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "先輩",
+      "basic_form": "先輩",
+      "reading": "せんぱい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "句会",
+      "basic_form": "句会",
+      "reading": "くかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "参加してみたら",
+      "basic_form": "参加する",
+      "reading": "さんかしてみたら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "みんな",
+      "basic_form": "みんな",
+      "reading": "みんな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "発想",
+      "basic_form": "発想",
+      "reading": "はっそう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "全然",
+      "basic_form": "全然",
+      "reading": "ぜんぜん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "違っていて",
+      "basic_form": "違う",
+      "reading": "ちがっていて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "勉強",
+      "basic_form": "勉強",
+      "reading": "べんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続けていく",
+      "basic_form": "続ける",
+      "reading": "つづけていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "最近": {
+      "meaning": "最近"
+    },
+    "俳句": {
+      "meaning": "俳句"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "五": {
+      "meaning": "五"
+    },
+    "七": {
+      "meaning": "七"
+    },
+    "十七音": {
+      "meaning": "十七音（俳句的音節數）"
+    },
+    "季節": {
+      "meaning": "季節"
+    },
+    "表す": {
+      "meaning": "表現、表示"
+    },
+    "面白い": {
+      "meaning": "有趣的"
+    },
+    "すっかり": {
+      "meaning": "完全、徹底"
+    },
+    "はまる": {
+      "meaning": "沉迷、入迷"
+    },
+    "最初": {
+      "meaning": "一開始、最初"
+    },
+    "言葉": {
+      "meaning": "詞語、話語"
+    },
+    "削る": {
+      "meaning": "削減、刪減"
+    },
+    "難しい": {
+      "meaning": "困難的"
+    },
+    "何度": {
+      "meaning": "好幾次"
+    },
+    "書き直す": {
+      "meaning": "重新寫、改寫"
+    },
+    "でも": {
+      "meaning": "不過、但是"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "情景": {
+      "meaning": "情景、景象"
+    },
+    "伝える": {
+      "meaning": "傳達"
+    },
+    "時": {
+      "meaning": "……的時候"
+    },
+    "ちょっとした": {
+      "meaning": "一點小小的"
+    },
+    "達成感": {
+      "meaning": "成就感"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    },
+    "季語": {
+      "meaning": "季語（俳句中表示季節的詞）"
+    },
+    "覚える": {
+      "meaning": "記住、學會"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "収める": {
+      "meaning": "收進、放入（使符合規定範圍）"
+    },
+    "まだ": {
+      "meaning": "還、仍然"
+    },
+    "苦手": {
+      "meaning": "不擅長"
+    },
+    "先輩": {
+      "meaning": "前輩"
+    },
+    "句会": {
+      "meaning": "句會（俳句聚會）"
+    },
+    "参加する": {
+      "meaning": "參加"
+    },
+    "みんな": {
+      "meaning": "大家"
+    },
+    "発想": {
+      "meaning": "想法、構思"
+    },
+    "全然": {
+      "meaning": "完全（後接否定或強調差異）"
+    },
+    "違う": {
+      "meaning": "不同、不一樣"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "勉強": {
+      "meaning": "學習、長見識"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "これから": {
+      "meaning": "從現在起、今後"
+    },
+    "続ける": {
+      "meaning": "繼續"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "する": {
+      "meaning": "做"
+    }
+  },
+  "particles": {
+    "の": "所屬／修飾，或將動詞句名詞化（準体助詞）",
+    "で": "表示方法或場所——用什麼方式、在哪裡",
+    "が": "主語標記，也用於「〜のが〜」結構中標示名詞化後的主語",
+    "は": "主題標記——標示句子的主題",
+    "も": "「也」，表示並列或強調數量之多",
+    "に": "表示變化的對象或結果，如「勉強になる」「ことにする」",
+    "だ": "常體斷定助動詞，「是〜」"
+  },
+  "translations": [
+    [
+      {
+        "text": "最近開始試著寫俳句。",
+        "word": "始める"
+      }
+    ],
+    [
+      {
+        "text": "用五・七・五的十七個音來表現季節，很有趣，整個人完全沉迷其中。",
+        "word": "はまる"
+      }
+    ],
+    [
+      {
+        "text": "一開始要刪減字詞很困難，改寫了好幾次。",
+        "word": "難しい"
+      }
+    ],
+    [
+      {
+        "text": "不過，能用很少的字詞傳達出情景的時候，會有一點小小的成就感。",
+        "word": "達成感"
+      }
+    ],
+    [
+      {
+        "text": "記季語的同時，還不太擅長把字數控制在十七音以內。",
+        "word": "苦手"
+      }
+    ],
+    [
+      {
+        "text": "試著參加了前輩的句會，大家的想法完全不一樣，讓我學到了很多。",
+        "word": "勉強"
+      }
+    ],
+    [
+      {
+        "text": "我決定今後也繼續寫下去。",
+        "word": "続ける"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 4,
+      "pattern": "〜一方で",
+      "note": "「另一方面」，對比"
+    },
+    {
+      "sentence": 6,
+      "pattern": "〜ことにする／〜ことになる",
+      "note": "決定／自然而然演變成的結果"
+    }
+  ]
+}
