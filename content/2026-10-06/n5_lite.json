@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-06",
+  "level": "n5_lite",
+  "title": "わたしのまくら",
+  "text": "わたしのまくらはふわふわです。色は白です。小さい星の模様があります。中身はビーズです。とても気持ちがいいです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "まくら", "basic_form": "まくら", "reading": "まくら", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "ふわふわ", "basic_form": "ふわふわ", "reading": "ふわふわ", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "色", "basic_form": "色", "reading": "いろ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "白", "basic_form": "白", "reading": "しろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "星", "basic_form": "星", "reading": "ほし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "模様", "basic_form": "模様", "reading": "もよう", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中身", "basic_form": "中身", "reading": "なかみ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "ビーズ", "basic_form": "ビーズ", "reading": "びーず", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "気持ち", "basic_form": "気持ち", "reading": "きもち", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "いい", "basic_form": "いい", "reading": "いい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "まくら": { "meaning": "枕頭" },
+    "ふわふわ": { "meaning": "軟綿綿、鬆軟" },
+    "色": { "meaning": "顏色" },
+    "白": { "meaning": "白色" },
+    "小さい": { "meaning": "小的" },
+    "星": { "meaning": "星星" },
+    "模様": { "meaning": "圖案、花紋" },
+    "ある": { "meaning": "有、存在" },
+    "中身": { "meaning": "內容物" },
+    "ビーズ": { "meaning": "珠子" },
+    "とても": { "meaning": "非常" },
+    "気持ち": { "meaning": "感覺、心情" },
+    "いい": { "meaning": "好的" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "が": "標示句子的主語，常搭配あります／います表示存在"
+  },
+  "translations": [
+    [ { "text": "我的枕頭軟綿綿的。", "word": "ふわふわ" } ],
+    [ { "text": "顏色是白色的。", "word": "白" } ],
+    [ { "text": "上面有小小的星星圖案。", "word": "模様" } ],
+    [ { "text": "裡面裝的是珠子。", "word": "ビーズ" } ],
+    [ { "text": "摸起來感覺非常好。", "word": "いい" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" }
+  ]
+}
