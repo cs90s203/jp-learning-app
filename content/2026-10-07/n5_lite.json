@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-07",
+  "level": "n5_lite",
+  "title": "わたしのいす",
+  "text": "わたしのいすは木です。茶色くて、大きいです。部屋にあります。いすの上に猫がいます。わたしはいすが好きです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "いす", "basic_form": "いす", "reading": "いす", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "木", "basic_form": "木", "reading": "き", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "茶色くて", "basic_form": "茶色い", "reading": "ちゃいろくて", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "大きい", "basic_form": "大きい", "reading": "おおきい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "部屋", "basic_form": "部屋", "reading": "へや", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "いす", "basic_form": "いす", "reading": "いす", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "上", "basic_form": "上", "reading": "うえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "猫", "basic_form": "猫", "reading": "ねこ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "います", "basic_form": "いる", "reading": "います", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "いす", "basic_form": "いす", "reading": "いす", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "好き", "basic_form": "好き", "reading": "すき", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "いす": { "meaning": "椅子" },
+    "木": { "meaning": "木頭" },
+    "茶色い": { "meaning": "茶色的" },
+    "大きい": { "meaning": "大的" },
+    "部屋": { "meaning": "房間" },
+    "ある": { "meaning": "（事物）存在、有" },
+    "上": { "meaning": "上面" },
+    "猫": { "meaning": "貓" },
+    "いる": { "meaning": "（人或動物）存在、有" },
+    "好き": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "は": "主題標記，用來提出句子的主題",
+    "に": "表示存在的場所",
+    "が": "標示句子的主語，常用於存在句或喜好對象"
+  },
+  "translations": [
+    [ { "text": "我的椅子是木頭做的。", "word": "木" } ],
+    [ { "text": "是茶色的，而且很大。", "word": "大きい" } ],
+    [ { "text": "放在房間裡。", "word": "ある" } ],
+    [ { "text": "椅子上有一隻貓。", "word": "猫" } ],
+    [ { "text": "我喜歡這張椅子。", "word": "好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "sentence": 3, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" }
+  ]
+}
