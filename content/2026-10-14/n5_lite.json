@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-14",
+  "level": "n5_lite",
+  "title": "わたしの時計",
+  "text": "わたしの時計です。時計は小さいです。色は白です。学校で毎日使います。時計はとても大切です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "色", "basic_form": "色", "reading": "いろ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "白", "basic_form": "白", "reading": "しろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "学校", "basic_form": "学校", "reading": "がっこう", "pos": "名詞" },
+    { "surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞" },
+    { "surface_form": "毎日", "basic_form": "毎日", "reading": "まいにち", "pos": "副詞" },
+    { "surface_form": "使います", "basic_form": "使う", "reading": "つかいます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "時計": { "meaning": "手錶、鐘" },
+    "小さい": { "meaning": "小的" },
+    "色": { "meaning": "顏色" },
+    "白": { "meaning": "白色" },
+    "学校": { "meaning": "學校" },
+    "毎日": { "meaning": "每天" },
+    "使う": { "meaning": "使用" },
+    "とても": { "meaning": "非常" },
+    "大切": { "meaning": "重要、珍惜" }
+  },
+  "particles": {
+    "は": "主題標記，提示句子的主題",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "で": "表示動作發生的場所，或使用的方法/工具"
+  },
+  "translations": [
+    [ { "text": "這是我的手錶。", "word": "時計" } ],
+    [ { "text": "手錶很小。", "word": "小さい" } ],
+    [ { "text": "顏色是白色。", "word": "白" } ],
+    [ { "text": "我在學校每天使用。", "word": "使う" } ],
+    [ { "text": "手錶對我來說非常重要。", "word": "大切" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 3, "pattern": "〜で（場所/方法）", "note": "表示動作發生的場所，或使用的方法/工具" },
+    { "sentence": 3, "pattern": "動詞ます形", "note": "禮貌體現在式，肯定/否定/過去/過去否定四段變化" }
+  ]
+}
