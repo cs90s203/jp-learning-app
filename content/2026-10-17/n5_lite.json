@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-17",
+  "level": "n5_lite",
+  "title": "わたしの傘",
+  "text": "わたしの傘は赤いです。小さい傘です。傘の中に星の模様があります。わたしは傘が大好きです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "赤い", "basic_form": "赤い", "reading": "あかい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "星", "basic_form": "星", "reading": "ほし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "模様", "basic_form": "模様", "reading": "もよう", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "大好き", "basic_form": "大好き", "reading": "だいすき", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "傘": { "meaning": "雨傘" },
+    "赤い": { "meaning": "紅色的" },
+    "小さい": { "meaning": "小的" },
+    "中": { "meaning": "裡面、中間" },
+    "星": { "meaning": "星星" },
+    "模様": { "meaning": "圖案" },
+    "ある": { "meaning": "有（存在）" },
+    "大好き": { "meaning": "非常喜歡" }
+  },
+  "particles": {
+    "の": "所有格助詞，表示所屬或修飾關係",
+    "は": "主題標記，用來提出句子的主題",
+    "に": "表示存在的場所，「在〜」",
+    "が": "主語標記，用來標示新資訊或存在句的主語"
+  },
+  "translations": [
+    [ { "text": "我的傘是紅色的。", "word": "傘" } ],
+    [ { "text": "是小傘。", "word": "小さい" } ],
+    [ { "text": "傘裡面有星星的圖案。", "word": "模様" } ],
+    [ { "text": "我非常喜歡傘。", "word": "大好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 2, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" }
+  ]
+}
