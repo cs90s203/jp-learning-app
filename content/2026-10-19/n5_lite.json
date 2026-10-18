@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-19",
+  "level": "n5_lite",
+  "title": "わたしのメガネ",
+  "text": "これはわたしのメガネです。メガネは黒くて、かるいです。レンズは大きくて、丸いです。新しいメガネはとてもすきです。",
+  "tokens": [
+    { "surface_form": "これ", "basic_form": "これ", "reading": "これ", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "メガネ", "basic_form": "メガネ", "reading": "メガネ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "メガネ", "basic_form": "メガネ", "reading": "メガネ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "黒くて", "basic_form": "黒い", "reading": "くろくて", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "かるい", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "レンズ", "basic_form": "レンズ", "reading": "レンズ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "大きくて", "basic_form": "大きい", "reading": "おおきくて", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "丸い", "basic_form": "丸い", "reading": "まるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "メガネ", "basic_form": "メガネ", "reading": "メガネ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "すき", "basic_form": "好き", "reading": "すき", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "これ": { "meaning": "這個" },
+    "わたし": { "meaning": "我" },
+    "メガネ": { "meaning": "眼鏡" },
+    "黒い": { "meaning": "黑色的" },
+    "軽い": { "meaning": "輕的" },
+    "レンズ": { "meaning": "鏡片" },
+    "大きい": { "meaning": "大的" },
+    "丸い": { "meaning": "圓的" },
+    "新しい": { "meaning": "新的" },
+    "とても": { "meaning": "非常" },
+    "好き": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，或名詞修飾名詞"
+  },
+  "translations": [
+    [ { "text": "這是我的眼鏡。", "word": "メガネ" } ],
+    [ { "text": "眼鏡是黑色的，很輕。", "word": "軽い" } ],
+    [ { "text": "鏡片很大，圓圓的。", "word": "丸い" } ],
+    [ { "text": "我非常喜歡這副新眼鏡。", "word": "好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" }
+  ]
+}
