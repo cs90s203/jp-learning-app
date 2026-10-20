@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-21",
+  "level": "n5_lite",
+  "title": "わたしの自転車",
+  "text": "わたしの自転車は青いです。かごが一つあります。ベルもあります。サドルは茶色です。とても便利です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "自転車", "basic_form": "自転車", "reading": "じてんしゃ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "かご", "basic_form": "かご", "reading": "かご", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "一つ", "basic_form": "一つ", "reading": "ひとつ", "pos": "名詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "ベル", "basic_form": "ベル", "reading": "ベル", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "サドル", "basic_form": "サドル", "reading": "サドル", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "茶色", "basic_form": "茶色", "reading": "ちゃいろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "便利", "basic_form": "便利", "reading": "べんり", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "自転車": { "meaning": "腳踏車" },
+    "青い": { "meaning": "藍色的" },
+    "かご": { "meaning": "籃子" },
+    "一つ": { "meaning": "一個" },
+    "ある": { "meaning": "有（存在）" },
+    "ベル": { "meaning": "鈴（腳踏車鈴）" },
+    "サドル": { "meaning": "座墊" },
+    "茶色": { "meaning": "棕色" },
+    "とても": { "meaning": "非常" },
+    "便利": { "meaning": "方便" }
+  },
+  "particles": {
+    "の": "表示所屬關係，相當於「的」",
+    "は": "主題標記，點出句子要說的對象",
+    "が": "標示句子的主語",
+    "も": "「也」，取代が/を，但と、で等助詞保留",
+    "です": "「是」的禮貌體結尾，用於名詞或形容詞句末"
+  },
+  "translations": [
+    [ { "text": "我的腳踏車", "word": "自転車" }, { "text": "是藍色的。", "word": "青い" } ],
+    [ { "text": "有一個籃子。", "word": "かご" } ],
+    [ { "text": "也有鈴鐺。", "word": "ベル" } ],
+    [ { "text": "座墊", "word": "サドル" }, { "text": "是棕色的。", "word": "茶色" } ],
+    [ { "text": "非常方便。", "word": "便利" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 2, "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" }
+  ]
+}
