@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-23",
+  "level": "n5_lite",
+  "title": "わたしの時計",
+  "text": "わたしの時計は青いです。父からのプレゼントです。毎朝、机の上にあります。とても大切な時計です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "父", "basic_form": "父", "reading": "ちち", "pos": "名詞" },
+    { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "助詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "プレゼント", "basic_form": "プレゼント", "reading": "プレゼント", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎朝", "basic_form": "毎朝", "reading": "まいあさ", "pos": "名詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "机", "basic_form": "机", "reading": "つくえ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "上", "basic_form": "上", "reading": "うえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大切", "basic_form": "大切", "reading": "たいせつ", "pos": "形容詞" },
+    { "surface_form": "な", "basic_form": "な", "reading": "な", "pos": "助動詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "時計": { "meaning": "時鐘、手錶" },
+    "青い": { "meaning": "藍色的" },
+    "父": { "meaning": "爸爸" },
+    "プレゼント": { "meaning": "禮物" },
+    "毎朝": { "meaning": "每天早上" },
+    "机": { "meaning": "桌子" },
+    "上": { "meaning": "上面" },
+    "ある": { "meaning": "有、存在" },
+    "とても": { "meaning": "非常" },
+    "大切": { "meaning": "重要、珍惜" }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "は": "標示句子的主題",
+    "から": "表示來源，「從〜」",
+    "に": "表示存在的位置點"
+  },
+  "translations": [
+    [ { "text": "我的手錶是藍色的。", "word": "青い" } ],
+    [ { "text": "是爸爸送的禮物。", "word": "プレゼント" } ],
+    [ { "text": "每天早上，它都放在桌上。", "word": "ある" } ],
+    [ { "text": "是一只非常重要的手錶。", "word": "大切" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 0, "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" },
+    { "sentence": 2, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" },
+    { "sentence": 3, "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
