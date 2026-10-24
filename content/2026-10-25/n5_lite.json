@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-25",
+  "level": "n5_lite",
+  "title": "わたしの傘",
+  "text": "わたしの傘は青いです。大きさは中くらいです。雨の日は傘が必要です。晴れの日は傘は家にあります。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "大きさ", "basic_form": "大きさ", "reading": "おおきさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "中くらい", "basic_form": "中くらい", "reading": "ちゅうくらい", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "雨", "basic_form": "雨", "reading": "あめ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "日", "basic_form": "日", "reading": "ひ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "必要", "basic_form": "必要", "reading": "ひつよう", "pos": "形容動詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "晴れ", "basic_form": "晴れ", "reading": "はれ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "日", "basic_form": "日", "reading": "ひ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "家", "basic_form": "家", "reading": "いえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "傘": { "meaning": "雨傘" },
+    "青い": { "meaning": "藍色的" },
+    "大きさ": { "meaning": "大小" },
+    "中くらい": { "meaning": "中等" },
+    "雨": { "meaning": "雨" },
+    "日": { "meaning": "日子" },
+    "必要": { "meaning": "必要、需要" },
+    "晴れ": { "meaning": "晴天" },
+    "家": { "meaning": "家" },
+    "ある": { "meaning": "有、在" }
+  },
+  "particles": {
+    "は": "主題標記",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "が": "標示句子的主語",
+    "に": "表示存在的地點"
+  },
+  "translations": [
+    [ { "text": "我的雨傘是藍色的。", "word": "傘" } ],
+    [ { "text": "大小是中等的。", "word": "大きさ" } ],
+    [ { "text": "下雨天需要雨傘。", "word": "必要" } ],
+    [ { "text": "晴天的話，雨傘在家裡。", "word": "家" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 3, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" }
+  ]
+}
