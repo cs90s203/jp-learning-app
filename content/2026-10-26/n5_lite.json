@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-26",
+  "level": "n5_lite",
+  "title": "わたしの靴",
+  "text": "わたしの靴は青色です。とても軽い靴です。靴の中に小さい星の模様があります。この靴はわたしのお気に入りです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青色", "basic_form": "青色", "reading": "あおいろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "星", "basic_form": "星", "reading": "ほし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "模様", "basic_form": "模様", "reading": "もよう", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "この", "basic_form": "この", "reading": "この", "pos": "連体詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "お気に入り", "basic_form": "お気に入り", "reading": "おきにいり", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "靴": { "meaning": "鞋子" },
+    "青色": { "meaning": "藍色" },
+    "とても": { "meaning": "非常" },
+    "軽い": { "meaning": "輕的" },
+    "中": { "meaning": "裡面、中間" },
+    "小さい": { "meaning": "小的" },
+    "星": { "meaning": "星星" },
+    "模様": { "meaning": "花紋、圖案" },
+    "ある": { "meaning": "有（事物存在）" },
+    "この": { "meaning": "這個" },
+    "お気に入り": { "meaning": "喜愛的東西" }
+  },
+  "particles": {
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "は": "主題標記",
+    "に": "表示存在的場所",
+    "が": "標示句子的主語（新資訊/焦點）"
+  },
+  "translations": [
+    [ { "text": "我的鞋子是藍色的。", "word": "靴" } ],
+    [ { "text": "是非常輕的鞋子。", "word": "軽い" } ],
+    [ { "text": "鞋子裡有小星星的圖案。", "word": "模様" } ],
+    [ { "text": "這雙鞋是我喜愛的。", "word": "お気に入り" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 1, "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" }
+  ]
+}
