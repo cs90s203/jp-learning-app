@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-29",
+  "level": "n5_lite",
+  "title": "わたしのめがね",
+  "text": "わたしのめがねです。新しいめがねです。黒くてかるいです。かばんの中にあります。学校でべんりです。",
+  "tokens": [
+    {"surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞"},
+    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
+    {"surface_form": "めがね", "basic_form": "めがね", "reading": "めがね", "pos": "名詞"},
+    {"surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞"},
+    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
+    {"surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞"},
+    {"surface_form": "めがね", "basic_form": "めがね", "reading": "めがね", "pos": "名詞"},
+    {"surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞"},
+    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
+    {"surface_form": "黒くて", "basic_form": "黒い", "reading": "くろくて", "pos": "形容詞"},
+    {"surface_form": "かるい", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞"},
+    {"surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞"},
+    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
+    {"surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞"},
+    {"surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞"},
+    {"surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞"},
+    {"surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞"},
+    {"surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞"},
+    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"},
+    {"surface_form": "学校", "basic_form": "学校", "reading": "がっこう", "pos": "名詞"},
+    {"surface_form": "で", "basic_form": "で", "reading": "で", "pos": "助詞"},
+    {"surface_form": "べんり", "basic_form": "便利", "reading": "べんり", "pos": "形容詞"},
+    {"surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞"},
+    {"surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号"}
+  ],
+  "vocab": {
+    "わたし": {"meaning": "我"},
+    "めがね": {"meaning": "眼鏡"},
+    "新しい": {"meaning": "新的"},
+    "黒い": {"meaning": "黑色的"},
+    "軽い": {"meaning": "輕的"},
+    "かばん": {"meaning": "包包"},
+    "中": {"meaning": "裡面、中間"},
+    "ある": {"meaning": "有、在（物品存在）"},
+    "学校": {"meaning": "學校"},
+    "便利": {"meaning": "方便"}
+  },
+  "particles": {
+    "の": "表示所屬關係，相當於中文的「的」",
+    "に": "表示時間點、動作對象，或到達/存在的地點",
+    "で": "表示動作發生的場所，或使用的方法/工具"
+  },
+  "translations": [
+    [{"text": "這是我的眼鏡。", "word": "めがね"}],
+    [{"text": "是新的眼鏡。", "word": "新しい"}],
+    [{"text": "黑色又很輕。", "word": "軽い"}],
+    [{"text": "包包裡面有。", "word": "ある"}],
+    [{"text": "在學校很方便。", "word": "便利"}]
+  ],
+  "grammar_notes": [
+    {"sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞"},
+    {"sentence": 1, "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった"},
+    {"sentence": 2, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因"},
+    {"sentence": 4, "pattern": "〜で（場所/方法）", "note": "表示動作發生的場所，或使用的方法/工具"}
+  ]
+}
