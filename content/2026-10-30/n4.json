@@ -1,0 +1,639 @@
+{
+  "date": "2026-10-30",
+  "level": "n4",
+  "title": "友達とのハイキング",
+  "text": "先週の土曜日、友達と近くの山へハイキングに行った。朝早く出発したので、山道はまだすいていて、歩きやすかった。途中で写真を撮ったり、持ってきたおにぎりを食べたりして、ゆっくり休んだ。山頂に着くと、町の景色がよく見えて、とてもきれいだった。疲れたのに、頂上からの景色を見ることができて、本当に来てよかったと思った。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "土曜日",
+      "basic_form": "土曜日",
+      "reading": "どようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友達",
+      "basic_form": "友達",
+      "reading": "ともだち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近く",
+      "basic_form": "近く",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "山",
+      "basic_form": "山",
+      "reading": "やま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ハイキング",
+      "basic_form": "ハイキング",
+      "reading": "ハイキング",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行った",
+      "basic_form": "行く",
+      "reading": "いった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "朝早く",
+      "basic_form": "朝早く",
+      "reading": "あさはやく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "出発した",
+      "basic_form": "出発する",
+      "reading": "しゅっぱつした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "山道",
+      "basic_form": "山道",
+      "reading": "やまみち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "まだ",
+      "basic_form": "まだ",
+      "reading": "まだ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "すいていて",
+      "basic_form": "すく",
+      "reading": "すいていて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "歩きやすかった",
+      "basic_form": "歩きやすい",
+      "reading": "あるきやすかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "途中",
+      "basic_form": "途中",
+      "reading": "とちゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "撮ったり",
+      "basic_form": "撮る",
+      "reading": "とったり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "持ってきた",
+      "basic_form": "持ってくる",
+      "reading": "もってきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "おにぎり",
+      "basic_form": "おにぎり",
+      "reading": "おにぎり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "食べたり",
+      "basic_form": "食べる",
+      "reading": "たべたり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "して",
+      "basic_form": "する",
+      "reading": "して",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ゆっくり",
+      "basic_form": "ゆっくり",
+      "reading": "ゆっくり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "休んだ",
+      "basic_form": "休む",
+      "reading": "やすんだ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "山頂",
+      "basic_form": "山頂",
+      "reading": "さんちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "着く",
+      "basic_form": "着く",
+      "reading": "つく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "町",
+      "basic_form": "町",
+      "reading": "まち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "景色",
+      "basic_form": "景色",
+      "reading": "けしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "よく",
+      "basic_form": "よい",
+      "reading": "よく",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "見えて",
+      "basic_form": "見える",
+      "reading": "みえて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "きれい",
+      "basic_form": "きれい",
+      "reading": "きれい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "疲れた",
+      "basic_form": "疲れる",
+      "reading": "つかれた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "のに",
+      "basic_form": "のに",
+      "reading": "のに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "頂上",
+      "basic_form": "頂上",
+      "reading": "ちょうじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "景色",
+      "basic_form": "景色",
+      "reading": "けしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見る",
+      "basic_form": "見る",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できて",
+      "basic_form": "できる",
+      "reading": "できて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "本当に",
+      "basic_form": "本当に",
+      "reading": "ほんとうに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "来て",
+      "basic_form": "来る",
+      "reading": "きて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "よかった",
+      "basic_form": "よい",
+      "reading": "よかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思った",
+      "basic_form": "思う",
+      "reading": "おもった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週"
+    },
+    "土曜日": {
+      "meaning": "星期六"
+    },
+    "友達": {
+      "meaning": "朋友"
+    },
+    "近く": {
+      "meaning": "附近"
+    },
+    "山": {
+      "meaning": "山"
+    },
+    "ハイキング": {
+      "meaning": "健行"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "朝早く": {
+      "meaning": "一大早"
+    },
+    "出発する": {
+      "meaning": "出發"
+    },
+    "山道": {
+      "meaning": "山路"
+    },
+    "すく": {
+      "meaning": "變得不擁擠、空出來（這裡指人少）"
+    },
+    "歩きやすい": {
+      "meaning": "好走、易走"
+    },
+    "途中": {
+      "meaning": "途中、半路上"
+    },
+    "写真": {
+      "meaning": "照片"
+    },
+    "撮る": {
+      "meaning": "拍（照）"
+    },
+    "持ってくる": {
+      "meaning": "帶來"
+    },
+    "おにぎり": {
+      "meaning": "飯糰"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "休む": {
+      "meaning": "休息"
+    },
+    "山頂": {
+      "meaning": "山頂"
+    },
+    "着く": {
+      "meaning": "到達"
+    },
+    "町": {
+      "meaning": "城鎮、市區"
+    },
+    "景色": {
+      "meaning": "風景"
+    },
+    "よい": {
+      "meaning": "好的"
+    },
+    "見える": {
+      "meaning": "看得見"
+    },
+    "きれい": {
+      "meaning": "美麗、漂亮"
+    },
+    "だ": {
+      "meaning": "（だった為だ的過去式）"
+    },
+    "疲れる": {
+      "meaning": "疲累"
+    },
+    "頂上": {
+      "meaning": "頂峰、山頂"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "こと": {
+      "meaning": "事情（這裡構成「ことができる」＝能夠）"
+    },
+    "できる": {
+      "meaning": "能夠、做得到"
+    },
+    "本当に": {
+      "meaning": "真的"
+    },
+    "来る": {
+      "meaning": "來"
+    },
+    "思う": {
+      "meaning": "覺得、心想"
+    },
+    "まだ": {
+      "meaning": "還、仍然"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "ゆっくり": {
+      "meaning": "慢慢地、悠閒地"
+    }
+  },
+  "particles": {
+    "の": "所屬/修飾",
+    "と": "「和」、或構成條件句「〜と」表示「一…就…」",
+    "へ": "方向",
+    "に": "到達點/對象",
+    "ので": "「因為〜」，客觀原因，比から更委婉/書面",
+    "は": "主題標記",
+    "で": "場所",
+    "を": "受詞標記",
+    "から": "起點，「從〜」",
+    "が": "主語標記，或ことができる中的が",
+    "のに": "「雖然/卻」，逆接，帶有不滿/意外語氣"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週六，我和朋友去附近的山上健行。",
+        "word": "ハイキング"
+      }
+    ],
+    [
+      {
+        "text": "因為一大早就出發，山路上人還很少，走起來很輕鬆。",
+        "word": "ので"
+      }
+    ],
+    [
+      {
+        "text": "途中拍了照片，也吃了帶來的飯糰，好好地休息了一下。",
+        "word": "休む"
+      }
+    ],
+    [
+      {
+        "text": "一到山頂，城鎮的風景就看得很清楚，非常漂亮。",
+        "word": "見える"
+      }
+    ],
+    [
+      {
+        "text": "雖然很累，但能看到山頂上的風景，讓我覺得這趟真的來對了。",
+        "word": "のに"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 1,
+      "pattern": "〜ので（因為）",
+      "note": "客觀原因，比から更委婉/書面"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜のに（雖然/卻）",
+      "note": "逆接，帶有不滿/意外語氣"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜と思う",
+      "note": "「我覺得〜」，表示個人想法"
+    }
+  ]
+}

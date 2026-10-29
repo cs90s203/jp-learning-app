@@ -1,0 +1,1196 @@
+{
+  "date": "2026-10-30",
+  "level": "n1_lite",
+  "title": "看護師不足をめぐる課題",
+  "text": "日本の医療現場では、看護師の人手不足が深刻な問題となっている。高齢化の進展に伴い、医療や介護を必要とする患者数は増加の一途をたどっているが、それに見合うだけの看護師が確保できていないのが現状だ。特に地方の病院では、人材の確保がより一層難しくなっているという。夜勤を含む不規則な勤務体系や、精神的・体力的な負担の大きさから、資格を持ちながらも現場を離れる人が少なくないという。加えて、賃金が労働の厳しさに十分見合っていないという不満も、離職に拍車をかける一因となっている。病院側は給与の改善や勤務環境の見直しを進めているものの、抜本的な解決には至っておらず、人手不足が医療サービスの質そのものに影響を及ぼしかねないと懸念する声も上がっている。",
+  "tokens": [
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "医療現場",
+      "basic_form": "医療現場",
+      "reading": "いりょうげんば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "看護師",
+      "basic_form": "看護師",
+      "reading": "かんごし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人手不足",
+      "basic_form": "人手不足",
+      "reading": "ひとでぶそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深刻な",
+      "basic_form": "深刻",
+      "reading": "しんこくな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっている",
+      "basic_form": "なる",
+      "reading": "なっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "高齢化",
+      "basic_form": "高齢化",
+      "reading": "こうれいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進展",
+      "basic_form": "進展",
+      "reading": "しんてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伴い",
+      "basic_form": "伴う",
+      "reading": "ともない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "医療",
+      "basic_form": "医療",
+      "reading": "いりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "介護",
+      "basic_form": "介護",
+      "reading": "かいご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "必要",
+      "basic_form": "必要",
+      "reading": "ひつよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "患者数",
+      "basic_form": "患者数",
+      "reading": "かんじゃすう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増加",
+      "basic_form": "増加",
+      "reading": "ぞうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一途",
+      "basic_form": "一途",
+      "reading": "いっと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たどっている",
+      "basic_form": "たどる",
+      "reading": "たどっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それ",
+      "basic_form": "それ",
+      "reading": "それ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見合う",
+      "basic_form": "見合う",
+      "reading": "みあう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "看護師",
+      "basic_form": "看護師",
+      "reading": "かんごし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "確保できていない",
+      "basic_form": "確保する",
+      "reading": "かくほできていない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現状",
+      "basic_form": "現状",
+      "reading": "げんじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特に",
+      "basic_form": "特に",
+      "reading": "とくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "病院",
+      "basic_form": "病院",
+      "reading": "びょういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人材",
+      "basic_form": "人材",
+      "reading": "じんざい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "確保",
+      "basic_form": "確保",
+      "reading": "かくほ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "一層",
+      "basic_form": "一層",
+      "reading": "いっそう",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "難しく",
+      "basic_form": "難しい",
+      "reading": "むずかしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "なっている",
+      "basic_form": "なる",
+      "reading": "なっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "夜勤",
+      "basic_form": "夜勤",
+      "reading": "やきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "含む",
+      "basic_form": "含む",
+      "reading": "ふくむ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "不規則な",
+      "basic_form": "不規則",
+      "reading": "ふきそくな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "勤務体系",
+      "basic_form": "勤務体系",
+      "reading": "きんむたいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "精神的",
+      "basic_form": "精神的",
+      "reading": "せいしんてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "・",
+      "basic_form": "・",
+      "reading": "・",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "体力的な",
+      "basic_form": "体力的",
+      "reading": "たいりょくてきな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "負担",
+      "basic_form": "負担",
+      "reading": "ふたん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きさ",
+      "basic_form": "大きさ",
+      "reading": "おおきさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "資格",
+      "basic_form": "資格",
+      "reading": "しかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "持ちながら",
+      "basic_form": "持つ",
+      "reading": "もちながら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現場",
+      "basic_form": "現場",
+      "reading": "げんば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "離れる",
+      "basic_form": "離れる",
+      "reading": "はなれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "加えて",
+      "basic_form": "加える",
+      "reading": "くわえて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "賃金",
+      "basic_form": "賃金",
+      "reading": "ちんぎん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "労働",
+      "basic_form": "労働",
+      "reading": "ろうどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "厳しさ",
+      "basic_form": "厳しさ",
+      "reading": "きびしさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "十分",
+      "basic_form": "十分",
+      "reading": "じゅうぶん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "見合っていない",
+      "basic_form": "見合う",
+      "reading": "みあっていない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不満",
+      "basic_form": "不満",
+      "reading": "ふまん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "離職",
+      "basic_form": "離職",
+      "reading": "りしょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "拍車",
+      "basic_form": "拍車",
+      "reading": "はくしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かける",
+      "basic_form": "かける",
+      "reading": "かける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一因",
+      "basic_form": "一因",
+      "reading": "いちいん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっている",
+      "basic_form": "なる",
+      "reading": "なっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "病院側",
+      "basic_form": "病院側",
+      "reading": "びょういんがわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "給与",
+      "basic_form": "給与",
+      "reading": "きゅうよ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "改善",
+      "basic_form": "改善",
+      "reading": "かいぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "勤務環境",
+      "basic_form": "勤務環境",
+      "reading": "きんむかんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見直し",
+      "basic_form": "見直し",
+      "reading": "みなおし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進めている",
+      "basic_form": "進める",
+      "reading": "すすめている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ものの",
+      "basic_form": "ものの",
+      "reading": "ものの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "抜本的な",
+      "basic_form": "抜本的",
+      "reading": "ばっぽんてきな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "解決",
+      "basic_form": "解決",
+      "reading": "かいけつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "至っておらず",
+      "basic_form": "至る",
+      "reading": "いたっておらず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人手不足",
+      "basic_form": "人手不足",
+      "reading": "ひとでぶそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "医療サービス",
+      "basic_form": "医療サービス",
+      "reading": "いりょうサービス",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "質",
+      "basic_form": "質",
+      "reading": "しつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "そのもの",
+      "basic_form": "そのもの",
+      "reading": "そのもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "影響",
+      "basic_form": "影響",
+      "reading": "えいきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "及ぼしかねない",
+      "basic_form": "及ぼす",
+      "reading": "およぼしかねない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "懸念する",
+      "basic_form": "懸念する",
+      "reading": "けねんする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "上がっている",
+      "basic_form": "上がる",
+      "reading": "あがっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "日本": {
+      "meaning": "日本"
+    },
+    "医療現場": {
+      "meaning": "醫療現場"
+    },
+    "看護師": {
+      "meaning": "護理師"
+    },
+    "人手不足": {
+      "meaning": "人手不足"
+    },
+    "深刻": {
+      "meaning": "嚴重的"
+    },
+    "問題": {
+      "meaning": "問題"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "高齢化": {
+      "meaning": "高齡化"
+    },
+    "進展": {
+      "meaning": "進展"
+    },
+    "伴う": {
+      "meaning": "伴隨"
+    },
+    "医療": {
+      "meaning": "醫療"
+    },
+    "介護": {
+      "meaning": "照護"
+    },
+    "必要": {
+      "meaning": "需要"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "患者数": {
+      "meaning": "病患人數"
+    },
+    "増加": {
+      "meaning": "增加"
+    },
+    "一途": {
+      "meaning": "一條路（此處指持續朝某方向發展）"
+    },
+    "たどる": {
+      "meaning": "沿著、走向"
+    },
+    "それ": {
+      "meaning": "那個"
+    },
+    "見合う": {
+      "meaning": "相稱、相符"
+    },
+    "確保する": {
+      "meaning": "確保"
+    },
+    "現状": {
+      "meaning": "現狀"
+    },
+    "特に": {
+      "meaning": "特別是"
+    },
+    "地方": {
+      "meaning": "地方、鄉下地區"
+    },
+    "病院": {
+      "meaning": "醫院"
+    },
+    "人材": {
+      "meaning": "人才"
+    },
+    "確保": {
+      "meaning": "確保"
+    },
+    "より": {
+      "meaning": "更加"
+    },
+    "一層": {
+      "meaning": "更加、愈加"
+    },
+    "難しい": {
+      "meaning": "困難的"
+    },
+    "夜勤": {
+      "meaning": "夜班"
+    },
+    "含む": {
+      "meaning": "包含"
+    },
+    "不規則": {
+      "meaning": "不規律的"
+    },
+    "勤務体系": {
+      "meaning": "勤務制度"
+    },
+    "精神的": {
+      "meaning": "精神上的"
+    },
+    "体力的": {
+      "meaning": "體力上的"
+    },
+    "負担": {
+      "meaning": "負擔"
+    },
+    "大きさ": {
+      "meaning": "程度之大、大小"
+    },
+    "資格": {
+      "meaning": "資格"
+    },
+    "持つ": {
+      "meaning": "持有"
+    },
+    "現場": {
+      "meaning": "現場"
+    },
+    "離れる": {
+      "meaning": "離開"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "加える": {
+      "meaning": "加上"
+    },
+    "賃金": {
+      "meaning": "薪資"
+    },
+    "労働": {
+      "meaning": "勞動"
+    },
+    "厳しさ": {
+      "meaning": "嚴苛程度"
+    },
+    "十分": {
+      "meaning": "充分"
+    },
+    "不満": {
+      "meaning": "不滿"
+    },
+    "離職": {
+      "meaning": "離職"
+    },
+    "拍車": {
+      "meaning": "馬刺（這裡指「加速」）"
+    },
+    "かける": {
+      "meaning": "施加"
+    },
+    "一因": {
+      "meaning": "一個原因"
+    },
+    "病院側": {
+      "meaning": "醫院方面"
+    },
+    "給与": {
+      "meaning": "薪水"
+    },
+    "改善": {
+      "meaning": "改善"
+    },
+    "勤務環境": {
+      "meaning": "工作環境"
+    },
+    "見直し": {
+      "meaning": "重新檢視"
+    },
+    "進める": {
+      "meaning": "推進"
+    },
+    "抜本的": {
+      "meaning": "根本性的"
+    },
+    "解決": {
+      "meaning": "解決"
+    },
+    "至る": {
+      "meaning": "達到"
+    },
+    "医療サービス": {
+      "meaning": "醫療服務"
+    },
+    "質": {
+      "meaning": "品質"
+    },
+    "そのもの": {
+      "meaning": "本身"
+    },
+    "影響": {
+      "meaning": "影響"
+    },
+    "及ぼす": {
+      "meaning": "造成、帶來"
+    },
+    "懸念する": {
+      "meaning": "擔憂"
+    },
+    "声": {
+      "meaning": "聲音（此處指意見）"
+    },
+    "上がる": {
+      "meaning": "出現、提高"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係，或把動詞名詞化",
+    "で": "表示場所",
+    "は": "標示主題",
+    "が": "標示主語，或構成逆接",
+    "に": "表示時間點、對象，或構成「〜に伴い」等表現",
+    "や": "列舉「和」",
+    "を": "標示動作的受詞",
+    "と": "構成「〜とする」或引用內容前的助詞",
+    "だけ": "只、僅",
+    "より": "比較基準",
+    "という": "「叫做〜」，用於引用名稱或說法",
+    "も": "「也」",
+    "から": "表示原因或起點",
+    "ものの": "「雖然〜」，書面逆接"
+  },
+  "translations": [
+    [
+      {
+        "text": "在日本的醫療現場，護理師人手不足已成為嚴重的問題。",
+        "word": "人手不足"
+      }
+    ],
+    [
+      {
+        "text": "隨著高齡化的進展，需要醫療或照護的病患人數持續增加，但能與之相稱的護理師人力卻遲遲無法確保，這就是現狀。",
+        "word": "見合う"
+      }
+    ],
+    [
+      {
+        "text": "據說特別是在地方醫院，招募人才變得更加困難。",
+        "word": "難しい"
+      }
+    ],
+    [
+      {
+        "text": "由於夜班等不規律的勤務制度，加上精神與體力上的負擔之大，據說擁有資格卻離開醫療現場的人並不少。",
+        "word": "少ない"
+      }
+    ],
+    [
+      {
+        "text": "再加上薪資與勞動的辛苦程度不成比例的不滿，也成為加速離職的一個原因。",
+        "word": "厳しさ"
+      }
+    ],
+    [
+      {
+        "text": "院方雖推動了薪資改善與工作環境的重新檢視，但尚未達到根本性的解決，也有人擔憂人手不足可能會影響醫療服務本身的品質。",
+        "word": "及ぼす"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 5,
+      "pattern": "〜ものの",
+      "note": "「雖然〜」，書面逆接"
+    }
+  ]
+}

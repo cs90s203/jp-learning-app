@@ -1,0 +1,1121 @@
+{
+  "date": "2026-10-30",
+  "level": "n2",
+  "title": "こども向けプログラミング教室の広がり",
+  "text": "小学生を対象としたプログラミング教室が、都市部を中心に急速に広がりを見せている。2020年度に小学校でプログラミング教育が必修化されたことを受け、学校教育だけでは物足りないと感じる保護者が、民間の教室に通わせる動きを強めているためだ。教室では、ゲーム感覚で学べる専用のソフトを使いながら、論理的思考力を養うことに重点が置かれており、成績向上以外の効果を期待する声も多い。一方で、月謝が決して安くないことに加え、地域によって教室の数に大きな差があることから、経済的な事情や住んでいる場所次第で機会が左右されてしまうという課題も指摘されている。今後は、こうした格差をどう埋めていくかが、教育現場に問われることになりそうだ。",
+  "tokens": [
+    {
+      "surface_form": "小学生",
+      "basic_form": "小学生",
+      "reading": "しょうがくせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対象",
+      "basic_form": "対象",
+      "reading": "たいしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "プログラミング",
+      "basic_form": "プログラミング",
+      "reading": "プログラミング",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "教室",
+      "basic_form": "教室",
+      "reading": "きょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市部",
+      "basic_form": "都市部",
+      "reading": "としぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "中心",
+      "basic_form": "中心",
+      "reading": "ちゅうしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急速に",
+      "basic_form": "急速",
+      "reading": "きゅうそくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "広がり",
+      "basic_form": "広がり",
+      "reading": "ひろがり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見せている",
+      "basic_form": "見せる",
+      "reading": "みせている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "2020年度",
+      "basic_form": "2020年度",
+      "reading": "にせんにじゅうねんど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "小学校",
+      "basic_form": "小学校",
+      "reading": "しょうがっこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "プログラミング",
+      "basic_form": "プログラミング",
+      "reading": "プログラミング",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "教育",
+      "basic_form": "教育",
+      "reading": "きょういく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "必修化された",
+      "basic_form": "必修化する",
+      "reading": "ひっしゅうかされた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受け",
+      "basic_form": "受ける",
+      "reading": "うけ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "学校教育",
+      "basic_form": "学校教育",
+      "reading": "がっこうきょういく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "物足りない",
+      "basic_form": "物足りない",
+      "reading": "ものたりない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "感じる",
+      "basic_form": "感じる",
+      "reading": "かんじる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "保護者",
+      "basic_form": "保護者",
+      "reading": "ほごしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "民間",
+      "basic_form": "民間",
+      "reading": "みんかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "教室",
+      "basic_form": "教室",
+      "reading": "きょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通わせる",
+      "basic_form": "通う",
+      "reading": "かよわせる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "動き",
+      "basic_form": "動き",
+      "reading": "うごき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "強めている",
+      "basic_form": "強める",
+      "reading": "つよめている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "教室",
+      "basic_form": "教室",
+      "reading": "きょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ゲーム感覚",
+      "basic_form": "ゲーム感覚",
+      "reading": "ゲームかんかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "学べる",
+      "basic_form": "学ぶ",
+      "reading": "まなべる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "専用",
+      "basic_form": "専用",
+      "reading": "せんよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ソフト",
+      "basic_form": "ソフト",
+      "reading": "ソフト",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使いながら",
+      "basic_form": "使う",
+      "reading": "つかいながら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "論理的",
+      "basic_form": "論理的",
+      "reading": "ろんりてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "思考力",
+      "basic_form": "思考力",
+      "reading": "しこうりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "養う",
+      "basic_form": "養う",
+      "reading": "やしなう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重点",
+      "basic_form": "重点",
+      "reading": "じゅうてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "置かれており",
+      "basic_form": "置く",
+      "reading": "おかれており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "成績向上",
+      "basic_form": "成績向上",
+      "reading": "せいせきこうじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "以外",
+      "basic_form": "以外",
+      "reading": "いがい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "効果",
+      "basic_form": "効果",
+      "reading": "こうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "期待する",
+      "basic_form": "期待する",
+      "reading": "きたいする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多い",
+      "basic_form": "多い",
+      "reading": "おおい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "月謝",
+      "basic_form": "月謝",
+      "reading": "げっしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "決して",
+      "basic_form": "決して",
+      "reading": "けっして",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "安くない",
+      "basic_form": "安い",
+      "reading": "やすくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "加え",
+      "basic_form": "加える",
+      "reading": "くわえ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "教室",
+      "basic_form": "教室",
+      "reading": "きょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "数",
+      "basic_form": "数",
+      "reading": "かず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きな",
+      "basic_form": "大きな",
+      "reading": "おおきな",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "差",
+      "basic_form": "差",
+      "reading": "さ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "経済的な",
+      "basic_form": "経済的",
+      "reading": "けいざいてきな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "事情",
+      "basic_form": "事情",
+      "reading": "じじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "住んでいる",
+      "basic_form": "住む",
+      "reading": "すんでいる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "場所",
+      "basic_form": "場所",
+      "reading": "ばしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "次第",
+      "basic_form": "次第",
+      "reading": "しだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "機会",
+      "basic_form": "機会",
+      "reading": "きかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "左右されてしまう",
+      "basic_form": "左右する",
+      "reading": "さゆうされてしまう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘されている",
+      "basic_form": "指摘する",
+      "reading": "してきされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "格差",
+      "basic_form": "格差",
+      "reading": "かくさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "どう",
+      "basic_form": "どう",
+      "reading": "どう",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "埋めていく",
+      "basic_form": "埋める",
+      "reading": "うめていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "教育現場",
+      "basic_form": "教育現場",
+      "reading": "きょういくげんば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "問われる",
+      "basic_form": "問う",
+      "reading": "とわれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なりそう",
+      "basic_form": "なる",
+      "reading": "なりそう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "小学生": {
+      "meaning": "小學生"
+    },
+    "対象": {
+      "meaning": "對象"
+    },
+    "プログラミング": {
+      "meaning": "程式設計"
+    },
+    "教室": {
+      "meaning": "教室"
+    },
+    "都市部": {
+      "meaning": "城市地區"
+    },
+    "中心": {
+      "meaning": "中心"
+    },
+    "急速": {
+      "meaning": "急速、快速"
+    },
+    "広がり": {
+      "meaning": "擴大、普及"
+    },
+    "見せる": {
+      "meaning": "顯現、呈現"
+    },
+    "2020年度": {
+      "meaning": "2020年度"
+    },
+    "小学校": {
+      "meaning": "小學"
+    },
+    "教育": {
+      "meaning": "教育"
+    },
+    "必修化する": {
+      "meaning": "列為必修"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "受ける": {
+      "meaning": "接受、因應"
+    },
+    "学校教育": {
+      "meaning": "學校教育"
+    },
+    "物足りない": {
+      "meaning": "不夠滿足、不充分"
+    },
+    "感じる": {
+      "meaning": "感覺到"
+    },
+    "保護者": {
+      "meaning": "家長、監護人"
+    },
+    "民間": {
+      "meaning": "民間"
+    },
+    "通う": {
+      "meaning": "往來、通勤通學"
+    },
+    "動き": {
+      "meaning": "動向、趨勢"
+    },
+    "強める": {
+      "meaning": "加強"
+    },
+    "ため": {
+      "meaning": "原因、為了"
+    },
+    "ゲーム感覚": {
+      "meaning": "遊戲般的感覺"
+    },
+    "学ぶ": {
+      "meaning": "學習"
+    },
+    "専用": {
+      "meaning": "專用"
+    },
+    "ソフト": {
+      "meaning": "軟體"
+    },
+    "使う": {
+      "meaning": "使用"
+    },
+    "論理的": {
+      "meaning": "邏輯上的"
+    },
+    "思考力": {
+      "meaning": "思考能力"
+    },
+    "養う": {
+      "meaning": "培養"
+    },
+    "重点": {
+      "meaning": "重點"
+    },
+    "置く": {
+      "meaning": "放置（這裡指重點所在）"
+    },
+    "成績向上": {
+      "meaning": "成績提升"
+    },
+    "以外": {
+      "meaning": "以外"
+    },
+    "効果": {
+      "meaning": "效果"
+    },
+    "期待する": {
+      "meaning": "期待"
+    },
+    "声": {
+      "meaning": "聲音（此處指意見）"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "月謝": {
+      "meaning": "月費、學費"
+    },
+    "決して": {
+      "meaning": "絕對（不）"
+    },
+    "安い": {
+      "meaning": "便宜的"
+    },
+    "加える": {
+      "meaning": "加上"
+    },
+    "地域": {
+      "meaning": "地區"
+    },
+    "数": {
+      "meaning": "數量"
+    },
+    "大きな": {
+      "meaning": "大的"
+    },
+    "差": {
+      "meaning": "差距"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    },
+    "経済的": {
+      "meaning": "經濟上的"
+    },
+    "事情": {
+      "meaning": "情況、原因"
+    },
+    "住む": {
+      "meaning": "居住"
+    },
+    "場所": {
+      "meaning": "地方"
+    },
+    "次第": {
+      "meaning": "取決於、視…而定"
+    },
+    "機会": {
+      "meaning": "機會"
+    },
+    "左右する": {
+      "meaning": "左右、影響"
+    },
+    "課題": {
+      "meaning": "課題、問題"
+    },
+    "指摘する": {
+      "meaning": "指出"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "こうした": {
+      "meaning": "像這樣的"
+    },
+    "格差": {
+      "meaning": "差距"
+    },
+    "どう": {
+      "meaning": "如何"
+    },
+    "埋める": {
+      "meaning": "填補"
+    },
+    "教育現場": {
+      "meaning": "教育現場"
+    },
+    "問う": {
+      "meaning": "質問、追究"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "する": {
+      "meaning": "做（這裡構成「とする」＝視為、以…為）"
+    }
+  },
+  "particles": {
+    "を": "標示動作的受詞",
+    "と": "構成「〜とする」或引用內容前的助詞",
+    "が": "標示主語",
+    "に": "表示時間點、對象、或到達點，或構成「〜において」等表現",
+    "の": "表示所屬關係，或把動詞名詞化",
+    "で": "表示場所/方法，或な形容詞的連接形",
+    "だけ": "只、僅",
+    "は": "標示主題，或強調對比",
+    "によって": "「依據〜」／「因〜而異」",
+    "から": "表示起點或原因",
+    "や": "列舉「和」",
+    "も": "「也」",
+    "という": "「叫做〜」，用於引用名稱或說法",
+    "か": "構成疑問，或「どうかが」中的不確定語氣"
+  },
+  "translations": [
+    [
+      {
+        "text": "以國小學生為對象的程式設計教室，正以城市地區為中心迅速普及。",
+        "word": "広がり"
+      }
+    ],
+    [
+      {
+        "text": "自2020年度起，國小的程式設計教育被列為必修課，使得覺得光靠學校教育不夠的家長，加強了讓孩子去上民間教室的趨勢。",
+        "word": "物足りない"
+      }
+    ],
+    [
+      {
+        "text": "在教室裡，孩子一邊使用能以遊戲般的感覺學習的專用軟體，一邊培養邏輯思考能力成為教學重點，不少人也期待能帶來成績提升以外的效果。",
+        "word": "思考力"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，月費絕對不便宜，加上地區之間教室數量差距很大，因此也有人指出，機會可能會因經濟狀況或居住地點而被左右的課題。",
+        "word": "左右する"
+      }
+    ],
+    [
+      {
+        "text": "今後該如何填補這樣的差距，恐怕將成為教育現場必須面對的問題。",
+        "word": "問う"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 3,
+      "pattern": "〜によって",
+      "note": "「依據〜」／「因〜而異」，也用於被動的動作者"
+    }
+  ]
+}
