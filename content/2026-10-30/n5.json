@@ -1,0 +1,448 @@
+{
+  "date": "2026-10-30",
+  "level": "n5",
+  "title": "コンビニでおにぎりを買った",
+  "text": "今日の昼、コンビニでおにぎりを買った。梅と鮭の二つを選んで、お茶も一緒に買った。レジでお金を払って、外に出た。公園のベンチに座って、ゆっくり食べた。おにぎりはまだあたたかくて、とてもおいしかった。",
+  "tokens": [
+    {
+      "surface_form": "今日",
+      "basic_form": "今日",
+      "reading": "きょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "昼",
+      "basic_form": "昼",
+      "reading": "ひる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "コンビニ",
+      "basic_form": "コンビニ",
+      "reading": "コンビニ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "おにぎり",
+      "basic_form": "おにぎり",
+      "reading": "おにぎり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買った",
+      "basic_form": "買う",
+      "reading": "かった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "梅",
+      "basic_form": "梅",
+      "reading": "うめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "鮭",
+      "basic_form": "鮭",
+      "reading": "さけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "二つ",
+      "basic_form": "二つ",
+      "reading": "ふたつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "選んで",
+      "basic_form": "選ぶ",
+      "reading": "えらんで",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "お茶",
+      "basic_form": "お茶",
+      "reading": "おちゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一緒に",
+      "basic_form": "一緒に",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "買った",
+      "basic_form": "買う",
+      "reading": "かった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "レジ",
+      "basic_form": "レジ",
+      "reading": "レジ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "お金",
+      "basic_form": "お金",
+      "reading": "おかね",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "払って",
+      "basic_form": "払う",
+      "reading": "はらって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "外",
+      "basic_form": "外",
+      "reading": "そと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出た",
+      "basic_form": "出る",
+      "reading": "でた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "公園",
+      "basic_form": "公園",
+      "reading": "こうえん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ベンチ",
+      "basic_form": "ベンチ",
+      "reading": "ベンチ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "座って",
+      "basic_form": "座る",
+      "reading": "すわって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ゆっくり",
+      "basic_form": "ゆっくり",
+      "reading": "ゆっくり",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "食べた",
+      "basic_form": "食べる",
+      "reading": "たべた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "おにぎり",
+      "basic_form": "おにぎり",
+      "reading": "おにぎり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "まだ",
+      "basic_form": "まだ",
+      "reading": "まだ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "あたたかくて",
+      "basic_form": "あたたかい",
+      "reading": "あたたかくて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "おいしかった",
+      "basic_form": "おいしい",
+      "reading": "おいしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "今日": {
+      "meaning": "今天"
+    },
+    "昼": {
+      "meaning": "中午、白天"
+    },
+    "コンビニ": {
+      "meaning": "便利商店"
+    },
+    "おにぎり": {
+      "meaning": "飯糰"
+    },
+    "買う": {
+      "meaning": "買"
+    },
+    "梅": {
+      "meaning": "梅子"
+    },
+    "鮭": {
+      "meaning": "鮭魚"
+    },
+    "二つ": {
+      "meaning": "兩個"
+    },
+    "選ぶ": {
+      "meaning": "選擇"
+    },
+    "お茶": {
+      "meaning": "茶"
+    },
+    "一緒に": {
+      "meaning": "一起"
+    },
+    "払う": {
+      "meaning": "支付"
+    },
+    "外": {
+      "meaning": "外面"
+    },
+    "出る": {
+      "meaning": "出去、出來"
+    },
+    "公園": {
+      "meaning": "公園"
+    },
+    "ベンチ": {
+      "meaning": "長椅"
+    },
+    "座る": {
+      "meaning": "坐"
+    },
+    "ゆっくり": {
+      "meaning": "慢慢地、悠閒地"
+    },
+    "食べる": {
+      "meaning": "吃"
+    },
+    "まだ": {
+      "meaning": "還、尚"
+    },
+    "あたたかい": {
+      "meaning": "溫熱的、溫暖的"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "おいしい": {
+      "meaning": "好吃的"
+    },
+    "お金": {
+      "meaning": "錢"
+    },
+    "レジ": {
+      "meaning": "收銀台"
+    }
+  },
+  "particles": {
+    "の": "表示所屬關係，相當於中文的「的」",
+    "で": "表示動作發生的場所，或使用的方法/工具",
+    "を": "標示動作的受詞",
+    "と": "連接名詞表示「和」",
+    "も": "「也」，取代原本該用的が/を，但と、で等助詞會保留",
+    "に": "表示到達的地點，或動作對象",
+    "は": "標示句子的主題"
+  },
+  "translations": [
+    [
+      {
+        "text": "今天中午，在便利商店買了飯糰。",
+        "word": "買う"
+      }
+    ],
+    [
+      {
+        "text": "選了梅子和鮭魚口味的兩個，也順便買了茶。",
+        "word": "一緒に"
+      }
+    ],
+    [
+      {
+        "text": "在收銀台付了錢，走到外面。",
+        "word": "払う"
+      }
+    ],
+    [
+      {
+        "text": "坐在公園的長椅上，慢慢地吃了起來。",
+        "word": "座る"
+      }
+    ],
+    [
+      {
+        "text": "飯糰還是溫熱的，非常好吃。",
+        "word": "あたたかい"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 1,
+      "pattern": "動詞て形",
+      "note": "連接兩個動作（先後順序）、或用於て形句型（ている等）"
+    },
+    {
+      "sentence": 1,
+      "pattern": "〜も（也）",
+      "note": "「也」，會取代が/を，但と、で等助詞保留"
+    },
+    {
+      "sentence": 4,
+      "pattern": "い形容詞（現在/否定/過去/過去否定）",
+      "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜くて／〜で（形容詞て形）",
+      "note": "連接兩個形容詞子句，表示並列或原因"
+    }
+  ]
+}

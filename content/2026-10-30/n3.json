@@ -1,0 +1,964 @@
+{
+  "date": "2026-10-30",
+  "level": "n3",
+  "title": "華道を習い始めた理由",
+  "text": "もともと花が好きで、家にいつも何かしら飾っていたが、花瓶に適当に挿すだけで、形を整えるのが苦手だった。ある日、友人の家で美しく整えられた花を見て、「こんなふうに生けられるようになりたい」と強く思うようになった。それをきっかけに、近所の華道教室に通い始めることにした。基礎の型を覚えるのは地味な作業の繰り返しだが、一本一本の花の向きや長さを考えながら生けるうちに、花との向き合い方そのものが変わってきた気がする。これからも、花の美しさをより深く感じられるように、練習を続けていきたい。",
+  "tokens": [
+    {
+      "surface_form": "もともと",
+      "basic_form": "もともと",
+      "reading": "もともと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "花",
+      "basic_form": "花",
+      "reading": "はな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "好きで",
+      "basic_form": "好き",
+      "reading": "すきで",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いつも",
+      "basic_form": "いつも",
+      "reading": "いつも",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "何かしら",
+      "basic_form": "何かしら",
+      "reading": "なにかしら",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "飾っていた",
+      "basic_form": "飾る",
+      "reading": "かざっていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "花瓶",
+      "basic_form": "花瓶",
+      "reading": "かびん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "適当に",
+      "basic_form": "適当",
+      "reading": "てきとうに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "挿す",
+      "basic_form": "挿す",
+      "reading": "さす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "形",
+      "basic_form": "形",
+      "reading": "かたち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整える",
+      "basic_form": "整える",
+      "reading": "ととのえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "苦手",
+      "basic_form": "苦手",
+      "reading": "にがて",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だった",
+      "basic_form": "だ",
+      "reading": "だった",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ある日",
+      "basic_form": "ある日",
+      "reading": "あるひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "友人",
+      "basic_form": "友人",
+      "reading": "ゆうじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "家",
+      "basic_form": "家",
+      "reading": "いえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "美しく",
+      "basic_form": "美しい",
+      "reading": "うつくしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "整えられた",
+      "basic_form": "整える",
+      "reading": "ととのえられた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "花",
+      "basic_form": "花",
+      "reading": "はな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見て",
+      "basic_form": "見る",
+      "reading": "みて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こんなふうに",
+      "basic_form": "こんなふうに",
+      "reading": "こんなふうに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "生けられる",
+      "basic_form": "生ける",
+      "reading": "いけられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なりたい",
+      "basic_form": "なる",
+      "reading": "なりたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "強く",
+      "basic_form": "強い",
+      "reading": "つよく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "思う",
+      "basic_form": "思う",
+      "reading": "おもう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それ",
+      "basic_form": "それ",
+      "reading": "それ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きっかけ",
+      "basic_form": "きっかけ",
+      "reading": "きっかけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "近所",
+      "basic_form": "近所",
+      "reading": "きんじょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "華道",
+      "basic_form": "華道",
+      "reading": "かどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "教室",
+      "basic_form": "教室",
+      "reading": "きょうしつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通い",
+      "basic_form": "通う",
+      "reading": "かよい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "始める",
+      "basic_form": "始める",
+      "reading": "はじめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "基礎",
+      "basic_form": "基礎",
+      "reading": "きそ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "型",
+      "basic_form": "型",
+      "reading": "かた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "覚える",
+      "basic_form": "覚える",
+      "reading": "おぼえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地味な",
+      "basic_form": "地味",
+      "reading": "じみな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "作業",
+      "basic_form": "作業",
+      "reading": "さぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "繰り返し",
+      "basic_form": "繰り返し",
+      "reading": "くりかえし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一本一本",
+      "basic_form": "一本一本",
+      "reading": "いっぽんいっぽん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "花",
+      "basic_form": "花",
+      "reading": "はな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "向き",
+      "basic_form": "向き",
+      "reading": "むき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "長さ",
+      "basic_form": "長さ",
+      "reading": "ながさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "考えながら",
+      "basic_form": "考える",
+      "reading": "かんがえながら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "生ける",
+      "basic_form": "生ける",
+      "reading": "いける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "うち",
+      "basic_form": "うち",
+      "reading": "うち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "花",
+      "basic_form": "花",
+      "reading": "はな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "向き合い方",
+      "basic_form": "向き合い方",
+      "reading": "むきあいかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "そのもの",
+      "basic_form": "そのもの",
+      "reading": "そのもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "変わってきた",
+      "basic_form": "変わる",
+      "reading": "かわってきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "気がする",
+      "basic_form": "気がする",
+      "reading": "きがする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "これから",
+      "basic_form": "これから",
+      "reading": "これから",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "花",
+      "basic_form": "花",
+      "reading": "はな",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "美しさ",
+      "basic_form": "美しい",
+      "reading": "うつくしさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "深く",
+      "basic_form": "深い",
+      "reading": "ふかく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "感じられる",
+      "basic_form": "感じる",
+      "reading": "かんじられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "練習",
+      "basic_form": "練習",
+      "reading": "れんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続けて",
+      "basic_form": "続ける",
+      "reading": "つづけて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "いきたい",
+      "basic_form": "いく",
+      "reading": "いきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "もともと": {
+      "meaning": "原本、本來"
+    },
+    "花": {
+      "meaning": "花"
+    },
+    "好き": {
+      "meaning": "喜歡"
+    },
+    "家": {
+      "meaning": "家"
+    },
+    "いつも": {
+      "meaning": "總是"
+    },
+    "何かしら": {
+      "meaning": "總會有些什麼、不知怎麼地"
+    },
+    "飾る": {
+      "meaning": "裝飾、擺放"
+    },
+    "花瓶": {
+      "meaning": "花瓶"
+    },
+    "適当": {
+      "meaning": "隨意、馬虎"
+    },
+    "挿す": {
+      "meaning": "插"
+    },
+    "形": {
+      "meaning": "形狀"
+    },
+    "整える": {
+      "meaning": "整理、調整"
+    },
+    "苦手": {
+      "meaning": "不擅長"
+    },
+    "ある日": {
+      "meaning": "有一天"
+    },
+    "友人": {
+      "meaning": "朋友"
+    },
+    "美しい": {
+      "meaning": "美麗的"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "こんなふうに": {
+      "meaning": "像這樣"
+    },
+    "生ける": {
+      "meaning": "插花、生花"
+    },
+    "よう": {
+      "meaning": "（構成ようになる／ようにしたい等表現的「様子」）"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "強い": {
+      "meaning": "強烈的（此處指「強く」）"
+    },
+    "思う": {
+      "meaning": "覺得、心想"
+    },
+    "それ": {
+      "meaning": "那個"
+    },
+    "きっかけ": {
+      "meaning": "契機"
+    },
+    "近所": {
+      "meaning": "附近"
+    },
+    "華道": {
+      "meaning": "華道、花道"
+    },
+    "教室": {
+      "meaning": "教室"
+    },
+    "通う": {
+      "meaning": "定期前往"
+    },
+    "始める": {
+      "meaning": "開始"
+    },
+    "こと": {
+      "meaning": "事情（構成「ことにする」）"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "基礎": {
+      "meaning": "基礎"
+    },
+    "型": {
+      "meaning": "招式、形式"
+    },
+    "覚える": {
+      "meaning": "記住、學會"
+    },
+    "地味": {
+      "meaning": "樸實、不起眼"
+    },
+    "作業": {
+      "meaning": "作業、工作"
+    },
+    "繰り返し": {
+      "meaning": "反覆、重複"
+    },
+    "一本一本": {
+      "meaning": "一枝一枝"
+    },
+    "向き": {
+      "meaning": "方向"
+    },
+    "長さ": {
+      "meaning": "長度"
+    },
+    "考える": {
+      "meaning": "思考"
+    },
+    "うち": {
+      "meaning": "之內、期間"
+    },
+    "向き合い方": {
+      "meaning": "面對的方式"
+    },
+    "そのもの": {
+      "meaning": "本身"
+    },
+    "変わる": {
+      "meaning": "改變"
+    },
+    "気がする": {
+      "meaning": "感覺"
+    },
+    "これから": {
+      "meaning": "從今以後"
+    },
+    "美しさ": {
+      "meaning": "美麗、美感"
+    },
+    "より": {
+      "meaning": "更加"
+    },
+    "深い": {
+      "meaning": "深的（此處用深く表示「更深地」）"
+    },
+    "感じる": {
+      "meaning": "感受、感覺到"
+    },
+    "練習": {
+      "meaning": "練習"
+    },
+    "続ける": {
+      "meaning": "繼續"
+    },
+    "いく": {
+      "meaning": "（接續動詞表示持續下去）"
+    }
+  },
+  "particles": {
+    "が": "主語標記，或構成逆接「だが」",
+    "で": "場所/方法，或な形容詞的連接形",
+    "に": "到達點/對象，或構成「きっかけに」「ようになる」等表現",
+    "を": "受詞標記",
+    "だけ": "只、僅",
+    "の": "所屬/修飾，或把動詞名詞化（のが、のは）",
+    "は": "主題標記",
+    "と": "引用內容前的助詞，或列舉對象",
+    "や": "列舉「和」",
+    "も": "也"
+  },
+  "translations": [
+    [
+      {
+        "text": "原本就喜歡花，家裡總是隨意擺著些什麼，但只是隨便插進花瓶裡，一直不擅長整理出好看的形狀。",
+        "word": "苦手"
+      }
+    ],
+    [
+      {
+        "text": "有一天，在朋友家看到被巧妙整理過的美麗花朵，便強烈地想著「真希望自己也能插出這樣的花」。",
+        "word": "生ける"
+      }
+    ],
+    [
+      {
+        "text": "以此為契機，我開始去家附近的華道教室上課。",
+        "word": "通う"
+      }
+    ],
+    [
+      {
+        "text": "記住基本招式其實是枯燥的反覆練習，但一邊思考每一枝花的方向與長度去插花，自己面對花的方式本身好像漸漸改變了。",
+        "word": "向き合い方"
+      }
+    ],
+    [
+      {
+        "text": "今後也想繼續練習下去，好讓自己能更深地感受到花的美。",
+        "word": "美しさ"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 2,
+      "pattern": "〜ことにする／〜ことになる",
+      "note": "決定／自然而然演變成的結果"
+    }
+  ]
+}

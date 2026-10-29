@@ -1,0 +1,894 @@
+{
+  "date": "2026-10-30",
+  "level": "n2_lite",
+  "title": "ふるさと納税の普及",
+  "text": "近年、出身地や応援したい自治体に寄付ができる「ふるさと納税」の利用者が増えている。寄付をすると、税金の一部が控除されるうえに、地域の特産品がお礼として届く仕組みになっており、実質的な負担が少ないことが人気の理由だ。以前は手続きが複雑で面倒だと思われていたが、インターネット上で簡単に申し込めるサイトが増えたことをきっかけに、利用者の裾野は一気に広がった。一方で、人気の返礼品に寄付が集中し、地域間の税収格差が生じているという指摘もあり、制度の見直しを求める声も出ている。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "出身地",
+      "basic_form": "出身地",
+      "reading": "しゅっしんち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "応援したい",
+      "basic_form": "応援する",
+      "reading": "おうえんしたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "自治体",
+      "basic_form": "自治体",
+      "reading": "じちたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "寄付",
+      "basic_form": "寄付",
+      "reading": "きふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できる",
+      "basic_form": "できる",
+      "reading": "できる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ふるさと納税",
+      "basic_form": "ふるさと納税",
+      "reading": "ふるさとのうぜい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "利用者",
+      "basic_form": "利用者",
+      "reading": "りようしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "寄付",
+      "basic_form": "寄付",
+      "reading": "きふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "税金",
+      "basic_form": "税金",
+      "reading": "ぜいきん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一部",
+      "basic_form": "一部",
+      "reading": "いちぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "控除される",
+      "basic_form": "控除する",
+      "reading": "こうじょされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "うえに",
+      "basic_form": "うえに",
+      "reading": "うえに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "特産品",
+      "basic_form": "特産品",
+      "reading": "とくさんひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "お礼",
+      "basic_form": "お礼",
+      "reading": "おれい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "届く",
+      "basic_form": "届く",
+      "reading": "とどく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "仕組み",
+      "basic_form": "仕組み",
+      "reading": "しくみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なっており",
+      "basic_form": "なる",
+      "reading": "なっており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実質的な",
+      "basic_form": "実質的",
+      "reading": "じっしつてきな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "負担",
+      "basic_form": "負担",
+      "reading": "ふたん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少ない",
+      "basic_form": "少ない",
+      "reading": "すくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人気",
+      "basic_form": "人気",
+      "reading": "にんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "理由",
+      "basic_form": "理由",
+      "reading": "りゆう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "以前",
+      "basic_form": "以前",
+      "reading": "いぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "手続き",
+      "basic_form": "手続き",
+      "reading": "てつづき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "複雑で",
+      "basic_form": "複雑",
+      "reading": "ふくざつで",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "面倒",
+      "basic_form": "面倒",
+      "reading": "めんどう",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思われていた",
+      "basic_form": "思う",
+      "reading": "おもわれていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "インターネット",
+      "basic_form": "インターネット",
+      "reading": "インターネット",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "上",
+      "basic_form": "上",
+      "reading": "じょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "簡単に",
+      "basic_form": "簡単",
+      "reading": "かんたんに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "申し込める",
+      "basic_form": "申し込む",
+      "reading": "もうしこめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "サイト",
+      "basic_form": "サイト",
+      "reading": "サイト",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えた",
+      "basic_form": "増える",
+      "reading": "ふえた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きっかけ",
+      "basic_form": "きっかけ",
+      "reading": "きっかけ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "利用者",
+      "basic_form": "利用者",
+      "reading": "りようしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "裾野",
+      "basic_form": "裾野",
+      "reading": "すその",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一気に",
+      "basic_form": "一気に",
+      "reading": "いっきに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "広がった",
+      "basic_form": "広がる",
+      "reading": "ひろがった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人気",
+      "basic_form": "人気",
+      "reading": "にんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "返礼品",
+      "basic_form": "返礼品",
+      "reading": "へんれいひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "寄付",
+      "basic_form": "寄付",
+      "reading": "きふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "集中し",
+      "basic_form": "集中する",
+      "reading": "しゅうちゅうし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域間",
+      "basic_form": "地域間",
+      "reading": "ちいきかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "税収格差",
+      "basic_form": "税収格差",
+      "reading": "ぜいしゅうかくさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生じている",
+      "basic_form": "生じる",
+      "reading": "しょうじている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "制度",
+      "basic_form": "制度",
+      "reading": "せいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見直し",
+      "basic_form": "見直し",
+      "reading": "みなおし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "求める",
+      "basic_form": "求める",
+      "reading": "もとめる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "出ている",
+      "basic_form": "出る",
+      "reading": "でている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年"
+    },
+    "出身地": {
+      "meaning": "出身地"
+    },
+    "応援する": {
+      "meaning": "支持、聲援"
+    },
+    "自治体": {
+      "meaning": "地方自治團體"
+    },
+    "寄付": {
+      "meaning": "捐款、捐贈"
+    },
+    "できる": {
+      "meaning": "可以、能夠"
+    },
+    "ふるさと納税": {
+      "meaning": "故鄉稅（日本的一種納稅/捐款制度）"
+    },
+    "利用者": {
+      "meaning": "使用者"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "税金": {
+      "meaning": "稅金"
+    },
+    "一部": {
+      "meaning": "一部分"
+    },
+    "控除する": {
+      "meaning": "扣除、抵免"
+    },
+    "うえに": {
+      "meaning": "而且、加上"
+    },
+    "地域": {
+      "meaning": "地區"
+    },
+    "特産品": {
+      "meaning": "特產"
+    },
+    "お礼": {
+      "meaning": "回禮、謝禮"
+    },
+    "届く": {
+      "meaning": "送達"
+    },
+    "仕組み": {
+      "meaning": "機制、制度"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "実質的": {
+      "meaning": "實質上的"
+    },
+    "負担": {
+      "meaning": "負擔"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "こと": {
+      "meaning": "事情"
+    },
+    "人気": {
+      "meaning": "受歡迎、人氣"
+    },
+    "理由": {
+      "meaning": "理由"
+    },
+    "以前": {
+      "meaning": "以前"
+    },
+    "手続き": {
+      "meaning": "手續"
+    },
+    "複雑": {
+      "meaning": "複雜"
+    },
+    "面倒": {
+      "meaning": "麻煩"
+    },
+    "思う": {
+      "meaning": "覺得、認為"
+    },
+    "インターネット": {
+      "meaning": "網路"
+    },
+    "上": {
+      "meaning": "上面（這裡指網路上）"
+    },
+    "簡単": {
+      "meaning": "簡單"
+    },
+    "申し込む": {
+      "meaning": "申請、報名"
+    },
+    "サイト": {
+      "meaning": "網站"
+    },
+    "きっかけ": {
+      "meaning": "契機"
+    },
+    "裾野": {
+      "meaning": "基礎、範圍（這裡指使用者普及的廣度）"
+    },
+    "一気に": {
+      "meaning": "一口氣、一下子"
+    },
+    "広がる": {
+      "meaning": "擴大、普及"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "返礼品": {
+      "meaning": "回禮品"
+    },
+    "集中する": {
+      "meaning": "集中"
+    },
+    "地域間": {
+      "meaning": "地區之間"
+    },
+    "税収格差": {
+      "meaning": "稅收差距"
+    },
+    "生じる": {
+      "meaning": "產生"
+    },
+    "指摘": {
+      "meaning": "指出、指摘"
+    },
+    "ある": {
+      "meaning": "有"
+    },
+    "制度": {
+      "meaning": "制度"
+    },
+    "見直し": {
+      "meaning": "重新檢視"
+    },
+    "求める": {
+      "meaning": "要求、尋求"
+    },
+    "声": {
+      "meaning": "聲音（此處指意見）"
+    },
+    "出る": {
+      "meaning": "出現"
+    }
+  },
+  "particles": {
+    "や": "列舉「和」",
+    "に": "到達點/對象，或構成「きっかけに」等表現",
+    "が": "主語標記",
+    "の": "所屬/修飾",
+    "を": "受詞標記",
+    "と": "構成「〜とする」或「という」",
+    "で": "場所/方法，或な形容詞連接形",
+    "は": "主題標記，或對比",
+    "も": "也",
+    "として": "「作為〜」的身分/立場",
+    "という": "「叫做〜」，用於引用名稱或說法",
+    "うえに": "「而且、加上」，表示進一步補充"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，能夠向出身地或想支持的地方政府捐款的「故鄉稅」，使用者越來越多。",
+        "word": "ふるさと納税"
+      }
+    ],
+    [
+      {
+        "text": "一旦捐款，不僅部分稅金可以抵免，當地特產還會作為回禮送達，實際負擔不大，正是受歡迎的原因。",
+        "word": "控除する"
+      }
+    ],
+    [
+      {
+        "text": "以前大家覺得手續複雜又麻煩，但隨著能在網路上輕鬆申請的網站增加，使用者的範圍一下子擴大了。",
+        "word": "きっかけ"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，也有人指出捐款過度集中在熱門回禮品上，導致地區間稅收出現差距，因此也出現了要求檢討制度的聲音。",
+        "word": "税収格差"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 2,
+      "pattern": "〜をきっかけに",
+      "note": "「以〜為契機」"
+    }
+  ]
+}
