@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-31",
+  "level": "n5_lite",
+  "title": "わたしの自転車",
+  "text": "わたしの自転車は青いです。駅の近くにあります。新しいです。とても便利です。色も好きです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "自転車", "basic_form": "自転車", "reading": "じてんしゃ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "駅", "basic_form": "駅", "reading": "えき", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "近く", "basic_form": "近く", "reading": "ちかく", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "便利", "basic_form": "便利", "reading": "べんり", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "色", "basic_form": "色", "reading": "いろ", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "好き", "basic_form": "好き", "reading": "すき", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "自転車": { "meaning": "腳踏車" },
+    "青い": { "meaning": "藍色的" },
+    "駅": { "meaning": "車站" },
+    "近く": { "meaning": "附近" },
+    "ある": { "meaning": "有、在（存在）" },
+    "新しい": { "meaning": "新的" },
+    "とても": { "meaning": "非常" },
+    "便利": { "meaning": "方便" },
+    "色": { "meaning": "顏色" },
+    "好き": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，「的」",
+    "に": "表示存在的地點",
+    "も": "「也」，取代原本該用的が/を"
+  },
+  "translations": [
+    [ { "text": "我的腳踏車是藍色的。", "word": "青い" } ],
+    [ { "text": "放在車站附近。", "word": "近く" } ],
+    [ { "text": "是新的。", "word": "新しい" } ],
+    [ { "text": "非常方便。", "word": "便利" } ],
+    [ { "text": "我也喜歡這個顏色。", "word": "好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 2, "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" },
+    { "sentence": 4, "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" }
+  ]
+}
