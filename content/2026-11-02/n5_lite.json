@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-02",
+  "level": "n5_lite",
+  "title": "わたしの傘",
+  "text": "わたしの傘は青色です。古い傘です。持ち手は木です。雨の日の相棒です。この傘は父からの誕生日プレゼントです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青色", "basic_form": "青色", "reading": "あおいろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "古い", "basic_form": "古い", "reading": "ふるい", "pos": "形容詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "持ち手", "basic_form": "持ち手", "reading": "もちで", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "木", "basic_form": "木", "reading": "き", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "雨", "basic_form": "雨", "reading": "あめ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "日", "basic_form": "日", "reading": "ひ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "相棒", "basic_form": "相棒", "reading": "あいぼう", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "この", "basic_form": "この", "reading": "この", "pos": "連体詞" },
+    { "surface_form": "傘", "basic_form": "傘", "reading": "かさ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "父", "basic_form": "父", "reading": "ちち", "pos": "名詞" },
+    { "surface_form": "から", "basic_form": "から", "reading": "から", "pos": "助詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "誕生日", "basic_form": "誕生日", "reading": "たんじょうび", "pos": "名詞" },
+    { "surface_form": "プレゼント", "basic_form": "プレゼント", "reading": "ぷれぜんと", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "傘": { "meaning": "雨傘" },
+    "青色": { "meaning": "藍色" },
+    "古い": { "meaning": "舊的、老的" },
+    "持ち手": { "meaning": "握柄" },
+    "木": { "meaning": "木頭" },
+    "雨": { "meaning": "雨" },
+    "日": { "meaning": "日子、天" },
+    "相棒": { "meaning": "夥伴、好搭檔" },
+    "この": { "meaning": "這個" },
+    "父": { "meaning": "爸爸、父親" },
+    "誕生日": { "meaning": "生日" },
+    "プレゼント": { "meaning": "禮物" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，「的」",
+    "から": "表示起點，「從〜」"
+  },
+  "translations": [
+    [ { "text": "我的傘是藍色的。", "word": "傘" } ],
+    [ { "text": "是一把舊傘。", "word": "古い" } ],
+    [ { "text": "握柄是木頭做的。", "word": "持ち手" } ],
+    [ { "text": "它是雨天的好夥伴。", "word": "相棒" } ],
+    [ { "text": "這把傘是爸爸送的生日禮物。", "word": "プレゼント" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 1, "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" }
+  ]
+}
