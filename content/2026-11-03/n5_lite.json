@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-03",
+  "level": "n5_lite",
+  "title": "わたしのお弁当",
+  "text": "わたしのお弁当は小さいです。中に卵焼きとごはんがあります。お弁当箱は赤くてかわいいです。味はおいしいです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "お弁当", "basic_form": "お弁当", "reading": "おべんとう", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "卵焼き", "basic_form": "卵焼き", "reading": "たまごやき", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "ごはん", "basic_form": "ごはん", "reading": "ごはん", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "お弁当箱", "basic_form": "お弁当箱", "reading": "おべんとうばこ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "赤くて", "basic_form": "赤い", "reading": "あかくて", "pos": "形容詞" },
+    { "surface_form": "かわいい", "basic_form": "かわいい", "reading": "かわいい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "味", "basic_form": "味", "reading": "あじ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "おいしい", "basic_form": "おいしい", "reading": "おいしい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "お弁当": { "meaning": "便當" },
+    "小さい": { "meaning": "小的" },
+    "中": { "meaning": "裡面" },
+    "卵焼き": { "meaning": "煎蛋捲" },
+    "ごはん": { "meaning": "飯" },
+    "ある": { "meaning": "有（事物存在）" },
+    "お弁当箱": { "meaning": "便當盒" },
+    "赤い": { "meaning": "紅色的" },
+    "かわいい": { "meaning": "可愛的" },
+    "味": { "meaning": "味道" },
+    "おいしい": { "meaning": "好吃的" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，相當於中文的「的」",
+    "に": "表示存在或動作發生的位置",
+    "と": "連接名詞，表示「和」",
+    "が": "標示句子的主語（新資訊或焦點）"
+  },
+  "translations": [
+    [ { "text": "我的便當很小。", "word": "小さい" } ],
+    [ { "text": "裡面有煎蛋捲和飯。", "word": "卵焼き" } ],
+    [ { "text": "便當盒是紅色的，很可愛。", "word": "かわいい" } ],
+    [ { "text": "味道很好吃。", "word": "おいしい" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 2, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "sentence": 3, "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" }
+  ]
+}
