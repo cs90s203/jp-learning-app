@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-04",
+  "level": "n5_lite",
+  "title": "わたしの靴",
+  "text": "わたしの靴は白いです。靴は軽くて丈夫です。中にかわいい花の模様があります。この靴がとても好きです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "白い", "basic_form": "白い", "reading": "しろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "軽くて", "basic_form": "軽い", "reading": "かるくて", "pos": "形容詞" },
+    { "surface_form": "丈夫", "basic_form": "丈夫", "reading": "じょうぶ", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "かわいい", "basic_form": "かわいい", "reading": "かわいい", "pos": "形容詞" },
+    { "surface_form": "花", "basic_form": "花", "reading": "はな", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "模様", "basic_form": "模様", "reading": "もよう", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "この", "basic_form": "この", "reading": "この", "pos": "連体詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "好き", "basic_form": "好き", "reading": "すき", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "靴": { "meaning": "鞋子" },
+    "白い": { "meaning": "白色的" },
+    "軽い": { "meaning": "輕的" },
+    "丈夫": { "meaning": "牢固、耐用" },
+    "中": { "meaning": "裡面" },
+    "かわいい": { "meaning": "可愛的" },
+    "花": { "meaning": "花" },
+    "模様": { "meaning": "花紋、圖案" },
+    "ある": { "meaning": "有（事物存在）" },
+    "この": { "meaning": "這個（指示連體詞）" },
+    "とても": { "meaning": "非常" },
+    "好き": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，相當於中文的「的」",
+    "に": "表示存在的位置",
+    "が": "標示句子的主語（新資訊或焦點）"
+  },
+  "translations": [
+    [ { "text": "我的鞋子是白色的。", "word": "白い" } ],
+    [ { "text": "鞋子很輕又耐穿。", "word": "丈夫" } ],
+    [ { "text": "裡面有可愛的花紋圖案。", "word": "模様" } ],
+    [ { "text": "我非常喜歡這雙鞋子。", "word": "好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "sentence": 2, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" },
+    { "sentence": 3, "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
