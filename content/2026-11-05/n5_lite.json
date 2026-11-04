@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-05",
+  "level": "n5_lite",
+  "title": "わたしのマフラー",
+  "text": "わたしのマフラーは青いです。冬の服です。祖母のプレゼントです。とても暖かいです。大好きなマフラーです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "マフラー", "basic_form": "マフラー", "reading": "マフラー", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青い", "basic_form": "青い", "reading": "あおい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "冬", "basic_form": "冬", "reading": "ふゆ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "服", "basic_form": "服", "reading": "ふく", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "祖母", "basic_form": "祖母", "reading": "そぼ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "プレゼント", "basic_form": "プレゼント", "reading": "プレゼント", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "暖かい", "basic_form": "暖かい", "reading": "あたたかい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "大好き", "basic_form": "大好き", "reading": "だいすき", "pos": "形容動詞" },
+    { "surface_form": "な", "basic_form": "だ", "reading": "な", "pos": "助動詞" },
+    { "surface_form": "マフラー", "basic_form": "マフラー", "reading": "マフラー", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "マフラー": { "meaning": "圍巾" },
+    "青い": { "meaning": "藍色的" },
+    "冬": { "meaning": "冬天" },
+    "服": { "meaning": "衣服" },
+    "祖母": { "meaning": "祖母" },
+    "プレゼント": { "meaning": "禮物" },
+    "とても": { "meaning": "非常" },
+    "暖かい": { "meaning": "溫暖的" },
+    "大好き": { "meaning": "非常喜歡" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "な": "形容動詞（な形容詞）修飾名詞時的連接形式"
+  },
+  "translations": [
+    [ { "text": "我的圍巾是藍色的。", "word": "マフラー" } ],
+    [ { "text": "是冬天的衣服。", "word": "服" } ],
+    [ { "text": "是祖母給的禮物。", "word": "プレゼント" } ],
+    [ { "text": "非常溫暖。", "word": "暖かい" } ],
+    [ { "text": "是我非常喜歡的圍巾。", "word": "大好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 3, "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" },
+    { "sentence": 4, "pattern": "な形容詞（現在/否定/過去/過去否定）", "note": "な形容詞加です的四段變化" }
+  ]
+}
