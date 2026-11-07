@@ -1,0 +1,842 @@
+{
+  "date": "2026-11-08",
+  "level": "n2_lite",
+  "title": "フリマアプリの普及",
+  "text": "フリマアプリを使って個人間で物を売り買いする人が増えている。スマートフォン一つで写真を載せ、値段を決めて出品できる手軽さが人気の理由だ。使わなくなった服や本を捨てる代わりに売ることで、ちょっとした収入になるだけでなく、ごみを減らすことにもつながる。一方で、商品の状態をめぐるトラブルや、個人情報の扱いに関する不安も指摘されている。それでも、環境への意識が高まるにつれて、物を大切に使い回す文化として定着しつつある。今後は安全な取引を支える仕組みづくりが課題になるだろう。",
+  "tokens": [
+    {
+      "surface_form": "フリマアプリ",
+      "basic_form": "フリマアプリ",
+      "reading": "ふりまあぷり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "使って",
+      "basic_form": "使う",
+      "reading": "つかって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "個人間",
+      "basic_form": "個人間",
+      "reading": "こじんかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "物",
+      "basic_form": "物",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "売り買いする",
+      "basic_form": "売り買いする",
+      "reading": "うりかいする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増えている",
+      "basic_form": "増える",
+      "reading": "ふえている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "スマートフォン",
+      "basic_form": "スマートフォン",
+      "reading": "すまーとふぉん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "写真",
+      "basic_form": "写真",
+      "reading": "しゃしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "載せ",
+      "basic_form": "載せる",
+      "reading": "のせ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "値段",
+      "basic_form": "値段",
+      "reading": "ねだん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "決めて",
+      "basic_form": "決める",
+      "reading": "きめて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "出品できる",
+      "basic_form": "出品する",
+      "reading": "しゅっぴんできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "手軽さ",
+      "basic_form": "手軽さ",
+      "reading": "てがるさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人気",
+      "basic_form": "人気",
+      "reading": "にんき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "理由",
+      "basic_form": "理由",
+      "reading": "りゆう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "使わなくなった",
+      "basic_form": "使う",
+      "reading": "つかわなくなった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "服",
+      "basic_form": "服",
+      "reading": "ふく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "捨てる",
+      "basic_form": "捨てる",
+      "reading": "すてる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "代わりに",
+      "basic_form": "代わりに",
+      "reading": "かわりに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "売る",
+      "basic_form": "売る",
+      "reading": "うる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ちょっとした",
+      "basic_form": "ちょっとした",
+      "reading": "ちょっとした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "収入",
+      "basic_form": "収入",
+      "reading": "しゅうにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だけでなく",
+      "basic_form": "だけでなく",
+      "reading": "だけでなく",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ごみ",
+      "basic_form": "ごみ",
+      "reading": "ごみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "減らす",
+      "basic_form": "減らす",
+      "reading": "へらす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つながる",
+      "basic_form": "つながる",
+      "reading": "つながる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "商品",
+      "basic_form": "商品",
+      "reading": "しょうひん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "状態",
+      "basic_form": "状態",
+      "reading": "じょうたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "めぐる",
+      "basic_form": "巡る",
+      "reading": "めぐる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "トラブル",
+      "basic_form": "トラブル",
+      "reading": "とらぶる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "個人情報",
+      "basic_form": "個人情報",
+      "reading": "こじんじょうほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "扱い",
+      "basic_form": "扱い",
+      "reading": "とりあつかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に関する",
+      "basic_form": "に関する",
+      "reading": "にかんする",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不安",
+      "basic_form": "不安",
+      "reading": "ふあん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘されている",
+      "basic_form": "指摘する",
+      "reading": "してきされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それでも",
+      "basic_form": "それでも",
+      "reading": "それでも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "環境",
+      "basic_form": "環境",
+      "reading": "かんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "意識",
+      "basic_form": "意識",
+      "reading": "いしき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高まる",
+      "basic_form": "高まる",
+      "reading": "たかまる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "につれて",
+      "basic_form": "につれて",
+      "reading": "につれて",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "物",
+      "basic_form": "物",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大切に",
+      "basic_form": "大切",
+      "reading": "たいせつに",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "使い回す",
+      "basic_form": "使い回す",
+      "reading": "つかいまわす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "文化",
+      "basic_form": "文化",
+      "reading": "ぶんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "定着しつつある",
+      "basic_form": "定着する",
+      "reading": "ていちゃくしつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安全な",
+      "basic_form": "安全",
+      "reading": "あんぜんな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "取引",
+      "basic_form": "取引",
+      "reading": "とりひき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "支える",
+      "basic_form": "支える",
+      "reading": "ささえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "仕組みづくり",
+      "basic_form": "仕組みづくり",
+      "reading": "しくみづくり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "フリマアプリ": {
+      "meaning": "二手交易app（跳蚤市場app）"
+    },
+    "使う": {
+      "meaning": "使用"
+    },
+    "個人間": {
+      "meaning": "個人之間"
+    },
+    "物": {
+      "meaning": "物品"
+    },
+    "売り買いする": {
+      "meaning": "買賣"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "増える": {
+      "meaning": "增加"
+    },
+    "スマートフォン": {
+      "meaning": "智慧型手機"
+    },
+    "一つ": {
+      "meaning": "一個"
+    },
+    "写真": {
+      "meaning": "照片"
+    },
+    "載せる": {
+      "meaning": "上傳、刊載"
+    },
+    "値段": {
+      "meaning": "價格"
+    },
+    "決める": {
+      "meaning": "決定"
+    },
+    "出品する": {
+      "meaning": "上架（商品）"
+    },
+    "手軽さ": {
+      "meaning": "輕鬆、便利性"
+    },
+    "人気": {
+      "meaning": "受歡迎"
+    },
+    "理由": {
+      "meaning": "理由"
+    },
+    "服": {
+      "meaning": "衣服"
+    },
+    "本": {
+      "meaning": "書"
+    },
+    "捨てる": {
+      "meaning": "丟棄"
+    },
+    "売る": {
+      "meaning": "賣"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "ちょっとした": {
+      "meaning": "一點點的、小小的"
+    },
+    "収入": {
+      "meaning": "收入"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "ごみ": {
+      "meaning": "垃圾"
+    },
+    "減らす": {
+      "meaning": "減少"
+    },
+    "つながる": {
+      "meaning": "連接到、有助於"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "商品": {
+      "meaning": "商品"
+    },
+    "状態": {
+      "meaning": "狀態"
+    },
+    "巡る": {
+      "meaning": "圍繞"
+    },
+    "トラブル": {
+      "meaning": "糾紛、問題"
+    },
+    "個人情報": {
+      "meaning": "個人資料"
+    },
+    "扱い": {
+      "meaning": "處理方式"
+    },
+    "不安": {
+      "meaning": "不安"
+    },
+    "指摘する": {
+      "meaning": "指出"
+    },
+    "それでも": {
+      "meaning": "即便如此"
+    },
+    "環境": {
+      "meaning": "環境"
+    },
+    "意識": {
+      "meaning": "意識"
+    },
+    "高まる": {
+      "meaning": "提高"
+    },
+    "大切": {
+      "meaning": "重要的、珍惜的"
+    },
+    "使い回す": {
+      "meaning": "重複利用、循環使用"
+    },
+    "文化": {
+      "meaning": "文化"
+    },
+    "定着する": {
+      "meaning": "扎根、普及"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "安全": {
+      "meaning": "安全的"
+    },
+    "取引": {
+      "meaning": "交易"
+    },
+    "支える": {
+      "meaning": "支撐"
+    },
+    "仕組みづくり": {
+      "meaning": "建立機制"
+    },
+    "課題": {
+      "meaning": "課題、問題"
+    }
+  },
+  "particles": {
+    "を": "受詞標記，表示動作的對象",
+    "で": "表示方式或場所",
+    "が": "標示句子的主語",
+    "の": "表示所屬或修飾關係",
+    "に": "表示到達點或結果",
+    "や": "列舉部分事物，「和」",
+    "として": "「作為〜」的身分/立場",
+    "につれて": "「隨著〜」，表示同步變化",
+    "へ": "表示方向，「朝向〜」",
+    "も": "「也」",
+    "だけでなく": "「不僅〜」",
+    "代わりに": "「取代〜，以〜代替」",
+    "に関する": "「關於〜」",
+    "は": "主題標記，提示句子的主題"
+  },
+  "translations": [
+    [
+      {
+        "text": "利用二手交易app在個人之間買賣物品的人正在增加。",
+        "word": "フリマアプリ"
+      }
+    ],
+    [
+      {
+        "text": "只要用一支智慧型手機上傳照片、決定價格就能上架，這種便利性正是受歡迎的原因。",
+        "word": "手軽さ"
+      }
+    ],
+    [
+      {
+        "text": "把不再穿的衣服或書籍拿來賣，取代直接丟棄，不僅能帶來一點收入，也有助於減少垃圾。",
+        "word": "つながる"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，也有人指出圍繞商品狀態的糾紛，以及個人資料處理方式令人不安等問題。",
+        "word": "指摘する"
+      }
+    ],
+    [
+      {
+        "text": "即便如此，隨著環保意識的提高，將物品珍惜地重複使用正逐漸成為一種文化、扎根下來。",
+        "word": "定着する"
+      }
+    ],
+    [
+      {
+        "text": "今後，建立支撐安全交易的機制，將會是一項課題。",
+        "word": "仕組みづくり"
+      }
+    ]
+  ],
+  "grammar_notes": []
+}
