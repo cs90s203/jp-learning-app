@@ -1,0 +1,1615 @@
+{
+  "date": "2026-11-08",
+  "level": "n1",
+  "title": "原発再稼働をめぐる議論",
+  "text": "東日本大震災をきっかけに全国の原子力発電所が次々と運転を停止してからというもの、エネルギー政策をめぐる議論は綱引きの様相を呈してきた。推進派は、化石燃料への依存を続ければ安定供給と脱炭素の両立はいつまでも望めないと訴え、原発なくして現実的な電源構成はあり得ないとまで言い切る。一方、反対派は、いかに安全対策を講じたところで事故のリスクをゼロにすることなど保証できるはずがなく、万一の事態が起きればその被害は電力会社の経営努力だけでは到底償いきれないと指摘する。地元住民の間でも意見は一様ではなく、再稼働によって雇用や税収が維持されることを歓迎する声があるかと思えば、避難計画の実効性に疑問を抱く声も根強い。政府が再稼働を急ぐあまり、地域の合意形成を軽視するようなことがあってはならないのは言うまでもない。とはいえ、電力需給が綱渡りの状態にある中、再稼働という選択肢を最初から排除してかかるのも現実的ではないだろう。立場の違いをものともせず対話を重ね、双方が納得できる道筋を探る努力は、今後も続けられてしかるべきだ。",
+  "tokens": [
+    {
+      "surface_form": "東日本大震災",
+      "basic_form": "東日本大震災",
+      "reading": "ひがしにほんだいしんさい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "きっかけに",
+      "basic_form": "きっかけに",
+      "reading": "きっかけに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "全国",
+      "basic_form": "全国",
+      "reading": "ぜんこく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "原子力発電所",
+      "basic_form": "原子力発電所",
+      "reading": "げんしりょくはつでんしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "次々と",
+      "basic_form": "次々と",
+      "reading": "つぎつぎと",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "運転",
+      "basic_form": "運転",
+      "reading": "うんてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "停止して",
+      "basic_form": "停止する",
+      "reading": "ていしして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "からというもの",
+      "basic_form": "からというもの",
+      "reading": "からというもの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "エネルギー政策",
+      "basic_form": "エネルギー政策",
+      "reading": "えねるぎーせいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "めぐる",
+      "basic_form": "巡る",
+      "reading": "めぐる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "議論",
+      "basic_form": "議論",
+      "reading": "ぎろん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "綱引き",
+      "basic_form": "綱引き",
+      "reading": "つなひき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "様相",
+      "basic_form": "様相",
+      "reading": "ようそう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "呈してきた",
+      "basic_form": "呈する",
+      "reading": "ていしてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "推進派",
+      "basic_form": "推進派",
+      "reading": "すいしんは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "化石燃料",
+      "basic_form": "化石燃料",
+      "reading": "かせきねんりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "依存",
+      "basic_form": "依存",
+      "reading": "いぞん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続ければ",
+      "basic_form": "続ける",
+      "reading": "つづければ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "安定供給",
+      "basic_form": "安定供給",
+      "reading": "あんていきょうきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "脱炭素",
+      "basic_form": "脱炭素",
+      "reading": "だつたんそ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "両立",
+      "basic_form": "両立",
+      "reading": "りょうりつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いつまでも",
+      "basic_form": "いつまでも",
+      "reading": "いつまでも",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "望めない",
+      "basic_form": "望む",
+      "reading": "のぞめない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "訴え",
+      "basic_form": "訴える",
+      "reading": "うったえ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "原発",
+      "basic_form": "原発",
+      "reading": "げんぱつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "なくして",
+      "basic_form": "なくして",
+      "reading": "なくして",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現実的な",
+      "basic_form": "現実的",
+      "reading": "げんじつてきな",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "電源構成",
+      "basic_form": "電源構成",
+      "reading": "でんげんこうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり得ない",
+      "basic_form": "あり得る",
+      "reading": "ありえない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "まで",
+      "basic_form": "まで",
+      "reading": "まで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言い切る",
+      "basic_form": "言い切る",
+      "reading": "いいきる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "反対派",
+      "basic_form": "反対派",
+      "reading": "はんたいは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いかに",
+      "basic_form": "いかに",
+      "reading": "いかに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "安全対策",
+      "basic_form": "安全対策",
+      "reading": "あんぜんたいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "講じた",
+      "basic_form": "講じる",
+      "reading": "こうじた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ところで",
+      "basic_form": "ところで",
+      "reading": "ところで",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "事故",
+      "basic_form": "事故",
+      "reading": "じこ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "リスク",
+      "basic_form": "リスク",
+      "reading": "りすく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ゼロ",
+      "basic_form": "ゼロ",
+      "reading": "ぜろ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "する",
+      "basic_form": "する",
+      "reading": "する",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保証できる",
+      "basic_form": "保証する",
+      "reading": "ほしょうできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "はず",
+      "basic_form": "はず",
+      "reading": "はず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "万一",
+      "basic_form": "万一",
+      "reading": "まんいち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "事態",
+      "basic_form": "事態",
+      "reading": "じたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "起きれば",
+      "basic_form": "起きる",
+      "reading": "おきれば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "被害",
+      "basic_form": "被害",
+      "reading": "ひがい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "電力会社",
+      "basic_form": "電力会社",
+      "reading": "でんりょくがいしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "経営努力",
+      "basic_form": "経営努力",
+      "reading": "けいえいどりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "では",
+      "basic_form": "では",
+      "reading": "では",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "到底",
+      "basic_form": "到底",
+      "reading": "とうてい",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "償いきれない",
+      "basic_form": "償う",
+      "reading": "つぐないきれない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘する",
+      "basic_form": "指摘する",
+      "reading": "してきする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地元住民",
+      "basic_form": "地元住民",
+      "reading": "じもとじゅうみん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "間",
+      "basic_form": "間",
+      "reading": "あいだ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "意見",
+      "basic_form": "意見",
+      "reading": "いけん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一様",
+      "basic_form": "一様",
+      "reading": "いちよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "では",
+      "basic_form": "では",
+      "reading": "では",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "再稼働",
+      "basic_form": "再稼働",
+      "reading": "さいかどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "によって",
+      "basic_form": "によって",
+      "reading": "によって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "雇用",
+      "basic_form": "雇用",
+      "reading": "こよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "税収",
+      "basic_form": "税収",
+      "reading": "ぜいしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "維持される",
+      "basic_form": "維持する",
+      "reading": "いじされる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "歓迎する",
+      "basic_form": "歓迎する",
+      "reading": "かんげいする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "思えば",
+      "basic_form": "思う",
+      "reading": "おもえば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "避難計画",
+      "basic_form": "避難計画",
+      "reading": "ひなんけいかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "実効性",
+      "basic_form": "実効性",
+      "reading": "じっこうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "疑問",
+      "basic_form": "疑問",
+      "reading": "ぎもん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "抱く",
+      "basic_form": "抱く",
+      "reading": "いだく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "根強い",
+      "basic_form": "根強い",
+      "reading": "ねづよい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政府",
+      "basic_form": "政府",
+      "reading": "せいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "再稼働",
+      "basic_form": "再稼働",
+      "reading": "さいかどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急ぐ",
+      "basic_form": "急ぐ",
+      "reading": "いそぐ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "あまり",
+      "basic_form": "あまり",
+      "reading": "あまり",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "合意形成",
+      "basic_form": "合意形成",
+      "reading": "ごういけいせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "軽視する",
+      "basic_form": "軽視する",
+      "reading": "けいしする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ような",
+      "basic_form": "ような",
+      "reading": "ような",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あって",
+      "basic_form": "ある",
+      "reading": "あって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ならない",
+      "basic_form": "なる",
+      "reading": "ならない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言うまでもない",
+      "basic_form": "言う",
+      "reading": "いうまでもない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とはいえ",
+      "basic_form": "とはいえ",
+      "reading": "とはいえ",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "電力需給",
+      "basic_form": "電力需給",
+      "reading": "でんりょくじゅきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "綱渡り",
+      "basic_form": "綱渡り",
+      "reading": "つなわたり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "状態",
+      "basic_form": "状態",
+      "reading": "じょうたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "中",
+      "basic_form": "中",
+      "reading": "なか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "再稼働",
+      "basic_form": "再稼働",
+      "reading": "さいかどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "選択肢",
+      "basic_form": "選択肢",
+      "reading": "せんたくし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "最初から",
+      "basic_form": "最初から",
+      "reading": "さいしょから",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "排除して",
+      "basic_form": "排除する",
+      "reading": "はいじょして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "かかる",
+      "basic_form": "かかる",
+      "reading": "かかる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現実的",
+      "basic_form": "現実的",
+      "reading": "げんじつてき",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "では",
+      "basic_form": "では",
+      "reading": "では",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ない",
+      "basic_form": "ない",
+      "reading": "ない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "立場",
+      "basic_form": "立場",
+      "reading": "たちば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "違い",
+      "basic_form": "違い",
+      "reading": "ちがい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ものともせず",
+      "basic_form": "ものともせず",
+      "reading": "ものともせず",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "対話",
+      "basic_form": "対話",
+      "reading": "たいわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重ね",
+      "basic_form": "重ねる",
+      "reading": "かさね",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "双方",
+      "basic_form": "双方",
+      "reading": "そうほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "納得できる",
+      "basic_form": "納得する",
+      "reading": "なっとくできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "道筋",
+      "basic_form": "道筋",
+      "reading": "みちすじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "探る",
+      "basic_form": "探る",
+      "reading": "さぐる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "努力",
+      "basic_form": "努力",
+      "reading": "どりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続けられて",
+      "basic_form": "続ける",
+      "reading": "つづけられて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "しかるべき",
+      "basic_form": "しかるべき",
+      "reading": "しかるべき",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "東日本大震災": {
+      "meaning": "東日本大地震"
+    },
+    "全国": {
+      "meaning": "全國"
+    },
+    "原子力発電所": {
+      "meaning": "核能發電廠"
+    },
+    "次々と": {
+      "meaning": "接連不斷地"
+    },
+    "運転": {
+      "meaning": "運轉"
+    },
+    "停止する": {
+      "meaning": "停止"
+    },
+    "エネルギー政策": {
+      "meaning": "能源政策"
+    },
+    "巡る": {
+      "meaning": "圍繞"
+    },
+    "議論": {
+      "meaning": "議論、討論"
+    },
+    "綱引き": {
+      "meaning": "拉鋸、角力"
+    },
+    "様相": {
+      "meaning": "樣態、局面"
+    },
+    "呈する": {
+      "meaning": "呈現"
+    },
+    "推進派": {
+      "meaning": "推動派"
+    },
+    "化石燃料": {
+      "meaning": "化石燃料"
+    },
+    "依存": {
+      "meaning": "依賴"
+    },
+    "続ける": {
+      "meaning": "持續"
+    },
+    "安定供給": {
+      "meaning": "穩定供應"
+    },
+    "脱炭素": {
+      "meaning": "脫碳"
+    },
+    "両立": {
+      "meaning": "兩者並存、兼顧"
+    },
+    "いつまでも": {
+      "meaning": "永遠、一直"
+    },
+    "望む": {
+      "meaning": "盼望、期望"
+    },
+    "訴える": {
+      "meaning": "訴求、主張"
+    },
+    "原発": {
+      "meaning": "核電（核能發電）"
+    },
+    "現実的": {
+      "meaning": "現實的"
+    },
+    "電源構成": {
+      "meaning": "電源結構（發電組合）"
+    },
+    "あり得る": {
+      "meaning": "可能存在、有可能"
+    },
+    "言い切る": {
+      "meaning": "斷言、說得很肯定"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "反対派": {
+      "meaning": "反對派"
+    },
+    "いかに": {
+      "meaning": "無論如何、怎樣"
+    },
+    "安全対策": {
+      "meaning": "安全對策"
+    },
+    "講じる": {
+      "meaning": "採取（措施）"
+    },
+    "事故": {
+      "meaning": "事故"
+    },
+    "リスク": {
+      "meaning": "風險"
+    },
+    "ゼロ": {
+      "meaning": "零"
+    },
+    "する": {
+      "meaning": "做"
+    },
+    "こと": {
+      "meaning": "事情（形式名詞）"
+    },
+    "保証する": {
+      "meaning": "保證"
+    },
+    "はず": {
+      "meaning": "應該（會）"
+    },
+    "ない": {
+      "meaning": "沒有"
+    },
+    "万一": {
+      "meaning": "萬一"
+    },
+    "事態": {
+      "meaning": "事態"
+    },
+    "起きる": {
+      "meaning": "發生"
+    },
+    "その": {
+      "meaning": "那個"
+    },
+    "被害": {
+      "meaning": "損害、受害"
+    },
+    "電力会社": {
+      "meaning": "電力公司"
+    },
+    "経営努力": {
+      "meaning": "經營努力"
+    },
+    "到底": {
+      "meaning": "怎麼也（不）、無論如何也（不）"
+    },
+    "償う": {
+      "meaning": "賠償、彌補"
+    },
+    "指摘する": {
+      "meaning": "指出"
+    },
+    "地元住民": {
+      "meaning": "當地居民"
+    },
+    "間": {
+      "meaning": "之間"
+    },
+    "意見": {
+      "meaning": "意見"
+    },
+    "一様": {
+      "meaning": "一致的、一律的"
+    },
+    "再稼働": {
+      "meaning": "重新啟動（運轉）"
+    },
+    "雇用": {
+      "meaning": "雇用"
+    },
+    "税収": {
+      "meaning": "稅收"
+    },
+    "維持する": {
+      "meaning": "維持"
+    },
+    "歓迎する": {
+      "meaning": "歡迎"
+    },
+    "声": {
+      "meaning": "聲音、意見"
+    },
+    "ある": {
+      "meaning": "有、存在"
+    },
+    "思う": {
+      "meaning": "覺得、想"
+    },
+    "避難計画": {
+      "meaning": "避難計畫"
+    },
+    "実効性": {
+      "meaning": "實際效用、實效性"
+    },
+    "疑問": {
+      "meaning": "疑問"
+    },
+    "抱く": {
+      "meaning": "懷有"
+    },
+    "根強い": {
+      "meaning": "根深蒂固的"
+    },
+    "政府": {
+      "meaning": "政府"
+    },
+    "急ぐ": {
+      "meaning": "著急、趕著"
+    },
+    "地域": {
+      "meaning": "地區"
+    },
+    "合意形成": {
+      "meaning": "達成共識"
+    },
+    "軽視する": {
+      "meaning": "輕視"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "とはいえ": {
+      "meaning": "話雖如此"
+    },
+    "電力需給": {
+      "meaning": "電力供需"
+    },
+    "綱渡り": {
+      "meaning": "走鋼索（比喻極度不穩定）"
+    },
+    "状態": {
+      "meaning": "狀態"
+    },
+    "中": {
+      "meaning": "當中、之中"
+    },
+    "選択肢": {
+      "meaning": "選項"
+    },
+    "最初から": {
+      "meaning": "從一開始"
+    },
+    "排除する": {
+      "meaning": "排除"
+    },
+    "かかる": {
+      "meaning": "著手、動手"
+    },
+    "立場": {
+      "meaning": "立場"
+    },
+    "違い": {
+      "meaning": "差異"
+    },
+    "対話": {
+      "meaning": "對話"
+    },
+    "重ねる": {
+      "meaning": "反覆進行、累積"
+    },
+    "双方": {
+      "meaning": "雙方"
+    },
+    "納得する": {
+      "meaning": "認同、理解"
+    },
+    "道筋": {
+      "meaning": "途徑、脈絡"
+    },
+    "探る": {
+      "meaning": "探尋"
+    },
+    "努力": {
+      "meaning": "努力"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "なる": {
+      "meaning": "變成"
+    }
+  },
+  "particles": {
+    "を": "受詞標記，表示動作的對象",
+    "きっかけに": "「〜をきっかけに」，「以〜為契機」",
+    "の": "表示所屬或修飾關係",
+    "が": "標示句子的主語，或表示逆接「但是」",
+    "からというもの": "「自從〜之後」，持續到現在的變化",
+    "は": "主題標記，提示句子的主題",
+    "へ": "表示方向、對象",
+    "と": "表示引用、結果，或「和」",
+    "まで": "「甚至到〜」，強調程度",
+    "なくして": "「〜なくして」，「若沒有〜」",
+    "など": "「等等」，列舉例子",
+    "に": "表示到達點、結果或對象",
+    "だけ": "「只是〜」",
+    "では": "「で」加「は」，表示在〜方面",
+    "によって": "「依據〜」／「因〜」",
+    "や": "列舉部分事物，「和」",
+    "か": "疑問或不確定語氣",
+    "あまり": "「〜あまり」，「因過於〜」",
+    "ような": "「像〜一樣的」",
+    "ところで": "「〜たところで」，「即使〜（也沒用）」",
+    "ものともせず": "「〜をものともせず」，「不顧〜」",
+    "しかるべき": "「〜てしかるべきだ」，「理應〜」"
+  },
+  "translations": [
+    [
+      {
+        "text": "以東日本大地震為契機，全國的核能發電廠接連停止運轉之後，圍繞能源政策的議論便呈現出拉鋸的局面。",
+        "word": "停止する"
+      }
+    ],
+    [
+      {
+        "text": "推動派訴求，若持續依賴化石燃料，穩定供應與脫碳將永遠無法兼顧，甚至斷言沒有核電就不可能有現實的電源結構。",
+        "word": "言い切る"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，反對派指出，無論採取怎樣的安全對策，都無法保證事故風險歸零；萬一真的發生事故，其損害光靠電力公司的經營努力是絕對無法彌補的。",
+        "word": "指摘する"
+      }
+    ],
+    [
+      {
+        "text": "當地居民之間的意見也不一致，有人歡迎因重啟運轉而維持的雇用與稅收，也有人仍深深懷疑避難計畫的實際效用。",
+        "word": "根強い"
+      }
+    ],
+    [
+      {
+        "text": "政府若因急於重啟運轉而輕視地方的共識形成，這是絕對不該發生的事，這一點自然不用多說。",
+        "word": "言うまでもない"
+      }
+    ],
+    [
+      {
+        "text": "話雖如此，在電力供需處於走鋼索般不穩定的狀態之中，從一開始就排除重啟運轉這個選項，恐怕也不現實。",
+        "word": "排除する"
+      }
+    ],
+    [
+      {
+        "text": "不顧立場上的差異反覆對話，努力尋找雙方都能認同的途徑，這樣的努力今後也理應持續下去。",
+        "word": "ものともせず"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜てからというもの",
+      "note": "「自從〜之後（持續的變化）」"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜までもない",
+      "note": "「用不著〜」"
+    },
+    {
+      "sentence": 6,
+      "pattern": "〜をものともせず",
+      "note": "「不顧〜」，克服困難的語氣"
+    },
+    {
+      "sentence": 6,
+      "pattern": "〜てしかるべきだ",
+      "note": "「理應〜」"
+    }
+  ]
+}
