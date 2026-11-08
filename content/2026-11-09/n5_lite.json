@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-09",
+  "level": "n5_lite",
+  "title": "わたしの時計",
+  "text": "わたしの時計は白色です。新しい時計です。丸い時計です。とても便利です。毎朝つけます。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "白色", "basic_form": "白色", "reading": "しろいろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "新しい", "basic_form": "新しい", "reading": "あたらしい", "pos": "形容詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "丸い", "basic_form": "丸い", "reading": "まるい", "pos": "形容詞" },
+    { "surface_form": "時計", "basic_form": "時計", "reading": "とけい", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "便利", "basic_form": "便利", "reading": "べんり", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎朝", "basic_form": "毎朝", "reading": "まいあさ", "pos": "名詞" },
+    { "surface_form": "つけます", "basic_form": "つける", "reading": "つけます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "時計": { "meaning": "手錶" },
+    "白色": { "meaning": "白色" },
+    "新しい": { "meaning": "新的" },
+    "丸い": { "meaning": "圓的" },
+    "とても": { "meaning": "非常" },
+    "便利": { "meaning": "方便的" },
+    "毎朝": { "meaning": "每天早上" },
+    "つける": { "meaning": "戴上、佩戴" }
+  },
+  "particles": {
+    "の": "所屬／修飾關係，表示「的」",
+    "は": "主題標記，提示句子的主題"
+  },
+  "translations": [
+    [ { "text": "我的手錶是白色的。", "word": "時計" } ],
+    [ { "text": "是新的手錶。", "word": "新しい" } ],
+    [ { "text": "是圓形的手錶。", "word": "丸い" } ],
+    [ { "text": "非常方便。", "word": "便利" } ],
+    [ { "text": "每天早上都會戴上。", "word": "つける" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 4, "pattern": "動詞ます形", "note": "禮貌體現在式，肯定/否定/過去/過去否定四段變化" }
+  ]
+}
