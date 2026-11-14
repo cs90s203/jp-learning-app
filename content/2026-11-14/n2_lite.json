@@ -62,7 +62,7 @@
     { "surface_form": "による", "basic_form": "による", "reading": "による", "pos": "助詞" },
     { "surface_form": "危険性", "basic_form": "危険性", "reading": "きけんせい", "pos": "名詞" },
     { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
-    { "surface_form": "問題視されており", "basic_form": "問題視する", "reading": "もんだいししされており", "pos": "動詞" },
+    { "surface_form": "問題視されており", "basic_form": "問題視する", "reading": "もんだいしされており", "pos": "動詞" },
     { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
     { "surface_form": "各自治体", "basic_form": "各自治体", "reading": "かくじちたい", "pos": "名詞" },
     { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },

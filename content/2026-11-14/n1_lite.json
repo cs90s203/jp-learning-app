@@ -95,7 +95,7 @@
     { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
     { "surface_form": "病院", "basic_form": "病院", "reading": "びょういん", "pos": "名詞" },
     { "surface_form": "まで", "basic_form": "まで", "reading": "まで", "pos": "助詞" },
-    { "surface_form": "通わなければならない", "basic_form": "通う", "reading": "つうわなければならない", "pos": "動詞" },
+    { "surface_form": "通わなければならない", "basic_form": "通う", "reading": "かよわなければならない", "pos": "動詞" },
     { "surface_form": "状況", "basic_form": "状況", "reading": "じょうきょう", "pos": "名詞" },
     { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
     { "surface_form": "生まれている", "basic_form": "生まれる", "reading": "うまれている", "pos": "動詞" },
