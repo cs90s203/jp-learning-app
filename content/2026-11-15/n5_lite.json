@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-15",
+  "level": "n5_lite",
+  "title": "わたしの帽子",
+  "text": "わたしの帽子は黒です。大きくて、軽いです。中に名前のタグがあります。好きな帽子です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "黒", "basic_form": "黒", "reading": "くろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "大きくて", "basic_form": "大きい", "reading": "おおきくて", "pos": "形容詞" },
+    { "surface_form": "、", "basic_form": "、", "reading": "、", "pos": "記号" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "名前", "basic_form": "名前", "reading": "なまえ", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "タグ", "basic_form": "タグ", "reading": "タグ", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "好きな", "basic_form": "好き", "reading": "すきな", "pos": "形容詞" },
+    { "surface_form": "帽子", "basic_form": "帽子", "reading": "ぼうし", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "帽子": { "meaning": "帽子" },
+    "黒": { "meaning": "黑色" },
+    "大きい": { "meaning": "大的" },
+    "軽い": { "meaning": "輕的" },
+    "中": { "meaning": "裡面、中間" },
+    "名前": { "meaning": "名字" },
+    "タグ": { "meaning": "標籤" },
+    "ある": { "meaning": "有（事物存在）" },
+    "好き": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "の": "表示所屬關係，「的」",
+    "は": "主題標記，用來提出句子的主題",
+    "に": "表示事物存在的場所",
+    "が": "主語標記，標示動作或存在的主體"
+  },
+  "translations": [
+    [ { "text": "我的帽子是黑色的。", "word": "帽子" } ],
+    [ { "text": "大大的，輕輕的。", "word": "軽い" } ],
+    [ { "text": "裡面有名字標籤。", "word": "ある" } ],
+    [ { "text": "是我喜歡的帽子。", "word": "好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" }
+  ]
+}
