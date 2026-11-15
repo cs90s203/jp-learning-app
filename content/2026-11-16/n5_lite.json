@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-16",
+  "level": "n5_lite",
+  "title": "わたしの自転車",
+  "text": "わたしの自転車は青色です。小さいです。前に白いかごがあります。後ろに赤いライトがあります。名前は「あおちゃん」です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "自転車", "basic_form": "自転車", "reading": "じてんしゃ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "青色", "basic_form": "青色", "reading": "あおいろ", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "前", "basic_form": "前", "reading": "まえ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "白い", "basic_form": "白い", "reading": "しろい", "pos": "形容詞" },
+    { "surface_form": "かご", "basic_form": "かご", "reading": "かご", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "後ろ", "basic_form": "後ろ", "reading": "うしろ", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "赤い", "basic_form": "赤い", "reading": "あかい", "pos": "形容詞" },
+    { "surface_form": "ライト", "basic_form": "ライト", "reading": "らいと", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "名前", "basic_form": "名前", "reading": "なまえ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "「", "basic_form": "「", "reading": "「", "pos": "記号" },
+    { "surface_form": "あおちゃん", "basic_form": "あおちゃん", "reading": "あおちゃん", "pos": "名詞" },
+    { "surface_form": "」", "basic_form": "」", "reading": "」", "pos": "記号" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "自転車": { "meaning": "腳踏車" },
+    "青色": { "meaning": "藍色" },
+    "小さい": { "meaning": "小的" },
+    "前": { "meaning": "前面" },
+    "白い": { "meaning": "白色的" },
+    "かご": { "meaning": "籃子" },
+    "ある": { "meaning": "有、在" },
+    "後ろ": { "meaning": "後面" },
+    "赤い": { "meaning": "紅色的" },
+    "ライト": { "meaning": "燈" },
+    "名前": { "meaning": "名字" },
+    "あおちゃん": { "meaning": "小藍（這輛腳踏車的名字）" }
+  },
+  "particles": {
+    "は": "主題標記，用來標示句子的主題",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "に": "表示動作發生的場所或對象",
+    "が": "標示句子的主語，帶有新資訊或焦點的語感"
+  },
+  "translations": [
+    [ { "text": "我的腳踏車是藍色的。", "word": "自転車" } ],
+    [ { "text": "很小。", "word": "小さい" } ],
+    [ { "text": "前面有白色的籃子。", "word": "かご" } ],
+    [ { "text": "後面也有紅色的燈。", "word": "ライト" } ],
+    [ { "text": "它的名字叫「小藍」。", "word": "あおちゃん" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 0, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 2, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" }
+  ]
+}
