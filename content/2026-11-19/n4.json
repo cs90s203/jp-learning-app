@@ -1,0 +1,645 @@
+{
+  "date": "2026-11-19",
+  "level": "n4",
+  "title": "弟との花火",
+  "text": "先週の土曜日、弟と近くの川原で花火をした。線香花火をしたり、手持ち花火をしたりして、とても楽しかった。弟はまだ小さいので、火の扱いに気をつけながら一緒にやった。最後に大きい花火を一つだけ買っておいたので、それは特別に二人で見ることができた。帰る時、弟が「来年もやろうね」と言ってくれて、うれしかった。",
+  "tokens": [
+    {
+      "surface_form": "先週",
+      "basic_form": "先週",
+      "reading": "せんしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "土曜日",
+      "basic_form": "土曜日",
+      "reading": "どようび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "弟",
+      "basic_form": "弟",
+      "reading": "おとうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "近く",
+      "basic_form": "近く",
+      "reading": "ちかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "川原",
+      "basic_form": "川原",
+      "reading": "かわら",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "花火",
+      "basic_form": "花火",
+      "reading": "はなび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "した",
+      "basic_form": "する",
+      "reading": "した",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "線香花火",
+      "basic_form": "線香花火",
+      "reading": "せんこうはなび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "したり",
+      "basic_form": "する",
+      "reading": "したり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "手持ち花火",
+      "basic_form": "手持ち花火",
+      "reading": "てもちはなび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "したりして",
+      "basic_form": "する",
+      "reading": "したりして",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しかった",
+      "basic_form": "楽しい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "弟",
+      "basic_form": "弟",
+      "reading": "おとうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "まだ",
+      "basic_form": "まだ",
+      "reading": "まだ",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "小さい",
+      "basic_form": "小さい",
+      "reading": "ちいさい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "火",
+      "basic_form": "火",
+      "reading": "ひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "扱い",
+      "basic_form": "扱い",
+      "reading": "とりあつかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "気",
+      "basic_form": "気",
+      "reading": "き",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つけながら",
+      "basic_form": "付ける",
+      "reading": "つけながら",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一緒に",
+      "basic_form": "一緒に",
+      "reading": "いっしょに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "やった",
+      "basic_form": "やる",
+      "reading": "やった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "最後",
+      "basic_form": "最後",
+      "reading": "さいご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きい",
+      "basic_form": "大きい",
+      "reading": "おおきい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "花火",
+      "basic_form": "花火",
+      "reading": "はなび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "買っておいた",
+      "basic_form": "買う",
+      "reading": "かっておいた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ので",
+      "basic_form": "ので",
+      "reading": "ので",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それ",
+      "basic_form": "それ",
+      "reading": "それ",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "特別に",
+      "basic_form": "特別",
+      "reading": "とくべつに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "二人",
+      "basic_form": "二人",
+      "reading": "ふたり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見る",
+      "basic_form": "見る",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "できた",
+      "basic_form": "できる",
+      "reading": "できた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "帰る",
+      "basic_form": "帰る",
+      "reading": "かえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時",
+      "basic_form": "時",
+      "reading": "とき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "弟",
+      "basic_form": "弟",
+      "reading": "おとうと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "来年",
+      "basic_form": "来年",
+      "reading": "らいねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "やろう",
+      "basic_form": "やる",
+      "reading": "やろう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ね",
+      "basic_form": "ね",
+      "reading": "ね",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言ってくれて",
+      "basic_form": "言う",
+      "reading": "いってくれて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "うれしかった",
+      "basic_form": "うれしい",
+      "reading": "うれしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "先週": {
+      "meaning": "上週"
+    },
+    "土曜日": {
+      "meaning": "星期六"
+    },
+    "弟": {
+      "meaning": "弟弟"
+    },
+    "近く": {
+      "meaning": "附近"
+    },
+    "川原": {
+      "meaning": "河邊、河床"
+    },
+    "花火": {
+      "meaning": "煙火"
+    },
+    "する": {
+      "meaning": "做（此處指放煙火）"
+    },
+    "線香花火": {
+      "meaning": "仙女棒（線香花火）"
+    },
+    "手持ち花火": {
+      "meaning": "手持煙火"
+    },
+    "楽しい": {
+      "meaning": "開心、快樂"
+    },
+    "まだ": {
+      "meaning": "還、尚"
+    },
+    "小さい": {
+      "meaning": "小的"
+    },
+    "火": {
+      "meaning": "火"
+    },
+    "扱い": {
+      "meaning": "處理、對待"
+    },
+    "気": {
+      "meaning": "心思、注意力"
+    },
+    "付ける": {
+      "meaning": "留意、小心（気をつける）"
+    },
+    "一緒に": {
+      "meaning": "一起"
+    },
+    "やる": {
+      "meaning": "做、進行"
+    },
+    "最後": {
+      "meaning": "最後"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "一つ": {
+      "meaning": "一個"
+    },
+    "買う": {
+      "meaning": "買"
+    },
+    "それ": {
+      "meaning": "那個"
+    },
+    "特別": {
+      "meaning": "特別"
+    },
+    "二人": {
+      "meaning": "兩人"
+    },
+    "見る": {
+      "meaning": "看"
+    },
+    "こと": {
+      "meaning": "事情（名詞化用法）"
+    },
+    "できる": {
+      "meaning": "能、可以"
+    },
+    "帰る": {
+      "meaning": "回去、回家"
+    },
+    "時": {
+      "meaning": "時候"
+    },
+    "来年": {
+      "meaning": "明年"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "うれしい": {
+      "meaning": "開心、高興"
+    },
+    "とても": {
+      "meaning": "非常"
+    }
+  },
+  "particles": {
+    "と": "表示「跟〜一起」，或用於引用話語內容",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "で": "表示動作發生的場所",
+    "を": "標示動作的對象",
+    "ので": "客觀原因，比から更委婉/書面",
+    "に": "表示動作到達的地點或對象",
+    "ながら": "表示兩個動作同時進行",
+    "だけ": "表示限定範圍，「只有〜」",
+    "が": "標示主語",
+    "は": "提示句子的主題",
+    "ね": "句尾語氣助詞，徵求同意或確認",
+    "も": "「也」，取代原本該用的が/を"
+  },
+  "translations": [
+    [
+      {
+        "text": "上週六，我和弟弟在附近的河邊放了煙火。",
+        "word": "花火"
+      }
+    ],
+    [
+      {
+        "text": "放了仙女棒，也放了手持煙火，",
+        "word": "線香花火"
+      },
+      {
+        "text": "非常開心。",
+        "word": "楽しい"
+      }
+    ],
+    [
+      {
+        "text": "弟弟還小，所以我一邊小心處理火，一邊陪他一起玩。",
+        "word": "付ける"
+      }
+    ],
+    [
+      {
+        "text": "最後我特地多買了一個大煙火留著，所以那個我們兩人可以特別一起看。",
+        "word": "できる"
+      }
+    ],
+    [
+      {
+        "text": "回去的時候，弟弟說「明年也要一起放喔」，",
+        "word": "言う"
+      },
+      {
+        "text": "讓我很開心。",
+        "word": "うれしい"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 1,
+      "pattern": "〜たり〜たりする",
+      "note": "列舉動作，「或做〜或做〜」"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜ので（因為）",
+      "note": "客觀原因，比から更委婉/書面"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜てあげる／〜てくれる／〜てもらう",
+      "note": "授受表現（幫忙的方向性）"
+    }
+  ]
+}
