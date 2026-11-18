@@ -1,0 +1,1221 @@
+{
+  "date": "2026-11-19",
+  "level": "n1_lite",
+  "title": "獣医師不足をめぐる課題",
+  "text": "近年、地方を中心に獣医師の不足が深刻化している。特に、牛や豚といった産業動物を診る獣医師の減少は著しく、畜産業の存続そのものを脅かしかねない状況にあると言われている。さらに、既に働いている獣医師の高齢化も進んでおり、十年後にはさらに深刻な事態になるとの見方もある。背景には、都市部に比べて勤務条件が厳しいことや、ペットを診る獣医師に比べて業務の負担が大きいことなどが挙げられる。行政は奨学金制度を通じて地方での就業を促しているものの、効果は限定的だと指摘する声も少なくない。獣医師という専門職を志す人材をどう確保し、地域に定着させていくかは、今後も議論が続く課題であり続けるだろう。こうした状況を踏まえ、待遇の改善や働き方の見直しなど、総合的な対策が急がれている。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "中心に",
+      "basic_form": "中心",
+      "reading": "ちゅうしんに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "獣医師",
+      "basic_form": "獣医師",
+      "reading": "じゅういし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不足",
+      "basic_form": "不足",
+      "reading": "ふそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深刻化している",
+      "basic_form": "深刻化する",
+      "reading": "しんこくかしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "特に",
+      "basic_form": "特に",
+      "reading": "とくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "牛",
+      "basic_form": "牛",
+      "reading": "うし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "豚",
+      "basic_form": "豚",
+      "reading": "ぶた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "といった",
+      "basic_form": "といった",
+      "reading": "といった",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "産業動物",
+      "basic_form": "産業動物",
+      "reading": "さんぎょうどうぶつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "診る",
+      "basic_form": "診る",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "獣医師",
+      "basic_form": "獣医師",
+      "reading": "じゅういし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "減少",
+      "basic_form": "減少",
+      "reading": "げんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "著しく",
+      "basic_form": "著しい",
+      "reading": "いちじるしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "畜産業",
+      "basic_form": "畜産業",
+      "reading": "ちくさんぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "存続",
+      "basic_form": "存続",
+      "reading": "そんぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "そのもの",
+      "basic_form": "そのもの",
+      "reading": "そのもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "脅かしかねない",
+      "basic_form": "脅かす",
+      "reading": "おびやかしかねない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言われている",
+      "basic_form": "言う",
+      "reading": "いわれている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "さらに",
+      "basic_form": "さらに",
+      "reading": "さらに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "既に",
+      "basic_form": "既に",
+      "reading": "すでに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "働いている",
+      "basic_form": "働く",
+      "reading": "はたらいている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "獣医師",
+      "basic_form": "獣医師",
+      "reading": "じゅういし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高齢化",
+      "basic_form": "高齢化",
+      "reading": "こうれいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進んでおり",
+      "basic_form": "進む",
+      "reading": "すすんでおり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "十年後",
+      "basic_form": "十年後",
+      "reading": "じゅうねんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さらに",
+      "basic_form": "さらに",
+      "reading": "さらに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "深刻な",
+      "basic_form": "深刻",
+      "reading": "しんこくな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "事態",
+      "basic_form": "事態",
+      "reading": "じたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見方",
+      "basic_form": "見方",
+      "reading": "みかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "背景",
+      "basic_form": "背景",
+      "reading": "はいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "都市部",
+      "basic_form": "都市部",
+      "reading": "としぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に比べて",
+      "basic_form": "に比べて",
+      "reading": "にくらべて",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "勤務条件",
+      "basic_form": "勤務条件",
+      "reading": "きんむじょうけん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "厳しい",
+      "basic_form": "厳しい",
+      "reading": "きびしい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ペット",
+      "basic_form": "ペット",
+      "reading": "ペット",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "診る",
+      "basic_form": "診る",
+      "reading": "みる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "獣医師",
+      "basic_form": "獣医師",
+      "reading": "じゅういし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に比べて",
+      "basic_form": "に比べて",
+      "reading": "にくらべて",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "業務",
+      "basic_form": "業務",
+      "reading": "ぎょうむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "負担",
+      "basic_form": "負担",
+      "reading": "ふたん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "大きい",
+      "basic_form": "大きい",
+      "reading": "おおきい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "挙げられる",
+      "basic_form": "挙げる",
+      "reading": "あげられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "行政",
+      "basic_form": "行政",
+      "reading": "ぎょうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "奨学金制度",
+      "basic_form": "奨学金制度",
+      "reading": "しょうがくきんせいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を通じて",
+      "basic_form": "を通じて",
+      "reading": "をつうじて",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "地方",
+      "basic_form": "地方",
+      "reading": "ちほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "就業",
+      "basic_form": "就業",
+      "reading": "しゅうぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "促している",
+      "basic_form": "促す",
+      "reading": "うながしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ものの",
+      "basic_form": "ものの",
+      "reading": "ものの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "効果",
+      "basic_form": "効果",
+      "reading": "こうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "限定的",
+      "basic_form": "限定的",
+      "reading": "げんていてき",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘する",
+      "basic_form": "指摘する",
+      "reading": "してきする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "獣医師",
+      "basic_form": "獣医師",
+      "reading": "じゅういし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "専門職",
+      "basic_form": "専門職",
+      "reading": "せんもんしょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "志す",
+      "basic_form": "志す",
+      "reading": "こころざす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人材",
+      "basic_form": "人材",
+      "reading": "じんざい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "どう",
+      "basic_form": "どう",
+      "reading": "どう",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "確保し",
+      "basic_form": "確保する",
+      "reading": "かくほし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "地域",
+      "basic_form": "地域",
+      "reading": "ちいき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "定着させていく",
+      "basic_form": "定着させる",
+      "reading": "ていちゃくさせていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "か",
+      "basic_form": "か",
+      "reading": "か",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "議論",
+      "basic_form": "議論",
+      "reading": "ぎろん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続く",
+      "basic_form": "続く",
+      "reading": "つづく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "課題",
+      "basic_form": "課題",
+      "reading": "かだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり続ける",
+      "basic_form": "あり続ける",
+      "reading": "ありつづける",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "踏まえ",
+      "basic_form": "踏まえる",
+      "reading": "ふまえ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "待遇",
+      "basic_form": "待遇",
+      "reading": "たいぐう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "改善",
+      "basic_form": "改善",
+      "reading": "かいぜん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "働き方",
+      "basic_form": "働き方",
+      "reading": "はたらきかた",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見直し",
+      "basic_form": "見直し",
+      "reading": "みなおし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "総合的な",
+      "basic_form": "総合的",
+      "reading": "そうごうてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "対策",
+      "basic_form": "対策",
+      "reading": "たいさく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急がれている",
+      "basic_form": "急ぐ",
+      "reading": "いそがれている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年"
+    },
+    "地方": {
+      "meaning": "地方、鄉下地區"
+    },
+    "中心": {
+      "meaning": "中心、主要"
+    },
+    "獣医師": {
+      "meaning": "獸醫師"
+    },
+    "不足": {
+      "meaning": "不足、短缺"
+    },
+    "深刻化する": {
+      "meaning": "日趨嚴重"
+    },
+    "特に": {
+      "meaning": "特別是"
+    },
+    "牛": {
+      "meaning": "牛"
+    },
+    "豚": {
+      "meaning": "豬"
+    },
+    "産業動物": {
+      "meaning": "產業動物（家畜等）"
+    },
+    "診る": {
+      "meaning": "診治"
+    },
+    "減少": {
+      "meaning": "減少"
+    },
+    "著しい": {
+      "meaning": "顯著的、明顯的"
+    },
+    "畜産業": {
+      "meaning": "畜產業"
+    },
+    "存続": {
+      "meaning": "存續"
+    },
+    "そのもの": {
+      "meaning": "本身"
+    },
+    "脅かす": {
+      "meaning": "威脅、危及"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "ある": {
+      "meaning": "有、在"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "背景": {
+      "meaning": "背景"
+    },
+    "都市部": {
+      "meaning": "都市地區"
+    },
+    "勤務条件": {
+      "meaning": "勤務條件"
+    },
+    "厳しい": {
+      "meaning": "嚴苛的"
+    },
+    "こと": {
+      "meaning": "事情（名詞化用法）"
+    },
+    "ペット": {
+      "meaning": "寵物"
+    },
+    "業務": {
+      "meaning": "業務"
+    },
+    "負担": {
+      "meaning": "負擔"
+    },
+    "大きい": {
+      "meaning": "大的"
+    },
+    "挙げる": {
+      "meaning": "列舉、舉出"
+    },
+    "行政": {
+      "meaning": "政府、行政機關"
+    },
+    "奨学金制度": {
+      "meaning": "獎學金制度"
+    },
+    "就業": {
+      "meaning": "就業"
+    },
+    "促す": {
+      "meaning": "促使、促進"
+    },
+    "効果": {
+      "meaning": "效果"
+    },
+    "限定的": {
+      "meaning": "有限的"
+    },
+    "指摘する": {
+      "meaning": "指出"
+    },
+    "声": {
+      "meaning": "聲音、意見"
+    },
+    "少ない": {
+      "meaning": "少的"
+    },
+    "専門職": {
+      "meaning": "專業職務"
+    },
+    "志す": {
+      "meaning": "立志、志向於"
+    },
+    "人材": {
+      "meaning": "人才"
+    },
+    "どう": {
+      "meaning": "如何"
+    },
+    "確保する": {
+      "meaning": "確保"
+    },
+    "地域": {
+      "meaning": "地區"
+    },
+    "定着させる": {
+      "meaning": "使扎根、使定居"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "議論": {
+      "meaning": "議論、討論"
+    },
+    "続く": {
+      "meaning": "持續"
+    },
+    "課題": {
+      "meaning": "課題、難題"
+    },
+    "あり続ける": {
+      "meaning": "持續是、一直維持"
+    },
+    "さらに": {
+      "meaning": "此外、更加"
+    },
+    "既に": {
+      "meaning": "已經"
+    },
+    "高齢化": {
+      "meaning": "高齡化"
+    },
+    "進む": {
+      "meaning": "進展、推進"
+    },
+    "十年後": {
+      "meaning": "十年後"
+    },
+    "深刻": {
+      "meaning": "嚴重的"
+    },
+    "事態": {
+      "meaning": "事態、局面"
+    },
+    "見方": {
+      "meaning": "看法"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "踏まえる": {
+      "meaning": "根據、考量"
+    },
+    "待遇": {
+      "meaning": "待遇"
+    },
+    "改善": {
+      "meaning": "改善"
+    },
+    "働き方": {
+      "meaning": "工作方式"
+    },
+    "見直し": {
+      "meaning": "重新檢討"
+    },
+    "総合的": {
+      "meaning": "綜合性的"
+    },
+    "対策": {
+      "meaning": "對策"
+    },
+    "急ぐ": {
+      "meaning": "著急、急迫"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "働く": {
+      "meaning": "工作"
+    }
+  },
+  "particles": {
+    "を": "標示動作的對象",
+    "に": "表示動作到達的地點或對象",
+    "が": "標示主語",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "や": "連接名詞表示「和」（非完全列舉）",
+    "といった": "「像〜那樣的」，舉例",
+    "は": "提示句子的主題",
+    "と": "用於引用內容",
+    "に比べて": "「與〜相比」",
+    "など": "表示「等等」，列舉範例",
+    "を通じて": "「透過〜」，媒介或期間",
+    "ものの": "「雖然〜」，書面逆接",
+    "だ": "常體的斷定助動詞",
+    "という": "「叫做〜」，用於引用名稱或說法",
+    "か": "表示疑問或不確定，「是否〜」",
+    "で": "常體斷定「である」的連接用法",
+    "だろう": "表示推測，「大概〜吧」",
+    "も": "「也」，或用於強調"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，獸醫師不足的問題日趨嚴重，尤以地方為甚。",
+        "word": "深刻化する"
+      }
+    ],
+    [
+      {
+        "text": "特別是負責診治牛、豬等產業動物的獸醫師減少得十分明顯，據說情況甚至可能危及畜產業本身的存續。",
+        "word": "脅かす"
+      }
+    ],
+    [
+      {
+        "text": "此外，現有獸醫師的高齡化也在持續，有看法認為十年後情況會更加嚴峻。",
+        "word": "高齢化"
+      }
+    ],
+    [
+      {
+        "text": "背景原因包括比起都市地區勤務條件更嚴苛，以及相較於診治寵物的獸醫師，業務負擔更大等等。",
+        "word": "挙げる"
+      }
+    ],
+    [
+      {
+        "text": "政府雖然透過獎學金制度促進地方就業，但也有不少人指出效果有限。",
+        "word": "指摘する"
+      }
+    ],
+    [
+      {
+        "text": "要如何確保願意投身獸醫這項專業的人才，並讓他們在地方落地生根，恐怕仍會是今後持續討論的課題。",
+        "word": "確保する"
+      }
+    ],
+    [
+      {
+        "text": "考量到這樣的現況，待遇改善與工作方式的重新檢討等綜合性對策，正被迫切需要。",
+        "word": "対策"
+      }
+    ]
+  ],
+  "grammar_notes": []
+}

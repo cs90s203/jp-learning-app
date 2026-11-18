@@ -1,0 +1,949 @@
+{
+  "date": "2026-11-19",
+  "level": "n2",
+  "title": "ギグワークの広がり",
+  "text": "インターネットを通じて単発の仕事を請け負う、いわゆる「ギグワーク」が急速に広がりを見せている。配達代行や家事代行をはじめ、その種類は多岐にわたる。働く時間や場所を自分で決められるという自由さが、多くの人を惹きつけている要因だと言えるだろう。しかしながら、収入が不安定になりやすいことに加え、労働者としての保護が十分に整っていないという問題も指摘されている。企業にとっては人件費を柔軟に調整できる利点があるものの、働き手の生活が安定しなければ、長期的には労働力の確保自体が難しくなりかねない。ギグワークが社会に根づいていくためには、制度の整備が不可欠だろう。",
+  "tokens": [
+    {
+      "surface_form": "インターネット",
+      "basic_form": "インターネット",
+      "reading": "インターネット",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を通じて",
+      "basic_form": "を通じて",
+      "reading": "をつうじて",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "単発",
+      "basic_form": "単発",
+      "reading": "たんぱつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "仕事",
+      "basic_form": "仕事",
+      "reading": "しごと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "請け負う",
+      "basic_form": "請け負う",
+      "reading": "うけおう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "いわゆる",
+      "basic_form": "いわゆる",
+      "reading": "いわゆる",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ギグワーク",
+      "basic_form": "ギグワーク",
+      "reading": "ギグワーク",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "急速に",
+      "basic_form": "急速",
+      "reading": "きゅうそくに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "広がり",
+      "basic_form": "広がり",
+      "reading": "ひろがり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見せている",
+      "basic_form": "見せる",
+      "reading": "みせている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "配達代行",
+      "basic_form": "配達代行",
+      "reading": "はいたつだいこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "家事代行",
+      "basic_form": "家事代行",
+      "reading": "かじだいこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "をはじめ",
+      "basic_form": "をはじめ",
+      "reading": "をはじめ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "種類",
+      "basic_form": "種類",
+      "reading": "しゅるい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "多岐にわたる",
+      "basic_form": "多岐にわたる",
+      "reading": "たきにわたる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "働く",
+      "basic_form": "働く",
+      "reading": "はたらく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "時間",
+      "basic_form": "時間",
+      "reading": "じかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "場所",
+      "basic_form": "場所",
+      "reading": "ばしょ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自分",
+      "basic_form": "自分",
+      "reading": "じぶん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "決められる",
+      "basic_form": "決める",
+      "reading": "きめられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "自由さ",
+      "basic_form": "自由さ",
+      "reading": "じゆうさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "多く",
+      "basic_form": "多い",
+      "reading": "おおく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "惹きつけている",
+      "basic_form": "惹きつける",
+      "reading": "ひきつけている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "要因",
+      "basic_form": "要因",
+      "reading": "よういん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言える",
+      "basic_form": "言う",
+      "reading": "いえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかしながら",
+      "basic_form": "しかしながら",
+      "reading": "しかしながら",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "収入",
+      "basic_form": "収入",
+      "reading": "しゅうにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不安定に",
+      "basic_form": "不安定",
+      "reading": "ふあんていに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "なりやすい",
+      "basic_form": "なる",
+      "reading": "なりやすい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に加え",
+      "basic_form": "に加え",
+      "reading": "にくわえ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "労働者",
+      "basic_form": "労働者",
+      "reading": "ろうどうしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "保護",
+      "basic_form": "保護",
+      "reading": "ほご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "十分に",
+      "basic_form": "十分",
+      "reading": "じゅうぶんに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "整っていない",
+      "basic_form": "整う",
+      "reading": "ととのっていない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "という",
+      "basic_form": "という",
+      "reading": "という",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "問題",
+      "basic_form": "問題",
+      "reading": "もんだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘されている",
+      "basic_form": "指摘する",
+      "reading": "してきされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "にとって",
+      "basic_form": "にとって",
+      "reading": "にとって",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人件費",
+      "basic_form": "人件費",
+      "reading": "じんけんひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "柔軟に",
+      "basic_form": "柔軟",
+      "reading": "じゅうなんに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "調整できる",
+      "basic_form": "調整する",
+      "reading": "ちょうせいできる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "利点",
+      "basic_form": "利点",
+      "reading": "りてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ものの",
+      "basic_form": "ものの",
+      "reading": "ものの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "働き手",
+      "basic_form": "働き手",
+      "reading": "はたらきて",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活",
+      "basic_form": "生活",
+      "reading": "せいかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "安定しなければ",
+      "basic_form": "安定する",
+      "reading": "あんていしなければ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "長期的に",
+      "basic_form": "長期的",
+      "reading": "ちょうきてきに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "労働力",
+      "basic_form": "労働力",
+      "reading": "ろうどうりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "確保",
+      "basic_form": "確保",
+      "reading": "かくほ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "自体",
+      "basic_form": "自体",
+      "reading": "じたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "難しく",
+      "basic_form": "難しい",
+      "reading": "むずかしく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "なりかねない",
+      "basic_form": "なる",
+      "reading": "なりかねない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "ギグワーク",
+      "basic_form": "ギグワーク",
+      "reading": "ギグワーク",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "社会",
+      "basic_form": "社会",
+      "reading": "しゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "根づいていく",
+      "basic_form": "根づく",
+      "reading": "ねづいていく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ため",
+      "basic_form": "ため",
+      "reading": "ため",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "制度",
+      "basic_form": "制度",
+      "reading": "せいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整備",
+      "basic_form": "整備",
+      "reading": "せいび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "不可欠",
+      "basic_form": "不可欠",
+      "reading": "ふかけつ",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "インターネット": {
+      "meaning": "網路"
+    },
+    "単発": {
+      "meaning": "單次、單一次"
+    },
+    "仕事": {
+      "meaning": "工作"
+    },
+    "請け負う": {
+      "meaning": "承接、承包"
+    },
+    "いわゆる": {
+      "meaning": "所謂的"
+    },
+    "ギグワーク": {
+      "meaning": "零工經濟、零工工作"
+    },
+    "急速": {
+      "meaning": "快速、迅速"
+    },
+    "広がり": {
+      "meaning": "擴大、擴展"
+    },
+    "見せる": {
+      "meaning": "顯現出"
+    },
+    "配達代行": {
+      "meaning": "代為送貨"
+    },
+    "家事代行": {
+      "meaning": "代為做家事"
+    },
+    "その": {
+      "meaning": "那個（指示詞）"
+    },
+    "種類": {
+      "meaning": "種類"
+    },
+    "多岐にわたる": {
+      "meaning": "範圍廣泛、多種多樣"
+    },
+    "働く": {
+      "meaning": "工作"
+    },
+    "時間": {
+      "meaning": "時間"
+    },
+    "場所": {
+      "meaning": "地點"
+    },
+    "自分": {
+      "meaning": "自己"
+    },
+    "決める": {
+      "meaning": "決定"
+    },
+    "自由さ": {
+      "meaning": "自由度"
+    },
+    "多い": {
+      "meaning": "多的"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "惹きつける": {
+      "meaning": "吸引"
+    },
+    "要因": {
+      "meaning": "原因、要因"
+    },
+    "言う": {
+      "meaning": "說"
+    },
+    "しかしながら": {
+      "meaning": "然而、不過"
+    },
+    "収入": {
+      "meaning": "收入"
+    },
+    "不安定": {
+      "meaning": "不穩定"
+    },
+    "なる": {
+      "meaning": "變成"
+    },
+    "こと": {
+      "meaning": "事情（名詞化用法）"
+    },
+    "労働者": {
+      "meaning": "勞工"
+    },
+    "保護": {
+      "meaning": "保護"
+    },
+    "十分": {
+      "meaning": "充分、足夠"
+    },
+    "整う": {
+      "meaning": "完善、齊備"
+    },
+    "問題": {
+      "meaning": "問題"
+    },
+    "指摘する": {
+      "meaning": "指出"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "人件費": {
+      "meaning": "人事成本"
+    },
+    "柔軟": {
+      "meaning": "靈活、柔軟"
+    },
+    "調整する": {
+      "meaning": "調整"
+    },
+    "利点": {
+      "meaning": "優點"
+    },
+    "ある": {
+      "meaning": "有、在"
+    },
+    "働き手": {
+      "meaning": "工作者、勞動者"
+    },
+    "生活": {
+      "meaning": "生活"
+    },
+    "安定する": {
+      "meaning": "穩定"
+    },
+    "長期的": {
+      "meaning": "長期的"
+    },
+    "労働力": {
+      "meaning": "勞動力"
+    },
+    "確保": {
+      "meaning": "確保"
+    },
+    "自体": {
+      "meaning": "本身"
+    },
+    "難しい": {
+      "meaning": "困難的"
+    },
+    "社会": {
+      "meaning": "社會"
+    },
+    "根づく": {
+      "meaning": "扎根"
+    },
+    "ため": {
+      "meaning": "為了、目的"
+    },
+    "制度": {
+      "meaning": "制度"
+    },
+    "整備": {
+      "meaning": "完善、建置"
+    },
+    "不可欠": {
+      "meaning": "不可或缺"
+    }
+  },
+  "particles": {
+    "を通じて": "「透過〜」，媒介或期間",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "を": "標示動作的對象",
+    "や": "連接名詞表示「和」（非完全列舉）",
+    "をはじめ": "「以〜為首」，列舉代表性範例",
+    "は": "提示句子的主題",
+    "という": "「叫做〜」，用於引用名稱或說法",
+    "で": "表示方法、手段",
+    "だ": "常體的斷定助動詞",
+    "と": "用於引用內容",
+    "だろう": "表示推測，「大概〜吧」",
+    "に加え": "「不僅如此，加上〜」",
+    "として": "「作為〜」的身分/立場",
+    "も": "「也」，或用於強調",
+    "にとって": "「對〜來說」，立場觀點",
+    "ものの": "「雖然〜」，書面逆接",
+    "に": "表示動作到達的地點或對象",
+    "が": "標示主語"
+  },
+  "translations": [
+    [
+      {
+        "text": "透過網路承接單次工作的所謂「零工經濟」正快速擴大。",
+        "word": "広がり"
+      }
+    ],
+    [
+      {
+        "text": "以代為送貨、代為做家事為首，種類十分多樣。",
+        "word": "多岐にわたる"
+      }
+    ],
+    [
+      {
+        "text": "可以自己決定工作時間與地點的自由度，可說是吸引許多人的主要原因。",
+        "word": "自由さ"
+      }
+    ],
+    [
+      {
+        "text": "然而，除了收入容易變得不穩定之外，有人也指出對勞工的保護尚不完善這一問題。",
+        "word": "指摘する"
+      }
+    ],
+    [
+      {
+        "text": "對企業而言雖然有能靈活調整人事成本的優點，但若工作者的生活無法穩定，長期來看恐怕連勞動力的確保本身都會變得困難。",
+        "word": "なりかねない"
+      }
+    ],
+    [
+      {
+        "text": "為了讓零工經濟在社會上扎根，完善相關制度將是不可或缺的。",
+        "word": "不可欠"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "〜を通じて／〜を通して",
+      "note": "「透過〜」，媒介或期間"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜ものの",
+      "note": "「雖然〜」，書面逆接"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜かねない",
+      "note": "「有可能會〜（負面）」"
+    }
+  ]
+}

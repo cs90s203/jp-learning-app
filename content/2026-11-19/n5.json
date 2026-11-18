@@ -1,0 +1,359 @@
+{
+  "date": "2026-11-19",
+  "level": "n5",
+  "title": "図書館で本を借りた",
+  "text": "きょう、図書館へ行きました。本をたくさん借りました。カウンターで名前を書きました。そして、うちに帰って、好きな本を読みました。とても楽しかったです。また来週も行きたいです。",
+  "tokens": [
+    {
+      "surface_form": "きょう",
+      "basic_form": "きょう",
+      "reading": "きょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "図書館",
+      "basic_form": "図書館",
+      "reading": "としょかん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行きました",
+      "basic_form": "行く",
+      "reading": "いきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "たくさん",
+      "basic_form": "たくさん",
+      "reading": "たくさん",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "借りました",
+      "basic_form": "借りる",
+      "reading": "かりました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "カウンター",
+      "basic_form": "カウンター",
+      "reading": "カウンター",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "名前",
+      "basic_form": "名前",
+      "reading": "なまえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "書きました",
+      "basic_form": "書く",
+      "reading": "かきました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "そして",
+      "basic_form": "そして",
+      "reading": "そして",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "うち",
+      "basic_form": "うち",
+      "reading": "うち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "帰って",
+      "basic_form": "帰る",
+      "reading": "かえって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "好きな",
+      "basic_form": "好き",
+      "reading": "すきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "本",
+      "basic_form": "本",
+      "reading": "ほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "読みました",
+      "basic_form": "読む",
+      "reading": "よみました",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "とても",
+      "basic_form": "とても",
+      "reading": "とても",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "楽しかった",
+      "basic_form": "楽しい",
+      "reading": "たのしかった",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "また",
+      "basic_form": "また",
+      "reading": "また",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "来週",
+      "basic_form": "来週",
+      "reading": "らいしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行きたい",
+      "basic_form": "行く",
+      "reading": "いきたい",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "です",
+      "basic_form": "です",
+      "reading": "です",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "きょう": {
+      "meaning": "今天"
+    },
+    "図書館": {
+      "meaning": "圖書館"
+    },
+    "行く": {
+      "meaning": "去"
+    },
+    "本": {
+      "meaning": "書"
+    },
+    "借りる": {
+      "meaning": "借"
+    },
+    "たくさん": {
+      "meaning": "很多"
+    },
+    "カウンター": {
+      "meaning": "櫃台"
+    },
+    "名前": {
+      "meaning": "名字"
+    },
+    "書く": {
+      "meaning": "寫"
+    },
+    "そして": {
+      "meaning": "然後、接著"
+    },
+    "うち": {
+      "meaning": "家、自己家裡"
+    },
+    "帰る": {
+      "meaning": "回去、回家"
+    },
+    "好き": {
+      "meaning": "喜歡"
+    },
+    "読む": {
+      "meaning": "讀、閱讀"
+    },
+    "とても": {
+      "meaning": "非常"
+    },
+    "楽しい": {
+      "meaning": "開心、快樂"
+    },
+    "また": {
+      "meaning": "又、再"
+    },
+    "来週": {
+      "meaning": "下週"
+    }
+  },
+  "particles": {
+    "へ": "表示移動的方向",
+    "を": "標示動作的對象",
+    "で": "表示動作發生的場所",
+    "に": "表示到達的地點或對象",
+    "も": "「也」，取代原本該用的が/を",
+    "です": "禮貌的斷定助動詞"
+  },
+  "translations": [
+    [
+      {
+        "text": "今天去了圖書館。",
+        "word": "図書館"
+      }
+    ],
+    [
+      {
+        "text": "借了很多書。",
+        "word": "借りる"
+      }
+    ],
+    [
+      {
+        "text": "在櫃台寫了名字。",
+        "word": "書く"
+      }
+    ],
+    [
+      {
+        "text": "然後回到家，",
+        "word": "帰る"
+      },
+      {
+        "text": "看了喜歡的書。",
+        "word": "読む"
+      }
+    ],
+    [
+      {
+        "text": "非常開心。",
+        "word": "楽しい"
+      }
+    ],
+    [
+      {
+        "text": "下週還想再去。",
+        "word": "行く"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 0,
+      "pattern": "動詞ます形",
+      "note": "禮貌體現在式，肯定/否定/過去/過去否定四段變化"
+    },
+    {
+      "sentence": 3,
+      "pattern": "動詞て形",
+      "note": "連接兩個動作（先後順序）、或用於て形句型（ている等）"
+    },
+    {
+      "sentence": 5,
+      "pattern": "〜たい（想要）",
+      "note": "動詞ます形去ます加たい，表示說話者的願望"
+    }
+  ]
+}
