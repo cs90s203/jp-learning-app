@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-20",
+  "level": "n5_lite",
+  "title": "わたしのかばん",
+  "text": "これはわたしのかばんです。黒くて小さいです。中に本とペンがあります。とても大事です。",
+  "tokens": [
+    { "surface_form": "これ", "basic_form": "これ", "reading": "これ", "pos": "代名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "黒くて", "basic_form": "黒い", "reading": "くろくて", "pos": "形容詞" },
+    { "surface_form": "小さい", "basic_form": "小さい", "reading": "ちいさい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "本", "basic_form": "本", "reading": "ほん", "pos": "名詞" },
+    { "surface_form": "と", "basic_form": "と", "reading": "と", "pos": "助詞" },
+    { "surface_form": "ペン", "basic_form": "ペン", "reading": "ペン", "pos": "名詞" },
+    { "surface_form": "が", "basic_form": "が", "reading": "が", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "大事", "basic_form": "大事", "reading": "だいじ", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "これ": { "meaning": "這個" },
+    "わたし": { "meaning": "我" },
+    "かばん": { "meaning": "包包" },
+    "黒い": { "meaning": "黑色的" },
+    "小さい": { "meaning": "小的" },
+    "中": { "meaning": "裡面" },
+    "本": { "meaning": "書" },
+    "ペン": { "meaning": "筆" },
+    "ある": { "meaning": "有，存在" },
+    "とても": { "meaning": "非常" },
+    "大事": { "meaning": "重要的" }
+  },
+  "particles": {
+    "は": "主題標記，標示句子的主題",
+    "の": "表示所屬關係，或名詞修飾名詞",
+    "に": "表示存在的場所",
+    "と": "連接名詞表示「和」",
+    "が": "標示存在句的主語"
+  },
+  "translations": [
+    [ { "text": "這是我的包包。", "word": "かばん" } ],
+    [ { "text": "黑色的，而且很小。", "word": "黒い" } ],
+    [ { "text": "裡面有書和筆。", "word": "ある" } ],
+    [ { "text": "非常重要。", "word": "大事" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 2, "pattern": "〜が（主語標記）", "note": "標示句子的主語（與は的差異：新資訊/焦點 vs 主題）" },
+    { "sentence": 2, "pattern": "〜と（並列/一起）", "note": "連接名詞表示「和」，或表示「跟誰一起」" },
+    { "sentence": 2, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" }
+  ]
+}
