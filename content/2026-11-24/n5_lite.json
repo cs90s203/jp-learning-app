@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-24",
+  "level": "n5_lite",
+  "title": "わたしの靴",
+  "text": "わたしの靴は白いです。誕生日のプレゼントです。軽いです。デザインもかわいいです。毎日履きます。とても好きです。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "靴", "basic_form": "靴", "reading": "くつ", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "白い", "basic_form": "白い", "reading": "しろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "誕生日", "basic_form": "誕生日", "reading": "たんじょうび", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "プレゼント", "basic_form": "プレゼント", "reading": "プレゼント", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "軽い", "basic_form": "軽い", "reading": "かるい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "デザイン", "basic_form": "デザイン", "reading": "デザイン", "pos": "名詞" },
+    { "surface_form": "も", "basic_form": "も", "reading": "も", "pos": "助詞" },
+    { "surface_form": "かわいい", "basic_form": "かわいい", "reading": "かわいい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎日", "basic_form": "毎日", "reading": "まいにち", "pos": "名詞" },
+    { "surface_form": "履きます", "basic_form": "履く", "reading": "はきます", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "とても", "basic_form": "とても", "reading": "とても", "pos": "副詞" },
+    { "surface_form": "好き", "basic_form": "好き", "reading": "すき", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "靴": { "meaning": "鞋子" },
+    "白い": { "meaning": "白色的" },
+    "誕生日": { "meaning": "生日" },
+    "プレゼント": { "meaning": "禮物" },
+    "軽い": { "meaning": "輕的" },
+    "デザイン": { "meaning": "設計，款式" },
+    "かわいい": { "meaning": "可愛的" },
+    "毎日": { "meaning": "每天" },
+    "履く": { "meaning": "穿（鞋、褲）" },
+    "とても": { "meaning": "非常" },
+    "好き": { "meaning": "喜歡" }
+  },
+  "particles": {
+    "は": "主題標記，表示句子的主題",
+    "の": "表示所屬關係，相當於中文的「的」",
+    "も": "「也」，表示並列或補充"
+  },
+  "translations": [
+    [ { "text": "我的鞋子是白色的。", "word": "靴" } ],
+    [ { "text": "是生日禮物。", "word": "誕生日" } ],
+    [ { "text": "很輕。", "word": "軽い" } ],
+    [ { "text": "設計也很可愛。", "word": "デザイン" } ],
+    [ { "text": "每天都穿。", "word": "履く" } ],
+    [ { "text": "非常喜歡。", "word": "好き" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "〜の（所屬/修飾）", "note": "表示所屬關係，或名詞修飾名詞" },
+    { "sentence": 2, "pattern": "い形容詞（現在/否定/過去/過去否定）", "note": "い形容詞的四段變化：〜い／〜くない／〜かった／〜くなかった" },
+    { "sentence": 3, "pattern": "〜も（也）", "note": "「也」，會取代が/を，但と、で等助詞保留" }
+  ]
+}
