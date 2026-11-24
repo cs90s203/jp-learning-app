@@ -1,0 +1,1278 @@
+{
+  "date": "2026-11-25",
+  "level": "n1_lite",
+  "title": "通訳者不足をめぐる課題",
+  "text": "近年、医療・司法・行政など公共性の高い分野で通訳者不足が深刻化している。外国人住民の増加や国際化の進展と相まって、多言語対応への需要はかつてないほど高まっている一方だ。しかし、専門性の高さに見合う待遇が整っているとは言えず、資格を取得しても離職する者が後を絶たないきらいがある。通訳の質を欠いたまま医療や裁判の現場に人材を投入すれば、重大な誤解や判断ミスを招きかねない。こうした事態を受け、行政は通訳者の養成制度や報酬体系の見直しを余儀なくされている。もっとも、予算の制約から改革の歩みは遅々として進まず、現場の疲弊は看過するに忍びない状況だ。言語と文化の壁を越える通訳者ならではの専門性を正当に評価しない限り、人材不足の解消は望むべくもないだろう。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "医療",
+      "basic_form": "医療",
+      "reading": "いりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "・",
+      "basic_form": "・",
+      "reading": "・",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "司法",
+      "basic_form": "司法",
+      "reading": "しほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "・",
+      "basic_form": "・",
+      "reading": "・",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "行政",
+      "basic_form": "行政",
+      "reading": "ぎょうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "公共性",
+      "basic_form": "公共性",
+      "reading": "こうきょうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高い",
+      "basic_form": "高い",
+      "reading": "たかい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "分野",
+      "basic_form": "分野",
+      "reading": "ぶんや",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通訳者",
+      "basic_form": "通訳者",
+      "reading": "つうやくしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "不足",
+      "basic_form": "不足",
+      "reading": "ふそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "深刻化している",
+      "basic_form": "深刻化する",
+      "reading": "しんこくかしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "外国人",
+      "basic_form": "外国人",
+      "reading": "がいこくじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "住民",
+      "basic_form": "住民",
+      "reading": "じゅうみん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "増加",
+      "basic_form": "増加",
+      "reading": "ぞうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "国際化",
+      "basic_form": "国際化",
+      "reading": "こくさいか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "進展",
+      "basic_form": "進展",
+      "reading": "しんてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "相まって",
+      "basic_form": "相まつ",
+      "reading": "あいまって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "多言語",
+      "basic_form": "多言語",
+      "reading": "たげんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "対応",
+      "basic_form": "対応",
+      "reading": "たいおう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "へ",
+      "basic_form": "へ",
+      "reading": "へ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "需要",
+      "basic_form": "需要",
+      "reading": "じゅよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かつてない",
+      "basic_form": "かつてない",
+      "reading": "かつてない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "ほど",
+      "basic_form": "ほど",
+      "reading": "ほど",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高まっている",
+      "basic_form": "高まる",
+      "reading": "たかまっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "しかし",
+      "basic_form": "しかし",
+      "reading": "しかし",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "専門性",
+      "basic_form": "専門性",
+      "reading": "せんもんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "高さ",
+      "basic_form": "高さ",
+      "reading": "たかさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見合う",
+      "basic_form": "見合う",
+      "reading": "みあう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "待遇",
+      "basic_form": "待遇",
+      "reading": "たいぐう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "整っている",
+      "basic_form": "整う",
+      "reading": "ととのっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "言えず",
+      "basic_form": "言う",
+      "reading": "いえず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "資格",
+      "basic_form": "資格",
+      "reading": "しかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "取得しても",
+      "basic_form": "取得する",
+      "reading": "しゅとくしても",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "離職する",
+      "basic_form": "離職する",
+      "reading": "りしょくする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "者",
+      "basic_form": "者",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "後",
+      "basic_form": "後",
+      "reading": "あと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "絶たない",
+      "basic_form": "絶つ",
+      "reading": "たたない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "きらい",
+      "basic_form": "きらい",
+      "reading": "きらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "通訳",
+      "basic_form": "通訳",
+      "reading": "つうやく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "質",
+      "basic_form": "質",
+      "reading": "しつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "欠いた",
+      "basic_form": "欠く",
+      "reading": "かいた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "まま",
+      "basic_form": "まま",
+      "reading": "まま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "医療",
+      "basic_form": "医療",
+      "reading": "いりょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "裁判",
+      "basic_form": "裁判",
+      "reading": "さいばん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "現場",
+      "basic_form": "現場",
+      "reading": "げんば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人材",
+      "basic_form": "人材",
+      "reading": "じんざい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "投入すれば",
+      "basic_form": "投入する",
+      "reading": "とうにゅうすれば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "重大な",
+      "basic_form": "重大",
+      "reading": "じゅうだいな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "誤解",
+      "basic_form": "誤解",
+      "reading": "ごかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "判断",
+      "basic_form": "判断",
+      "reading": "はんだん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ミス",
+      "basic_form": "ミス",
+      "reading": "みす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "招きかねない",
+      "basic_form": "招く",
+      "reading": "まねきかねない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "こうした",
+      "basic_form": "こうした",
+      "reading": "こうした",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "事態",
+      "basic_form": "事態",
+      "reading": "じたい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "受け",
+      "basic_form": "受ける",
+      "reading": "うけ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "行政",
+      "basic_form": "行政",
+      "reading": "ぎょうせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通訳者",
+      "basic_form": "通訳者",
+      "reading": "つうやくしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "養成",
+      "basic_form": "養成",
+      "reading": "ようせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "制度",
+      "basic_form": "制度",
+      "reading": "せいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "報酬",
+      "basic_form": "報酬",
+      "reading": "ほうしゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "体系",
+      "basic_form": "体系",
+      "reading": "たいけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見直し",
+      "basic_form": "見直し",
+      "reading": "みなおし",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "余儀なくされている",
+      "basic_form": "余儀なくされる",
+      "reading": "よぎなくされている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もっとも",
+      "basic_form": "もっとも",
+      "reading": "もっとも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "予算",
+      "basic_form": "予算",
+      "reading": "よさん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "制約",
+      "basic_form": "制約",
+      "reading": "せいやく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "から",
+      "basic_form": "から",
+      "reading": "から",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "改革",
+      "basic_form": "改革",
+      "reading": "かいかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "歩み",
+      "basic_form": "歩み",
+      "reading": "あゆみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "遅々として",
+      "basic_form": "遅々として",
+      "reading": "ちちとして",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "進まず",
+      "basic_form": "進む",
+      "reading": "すすまず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "現場",
+      "basic_form": "現場",
+      "reading": "げんば",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "疲弊",
+      "basic_form": "疲弊",
+      "reading": "ひへい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "看過する",
+      "basic_form": "看過する",
+      "reading": "かんかする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "忍びない",
+      "basic_form": "忍びない",
+      "reading": "しのびない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "状況",
+      "basic_form": "状況",
+      "reading": "じょうきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "言語",
+      "basic_form": "言語",
+      "reading": "げんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "文化",
+      "basic_form": "文化",
+      "reading": "ぶんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "壁",
+      "basic_form": "壁",
+      "reading": "かべ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "越える",
+      "basic_form": "越える",
+      "reading": "こえる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "通訳者",
+      "basic_form": "通訳者",
+      "reading": "つうやくしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "ならでは",
+      "basic_form": "ならでは",
+      "reading": "ならでは",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "専門性",
+      "basic_form": "専門性",
+      "reading": "せんもんせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "正当に",
+      "basic_form": "正当",
+      "reading": "せいとうに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "評価しない",
+      "basic_form": "評価する",
+      "reading": "ひょうかしない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "限り",
+      "basic_form": "限り",
+      "reading": "かぎり",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "人材",
+      "basic_form": "人材",
+      "reading": "じんざい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "不足",
+      "basic_form": "不足",
+      "reading": "ふそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "解消",
+      "basic_form": "解消",
+      "reading": "かいしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "望むべくもない",
+      "basic_form": "望む",
+      "reading": "のぞむべくもない",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "だろう",
+      "basic_form": "だろう",
+      "reading": "だろう",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "近年": {
+      "meaning": "近年"
+    },
+    "医療": {
+      "meaning": "醫療"
+    },
+    "司法": {
+      "meaning": "司法"
+    },
+    "行政": {
+      "meaning": "行政"
+    },
+    "公共性": {
+      "meaning": "公共性"
+    },
+    "高い": {
+      "meaning": "高的"
+    },
+    "分野": {
+      "meaning": "領域"
+    },
+    "通訳者": {
+      "meaning": "口譯員"
+    },
+    "不足": {
+      "meaning": "不足"
+    },
+    "深刻化する": {
+      "meaning": "日趨嚴重；惡化"
+    },
+    "外国人": {
+      "meaning": "外國人"
+    },
+    "住民": {
+      "meaning": "居民"
+    },
+    "増加": {
+      "meaning": "增加"
+    },
+    "国際化": {
+      "meaning": "國際化"
+    },
+    "進展": {
+      "meaning": "進展"
+    },
+    "相まつ": {
+      "meaning": "與〜相結合"
+    },
+    "多言語": {
+      "meaning": "多語言"
+    },
+    "対応": {
+      "meaning": "因應；應對"
+    },
+    "需要": {
+      "meaning": "需求"
+    },
+    "かつてない": {
+      "meaning": "前所未有的"
+    },
+    "高まる": {
+      "meaning": "提高；高漲"
+    },
+    "一方": {
+      "meaning": "（表示持續趨勢）一直；不斷"
+    },
+    "しかし": {
+      "meaning": "然而"
+    },
+    "専門性": {
+      "meaning": "專業性"
+    },
+    "高さ": {
+      "meaning": "高度"
+    },
+    "見合う": {
+      "meaning": "相稱"
+    },
+    "待遇": {
+      "meaning": "待遇"
+    },
+    "整う": {
+      "meaning": "完善；齊備"
+    },
+    "言う": {
+      "meaning": "説"
+    },
+    "資格": {
+      "meaning": "資格"
+    },
+    "取得する": {
+      "meaning": "取得"
+    },
+    "離職する": {
+      "meaning": "離職"
+    },
+    "者": {
+      "meaning": "…的人"
+    },
+    "後": {
+      "meaning": "之後"
+    },
+    "絶つ": {
+      "meaning": "斷絕；杜絕"
+    },
+    "きらい": {
+      "meaning": "（負面的）傾向"
+    },
+    "ある": {
+      "meaning": "有；存在"
+    },
+    "通訳": {
+      "meaning": "口譯"
+    },
+    "質": {
+      "meaning": "品質"
+    },
+    "欠く": {
+      "meaning": "缺乏"
+    },
+    "まま": {
+      "meaning": "照舊的狀態"
+    },
+    "裁判": {
+      "meaning": "裁判；訴訟"
+    },
+    "現場": {
+      "meaning": "現場"
+    },
+    "人材": {
+      "meaning": "人才"
+    },
+    "投入する": {
+      "meaning": "投入"
+    },
+    "重大": {
+      "meaning": "重大的"
+    },
+    "誤解": {
+      "meaning": "誤解"
+    },
+    "判断": {
+      "meaning": "判斷"
+    },
+    "ミス": {
+      "meaning": "失誤"
+    },
+    "招く": {
+      "meaning": "招致；引發"
+    },
+    "こうした": {
+      "meaning": "這樣的"
+    },
+    "事態": {
+      "meaning": "事態"
+    },
+    "受ける": {
+      "meaning": "受到"
+    },
+    "養成": {
+      "meaning": "培養；培訓"
+    },
+    "制度": {
+      "meaning": "制度"
+    },
+    "報酬": {
+      "meaning": "報酬"
+    },
+    "体系": {
+      "meaning": "體系"
+    },
+    "見直し": {
+      "meaning": "重新檢討"
+    },
+    "余儀なくされる": {
+      "meaning": "被迫"
+    },
+    "もっとも": {
+      "meaning": "不過；話雖如此"
+    },
+    "予算": {
+      "meaning": "預算"
+    },
+    "制約": {
+      "meaning": "制約"
+    },
+    "改革": {
+      "meaning": "改革"
+    },
+    "歩み": {
+      "meaning": "步伐；進程"
+    },
+    "遅々として": {
+      "meaning": "遲遲（不前）"
+    },
+    "進む": {
+      "meaning": "推進；前進"
+    },
+    "疲弊": {
+      "meaning": "疲弊；疲憊"
+    },
+    "看過する": {
+      "meaning": "忽視；坐視不管"
+    },
+    "忍びない": {
+      "meaning": "不忍"
+    },
+    "状況": {
+      "meaning": "狀況"
+    },
+    "言語": {
+      "meaning": "語言"
+    },
+    "文化": {
+      "meaning": "文化"
+    },
+    "壁": {
+      "meaning": "壁壘；隔閡"
+    },
+    "越える": {
+      "meaning": "跨越"
+    },
+    "正当": {
+      "meaning": "正當"
+    },
+    "評価する": {
+      "meaning": "評價"
+    },
+    "限り": {
+      "meaning": "範圍；只要…的限度"
+    },
+    "解消": {
+      "meaning": "消除；解決"
+    },
+    "望む": {
+      "meaning": "期望；盼望"
+    }
+  },
+  "particles": {
+    "は": "主題標示助詞，用於提示句子的主題。",
+    "が": "主格助詞，標示動作或狀態的主語。",
+    "を": "賓格助詞，標示動作的對象或經過之處。",
+    "に": "格助詞，標示動作的對象、時間、地點或目的。",
+    "の": "連體助詞，表示所屬、修飾關係或名詞化。",
+    "と": "並列或引用助詞，表示「和」或引出內容，亦見於「と相まって」等固定搭配。",
+    "で": "格助詞，標示動作發生的場所、範圍或方式。",
+    "や": "並列助詞，列舉部分事物，暗示「等等」。",
+    "へ": "方向助詞，表示動作的方向或目標。",
+    "から": "格助詞，表示原因、起點或依據。",
+    "ほど": "副助詞，表示程度，常與比較或否定形式連用。",
+    "など": "副助詞，表示「等等」，用於列舉。",
+    "だ": "斷定助動詞，表示肯定的斷定語氣，書面語常用於句末。",
+    "だろう": "推量助動詞，表示推測或委婉斷定，相當於「吧」。",
+    "ならでは": "連語助詞，表示「唯有該事物才具備的」，用於強調獨特性。"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年，醫療、司法、行政等公共性較高的領域中，口譯員不足的問題日趨嚴重。",
+        "word": "深刻化する"
+      }
+    ],
+    [
+      {
+        "text": "隨著外國人居民增加，再加上國際化的推進，社會對多語言應對的需求達到前所未有的程度。",
+        "word": "国際化"
+      }
+    ],
+    [
+      {
+        "text": "然而，與專業程度相稱的待遇並不完善，即使取得資格後仍有不少人選擇離職，這種傾向不容忽視。",
+        "word": "きらい"
+      }
+    ],
+    [
+      {
+        "text": "若在欠缺口譯品質的情況下，將人力投入醫療或司法現場，恐將招致嚴重的誤解或判斷失誤。",
+        "word": "招く"
+      }
+    ],
+    [
+      {
+        "text": "面對這種情況，行政機關被迫重新檢討口譯員的培訓制度與報酬體系。",
+        "word": "余儀なくされる"
+      }
+    ],
+    [
+      {
+        "text": "不過，由於預算限制，改革的腳步遲遲未見進展，現場人員的疲憊狀態已令人不忍坐視。",
+        "word": "看過する"
+      }
+    ],
+    [
+      {
+        "text": "除非正當評價跨越語言與文化隔閡的口譯員所獨有的專業性，否則人才短缺的問題恐怕難以期待獲得解決。",
+        "word": "ならでは"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 1,
+      "pattern": "〜と相まって",
+      "note": "「與〜相結合」，書面因果"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜きらいがある",
+      "note": "「有〜的傾向（負面）」"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜を余儀なくされる",
+      "note": "「被迫〜」，書面被動"
+    },
+    {
+      "sentence": 6,
+      "pattern": "〜ならでは",
+      "note": "「唯有〜才有的」"
+    }
+  ]
+}
