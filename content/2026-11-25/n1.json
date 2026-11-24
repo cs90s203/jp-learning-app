@@ -1,0 +1,1688 @@
+{
+  "date": "2026-11-25",
+  "level": "n1",
+  "title": "解雇規制の緩和をめぐる議論",
+  "text": "解雇規制の緩和をめぐる議論は、日本の労働市場改革における最大の争点の一つであり続けている。推進派は、硬直的な解雇規制が企業の新陳代謝を阻害し、労働移動を妨げてきたと指摘する。金銭解雇制度の導入などにより規制を緩和すれば、企業は経営環境の変化に応じた人員配置が可能になり、国際競争力の向上にも資するという主張である。一方、反対派は、解雇規制の緩和が労働者の生活基盤を揺るがしかねず、その帰結を放置することは政策当局にあるまじき怠慢だと批判する。実際、非正規雇用の拡大がもたらした格差は看過するに足るものではなく、安易な規制緩和はさらなる社会的分断を加速させるきらいがあるとの懸念も根強い。もっとも、労働力不足という構造的制約と相まって、従来の雇用慣行の維持は企業の存続を危うくするとの指摘もあり、政府は改革案を示すべきだとの声が強まっている。結局のところ、保護と流動化のいずれに重心を置くにせよ拙速な結論は許されず、労使双方の信頼を醸成する地道な対話こそが制度設計の前提となるというべきである。",
+  "tokens": [
+    {
+      "surface_form": "解雇規制",
+      "basic_form": "解雇規制",
+      "reading": "かいこきせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "緩和",
+      "basic_form": "緩和",
+      "reading": "かんわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "めぐる",
+      "basic_form": "巡る",
+      "reading": "めぐる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "議論",
+      "basic_form": "議論",
+      "reading": "ぎろん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "日本",
+      "basic_form": "日本",
+      "reading": "にほん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "労働市場",
+      "basic_form": "労働市場",
+      "reading": "ろうどうしじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "改革",
+      "basic_form": "改革",
+      "reading": "かいかく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "における",
+      "basic_form": "における",
+      "reading": "における",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "最大",
+      "basic_form": "最大",
+      "reading": "さいだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "争点",
+      "basic_form": "争点",
+      "reading": "そうてん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "であり",
+      "basic_form": "である",
+      "reading": "であり",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "続けている",
+      "basic_form": "続ける",
+      "reading": "つづけている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "推進派",
+      "basic_form": "推進派",
+      "reading": "すいしんは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "硬直的な",
+      "basic_form": "硬直的",
+      "reading": "こうちょくてきな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "解雇規制",
+      "basic_form": "解雇規制",
+      "reading": "かいこきせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "新陳代謝",
+      "basic_form": "新陳代謝",
+      "reading": "しんちんたいしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "阻害し",
+      "basic_form": "阻害する",
+      "reading": "そがいし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "労働移動",
+      "basic_form": "労働移動",
+      "reading": "ろうどういどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "妨げてきた",
+      "basic_form": "妨げる",
+      "reading": "さまたげてきた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘する",
+      "basic_form": "指摘する",
+      "reading": "してきする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "金銭解雇制度",
+      "basic_form": "金銭解雇制度",
+      "reading": "きんせんかいこせいど",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "導入",
+      "basic_form": "導入",
+      "reading": "どうにゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "など",
+      "basic_form": "など",
+      "reading": "など",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "より",
+      "basic_form": "より",
+      "reading": "より",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "規制",
+      "basic_form": "規制",
+      "reading": "きせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "緩和すれば",
+      "basic_form": "緩和する",
+      "reading": "かんわすれば",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "経営環境",
+      "basic_form": "経営環境",
+      "reading": "けいえいかんきょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "変化",
+      "basic_form": "変化",
+      "reading": "へんか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "応じた",
+      "basic_form": "応じる",
+      "reading": "おうじた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人員配置",
+      "basic_form": "人員配置",
+      "reading": "じんいんはいち",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "可能",
+      "basic_form": "可能",
+      "reading": "かのう",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なり",
+      "basic_form": "なる",
+      "reading": "なり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "国際競争力",
+      "basic_form": "国際競争力",
+      "reading": "こくさいきょうそうりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "向上",
+      "basic_form": "向上",
+      "reading": "こうじょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "資する",
+      "basic_form": "資する",
+      "reading": "しする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いう",
+      "basic_form": "言う",
+      "reading": "いう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "主張",
+      "basic_form": "主張",
+      "reading": "しゅちょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "である",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方",
+      "basic_form": "一方",
+      "reading": "いっぽう",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "反対派",
+      "basic_form": "反対派",
+      "reading": "はんたいは",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "解雇規制",
+      "basic_form": "解雇規制",
+      "reading": "かいこきせい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "緩和",
+      "basic_form": "緩和",
+      "reading": "かんわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "労働者",
+      "basic_form": "労働者",
+      "reading": "ろうどうしゃ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活基盤",
+      "basic_form": "生活基盤",
+      "reading": "せいかつきばん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "揺るがしかねず",
+      "basic_form": "揺るがす",
+      "reading": "ゆるがしかねず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "その",
+      "basic_form": "その",
+      "reading": "その",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "帰結",
+      "basic_form": "帰結",
+      "reading": "きけつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "放置する",
+      "basic_form": "放置する",
+      "reading": "ほうちする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "政策当局",
+      "basic_form": "政策当局",
+      "reading": "せいさくとうきょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あるまじき",
+      "basic_form": "あるまじき",
+      "reading": "あるまじき",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "怠慢",
+      "basic_form": "怠慢",
+      "reading": "たいまん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "批判する",
+      "basic_form": "批判する",
+      "reading": "ひはんする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "実際",
+      "basic_form": "実際",
+      "reading": "じっさい",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "非正規雇用",
+      "basic_form": "非正規雇用",
+      "reading": "ひせいきこよう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "拡大",
+      "basic_form": "拡大",
+      "reading": "かくだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "もたらした",
+      "basic_form": "もたらす",
+      "reading": "もたらした",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "格差",
+      "basic_form": "格差",
+      "reading": "かくさ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "看過する",
+      "basic_form": "看過する",
+      "reading": "かんかする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "足る",
+      "basic_form": "足る",
+      "reading": "たる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "もの",
+      "basic_form": "もの",
+      "reading": "もの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "安易な",
+      "basic_form": "安易",
+      "reading": "あんいな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "規制緩和",
+      "basic_form": "規制緩和",
+      "reading": "きせいかんわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "さらなる",
+      "basic_form": "さらなる",
+      "reading": "さらなる",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "社会的",
+      "basic_form": "社会的",
+      "reading": "しゃかいてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "分断",
+      "basic_form": "分断",
+      "reading": "ぶんだん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "加速させる",
+      "basic_form": "加速する",
+      "reading": "かそくさせる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "きらい",
+      "basic_form": "きらい",
+      "reading": "きらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ある",
+      "basic_form": "ある",
+      "reading": "ある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "懸念",
+      "basic_form": "懸念",
+      "reading": "けねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "根強い",
+      "basic_form": "根強い",
+      "reading": "ねづよい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "もっとも",
+      "basic_form": "もっとも",
+      "reading": "もっとも",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "労働力",
+      "basic_form": "労働力",
+      "reading": "ろうどうりょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "不足",
+      "basic_form": "不足",
+      "reading": "ふそく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いう",
+      "basic_form": "言う",
+      "reading": "いう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "構造的",
+      "basic_form": "構造的",
+      "reading": "こうぞうてき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "制約",
+      "basic_form": "制約",
+      "reading": "せいやく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "相まって",
+      "basic_form": "相まる",
+      "reading": "あいまって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "従来",
+      "basic_form": "従来",
+      "reading": "じゅうらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "雇用慣行",
+      "basic_form": "雇用慣行",
+      "reading": "こようかんこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "維持",
+      "basic_form": "維持",
+      "reading": "いじ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "存続",
+      "basic_form": "存続",
+      "reading": "そんぞく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "危うくする",
+      "basic_form": "危うくする",
+      "reading": "あやうくする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "指摘",
+      "basic_form": "指摘",
+      "reading": "してき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "あり",
+      "basic_form": "ある",
+      "reading": "あり",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "政府",
+      "basic_form": "政府",
+      "reading": "せいふ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "改革案",
+      "basic_form": "改革案",
+      "reading": "かいかくあん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "示す",
+      "basic_form": "示す",
+      "reading": "しめす",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "べき",
+      "basic_form": "べき",
+      "reading": "べき",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "だ",
+      "basic_form": "だ",
+      "reading": "だ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "声",
+      "basic_form": "声",
+      "reading": "こえ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "強まっている",
+      "basic_form": "強まる",
+      "reading": "つよまっている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "結局",
+      "basic_form": "結局",
+      "reading": "けっきょく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "ところ",
+      "basic_form": "ところ",
+      "reading": "ところ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "保護",
+      "basic_form": "保護",
+      "reading": "ほご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "流動化",
+      "basic_form": "流動化",
+      "reading": "りゅうどうか",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いずれ",
+      "basic_form": "いずれ",
+      "reading": "いずれ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "重心",
+      "basic_form": "重心",
+      "reading": "じゅうしん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "置く",
+      "basic_form": "置く",
+      "reading": "おく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "せよ",
+      "basic_form": "せよ",
+      "reading": "せよ",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "拙速な",
+      "basic_form": "拙速",
+      "reading": "せっそくな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "結論",
+      "basic_form": "結論",
+      "reading": "けつろん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "許されず",
+      "basic_form": "許す",
+      "reading": "ゆるされず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "労使双方",
+      "basic_form": "労使双方",
+      "reading": "ろうしそうほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "信頼",
+      "basic_form": "信頼",
+      "reading": "しんらい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "醸成する",
+      "basic_form": "醸成する",
+      "reading": "じょうせいする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "地道な",
+      "basic_form": "地道",
+      "reading": "じみちな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "対話",
+      "basic_form": "対話",
+      "reading": "たいわ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "こそ",
+      "basic_form": "こそ",
+      "reading": "こそ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "制度設計",
+      "basic_form": "制度設計",
+      "reading": "せいどせっけい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "前提",
+      "basic_form": "前提",
+      "reading": "ぜんてい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なる",
+      "basic_form": "なる",
+      "reading": "なる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "いう",
+      "basic_form": "言う",
+      "reading": "いう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "べき",
+      "basic_form": "べき",
+      "reading": "べき",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "である",
+      "basic_form": "である",
+      "reading": "である",
+      "pos": "助動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "ある": {
+      "meaning": "有，存在"
+    },
+    "あるまじき": {
+      "meaning": "不應有的、不該有的"
+    },
+    "いずれ": {
+      "meaning": "無論哪一個、其中之一"
+    },
+    "きらい": {
+      "meaning": "（負面的）傾向"
+    },
+    "こと": {
+      "meaning": "事、事情（形式名詞）"
+    },
+    "さらなる": {
+      "meaning": "進一步的"
+    },
+    "その": {
+      "meaning": "那個、該（指示連體詞）"
+    },
+    "ところ": {
+      "meaning": "之處、地方（形式名詞）"
+    },
+    "なる": {
+      "meaning": "變成、成為"
+    },
+    "もたらす": {
+      "meaning": "帶來"
+    },
+    "もっとも": {
+      "meaning": "不過、話雖如此"
+    },
+    "もの": {
+      "meaning": "東西、事物（形式名詞）"
+    },
+    "一つ": {
+      "meaning": "一個"
+    },
+    "一方": {
+      "meaning": "另一方面"
+    },
+    "不足": {
+      "meaning": "不足、短缺"
+    },
+    "主張": {
+      "meaning": "主張"
+    },
+    "争点": {
+      "meaning": "爭論焦點"
+    },
+    "人員配置": {
+      "meaning": "人力配置"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "保護": {
+      "meaning": "保護"
+    },
+    "信頼": {
+      "meaning": "信任"
+    },
+    "分断": {
+      "meaning": "分裂、割裂"
+    },
+    "制度設計": {
+      "meaning": "制度設計"
+    },
+    "制約": {
+      "meaning": "制約、限制"
+    },
+    "前提": {
+      "meaning": "前提"
+    },
+    "加速する": {
+      "meaning": "加速"
+    },
+    "労使双方": {
+      "meaning": "勞資雙方"
+    },
+    "労働力": {
+      "meaning": "勞動力"
+    },
+    "労働市場": {
+      "meaning": "勞動市場"
+    },
+    "労働移動": {
+      "meaning": "勞動力流動"
+    },
+    "労働者": {
+      "meaning": "勞工"
+    },
+    "危うくする": {
+      "meaning": "使陷入危險"
+    },
+    "反対派": {
+      "meaning": "反對派"
+    },
+    "可能": {
+      "meaning": "可能"
+    },
+    "向上": {
+      "meaning": "提升"
+    },
+    "国際競争力": {
+      "meaning": "國際競爭力"
+    },
+    "地道": {
+      "meaning": "腳踏實地、踏實"
+    },
+    "声": {
+      "meaning": "聲音、呼聲"
+    },
+    "変化": {
+      "meaning": "變化"
+    },
+    "妨げる": {
+      "meaning": "妨礙"
+    },
+    "存続": {
+      "meaning": "存續"
+    },
+    "安易": {
+      "meaning": "輕易、草率"
+    },
+    "実際": {
+      "meaning": "實際上"
+    },
+    "対話": {
+      "meaning": "對話"
+    },
+    "導入": {
+      "meaning": "引進、導入"
+    },
+    "巡る": {
+      "meaning": "圍繞（某議題）"
+    },
+    "帰結": {
+      "meaning": "結果、歸結"
+    },
+    "強まる": {
+      "meaning": "增強、加劇"
+    },
+    "従来": {
+      "meaning": "以往、向來"
+    },
+    "応じる": {
+      "meaning": "因應、回應"
+    },
+    "怠慢": {
+      "meaning": "怠慢、失職"
+    },
+    "懸念": {
+      "meaning": "擔憂"
+    },
+    "批判する": {
+      "meaning": "批評"
+    },
+    "拙速": {
+      "meaning": "操之過急"
+    },
+    "拡大": {
+      "meaning": "擴大"
+    },
+    "指摘": {
+      "meaning": "指摘、指出（名詞）"
+    },
+    "指摘する": {
+      "meaning": "指出"
+    },
+    "推進派": {
+      "meaning": "推進派、贊成派"
+    },
+    "揺るがす": {
+      "meaning": "動搖"
+    },
+    "改革": {
+      "meaning": "改革"
+    },
+    "改革案": {
+      "meaning": "改革方案"
+    },
+    "放置する": {
+      "meaning": "放任不管"
+    },
+    "政府": {
+      "meaning": "政府"
+    },
+    "政策当局": {
+      "meaning": "政策當局"
+    },
+    "新陳代謝": {
+      "meaning": "新陳代謝（喻企業汰舊換新）"
+    },
+    "日本": {
+      "meaning": "日本"
+    },
+    "最大": {
+      "meaning": "最大"
+    },
+    "根強い": {
+      "meaning": "根深蒂固的"
+    },
+    "格差": {
+      "meaning": "差距"
+    },
+    "構造的": {
+      "meaning": "結構性的"
+    },
+    "流動化": {
+      "meaning": "流動化、彈性化"
+    },
+    "生活基盤": {
+      "meaning": "生活基礎"
+    },
+    "相まる": {
+      "meaning": "相結合（「〜と相まって」）"
+    },
+    "看過する": {
+      "meaning": "忽視、放任不管"
+    },
+    "硬直的": {
+      "meaning": "僵化的"
+    },
+    "示す": {
+      "meaning": "提出、顯示"
+    },
+    "社会的": {
+      "meaning": "社會性的"
+    },
+    "経営環境": {
+      "meaning": "經營環境"
+    },
+    "結局": {
+      "meaning": "結局、終究"
+    },
+    "結論": {
+      "meaning": "結論"
+    },
+    "続ける": {
+      "meaning": "持續、繼續"
+    },
+    "維持": {
+      "meaning": "維持"
+    },
+    "緩和": {
+      "meaning": "緩和、放寬"
+    },
+    "緩和する": {
+      "meaning": "放寬（動詞）"
+    },
+    "置く": {
+      "meaning": "放置、置於"
+    },
+    "規制": {
+      "meaning": "法規、管制"
+    },
+    "規制緩和": {
+      "meaning": "放寬管制"
+    },
+    "解雇規制": {
+      "meaning": "解僱限制規定"
+    },
+    "言う": {
+      "meaning": "說、稱"
+    },
+    "許す": {
+      "meaning": "容許、允許"
+    },
+    "議論": {
+      "meaning": "議論、討論"
+    },
+    "資する": {
+      "meaning": "有助於"
+    },
+    "足る": {
+      "meaning": "足以、值得"
+    },
+    "醸成する": {
+      "meaning": "醞釀、培養"
+    },
+    "重心": {
+      "meaning": "重心"
+    },
+    "金銭解雇制度": {
+      "meaning": "金錢解僱制度"
+    },
+    "阻害する": {
+      "meaning": "阻礙"
+    },
+    "雇用慣行": {
+      "meaning": "雇用慣例"
+    },
+    "非正規雇用": {
+      "meaning": "非正規雇用"
+    }
+  },
+  "particles": {
+    "が": "標示句子的主語，或用於連接含有轉折、並列語氣的子句。",
+    "こそ": "強調助詞，置於名詞後表示「正是、才是」，加強語氣。",
+    "せよ": "與「に」搭配構成「〜にせよ」，意為「無論〜」，表示讓步。",
+    "だ": "普通體斷定助動詞，相當於「是」，用於非敬體的書面斷定句。",
+    "で": "標示方式、手段或場所，亦用於「ではなく」等否定句型中。",
+    "である": "書面語斷定助動詞，相當於「是」，常見於評論、論說等正式文體。",
+    "と": "標示引用內容、並列對象，或用於「〜と相まって」等書面固定搭配。",
+    "ない": "形容詞性否定詞，於「ではなく」中表示「並非〜，而是」。",
+    "など": "接於名詞後，表示「等、之類」，列舉其中一例並暗示尚有其他。",
+    "に": "標示動作對象、歸著點、原因，亦用於「〜になる」等結構。",
+    "における": "接於名詞後，相當於「在〜方面／之中」，書面語用於標示範圍。",
+    "の": "連接名詞與名詞，相當於「的」，表示所屬或修飾關係。",
+    "は": "標示句子主題，提示後面的敘述針對此主題展開。",
+    "べき": "接於動詞原形後，表示「應該〜」，表達道義上的建議或義務。",
+    "も": "表示「也、亦」，用於列舉或強調類似情況。",
+    "より": "與「に」連用構成「〜により」，表示原因或手段，意為「由於、憑藉」。",
+    "を": "標示他動詞的受詞（目的語）。"
+  },
+  "translations": [
+    [
+      {
+        "text": "圍繞解僱限制鬆綁的議論，持續是日本勞動市場改革中最大的爭議焦點之一。",
+        "word": "議論"
+      }
+    ],
+    [
+      {
+        "text": "推進派指出，僵化的解僱限制阻礙了企業的新陳代謝，也妨礙了勞動力的流動。",
+        "word": "指摘する"
+      }
+    ],
+    [
+      {
+        "text": "若能透過引進金錢解僱制度等方式放寬管制，企業將能依經營環境的變化靈活調整人力配置，進而有助於提升國際競爭力——這是推進派的主張。",
+        "word": "緩和する"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，反對派批評，解僱限制的鬆綁可能動搖勞工的生活基礎，而放任此一後果不管，乃是政策當局不該有的怠慢。",
+        "word": "あるまじき"
+      }
+    ],
+    [
+      {
+        "text": "事實上，非正規雇用擴大所帶來的差距絕非足以被忽視的問題，社會上也根深蒂固地擔憂，輕率的管制鬆綁有加劇社會分裂的傾向。",
+        "word": "きらい"
+      }
+    ],
+    [
+      {
+        "text": "不過，與勞動力不足這一結構性制約相結合，也有人指出維持以往的雇用慣例恐將危及企業的存續，因此要求政府提出改革方案的呼聲也日益高漲。",
+        "word": "相まる"
+      }
+    ],
+    [
+      {
+        "text": "歸根究柢，無論將重心放在保護還是放在流動化上，都不容許草率下定論，應該說，唯有透過腳踏實地的對話來培養勞資雙方的信任，才是制度設計的前提。",
+        "word": "対話"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 3,
+      "pattern": "〜まじき",
+      "note": "「不該有的〜」，強烈譴責"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜に足る",
+      "note": "「足以〜」"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜きらいがある",
+      "note": "「有〜的傾向（負面）」"
+    },
+    {
+      "sentence": 5,
+      "pattern": "〜と相まって",
+      "note": "「與〜相結合」，書面因果"
+    }
+  ]
+}

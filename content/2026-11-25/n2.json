@@ -1,0 +1,1129 @@
+{
+  "date": "2026-11-25",
+  "level": "n2",
+  "title": "推し活の広がり",
+  "text": "近年、アイドルやアニメのキャラクターを応援する「推し活」が、若者だけでなく幅広い世代に広がりつつある。SNSの普及に伴って、個人が気軽に情報を発信し、同じ趣味を持つ人々とつながれるようになったことが、この現象を後押ししている。かつては一部の熱心なファンの行動とみなされていたものの、今では消費行動の一つとして社会に定着しつつある。企業も、このブームを商機ととらえ、関連グッズやイベントを次々に展開している。一方で、推し活にお金をかけすぎたばかりに、生活費を圧迫してしまう人も少なくない。それにもかかわらず、多くの人が推し活を通じて日々の生活に張り合いを見いだしており、この傾向は今後も続くとみられる。",
+  "tokens": [
+    {
+      "surface_form": "近年",
+      "basic_form": "近年",
+      "reading": "きんねん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "アイドル",
+      "basic_form": "アイドル",
+      "reading": "あいどる",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "アニメ",
+      "basic_form": "アニメ",
+      "reading": "あにめ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "キャラクター",
+      "basic_form": "キャラクター",
+      "reading": "きゃらくたー",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "応援する",
+      "basic_form": "応援する",
+      "reading": "おうえんする",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "「",
+      "basic_form": "「",
+      "reading": "「",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "推し活",
+      "basic_form": "推し活",
+      "reading": "おしかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "」",
+      "basic_form": "」",
+      "reading": "」",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "若者",
+      "basic_form": "若者",
+      "reading": "わかもの",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "だけ",
+      "basic_form": "だけ",
+      "reading": "だけ",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なく",
+      "basic_form": "ない",
+      "reading": "なく",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "幅広い",
+      "basic_form": "幅広い",
+      "reading": "はばひろい",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "世代",
+      "basic_form": "世代",
+      "reading": "せだい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "広がりつつある",
+      "basic_form": "広がる",
+      "reading": "ひろがりつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "SNS",
+      "basic_form": "SNS",
+      "reading": "えすえぬえす",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "普及",
+      "basic_form": "普及",
+      "reading": "ふきゅう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "伴って",
+      "basic_form": "伴う",
+      "reading": "ともなって",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "個人",
+      "basic_form": "個人",
+      "reading": "こじん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "気軽に",
+      "basic_form": "気軽",
+      "reading": "きがるに",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "情報",
+      "basic_form": "情報",
+      "reading": "じょうほう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "発信し",
+      "basic_form": "発信する",
+      "reading": "はっしんし",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "同じ",
+      "basic_form": "同じ",
+      "reading": "おなじ",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "趣味",
+      "basic_form": "趣味",
+      "reading": "しゅみ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "持つ",
+      "basic_form": "持つ",
+      "reading": "もつ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人々",
+      "basic_form": "人々",
+      "reading": "ひとびと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "つながれる",
+      "basic_form": "つながる",
+      "reading": "つながれる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "よう",
+      "basic_form": "よう",
+      "reading": "よう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "なった",
+      "basic_form": "なる",
+      "reading": "なった",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "こと",
+      "basic_form": "こと",
+      "reading": "こと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "現象",
+      "basic_form": "現象",
+      "reading": "げんしょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "後押ししている",
+      "basic_form": "後押しする",
+      "reading": "あとおししている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "かつて",
+      "basic_form": "かつて",
+      "reading": "かつて",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一部",
+      "basic_form": "一部",
+      "reading": "いちぶ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "熱心な",
+      "basic_form": "熱心",
+      "reading": "ねっしんな",
+      "pos": "形容動詞"
+    },
+    {
+      "surface_form": "ファン",
+      "basic_form": "ファン",
+      "reading": "ふぁん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "行動",
+      "basic_form": "行動",
+      "reading": "こうどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みなされていた",
+      "basic_form": "みなす",
+      "reading": "みなされていた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ものの",
+      "basic_form": "ものの",
+      "reading": "ものの",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "今",
+      "basic_form": "今",
+      "reading": "いま",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "で",
+      "basic_form": "で",
+      "reading": "で",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "消費行動",
+      "basic_form": "消費行動",
+      "reading": "しょうひこうどう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "一つ",
+      "basic_form": "一つ",
+      "reading": "ひとつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "として",
+      "basic_form": "として",
+      "reading": "として",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "社会",
+      "basic_form": "社会",
+      "reading": "しゃかい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "定着しつつある",
+      "basic_form": "定着する",
+      "reading": "ていちゃくしつつある",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "企業",
+      "basic_form": "企業",
+      "reading": "きぎょう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "ブーム",
+      "basic_form": "ブーム",
+      "reading": "ぶーむ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "商機",
+      "basic_form": "商機",
+      "reading": "しょうき",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "とらえ",
+      "basic_form": "とらえる",
+      "reading": "とらえ",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "関連",
+      "basic_form": "関連",
+      "reading": "かんれん",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "グッズ",
+      "basic_form": "グッズ",
+      "reading": "ぐっず",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "や",
+      "basic_form": "や",
+      "reading": "や",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "イベント",
+      "basic_form": "イベント",
+      "reading": "いべんと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "次々に",
+      "basic_form": "次々に",
+      "reading": "つぎつぎに",
+      "pos": "副詞"
+    },
+    {
+      "surface_form": "展開している",
+      "basic_form": "展開する",
+      "reading": "てんかいしている",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "一方で",
+      "basic_form": "一方で",
+      "reading": "いっぽうで",
+      "pos": "接続詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "推し活",
+      "basic_form": "推し活",
+      "reading": "おしかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "お金",
+      "basic_form": "お金",
+      "reading": "おかね",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かけすぎた",
+      "basic_form": "かけすぎる",
+      "reading": "かけすぎた",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "ばかりに",
+      "basic_form": "ばかりに",
+      "reading": "ばかりに",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "生活費",
+      "basic_form": "生活費",
+      "reading": "せいかつひ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "圧迫してしまう",
+      "basic_form": "圧迫する",
+      "reading": "あっぱくしてしまう",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "少なくない",
+      "basic_form": "少ない",
+      "reading": "すくなくない",
+      "pos": "形容詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "それ",
+      "basic_form": "それ",
+      "reading": "それ",
+      "pos": "代名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "かかわらず",
+      "basic_form": "かかわる",
+      "reading": "かかわらず",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "多く",
+      "basic_form": "多く",
+      "reading": "おおく",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "人",
+      "basic_form": "人",
+      "reading": "ひと",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "が",
+      "basic_form": "が",
+      "reading": "が",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "推し活",
+      "basic_form": "推し活",
+      "reading": "おしかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "通じて",
+      "basic_form": "通じる",
+      "reading": "つうじて",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "日々",
+      "basic_form": "日々",
+      "reading": "ひび",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "の",
+      "basic_form": "の",
+      "reading": "の",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "生活",
+      "basic_form": "生活",
+      "reading": "せいかつ",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "に",
+      "basic_form": "に",
+      "reading": "に",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "張り合い",
+      "basic_form": "張り合い",
+      "reading": "はりあい",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "を",
+      "basic_form": "を",
+      "reading": "を",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "見いだしており",
+      "basic_form": "見いだす",
+      "reading": "みいだしており",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "、",
+      "basic_form": "、",
+      "reading": "、",
+      "pos": "記号"
+    },
+    {
+      "surface_form": "この",
+      "basic_form": "この",
+      "reading": "この",
+      "pos": "連体詞"
+    },
+    {
+      "surface_form": "傾向",
+      "basic_form": "傾向",
+      "reading": "けいこう",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "は",
+      "basic_form": "は",
+      "reading": "は",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "今後",
+      "basic_form": "今後",
+      "reading": "こんご",
+      "pos": "名詞"
+    },
+    {
+      "surface_form": "も",
+      "basic_form": "も",
+      "reading": "も",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "続く",
+      "basic_form": "続く",
+      "reading": "つづく",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "と",
+      "basic_form": "と",
+      "reading": "と",
+      "pos": "助詞"
+    },
+    {
+      "surface_form": "みられる",
+      "basic_form": "見る",
+      "reading": "みられる",
+      "pos": "動詞"
+    },
+    {
+      "surface_form": "。",
+      "basic_form": "。",
+      "reading": "。",
+      "pos": "記号"
+    }
+  ],
+  "vocab": {
+    "SNS": {
+      "meaning": "社群網路服務"
+    },
+    "お金": {
+      "meaning": "金錢"
+    },
+    "かかわる": {
+      "meaning": "關聯，涉及（此處「かかわらず」意為儘管～）"
+    },
+    "かけすぎる": {
+      "meaning": "花費過多"
+    },
+    "かつて": {
+      "meaning": "曾經，過去"
+    },
+    "こと": {
+      "meaning": "（形式名詞）事情，事"
+    },
+    "この": {
+      "meaning": "這個"
+    },
+    "それ": {
+      "meaning": "那個，那"
+    },
+    "つながる": {
+      "meaning": "建立連結，產生聯繫"
+    },
+    "とらえる": {
+      "meaning": "掌握，抓住"
+    },
+    "ない": {
+      "meaning": "不，沒有"
+    },
+    "なる": {
+      "meaning": "變成，變得"
+    },
+    "みなす": {
+      "meaning": "視為，看作"
+    },
+    "よう": {
+      "meaning": "（形式名詞）表示狀態或趨勢"
+    },
+    "アイドル": {
+      "meaning": "偶像"
+    },
+    "アニメ": {
+      "meaning": "動畫"
+    },
+    "イベント": {
+      "meaning": "活動"
+    },
+    "キャラクター": {
+      "meaning": "角色"
+    },
+    "グッズ": {
+      "meaning": "周邊商品"
+    },
+    "ファン": {
+      "meaning": "粉絲"
+    },
+    "ブーム": {
+      "meaning": "熱潮，流行風潮"
+    },
+    "一つ": {
+      "meaning": "一個，一種"
+    },
+    "一方で": {
+      "meaning": "另一方面"
+    },
+    "一部": {
+      "meaning": "一部分"
+    },
+    "世代": {
+      "meaning": "世代"
+    },
+    "人": {
+      "meaning": "人"
+    },
+    "人々": {
+      "meaning": "人們"
+    },
+    "今": {
+      "meaning": "現在"
+    },
+    "今後": {
+      "meaning": "今後"
+    },
+    "企業": {
+      "meaning": "企業"
+    },
+    "伴う": {
+      "meaning": "伴隨"
+    },
+    "個人": {
+      "meaning": "個人"
+    },
+    "傾向": {
+      "meaning": "傾向"
+    },
+    "同じ": {
+      "meaning": "相同的"
+    },
+    "商機": {
+      "meaning": "商機"
+    },
+    "圧迫する": {
+      "meaning": "壓迫，擠壓"
+    },
+    "多く": {
+      "meaning": "多數，許多"
+    },
+    "定着する": {
+      "meaning": "扎根，固定下來"
+    },
+    "少ない": {
+      "meaning": "少的（「少なくない」意為不少）"
+    },
+    "展開する": {
+      "meaning": "展開，推展"
+    },
+    "幅広い": {
+      "meaning": "廣泛的"
+    },
+    "広がる": {
+      "meaning": "擴大，擴展開來"
+    },
+    "張り合い": {
+      "meaning": "幹勁，衝勁"
+    },
+    "後押しする": {
+      "meaning": "推動，助力"
+    },
+    "応援する": {
+      "meaning": "聲援，支持"
+    },
+    "情報": {
+      "meaning": "資訊"
+    },
+    "持つ": {
+      "meaning": "擁有，抱持"
+    },
+    "推し活": {
+      "meaning": "「推し活」（粉絲應援偶像或角色的活動）"
+    },
+    "日々": {
+      "meaning": "每天，日常"
+    },
+    "普及": {
+      "meaning": "普及"
+    },
+    "次々に": {
+      "meaning": "接連不斷地"
+    },
+    "気軽": {
+      "meaning": "輕鬆隨意"
+    },
+    "消費行動": {
+      "meaning": "消費行為"
+    },
+    "熱心": {
+      "meaning": "熱心的，熱衷的"
+    },
+    "現象": {
+      "meaning": "現象"
+    },
+    "生活": {
+      "meaning": "生活"
+    },
+    "生活費": {
+      "meaning": "生活費"
+    },
+    "発信する": {
+      "meaning": "發布，發送"
+    },
+    "社会": {
+      "meaning": "社會"
+    },
+    "続く": {
+      "meaning": "持續"
+    },
+    "若者": {
+      "meaning": "年輕人"
+    },
+    "行動": {
+      "meaning": "行動"
+    },
+    "見いだす": {
+      "meaning": "找出，發現"
+    },
+    "見る": {
+      "meaning": "看（此處「みられる」意為被認為）"
+    },
+    "趣味": {
+      "meaning": "興趣"
+    },
+    "近年": {
+      "meaning": "近年"
+    },
+    "通じる": {
+      "meaning": "透過，通過"
+    },
+    "関連": {
+      "meaning": "相關"
+    }
+  },
+  "particles": {
+    "や": "並列助詞，表示非窮盡式的列舉「和、及」",
+    "の": "連體修飾助詞，表示所屬、同位等，相當於「的」",
+    "を": "賓格助詞，標示動作所涉及的對象",
+    "が": "主格助詞，標示句子的主語",
+    "だけ": "限定助詞，表示「只、僅」",
+    "で": "格助詞，表示方式、場所、狀態或原因，相當於「在～；以～」",
+    "は": "主題助詞，提示句子的主題或對比",
+    "に": "格助詞，表示時間、對象、方向或變化的結果等",
+    "と": "格助詞，表示引用的內容或共同動作的對象，相當於「和～；認為～」",
+    "も": "副助詞，表示「也、都」，或帶有強調語氣",
+    "として": "格助詞，表示身份、資格，相當於「作為～」",
+    "ものの": "接續助詞，表示逆接「雖然～，但是～」，書面語氣",
+    "ばかりに": "接續助詞，表示「就因為～（導致不好的結果）」"
+  },
+  "translations": [
+    [
+      {
+        "text": "近年來，應援偶像或動畫角色的「推し活」不僅限於年輕人，正逐漸擴展到更廣泛的世代。",
+        "word": "広がる"
+      }
+    ],
+    [
+      {
+        "text": "伴隨社群網路的普及，個人得以輕鬆地發布資訊，並能夠與擁有相同興趣的人們建立聯繫，這也助長了這一現象。",
+        "word": "伴う"
+      }
+    ],
+    [
+      {
+        "text": "雖然過去這被視為一部分熱心粉絲的行為，但如今已逐漸作為一種消費行為在社會上扎根。",
+        "word": "みなす"
+      }
+    ],
+    [
+      {
+        "text": "企業也將這股熱潮視為商機，接連推出相關周邊商品與活動。",
+        "word": "商機"
+      }
+    ],
+    [
+      {
+        "text": "另一方面，也有不少人就因為在推し活上花費過多，而壓迫到生活費。",
+        "word": "かけすぎる"
+      }
+    ],
+    [
+      {
+        "text": "儘管如此，許多人仍透過推し活在日常生活中找到了幹勁，這股趨勢預料今後仍將持續。",
+        "word": "通じる"
+      }
+    ]
+  ],
+  "grammar_notes": [
+    {
+      "sentence": 1,
+      "pattern": "〜に伴って",
+      "note": "「伴隨〜」，同步變化"
+    },
+    {
+      "sentence": 2,
+      "pattern": "〜ものの",
+      "note": "「雖然〜」，書面逆接"
+    },
+    {
+      "sentence": 4,
+      "pattern": "〜ばかりに",
+      "note": "「就因為〜（導致負面結果）」"
+    },
+    {
+      "sentence": 5,
+      "pattern": "〜にもかかわらず",
+      "note": "「儘管〜」，強逆接，較のに更書面"
+    }
+  ]
+}
