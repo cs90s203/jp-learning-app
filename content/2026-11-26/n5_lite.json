@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-26",
+  "level": "n5_lite",
+  "title": "わたしの手帳",
+  "text": "わたしの手帳は黒いです。小さくて薄いです。毎日かばんの中にあります。手帳はわたしの大切な物です。",
+  "tokens": [
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "手帳", "basic_form": "手帳", "reading": "てちょう", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "黒い", "basic_form": "黒い", "reading": "くろい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "小さくて", "basic_form": "小さい", "reading": "ちいさくて", "pos": "形容詞" },
+    { "surface_form": "薄い", "basic_form": "薄い", "reading": "うすい", "pos": "形容詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "毎日", "basic_form": "毎日", "reading": "まいにち", "pos": "名詞" },
+    { "surface_form": "かばん", "basic_form": "かばん", "reading": "かばん", "pos": "名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "中", "basic_form": "中", "reading": "なか", "pos": "名詞" },
+    { "surface_form": "に", "basic_form": "に", "reading": "に", "pos": "助詞" },
+    { "surface_form": "あります", "basic_form": "ある", "reading": "あります", "pos": "動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" },
+    { "surface_form": "手帳", "basic_form": "手帳", "reading": "てちょう", "pos": "名詞" },
+    { "surface_form": "は", "basic_form": "は", "reading": "は", "pos": "助詞" },
+    { "surface_form": "わたし", "basic_form": "わたし", "reading": "わたし", "pos": "代名詞" },
+    { "surface_form": "の", "basic_form": "の", "reading": "の", "pos": "助詞" },
+    { "surface_form": "大切な", "basic_form": "大切だ", "reading": "たいせつな", "pos": "形容動詞" },
+    { "surface_form": "物", "basic_form": "物", "reading": "もの", "pos": "名詞" },
+    { "surface_form": "です", "basic_form": "です", "reading": "です", "pos": "助動詞" },
+    { "surface_form": "。", "basic_form": "。", "reading": "。", "pos": "記号" }
+  ],
+  "vocab": {
+    "わたし": { "meaning": "我" },
+    "手帳": { "meaning": "筆記本、記事本" },
+    "黒い": { "meaning": "黑色的" },
+    "小さい": { "meaning": "小的" },
+    "薄い": { "meaning": "薄的" },
+    "毎日": { "meaning": "每天" },
+    "かばん": { "meaning": "包包" },
+    "中": { "meaning": "裡面、當中" },
+    "ある": { "meaning": "有、在（無生物存在）" },
+    "大切だ": { "meaning": "重要的、珍惜的" },
+    "物": { "meaning": "東西" }
+  },
+  "particles": {
+    "の": "所屬關係，或名詞修飾名詞",
+    "は": "標示句子的主題",
+    "に": "表示存在的場所"
+  },
+  "translations": [
+    [ { "text": "我的筆記本", "word": "手帳" }, { "text": "是黑色的。", "word": "黒い" } ],
+    [ { "text": "又小又薄。", "word": "小さい" } ],
+    [ { "text": "每天", "word": "毎日" }, { "text": "都放在包包裡。", "word": "かばん" } ],
+    [ { "text": "筆記本是我", "word": "手帳" }, { "text": "重要的東西。", "word": "大切だ" } ]
+  ],
+  "grammar_notes": [
+    { "sentence": 0, "pattern": "〜は〜です／〜ではありません", "note": "「是」的肯定/否定敘述句" },
+    { "sentence": 1, "pattern": "〜くて／〜で（形容詞て形）", "note": "連接兩個形容詞子句，表示並列或原因" },
+    { "sentence": 2, "pattern": "〜に（時間/對象/到達點）", "note": "表示時間點、動作對象、或到達的地點" }
+  ]
+}
